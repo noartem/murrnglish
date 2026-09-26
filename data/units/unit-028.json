@@ -1,0 +1,173 @@
+{
+  "unit": 28,
+  "title": "must and can't",
+  "pdfPages": [68, 69],
+  "exercises": [
+    {
+      "id": "28.1",
+      "type": "fill-in",
+      "instruction": "Put in must or can't.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["That restaurant ", " be very good. It's always full of people."],
+          "answers": [["must"]]
+        },
+        {
+          "num": 3,
+          "parts": ["That restaurant ", " be very good. It's always empty."],
+          "answers": [["can't"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I'm sure Kate gave me her address. I ", " have it somewhere."],
+          "answers": [["must"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I often see that man in this street. He ", " live near here."],
+          "answers": [["must"]]
+        },
+        {
+          "num": 6,
+          "parts": ["It rained every day during their holiday. It ", " have been very nice for them."],
+          "answers": [["can't"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Congratulations on passing your exam. You ", " be very pleased."],
+          "answers": [["must"]]
+        },
+        {
+          "num": 8,
+          "parts": ["This bill ", " be correct. It's much too high."],
+          "answers": [["can't"]]
+        },
+        {
+          "num": 9,
+          "parts": ["You got here very quickly. You ", " have driven very fast."],
+          "answers": [["must"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Bill and Sue always stay at five-star hotels. They ", " be short of money."],
+          "answers": [["can't"]]
+        },
+        {
+          "num": 11,
+          "parts": ["Karen hasn't left the office yet. She ", " be working late tonight."],
+          "answers": [["must"]]
+        }
+      ]
+    },
+    {
+      "id": "28.2",
+      "type": "fill-in",
+      "instruction": "Complete each sentence with a verb (one or two words).",
+      "items": [
+        {
+          "num": 3,
+          "parts": ["You've lived in this village a long time. You must ", " everybody who lives here."],
+          "answers": [["know"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I don't seem to have my wallet with me. I must ", " it at home."],
+          "answers": [["have left"]]
+        },
+        {
+          "num": 5,
+          "parts": ["'How old is Ed?' 'He's older than me. He must ", " at least 40.'"],
+          "answers": [["be"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I didn't hear my phone. I must ", " asleep."],
+          "answers": [["have been"]]
+        },
+        {
+          "num": 7,
+          "parts": ["'You're going on holiday soon. You must ", " forward to it.' 'Yes, I am.'"],
+          "answers": [["be looking"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I'm sure you know this song. You must ", " it before."],
+          "answers": [["have heard"]]
+        },
+        {
+          "num": 9,
+          "parts": ["The road is closed, so we have to go another way. There must ", " an accident."],
+          "answers": [["have been"]]
+        },
+        {
+          "num": 10,
+          "parts": ["'Do you have a car?' 'You must ", "! How could I afford to have a car?'"],
+          "answers": [["be joking"]]
+        },
+        {
+          "num": 11,
+          "parts": ["David is the managing director of a large company, so he must ", " quite a high salary."],
+          "answers": [["get", "be getting", "have"]]
+        }
+      ]
+    },
+    {
+      "id": "28.3",
+      "type": "write",
+      "instruction": "Use the words in brackets to write sentences with must have and can't have.",
+      "items": [
+        {
+          "num": 3,
+          "prompt": "(it / be / very expensive)",
+          "answers": ["It must have been very expensive."]
+        },
+        {
+          "num": 4,
+          "prompt": "(they / go away)",
+          "answers": ["They must have gone away."]
+        },
+        {
+          "num": 5,
+          "prompt": "(I / leave / it in the restaurant last night)",
+          "answers": ["I must have left it in the restaurant last night."]
+        },
+        {
+          "num": 6,
+          "prompt": "(it / be / easy for her)",
+          "answers": ["It can't have been easy for her."]
+        },
+        {
+          "num": 7,
+          "prompt": "(he / wait / for somebody)",
+          "answers": ["He must have been waiting for somebody."]
+        },
+        {
+          "num": 8,
+          "prompt": "(she / understand / what I said)",
+          "answers": ["She can't have understood what I said.", "She couldn't have understood what I said."]
+        },
+        {
+          "num": 9,
+          "prompt": "(I / forget / to lock it)",
+          "answers": ["I must have forgotten to lock it."]
+        },
+        {
+          "num": 10,
+          "prompt": "(they / have / a party)",
+          "answers": ["They must have been having a party."]
+        },
+        {
+          "num": 11,
+          "prompt": "(the driver / see / the red light)",
+          "answers": ["The driver can't have seen the red light.", "The driver couldn't have seen the red light."]
+        },
+        {
+          "num": 12,
+          "prompt": "(he / wear / them much)",
+          "answers": ["He can't have worn them much."]
+        }
+      ]
+    }
+  ]
+}

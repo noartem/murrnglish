@@ -1,0 +1,38 @@
+{
+  "id": 5,
+  "topic": "Present and past",
+  "refs": "Units 1\u201317",
+  "pdfPages": [316, 317],
+  "exercise": {
+    "id": "5",
+    "type": "fill-in",
+    "instruction": "Put the verb into the correct form: past simple (I did), past continuous (I was doing), past perfect (I had done) or past perfect continuous (I had been doing).",
+    "items": [
+      {
+        "num": 1,
+        "parts": ["Yesterday afternoon Sarah went (go) to the station to meet Paul. When she ", " there, Paul ", " for her. His train ", " early."],
+        "answers": [["got"], ["was already waiting"], ["had arrived"]]
+      },
+      {
+        "num": 2,
+        "parts": ["When I got home, Ben ", " on the sofa. The TV was on, but he ", " it. He ", " asleep and ", " loudly. I ", " the TV off and just then he ", " up."],
+        "answers": [["was lying"], ["wasn\u2019t watching"], ["\u2019d fallen", "had fallen"], ["was snoring"], ["turned"], ["woke"]]
+      },
+      {
+        "num": 3,
+        "parts": ["Last night I ", " to bed and ", " a book when suddenly I ", " a noise. I ", " up to see what it was, but I ", " anything, so I ", " back to bed."],
+        "answers": [["\u2019d just gone", "had just gone"], ["was reading"], ["heard"], ["got"], ["didn\u2019t see"], ["went"]]
+      },
+      {
+        "num": 4,
+        "parts": ["Lisa had to go to New York last week, but she almost ", " the plane. She ", " in the queue at the check-in desk when she suddenly ", " that she ", " her passport at home. Fortunately she lives near the airport, so she ", " time to take a taxi home to get it. She ", " back to the airport just in time for her flight."],
+        "answers": [["missed"], ["was standing"], ["realised"], ["\u2019d left", "had left"], ["had"], ["got"]]
+      },
+      {
+        "num": 5,
+        "parts": ["I ", " Peter and Lucy yesterday as I ", " through the park. They ", " to the Sports Centre where they ", " tennis. They ", " to a cafe and ", " me to join them, but I ", " to meet another friend and ", " time."],
+        "answers": [["met"], ["was walking"], ["\u2019d been", "had been"], ["\u2019d been playing", "had been playing"], ["were going"], ["invited"], ["\u2019d arranged", "had arranged"], ["didn\u2019t have"]]
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "unit": 60,
+  "title": "Preposition (in/for/about etc.) + -ing",
+  "pdfPages": [132, 133],
+  "exercises": [
+    {
+      "id": "60.1",
+      "type": "fill-in",
+      "instruction": "Complete the second sentence so that it means the same as the first.",
+      "items": [
+        {"num": 1, "parts": ["Why is it useful to have a car? What are the advantages of having a car?"], "answers": []},
+        {"num": 2, "parts": ["I don\u2019t intend to apply for the job. I have no intention of ", "."], "answers": [["applying for the job"]]},
+        {"num": 3, "parts": ["Helen has a good memory for names. Helen is good at ", "."], "answers": [["remembering names"]]},
+        {"num": 4, "parts": ["You probably won\u2019t win the lottery. You have little chance. You have little chance of ", "."], "answers": [["winning the lottery"]]},
+        {"num": 5, "parts": ["Did you get into trouble because you were late? Did you get into trouble for ", "?"], "answers": [["being late"]]},
+        {"num": 6, "parts": ["We didn\u2019t eat at home. We went to a restaurant instead. We went to a restaurant instead of ", "."], "answers": [["eating at home"]]},
+        {"num": 7, "parts": ["We got into the exhibition. We didn\u2019t have to queue. We got into the exhibition without ", "."], "answers": [["having to queue", "queuing"]]},
+        {"num": 8, "parts": ["Amy is 90 years old, but she\u2019s fit and healthy. Amy is fit and healthy despite ", "."], "answers": [["being 90 years old"]]}
+      ]
+    },
+    {
+      "id": "60.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using by -ing. Choose from these verbs: borrow, break, drive, press, put, stand",
+      "items": [
+        {"num": 1, "parts": ["The burglars got into the house by breaking a window."], "answers": []},
+        {"num": 2, "parts": ["I was able to reach the top shelf ", " on a chair."], "answers": [["by standing"]]},
+        {"num": 3, "parts": ["You turn on the computer ", " the button at the back."], "answers": [["by pressing"]]},
+        {"num": 4, "parts": ["Kevin got himself into financial trouble ", " too much money."], "answers": [["by borrowing"]]},
+        {"num": 5, "parts": ["You can put people\u2019s lives in danger ", " too fast."], "answers": [["by driving"]]},
+        {"num": 6, "parts": ["We made the room look nicer ", " some pictures on the walls."], "answers": [["by putting"]]}
+      ]
+    },
+    {
+      "id": "60.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with a suitable word. Use only one word each time.",
+      "items": [
+        {"num": 1, "parts": ["We ran ten kilometres without stopping."], "answers": []},
+        {"num": 2, "parts": ["Dan left the hotel without ", " his bill."], "answers": [["paying", "settling"]]},
+        {"num": 3, "parts": ["It\u2019s a nice morning. How about ", " for a walk?"], "answers": [["going"]]},
+        {"num": 4, "parts": ["You need to think carefully before ", " an important decision."], "answers": [["making"]]},
+        {"num": 5, "parts": ["It was a long trip. We were tired after ", " on a train for 36 hours."], "answers": [["being", "travelling", "sitting"]]},
+        {"num": 6, "parts": ["I\u2019m not looking forward to ", " away. I\u2019d prefer to stay here."], "answers": [["going"]]},
+        {"num": 7, "parts": ["I was annoyed because the decision was made without anybody ", " me."], "answers": [["asking", "telling", "consulting", "informing"]]},
+        {"num": 8, "parts": ["After ", " the same job for ten years, Ellie felt she needed a change."], "answers": [["doing", "having"]]},
+        {"num": 9, "parts": ["We got lost because we went straight on instead of ", " left."], "answers": [["turning", "going"]]},
+        {"num": 10, "parts": ["I like these pictures you took. You\u2019re good at ", " pictures."], "answers": [["taking"]]},
+        {"num": 11, "parts": ["Can you touch your toes without ", " your knees?"], "answers": [["bending"]]},
+        {"num": 12, "parts": ["We\u2019ve decided to sell our car. Are you interested in ", " it?"], "answers": [["buying"]]}
+      ]
+    },
+    {
+      "id": "60.4",
+      "type": "write",
+      "instruction": "For each situation, write a sentence with I\u2019m (not) looking forward to.",
+      "items": [
+        {"num": 1, "prompt": "You are going on holiday next week. How do you feel?", "answers": ["I\u2019m looking forward to going on holiday."]},
+        {"num": 2, "prompt": "A good friend of yours is coming to visit you soon. It will be good to see her again. How do you feel?", "answers": ["I\u2019m looking forward to seeing her (again)."]},
+        {"num": 3, "prompt": "You\u2019re going to the dentist tomorrow. You don\u2019t enjoy visits to the dentist. How do you feel?", "answers": ["I\u2019m not looking forward to going to the dentist (tomorrow)."]},
+        {"num": 4, "prompt": "Rachel doesn\u2019t like school, but she\u2019s leaving next summer. How does she feel?", "answers": ["She\u2019s looking forward to leaving school (next summer)."]},
+        {"num": 5, "prompt": "Joe and Helen are moving to a new apartment soon. It\u2019s much nicer than where they live now. How do they feel?", "answers": ["They\u2019re looking forward to moving (to their new apartment)."]}
+      ]
+    }
+  ]
+}

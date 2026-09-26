@@ -1,0 +1,63 @@
+{
+  "id": 28,
+  "topic": "-ing and to …",
+  "refs": "Units 53–66",
+  "pdfPages": [331],
+  "exercise": {
+    "id": "28",
+    "type": "fill-in",
+    "instruction": "Complete the second sentence so that the meaning is similar to the first.",
+    "items": [
+      {
+        "num": 3,
+        "parts": ["I don't read newspapers any more.\nI've given up ", "."],
+        "answers": [["reading newspapers"]]
+      },
+      {
+        "num": 4,
+        "parts": ["I'd prefer not to go out tonight.\nI'd rather ", "."],
+        "answers": [["not go out tonight", "stay at home tonight"]]
+      },
+      {
+        "num": 5,
+        "parts": ["He finds it difficult to sleep at night.\nHe has trouble ", "."],
+        "answers": [["sleeping at night"]]
+      },
+      {
+        "num": 6,
+        "parts": ["Shall I phone you this evening?\nDo you want ", "?"],
+        "answers": [["me to phone you this evening"]]
+      },
+      {
+        "num": 7,
+        "parts": ["Nobody saw me come in.\nI came in without ", "."],
+        "answers": [["anybody seeing me", "anyone seeing me", "being seen"]]
+      },
+      {
+        "num": 8,
+        "parts": ["Some people said I was a cheat.\nI was accused ", "."],
+        "answers": [["of being a cheat", "of cheating"]]
+      },
+      {
+        "num": 9,
+        "parts": ["It will be good to see them again.\nI'm looking forward ", "."],
+        "answers": [["to seeing them again"]]
+      },
+      {
+        "num": 10,
+        "parts": ["What do you think I should do?\nWhat do you advise me ", "?"],
+        "answers": [["to do"]]
+      },
+      {
+        "num": 11,
+        "parts": ["It's a pity I couldn't go out with you last night.\nI'd like ", "."],
+        "answers": [["to have gone out with you last night"]]
+      },
+      {
+        "num": 12,
+        "parts": ["I wish I'd taken your advice.\nI regret ", "."],
+        "answers": [["not taking your advice", "that I didn't take your advice"]]
+      }
+    ]
+  }
+}

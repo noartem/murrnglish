@@ -1,0 +1,60 @@
+{
+  "unit": 94,
+  "title": "Relative clauses 3: whose/whom/where",
+  "pdfPages": [200, 201],
+  "exercises": [
+    {
+      "id": "94.1",
+      "type": "fill-in",
+      "instruction": "You met these people at a party. The next day you tell a friend about these people. Complete the sentences using who or whose.",
+      "items": [
+        {"num": 1, "parts": ["I met somebody whose mother writes detective stories", "."], "answers": [["whose mother writes detective stories"]]},
+        {"num": 2, "parts": ["I met a man ", "."], "answers": [["whose wife is an English teacher"]]},
+        {"num": 3, "parts": ["I met a woman ", "."], "answers": [["who owns a restaurant"]]},
+        {"num": 4, "parts": ["I met somebody ", "."], "answers": [["whose ambition is to climb Everest"]]},
+        {"num": 5, "parts": ["I met a couple ", "."], "answers": [["who have just got married"]]},
+        {"num": 6, "parts": ["I met somebody ", "."], "answers": [["whose parents used to work in a circus"]]}
+      ]
+    },
+    {
+      "id": "94.2",
+      "type": "fill-in",
+      "instruction": "For each situation write a sentence with whom (more formal) and without whom (less formal).",
+      "items": [
+        {"num": 1, "parts": ["more formal I met a friend whom I hadn\u2019t seen for years", ". less formal I met a friend I hadn\u2019t seen for years", "."], "answers": [["whom I hadn\u2019t seen for years"], ["I hadn\u2019t seen for years"]]},
+        {"num": 2, "parts": ["more formal I went to see a lawyer ", ". less formal I went to see a lawyer ", "."], "answers": [["whom a friend of mine (had) recommended"], ["a friend of mine (had) recommended"]]},
+        {"num": 3, "parts": ["more formal The person ", " wasn\u2019t very helpful. less formal The person ", " wasn\u2019t very helpful."], "answers": [["to whom I spoke"], ["I spoke to"]]},
+        {"num": 4, "parts": ["more formal The woman ", " wasn\u2019t in love with him. less formal The woman ", " wasn\u2019t in love with him."], "answers": [["with whom Tom was in love"], ["Tom was in love with"]]}
+      ]
+    },
+    {
+      "id": "94.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using who/whom/whose/where.",
+      "items": [
+        {"num": 1, "parts": ["We helped some people whose car had broken down", "."], "answers": [["whose car had broken down"]]},
+        {"num": 2, "parts": ["A cemetery is a place ", " people are buried."], "answers": [["where"]]},
+        {"num": 3, "parts": ["A pacifist is a person ", " believes that all wars are wrong."], "answers": [["who"]]},
+        {"num": 4, "parts": ["An orphan is a child ", " parents are dead."], "answers": [["whose"]]},
+        {"num": 5, "parts": ["What\u2019s the name of the hotel ", " your parents are staying?"], "answers": [["where"]]},
+        {"num": 6, "parts": ["This school is only for children ", " first language is not English."], "answers": [["whose"]]},
+        {"num": 7, "parts": ["The person from ", " I bought my car is a friend of my father\u2019s."], "answers": [["whom"]]},
+        {"num": 8, "parts": ["I live in a friendly village ", " everybody knows everybody else."], "answers": [["where"]]}
+      ]
+    },
+    {
+      "id": "94.4",
+      "type": "self-check",
+      "instruction": "Use your own ideas to complete these sentences.",
+      "items": [
+        {"num": 1, "prompt": "I can\u2019t meet you on Friday. That\u2019s the day I\u2019m going away.", "modelAnswers": ["That\u2019s the day I\u2019m going away."]},
+        {"num": 2, "prompt": "The reason ___________ was that the salary was too low.", "modelAnswers": ["The reason I left my job was that the salary was too low."]},
+        {"num": 3, "prompt": "I\u2019ll never forget the time ___________.", "modelAnswers": ["I\u2019ll never forget the time I got stuck in a lift."]},
+        {"num": 4, "prompt": "___________ was the year ___________.", "modelAnswers": ["2009 was the year Amanda got married."]},
+        {"num": 5, "prompt": "The reason ___________ is that neither of them can drive.", "modelAnswers": ["The reason they don\u2019t have a car is that neither of them can drive."]},
+        {"num": 6, "prompt": "The last time I ___________ was ___________.", "modelAnswers": ["The last time I saw Sam was about six months ago."]},
+        {"num": 7, "prompt": "Do you remember the day ___________?", "modelAnswers": ["Do you remember the day we first met?"]}
+      ]
+    }
+  ]
+}

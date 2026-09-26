@@ -1,0 +1,53 @@
+{
+  "id": 18,
+  "topic": "Modal verbs (can/must/would etc.)",
+  "refs": "Units 26–36",
+  "pdfPages": [325],
+  "exercise": {
+    "id": "18",
+    "type": "fill-in",
+    "instruction": "Complete B's sentences using can/could/might/must/should/would + the verb in brackets. In some sentences you need to use have: must have … / should have … etc. In some sentences you need the negative (can't/couldn't etc.).",
+    "items": [
+      {
+        "num": 3,
+        "parts": ["Not at the moment, but it ", " later."],
+        "answers": [["could rain", "might rain"]]
+      },
+      {
+        "num": 4,
+        "parts": ["I'm not sure. She ", " out."],
+        "answers": [["might have gone", "could have gone"]]
+      },
+      {
+        "num": 5,
+        "parts": ["No, I had to work that night, so I ", "."],
+        "answers": [["couldn't go"]]
+      },
+      {
+        "num": 6,
+        "parts": ["No, you ", " him this morning. He's away on holiday."],
+        "answers": [["couldn't have seen", "can't have seen"]]
+      },
+      {
+        "num": 7,
+        "parts": ["Well, it takes about one and a half hours, so if we leave at 3 o'clock, we ", " there by 4.30."],
+        "answers": [["should get"]]
+      },
+      {
+        "num": 8,
+        "parts": ["Years ago. I ", " him if I saw him now."],
+        "answers": [["wouldn't recognise", "might not recognise"]]
+      },
+      {
+        "num": 9,
+        "parts": ["There was a loud explosion about an hour ago. You ", " it."],
+        "answers": [["must have heard"]]
+      },
+      {
+        "num": 10,
+        "parts": ["You went the wrong way. You ", " left."],
+        "answers": [["should have turned"]]
+      }
+    ]
+  }
+}

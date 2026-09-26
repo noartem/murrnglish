@@ -1,0 +1,235 @@
+{
+  "unit": 79,
+  "title": "Singular and plural",
+  "pdfPages": [170, 171],
+  "exercises": [
+    {
+      "id": "79.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Choose from the box.",
+      "wordBank": ["a", "are", "them", "doesn't", "pair", "it", "glasses", "some", "don't"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The trousers you bought for me ", " fit me."],
+          "answers": [["don't"]]
+        },
+        {
+          "num": 3,
+          "parts": ["The jacket you bought for me ", " fit me."],
+          "answers": [["doesn't"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I need ", " scissors to cut this piece of material."],
+          "answers": [["some"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I can't find my binoculars. Have you seen ", "?"],
+          "answers": [["them"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I went shopping and bought a ", " of jeans."],
+          "answers": [["pair"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Where ", " my sunglasses?"],
+          "answers": [["are"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I went shopping and bought ", " pair of pyjamas."],
+          "answers": [["a"]]
+        },
+        {
+          "num": 9,
+          "parts": ["I don't know much about politics. I'm not interested in ", "."],
+          "answers": [["it"]]
+        }
+      ]
+    },
+    {
+      "id": "79.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a word from section B (news, series etc.).",
+      "wordBank": ["means", "series", "species", "news", "means", "series", "species"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The bicycle is a ", " of transport."],
+          "answers": [["means"]]
+        },
+        {
+          "num": 3,
+          "parts": ["A lot of American TV ", " are shown in other countries."],
+          "answers": [["series"]]
+        },
+        {
+          "num": 4,
+          "parts": ["The tiger is an endangered ", "."],
+          "answers": [["species"]]
+        },
+        {
+          "num": 5,
+          "parts": ["There will be a ", " of meetings to discuss the problem."],
+          "answers": [["series"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Fortunately the ", " wasn't as bad as we expected."],
+          "answers": [["news"]]
+        },
+        {
+          "num": 7,
+          "parts": ["How many ", " of bird are there in the world?"],
+          "answers": [["species"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I didn't have my phone, so I had no ", " of contacting you."],
+          "answers": [["means"]]
+        }
+      ]
+    },
+    {
+      "id": "79.3",
+      "type": "choice",
+      "instruction": "Choose the correct form of the verb, singular or plural. In three sentences either the singular or plural verb is possible.",
+      "items": [
+        {
+          "num": 1,
+          "options": ["is", "are"],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": ["doesn't", "don't"],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["want", "wants"],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["was", "were"],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": ["is", "are"],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": ["is", "are"],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": ["Does", "Do"],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": ["do", "does"],
+          "answer": 1
+        },
+        {
+          "num": 9,
+          "options": ["enjoy", "enjoys"],
+          "answer": 0
+        },
+        {
+          "num": 10,
+          "options": ["is", "are"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "79.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use is or isn't, and choose from the box.",
+      "wordBank": ["a lot to carry", "enough money", "too hot", "long enough", "a long time"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Thirty degrees ", " for Tom. He doesn't like hot weather."],
+          "answers": [["isn't"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Ten dollars ", ". We need more than that."],
+          "answers": [["isn't"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Four days ", " for a holiday. You need at least a week."],
+          "answers": [["isn't"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Twenty kilos ", ". Are you sure you can manage?"],
+          "answers": [["is"]]
+        }
+      ]
+    },
+    {
+      "id": "79.5",
+      "type": "write",
+      "instruction": "Are these sentences OK? Correct them where necessary.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "The committee want to change the rules of the club.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 3,
+          "prompt": "Susan was wearing a black jeans.",
+          "answers": ["Susan was wearing black jeans."]
+        },
+        {
+          "num": 4,
+          "prompt": "I like Martin and Jane. They're very nice persons.",
+          "answers": ["I like Martin and Jane. They're very nice people."]
+        },
+        {
+          "num": 5,
+          "prompt": "I'm going to buy some new pyjamas.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 6,
+          "prompt": "There was a police directing traffic in the street.",
+          "answers": ["There was a police officer / a policeman / a policewoman directing traffic in the street."]
+        },
+        {
+          "num": 7,
+          "prompt": "This scissors isn't very sharp.",
+          "answers": ["These scissors aren't very sharp."]
+        },
+        {
+          "num": 8,
+          "prompt": "The company have decided to open a new factory.",
+          "answers": ["OK", "The company has decided to open a new factory."]
+        },
+        {
+          "num": 9,
+          "prompt": "This plant is very rare species.",
+          "answers": ["This plant is a very rare species."]
+        },
+        {
+          "num": 10,
+          "prompt": "Twelve hours are a long time to be on a plane.",
+          "answers": ["Twelve hours is a long time to be on a plane."]
+        }
+      ]
+    }
+  ]
+}

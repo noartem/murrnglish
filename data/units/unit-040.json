@@ -1,0 +1,48 @@
+{
+  "unit": 40,
+  "title": "if I had known … I wish I had known …",
+  "pdfPages": [92, 93],
+  "exercises": [
+    {
+      "id": "40.1",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form.",
+      "items": [
+        {"num": 2, "parts": ["Sarah got to the station just in time to catch her train to the airport. If ", " the train, ", " her flight too."], "answers": [["she'd missed", "she had missed"], ["she'd have missed", "she would have missed"]]},
+        {"num": 3, "parts": ["Thanks for reminding me about Lisa's birthday. ", " if ", " me."], "answers": [["I'd have forgotten", "I would have forgotten"], ["you hadn't reminded"]]},
+        {"num": 4, "parts": ["I didn't have your email address, so I couldn't contact you. If ", " your email address, ", " you an email."], "answers": [["I'd had", "I had had"], ["I'd have sent", "I would have sent"]]},
+        {"num": 5, "parts": ["Their trip was OK, but ", " it more if the weather ", " better."], "answers": [["they'd have enjoyed", "they would have enjoyed"], ["had been"]]},
+        {"num": 6, "parts": ["Sorry we're late. Our taxi got stuck in the traffic. ", " quicker if ", "."], "answers": [["It would have been"], ["we'd walked", "we had walked"]]},
+        {"num": 7, "parts": ["Why didn't you tell me about your problem? If ", " me, ", " to help you."], "answers": [["you'd told", "you had told"], ["I'd have tried", "I would have tried"]]},
+        {"num": 8, "parts": ["I'm not tired. If ", " tired, I'd go home now."], "answers": [["I were", "I was"]]},
+        {"num": 9, "parts": ["I wasn't tired last night. If ", " tired, I would have gone home earlier."], "answers": [["I'd been", "I had been"]]}
+      ]
+    },
+    {
+      "id": "40.2",
+      "type": "write",
+      "instruction": "For each situation, write a sentence beginning with If.",
+      "items": [
+        {"num": 2, "prompt": "The accident happened because the road was icy.", "answers": ["If the road hadn't been icy, the accident wouldn't have happened."]},
+        {"num": 3, "prompt": "I didn't know that you had to get up early, so I didn't wake you up.", "answers": ["If I'd known that you had to get up early, I'd have woken you up.", "If I had known that you had to get up early, I'd have woken you up.", "If I'd known that you had to get up early, I would have woken you up.", "If I had known that you had to get up early, I would have woken you up."]},
+        {"num": 4, "prompt": "Unfortunately I lost my phone, so I couldn't call you.", "answers": ["If I hadn't lost my phone, I'd have called you.", "If I hadn't lost my phone, I would have called you.", "If I hadn't lost my phone, I could have called you.", "If I'd had my phone, I'd have called you.", "If I'd had my phone, I would have called you.", "If I'd had my phone, I could have called you."]},
+        {"num": 5, "prompt": "Karen wasn't injured in the crash, because fortunately she was wearing a seat belt.", "answers": ["If Karen hadn't been wearing a seat belt, she'd have been injured.", "If Karen hadn't been wearing a seat belt, she would have been injured.", "If Karen hadn't been wearing a seat belt, she might have been injured.", "If Karen hadn't been wearing a seat belt, she could have been injured."]},
+        {"num": 6, "prompt": "You didn't have any breakfast – that's why you're hungry now.", "answers": ["If you'd had some breakfast, you wouldn't be hungry now.", "If you had had some breakfast, you wouldn't be hungry now.", "If you'd had breakfast, you wouldn't be hungry now.", "If you had had breakfast, you wouldn't be hungry now."]},
+        {"num": 7, "prompt": "I didn't get a taxi because I didn't have enough money.", "answers": ["If I'd had enough money, I'd have got a taxi.", "If I'd had enough money, I would have got a taxi.", "If I'd had enough money, I would have taken a taxi.", "If I had had enough money, I'd have got a taxi.", "If I had had enough money, I would have got a taxi.", "If I had had enough money, I would have taken a taxi."]},
+        {"num": 8, "prompt": "Dan didn't do well at school, so he couldn't go to university.", "answers": ["If Dan had done well at school, he could have gone to university.", "If Dan had done better at school, he could have gone to university.", "If Dan had done well at school, he would have gone to university.", "If Dan had done better at school, he would have gone to university."]}
+      ]
+    },
+    {
+      "id": "40.3",
+      "type": "write",
+      "instruction": "Imagine that you are in these situations. For each situation, write a sentence with I wish.",
+      "items": [
+        {"num": 2, "prompt": "When you were younger, you never learned to play a musical instrument. Now you regret this.", "answers": ["I wish I'd learned to play a musical instrument.", "I wish I had learned to play a musical instrument.", "I wish I'd learned to play a musical instrument when I was younger.", "I wish I had learned to play a musical instrument when I was younger.", "I wish I could play a musical instrument.", "I wish I was able to play a musical instrument."]},
+        {"num": 3, "prompt": "You've painted the gate red. Now you think it doesn't look good. Red was the wrong colour.", "answers": ["I wish I hadn't painted it red.", "I wish I hadn't painted the gate red.", "I wish I had painted it a different colour.", "I wish I had painted the gate a different colour."]},
+        {"num": 4, "prompt": "You decided to travel by car, but the journey was long and tiring. Going by train would have been better.", "answers": ["I wish we'd gone by train.", "I wish we had gone by train.", "I wish we hadn't gone by car."]},
+        {"num": 5, "prompt": "Last year you went to New York with a friend. You didn't have time to do all the things you wanted to do.", "answers": ["I wish we'd had more time.", "I wish we had had more time.", "I wish we'd had more time to do all the things we wanted to do.", "I wish we had had more time to do all the things we wanted to do."]},
+        {"num": 6, "prompt": "You moved to a new flat a few months ago. Now you don't like your new flat. You think that moving was a bad idea.", "answers": ["I wish I hadn't moved.", "I wish I hadn't moved to my new flat.", "I wish I'd stayed where I was.", "I wish I'd stayed in my old flat.", "I wish I had stayed where I was.", "I wish I had stayed in my old flat."]}
+      ]
+    }
+  ]
+}

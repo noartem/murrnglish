@@ -1,0 +1,63 @@
+{
+  "id": 23,
+  "topic": "Passive",
+  "refs": "Units 42–45",
+  "pdfPages": [327],
+  "exercise": {
+    "id": "23",
+    "type": "fill-in",
+    "instruction": "Put the verb into the correct form, active or passive.",
+    "items": [
+      {
+        "num": 3,
+        "parts": ["'Is your car still for sale?' 'No, I ", " (sell) it.'"],
+        "answers": [["'ve sold", "have sold", "sold"]]
+      },
+      {
+        "num": 4,
+        "parts": ["a: Is the house at the end of the street still for sale?\n      b: No, it ", " (sell)."],
+        "answers": [["'s been sold", "has been sold", "was sold"]]
+      },
+      {
+        "num": 5,
+        "parts": ["Sometimes mistakes ", " (make). It's inevitable."],
+        "answers": [["are made"]]
+      },
+      {
+        "num": 6,
+        "parts": ["It's not a good idea to leave your car unlocked. It ", " (might / steal)."],
+        "answers": [["might be stolen"]]
+      },
+      {
+        "num": 7,
+        "parts": ["My bag has disappeared. It ", " (must / steal)."],
+        "answers": [["must have been stolen"]]
+      },
+      {
+        "num": 8,
+        "parts": ["I can't find my umbrella. Somebody ", " (must / take) it by mistake."],
+        "answers": [["must have taken"]]
+      },
+      {
+        "num": 9,
+        "parts": ["It's a serious problem. I don't know how it ", " (can / solve)."],
+        "answers": [["can be solved"]]
+      },
+      {
+        "num": 10,
+        "parts": ["We didn't leave early enough. We ", " (should / leave) earlier."],
+        "answers": [["should have left"]]
+      },
+      {
+        "num": 11,
+        "parts": ["Very often when I travel by plane, my flight ", " (delay)."],
+        "answers": [["is delayed"]]
+      },
+      {
+        "num": 12,
+        "parts": ["A new bridge ", " (build) across the river. Work started last year and the bridge ", " (expect) to open next year."],
+        "answers": [["is being built"], ["is expected"]]
+      }
+    ]
+  }
+}

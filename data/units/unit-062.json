@@ -1,0 +1,139 @@
+{
+  "unit": 62,
+  "title": "Verb + preposition + -ing (succeed in -ing / insist on -ing etc.)",
+  "pdfPages": [136, 137],
+  "exercises": [
+    {
+      "id": "62.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use only one word each time.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I feel lazy. I don\u2019t feel like ", " any work."],
+          "answers": [["doing"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I wanted to go out alone, but Joe insisted on ", " with me."],
+          "answers": [["coming", "going"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I\u2019m fed up with my job. I\u2019m thinking of ", " something else."],
+          "answers": [["doing", "trying"]]
+        },
+        {
+          "num": 5,
+          "parts": ["We can\u2019t afford a car right now, so we\u2019ve decided against ", " one."],
+          "answers": [["buying", "having"]]
+        },
+        {
+          "num": 6,
+          "parts": ["It took us a long time, but we finally succeeded in ", " the problem."],
+          "answers": [["solving"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I\u2019ve always dreamed of ", " a small house by the sea."],
+          "answers": [["buying", "having", "owning"]]
+        },
+        {
+          "num": 8,
+          "parts": ["It\u2019s great that Amy and Sam are coming to visit us. I\u2019m looking forward to ", " them again."],
+          "answers": [["seeing"]]
+        }
+      ]
+    },
+    {
+      "id": "62.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a preposition + one of these verbs (in the correct form):",
+      "wordBank": ["be", "eat", "get", "go out", "invite", "steal", "take off", "tell", "try", "use", "walk"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The police stopped the car because they suspected the driver ", " it."],
+          "answers": [["of stealing"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Our flight was delayed. Bad weather prevented the plane ", "."],
+          "answers": [["from taking off"]]
+        },
+        {
+          "num": 4,
+          "parts": ["My phone is very old. I\u2019m thinking ", " a new one."],
+          "answers": [["of getting"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I didn\u2019t want to hear the story but Dan insisted ", " me anyway."],
+          "answers": [["on telling"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I\u2019m getting hungry. I\u2019m really looking forward ", " something."],
+          "answers": [["to eating"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I think you should apologise to Sarah ", " so rude."],
+          "answers": [["for being"]]
+        },
+        {
+          "num": 8,
+          "parts": ["There\u2019s a fence around the lawn to stop people ", " on the grass."],
+          "answers": [["from walking"]]
+        },
+        {
+          "num": 9,
+          "parts": ["I\u2019m sorry I can\u2019t come to your party, but thank you very much ", " me."],
+          "answers": [["for inviting"]]
+        },
+        {
+          "num": 10,
+          "parts": ["The man who has been arrested is suspected ", " a false passport."],
+          "answers": [["of using"]]
+        },
+        {
+          "num": 11,
+          "parts": ["I did my best. Nobody can accuse me ", " not ", "."],
+          "answers": [["of"], ["trying"]]
+        }
+      ]
+    },
+    {
+      "id": "62.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences on the right.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Ann said to Tom: \u201cI\u2019ll take you to the station. I insist.\u201d\nTom insisted ", "."],
+          "answers": [["on taking Ann to the station"]]
+        },
+        {
+          "num": 3,
+          "parts": ["You said to Dan: \u201cI hear you got married. Congratulations!\u201d\nDan congratulated me ", "."],
+          "answers": [["on getting married"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Sue said to Jen: \u201cIt was nice of you to come to see me. Thank you.\u201d\nJen thanked ", "."],
+          "answers": [["Sue for coming to see her"]]
+        },
+        {
+          "num": 5,
+          "parts": ["You said to Kate: \u201cSorry I\u2019m late.\u201d\nKate apologised ", "."],
+          "answers": [["to me for being late", "for being late"]]
+        },
+        {
+          "num": 6,
+          "parts": ["You said to Jane: \u201cYou don\u2019t care about other people.\u201d\nJane accused ", "."],
+          "answers": [["me of not caring about other people"]]
+        }
+      ]
+    }
+  ]
+}

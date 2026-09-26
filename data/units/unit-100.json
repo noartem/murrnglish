@@ -1,0 +1,69 @@
+{
+  "unit": 100,
+  "title": "Adjectives and adverbs 1 (quick/quickly)",
+  "pdfPages": [212, 213],
+  "exercises": [
+    {
+      "id": "100.1",
+      "type": "fill-in",
+      "instruction": "Complete each sentence with an adverb. The first letters of the adverb are given.",
+      "items": [
+        {"num": 2, "parts": ["I had no problem finding a place to live. I found a flat quite ", "."], "answers": [["easily"]]},
+        {"num": 3, "parts": ["We had to wait a long time, but we didn't complain. We waited ", "."], "answers": [["patiently"]]},
+        {"num": 4, "parts": ["Nobody knew that Simon was coming to see us. He arrived ", "."], "answers": [["unexpectedly"]]},
+        {"num": 5, "parts": ["Mike keeps fit by playing tennis ", "."], "answers": [["regularly"]]},
+        {"num": 6, "parts": ["I don't speak French very well, but I can understand ", " if people speak ", " and ", "."], "answers": [["perfectly"], ["slowly"], ["clearly"]]}
+      ]
+    },
+    {
+      "id": "100.2",
+      "type": "choice",
+      "instruction": "Put in the correct word.",
+      "items": [
+        {"num": 2, "options": ["selfish", "selfishly"], "answer": 1},
+        {"num": 3, "options": ["sudden", "suddenly"], "answer": 1},
+        {"num": 4, "options": ["sudden", "suddenly"], "answer": 0},
+        {"num": 5, "options": ["bad", "badly"], "answer": 1},
+        {"num": 6, "options": ["awful", "awfully"], "answer": 0},
+        {"num": 7, "options": ["terrible", "terribly"], "answer": 1},
+        {"num": 8, "options": ["comfortable", "comfortably"], "answer": 0},
+        {"num": 9, "options": ["clear", "clearly"], "answer": 1},
+        {"num": 10, "options": ["safe", "safely"], "answer": 0},
+        {"num": 11, "options": ["safe", "safely"], "answer": 0},
+        {"num": 12, "options": ["safe", "safely"], "answer": 1}
+      ]
+    },
+    {
+      "id": "100.3",
+      "type": "fill-in",
+      "instruction": "Complete each sentence using a word from the box. Sometimes you need the adjective (careful etc.) and sometimes the adverb (carefully etc.).",
+      "wordBank": ["careful(ly)", "complete(ly)", "dangerous(ly)", "financial(ly)", "fluent(ly)", "frequent(ly)", "nervous(ly)", "perfect(ly)", "permanent(ly)", "special(ly)"],
+      "items": [
+        {"num": 2, "parts": ["He's late sometimes, but it doesn't happen ", "."], "answers": [["frequently"]]},
+        {"num": 3, "parts": ["Maria's English is very ", " although she makes quite a lot of mistakes."], "answers": [["fluent"]]},
+        {"num": 4, "parts": ["I cooked this meal ", " for you, so I hope you like it."], "answers": [["specially"]]},
+        {"num": 5, "parts": ["Everything was very quiet. There was ", " silence."], "answers": [["complete"]]},
+        {"num": 6, "parts": ["I tried on the shoes and they fitted me ", "."], "answers": [["perfectly"]]},
+        {"num": 7, "parts": ["I'd like to buy a car, but it's ", " impossible for me at the moment."], "answers": [["financially", "completely"]]},
+        {"num": 8, "parts": ["I'm staying here only a few weeks. I won't be living here ", "."], "answers": [["permanently"]]},
+        {"num": 9, "parts": ["Do you usually feel ", " before exams?"], "answers": [["nervous"]]},
+        {"num": 10, "parts": ["Dan likes to take risks. He lives ", "."], "answers": [["dangerously"]]}
+      ]
+    },
+    {
+      "id": "100.4",
+      "type": "fill-in",
+      "instruction": "Choose two words (one from each box) to complete each sentence.",
+      "items": [
+        {"num": 2, "parts": ["Will's mother is ", " in hospital."], "answers": [["seriously", "ill"]]},
+        {"num": 3, "parts": ["This house is so big! It's ", "."], "answers": [["absolutely", "enormous"]]},
+        {"num": 4, "parts": ["It wasn't a serious accident. The car was only ", "."], "answers": [["slightly", "damaged"]]},
+        {"num": 5, "parts": ["Our children are normally very lively, but they're ", " today."], "answers": [["unusually", "quiet"]]},
+        {"num": 6, "parts": ["When I returned home after 20 years, everything had ", "."], "answers": [["completely", "changed"]]},
+        {"num": 7, "parts": ["The movie was ", ". It could have been much shorter."], "answers": [["unnecessarily", "long"]]},
+        {"num": 8, "parts": ["I'm surprised Amy and Joe have separated. I thought they were ", "."], "answers": [["happily", "married"]]},
+        {"num": 9, "parts": ["A lot went wrong during our holiday because it was ", "."], "answers": [["badly", "planned"]]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "unit": 128,
+  "title": "by",
+  "pdfPages": [268, 269],
+  "exercises": [
+    {
+      "id": "128.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Choose from the box.",
+      "wordBank": ["by mistake", "by hand", "by credit card", "by chance", "by email", "on purpose"],
+      "items": [
+        {"num": 2, "parts": ["Kate and James keep in touch with one another mainly ", "."], "answers": [["by email"]]},
+        {"num": 3, "parts": ["I didn't intend to take your umbrella. I took it ", "."], "answers": [["by mistake"]]},
+        {"num": 4, "parts": ["I think he arrived late ", ". He wanted to keep us waiting."], "answers": [["on purpose"]]},
+        {"num": 5, "parts": ["Some things are planned. Other things happen ", "."], "answers": [["by chance"]]},
+        {"num": 6, "parts": ["Don't put my sweater in the washing machine. It has to be washed ", "."], "answers": [["by hand"]]}
+      ]
+    },
+    {
+      "id": "128.2",
+      "type": "fill-in",
+      "instruction": "Put in by, in or on.",
+      "items": [
+        {"num": 2, "parts": ["I saw Jane this morning. She was ", " the bus."], "answers": [["on"]]},
+        {"num": 3, "parts": ["How did you get here? Did you come ", " train?"], "answers": [["by"]]},
+        {"num": 4, "parts": ["I couldn't find a seat ", " the train. It was full."], "answers": [["on"]]},
+        {"num": 5, "parts": ["How much will it cost to the airport ", " taxi?"], "answers": [["by"]]},
+        {"num": 6, "parts": ["Did you come here ", " Sarah's car or yours?"], "answers": [["in"]]},
+        {"num": 7, "parts": ["The injured man was taken to hospital ", " ambulance."], "answers": [["by"]]},
+        {"num": 8, "parts": ["How long does it take to cross the Atlantic ", " ship?"], "answers": [["by"]]},
+        {"num": 9, "parts": ["He doesn't drive much. He goes everywhere ", " bike or ", " foot."], "answers": [["by"], ["on"]]}
+      ]
+    },
+    {
+      "id": "128.3",
+      "type": "fill-in",
+      "instruction": "Complete these sentences about books, paintings etc. Choose from the box.",
+      "wordBank": ["by mosquitoes", "by one of our players", "by lightning", "by Beethoven", "by a strange noise", "by Leonardo da Vinci", "by a professional photographer"],
+      "items": [
+        {"num": 2, "parts": ["These pictures were taken ", "."], "answers": [["by a professional photographer"]]},
+        {"num": 3, "parts": ["I hate getting bitten ", "."], "answers": [["by mosquitoes"]]},
+        {"num": 4, "parts": ["'Mona Lisa' is a famous painting ", "."], "answers": [["by Leonardo da Vinci"]]},
+        {"num": 5, "parts": ["We lost the game because of a mistake ", "."], "answers": [["by one of our players"]]},
+        {"num": 6, "parts": ["The plane was damaged ", ", but landed safely."], "answers": [["by lightning"]]},
+        {"num": 7, "parts": ["This music is ", ", but I can't remember what it's called."], "answers": [["by Beethoven"]]}
+      ]
+    },
+    {
+      "id": "128.4",
+      "type": "fill-in",
+      "instruction": "Put in by, in, on or with.",
+      "items": [
+        {"num": 2, "parts": ["We managed to put the fire out ", " a fire extinguisher."], "answers": [["with"]]},
+        {"num": 3, "parts": ["Who's that man standing ", " the window?"], "answers": [["by"]]},
+        {"num": 4, "parts": ["Do you travel much ", " bus?"], "answers": [["by"]]},
+        {"num": 5, "parts": ["We travelled ", " my friend's car because it is larger and more comfortable than mine."], "answers": [["in"]]},
+        {"num": 6, "parts": ["It was only ", " accident that I discovered the error."], "answers": [["by"]]},
+        {"num": 7, "parts": ["These pictures were taken ", " a very good camera."], "answers": [["with"]]},
+        {"num": 8, "parts": ["My friends live in a beautiful house ", " the sea."], "answers": [["by"]]},
+        {"num": 9, "parts": ["There were only a few people ", " the plane. It was almost empty."], "answers": [["on"]]},
+        {"num": 10, "parts": ["The new railway line will reduce the journey time ", " two hours (from five hours to three)."], "answers": [["by"]]},
+        {"num": 11, "parts": ["There was a small table ", " the bed ", " a lamp and a clock ", " it."], "answers": [["by"], ["with"], ["on"]]}
+      ]
+    },
+    {
+      "id": "128.5",
+      "type": "write",
+      "instruction": "Complete the sentences using by.",
+      "items": [
+        {"num": 2, "prompt": "Ten years ago the population of the country was 50 million. Now it is 56 million.", "answers": ["In the last ten years the population has gone up by 6 million.", "In the last ten years the population has increased by 6 million.", "In the last ten years the population has grown by 6 million.", "In the last ten years the population has risen by 6 million."]},
+        {"num": 3, "prompt": "There was an election. Helen won. She got 25 votes and James got 23.", "answers": ["Helen won by two votes."]},
+        {"num": 4, "prompt": "I went to Kate's office to see her, but she had left work five minutes before I arrived.", "answers": ["I missed her by five minutes.", "I missed Kate by five minutes."]}
+      ]
+    }
+  ]
+}

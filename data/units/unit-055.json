@@ -1,0 +1,63 @@
+{
+  "unit": 55,
+  "title": "Verb (+ object) + to \u2026 (I want you to \u2026)",
+  "pdfPages": [122, 123],
+  "exercises": [
+    {
+      "id": "55.1",
+      "type": "fill-in",
+      "instruction": "Complete the questions. Use do you want me to \u2026 ? or would you like me to \u2026 ? with these verbs (and any other necessary words):",
+      "wordBank": ["come", "lend", "repeat", "show", "shut", "wait"],
+      "items": [
+        {"num": 2, "parts": ["Do you have enough money, or do you want ", "?"], "answers": [["or do you want me to lend you some"]]},
+        {"num": 3, "parts": ["Shall I leave the window open, or would you ", "?"], "answers": [["or would you like me to shut it"]]},
+        {"num": 4, "parts": ["Do you know how to use the printer, or would ", "?"], "answers": [["or would you like me to show you"]]},
+        {"num": 5, "parts": ["Did you hear what I said, or do ", "?"], "answers": [["or do you want me to repeat it"]]},
+        {"num": 6, "parts": ["Can I go now, or do ", "?"], "answers": [["or do you want me to wait"]]}
+      ]
+    },
+    {
+      "id": "55.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences for these situations.",
+      "items": [
+        {"num": 2, "parts": ["They invited him ", "."], "answers": [["to stay with them"]]},
+        {"num": 3, "parts": ["He reminded her ", "."], "answers": [["to call Joe"]]},
+        {"num": 4, "parts": ["She warned ", "."], "answers": [["him to be careful"]]},
+        {"num": 5, "parts": ["He asked ", "."], "answers": [["her to give him a hand"]]}
+      ]
+    },
+    {
+      "id": "55.3",
+      "type": "fill-in",
+      "instruction": "Complete the second sentence so that the meaning is similar to the first sentence.",
+      "items": [
+        {"num": 2, "parts": ["I didn\u2019t expect ", "."], "answers": [["it to rain"]]},
+        {"num": 3, "parts": ["Let ", "."], "answers": [["him do what he wants"]]},
+        {"num": 4, "parts": ["Tom\u2019s glasses make ", "."], "answers": [["him look older"]]},
+        {"num": 5, "parts": ["I want ", "."], "answers": [["you to know the truth"]]},
+        {"num": 6, "parts": ["Sarah persuaded ", "."], "answers": [["me to apply for the job"]]},
+        {"num": 7, "parts": ["My lawyer advised ", "."], "answers": [["me not to say anything to the police"]]},
+        {"num": 8, "parts": ["I was warned ", "."], "answers": [["not to believe everything he says"]]},
+        {"num": 9, "parts": ["Having a car enables ", "."], "answers": [["you to get around more easily"]]}
+      ]
+    },
+    {
+      "id": "55.4",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {"num": 1, "options": ["You aren\u2019t allowed take pictures here.", "You aren\u2019t allowed to take pictures here."], "answer": 1},
+        {"num": 2, "options": ["What do you advise me do?", "What do you advise me to do?"], "answer": 1},
+        {"num": 3, "options": ["It made me cry.", "It made me to cry."], "answer": 0},
+        {"num": 4, "options": ["Lisa\u2019s parents always encouraged her study hard at school.", "Lisa\u2019s parents always encouraged her to study hard at school."], "answer": 1},
+        {"num": 5, "options": ["Let me finish.", "Let me to finish."], "answer": 0},
+        {"num": 6, "options": ["You can\u2019t make people do things they don\u2019t want to do.", "You can\u2019t make people to do things they don\u2019t want to do."], "answer": 0},
+        {"num": 7, "options": ["You can\u2019t force people do things they don\u2019t want to do.", "You can\u2019t force people to do things they don\u2019t want to do."], "answer": 1},
+        {"num": 8, "options": ["Sarah won\u2019t let me drive her car.", "Sarah won\u2019t let me to drive her car."], "answer": 0},
+        {"num": 9, "options": ["What made you change your mind?", "What made you to change your mind?"], "answer": 0},
+        {"num": 10, "options": ["You are not allowed work there.", "You are not allowed to work there."], "answer": 1}
+      ]
+    }
+  ]
+}

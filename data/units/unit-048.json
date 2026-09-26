@@ -1,0 +1,54 @@
+{
+  "unit": 48,
+  "title": "Reported speech 2",
+  "pdfPages": [108, 109],
+  "exercises": [
+    {
+      "id": "48.1",
+      "type": "fill-in",
+      "instruction": "Here are some things that Sarah said to you earlier. But later Sarah says something different to you. What do you say?",
+      "items": [
+        { "num": 1, "parts": ["Dave works very hard. But you said ", "."], "answers": [["he was lazy"]] },
+        { "num": 2, "parts": ["Let's have fish for dinner. But you said ", "."], "answers": [["you didn't like fish"]] },
+        { "num": 3, "parts": ["I'm going to buy a car. But you said ", "."], "answers": [["you couldn't drive"]] },
+        { "num": 4, "parts": ["Jane is always short of money. But you said ", "."], "answers": [["she had a very well-paid job"]] },
+        { "num": 5, "parts": ["My sister lives in Paris. But you said ", "."], "answers": [["you didn't have any brothers or sisters"]] },
+        { "num": 6, "parts": ["I think New York is a great place. But you said ", "."], "answers": [["you'd never been to the United States", "you had never been to the United States"]] },
+        { "num": 7, "parts": ["Let's go out tomorrow evening. But you said ", "."], "answers": [["you were working tomorrow evening"]] },
+        { "num": 8, "parts": ["I've never spoken to Jane. But you said ", "."], "answers": [["she was a friend of yours"]] }
+      ]
+    },
+    {
+      "id": "48.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with say or tell (in the correct form). Use only one word each time.",
+      "items": [
+        { "num": 1, "parts": ["Anna ", " goodbye to me and left."], "answers": [["said"]] },
+        { "num": 2, "parts": ["", " us about your holiday. Did you have a nice time?"], "answers": [["Tell"]] },
+        { "num": 3, "parts": ["Don't just stand there! ", " something!"], "answers": [["Say"]] },
+        { "num": 4, "parts": ["I wonder where Sue is. She ", " she would be here at 8 o'clock."], "answers": [["said"]] },
+        { "num": 5, "parts": ["Dan ", " me that he was bored with his job."], "answers": [["told"]] },
+        { "num": 6, "parts": ["The doctor ", " that I should rest for at least a week."], "answers": [["said"]] },
+        { "num": 7, "parts": ["Gary couldn't help me. He ", " me to ask Chris."], "answers": [["told"]] },
+        { "num": 8, "parts": ["Gary couldn't help me. He ", " to ask Chris."], "answers": [["said"]] },
+        { "num": 9, "parts": ["Don't ", " anybody what I ", ". It's a secret just between us."], "answers": [["tell"], ["said"]] },
+        { "num": 10, "parts": ["'Did Kate ", " you what happened?' 'No, she didn't ", " anything to me.'"], "answers": [["tell"], ["say"]] }
+      ]
+    },
+    {
+      "id": "48.3",
+      "type": "fill-in",
+      "instruction": "The following sentences are direct speech. Now choose one of these to complete each of the sentences below. Use reported speech.",
+      "items": [
+        { "num": 1, "parts": ["Will was taking a long time to get ready, so I told him to ", "."], "answers": [["hurry up"]] },
+        { "num": 2, "parts": ["Sarah was driving too fast, so I asked ", "."], "answers": [["her to slow down"]] },
+        { "num": 3, "parts": ["Sue was nervous about the situation. I told ", "."], "answers": [["her not to worry"]] },
+        { "num": 4, "parts": ["I couldn't move the piano alone, so I ", "."], "answers": [["asked Tom to give me a hand", "asked Tom to help me"]] },
+        { "num": 5, "parts": ["The security guard looked at me suspiciously and ", "."], "answers": [["asked me to open my bag"]] },
+        { "num": 6, "parts": ["The man started asking me personal questions, so I ", "."], "answers": [["told him to mind his own business"]] },
+        { "num": 7, "parts": ["Carl was in love with Maria, so he ", "."], "answers": [["asked her to marry him"]] },
+        { "num": 8, "parts": ["I didn't want to delay Helen, so I ", "."], "answers": [["told her not to wait (for me) if I was late"]] }
+      ]
+    }
+  ]
+}

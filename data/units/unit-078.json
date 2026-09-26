@@ -1,0 +1,144 @@
+{
+  "unit": 78,
+  "title": "Names with and without the 2",
+  "pdfPages": [168, 169],
+  "exercises": [
+    {
+      "id": "78.1",
+      "type": "fill-in",
+      "instruction": "Use the map to answer the questions. Write the name of the place and the street it is in. Use the if necessary. (Remember that on maps we do not normally use the.)",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Turner's in ", ""],
+          "answers": [["Carter Road"]]
+        },
+        {
+          "num": 3,
+          "parts": ["", " in Park Road"],
+          "answers": [["the Crown (Hotel)"]]
+        },
+        {
+          "num": 4,
+          "parts": ["", " in Market Street"],
+          "answers": [["St Peter's"]]
+        },
+        {
+          "num": 5,
+          "parts": ["", " in George Street"],
+          "answers": [["the City Museum"]]
+        },
+        {
+          "num": 6,
+          "parts": ["", " in Forest Avenue"],
+          "answers": [["Blackstone's"]]
+        },
+        {
+          "num": 7,
+          "parts": ["", " in George Street"],
+          "answers": [["Mario's"]]
+        },
+        {
+          "num": 8,
+          "parts": ["", " at the end of Market Street"],
+          "answers": [["Victoria Park"]]
+        }
+      ]
+    },
+    {
+      "id": "78.2",
+      "type": "matching",
+      "instruction": "Where are the following? Use the where necessary.",
+      "leftOptions": ["1 Times Square", "2 The Eiffel Tower", "3 Buckingham Palace", "4 The White House", "5 The Kremlin", "6 Broadway", "7 The Acropolis", "8 Gatwick Airport"],
+      "rightOptions": ["a New York", "b Paris", "c London", "d Washington", "e Moscow", "f Athens", "g near London"],
+      "pairs": [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 0], [6, 5], [7, 6]]
+    },
+    {
+      "id": "78.3",
+      "type": "write",
+      "instruction": "Which is right?",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Have you ever been to Science Museum / the Science Museum?",
+          "answers": ["the Science Museum"]
+        },
+        {
+          "num": 2,
+          "prompt": "Many tourists in London visit St Paul's Cathedral / the St Paul's Cathedral.",
+          "answers": ["St Paul's Cathedral"]
+        },
+        {
+          "num": 3,
+          "prompt": "The biggest park in New York is Central Park / The Central Park.",
+          "answers": ["Central Park"]
+        },
+        {
+          "num": 4,
+          "prompt": "I'd like to go to China and see Great Wall / the Great Wall.",
+          "answers": ["the Great Wall"]
+        },
+        {
+          "num": 5,
+          "prompt": "Dublin Airport / The Dublin Airport is situated about 12 kilometres from the city centre.",
+          "answers": ["Dublin Airport"]
+        },
+        {
+          "num": 6,
+          "prompt": "'Which cinema are we going to this evening?' 'Classic / The Classic.'",
+          "answers": ["The Classic"]
+        },
+        {
+          "num": 7,
+          "prompt": "Jack is a student at Liverpool University / the Liverpool University.",
+          "answers": ["Liverpool University"]
+        },
+        {
+          "num": 8,
+          "prompt": "You should go to National Museum / the National Museum. It's very interesting.",
+          "answers": ["the National Museum"]
+        },
+        {
+          "num": 9,
+          "prompt": "If you're looking for a department store, I would recommend Harrison's / the Harrison's.",
+          "answers": ["Harrison's"]
+        },
+        {
+          "num": 10,
+          "prompt": "Andy is a flight attendant. He works for Cathay Pacific / the Cathay Pacific.",
+          "answers": ["Cathay Pacific"]
+        },
+        {
+          "num": 11,
+          "prompt": "'Which newspaper do you want?' 'Morning News / The Morning News.'",
+          "answers": ["The Morning News"]
+        },
+        {
+          "num": 12,
+          "prompt": "We went to Italy and saw Leaning Tower / the Leaning Tower of Pisa.",
+          "answers": ["the Leaning Tower"]
+        },
+        {
+          "num": 13,
+          "prompt": "This book is published by Cambridge University Press / the Cambridge University Press.",
+          "answers": ["Cambridge University Press"]
+        },
+        {
+          "num": 14,
+          "prompt": "The building across the street is College of Art / the College of Art.",
+          "answers": ["the College of Art"]
+        },
+        {
+          "num": 15,
+          "prompt": "Imperial Hotel / The Imperial Hotel is in Baker Street / the Baker Street.",
+          "answers": ["The Imperial Hotel", "Baker Street"]
+        },
+        {
+          "num": 16,
+          "prompt": "Statue of Liberty / The Statue of Liberty is at the entrance to New York Harbor / the New York Harbor.",
+          "answers": ["The Statue of Liberty", "New York Harbor"]
+        }
+      ]
+    }
+  ]
+}

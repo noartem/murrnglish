@@ -1,0 +1,67 @@
+{
+  "unit": 127,
+  "title": "in/on/at (other uses)",
+  "pdfPages": [266, 267],
+  "exercises": [
+    {
+      "id": "127.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using in + the following:",
+      "wordBank": ["the mood", "cold weather", "love", "my opinion", "French", "the rain", "kilometres", "the shade"],
+      "items": [
+        {"num": 2, "parts": ["Matt likes to keep warm, so he doesn't go out much ", "."], "answers": [["in cold weather"]]},
+        {"num": 3, "parts": ["The movie was ", " with English subtitles."], "answers": [["in French"]]},
+        {"num": 4, "parts": ["They fell ", " almost immediately and were married in a few weeks."], "answers": [["in love"]]},
+        {"num": 5, "parts": ["I don't feel like going to a party tonight. I'm not ", "."], "answers": [["in the mood"]]},
+        {"num": 6, "parts": ["It's too hot here. I'm going to sit ", " under that tree."], "answers": [["in the shade"]]},
+        {"num": 7, "parts": ["Amanda thought the restaurant was OK, but ", " it wasn't very good."], "answers": [["in my opinion"]]},
+        {"num": 8, "parts": ["Fifty miles? What's that ", "?"], "answers": [["in kilometres"]]}
+      ]
+    },
+    {
+      "id": "127.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using on + the following:",
+      "wordBank": ["business", "a cruise", "a diet", "fire", "holiday", "her phone", "the radio", "purpose", "strike", "TV", "a tour", "the whole"],
+      "items": [
+        {"num": 2, "parts": ["Workers at the company have gone ", " for better pay and conditions."], "answers": [["on strike"]]},
+        {"num": 3, "parts": ["Don't go ", " if you don't like being at sea."], "answers": [["on a cruise"]]},
+        {"num": 4, "parts": ["There was panic when people realised that the building was ", "."], "answers": [["on fire"]]},
+        {"num": 5, "parts": ["Soon after we arrived, we were taken ", " of the city."], "answers": [["on a tour"]]},
+        {"num": 6, "parts": ["Emma has lots of useful apps ", "."], "answers": [["on her phone"]]},
+        {"num": 7, "parts": ["I feel lazy this evening. Is there anything worth watching ", "?"], "answers": [["on TV"]]},
+        {"num": 8, "parts": ["I'm sorry. It was an accident. I didn't do it ", "."], "answers": [["on purpose"]]},
+        {"num": 9, "parts": ["If you are ", ", there are certain things you're not allowed to eat."], "answers": [["on a diet"]]},
+        {"num": 10, "parts": ["We'll be ", " from Friday. We're going to the mountains."], "answers": [["on holiday"]]},
+        {"num": 11, "parts": ["Jane's job involves a lot of travelling. She often has to go away ", "."], "answers": [["on business"]]},
+        {"num": 12, "parts": ["Some of the exam questions were hard, but ", " it was OK."], "answers": [["on the whole"]]}
+      ]
+    },
+    {
+      "id": "127.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with in, on or at.",
+      "items": [
+        {"num": 2, "parts": ["When I was 14, I went ", " a trip to France organised by my school."], "answers": [["on"]]},
+        {"num": 3, "parts": ["Julia's grandmother died recently ", " the age of 90."], "answers": [["at"]]},
+        {"num": 4, "parts": ["Can you turn the light on, please? I don't want to sit ", " the dark."], "answers": [["in"]]},
+        {"num": 5, "parts": ["We didn't go ", " holiday last year. We stayed at home."], "answers": [["on"]]},
+        {"num": 6, "parts": ["I hate driving ", " fog. You can't see anything."], "answers": [["in"]]},
+        {"num": 7, "parts": ["Technology has developed ", " great speed."], "answers": [["at"]]},
+        {"num": 8, "parts": ["David got married ", " 19, which is rather young to get married."], "answers": [["at"]]},
+        {"num": 9, "parts": ["I listened to an interesting programme ", " the radio this morning."], "answers": [["on"]]},
+        {"num": 10, "parts": ["I wouldn't like to go ", " a cruise. I think I'd get bored."], "answers": [["on"]]},
+        {"num": 11, "parts": ["The earth travels round the sun ", " 107,000 kilometres an hour."], "answers": [["at"]]},
+        {"num": 12, "parts": ["I shouldn't eat too much. I'm supposed to be ", " a diet."], "answers": [["on"]]},
+        {"num": 13, "parts": ["A lot of houses were damaged ", " the storm last week."], "answers": [["in"]]},
+        {"num": 14, "parts": ["I won't be here next week. I'll be ", " holiday."], "answers": [["on"]]},
+        {"num": 15, "parts": ["I wouldn't like his job. He spends most of his time talking ", " the phone."], "answers": [["on"]]},
+        {"num": 16, "parts": ["'Did you enjoy your holiday?' 'Not every minute, but ", " the whole, yes.'"], "answers": [["on"]]},
+        {"num": 17, "parts": ["", " your opinion, what should I do?"], "answers": [["In"]]},
+        {"num": 18, "parts": ["Ben is a happy sort of person. He always seems to be ", " a good mood."], "answers": [["in"]]},
+        {"num": 19, "parts": ["I don't think violent films should be shown ", " TV."], "answers": [["on"]]},
+        {"num": 20, "parts": ["The museum guidebook is available ", " several languages."], "answers": [["in"]]}
+      ]
+    }
+  ]
+}

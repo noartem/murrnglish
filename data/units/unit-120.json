@@ -1,0 +1,339 @@
+{
+ "unit": 120,
+ "title": "by and until / by the time …",
+ "pdfPages": [
+  252,
+  253
+ ],
+ "exercises": [
+  {
+   "id": "120.1",
+   "type": "fill-in",
+   "instruction": "Complete the sentences with by.",
+   "items": [
+    {
+     "num": 2,
+     "parts": [
+      "I have to be at the airport ",
+      "."
+     ],
+     "answers": [
+      [
+       "by 8.30"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Let me know ",
+      " whether you can come to the party."
+     ],
+     "answers": [
+      [
+       "by Saturday"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Please make sure that you're here ",
+      "."
+     ],
+     "answers": [
+      [
+       "by 2 o'clock"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "If we leave now, we should arrive ",
+      "."
+     ],
+     "answers": [
+      [
+       "by lunchtime"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "120.2",
+   "type": "fill-in",
+   "instruction": "Put in by or until.",
+   "items": [
+    {
+     "num": 2,
+     "parts": [
+      "Sorry, but I must go. I have to be home ",
+      " 5 o'clock."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "According to the forecast, the bad weather will continue ",
+      " the weekend."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I don't know whether to apply for the job or not. I have to decide ",
+      " Friday."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I think I'll wait ",
+      " Thursday before making a decision."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I'm still waiting for Tom to call me. He should have called me ",
+      " now."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I need to pay this bill. It has to be paid ",
+      " tomorrow."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Don't pay the bill today. Wait ",
+      " tomorrow."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "We haven't finished painting the house yet. We hope to finish ",
+      " Tuesday."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "'Will you still be in the office at 6.30?' 'No, I'll have gone home ",
+      " then.'"
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I'm moving into my new flat next week. I'm staying with a friend ",
+      " then."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I've got a lot of work to do. ",
+      " the time I finish, it will be time to go to bed."
+     ],
+     "answers": [
+      [
+       "By"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "We have plenty of time. The film doesn't start ",
+      " 8.30."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "It is hoped that the new bridge will be completed ",
+      " the end of the year."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "120.3",
+   "type": "self-check",
+   "instruction": "Use your own ideas to complete these sentences. Use by or until.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "David is away at the moment. He'll be away until Monday.",
+     "modelAnswers": [
+      "David is away at the moment. He’ll be away until Monday."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "David is away at the moment. He'll be back by Monday.",
+     "modelAnswers": [
+      "David is away at the moment. He’ll be back by Monday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I'm just going out. I won't be long. Wait here",
+     "modelAnswers": [
+      "until I come back"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I'm just going out. It's 4.30 now. I won't be long. I'll be back",
+     "modelAnswers": [
+      "by 5 o'clock"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "If you want to apply for the job, your application must be received",
+     "modelAnswers": [
+      "by 3 April"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "My passport is valid",
+     "modelAnswers": [
+      "until 2028"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "I missed the last bus and had to walk home. I didn't get home",
+     "modelAnswers": [
+      "until midnight"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "120.4",
+   "type": "fill-in",
+   "instruction": "Read the situations and complete the sentences using By the time … .",
+   "items": [
+    {
+     "num": 2,
+     "parts": [
+      "",
+      ", my train had already left."
+     ],
+     "answers": [
+      [
+       "By the time I got to the station"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      ", it was too late to go shopping."
+     ],
+     "answers": [
+      [
+       "By the time I finished (work)"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      ", the two men had disappeared."
+     ],
+     "answers": [
+      [
+       "By the time the police arrived"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      ", we had to come down again."
+     ],
+     "answers": [
+      [
+       "By the time we got to the top (of the mountain)"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

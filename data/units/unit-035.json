@@ -1,0 +1,191 @@
+{
+  "unit": 35,
+  "title": "I'd better … it's time …",
+  "pdfPages": [82, 83],
+  "exercises": [
+    {
+      "id": "35.1",
+      "type": "write",
+      "instruction": "Read the situations and write sentences with 'd better or 'd better not. Choose a verb from:\ncheck · disturb · go · put · reserve · take",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "You're going out for a walk with a friend. It looks as if it might rain.",
+          "answers": ["We'd better take an umbrella."]
+        },
+        {
+          "num": 2,
+          "prompt": "You and Kate plan to go to a restaurant tonight. It will be busy.",
+          "answers": ["We'd better reserve a table.", "We'd better check what time the film starts."]
+        },
+        {
+          "num": 3,
+          "prompt": "Oliver has just cut himself. It's bleeding and he'll need a plaster on it.",
+          "answers": ["You'd better put a plaster on it."]
+        },
+        {
+          "num": 4,
+          "prompt": "Rebecca doesn't look well this morning – not well enough to go to work.",
+          "answers": ["You'd better not go to work this morning."]
+        },
+        {
+          "num": 5,
+          "prompt": "You're going to the cinema, but you're not sure what time the film starts.",
+          "answers": ["I'd better check what time the film starts.", "We'd better check what time the film starts."]
+        },
+        {
+          "num": 6,
+          "prompt": "You need to talk to your boss, but she's very busy right now.",
+          "answers": ["I'd better not disturb her right now.", "We'd better not disturb her right now."]
+        }
+      ]
+    },
+    {
+      "id": "35.2",
+      "type": "write",
+      "instruction": "Is had better OK in these sentences? Change to should where necessary.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "I have an appointment in ten minutes. I'd better go now or I'll be late.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 2,
+          "prompt": "You'd better set your alarm. You have to get up early tomorrow.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 3,
+          "prompt": "I'm glad you came to see us. You'd better come more often.",
+          "answers": ["You should come more often."]
+        },
+        {
+          "num": 4,
+          "prompt": "She'll be sad if we don't invite her to the party, so we'd better invite her.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 5,
+          "prompt": "It's nearly time to go out. I'd better get ready.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 6,
+          "prompt": "I think everybody had better learn a foreign language.",
+          "answers": ["Everybody should learn a foreign language."]
+        },
+        {
+          "num": 7,
+          "prompt": "We've just missed the last bus. We'd better get a taxi.",
+          "answers": ["OK"]
+        }
+      ]
+    },
+    {
+      "id": "35.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Choose from the box.",
+      "wordBank": ["better", "do", "did", "had", "hadn't", "I'd", "not", "to", "take", "should", "was", "were"],
+      "items": [
+        {
+          "num": 1,
+          "parts": ["It might rain. We'd ", " take an umbrella."],
+          "answers": [["better"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Ben needs to know what happened. Somebody ", " better tell him."],
+          "answers": [["had"]]
+        },
+        {
+          "num": 3,
+          "parts": ["We'd better ", " park the car here. The road is too narrow."],
+          "answers": [["not"]]
+        },
+        {
+          "num": 4,
+          "parts": ["You ", " brush your teeth at least twice a day."],
+          "answers": [["should"]]
+        },
+        {
+          "num": 5,
+          "parts": ["What are we going to do? It's time ", " decide."],
+          "answers": [["to"]]
+        },
+        {
+          "num": 6,
+          "parts": ["", " better not be late. It's an important meeting."],
+          "answers": [["I'd"]]
+        },
+        {
+          "num": 7,
+          "parts": ["It's time they ", " here. They promised they wouldn't be late."],
+          "answers": [["were"]]
+        },
+        {
+          "num": 8,
+          "parts": ["The window is open. You'd ", " close it before you go out."],
+          "answers": [["better"]]
+        },
+        {
+          "num": 9,
+          "parts": ["We'd better leave as soon as possible, ", " we?"],
+          "answers": [["hadn't"]]
+        },
+        {
+          "num": 10,
+          "parts": ["The government should ", " something about the problem."],
+          "answers": [["do"]]
+        },
+        {
+          "num": 11,
+          "parts": ["It's time the government ", " something about the problem."],
+          "answers": [["did"]]
+        },
+        {
+          "num": 12,
+          "parts": ["It's time something ", " done about the problem."],
+          "answers": [["was"]]
+        }
+      ]
+    },
+    {
+      "id": "35.4",
+      "type": "write",
+      "instruction": "Read the situations and write sentences with It's time (somebody did something).",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "You're at a friend's house. You planned to go home at 11 o'clock. It's already 11 o'clock now. (I / go)",
+          "answers": ["It's time I went home."]
+        },
+        {
+          "num": 2,
+          "prompt": "You haven't had a holiday for a very long time. You need one now. (I / holiday)",
+          "answers": ["It's time I had a holiday."]
+        },
+        {
+          "num": 3,
+          "prompt": "It's 10 o'clock. It's after the children's bedtime. You think they should be in bed. (children / bed)",
+          "answers": ["It's time the children were in bed.", "It's time the children went to bed."]
+        },
+        {
+          "num": 4,
+          "prompt": "You didn't realise it was so late. You need to start cooking dinner. (start / cook)",
+          "answers": ["It's time I started cooking dinner."]
+        },
+        {
+          "num": 5,
+          "prompt": "Kate is always complaining about everything. You think she complains too much. (stop / complaining)",
+          "answers": ["It's time she stopped complaining about everything.", "It's time Kate stopped complaining about everything."]
+        },
+        {
+          "num": 6,
+          "prompt": "The company you work for has been badly managed for a long time. You think some changes should be made. (changes / make)",
+          "answers": ["It's time some changes were made in the way the company is run."]
+        }
+      ]
+    }
+  ]
+}

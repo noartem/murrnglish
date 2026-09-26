@@ -1,0 +1,231 @@
+{
+  "unit": 73,
+  "title": "the 1",
+  "pdfPages": [158, 159],
+  "exercises": [
+    {
+      "id": "73.1",
+      "type": "fill-in",
+      "instruction": "Put in the or a where necessary. If no word is necessary, leave the space empty.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Is it? I hope there\u2019s ", " lift."],
+          "answers": [["a"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Did you have ", " nice holiday?"],
+          "answers": [["a"]]
+        },
+        {
+          "num": "4a",
+          "parts": ["", " nearest shop?"],
+          "answers": [["The"]]
+        },
+        {
+          "num": "4b",
+          "parts": ["There\u2019s one at ", " end of this street."],
+          "answers": [["the"]]
+        },
+        {
+          "num": "5a",
+          "parts": ["It\u2019s ", " lovely day, isn\u2019t it?"],
+          "answers": [["a"]]
+        },
+        {
+          "num": "5b",
+          "parts": ["Yes, there isn\u2019t ", " cloud in ", " sky."],
+          "answers": [["a"], ["the"]]
+        },
+        {
+          "num": "6a",
+          "parts": ["We spent all our money because we stayed at ", " most expensive hotel in town."],
+          "answers": [["the"]]
+        },
+        {
+          "num": "6b",
+          "parts": ["Why didn\u2019t you stay at ", " cheaper hotel?"],
+          "answers": [["a"]]
+        },
+        {
+          "num": "7a",
+          "parts": ["Would you like to travel in ", " space?"],
+          "answers": [["the"]]
+        },
+        {
+          "num": "7b",
+          "parts": ["Yes, I\u2019d love to go to ", " moon."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 8,
+          "parts": ["What did you think of ", " movie last night?"],
+          "answers": [["the"]]
+        },
+        {
+          "num": 9,
+          "parts": ["It was OK, but I thought ", " ending was a bit strange."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 10,
+          "parts": ["What\u2019s Jupiter? Is it ", " star?"],
+          "answers": [["a"]]
+        },
+        {
+          "num": 11,
+          "parts": ["No, it\u2019s ", " planet. It\u2019s ", " largest planet in ", " solar system."],
+          "answers": [["a"], ["the"], ["the"]]
+        }
+      ]
+    },
+    {
+      "id": "73.2",
+      "type": "choice",
+      "instruction": "Which is right? (For the, see also Unit 72.)",
+      "items": [
+        {
+          "num": 2,
+          "options": ["TV", "the TV"],
+          "answer": 0
+        },
+        {
+          "num": 3,
+          "options": ["radio", "the radio"],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": ["Television", "The television"],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": ["dinner", "the dinner"],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": ["same name", "the same name"],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": ["for breakfast", "for the breakfast"],
+          "answer": 0
+        },
+        {
+          "num": 8,
+          "options": ["vitamin C", "the vitamin C"],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": ["internet", "the internet"],
+          "answer": 1
+        },
+        {
+          "num": 10,
+          "options": ["ground", "the ground", "sky", "the sky"],
+          "answer": 1
+        },
+        {
+          "num": 11,
+          "options": ["Next train", "The next train", "platform 3", "the platform 3"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "73.3",
+      "type": "fill-in",
+      "instruction": "Put in the or a where necessary. (For a and the see also Units 71\u201372.)",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["", " sun is ", " star."],
+          "answers": [["The"], ["a"]]
+        },
+        {
+          "num": 2,
+          "parts": ["I\u2019m fed up with doing ", " same thing every day."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Room 25 is on ", " second floor."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 4,
+          "parts": ["It was ", " very hot day. It was ", " hottest day of ", " year."],
+          "answers": [["a"], ["the"], ["the"]]
+        },
+        {
+          "num": 5,
+          "parts": ["We had lunch in ", " nice restaurant by ", " sea."],
+          "answers": [["a"], ["the"]]
+        },
+        {
+          "num": 6,
+          "parts": ["What\u2019s on at ", " cinema this week?"],
+          "answers": [["the"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I had ", " big breakfast this morning."],
+          "answers": [["a"]]
+        },
+        {
+          "num": 8,
+          "parts": ["You\u2019ll find ", " information you need at ", " top of page 15."],
+          "answers": [["the"], ["the"]]
+        }
+      ]
+    },
+    {
+      "id": "73.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Choose from the box and use the where necessary.",
+      "wordBank": ["breakfast", "cinema", "gate", "Gate 24", "lunch", "question", "question 3", "sea"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["There was no wind, so ", " was very calm."],
+          "answers": [["the sea"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Most of the questions in the test were OK, but I couldn\u2019t answer ", "."],
+          "answers": [["question 3"]]
+        },
+        {
+          "num": 4,
+          "parts": ["\u2018I\u2019m going to ", " tonight.\u2019 \u2018Are you? What are you going to see?\u2019"],
+          "answers": [["the cinema"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I\u2019m sorry, but could you repeat ", ", please?"],
+          "answers": [["the question"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I didn\u2019t have ", " this morning because I was in a hurry."],
+          "answers": [["breakfast"]]
+        },
+        {
+          "num": 7,
+          "parts": ["(airport announcement) Flight AB123 to Rome is now boarding at ", "."],
+          "answers": [["Gate 24"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I forgot to shut ", ". Can you shut it for me?"],
+          "answers": [["the gate"]]
+        }
+      ]
+    }
+  ]
+}

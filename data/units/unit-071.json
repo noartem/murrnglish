@@ -1,0 +1,212 @@
+{
+  "unit": 71,
+  "title": "Countable nouns with a/an and some",
+  "pdfPages": [154, 155],
+  "exercises": [
+    {
+      "id": "71.1",
+      "type": "fill-in",
+      "instruction": "What are these things? Choose from the box and write a sentence.",
+      "wordBank": ["bird(s)", "flower(s)", "game(s)", "insect(s)", "language(s)", "planet(s)", "river(s)", "tool(s)", "vegetable(s)"],
+      "items": [
+        {
+          "num": 3,
+          "parts": ["", " carrots and onions"],
+          "answers": [["vegetables"]]
+        },
+        {
+          "num": 4,
+          "parts": ["", " a tulip"],
+          "answers": [["flower"]]
+        },
+        {
+          "num": 5,
+          "parts": ["", ", Mars and Jupiter"],
+          "answers": [["planets"]]
+        },
+        {
+          "num": 6,
+          "parts": ["", " is a game."],
+          "answers": [["chess"]]
+        },
+        {
+          "num": 7,
+          "parts": ["", ", a saw and a screwdriver"],
+          "answers": [["tools"]]
+        },
+        {
+          "num": 8,
+          "parts": ["", ", the Rhine and the Mekong"],
+          "answers": [["rivers"]]
+        },
+        {
+          "num": 9,
+          "parts": ["", " is an insect."],
+          "answers": [["mosquito"]]
+        },
+        {
+          "num": 10,
+          "parts": ["", ", Arabic and Swahili"],
+          "answers": [["languages"]]
+        }
+      ]
+    },
+    {
+      "id": "71.2",
+      "type": "fill-in",
+      "instruction": "Read about what these people do. What are their jobs? Choose from:",
+      "wordBank": ["chef", "interpreter", "journalist", "nurse", "plumber", "surgeon", "tour guide", "waiter"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Gary works in a restaurant. He brings the food to the tables. He\u2019s ", "."],
+          "answers": [["a waiter"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Jane writes articles for a newspaper. She\u2019s ", "."],
+          "answers": [["a journalist"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Kevin works in a hospital. He operates on people. He\u2019s ", "."],
+          "answers": [["a surgeon"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Jonathan cooks in a restaurant. He\u2019s ", "."],
+          "answers": [["a chef"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Dave installs and repairs water pipes. He\u2019s ", "."],
+          "answers": [["a plumber"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Anna shows visitors round her city and tells them about it. She\u2019s ", "."],
+          "answers": [["a tour guide"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Lisa translates what people are saying from one language into another, so that they can understand each other. She\u2019s ", "."],
+          "answers": [["an interpreter"]]
+        }
+      ]
+    },
+    {
+      "id": "71.3",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {
+          "num": 2,
+          "options": ["careful driver", "a careful driver"],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["books", "some books"],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": ["books", "some books"],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": ["sore feet", "some sore feet"],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": ["sore throat", "a sore throat"],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": ["lovely present", "a lovely present"],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": ["students", "some students"],
+          "answer": 1
+        },
+        {
+          "num": 9,
+          "options": ["without umbrella", "without an umbrella"],
+          "answer": 1
+        },
+        {
+          "num": 10,
+          "options": ["People", "Some people"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "71.4",
+      "type": "fill-in",
+      "instruction": "Put in a/an or some where necessary. If no word is necessary, leave the space empty.",
+      "items": [
+        {
+          "num": 4,
+          "parts": ["When I was ", " child, I used to be very shy."],
+          "answers": [["a"]]
+        },
+        {
+          "num": 5,
+          "parts": ["", " birds, for example the penguin, cannot fly."],
+          "answers": [["Some"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Would you like to be ", " actor?"],
+          "answers": [["an"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Questions, questions, questions! You\u2019re always asking ", " questions!"],
+          "answers": [["\u2013"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I didn\u2019t expect to see you. What ", " surprise!"],
+          "answers": [["a"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Do you like staying in ", " hotels?"],
+          "answers": [["\u2013"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Tomorrow is a holiday. ", " shops will be open, but most of them will be closed."],
+          "answers": [["Some"]]
+        },
+        {
+          "num": 11,
+          "parts": ["Those are ", " nice shoes. Where did you get them?"],
+          "answers": [["\u2013"]]
+        },
+        {
+          "num": 12,
+          "parts": ["You need ", " visa to visit ", " countries, but not all of them."],
+          "answers": [["a"], ["some"]]
+        },
+        {
+          "num": 13,
+          "parts": ["Kate is ", " teacher. Her parents were ", " teachers too."],
+          "answers": [["a"], ["a"]]
+        },
+        {
+          "num": 14,
+          "parts": ["I don\u2019t believe him. He\u2019s ", " liar. He\u2019s always telling ", " lies."],
+          "answers": [["a"], ["some"]]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": 25,
+  "topic": "Reported speech",
+  "refs": "Units 47–48, 50",
+  "pdfPages": [328, 329],
+  "exercise": {
+    "id": "25",
+    "type": "fill-in",
+    "instruction": "Complete the sentences using reported speech.",
+    "items": [
+      {
+        "num": 1,
+        "parts": ["A woman phoned at lunchtime yesterday and asked if she could speak to Paul. I told ", " and ", ". I asked ", ", but she said ", " later.\nBut she never did."],
+        "answers": [["her (that) Paul had gone out", "her that Paul had gone out"], ["I didn't know when he'd be back"], ["(her) if/whether she wanted to leave a message", "if she wanted to leave a message", "whether she wanted to leave a message", "her if she wanted to leave a message", "her whether she wanted to leave a message"], ["(that) she'd try again", "that she'd try again"]]
+      },
+      {
+        "num": 2,
+        "parts": ["I went to London recently, but my visit didn't begin well. I had reserved a hotel room, but when I got to the hotel they told ", ". When I asked ", ", they said ", ", but ", ". There was nothing I could do. I just had to look for somewhere else to stay."],
+        "answers": [["me (that) they had no record of a reservation in my name", "me that they had no record of a reservation in my name"], ["(them) if/whether they had any rooms free anyway", "if they had any rooms free anyway", "whether they had any rooms free anyway", "them if they had any rooms free anyway", "them whether they had any rooms free anyway"], ["(that) they were sorry", "they were sorry"], ["the hotel was full"]]
+      },
+      {
+        "num": 3,
+        "parts": ["After getting off the plane, we had to queue for an hour to get through immigration. Finally, it was our turn. The immigration officer asked us ", ", and we told ", ". Then he wanted to know ", " and ", ". He seemed satisfied with our answers, checked our passports and wished us a pleasant stay."],
+        "answers": [["why we were visiting the country"], ["him (that) we were on holiday", "him that we were on holiday"], ["how long we intended to stay"], ["where we would be staying during our visit"]]
+      },
+      {
+        "num": 4,
+        "parts": ["a: What time is Sue arriving this afternoon?\nb: About three. She said ", ".\na: Aren't you going to meet her?\nb: No, she said not ", ". She said that ", "."],
+        "answers": [["(that) she'd phone us from the airport when she arrived", "that she'd phone us from the airport when she arrived", "(that) she'll phone us from the airport when she arrives", "that she'll phone us from the airport when she arrives"], ["to come to the airport"], ["she'd take the bus", "she'll take the bus"]]
+      },
+      {
+        "num": 5,
+        "parts": ["A few days ago a man phoned from a marketing company and started asking me questions. He wanted to know ", " and asked ", ". I don't like people phoning and asking questions like that, so I told ", " and ended the call."],
+        "answers": [["what my job was", "what my job is"], ["(me) how much I earned", "(me) how much I earn", "how much I earned", "how much I earn"], ["him to mind his own business"]]
+      },
+      {
+        "num": 6,
+        "parts": ["SaRaH: I wonder where Paul is. He said ", ".\nLOUISE: Maybe he got lost.\nSaRaH: I don't think so. He said ", ".\nAnd I told ", "."],
+        "answers": [["(that) he'd be at the restaurant at 7.30", "that he'd be at the restaurant at 7.30"], ["(that) he knew where the restaurant was", "that he knew where the restaurant was"], ["him to phone me if there was a problem"]]
+      },
+      {
+        "num": 7,
+        "parts": ["JaNE: You just said ", ".\nJOE: Well, I am now. I'd love a banana.\nJaNE: A banana? But you said ", ".\nYou told ", "."],
+        "answers": [["(that) you weren't hungry", "that you weren't hungry"], ["(that) you didn't like bananas", "that you didn't like bananas"], ["me not to buy any"]]
+      }
+    ]
+  }
+}

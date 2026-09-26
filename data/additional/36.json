@@ -1,0 +1,113 @@
+{
+  "id": 36,
+  "topic": "Verb + preposition",
+  "refs": "Units 132–136",
+  "pdfPages": [335],
+  "exercise": {
+    "id": "36",
+    "type": "fill-in",
+    "instruction": "Complete each sentence with a preposition where necessary. If no preposition is necessary, leave the space empty.",
+    "items": [
+      {
+        "num": 1,
+        "parts": ["She works quite hard. You can't accuse her ", " being lazy."],
+        "answers": [["of"]]
+      },
+      {
+        "num": 2,
+        "parts": ["Who's going to look ", " your children while you're at work?"],
+        "answers": [["after"]]
+      },
+      {
+        "num": 3,
+        "parts": ["The problem is becoming serious. We have to discuss ", " it."],
+        "answers": [["(no preposition)"]]
+      },
+      {
+        "num": 4,
+        "parts": ["The problem is becoming serious. We have to do something ", " it."],
+        "answers": [["about"]]
+      },
+      {
+        "num": 5,
+        "parts": ["I prefer this chair ", " the other one. It's more comfortable."],
+        "answers": [["to"]]
+      },
+      {
+        "num": 6,
+        "parts": ["I need to call ", " the office to tell them I won't be at work today."],
+        "answers": [["(no preposition)"]]
+      },
+      {
+        "num": 7,
+        "parts": ["The river divides the city ", " two parts."],
+        "answers": [["into"]]
+      },
+      {
+        "num": 8,
+        "parts": ["'What do you think ", " your new boss?' 'She's all right, I suppose.'"],
+        "answers": [["of", "about"]]
+      },
+      {
+        "num": 9,
+        "parts": ["Can somebody please explain ", " me what I have to do?"],
+        "answers": [["to"]]
+      },
+      {
+        "num": 10,
+        "parts": ["I said hello to her, but she didn't answer ", " me."],
+        "answers": [["(no preposition)"]]
+      },
+      {
+        "num": 11,
+        "parts": ["'Do you like staying at hotels?' 'It depends ", " the hotel.'"],
+        "answers": [["on"]]
+      },
+      {
+        "num": 12,
+        "parts": ["'Have you ever been to Borla?' 'No, I've never heard ", " it. Where is it?'"],
+        "answers": [["of"]]
+      },
+      {
+        "num": 13,
+        "parts": ["You remind me ", " somebody I knew a long time ago. You look just like her."],
+        "answers": [["of"]]
+      },
+      {
+        "num": 14,
+        "parts": ["This is wonderful news! I can't believe ", " it."],
+        "answers": [["(no preposition)"]]
+      },
+      {
+        "num": 15,
+        "parts": ["George is not an idealist \u2013 he believes ", " being practical."],
+        "answers": [["in"]]
+      },
+      {
+        "num": 16,
+        "parts": ["What's funny? What are you laughing ", " ?"],
+        "answers": [["at", "about"]]
+      },
+      {
+        "num": 17,
+        "parts": ["What did you do with all the money you had? What did you spend it ", " ?"],
+        "answers": [["on"]]
+      },
+      {
+        "num": 18,
+        "parts": ["If Alex asks ", " you ", " money, don't give him any."],
+        "answers": [["(no preposition)"], ["for"]]
+      },
+      {
+        "num": 19,
+        "parts": ["I apologised ", " Sarah ", " keeping her waiting so long."],
+        "answers": [["to"], ["for"]]
+      },
+      {
+        "num": 20,
+        "parts": ["Lisa was very helpful. I thanked ", " her ", " everything she'd done."],
+        "answers": [["(no preposition)"], ["for"]]
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "unit": 81,
+  "title": "-\u2019s (your sister\u2019s name) and of \u2026 (the name of the book)",
+  "pdfPages": [174, 175],
+  "exercises": [
+    {
+      "id": "81.1",
+      "type": "write",
+      "instruction": "In some of these sentences, it is more natural to use -\u2019s or -\u2019. Change the underlined parts where necessary.",
+      "items": [
+        {"num": 1, "prompt": "Who is the owner of this restaurant?", "answers": ["OK"]},
+        {"num": 2, "prompt": "How old are the children of Chris?", "answers": ["Chris\u2019s children"]},
+        {"num": 3, "prompt": "Is this the umbrella of your friend?", "answers": ["your friend\u2019s umbrella"]},
+        {"num": 4, "prompt": "Write your name at the top of the page.", "answers": ["OK"]},
+        {"num": 5, "prompt": "I\u2019ve never met the daughter of James.", "answers": ["James\u2019s daughter"]},
+        {"num": 6, "prompt": "How old is the son of Helen and Andy?", "answers": ["Helen and Andy\u2019s son"]},
+        {"num": 7, "prompt": "We don\u2019t know the cause of the problem.", "answers": ["OK"]},
+        {"num": 8, "prompt": "I don\u2019t know the words of this song.", "answers": ["OK"]},
+        {"num": 9, "prompt": "The friends of your children are here.", "answers": ["Your children\u2019s friends"]},
+        {"num": 10, "prompt": "What is the cost of a new washing machine?", "answers": ["OK"]},
+        {"num": 11, "prompt": "The garden of our neighbours is very small.", "answers": ["Our neighbours\u2019 garden"]},
+        {"num": 12, "prompt": "The hair of David is very long.", "answers": ["David\u2019s hair"]},
+        {"num": 13, "prompt": "I work on the ground floor of the building.", "answers": ["OK"]},
+        {"num": 14, "prompt": "I couldn\u2019t go to the party of my best friend.", "answers": ["my best friend\u2019s party"]},
+        {"num": 15, "prompt": "George is the brother of somebody I knew at college.", "answers": ["OK"]},
+        {"num": 16, "prompt": "Have you seen the car of the parents of Ben?", "answers": ["Ben\u2019s parents\u2019 car"]},
+        {"num": 17, "prompt": "What is the meaning of this expression?", "answers": ["OK"]},
+        {"num": 18, "prompt": "Do you agree with the policy of the government?", "answers": ["OK"]}
+      ]
+    },
+    {
+      "id": "81.2",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {"num": 1, "options": ["cat", "cat\u2019s", "cats\u2019"], "answer": 1},
+        {"num": 2, "options": ["father", "father\u2019s", "fathers\u2019"], "answer": 1},
+        {"num": 3, "options": ["apples", "apple\u2019s", "apples\u2019"], "answer": 0},
+        {"num": 4, "options": ["Children", "Children\u2019s", "Childrens\u2019"], "answer": 1},
+        {"num": 5, "options": ["Switzerland", "Switzerland\u2019s", "Switzerlands\u2019"], "answer": 1},
+        {"num": 6, "options": ["parents", "parent\u2019s", "parents\u2019"], "answer": 2},
+        {"num": 7, "options": ["photos", "photo\u2019s", "photos\u2019"], "answer": 0},
+        {"num": 8, "options": ["someone else", "someone else\u2019s", "someone elses\u2019"], "answer": 1},
+        {"num": 9, "options": ["Shakespeare", "Shakespeare\u2019s", "Shakespeares\u2019"], "answer": 1}
+      ]
+    },
+    {
+      "id": "81.3",
+      "type": "write",
+      "instruction": "Read each sentence and write a new sentence beginning with the underlined words.",
+      "items": [
+        {"num": 1, "prompt": "The meeting tomorrow has been cancelled.", "answers": ["Tomorrow\u2019s meeting has been cancelled."]},
+        {"num": 2, "prompt": "The storm last week caused a lot of damage.", "answers": ["Last week\u2019s storm caused a lot of damage."]},
+        {"num": 3, "prompt": "The only cinema in the town has closed down.", "answers": ["The town\u2019s only cinema has closed down."]},
+        {"num": 4, "prompt": "The weather in Britain is very changeable.", "answers": ["Britain\u2019s weather is very changeable."]},
+        {"num": 5, "prompt": "Tourism is the main industry in the region.", "answers": ["The region\u2019s main industry is tourism."]}
+      ]
+    },
+    {
+      "id": "81.4",
+      "type": "fill-in",
+      "instruction": "Use the information given to complete the sentences.",
+      "items": [
+        {"num": 1, "parts": ["If I leave my house at 9 o\u2019clock and drive to the airport, I arrive at about 11. So it\u2019s about ", " from my house to the airport."], "answers": [["two hours\u2019 drive"]]},
+        {"num": 2, "parts": ["If I leave my house at 8.40 and walk to the centre, I get there at 9 o\u2019clock. So it\u2019s ", " from my house to the centre."], "answers": [["twenty minutes\u2019 walk"]]},
+        {"num": 3, "parts": ["I\u2019m going on holiday on the 12th. I have to be back at work on the 26th. So I\u2019ve got ", "."], "answers": [["two weeks\u2019 holiday", "fourteen days\u2019 holiday", "a fortnight\u2019s holiday"]]},
+        {"num": 4, "parts": ["I went to sleep at 3 o\u2019clock this morning and woke up an hour later. After that I couldn\u2019t sleep. So last night I only had ", "."], "answers": [["an hour\u2019s sleep", "one hour\u2019s sleep"]]}
+      ]
+    }
+  ]
+}

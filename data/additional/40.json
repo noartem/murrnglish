@@ -1,0 +1,73 @@
+{
+  "id": 40,
+  "topic": "Phrasal verbs",
+  "refs": "Units 137–145",
+  "pdfPages": [337],
+  "exercise": {
+    "id": "40",
+    "type": "fill-in",
+    "instruction": "Complete each sentence using a phrasal verb that has a similar meaning to the words in brackets.",
+    "items": [
+      {
+        "num": 1,
+        "parts": ["The concert in the park had to be ", " because of the weather. (cancelled)"],
+        "answers": [["called off"]]
+      },
+      {
+        "num": 2,
+        "parts": ["The story Kate told wasn't true. She made it ", ". (invented it)"],
+        "answers": [["up"]]
+      },
+      {
+        "num": 3,
+        "parts": ["Paul finally ", " an hour late. (arrived)"],
+        "answers": [["turned up", "showed up"]]
+      },
+      {
+        "num": 4,
+        "parts": ["Here's an application form. Can you ", " and sign it, please? (complete it)"],
+        "answers": [["fill it in", "fill it out"]]
+      },
+      {
+        "num": 5,
+        "parts": ["Some houses will have to be ", " to make way for the new road. (demolished)"],
+        "answers": [["knocked down", "pulled down", "torn down"]]
+      },
+      {
+        "num": 6,
+        "parts": ["Be positive! You must never ", ". (stop trying)"],
+        "answers": [["give up"]]
+      },
+      {
+        "num": 7,
+        "parts": ["I was very tired and ", " in front of the TV. (fell asleep)"],
+        "answers": [["dozed off", "dropped off", "nodded off"]]
+      },
+      {
+        "num": 8,
+        "parts": ["After eight years together, they've decided to ", ". (separate)"],
+        "answers": [["split up", "break up"]]
+      },
+      {
+        "num": 9,
+        "parts": ["The noise is terrible. I can't ", " any longer. (tolerate it)"],
+        "answers": [["put up with it"]]
+      },
+      {
+        "num": 10,
+        "parts": ["We don't have a lot of money, but we have enough to ", ". (manage)"],
+        "answers": [["get by"]]
+      },
+      {
+        "num": 11,
+        "parts": ["I'm sorry I'm late. The meeting ", " longer than I expected. (continued)"],
+        "answers": [["went on"]]
+      },
+      {
+        "num": 12,
+        "parts": ["We need to make a decision today at the latest. We can't ", " any longer. (delay it)"],
+        "answers": [["put it off"]]
+      }
+    ]
+  }
+}

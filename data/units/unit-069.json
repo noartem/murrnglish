@@ -1,0 +1,70 @@
+{
+  "unit": 69,
+  "title": "Countable and uncountable 1",
+  "pdfPages": [150, 151],
+  "exercises": [
+    {
+      "id": "69.1",
+      "type": "write",
+      "instruction": "Some of these sentences need a/an. Correct the sentences where necessary.",
+      "items": [
+        {"num": 1, "prompt": "Joe goes everywhere by bike. He doesn't have car.", "answers": ["He doesn't have a car."]},
+        {"num": 2, "prompt": "Helen was listening to music when I arrived.", "answers": ["OK"]},
+        {"num": 3, "prompt": "We went to very nice restaurant last weekend.", "answers": ["We went to a very nice restaurant last weekend."]},
+        {"num": 4, "prompt": "I brush my teeth with toothpaste.", "answers": ["OK"]},
+        {"num": 5, "prompt": "I use toothbrush to brush my teeth.", "answers": ["I use a toothbrush to brush my teeth."]},
+        {"num": 6, "prompt": "Can you tell me if there's bank near here?", "answers": ["Can you tell me if there's a bank near here?"]},
+        {"num": 7, "prompt": "My brother works for insurance company.", "answers": ["My brother works for an insurance company."]},
+        {"num": 8, "prompt": "I don't like violence.", "answers": ["OK"]},
+        {"num": 9, "prompt": "When we were in Rome, we stayed in big hotel.", "answers": ["When we were in Rome, we stayed in a big hotel."]},
+        {"num": 10, "prompt": "If you have problem, I'll try and help you.", "answers": ["If you have a problem, I'll try and help you."]},
+        {"num": 11, "prompt": "I like your suggestion. It's interesting idea.", "answers": ["I like your suggestion. It's an interesting idea."]},
+        {"num": 12, "prompt": "Can you smell paint?", "answers": ["OK"]},
+        {"num": 13, "prompt": "I like volleyball. It's good game.", "answers": ["I like volleyball. It's a good game."]},
+        {"num": 14, "prompt": "Lisa doesn't usually wear jewellery.", "answers": ["OK"]},
+        {"num": 15, "prompt": "Jane was wearing beautiful necklace.", "answers": ["Jane was wearing a beautiful necklace."]},
+        {"num": 16, "prompt": "Does this city have airport?", "answers": ["Does this city have an airport?"]}
+      ]
+    },
+    {
+      "id": "69.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the following words. Use a/an where necessary.",
+      "wordBank": ["accident", "biscuit", "blood", "coat", "decision", "electricity", "ice", "interview", "key", "moment", "music", "question"],
+      "items": [
+        {"num": 1, "parts": ["The road is closed. There's been ", "."], "answers": [["an accident"]]},
+        {"num": 2, "parts": ["Listen! Can you hear ", "?"], "answers": [["music"]]},
+        {"num": 3, "parts": ["I couldn't get into the house. I didn't have ", "."], "answers": [["a key"]]},
+        {"num": 4, "parts": ["It's very warm today. Why are you wearing ", "?"], "answers": [["a coat"]]},
+        {"num": 5, "parts": ["Would you like ", " in your drink?"], "answers": [["ice"]]},
+        {"num": 6, "parts": ["Are you hungry? Have ", "!"], "answers": [["a biscuit"]]},
+        {"num": 7, "parts": ["Our lives would be very difficult without ", "."], "answers": [["electricity"]]},
+        {"num": 8, "parts": ["Excuse me, can I ask you ", "?"], "answers": [["a question"]]},
+        {"num": 9, "parts": ["I'm not ready yet. Can you wait ", ", please?"], "answers": [["a moment"]]},
+        {"num": 10, "parts": ["The heart pumps ", " through the body."], "answers": [["blood"]]},
+        {"num": 11, "parts": ["We can't delay much longer. We have to make ", " soon."], "answers": [["a decision"]]},
+        {"num": 12, "parts": ["I had ", " for a job yesterday. It went quite well."], "answers": [["an interview"]]}
+      ]
+    },
+    {
+      "id": "69.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the following words. Sometimes the word needs to be plural (-s), and sometimes you need to use a/an.",
+      "wordBank": ["air", "day", "friend", "joke", "language", "meat", "patience", "people", "picture", "queue", "space", "umbrella"],
+      "items": [
+        {"num": 1, "parts": ["I had a camera with me, but I didn't take any ", "."], "answers": [["pictures"]]},
+        {"num": 2, "parts": ["There are seven ", " in a week."], "answers": [["days"]]},
+        {"num": 3, "parts": ["A vegetarian is a person who doesn't eat ", "."], "answers": [["meat"]]},
+        {"num": 4, "parts": ["Outside the cinema there was ", " of people waiting to see the film."], "answers": [["a queue"]]},
+        {"num": 5, "parts": ["I'm not good at telling ", "."], "answers": [["jokes"]]},
+        {"num": 6, "parts": ["Last night I went out with some ", " of mine."], "answers": [["friends"]]},
+        {"num": 7, "parts": ["There were very few ", " in town today. The streets were almost empty."], "answers": [["people"]]},
+        {"num": 8, "parts": ["I'm going out for a walk. I need some fresh ", "."], "answers": [["air"]]},
+        {"num": 9, "parts": ["Paul always wants things quickly. He doesn't have much ", "."], "answers": [["patience"]]},
+        {"num": 10, "parts": ["I think it's going to rain. Do you have ", " I could borrow?"], "answers": [["an umbrella"]]},
+        {"num": 11, "parts": ["How many ", " can you speak?"], "answers": [["languages"]]},
+        {"num": 12, "parts": ["Our flat is very small. We don't have much ", "."], "answers": [["space"]]}
+      ]
+    }
+  ]
+}

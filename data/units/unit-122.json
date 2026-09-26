@@ -1,0 +1,75 @@
+{
+  "unit": 122,
+  "title": "on time and in time / at the end and in the end",
+  "pdfPages": [256, 257],
+  "exercises": [
+    {
+      "id": "122.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with on time or in time.",
+      "items": [
+        {"num": 1, "parts": ["The bus is usually ", ", but it was late this morning."], "answers": [["on time"]]},
+        {"num": 2, "parts": ["The film was supposed to start at 8.30, but it didn\u2019t begin ", "."], "answers": [["on time"]]},
+        {"num": 3, "parts": ["The train service isn\u2019t very good. The trains are rarely ", "."], "answers": [["on time"]]},
+        {"num": 4, "parts": ["We nearly missed our train. We got to the station just ", "."], "answers": [["in time"]]},
+        {"num": 5, "parts": ["We want to start the meeting ", ", so please don\u2019t be late."], "answers": [["on time"]]},
+        {"num": 6, "parts": ["I\u2019ve just washed this shirt. I want to wear it this evening, so I hope it will be dry ", "."], "answers": [["in time"]]},
+        {"num": 7, "parts": ["I almost forgot that it was Joe\u2019s birthday. Fortunately I remembered ", "."], "answers": [["in time"]]},
+        {"num": 8, "parts": ["Why are you never ", "? You always keep everybody waiting."], "answers": [["on time"]]},
+        {"num": 9, "parts": ["It is hoped that the new stadium will be ready ", " for the tournament later this year."], "answers": [["in time"]]}
+      ]
+    },
+    {
+      "id": "122.2",
+      "type": "write",
+      "instruction": "Read the situations and make sentences using just in time.",
+      "items": [
+        {"num": 1, "prompt": "(manage / stop) I managed to stop just in time.", "answers": ["I managed to stop just in time."]},
+        {"num": 2, "prompt": "(get / home)", "answers": ["I got home just in time."]},
+        {"num": 3, "prompt": "(stop / him)", "answers": ["I stopped him just in time."]},
+        {"num": 4, "prompt": "(get / cinema / beginning / film)", "answers": ["We got to the cinema just in time for the beginning of the film.", "We got to the cinema just in time to see the beginning of the film."]}
+      ]
+    },
+    {
+      "id": "122.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using at the end + the following:",
+      "wordBank": ["the course", "the game", "the interview", "the month", "the race"],
+      "items": [
+        {"num": 1, "parts": ["The players shook hands ", "."], "answers": [["at the end of the game"]]},
+        {"num": 2, "parts": ["I get paid ", "."], "answers": [["at the end of the month"]]},
+        {"num": 3, "parts": ["The students had a party ", "."], "answers": [["at the end of the course"]]},
+        {"num": 4, "parts": ["Two of the runners collapsed ", "."], "answers": [["at the end of the race"]]},
+        {"num": 5, "parts": ["I was surprised when I was offered the job ", "."], "answers": [["at the end of the interview"]]}
+      ]
+    },
+    {
+      "id": "122.4",
+      "type": "write",
+      "instruction": "Write sentences with in the end. Use the verb in brackets.",
+      "items": [
+        {"num": 1, "prompt": "(sell) In the end we sold it.", "answers": ["In the end we sold it."]},
+        {"num": 2, "prompt": "(resign)", "answers": ["In the end she resigned (from her job).", "She resigned (from her job) in the end."]},
+        {"num": 3, "prompt": "(give up)", "answers": ["In the end I gave up (trying to learn Japanese / learning Japanese).", "I gave up (learning Japanese) in the end."]},
+        {"num": 4, "prompt": "(not / go)", "answers": ["In the end we decided not to go (to the party).", "In the end we didn\u2019t go (to the party).", "We decided not to go (to the party) in the end.", "We didn\u2019t go (to the party) in the end."]}
+      ]
+    },
+    {
+      "id": "122.5",
+      "type": "fill-in",
+      "instruction": "Put in at or in.",
+      "items": [
+        {"num": 1, "parts": ["I\u2019m going away ", " the end of the month."], "answers": [["at"]]},
+        {"num": 2, "parts": ["It took Gary a long time to find work. ", " the end he got a job as a bus driver."], "answers": [["In"]]},
+        {"num": 3, "parts": ["I couldn\u2019t decide what to buy Amy for her birthday. I didn\u2019t buy her anything ", " the end."], "answers": [["in"]]},
+        {"num": 4, "parts": ["I\u2019m going away ", " the end of this week."], "answers": [["at"]]},
+        {"num": 5, "parts": ["We waited ages for a bus. ", " the end we had to get a taxi."], "answers": [["In"]]},
+        {"num": 6, "parts": ["", " the end of the lesson, all the students left the classroom."], "answers": [["At"]]},
+        {"num": 7, "parts": ["We had a few problems at first, but ", " the end everything was OK."], "answers": [["in"]]},
+        {"num": 8, "parts": ["You were in a difficult position. What did you do ", " the end?"], "answers": [["in"]]},
+        {"num": 9, "parts": ["The journey took a very long time, but we got there ", " the end."], "answers": [["in"]]},
+        {"num": 10, "parts": ["Are you going away ", " the beginning of August or ", " the end?"], "answers": [["at"], ["at"]]}
+      ]
+    }
+  ]
+}

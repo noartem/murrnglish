@@ -1,0 +1,53 @@
+{
+  "id": 10,
+  "topic": "The future",
+  "refs": "Units 19–25, Appendix 3",
+  "pdfPages": [320],
+  "exercise": {
+    "id": "10",
+    "type": "write",
+    "instruction": "What do you say to Joe in these situations? Use the words given in brackets. Use the present continuous (I am doing), going to or will (I\u2019ll).",
+    "items": [
+      {
+        "num": 1,
+        "prompt": "(I / go)",
+        "answers": ["I'm going to Jamaica."]
+      },
+      {
+        "num": 2,
+        "prompt": "(I / go)",
+        "answers": ["I'm going to the dentist."]
+      },
+      {
+        "num": 3,
+        "prompt": "(we / rent)",
+        "answers": ["No, we're going to rent a car."]
+      },
+      {
+        "num": 4,
+        "prompt": "(I / call / now)",
+        "answers": ["I'll call her now."]
+      },
+      {
+        "num": 5,
+        "prompt": "(have lunch)",
+        "answers": ["I'm having lunch with Sue."]
+      },
+      {
+        "num": 6,
+        "prompt": "(you / have)",
+        "answers": ["What are you going to have?", "What are you having?"]
+      },
+      {
+        "num": 7,
+        "prompt": "(I / turn on)",
+        "answers": ["I'll turn on the light."]
+      },
+      {
+        "num": 8,
+        "prompt": "(I / close)",
+        "answers": ["I'm going to close the window."]
+      }
+    ]
+  }
+}

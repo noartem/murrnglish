@@ -1,0 +1,64 @@
+{
+  "unit": 111,
+  "title": "still any more yet already",
+  "pdfPages": [234, 235],
+  "exercises": [
+    {
+      "id": "111.1",
+      "type": "fill-in",
+      "instruction": "Compare what Paul said a few years ago with what he says now. Some things are the same as before and some things have changed. Write sentences with still and any more.",
+      "items": [
+        {"num": 1, "parts": ["", ""], "answers": [["He still travels a lot."]]},
+        {"num": 2, "parts": ["", ""], "answers": [["He doesn't work in a shop any more."]]},
+        {"num": 3, "parts": ["He ", " poems."], "answers": [["doesn't write", "has stopped writing"]]},
+        {"num": 4, "parts": ["He ", " a teacher."], "answers": [["still wants to be"]]},
+        {"num": 5, "parts": ["He ", " in politics."], "answers": [["isn't interested", "is no longer interested"]]},
+        {"num": 6, "parts": ["He ", "."], "answers": [["is still single"]]},
+        {"num": 7, "parts": ["He ", " any more."], "answers": [["doesn't go fishing", "hasn't been fishing"]]},
+        {"num": 8, "parts": ["He ", " any more."], "answers": [["doesn't have a beard", "hasn't got a beard"]]},
+        {"num": 9, "parts": ["", ""], "answers": [["He no longer works in a shop."]]},
+        {"num": 10, "parts": ["", ""], "answers": [["He no longer writes poems."]]},
+        {"num": 11, "parts": ["", ""], "answers": [["He is / He's no longer interested in politics."]]},
+        {"num": 12, "parts": ["", ""], "answers": [["He no longer goes fishing."]]}
+      ]
+    },
+    {
+      "id": "111.2",
+      "type": "fill-in",
+      "instruction": "For each sentence (with still) write a sentence with a similar meaning using not … yet. Choose from these verbs:",
+      "wordBank": ["decide", "find", "finish", "go", "stop", "take off", "wake up"],
+      "items": [
+        {"num": 1, "parts": ["", ""], "answers": [["It hasn't stopped raining yet."]]},
+        {"num": 2, "parts": ["He ", " yet."], "answers": [["hasn't gone"]]},
+        {"num": 3, "parts": ["They ", " yet."], "answers": [["haven't finished (it)", "haven't finished repairing the road"]]},
+        {"num": 4, "parts": ["They ", " yet."], "answers": [["haven't woken up"]]},
+        {"num": 5, "parts": ["She ", " yet."], "answers": [["hasn't found one", "hasn't found a job"]]},
+        {"num": 6, "parts": ["I ", " yet."], "answers": [["haven't decided (what to do)"]]},
+        {"num": 7, "parts": ["It ", " yet."], "answers": [["hasn't taken off"]]}
+      ]
+    },
+    {
+      "id": "111.3",
+      "type": "fill-in",
+      "instruction": "Put in still, yet, already or any more.",
+      "items": [
+        {"num": 1, "parts": ["Mike lost his job a year ago and he is ", " unemployed."], "answers": [["still"]]},
+        {"num": 2, "parts": ["Shall I tell Joe what happened or does he ", " know?"], "answers": [["already"]]},
+        {"num": 3, "parts": ["Do you ", " live in the same place or have you moved?"], "answers": [["still"]]},
+        {"num": 4, "parts": ["I'm hungry. Is dinner ready ", "?"], "answers": [["yet"]]},
+        {"num": 5, "parts": ["I was hungry earlier, but I don't feel hungry ", "."], "answers": [["any more"]]},
+        {"num": 6, "parts": ["Can we wait a few minutes? I don't want to go out ", "."], "answers": [["yet"]]},
+        {"num": 7, "parts": ["Amy used to work at the airport, but she doesn't work there ", "."], "answers": [["any more"]]},
+        {"num": 8, "parts": ["I used to live in Amsterdam. I ", " have a lot of friends there."], "answers": [["still"]]},
+        {"num": 9, "parts": ["There's no need to introduce me to Joe. We've ", " met."], "answers": [["already"]]},
+        {"num": 10, "parts": ["John is 80 years old, but he's ", " very fit and healthy."], "answers": [["still"]]},
+        {"num": 11, "parts": ["Would you like something to eat, or have you ", " eaten?"], "answers": [["already"]]},
+        {"num": 12, "parts": ["'Where's Helen?' 'She's not here ", ". She'll be here soon.'"], "answers": [["yet"]]},
+        {"num": 13, "parts": ["Mark said he'd be here at 8.30. It's 9 o'clock now and he ", " isn't here."], "answers": [["still"]]},
+        {"num": 14, "parts": ["Do you want to join the club or are you ", " a member?"], "answers": [["already"]]},
+        {"num": 15, "parts": ["It happened a long time ago, but I ", " remember it very clearly."], "answers": [["still"]]},
+        {"num": 16, "parts": ["I've put on weight. These trousers don't fit me ", "."], "answers": [["any more"]]}
+      ]
+    }
+  ]
+}

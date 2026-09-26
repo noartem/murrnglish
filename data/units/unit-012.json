@@ -1,0 +1,155 @@
+{
+  "unit": 12,
+  "title": "for and since when … ? and how long … ?",
+  "pdfPages": [36, 37],
+  "exercises": [
+    {
+      "id": "12.1",
+      "type": "fill-in",
+      "instruction": "Write for or since.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Paul has lived in Brazil ", " ten years."],
+          "answers": [["for"]]
+        },
+        {
+          "num": 3,
+          "parts": ["We've been sitting here ", " an hour."],
+          "answers": [["for"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Kevin has been looking for a job ", " he left school."],
+          "answers": [["since"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I haven't been to a party ", " ages."],
+          "answers": [["for"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I haven't seen him ", " last week."],
+          "answers": [["since"]]
+        },
+        {
+          "num": 7,
+          "parts": ["She's been away ", " Friday."],
+          "answers": [["since"]]
+        },
+        {
+          "num": 8,
+          "parts": ["It hasn't rained ", " a few weeks."],
+          "answers": [["for"]]
+        }
+      ]
+    },
+    {
+      "id": "12.2",
+      "type": "choice",
+      "instruction": "Look at each answer and choose the right question.",
+      "items": [
+        {
+          "num": 2,
+          "options": ["How long have you had this car?", "When did you buy this car?"],
+          "answer": 0
+        },
+        {
+          "num": 3,
+          "options": ["How long have you been waiting?", "When did you get here?"],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["How long have you been doing your course?", "When did your course start?"],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": ["How long has Anna been in London?", "When did Anna arrive in London?"],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": ["How long have you known each other?", "When did you first meet each other?"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "12.3",
+      "type": "fill-in",
+      "instruction": "Read the situations and complete the sentences.",
+      "items": [
+        {
+          "num": 3,
+          "parts": ["He has been ill/unwell ", " Sunday."],
+          "answers": [["since"]]
+        },
+        {
+          "num": 4,
+          "parts": ["She got ", "."],
+          "answers": [["married a year ago"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I've ", " since I woke up."],
+          "answers": [["had a headache"]]
+        },
+        {
+          "num": 6,
+          "parts": ["The meeting ", " at 9 o'clock."],
+          "answers": [["started", "began"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I've been working in a hotel ", "."],
+          "answers": [["for six months"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Kate started learning Japanese ", "."],
+          "answers": [["a long time ago"]]
+        }
+      ]
+    },
+    {
+      "id": "12.4",
+      "type": "fill-in",
+      "instruction": "Complete B's sentences. Then write B's answers again using It's … since … .",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["No, I haven't seen Lisa/her ", " about a month."],
+          "answers": [["for"]]
+        },
+        {
+          "num": 3,
+          "parts": ["No, I haven't been swimming ", " a long time."],
+          "answers": [["for"]]
+        },
+        {
+          "num": 4,
+          "parts": ["No, I haven't ridden a bike ", " ages."],
+          "answers": [["for"]]
+        },
+        {
+          "num": 6,
+          "parts": ["No, it\u2019s ", " since I (last) saw Lisa/her."],
+          "answers": [["about a month", "been about a month"]]
+        },
+        {
+          "num": 7,
+          "parts": ["No, it\u2019s ", " since I (last) went swimming."],
+          "answers": [["a long time", "been a long time"]]
+        },
+        {
+          "num": 8,
+          "parts": ["No, ", " since I (last) rode a bike."],
+          "answers": [["it\u2019s ages", "it\u2019s been ages"]]
+        }
+      ]
+    }
+  ]
+}

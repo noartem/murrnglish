@@ -1,0 +1,68 @@
+{
+  "unit": 90,
+  "title": "all every whole",
+  "pdfPages": [192, 193],
+  "exercises": [
+    {
+      "id": "90.1",
+      "type": "fill-in",
+      "instruction": "Complete these sentences with all, everything or everybody/everyone.",
+      "items": [
+        {"num": 3, "parts": ["", " has their faults. Nobody is perfect."], "answers": [["Everybody", "Everyone"]]},
+        {"num": 4, "parts": ["Nothing has changed. ", " is the same as it was."], "answers": [["Everything"]]},
+        {"num": 5, "parts": ["Kate told me ", " about her new job. It sounds interesting."], "answers": [["all"]]},
+        {"num": 6, "parts": ["Can ", " write their names on a piece of paper, please?"], "answers": [["everybody", "everyone"]]},
+        {"num": 7, "parts": ["Why are you always thinking about money? Money isn\u2019t ", "."], "answers": [["everything"]]},
+        {"num": 8, "parts": ["I\u2019m really exhausted. ", " I want to do is sleep."], "answers": [["All"]]},
+        {"num": 9, "parts": ["When the fire alarm rang, ", " left the building immediately."], "answers": [["everybody", "everyone"]]},
+        {"num": 10, "parts": ["Amy didn\u2019t say where she was going. ", " she said was that she was going away."], "answers": [["All"]]},
+        {"num": 11, "parts": ["We have completely different opinions. I disagree with ", " she says."], "answers": [["everything"]]},
+        {"num": 12, "parts": ["We all did well in the exam. ", " in our class passed."], "answers": [["Everybody", "Everyone"]]},
+        {"num": 13, "parts": ["We all did well in the exam. ", " of us passed."], "answers": [["All"]]},
+        {"num": 14, "parts": ["Why are you so lazy? Why do you expect me to do ", " for you?"], "answers": [["everything"]]}
+      ]
+    },
+    {
+      "id": "90.2",
+      "type": "fill-in",
+      "instruction": "Write sentences with whole.",
+      "items": [
+        {"num": 2, "parts": ["Everyone in the team played well. The ", "."], "answers": [["whole team played well"]]},
+        {"num": 3, "parts": ["Paul opened a box of chocolates. He started eating. When he finished, there were no chocolates left in the box. He ate ", "."], "answers": [["the whole box (of chocolates)"]]},
+        {"num": 4, "parts": ["The police came to the house. They were looking for something. They searched everywhere, every room. They ", "."], "answers": [["searched the whole house"]]},
+        {"num": 5, "parts": ["Everyone in Ed and Jane\u2019s family plays tennis. Ed and Jane play, and so do all their children. The ", "."], "answers": [["whole family plays tennis", "whole family play tennis"]]},
+        {"num": 6, "parts": ["Sarah worked from early in the morning until late in the evening. ", "."], "answers": [["She worked the whole day"]]},
+        {"num": 7, "parts": ["Jack and Lisa had a week\u2019s holiday by the sea. It rained from the beginning of the week to the end of the week. It ", "."], "answers": [["rained the whole week"]]},
+        {"num": 8, "parts": ["Sarah ", "."], "answers": [["worked all day"]]},
+        {"num": 9, "parts": ["It ", "."], "answers": [["rained all week"]]}
+      ]
+    },
+    {
+      "id": "90.3",
+      "type": "fill-in",
+      "instruction": "Complete these sentences using every with the following:",
+      "wordBank": ["five minutes", "ten minutes", "four hours", "six months", "four years"],
+      "items": [
+        {"num": 1, "parts": ["The bus service is very good. There\u2019s a bus every ", "."], "answers": [["ten minutes"]]},
+        {"num": 2, "parts": ["Tom is ill. He has some medicine. He has to take it every ", "."], "answers": [["four hours"]]},
+        {"num": 3, "parts": ["The Olympic Games take place every ", "."], "answers": [["four years"]]},
+        {"num": 4, "parts": ["We live near a busy airport. A plane flies over our house every ", "."], "answers": [["five minutes"]]},
+        {"num": 5, "parts": ["Martin goes to the dentist for a check-up every ", "."], "answers": [["six months"]]}
+      ]
+    },
+    {
+      "id": "90.4",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {"num": 1, "options": ["the whole money", "all the money"], "answer": 1},
+        {"num": 2, "options": ["every day", "all days"], "answer": 0},
+        {"num": 3, "options": ["all the day", "all day"], "answer": 1},
+        {"num": 4, "options": ["Whole building", "The whole building"], "answer": 1},
+        {"num": 5, "options": ["Every time", "All the time"], "answer": 0},
+        {"num": 6, "options": ["every time", "all the time"], "answer": 1},
+        {"num": 7, "options": ["all my luggage", "my whole luggage"], "answer": 0}
+      ]
+    }
+  ]
+}

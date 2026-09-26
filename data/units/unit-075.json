@@ -1,0 +1,312 @@
+{
+ "unit": 75,
+ "title": "the 3 (children / the children)",
+ "pdfPages": [
+  162,
+  163
+ ],
+ "exercises": [
+  {
+   "id": "75.1",
+   "type": "self-check",
+   "instruction": "Choose four of these things and write what you think about them: bananas, boxing, cats, crowds, fast food, horror movies, hot weather, maths, opera, snow, supermarkets, zoos. Use: I like … / I don’t like … / I think ... is/are … / I don’t mind … / I love … / I hate … / I’m (not) interested in …",
+   "items": [
+    {
+     "num": 2,
+     "prompt": "",
+     "modelAnswers": [
+      "I like cats."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "modelAnswers": [
+      "I don’t like zoos."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "modelAnswers": [
+      "I don’t mind snow."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m not interested in boxing."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "75.2",
+   "type": "choice",
+   "instruction": "Which is right?",
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "Apples are good for you.",
+      "The apples are good for you."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 2,
+     "options": [
+      "Who are people in this picture?",
+      "Who are the people in this picture?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "I’m not good at remembering names.",
+      "I’m not good at remembering the names."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 4,
+     "options": [
+      "First World War began in 1914 and ended in 1918.",
+      "The First World War began in 1914 and ended in 1918."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 5,
+     "options": [
+      "He doesn’t like hard work.",
+      "He doesn’t like the hard work."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "75.3",
+   "type": "fill-in",
+   "instruction": "Complete the sentences using the following. Use the where necessary.",
+   "wordBank": [
+    "(the) basketball",
+    "(the) grass",
+    "(the) patience",
+    "(the) people",
+    "(the) questions",
+    "(the) meat",
+    "(the) information",
+    "(the) hotels",
+    "(the) biology",
+    "(the) water",
+    "(the) spiders",
+    "(the) lies"
+   ],
+   "items": [
+    {
+     "num": 3,
+     "parts": [
+      "Some people are afraid of ",
+      "."
+     ],
+     "answers": [
+      [
+       "spiders"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "A vegetarian is somebody who doesn’t eat ",
+      "."
+     ],
+     "answers": [
+      [
+       "meat"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "The test wasn’t hard. I answered ",
+      " without difficulty."
+     ],
+     "answers": [
+      [
+       "the questions"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Do you know ",
+      " who live in the flat next to yours?"
+     ],
+     "answers": [
+      [
+       "the people"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " is the study of plants and animals."
+     ],
+     "answers": [
+      [
+       "Biology"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "It’s better to tell the truth. Telling ",
+      " often causes problems."
+     ],
+     "answers": [
+      [
+       "lies"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "We couldn’t find anywhere to stay in the town. ",
+      " were all full."
+     ],
+     "answers": [
+      [
+       "The hotels"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Don’t swim in this pool. ",
+      " doesn’t look very clean."
+     ],
+     "answers": [
+      [
+       "The water"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Don’t sit on ",
+      ". It’s wet after the rain."
+     ],
+     "answers": [
+      [
+       "the grass"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "You need ",
+      " to teach young children."
+     ],
+     "answers": [
+      [
+       "patience"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "75.4",
+   "type": "choice",
+   "instruction": "Which is right?",
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "stories",
+      "the stories"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 2,
+     "options": [
+      "words",
+      "the words"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "rooms",
+      "the rooms"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 4,
+     "options": [
+      "public transport",
+      "the public transport"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 5,
+     "options": [
+      "All books",
+      "All the books"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 6,
+     "options": [
+      "Life",
+      "The life"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 7,
+     "options": [
+      "Weather",
+      "The weather"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 8,
+     "options": [
+      "water",
+      "the water"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 9,
+     "options": [
+      "films",
+      "the films"
+     ],
+     "answer": 0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,198 @@
+{
+  "unit": 106,
+  "title": "Comparative 2 (much better / any better etc.)",
+  "pdfPages": [224, 225],
+  "exercises": [
+    {
+      "id": "106.1",
+      "type": "fill-in",
+      "instruction": "Use the words in brackets to complete the sentences. Use much / a bit etc. + a comparative form. Use than where necessary.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["The problem is ", " than we thought at first."],
+          "answers": [["much more serious"]]
+        },
+        {
+          "num": 2,
+          "parts": ["This bag is too small. I need something ", "."],
+          "answers": [["much bigger"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I liked the museum. It was ", " I expected."],
+          "answers": [["a lot more interesting than"]]
+        },
+        {
+          "num": 4,
+          "parts": ["It was very hot yesterday. Today it\u2019s ", "."],
+          "answers": [["a little cooler"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I\u2019m afraid the problem is ", " it seems."],
+          "answers": [["far more complicated than"]]
+        },
+        {
+          "num": 6,
+          "parts": ["You\u2019re driving too fast. Can you drive ", "?"],
+          "answers": [["a bit more slowly"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I thought he was younger than me, but in fact he\u2019s ", "."],
+          "answers": [["slightly older"]]
+        }
+      ]
+    },
+    {
+      "id": "106.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using any/no + comparative. Use than where necessary.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I\u2019m sorry I\u2019m a bit late, but I couldn\u2019t get here ", "."],
+          "answers": [["any sooner", "any earlier"]]
+        },
+        {
+          "num": 3,
+          "parts": ["This shop isn\u2019t expensive. The prices are ", " anywhere else."],
+          "answers": [["no higher than", "no more expensive than", "no worse than"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I need to stop for a rest. I can\u2019t walk ", "."],
+          "answers": [["any further", "any farther"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The traffic isn\u2019t especially bad today. It\u2019s ", " usual."],
+          "answers": [["no worse than"]]
+        }
+      ]
+    },
+    {
+      "id": "106.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using … and … (see Section C).",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["That hole in your sweater is getting ", " and more serious."],
+          "answers": [["bigger"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I waited for my interview and became ", "."],
+          "answers": [["more and more nervous"]]
+        },
+        {
+          "num": 4,
+          "parts": ["As the day went on, the weather got ", "."],
+          "answers": [["worse and worse"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Health care is becoming ", "."],
+          "answers": [["more and more expensive"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Since Anna went to Canada, her English has got ", "."],
+          "answers": [["better and better"]]
+        },
+        {
+          "num": 7,
+          "parts": ["These days I travel a lot. I\u2019m spending ", " away from home."],
+          "answers": [["more and more time"]]
+        }
+      ]
+    },
+    {
+      "id": "106.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the … the … .",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The more tired you are, the ", "."],
+          "answers": [["harder it is to concentrate"]]
+        },
+        {
+          "num": 3,
+          "parts": ["The ", ", the better."],
+          "answers": [["sooner we decide (what to do)"]]
+        },
+        {
+          "num": 4,
+          "parts": ["The ", ", the less I understand."],
+          "answers": [["more I know"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The more electricity you use, ", "."],
+          "answers": [["the higher your bill will be"]]
+        },
+        {
+          "num": 6,
+          "parts": ["The ", ", the more ", "."],
+          "answers": [["more", "longer"], ["impatient", "impatient she became"]]
+        }
+      ]
+    },
+    {
+      "id": "106.5",
+      "type": "fill-in",
+      "instruction": "Use the words on the right to complete the sentences.",
+      "wordBank": ["any", "better", "elder", "less", "less", "longer", "more", "no", "older", "slightly", "the"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The problem is getting ", " and more serious."],
+          "answers": [["more"]]
+        },
+        {
+          "num": 3,
+          "parts": ["The more time I have, the ", " it takes me to do things."],
+          "answers": [["longer"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I\u2019m walking as fast as I can. I can\u2019t walk ", " faster."],
+          "answers": [["any"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The higher your income, ", " more tax you have to pay."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I\u2019m surprised Anna is only 25. I thought she was ", "."],
+          "answers": [["older"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Jane\u2019s ", " sister is a nurse."],
+          "answers": [["elder", "older"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I was a little late. The journey took ", " longer than I expected."],
+          "answers": [["slightly"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Applications for the job must be received ", " later than 15 April."],
+          "answers": [["no"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Don\u2019t tell him anything. The ", " he knows, the ", "."],
+          "answers": [["less"], ["better"]]
+        }
+      ]
+    }
+  ]
+}

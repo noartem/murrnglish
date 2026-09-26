@@ -1,0 +1,103 @@
+{
+  "id": 2,
+  "topic": "Present and past",
+  "refs": "Units 1–14",
+  "pdfPages": [315],
+  "exercise": {
+    "id": "2",
+    "type": "choice",
+    "instruction": "Which is correct?",
+    "items": [
+      {
+        "num": 1,
+        "options": ["didn't have", "haven't had"],
+        "answer": 1
+      },
+      {
+        "num": 2,
+        "options": ["didn't go", "hasn't gone"],
+        "answer": 0
+      },
+      {
+        "num": 3,
+        "options": ["wears", "is wearing"],
+        "answer": 1
+      },
+      {
+        "num": 4,
+        "options": ["went", "have been"],
+        "answer": 0
+      },
+      {
+        "num": 5,
+        "options": ["didn't hear", "haven't heard"],
+        "answer": 1
+      },
+      {
+        "num": 6,
+        "options": ["is", "is being"],
+        "answer": 1
+      },
+      {
+        "num": 7,
+        "options": ["didn't read", "wasn't reading"],
+        "answer": 1
+      },
+      {
+        "num": 8,
+        "options": ["didn't have", "wasn't having"],
+        "answer": 0
+      },
+      {
+        "num": 9,
+        "options": ["begins", "It's beginning"],
+        "answer": 1
+      },
+      {
+        "num": 10,
+        "options": ["worked", "has worked"],
+        "answer": 0
+      },
+      {
+        "num": 11,
+        "options": ["wasn't", "hasn't been"],
+        "answer": 0
+      },
+      {
+        "num": 12,
+        "options": ["you stay", "you've stayed"],
+        "answer": 1
+      },
+      {
+        "num": 13,
+        "options": ["I'm doing", "I've been doing"],
+        "answer": 1
+      },
+      {
+        "num": 14,
+        "options": ["did she go", "has she gone"],
+        "answer": 0
+      },
+      {
+        "num": 15,
+        "options": ["I've played", "I've been playing"],
+        "answer": 1
+      },
+      {
+        "num": 16,
+        "options": ["are you coming", "do you come"],
+        "answer": 1
+      },
+      {
+        "num": 17,
+        "options": ["since I saw her", "that I didn't see her"],
+        "answer": 0
+      },
+      {
+        "num": 18,
+        "options": ["since 20 years", "for 20 years"],
+        "answer": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": 6,
+  "topic": "Present and past",
+  "refs": "Units 1\u201317",
+  "pdfPages": [317, 318],
+  "exercise": {
+    "id": "6",
+    "type": "fill-in",
+    "instruction": "Make sentences from the words in brackets. Put the verb into the correct form: present perfect (I have done), present perfect continuous (I have been doing), past perfect (I had done) or past perfect continuous (I had been doing).",
+    "items": [
+      {
+        "num": 2,
+        "parts": ["", " Somebody has taken it."],
+        "answers": [["Somebody has taken it."]]
+      },
+      {
+        "num": 3,
+        "parts": ["We were all surprised when Jess and Nick got married last year. ", "."],
+        "answers": [["They\u2019d only known each other (for) a few weeks", "They had only known each other (for) a few weeks"]]
+      },
+      {
+        "num": 4,
+        "parts": ["It\u2019s still raining. I wish it would stop. ", "."],
+        "answers": [["It\u2019s been raining all day", "It has been raining all day", "It\u2019s rained all day", "It has rained all day"]]
+      },
+      {
+        "num": 5,
+        "parts": ["Suddenly I woke up. I was confused and didn\u2019t know where I was. ", "."],
+        "answers": [["I\u2019d been dreaming", "I had been dreaming"]]
+      },
+      {
+        "num": 6,
+        "parts": ["It was lunchtime, but I wasn\u2019t hungry. I didn\u2019t want to eat anything. ", "."],
+        "answers": [["I\u2019d had a big breakfast", "I had had a big breakfast"]]
+      },
+      {
+        "num": 7,
+        "parts": ["Every year Robert and Tina spend a few days at the same hotel by the sea. ", "."],
+        "answers": [["They\u2019ve been going there for years", "They have been going there for years"]]
+      },
+      {
+        "num": 8,
+        "parts": ["I\u2019ve got a headache. ", "."],
+        "answers": [["I\u2019ve had it since I got up", "I have had it since I got up"]]
+      },
+      {
+        "num": 9,
+        "parts": ["Next month Gary is going to run in a marathon. ", "."],
+        "answers": [["He\u2019s been training very hard for it", "He has been training very hard for it"]]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "unit": 52,
+  "title": "Question tags (do you? isn't it? etc.)",
+  "pdfPages": [116, 117],
+  "exercises": [
+    {
+      "id": "52.1",
+      "type": "fill-in",
+      "instruction": "Complete these sentences with a question tag.",
+      "items": [
+        {"num": 1, "parts": ["Kate won't be late, ", "?"], "answers": [["will she"]]},
+        {"num": 2, "parts": ["You're tired, ", "?"], "answers": [["aren't you"]]},
+        {"num": 3, "parts": ["You travel a lot, ", "?"], "answers": [["don't you"]]},
+        {"num": 4, "parts": ["You weren't listening, ", "?"], "answers": [["were you"]]},
+        {"num": 5, "parts": ["Sarah doesn't know Ann, ", "?"], "answers": [["does she"]]},
+        {"num": 6, "parts": ["Jack's on holiday, ", "?"], "answers": [["isn't he"]]},
+        {"num": 7, "parts": ["It didn't take long to get here, ", "?"], "answers": [["did it"]]},
+        {"num": 8, "parts": ["You can speak German, ", "?"], "answers": [["can't you"]]},
+        {"num": 9, "parts": ["They won't mind if I take a picture, ", "?"], "answers": [["will they"]]},
+        {"num": 10, "parts": ["There are a lot of people here, ", "?"], "answers": [["aren't there"]]},
+        {"num": 11, "parts": ["Let's go and have coffee, ", "?"], "answers": [["shall we"]]},
+        {"num": 12, "parts": ["This isn't very interesting, ", "?"], "answers": [["is it"]]},
+        {"num": 13, "parts": ["I'm too impatient, ", "?"], "answers": [["aren't I"]]},
+        {"num": 14, "parts": ["You wouldn't tell anyone, ", "?"], "answers": [["would you"]]},
+        {"num": 15, "parts": ["Helen has lived here a long time, ", "?"], "answers": [["hasn't she"]]},
+        {"num": 16, "parts": ["I shouldn't have lost my temper, ", "?"], "answers": [["should I"]]},
+        {"num": 17, "parts": ["He'd never met her before, ", "?"], "answers": [["had he"]]},
+        {"num": 18, "parts": ["Don't forget to call me, ", "?"], "answers": [["will you"]]}
+      ]
+    },
+    {
+      "id": "52.2",
+      "type": "write",
+      "instruction": "In these situations you expect your friend to agree with you. Use a question tag in your sentences.",
+      "items": [
+        {"num": 1, "prompt": "(beautiful day)", "answers": ["It's a beautiful day, isn't it?"]},
+        {"num": 2, "prompt": "(expensive)", "answers": ["It's (very) expensive, isn't it?"]},
+        {"num": 3, "prompt": "(great)", "answers": ["The course was great, wasn't it?"]},
+        {"num": 4, "prompt": "(have / your hair / cut)", "answers": ["You've had your hair cut, haven't you?", "You had your hair cut, didn't you?"]},
+        {"num": 5, "prompt": "(a good voice)", "answers": ["She has a good voice, doesn't she?", "She has a good voice, hasn't she?", "She's got a good voice, hasn't she?", "She has got a good voice, hasn't she?"]},
+        {"num": 6, "prompt": "(not / look / right)", "answers": ["It doesn't look right, does it?"]},
+        {"num": 7, "prompt": "(not / very safe)", "answers": ["This bridge isn't very safe, is it?", "This bridge doesn't look very safe, does it?"]}
+      ]
+    },
+    {
+      "id": "52.3",
+      "type": "write",
+      "instruction": "In these situations you are asking for information, asking people to do things etc.",
+      "items": [
+        {"num": 1, "prompt": "You need a pen. Perhaps Jane has one. Ask her.", "answers": ["Jane, you don't have a pen I could borrow, do you?"]},
+        {"num": 2, "prompt": "You have to move a heavy table. You want Joe to help you with it. Ask him.", "answers": ["Joe, you couldn't help me (with this table), could you?"]},
+        {"num": 3, "prompt": "You're looking for Sarah. Perhaps Lisa knows where she is. Ask her.", "answers": ["Lisa, you don't know where Sarah is, do you?", "Lisa, you haven't seen Sarah, have you?"]},
+        {"num": 4, "prompt": "You want to borrow a tennis racket. Perhaps Helen has one. Ask her.", "answers": ["Helen, you don't have a tennis racket, do you?", "Helen, you haven't got a tennis racket, have you?"]},
+        {"num": 5, "prompt": "Anna has a car and you need a lift to the station. Perhaps she'll take you. Ask her.", "answers": ["Anna, you couldn't take me to the station, could you?", "Anna, you couldn't give me a lift to the station, could you?"]},
+        {"num": 6, "prompt": "You're looking for your keys. Perhaps Robert has seen them. Ask him.", "answers": ["Robert, you haven't seen my keys, have you?"]}
+      ]
+    }
+  ]
+}

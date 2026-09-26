@@ -1,0 +1,148 @@
+{
+  "unit": 16,
+  "title": "Past perfect continuous (I had been doing)",
+  "pdfPages": [44, 45],
+  "exercises": [
+    {
+      "id": "16.1",
+      "type": "write",
+      "instruction": "Read the situations and make sentences using the words in brackets.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(He / work / hard all day)",
+          "answers": ["He\u2019d been working hard all day.", "He had been working hard all day."]
+        },
+        {
+          "num": 2,
+          "prompt": "(They / play / football)",
+          "answers": ["They\u2019d been playing football.", "They had been playing football."]
+        },
+        {
+          "num": 3,
+          "prompt": "(I / look / forward to it)",
+          "answers": ["I\u2019d been looking forward to it.", "I had been looking forward to it."]
+        },
+        {
+          "num": 4,
+          "prompt": "(She / have / a bad dream)",
+          "answers": ["She\u2019d been having a bad dream.", "She had been having a bad dream."]
+        },
+        {
+          "num": 5,
+          "prompt": "(He / watch / a film)",
+          "answers": ["He\u2019d been watching a film.", "He had been watching a film."]
+        },
+        {
+          "num": 6,
+          "prompt": "(They / wait / a long time)",
+          "answers": ["They\u2019d been waiting a long time.", "They had been waiting a long time."]
+        }
+      ]
+    },
+    {
+      "id": "16.2",
+      "type": "fill-in",
+      "instruction": "Read the situations and complete the sentences.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["", " for half an hour when ", " to rain."],
+          "answers": [["We\u2019d been playing", "We had been playing"], ["it started"]]
+        },
+        {
+          "num": 2,
+          "parts": ["", " for 20 minutes when ", " that ", " in the wrong restaurant."],
+          "answers": [["I\u2019d been waiting", "I had been waiting"], ["I realised"], ["I was"]]
+        },
+        {
+          "num": 3,
+          "parts": ["At the time the company ", " out of business, Sarah ", " there for twelve years."],
+          "answers": [["went"], ["had been working", "had worked"]]
+        },
+        {
+          "num": 4,
+          "parts": ["The orchestra ", " for about ten minutes when a man in the audience suddenly ", " shouting."],
+          "answers": [["had been playing"], ["started"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I began walking along the road. I ", " when ", "."],
+          "answers": [["I\u2019d been walking for about ten minutes"], ["a car suddenly stopped just behind me"]]
+        }
+      ]
+    },
+    {
+      "id": "16.3",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {
+          "num": 1,
+          "options": ["Our neighbours were having a party.", "Our neighbours had been having a party."],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": ["We were travelling for more than 24 hours.", "We\u2019d been travelling for more than 24 hours."],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["He was looking for his contact lens.", "He\u2019d been looking for his contact lens."],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["She was running.", "She\u2019d been running."],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": ["He was walking very fast and I had difficulty keeping up with him.", "He\u2019d been walking very fast and I had difficulty keeping up with him."],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": ["I\u2019ve had it for a very long time.", "I\u2019d had it for a very long time."],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": ["I was going there for many years.", "I\u2019d been going there for many years."],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": ["I\u2019ve been training for it every day.", "I\u2019d been training for it every day."],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": [
+            "she was waiting for me. She was annoyed because she was waiting such a long time",
+            "she was waiting for me. She was annoyed because she\u2019d been waiting such a long time",
+            "she\u2019d been waiting for me. She was annoyed because she was waiting such a long time",
+            "she\u2019d been waiting for me. She was annoyed because she\u2019d been waiting such a long time"
+          ],
+          "answer": 1
+        },
+        {
+          "num": "10a",
+          "options": ["he was already working there.", "he\u2019d already been working there."],
+          "answer": 0
+        },
+        {
+          "num": "10b",
+          "options": ["Joe was already working there for two years.", "Joe had already been working there for two years."],
+          "answer": 1
+        },
+        {
+          "num": "10c",
+          "options": ["He\u2019s been working there a long time now.", "He\u2019d been working there a long time now."],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

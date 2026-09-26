@@ -1,0 +1,74 @@
+{
+  "unit": 137,
+  "title": "Phrasal verbs 1 Introduction",
+  "pdfPages": [286, 287],
+  "exercises": [
+    {
+      "id": "137.1",
+      "type": "fill-in",
+      "instruction": "Complete each sentence using a verb from A (in the correct form) + a word from B.",
+      "wordBank": ["be", "get", "fly", "sit", "break", "get", "go", "speak", "come", "get", "look", "take", "away", "by", "on", "round", "back", "down", "off", "up", "back", "down", "out", "up"],
+      "items": [
+        {"num": 1, "parts": ["Sarah is leaving tomorrow and coming back on Saturday."], "answers": []},
+        {"num": 2, "parts": ["I've been standing a long time. I'm going to ", " for a bit."], "answers": [["sit down"]]},
+        {"num": 3, "parts": ["It's a very busy airport. There are planes landing and ", " all the time."], "answers": [["taking off"]]},
+        {"num": 4, "parts": ["A cat tried to catch the bird, but it ", " just in time."], "answers": [["flew away", "flew off"]]},
+        {"num": 5, "parts": ["We were trapped in the building. We couldn't ", "."], "answers": [["get out"]]},
+        {"num": 6, "parts": ["I can't hear you very well. Can you ", " a little?"], "answers": [["speak up"]]},
+        {"num": 7, "parts": ["Ben's salary is very low, but it's enough to ", "."], "answers": [["get by"]]},
+        {"num": 8, "parts": ["Everything is so expensive now. Prices have ", " a lot."], "answers": [["gone up"]]},
+        {"num": 9, "parts": ["I heard a noise behind me, so I ", " to see what it was."], "answers": [["looked round"]]},
+        {"num": 10, "parts": ["I'm going out now to do some shopping. I'll ", " in about an hour."], "answers": [["be back"]]},
+        {"num": 11, "parts": ["Our car ", " on the motorway and we had to call for help."], "answers": [["broke down"]]},
+        {"num": 12, "parts": ["How is your new job? How are you ", "?"], "answers": [["getting on"]]}
+      ]
+    },
+    {
+      "id": "137.2",
+      "type": "fill-in",
+      "instruction": "Complete each sentence using a word from A and a word from B.",
+      "wordBank": ["away", "in", "up", "back", "out", "up", "up", "forward", "at", "to", "with", "about", "at", "to", "with", "through"],
+      "items": [
+        {"num": 1, "parts": ["You're walking too fast. I can't keep ", " you."], "answers": [["up with"]]},
+        {"num": 2, "parts": ["My holidays are nearly over. Next week I'll be ", " work."], "answers": [["back at"]]},
+        {"num": 3, "parts": ["We went ", " the top floor of the building to admire the view."], "answers": [["up to"]]},
+        {"num": 4, "parts": ["The meeting tomorrow is going to be difficult. I'm not looking ", " it."], "answers": [["forward to"]]},
+        {"num": 5, "parts": ["There was a bank robbery last week. The robbers got ", " £50,000."], "answers": [["away with"]]},
+        {"num": 6, "parts": ["I love to look ", " the stars in the night sky."], "answers": [["up at"]]},
+        {"num": 7, "parts": ["I was sitting in the kitchen when a bird flew ", " the open window."], "answers": [["in through"]]},
+        {"num": 8, "parts": ["How do you know about the plan? How did you find ", " it?"], "answers": [["out about"]]}
+      ]
+    },
+    {
+      "id": "137.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use these phrasal verbs + it/them/me:",
+      "wordBank": ["get out", "give back", "switch on", "take off", "throw away", "wake up"],
+      "items": [
+        {"num": 1, "parts": ["I want to keep this box. Don't throw ", "."], "answers": [["it away"]]},
+        {"num": 2, "parts": ["I'm going to bed now. Can you ", " at 6.30?"], "answers": [["wake me up"]]},
+        {"num": 3, "parts": ["I've got something in my eye and I can't ", "."], "answers": [["get it out"]]},
+        {"num": 4, "parts": ["I don't like it when people borrow things and don't ", "."], "answers": [["give them back"]]},
+        {"num": 5, "parts": ["I want to use the hair dryer. How do I ", "?"], "answers": [["switch it on"]]},
+        {"num": 6, "parts": ["My shoes are dirty. I'd better ", " before going into the house."], "answers": [["take them off"]]}
+      ]
+    },
+    {
+      "id": "137.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use the word in brackets.",
+      "items": [
+        {"num": 1, "parts": ["Don't throw away this box. I want to keep it."], "answers": []},
+        {"num": 2, "parts": ["I don't want this newspaper. You can throw it away."], "answers": []},
+        {"num": 3, "parts": ["These books are Lisa's. I have to give ", " to her."], "answers": [["them back"]]},
+        {"num": 4, "parts": ["We can turn ", ". Nobody is watching it."], "answers": [["the TV/television off", "off the TV/television"]]},
+        {"num": 5, "parts": ["Shh! My mother is asleep. I don't want to wake ", "."], "answers": [["her up"]]},
+        {"num": 6, "parts": ["It's cold today. You should put ", " if you go out."], "answers": [["your coat on", "on your coat"]]},
+        {"num": 7, "parts": ["It was only a small fire. I was able to put ", " easily."], "answers": [["it out"]]},
+        {"num": 8, "parts": ["It's a bit dark in this room. Shall I turn ", "?"], "answers": [["the light(s) on", "on the light(s)"]]},
+        {"num": 9, "parts": ["a: The hotel is more expensive than when we stayed here last year.\nB: Yes, they've put ", "."], "answers": [["the price(s) up", "up the price(s)"]]},
+        {"num": 10, "parts": ["a: How did the vase get broken?\nB: I'm afraid I knocked ", " while I was cleaning."], "answers": [["it over"]]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": 27,
+  "topic": "-ing and to …",
+  "refs": "Units 53–66",
+  "pdfPages": [330, 331],
+  "exercise": {
+    "id": "27",
+    "type": "write",
+    "instruction": "Make sentences from the words in brackets.",
+    "items": [
+      {
+        "num": 3,
+        "prompt": "(I / not / fancy / go / out)",
+        "answers": ["I don't fancy going out."]
+      },
+      {
+        "num": 4,
+        "prompt": "(he / tend / forget / things)",
+        "answers": ["He tends to forget things."]
+      },
+      {
+        "num": 5,
+        "prompt": "(you / mind / help / me?)",
+        "answers": ["Would you mind helping me?", "Do you mind helping me?"]
+      },
+      {
+        "num": 6,
+        "prompt": "(everybody / seem / go out)",
+        "answers": ["Everybody seems to have gone out."]
+      },
+      {
+        "num": 7,
+        "prompt": "(we / think / move)",
+        "answers": ["We're thinking of moving.", "We are thinking of moving."]
+      },
+      {
+        "num": 8,
+        "prompt": "(I / afraid / touch / it)",
+        "answers": ["I was afraid to touch it."]
+      },
+      {
+        "num": 9,
+        "prompt": "(I / afraid / miss / my train)",
+        "answers": ["I was afraid of missing my train."]
+      },
+      {
+        "num": 10,
+        "prompt": "(it / not / worth / see)",
+        "answers": ["It's not worth seeing.", "It is not worth seeing."]
+      },
+      {
+        "num": 11,
+        "prompt": "(I / not / used / walk / so far)",
+        "answers": ["I'm not used to walking so far."]
+      },
+      {
+        "num": 12,
+        "prompt": "(she / seem / enjoy / herself)",
+        "answers": ["She seems to be enjoying herself.", "She seemed to be enjoying herself."]
+      },
+      {
+        "num": 13,
+        "prompt": "(he / insist / show / them to me)",
+        "answers": ["He insisted on showing them to me."]
+      },
+      {
+        "num": 14,
+        "prompt": "(I'd rather / somebody else / do / it)",
+        "answers": ["I'd rather somebody else did it."]
+      }
+    ]
+  }
+}

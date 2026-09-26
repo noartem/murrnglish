@@ -1,0 +1,144 @@
+{
+  "unit": 103,
+  "title": "enough and too",
+  "pdfPages": [218, 219],
+  "exercises": [
+    {
+      "id": "103.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using enough + the following words:",
+      "wordBank": ["buses", "chairs", "cups", "hard", "room", "tall", "time", "vegetables", "warm", "wide"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Some of us had to sit on the floor. There weren\u2019t ", "."],
+          "answers": [["enough chairs"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Public transport isn\u2019t good here. There aren\u2019t ", "."],
+          "answers": [["enough buses"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I can\u2019t park the car here. The space isn\u2019t ", "."],
+          "answers": [["wide enough"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I always have to rush. There\u2019s never ", "."],
+          "answers": [["enough time"]]
+        },
+        {
+          "num": 6,
+          "parts": ["You need to change your diet. You don\u2019t eat ", "."],
+          "answers": [["enough vegetables"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I\u2019m not good at basketball. I\u2019m not ", "."],
+          "answers": [["tall enough"]]
+        },
+        {
+          "num": 8,
+          "parts": ["The car is quite small. Do you think there\u2019s ", " for five of us?"],
+          "answers": [["enough room"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Are you ", "? Or shall I switch on the heating?"],
+          "answers": [["warm enough"]]
+        },
+        {
+          "num": 10,
+          "parts": ["We can\u2019t all have coffee at the same time. We don\u2019t have ", "."],
+          "answers": [["enough cups"]]
+        }
+      ]
+    },
+    {
+      "id": "103.2",
+      "type": "fill-in",
+      "instruction": "Complete the answers to the questions. Use too or enough + the word(s) in brackets.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Well, I\u2019m afraid I\u2019m ", " to you now."],
+          "answers": [["too busy to talk"]]
+        },
+        {
+          "num": 3,
+          "parts": ["No, it\u2019s ", " to the cinema."],
+          "answers": [["too late to go"]]
+        },
+        {
+          "num": 4,
+          "parts": ["It\u2019s not ", " outside."],
+          "answers": [["warm enough to sit"]]
+        },
+        {
+          "num": 5,
+          "parts": ["No, I\u2019m ", " a politician."],
+          "answers": [["too shy to be"]]
+        },
+        {
+          "num": 6,
+          "parts": ["No, I don\u2019t have ", " a teacher."],
+          "answers": [["enough patience to be"]]
+        },
+        {
+          "num": 7,
+          "parts": ["No, we were ", " what he was saying."],
+          "answers": [["too far away to hear"]]
+        },
+        {
+          "num": 8,
+          "parts": ["No, he doesn\u2019t know ", " a newspaper."],
+          "answers": [["enough English to read"]]
+        }
+      ]
+    },
+    {
+      "id": "103.3",
+      "type": "write",
+      "instruction": "Make one sentence from two. Complete the new sentence using too or enough + to \u2026 .",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I can\u2019t drink this coffee. It\u2019s too hot.",
+          "answers": ["This coffee is too hot to drink."]
+        },
+        {
+          "num": 3,
+          "prompt": "Nobody could move the piano. It was too heavy.",
+          "answers": ["The piano was too heavy to move."]
+        },
+        {
+          "num": 4,
+          "prompt": "Don\u2019t eat these apples. They\u2019re not ripe enough.",
+          "answers": ["These apples aren\u2019t ripe enough to eat.", "These apples are not ripe enough to eat."]
+        },
+        {
+          "num": 5,
+          "prompt": "I can\u2019t explain the situation. It is too complicated.",
+          "answers": ["The situation is too complicated to explain."]
+        },
+        {
+          "num": 6,
+          "prompt": "We couldn\u2019t climb over the wall. It was too high.",
+          "answers": ["The wall was too high to climb over."]
+        },
+        {
+          "num": 7,
+          "prompt": "Three people can\u2019t sit on this sofa. It isn\u2019t big enough.",
+          "answers": ["This sofa isn\u2019t big enough for three people to sit on.", "This sofa isn\u2019t big enough for three people (to sit on)."]
+        },
+        {
+          "num": 8,
+          "prompt": "You can\u2019t see some things without a microscope. They are too small.",
+          "answers": ["Some things are too small to see without a microscope.", "Some things are too small to be seen without a microscope."]
+        }
+      ]
+    }
+  ]
+}

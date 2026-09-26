@@ -1,0 +1,68 @@
+{
+  "id": 17,
+  "topic": "Modal verbs (can/must/would etc.)",
+  "refs": "Units 26–36",
+  "pdfPages": [324, 325],
+  "exercise": {
+    "id": "17",
+    "type": "fill-in",
+    "instruction": "Complete the sentences using the words in brackets.",
+    "items": [
+      {
+        "num": 2,
+        "parts": ["I ", " so much."],
+        "answers": [["shouldn't have eaten"]]
+      },
+      {
+        "num": 3,
+        "parts": ["He ", "."],
+        "answers": [["must have forgotten"]]
+      },
+      {
+        "num": 4,
+        "parts": ["You ", " home so early."],
+        "answers": [["needn't have gone"]]
+      },
+      {
+        "num": 5,
+        "parts": ["It ", " now."],
+        "answers": [["can't be changed"]]
+      },
+      {
+        "num": 6,
+        "parts": ["They ", " TV."],
+        "answers": [["may be watching"]]
+      },
+      {
+        "num": 7,
+        "parts": ["She ", " for somebody."],
+        "answers": [["must have been waiting"]]
+      },
+      {
+        "num": 8,
+        "parts": ["He ", " it."],
+        "answers": [["couldn't have done"]]
+      },
+      {
+        "num": 9,
+        "parts": ["You ", " here an hour ago."],
+        "answers": [["should have been"]]
+      },
+      {
+        "num": 10,
+        "parts": ["You ", " me."],
+        "answers": [["could have phoned"]]
+      },
+      {
+        "num": 11,
+        "parts": ["You ", " about it."],
+        "answers": [["should have been warned"]]
+      },
+      {
+        "num": 12,
+        "parts": ["You ", " with us."],
+        "answers": [["ought to have come"]]
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": 13,
+  "topic": "Past, present and future",
+  "refs": "Units 1–25",
+  "pdfPages": [322],
+  "exercise": {
+    "id": "13",
+    "type": "fill-in",
+    "instruction": "Put the verb into the correct form. Choose from the following: present continuous (I am doing), will ('ll) / won't, present simple (I do), will be doing, going to (I'm going to do), shall",
+    "items": [
+      {
+        "num": 1,
+        "parts": ["I feel a bit hungry. I think ", " something to eat."],
+        "answers": [["I'll have"]]
+      },
+      {
+        "num": 2,
+        "parts": ["Why are you putting on your coat? ", " somewhere?"],
+        "answers": [["Are you going"]]
+      },
+      {
+        "num": 3,
+        "parts": ["What time ", " you tomorrow? About 10.30?"],
+        "answers": [["shall I phone"]]
+      },
+      {
+        "num": 4,
+        "parts": ["Look! That plane is flying towards the airport. ", "."],
+        "answers": [["It's going to land"]]
+      },
+      {
+        "num": 5,
+        "parts": ["We must do something soon, before ", " too late."],
+        "answers": [["it's", "it is"]]
+      },
+      {
+        "num": 6,
+        "parts": ["I'm sorry you've decided to leave the company. ", " you when ", "."],
+        "answers": [["I'll miss", "I'm going to miss"], ["you go", "you've gone"]]
+      },
+      {
+        "num": 7,
+        "parts": ["", " you my phone number? If ", " you my number, ", " me?"],
+        "answers": [["Shall I give"], ["I give"], ["will you call"]]
+      },
+      {
+        "num": 8,
+        "parts": ["Are you still watching that programme? What time ", "?"],
+        "answers": [["does it finish"]]
+      },
+      {
+        "num": 9,
+        "parts": ["", " to a wedding next weekend. My cousin ", " married."],
+        "answers": [["I'm going"], ["is getting"]]
+      },
+      {
+        "num": 10,
+        "parts": ["I'm not ready yet. ", " you when ", " ready. I promise ", " very long."],
+        "answers": [["I'll tell"], ["I'm"], ["I won't be"]]
+      },
+      {
+        "num": 11,
+        "parts": ["", " my hair cut tomorrow. I've just made an appointment."],
+        "answers": [["I'm going to have", "I'm having"]]
+      },
+      {
+        "num": 12,
+        "parts": ["She was very rude to me. I won't speak to her again until ", "."],
+        "answers": [["she apologises"]]
+      },
+      {
+        "num": 13,
+        "parts": ["I wonder where ", " ten years from now."],
+        "answers": [["we'll be living", "we'll live"]]
+      },
+      {
+        "num": 14,
+        "parts": ["What are you planning to do when ", " your course at college?"],
+        "answers": [["you finish", "you've finished"]]
+      }
+    ]
+  }
+}

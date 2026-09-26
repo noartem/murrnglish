@@ -1,0 +1,153 @@
+{
+ "id": 30,
+ "topic": "Pronouns and determiners",
+ "refs": "Units 82–91",
+ "pdfPages": [
+  332
+ ],
+ "exercise": {
+  "id": "30",
+  "type": "choice",
+  "instruction": "Which alternatives are correct? Sometimes only one alternative is correct, and sometimes two alternatives are possible.",
+  "items": [
+   {
+    "num": 1,
+    "options": [
+     "anything",
+     "something",
+     "nothing"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 2,
+    "options": [
+     "us",
+     "each other",
+     "ourselves"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 3,
+    "options": [
+     "All",
+     "Each",
+     "Every"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 4,
+    "options": [
+     "nobody",
+     "no-one",
+     "anybody"
+    ],
+    "answer": [
+     0,
+     1
+    ]
+   },
+   {
+    "num": 5,
+    "options": [
+     "us",
+     "our",
+     "ours"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 6,
+    "options": [
+     "It wasn't much",
+     "There wasn't much",
+     "It wasn't a lot"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 7,
+    "options": [
+     "a little",
+     "any",
+     "some"
+    ],
+    "answer": [
+     0,
+     2
+    ]
+   },
+   {
+    "num": 8,
+    "options": [
+     "concentrate",
+     "concentrate me",
+     "concentrate myself"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 9,
+    "options": [
+     "something",
+     "anything",
+     "nothing"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 10,
+    "options": [
+     "much",
+     "a lot of",
+     "lots of"
+    ],
+    "answer": [
+     1,
+     2
+    ]
+   },
+   {
+    "num": 11,
+    "options": [
+     "Most of shops",
+     "Most of the shops",
+     "The most of the shops"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 12,
+    "options": [
+     "any",
+     "none",
+     "either"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 13,
+    "options": [
+     "all morning",
+     "the whole morning",
+     "all the morning"
+    ],
+    "answer": [
+     0,
+     1
+    ]
+   },
+   {
+    "num": 14,
+    "options": [
+     "All is",
+     "Everything is",
+     "All are"
+    ],
+    "answer": 1
+   }
+  ]
+ }
+}

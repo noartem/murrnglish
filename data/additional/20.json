@@ -1,0 +1,43 @@
+{
+  "id": 20,
+  "topic": "if (conditional)",
+  "refs": "Units 25, 38–40",
+  "pdfPages": [326],
+  "exercise": {
+    "id": "20",
+    "type": "fill-in",
+    "instruction": "Complete the sentences.",
+    "items": [
+      {
+        "num": 2,
+        "parts": ["I'd be surprised if Sarah ", " now."],
+        "answers": [["called (me)"]]
+      },
+      {
+        "num": 3,
+        "parts": ["If ", " you were busy, I ", " you."],
+        "answers": [["I'd known", "I had known"], ["wouldn't have disturbed"]]
+      },
+      {
+        "num": 4,
+        "parts": ["There ", " so many accidents if ", " a speed limit."],
+        "answers": [["wouldn't be"], ["there was", "there were"]]
+      },
+      {
+        "num": 5,
+        "parts": ["If ", " the problem, ", " you."],
+        "answers": [["you'd told me about the problem"], ["I would have tried to help", "I'd have tried to help", "I would have helped", "I'd have helped"]]
+      },
+      {
+        "num": 6,
+        "parts": ["I ", " very wet if ", " an umbrella."],
+        "answers": [["would have got", "would have gotten"], ["I hadn't had"]]
+      },
+      {
+        "num": 7,
+        "parts": ["If he ", " so nervous, he ", " the test."],
+        "answers": [["hadn't been", "hadn't got", "hadn't gotten"], ["wouldn't have failed", "would have passed"]]
+      }
+    ]
+  }
+}

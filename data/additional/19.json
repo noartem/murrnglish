@@ -1,0 +1,58 @@
+{
+  "id": 19,
+  "topic": "if (conditional)",
+  "refs": "Units 25, 38–40",
+  "pdfPages": [325, 326],
+  "exercise": {
+    "id": "19",
+    "type": "fill-in",
+    "instruction": "Put the verb into the correct form.",
+    "items": [
+      {
+        "num": 4,
+        "parts": ["If the doorbell ", ", don't answer it."],
+        "answers": [["rings"]]
+      },
+      {
+        "num": 5,
+        "parts": ["I can't decide what to do. What would you do if ", " me?"],
+        "answers": [["you were"]]
+      },
+      {
+        "num": 6,
+        "parts": ["Well, if ", " a nice day, we can go to the beach."],
+        "answers": [["it's", "it is"]]
+      },
+      {
+        "num": 7,
+        "parts": ["No, it's not warm enough. If ", " warmer, I'd go."],
+        "answers": [["it was", "it were"]]
+      },
+      {
+        "num": 8,
+        "parts": ["No, it was too cold. If ", " warmer, we might have gone."],
+        "answers": [["it had been"]]
+      },
+      {
+        "num": 9,
+        "parts": ["If ", " enough money to go anywhere in the world, where would you go?"],
+        "answers": [["you had"]]
+      },
+      {
+        "num": 10,
+        "parts": ["I didn't have my phone with me, so I couldn't call you. I would have called you if ", " my phone."],
+        "answers": [["I'd had", "I had had"]]
+      },
+      {
+        "num": 11,
+        "parts": ["The accident was your fault. If you'd been driving more carefully, ", "."],
+        "answers": [["it wouldn't have happened"]]
+      },
+      {
+        "num": 12,
+        "parts": ["Well, if ", " it, I wouldn't know what was happening in the world."],
+        "answers": [["I didn't watch"]]
+      }
+    ]
+  }
+}

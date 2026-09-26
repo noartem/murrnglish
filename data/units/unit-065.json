@@ -1,0 +1,163 @@
+{
+  "unit": 65,
+  "title": "Adjective + to \u2026",
+  "pdfPages": [142, 143],
+  "exercises": [
+    {
+      "id": "65.1",
+      "type": "write",
+      "instruction": "Write these sentences in another way, beginning as shown.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "It was difficult to open the window. \u2192 The window",
+          "answers": ["The window was difficult to open."]
+        },
+        {
+          "num": 3,
+          "prompt": "It\u2019s impossible to translate some words. \u2192 Some words",
+          "answers": ["Some words are impossible to translate."]
+        },
+        {
+          "num": 4,
+          "prompt": "It\u2019s expensive to maintain a car. \u2192 A",
+          "answers": ["A car is expensive to maintain."]
+        },
+        {
+          "num": 5,
+          "prompt": "It\u2019s not safe to eat this meat. \u2192 This",
+          "answers": ["This meat isn\u2019t safe to eat."]
+        },
+        {
+          "num": 6,
+          "prompt": "It\u2019s easy to get to my house from here. \u2192 My",
+          "answers": ["My house is easy to get to from here."]
+        }
+      ]
+    },
+    {
+      "id": "65.2",
+      "type": "write",
+      "instruction": "Make sentences from the words in brackets.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "It\u2019s a very common mistake. (easy mistake / make)",
+          "answers": ["It\u2019s an easy mistake to make."]
+        },
+        {
+          "num": 3,
+          "prompt": "I like living in this town. (great place / live)",
+          "answers": ["It\u2019s a great place to live."]
+        },
+        {
+          "num": 4,
+          "prompt": "I wonder why she said that. (strange thing / say)",
+          "answers": ["It was a strange thing to say."]
+        }
+      ]
+    },
+    {
+      "id": "65.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Choose from the box.",
+      "wordBank": ["to hear", "to help", "to invite", "to make", "not", "of you", "silly", "amazed", "glad"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I\u2019ve been travelling a long time. Now I\u2019m ", " to be back home."],
+          "answers": [["glad"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I heard about Tom\u2019s accident. I was relieved ", " that he\u2019s OK."],
+          "answers": [["to hear"]]
+        },
+        {
+          "num": 4,
+          "parts": ["It was nice ", " to remember my birthday."],
+          "answers": [["of you"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Let me know if you need any assistance. I\u2019d be very pleased ", " you."],
+          "answers": [["to help"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I thought James was about 25. I was ", " to discover he was 40."],
+          "answers": [["amazed"]]
+        },
+        {
+          "num": 7,
+          "parts": ["It was inconsiderate of our neighbours ", " so much noise."],
+          "answers": [["to make"]]
+        },
+        {
+          "num": 8,
+          "parts": ["My interview went well. I was disappointed ", " to be offered the job."],
+          "answers": [["not"]]
+        },
+        {
+          "num": 9,
+          "parts": ["It\u2019s ", " of me to worry so much about things that are not important."],
+          "answers": [["silly"]]
+        }
+      ]
+    },
+    {
+      "id": "65.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use: the first the second the last the only",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Everybody else arrived before Paul.\nPaul was ", "."],
+          "answers": [["the last (person) to arrive"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Emily passed the exam. All the other students failed.\nEmily ", "."],
+          "answers": [["was the only student to pass (the exam)", "was the only one to pass (the exam)"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I complained to the manager. Another customer had already complained.\nI ", "."],
+          "answers": [["was the second customer to complain", "was the second person to complain"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Neil Armstrong walked on the moon in 1969. Nobody had done this before him.\nNeil Armstrong ", "."],
+          "answers": [["was the first person to walk on the moon", "was the first man to walk on the moon"]]
+        }
+      ]
+    },
+    {
+      "id": "65.5",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the words in brackets and a suitable verb.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I\u2019m not surprised you\u2019re tired after your trip.\n(you / bound / tired) You\u2019re ", " after such a long journey."],
+          "answers": [["bound to be tired"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Andy has a very bad memory.\n(he / sure / forget) He\u2019s ", " anything you tell him."],
+          "answers": [["sure to forget"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I don\u2019t think you\u2019ll need an umbrella.\n(it / not / likely / rain) It\u2019s ", "."],
+          "answers": [["not likely to rain", "isn\u2019t likely to rain"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The holidays begin this weekend.\n(there / sure / be) There\u2019s ", " a lot of traffic on the roads."],
+          "answers": [["sure to be"]]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+ "id": 16,
+ "topic": "Modal verbs (can/must/would etc.)",
+ "refs": "Units 26–36",
+ "pdfPages": [
+  323,
+  324
+ ],
+ "exercise": {
+  "id": "16",
+  "type": "choice",
+  "instruction": "Which alternatives are correct? Sometimes only one alternative is correct, and sometimes two of the alternatives are possible.",
+  "items": [
+   {
+    "num": 1,
+    "options": [
+     "may be",
+     "might be",
+     "can be"
+    ],
+    "answer": [
+     0,
+     1
+    ]
+   },
+   {
+    "num": 2,
+    "options": [
+     "must have fallen",
+     "should have fallen",
+     "had to fall"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 3,
+    "options": [
+     "could stop",
+     "could have stopped",
+     "managed to stop"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 4,
+    "options": [
+     "mustn't go",
+     "don't have to go",
+     "don't need to go"
+    ],
+    "answer": [
+     1,
+     2
+    ]
+   },
+   {
+    "num": 5,
+    "options": [
+     "could go",
+     "could have gone",
+     "must have gone"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 6,
+    "options": [
+     "couldn't find",
+     "couldn't have found",
+     "wasn't able to find"
+    ],
+    "answer": [
+     0,
+     2
+    ]
+   },
+   {
+    "num": 7,
+    "options": [
+     "could be",
+     "must be",
+     "might be"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 8,
+    "options": [
+     "must wait",
+     "must have waited",
+     "had to wait"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 9,
+    "options": [
+     "must have to work",
+     "may have to work",
+     "might have to work"
+    ],
+    "answer": [
+     1,
+     2
+    ]
+   },
+   {
+    "num": 10,
+    "options": [
+     "was able to convince",
+     "managed to convince",
+     "could convince"
+    ],
+    "answer": [
+     0,
+     1
+    ]
+   },
+   {
+    "num": 11,
+    "options": [
+     "mustn't forget",
+     "needn't forget",
+     "don't have to forget"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 12,
+    "options": [
+     "must have waited",
+     "had to wait",
+     "should have waited"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 13,
+    "options": [
+     "we have",
+     "we should have",
+     "to have"
+    ],
+    "answer": [
+     0,
+     1
+    ]
+   },
+   {
+    "num": 14,
+    "options": [
+     "You'd better wear",
+     "You should wear",
+     "You ought to wear"
+    ],
+    "answer": [
+     1,
+     2
+    ]
+   },
+   {
+    "num": 15,
+    "options": [
+     "will you do",
+     "would you do",
+     "should you do"
+    ],
+    "answer": 1
+   }
+  ]
+ }
+}

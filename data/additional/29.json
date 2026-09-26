@@ -1,0 +1,58 @@
+{
+  "id": 29,
+  "topic": "a/an and the",
+  "refs": "Units 69–78",
+  "pdfPages": [331, 332],
+  "exercise": {
+    "id": "29",
+    "type": "fill-in",
+    "instruction": "Put in a/an or the where necessary. Leave the space empty if the sentence is already complete.",
+    "items": [
+      {
+        "num": 1,
+        "parts": ["I don't usually like staying at – hotels, but last summer we spent two weeks at ", " very nice hotel by the sea."],
+        "answers": [["a"]]
+      },
+      {
+        "num": 2,
+        "parts": ["If you go to live in ", " foreign country, you should try and learn ", " language."],
+        "answers": [["a"], ["the"]]
+      },
+      {
+        "num": 3,
+        "parts": ["Helen is ", " economist. She lives in ", " United States and works for ", " investment company."],
+        "answers": [["an"], ["the"], ["an"]]
+      },
+      {
+        "num": 4,
+        "parts": ["I love sport, especially tennis. I play two or three times ", " week if I can, but I'm not ", " very good player."],
+        "answers": [["a"], ["a"]]
+      },
+      {
+        "num": 5,
+        "parts": ["I won't be home for dinner this evening. I'm meeting some friends after work and we're going to ", " cinema."],
+        "answers": [["the"]]
+      },
+      {
+        "num": 6,
+        "parts": ["When unemployment is high, it's difficult for people to find work. It's ", " big problem."],
+        "answers": [["a"]]
+      },
+      {
+        "num": 7,
+        "parts": ["There was ", " accident as I was going home last night. Two people were taken to ", " hospital. I think most accidents are caused by people driving too fast."],
+        "answers": [["an"], ["the"]]
+      },
+      {
+        "num": 8,
+        "parts": ["A: What's ", " name of ", " hotel where you're staying?\n      B: ", " Ambassador. It's in Queen Street in ", " city centre. It's near ", " station."],
+        "answers": [["the"], ["the"], ["The"], ["the"], ["the"]]
+      },
+      {
+        "num": 9,
+        "parts": ["I have two brothers. ", " older one is training to be ", " pilot. ", " younger one is still at school. When he leaves school, he wants to go to university to study law."],
+        "answers": [["The"], ["a"], ["The"]]
+      }
+    ]
+  }
+}

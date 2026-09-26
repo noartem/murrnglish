@@ -1,0 +1,205 @@
+{
+  "unit": 25,
+  "title": "when I do and when I\u2019ve done",
+  "pdfPages": [62, 63],
+  "exercises": [
+    {
+      "id": "25.1",
+      "type": "choice",
+      "instruction": "Which is correct?",
+      "items": [
+        {
+          "num": 1,
+          "options": ["you go out", "you\u2019ll go out"],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": ["we let", "we\u2019ll let"],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["the film starts", "will start"],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["it changes", "it will change"],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": ["I make", "I\u2019ll make"],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": ["I\u2019m 40", "I\u2019ll be 40"],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": ["I wait", "I\u2019ll wait"],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": ["he grows up", "he\u2019ll grow up"],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": ["you\u2019re", "you will be"],
+          "answer": 0
+        },
+        {
+          "num": 10,
+          "options": ["the weather is", "will be"],
+          "answer": 0
+        },
+        {
+          "num": 11,
+          "options": ["Vicky is", "will be"],
+          "answer": 0
+        },
+        {
+          "num": 12,
+          "options": ["you\u2019ve had", "you\u2019ll have"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "25.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the verbs in brackets. Use will/won\u2019t or the present (see/plays/are etc.).",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["When ", " here again, you must come and see us. (you / be)"],
+          "answers": [["you are"]]
+        },
+        {
+          "num": 2,
+          "parts": ["I want to see Sophie before ", " away next week. (she / go)"],
+          "answers": [["she goes"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Call me when ", " what time you\u2019re going to get here. (you / know)"],
+          "answers": [["you know"]]
+        },
+        {
+          "num": 4,
+          "parts": ["There\u2019s no need to hurry. ", " for you until ", " ready. (I / wait) (you / be)"],
+          "answers": [["I\u2019ll wait"], ["you\u2019re"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I\u2019m going out for about an hour. ", " here when ", " back? (you / still / be) (I / get)"],
+          "answers": [["Will you still be"], ["I get"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I think everything will be fine, but if ", " any problems, ", " you know, OK? (there / be) (I / let)"],
+          "answers": [["there are"], ["I\u2019ll let"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Kate looks completely different now. ", " her when ", " her again. (you / not / recognise) (you / see)"],
+          "answers": [["You won\u2019t recognise"], ["you see"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I\u2019m going to be away for a few days. If ", " to contact me while ", " away, you can call me. (you / need) (I / be)"],
+          "answers": [["you need"], ["I\u2019m"]]
+        }
+      ]
+    },
+    {
+      "id": "25.3",
+      "type": "fill-in",
+      "instruction": "Read the situations and complete the sentences.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Let\u2019s wait until ", "."],
+          "answers": [["it stops raining"]]
+        },
+        {
+          "num": 2,
+          "parts": ["I\u2019d better go now before ", "."],
+          "answers": [["it gets dark"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Let me know as soon as ", "."],
+          "answers": [["you decide", "you\u2019ve decided", "you have decided"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Where are you going to stay when ", "?"],
+          "answers": [["you\u2019re in Hong Kong", "you go to Hong Kong"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I think things will be better when they ", "."],
+          "answers": [["build the new road", "\u2019ve built the new road", "have built the new road"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I won\u2019t speak to her until ", "."],
+          "answers": [["she apologises", "she\u2019s apologised", "she has apologised"]]
+        }
+      ]
+    },
+    {
+      "id": "25.4",
+      "type": "fill-in",
+      "instruction": "Put in when or if.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["", " I\u2019m late tonight."],
+          "answers": [["If"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Be careful. You\u2019ll hurt yourself ", " you fall."],
+          "answers": [["if"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I\u2019m going shopping. ", " you want anything, I can get it for you."],
+          "answers": [["If"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I\u2019m going away for a few days. I\u2019ll call you ", " I get back."],
+          "answers": [["when"]]
+        },
+        {
+          "num": 5,
+          "parts": ["", " I don\u2019t see you tomorrow, when will I see you again?"],
+          "answers": [["If"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I\u2019m watching a programme on TV right now. ", " it finishes, I\u2019m going to bed."],
+          "answers": [["When"]]
+        },
+        {
+          "num": 7,
+          "parts": ["We can eat at home or, ", " you prefer, we can go to a restaurant."],
+          "answers": [["if"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I hope Sarah can come to the party. It will be a shame ", " she can\u2019t come."],
+          "answers": [["if"]]
+        }
+      ]
+    }
+  ]
+}

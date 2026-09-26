@@ -1,0 +1,209 @@
+{
+  "unit": 98,
+  "title": "Adjectives ending in -ing and -ed (boring/bored etc.)",
+  "pdfPages": [208, 209],
+  "exercises": [
+    {
+      "id": "98.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences for each situation. Use the word in brackets + -ing or -ed.",
+      "items": [
+        {
+          "num": "2a",
+          "parts": ["She enjoys her job, but it\u2019s often ", "."],
+          "answers": [["exhausting"]]
+        },
+        {
+          "num": "2b",
+          "parts": ["At the end of a day\u2019s work, she is often ", "."],
+          "answers": [["exhausted"]]
+        },
+        {
+          "num": "3a",
+          "parts": ["This weather is ", "."],
+          "answers": [["depressing"]]
+        },
+        {
+          "num": "3b",
+          "parts": ["This weather makes me ", "."],
+          "answers": [["depressed"]]
+        },
+        {
+          "num": "3c",
+          "parts": ["It\u2019s silly to get ", " because of the weather."],
+          "answers": [["depressed"]]
+        },
+        {
+          "num": "4a",
+          "parts": ["It will be an ", " experience for her."],
+          "answers": [["exciting"]]
+        },
+        {
+          "num": "4b",
+          "parts": ["Going to new places is always ", "."],
+          "answers": [["exciting"]]
+        },
+        {
+          "num": "4c",
+          "parts": ["She is really ", " about going to Mexico."],
+          "answers": [["excited"]]
+        }
+      ]
+    },
+    {
+      "id": "98.2",
+      "type": "choice",
+      "instruction": "Choose the correct word.",
+      "items": [
+        {
+          "num": 1,
+          "options": ["disappointing", "disappointed"],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": ["interesting", "interested"],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["exciting", "excited"],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["embarrassing", "embarrassed"],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": ["embarrassing", "embarrassed"],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": ["amazing", "amazed"],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": ["amazing", "amazed"],
+          "answer": 0
+        },
+        {
+          "num": 8,
+          "options": ["amusing", "amused"],
+          "answer": 1
+        },
+        {
+          "num": 9,
+          "options": ["interesting", "interested"],
+          "answer": 1
+        },
+        {
+          "num": "10a",
+          "options": ["terrifying", "terrified"],
+          "answer": 0
+        },
+        {
+          "num": "10b",
+          "options": ["shocking", "shocked"],
+          "answer": 1
+        },
+        {
+          "num": "11a",
+          "options": ["boring", "bored"],
+          "answer": 1
+        },
+        {
+          "num": "11b",
+          "options": ["boring", "bored"],
+          "answer": 0
+        },
+        {
+          "num": "12a",
+          "options": ["boring", "bored"],
+          "answer": 0
+        },
+        {
+          "num": "12b",
+          "options": ["interesting", "interested"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "98.3",
+      "type": "fill-in",
+      "instruction": "Complete each sentence using a word from the box.",
+      "wordBank": [
+        "amusing/amused",
+        "annoying/annoyed",
+        "boring/bored",
+        "confusing/confused",
+        "disgusting/disgusted",
+        "exciting/excited",
+        "exhausting/exhausted",
+        "interesting/interested",
+        "surprising/surprised"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": ["You work very hard. It\u2019s not ", " that you\u2019re always tired."],
+          "answers": [["surprising"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Some people get ", " very easily. They always need something new."],
+          "answers": [["bored"]]
+        },
+        {
+          "num": 3,
+          "parts": ["The teacher\u2019s explanation was ", ". Nobody understood it."],
+          "answers": [["confusing"]]
+        },
+        {
+          "num": 4,
+          "parts": ["The kitchen hadn\u2019t been cleaned for ages. It was really ", "."],
+          "answers": [["disgusting"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I don\u2019t go to art galleries very often. I\u2019m not very ", " in art."],
+          "answers": [["interested"]]
+        },
+        {
+          "num": 6,
+          "parts": ["There\u2019s no need to get ", " just because I\u2019m a few minutes late."],
+          "answers": [["annoyed"]]
+        },
+        {
+          "num": 7,
+          "parts": ["The lecture was ", ". I fell asleep."],
+          "answers": [["boring"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I\u2019ve been working very hard all day and now I\u2019m ", "."],
+          "answers": [["exhausted"]]
+        },
+        {
+          "num": 9,
+          "parts": ["I\u2019m starting a new job next week. I\u2019m very ", " about it."],
+          "answers": [["excited"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Steve is good at telling funny stories. He can be very ", "."],
+          "answers": [["amusing"]]
+        },
+        {
+          "num": 11,
+          "parts": ["Helen is a very ", " person. She knows a lot, she\u2019s travelled a lot and she\u2019s done lots of different things."],
+          "answers": [["interesting"]]
+        }
+      ]
+    }
+  ]
+}

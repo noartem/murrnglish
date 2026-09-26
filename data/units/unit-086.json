@@ -1,0 +1,77 @@
+{
+  "unit": 86,
+  "title": "no/none/any nothing/nobody etc.",
+  "pdfPages": [184, 185],
+  "exercises": [
+    {
+      "id": "86.1",
+      "type": "fill-in",
+      "instruction": "Complete these sentences with no, none or any.",
+      "items": [
+        {"num": 1, "parts": ["It was a public holiday, so there were ", " shops open."], "answers": [["no"]]},
+        {"num": 2, "parts": ["I don\u2019t have ", " money. Can you lend me some?"], "answers": [["any"]]},
+        {"num": 3, "parts": ["We had to walk home. There were ", " taxis."], "answers": [["no"]]},
+        {"num": 4, "parts": ["We had to walk home. There weren\u2019t ", " taxis."], "answers": [["any"]]},
+        {"num": 5, "parts": ["\u2018How many eggs do we have?\u2019 \u2018", ". Shall I get some?\u2019"], "answers": [["None"]]},
+        {"num": 6, "parts": ["There\u2019s nowhere to cross the river. There\u2019s ", " bridge."], "answers": [["no"]]},
+        {"num": 7, "parts": ["We took a few pictures, but ", " of them were very good."], "answers": [["none"]]},
+        {"num": 8, "parts": ["\u2018Did you take lots of pictures?\u2019 \u2018No, I didn\u2019t take ", ".\u2019"], "answers": [["any"]]},
+        {"num": 9, "parts": ["I had to do what I did. I had ", " alternative."], "answers": [["no"]]},
+        {"num": 10, "parts": ["I don\u2019t like ", " of this furniture. It\u2019s horrible."], "answers": [["any"]]},
+        {"num": 11, "parts": ["We cancelled the party because ", " of the people we invited were able to come."], "answers": [["none"]]},
+        {"num": 12, "parts": ["Everyone knows they are getting married. It\u2019s ", " secret."], "answers": [["no"]]},
+        {"num": 13, "parts": ["The two books are exactly the same. There isn\u2019t ", " difference."], "answers": [["any"]]},
+        {"num": 14, "parts": ["\u2018Do you know where Chris is?\u2019 \u2018I\u2019m sorry. I have ", " idea.\u2019"], "answers": [["no"]]}
+      ]
+    },
+    {
+      "id": "86.2",
+      "type": "fill-in",
+      "instruction": "Answer these questions using none/nobody/nothing/nowhere.",
+      "items": [
+        {"num": 2, "parts": ["\u2018Who are you waiting for?\u2019 \u2018", ". I\u2019m just standing here.\u2019"], "answers": [["Nobody", "No-one"]]},
+        {"num": 3, "parts": ["\u2018How much bread did you buy?\u2019 \u2018", ". We already have enough.\u2019"], "answers": [["None"]]},
+        {"num": 4, "parts": ["\u2018Where are you going?\u2019 \u2018", ". I\u2019m staying here.\u2019"], "answers": [["Nowhere"]]},
+        {"num": 5, "parts": ["\u2018How many books have you read this year?\u2019 \u2018", ". I don\u2019t read books.\u2019"], "answers": [["None"]]},
+        {"num": 6, "parts": ["\u2018How much does it cost to get into the museum?\u2019 \u2018", ". It\u2019s free.\u2019"], "answers": [["Nothing"]]},
+        {"num": 8, "parts": ["I\u2019m ", " waiting for anybody/anyone."], "answers": [["not"]]},
+        {"num": 9, "parts": ["I ", " bought any (bread)."], "answers": [["didn\u2019t"]]},
+        {"num": 10, "parts": ["I\u2019m not going ", "."], "answers": [["anywhere"]]},
+        {"num": 11, "parts": ["I haven\u2019t read ", " (books)."], "answers": [["any"]]},
+        {"num": 12, "parts": ["It doesn\u2019t cost ", "."], "answers": [["anything"]]}
+      ]
+    },
+    {
+      "id": "86.3",
+      "type": "fill-in",
+      "instruction": "Complete these sentences with no- or any- + -body/-thing/-where.",
+      "items": [
+        {"num": 1, "parts": ["I don\u2019t want ", " to drink. I\u2019m not thirsty."], "answers": [["anything"]]},
+        {"num": 2, "parts": ["The bus was completely empty. There was ", " on it."], "answers": [["nobody", "no-one"]]},
+        {"num": 3, "parts": ["\u2018Where did you go for your holidays?\u2019 \u2018", ". I didn\u2019t go away.\u2019"], "answers": [["Nowhere"]]},
+        {"num": 4, "parts": ["\u2018Can you smell gas?\u2019 \u2018No, I can\u2019t smell ", ".\u2019"], "answers": [["anything"]]},
+        {"num": 5, "parts": ["Everybody seemed satisfied. ", " complained."], "answers": [["Nobody", "No-one"]]},
+        {"num": 6, "parts": ["Let\u2019s go away. We can go ", " you like."], "answers": [["anywhere"]]},
+        {"num": 7, "parts": ["The town is still the same as it was years ago. ", " has changed."], "answers": [["Nothing"]]},
+        {"num": 8, "parts": ["\u2018What did you buy?\u2019 \u2018", ". I couldn\u2019t find ", " I wanted.\u2019"], "answers": [["Nothing"], ["anything"]]},
+        {"num": 9, "parts": ["There was complete silence in the room. ", " said ", "."], "answers": [["Nobody", "No-one"], ["anything"]]}
+      ]
+    },
+    {
+      "id": "86.4",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {"num": 1, "options": ["She didn\u2019t tell nobody", "She didn\u2019t tell anybody"], "answer": 1},
+        {"num": 2, "options": ["nobody was seriously injured", "anybody was seriously injured"], "answer": 0},
+        {"num": 3, "options": ["I couldn\u2019t see no-one", "I couldn\u2019t see anyone"], "answer": 1},
+        {"num": 4, "options": ["Nobody can pass it", "Anybody can pass it"], "answer": 1},
+        {"num": 5, "options": ["Nothing. It\u2019s empty.", "Anything. It\u2019s empty."], "answer": 0},
+        {"num": 6, "options": ["Nothing is possible.", "Anything is possible."], "answer": 1},
+        {"num": 7, "options": ["I don\u2019t know nothing about economics.", "I don\u2019t know anything about economics."], "answer": 1},
+        {"num": 8, "options": ["I\u2019ll try and answer no questions you ask me.", "I\u2019ll try and answer any questions you ask me."], "answer": 1},
+        {"num": 9, "options": ["No-one. I wasn\u2019t talking to no-one.", "No-one. I wasn\u2019t talking to anyone."], "answer": 1}
+      ]
+    }
+  ]
+}

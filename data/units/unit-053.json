@@ -1,0 +1,346 @@
+{
+ "unit": 53,
+ "title": "Verb + -ing (enjoy doing / stop doing etc.)",
+ "pdfPages": [
+  118,
+  119
+ ],
+ "exercises": [
+  {
+   "id": "53.1",
+   "type": "fill-in",
+   "instruction": "Complete the sentences for each situation. Use -ing.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "She suggested ",
+      " to the zoo."
+     ],
+     "answers": [
+      [
+       "going"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "He didn't fancy ",
+      "."
+     ],
+     "answers": [
+      [
+       "playing tennis"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "She suggested ",
+      " for a walk."
+     ],
+     "answers": [
+      [
+       "going"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "He denied ",
+      " the accident."
+     ],
+     "answers": [
+      [
+       "causing"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "They didn't mind ",
+      " a few minutes."
+     ],
+     "answers": [
+      [
+       "waiting"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "She admitted ",
+      " the truth."
+     ],
+     "answers": [
+      [
+       "not telling",
+       "lying"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "53.2",
+   "type": "fill-in",
+   "instruction": "Complete the sentences. Choose from these verbs (in the correct form):",
+   "wordBank": [
+    "answer",
+    "apply",
+    "forget",
+    "interrupt",
+    "listen",
+    "live",
+    "lose",
+    "make",
+    "pay",
+    "read",
+    "travel",
+    "try"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He tried to avoid ",
+      " my question."
+     ],
+     "answers": [
+      [
+       "answering"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I'm trying to concentrate. Please stop ",
+      " so much noise!"
+     ],
+     "answers": [
+      [
+       "making"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I enjoy ",
+      " to music."
+     ],
+     "answers": [
+      [
+       "listening"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I considered ",
+      " for the job, but in the end I decided against it."
+     ],
+     "answers": [
+      [
+       "applying"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Have you finished ",
+      " the newspaper yet?"
+     ],
+     "answers": [
+      [
+       "reading"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "We need to change our routine. We can't go on ",
+      " like this."
+     ],
+     "answers": [
+      [
+       "living"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "It's better to avoid ",
+      " during the rush hour."
+     ],
+     "answers": [
+      [
+       "travelling"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "My memory is getting worse. I keep ",
+      " things."
+     ],
+     "answers": [
+      [
+       "forgetting"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I've put off ",
+      " this bill so many times. I really must do it today."
+     ],
+     "answers": [
+      [
+       "paying"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I've given up ",
+      " to learn Japanese. I was making no progress."
+     ],
+     "answers": [
+      [
+       "trying"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "If you gamble, you risk ",
+      " your money."
+     ],
+     "answers": [
+      [
+       "losing"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "Would you mind not ",
+      " me all the time? Let me speak!"
+     ],
+     "answers": [
+      [
+       "interrupting"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "53.3",
+   "type": "write",
+   "instruction": "Put the words in the right order.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(that / remember / her / saying / don't)",
+     "answers": [
+      "I don't remember her saying that."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(driving / don't / it / you / mind)",
+     "answers": [
+      "I don't mind you driving it."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(imagine / so stupid / being / you / anybody)",
+     "answers": [
+      "Can you imagine anybody being so stupid?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(raining / stop / it / can't)",
+     "answers": [
+      "We can't stop it raining."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(waiting / want / keep / you / don't / to)",
+     "answers": [
+      "I don't want to keep you waiting."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "53.4",
+   "type": "self-check",
+   "instruction": "Use your own ideas to complete these sentences. Use -ing.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "She's a very interesting person. I always enjoy talking to her",
+     "modelAnswers": [
+      "talking to her"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I'm not feeling very well. I don't fancy",
+     "modelAnswers": [
+      "going out"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I'm afraid there aren't any chairs. I hope you don't mind",
+     "modelAnswers": [
+      "sitting on the floor"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "It was a beautiful day, so I suggested",
+     "modelAnswers": [
+      "having a picnic"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "The movie was very funny. I couldn't stop",
+     "modelAnswers": [
+      "laughing"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "My car is unreliable. It keeps",
+     "modelAnswers": [
+      "breaking down"
+     ]
+    }
+   ]
+  }
+ ]
+}

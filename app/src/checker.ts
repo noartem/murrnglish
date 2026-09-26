@@ -1,0 +1,35 @@
+// Answer normalization + checking. Pure functions, unit-tested in checker.test.ts.
+
+export function normalize(s: string): string {
+  return s
+    .trim()
+    .replace(/[’‘]/g, "'")
+    .replace(/[“”]/g, '"')
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .replace(/[.?!]+$/, "")
+    .trim();
+}
+
+const NO_WORD = new Set(["-", "–", "—"]);
+
+export function checkFill(value: string, variants: string[]): boolean {
+  if (!variants.length) return false;
+  const v = normalize(value);
+  if (!v) {
+    // book prints "–" for items where no word is necessary
+    return variants.some((a) => NO_WORD.has(normalize(a)));
+  }
+  return variants.some((a) => normalize(a) === v);
+}
+
+export const checkWrite = checkFill;
+
+export function checkChoice(selected: number | null, answer: number | number[]): boolean {
+  if (selected === null) return false;
+  return Array.isArray(answer) ? answer.includes(selected) : selected === answer;
+}
+export function checkMatching(selected: (number | null)[], pairs: [number, number][]): boolean[] {
+  const answer = new Map(pairs.map(([l, r]) => [l, r]));
+  return selected.map((s, i) => s !== null && answer.get(i) === s);
+}

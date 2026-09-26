@@ -1,0 +1,231 @@
+{
+  "unit": 31,
+  "title": "have to and must",
+  "pdfPages": [74, 75],
+  "exercises": [
+    {
+      "id": "31.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using have/has/had to … . Use the verbs in brackets.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["He ", " late."],
+          "answers": [["has to work"]]
+        },
+        {
+          "num": 2,
+          "parts": ["How long ", " ?"],
+          "answers": [["did you have to wait"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I don't have much time. ", " in ten minutes."],
+          "answers": [["I'll have to go"]]
+        },
+        {
+          "num": 4,
+          "parts": ["'I'm afraid I can't stay long.' 'What time ", " ?'"],
+          "answers": [["do you have to go"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Joe starts work at 5 am every day, which means ", " at four."],
+          "answers": [["he has to get up"]]
+        },
+        {
+          "num": 6,
+          "parts": ["We nearly missed the bus this morning. ", " to catch it."],
+          "answers": [["We had to run"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Is Lisa usually free on Saturdays or ", " ?"],
+          "answers": [["does she have to work"]]
+        },
+        {
+          "num": 8,
+          "parts": ["There was nobody to help me. ", " everything by myself."],
+          "answers": [["I had to do"]]
+        },
+        {
+          "num": 9,
+          "parts": ["How old ", " to have a driving licence?"],
+          "answers": [["do you have to be"]]
+        },
+        {
+          "num": 10,
+          "parts": ["There was a lot of noise from the street. ", " the window."],
+          "answers": [["We had to close"]]
+        },
+        {
+          "num": 11,
+          "parts": ["Was the exhibition free, or ", " to go in?"],
+          "answers": [["did you have to pay"]]
+        }
+      ]
+    },
+    {
+      "id": "31.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using have/has/had to + the verbs in the list. Some sentences are negative (I don't have to … etc.):",
+      "wordBank": ["ask", "decide", "drive", "get up", "go", "make", "make", "pay", "show", "stand"],
+      "items": [
+        {
+          "num": 1,
+          "parts": ["I'm not working tomorrow, so I ", " early."],
+          "answers": [["don't have to get up"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Steve didn't know how to change the settings on his phone. I ", "."],
+          "answers": [["had to show him"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Excuse me a moment – I ", ". I won't be long."],
+          "answers": [["have to make"]]
+        },
+        {
+          "num": 4,
+          "parts": ["You can let me know later what you want to do. You ", " now."],
+          "answers": [["don't have to decide"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I couldn't find the street I wanted. I ", " somebody for directions."],
+          "answers": [["had to ask"]]
+        },
+        {
+          "num": 6,
+          "parts": ["This car park is free. You ", "."],
+          "answers": [["don't have to pay"]]
+        },
+        {
+          "num": 7,
+          "parts": ["A man was slightly injured in the accident, but he ", " to hospital."],
+          "answers": [["didn't have to go"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Jane has a senior position in the company. She ", " important decisions."],
+          "answers": [["has to make"]]
+        },
+        {
+          "num": 9,
+          "parts": ["The train was very full and there were no seats free. We ", " all the way."],
+          "answers": [["had to stand"]]
+        },
+        {
+          "num": 10,
+          "parts": ["When Patrick starts his new job next month, he ", " 50 miles to work every day."],
+          "answers": [["will have to drive"]]
+        }
+      ]
+    },
+    {
+      "id": "31.3",
+      "type": "write",
+      "instruction": "In some of these sentences, must is wrong or unnatural. Correct the sentences where necessary.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "It's later than I thought. I must go.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 2,
+          "prompt": "I must start work every day at 8.30.",
+          "answers": ["I have to start work every day at 8.30."]
+        },
+        {
+          "num": 3,
+          "prompt": "I must remember to call Sarah tomorrow.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 4,
+          "prompt": "I couldn't get a taxi last night. I must walk home.",
+          "answers": ["I had to walk home."]
+        },
+        {
+          "num": 5,
+          "prompt": "You must come and see us again soon.",
+          "answers": ["OK"]
+        },
+        {
+          "num": 6,
+          "prompt": "Tom isn't going out this evening. He must study for his exam.",
+          "answers": ["He has to study for his exam."]
+        },
+        {
+          "num": 7,
+          "prompt": "We can't go the usual way because the road is closed. We must go another way.",
+          "answers": ["We have to go another way."]
+        },
+        {
+          "num": 8,
+          "prompt": "Julia wears glasses. She must wear glasses since she was very young.",
+          "answers": ["She has had to wear glasses since she was very young."]
+        }
+      ]
+    },
+    {
+      "id": "31.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with mustn't, don't have to or doesn't have to.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["I don't want anyone to know about our plan. You ", " anyone."],
+          "answers": [["mustn't tell"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Richard ", " a suit to work, but he usually does."],
+          "answers": [["doesn't have to wear"]]
+        },
+        {
+          "num": 3,
+          "parts": ["There's a lift in the building, so we ", " the stairs."],
+          "answers": [["don't have to climb"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I promised Kate I'd call her tomorrow. I ", "."],
+          "answers": [["mustn't forget"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I'm not very busy. I have a few things to do, but I ", " now."],
+          "answers": [["don't have to do them"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Sophie likes weekends because she ", "."],
+          "answers": [["doesn't have to get up early"]]
+        },
+        {
+          "num": 7,
+          "parts": ["You ", " a good player to enjoy a game of tennis."],
+          "answers": [["don't have to be"]]
+        },
+        {
+          "num": 8,
+          "parts": ["You should keep trying to find a job. You ", "."],
+          "answers": [["mustn't give up"]]
+        },
+        {
+          "num": 9,
+          "parts": ["I ", " too much. I'm supposed to be on a diet."],
+          "answers": [["mustn't eat"]]
+        },
+        {
+          "num": 10,
+          "parts": ["We have plenty of time before our flight. We ", " yet."],
+          "answers": [["don't have to check in"]]
+        }
+      ]
+    }
+  ]
+}

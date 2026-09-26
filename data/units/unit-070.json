@@ -1,0 +1,73 @@
+{
+  "unit": 70,
+  "title": "Countable and uncountable 2",
+  "pdfPages": [152, 153],
+  "exercises": [
+    {
+      "id": "70.1",
+      "type": "choice",
+      "instruction": "Which is correct?",
+      "items": [
+        {"num": "1a", "options": ["strange noise", "a strange noise"], "answer": 1},
+        {"num": "1b", "options": ["there's a lot of noise", "there are a lot of noises"], "answer": 0},
+        {"num": "2a", "options": ["Light", "A light"], "answer": 0},
+        {"num": "2b", "options": ["light", "a light"], "answer": 1},
+        {"num": "3a", "options": ["time", "a time"], "answer": 1},
+        {"num": "3b", "options": ["great time", "a great time"], "answer": 1},
+        {"num": "4a", "options": ["glass of water", "a glass of water"], "answer": 1},
+        {"num": "4b", "options": ["broken glass", "a broken glass"], "answer": 0},
+        {"num": "5a", "options": ["very nice room", "a very nice room"], "answer": 1},
+        {"num": "5b", "options": ["room", "a room"], "answer": 0}
+      ]
+    },
+    {
+      "id": "70.2",
+      "type": "choice",
+      "instruction": "Which is correct?",
+      "items": [
+        {"num": 1, "options": ["nice weather", "a nice weather"], "answer": 0},
+        {"num": 2, "options": ["bad luck", "a bad luck"], "answer": 0},
+        {"num": 3, "options": ["travel", "journey"], "answer": 1},
+        {"num": 4, "options": ["complete chaos", "a complete chaos"], "answer": 0},
+        {"num": 5, "options": ["don't", "doesn't"], "answer": 1},
+        {"num": 6, "options": ["some lovely scenery", "a lovely scenery"], "answer": 0},
+        {"num": 7, "options": ["very hard work", "a very hard work"], "answer": 0},
+        {"num": 8, "options": ["paper", "papers"], "answer": 0},
+        {"num": 9, "options": ["heavy traffic", "a heavy traffic"], "answer": 0},
+        {"num": "10a", "options": ["Your hair is", "Your hairs are"], "answer": 0},
+        {"num": "10b", "options": ["it", "them"], "answer": 0}
+      ]
+    },
+    {
+      "id": "70.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the following words. Use the plural (-s) where necessary.",
+      "wordBank": ["advice", "chair", "damage", "experience", "experience", "furniture", "hair", "luggage", "permission", "progress"],
+      "items": [
+        {"num": 1, "parts": ["We didn't have much ", " – just two small bags."], "answers": [["luggage"]]},
+        {"num": 2, "parts": ["We have no ", ", not even a bed or a table."], "answers": [["furniture"]]},
+        {"num": 3, "parts": ["There is room for everybody to sit down. There are plenty of ", "."], "answers": [["chairs"]]},
+        {"num": 4, "parts": ["Who is that woman with short ", "? Do you know her?"], "answers": [["hair"]]},
+        {"num": 5, "parts": ["Carla's English is better than it was. She's made good ", "."], "answers": [["progress"]]},
+        {"num": 6, "parts": ["If you want to take pictures here, you need to ask for ", "."], "answers": [["permission"]]},
+        {"num": 7, "parts": ["I didn't know what I should do, so I asked Chris for ", "."], "answers": [["advice"]]},
+        {"num": 8, "parts": ["I don't think Dan should get the job. He doesn't have enough ", "."], "answers": [["experience"]]},
+        {"num": 9, "parts": ["Kate has done many interesting things. She could write a book about her ", "."], "answers": [["experiences"]]},
+        {"num": 10, "parts": ["The ", " caused by the storm will cost a lot to repair."], "answers": [["damage"]]}
+      ]
+    },
+    {
+      "id": "70.4",
+      "type": "write",
+      "instruction": "What do you say in these situations? Use the word in brackets in your sentence.",
+      "items": [
+        {"num": 1, "prompt": "(luggage)", "answers": ["Do you have any luggage?"]},
+        {"num": 2, "prompt": "(information) I'd like", "answers": ["I'd like some information about places to visit.", "I'd like some information about places to visit in the town."]},
+        {"num": 3, "prompt": "(advice) Can you give", "answers": ["Can you give me some advice about which courses to do?", "Can you give me some advice about which courses I can do?"]},
+        {"num": 4, "prompt": "(good news) Hi, Tom. I", "answers": ["I've just got some good news.", "I've got some good news.", "I've just had some good news.", "I've had some good news.", "I just got some good news.", "I got some good news."]},
+        {"num": 5, "prompt": "(view) It", "answers": ["It's a beautiful view, isn't it?", "It's a beautiful view from here, isn't it?"]},
+        {"num": 6, "prompt": "(weather) What", "answers": ["What horrible weather!", "What awful weather!"]}
+      ]
+    }
+  ]
+}

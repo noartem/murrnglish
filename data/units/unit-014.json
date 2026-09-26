@@ -1,0 +1,71 @@
+{
+  "unit": 14,
+  "title": "Present perfect and past 2 (I have done and I did)",
+  "pdfPages": [40, 41],
+  "exercises": [
+    {
+      "id": "14.1",
+      "type": "write",
+      "instruction": "Are the underlined parts of these sentences OK? Correct them where necessary.",
+      "items": [
+        {"num": 1, "prompt": "I've lost my key. I can't find it anywhere.", "answers": ["OK"]},
+        {"num": 2, "prompt": "Have you eaten a lot of sweets when you were a child?", "answers": ["Did you eat"]},
+        {"num": 3, "prompt": "I've bought a new car. You must come and see it.", "answers": ["OK"]},
+        {"num": 4, "prompt": "I've bought a new car last week.", "answers": ["I bought"]},
+        {"num": 5, "prompt": "Where have you been yesterday evening?", "answers": ["Where were you"]},
+        {"num": 6, "prompt": "Maria has left school in 1999.", "answers": ["Maria left school"]},
+        {"num": 7, "prompt": "I'm looking for Mike. Have you seen him?", "answers": ["OK"]},
+        {"num": 8, "prompt": "'Have you been to Paris?' 'Yes, many times.'", "answers": ["OK"]},
+        {"num": 9, "prompt": "I'm very hungry. I haven't eaten much today.", "answers": ["OK"]},
+        {"num": 10, "prompt": "When has this bridge been built?", "answers": ["When was this bridge built?"]}
+      ]
+    },
+    {
+      "id": "14.2",
+      "type": "write",
+      "instruction": "Make sentences from the words in brackets. Use the present perfect or past simple.",
+      "items": [
+        {"num": 1, "prompt": "(it / not / rain / this week)", "answers": ["It hasn't rained this week."]},
+        {"num": 2, "prompt": "(the weather / be / cold / recently)", "answers": ["The weather has been cold recently."]},
+        {"num": 3, "prompt": "(it / cold / last week)", "answers": ["It was cold last week."]},
+        {"num": 4, "prompt": "(I / not / eat / any fruit yesterday)", "answers": ["I didn't eat any fruit yesterday."]},
+        {"num": 5, "prompt": "(I / not / eat / any fruit today)", "answers": ["I haven't eaten any fruit today."]},
+        {"num": 6, "prompt": "(Emily / earn / a lot of money / this year)", "answers": ["Emily has earned a lot of money this year."]},
+        {"num": 7, "prompt": "(she / not / earn / so much / last year)", "answers": ["She didn't earn so much last year."]},
+        {"num": 8, "prompt": "(you / have / a holiday recently?)", "answers": ["Have you had a holiday recently?"]}
+      ]
+    },
+    {
+      "id": "14.3",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form, present perfect or past simple.",
+      "items": [
+        {"num": 1, "parts": ["I ", " to Canada, but I'd like to go there."], "answers": [["haven't been"]]},
+        {"num": 2, "parts": ["Paul and Lucy ", " about ten minutes ago."], "answers": [["arrived"]]},
+        {"num": 3, "parts": ["I'm tired. ", " well last night."], "answers": [["I didn't sleep"]]},
+        {"num": 4, "parts": ["", " a bus drivers' strike last week, so ", " no buses."], "answers": [["There was"], ["there were"]]},
+        {"num": 5, "parts": ["Edward ", " in a bank for 15 years. Then ", " it up. Now he works as a gardener."], "answers": [["worked"], ["he gave"]]},
+        {"num": 6, "parts": ["Mary lives in Dublin. ", " there all her life."], "answers": [["She's lived", "She has lived"]]},
+        {"num": 7, "parts": ["My grandfather ", " before I was born. ", " him."], "answers": [["died"], ["I never met"]]},
+        {"num": 8, "parts": ["I don't know Karen's husband. ", " him."], "answers": [["I've never met", "I have never met"]]},
+        {"num": 9, "parts": ["It's nearly lunchtime, and ", " Martin all morning. I wonder where he is."], "answers": [["I haven't seen"]]},
+        {"num": 10, "parts": ["a: ", " to the cinema last night? b: Yes, but the movie ", " awful."], "answers": [["Did you go"], ["was"]]},
+        {"num": 11, "parts": ["a: ", " very warm here since we arrived. b: Yes, ", " 35 degrees yesterday."], "answers": [["It's been", "It has been"], ["it was"]]},
+        {"num": 12, "parts": ["a: How long ", " there? b: Five years. a: Where ", " before that? b: In Chicago. a: And how long ", " in Chicago? b: Two years."], "answers": [["have you lived", "have you been living"], ["did you live"], ["did you live"]]}
+      ]
+    },
+    {
+      "id": "14.4",
+      "type": "self-check",
+      "instruction": "Write sentences about yourself using the ideas in brackets.",
+      "items": [
+        {"num": 1, "prompt": "(something you haven't done today)", "modelAnswers": ["I haven't eaten any fruit today."]},
+        {"num": 2, "prompt": "(something you haven't done today)", "modelAnswers": ["I haven't bought anything today."]},
+        {"num": 3, "prompt": "(something you didn't do yesterday)", "modelAnswers": ["I didn't watch TV yesterday."]},
+        {"num": 4, "prompt": "(something you did yesterday evening)", "modelAnswers": ["I went out with some friends yesterday evening."]},
+        {"num": 5, "prompt": "(something you haven't done recently)", "modelAnswers": ["I haven't been to the cinema recently."]},
+        {"num": 6, "prompt": "(something you've done a lot recently)", "modelAnswers": ["I've read a lot of books recently."]}
+      ]
+    }
+  ]
+}

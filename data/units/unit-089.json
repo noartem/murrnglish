@@ -1,0 +1,71 @@
+{
+  "unit": 89,
+  "title": "both / both of neither / neither of either / either of",
+  "pdfPages": [190, 191],
+  "exercises": [
+    {
+      "id": "89.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with both/neither/either.",
+      "items": [
+        {"num": 2, "parts": ["\u2018What day is it today \u2013 the 18th or the 19th?\u2019 \u2018", ". It\u2019s the 20th.\u2019"], "answers": [["Neither"]]},
+        {"num": 3, "parts": ["We went to ", ". A week in Korea and a week in Japan."], "answers": [["both"]]},
+        {"num": 4, "parts": ["\u2018Shall we sit in the corner or by the window?\u2019 \u2018", ". I don\u2019t mind.\u2019"], "answers": [["Either"]]},
+        {"num": 5, "parts": ["\u2018Where\u2019s Lisa? Is she at work or at home?\u2019 \u2018", ". She\u2019s away on holiday.\u2019"], "answers": [["Neither"]]},
+        {"num": 6, "parts": ["\u2018Is it true that Kate speaks Spanish and Arabic?\u2019 \u2018Yes, she speaks ", " fluently.\u2019"], "answers": [["both"]]}
+      ]
+    },
+    {
+      "id": "89.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with both/neither/either. Use of where necessary.",
+      "items": [
+        {"num": 2, "parts": ["To get to the town centre, you can walk along the river or you can go along the road. You can go ", " way."], "answers": [["either"]]},
+        {"num": 3, "parts": ["I went to Carl\u2019s house twice, but ", " times he wasn\u2019t at home."], "answers": [["both"]]},
+        {"num": 4, "parts": ["", " Tom\u2019s parents is English. His father is Polish and his mother is Italian."], "answers": [["Neither of"]]},
+        {"num": 5, "parts": ["Fortunately ", " driver was injured, but ", " cars were badly damaged."], "answers": [["neither"], ["both"]]},
+        {"num": 6, "parts": ["I have two sisters and a brother. My brother is working, but ", " my sisters are still at school."], "answers": [["both"]]}
+      ]
+    },
+    {
+      "id": "89.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with both/neither/either + of us / of them.",
+      "items": [
+        {"num": 2, "parts": ["I was invited to two parties last week, but I couldn\u2019t go to ", "."], "answers": [["either of them"]]},
+        {"num": 3, "parts": ["There were two windows in the room. It was very warm, so I opened ", "."], "answers": [["both of them"]]},
+        {"num": 4, "parts": ["Sam and I often play tennis, but we\u2019re not very good. ", " can play well."], "answers": [["Neither of us"]]},
+        {"num": 5, "parts": ["I tried two bookshops for the book I wanted to buy, but ", " had it."], "answers": [["neither of them"]]}
+      ]
+    },
+    {
+      "id": "89.4",
+      "type": "write",
+      "instruction": "Write sentences with both \u2026 and \u2026 / neither \u2026 nor \u2026 / either \u2026 or \u2026 .",
+      "items": [
+        {"num": 1, "prompt": "(Chris / Pat / late)", "answers": ["Both Chris and Pat were late."]},
+        {"num": 2, "prompt": "(he / not say hello / not smile)", "answers": ["He neither said hello nor smiled."]},
+        {"num": 3, "prompt": "(boring movie / long)", "answers": ["The movie was both boring and long."]},
+        {"num": 4, "prompt": "(Joe / not have a car / Sam / not have one either)", "answers": ["Neither Joe nor Sam has a car.", "Neither Joe nor Sam has got a car."]},
+        {"num": 5, "prompt": "(Emily / speak German / speak Russian)", "answers": ["Emily speaks both German and Russian."]},
+        {"num": 6, "prompt": "(Ben / not watch TV / not read newspapers)", "answers": ["Ben neither watches TV nor reads newspapers."]},
+        {"num": 7, "prompt": "(that man\u2019s name / Richard / Robert)", "answers": ["That man\u2019s name is either Richard or Robert."]},
+        {"num": 8, "prompt": "(I / not have time / not have money)", "answers": ["I have neither the time nor the money to go on holiday."]},
+        {"num": 9, "prompt": "(we / leave today / leave tomorrow)", "answers": ["We can leave either today or tomorrow."]}
+      ]
+    },
+    {
+      "id": "89.5",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with neither/either/none/any.",
+      "items": [
+        {"num": 2, "parts": ["Sam has two sisters, but I haven\u2019t met ", " of them."], "answers": [["either"]]},
+        {"num": 3, "parts": ["Emily has four brothers, but I haven\u2019t met ", " of them."], "answers": [["any"]]},
+        {"num": 4, "parts": ["There were a few shops in the street, but ", " of them was open."], "answers": [["none"]]},
+        {"num": 5, "parts": ["Spain, Italy, Greece, Turkey \u2013 have you been to ", " of these countries?"], "answers": [["any"]]},
+        {"num": 6, "parts": ["I could meet you next Monday or Thursday. Would ", " of those days suit you?"], "answers": [["either"]]},
+        {"num": 7, "parts": ["Mark and I couldn\u2019t get into the house because ", " of us had a key."], "answers": [["neither"]]}
+      ]
+    }
+  ]
+}

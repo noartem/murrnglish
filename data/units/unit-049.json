@@ -1,0 +1,70 @@
+{
+  "unit": 49,
+  "title": "Questions 1",
+  "pdfPages": [110, 111],
+  "exercises": [
+    {
+      "id": "49.1",
+      "type": "write",
+      "instruction": "Ask Joe questions.",
+      "items": [
+        {"num": 2, "prompt": "(born there?)", "answers": ["Were you born there?"]},
+        {"num": 3, "prompt": "(married?)", "answers": ["Are you married?"]},
+        {"num": 4, "prompt": "(how long?)", "answers": ["How long have you been married?"]},
+        {"num": 5, "prompt": "(what / do?)", "answers": ["What do you do?"]},
+        {"num": 6, "prompt": "(what wife / do?)", "answers": ["What does your wife do?"]},
+        {"num": 7, "prompt": "(children?)", "answers": ["Do you have (any) children?", "Have you got (any) children?"]},
+        {"num": 8, "prompt": "(how old?)", "answers": ["How old are they?"]}
+      ]
+    },
+    {
+      "id": "49.2",
+      "type": "fill-in",
+      "instruction": "Make questions with who or what.",
+      "items": [
+        {"num": 1, "parts": ["", " hit you?"], "answers": [["Who"]]},
+        {"num": 2, "parts": ["", " did you hit?"], "answers": [["Who"]]},
+        {"num": 3, "parts": ["", " paid the bill?"], "answers": [["Who"]]},
+        {"num": 4, "parts": ["", " are you worried about?"], "answers": [["What"]]},
+        {"num": 5, "parts": ["", " happened?"], "answers": [["What"]]},
+        {"num": 6, "parts": ["", " did she/Diane say?"], "answers": [["What"]]},
+        {"num": 7, "parts": ["", " does it/this book belong to?"], "answers": [["Who"]]},
+        {"num": 8, "parts": ["", " lives in that house?"], "answers": [["Who"]]},
+        {"num": 9, "parts": ["", " did you fall over?"], "answers": [["What"]]},
+        {"num": 10, "parts": ["", " fell off the shelf?"], "answers": [["What"]]},
+        {"num": 11, "parts": ["", " does it/this word mean?"], "answers": [["What"]]},
+        {"num": 12, "parts": ["", " was she/Sarah with?"], "answers": [["Who"]]},
+        {"num": 13, "parts": ["", " are you looking for?"], "answers": [["What"]]},
+        {"num": 14, "parts": ["", " does she/Emma remind you of?"], "answers": [["Who"]]}
+      ]
+    },
+    {
+      "id": "49.3",
+      "type": "fill-in",
+      "instruction": "Put the words in brackets in the correct order.",
+      "items": [
+        {"num": 2, "parts": ["", ""], "answers": [["How is cheese made?"]]},
+        {"num": 3, "parts": ["", ""], "answers": [["Why isn\u2019t Sue working today?"]]},
+        {"num": 4, "parts": ["", ""], "answers": [["What time are your friends arriving?"]]},
+        {"num": 5, "parts": ["", ""], "answers": [["Why was the meeting cancelled?"]]},
+        {"num": 6, "parts": ["", ""], "answers": [["When was paper invented?"]]},
+        {"num": 7, "parts": ["", ""], "answers": [["Where were your parents born?"]]},
+        {"num": 8, "parts": ["", ""], "answers": [["Why didn\u2019t you come to the party?"]]},
+        {"num": 9, "parts": ["", ""], "answers": [["How did the accident happen?"]]},
+        {"num": 10, "parts": ["", ""], "answers": [["Why aren\u2019t you happy?"]]},
+        {"num": 11, "parts": ["", ""], "answers": [["How many languages can you speak?"]]}
+      ]
+    },
+    {
+      "id": "49.4",
+      "type": "fill-in",
+      "instruction": "Write negative questions from the words in brackets. In each situation you are surprised.",
+      "items": [
+        {"num": 1, "parts": ["Isn\u2019t ", " coming out with us?"], "answers": [["she"]]},
+        {"num": 2, "parts": ["Don\u2019t you like ", "?"], "answers": [["him"]]},
+        {"num": 3, "parts": ["Isn\u2019t it ", "?"], "answers": [["good"]]},
+        {"num": 4, "parts": ["Don\u2019t you have ", "?"], "answers": [["any"]]}
+      ]
+    }
+  ]
+}

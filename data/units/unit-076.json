@@ -1,0 +1,156 @@
+{
+  "unit": 76,
+  "title": "the 4 (the giraffe / the telephone / the old etc.)",
+  "pdfPages": [164, 165],
+  "exercises": [
+    {
+      "id": "76.1",
+      "type": "choice",
+      "instruction": "Answer the questions. Choose the right answer from the box. Don't forget the.",
+      "items": [
+        {
+          "num": 1,
+          "options": ["a the giraffe", "b the cheetah", "c the kangaroo"],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": ["a the swan", "b the penguin", "c the owl"],
+          "answer": 0
+        },
+        {
+          "num": 3,
+          "options": ["a the wheel", "b the laser", "c the telescope"],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["a the rupee", "b the (Canadian) dollar", "c the yen"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "76.2",
+      "type": "fill-in",
+      "instruction": "Put in the or a.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Can you play ", " musical instrument?"],
+          "answers": [["the"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Jessica plays ", " violin in an orchestra."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 4,
+          "parts": ["There was ", " piano in the corner of the room."],
+          "answers": [["a"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I wish I could play ", " piano."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Our society is based on ", " family."],
+          "answers": [["the"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Martin comes from ", " large family."],
+          "answers": [["a"]]
+        },
+        {
+          "num": 8,
+          "parts": ["", " computer has changed the way we live."],
+          "answers": [["The"]]
+        },
+        {
+          "num": 9,
+          "parts": ["When was ", " bicycle invented?"],
+          "answers": [["the"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Do you have ", " car?"],
+          "answers": [["a"]]
+        }
+      ]
+    },
+    {
+      "id": "76.3",
+      "type": "fill-in",
+      "instruction": "Complete these sentences. Use the + adjective. Choose from:",
+      "wordBank": ["elderly", "injured", "rich", "sick", "unemployed", "young"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Helen is a nurse. She's spent her life caring for ", "."],
+          "answers": [["the sick"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Life is all right if you have a job, but things are hard for ", "."],
+          "answers": [["the unemployed"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Ambulances arrived at the scene of the accident and took ", " to hospital."],
+          "answers": [["the injured"]]
+        },
+        {
+          "num": 5,
+          "parts": ["More and more people are living longer. How are we going to care for ", "?"],
+          "answers": [["the elderly"]]
+        },
+        {
+          "num": 6,
+          "parts": ["It's nice to have lots of money, but ", " have their problems too."],
+          "answers": [["the rich"]]
+        }
+      ]
+    },
+    {
+      "id": "76.4",
+      "type": "write",
+      "instruction": "What do you call the people of these countries?",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "Germany",
+          "answers": ["a German", "Germans", "German people"]
+        },
+        {
+          "num": 3,
+          "prompt": "France",
+          "answers": ["a Frenchman", "a Frenchwoman", "the French", "French people"]
+        },
+        {
+          "num": 4,
+          "prompt": "Russia",
+          "answers": ["a Russian", "Russians", "Russian people"]
+        },
+        {
+          "num": 5,
+          "prompt": "Japan",
+          "answers": ["a Japanese", "the Japanese", "Japanese people"]
+        },
+        {
+          "num": 6,
+          "prompt": "Brazil",
+          "answers": ["a Brazilian", "Brazilians", "Brazilian people"]
+        },
+        {
+          "num": 7,
+          "prompt": "England",
+          "answers": ["an Englishman", "an Englishwoman", "the English", "English people"]
+        }
+      ]
+    }
+  ]
+}

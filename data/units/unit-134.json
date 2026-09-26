@@ -1,0 +1,68 @@
+{
+  "unit": 134,
+  "title": "Verb + preposition 3 about and of",
+  "pdfPages": [280, 281],
+  "exercises": [
+    {
+      "id": "134.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using hear or heard + a preposition (about/of/from).",
+      "wordBank": ["hear", "about", "of", "heard", "from"],
+      "items": [
+        {"num": 2, "parts": ["'Did you ", " the accident last night?' 'No, what happened?'"], "answers": [["heard about"]]},
+        {"num": 3, "parts": ["Sarah used to call me quite often, but I haven't ", " her for a long time now."], "answers": [["heard from"]]},
+        {"num": 4, "parts": ["'Have you ", " William Hudson?' 'No. Who is he?'"], "answers": [["heard of"]]},
+        {"num": 5, "parts": ["Thanks for your email. It was good to ", " you."], "answers": [["hear from"]]},
+        {"num": 6, "parts": ["'Do you want to ", " our trip?' 'Not now. Tell me later.'"], "answers": [["hear about"]]},
+        {"num": 7, "parts": ["I live in a very small town. You've probably never ", " it."], "answers": [["heard of"]]}
+      ]
+    },
+    {
+      "id": "134.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using think about or think of. Sometimes both about and of are possible.\nUse the correct form of think (think/thinking/thought).",
+      "wordBank": ["think", "thinking", "thought", "about", "of"],
+      "items": [
+        {"num": 2, "parts": ["I need time to make decisions. I like to ", " things carefully."], "answers": [["think about"]]},
+        {"num": 3, "parts": ["You look serious. What are you ", "?"], "answers": [["thinking about"]]},
+        {"num": 4, "parts": ["That's a good idea. Why didn't I ", " that?"], "answers": [["think of"]]},
+        {"num": 5, "parts": ["I don't really want to meet Tom tonight. I'll have to ", " an excuse."], "answers": [["think of"]]},
+        {"num": 6, "parts": ["I'm ", " buying a new car. What would you advise me to buy?"], "answers": [["thinking of", "thinking about"]]},
+        {"num": 7, "parts": ["When I was offered the job, I didn't accept immediately. I went away and ", " it for a while. In the end I decided to take the job."], "answers": [["thought about"]]},
+        {"num": 8, "parts": ["B: What did you ", " it? Did you like it?"], "answers": [["think of"]]},
+        {"num": 9, "parts": ["B: I'm not sure. I'll ", " it."], "answers": [["think about"]]},
+        {"num": 10, "parts": ["I don't ", " this coffee. It's like water."], "answers": [["think much of", "think of"]]},
+        {"num": 11, "parts": ["Katherine is homesick. She's always ", " her family back home."], "answers": [["thinking about", "thinking of"]]},
+        {"num": 12, "parts": ["B: I can't ", " any reason why not."], "answers": [["think of"]]}
+      ]
+    },
+    {
+      "id": "134.3",
+      "type": "fill-in",
+      "instruction": "Put in the correct preposition.",
+      "items": [
+        {"num": 2, "parts": ["I love living here. I wouldn't dream ", " going anywhere else."], "answers": [["of"]]},
+        {"num": 3, "parts": ["B: Did you? What did you dream ", "?"], "answers": [["about"]]},
+        {"num": 4, "parts": ["I love this music. It reminds me ", " a warm day in spring."], "answers": [["of"]]},
+        {"num": 5, "parts": ["B: Don't worry. I'll think ", " something."], "answers": [["about"]]},
+        {"num": 6, "parts": ["Our neighbours complained ", " us ", " the noise we made."], "answers": [["to"], ["about"]]},
+        {"num": 7, "parts": ["Paul was complaining ", " pains in his chest, so he went to the doctor."], "answers": [["of"]]},
+        {"num": 8, "parts": ["He loves his job. He thinks ", " it all the time, he dreams ", " it, he talks ", " it and I'm fed up with hearing ", " it."], "answers": [["about"], ["about"], ["about"], ["from"]]}
+      ]
+    },
+    {
+      "id": "134.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using these verbs (in the correct form) + a preposition:",
+      "wordBank": ["complain", "dream", "hear", "remind", "remind", "think", "think"],
+      "items": [
+        {"num": 2, "parts": ["Ben is never satisfied. He's always ", " something."], "answers": [["complaining about"]]},
+        {"num": 3, "parts": ["I can't make a decision yet. I need time to ", " your proposal."], "answers": [["think about"]]},
+        {"num": 4, "parts": ["He's not a well-known singer. Not many people have ", " him."], "answers": [["heard of"]]},
+        {"num": 5, "parts": ["B: Of course not. I wouldn't ", " it."], "answers": [["dream of"]]},
+        {"num": 6, "parts": ["I would have forgotten my appointment if you hadn't ", " me ", " it."], "answers": [["remind", "remind me"], ["about"]]},
+        {"num": 7, "parts": ["Do you see that man over there? Does he ", " you ", " anybody you know?"], "answers": [["remind", "remind you"], ["of"]]}
+      ]
+    }
+  ]
+}

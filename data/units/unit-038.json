@@ -1,0 +1,59 @@
+{
+  "unit": 38,
+  "title": "if I do … and if I did …",
+  "pdfPages": [88, 89],
+  "exercises": [
+    {
+      "id": "38.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Choose from:",
+      "wordBank": ["did", "dropped", "found", "happened", "lost", "was", "went"],
+      "items": [
+        {"num": 2, "parts": ["Be careful with that vase. If you ", " it, it would break into small pieces."], "answers": [["dropped"]]},
+        {"num": 3, "parts": ["This notebook is very important to me. I'd be very upset if I ", " it."], "answers": [["lost"]]},
+        {"num": 4, "parts": ["I don't expect to lose my job but if that ", ", I'd have to find another one."], "answers": [["happened"]]},
+        {"num": 5, "parts": ["We're thinking about our holiday for next year. If we ", " to Italy, would you come with us?"], "answers": [["went"]]},
+        {"num": 6, "parts": ["I don't think he'll fail the exam. I'd be very surprised if he ", "."], "answers": [["did"]]},
+        {"num": 7, "parts": ["If there ", " a fire in the building, would you know how to put the fire out?"], "answers": [["was"]]}
+      ]
+    },
+    {
+      "id": "38.2",
+      "type": "choice",
+      "instruction": "What do you say in these situations?",
+      "items": [
+        {"num": 2, "options": ["If I sell my car, I won't get much money for it.", "If I sold my car, I wouldn't get much money for it."], "answer": 1},
+        {"num": 3, "options": ["If I see Sarah, I'll tell her to call you.", "If I saw Sarah, I'd tell her to call you."], "answer": 0},
+        {"num": 4, "options": ["What will you do if there is a fire in the building?", "What would you do if there was a fire in the building?"], "answer": 1},
+        {"num": 5, "options": ["I don't know what I'll do if I lose my passport.", "I don't know what I'd do if I lost my passport."], "answer": 1},
+        {"num": 6, "options": ["If you go right at the end of this street, you'll see a bank on your left.", "If you went right at the end of this street, you'd see a bank on your left."], "answer": 0},
+        {"num": 7, "options": ["What will happen if somebody presses that button?", "What would happen if somebody pressed that button?"], "answer": 1}
+      ]
+    },
+    {
+      "id": "38.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences.",
+      "items": [
+        {"num": 2, "parts": ["I can't afford to buy a car. If ", " a car, I'd have to borrow the money."], "answers": [["I bought"]]},
+        {"num": 3, "parts": ["If you had a party, who ", " you ", "?"], "answers": [["would"], ["invite"]]},
+        {"num": 4, "parts": ["Don't lend James your car. If ", " me, I wouldn't lend him mine."], "answers": [["he asked"]]},
+        {"num": 5, "parts": ["I don't think Gary and Emma will get married. ", " amazed if they did."], "answers": [["I'd be", "I would be"]]},
+        {"num": 6, "parts": ["If ", " me $20,000, ", " a long holiday."], "answers": [["somebody gave"], ["I'd have", "I would have"]]},
+        {"num": 7, "parts": ["", " nervous if ", " a famous person?"], "answers": [["Would you be"], ["you met"]]},
+        {"num": 8, "parts": ["What ", " you ", " if ", " in a lift and ", " between floors?"], "answers": [["would"], ["do"], ["you were"], ["it stopped"]]}
+      ]
+    },
+    {
+      "id": "38.4",
+      "type": "write",
+      "instruction": "Write sentences beginning If … .",
+      "items": [
+        {"num": 2, "prompt": "(it / cost too much)", "answers": ["If we stayed at a hotel, it would cost too much."]},
+        {"num": 3, "prompt": "(you / not / believe)", "answers": ["If I told you what happened, you wouldn't believe me.", "If I told you what happened, you wouldn't believe it."]},
+        {"num": 4, "prompt": "(it / hard to find another one)", "answers": ["If she left her job, it would be hard to find another one."]},
+        {"num": 5, "prompt": "(he / not / get it)", "answers": ["If he applied for the job, he wouldn't get it."]}
+      ]
+    }
+  ]
+}

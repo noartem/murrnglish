@@ -1,0 +1,190 @@
+{
+  "unit": 19,
+  "title": "Present tenses (I am doing / I do) for the future",
+  "pdfPages": [50, 51],
+  "exercises": [
+    {
+      "id": "19.1",
+      "type": "write",
+      "instruction": "Ask Anna about her holiday plans.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(where / go?)",
+          "answers": ["Where are you going?"]
+        },
+        {
+          "num": 2,
+          "prompt": "(how long / go for?)",
+          "answers": ["How long are you going for?"]
+        },
+        {
+          "num": 3,
+          "prompt": "(when / leave?)",
+          "answers": ["When are you leaving?"]
+        },
+        {
+          "num": 4,
+          "prompt": "(go / alone?)",
+          "answers": ["Are you going alone?"]
+        },
+        {
+          "num": 5,
+          "prompt": "(travel / by car?)",
+          "answers": ["Are you travelling by car?"]
+        },
+        {
+          "num": 6,
+          "prompt": "(where / stay?)",
+          "answers": ["Where are you staying?"]
+        }
+      ]
+    },
+    {
+      "id": "19.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Steve ", " football on Saturday. He\u2019s hurt his leg."],
+          "answers": [["isn\u2019t playing"]]
+        },
+        {
+          "num": 2,
+          "parts": ["", " a party next week. We\u2019ve invited all our friends."],
+          "answers": [["We\u2019re having"]]
+        },
+        {
+          "num": 3,
+          "parts": ["", " tomorrow. It\u2019s a public holiday."],
+          "answers": [["I\u2019m not working"]]
+        },
+        {
+          "num": 4,
+          "parts": ["", " now. I\u2019ve come to say goodbye."],
+          "answers": [["I\u2019m leaving"]]
+        },
+        {
+          "num": 5,
+          "parts": ["\u2018What time ", " out this evening?\u2019 \u2018Seven o\u2019clock.\u2019"],
+          "answers": [["are you going"]]
+        },
+        {
+          "num": 6,
+          "parts": ["", " to the party tomorrow. She isn\u2019t well."],
+          "answers": [["Laura isn\u2019t coming", "Laura\u2019s not coming"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I love New York. ", " there soon."],
+          "answers": [["I\u2019m going"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Ben can\u2019t meet us on Monday. ", " late."],
+          "answers": [["He\u2019s working", "He is working"]]
+        }
+      ]
+    },
+    {
+      "id": "19.3",
+      "type": "self-check",
+      "instruction": "Have you arranged to do anything at these times? Write sentences about yourself.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(this evening) I\u2019m not doing anything this evening.",
+          "modelAnswers": ["I\u2019m not doing anything this evening."]
+        },
+        {
+          "num": 2,
+          "prompt": "(tomorrow morning)",
+          "modelAnswers": ["I\u2019m working tomorrow morning."]
+        },
+        {
+          "num": 3,
+          "prompt": "(tomorrow evening)",
+          "modelAnswers": ["I\u2019m not doing anything tomorrow evening."]
+        },
+        {
+          "num": 4,
+          "prompt": "(next Sunday)",
+          "modelAnswers": ["I\u2019m going swimming next Sunday."]
+        },
+        {
+          "num": 5,
+          "prompt": "(another day or time)",
+          "modelAnswers": ["I\u2019m going to a party this evening."]
+        }
+      ]
+    },
+    {
+      "id": "19.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use the present continuous or present simple.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["\u2018Tina, are you ready yet?\u2019 \u2018Yes, ", ".\u2019"],
+          "answers": [["I\u2019m coming"]]
+        },
+        {
+          "num": 2,
+          "parts": ["\u2018", " to Sam\u2019s party on Saturday?\u2019 \u2018No, I haven\u2019t been invited.\u2019"],
+          "answers": [["Are you going"]]
+        },
+        {
+          "num": 3,
+          "parts": ["\u2018Not yet, but ", " soon \u2013 probably at the end of the month.\u2019"],
+          "answers": [["he\u2019s moving", "he is moving"]]
+        },
+        {
+          "num": 4,
+          "parts": ["\u2018", " to a concert tonight.\u2019 \u2018That\u2019s nice. What time ", "?\u2019"],
+          "answers": [["I\u2019m going", "I am going"], ["does it start"]]
+        },
+        {
+          "num": 5,
+          "parts": ["\u2018No, but ", " for lunch next week.\u2019"],
+          "answers": [["we\u2019re meeting", "we are meeting"]]
+        },
+        {
+          "num": 6,
+          "parts": ["\u2018", " anything tomorrow morning?\u2019 \u2018No, I\u2019m free. Why?\u2019"],
+          "answers": [["Are you doing"]]
+        },
+        {
+          "num": 7,
+          "parts": ["\u2018When ", "?\u2019 \u2018Next Friday. And next term ", " four weeks after that.\u2019"],
+          "answers": [["does this term end"], ["starts"]]
+        },
+        {
+          "num": 8,
+          "parts": ["\u2018", " to a wedding at the weekend.\u2019 \u2018Really? ", " married?\u2019"],
+          "answers": [["We\u2019re going", "We are going"], ["Who\u2019s getting", "Who is getting"]]
+        },
+        {
+          "num": 9,
+          "parts": ["\u2018There\u2019s football on TV later tonight. ", " it?\u2019 \u2018No, I\u2019m not interested.\u2019"],
+          "answers": [["Are you watching"]]
+        },
+        {
+          "num": 10,
+          "parts": ["\u2018It ", " at 9.35 and ", " at 12.47.\u2019"],
+          "answers": [["leaves"], ["arrives"]]
+        },
+        {
+          "num": 11,
+          "parts": ["\u2018", " next week.\u2019"],
+          "answers": [["It finishes"]]
+        },
+        {
+          "num": 12,
+          "parts": ["\u2018No, you can have it. ", " it.\u2019"],
+          "answers": [["I\u2019m not using", "I am not using"]]
+        }
+      ]
+    }
+  ]
+}

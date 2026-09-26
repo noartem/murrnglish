@@ -1,0 +1,64 @@
+{
+  "unit": 51,
+  "title": "Auxiliary verbs (have/do/can etc.) I think so / I hope so etc.",
+  "pdfPages": [114, 115],
+  "exercises": [
+    {
+      "id": "51.1",
+      "type": "fill-in",
+      "instruction": "Complete each sentence with an auxiliary verb (do/was/could/might etc.). Sometimes the verb must be negative (don't/wasn't etc.).",
+      "items": [
+        {"num": 1, "parts": ["I wasn't tired, but my friends ", "."], "answers": [["was"]]},
+        {"num": 2, "parts": ["I like hot weather, but Ann ", "."], "answers": [["doesn't"]]},
+        {"num": 3, "parts": ["'Is Andy here?' 'He ", " five minutes ago, but I think he's gone home now.'"], "answers": [["was"]]},
+        {"num": 4, "parts": ["I haven't travelled much, but Gary ", "."], "answers": [["has"]]},
+        {"num": 5, "parts": ["Lisa said she might come and see us tomorrow, but I don't think she ", "."], "answers": [["will"]]},
+        {"num": 6, "parts": ["I don't know whether to apply for the job or not. Do you think I ", "?"], "answers": [["should"]]},
+        {"num": 7, "parts": ["'Please don't tell anybody what happened.' 'Don't worry. I ", ".'"], "answers": [["won't"]]},
+        {"num": 8, "parts": ["'You never listen to me.' 'Yes, I ", "!'"], "answers": [["do"]]},
+        {"num": 9, "parts": ["I usually work on Saturdays, but last Saturday I ", "."], "answers": [["didn't"]]},
+        {"num": 10, "parts": ["'Do you think it's going to rain?' 'It ", ". Take an umbrella in case.'"], "answers": [["might"]]},
+        {"num": 11, "parts": ["'Are you and Chris going to the party?' 'I ", ", but Chris ", ".'"], "answers": [["am", "'m not", "can't"], ["isn't", "is", "can"]]},
+        {"num": 12, "parts": ["'Please help me.' 'I'm sorry. I ", " if I ", ", but I ", ".'"], "answers": [["would"], ["could"], ["can't"]]}
+      ]
+    },
+    {
+      "id": "51.2",
+      "type": "matching",
+      "instruction": "You never agree with Amy. Answer in the way shown.",
+      "leftOptions": ["I like football.", "I didn't enjoy the film.", "I'm not tired.", "I thought the exam was easy."],
+      "rightOptions": ["Do you? I don't.", "Didn't you? I did.", "Aren't you? I am.", "Did you? I didn't."],
+      "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]]
+    },
+    {
+      "id": "51.3",
+      "type": "write",
+      "instruction": "Tina tells you something. If the same is true for you, answer with So … or Neither … (as in the first example). Otherwise, ask Tina questions (as in the second example).",
+      "items": [
+        {"num": 1, "prompt": "I'm not tired.", "answers": ["Neither am I."]},
+        {"num": 2, "prompt": "I work hard.", "answers": ["Do you? What do you do?"]},
+        {"num": 3, "prompt": "I watched TV last night.", "answers": ["So did I.", "Did you? What did you watch?"]},
+        {"num": 4, "prompt": "I won't be at home tomorrow.", "answers": ["Neither will I.", "Won't you? Where will you be?"]},
+        {"num": 5, "prompt": "I like reading.", "answers": ["So do I.", "Do you? What sort of books do you like?"]},
+        {"num": 6, "prompt": "I'd like to live somewhere else.", "answers": ["So would I.", "Would you? Where would you like to live?"]},
+        {"num": 7, "prompt": "I can't go out tonight.", "answers": ["Neither can I.", "Can't you? Why not?"]},
+        {"num": 8, "prompt": "I'm looking forward to the weekend.", "answers": ["So am I.", "Are you? Are you doing something nice?"]}
+      ]
+    },
+    {
+      "id": "51.4",
+      "type": "write",
+      "instruction": "What do you say to Sam? Use I think so, I hope not etc.",
+      "items": [
+        {"num": 1, "prompt": "(You don't like rain.) SaM: Is it going to rain? (hope)", "answers": ["I hope not."]},
+        {"num": 2, "prompt": "(You need more money.) SaM: Do you think you'll get a pay rise? (hope)", "answers": ["I hope so."]},
+        {"num": 3, "prompt": "(You're going to a party. You can't stand John.) SaM: Will John be at the party? (hope)", "answers": ["I hope not."]},
+        {"num": 4, "prompt": "(You're not sure whether Amy is married, but she probably isn't.) SaM: Is Amy married? (think)", "answers": ["I don't think so."]},
+        {"num": 5, "prompt": "(Jane has lived in Italy for many years.) SaM: Does Jane speak Italian? (suppose)", "answers": ["I suppose so."]},
+        {"num": 6, "prompt": "(You have to leave Sam's party early.) SaM: Do you have to leave already? (afraid)", "answers": ["I'm afraid so."]},
+        {"num": 7, "prompt": "(You're not sure what time the film begins, but it's probably 7.30.) SaM: What time is the film? 7.30? (think)", "answers": ["I think so."]},
+        {"num": 8, "prompt": "(You are the receptionist at a hotel. The hotel is full.) SaM: Do you have a room for tonight? (afraid)", "answers": ["I'm afraid not."]}
+      ]
+    }
+  ]
+}

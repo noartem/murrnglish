@@ -1,0 +1,60 @@
+{
+  "unit": 129,
+  "title": "Noun + preposition (reason for, cause of etc.)",
+  "pdfPages": [270, 271],
+  "exercises": [
+    {
+      "id": "129.1",
+      "type": "fill-in",
+      "instruction": "Complete the second sentence so that it has the same meaning as the first.",
+      "items": [
+        {"num": 2, "parts": ["We're trying to find a solution ", "."], "answers": [["to the problem"]]},
+        {"num": 3, "parts": ["Sue has a good relationship ", "."], "answers": [["with her brother"]]},
+        {"num": 4, "parts": ["There has been a big increase ", "."], "answers": [["in the cost of living"]]},
+        {"num": 5, "parts": ["I can't think of an answer ", "."], "answers": [["to your question"]]},
+        {"num": 6, "parts": ["I don't think there is any need ", "."], "answers": [["for a new road"]]},
+        {"num": 7, "parts": ["I think that there are many advantages ", "."], "answers": [["in living in a big city", "to living in a big city"]]},
+        {"num": 8, "parts": ["Last month there was a fall ", "."], "answers": [["in food prices"]]},
+        {"num": 9, "parts": ["There is no demand ", "."], "answers": [["for shoes like these any more"]]},
+        {"num": 10, "parts": ["What is the difference ", "?"], "answers": [["between your job and mine"]]}
+      ]
+    },
+    {
+      "id": "129.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using these nouns + a preposition:",
+      "wordBank": ["cause", "connection", "contact", "damage", "invitation", "key", "map", "photos", "reason", "reply"],
+      "items": [
+        {"num": 2, "parts": ["Thank you for the ", " your birthday party."], "answers": [["invitation to"]]},
+        {"num": 3, "parts": ["Anna has little ", " her family these days. She rarely sees them."], "answers": [["contact with"]]},
+        {"num": 4, "parts": ["I can't open this door. Do you have a ", " the other door?"], "answers": [["key to"]]},
+        {"num": 5, "parts": ["The ", " the fire at the hotel is still unknown."], "answers": [["cause of"]]},
+        {"num": 6, "parts": ["Did you get a ", " the email you sent?"], "answers": [["reply to"]]},
+        {"num": 7, "parts": ["The two companies are separate. There is no ", " them."], "answers": [["connection between"]]},
+        {"num": 8, "parts": ["Jane showed me some ", " the city as it looked 100 years ago."], "answers": [["photos of"]]},
+        {"num": 9, "parts": ["Emily has decided to give up her job. I don't know her ", " doing this."], "answers": [["reason for"]]},
+        {"num": 10, "parts": ["It wasn't a bad accident. The ", " the car wasn't serious."], "answers": [["damage to"]]}
+      ]
+    },
+    {
+      "id": "129.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with the correct preposition.",
+      "items": [
+        {"num": 2, "parts": ["Money isn't the solution ", " every problem."], "answers": [["to"]]},
+        {"num": 3, "parts": ["There has been an increase ", " the amount of traffic using this road."], "answers": [["in"]]},
+        {"num": 4, "parts": ["The advantage ", " having a car is that you don't have to rely on public transport."], "answers": [["of"]]},
+        {"num": 5, "parts": ["There are many advantages ", " being able to speak a foreign language."], "answers": [["in", "to"]]},
+        {"num": 6, "parts": ["Everything can be explained. There's a reason ", " everything."], "answers": [["for"]]},
+        {"num": 7, "parts": ["When Paul left home, his attitude ", " many things seemed to change."], "answers": [["to", "towards"]]},
+        {"num": 8, "parts": ["Ben and I used to be good friends, but I don't have much contact ", " him now."], "answers": [["with"]]},
+        {"num": 9, "parts": ["James did a very good drawing ", " his father. It looks just like him."], "answers": [["of"]]},
+        {"num": 10, "parts": ["What was Sarah's reaction ", " the news?"], "answers": [["to"]]},
+        {"num": 11, "parts": ["Nicola took a picture ", " me holding the baby."], "answers": [["of"]]},
+        {"num": 12, "parts": ["The show is very popular and there has been a great demand ", " tickets."], "answers": [["for"]]},
+        {"num": 13, "parts": ["There has been a lot of debate about the causes ", " climate change."], "answers": [["of"]]},
+        {"num": 14, "parts": ["The fact that Jane was offered a job in the company has no connection ", " the fact that she is a friend of the managing director."], "answers": [["with"]]}
+      ]
+    }
+  ]
+}

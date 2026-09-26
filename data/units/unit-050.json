@@ -1,0 +1,148 @@
+{
+  "unit": 50,
+  "title": "Questions 2 (do you know where … ? / he asked me where …)",
+  "pdfPages": [112, 113],
+  "exercises": [
+    {
+      "id": "50.1",
+      "type": "choice",
+      "instruction": "Which is right? Tick (✓) the correct alternative.",
+      "items": [
+        {
+          "num": 1,
+          "options": ["a Do you know what time the film starts?", "b Do you know what time does the film start?", "c Do you know what time starts the film?"],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": ["a Why Amy does get up so early every day?", "b Why Amy gets up so early every day?", "c Why does Amy get up so early every day?"],
+          "answer": 2
+        },
+        {
+          "num": 3,
+          "options": ["a I want to know what this word means.", "b I want to know what does this word mean.", "c I want to know what means this word."],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["a I can't remember where did I park the car.", "b I can't remember where I parked the car.", "c I can't remember where I did park the car."],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": ["a Why you didn't phone me yesterday?", "b Why didn't you phone me yesterday?", "c Why you not phoned me yesterday?"],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": ["a Do you know where does Helen work?", "b Do you know where Helen does work?", "c Do you know where Helen works?"],
+          "answer": 2
+        },
+        {
+          "num": 7,
+          "options": ["a How much it costs to park here?", "b How much does it cost to park here?", "c How much it does cost to park here?"],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": ["a Tell me what you want.", "b Tell me what you do want.", "c Tell me what do you want."],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "50.2",
+      "type": "write",
+      "instruction": "Put the words in the correct order.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(it / you / what time / know / is)",
+          "answers": ["Do you know what time it is?"]
+        },
+        {
+          "num": 2,
+          "prompt": "(is / to the airport / far / it)",
+          "answers": ["How far is it to the airport?"]
+        },
+        {
+          "num": 3,
+          "prompt": "(wonder / is / how / old / Tom)",
+          "answers": ["I wonder how old Tom is."]
+        },
+        {
+          "num": 4,
+          "prompt": "(they / married / been / have)",
+          "answers": ["How long have they been married?"]
+        },
+        {
+          "num": 5,
+          "prompt": "(they / married / how long / been / have / know)",
+          "answers": ["Do you know how long they have been married?"]
+        },
+        {
+          "num": 6,
+          "prompt": "(tell / the station / you / me / is / where)",
+          "answers": ["Could you tell me where the station is?"]
+        },
+        {
+          "num": 7,
+          "prompt": "(in the accident / injured / anyone / don't / whether / know / was)",
+          "answers": ["I don't know whether anyone was injured in the accident."]
+        },
+        {
+          "num": 8,
+          "prompt": "(what / tomorrow / know / time / will / arrive / you / you)",
+          "answers": ["Do you know what time you will arrive tomorrow?"]
+        }
+      ]
+    },
+    {
+      "id": "50.3",
+      "type": "write",
+      "instruction": "You were visiting London. You met a lot of people who asked you a lot of questions. Now you tell a friend what people asked you. Use reported speech.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(Where are you from?)",
+          "answers": ["He asked me where I was from."]
+        },
+        {
+          "num": 2,
+          "prompt": "(How long have you been in London?)",
+          "answers": ["She asked me how long I'd been in London.", "She asked me how long I had been in London."]
+        },
+        {
+          "num": 3,
+          "prompt": "(Have you been to London before?)",
+          "answers": ["They asked me if I'd been to London before.", "They asked me if I had been to London before.", "They asked me whether I'd been to London before.", "They asked me whether I had been to London before."]
+        },
+        {
+          "num": 4,
+          "prompt": "(Do you like London?)",
+          "answers": ["She asked me if I liked London.", "She asked me whether I liked London."]
+        },
+        {
+          "num": 5,
+          "prompt": "(Where are you staying?)",
+          "answers": ["He asked me where I was staying."]
+        },
+        {
+          "num": 6,
+          "prompt": "(How long are you going to stay?)",
+          "answers": ["She asked me how long I was going to stay."]
+        },
+        {
+          "num": 7,
+          "prompt": "(Do you think London is expensive?)",
+          "answers": ["She asked me if I thought London was expensive.", "She asked me if I thought London is expensive.", "She asked me whether I thought London was expensive.", "She asked me whether I thought London is expensive."]
+        },
+        {
+          "num": 8,
+          "prompt": "(Why did you come to London?)",
+          "answers": ["They asked me why I'd come to London.", "They asked me why I had come to London.", "They asked me why I came to London."]
+        }
+      ]
+    }
+  ]
+}

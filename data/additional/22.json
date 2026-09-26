@@ -1,0 +1,63 @@
+{
+  "id": 22,
+  "topic": "Passive",
+  "refs": "Units 42–45",
+  "pdfPages": [326, 327],
+  "exercise": {
+    "id": "22",
+    "type": "fill-in",
+    "instruction": "Put the verb into the most suitable passive form.",
+    "items": [
+      {
+        "num": 3,
+        "parts": ["We didn't play football yesterday. The game ", " (cancel)."],
+        "answers": [["was cancelled"]]
+      },
+      {
+        "num": 4,
+        "parts": ["The TV ", " (repair). It's working again now."],
+        "answers": [["has been repaired"]]
+      },
+      {
+        "num": 5,
+        "parts": ["The village church ", " (restore) at the moment. The work is almost finished."],
+        "answers": [["is being restored"]]
+      },
+      {
+        "num": 6,
+        "parts": ["The tower is the oldest part of the church. ", " (it / believe) to be over 600 years old."],
+        "answers": [["It's believed", "It is believed"]]
+      },
+      {
+        "num": 7,
+        "parts": ["If I didn't do my job properly, ", " (I / would / fire)."],
+        "answers": [["I'd be fired", "I would be fired"]]
+      },
+      {
+        "num": 8,
+        "parts": ["a: I left a newspaper on the desk last night and it isn't there now.\n      b: ", " (it / might / throw) away."],
+        "answers": [["It might have been thrown"]]
+      },
+      {
+        "num": 9,
+        "parts": ["Joe learnt to swim when he was very young. ", " (he / teach) by his mother."],
+        "answers": [["He was taught"]]
+      },
+      {
+        "num": 10,
+        "parts": ["After ", " (arrest), I was taken to the police station."],
+        "answers": [["being arrested", "having been arrested", "I was arrested"]]
+      },
+      {
+        "num": 11,
+        "parts": ["'", " (you / ever / arrest)?' 'No, never.'"],
+        "answers": [["Have you ever been arrested"]]
+      },
+      {
+        "num": 12,
+        "parts": ["Two people ", " (report) to ", " (injure) in an accident at a factory in Birmingham early this morning."],
+        "answers": [["are reported"], ["have been injured"]]
+      }
+    ]
+  }
+}

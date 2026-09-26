@@ -1,0 +1,88 @@
+{
+  "unit": 83,
+  "title": "a friend of mine  my own house  on my own / by myself",
+  "pdfPages": [178, 179],
+  "exercises": [
+    {
+      "id": "83.1",
+      "type": "fill-in",
+      "instruction": "Change the underlined words and use the structure \u2026 of mine/yours etc.",
+      "items": [
+        {"num": 1, "parts": ["I\u2019m meeting one of my friends tonight. I\u2019m meeting ", " tonight."], "answers": [["a friend of mine"]]},
+        {"num": 2, "parts": ["We met one of your relatives. We met ", "."], "answers": [["a relative of yours"]]},
+        {"num": 3, "parts": ["Jason borrowed one of my books. Jason borrowed ", "."], "answers": [["a book of mine"]]},
+        {"num": 4, "parts": ["I met Lisa and some of her friends. I met Lisa and ", "."], "answers": [["some friends of hers"]]},
+        {"num": 5, "parts": ["We had dinner with one of our neighbours. We had dinner with ", "."], "answers": [["a neighbour of ours"]]},
+        {"num": 6, "parts": ["I went on holiday with two of my friends. I went on holiday with ", "."], "answers": [["two friends of mine"]]},
+        {"num": 7, "parts": ["I met one of Amy\u2019s friends at the party. I met ", " at the party."], "answers": [["a friend of Amy\u2019s"]]},
+        {"num": 8, "parts": ["It\u2019s always been one of my ambitions to travel round the world. It\u2019s always been ", " to travel round the world."], "answers": [["an ambition of mine"]]}
+      ]
+    },
+    {
+      "id": "83.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using my own / our own etc. + the following:",
+      "wordBank": ["bathroom", "business", "opinions", "private beach", "words"],
+      "items": [
+        {"num": 1, "parts": ["I share a kitchen, but I have ", "."], "answers": [["my own bathroom"]]},
+        {"num": 2, "parts": ["Gary doesn\u2019t think like me. He has ", "."], "answers": [["his own opinions"]]},
+        {"num": 3, "parts": ["Julia doesn\u2019t want to work for other people. She wants to start ", "."], "answers": [["her own business"]]},
+        {"num": 4, "parts": ["In the test we had to read a story, and then write it in ", "."], "answers": [["our own words"]]},
+        {"num": 5, "parts": ["We stayed at a luxury hotel by the sea. The hotel had ", "."], "answers": [["its own private beach"]]}
+      ]
+    },
+    {
+      "id": "83.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using my own / your own etc.",
+      "items": [
+        {"num": 1, "parts": ["Why do you need to borrow my car? Why don\u2019t you use ", "?"], "answers": [["your own car"]]},
+        {"num": 2, "parts": ["How can you blame me? It\u2019s not my fault. It\u2019s ", "."], "answers": [["your own fault"]]},
+        {"num": 3, "parts": ["She\u2019s always using my ideas. Why can\u2019t she use ", "?"], "answers": [["her own ideas"]]},
+        {"num": 4, "parts": ["Please don\u2019t worry about my problems. I\u2019m sure you have ", "."], "answers": [["your own problems"]]},
+        {"num": 5, "parts": ["I can\u2019t make his decisions for him. He has to make ", "."], "answers": [["his own decisions"]]}
+      ]
+    },
+    {
+      "id": "83.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using my own / your own etc. Use the verbs in brackets.",
+      "items": [
+        {"num": 1, "parts": ["Paul never goes to a barber. He cuts ", "."], "answers": [["his own hair"]], "verb": "cut"},
+        {"num": 2, "parts": ["Helen doesn\u2019t often buy clothes. She likes to ", "."], "answers": [["make her own clothes", "make her own"]], "verb": "make"},
+        {"num": 3, "parts": ["I\u2019m not going to clean your shoes. You can ", "."], "answers": [["clean your own shoes", "clean your own"]], "verb": "clean"},
+        {"num": 4, "parts": ["We don\u2019t often buy bread. We usually ", "."], "answers": [["bake our own bread", "bake our own"]], "verb": "bake"},
+        {"num": 5, "parts": ["Jack and Joe are singers. They sing songs written by other people, but they also ", "."], "answers": [["write their own songs", "write their own"]], "verb": "write"}
+      ]
+    },
+    {
+      "id": "83.5",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using my own / your own etc. or myself/yourself etc.",
+      "items": [
+        {"num": 1, "parts": ["Did you go on holiday ", "?"], "answers": [["on your own"]]},
+        {"num": 2, "parts": ["The box was too heavy for me to lift by ", "."], "answers": [["myself"]]},
+        {"num": 3, "parts": ["We had no help decorating the apartment. We did it completely on ", "."], "answers": [["our own"]]},
+        {"num": 4, "parts": ["Very young children should not go swimming by ", "."], "answers": [["themselves"]]},
+        {"num": 5, "parts": ["\u2018Who was Tom with when you saw him?\u2019 \u2018Nobody. He was by ", ".\u2019"], "answers": [["himself"]]},
+        {"num": 6, "parts": ["I don\u2019t like strawberries with cream. I like them on ", "."], "answers": [["their own"]]},
+        {"num": 7, "parts": ["Do you like working with other people or do you prefer working by ", "?"], "answers": [["yourself"]]},
+        {"num": 8, "parts": ["I went out with Sally because she didn\u2019t want to go out on ", "."], "answers": [["her own"]]}
+      ]
+    },
+    {
+      "id": "83.6",
+      "type": "write",
+      "instruction": "Are these sentences OK? Correct them where necessary.",
+      "items": [
+        {"num": 1, "prompt": "Katherine would like to have the own house.", "answers": ["Katherine would like to have her own house."]},
+        {"num": 2, "prompt": "Sam and Chris are colleagues of me.", "answers": ["Sam and Chris are colleagues of mine."]},
+        {"num": 3, "prompt": "I was scared. I didn\u2019t want to go out by my own.", "answers": ["I was scared. I didn\u2019t want to go out on my own."]},
+        {"num": 4, "prompt": "In my last job I had own office.", "answers": ["In my last job I had my own office."]},
+        {"num": 5, "prompt": "He must be lonely. He\u2019s always with himself.", "answers": ["He must be lonely. He\u2019s always by himself."]},
+        {"num": 6, "prompt": "My parents have gone away with some friends of them.", "answers": ["My parents have gone away with some friends of theirs."]},
+        {"num": 7, "prompt": "Are there any countries that produce all own food?", "answers": ["Are there any countries that produce all their own food?"]}
+      ]
+    }
+  ]
+}

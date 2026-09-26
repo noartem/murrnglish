@@ -1,0 +1,60 @@
+{
+  "unit": 109,
+  "title": "Word order 1: verb + object; place and time",
+  "pdfPages": [230, 231],
+  "exercises": [
+    {
+      "id": "109.1",
+      "type": "write",
+      "instruction": "Is the word order OK or not? Correct the sentences where necessary.",
+      "items": [
+        {"num": 1, "prompt": "Did you see your friends yesterday?", "answers": ["OK"]},
+        {"num": 2, "prompt": "Ben walks every morning to work.", "answers": ["Ben walks to work every morning."]},
+        {"num": 3, "prompt": "Joe doesn\u2019t like very much football.", "answers": ["Joe doesn\u2019t like football very much."]},
+        {"num": 4, "prompt": "Dan won easily the race.", "answers": ["Dan won the race easily."]},
+        {"num": 5, "prompt": "Tanya speaks German quite well.", "answers": ["OK"]},
+        {"num": 6, "prompt": "Have you seen recently Chris?", "answers": ["Have you seen Chris recently?"]},
+        {"num": 7, "prompt": "I borrowed from a friend some money.", "answers": ["I borrowed some money from a friend."]},
+        {"num": 8, "prompt": "Please don\u2019t ask that question again.", "answers": ["OK"]},
+        {"num": 9, "prompt": "I ate quickly my breakfast and went out.", "answers": ["I ate my breakfast quickly and went out.", "I quickly ate my breakfast and went out."]},
+        {"num": 10, "prompt": "Did you invite to the party a lot of people?", "answers": ["Did you invite a lot of people to the party?"]},
+        {"num": 11, "prompt": "Sam watches all the time TV.", "answers": ["Sam watches TV all the time."]},
+        {"num": 12, "prompt": "Does Kevin play football every weekend?", "answers": ["OK"]}
+      ]
+    },
+    {
+      "id": "109.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Put the parts in the correct order.",
+      "items": [
+        {"num": 1, "parts": ["We ", " the children ", " to the zoo ", "."], "answers": [["took"], ["the children"], ["to the zoo"]]},
+        {"num": 2, "parts": ["I ", " a friend of mine ", " on my way home ", "."], "answers": [["met"], ["a friend of mine"], ["on my way home"]]},
+        {"num": 3, "parts": ["I ", " to put ", " on the envelope ", " a stamp ", "."], "answers": [["forgot"], ["to put"], ["on the envelope"], ["a stamp"]]},
+        {"num": 4, "parts": ["We ", " a lot of fruit ", " in the market ", "."], "answers": [["bought"], ["a lot of fruit"], ["in the market"]]},
+        {"num": 5, "parts": ["They ", " opposite the park ", " a new hotel ", "."], "answers": [["built"], ["opposite the park"], ["a new hotel"]]},
+        {"num": 6, "parts": ["Did you ", " at school ", " today ", " a lot of things ", "?"], "answers": [["learn"], ["at school"], ["today"], ["a lot of things"]]},
+        {"num": 7, "parts": ["We ", " some interesting books ", " in the library ", "."], "answers": [["found"], ["some interesting books"], ["in the library"]]},
+        {"num": 8, "parts": ["Please ", " at the top ", " of the page ", " your name ", "."], "answers": [["write"], ["at the top"], ["of the page"], ["your name"]]}
+      ]
+    },
+    {
+      "id": "109.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Put the parts in the correct order.",
+      "items": [
+        {"num": 1, "parts": ["They ", " for a long time ", " in the same house ", "."], "answers": [["have lived"], ["for a long time"], ["in the same house"]]},
+        {"num": 2, "parts": ["I ", " to the supermarket ", " every Friday ", "."], "answers": [["go"], ["to the supermarket"], ["every Friday"]]},
+        {"num": 3, "parts": ["Why ", " home ", " so late ", "?"], "answers": [["did you come"], ["home"], ["so late"]]},
+        {"num": 4, "parts": ["Sarah ", " her children ", " every day ", " to school ", "."], "answers": [["takes"], ["her children"], ["every day"], ["to school"]]},
+        {"num": 5, "parts": ["I haven\u2019t ", " recently ", " to the cinema ", "."], "answers": [["been"], ["recently"], ["to the cinema"]]},
+        {"num": 6, "parts": ["I ", " her name ", " after a few minutes ", "."], "answers": [["remembered"], ["her name"], ["after a few minutes"]]},
+        {"num": 7, "parts": ["We ", " around the town ", " all morning ", "."], "answers": [["walked"], ["around the town"], ["all morning"]]},
+        {"num": 8, "parts": ["My brother ", " since April ", " in Canada ", "."], "answers": [["has been"], ["since April"], ["in Canada"]]},
+        {"num": 9, "parts": ["I ", " on Saturday night ", " at the party ", "."], "answers": [["didn\u2019t see you"], ["on Saturday night"], ["at the party"]]},
+        {"num": 10, "parts": ["Lisa ", " her umbrella ", " last night ", " in a restaurant ", "."], "answers": [["left"], ["her umbrella"], ["last night"], ["in a restaurant"]]},
+        {"num": 11, "parts": ["The moon ", " round the earth ", " every 27 days ", "."], "answers": [["goes"], ["round the earth"], ["every 27 days"]]},
+        {"num": 12, "parts": ["Anna ", " Italian ", " for the last three years ", " in London ", "."], "answers": [["has been teaching"], ["Italian"], ["for the last three years"], ["in London"]]}
+      ]
+    }
+  ]
+}

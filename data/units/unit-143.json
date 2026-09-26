@@ -1,0 +1,150 @@
+{
+  "unit": 143,
+  "title": "Phrasal verbs 7 up (1)",
+  "pdfPages": [298, 299],
+  "exercises": [
+    {
+      "id": "143.1",
+      "type": "fill-in",
+      "instruction": "Look at the pictures and complete the sentences. Use three words each time, including a verb from Section A.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["A man ", " me in the street and asked me the way to the station."],
+          "answers": [["came up to"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Kate ", " the front door of the house and rang the doorbell."],
+          "answers": [["went up to / walked up to"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Tom was a long way behind the other runners, but he managed to ", " them."],
+          "answers": [["catch up with"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Tanya was running too fast for Paul. He couldn't ", " her."],
+          "answers": [["keep up with"]]
+        }
+      ]
+    },
+    {
+      "id": "143.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a verb (in the correct form) + up. Choose from:",
+      "wordBank": ["end", "give", "grow", "make", "take", "turn", "use", "wash"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I'm feeling very tired now. I've ", " all my energy."],
+          "answers": [["used up"]]
+        },
+        {
+          "num": 3,
+          "parts": ["After dinner I ", " and put the dishes away."],
+          "answers": [["washed up"]]
+        },
+        {
+          "num": 4,
+          "parts": ["People often ask children what they want to be when they ", "."],
+          "answers": [["grow up"]]
+        },
+        {
+          "num": 5,
+          "parts": ["We arranged to meet Tom, but he didn't ", "."],
+          "answers": [["turn up / show up"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Two years ago James ", " his studies to be a professional footballer."],
+          "answers": [["gave up"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I don't do any sports right now, but I'm thinking of ", " tennis."],
+          "answers": [["taking up"]]
+        },
+        {
+          "num": 8,
+          "parts": ["You don't have enough determination. You ", " too easily."],
+          "answers": [["give up"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Karen travelled a lot for a few years and ", " in Canada, where she still lives."],
+          "answers": [["ended up"]]
+        },
+        {
+          "num": 10,
+          "parts": ["I do a lot of gardening. It ", " most of my free time."],
+          "answers": [["takes up"]]
+        },
+        {
+          "num": 11,
+          "parts": ["There are two universities in the city. Students ", " 20 per cent of the population."],
+          "answers": [["make up"]]
+        }
+      ]
+    },
+    {
+      "id": "143.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a verb + up (with any other necessary words). Choose from:",
+      "wordBank": ["bring", "catch", "fix", "give", "go", "keep", "make", "set", "tidy"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I'm not ready yet. You go on and I'll ", "."],
+          "answers": [["catch up with you"]]
+        },
+        {
+          "num": 3,
+          "parts": ["The room is in a mess. I'd better ", "."],
+          "answers": [["tidy it up / tidy up"]]
+        },
+        {
+          "num": 4,
+          "parts": ["We expect to go away on holiday in July, but we haven't ", " yet."],
+          "answers": [["fixed it up"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Steven is having problems at school. He can't ", " the rest of the class."],
+          "answers": [["keep up with"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I ", " in the country, but I have always preferred cities."],
+          "answers": [["was brought up"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Our team lost the game. We started well, but we couldn't ", "."],
+          "answers": [["keep it up"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I saw Mike at the party, so I ", " him and said hello."],
+          "answers": [["went up to"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Helen has her own website. A friend of hers helped her to ", "."],
+          "answers": [["set it up"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Ben was learning to play the guitar, but he found it hard and in the end he ", "."],
+          "answers": [["gave it up / gave up"]]
+        },
+        {
+          "num": 11,
+          "parts": ["When I was on holiday, I joined a tour group. The group ", " two Americans, three Japanese, five Germans and myself."],
+          "answers": [["was made up of"]]
+        }
+      ]
+    }
+  ]
+}

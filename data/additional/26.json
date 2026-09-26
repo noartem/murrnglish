@@ -1,0 +1,93 @@
+{
+  "id": 26,
+  "topic": "-ing and to …",
+  "refs": "Units 53–66",
+  "pdfPages": [329, 330],
+  "exercise": {
+    "id": "26",
+    "type": "fill-in",
+    "instruction": "Put the verbs into the correct form.",
+    "items": [
+      {
+        "num": 3,
+        "parts": ["I can't make a decision. I keep ", " my mind."],
+        "answers": [["changing"]]
+      },
+      {
+        "num": 4,
+        "parts": ["He had made his decision and refused ", " his mind."],
+        "answers": [["to change"]]
+      },
+      {
+        "num": 5,
+        "parts": ["Why did you change your decision? What made you ", " your mind?"],
+        "answers": [["change"]]
+      },
+      {
+        "num": 6,
+        "parts": ["It was a really good holiday. I really enjoyed ", " by the sea again."],
+        "answers": [["being"]]
+      },
+      {
+        "num": 7,
+        "parts": ["Did I really tell you I was unhappy? I don't remember ", " that."],
+        "answers": [["saying"]]
+      },
+      {
+        "num": 8,
+        "parts": ["'Remember ", " Tom tomorrow.' 'OK. I won't forget.'"],
+        "answers": [["to call"]]
+      },
+      {
+        "num": 9,
+        "parts": ["The water here is not very good. I'd avoid ", " it if I were you."],
+        "answers": [["drinking"]]
+      },
+      {
+        "num": 10,
+        "parts": ["I pretended ", " interested in the conversation, but really it was very boring."],
+        "answers": [["to be"]]
+      },
+      {
+        "num": 11,
+        "parts": ["I got up and looked out of the window ", " what the weather was like."],
+        "answers": [["to see"]]
+      },
+      {
+        "num": 12,
+        "parts": ["I don't have far to go. It's not worth ", " a taxi."],
+        "answers": [["taking"]]
+      },
+      {
+        "num": 13,
+        "parts": ["I have a friend who claims ", " able to speak five languages."],
+        "answers": [["to be"]]
+      },
+      {
+        "num": 14,
+        "parts": ["I like ", " carefully about things before ", " a decision."],
+        "answers": [["to think"], ["making"]]
+      },
+      {
+        "num": 15,
+        "parts": ["I had a flat in the centre of town but I didn't like ", " there, so I decided ", "."],
+        "answers": [["living"], ["to move"]]
+      },
+      {
+        "num": 16,
+        "parts": ["Steve used ", " a footballer. He had to stop ", " because of an injury."],
+        "answers": [["to be"], ["playing"]]
+      },
+      {
+        "num": 17,
+        "parts": ["After ", " by the police, the man admitted ", " the car but denied ", " at 100 miles an hour."],
+        "answers": [["being stopped"], ["stealing"], ["driving"]]
+      },
+      {
+        "num": 18,
+        "parts": ["a: How do you make this machine ", "?\nb: I'm not sure. Try ", " that button and see what happens."],
+        "answers": [["work"], ["pressing"]]
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "unit": 11,
+  "title": "how long have you (been) … ?",
+  "pdfPages": [34, 35],
+  "exercises": [
+    {
+      "id": "11.1",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {
+          "num": 1,
+          "options": ["I know him very well.", "I've known him very well."],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": ["How long do you live here?", "How long have you lived here?"],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["It's raining.", "It's been raining."],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": ["The weather is awful since I arrived here.", "The weather has been awful since I arrived here."],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": ["Are you waiting long?", "Have you been waiting long?"],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": ["We're living in New Street now.", "We've been living in New Street now."],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": ["I don't know her very long.", "I haven't known her very long."],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": ["She's been there on a business trip.", "She's there on a business trip."],
+          "answer": 1
+        },
+        {
+          "num": 9,
+          "options": ["How long do you have it?", "How long have you had it?"],
+          "answer": 1
+        },
+        {
+          "num": 10,
+          "options": ["I'm feeling ill all day.", "I've been feeling ill all day."],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "11.2",
+      "type": "write",
+      "instruction": "Read the situations and write questions using the words in brackets.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "(how long / you / know / Katherine?)",
+          "answers": ["How long have you known Katherine?"]
+        },
+        {
+          "num": 3,
+          "prompt": "(how long / sister / in Australia?)",
+          "answers": ["How long has your sister been in Australia?"]
+        },
+        {
+          "num": 4,
+          "prompt": "(how long / you / teach / English?)",
+          "answers": ["How long have you been teaching English?", "How long have you taught English?"]
+        },
+        {
+          "num": 5,
+          "prompt": "(how long / you / have / that jacket?)",
+          "answers": ["How long have you had that jacket?"]
+        },
+        {
+          "num": 6,
+          "prompt": "(how long / Joe / work / airport?)",
+          "answers": ["How long has Joe been working at the airport?", "How long has Joe worked at the airport?"]
+        },
+        {
+          "num": 7,
+          "prompt": "(you / always / live / in Chicago?)",
+          "answers": ["Have you always lived in Chicago?"]
+        }
+      ]
+    },
+    {
+      "id": "11.3",
+      "type": "fill-in",
+      "instruction": "Complete B's answers to A's questions.",
+      "items": [
+        {
+          "num": 3,
+          "parts": ["Yes, he ", " married for ten years."],
+          "answers": [["'s been", "has been"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Yes, she ", " married to a German guy."],
+          "answers": [["'s", "is"]]
+        },
+        {
+          "num": 5,
+          "parts": ["No, I ", " tennis for years."],
+          "answers": [["haven't played"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Yes, I ", " for about 20 minutes."],
+          "answers": [["'ve been waiting", "have been waiting"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Yes, we ", " each other a long time."],
+          "answers": [["'ve known", "have known"]]
+        },
+        {
+          "num": 8,
+          "parts": ["No, he ", " ill since I've known him."],
+          "answers": [["hasn't been"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Yes, he ", " in Milan."],
+          "answers": [["'s lived", "has lived"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Yes, she ", " in Berlin for many years."],
+          "answers": [["'s lived", "has lived", "'s been living", "has been living"]]
+        },
+        {
+          "num": 11,
+          "parts": ["Yes, he ", " TV all evening."],
+          "answers": [["'s been watching", "has been watching"]]
+        },
+        {
+          "num": 12,
+          "parts": ["No, I ", " TV since last weekend."],
+          "answers": [["haven't watched"]]
+        },
+        {
+          "num": 13,
+          "parts": ["Yes, I ", " a headache all morning."],
+          "answers": [["'ve had", "have had"]]
+        },
+        {
+          "num": 14,
+          "parts": ["No, I ", " to the cinema for ages."],
+          "answers": [["haven't been"]]
+        },
+        {
+          "num": 15,
+          "parts": ["Yes, I ", " to go to New York."],
+          "answers": [["'ve always wanted", "have always wanted"]]
+        }
+      ]
+    }
+  ]
+}

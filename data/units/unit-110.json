@@ -1,0 +1,63 @@
+{
+  "unit": 110,
+  "title": "Word order 2: adverbs with the verb",
+  "pdfPages": [232, 233],
+  "exercises": [
+    {
+      "id": "110.1",
+      "type": "write",
+      "instruction": "Is the word order OK or not? Correct the sentences where necessary.",
+      "items": [
+        {"num": 1, "prompt": "Helen drives always to work.", "answers": ["Helen always drives to work."]},
+        {"num": 2, "prompt": "I cleaned the house and also cooked the dinner.", "answers": ["OK"]},
+        {"num": 3, "prompt": "I have usually a shower in the morning.", "answers": ["I usually have a shower in the morning."]},
+        {"num": 4, "prompt": "I\u2019m usually hungry when I get home from work.", "answers": ["OK"]},
+        {"num": 5, "prompt": "Steve gets hardly ever angry.", "answers": ["Steve hardly ever gets angry."]},
+        {"num": 6, "prompt": "I called him and I sent also an email.", "answers": ["I called him and I also sent an email."]},
+        {"num": 7, "prompt": "You don\u2019t listen! I have always to repeat things.", "answers": ["You don\u2019t listen! I always have to repeat things."]},
+        {"num": 8, "prompt": "I never have worked in a factory.", "answers": ["I\u2019ve never worked in a factory.", "I have never worked in a factory."]},
+        {"num": 9, "prompt": "I never have enough time. I\u2019m always busy.", "answers": ["OK"]},
+        {"num": 10, "prompt": "When I arrived, my friends already were there.", "answers": ["When I arrived, my friends were already there.", "When I arrived, my friends were there already."]}
+      ]
+    },
+    {
+      "id": "110.2",
+      "type": "write",
+      "instruction": "Rewrite the sentences to include the word in brackets.",
+      "items": [
+        {"num": 1, "prompt": "Clare doesn\u2019t drive to work. (usually)", "answers": ["Clare doesn\u2019t usually drive to work."]},
+        {"num": 2, "prompt": "Katherine is very generous. (always)", "answers": ["Katherine is always very generous."]},
+        {"num": 3, "prompt": "I don\u2019t have to work on Sundays. (usually)", "answers": ["I don\u2019t usually have to work on Sundays."]},
+        {"num": 4, "prompt": "Do you watch TV in the evenings? (always)", "answers": ["Do you always watch TV in the evenings?"]},
+        {"num": 5, "prompt": "Martin is learning Spanish, and he is learning Japanese. (also)", "answers": ["Martin is learning Spanish and he is also learning Japanese."]},
+        {"num": 6, "prompt": "a We were on holiday in Spain. (all)\nb We were staying at the same hotel. (all)\nc We had a great time. (all)", "answers": ["a We were all on holiday in Spain.", "b We were all staying at the same hotel.", "c We all had a great time."]},
+        {"num": 7, "prompt": "a The new hotel is expensive. (probably)\nb It costs a lot to stay there. (probably)", "answers": ["a The new hotel is probably expensive.", "b It probably costs a lot to stay there."]},
+        {"num": 8, "prompt": "a I can help you. (probably)\nb I can\u2019t help you. (probably)", "answers": ["a I can probably help you.", "b I probably can\u2019t help you."]}
+      ]
+    },
+    {
+      "id": "110.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use the words in brackets in the correct order.",
+      "items": [
+        {"num": 1, "parts": ["What\u2019s her name again? I ", " it."], "answers": [["can never remember"]]},
+        {"num": 2, "parts": ["Our cat ", " under the bed."], "answers": [["usually sleeps"]]},
+        {"num": 3, "parts": ["There are plenty of hotels here. ", " to find a place to stay."], "answers": [["It is usually easy"]]},
+        {"num": 4, "parts": ["Mark and Amy ", " in Manchester."], "answers": [["were both born"]]},
+        {"num": 5, "parts": ["Lisa is a good pianist. ", " very well."], "answers": [["She can also sing"]]},
+        {"num": 6, "parts": ["How do you go to work? ", " by bus?"], "answers": [["Do you usually go"]]},
+        {"num": 7, "parts": ["I see them every day, but ", " to them."], "answers": [["I have never spoken"]]},
+        {"num": 8, "parts": ["We haven\u2019t moved. ", " in the same place."], "answers": [["We are still living"]]},
+        {"num": 9, "parts": ["This shop is always busy. ", " a long time to be served."], "answers": [["You always have to wait"]]},
+        {"num": 10, "parts": ["This could be the last time I see you. ", " again."], "answers": [["We might never meet"]]},
+        {"num": 11, "parts": ["Thanks for the invitation, but ", " able to come to the party."], "answers": [["I probably won\u2019t be"]]},
+        {"num": 12, "parts": ["I\u2019m going out for an hour. ", " here when I get back?"], "answers": [["Will you still be"]]},
+        {"num": 13, "parts": ["Helen goes away a lot. ", " at home."], "answers": [["She is hardly ever"]]},
+        {"num": 14, "parts": ["If we hadn\u2019t taken the same train, ", " each other."], "answers": [["we would never have met"]]},
+        {"num": 15, "parts": ["The journey took a long time today. ", " so long."], "answers": [["It doesn\u2019t always take"]]},
+        {"num": 16, "parts": ["", " tired, so ", " asleep."], "answers": [["We were all"], ["we all fell"]]},
+        {"num": 17, "parts": ["Tanya ", " that she\u2019ll phone me, but ", "."], "answers": [["always says"], ["she never does"]]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": 14,
+  "topic": "Past, present and future",
+  "refs": "Units 1–25",
+  "pdfPages": [322, 323],
+  "exercise": {
+    "id": "14",
+    "type": "self-check",
+    "instruction": "Use your own ideas to complete B's sentences.",
+    "items": [
+      {
+        "num": 2,
+        "prompt": "a: Is that a new coat?\nb: No, I _____ it a long time.",
+        "modelAnswers": ["I've had", "I have had"]
+      },
+      {
+        "num": 3,
+        "prompt": "a: Is that a new phone?\nb: Yes, I _____ it a few weeks ago.",
+        "modelAnswers": ["I bought", "I got"]
+      },
+      {
+        "num": 4,
+        "prompt": "a: I can't talk to you right now. You can see I'm very busy.\nb: OK. I _____ back in about half an hour.",
+        "modelAnswers": []
+      },
+      {
+        "num": 5,
+        "prompt": "a: This is a nice restaurant. Do you come here often?\nb: No, it's the first time I _____ here.",
+        "modelAnswers": []
+      },
+      {
+        "num": 6,
+        "prompt": "a: Do you do any sport?\nb: No, I _____ football, but I gave it up.",
+        "modelAnswers": []
+      },
+      {
+        "num": 7,
+        "prompt": "a: I'm sorry I'm late.\nb: That's OK. I _____ long.",
+        "modelAnswers": []
+      },
+      {
+        "num": 8,
+        "prompt": "a: When you went to the US last year, was it your first visit?\nb: No, I _____ there twice before.",
+        "modelAnswers": []
+      },
+      {
+        "num": 9,
+        "prompt": "a: Do you have any plans for the weekend?\nb: Yes, I _____ to a party on Saturday night.",
+        "modelAnswers": []
+      },
+      {
+        "num": 10,
+        "prompt": "a: Do you know what Steve's doing these days?\nb: No, I _____ him for ages.",
+        "modelAnswers": []
+      },
+      {
+        "num": 11,
+        "prompt": "a: Will you still be here by the time I get back?\nb: No, I _____ by then.",
+        "modelAnswers": []
+      }
+    ]
+  }
+}

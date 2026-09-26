@@ -1,0 +1,68 @@
+{
+  "unit": 7,
+  "title": "Present perfect 1 (I have done)",
+  "pdfPages": [26, 27],
+  "exercises": [
+    {
+      "id": "7.1",
+      "type": "fill-in",
+      "instruction": "Read the situations and complete the sentences using the present perfect. Choose from these verbs:",
+      "wordBank": ["break", "disappear", "go up", "grow", "improve", "lose", "shrink", "stop"],
+      "items": [
+        {"num": 1, "parts": ["Tom ", " his key."], "answers": [["has lost"]]},
+        {"num": 2, "parts": ["Her English ", "."], "answers": [["has improved"]]},
+        {"num": 3, "parts": ["My bag ", "."], "answers": [["has disappeared"]]},
+        {"num": 4, "parts": ["Lisa ", "."], "answers": [["has broken her leg"]]},
+        {"num": 5, "parts": ["The bus fare ", "."], "answers": [["has gone up"]]},
+        {"num": 6, "parts": ["Dan ", "."], "answers": [["has grown a beard"]]},
+        {"num": 7, "parts": ["It ", "."], "answers": [["It\u2019s stopped raining", "It has stopped raining"]]},
+        {"num": 8, "parts": ["My sweater ", "."], "answers": [["My sweater has shrunk", "My sweater\u2019s shrunk"]]}
+      ]
+    },
+    {
+      "id": "7.2",
+      "type": "fill-in",
+      "instruction": "Put in been or gone.",
+      "items": [
+        {"num": 1, "parts": ["My parents are on holiday. They\u2019ve ", " to Italy."], "answers": [["gone"]]},
+        {"num": 2, "parts": ["Hello! I\u2019ve just ", " to the shops. I\u2019ve bought lots of things."], "answers": [["been"]]},
+        {"num": 3, "parts": ["Tom has just ", " out. He\u2019ll be back in about an hour."], "answers": [["gone"]]},
+        {"num": 4, "parts": ["Alice isn\u2019t here at the moment. I don\u2019t know where she\u2019s ", "."], "answers": [["gone"]]},
+        {"num": 5, "parts": ["You\u2019re very late. Where have you ", "?"], "answers": [["been"]]}
+      ]
+    },
+    {
+      "id": "7.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the present perfect.",
+      "items": [
+        {"num": 1, "parts": ["Sally is still here. She ", " out."], "answers": [["hasn\u2019t gone"]]},
+        {"num": 2, "parts": ["I can\u2019t find my bag. ", " (you / see / it) anywhere?"], "answers": [["Have you seen it"]]},
+        {"num": 3, "parts": ["I can\u2019t log on to the website. ", " (I / forget) my password."], "answers": [["I\u2019ve forgotten", "I have forgotten"]]},
+        {"num": 4, "parts": ["I sent Joe an email this morning, but ", " (he / not / reply)."], "answers": [["he hasn\u2019t replied"]]},
+        {"num": 5, "parts": ["Is the meeting still going on, or ", " (it / finish)?"], "answers": [["has it finished"]]},
+        {"num": 6, "parts": ["", " (the weather / change). It\u2019s colder now."], "answers": [["The weather has changed"]]},
+        {"num": 7, "parts": ["", " (you / not / sign) the form. Could you sign it now, please?"], "answers": [["You haven\u2019t signed"]]},
+        {"num": 8, "parts": ["Are your friends still here, or ", " (they / go) home?"], "answers": [["have they gone"]]},
+        {"num": 9, "parts": ["Paul doesn\u2019t know what he\u2019s going to do. ", " (he / not / decide / yet)."], "answers": [["He hasn\u2019t decided yet"]]},
+        {"num": 10, "parts": ["\u2018Do you know where Julia is?\u2019 \u2018Yes, ", " (I / just / see / her).\u2019"], "answers": [["I\u2019ve just seen her", "I have just seen her"]]},
+        {"num": 11, "parts": ["\u2018When is David going away?\u2019 \u2018", " (he / already / go).\u2019"], "answers": [["He\u2019s already gone", "He has already gone"]]},
+        {"num": 12, "parts": ["", " (your course / start / yet)? \u2018Not yet. It starts next week.\u2019"], "answers": [["Has your course started yet"]]}
+      ]
+    },
+    {
+      "id": "7.4",
+      "type": "write",
+      "instruction": "Read the situations and write sentences with just, already or yet.",
+      "items": [
+        {"num": 1, "prompt": "(have lunch)", "answers": ["I\u2019ve just had lunch."]},
+        {"num": 2, "prompt": "(go out)", "answers": ["I\u2019m afraid he\u2019s just gone out. / I\u2019m afraid he has just gone out. / I\u2019m afraid he just went out."]},
+        {"num": 3, "prompt": "(not / finish)", "answers": ["Wait a minute! I haven\u2019t finished yet. / I didn\u2019t finish yet."]},
+        {"num": 4, "prompt": "(do it)", "answers": ["No, I\u2019ve already done it. / I have already done it. / I already did it. / I did it already."]},
+        {"num": 5, "prompt": "(find)", "answers": ["Have you found a place to live yet? / Did you find a place to live yet?"]},
+        {"num": 6, "prompt": "(not / decide)", "answers": ["I haven\u2019t decided yet. / I didn\u2019t decide yet."]},
+        {"num": 7, "prompt": "(come back)", "answers": ["No, she\u2019s just come back. / She has just come back. / She just came back."]}
+      ]
+    }
+  ]
+}

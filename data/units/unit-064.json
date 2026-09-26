@@ -1,0 +1,185 @@
+{
+  "unit": 64,
+  "title": "to \u2026 , for \u2026 and so that \u2026",
+  "pdfPages": [140, 141],
+  "exercises": [
+    {
+      "id": "64.1",
+      "type": "write",
+      "instruction": "Choose from Box A and Box B to make sentences with to \u2026 .",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I opened the box",
+          "answers": ["I opened the box to see what was in it."]
+        },
+        {
+          "num": 3,
+          "prompt": "I",
+          "answers": ["I moved to a new apartment to be nearer my friends."]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": ["I couldn\u2019t find a knife to chop the onions.", "I couldn\u2019t find a knife to chop the onions with."]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": ["I called the police to report the accident."]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": ["I called the hotel to find out if they had any rooms free."]
+        },
+        {
+          "num": 7,
+          "prompt": "",
+          "answers": ["I employed an assistant to help me with my work."]
+        }
+      ]
+    },
+    {
+      "id": "64.2",
+      "type": "fill-in",
+      "instruction": "Complete these sentences using to + a suitable verb.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I don\u2019t have enough time ", " all the things I have to do."],
+          "answers": [["to do"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I came home by taxi. I didn\u2019t have the energy ", "."],
+          "answers": [["to walk"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Would you like something ", "? Coffee? Tea?"],
+          "answers": [["to drink"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Can you give me a bag ", " these things in?"],
+          "answers": [["to put", "to carry"]]
+        },
+        {
+          "num": 6,
+          "parts": ["There will be a meeting next week ", " the problem."],
+          "answers": [["to discuss", "to consider", "to talk about"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Do you need a visa ", " to the United States?"],
+          "answers": [["to go", "to travel"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I saw Helen at the party, but I didn\u2019t have a chance ", " to her."],
+          "answers": [["to talk", "to speak"]]
+        },
+        {
+          "num": 9,
+          "parts": ["I need some new clothes. I don\u2019t have anything nice ", "."],
+          "answers": [["to wear", "to put on"]]
+        },
+        {
+          "num": 10,
+          "parts": ["They\u2019ve passed their exams. They\u2019re going to have a party ", "."],
+          "answers": [["to celebrate"]]
+        },
+        {
+          "num": 11,
+          "parts": ["I can\u2019t do all this work alone. I need somebody ", " me."],
+          "answers": [["to help", "to assist"]]
+        },
+        {
+          "num": 12,
+          "parts": ["Why are you so scared? There\u2019s nothing ", " afraid of."],
+          "answers": [["to be"]]
+        }
+      ]
+    },
+    {
+      "id": "64.3",
+      "type": "fill-in",
+      "instruction": "Put in to or for.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["We\u2019ll need time ", " make a decision."],
+          "answers": [["to"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I went to the dentist ", " a check-up."],
+          "answers": [["for"]]
+        },
+        {
+          "num": 4,
+          "parts": ["He\u2019s very old. He needs somebody ", " take care of him."],
+          "answers": [["to"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Can you lend me money ", " a taxi?"],
+          "answers": [["for"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Do you wear glasses ", " reading?"],
+          "answers": [["for"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I put on my glasses ", " read the letter."],
+          "answers": [["to"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I wish we had a garden ", " the children ", " play in."],
+          "answers": [["for"], ["to"]]
+        }
+      ]
+    },
+    {
+      "id": "64.4",
+      "type": "write",
+      "instruction": "Make one sentence from two, using so that.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I wore warm clothes. I didn\u2019t want to get cold.",
+          "answers": ["I wore warm clothes so that I wouldn\u2019t get cold.", "I wore warm clothes so that I wouldn\u2019t be cold."]
+        },
+        {
+          "num": 3,
+          "prompt": "I gave Mark my phone number. I wanted him to be able to contact me.",
+          "answers": ["I gave Mark my phone number so that he could contact me.", "I gave Mark my phone number so that he would be able to contact me."]
+        },
+        {
+          "num": 4,
+          "prompt": "We spoke very quietly. We didn\u2019t want anybody else to hear us.",
+          "answers": ["We spoke very quietly so that nobody else would hear us.", "We spoke very quietly so that nobody else could hear us.", "We spoke very quietly so that nobody else would be able to hear us."]
+        },
+        {
+          "num": 5,
+          "prompt": "Please arrive early. We want to be able to start the meeting on time.",
+          "answers": ["Please arrive early so that we can start the meeting on time.", "Please arrive early so that we\u2019ll be able to start the meeting on time."]
+        },
+        {
+          "num": 6,
+          "prompt": "We made a list of things to do. We didn\u2019t want to forget anything.",
+          "answers": ["We made a list of things to do so that we wouldn\u2019t forget anything."]
+        },
+        {
+          "num": 7,
+          "prompt": "I slowed down. I wanted the car behind me to be able to overtake.",
+          "answers": ["I slowed down so that the car behind me could overtake.", "I slowed down so that the car behind me would be able to overtake."]
+        }
+      ]
+    }
+  ]
+}

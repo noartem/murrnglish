@@ -1,0 +1,160 @@
+{
+  "unit": 68,
+  "title": "-ing clauses (He hurt his knee playing football.)",
+  "pdfPages": [148, 149],
+  "exercises": [
+    {
+      "id": "68.1",
+      "type": "fill-in",
+      "instruction": "Choose from Box A and Box B to make sentences. Use -ing.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Kate was in the kitchen ", "."],
+          "answers": [["making coffee"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Amy was sitting in an armchair ", "."],
+          "answers": [["reading a book"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Nicola opened the door carefully ", "."],
+          "answers": [["trying not to make a noise"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Sarah went out ", "."],
+          "answers": [["saying she would be back in an hour"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Lisa worked in Rome for two years ", "."],
+          "answers": [["teaching English"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Anna walked around the town ", "."],
+          "answers": [["looking at the sights and taking pictures"]]
+        }
+      ]
+    },
+    {
+      "id": "68.2",
+      "type": "write",
+      "instruction": "Put the words in the right order.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Joe (knee / football / his / hurt / playing)",
+          "answers": ["Joe hurt his knee playing football."]
+        },
+        {
+          "num": 2,
+          "prompt": "I (in the rain / wet / got / very / walking)",
+          "answers": ["I got very wet walking in the rain."]
+        },
+        {
+          "num": 3,
+          "prompt": "Laura (to work / had / driving / an accident)",
+          "answers": ["Laura had an accident driving to work."]
+        },
+        {
+          "num": 4,
+          "prompt": "My friend (off / slipped / a bus / getting / and fell)",
+          "answers": ["My friend slipped and fell getting off a bus."]
+        },
+        {
+          "num": 5,
+          "prompt": "Emily (trying / her back / a heavy box / to lift / hurt)",
+          "answers": ["Emily hurt her back trying to lift a heavy box."]
+        },
+        {
+          "num": 6,
+          "prompt": "Two people were (to put out / by smoke / the fire / overcome / trying)",
+          "answers": ["Two people were overcome by smoke trying to put out the fire."]
+        }
+      ]
+    },
+    {
+      "id": "68.3",
+      "type": "self-check",
+      "instruction": "Complete the sentences. Use Having + a suitable verb.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Having finished her work, Katherine left the office and went home.",
+          "modelAnswers": ["Having finished her work, Katherine left the office and went home."]
+        },
+        {
+          "num": 2,
+          "prompt": "_____ our tickets, we went into the theatre and took our seats.",
+          "modelAnswers": ["Having bought our tickets", "Having got our tickets"]
+        },
+        {
+          "num": 3,
+          "prompt": "_____ the problem, I think we\u2019ll be able to find a solution.",
+          "modelAnswers": ["Having discussed the problem", "Having talked about the problem", "Having thought about the problem"]
+        },
+        {
+          "num": 4,
+          "prompt": "_____ he was hungry, Joe now says he doesn\u2019t want to eat anything.",
+          "modelAnswers": ["Having said he was hungry"]
+        },
+        {
+          "num": 5,
+          "prompt": "_____ his job recently, James is now unemployed.",
+          "modelAnswers": ["Having lost his job", "Having given up his job", "Having been fired from his job"]
+        },
+        {
+          "num": 6,
+          "prompt": "_____ most of his life in London, Sam has now gone to live in a small village in the country.",
+          "modelAnswers": ["Having spent most of his life", "Having lived (for) most of his life"]
+        }
+      ]
+    },
+    {
+      "id": "68.4",
+      "type": "write",
+      "instruction": "Make one sentence from two. Begin with -ing or Not -ing. Sometimes you need to begin with Having \u2026. Don\u2019t forget the comma (,).",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "I felt tired. So I went to bed early.",
+          "answers": ["Feeling tired, I went to bed early."]
+        },
+        {
+          "num": 2,
+          "prompt": "I thought they might be hungry. So I offered them something to eat.",
+          "answers": ["Thinking they might be hungry, I offered them something to eat."]
+        },
+        {
+          "num": 3,
+          "prompt": "Robert is a vegetarian. So he doesn\u2019t eat any kind of meat.",
+          "answers": ["Being a vegetarian, Robert doesn\u2019t eat any kind of meat."]
+        },
+        {
+          "num": 4,
+          "prompt": "I didn\u2019t have a phone. So I had no way of contacting anyone.",
+          "answers": ["Not having a phone, I had no way of contacting anyone."]
+        },
+        {
+          "num": 5,
+          "prompt": "Sarah has travelled a lot. So she knows a lot about other countries.",
+          "answers": ["Having travelled a lot, Sarah knows a lot about other countries."]
+        },
+        {
+          "num": 6,
+          "prompt": "I wasn\u2019t able to speak the local language. So I had trouble communicating.",
+          "answers": ["Not being able to speak the local language, I had trouble communicating."]
+        },
+        {
+          "num": 7,
+          "prompt": "We had spent nearly all our money. So we couldn\u2019t afford to stay at a hotel.",
+          "answers": ["Having spent nearly all our money, we couldn\u2019t afford to stay at a hotel."]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "unit": 140,
+  "title": "Phrasal verbs 4 on/off (1)",
+  "pdfPages": [292, 293],
+  "exercises": [
+    {
+      "id": "140.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using put on + the following:",
+      "wordBank": ["some music", "the heating", "the kettle", "the light", "the oven"],
+      "items": [
+        {"num": 1, "parts": ["It was getting dark, so I put the light on."], "answers": []},
+        {"num": 2, "parts": ["It was getting cold, so I ", "."], "answers": [["put the heating on"]]},
+        {"num": 3, "parts": ["I wanted to bake a cake, so I ", "."], "answers": [["put the oven on"]]},
+        {"num": 4, "parts": ["I wanted to make some tea, so I ", "."], "answers": [["put the kettle on"]]},
+        {"num": 5, "parts": ["I wanted to relax, so I ", "."], "answers": [["put some music on"]]}
+      ]
+    },
+    {
+      "id": "140.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a verb + on or off.",
+      "items": [
+        {"num": 1, "parts": ["It was hot in the cinema, so I took off my jacket."], "answers": []},
+        {"num": 2, "parts": ["What are all these people doing? What's ", "?"], "answers": [["going on"]]},
+        {"num": 3, "parts": ["The weather was too bad for the plane to ", ", so the flight was delayed."], "answers": [["take off"]]},
+        {"num": 4, "parts": ["Rachel got into her car and ", " at high speed."], "answers": [["drove off", "went off"]]},
+        {"num": 5, "parts": ["Tim is too thin. He needs to ", " weight."], "answers": [["put on"]]},
+        {"num": 6, "parts": ["We spent the whole day walking. We ", " at 8 am and walked for ten hours."], "answers": [["set off"]]},
+        {"num": 7, "parts": ["Don't ", " until tomorrow what you can do today."], "answers": [["put off"]]},
+        {"num": 8, "parts": ["They've changed their minds about getting married. The wedding has been ", "."], "answers": [["called off"]]},
+        {"num": 9, "parts": ["Are you cold? Shall I get you a sweater to ", "?"], "answers": [["put on"]]},
+        {"num": 10, "parts": ["I ", " some jeans in the shop, but they were too tight."], "answers": [["tried on"]]},
+        {"num": 11, "parts": ["When I go away, I prefer to be alone at the station or airport. I don't like it when people come to ", " me ", "."], "answers": [["see"], ["off"]]},
+        {"num": 12, "parts": ["I need to make an appointment to see the dentist, but I keep ", " it ", "."], "answers": [["putting"], ["off"]]}
+      ]
+    },
+    {
+      "id": "140.3",
+      "type": "fill-in",
+      "instruction": "Look at the pictures and complete the sentences.",
+      "items": [
+        {"num": 1, "parts": ["Her hands were cold, so she put her gloves on."], "answers": []},
+        {"num": 2, "parts": ["The plane ", " at 10.55."], "answers": [["took off"]]},
+        {"num": 3, "parts": ["Maria ", ", but it was too big for her."], "answers": [["tried on a hat", "tried on the hat", "tried a hat on", "tried the hat on"]]},
+        {"num": 4, "parts": ["The match ", " because of the weather."], "answers": [["was called off"]]},
+        {"num": 5, "parts": ["Mark's parents went to the airport to ", "."], "answers": [["see him off"]]},
+        {"num": 6, "parts": ["He took his sunglasses out of his pocket and ", "."], "answers": [["put them on"]]}
+      ]
+    }
+  ]
+}

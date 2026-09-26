@@ -1,0 +1,73 @@
+{
+  "id": 3,
+  "topic": "Present and past",
+  "refs": "Units 1–14",
+  "pdfPages": [315, 316],
+  "exercise": {
+    "id": "3",
+    "type": "fill-in",
+    "instruction": "Complete each question using a suitable verb.",
+    "items": [
+      {
+        "num": 1,
+        "parts": ["a: I'm looking for Paul. ", " him?\n  b: Yes, he was here a moment ago."],
+        "answers": [["Have you seen"]]
+      },
+      {
+        "num": 2,
+        "parts": ["a: Why ", " so early last night?\n  b: I was feeling very tired."],
+        "answers": [["did you go to bed"]]
+      },
+      {
+        "num": 3,
+        "parts": ["a: Where ", "?\n  b: Just to the shop at the end of the street. I'll only be ten minutes."],
+        "answers": [["are you going"]]
+      },
+      {
+        "num": 4,
+        "parts": ["a: ", " TV every day?\n  b: No, only if there's something special on."],
+        "answers": [["Do you watch"]]
+      },
+      {
+        "num": 5,
+        "parts": ["a: Your house is lovely. How long ", " here?\n  b: Nearly ten years."],
+        "answers": [["have you lived", "have you been living", "have you been"]]
+      },
+      {
+        "num": 6,
+        "parts": ["a: How was your parents' holiday? ", " a nice time?\n  b: Yes, they really enjoyed it."],
+        "answers": [["Did they have"]]
+      },
+      {
+        "num": 7,
+        "parts": ["a: ", " Sarah recently?\n  b: Yes, we had lunch together a few days ago."],
+        "answers": [["Have you seen"]]
+      },
+      {
+        "num": 8,
+        "parts": ["a: Can you describe the woman you saw? What ", "?\n  b: A red sweater and black jeans."],
+        "answers": [["was she wearing"]]
+      },
+      {
+        "num": 9,
+        "parts": ["a: I'm sorry to keep you waiting. ", " long?\n  b: No, only about ten minutes."],
+        "answers": [["Have you been waiting", "Have you been here"]]
+      },
+      {
+        "num": 10,
+        "parts": ["a: How long ", " to get from here to the airport?\n  b: Usually about 45 minutes. It depends on the traffic."],
+        "answers": [["does it take"]]
+      },
+      {
+        "num": 11,
+        "parts": ["a: ", " this song before?\n  b: No, this is the first time. I like it."],
+        "answers": [["Have you heard"]]
+      },
+      {
+        "num": 12,
+        "parts": ["a: ", " to the United States?\n  b: No, never, but I went to Canada a few years ago."],
+        "answers": [["Have you been", "Have you ever been"]]
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "unit": 63,
+  "title": "there\u2019s no point in -ing, it\u2019s worth -ing etc.",
+  "pdfPages": [138, 139],
+  "exercises": [
+    {
+      "id": "63.1",
+      "type": "matching",
+      "instruction": "Which goes with which?",
+      "leftOptions": [
+        "It\u2019s a nice town.",
+        "It\u2019s an interesting idea.",
+        "It\u2019s no use standing here talking.",
+        "It\u2019s not important.",
+        "There\u2019s no point in looking for him.",
+        "It\u2019s no good apologising to me.",
+        "It\u2019s not worth arguing with him.",
+        "The hotel is a short walk from here."
+      ],
+      "rightOptions": [
+        "I don\u2019t believe you\u2019re sorry.",
+        "We\u2019ll never find him.",
+        "It\u2019s not worth getting a taxi.",
+        "We have to do something.",
+        "He won\u2019t change his opinion.",
+        "It\u2019s worth spending a few days here.",
+        "It\u2019s not worth worrying about.",
+        "It\u2019s worth considering."
+      ],
+      "pairs": [[0, 5], [1, 7], [2, 3], [3, 6], [4, 1], [5, 0], [6, 4], [7, 2]]
+    },
+    {
+      "id": "63.2",
+      "type": "write",
+      "instruction": "Write sentences beginning There\u2019s no point \u2026 .",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "Why work if you don\u2019t need money?",
+          "answers": ["There\u2019s no point in working if you don\u2019t need money."]
+        },
+        {
+          "num": 3,
+          "prompt": "Don\u2019t try to study if you feel tired.",
+          "answers": ["There\u2019s no point in trying to study if you feel tired.", "There\u2019s no point in studying if you feel tired."]
+        },
+        {
+          "num": 4,
+          "prompt": "Why hurry if you have plenty of time?",
+          "answers": ["There\u2019s no point in hurrying if you have plenty of time."]
+        }
+      ]
+    },
+    {
+      "id": "63.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I find it hard to remember people\u2019s names.\nI have a problem ", "."],
+          "answers": [["remembering people\u2019s names"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Lucy found a job easily. It wasn\u2019t a problem.\nShe had no trouble ", "."],
+          "answers": [["finding a job", "getting a job"]]
+        },
+        {
+          "num": 4,
+          "parts": ["It will be easy to get a ticket for the game.\nYou won\u2019t have any problems ", "."],
+          "answers": [["getting a ticket for the game"]]
+        },
+        {
+          "num": 5,
+          "parts": ["It was easy for us to understand one another.\nWe had no difficulty ", "."],
+          "answers": [["understanding one another"]]
+        }
+      ]
+    },
+    {
+      "id": "63.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use only one word each time.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["How much time do you spend ", " to and from work every day?"],
+          "answers": [["going", "travelling", "getting"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Karen is going on holiday tomorrow, so she\u2019s busy ", " her things ready."],
+          "answers": [["getting"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I waste too much time ", " TV."],
+          "answers": [["watching"]]
+        },
+        {
+          "num": 5,
+          "parts": ["There was a beautiful view from the hill. It was worth ", " to the top."],
+          "answers": [["going", "climbing", "walking"]]
+        },
+        {
+          "num": 6,
+          "parts": ["We need to stay calm. There\u2019s no point in ", " angry."],
+          "answers": [["getting", "being"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Amy is learning to play the guitar. She spends a lot of time ", "."],
+          "answers": [["practising"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Gary is enjoying his new job. He\u2019s busy ", " on a new project."],
+          "answers": [["working"]]
+        },
+        {
+          "num": 9,
+          "parts": ["I decided it wasn\u2019t worth ", " for the job. I had no chance of getting it."],
+          "answers": [["applying"]]
+        },
+        {
+          "num": 10,
+          "parts": ["It\u2019s no good ", " to escape. You won\u2019t be able to get out of here."],
+          "answers": [["trying"]]
+        }
+      ]
+    },
+    {
+      "id": "63.5",
+      "type": "fill-in",
+      "instruction": "Complete these sentences. Choose from the following and put the verb in the correct form.",
+      "wordBank": ["go riding", "go sailing", "go shopping", "go skiing", "go swimming"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["It was a very hot day, so we ", " in the lake."],
+          "answers": [["went swimming"]]
+        },
+        {
+          "num": 3,
+          "parts": ["There\u2019s plenty of snow in the mountains, so we\u2019ll be able to ", "."],
+          "answers": [["go skiing"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Helen has two horses. She ", " regularly."],
+          "answers": [["goes riding"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Dan isn\u2019t here. He ", ". There were a few things he needed to buy."],
+          "answers": [["\u2019s gone shopping", "has gone shopping", "went shopping"]]
+        }
+      ]
+    }
+  ]
+}

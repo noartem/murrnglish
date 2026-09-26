@@ -1,0 +1,38 @@
+{
+  "unit": 47,
+  "title": "Reported speech 1 (he said that …)",
+  "pdfPages": [106, 107],
+  "exercises": [
+    {
+      "id": "47.1",
+      "type": "fill-in",
+      "instruction": "You talked to some friends of yours (Paul, Tom, Anna etc.). Read what they said on the left (direct speech). Later (the same day) you tell another friend what they said (reported speech). Complete the sentences.",
+      "items": [
+        { "num": 2, "parts": ["I wanted to walk to the station, but Tom said ", " far."], "answers": [["(that) it was too far"]] },
+        { "num": 3, "parts": ["Anna has been invited to the party but she told me ", " to go."], "answers": [["(that) she didn't want"]] },
+        { "num": 4, "parts": ["I asked Dan about his travel plans. He said ", " next week."], "answers": [["(that) he would let me know"]] },
+        { "num": 5, "parts": ["I asked Ben about Rachel, but he told me ", " for a while."], "answers": [["(that) he hadn't seen her"]] },
+        { "num": 6, "parts": ["I needed to borrow a guitar and Kate said ", "."], "answers": [["(that) I could borrow hers"]] },
+        { "num": 7, "parts": ["I asked Sue about her job. She said ", " very much."], "answers": [["(that) she wasn't enjoying it"]] },
+        { "num": 8, "parts": ["I asked James about his car. He told me ", " a few months ago."], "answers": [["(that) he sold it", "(that) he'd sold it", "(that) he had sold it"]] },
+        { "num": 9, "parts": ["I asked Sarah the name of the cafe we went to but she said ", "."], "answers": [["(that) she didn't know"]] },
+        { "num": 10, "parts": ["I asked Amy about her school and she told me ", " class."], "answers": [["(that) there were twenty students in her"]] }
+      ]
+    },
+    {
+      "id": "47.2",
+      "type": "self-check",
+      "instruction": "Somebody says something to you which is not what you expected. Use your own ideas to complete your answers.",
+      "items": [
+        { "num": 1, "prompt": "a: It's quite a long way from the hotel to the city centre.\nb: Is it? The man on the reception desk said it was only five minutes' walk.", "modelAnswers": [""] },
+        { "num": 2, "prompt": "a: Sue is coming to the party tonight.\nb: Is she? I saw her a few days ago and she said she …", "modelAnswers": ["wasn't coming / was going somewhere else / couldn't come"] },
+        { "num": 3, "prompt": "a: Sarah gets on fine with Paul.\nb: Does she? Last week you said … each other.", "modelAnswers": ["they didn't like each other / they didn't get on with each other / they couldn't stand each other"] },
+        { "num": 4, "prompt": "a: Joe knows lots of people.\nb: That's not what he told me. He said … anyone.", "modelAnswers": ["he didn't know"] },
+        { "num": 5, "prompt": "a: Jane will be here next week.\nb: Oh, really? When I spoke to her, she said … away.", "modelAnswers": ["she would be away / she was going away"] },
+        { "num": 6, "prompt": "a: I'm going out tonight.\nb: Are you? I thought you said … at home.", "modelAnswers": ["you were staying"] },
+        { "num": 7, "prompt": "a: I speak French quite well.\nb: Do you? But earlier you said … any other languages.", "modelAnswers": ["you couldn't speak / you didn't speak"] },
+        { "num": 8, "prompt": "a: I haven't seen Ben recently.\nb: That's strange. He told me … last weekend.", "modelAnswers": ["he'd seen you / he saw you"] }
+      ]
+    }
+  ]
+}

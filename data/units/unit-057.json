@@ -1,0 +1,65 @@
+{
+  "unit": 57,
+  "title": "Verb + -ing or to \u2026 2 (try, need, help)",
+  "pdfPages": [126, 127],
+  "exercises": [
+    {
+      "id": "57.1",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form.",
+      "items": [
+        {"num": 1, "parts": ["I was very tired. I tried to keep my eyes open, but I couldn\u2019t."], "answers": []},
+        {"num": 2, "parts": ["I tried ", " the shelf, but I wasn\u2019t tall enough."], "answers": [["to reach"]]},
+        {"num": 3, "parts": ["I rang the doorbell, but there was no answer. Then I tried ", " on the window, but there was still no answer."], "answers": [["knocking"]]},
+        {"num": 4, "parts": ["We tried ", " the fire out, but without success. We had to call the fire brigade."], "answers": [["to put"]]},
+        {"num": 5, "parts": ["Please leave me alone. I\u2019m trying ", "."], "answers": [["to concentrate"]]},
+        {"num": 6, "parts": ["Sue needed to borrow some money. She tried ", " Carl, but he didn\u2019t have any."], "answers": [["asking"]]},
+        {"num": 7, "parts": ["Mr Bennett isn\u2019t here right now. Please try ", " later."], "answers": [["calling"]]},
+        {"num": 8, "parts": ["The woman\u2019s face was familiar. I tried ", " where I\u2019d seen her before."], "answers": [["to remember"]]},
+        {"num": 9, "parts": ["If you have a problem with the computer, try ", " it."], "answers": [["restarting"]]}
+      ]
+    },
+    {
+      "id": "57.2",
+      "type": "write",
+      "instruction": "For each picture, write a sentence with need(s) + one of the following verbs: clean, cut, empty, paint, tighten",
+      "items": [
+        {"num": 1, "prompt": "This room isn\u2019t very nice. It needs painting.", "answers": ["This room isn\u2019t very nice. It needs painting."]},
+        {"num": 2, "prompt": "The grass is very long.", "answers": ["It needs cutting."]},
+        {"num": 3, "prompt": "The windows are dirty.", "answers": ["They need cleaning."]},
+        {"num": 4, "prompt": "The screws are loose.", "answers": ["They need tightening."]},
+        {"num": 5, "prompt": "The bin is full.", "answers": ["It needs emptying."]}
+      ]
+    },
+    {
+      "id": "57.3",
+      "type": "choice",
+      "instruction": "Which is right?",
+      "items": [
+        {"num": 1, "options": ["getting", "to get"], "answer": 1},
+        {"num": 2, "options": ["washing", "to wash"], "answer": 0},
+        {"num": 3, "options": ["looking", "to look"], "answer": 0},
+        {"num": 4, "options": ["thinking", "to think"], "answer": 1},
+        {"num": 5, "options": ["cutting", "to cut"], "answer": 0},
+        {"num": 6, "options": ["going", "to go"], "answer": 1},
+        {"num": 7, "options": ["ironing", "to iron"], "answer": 1},
+        {"num": 8, "options": ["ironing", "to iron"], "answer": 0}
+      ]
+    },
+    {
+      "id": "57.4",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form.",
+      "items": [
+        {"num": 1, "parts": ["I don\u2019t like him, but I can\u2019t help feeling sorry for him."], "answers": []},
+        {"num": 2, "parts": ["I\u2019ve lost my phone. Can you help me ", " for it?"], "answers": [["look", "to look"]]},
+        {"num": 3, "parts": ["They were talking very loudly. We couldn\u2019t help ", " what they said."], "answers": [["overhearing"]]},
+        {"num": 4, "parts": ["He looks so funny. Whenever I see him, I can\u2019t help ", "."], "answers": [["smiling"]]},
+        {"num": 5, "parts": ["The fine weather helped ", " it a really nice holiday."], "answers": [["make", "to make"]]},
+        {"num": 6, "parts": ["Did you help ", " the meeting?"], "answers": [["organise", "to organise"]]},
+        {"num": 7, "parts": ["I think about what happened all the time. I can\u2019t help ", " about it."], "answers": [["thinking"]]},
+        {"num": 8, "parts": ["I can\u2019t help you ", " a job. You have to find one yourself."], "answers": [["get", "to get"]]}
+      ]
+    }
+  ]
+}

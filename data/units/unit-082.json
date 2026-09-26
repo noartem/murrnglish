@@ -1,0 +1,83 @@
+{
+  "unit": 82,
+  "title": "myself/yourself/themselves etc.",
+  "pdfPages": [176, 177],
+  "exercises": [
+    {
+      "id": "82.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using myself/yourself etc. + these verbs (in the correct form):",
+      "wordBank": ["blame", "burn", "enjoy", "express", "hurt", "introduce", "put"],
+      "items": [
+        {"num": 1, "parts": ["Steve introduced ", " to the other guests at the party."], "answers": [["himself"]]},
+        {"num": 2, "parts": ["Ben fell down some steps, but fortunately he didn\u2019t ", "."], "answers": [["hurt himself"]]},
+        {"num": 3, "parts": ["It isn\u2019t Sue\u2019s fault. She really shouldn\u2019t ", "."], "answers": [["blame herself"]]},
+        {"num": 4, "parts": ["Please try and understand how I feel. You have to ", " in my position."], "answers": [["put yourself"]]},
+        {"num": 5, "parts": ["The children had a great time at the beach. They really ", "."], "answers": [["enjoyed themselves"]]},
+        {"num": 6, "parts": ["Be careful! That pan is hot. Don\u2019t ", "."], "answers": [["burn yourself"]]},
+        {"num": 7, "parts": ["Sometimes I can\u2019t say exactly what I mean. I wish I could ", " better."], "answers": [["express myself"]]}
+      ]
+    },
+    {
+      "id": "82.2",
+      "type": "fill-in",
+      "instruction": "Put in myself/yourself/ourselves etc. or me/you/us etc.",
+      "items": [
+        {"num": 1, "parts": ["Amy had a great holiday. She enjoyed ", "."], "answers": [["herself"]]},
+        {"num": 2, "parts": ["It\u2019s not my fault. You can\u2019t blame ", "."], "answers": [["me"]]},
+        {"num": 3, "parts": ["What I did was really bad. I\u2019m ashamed of ", "."], "answers": [["myself"]]},
+        {"num": 4, "parts": ["We have a problem. I hope you can help ", "."], "answers": [["us"]]},
+        {"num": 5, "parts": ["\u2018Can I take another biscuit?\u2019 \u2018Of course. Help ", "!\u2019"], "answers": [["yourself"]]},
+        {"num": 6, "parts": ["I want you to meet Sarah. I\u2019ll introduce ", " to her."], "answers": [["you"]]},
+        {"num": 7, "parts": ["Don\u2019t worry about us. We can take care of ", "."], "answers": [["ourselves"]]},
+        {"num": 8, "parts": ["Don\u2019t worry about the children. I\u2019ll take care of ", "."], "answers": [["them"]]},
+        {"num": 9, "parts": ["I gave them a key to our house so that they could let ", " in."], "answers": [["themselves"]]}
+      ]
+    },
+    {
+      "id": "82.3",
+      "type": "fill-in",
+      "instruction": "Complete these sentences. Use myself/yourself etc. where necessary. Choose from:",
+      "wordBank": ["concentrate", "defend", "dry", "enjoy", "feel", "meet", "relax", "shave"],
+      "items": [
+        {"num": 1, "parts": ["Neil grew a beard because he was fed up with shaving ", "."], "answers": [["himself"]]},
+        {"num": 2, "parts": ["Amy had a great holiday. She enjoyed ", "."], "answers": [["herself"]]},
+        {"num": 3, "parts": ["I wasn\u2019t very well yesterday, but I ", " much better today."], "answers": [["feel"]]},
+        {"num": 4, "parts": ["I climbed out of the swimming pool and ", " with a towel."], "answers": [["dried myself"]]},
+        {"num": 5, "parts": ["I tried to study, but I couldn\u2019t ", "."], "answers": [["concentrate"]]},
+        {"num": 6, "parts": ["If somebody attacks you, you have the right to ", "."], "answers": [["defend yourself"]]},
+        {"num": 7, "parts": ["I\u2019m going out with Chris this evening. We\u2019re ", " at 7.30."], "answers": [["meeting"]]},
+        {"num": 8, "parts": ["You\u2019re always rushing. Why don\u2019t you sit down and ", "?"], "answers": [["relax"]]}
+      ]
+    },
+    {
+      "id": "82.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences with ourselves/themselves or each other.",
+      "items": [
+        {"num": 1, "parts": ["How long have you and Ben known ", "?"], "answers": [["each other"]]},
+        {"num": 2, "parts": ["If people work too hard, they can make ", " ill."], "answers": [["themselves"]]},
+        {"num": 3, "parts": ["I need you and you need me. We need ", "."], "answers": [["each other"]]},
+        {"num": 4, "parts": ["In Britain friends often give ", " presents at Christmas."], "answers": [["each other"]]},
+        {"num": 5, "parts": ["Some people are selfish. They only think of ", "."], "answers": [["themselves"]]},
+        {"num": 6, "parts": ["Tracy and I don\u2019t see ", " very often these days."], "answers": [["each other"]]},
+        {"num": 7, "parts": ["We couldn\u2019t get back into the house. We had locked ", " out."], "answers": [["ourselves"]]},
+        {"num": 8, "parts": ["They\u2019ve had an argument. Now they\u2019re not speaking to ", "."], "answers": [["each other"]]},
+        {"num": 9, "parts": ["We\u2019d never met before, so we introduced ", " to ", "."], "answers": [["ourselves"], ["each other"]]}
+      ]
+    },
+    {
+      "id": "82.5",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using myself/yourself etc. Use the verb in brackets.",
+      "items": [
+        {"num": 1, "parts": ["\u2018Who repaired the bike for you?\u2019 \u2018Nobody. I repaired it ", ".\u2019"], "answers": [["myself"]], "verb": "repair"},
+        {"num": 2, "parts": ["I didn\u2019t buy this cake from a shop. I ", "."], "answers": [["made it myself"]], "verb": "make"},
+        {"num": 3, "parts": ["\u2018Who told you Laura was going away?\u2019 \u2018", ".\u2019"], "answers": [["Laura told me herself", "Laura herself told me"]], "verb": "tell"},
+        {"num": 4, "parts": ["I don\u2019t know what they\u2019re going to do. I don\u2019t think they ", "."], "answers": [["know themselves"]], "verb": "know"},
+        {"num": 5, "parts": ["\u2018Who cuts Paul\u2019s hair for him?\u2019 \u2018Nobody. He ", ".\u2019"], "answers": [["cuts it himself"]], "verb": "cut"},
+        {"num": 6, "parts": ["\u2018Can you phone Sam for me?\u2019 \u2018Why can\u2019t you ", "?\u2019"], "answers": [["do it yourself"]], "verb": "do"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "unit": 2,
+  "title": "Present simple (I do)",
+  "pdfPages": [16, 17],
+  "exercises": [
+    {
+      "id": "2.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the following verbs:",
+      "wordBank": ["cause(s)", "close(s)", "connect(s)", "go(es)", "live(s)", "speak(s)", "take(s)"],
+      "items": [
+        {"num": 2, "parts": ["Ben and Jack ", " to the same school."], "answers": [["go"]]},
+        {"num": 3, "parts": ["Bad driving ", " many accidents."], "answers": [["causes"]]},
+        {"num": 4, "parts": ["The museum ", " at 4 o\u2019clock on Sundays."], "answers": [["closes"]]},
+        {"num": 5, "parts": ["My parents ", " in a very small flat."], "answers": [["live"]]},
+        {"num": 6, "parts": ["The Olympic Games ", " place every four years."], "answers": [["take"]]},
+        {"num": 7, "parts": ["The Panama Canal ", " the Atlantic and Pacific oceans."], "answers": [["connects"]]}
+      ]
+    },
+    {
+      "id": "2.2",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form.",
+      "items": [
+        {"num": 2, "parts": ["What time ", " here?"], "answers": [["do the banks close"]]},
+        {"num": 3, "parts": ["I have a car, but I ", " it much."], "answers": [["don\u2019t use"]]},
+        {"num": 4, "parts": ["Where ", " from? Is she Spanish?"], "answers": [["does Maria come"]]},
+        {"num": 5, "parts": ["\u2018What ", "?\u2019 \u2018I\u2019m an electrician.\u2019"], "answers": [["do you do"]]},
+        {"num": 6, "parts": ["Look at this sentence. What ", "?"], "answers": [["does this word mean"]]},
+        {"num": 7, "parts": ["David isn\u2019t very fit. He ", " any sport."], "answers": [["doesn\u2019t do"]]},
+        {"num": 8, "parts": ["It ", " me an hour to get to work in the morning. How long ", " you?"], "answers": [["takes"], ["does it take"]]}
+      ]
+    },
+    {
+      "id": "2.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using these verbs. Sometimes you need the negative.",
+      "wordBank": ["believe", "eat", "flow", "go", "grow", "make", "rise", "tell", "translate"],
+      "items": [
+        {"num": 3, "parts": ["The sun ", " in the east."], "answers": [["rises"]]},
+        {"num": 4, "parts": ["Bees ", " honey."], "answers": [["make"]]},
+        {"num": 5, "parts": ["Vegetarians ", " meat."], "answers": [["don\u2019t eat"]]},
+        {"num": 6, "parts": ["An atheist ", " in God."], "answers": [["doesn\u2019t believe"]]},
+        {"num": 7, "parts": ["An interpreter ", " from one language into another."], "answers": [["translates"]]},
+        {"num": 8, "parts": ["Liars are people who ", " the truth."], "answers": [["don\u2019t tell"]]},
+        {"num": 9, "parts": ["The River Amazon ", " into the Atlantic Ocean."], "answers": [["flows"]]}
+      ]
+    },
+    {
+      "id": "2.4",
+      "type": "write",
+      "instruction": "You ask Lisa questions about herself and her family. Write the questions.",
+      "items": [
+        {"num": 2, "prompt": "Perhaps Lisa\u2019s sister plays tennis too. You want to know. Ask Lisa.", "answers": ["Does your sister play tennis?"]},
+        {"num": 3, "prompt": "You know that Lisa goes to the cinema a lot. You want to know how often. Ask her.", "answers": ["How often do you go to the cinema?"]},
+        {"num": 4, "prompt": "You know that Lisa\u2019s brother works. You want to know what he does. Ask Lisa.", "answers": ["What does your brother do?"]},
+        {"num": 5, "prompt": "You\u2019re not sure whether Lisa speaks Spanish. You want to know. Ask her.", "answers": ["Do you speak Spanish?"]},
+        {"num": 6, "prompt": "You don\u2019t know where Lisa\u2019s grandparents live. You want to know. Ask Lisa.", "answers": ["Where do your grandparents live?"]}
+      ]
+    },
+    {
+      "id": "2.5",
+      "type": "fill-in",
+      "instruction": "Complete using the following:",
+      "wordBank": ["I agree", "I apologise", "I insist", "I promise", "I recommend", "I suggest"],
+      "items": [
+        {"num": 2, "parts": ["I won\u2019t tell anybody what you said. ", "."], "answers": [["I promise"]]},
+        {"num": 3, "parts": ["(in a restaurant) You must let me pay for the meal. ", "."], "answers": [["I insist"]]},
+        {"num": 4, "parts": [" ", " for what I said. I shouldn\u2019t have said it."], "answers": [["I apologise"]]},
+        {"num": 5, "parts": ["The new restaurant in Baker Street is very good. ", " it."], "answers": [["I recommend"]]},
+        {"num": 6, "parts": ["I think you\u2019re absolutely right. ", " with you."], "answers": [["I agree"]]}
+      ]
+    }
+  ]
+}

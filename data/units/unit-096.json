@@ -1,0 +1,174 @@
+{
+  "unit": 96,
+  "title": "Relative clauses 5: extra information clauses (2)",
+  "pdfPages": [204, 205],
+  "exercises": [
+    {
+      "id": "96.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a preposition + whom or which. Choose a preposition from:",
+      "wordBank": ["after", "for", "in", "of", "of", "to", "with", "without"],
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Fortunately we had a good map, ", " we would have got lost."],
+          "answers": [["without which"]]
+        },
+        {
+          "num": 2,
+          "parts": ["The accident, ", " two people were injured, happened late last night."],
+          "answers": [["in which"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I share an office with my boss, ", " I get on really well."],
+          "answers": [["with whom"]]
+        },
+        {
+          "num": 4,
+          "parts": ["The wedding, ", " only family members were invited, was a lovely occasion."],
+          "answers": [["to which"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Ben showed me his new car, ", " he's very proud."],
+          "answers": [["of which"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Sarah showed us a picture of her son, ", " she's very proud."],
+          "answers": [["of whom"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Laura bought a very nice leather bag, ", " she paid twenty pounds."],
+          "answers": [["for which"]]
+        },
+        {
+          "num": 8,
+          "parts": ["We had lunch, ", " we went for a long walk."],
+          "answers": [["after which"]]
+        }
+      ]
+    },
+    {
+      "id": "96.2",
+      "type": "fill-in",
+      "instruction": "Use the information in the first sentence to complete the second one. Use all of / most of etc.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Helen has three brothers, ", "."],
+          "answers": [["all of whom are married"]]
+        },
+        {
+          "num": 2,
+          "parts": ["We were given a lot of information, ", "."],
+          "answers": [["most of which was useless"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Ten people applied for the job, ", "."],
+          "answers": [["none of whom was suitable"]]
+        },
+        {
+          "num": 4,
+          "parts": ["My neighbours have two cars, ", "."],
+          "answers": [["one of which they never use"]]
+        },
+        {
+          "num": 5,
+          "parts": ["James won \u00a3100,000, ", "."],
+          "answers": [["half of which he gave to his parents"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Julia has two sisters, ", "."],
+          "answers": [["both of whom are lawyers"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I sent Jane two emails, ", "."],
+          "answers": [["neither of whom she replied to"]]
+        },
+        {
+          "num": 8,
+          "parts": ["There were a lot of people at the party, ", "."],
+          "answers": [["only a few of whom I knew"]]
+        },
+        {
+          "num": 9,
+          "parts": ["We stayed at a very nice hotel, ", "."],
+          "answers": [["the name of which I don't remember"]]
+        },
+        {
+          "num": 10,
+          "parts": ["We drove along the road, the ", "."],
+          "answers": [["sides of which were lined with trees"]]
+        },
+        {
+          "num": 11,
+          "parts": ["The company has a new business plan, ", "."],
+          "answers": [["the aim of which is to save money"]]
+        }
+      ]
+    },
+    {
+      "id": "96.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Choose from the box and use which.",
+      "wordBank": [
+        "This is good news.",
+        "This makes it hard to contact her.",
+        "This was a shame.",
+        "This means we can\u2019t go away tomorrow.",
+        "She apologised for this",
+        "This makes it difficult to sleep sometimes.",
+        "This was very kind of her.",
+        "This meant I had to wait two hours at the airport."
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Laura couldn\u2019t come to the party, ", "."],
+          "answers": [["which was a shame"]]
+        },
+        {
+          "num": 2,
+          "parts": ["The street I live in is noisy at night, ", "."],
+          "answers": [["which makes it difficult to sleep sometimes"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Kate let me stay at her house, ", "."],
+          "answers": [["which was very kind of her"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Jane doesn\u2019t have a phone, ", "."],
+          "answers": [["which makes it hard to contact her"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Alex passed his exams, ", "."],
+          "answers": [["which is good news"]]
+        },
+        {
+          "num": 6,
+          "parts": ["My flight was delayed, ", "."],
+          "answers": [["which meant I had to wait two hours at the airport"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Our car has broken down, ", "."],
+          "answers": [["which means we can\u2019t go away tomorrow"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Amy was twenty minutes late, ", "."],
+          "answers": [["which she apologised for", "for which she apologised"]]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "unit": 3,
+  "title": "Present continuous and present simple 1 (I am doing and I do)",
+  "pdfPages": [18, 19],
+  "exercises": [
+    {
+      "id": "3.1",
+      "type": "fill-in",
+      "instruction": "Are the underlined verbs OK? Correct them where necessary.",
+      "items": [
+        {"num": 3, "parts": ["Ben tries to find a job, but he ", " yet."], "answers": [["hasn\u2019t had any luck"]]},
+        {"num": 4, "parts": ["Martina ", " her mother every day."], "answers": [["phones"]]},
+        {"num": 5, "parts": ["The moon ", " round the earth in about 27 days."], "answers": [["OK"]]},
+        {"num": 6, "parts": ["Can you hear those people? What ", "?"], "answers": [["are they talking"]]},
+        {"num": 7, "parts": ["What ", " in your spare time?"], "answers": [["OK"]]},
+        {"num": 8, "parts": ["Sarah is a vegetarian. She ", " meat."], "answers": [["OK"]]},
+        {"num": 9, "parts": ["I must go now. It ", "."], "answers": [["OK"]]},
+        {"num": 10, "parts": ["\u2018Come on! It\u2019s time to leave.\u2019 \u2018OK, ", ".\u2019"], "answers": [["OK"]]},
+        {"num": 11, "parts": ["Paul is never late. He\u2019s always ", " work on time."], "answers": [["OK"]]},
+        {"num": 12, "parts": ["They don\u2019t get on well. They\u2019re always ", "."], "answers": [["OK"]]}
+      ]
+    },
+    {
+      "id": "3.2",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form, present continuous or present simple.",
+      "items": [
+        {"num": 2, "parts": ["2a \u2018", " to the radio?\u2019 \u2018No, you can turn it off.\u2019 2b \u2018", " to the radio a lot?\u2019 \u2018No, not very often.\u2019"], "answers": [["Are you listening"], ["Do you listen"]]},
+        {"num": 3, "parts": ["3a The River Nile ", " into the Mediterranean. 3b The river ", " very fast today \u2013 much faster than usual."], "answers": [["flows"], ["is flowing"]]},
+        {"num": 4, "parts": ["4a I\u2019m not very active. ", " any sport. 4b What ", " at weekends?"], "answers": [["I don\u2019t do"], ["do you usually do"]]},
+        {"num": 5, "parts": ["5a Rachel is in New York right now. ", " at the Park Hotel. 5b ", " there when she\u2019s in New York."], "answers": [["She\u2019s staying", "She is staying"], ["She always stays"]]}
+      ]
+    },
+    {
+      "id": "3.3",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form, present continuous or present simple.",
+      "items": [
+        {"num": 2, "parts": ["Julia is good at languages. ", " four languages very well."], "answers": [["She speaks"]]},
+        {"num": 3, "parts": ["Are you ready yet? ", " for you."], "answers": [["Everybody\u2019s waiting", "Everybody is waiting"]]},
+        {"num": 4, "parts": ["I\u2019ve never heard this word. How ", "?"], "answers": [["do you pronounce"]]},
+        {"num": 5, "parts": ["Kate ", " this week. She\u2019s on holiday."], "answers": [["isn\u2019t working", "is not working", "\u2019s not working"]]},
+        {"num": 6, "parts": ["I think my English ", " slowly. It\u2019s better than it was."], "answers": [["is improving"]]},
+        {"num": 7, "parts": ["Nicola ", " in Manchester. She has never lived anywhere else."], "answers": [["lives"]]},
+        {"num": 8, "parts": ["Can we stop walking soon? ", " to get tired."], "answers": [["I\u2019m starting", "I am starting"]]},
+        {"num": 9, "parts": ["Sam and Tina are in Madrid right now. ", " a friend of theirs."], "answers": [["They\u2019re visiting", "They are visiting"]]},
+        {"num": 10, "parts": ["\u2018What ", "?\u2019 \u2018He\u2019s an architect.\u2019"], "answers": [["does your father do"]]},
+        {"num": 11, "parts": ["It took me an hour to get to work this morning. Most days ", " so long."], "answers": [["it doesn\u2019t take"]]},
+        {"num": 12, "parts": ["I ", " to drive. My driving test is next month. My father ", "."], "answers": [["I\u2019m learning", "I am learning"], ["is teaching", "\u2019s teaching"]]}
+      ]
+    },
+    {
+      "id": "3.4",
+      "type": "write",
+      "instruction": "Finish B\u2019s sentences. Use always -ing.",
+      "items": [
+        {"num": 2, "prompt": "The car has broken down again.", "answers": ["That car is useless. It\u2019s always breaking down."]},
+        {"num": 3, "prompt": "Look! You\u2019ve made the same mistake again.", "answers": ["Oh no, not again! I\u2019m always making the same mistake.", "Oh no, not again! I\u2019m always making that mistake."]},
+        {"num": 4, "prompt": "Oh, I\u2019ve left my phone at home again.", "answers": ["Typical! You\u2019re always leaving your phone at home."]}
+      ]
+    }
+  ]
+}

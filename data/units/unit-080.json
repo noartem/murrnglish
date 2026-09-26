@@ -1,0 +1,221 @@
+{
+  "unit": 80,
+  "title": "Noun + noun (a bus driver / a headache)",
+  "pdfPages": [172, 173],
+  "exercises": [
+    {
+      "id": "80.1",
+      "type": "fill-in",
+      "instruction": "What do we call these things and people?",
+      "items": [
+        {
+          "num": 3,
+          "parts": ["A ticket to travel by train is a ", "."],
+          "answers": [["train ticket"]]
+        },
+        {
+          "num": 4,
+          "parts": ["A machine you use to get a ticket is a ", "."],
+          "answers": [["ticket machine"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The staff at a hotel are the ", "."],
+          "answers": [["hotel staff"]]
+        },
+        {
+          "num": 6,
+          "parts": ["The results of your exams are your ", "."],
+          "answers": [["exam results"]]
+        },
+        {
+          "num": 7,
+          "parts": ["A horse that runs in races is a ", "."],
+          "answers": [["race horse"]]
+        },
+        {
+          "num": 8,
+          "parts": ["A race for horses is a ", "."],
+          "answers": [["horse race"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Shoes for running are ", "."],
+          "answers": [["running shoes"]]
+        },
+        {
+          "num": 10,
+          "parts": ["A shop that sells shoes is a ", "."],
+          "answers": [["shoe shop"]]
+        },
+        {
+          "num": 11,
+          "parts": ["The window of a shop is a ", "."],
+          "answers": [["shop window"]]
+        },
+        {
+          "num": 12,
+          "parts": ["A person who cleans windows is a ", "."],
+          "answers": [["window cleaner"]]
+        },
+        {
+          "num": 13,
+          "parts": ["A scandal involving a construction company is ", "."],
+          "answers": [["a construction company scandal"]]
+        },
+        {
+          "num": 14,
+          "parts": ["Workers at a car factory are ", "."],
+          "answers": [["car factory workers"]]
+        },
+        {
+          "num": 15,
+          "parts": ["A scheme for the improvement of a road is a ", "."],
+          "answers": [["road improvement scheme"]]
+        },
+        {
+          "num": 16,
+          "parts": ["A department store in New York is a ", "."],
+          "answers": [["New York department store"]]
+        }
+      ]
+    },
+    {
+      "id": "80.2",
+      "type": "fill-in",
+      "instruction": "Answer the questions using two of the following words each time:",
+      "wordBank": ["accident", "belt", "birthday", "card", "credit", "driver", "forecast", "machine", "number", "party", "ring", "road", "room", "seat", "truck", "washing", "weather", "wedding"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["You should wear this when you're driving. ", ""],
+          "answers": [["a seat belt"]]
+        },
+        {
+          "num": 3,
+          "parts": ["You can use this to pay for things. ", ""],
+          "answers": [["a credit card"]]
+        },
+        {
+          "num": 4,
+          "parts": ["This will tell you if it's going to rain or not. ", ""],
+          "answers": [["the weather forecast"]]
+        },
+        {
+          "num": 5,
+          "parts": ["This is useful if you have a lot of dirty clothes. ", ""],
+          "answers": [["a washing machine"]]
+        },
+        {
+          "num": 6,
+          "parts": ["This is something you might wear if you're married. ", ""],
+          "answers": [["a wedding ring"]]
+        },
+        {
+          "num": 7,
+          "parts": ["If you're staying at a hotel, you need to remember this. ", ""],
+          "answers": [["your room number"]]
+        },
+        {
+          "num": 8,
+          "parts": ["This is a way to celebrate getting older. ", ""],
+          "answers": [["a birthday party"]]
+        },
+        {
+          "num": 9,
+          "parts": ["This person transports things by road. ", ""],
+          "answers": [["a truck driver"]]
+        }
+      ]
+    },
+    {
+      "id": "80.3",
+      "type": "fill-in",
+      "instruction": "Put the words in the right order.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Jack likes sport. He plays for his ", "."],
+          "answers": [["school football team"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Anna works for a ", "."],
+          "answers": [["film production company"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Many people invest in a ", "."],
+          "answers": [["life insurance policy"]]
+        },
+        {
+          "num": 5,
+          "parts": ["You can get a map at the ", "."],
+          "answers": [["tourist information office"]]
+        }
+      ]
+    },
+    {
+      "id": "80.4",
+      "type": "choice",
+      "instruction": "Which is correct?",
+      "items": [
+        {
+          "num": 2,
+          "options": ["two-hour", "two hours"],
+          "answer": 0
+        },
+        {
+          "num": 3,
+          "options": ["two hour", "two hours"],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": ["twenty-pound", "twenty pounds"],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": ["ten-pound", "ten pounds"],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": ["15-minute", "15 minutes"],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": ["60-minute", "60 minutes"],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": ["twelve-storey", "twelve storeys"],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": ["five-day", "five days"],
+          "answer": 0
+        },
+        {
+          "num": 10,
+          "options": ["Five-star", "Five stars"],
+          "answer": 0
+        },
+        {
+          "num": 11,
+          "options": ["six-year-old", "six years old"],
+          "answer": 1
+        },
+        {
+          "num": 12,
+          "options": ["six-year-old", "six-years-old"],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

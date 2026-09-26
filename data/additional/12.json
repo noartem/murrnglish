@@ -1,0 +1,99 @@
+{
+  "id": 12,
+  "topic": "The future",
+  "refs": "Units 19–25, Appendix 3",
+  "pdfPages": [321, 322],
+  "exercise": {
+    "id": "12",
+    "type": "fill-in",
+    "instruction": "Put the verb into the most suitable form. Sometimes there is more than one possibility.",
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "A has decided to learn a language.\n  a: I\u2019ve decided to try and learn a foreign language.\n  b: Have you? Which language ",
+          " (you / learn)?\n  a: Spanish.\n  b: ",
+          " (you / do) a course?\n  a: Yes, ",
+          " (it / start) next week.\n  b: That\u2019s great. I\u2019m sure ",
+          " (you / enjoy) it.\n  a: I hope so. But I think ",
+          " (it / be) difficult."
+        ],
+        "answers": [
+          ["are you going to learn"],
+          ["Are you going to do", "Are you doing"],
+          ["it starts"],
+          ["you\u2019ll enjoy", "you\u2019re going to enjoy"],
+          ["it will be", "it\u2019s going to be"]
+        ]
+      },
+      {
+        "num": 2,
+        "parts": [
+          "A wants to know about B\u2019s holiday plans.\n  a: I hear ",
+          " (you / go) on holiday soon.\n  b: That\u2019s right. ",
+          " (we / go) to Finland.\n  a: I hope ",
+          " (you / have) a nice time.\n  b: Thanks. ",
+          " (I / get) in touch with you when ",
+          " (I / get) back and maybe we can meet sometime."
+        ],
+        "answers": [
+          ["you\u2019re going"],
+          ["We\u2019re going"],
+          ["you have"],
+          ["I\u2019ll get"],
+          ["I get"]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "A invites B to a party.\n  a: ",
+          " (I / have) a party next Saturday. Can you come?\n  b: On Saturday? I\u2019m not sure. Some friends of mine ",
+          " (come) to stay with me next week, but I think ",
+          " (they / leave) by Saturday. But if ",
+          " (they / be) still here, ",
+          " (I / not / be) able to come to the party.\n  a: OK. Well, tell me as soon as ",
+          " (you / know).\n  b: Right. ",
+          " (I / call) you during the week."
+        ],
+        "answers": [
+          ["I\u2019m having", "I\u2019m going to have"],
+          ["are coming"],
+          ["they\u2019ll have left"],
+          ["they\u2019re"],
+          ["I won\u2019t be", "I will not be"],
+          ["you know"],
+          ["I\u2019ll call"]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "A and B are two secret agents arranging a meeting. They are talking on the phone.\n  a: Well, what time ",
+          " (we / meet)?\n  b: Come to the cafe by the station at 4 o\u2019clock. ",
+          " (I / wait) for you when ",
+          " (you / arrive). ",
+          " (I / sit) by the window and ",
+          " (I / wear) a bright green sweater.\n  a: OK. ",
+          " (Agent 307 / come) too?\n  b: No, she can\u2019t be there.\n  a: Oh. ",
+          " (I / bring) the documents?\n  b: Yes. ",
+          " (I / explain) everything when ",
+          " (I / see) you. And don\u2019t be late.\n  a: OK. ",
+          " (I / try) to be on time."
+        ],
+        "answers": [
+          ["shall we meet"],
+          ["I\u2019ll be waiting"],
+          ["you arrive"],
+          ["I\u2019ll be sitting"],
+          ["I\u2019ll be wearing"],
+          ["Is Agent 307 coming", "Is Agent 307 going to come", "Will Agent 307 be coming"],
+          ["Shall I bring"],
+          ["I\u2019ll explain", "I\u2019m going to explain"],
+          ["I see"],
+          ["I\u2019ll try"]
+        ]
+      }
+    ]
+  }
+}

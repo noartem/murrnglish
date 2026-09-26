@@ -1,0 +1,28 @@
+{
+  "id": 8,
+  "topic": "Present and past",
+  "refs": "Units 1\u201317",
+  "pdfPages": [319],
+  "exercise": {
+    "id": "8",
+    "type": "fill-in",
+    "instruction": "Put the verb into the most suitable form.",
+    "items": [
+      {"num": 1, "parts": ["Who ", " the bicycle?"], "answers": [["invented"]]},
+      {"num": 2, "parts": ["\u2018Do you still have a headache?\u2019 \u2018No, ", ". I\u2019m OK now.\u2019"], "answers": [["it\u2019s gone", "it has gone"]]},
+      {"num": 3, "parts": ["I was the last to leave the office last night. Everybody else ", " home when I ", "."], "answers": [["had gone"], ["left"]]},
+      {"num": 4, "parts": ["What ", " last weekend? ", " anywhere?"], "answers": [["did you do"], ["Did you go"]]},
+      {"num": 5, "parts": ["I like your car. How long ", "?"], "answers": [["have you had"]]},
+      {"num": 6, "parts": ["It\u2019s a shame the trip was cancelled. I ", " forward to it."], "answers": [["was looking", "\u2019d been looking", "had been looking"]]},
+      {"num": 7, "parts": ["Jane is an experienced teacher and loves her job. ", " for 15 years."], "answers": [["She\u2019s been teaching", "She has been teaching"]]},
+      {"num": 8, "parts": ["Emily ", " a new dress last week, but ", " it yet."], "answers": [["bought"], ["she hasn\u2019t worn", "she didn\u2019t wear"]]},
+      {"num": 9, "parts": ["A few days ago ", " a man at a party whose face ", " very familiar. At first I couldn\u2019t think where ", " him before. Then suddenly ", " who ", "."], "answers": [["I met"], ["was"], ["I\u2019d seen", "I had seen"], ["I remembered"], ["he was"]]},
+      {"num": 10, "parts": ["", " of Agatha Christie? ", " a writer who ", " in 1976. ", " more than 70 detective novels, but ", " any of them."], "answers": [["Have you heard"], ["She was"], ["died"], ["She wrote"], ["I haven\u2019t read"]]},
+      {"num": 11, "parts": ["a: What ", "? b: I\u2019ve no idea. ", " it before. Look it up in the dictionary."], "answers": [["does this word mean"], ["I\u2019ve never seen"]]},
+      {"num": 12, "parts": ["a: ", " to the theatre in time for the play last night? b: No, we were late. By the time we got there, ", "."], "answers": [["Did you get"], ["it had already started"]]},
+      {"num": 13, "parts": ["I went to Sarah\u2019s room and ", " on the door, but there ", " no answer. Either ", " out or ", " to see anyone."], "answers": [["knocked"], ["was"], ["she\u2019d gone", "she had gone"], ["she didn\u2019t want"]]},
+      {"num": 14, "parts": ["Dan asked me how to use the photocopier. ", " it before, so ", " what to do."], "answers": [["He\u2019d never used", "He had never used"], ["he didn\u2019t know"]]},
+      {"num": 15, "parts": ["Lisa ", " for a swim after work yesterday. ", " some exercise because ", " in an office all day in front of a computer."], "answers": [["went"], ["She needed", "She\u2019d needed", "She had needed"], ["she\u2019d been sitting", "she had been sitting"]]}
+    ]
+  }
+}

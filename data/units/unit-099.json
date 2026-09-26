@@ -1,0 +1,73 @@
+{
+  "unit": 99,
+  "title": "Adjectives: a nice new house, you look tired",
+  "pdfPages": [210, 211],
+  "exercises": [
+    {
+      "id": "99.1",
+      "type": "fill-in",
+      "instruction": "Put the adjectives in brackets in the correct position.",
+      "items": [
+        {"num": 1, "parts": ["a beautiful ", " table."], "answers": [["round", "wooden"]]},
+        {"num": 2, "parts": ["an ", " ring."], "answers": [["unusual", "gold"]]},
+        {"num": 3, "parts": ["a ", " house."], "answers": [["beautiful", "old"]]},
+        {"num": 4, "parts": ["", " gloves."], "answers": [["red", "leather"]]},
+        {"num": 5, "parts": ["an ", " film."], "answers": [["old", "American"]]},
+        {"num": 6, "parts": ["", " flowers."], "answers": [["tiny", "pink"]]},
+        {"num": 7, "parts": ["a long ", " face."], "answers": [["thin"]]},
+        {"num": 8, "parts": ["", " clouds."], "answers": [["big", "black"]]},
+        {"num": 9, "parts": ["a ", " day."], "answers": [["lovely", "sunny"]]},
+        {"num": 10, "parts": ["an ", " dress."], "answers": [["ugly", "yellow"]]},
+        {"num": 11, "parts": ["a ", " avenue."], "answers": [["long", "wide"]]},
+        {"num": 12, "parts": ["", " ideas."], "answers": [["important", "new"]]},
+        {"num": 13, "parts": ["a ", " sweater."], "answers": [["nice", "new", "green"]]},
+        {"num": 14, "parts": ["a ", " box."], "answers": [["small", "black", "metal"]]},
+        {"num": 15, "parts": ["", " hair."], "answers": [["beautiful", "long", "black"]]},
+        {"num": 16, "parts": ["an ", " painting."], "answers": [["interesting", "old", "French"]]},
+        {"num": 17, "parts": ["a large ", " umbrella."], "answers": [["red", "and", "yellow"]]},
+        {"num": 18, "parts": ["a big ", " cat."], "answers": [["fat", "black", "and", "white"]]}
+      ]
+    },
+    {
+      "id": "99.2",
+      "type": "fill-in",
+      "instruction": "Complete each sentence with a verb (in the correct form) and an adjective from the boxes.",
+      "wordBank": ["feel", "look", "seem", "awful", "nervous", "interesting", "smell", "sound", "taste", "nice", "upset", "wet"],
+      "items": [
+        {"num": 2, "parts": ["I can't eat this. I've just tried it and it ", "."], "answers": [["tastes", "tasted", "awful"]]},
+        {"num": 3, "parts": ["It's normal to ", " before an exam or an interview."], "answers": [["feel", "nervous"]]},
+        {"num": 4, "parts": ["What beautiful flowers! They ", " too."], "answers": [["smell", "nice"]]},
+        {"num": 5, "parts": ["You ", ". Have you been out in the rain?"], "answers": [["look", "wet"]]},
+        {"num": 6, "parts": ["James told me about his new job. It ", " – much better than his old job."], "answers": [["sounds", "sounded", "interesting"]]}
+      ]
+    },
+    {
+      "id": "99.3",
+      "type": "choice",
+      "instruction": "Put in the correct word.",
+      "items": [
+        {"num": 2, "options": ["happy", "happily"], "answer": 0},
+        {"num": 3, "options": ["happy", "happily"], "answer": 1},
+        {"num": 4, "options": ["terrible", "terribly"], "answer": 0},
+        {"num": 5, "options": ["proper", "properly"], "answer": 1},
+        {"num": 6, "options": ["good", "well"], "answer": 0},
+        {"num": 7, "options": ["slow", "slowly"], "answer": 0},
+        {"num": 8, "options": ["bad", "badly"], "answer": 1},
+        {"num": 9, "options": ["violent", "violently"], "answer": 0}
+      ]
+    },
+    {
+      "id": "99.4",
+      "type": "write",
+      "instruction": "Write the following in another way using the first … / the next … / the last … .",
+      "items": [
+        {"num": 3, "prompt": "yesterday and the day before yesterday", "answers": ["the last two days"]},
+        {"num": 4, "prompt": "the first week and the second week of May", "answers": ["the first two weeks of May"]},
+        {"num": 5, "prompt": "tomorrow and a few days after that", "answers": ["the next few days"]},
+        {"num": 6, "prompt": "questions 1, 2 and 3 in the exam", "answers": ["the first three questions (in the exam)"]},
+        {"num": 7, "prompt": "next year and the year after", "answers": ["the next two years"]},
+        {"num": 8, "prompt": "the last day of our holiday and the two days before that", "answers": ["the last three days of our holiday"]}
+      ]
+    }
+  ]
+}

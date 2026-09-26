@@ -1,0 +1,181 @@
+{
+  "unit": 102,
+  "title": "so and such",
+  "pdfPages": [216, 217],
+  "exercises": [
+    {
+      "id": "102.1",
+      "type": "fill-in",
+      "instruction": "Put in so, such or such a.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Everything is ", " expensive these days, isn\u2019t it?"],
+          "answers": [["so"]]
+        },
+        {
+          "num": 3,
+          "parts": ["He always looks good. He wears ", " nice clothes."],
+          "answers": [["such"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I couldn\u2019t believe the news. It was ", " shock."],
+          "answers": [["such a"]]
+        },
+        {
+          "num": 5,
+          "parts": ["What a nice garden! These are ", " lovely flowers."],
+          "answers": [["such"]]
+        },
+        {
+          "num": 6,
+          "parts": ["The party was great. It was ", " shame you couldn\u2019t come."],
+          "answers": [["such a"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I was glad to see that he looked ", " well after his recent illness."],
+          "answers": [["so"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I have to go. I didn\u2019t realise it was ", " late."],
+          "answers": [["so"]]
+        },
+        {
+          "num": 9,
+          "parts": ["Why does it always take you ", " long time to get ready?"],
+          "answers": [["such a"]]
+        },
+        {
+          "num": 10,
+          "parts": ["Everything went wrong. We had ", " bad luck."],
+          "answers": [["such"]]
+        }
+      ]
+    },
+    {
+      "id": "102.2",
+      "type": "fill-in",
+      "instruction": "Make one sentence from two. Choose from the box, and then complete the sentences using so or such.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The bag was ", ", she couldn\u2019t lift it."],
+          "answers": [["so heavy"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I\u2019ve got ", ", I don\u2019t know where to begin."],
+          "answers": [["such a lot to do"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I was ", ", I didn\u2019t know what to say."],
+          "answers": [["so surprised"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The music was ", ", it could be heard from miles away."],
+          "answers": [["so loud"]]
+        },
+        {
+          "num": 6,
+          "parts": ["It was ", ", we spent the whole day indoors."],
+          "answers": [["such horrible weather"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Her English is ", ", you would think it was her native language."],
+          "answers": [["so good"]]
+        },
+        {
+          "num": 8,
+          "parts": ["The hotel was ", ", it took us ages to get there."],
+          "answers": [["such a long way"]]
+        },
+        {
+          "num": 9,
+          "parts": ["I had ", ", I didn\u2019t eat anything for the rest of the day."],
+          "answers": [["such a big breakfast"]]
+        }
+      ]
+    },
+    {
+      "id": "102.3",
+      "type": "fill-in",
+      "instruction": "Put the words in the right order.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Why ", "? There\u2019s plenty of time."],
+          "answers": [["are you in such a hurry"]]
+        },
+        {
+          "num": 3,
+          "parts": ["It took us an hour to get here. I\u2019m ", "."],
+          "answers": [["surprised it took so long"]]
+        },
+        {
+          "num": 4,
+          "parts": ["He said he worked for a company called Elcron, but ", "."],
+          "answers": [["there\u2019s no such company"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I regret what I did. I don\u2019t know why ", "."],
+          "answers": [["I did such a stupid thing"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Why ", "? Can\u2019t you drive faster?"],
+          "answers": [["are you driving so slowly"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Two months? How did you ", "?"],
+          "answers": [["learn English in such a short time"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Why ", "? You could have got a cheaper one."],
+          "answers": [["did you buy such an expensive phone"]]
+        }
+      ]
+    },
+    {
+      "id": "102.4",
+      "type": "self-check",
+      "instruction": "Use your own ideas to complete these sentences.",
+      "modelAnswers": ["She\u2019s so friendly.", "She\u2019s such a nice person.", "I haven\u2019t seen you for so long.", "I didn\u2019t realise it was such a long way.", "There were so many people."],
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I like Kate. She\u2019s so",
+          "modelAnswers": ["She\u2019s so friendly."]
+        },
+        {
+          "num": 3,
+          "prompt": "I like Kate. She\u2019s such",
+          "modelAnswers": ["She\u2019s such a nice person."]
+        },
+        {
+          "num": 4,
+          "prompt": "It\u2019s good to see you again! I haven\u2019t seen you for so",
+          "modelAnswers": ["I haven\u2019t seen you for so long."]
+        },
+        {
+          "num": 5,
+          "prompt": "I thought the airport was near the city. I didn\u2019t realise it was such",
+          "modelAnswers": ["I didn\u2019t realise it was such a long way."]
+        },
+        {
+          "num": 6,
+          "prompt": "The streets were crowded. There were so",
+          "modelAnswers": ["There were so many people."]
+        }
+      ]
+    }
+  ]
+}

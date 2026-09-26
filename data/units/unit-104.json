@@ -1,0 +1,180 @@
+{
+  "unit": 104,
+  "title": "quite, pretty, rather and fairly",
+  "pdfPages": [220, 221],
+  "exercises": [
+    {
+      "id": "104.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using quite \u2026 . Choose from:",
+      "wordBank": ["famous", "hungry", "late", "noisy", "often", "old", "surprised"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I\u2019m ", ". Is there anything to eat?"],
+          "answers": [["quite hungry"]]
+        },
+        {
+          "num": 3,
+          "parts": ["We go to the cinema ", "\u2013 maybe once a month."],
+          "answers": [["quite often"]]
+        },
+        {
+          "num": 4,
+          "parts": ["We live near a very busy road, so it\u2019s often ", "."],
+          "answers": [["quite noisy"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I didn\u2019t expect Lisa to contact me. I was ", " when she phoned."],
+          "answers": [["quite surprised"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I went to bed ", " last night, so I\u2019m a bit tired this morning."],
+          "answers": [["quite late"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I don\u2019t know exactly when this house was built, but it\u2019s ", "."],
+          "answers": [["quite old"]]
+        }
+      ]
+    },
+    {
+      "id": "104.2",
+      "type": "fill-in",
+      "instruction": "Put the words in the right order to complete the sentences.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Tom likes to sing. He has ", "."],
+          "answers": [["quite a good voice"]]
+        },
+        {
+          "num": 3,
+          "parts": ["The bus stop wasn\u2019t near the hotel. We had to walk ", "."],
+          "answers": [["quite a long way"]]
+        },
+        {
+          "num": 4,
+          "parts": ["It\u2019s not so warm today. There\u2019s ", "."],
+          "answers": [["a pretty cold wind"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The roads were busy. There was ", "."],
+          "answers": [["quite a lot of traffic"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I\u2019m tired. I\u2019ve had ", "."],
+          "answers": [["a pretty busy day"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Sarah hasn\u2019t been working here long. She ", "."],
+          "answers": [["started fairly recently"]]
+        }
+      ]
+    },
+    {
+      "id": "104.3",
+      "type": "self-check",
+      "instruction": "Use your own ideas to complete these sentences. Use rather + adjective.",
+      "modelAnswers": ["rather long", "rather strange", "rather impatient", "rather expensive"],
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I enjoyed the film, but it was",
+          "modelAnswers": ["rather long"]
+        },
+        {
+          "num": 3,
+          "prompt": "Chris went away without telling anybody, which was",
+          "modelAnswers": ["rather strange"]
+        },
+        {
+          "num": 4,
+          "prompt": "Lucy doesn\u2019t like having to wait. Sometimes she\u2019s",
+          "modelAnswers": ["rather impatient"]
+        },
+        {
+          "num": 5,
+          "prompt": "They have some lovely things in this shop, but it\u2019s",
+          "modelAnswers": ["rather expensive"]
+        }
+      ]
+    },
+    {
+      "id": "104.4",
+      "type": "choice",
+      "instruction": "What does quite mean in these sentences? Tick (\u2713) the right meaning.",
+      "items": [
+        {
+          "num": 2,
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "104.5",
+      "type": "fill-in",
+      "instruction": "Complete these sentences using quite \u2026 . Choose from:",
+      "wordBank": ["different", "impossible", "right", "safe", "sure", "true"],
+      "items": [
+        {
+          "num": 2,
+          "parts": ["You won\u2019t fall. The ladder is ", "."],
+          "answers": [["quite safe"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I\u2019m afraid I can\u2019t do what you ask. It\u2019s ", "."],
+          "answers": [["quite impossible"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I completely agree with you. You are ", "."],
+          "answers": [["quite right"]]
+        },
+        {
+          "num": 5,
+          "parts": ["You can\u2019t compare the two things. They are ", "."],
+          "answers": [["quite different"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I think I saw them go out, but I\u2019m not ", "."],
+          "answers": [["quite sure"]]
+        }
+      ]
+    }
+  ]
+}

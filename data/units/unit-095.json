@@ -1,0 +1,50 @@
+{
+  "unit": 95,
+  "title": "Relative clauses 4: extra information clauses (1)",
+  "pdfPages": [202, 203],
+  "exercises": [
+    {
+      "id": "95.1",
+      "type": "write",
+      "instruction": "Make one sentence from two. Use the information in brackets to make a relative clause (Type 2). You will need to use who/whom/whose/which/where.",
+      "items": [
+        {"num": 1, "prompt": "Catherine is very friendly. (She lives next door to us.)", "answers": ["Catherine, who lives next door to us, is very friendly."]},
+        {"num": 2, "prompt": "We stayed at the Park Hotel. (A friend of ours recommended this hotel.)", "answers": ["We stayed at the Park Hotel, which a friend of ours recommended."]},
+        {"num": 3, "prompt": "We drove to the airport. (The airport was not far from the city.)", "answers": ["We drove to the airport, which was not far from the city."]},
+        {"num": 4, "prompt": "Kate\u2019s husband is an airline pilot. (I have never met Kate\u2019s husband.)", "answers": ["Kate\u2019s husband, who I\u2019ve never met, is an airline pilot.", "Kate\u2019s husband, whom I\u2019ve never met, is an airline pilot."]},
+        {"num": 5, "prompt": "Lisa is away from home a lot. (Lisa\u2019s job involves a lot of travelling.)", "answers": ["Lisa, whose job involves a lot of travelling, is away from home a lot."]},
+        {"num": 6, "prompt": "Paul and Emily have a daughter, Alice. (Alice has just started school.)", "answers": ["Paul and Emily have a daughter, Alice, who has just started school."]},
+        {"num": 7, "prompt": "The new stadium will hold 90,000 spectators. (The stadium will be finished next month.)", "answers": ["The new stadium, which will be finished next month, will hold 90,000 spectators."]},
+        {"num": 8, "prompt": "My brother lives in Alaska. (Alaska is the largest state in the US.)", "answers": ["My brother lives in Alaska, which is the largest state in the US."]},
+        {"num": 9, "prompt": "Our teacher was very kind. (I have forgotten her name.)", "answers": ["Our teacher, whose name I have forgotten, was very kind."]},
+        {"num": 10, "prompt": "We enjoyed our visit to the museum. (We saw a lot of interesting things in the museum.)", "answers": ["We enjoyed our visit to the museum, where we saw a lot of interesting things."]}
+      ]
+    },
+    {
+      "id": "95.2",
+      "type": "write",
+      "instruction": "Read the information and complete the sentences. Use a relative clause of Type 1 or Type 2. Use commas where necessary.",
+      "items": [
+        {"num": 1, "prompt": "My brother is an architect. (He lives in Hong Kong.)", "answers": ["My brother, who lives in Hong Kong, is an architect."]},
+        {"num": 2, "prompt": "The strike at the factory has now ended. (The strike began ten days ago.)", "answers": ["The strike at the factory, which began ten days ago, has now ended."]},
+        {"num": 3, "prompt": "I was looking for a book this morning. (I\u2019ve found it now.)", "answers": ["I\u2019ve found the book I was looking for this morning.", "I\u2019ve found the book that/which I was looking for this morning."]},
+        {"num": 4, "prompt": "I\u2019ve had my car for 15 years. (This car has never broken down.)", "answers": ["My car, which I\u2019ve had for 15 years, has never broken down."]},
+        {"num": 5, "prompt": "A lot of people applied for the job. (Few of them had the necessary qualifications.)", "answers": ["Few of the people who/that applied for the job had the necessary qualifications."]},
+        {"num": 6, "prompt": "Amy showed me a picture of her son. (Her son is a police officer.)", "answers": ["Amy showed me a picture of her son, who is a police officer."]}
+      ]
+    },
+    {
+      "id": "95.3",
+      "type": "write",
+      "instruction": "Are these sentences OK? Correct them (and put in commas) where necessary. If the sentence is correct, write \u2018OK\u2019.",
+      "items": [
+        {"num": 1, "prompt": "Anna told me about her new job that she\u2019s enjoying very much.", "answers": ["Anna told me about her new job, which she\u2019s enjoying very much."]},
+        {"num": 2, "prompt": "My office that is on the second floor is very small.", "answers": ["My office, which is on the second floor, is very small."]},
+        {"num": 3, "prompt": "The office that I\u2019m using at the moment is very small.", "answers": ["OK"]},
+        {"num": 4, "prompt": "Sarah\u2019s father that used to be in the army now works for a TV company.", "answers": ["Sarah\u2019s father, who used to be in the army, now works for a TV company."]},
+        {"num": 5, "prompt": "The doctor that examined me couldn\u2019t find anything wrong.", "answers": ["OK"]},
+        {"num": 6, "prompt": "The sun that is one of millions of stars in the universe provides us with heat and light.", "answers": ["The sun, which is one of millions of stars in the universe, provides us with heat and light."]}
+      ]
+    }
+  ]
+}

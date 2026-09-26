@@ -1,0 +1,530 @@
+{
+ "unit": 121,
+ "title": "at/on/in (time)",
+ "pdfPages": [
+  254,
+  255
+ ],
+ "exercises": [
+  {
+   "id": "121.1",
+   "type": "fill-in",
+   "instruction": "Put in at, on or in.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Mozart was born ",
+      " Salzburg in 1756."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I've been invited to a wedding ",
+      " 14 February."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Amy's birthday is ",
+      " May, but I don't know which date."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "This park is popular and gets very busy ",
+      " weekends."
+     ],
+     "answers": [
+      [
+       "at",
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I haven't seen Kate for a few days. I last saw her ",
+      " Tuesday."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Jonathan is 63. He'll be retiring from his job ",
+      " two years."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I'm busy right now. I'll be with you ",
+      " a moment."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Sam isn't here ",
+      " the moment, but he'll be here this afternoon."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "There are usually a lot of parties ",
+      " New Year's Eve."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I don't like the dark. I try to avoid going out ",
+      " night."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "It rained very hard ",
+      " the night. Did you hear it?"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "My car is being repaired at the garage. It will be ready ",
+      " two hours."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "The bus station was busy. A lot of buses were leaving ",
+      " the same time."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "Helen and David always go out for dinner ",
+      " their wedding anniversary."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "It was a short book and easy to read. I read it ",
+      " a day."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "",
+      " midday, the sun is at its highest point in the sky."
+     ],
+     "answers": [
+      [
+       "At"
+      ]
+     ]
+    },
+    {
+     "num": 17,
+     "parts": [
+      "This building is very old. It was built ",
+      " the fifteenth century."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 18,
+     "parts": [
+      "The office is closed ",
+      " Wednesday afternoons."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 19,
+     "parts": [
+      "In the UK many people go home to see their families ",
+      " Christmas."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 20,
+     "parts": [
+      "My flight arrives ",
+      " 5 o'clock ",
+      " the morning."
+     ],
+     "answers": [
+      [
+       "at"
+      ],
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 21,
+     "parts": [
+      "The course begins ",
+      " 7 January and ends sometime ",
+      " April."
+     ],
+     "answers": [
+      [
+       "on"
+      ],
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 22,
+     "parts": [
+      "I might not be at home ",
+      " Tuesday morning, but I'll be there ",
+      " the afternoon."
+     ],
+     "answers": [
+      [
+       "on"
+      ],
+      [
+       "in"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "121.2",
+   "type": "fill-in",
+   "instruction": "Complete the sentences. Use at, on or in + the following:",
+   "wordBank": [
+    "the evening",
+    "about 20 minutes",
+    "1756",
+    "the same time",
+    "the 1920s",
+    "the moment",
+    "21 July 1969",
+    "night",
+    "Saturdays",
+    "11 seconds"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Mozart was born ",
+      "."
+     ],
+     "answers": [
+      [
+       "in 1756"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "If the sky is clear, you can see the stars ",
+      "."
+     ],
+     "answers": [
+      [
+       "at night"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "After working hard during the day, I like to relax ",
+      "."
+     ],
+     "answers": [
+      [
+       "in the evening"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Neil Armstrong was the first man to walk on the moon ",
+      "."
+     ],
+     "answers": [
+      [
+       "on 21 July 1969"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It's difficult to listen if everyone is speaking ",
+      "."
+     ],
+     "answers": [
+      [
+       "at the same time"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Jazz became popular in the United States ",
+      "."
+     ],
+     "answers": [
+      [
+       "in the 1920s"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I'm just going out to the shop. I'll be back ",
+      "."
+     ],
+     "answers": [
+      [
+       "in about 20 minutes"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I don't think we need an umbrella. It's not raining ",
+      "."
+     ],
+     "answers": [
+      [
+       "at the moment"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Ben is a very fast runner. He can run 100 metres ",
+      "."
+     ],
+     "answers": [
+      [
+       "in 11 seconds"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Lisa works from Monday to Friday. Sometimes she also works ",
+      "."
+     ],
+     "answers": [
+      [
+       "on Saturdays",
+       "Saturdays"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "121.3",
+   "type": "choice",
+   "instruction": "Which is correct: a, b, or both of them?",
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "I'll see you on Friday.",
+      "I'll see you Friday."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 2,
+     "options": [
+      "I'll see you on next Friday.",
+      "I'll see you next Friday."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "Paul got married in April.",
+      "Paul got married April."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 4,
+     "options": [
+      "I play tennis on Sunday mornings.",
+      "I play tennis Sunday mornings."
+     ],
+     "answer": [
+      0,
+      1
+     ]
+    },
+    {
+     "num": 5,
+     "options": [
+      "We were ill at the same time.",
+      "We were ill in the same time."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 6,
+     "options": [
+      "What are you doing at the weekend?",
+      "What are you doing on the weekend?"
+     ],
+     "answer": [
+      0,
+      1
+     ]
+    },
+    {
+     "num": 7,
+     "options": [
+      "Oliver was born at 10 May 1993.",
+      "Oliver was born on 10 May 1993."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 8,
+     "options": [
+      "He left school last June.",
+      "He left school in last June."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 9,
+     "options": [
+      "Will you be here on Tuesday?",
+      "Will you be here Tuesday?"
+     ],
+     "answer": [
+      0,
+      1
+     ]
+    },
+    {
+     "num": 10,
+     "options": [
+      "I don't like driving in night.",
+      "I don't like driving at night."
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ]
+}

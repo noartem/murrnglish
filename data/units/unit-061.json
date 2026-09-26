@@ -1,0 +1,142 @@
+{
+  "unit": 61,
+  "title": "be/get used to \u2026 (I\u2019m used to \u2026)",
+  "pdfPages": [134, 135],
+  "exercises": [
+    {
+      "id": "61.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using used to + a suitable verb.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I don\u2019t feel good. I stayed up until 3 am. I\u2019m not ", " to bed so late."],
+          "answers": [["used to going"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Tomorrow I start a new job. I\u2019ll have to get ", " with new people."],
+          "answers": [["used to working", "used to being"]]
+        },
+        {
+          "num": 4,
+          "parts": ["My feet hurt. I can\u2019t go any further. I\u2019m not ", " so far."],
+          "answers": [["used to walking"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I like this part of town. I\u2019ve been here a long time, so I\u2019m ", " here."],
+          "answers": [["used to living"]]
+        }
+      ]
+    },
+    {
+      "id": "61.2",
+      "type": "fill-in",
+      "instruction": "Read about Sarah and Jack. Complete the sentences using used to.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Sarah wasn\u2019t used to working nights. It took her a few months to ", " it.\nNow, after a year, it\u2019s normal for her. She ", " nights."],
+          "answers": [["get used to"], ["\u2019s used to working", "is used to working"]]
+        },
+        {
+          "num": 2,
+          "parts": ["When Jack started working in this job, he ", " driving two hours to work every morning, but after some time he ", " it. Now it\u2019s no problem for him. He ", " two hours every morning."],
+          "answers": [["wasn\u2019t used to"], ["got used to"], ["\u2019s used to driving", "is used to driving"]]
+        }
+      ]
+    },
+    {
+      "id": "61.3",
+      "type": "write",
+      "instruction": "What do you say in these situations? Use I\u2019m (not) used to \u2026 .",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "You sleep on the floor. It\u2019s OK for you. You have always slept on the floor.\nfriend: Wouldn\u2019t you prefer to sleep in a bed?\nyou: No, I",
+          "answers": ["No, I\u2019m used to sleeping on the floor."]
+        },
+        {
+          "num": 3,
+          "prompt": "You have to work long hours in your job. This is not a problem. You have always done this.\nfriend: You have to work long hours in your job, don\u2019t you?\nyou: Yes, but I don\u2019t mind that. I",
+          "answers": ["I\u2019m used to working long hours."]
+        },
+        {
+          "num": 4,
+          "prompt": "You\u2019ve just moved from a village to a big city. It\u2019s busy and you don\u2019t like the crowds of people.\nfriend: How do you like living here now?\nyou: It\u2019s different from living in a village. I",
+          "answers": ["I\u2019m not used to the crowds (of people)."]
+        }
+      ]
+    },
+    {
+      "id": "61.4",
+      "type": "fill-in",
+      "instruction": "Read the situations and complete the sentences using get/got used to.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The children got a new teacher. She was different from the teacher before her, but this wasn\u2019t a problem for the children. They soon ", " ."],
+          "answers": [["got used to her", "got used to the/their new teacher"]]
+        },
+        {
+          "num": 3,
+          "parts": ["Kate moved from a big house to a much smaller one. She found it strange at first. She had to ", " in a much smaller house."],
+          "answers": [["get used to living"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Anna has lived in Britain for ten years. She didn\u2019t like the weather when she first came, and she still doesn\u2019t like it. She can\u2019t ", " ."],
+          "answers": [["get used to the weather"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Lee got a new job, but his new salary was much less. So he had less money. He had to ", " ."],
+          "answers": [["get used to having less money"]]
+        }
+      ]
+    },
+    {
+      "id": "61.5",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using only one word each time.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["Daniel used to ", " a lot of coffee. Now he prefers tea."],
+          "answers": [["drink"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I feel very full after that meal. I\u2019m not used to ", " so much."],
+          "answers": [["eating"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I wouldn\u2019t like to share a room. I\u2019m used to ", " my own room."],
+          "answers": [["having"]]
+        },
+        {
+          "num": 5,
+          "parts": ["I used to ", " a car, but I sold it a few months ago."],
+          "answers": [["have", "own"]]
+        },
+        {
+          "num": 6,
+          "parts": ["When we were children, we used to ", " swimming very often."],
+          "answers": [["go"]]
+        },
+        {
+          "num": 7,
+          "parts": ["There used to ", " a school here, but it was knocked down a few years ago."],
+          "answers": [["be"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I\u2019m the boss here! I\u2019m not used to ", " told what to do."],
+          "answers": [["being"]]
+        }
+      ]
+    }
+  ]
+}

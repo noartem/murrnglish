@@ -1,0 +1,142 @@
+{
+  "unit": 144,
+  "title": "Phrasal verbs 8 up (2)",
+  "pdfPages": [300, 301],
+  "exercises": [
+    {
+      "id": "144.1",
+      "type": "matching",
+      "instruction": "Which goes with which?",
+      "leftOptions": [
+        "He was angry and tore up",
+        "Jane came up with",
+        "Paul is always making up",
+        "I think you should do up",
+        "I don't think you should bring up",
+        "I'm saving up for",
+        "We had to put up with"
+      ],
+      "rightOptions": [
+        "a motorbike",
+        "a lot of bad weather",
+        "your jacket",
+        "a good suggestion",
+        "excuses",
+        "the letter",
+        "that subject"
+      ],
+      "pairs": [[0, 5], [1, 3], [2, 4], [3, 2], [4, 6], [5, 0], [6, 1]]
+    },
+    {
+      "id": "144.2",
+      "type": "fill-in",
+      "instruction": "Look at the pictures and complete the sentences. You will need two or three words each time.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["The weather was horrible this morning, but it's ", " now."],
+          "answers": [["cleared up"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Lisa was late because she was ", " in the traffic."],
+          "answers": [["held up"]]
+        },
+        {
+          "num": 3,
+          "parts": ["They bought an old house and ", ". It's really nice now."],
+          "answers": [["did it up"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Joe was really depressed. We took him out for a meal to ", "."],
+          "answers": [["cheer him up"]]
+        }
+      ]
+    },
+    {
+      "id": "144.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using a verb + up. Sometimes you will need other words as well.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["The ship ", " and sank. The cause of the explosion was never discovered."],
+          "answers": [["blew up"]]
+        },
+        {
+          "num": 3,
+          "parts": ["James was attacked and ", " by three men he'd never seen before."],
+          "answers": [["beaten up"]]
+        },
+        {
+          "num": 4,
+          "parts": ["Robert and Tina aren't together any more. They've ", "."],
+          "answers": [["broken up / split up"]]
+        },
+        {
+          "num": 5,
+          "parts": ["My hands were so cold, I found it hard to ", " my shoelaces."],
+          "answers": [["do up"]]
+        },
+        {
+          "num": 6,
+          "parts": ["It's been raining all morning. Let's hope it ", " this afternoon."],
+          "answers": [["clears up / will clear up"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I turned up for the party on the wrong day. I got the dates ", "."],
+          "answers": [["mixed up"]]
+        }
+      ]
+    },
+    {
+      "id": "144.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using a verb + up. You will need other words as well.",
+      "items": [
+        {
+          "num": 2,
+          "parts": ["I don't know what this word means. I'll have to ", "."],
+          "answers": [["look it up"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I'm fed up with the way my boss treats me. I don't see why I should ", " it."],
+          "answers": [["put up with"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I don't believe the story you're telling me. I think you're ", "."],
+          "answers": [["making it up"]]
+        },
+        {
+          "num": 5,
+          "parts": ["The problem was complicated, but we managed to ", " a solution."],
+          "answers": [["come up with"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Before you throw these documents away, you should ", "."],
+          "answers": [["tear them up"]]
+        },
+        {
+          "num": 7,
+          "parts": ["I'm trying to spend less money at the moment. I'm ", " a holiday."],
+          "answers": [["saving up for"]]
+        },
+        {
+          "num": 8,
+          "parts": ["Tina doesn't like talking about the accident, so it's better not to ", "."],
+          "answers": [["bring it up"]]
+        },
+        {
+          "num": 9,
+          "parts": ["The words 'there' and 'their' sound the same, so it's easy to ", "."],
+          "answers": [["mix them up / get them mixed up"]]
+        }
+      ]
+    }
+  ]
+}

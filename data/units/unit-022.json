@@ -1,0 +1,228 @@
+{
+  "unit": 22,
+  "title": "will and shall 2",
+  "pdfPages": [56, 57],
+  "exercises": [
+    {
+      "id": "22.1",
+      "type": "fill-in",
+      "instruction": "Put in will (\u2019ll) or won\u2019t.",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Can you wait for me? I ", " be long."],
+          "answers": [["won\u2019t"]]
+        },
+        {
+          "num": 2,
+          "parts": ["There\u2019s no point in asking Amanda for advice. She ", " know what to do."],
+          "answers": [["won\u2019t"]]
+        },
+        {
+          "num": 3,
+          "parts": ["I\u2019m glad I\u2019m meeting Emma tomorrow. It ", " be good to see her again."],
+          "answers": [["\u2019ll", "will"]]
+        },
+        {
+          "num": 4,
+          "parts": ["I\u2019m sorry about what happened yesterday. It ", " happen again."],
+          "answers": [["won\u2019t"]]
+        },
+        {
+          "num": 5,
+          "parts": ["You don\u2019t need to take an umbrella with you. I don\u2019t think it ", " rain."],
+          "answers": [["won\u2019t"]]
+        },
+        {
+          "num": 6,
+          "parts": ["I\u2019ve got some incredible news! You ", " believe it."],
+          "answers": [["won\u2019t"]]
+        }
+      ]
+    },
+    {
+      "id": "22.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using will (\u2019ll).",
+      "wordBank": ["it/be", "she/come", "you/get", "you/like", "you/enjoy", "people/live", "it/look", "we/meet", "you/pass", "she/mind"],
+      "items": [
+        {
+          "num": 1,
+          "parts": ["Don\u2019t worry about your exam. I\u2019m sure ", "."],
+          "answers": [["you\u2019ll pass"]]
+        },
+        {
+          "num": 2,
+          "parts": ["Why don\u2019t you try on this jacket? ", " nice on you."],
+          "answers": [["it\u2019ll look", "it will look"]]
+        },
+        {
+          "num": 3,
+          "parts": ["You must meet Max sometime. I think ", "."],
+          "answers": [["you\u2019ll like", "you will like"]]
+        },
+        {
+          "num": 4,
+          "parts": ["It\u2019s a very nice hotel. ", " your stay there."],
+          "answers": [["You\u2019ll enjoy", "You will enjoy"]]
+        },
+        {
+          "num": 5,
+          "parts": ["It\u2019s raining hard. Don\u2019t go out. ", " very wet."],
+          "answers": [["You\u2019ll get", "You will get"]]
+        },
+        {
+          "num": 6,
+          "parts": ["Do you think ", " longer in the future?"],
+          "answers": [["people will live"]]
+        },
+        {
+          "num": 7,
+          "parts": ["Goodbye! I\u2019m sure ", " again before long."],
+          "answers": [["we\u2019ll meet", "we will meet"]]
+        },
+        {
+          "num": 8,
+          "parts": ["I\u2019ve invited Anna to the party, but I don\u2019t think ", "."],
+          "answers": [["she\u2019ll come", "she will come"]]
+        },
+        {
+          "num": 9,
+          "parts": ["You can borrow Amy\u2019s umbrella. I don\u2019t think ", "."],
+          "answers": [["she\u2019ll mind"]]
+        },
+        {
+          "num": 10,
+          "parts": ["It takes me an hour to get to work at the moment. When the new road is finished, ", " much quicker."],
+          "answers": [["it will be"]]
+        }
+      ]
+    },
+    {
+      "id": "22.3",
+      "type": "fill-in",
+      "instruction": "Write questions using do you think \u2026 will \u2026 ? + the following:",
+      "items": [
+        {
+          "num": 1,
+          "parts": ["I\u2019ve bought this picture for Karen. ", "?"],
+          "answers": [["Do you think she\u2019ll like it"]]
+        },
+        {
+          "num": 2,
+          "parts": ["The weather doesn\u2019t look very good. Do you ", "?"],
+          "answers": [["think it will rain"]]
+        },
+        {
+          "num": 3,
+          "parts": ["The meeting is still going on. When do you ", "?"],
+          "answers": [["think it will end"]]
+        },
+        {
+          "num": 4,
+          "parts": ["My car needs to be repaired. How much ", "?"],
+          "answers": [["do you think it will cost"]]
+        },
+        {
+          "num": 5,
+          "parts": ["Sally and David are in love. Do ", "?"],
+          "answers": [["you think they\u2019ll get married", "you think they will get married"]]
+        },
+        {
+          "num": 6,
+          "parts": ["\u2018I\u2019m going out now.\u2019 \u2018OK. What time ", "?\u2019"],
+          "answers": [["do you think you\u2019ll be back", "do you think you will be back"]]
+        },
+        {
+          "num": 7,
+          "parts": ["The future situation is uncertain. What ", "?"],
+          "answers": [["do you think will happen"]]
+        }
+      ]
+    },
+    {
+      "id": "22.4",
+      "type": "self-check",
+      "instruction": "Where do you think you will be at these times? Write sentences about yourself. Use: I\u2019ll be \u2026 or I\u2019ll probably be \u2026 or I don\u2019t know where \u2026",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(next Monday evening at 7.45)",
+          "modelAnswers": ["I\u2019ll probably be at home."]
+        },
+        {
+          "num": 2,
+          "prompt": "(at 3 am tomorrow)",
+          "modelAnswers": ["I\u2019ll be in bed."]
+        },
+        {
+          "num": 3,
+          "prompt": "(at 10.30 tomorrow morning)",
+          "modelAnswers": ["I\u2019ll be at work."]
+        },
+        {
+          "num": 4,
+          "prompt": "(next Friday afternoon at 4.15)",
+          "modelAnswers": ["I\u2019ll probably be at home."]
+        },
+        {
+          "num": 5,
+          "prompt": "(this time next year)",
+          "modelAnswers": ["I don\u2019t know where I\u2019ll be."]
+        }
+      ]
+    },
+    {
+      "id": "22.5",
+      "type": "choice",
+      "instruction": "Which is better in these sentences?",
+      "items": [
+        {
+          "num": 1,
+          "options": ["She\u2019ll work", "She\u2019s working"],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": ["I never forget it", "I\u2019ll never forget it"],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": ["You\u2019re laughing", "You\u2019ll laugh"],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": ["I\u2019ll go", "I\u2019m going"],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": ["will win", "is winning"],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": ["will come", "is coming"],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": ["won\u2019t hurt", "isn\u2019t hurting"],
+          "answer": 0
+        },
+        {
+          "num": 8,
+          "options": ["What\u2019s happening", "What will happen"],
+          "answer": 1
+        },
+        {
+          "num": 9,
+          "options": ["we\u2019ll go", "we\u2019re going"],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

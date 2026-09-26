@@ -1,0 +1,62 @@
+{
+  "unit": 139,
+  "title": "Phrasal verbs 3 out",
+  "pdfPages": [290, 291],
+  "exercises": [
+    {
+      "id": "139.1",
+      "type": "matching",
+      "instruction": "Which words can go together? Choose from the list.",
+      "leftOptions": ["turn out", "blow out", "carry out", "put out", "try out", "sort out"],
+      "rightOptions": ["a candle", "a fire", "a light", "a new product", "an order", "a problem"],
+      "pairs": [[0, 2], [1, 0], [2, 4], [3, 1], [4, 3], [5, 5]]
+    },
+    {
+      "id": "139.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using a verb + out.",
+      "items": [
+        {"num": 1, "parts": ["The company is trying out a new computer system at the moment."], "answers": []},
+        {"num": 2, "parts": ["Steve is very fit. He does a lot of sport and ", " regularly."], "answers": [["works out"]]},
+        {"num": 3, "parts": ["The road will be closed for two days while building work is ", "."], "answers": [["carried out"]]},
+        {"num": 4, "parts": ["We didn't manage to discuss everything at the meeting. We ", " of time."], "answers": [["ran out"]]},
+        {"num": 5, "parts": ["You have to ", " the problem yourself. I can't do it for you."], "answers": [["sort out"]]},
+        {"num": 6, "parts": ["I need to ", " what happened exactly. It's not clear at the moment."], "answers": [["find out", "work out", "figure out"]]},
+        {"num": 7, "parts": ["The new drug will be ", " on a small group of patients."], "answers": [["tried out"]]},
+        {"num": 8, "parts": ["I thought the two books were the same until someone ", " the difference."], "answers": [["pointed out"]]},
+        {"num": 9, "parts": ["They got married a few years ago, but it didn't ", " and they separated."], "answers": [["work out"]]},
+        {"num": 10, "parts": ["There was a power cut and all the lights ", "."], "answers": [["went out"]]},
+        {"num": 11, "parts": ["We thought she was American at first, but she ", " to be Swedish."], "answers": [["turned out"]]},
+        {"num": 12, "parts": ["Sometimes it ", " cheaper to eat in a restaurant than to cook at home."], "answers": [["works out", "turns out"]]},
+        {"num": 13, "parts": ["How did you ", " about the project? Did somebody tell you?"], "answers": [["find out"]]},
+        {"num": 14, "parts": ["It took firefighters two hours to ", " the fire."], "answers": [["put out"]]},
+        {"num": 15, "parts": ["I can't ", " how the water is getting into the house."], "answers": [["figure out", "work out"]]}
+      ]
+    },
+    {
+      "id": "139.3",
+      "type": "fill-in",
+      "instruction": "For each picture, complete the sentence using a verb + out.",
+      "items": [
+        {"num": 1, "parts": ["They've run out of petrol."], "answers": []},
+        {"num": 2, "parts": ["The man with the beard is ", " leaflets."], "answers": [["giving out", "handing out"]]},
+        {"num": 3, "parts": ["The weather has ", "."], "answers": [["turned out nice", "turned out fine", "turned out sunny"]]},
+        {"num": 4, "parts": ["Sally and Kim are ", " at the gym."], "answers": [["working out"]]},
+        {"num": 5, "parts": ["Joe has ", " water."], "answers": [["run out of"]]},
+        {"num": 6, "parts": ["Lisa is trying to ", " how ", "."], "answers": [["work out", "figure out"], ["to use the camera"]]}
+      ]
+    },
+    {
+      "id": "139.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Each time use a verb + out.",
+      "items": [
+        {"num": 1, "parts": ["a: Was the fire serious?\nB: No, we were able to put it out."], "answers": []},
+        {"num": 2, "parts": ["a: This recipe looks interesting.\nB: Yes, let's ", "."], "answers": [["try it out"]]},
+        {"num": 3, "parts": ["a: How much money do I owe you exactly?\nB: Just a moment. I'll have to ", "."], "answers": [["work it out"]]},
+        {"num": 4, "parts": ["a: What happened about your problem with your bank?\nB: It's OK now. I went to see them and we ", "."], "answers": [["sorted it out", "worked it out"]]},
+        {"num": 5, "parts": ["a: You've written the wrong date on this form.\nB: Oh, so I have. Thanks for ", "."], "answers": [["pointing it out"]]}
+      ]
+    }
+  ]
+}

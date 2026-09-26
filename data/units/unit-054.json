@@ -1,0 +1,77 @@
+{
+  "unit": 54,
+  "title": "Verb + to \u2026 (decide to \u2026 / forget to \u2026 etc.)",
+  "pdfPages": [120, 121],
+  "exercises": [
+    {
+      "id": "54.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences for these situations.",
+      "items": [
+        {"num": 1, "parts": ["They decided ", "."], "answers": [["to get married"]]},
+        {"num": 2, "parts": ["She agreed ", "."], "answers": [["to help him"]]},
+        {"num": 3, "parts": ["He offered ", "."], "answers": [["to carry her bag (for her)"]]},
+        {"num": 4, "parts": ["They arranged ", "."], "answers": [["to meet at 8 o\u2019clock"]]},
+        {"num": 5, "parts": ["She refused ", "."], "answers": [["to tell him her name", "to give him her name"]]},
+        {"num": 6, "parts": ["She promised ", "."], "answers": [["not to tell anyone", "she wouldn\u2019t tell anyone"]]}
+      ]
+    },
+    {
+      "id": "54.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a suitable verb.",
+      "items": [
+        {"num": 1, "parts": ["Don\u2019t forget to lock the door when you go out."], "answers": []},
+        {"num": 2, "parts": ["There was a lot of traffic, but we managed ", " to the airport in time."], "answers": [["to get"]]},
+        {"num": 3, "parts": ["We couldn\u2019t afford ", " in London. It\u2019s too expensive."], "answers": [["to live"]]},
+        {"num": 4, "parts": ["I can\u2019t play a musical instrument, but I\u2019d like to learn ", " the guitar."], "answers": [["to play"]]},
+        {"num": 5, "parts": ["I don\u2019t want Mark to know what happened. I decided not ", " him."], "answers": [["to tell"]]},
+        {"num": 6, "parts": ["We were all afraid to speak. Nobody dared ", " anything."], "answers": [["say", "to say"]]}
+      ]
+    },
+    {
+      "id": "54.3",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form, to \u2026 or -ing. (See Unit 53 for verbs + -ing.)",
+      "items": [
+        {"num": 1, "parts": ["When I\u2019m tired, I enjoy watching TV. It\u2019s relaxing. (watch)"], "answers": []},
+        {"num": 2, "parts": ["I\u2019ve decided ", " for another job. I need a change. (look)"], "answers": [["to look"]]},
+        {"num": 3, "parts": ["I\u2019m not going anywhere! I refuse ", ". (move)"], "answers": [["to move"]]},
+        {"num": 4, "parts": ["I\u2019m not in a hurry. I don\u2019t mind ", ". (wait)"], "answers": [["waiting"]]},
+        {"num": 5, "parts": ["Tina ran in a marathon last week, but she failed ", ". (finish)"], "answers": [["to finish"]]},
+        {"num": 6, "parts": ["I wish that dog would stop ", ". It\u2019s driving me crazy. (bark)"], "answers": [["barking"]]},
+        {"num": 7, "parts": ["They didn\u2019t know I was listening to them. I pretended ", " asleep. (be)"], "answers": [["to be"]]},
+        {"num": 8, "parts": ["We were hungry, so I suggested ", " dinner early. (have)"], "answers": [["having"]]},
+        {"num": 9, "parts": ["Hurry up! I don\u2019t want to risk ", " the train. (miss)"], "answers": [["missing"]]},
+        {"num": 10, "parts": ["David is very quiet. He tends not ", " much. (say)"], "answers": [["to say"]]}
+      ]
+    },
+    {
+      "id": "54.4",
+      "type": "write",
+      "instruction": "Make a new sentence using the verb in brackets.",
+      "items": [
+        {"num": 1, "prompt": "(seem)", "answers": ["I seem to have lost my keys."]},
+        {"num": 2, "prompt": "(appear)", "answers": ["Tom appears to be worried about something."]},
+        {"num": 3, "prompt": "(seem)", "answers": ["You seem to know a lot of people."]},
+        {"num": 4, "prompt": "(seem)", "answers": ["My English seems to be getting better."]},
+        {"num": 5, "prompt": "(appear)", "answers": ["That car appears to have broken down."]},
+        {"num": 6, "prompt": "(seem)", "answers": ["Rachel seems to be enjoying her job."]},
+        {"num": 7, "prompt": "(claim)", "answers": ["They claim to have solved the problem."]}
+      ]
+    },
+    {
+      "id": "54.5",
+      "type": "fill-in",
+      "instruction": "Complete each sentence using what/how/where/whether + these verbs: do get go put ride use",
+      "items": [
+        {"num": 1, "parts": ["Do you know how to get to the airport from here?"], "answers": []},
+        {"num": 2, "parts": ["Would you know ", " if there was a fire in the building?"], "answers": [["what to do"]]},
+        {"num": 3, "parts": ["You\u2019ll never forget ", " a bike once you\u2019ve learnt."], "answers": [["how to ride"]]},
+        {"num": 4, "parts": ["I\u2019ve been invited to the party, but I haven\u2019t decided ", " or not."], "answers": [["whether to go"]]},
+        {"num": 5, "parts": ["My room is very untidy. I\u2019ve got so many things and I don\u2019t know ", " them."], "answers": [["where to put"]]},
+        {"num": 6, "parts": ["I have some clothes to wash. Can you show me ", " the washing machine?"], "answers": [["how to use"]]}
+      ]
+    }
+  ]
+}
