@@ -8,6 +8,8 @@ import { PageViewer } from "./components/PageViewer";
 import { Home } from "./components/Home";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
+import { ShortcutsHelpButton, ShortcutsModal } from "./components/ShortcutsHelp";
+import { SC, useCourseShortcuts } from "./shortcuts";
 import { ArrowLeft, ArrowRight, Check, Menu, Share2 } from "lucide-react";
 import {
   OverlayScrollbarsComponent,
@@ -70,14 +72,20 @@ export default function App() {
   const [unit, setUnit] = useState<UnitData | null>(null);
   const [additional, setAdditional] = useState<AdditionalData | null>(null);
   const [error, setError] = useState<string>("");
+  // first open: collapsed (hover card); a user's explicit choice persists —
+  // "0" = left expanded, "1" = collapsed, absent = first-open default (collapsed)
   const [sidebarOpen, setSidebarOpen] = useState(
-    () => localStorage.getItem("egu-course-sidebar-collapsed") !== "1",
+    () => localStorage.getItem("egu-course-sidebar-collapsed") === "0",
   );
   const [totals, setTotals] = useState<TotalsMap | null>(null);
   // incoming progress held for the preview modal; applied only on confirm.
   // ONE mechanism for both the #p= link open and the JSON file import.
   const [preview, setPreview] = useState<{ p: Progress; src: "file" | "link" } | null>(null);
   const [progress, setProgressState] = useState<Progress>(emptyProgress);
+  // keyboard-shortcuts help modal + pane focus pump (Shift+S)
+  const [helpOpen, setHelpOpen] = useState(false);
+  const [paneFocusTick, setPaneFocusTick] = useState(0);
+  const preHelpFocus = useRef<HTMLElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [notice, setNotice] = useState("");
   // transient topbar notice, auto-clears
@@ -89,7 +97,9 @@ export default function App() {
   const rightpaneRef = useRef<OverlayScrollbarsComponentRef>(null);
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
-  const [cardPhase, setCardPhase] = useState(() => localStorage.getItem("egu-course-sidebar-collapsed") === "1");
+  const [cardPhase, setCardPhase] = useState(
+    () => localStorage.getItem("egu-course-sidebar-collapsed") !== "0",
+  );
   const [transient, setTransient] = useState(false);
   const animTimers = useRef<number[]>([]);
   const clearAnimTimers = () => {
@@ -100,6 +110,11 @@ export default function App() {
     clearAnimTimers();
     const next = !sidebarOpen;
     setSidebarOpen(next);
+    try {
+      localStorage.setItem("egu-course-sidebar-collapsed", next ? "0" : "1");
+    } catch {
+      // storage unavailable: choice silently not persisted
+    }
     if (next) {
       // collapsed card -> brief in-flow zero-width frame -> animate open
       setCardPhase(false);
@@ -296,6 +311,32 @@ export default function App() {
     window.location.hash = "home";
   }
 
+  // focus restoration around the help modal: the element active when help
+  // opened gets focus back when it closes (Esc, backdrop, close button)
+  const openHelp = () => {
+    preHelpFocus.current = document.activeElement as HTMLElement | null;
+    setHelpOpen(true);
+  };
+  const closeHelp = () => {
+    setHelpOpen(false);
+    preHelpFocus.current?.focus();
+  };
+  // one resolver for every "go to course position" path (bottom pager
+  // buttons + Shift+N / Shift+P shortcuts)
+  const goTarget = (t: NavTarget | null) => {
+    if (!t) return;
+    if (t.kind === "unit") navUnit(t.n);
+    else navAdditional(t.n);
+  };
+  const sc = useCourseShortcuts({
+    helpOpen,
+    openHelp,
+    closeHelp,
+    goNextUnit: () => goTarget(pager?.next ?? null),
+    goPrevUnit: () => goTarget(pager?.prev ?? null),
+    focusPagePane: () => setPaneFocusTick((t) => t + 1),
+    focusUnitPanel: () => activeRef.current?.focus(),
+  });
   const isHome = route.kind === "home";
 
   return (
@@ -343,6 +384,7 @@ export default function App() {
             <Share2 size={15} aria-hidden />
           </button>
           <ThemeToggle />
+          <ShortcutsHelpButton onOpen={openHelp} />
         </div>
       </header>
       <div className="main">
@@ -448,9 +490,19 @@ export default function App() {
         ) : (
           <div className="split">
             <div className="leftpane">
-            {unit && <PageViewer pdfPages={unit.pdfPages} />}
+            {unit && (
+              <PageViewer
+                pdfPages={unit.pdfPages}
+                focusTick={paneFocusTick}
+                onPaneEscape={sc.restoreFocus}
+              />
+            )}
             {additional && (
-              <PageViewer pdfPages={additional.pdfPages} />
+              <PageViewer
+                pdfPages={additional.pdfPages}
+                focusTick={paneFocusTick}
+                onPaneEscape={sc.restoreFocus}
+              />
             )}
           </div>
           <OverlayScrollbarsComponent
@@ -486,7 +538,7 @@ export default function App() {
               </>
             )}
             {pager && (pager.prev || pager.next) && (
-              <UnitNav prev={pager.prev} next={pager.next} onGo={(t) => (t.kind === "unit" ? navUnit(t.n) : navAdditional(t.n))} />
+              <UnitNav prev={pager.prev} next={pager.next} onGo={goTarget} />
             )}
           </OverlayScrollbarsComponent>
         </div>
@@ -507,6 +559,7 @@ export default function App() {
         onExport={handleExport}
         onShare={handleShare}
       />
+      {helpOpen && <ShortcutsModal onClose={closeHelp} />}
     </div>
   );
 }
@@ -531,7 +584,12 @@ function UnitNav({
 }) {
   const cell = (t: NavTarget | null, side: "prev" | "next") =>
     t ? (
-      <button type="button" className={`unitnavbtn ${side}`} onClick={() => onGo(t)}>
+      <button
+        type="button"
+        className={`unitnavbtn ${side}`}
+        onClick={() => onGo(t)}
+        title={side === "prev" ? "Previous unit — " + SC.prevUnit : "Next unit — " + SC.nextUnit}
+      >
         {side === "prev" ? (
           <ArrowLeft size={18} strokeWidth={2} aria-hidden />
         ) : (

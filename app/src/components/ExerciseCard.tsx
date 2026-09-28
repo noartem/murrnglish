@@ -1,7 +1,8 @@
 // ExerciseCard: one exercise = instruction, word bank, items, Check / Show answers.
 
 import { useEffect, useState } from "react";
-import { Eye, SquareCheckBig } from "lucide-react";
+import { Eye, EyeOff, SquareCheckBig } from "lucide-react";
+import { SC } from "../shortcuts";
 import type { ChoiceItem, Exercise, FillInItem, SelfCheckItem, WriteItem } from "../data";
 import {
   checkChoice,
@@ -64,7 +65,9 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
       const vals = it.answers.map((_, i) => values[it.num]?.[i] ?? "");
       const st = checked
         ? it.answers.map((vs, i) => checkFill(vals[i], vs))
-        : it.answers.map(() => null);
+        : revealed
+          ? it.answers.map((vs, i) => checkFill(vals[i], vs) || null)
+          : it.answers.map(() => null);
       perItem.push(st);
       states = states.concat(st);
     }
@@ -115,23 +118,8 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
               return next;
             });
           }}
-          onShow={() => {
-            setRevealed(true);
-            setChecked(true);
-            setProgress((p) => {
-              const rec = (p.answers[exercise.id] ?? {}) as Record<string, unknown>;
-              const cur = { ...((rec.items ?? {}) as Record<string, string[]>) };
-              for (const it of gradedItems) cur[it.num] = it.answers.map((vs) => vs[0] ?? "");
-              const all = gradedItems.flatMap((it) => it.answers.map(() => true));
-              const next = {
-                ...p,
-                answers: { ...p.answers, [exercise.id]: { items: cur } },
-                results: { ...p.results, [exercise.id]: { correct: all.length, total: all.length } },
-              };
-              saveProgress(next);
-              return next;
-            });
-          }}
+          onToggleReveal={() => setRevealed((r) => !r)}
+          revealed={revealed}
           result={savedResult}
           total={answerCount}
         />
@@ -146,7 +134,11 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
     const gradedItems = items.filter((it) => !exNums.has(it.num) && !it.example);
     const gradedIdx = new Map(gradedItems.map((it, i) => [it.num, i]));
     states = gradedItems.map((it) =>
-      checked ? checkChoice(values[it.num] ?? null, it.answer) : null,
+      checked
+        ? checkChoice(values[it.num] ?? null, it.answer)
+        : revealed
+          ? checkChoice(values[it.num] ?? null, it.answer) || null
+          : null,
     );
     return (
       <section className="exercise" id={`ex-${exercise.id}`}>
@@ -171,6 +163,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
                 updateAnswer({ items: { ...values, [it.num]: i } });
               }}
               state={states[gradedIdx.get(it.num) ?? -1]}
+              revealed={revealed}
             />
           ),
         )}
@@ -189,22 +182,8 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
               return next;
             });
           }}
-          onShow={() => {
-            setRevealed(true);
-            setChecked(true);
-            setProgress((p) => {
-              const rec = (p.answers[exercise.id] ?? {}) as Record<string, unknown>;
-              const cur = { ...((rec.items ?? {}) as Record<string, number>) };
-              for (const it of gradedItems) cur[it.num] = it.answer as number;
-              const next = {
-                ...p,
-                answers: { ...p.answers, [exercise.id]: { items: cur } },
-                results: { ...p.results, [exercise.id]: { correct: gradedItems.length, total: gradedItems.length } },
-              };
-              saveProgress(next);
-              return next;
-            });
-          }}
+          onToggleReveal={() => setRevealed((r) => !r)}
+          revealed={revealed}
           result={savedResult}
           total={states.length}
         />
@@ -251,6 +230,18 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
             ))}
           </div>
         </div>
+        {revealed && (
+          <div className="variants matchlist">
+            {left.map((l, i) => {
+              const correct = pairs.find(([li]) => li === i)?.[1] ?? null;
+              return (
+                <div key={i} className={sel[i] === correct ? "ok" : undefined}>
+                  {l} {"\u2192"} {correct !== null ? right[correct] : ""}
+                </div>
+              );
+            })}
+          </div>
+        )}
         <CardActions
           onCheck={() => {
             setChecked(true);
@@ -266,20 +257,8 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
               return next;
             });
           }}
-          onShow={() => {
-            setRevealed(true);
-            setChecked(true);
-            setProgress((p) => {
-              const nextPairs = left.map((_, li) => pairs.find(([l]) => l === li)?.[1] ?? null);
-              const next = {
-                ...p,
-                answers: { ...p.answers, [exercise.id]: { pairs: nextPairs } },
-                results: { ...p.results, [exercise.id]: { correct: left.length, total: left.length } },
-              };
-              saveProgress(next);
-              return next;
-            });
-          }}
+          onToggleReveal={() => setRevealed((r) => !r)}
+          revealed={revealed}
           result={savedResult}
           total={st.length}
         />
@@ -295,7 +274,11 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
       (it) => !examples.has(it.num) && !it.example && it.answers.length > 0,
     );
     states = graded.map((it) =>
-      checked ? checkWrite(values[it.num] ?? "", it.answers) : null,
+      checked
+        ? checkWrite(values[it.num] ?? "", it.answers)
+        : revealed
+          ? checkWrite(values[it.num] ?? "", it.answers) || null
+          : null,
     );
     return (
       <section className="exercise" id={`ex-${exercise.id}`}>
@@ -338,22 +321,8 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
               return next;
             });
           }}
-          onShow={() => {
-            setRevealed(true);
-            setChecked(true);
-            setProgress((p) => {
-              const rec = (p.answers[exercise.id] ?? {}) as Record<string, unknown>;
-              const cur = { ...((rec.items ?? {}) as Record<string, string>) };
-              for (const it of graded) cur[it.num] = it.answers[0] ?? "";
-              const next = {
-                ...p,
-                answers: { ...p.answers, [exercise.id]: { items: cur } },
-                results: { ...p.results, [exercise.id]: { correct: graded.length, total: graded.length } },
-              };
-              saveProgress(next);
-              return next;
-            });
-          }}
+          onToggleReveal={() => setRevealed((r) => !r)}
+          revealed={revealed}
           result={savedResult}
           total={states.length}
         />
@@ -411,19 +380,39 @@ function WordBank({ words }: { words: string[] }) {
 
 interface ActionsProps {
   onCheck: () => void;
-  onShow: () => void;
+  onToggleReveal: () => void;
+  revealed: boolean;
   result?: { correct: number; total: number };
   total: number;
 }
 
-function CardActions({ onCheck, onShow, result, total }: ActionsProps) {
+function CardActions({ onCheck, onToggleReveal, revealed, result, total }: ActionsProps) {
   return (
     <div className="cardactions">
-      <button type="button" className="primary" onClick={onCheck}>
+      <button
+        type="button"
+        className="primary"
+        data-shortcut="check"
+        title={"Check — " + SC.check}
+        onClick={onCheck}
+      >
         <SquareCheckBig size={14} aria-hidden /> Check
       </button>
-      <button type="button" onClick={onShow}>
-        <Eye size={14} aria-hidden /> Show answers
+      <button
+        type="button"
+        data-shortcut="reveal"
+        title={(revealed ? "Hide answers — " : "Show answers — ") + SC.reveal}
+        onClick={onToggleReveal}
+      >
+        {revealed ? (
+          <>
+            <EyeOff size={14} aria-hidden /> Hide answers
+          </>
+        ) : (
+          <>
+            <Eye size={14} aria-hidden /> Show answers
+          </>
+        )}
       </button>
       {result && total > 0 && (
         <span className={result.correct === result.total ? "score ok" : "score"}>

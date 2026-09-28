@@ -251,6 +251,9 @@ body {
   color: var(--text);
   border-color: var(--input-border);
 }
+.helpbtn {
+  margin-left: 6px;
+}
 
 .main {
   display: flex;
@@ -318,7 +321,8 @@ body {
 }
 
 .sidebar-edge:hover ~ .sidebar.collapsed,
-.sidebar.collapsed:hover {
+.sidebar.collapsed:hover,
+.sidebar.collapsed:focus-within {
   transform: translateX(0);
   opacity: 1;
   pointer-events: auto;
@@ -455,6 +459,12 @@ body {
 
 .pageviewer {
   overflow-anchor: none;
+}
+
+/* Shift+S focuses the pane; the ring marks where keyboard keys land */
+.pageviewer:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
 }
 
 [data-theme="dark"] .pagebox {
@@ -757,6 +767,21 @@ textarea.winline {
   margin-top: 4px;
   font-size: 13px;
   color: var(--bad);
+}
+
+/* revealed answers turn green when they match what the user typed */
+.variants span.ok {
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.variants.matchlist {
+  color: var(--muted);
+}
+
+.variants.matchlist .ok {
+  color: var(--ok);
+  font-weight: 600;
 }
 
 .options {
@@ -1101,4 +1126,97 @@ textarea.winline {
   font-size: 13px;
   margin-top: 10px;
   min-height: 18px;
+}
+
+/* keyboard shortcuts help modal */
+.helpoverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: overlay-in 0.18s ease-out;
+}
+
+.helpcard {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  width: min(92vw, 600px);
+  max-height: 82vh;
+  overflow: auto;
+  padding: 18px 22px;
+}
+
+.helpcardhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.helpcardhead h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.helpclose {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+
+.helpclose:hover {
+  color: var(--text);
+  border-color: var(--input-border);
+}
+
+.helpentry {
+  margin-top: 14px;
+}
+
+.helpentryhead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.helpentry p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.helpentry ul {
+  margin: 6px 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.helpentry li {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+kbd {
+  font: 600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  border: 1px solid var(--input-border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 1px 6px;
+  background: var(--panel);
+  color: var(--text);
+  white-space: nowrap;
 }

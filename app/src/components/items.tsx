@@ -1,6 +1,7 @@
 // Item-level interactive components keyed by exercise type.
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { Fragment, useLayoutEffect, useRef, useState } from "react";
+import { checkFill } from "../checker";
 import { Check, Eye, EyeOff, X } from "lucide-react";
 import type { ChoiceItem, FillInItem, SelfCheckItem, WriteItem } from "../data";
 
@@ -32,7 +33,9 @@ function GapInput({ className, value, onChange, ariaLabel }: {
       value={value}
       onChange={(e) => onChange(e.target.value)}
       onKeyDown={(e) => {
-        if (e.key === "Enter") e.preventDefault(); // no stray newlines in answers
+        if (e.key === "Enter" && !e.ctrlKey && !e.metaKey) {
+          e.preventDefault(); // no stray newlines in answers
+        }
       }}
       aria-label={ariaLabel}
     />
@@ -75,7 +78,14 @@ export function FillInItemView({ item, values, onChange, states, revealed }: Gap
         <div className="variants">
           {item.answers.map((vs, i) => (
             <div key={i}>
-              gap {i + 1}: {vs.join(" / ")}
+              gap {i + 1}: {vs.map((a, j) => (
+                <Fragment key={j}>
+                  {j > 0 && " / "}
+                  <span className={checkFill(values[i] ?? "", [a]) ? "ok" : undefined}>
+                    {a}
+                  </span>
+                </Fragment>
+              ))}
             </div>
           ))}
         </div>
@@ -89,16 +99,17 @@ interface ChoiceProps {
   selected: number | null;
   onSelect: (idx: number) => void;
   state: boolean | null;
+  revealed?: boolean;
 }
 
-export function ChoiceItemView({ item, selected, onSelect, state }: ChoiceProps) {
+export function ChoiceItemView({ item, selected, onSelect, state, revealed }: ChoiceProps) {
   return (
     <div className="item">
       <span className="itemnum">{item.num}</span>
       <span className="itembody options">
         {item.options.map((opt, i) => {
           const cls =
-            state !== null && i === item.answer
+            (revealed || state === true) && i === item.answer
               ? "option ok"
               : state === false && i === selected
                 ? "option bad"
@@ -164,7 +175,14 @@ export function WriteItemView({ item, value, onChange, state, revealed }: WriteP
           />
         )}
         {(revealed || state === false) && (
-          <div className="variants">{item.answers.join(" / ")}</div>
+          <div className="variants">
+            {item.answers.map((a, j) => (
+              <Fragment key={j}>
+                {j > 0 && " / "}
+                <span className={checkFill(value, [a]) ? "ok" : undefined}>{a}</span>
+              </Fragment>
+            ))}
+          </div>
         )}
       </span>
     </div>

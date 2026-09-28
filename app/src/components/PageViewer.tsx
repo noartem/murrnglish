@@ -33,11 +33,14 @@ import { RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
 
 interface Props {
   pdfPages: number[];
+  focusTick: number; // each increment focuses the pane (Shift+S)
+  onPaneEscape: () => void; // Esc in the pane: App restores the previous focus
 }
 
 const MAX_ZOOM = 2; // page at double the pane width
 const ANIM_MS = 180;
 const RERENDER_DEBOUNCE_MS = 140;
+const SCROLL_STEP = 80; // arrow-key scroll step (px) while the pane is focused
 
 const ASPECTS = pagesMeta as Record<string, number>;
 // fallback = A4 portrait; every real page is baked in pages-meta.json
@@ -81,7 +84,7 @@ function getDoc(): Promise<PDFDocumentProxy> {
   return docPromise;
 }
 
-export function PageViewer({ pdfPages }: Props) {
+export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
   const [zoom, setZoom] = useState(1);
   const [docReady, setDocReady] = useState(false);
   const osRef = useRef<OverlayScrollbarsComponentRef>(null);
@@ -90,6 +93,9 @@ export function PageViewer({ pdfPages }: Props) {
   const zoomRef = useRef(1);
   const animRef = useRef<number | null>(null);
   const boundsRef = useRef<Bounds>({ min: 0.05, max: MAX_ZOOM });
+  // zoom the pane starts at (fit width); R compares against it to decide
+  // between "reset zoom" and "scroll back to the top"
+  const defaultZoomRef = useRef(1);
 
   // the element that actually scrolls inside the OverlayScrollbars structure
   const vpEl = () => osRef.current?.osInstance()?.elements().viewport ?? null;
@@ -168,6 +174,7 @@ export function PageViewer({ pdfPages }: Props) {
     cancelAnim();
     syncVars();
     const z = clampToBounds(1);
+    defaultZoomRef.current = z;
     const flow = flowRef.current;
     const el = vpEl();
     if (flow) flow.style.setProperty("--z", String(z));
@@ -225,6 +232,68 @@ export function PageViewer({ pdfPages }: Props) {
     return () => el.removeEventListener("wheel", onWheel);
   }, []);
 
+  // Shift+S lands focus here: pane-scoped keys (arrows / Ctrl zoom / R / Esc)
+  const onKey = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") {
+      e.preventDefault();
+      onPaneEscape();
+      return;
+    }
+    switch (e.key) {
+      case "ArrowUp":
+        e.preventDefault();
+        vpEl()?.scrollBy({ top: -SCROLL_STEP });
+        return;
+      case "ArrowDown":
+        e.preventDefault();
+        vpEl()?.scrollBy({ top: SCROLL_STEP });
+        return;
+      case "ArrowLeft":
+        e.preventDefault();
+        vpEl()?.scrollBy({ left: -SCROLL_STEP });
+        return;
+      case "ArrowRight":
+        e.preventDefault();
+        vpEl()?.scrollBy({ left: SCROLL_STEP });
+        return;
+    }
+    if (
+      (e.ctrlKey || e.metaKey) &&
+      !e.altKey &&
+      (e.key === "+" || e.key === "=")
+    ) {
+      e.preventDefault(); // also blocks the browser page-zoom
+      step(0.25);
+      return;
+    }
+    if (
+      (e.ctrlKey || e.metaKey) &&
+      !e.altKey &&
+      (e.key === "-" || e.key === "_")
+    ) {
+      e.preventDefault();
+      step(-0.25);
+      return;
+    }
+    if (!e.ctrlKey && !e.metaKey && !e.altKey && e.code === "KeyR") {
+      e.preventDefault();
+      if (Math.abs(zoomRef.current - defaultZoomRef.current) > 0.005) {
+        animateTo(clampToBounds(1));
+      } else {
+        const vp = vpEl();
+        if (vp) {
+          vp.scrollTop = 0;
+          vp.scrollLeft = 0;
+        }
+      }
+    }
+  };
+
+  // Shift+S: focus the pane without scrolling it
+  useEffect(() => {
+    if (focusTick > 0) viewerRef.current?.focus({ preventScroll: true });
+  }, [focusTick]);
+
   // eased zoom for buttons/reset, anchored at the (fixed) visual center
   const animateTo = (target: number) => {
     cancelAnim();
@@ -257,16 +326,22 @@ export function PageViewer({ pdfPages }: Props) {
     animateTo(clampToBounds(Math.round((zoomRef.current + dz) * 100) / 100));
 
   return (
-    <div className="pageviewer" ref={viewerRef}>
+    <div
+      className="pageviewer"
+      ref={viewerRef}
+      tabIndex={0}
+      aria-label="Book page"
+      onKeyDown={onKey}
+    >
       <div className="pagetoolbar">
-        <button type="button" aria-label="Zoom out" onClick={() => step(-0.25)}>
+        <button type="button" aria-label="Zoom out" title="Zoom out — Ctrl -" onClick={() => step(-0.25)}>
           <ZoomOut size={15} aria-hidden />
         </button>
         <span className="zoomlabel">{Math.round(zoom * 100)}%</span>
-        <button type="button" aria-label="Zoom in" onClick={() => step(0.25)}>
+        <button type="button" aria-label="Zoom in" title="Zoom in — Ctrl +" onClick={() => step(0.25)}>
           <ZoomIn size={15} aria-hidden />
         </button>
-        <button type="button" onClick={() => animateTo(clampToBounds(1))}>
+        <button type="button" title="Reset zoom — R" onClick={() => animateTo(clampToBounds(1))}>
           <RotateCcw size={13} aria-hidden /> Reset
         </button>
       </div>
