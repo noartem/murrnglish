@@ -118,10 +118,17 @@ No `items`. Exercise-level fields:
 ```
 
 - `prompt` = the printed cue on the exercise page (the parenthesised word
-  cues). Keep verbatim including parentheses.
-- `answers` = EVERY variant given in the key for that item. Keys like
-  `4 (correct sentence)` or `4 OK` → answers `["OK"]` style, i.e. the key's
-  verdict text verbatim.
+  cues). Keep verbatim including parentheses. If the book underlines part of
+  the prompt (e.g. "Are the underlined verbs OK?…"), wrap ONLY the underlined
+  span in square brackets inside `prompt`, e.g.
+  `"Ben [tries] to find a job, but he hasn’t had any luck yet."` — the UI
+  renders the bracketed span underlined; brackets must be balanced and
+  non-empty (validator checks this).
+- Exercise-level `example: [1, 2]` lists the item nums the printed book
+  already answers on the page (right-column solved answers). Those render as
+  printed rows and are excluded from grading; their `answers` hold the
+  printed model text; the remaining rows keep normal `answers` from the key.
+
 
 ### self-check — model answers, not auto-checkable
 

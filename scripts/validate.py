@@ -1,5 +1,4 @@
 """Structural validator for parsed exercise JSON.
-
 Per-file mode:   python scripts/validate.py <file.json> [more...]
 Full-run mode:   python scripts/validate.py
 
@@ -12,9 +11,10 @@ Rules (units):
 - choice: >= 2 options; answer is an int or non-empty list of ints in range
   (list = several correct options, key says "both"/"A or B")
 - matching: one pair per left index, right indices valid
-- write: every item has >= 1 non-empty answer
-- self-check: every item has a modelAnswers list; empty only when logged in
-  work/missing-key.txt
+- write: every item has >= 1 non-empty answer; prompts may carry inline
+  [underline] markers (balanced brackets, non-empty content)
+- self-check: every item has a modelAnswers list; empty only when logged
+  in work/missing-key.txt
 - coverage (full run): ids printed on the unit's pages (consecutive run
   N.1, N.2, ...) == ids in JSON
 
@@ -23,8 +23,8 @@ cover 1..145 exactly once, additional list matches files.
 """
 import json
 import re
-import sys
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 TYPES = {"fill-in", "choice", "matching", "write", "self-check"}
@@ -121,7 +121,13 @@ def check_exercise(ex, name, missing_key_txt, errors):
             answers = it.get("answers")
             if not (isinstance(answers, list) and answers
                     and all(nonempty_str(a) for a in answers)):
-                errors.append("%s %s item %s: write answers empty" % (name, eid, it.get("num")))
+                if eid not in missing_key_txt:
+                    errors.append("%s %s item %s: write answers empty"
+                                  % (name, eid, it.get("num")))
+            prompt = it.get("prompt")
+            if nonempty_str(prompt) and prompt.count("[") != prompt.count("]"):
+                errors.append("%s %s item %s: prompt markers unbalanced"
+                              % (name, eid, it.get("num")))
     elif t == "self-check":
         for it in items:
             ma = it.get("modelAnswers")
