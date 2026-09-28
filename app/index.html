@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Grammar in Use — Web Course</title>
+    <!-- redesign preview skins: only the faces a skin actually uses are fetched -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=Instrument+Sans:wght@400..700&family=Inter:wght@400..700&family=Nunito:wght@400..900&family=Lora:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400..800&family=Space+Grotesk:wght@400..700&display=swap"
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script>
       // Set data-theme before first paint to avoid a flash of the wrong scheme.
@@ -16,6 +23,8 @@
             (t !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
           document.documentElement.dataset.theme = dark ? "dark" : "light";
           document.documentElement.dataset.pageInvert = inv === "0" ? "off" : "on";
+          var skin = localStorage.getItem("egu-skin");
+          if (skin && skin !== "classic") document.documentElement.dataset.skin = skin;
         } catch (e) {
           document.documentElement.dataset.theme = "light";
           document.documentElement.dataset.pageInvert = "on";

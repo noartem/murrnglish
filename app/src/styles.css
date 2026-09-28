@@ -85,6 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  height: 100dvh; /* mobile URL bar: no layout jumps; equals 100vh on desktop */
 }
 
 .instruction,
@@ -396,13 +397,16 @@ body {
   border-right: 1px solid var(--border);
   background: var(--bg);
 }
-
 .pageviewer {
   position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 0;
+  /* one finger = native pan; two fingers = our pinch handler (PageViewer).
+     "pinch-zoom" is deliberately absent: it would let the browser turn the
+     gesture into a page zoom before the JS handler sees it. */
+  touch-action: pan-x pan-y;
 }
 
 /* floating page controls, bottom-right overlay: two sibling cards — the
@@ -567,7 +571,9 @@ body {
    keeps the missing edge button space so the row stays balanced */
 .unitnav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* minmax(0,1fr): a long nowrap label must not widen the track and
+     overflow the pane; clipping happens on the text below */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 12px;
   margin: 10px 0 40px;
 }
@@ -600,12 +606,14 @@ body {
 .unitnavtext {
   min-width: 0;
 }
-
 .unitnavnum {
   display: block;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .unitnavdesc {
@@ -1304,4 +1312,178 @@ kbd {
 .keysep {
   color: var(--muted);
   font-size: 11px;
+}
+
+/* ---------- mobile gating: new chrome is desktop-invisible ---------- */
+@media (min-width: 769px) {
+  .tabswitch,
+  .sidebar-backdrop {
+    display: none;
+  }
+}
+
+/* ---------- phone layout: one pane at a time behind a tab switch ----------
+   Desktop rules above are untouched; everything mobile lives in this block. */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0 10px;
+    gap: 8px;
+  }
+  .topbar-mid {
+    gap: 8px;
+  }
+  .topbar-actions {
+    gap: 4px;
+  }
+  .topbar-home {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .topbar h1 {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* the tall progress counters and the done tag don't fit; progress
+     lives in the modal and the drawer marks */
+  .topstats,
+  .donetag {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  /* Book | Exercises segmented control (hidden >= 769px) */
+  .tabswitch {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel);
+  }
+  .tabswitch button {
+    flex: 1;
+    padding: 9px 0;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: 14px;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .tabswitch button.on {
+    color: var(--text);
+    font-weight: 600;
+    box-shadow: inset 0 -2px 0 var(--accent);
+  }
+
+  /* sidebar: never in flow; a left drawer behind the hamburger */
+  .sidebar {
+    position: fixed;
+    top: var(--topbar-h);
+    left: 0;
+    bottom: 0;
+    width: min(85vw, 320px);
+    z-index: 46;
+    border-radius: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+  .sidebar.mobile-open {
+    transform: none;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.28);
+  }
+  .sidebar-inner {
+    width: auto;
+  }
+  /* hover-reveal edge is a desktop affordance */
+  .sidebar-edge {
+    display: none;
+  }
+  .sidebar-backdrop {
+    position: fixed;
+    top: var(--topbar-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 45;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  /* one pane at a time: data-tab on .split picks the visible one */
+  .split[data-tab="book"] .rightpane {
+    display: none;
+  }
+  .split[data-tab="exercises"] .leftpane {
+    display: none;
+  }
+  .leftpane {
+    border-right: none;
+  }
+
+  .rightpane {
+    padding: 12px 12px 60px;
+  }
+  .exercise {
+    padding: 10px 12px;
+  }
+
+  /* input fields: shrink to the sentence, wrap long write lines */
+  .gap,
+  .winline {
+    min-width: 4em;
+    max-width: 100%;
+  }
+  .markeditem .winline {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+  .matchrow select {
+    max-width: 100%;
+  }
+
+  /* prev/next pager: full-width rows instead of two squeezed cards; no
+     dashed placeholder for a missing edge (unit 1 / last unit) */
+  .unitnav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .unitnavempty {
+    display: none;
+  }
+
+  /* exercises pane: no tall desktop scroll cushion under the pager */
+  .rightpane {
+    padding: 12px 12px 24px;
+  }
+
+  .selfcheck-controls,
+  .cardactions,
+  .modal-actions {
+    flex-wrap: wrap;
+  }
+
+
+  /* keyboard shortcuts don't exist on touch: no help button, no modal entry
+     (Shift-key hints in titles are inert without a keyboard) */
+  .helpbtn {
+    display: none;
+  }
+
+  .home {
+    padding: 24px 16px 48px;
+  }
+  /* border-box: base width min(720px,92vw) + content-box padding pushed the
+     box past the viewport edge, clipping the close button */
+  .modal {
+    box-sizing: border-box;
+    width: min(720px, calc(100vw - 32px));
+    max-height: 86dvh;
+    padding: 14px 16px;
+  }
+  .helpcard {
+    box-sizing: border-box;
+    width: min(680px, calc(100vw - 32px));
+    max-height: 82dvh;
+  }
 }

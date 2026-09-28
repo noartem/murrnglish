@@ -236,6 +236,45 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     return () => el.removeEventListener("wheel", onWheel);
   }, []);
 
+  // two-finger pinch zoom, anchored at the pinch midpoint; a single finger
+  // stays a native pan (touch-action: pan-x pan-y in CSS keeps the browser
+  // from hijacking the gesture into a page zoom)
+  useEffect(() => {
+    const el = viewerRef.current;
+    if (!el) return;
+    let start: { dist: number; zoom: number } | null = null;
+    const dist = (t: TouchList) =>
+      Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+    const onStart = (e: TouchEvent) => {
+      if (e.touches.length !== 2) return;
+      cancelAnim();
+      start = { dist: dist(e.touches), zoom: zoomRef.current };
+    };
+    const onMove = (e: TouchEvent) => {
+      if (!start || e.touches.length !== 2) return;
+      e.preventDefault();
+      const vp = vpEl();
+      if (!vp) return;
+      const vr = vp.getBoundingClientRect();
+      const mx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - vr.left;
+      const my = (e.touches[0].clientY + e.touches[1].clientY) / 2 - vr.top;
+      applyZoom(clampToBounds(start.zoom * (dist(e.touches) / start.dist)), mx, my);
+    };
+    const onEnd = (e: TouchEvent) => {
+      if (e.touches.length < 2) start = null;
+    };
+    el.addEventListener("touchstart", onStart, { passive: true });
+    el.addEventListener("touchmove", onMove, { passive: false });
+    el.addEventListener("touchend", onEnd);
+    el.addEventListener("touchcancel", onEnd);
+    return () => {
+      el.removeEventListener("touchstart", onStart);
+      el.removeEventListener("touchmove", onMove);
+      el.removeEventListener("touchend", onEnd);
+      el.removeEventListener("touchcancel", onEnd);
+    };
+  }, []);
+
   // smooth scrolling: OverlayScrollbars suppresses the native smooth
   // scroll-behavior on its viewport, so animate scrollTop/scrollLeft
   const smoothScroll = (top: number, left: number) => {

@@ -7,6 +7,7 @@ import { fetchAdditional, fetchIndex, fetchTotals, fetchUnit } from "./data";
 import { PageViewer } from "./components/PageViewer";
 import { Home } from "./components/Home";
 import { ThemeToggle } from "./components/ThemeToggle";
+import { SkinPicker } from "./components/SkinPicker";
 import { ExerciseCard } from "./components/ExerciseCard";
 import { ShortcutsHelpButton, ShortcutsModal } from "./components/ShortcutsHelp";
 import { SC, useCourseShortcuts } from "./shortcuts";
@@ -94,6 +95,19 @@ export default function App() {
     const t = setTimeout(() => setNotice(""), 6000);
     return () => clearTimeout(t);
   }, [notice]);
+  // phone layout (<=768px): the split becomes Book | Exercises tabs and the
+  // sidebar becomes a drawer; desktop layout is pixel-identical
+  const [isMobile, setIsMobile] = useState(
+    () => window.matchMedia("(max-width: 768px)").matches,
+  );
+  const [mobileTab, setMobileTab] = useState<"book" | "exercises">("book");
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    const on = () => setIsMobile(mq.matches);
+    mq.addEventListener("change", on);
+    return () => mq.removeEventListener("change", on);
+  }, []);
   const rightpaneRef = useRef<OverlayScrollbarsComponentRef>(null);
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
@@ -107,6 +121,12 @@ export default function App() {
     animTimers.current = [];
   };
   const toggleSidebar = () => {
+    // mobile: the hamburger opens a drawer instead of the desktop collapse
+    // machinery; no localStorage write, no transient/card phases
+    if (isMobile) {
+      setDrawerOpen((v) => !v);
+      return;
+    }
     clearAnimTimers();
     const next = !sidebarOpen;
     setSidebarOpen(next);
@@ -294,11 +314,14 @@ export default function App() {
 
   function navUnit(n: number) {
     window.location.hash = `u${n}`;
+    setDrawerOpen(false);
   }
 
   function navAdditional(n: number) {
     window.location.hash = `a${n}`;
+    setDrawerOpen(false);
   }
+
   // pager: null on home/unknown routes, else prev/next course positions.
   // Built from raw index (the old `course` list duplicated this logic).
   type ContentRoute = { kind: "unit"; n: number } | { kind: "additional"; n: number };
@@ -384,7 +407,7 @@ export default function App() {
           >
             <h1>English Grammar in Use</h1>
           </button>
-          <span className="progressline">
+          <span className="progressline topstats">
             Units completed <strong>{doneUnits.size}/145</strong> ·{" "}
             {totals ? (
               <>
@@ -414,15 +437,22 @@ export default function App() {
           >
             <Share2 size={15} aria-hidden />
           </button>
+          <SkinPicker />
           <ThemeToggle />
         </div>
       </header>
       <div className="main">
-        {!sidebarOpen && <div className="sidebar-edge" aria-hidden />}
+        {!sidebarOpen && !isMobile && <div className="sidebar-edge" aria-hidden />}
+        {!isHome && <MobileTabSwitch tab={mobileTab} onTab={setMobileTab} />}
+        {isMobile && drawerOpen && (
+          <div className="sidebar-backdrop" onClick={() => setDrawerOpen(false)} />
+        )}
         {index && (() => {
-          const sideCls = sidebarOpen
-            ? transient ? "sidebar opening" : "sidebar"
-            : cardPhase ? "sidebar collapsed" : "sidebar closing";
+          const sideCls = isMobile
+            ? "sidebar" + (drawerOpen ? " mobile-open" : "")
+            : sidebarOpen
+              ? transient ? "sidebar opening" : "sidebar"
+              : cardPhase ? "sidebar collapsed" : "sidebar closing";
           const osOptions = {
             overflow: { x: "hidden" as const },
             scrollbars: {
@@ -518,7 +548,7 @@ export default function App() {
         {isHome ? (
           <Home onStart={() => (window.location.hash = "u1")} />
         ) : (
-          <div className="split">
+          <div className="split" data-tab={mobileTab}>
             <div className="leftpane">
             {unit && (
               <PageViewer
@@ -638,5 +668,36 @@ function UnitNav({
       {cell(prev, "prev")}
       {cell(next, "next")}
     </nav>
+  );
+}
+
+// Phone-only segmented control picking which pane owns the screen. Rendered
+// on desktop too (CSS hides it at >=769px), so no mount flash on resize.
+function MobileTabSwitch({
+  tab,
+  onTab,
+}: {
+  tab: "book" | "exercises";
+  onTab: (t: "book" | "exercises") => void;
+}) {
+  return (
+    <div className="tabswitch" aria-label="Book or exercises view">
+      <button
+        type="button"
+        className={tab === "book" ? "on" : ""}
+        aria-pressed={tab === "book"}
+        onClick={() => onTab("book")}
+      >
+        Book
+      </button>
+      <button
+        type="button"
+        className={tab === "exercises" ? "on" : ""}
+        aria-pressed={tab === "exercises"}
+        onClick={() => onTab("exercises")}
+      >
+        Exercises
+      </button>
+    </div>
   );
 }
