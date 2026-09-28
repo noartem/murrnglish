@@ -4,11 +4,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { AdditionalData, IndexData, TotalsMap, UnitData } from "./data";
 import { fetchAdditional, fetchIndex, fetchTotals, fetchUnit } from "./data";
-import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { PageViewer } from "./components/PageViewer";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
-import { Check, Menu } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Menu } from "lucide-react";
+import {
+  OverlayScrollbarsComponent,
+  type OverlayScrollbarsComponentRef,
+} from "overlayscrollbars-react";
 import {
   countCorrect,
   emptyProgress,
@@ -60,6 +63,7 @@ export default function App() {
   );
   const [totals, setTotals] = useState<TotalsMap | null>(null);
   const [progress, setProgressState] = useState<Progress>(emptyProgress);
+  const rightpaneRef = useRef<OverlayScrollbarsComponentRef>(null);
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
   const [cardPhase, setCardPhase] = useState(() => localStorage.getItem("egu-course-sidebar-collapsed") === "1");
@@ -112,6 +116,11 @@ export default function App() {
         .catch((e) => setError(String(e)));
     }
   }, [route]);
+  // a new page always starts read from the top (pager and sidebar alike)
+  useEffect(() => {
+    const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
+    if (vp) vp.scrollTop = 0;
+  }, [route]);
 
   // keep the active unit button in the visible part of the sidebar
   const activeRef = useRef<HTMLButtonElement>(null);
@@ -135,6 +144,27 @@ export default function App() {
   function navAdditional(n: number) {
     window.location.hash = `a${n}`;
   }
+  // course order for the bottom pager: units 1..145, then additional 1..41
+  const course = useMemo<Route[]>(() => {
+    if (!index) return [];
+    const list: Route[] = [];
+    for (const g of index.groups) for (const u of g.units) list.push({ kind: "unit", n: u });
+    for (const n of index.additional.exercises) list.push({ kind: "additional", n });
+    return list;
+  }, [index]);
+  const pager = useMemo(() => {
+    const pos = course.findIndex((r) => r.kind === route.kind && r.n === route.n);
+    const at = (r?: Route): NavTarget | null => {
+      if (!r) return null;
+      return {
+        kind: r.kind,
+        n: r.n,
+        label: r.kind === "unit" ? `Unit ${r.n}` : `Additional exercise ${r.n}`,
+        desc: index?.titles?.[r.kind === "unit" ? `u${r.n}` : `a${r.n}`] ?? "",
+      };
+    };
+    return { prev: at(course[pos - 1]), next: at(course[pos + 1]) };
+  }, [course, index, route]);
 
   const exerciseIds = unit ? unit.exercises.map((e) => e.id) : [];
   const isUnitDone =
@@ -275,6 +305,7 @@ export default function App() {
             )}
           </div>
           <OverlayScrollbarsComponent
+            ref={rightpaneRef}
             className="rightpane"
             options={{
               overflow: { x: "hidden" as const },
@@ -305,6 +336,9 @@ export default function App() {
                 <ExerciseCard exercise={additional.exercise} progress={progress} setProgress={setProgress} />
               </>
             )}
+            {(pager.prev || pager.next) && (
+              <UnitNav prev={pager.prev} next={pager.next} onGo={(t) => (t.kind === "unit" ? navUnit(t.n) : navAdditional(t.n))} />
+            )}
           </OverlayScrollbarsComponent>
         </div>
       </div>
@@ -332,4 +366,46 @@ function completedUnitIds(progress: Progress): Set<number> {
     if (k >= 1 && ids.size === k) done.add(u);
   }
   return done;
+}
+
+interface NavTarget {
+  kind: "unit" | "additional";
+  n: number;
+  label: string;
+  desc: string;
+}
+
+// Bottom-of-page prev/next: two big ghost buttons; at course edges the
+// missing side still occupies its grid cell as an empty dashed slot.
+function UnitNav({
+  prev,
+  next,
+  onGo,
+}: {
+  prev: NavTarget | null;
+  next: NavTarget | null;
+  onGo: (t: NavTarget) => void;
+}) {
+  const cell = (t: NavTarget | null, side: "prev" | "next") =>
+    t ? (
+      <button type="button" className={`unitnavbtn ${side}`} onClick={() => onGo(t)}>
+        {side === "prev" ? (
+          <ArrowLeft size={18} strokeWidth={2} aria-hidden />
+        ) : (
+          <ArrowRight size={18} strokeWidth={2} aria-hidden />
+        )}
+        <span className="unitnavtext">
+          <span className="unitnavnum">{t.label}</span>
+          {t.desc && <span className="unitnavdesc">{t.desc}</span>}
+        </span>
+      </button>
+    ) : (
+      <div className="unitnavempty" aria-hidden />
+    );
+  return (
+    <nav className="unitnav" aria-label="Course navigation">
+      {cell(prev, "prev")}
+      {cell(next, "next")}
+    </nav>
+  );
 }

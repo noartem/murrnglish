@@ -67,6 +67,8 @@ export interface Group {
 export interface IndexData {
   groups: Group[];
   additional: { title: string; exercises: number[] };
+  /** prev/next pager descriptions keyed "uN"/"aN" (scripts/make_titles.py) */
+  titles: Record<string, string>;
 }
 
 export async function fetchIndex(): Promise<IndexData> {

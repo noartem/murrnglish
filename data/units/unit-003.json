@@ -327,30 +327,23 @@
     },
     {
       "id": "3.4",
-      "type": "write",
+      "type": "fill-in",
       "instruction": "Finish B’s sentences. Use always -ing.",
       "items": [
         {
           "num": 2,
-          "prompt": "The car has broken down again.",
-          "answers": [
-            "That car is useless. It’s always breaking down."
-          ]
+          "parts": ["a: The car has broken down again. — b: That car is useless. It ", "."],
+          "answers": [["’s always breaking down", "is always breaking down"]]
         },
         {
           "num": 3,
-          "prompt": "Look! You’ve made the same mistake again.",
-          "answers": [
-            "Oh no, not again! I’m always making the same mistake.",
-            "Oh no, not again! I’m always making that mistake."
-          ]
+          "parts": ["a: Look! You’ve made the same mistake again. — b: Oh no, not again! I ", "."],
+          "answers": [["’m always making the same mistake", "am always making the same mistake", "’m always making that mistake", "am always making that mistake"]]
         },
         {
           "num": 4,
-          "prompt": "Oh, I’ve left my phone at home again.",
-          "answers": [
-            "Typical! You’re always leaving your phone at home."
-          ]
+          "parts": ["a: Oh, I’ve left my phone at home again. — b: Typical! You ", "."],
+          "answers": [["’re always leaving your phone at home", "are always leaving your phone at home"]]
         }
       ]
     }
