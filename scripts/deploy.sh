@@ -15,11 +15,10 @@ SSH_OPTS=(-i "$DEPLOY_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept
 
 # 1. Stage the new tree on the same filesystem.
 ssh "${SSH_OPTS[@]}" "$HOST" "rm -rf $ROOT/.staging && mkdir -p $ROOT/.staging"
-rsync -az --delete --chmod=Du=rwx,go=rx,Fu=rw,go=r \
+rsync -az --delete --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
   -e "ssh ${SSH_OPTS[*]}" \
   app/dist/ "$HOST:$ROOT/.staging/"
 
-# 2. Swap and prune, then reload Caddy.
 ssh "${SSH_OPTS[@]}" "$HOST" "
   set -e
   cd $ROOT
