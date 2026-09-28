@@ -1,21 +1,43 @@
+/* ============================================================================
+   Notebook design: rounded UI type, chunky tactile controls that press down,
+   a highlighter-yellow for exercise numbers and the focused blank, a dotted
+   desk mat behind the exercise cards.
+
+   Press mechanic: the raised bottom edge of a control is a box-shadow, never
+   a border, so pressing (translateY + shorter shadow) never changes layout
+   and nothing below the control moves.
+   ========================================================================== */
+
 :root {
   color-scheme: light;
-  --font-ui: system-ui, "Segoe UI", Arial, sans-serif;
-  --font-book: Georgia, "Times New Roman", serif;
-  --border: #d8d4cc;
-  --bg: #faf9f7;
+  --font-ui: "Nunito", system-ui, "Segoe UI", Arial, sans-serif;
+  --font-book: "Lora", Georgia, "Times New Roman", serif;
+  /* highlighter: exercise-number badges (solid) and the focused blank /
+     title underline (soft, a translucent band over the lower third) */
+  --hl: #ffd84d;
+  --hl-ink: #2b2620;
+  --hl-soft: rgba(255, 216, 77, 0.42);
+  /* raised bottom edge of neutral / accent controls */
+  --edge: #d9ccb2;
+  --accent-deep: #1f4fc4;
+  /* desk-mat dot grid */
+  --dots: rgba(80, 60, 20, 0.12);
+  /* empty progress cell (partial cells mix --ok-solid into it) */
+  --track: #eadfc9;
+  --border: #eadfc9;
+  --bg: #fcf7ec;
   --panel: #ffffff;
-  --accent: #1d4ed8;
+  --accent: #2f6fed;
   --accent-contrast: #ffffff;
-  --ok: #16a34a;
-  --bad: #dc2626;
-  --text: #1c1917;
-  --muted: #78716c;
-  --soft: #44403c;
-  --input-bg: #fdfcf9;
-  --input-border: #a8a29e;
-  --ok-bg: #f0fdf4;
-  --bad-bg: #fef2f2;
+  --ok: #1faa59;
+  --bad: #ef4444;
+  --text: #2b2620;
+  --muted: #8a7e6b;
+  --soft: #51473a;
+  --input-bg: transparent;
+  --input-border: #cbbd9f;
+  --ok-bg: #e3f6e9;
+  --bad-bg: #fde7e7;
   --img-bg: #ffffff;
   --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   /* book-page paper shown behind the canvas until pdf.js paints it. NOT
@@ -24,47 +46,54 @@
      loading placeholder must match the rendered canvas color */
   --page-bg: #ffffff;
   /* status text on --bg must clear 4.5:1 (the bare --ok/--bad don't at small sizes) */
-  --ok-text: #15803d;
-  --bad-text: #b91c1c;
+  --ok-text: #158a46;
+  --bad-text: #d42a2a;
   /* solid fill for "selected" states + the ink that stays readable on them */
-  --ok-solid: #15803d;
-  --bad-solid: #b91c1c;
+  --ok-solid: #1faa59;
+  --bad-solid: #ef4444;
   --ok-solid-contrast: #ffffff;
   --bad-solid-contrast: #ffffff;
   /* printed-book example rows */
-  --example-bg: #f5f4f1;
+  --example-bg: #fff4cc;
   --active-bg: var(--accent);
   --active-fg: var(--accent-contrast);
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --border: #3b352b;
-  --bg: #191613;
-  --panel: #211d17;
-  --accent: #7c9cf8;
-  --accent-contrast: #131722;
+  --hl: #f5c518;
+  --hl-ink: #1c1a14;
+  /* a bright yellow band glares on the dark card; a dim amber reads as the
+     same marker without shouting */
+  --hl-soft: rgba(245, 197, 24, 0.2);
+  --edge: #12141b;
+  --accent-deep: #3d62c9;
+  --dots: rgba(255, 255, 255, 0.06);
+  --track: #333747;
+  --border: #333747;
+  --bg: #1b1d25;
+  --panel: #242733;
+  --accent: #6f9bff;
+  --accent-contrast: #0f1320;
   --ok: #4ade80;
   --bad: #f87171;
-  --text: #e8e2d6;
-  --muted: #a69d8c;
-  --soft: #cfc7b8;
-  --input-bg: #1c1813;
-  --input-border: #514a3d;
-  --ok-bg: #152a1d;
-  --bad-bg: #2e1a1a;
-  --img-bg: #211d17;
+  --text: #eef0f6;
+  --muted: #9aa0b4;
+  --soft: #cdd1de;
+  --input-bg: transparent;
+  --input-border: #4c5166;
+  --ok-bg: #173323;
+  --bad-bg: #3a1c20;
+  --img-bg: #242733;
   --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   --ok-text: #4ade80;
-  --bad-text: #f87171;
+  --bad-text: #fb8f8f;
   --ok-solid: #4ade80;
   --bad-solid: #f87171;
   /* near-black ink keeps 8:1 on the bright green/red fills */
-  --ok-solid-contrast: #10241a;
-  --bad-solid-contrast: #2a0d0d;
-  --example-bg: #23201a;
-  --active-bg: color-mix(in srgb, var(--accent) 18%, transparent);
-  --active-fg: var(--accent);
+  --ok-solid-contrast: #0b2215;
+  --bad-solid-contrast: #2d0a0a;
+  --example-bg: #2c2a22;
 }
 
 
@@ -102,22 +131,72 @@ body {
   font-family: var(--font-book);
 }
 
-/* home: centered cover, description, single CTA, quiet credit line */
+/* ---------- tactile controls ----------
+   2px border all round + a box-shadow "edge" underneath. Hover keeps the
+   shape; :active sinks the face by 2px and shortens the edge to match, so
+   the control's footprint (and everything around it) stays put. */
+.sidebartoggle,
+.themebtn,
+.helpbtn,
+.helpclose,
+.cardactions button,
+.mark,
+.unitlink,
+.unitnavbtn,
+.homecta {
+  --press-edge: var(--edge);
+  border: 2px solid var(--border);
+  background: var(--panel);
+  box-shadow: 0 3px 0 var(--press-edge);
+  transition: transform 0.07s ease, box-shadow 0.07s ease, border-color 0.12s;
+}
+
+.sidebartoggle:active,
+.themebtn:active,
+.helpbtn:active,
+.helpclose:active,
+.cardactions button:active,
+.mark:active,
+.unitlink:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--press-edge);
+}
+
+.sidebartoggle:disabled,
+.themebtn:disabled,
+.cardactions button:disabled {
+  transform: none;
+}
+
+/* home: cover + description, single CTA, quiet credit line, on the dotted
+   desk mat. .home is the OverlayScrollbars host (scrolls like every pane);
+   .homecol lives in its viewport and centers itself with min-height: 100% */
 .home {
   flex: 1;
   min-height: 0;
-  overflow: auto;
-  display: grid;
-  place-items: center;
-  padding: 40px 16px 64px;
+  background-color: var(--bg);
+  background-image: radial-gradient(circle, var(--dots) 1.2px, transparent 1.6px);
+  background-size: 22px 22px;
 }
 
+/* phones / narrow panes: one centered column */
 .homecol {
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+  max-width: 32rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  max-width: 30rem;
+}
+
+.hometext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .homecover {
@@ -125,41 +204,99 @@ body {
   aspect-ratio: 1112 / 1497;
   height: min(56vh, 480px);
   width: auto;
-  border-radius: 6px;
-  border: 1px solid var(--border);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  border: 6px solid var(--panel);
+  border-radius: 8px;
+  transform: rotate(2deg);
+  /* pivot on the bottom-left corner: hover/focus tips it over onto its left
+     side and it settles with a soft ease-out (no bounce). will-change keeps
+     it on its own layer so the big shadow isn't repainted every frame */
+  transform-origin: 8% 100%;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+  box-shadow: 0 14px 34px rgba(60, 40, 10, 0.22);
   background: var(--img-bg);
 }
 
+.homecover:hover,
+.homecover:focus {
+  transform: rotate(-9deg);
+}
+
+.homecover:focus {
+  outline: none;
+}
+
+.homecover:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .homecover {
+    transition: none;
+  }
+}
+
 .homedesc {
-  font-family: var(--font-book);
-  font-size: 15.5px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 17px;
   line-height: 1.55;
   color: var(--text);
   max-width: 30rem;
-  margin: 28px 0 0;
+  margin: 36px 0 0;
+}
+
+/* desktop: cover left, text right — denser, the whole landing fits one screen */
+@media (min-width: 900px) {
+  .homecol {
+    max-width: 62rem;
+    padding: 40px 48px 56px;
+    flex-direction: row;
+    gap: 64px;
+    text-align: left;
+  }
+  .hometext {
+    align-items: flex-start;
+    max-width: 30rem;
+  }
+  .homecover {
+    height: min(68vh, 540px);
+    flex: 0 0 auto;
+  }
+  .homedesc {
+    margin-top: 0;
+    font-size: 18px;
+  }
 }
 
 .homecta {
+  --press-edge: var(--accent-deep);
   font: inherit;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 900;
   color: var(--accent-contrast);
   background: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 6px;
-  padding: 10px 26px;
+  border-color: var(--accent);
+  border-radius: 16px;
+  padding: 12px 34px;
   margin-top: 26px;
   cursor: pointer;
+  box-shadow: 0 5px 0 var(--press-edge);
 }
 
 .homecta:hover {
-  filter: brightness(1.08);
+  filter: brightness(1.06);
+}
+
+.homecta:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 var(--press-edge);
 }
 
 .homecta:focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: 2px;
+  outline-offset: 3px;
 }
 
 .homecredit {
@@ -189,7 +326,7 @@ body {
 }
 
 :root {
-  --topbar-h: 47px;
+  --topbar-h: 58px;
 }
 
 .topbar {
@@ -197,8 +334,8 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 0 16px;
-  border-bottom: 1px solid var(--border);
+  padding: 0 14px;
+  border-bottom: 2px solid var(--border);
   background: var(--panel);
 }
 
@@ -206,58 +343,82 @@ body {
   display: flex;
   flex: 1;
   min-width: 0;
-  align-items: baseline;
+  align-items: center;
   gap: 14px;
 }
 
+/* the title carries a highlighter stroke through its lower part */
 .topbar h1 {
-  font-size: 17px;
+  font-size: 19px;
   margin: 0;
-  font-weight: 600;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  padding: 0 3px;
+  background: linear-gradient(transparent 62%, var(--hl-soft) 62% 92%, transparent 92%);
 }
 
 .progressline {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.progressline strong {
+  color: var(--accent);
+  font-weight: 900;
 }
 
 .donetag {
   color: var(--ok-text);
+  background: var(--ok-bg);
+  border-radius: 999px;
+  padding: 3px 10px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 800;
   display: inline-flex;
   align-items: center;
   gap: 3px;
 }
 
-.sidebartoggle {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  border-radius: 4px;
-  padding: 2px 8px;
-  cursor: pointer;
-  font-size: 14px;
-  color: inherit;
-  display: inline-flex;
-  align-items: center;
-}
-
+/* square icon buttons in the topbar and modal heads */
+.sidebartoggle,
 .themebtn,
-.helpbtn {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  border-radius: 4px;
-  padding: 4px 8px;
+.helpbtn,
+.helpclose {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 12px;
   cursor: pointer;
-  color: var(--muted);
+  color: var(--soft);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
+.sidebartoggle:hover,
 .themebtn:hover,
-.helpbtn:hover {
+.helpbtn:hover,
+.helpclose:hover {
+  color: var(--accent);
+}
+
+/* modal buttons that carry a label, not just an icon */
+.modal-actions .themebtn {
+  width: auto;
+  height: auto;
+  padding: 7px 18px;
+  gap: 6px;
+  border-radius: 14px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 800;
   color: var(--text);
-  border-color: var(--input-border);
+}
+
+.modal-actions .themebtn:hover {
+  border-color: var(--accent);
+  --press-edge: var(--accent-deep);
 }
 
 .main {
@@ -266,13 +427,14 @@ body {
   min-height: 0;
 }
 
+/* sidebar: a sticker sheet of unit tiles */
 .sidebar {
   width: 280px;
   flex-shrink: 0;
   overflow: hidden; /* OverlayScrollbars owns the scrolling */
-  border-right: 1px solid var(--border);
-  background: var(--panel);
-  padding: 10px 0;
+  border-right: 2px solid var(--border);
+  background: var(--bg);
+  padding: 14px 0 10px;
   transition: width 0.25s ease, padding 0.25s ease, opacity 0.2s ease, border-right-width 0.25s ease;
 }
 
@@ -308,8 +470,8 @@ body {
   left: 8px;
   z-index: 40;
   width: 280px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  border: 2px solid var(--border);
+  border-radius: 20px;
   opacity: 0;
   transform: translateX(calc(-100% - 16px));
   pointer-events: none;
@@ -335,44 +497,57 @@ body {
 }
 
 .group {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .groupname {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--muted);
-  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--soft);
+  margin-bottom: 7px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
+/* row gap leaves room for each tile's 3px edge */
 .unitlinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 8px 5px;
 }
 
 .unitlink {
-  min-width: 34px;
-  padding: 3px 6px;
-  border: 1px solid var(--border);
-  background: var(--bg);
-  border-radius: 4px;
+  min-width: 38px;
+  padding: 3px 7px;
+  border-radius: 10px;
   cursor: pointer;
   font: inherit;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--soft);
   display: inline-flex;
   align-items: baseline;
   justify-content: center;
   gap: 4px;
 }
 
+.unitlink:hover {
+  border-color: var(--accent);
+  --press-edge: var(--accent-deep);
+}
+
+.unitlink.done {
+  background: var(--ok-bg);
+  border-color: var(--ok);
+  --press-edge: color-mix(in srgb, var(--ok) 70%, #000);
+  color: var(--ok-text);
+}
+
 .unitlink.active {
   background: var(--active-bg);
   border-color: var(--accent);
+  --press-edge: var(--accent-deep);
   color: var(--active-fg);
 }
 
@@ -394,7 +569,7 @@ body {
   min-width: 0;
   overflow: hidden;
   display: flex;
-  border-right: 1px solid var(--border);
+  border-right: 2px solid var(--border);
   background: var(--bg);
 }
 .pageviewer {
@@ -428,36 +603,58 @@ body {
   pointer-events: auto;
 }
 
+/* floating page-tool cards: the card is the one tactile surface (border +
+   bottom edge + a soft drop shadow to lift it off the pages); the buttons
+   inside are flat and only fill on hover */
 .pagetoolbar {
   display: flex;
-  gap: 4px;
+  gap: 2px;
   align-items: center;
   background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 3px 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 3px;
+  box-shadow: 0 3px 0 var(--edge), 0 8px 20px rgba(0, 0, 0, 0.16);
 }
 
 .pagetoolbar button {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  border-radius: 4px;
-  padding: 1px 9px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  padding: 5px 9px;
   cursor: pointer;
   font: inherit;
   font-size: 13px;
+  font-weight: 800;
   color: inherit;
   display: inline-flex;
   align-items: center;
   gap: 5px;
   line-height: 1.4;
+  transition: background 0.12s, transform 0.07s ease;
+}
+
+.pagetoolbar button:hover {
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.pagetoolbar button:active {
+  transform: scale(0.92);
+}
+
+/* Reset at the default zoom: nothing to reset */
+.pagetoolbar button:disabled {
+  opacity: 0.4;
+  cursor: default;
+  background: transparent;
+  transform: none;
 }
 
 /* fixed ch-width keeps 50%…500% from jittering the toolbar */
 .zoomlabel {
   width: 5ch;
   font-size: 13px;
+  font-weight: 800;
   color: var(--muted);
   text-align: center;
   font-variant-numeric: tabular-nums;
@@ -486,6 +683,9 @@ body {
   width: 100%;
   background: var(--page-bg);
   user-select: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px var(--border);
 }
 
 .pagecanvas {
@@ -498,17 +698,25 @@ body {
   overflow-anchor: none;
 }
 
-/* Shift+S focuses the pane; the ring marks where keyboard keys land */
+/* Shift+S focuses the pane. No ring around the whole pane: the floating
+   tool cards turn accent instead, marking where keyboard keys land. Mouse
+   focus (click into the pane) shows nothing. */
 .pageviewer:focus {
-  outline: 2px solid var(--accent);
-  outline-offset: -2px;
+  outline: none;
+}
+
+.pageviewer:focus-visible .pagetoolbar {
+  border-color: var(--accent);
+  box-shadow: 0 3px 0 var(--accent-deep), 0 8px 20px rgba(0, 0, 0, 0.16);
 }
 
 /* inverted pages in dark theme; data-page-invert="off" opts out. The pagebox
    background stays the paper color (--page-bg) so the loading placeholder
-   comes out dark here, matching what the inverted canvas will show */
+   comes out dark here, matching what the inverted canvas will show. The
+   filter would invert the ring too, so dark pages go frameless */
 [data-theme="dark"]:not([data-page-invert="off"]) .pagebox {
   filter: invert(1) hue-rotate(180deg);
+  box-shadow: none;
 }
 
 /* OverlayScrollbars owns the scrolling (its viewport is the real scroll
@@ -522,36 +730,46 @@ body {
   overflow-anchor: none;
 }
 
-/* page stack: --pw = page width at zoom 1 (the pane width), --z = zoom.
-   EVERY length scales with --z (boxes and the flex gap alike), so the
-   whole scroll content scales uniformly — the JS zoom scroll
-   compensation ((scroll + anchor) * r - anchor) relies on this. Do not
-   add fixed-size lengths (padding, min-height, px gap) here. */
+/* page stack: --pw = page width at zoom 1 (pane width minus 2 * --pad, set
+   by the JS, which also reads --pad), --z = zoom, --pad = the margin around
+   the stack at zoom 1. EVERY length scales with --z (boxes, the flex gap and
+   the margin alike), so the whole scroll content scales uniformly — the JS
+   zoom scroll compensation ((scroll + anchor) * r - anchor) relies on this.
+   Do not add fixed-size lengths (unscaled padding, min-height, px gap). */
 .pagesflow {
   --pw: 800px;
   --z: 1;
+  --pad: 22px;
   display: flex;
   flex-direction: column;
-  gap: calc(14px * var(--z));
+  gap: calc(18px * var(--z));
   width: calc(var(--pw) * var(--z));
+  padding: calc(var(--pad) * var(--z));
   margin: 0 auto;
 }
 
+/* exercises sit on the dotted desk mat */
 .rightpane {
   flex: 1;
   min-width: 0;
-  padding: 14px 18px 60px;
+  padding: 20px 22px 60px;
+  background-color: var(--bg);
+  background-image: radial-gradient(circle, var(--dots) 1.2px, transparent 1.6px);
+  background-size: 22px 22px;
   /* OverlayScrollbars owns the scrolling */
 }
 
 .unitheading {
-  font-size: 18px;
-  margin: 4px 0 14px;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin: 2px 0 18px;
 }
 
 .refs {
   color: var(--muted);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
 }
 
@@ -560,15 +778,18 @@ body {
   padding: 10px;
 }
 
+/* exercise card: static chunky bottom edge (a border is fine here, the
+   card never animates) */
 .exercise {
   background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 12px 14px;
-  margin-bottom: 16px;
+  border: 2px solid var(--border);
+  border-bottom-width: 5px;
+  border-radius: 20px;
+  padding: 18px 20px 16px;
+  margin-bottom: 20px;
 }
-/* bottom-of-page prev/next pager: big ghost buttons; the empty dashed slot
-   keeps the missing edge button space so the row stays balanced */
+/* bottom-of-page prev/next pager: big tactile cards; the empty slot keeps
+   the missing edge button space so the row stays balanced */
 .unitnav {
   display: grid;
   /* minmax(0,1fr): a long nowrap label must not widen the track and
@@ -584,9 +805,8 @@ body {
   gap: 12px;
   min-height: 76px;
   padding: 13px 20px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: none;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 var(--press-edge);
   cursor: pointer;
   font: inherit;
   color: inherit;
@@ -601,6 +821,7 @@ body {
 .unitnavbtn svg {
   flex: 0 0 auto;
   color: var(--muted);
+  transition: transform 0.15s ease;
 }
 
 .unitnavtext {
@@ -609,7 +830,7 @@ body {
 .unitnavnum {
   display: block;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 1.25;
   white-space: nowrap;
   overflow: hidden;
@@ -631,11 +852,26 @@ body {
 
 .unitnavbtn:hover {
   border-color: var(--accent);
+  --press-edge: var(--accent-deep);
 }
 
 .unitnavbtn:hover svg,
 .unitnavbtn:hover .unitnavnum {
   color: var(--accent);
+}
+
+/* the arrow nudges toward where the button goes */
+.unitnavbtn.prev:hover svg {
+  transform: translateX(-3px);
+}
+.unitnavbtn.next:hover svg {
+  transform: translateX(3px);
+}
+
+/* press: the card sinks onto its edge */
+.unitnavbtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 var(--press-edge);
 }
 
 .unitnavbtn:focus-visible {
@@ -645,8 +881,6 @@ body {
 
 .unitnavempty {
   min-height: 76px;
-  border: 1px dashed transperent;
-  border-radius: 8px;
 }
 
 
@@ -658,8 +892,8 @@ body {
   color: var(--soft);
   font-style: italic;
   background: var(--example-bg);
-  border-radius: 4px;
-  padding: 2px 6px;
+  border-radius: 10px;
+  padding: 3px 10px;
 }
 .exampleitem .prompt {
   flex: 1 1 0;
@@ -685,21 +919,32 @@ body {
 
 .exercise header {
   display: flex;
-  gap: 10px;
-  align-items: baseline;
-  margin-bottom: 8px;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 
+/* exercise number: a slightly skewed highlighter sticker */
 .exid {
-  font-weight: 700;
-  color: var(--accent);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--hl-ink);
+  background: var(--hl);
+  border-radius: 9px;
+  padding: 2px 9px;
+  transform: rotate(-3deg);
+  box-shadow: 2px 2px 0 color-mix(in srgb, var(--hl) 55%, #000);
   white-space: nowrap;
 }
 
 .instruction {
   margin: 0;
-  font-style: italic;
-  color: var(--soft);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text);
 }
 
 .wordbank {
@@ -710,25 +955,30 @@ body {
 }
 
 .chip {
-  border: 1px solid var(--border);
-  background: var(--bg);
-  border-radius: 12px;
-  padding: 2px 10px;
+  font-family: var(--font-ui);
+  font-weight: 700;
   font-size: 14px;
+  background: var(--panel);
+  border: 2px dashed var(--input-border);
+  border-radius: 999px;
+  padding: 2px 12px;
 }
 
 .item {
   display: flex;
   gap: 8px;
-  margin: 7px 0;
+  margin: 9px 0;
+  font-size: 16px;
   align-items: baseline;
 }
 
 .itemnum {
+  font-family: var(--font-ui);
   min-width: 22px;
   text-align: right;
-  color: var(--muted);
-  font-size: 14px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
 }
 
 .itembody {
@@ -741,14 +991,21 @@ body {
   color: var(--muted);
 }
 
+/* blanks: a plain rule; on focus a soft highlighter band sweeps in over the
+   lower third of the field */
 .gap,
 .winline {
   border: none;
-  border-bottom: 1px solid var(--input-border);
+  border-bottom: 2px solid var(--input-border);
   background: var(--input-bg);
+  background-image: linear-gradient(transparent 66%, var(--hl-soft) 66%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  color: var(--text);
   font: inherit;
   padding: 2px 4px;
   min-width: 120px;
+  transition: background-size 0.2s ease;
 }
 
 textarea.gap,
@@ -762,10 +1019,6 @@ textarea.winline {
   /* sink the field so its box reads on the text line; unlike a negative
      bottom margin this keeps line-box spacing intact, so stacked full-width
      fields never overlap */
-}
-
-.unitlink.done {
-  border-color: var(--ok);
 }
 
 .donemark {
@@ -790,12 +1043,22 @@ textarea.winline {
   background: var(--bad-bg);
 }
 
+.gap.ok,
+.winline.ok,
+.gap.bad,
+.winline.bad {
+  border-radius: 6px 6px 0 0;
+}
+
 .wfull {
   width: 100%;
-  border: 1px solid var(--input-border);
-  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px solid var(--input-border);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
   font: inherit;
-  padding: 4px 6px;
+  padding: 6px 10px;
   margin-top: 4px;
 }
 
@@ -809,14 +1072,16 @@ textarea.winline {
 
 .variants {
   margin-top: 4px;
-  font-size: 13px;
-  color: var(--bad);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--bad-text);
 }
 
 /* revealed answers turn green when they match what the user typed */
 .variants span.ok {
-  color: var(--ok);
-  font-weight: 600;
+  color: var(--ok-text);
+  font-weight: 900;
 }
 
 .variants.matchlist {
@@ -824,8 +1089,8 @@ textarea.winline {
 }
 
 .variants.matchlist .ok {
-  color: var(--ok);
-  font-weight: 600;
+  color: var(--ok-text);
+  font-weight: 900;
 }
 
 .options {
@@ -839,7 +1104,7 @@ textarea.winline {
   gap: 6px;
   align-items: baseline;
   padding: 2px 4px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .option.ok {
@@ -864,7 +1129,7 @@ textarea.winline {
 .matchleft {
   flex: 1;
   padding: 3px 6px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .matchleft.ok {
@@ -873,15 +1138,17 @@ textarea.winline {
 
 .grouppct {
   font-size: 11px;
+  font-weight: 800;
   color: var(--muted);
-  text-transform: none;
-  letter-spacing: 0;
+  background: var(--panel);
+  border-radius: 999px;
+  padding: 0 7px;
 }
 
 .grouppct.full,
 .unitpct.full {
   color: var(--ok-text);
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .unitpct {
@@ -897,6 +1164,7 @@ textarea.winline {
   cursor: pointer;
   font: inherit;
   font-size: 13px;
+  font-weight: 700;
   color: var(--muted);
   text-decoration: underline dotted;
   display: inline-flex;
@@ -905,13 +1173,13 @@ textarea.winline {
 }
 
 .mark {
-  border: 1px solid var(--border);
-  background: var(--bg);
-  border-radius: 4px;
-  padding: 3px 10px;
+  border-radius: 999px;
+  padding: 3px 12px;
   cursor: pointer;
   font: inherit;
+  font-family: var(--font-ui);
   font-size: 13px;
+  font-weight: 800;
   color: inherit;
   display: inline-flex;
   align-items: center;
@@ -931,25 +1199,29 @@ textarea.winline {
 .mark.ok.active {
   background: var(--ok-solid);
   border-color: var(--ok-solid);
+  --press-edge: color-mix(in srgb, var(--ok-solid) 70%, #000);
   color: var(--ok-solid-contrast);
 }
 
 .mark.bad.active {
   background: var(--bad-solid);
   border-color: var(--bad-solid);
+  --press-edge: color-mix(in srgb, var(--bad-solid) 70%, #000);
   color: var(--bad-solid-contrast);
 }
 
 /* themed matching selects */
 .matchrow select {
   max-width: 320px;
+  box-sizing: border-box;
   font: inherit;
   font-size: 14px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  font-weight: 700;
+  border: 2px solid var(--input-border);
+  border-radius: 12px;
   background: var(--panel);
   color: var(--text);
-  padding: 3px 6px;
+  padding: 4px 8px;
   cursor: pointer;
 }
 
@@ -965,21 +1237,25 @@ textarea.winline {
 /* programmatic focus lands in the first exercise input on every new page */
 .gap:focus:not(.ok):not(.bad),
 .winline:focus:not(.ok):not(.bad) {
-  border-bottom-color: var(--accent);
+  outline: none;
+  border-bottom-color: var(--text);
+  background-size: 100% 100%;
 }
 .wfull:focus,
 .selfcheck textarea:focus {
+  outline: none;
   border-color: var(--accent);
 }
 
 .selfcheck textarea {
   width: 100%;
-  border: 1px solid var(--input-border);
-  background: var(--input-bg);
+  box-sizing: border-box;
+  border: 2px solid var(--input-border);
+  background: var(--panel);
   color: var(--text);
-  border-radius: 4px;
+  border-radius: 12px;
   font: inherit;
-  padding: 4px 6px;
+  padding: 6px 10px;
   margin-top: 4px;
 }
 
@@ -995,17 +1271,16 @@ textarea.winline {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .cardactions button {
   font: inherit;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 800;
   color: inherit;
-  padding: 5px 14px;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  background: var(--bg);
+  padding: 7px 18px;
+  border-radius: 14px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -1013,20 +1288,26 @@ textarea.winline {
   line-height: 1.3;
 }
 
+.cardactions button:hover {
+  border-color: var(--accent);
+  --press-edge: var(--accent-deep);
+}
+
 .cardactions button.primary {
   background: var(--accent);
   border-color: var(--accent);
+  --press-edge: var(--accent-deep);
   color: var(--accent-contrast);
 }
 
 .score {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 800;
   color: var(--muted);
 }
 
 .score.ok {
   color: var(--ok-text);
-  font-weight: 600;
 }
 
 /* progress modal: import / export / share over a unit-square overview */
@@ -1054,8 +1335,9 @@ textarea.winline {
 
 .modal {
   background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 2px solid var(--border);
+  border-bottom-width: 6px;
+  border-radius: 22px;
   width: min(720px, 92vw);
   max-height: 86vh;
   display: flex;
@@ -1115,29 +1397,31 @@ textarea.winline {
 }
 
 .modal h2 {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 900;
   margin: 0;
 }
 
 .modal-summary {
   color: var(--muted);
   font-size: 13px;
+  font-weight: 600;
   margin: 4px 0;
 }
 
 .unitgrid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: 3px;
 }
 
-/* untouched unit = flat grey; partial = the ok fill mixed toward grey by its
-   percent (set inline); done = full ok fill. Borderless 18px mosaic, 2px apart. */
+/* untouched unit = flat track; partial = the ok fill mixed toward the track
+   by its percent (set inline); done = full ok fill. 18px mosaic, 3px apart. */
 .unitsq {
   width: 18px;
   height: 18px;
-  background: var(--border);
+  border-radius: 5px;
+  background: var(--track);
 }
 
 .unitsq.done {
@@ -1149,19 +1433,21 @@ textarea.winline {
   align-items: center;
   gap: 6px;
   font-size: 13px;
+  font-weight: 600;
   margin-top: 14px;
 }
 
 .modal-actions {
   display: flex;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 /* the preview's apply button is the modal's one strong action */
 .modal-actions .primary {
   background: var(--accent);
   border-color: var(--accent);
+  --press-edge: var(--accent-deep);
   color: var(--accent-contrast);
 }
 
@@ -1187,8 +1473,9 @@ textarea.winline {
 
 .helpcard {
   background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  border: 2px solid var(--border);
+  border-bottom-width: 6px;
+  border-radius: 22px;
   width: min(92vw, 680px);
   max-height: 82vh;
   display: flex;
@@ -1210,7 +1497,8 @@ textarea.winline {
 
 .helpcardhead h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 /* hairline under the header, fades in once the body is scrolled */
@@ -1220,7 +1508,7 @@ textarea.winline {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1px;
+  height: 2px;
   background: var(--border);
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -1231,26 +1519,10 @@ textarea.winline {
   opacity: 1;
 }
 
-.helpclose {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  border-radius: 4px;
-  padding: 4px 8px;
-  cursor: pointer;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-}
-
-.helpclose:hover {
-  color: var(--text);
-  border-color: var(--input-border);
-}
-
 .helpentry {
   margin-top: 18px;
   padding-top: 18px;
-  border-top: 1px solid var(--border);
+  border-top: 2px dashed var(--border);
 }
 
 .helpentry:first-of-type {
@@ -1263,6 +1535,7 @@ textarea.winline {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 800;
 }
 
 .helpentry p {
@@ -1289,9 +1562,9 @@ textarea.winline {
 
 kbd {
   font: 600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  border: 1px solid var(--input-border);
-  border-bottom-width: 2px;
-  border-radius: 4px;
+  border: 2px solid var(--input-border);
+  border-bottom-width: 3px;
+  border-radius: 7px;
   padding: 1px 6px;
   background: var(--panel);
   color: var(--text);
@@ -1314,6 +1587,14 @@ kbd {
   font-size: 11px;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .gap,
+  .winline,
+  .unitnavbtn svg {
+    transition: none;
+  }
+}
+
 /* ---------- mobile gating: new chrome is desktop-invisible ---------- */
 @media (min-width: 769px) {
   .tabswitch,
@@ -1333,14 +1614,14 @@ kbd {
     gap: 8px;
   }
   .topbar-actions {
-    gap: 4px;
+    gap: 6px;
   }
   .topbar-home {
     min-width: 0;
     overflow: hidden;
   }
   .topbar h1 {
-    font-size: 15px;
+    font-size: 16px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1356,26 +1637,39 @@ kbd {
     flex-direction: column;
   }
 
-  /* Book | Exercises segmented control (hidden >= 769px) */
+  /* Book | Exercises segmented control (hidden >= 769px): two tactile
+     buttons, the selected one filled */
   .tabswitch {
     display: flex;
-    border-bottom: 1px solid var(--border);
+    gap: 6px;
+    padding: 8px 12px 11px;
+    border-bottom: 2px solid var(--border);
     background: var(--panel);
   }
   .tabswitch button {
+    --press-edge: var(--edge);
     flex: 1;
-    padding: 9px 0;
-    border: none;
-    background: none;
+    padding: 7px 0;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel);
+    box-shadow: 0 3px 0 var(--press-edge);
     font: inherit;
     font-size: 14px;
+    font-weight: 800;
     color: var(--muted);
     cursor: pointer;
+    transition: transform 0.07s ease, box-shadow 0.07s ease;
+  }
+  .tabswitch button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 var(--press-edge);
   }
   .tabswitch button.on {
-    color: var(--text);
-    font-weight: 600;
-    box-shadow: inset 0 -2px 0 var(--accent);
+    --press-edge: var(--accent-deep);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-contrast);
   }
 
   /* sidebar: never in flow; a left drawer behind the hamburger */
@@ -1421,12 +1715,18 @@ kbd {
   .leftpane {
     border-right: none;
   }
-
-  .rightpane {
-    padding: 12px 12px 60px;
+  /* narrower page margins on a phone (PageViewer re-reads --pad on resize) */
+  .pagesflow {
+    --pad: 10px;
   }
+
   .exercise {
-    padding: 10px 12px;
+    padding: 14px 14px 12px;
+    border-radius: 16px;
+  }
+
+  .unitheading {
+    font-size: 21px;
   }
 
   /* input fields: shrink to the sentence, wrap long write lines */
@@ -1444,9 +1744,10 @@ kbd {
   }
 
   /* prev/next pager: full-width rows instead of two squeezed cards; no
-     dashed placeholder for a missing edge (unit 1 / last unit) */
+     placeholder for a missing edge (unit 1 / last unit) */
   .unitnav {
     grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
   }
   .unitnavempty {
     display: none;
@@ -1454,7 +1755,7 @@ kbd {
 
   /* exercises pane: no tall desktop scroll cushion under the pager */
   .rightpane {
-    padding: 12px 12px 24px;
+    padding: 14px 12px 24px;
   }
 
   .selfcheck-controls,
@@ -1470,8 +1771,14 @@ kbd {
     display: none;
   }
 
-  .home {
+  .homecol {
     padding: 24px 16px 48px;
+  }
+  /* size by width here: the height-based desktop size nearly fills a phone,
+     and the tilt then pushes the corners past the screen edge */
+  .homecover {
+    height: auto;
+    width: min(68vw, 300px);
   }
   /* border-box: base width min(720px,92vw) + content-box padding pushed the
      box past the viewport edge, clipping the close button */

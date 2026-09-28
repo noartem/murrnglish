@@ -1,9 +1,10 @@
 // PageViewer: book pages rendered from the vector PDF via pdf.js onto canvases.
 // Every render matches the screen, so zooming stays sharp at any level. v5
 // Simple vertical stack: pages flow in a column with a gap, and the scroll
-// content is exactly the stack — no elastic void around it, no drag-to-pan.
-// Zoom lives in the --z var on .pagesflow: every length in the scroll content
-// (page boxes AND the flex gap) is a multiple of --z, so a zoom rescales the
+// content is exactly the stack plus a margin around it — no elastic void, no
+// drag-to-pan. Zoom lives in the --z var on .pagesflow: every length in the
+// scroll content (page boxes, the flex gap AND the margin) is a multiple of
+// --z, so a zoom rescales the
 // whole content uniformly by r = z/z0 and the scroll compensation is exact:
 // scrollNew = (scrollOld + anchor) * r - anchor — the anchor is the gesture
 // point in viewport coords (cursor for ctrl+wheel/pinch, the visual center
@@ -48,6 +49,35 @@ const ASPECTS = pagesMeta as Record<string, number>;
 const pageAspect = (p: number) => ASPECTS[String(p)] ?? 297 / 210;
 
 type Bounds = { min: number; max: number };
+
+// Runs step(now) once per frame until it returns false; returns a cancel fn.
+// RAF drives it and a 32ms timer keeps it alive when RAF callbacks are
+// suspended (hidden/background frames, headless capture). The pending flag
+// lets whichever fires first run the frame and drops the other — scheduling
+// both unguarded doubled the callbacks every frame, and the pile-up of
+// competing ticks is what made arrow-key scrolling stutter.
+function frameLoop(step: (now: number) => boolean): () => void {
+  let alive = true;
+  let pending = false;
+  const schedule = () => {
+    if (pending) return;
+    pending = true;
+    const run = () => {
+      if (!pending || !alive) return;
+      pending = false;
+      if (step(performance.now())) schedule();
+      else alive = false;
+    };
+    requestAnimationFrame(run);
+    window.setTimeout(run, 32);
+  };
+  schedule();
+  return () => {
+    alive = false;
+  };
+}
+
+const easeOutCubic = (k: number) => 1 - Math.pow(1 - k, 3);
 
 // one shared document for every viewer instance (unit ↔ additional switches);
 // pdf.js itself is dynamically imported so it stays out of the main bundle
@@ -95,7 +125,10 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
   const viewerRef = useRef<HTMLDivElement>(null);
   const flowRef = useRef<HTMLDivElement>(null);
   const zoomRef = useRef(1);
-  const animRef = useRef<number | null>(null);
+  // cancel fn of the in-flight button/reset zoom animation
+  const zoomAnimRef = useRef<(() => void) | null>(null);
+  // in-flight smooth scroll: its target (arrow keys chain onto it) + cancel
+  const scrollAnimRef = useRef<{ top: number; left: number; cancel: () => void } | null>(null);
   const boundsRef = useRef<Bounds>({ min: 0.05, max: MAX_ZOOM });
   // zoom the pane starts at (fit width); R compares against it to decide
   // between "reset zoom" and "scroll back to the top"
@@ -112,10 +145,8 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
 
   // stop an in-flight button zoom; wheel takes over from the current frame
   const cancelAnim = () => {
-    if (animRef.current !== null) {
-      cancelAnimationFrame(animRef.current);
-      animRef.current = null;
-    }
+    zoomAnimRef.current?.();
+    zoomAnimRef.current = null;
   };
 
   // one synchronous zoom step: --z rescales every page box, then the scroll
@@ -138,9 +169,11 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     setZoom(z);
   };
 
-  // recompute --pw (pane width = page width at zoom 1) and the zoom bounds
-  // for the current pdfPages: min = the tallest page fills the pane height,
-  // max = 2x pane width (never below min)
+  // recompute --pw (page width at zoom 1 = pane width minus the side margins,
+  // so at 100% the page plus its --pad margins fill the pane width exactly)
+  // and the zoom bounds for the current pdfPages: min = the tallest page
+  // with its top/bottom margins fills the pane height, max = 2x pane width
+  // (never below min). --pad is read from CSS (it differs on phones).
   const syncVars = () => {
     const pane = viewerRef.current;
     const flow = flowRef.current;
@@ -148,11 +181,13 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     const vw = pane.clientWidth;
     const vh = pane.clientHeight;
     if (!vw || !vh) return;
-    flow.style.setProperty("--pw", `${vw}px`);
+    const pad = parseFloat(getComputedStyle(flow).getPropertyValue("--pad")) || 0;
+    const pw = Math.max(1, vw - 2 * pad);
+    flow.style.setProperty("--pw", `${pw}px`);
     const maxA = pdfPages.length
       ? Math.max(...pdfPages.map(pageAspect))
       : 297 / 210;
-    const min = Math.max(0.05, vh / (vw * maxA));
+    const min = Math.max(0.05, vh / (pw * maxA + 2 * pad));
     boundsRef.current = { min, max: Math.max(MAX_ZOOM, min) };
   };
 
@@ -196,7 +231,17 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     const pane = viewerRef.current;
     if (!pane) return;
     const onResize = () => {
+      // an untouched pane keeps fitting: the first measure can land while
+      // the layout is still settling (narrow pane -> min > 1), which used
+      // to strand the "100%" default at e.g. 120%
+      const untouched = Math.abs(zoomRef.current - defaultZoomRef.current) <= 0.005;
       syncVars();
+      if (untouched && zoomAnimRef.current === null) {
+        const z = clampToBounds(1);
+        defaultZoomRef.current = z;
+        if (z !== zoomRef.current) applyZoom(z);
+        return;
+      }
       const { min, max } = boundsRef.current;
       if (zoomRef.current < min || zoomRef.current > max) {
         applyZoom(clampToBounds(zoomRef.current));
@@ -276,30 +321,42 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
   }, []);
 
   // smooth scrolling: OverlayScrollbars suppresses the native smooth
-  // scroll-behavior on its viewport, so animate scrollTop/scrollLeft
+  // scroll-behavior on its viewport, so animate scrollTop/scrollLeft. A new
+  // call retargets the running animation from the current position (one loop
+  // at a time), so a held arrow key glides instead of stacking animations.
   const smoothScroll = (top: number, left: number) => {
     const vp = vpEl();
     if (!vp) return;
+    scrollAnimRef.current?.cancel();
+    const clamp = (v: number, max: number) => Math.max(0, Math.min(max, v));
+    const toTop = clamp(top, vp.scrollHeight - vp.clientHeight);
+    const toLeft = clamp(left, vp.scrollWidth - vp.clientWidth);
     const fromTop = vp.scrollTop;
     const fromLeft = vp.scrollLeft;
-    const dx = left - fromLeft;
-    const dy = top - fromTop;
     const t0 = performance.now();
-    const tick = (t: number) => {
-      const k = Math.min(1, (t - t0) / 280);
-      const e = 1 - Math.pow(1 - k, 3); // easeOutCubic
-      vp.scrollTop = fromTop + dy * e;
-      vp.scrollLeft = fromLeft + dx * e;
-      if (k < 1) {
-        // RAF preferred; the timer keeps the animation alive when RAF
-        // callbacks are suspended (hidden/background frames, headless).
-        // Double-firing is harmless: k comes from the timestamp.
-        requestAnimationFrame((r) => tick(r));
-        window.setTimeout(() => tick(performance.now()), 32);
-      }
+    const anim = {
+      top: toTop,
+      left: toLeft,
+      cancel: frameLoop((now) => {
+        const k = Math.min(1, (now - t0) / 220);
+        const e = easeOutCubic(k);
+        vp.scrollTop = fromTop + (toTop - fromTop) * e;
+        vp.scrollLeft = fromLeft + (toLeft - fromLeft) * e;
+        if (k < 1) return true;
+        if (scrollAnimRef.current === anim) scrollAnimRef.current = null;
+        return false;
+      }),
     };
-    requestAnimationFrame((r) => tick(r));
-    window.setTimeout(() => tick(performance.now()), 32);
+    scrollAnimRef.current = anim;
+  };
+
+  // arrow-key step from where the scroll is heading, not where it is now:
+  // repeated keydowns keep a steady pace instead of re-easing from a lag
+  const scrollBy = (dy: number, dx: number) => {
+    const vp = vpEl();
+    if (!vp) return;
+    const base = scrollAnimRef.current ?? { top: vp.scrollTop, left: vp.scrollLeft };
+    smoothScroll(base.top + dy, base.left + dx);
   };
 
   const onKey = (e: React.KeyboardEvent) => {
@@ -311,19 +368,37 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     switch (e.key) {
       case "ArrowUp":
         e.preventDefault();
-        smoothScroll((vpEl()?.scrollTop ?? 0) - SCROLL_STEP, vpEl()?.scrollLeft ?? 0);
+        scrollBy(-SCROLL_STEP, 0);
         return;
       case "ArrowDown":
         e.preventDefault();
-        smoothScroll((vpEl()?.scrollTop ?? 0) + SCROLL_STEP, vpEl()?.scrollLeft ?? 0);
+        scrollBy(SCROLL_STEP, 0);
         return;
       case "ArrowLeft":
         e.preventDefault();
-        smoothScroll(vpEl()?.scrollTop ?? 0, (vpEl()?.scrollLeft ?? 0) - SCROLL_STEP);
+        scrollBy(0, -SCROLL_STEP);
         return;
       case "ArrowRight":
         e.preventDefault();
-        smoothScroll(vpEl()?.scrollTop ?? 0, (vpEl()?.scrollLeft ?? 0) + SCROLL_STEP);
+        scrollBy(0, SCROLL_STEP);
+        return;
+      // a screen minus a sliver of overlap, so the reading line stays in view
+      case "PageUp":
+        e.preventDefault();
+        scrollBy(-(vpEl()?.clientHeight ?? 0) * 0.9, 0);
+        return;
+      case "PageDown":
+        e.preventDefault();
+        scrollBy((vpEl()?.clientHeight ?? 0) * 0.9, 0);
+        return;
+      case "Home":
+        e.preventDefault();
+        smoothScroll(0, scrollAnimRef.current?.left ?? vpEl()?.scrollLeft ?? 0);
+        return;
+      case "End":
+        e.preventDefault();
+        // smoothScroll clamps to the real bottom
+        smoothScroll(Infinity, scrollAnimRef.current?.left ?? vpEl()?.scrollLeft ?? 0);
         return;
     }
     if (
@@ -374,23 +449,15 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     const ay = el.clientHeight / 2;
     const from = zoomRef.current;
     const t0 = performance.now();
-    const tick = (t: number) => {
-      const k = Math.min(1, (t - t0) / ANIM_MS);
-      applyZoom(from + (target - from) * (1 - Math.pow(1 - k, 3)), ax, ay);
-      if (k < 1) {
-        // RAF preferred; a timer keeps the animation alive when RAF
-        // callbacks are suspended (hidden/background frames, headless
-        // capture). Double-firing is harmless: each tick computes k from
-        // its own timestamp.
-        requestAnimationFrame((r) => tick(r));
-        animRef.current = window.setTimeout(() => tick(performance.now()), 32);
-      } else {
-        animRef.current = null;
-      }
-    };
     applyZoom(from, ax, ay); // first frame lands synchronously (RAF may never fire)
-    requestAnimationFrame((r) => tick(r));
-    window.setTimeout(() => tick(performance.now()), 32);
+    const cancel = frameLoop((now) => {
+      const k = Math.min(1, (now - t0) / ANIM_MS);
+      applyZoom(from + (target - from) * easeOutCubic(k), ax, ay);
+      if (k < 1) return true;
+      if (zoomAnimRef.current === cancel) zoomAnimRef.current = null;
+      return false;
+    });
+    zoomAnimRef.current = cancel;
   };
 
   const step = (dz: number) =>
@@ -431,7 +498,12 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
           <button type="button" aria-label="Zoom in" title="Zoom in — Ctrl +" onClick={() => step(0.25)}>
             <ZoomIn size={15} aria-hidden />
           </button>
-          <button type="button" title="Reset zoom — R" onClick={() => animateTo(clampToBounds(1))}>
+          <button
+            type="button"
+            title="Reset zoom — R"
+            disabled={Math.abs(zoom - defaultZoomRef.current) <= 0.005}
+            onClick={() => animateTo(clampToBounds(1))}
+          >
             <RotateCcw size={13} aria-hidden /> Reset
           </button>
         </div>

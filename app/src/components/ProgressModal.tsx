@@ -233,7 +233,7 @@ function Square({ done, p, title }: { done: boolean; p: number; title: string })
       className={done ? "unitsq done" : "unitsq"}
       title={title}
       style={
-        partial ? { background: `color-mix(in srgb, var(--ok-solid) ${p}%, var(--border))` } : undefined
+        partial ? { background: `color-mix(in srgb, var(--ok-solid) ${p}%, var(--track))` } : undefined
       }
     />
   );

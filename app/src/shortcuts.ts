@@ -74,7 +74,8 @@ export const SHORTCUT_HELP: HelpEntry[] = [
     desc: "Moves the focus to the book page on the left.",
     sub: [
       { keys: ["\u2191 / \u2193", "\u2190 / \u2192"], desc: "scroll the page" },
-      { keys: ["Ctrl", "="], alt: ["Ctrl", "\u2212"], desc: "zoom in / zoom out" },
+      { keys: ["PgUp"], alt: ["PgDn"], desc: "scroll one screen up / down" },
+      { keys: ["Home"], alt: ["End"], desc: "jump to the top / bottom" },
       { keys: ["Ctrl", "="], alt: ["Ctrl", "\u2212"], desc: "zoom in / zoom out" },
       { keys: ["T"], desc: "invert the page colors (dark theme only)" },
       { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },

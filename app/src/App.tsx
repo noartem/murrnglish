@@ -7,7 +7,6 @@ import { fetchAdditional, fetchIndex, fetchTotals, fetchUnit } from "./data";
 import { PageViewer } from "./components/PageViewer";
 import { Home } from "./components/Home";
 import { ThemeToggle } from "./components/ThemeToggle";
-import { SkinPicker } from "./components/SkinPicker";
 import { ExerciseCard } from "./components/ExerciseCard";
 import { ShortcutsHelpButton, ShortcutsModal } from "./components/ShortcutsHelp";
 import { SC, useCourseShortcuts } from "./shortcuts";
@@ -437,7 +436,6 @@ export default function App() {
           >
             <Share2 size={15} aria-hidden />
           </button>
-          <SkinPicker />
           <ThemeToggle />
         </div>
       </header>
