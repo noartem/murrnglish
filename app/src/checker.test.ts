@@ -7,7 +7,7 @@ describe("normalize", () => {
   });
 
   it("straightens curly apostrophes and quotes", () => {
-    expect(normalize("I’ve been")).toBe("i've been");
+    expect(normalize("I’ve been")).toBe("i have been");
     expect(normalize("“yes”")).toBe('"yes"');
   });
 
@@ -42,10 +42,25 @@ describe("checkFill", () => {
     expect(checkFill("", ["–"])).toBe(true);
   });
 
-  it("contraction variants are distinct listed values, both match when listed", () => {
-    expect(checkFill("I’ve had", ["I’ve had"])).toBe(true);
-    expect(checkFill("I have had", ["I have had"])).toBe(true);
-    expect(checkFill("I’ve had", ["I have had"])).toBe(false);
+  it("contraction forms normalize to the same string", () => {
+    expect(normalize("I’ve had")).toBe(normalize("I have had"));
+    expect(checkFill("I’ve had", ["I have had"])).toBe(true);
+  });
+
+  it("bridges contractions and expanded forms", () => {
+    expect(checkFill("isn't", ["is not"])).toBe(true);
+    expect(checkFill("He isn't", ["He ’s not"])).toBe(true);
+    expect(checkFill("can not", ["can't"])).toBe(true);
+    expect(checkFill("cannot", ["can't"])).toBe(true);
+    expect(checkFill("won't", ["will not"])).toBe(true);
+    expect(checkFill("I'm", ["I am"])).toBe(true);
+    expect(checkFill("they've gone", ["they have gone"])).toBe(true);
+    expect(checkFill("You aren't supposed to park", ["You're not supposed to park"])).toBe(true);
+  });
+
+  it("keeps possessive 's and unlisted '-d' distinct", () => {
+    expect(checkFill("John's car", ["John's car"])).toBe(true);
+    expect(checkFill("I'd go", ["I would go"])).toBe(false);
   });
 });
 

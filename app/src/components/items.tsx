@@ -1,7 +1,43 @@
 // Item-level interactive components keyed by exercise type.
 
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
+import { Check, Eye, EyeOff, X } from "lucide-react";
 import type { ChoiceItem, FillInItem, SelfCheckItem, WriteItem } from "../data";
+
+const measure = document.createElement("canvas").getContext("2d");
+
+function GapInput({ className, value, onChange, ariaLabel }: {
+  className: string;
+  value: string;
+  onChange: (v: string) => void;
+  ariaLabel: string;
+}) {
+  const ref = useRef<HTMLTextAreaElement>(null);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el || !measure) return;
+    measure.font = getComputedStyle(el).font;
+    const w = measure.measureText(value).width + 30; // padding + caret slop
+    const max = (el.closest(".itembody") as HTMLElement | null)?.clientWidth ?? 800;
+    // one inline line while it fits, then a wrapped, vertically-growing field
+    el.style.width = `${Math.min(Math.max(w, 120), max)}px`;
+    el.style.height = "auto";
+    el.style.height = `${el.scrollHeight}px`;
+  }, [value]);
+  return (
+    <textarea
+      ref={ref}
+      rows={1}
+      className={className}
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") e.preventDefault(); // no stray newlines in answers
+      }}
+      aria-label={ariaLabel}
+    />
+  );
+}
 
 interface GapProps {
   item: FillInItem;
@@ -20,12 +56,12 @@ export function FillInItemView({ item, values, onChange, states, revealed }: Gap
       const cls =
         state === true ? "gap ok" : state === false ? "gap bad" : "gap";
       nodes.push(
-        <input
+        <GapInput
           key={`g${i}`}
           className={cls}
           value={values[i] ?? ""}
-          onChange={(e) => onChange(i, e.target.value)}
-          aria-label={`gap ${i + 1}`}
+          onChange={(v) => onChange(i, v)}
+          ariaLabel={`gap ${i + 1}`}
         />,
       );
     }
@@ -92,14 +128,26 @@ interface WriteProps {
   revealed: boolean;
 }
 
+export function MarkedPrompt({ text }: { text: string }) {
+  // printed underline: "[tries]" between prompt text halves
+  const out: React.ReactNode[] = [];
+  text.split(/\[([^\]]*)\]/g).forEach((piece, i) => {
+    out.push(i % 2 ? <u key={i}>{piece}</u> : piece);
+  });
+  return <>{out}</>;
+}
 
 export function WriteItemView({ item, value, onChange, state, revealed }: WriteProps) {
-  const long = item.prompt.length > 60 || item.answers.some((a) => a.length > 90);
+  const marked = /\[[^\]]*\]/.test(item.prompt);
+  const long =
+    !marked &&
+    (item.prompt.length > 60 || item.answers.some((a) => a.length > 90));
+  const cls = state === true ? "winline ok" : state === false ? "winline bad" : "winline";
   return (
-    <div className="item">
+    <div className={marked ? "item markeditem" : "item"}>
       <span className="itemnum">{item.num}</span>
       <span className="itembody">
-        <span className="prompt">{item.prompt}</span>
+        <span className="prompt"><MarkedPrompt text={item.prompt} /></span>
         {long ? (
           <textarea
             rows={2}
@@ -108,10 +156,11 @@ export function WriteItemView({ item, value, onChange, state, revealed }: WriteP
             onChange={(e) => onChange(e.target.value)}
           />
         ) : (
-          <input
-            className={state === true ? "winline ok" : state === false ? "winline bad" : "winline"}
+          <GapInput
+            className={cls}
             value={value}
-            onChange={(e) => onChange(e.target.value)}
+            onChange={onChange}
+            ariaLabel={`write ${item.num}`}
           />
         )}
         {(revealed || state === false) && (
@@ -144,24 +193,24 @@ export function SelfCheckItemView({ item, value, onChange, mark, onMark }: SelfC
           placeholder="Your answer"
         />
         <div className="selfcheck-controls">
-          <button type="button" onClick={() => setShow((s) => !s)}>
+          <button type="button" className="examplebtn" onClick={() => setShow((s) => !s)}>
+            {show ? <EyeOff size={14} aria-hidden /> : <Eye size={14} aria-hidden />}
             {show ? "Hide example answer" : "Show example answer"}
           </button>
           <button
             type="button"
-            className={mark === true ? "markbtn ok" : "markbtn"}
+            className={"mark ok" + (mark === true ? " active" : "")}
             onClick={() => onMark(true)}
           >
-            I was right
+            <Check size={14} strokeWidth={2.5} aria-hidden /> I was right
           </button>
           <button
             type="button"
-            className={mark === false ? "markbtn bad" : "markbtn"}
+            className={"mark bad" + (mark === false ? " active" : "")}
             onClick={() => onMark(false)}
           >
-            I was wrong
+            <X size={14} strokeWidth={2.5} aria-hidden /> I was wrong
           </button>
-          {mark !== null && <span className="markstate">{mark ? "correct" : "incorrect"}</span>}
         </div>
         {show && (
           <div className="variants">

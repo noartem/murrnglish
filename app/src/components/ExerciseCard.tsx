@@ -1,6 +1,7 @@
 // ExerciseCard: one exercise = instruction, word bank, items, Check / Show answers.
 
 import { useEffect, useState } from "react";
+import { Eye, SquareCheckBig } from "lucide-react";
 import type { ChoiceItem, Exercise, FillInItem, SelfCheckItem, WriteItem } from "../data";
 import {
   checkChoice,
@@ -11,6 +12,7 @@ import {
 import {
   ChoiceItemView,
   FillInItemView,
+  MarkedPrompt,
   SelfCheckItemView,
   WriteItemView,
 } from "./items";
@@ -53,10 +55,12 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
 
   if (exercise.type === "fill-in") {
     const items = (exercise.items ?? []) as FillInItem[];
+    const gradedItems = items.filter((it) => !it.example && it.answers.length > 0);
+    const gradedIdx = new Map(gradedItems.map((it, i) => [it.num, i]));
     const values = (answerRecord.items ?? {}) as Record<string, string[]>;
     const perItem: (boolean | null)[][] = [];
     states = [];
-    for (const it of items) {
+    for (const it of gradedItems) {
       const vals = it.answers.map((_, i) => values[it.num]?.[i] ?? "");
       const st = checked
         ? it.answers.map((vs, i) => checkFill(vals[i], vs))
@@ -72,29 +76,36 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
           <p className="instruction">{exercise.instruction}</p>
         </header>
         {exercise.wordBank && <WordBank words={exercise.wordBank} />}
-        {items.map((it, k) => (
-          <FillInItemView
-            key={it.num}
-            item={it}
-            values={it.answers.map((_, i) => values[it.num]?.[i] ?? "")}
-            onChange={(gi, v) => {
-              const cur = { ...values };
-              const arr = [...(cur[it.num] ?? it.answers.map(() => ""))];
-              arr[gi] = v;
-              cur[it.num] = arr;
-              updateAnswer({ items: cur });
-            }}
-            states={perItem[k]}
-            revealed={revealed}
-          />
-        ))}
+        {items.map((it) =>
+          it.example || it.answers.length === 0 ? (
+            <div key={it.num} className="item exampleitem">
+              <span className="itemnum">{it.num}</span>
+              <span className="itembody">{it.parts.join("")}</span>
+            </div>
+          ) : (
+            <FillInItemView
+              key={it.num}
+              item={it}
+              values={it.answers.map((_, i) => values[it.num]?.[i] ?? "")}
+              onChange={(gi, v) => {
+                const cur = { ...values };
+                const arr = [...(cur[it.num] ?? it.answers.map(() => ""))];
+                arr[gi] = v;
+                cur[it.num] = arr;
+                updateAnswer({ items: cur });
+              }}
+              states={perItem[gradedIdx.get(it.num) ?? -1] ?? []}
+              revealed={revealed}
+            />
+          ),
+        )}
         <CardActions
           onCheck={() => {
             setChecked(true);
             setProgress((p) => {
               const cur = ((p.answers[exercise.id] ?? {}) as Record<string, unknown>).items as
                 Record<string, string[]> | undefined;
-              const all = items.flatMap((it) =>
+              const all = gradedItems.flatMap((it) =>
                 it.answers.map((vs, i) => checkFill(cur?.[it.num]?.[i] ?? "", vs)));
               const next = {
                 ...p,
@@ -110,8 +121,8 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
             setProgress((p) => {
               const rec = (p.answers[exercise.id] ?? {}) as Record<string, unknown>;
               const cur = { ...((rec.items ?? {}) as Record<string, string[]>) };
-              for (const it of items) cur[it.num] = it.answers.map((vs) => vs[0] ?? "");
-              const all = items.flatMap((it) => it.answers.map(() => true));
+              for (const it of gradedItems) cur[it.num] = it.answers.map((vs) => vs[0] ?? "");
+              const all = gradedItems.flatMap((it) => it.answers.map(() => true));
               const next = {
                 ...p,
                 answers: { ...p.answers, [exercise.id]: { items: cur } },
@@ -131,7 +142,10 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
   if (exercise.type === "choice") {
     const items = (exercise.items ?? []) as ChoiceItem[];
     const values = (answerRecord.items ?? {}) as Record<string, number>;
-    states = items.map((it) =>
+    const exNums = new Set<string | number>(exercise.example ?? []);
+    const gradedItems = items.filter((it) => !exNums.has(it.num) && !it.example);
+    const gradedIdx = new Map(gradedItems.map((it, i) => [it.num, i]));
+    states = gradedItems.map((it) =>
       checked ? checkChoice(values[it.num] ?? null, it.answer) : null,
     );
     return (
@@ -140,24 +154,33 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
           <span className="exid">{exercise.id}</span>
           <p className="instruction">{exercise.instruction}</p>
         </header>
-        {items.map((it, k) => (
-          <ChoiceItemView
-            key={it.num}
-            item={it}
-            selected={values[it.num] ?? null}
-            onSelect={(i) => {
-              updateAnswer({ items: { ...values, [it.num]: i } });
-            }}
-            state={states[k]}
-          />
-        ))}
+        {items.map((it) =>
+          exNums.has(it.num) || it.example ? (
+            <div key={it.num} className="item exampleitem">
+              <span className="itemnum">{it.num}</span>
+              <span className="itembody">
+                {it.options[Array.isArray(it.answer) ? it.answer[0] : it.answer]}
+              </span>
+            </div>
+          ) : (
+            <ChoiceItemView
+              key={it.num}
+              item={it}
+              selected={values[it.num] ?? null}
+              onSelect={(i) => {
+                updateAnswer({ items: { ...values, [it.num]: i } });
+              }}
+              state={states[gradedIdx.get(it.num) ?? -1]}
+            />
+          ),
+        )}
         <CardActions
           onCheck={() => {
             setChecked(true);
             setProgress((p) => {
               const cur = ((p.answers[exercise.id] ?? {}) as Record<string, unknown>).items as
                 Record<string, number> | undefined;
-              const all = items.map((it) => checkChoice(cur?.[it.num] ?? null, it.answer));
+              const all = gradedItems.map((it) => checkChoice(cur?.[it.num] ?? null, it.answer));
               const next = {
                 ...p,
                 results: { ...p.results, [exercise.id]: { correct: all.filter(Boolean).length, total: all.length } },
@@ -172,11 +195,11 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
             setProgress((p) => {
               const rec = (p.answers[exercise.id] ?? {}) as Record<string, unknown>;
               const cur = { ...((rec.items ?? {}) as Record<string, number>) };
-              for (const it of items) cur[it.num] = it.answer;
+              for (const it of gradedItems) cur[it.num] = it.answer as number;
               const next = {
                 ...p,
                 answers: { ...p.answers, [exercise.id]: { items: cur } },
-                results: { ...p.results, [exercise.id]: { correct: items.length, total: items.length } },
+                results: { ...p.results, [exercise.id]: { correct: gradedItems.length, total: gradedItems.length } },
               };
               saveProgress(next);
               return next;
@@ -267,7 +290,11 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
   if (exercise.type === "write") {
     const items = (exercise.items ?? []) as WriteItem[];
     const values = (answerRecord.items ?? {}) as Record<string, string>;
-    states = items.map((it) =>
+    const examples = new Set<string | number>(exercise.example ?? []);
+    const graded = items.filter(
+      (it) => !examples.has(it.num) && !it.example && it.answers.length > 0,
+    );
+    states = graded.map((it) =>
       checked ? checkWrite(values[it.num] ?? "", it.answers) : null,
     );
     return (
@@ -276,23 +303,33 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
           <span className="exid">{exercise.id}</span>
           <p className="instruction">{exercise.instruction}</p>
         </header>
-        {items.map((it, k) => (
-          <WriteItemView
-            key={it.num}
-            item={it}
-            value={values[it.num] ?? ""}
-            onChange={(v) => updateAnswer({ items: { ...values, [it.num]: v } })}
-            state={states[k]}
-            revealed={revealed}
-          />
-        ))}
+        {items.map((it) =>
+          examples.has(it.num) || it.example || it.answers.length === 0 ? (
+            <div key={it.num} className="item exampleitem">
+              <span className="itemnum">{it.num}</span>
+              <span className="itembody">
+                <span className="prompt"><MarkedPrompt text={it.prompt} /></span>
+                <span className="printed">{it.answers[0] ?? ""}</span>
+              </span>
+            </div>
+          ) : (
+            <WriteItemView
+              key={it.num}
+              item={it}
+              value={values[it.num] ?? ""}
+              onChange={(v) => updateAnswer({ items: { ...values, [it.num]: v } })}
+              state={states[graded.indexOf(it)]}
+              revealed={revealed}
+            />
+          ),
+        )}
         <CardActions
           onCheck={() => {
             setChecked(true);
             setProgress((p) => {
               const cur = ((p.answers[exercise.id] ?? {}) as Record<string, unknown>).items as
                 Record<string, string> | undefined;
-              const all = items.map((it) => checkWrite(cur?.[it.num] ?? "", it.answers));
+              const all = graded.map((it) => checkWrite(cur?.[it.num] ?? "", it.answers));
               const next = {
                 ...p,
                 results: { ...p.results, [exercise.id]: { correct: all.filter(Boolean).length, total: all.length } },
@@ -307,11 +344,11 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
             setProgress((p) => {
               const rec = (p.answers[exercise.id] ?? {}) as Record<string, unknown>;
               const cur = { ...((rec.items ?? {}) as Record<string, string>) };
-              for (const it of items) cur[it.num] = it.answers[0] ?? "";
+              for (const it of graded) cur[it.num] = it.answers[0] ?? "";
               const next = {
                 ...p,
                 answers: { ...p.answers, [exercise.id]: { items: cur } },
-                results: { ...p.results, [exercise.id]: { correct: items.length, total: items.length } },
+                results: { ...p.results, [exercise.id]: { correct: graded.length, total: graded.length } },
               };
               saveProgress(next);
               return next;
@@ -383,10 +420,10 @@ function CardActions({ onCheck, onShow, result, total }: ActionsProps) {
   return (
     <div className="cardactions">
       <button type="button" className="primary" onClick={onCheck}>
-        Check
+        <SquareCheckBig size={14} aria-hidden /> Check
       </button>
       <button type="button" onClick={onShow}>
-        Show answers
+        <Eye size={14} aria-hidden /> Show answers
       </button>
       {result && total > 0 && (
         <span className={result.correct === result.total ? "score ok" : "score"}>

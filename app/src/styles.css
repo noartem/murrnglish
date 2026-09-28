@@ -1,17 +1,68 @@
 :root {
+  color-scheme: light;
+  --font-ui: system-ui, "Segoe UI", Arial, sans-serif;
+  --font-book: Georgia, "Times New Roman", serif;
   --border: #d8d4cc;
   --bg: #faf9f7;
   --panel: #ffffff;
   --accent: #1d4ed8;
+  --accent-contrast: #ffffff;
   --ok: #16a34a;
   --bad: #dc2626;
   --text: #1c1917;
   --muted: #78716c;
+  --soft: #44403c;
+  --input-bg: #fdfcf9;
+  --input-border: #a8a29e;
+  --ok-bg: #f0fdf4;
+  --bad-bg: #fef2f2;
+  --img-bg: #ffffff;
+  --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* status text on --bg must clear 4.5:1 (the bare --ok/--bad don't at small sizes) */
+  --ok-text: #15803d;
+  --bad-text: #b91c1c;
+  /* solid fill for "selected" states + the ink that stays readable on them */
+  --ok-solid: #15803d;
+  --bad-solid: #b91c1c;
+  --ok-solid-contrast: #ffffff;
+  --bad-solid-contrast: #ffffff;
+  /* printed-book example rows */
+  --example-bg: #f5f4f1;
+  --active-bg: var(--accent);
+  --active-fg: var(--accent-contrast);
 }
 
-* {
-  box-sizing: border-box;
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --border: #3b352b;
+  --bg: #191613;
+  --panel: #211d17;
+  --accent: #7c9cf8;
+  --accent-contrast: #131722;
+  --ok: #4ade80;
+  --bad: #f87171;
+  --text: #e8e2d6;
+  --muted: #a69d8c;
+  --soft: #cfc7b8;
+  --input-bg: #1c1813;
+  --input-border: #514a3d;
+  --ok-bg: #152a1d;
+  --bad-bg: #2e1a1a;
+  --img-bg: #211d17;
+  --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --ok-text: #4ade80;
+  --bad-text: #f87171;
+  --ok-solid: #4ade80;
+  --bad-solid: #f87171;
+  /* near-black ink keeps 8:1 on the bright green/red fills */
+  --ok-solid-contrast: #10241a;
+  --bad-solid-contrast: #2a0d0d;
+  --example-bg: #23201a;
+  --active-bg: color-mix(in srgb, var(--accent) 18%, transparent);
+  --active-fg: var(--accent);
 }
+
+
 
 html,
 body,
@@ -21,24 +72,50 @@ body,
 }
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-ui);
   color: var(--text);
   background: var(--bg);
 }
-
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
+.instruction,
+.itembody,
+.prompt,
+.variants,
+.chip,
+.gap,
+.winline,
+.wfull,
+.selfcheck textarea,
+.exid,
+.itemnum {
+  font-family: var(--font-book);
+}
+
+:root {
+  --topbar-h: 47px;
+}
+
 .topbar {
+  height: var(--topbar-h);
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 8px 16px;
+  padding: 0 16px;
   border-bottom: 1px solid var(--border);
   background: var(--panel);
+}
+
+.topbar-mid {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: baseline;
+  gap: 14px;
 }
 
 .topbar h1 {
@@ -53,9 +130,12 @@ body {
 }
 
 .donetag {
-  color: var(--ok);
+  color: var(--ok-text);
   font-size: 14px;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .sidebartoggle {
@@ -65,6 +145,26 @@ body {
   padding: 2px 8px;
   cursor: pointer;
   font-size: 14px;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+.themebtn {
+  margin-left: auto;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+
+.themebtn:hover {
+  color: var(--text);
+  border-color: var(--input-border);
 }
 
 .main {
@@ -76,10 +176,68 @@ body {
 .sidebar {
   width: 280px;
   flex-shrink: 0;
-  overflow-y: auto;
+  overflow: hidden; /* OverlayScrollbars owns the scrolling */
   border-right: 1px solid var(--border);
   background: var(--panel);
-  padding: 10px;
+  padding: 10px 0;
+  transition: width 0.25s ease, padding 0.25s ease, opacity 0.2s ease, border-right-width 0.25s ease;
+}
+
+.sidebar-inner {
+  width: 260px;
+  padding: 0 10px;
+}
+
+/* transient in-flow zero-width frames that carry the collapse/expand
+   animation between the in-flow panel and the fixed hover card */
+.sidebar.opening,
+.sidebar.closing {
+  width: 0;
+  padding: 0;
+  border-right-width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar.opening {
+  /* snap to the zero-width frame without transitioning: the before-change
+     width is the collapsed card's 280px, and animating that invisible
+     squeeze shoves the page content before the real 0->280 expansion */
+  transition: none;
+}
+
+/* collapsed sidebar: out of flow; hovering the left-edge zone slides it back
+   in as a floating card (with a small inset, rounded corners, border) */
+.sidebar.collapsed {
+  position: fixed;
+  top: calc(var(--topbar-h) + 8px);
+  bottom: 8px;
+  left: 8px;
+  z-index: 40;
+  width: 280px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(calc(-100% - 16px));
+  pointer-events: none;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.sidebar-edge {
+  position: fixed;
+  left: 0;
+  top: var(--topbar-h);
+  bottom: 0;
+  width: 12px;
+  z-index: 39;
+}
+
+.sidebar-edge:hover ~ .sidebar.collapsed,
+.sidebar.collapsed:hover {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.28);
 }
 
 .group {
@@ -92,6 +250,9 @@ body {
   letter-spacing: 0.05em;
   color: var(--muted);
   margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .unitlinks {
@@ -109,49 +270,143 @@ body {
   cursor: pointer;
   font: inherit;
   font-size: 13px;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
 }
 
 .unitlink.active {
-  background: var(--accent);
+  background: var(--active-bg);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--active-fg);
+}
+
+/* muted badges vanish on the accent fill; use the active ink there */
+.unitlink.active .donemark,
+.unitlink.active .unitpct {
+  color: var(--active-fg);
 }
 
 .split {
   display: flex;
   flex: 1;
   min-width: 0;
+  min-height: 0;
 }
 
 .leftpane {
   flex: 1;
   min-width: 0;
-  overflow-y: auto;
+  overflow: hidden;
+  display: flex;
   border-right: 1px solid var(--border);
-  padding: 10px;
   background: var(--bg);
 }
 
-.pagelabel {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 8px;
+.pageviewer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
-.pageimg {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto 14px;
+/* floating zoom controls, bottom-right overlay */
+.pagetoolbar {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 10;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background: var(--panel);
   border: 1px solid var(--border);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  background: #fff;
+  border-radius: 8px;
+  padding: 3px 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pagetoolbar button {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 4px;
+  padding: 1px 9px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1.4;
+}
+
+/* fixed ch-width keeps 50%…500% from jittering the toolbar */
+.zoomlabel {
+  width: 5ch;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* pdf.js page box: width comes from .pagesflow (one --z write rescales
+   everything synchronously); the canvas fills it and re-renders
+   at screen resolution after the zoom settles */
+.pagebox {
+  width: 100%;
+  background: var(--img-bg);
+  user-select: none;
+}
+
+.pagecanvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pageviewer {
+  overflow-anchor: none;
+}
+
+[data-theme="dark"] .pagebox {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* OverlayScrollbars owns the scrolling (its viewport is the real scroll
+   container, so it needs anchoring off too) */
+.zoomwrap {
+  flex: 1;
+  min-height: 0;
+}
+
+[data-overlayscrollbars-viewport] {
+  overflow-anchor: none;
+}
+
+/* page stack: --pw = page width at zoom 1 (the pane width), --z = zoom.
+   EVERY length scales with --z (boxes and the flex gap alike), so the
+   whole scroll content scales uniformly — the JS zoom scroll
+   compensation ((scroll + anchor) * r - anchor) relies on this. Do not
+   add fixed-size lengths (padding, min-height, px gap) here. */
+.pagesflow {
+  --pw: 800px;
+  --z: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(14px * var(--z));
+  width: calc(var(--pw) * var(--z));
+  margin: 0 auto;
 }
 
 .rightpane {
   flex: 1;
   min-width: 0;
-  overflow-y: auto;
   padding: 14px 18px 60px;
+  /* OverlayScrollbars owns the scrolling */
 }
 
 .unitheading {
@@ -178,6 +433,40 @@ body {
   margin-bottom: 16px;
 }
 
+
+/* printed-book example items: pre-solved by the book, rendered as plain text */
+.exampleitem .itembody {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--soft);
+  font-style: italic;
+  background: var(--example-bg);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.exampleitem .prompt {
+  flex: 1 1 0;
+}
+
+/* write rows with the printed underline: sentence left, field right */
+.markeditem .itembody {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+.markeditem .prompt {
+  flex: 1 1 0;
+}
+.markeditem .winline {
+  flex: 0 0 auto;
+  min-width: 240px;
+}
+.markeditem .variants {
+  flex-basis: 100%;
+}
+
 .exercise header {
   display: flex;
   gap: 10px;
@@ -194,7 +483,7 @@ body {
 .instruction {
   margin: 0;
   font-style: italic;
-  color: #44403c;
+  color: var(--soft);
 }
 
 .wordbank {
@@ -231,19 +520,32 @@ body {
   min-width: 0;
 }
 
-.prompt {
+.printed {
+  font-style: italic;
   color: var(--muted);
-  margin-right: 8px;
 }
 
 .gap,
 .winline {
   border: none;
-  border-bottom: 1px solid #a8a29e;
-  background: #fdfcf9;
+  border-bottom: 1px solid var(--input-border);
+  background: var(--input-bg);
   font: inherit;
   padding: 2px 4px;
   min-width: 120px;
+}
+
+textarea.gap,
+textarea.winline {
+  resize: none;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: -9px;
+  line-height: inherit;
+  white-space: pre-wrap;
+  /* sink the field so its box reads on the text line; unlike a negative
+     bottom margin this keeps line-box spacing intact, so stacked full-width
+     fields never overlap */
 }
 
 .unitlink.done {
@@ -251,28 +553,30 @@ body {
 }
 
 .donemark {
-  color: var(--ok);
+  color: var(--ok-text);
   margin-left: 3px;
   font-size: 11px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .gap.ok,
 .winline.ok,
 .wfull.ok {
   border-bottom-color: var(--ok);
-  background: #f0fdf4;
+  background: var(--ok-bg);
 }
 
 .gap.bad,
 .winline.bad,
 .wfull.bad {
   border-bottom-color: var(--bad);
-  background: #fef2f2;
+  background: var(--bad-bg);
 }
 
 .wfull {
   width: 100%;
-  border: 1px solid #a8a29e;
+  border: 1px solid var(--input-border);
   border-radius: 4px;
   font: inherit;
   padding: 4px 6px;
@@ -308,11 +612,11 @@ body {
 }
 
 .option.ok {
-  background: #f0fdf4;
+  background: var(--ok-bg);
 }
 
 .option.bad {
-  background: #fef2f2;
+  background: var(--bad-bg);
 }
 
 .matching {
@@ -333,22 +637,105 @@ body {
 }
 
 .matchleft.ok {
-  background: #f0fdf4;
+  background: var(--ok-bg);
 }
 
-.matchleft.bad {
-  background: #fef2f2;
+.grouppct {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: none;
+  letter-spacing: 0;
 }
 
+.grouppct.full,
+.unitpct.full {
+  color: var(--ok-text);
+  font-weight: 600;
+}
+
+.unitpct {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+/* self-check controls: example toggle left, mark buttons right */
+.examplebtn {
+  margin-right: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: underline dotted;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mark {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 4px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mark.ok:hover {
+  background: var(--ok-bg);
+  border-color: var(--ok);
+}
+
+.mark.bad:hover {
+  background: var(--bad-bg);
+  border-color: var(--bad);
+}
+
+.mark.ok.active {
+  background: var(--ok-solid);
+  border-color: var(--ok-solid);
+  color: var(--ok-solid-contrast);
+}
+
+.mark.bad.active {
+  background: var(--bad-solid);
+  border-color: var(--bad-solid);
+  color: var(--bad-solid-contrast);
+}
+
+/* themed matching selects */
 .matchrow select {
   max-width: 320px;
   font: inherit;
   font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--panel);
+  color: var(--text);
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+.matchrow select:hover {
+  border-color: var(--accent);
+}
+
+.matchrow select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
 }
 
 .selfcheck textarea {
   width: 100%;
-  border: 1px solid #a8a29e;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text);
   border-radius: 4px;
   font: inherit;
   padding: 4px 6px;
@@ -362,10 +749,6 @@ body {
   margin-top: 6px;
 }
 
-.markstate {
-  font-size: 13px;
-  color: var(--muted);
-}
 
 .cardactions {
   display: flex;
@@ -377,27 +760,22 @@ body {
 .cardactions button {
   font: inherit;
   font-size: 14px;
+  color: inherit;
   padding: 5px 14px;
   border-radius: 4px;
   border: 1px solid var(--border);
   background: var(--bg);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.3;
 }
 
 .cardactions button.primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
-}
-
-.markbtn.ok {
-  border-color: var(--ok);
-  background: #f0fdf4;
-}
-
-.markbtn.bad {
-  border-color: var(--bad);
-  background: #fef2f2;
+  color: var(--accent-contrast);
 }
 
 .score {
@@ -406,6 +784,6 @@ body {
 }
 
 .score.ok {
-  color: var(--ok);
+  color: var(--ok-text);
   font-weight: 600;
 }

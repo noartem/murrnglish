@@ -6,16 +6,22 @@ export interface FillInItem {
   num: number;
   parts: string[];
   answers: string[][];
+  /** pre-solved in the printed book; rendered as plain text, excluded from grading */
+  example?: boolean;
 }
 export interface ChoiceItem {
-  num: number;
+  num: number | string;
   options: string[];
-  answer: number;
+  answer: number | number[];
+  /** pre-solved in the printed book; rendered as static text, excluded from grading */
+  example?: boolean;
 }
 export interface WriteItem {
-  num: number;
+  num: number | string;
   prompt: string;
   answers: string[];
+  /** pre-solved in the printed book or key-less; rendered as static text, excluded from grading */
+  example?: boolean;
 }
 export interface SelfCheckItem {
   num: number;
@@ -34,6 +40,8 @@ export interface Exercise {
   leftOptions?: string[];
   rightOptions?: string[];
   pairs?: [number, number][];
+  /** printed-book example items (solved on the page), by item num */
+  example?: number[];
 }
 
 export interface UnitData {
@@ -61,10 +69,6 @@ export interface IndexData {
   additional: { title: string; exercises: number[] };
 }
 
-export function pageUrl(pdfPage: number): string {
-  return `/pages/p${String(pdfPage).padStart(3, "0")}.png`;
-}
-
 export async function fetchIndex(): Promise<IndexData> {
   const r = await fetch("/data/index.json");
   if (!r.ok) throw new Error(`index.json: ${r.status}`);
@@ -80,5 +84,17 @@ export async function fetchUnit(n: number): Promise<UnitData> {
 export async function fetchAdditional(n: number): Promise<AdditionalData> {
   const r = await fetch(`/data/additional/${String(n).padStart(2, "0")}.json`);
   if (!r.ok) throw new Error(`additional-${n}: ${r.status}`);
+  return r.json();
+}
+
+export interface UnitTotals {
+  total: number;
+  exercises: Record<string, number>;
+}
+export type TotalsMap = Record<string, UnitTotals>;
+
+export async function fetchTotals(): Promise<TotalsMap> {
+  const r = await fetch("/data/totals.json");
+  if (!r.ok) throw new Error(`totals.json: ${r.status}`);
   return r.json();
 }

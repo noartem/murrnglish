@@ -6,6 +6,20 @@ export function normalize(s: string): string {
     .replace(/[’‘]/g, "'")
     .replace(/[“”]/g, '"')
     .toLowerCase()
+    .replace(/\s*'/g, "'")
+    .replace(
+      /\b(is|are|was|were|do|does|did|have|has|had|could|would|should|must|need|might|may|dare|used|ought)n't\b/g,
+      "$1 not",
+    )
+    .replace(/\bcan't\b/g, "can not")
+    .replace(/\bcannot\b/g, "can not")
+    .replace(/\bwon't\b/g, "will not")
+    .replace(/\bshan't\b/g, "shall not")
+    .replace(/\bi'm\b/g, "i am")
+    .replace(/\b([a-z]+)'re\b/g, "$1 are")
+    .replace(/\b([a-z]+)'s\b/g, "$1 is")
+    .replace(/\b([a-z]+)'ll\b/g, "$1 will")
+    .replace(/\b([a-z]+)'ve\b/g, "$1 have")
     .replace(/\s+/g, " ")
     .replace(/[.?!]+$/, "")
     .trim();
