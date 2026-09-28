@@ -9,9 +9,19 @@ __pycache__/
 # Generated copy of data/ (scripts/sync_data.mjs)
 app/public/data/
 
-# Rendered page images, ~85 MB (scripts/render_pages.py)
-app/public/pages/
+# Viewer-served PDF (copied from original/book.pdf)
+app/public/book.pdf
 
 # Extracted page text and answer key (scripts/extract_pages.py, scripts/split_key.py)
 work/pages/
 work/key/
+
+# Untracked experiment outputs: e2e screenshots, probe images, apply reports,
+# one-off script copies, working backups (work/data-before-hints, test-apply)
+work/*.png
+work/*.log
+work/*.txt
+work/*.py
+work/data-before-hints/
+work/test-apply/
+theme-light-additional.png
