@@ -178,17 +178,37 @@ export default function App() {
     const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
     if (vp) vp.scrollTop = 0;
   }, [route]);
+  // the pane focus pump is per-page: clear it on navigation so a stale tick
+  // can never steal focus from the exercise when PageViewer remounts
+  useEffect(() => {
+    setPaneFocusTick(0);
+  }, [route]);
 
   // a fresh page puts the caret into the first exercise input so keyboard
   // work starts immediately; fires when the data lands, which covers every
   // way of opening a page (hash, sidebar link, bottom pager buttons)
   useEffect(() => {
     if (!unit && !additional) return;
-    const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
-    const first = vp?.querySelector<HTMLElement>(
-      ".exercise textarea, .exercise input, .exercise select, .exercise button",
-    );
-    first?.focus({ preventScroll: true });
+    // the pane instance/inputs may not exist yet on the very first load —
+    // retry across a few frames so focus always lands on the exercise
+    let raf = 0;
+    let tries = 0;
+    const focusFirst = () => {
+      const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
+      const first = vp?.querySelector<HTMLElement>(
+        ".exercise textarea, .exercise input, .exercise select, .exercise button",
+      );
+      if (!first) return false;
+      first.focus({ preventScroll: true });
+      return true;
+    };
+    if (focusFirst()) return;
+    const tick = () => {
+      if (focusFirst() || ++tries > 60) return;
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
   }, [unit, additional]);
 
   // keep the active unit button in the visible part of the sidebar
@@ -336,13 +356,23 @@ export default function App() {
     goPrevUnit: () => goTarget(pager?.prev ?? null),
     focusPagePane: () => setPaneFocusTick((t) => t + 1),
     focusUnitPanel: () => activeRef.current?.focus(),
+    toggleSidebar,
+    cycleTheme: () =>
+      document.querySelector<HTMLButtonElement>(
+        '.topbar-actions .themebtn[aria-label^="Theme"]',
+      )?.click(),
   });
   const isHome = route.kind === "home";
 
   return (
     <div className="app">
       <header className="topbar">
-        <button className="sidebartoggle" onClick={toggleSidebar}>
+        <button
+          className="sidebartoggle"
+          onClick={toggleSidebar}
+          title={"Unit list \u2014 " + SC.sidebarToggle}
+          aria-label="Toggle unit list"
+        >
           <Menu size={16} aria-hidden />
         </button>
         <div className="topbar-mid">
@@ -375,6 +405,7 @@ export default function App() {
           )}
         </div>
         <div className="topbar-actions">
+          <ShortcutsHelpButton onOpen={openHelp} />
           <button
             className="themebtn"
             onClick={() => setModalOpen(true)}
@@ -384,7 +415,6 @@ export default function App() {
             <Share2 size={15} aria-hidden />
           </button>
           <ThemeToggle />
-          <ShortcutsHelpButton onOpen={openHelp} />
         </div>
       </header>
       <div className="main">

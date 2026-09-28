@@ -18,65 +18,80 @@ export const SC = {
   prevUnit: "Shift+P",
   unitPanel: "Shift+E",
   pagePane: "Shift+S",
+  sidebarToggle: "Alt+Shift+E",
+  cycleTheme: "Shift+T",
+  invertPage: "T",
   help: "Shift+?",
 } as const;
 
 export interface HelpEntry {
-  keys: string;
+  keys: string[]; // one combo, rendered as separate key chips
   title: string;
   desc: string;
-  sub?: { keys: string; desc: string }[];
+  sub?: { keys: string[]; alt?: string[]; desc: string }[];
 }
 
 export const SHORTCUT_HELP: HelpEntry[] = [
   {
-    keys: "Ctrl + Enter",
+    keys: ["Ctrl", "Enter"],
     title: "Check the exercise",
     desc: "Works while you are inside one exercise (the cursor is in one of its inputs, or one of its buttons is focused). Checks your answers.",
   },
   {
-    keys: "Shift + A",
+    keys: ["Shift", "A"],
     title: "Show or hide answers",
     desc: "Also works inside one exercise. The correct answers appear under the items, and answers that match your text are green. Your own text does not change. Press it again to hide the answers.",
   },
   {
-    keys: "Shift + N",
+    keys: ["Shift", "N"],
     title: "Next unit",
     desc: "Go to the next unit of the course.",
   },
   {
-    keys: "Shift + P",
+    keys: ["Shift", "P"],
     title: "Previous unit",
     desc: "Go to the previous unit of the course.",
   },
   {
-    keys: "Shift + E",
+    keys: ["Shift", "E"],
     title: "Unit list",
     desc: "Shows the unit list and focuses the current unit. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
     sub: [
-      { keys: "←  →", desc: "move to the next or previous unit; at the end of a group you jump to the next group" },
-      { keys: "↑  ↓", desc: "move to the next or previous group (first unit)" },
-      { keys: "Enter", desc: "open the focused unit" },
-      { keys: "Esc", desc: "go back to where you were (or to the first exercise)" },
+      { keys: ["\u2190"], alt: ["\u2192"], desc: "move to the next or previous unit; at the end of a group you jump to the next group" },
+      { keys: ["\u2191"], alt: ["\u2193"], desc: "move to the next or previous group (first unit)" },
+      { keys: ["Enter"], desc: "open the focused unit" },
+      { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },
     ],
   },
   {
-    keys: "Shift + S",
+    keys: ["Alt", "Shift", "E"],
+    title: "Show or hide unit list",
+    desc: "Toggles the unit list exactly like the burger button at the top. The focus stays where it is.",
+  },
+  {
+    keys: ["Shift", "S"],
     title: "Book page",
     desc: "Moves the focus to the book page on the left.",
     sub: [
-      { keys: "↑ ↓ ← →", desc: "scroll the page" },
-      { keys: "Ctrl +  /  Ctrl −", desc: "zoom in / zoom out" },
-      { keys: "R", desc: "reset the zoom; if the zoom is already normal, press R again to scroll back to the top" },
-      { keys: "Esc", desc: "go back to where you were (or to the first exercise)" },
+      { keys: ["\u2191"], alt: ["\u2193", "\u2190", "\u2192"], desc: "scroll the page" },
+      { keys: ["Ctrl", "="], alt: ["Ctrl", "\u2212"], desc: "zoom in / zoom out" },
+      { keys: ["Ctrl", "="], alt: ["Ctrl", "\u2212"], desc: "zoom in / zoom out" },
+      { keys: ["T"], desc: "invert the page colors (dark theme only)" },
+      { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },
     ],
   },
   {
-    keys: "Shift + ?",
+    keys: ["Shift", "?"],
     title: "This help",
     desc: "Open this window from any place. Press Esc to close it.",
   },
+  {
+    keys: ["Shift", "T"],
+    title: "Switch theme",
+    desc: "Cycle the color theme: system, light, dark.",
+  },
 ];
+
 
 // "Shift+?" arrives as e.key === "?" with shiftKey set on every layout.
 // Letter shortcuts (S/E/N/P/A) always check e.code, so they work on any
@@ -91,6 +106,8 @@ export interface ShortcutDeps {
   goPrevUnit(): void;
   focusPagePane(): void; // App bumps the pane focus tick
   focusUnitPanel(): void; // App focuses the active unit button
+  toggleSidebar(): void; // App: burger toggle (no focus move)
+  cycleTheme(): void; // App cycles system/light/dark
 }
 
 export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): void } {
@@ -190,6 +207,13 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
           return;
         }
       }
+      // Alt+Shift+E toggles the sidebar like the burger button, without
+      // moving focus into it (before the plain Shift+E branch)
+      if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && e.code === "KeyE") {
+        e.preventDefault();
+        depsRef.current.toggleSidebar();
+        return;
+      }
 
       // 6. global letter shortcuts (after sidebar scope so they still work
       // while focus sits in the unit panel)
@@ -212,6 +236,10 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
           case "KeyP":
             e.preventDefault();
             depsRef.current.goPrevUnit();
+            return;
+          case "KeyT":
+            e.preventDefault();
+            depsRef.current.cycleTheme();
             return;
         }
       }

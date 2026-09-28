@@ -236,7 +236,33 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     return () => el.removeEventListener("wheel", onWheel);
   }, []);
 
-  // Shift+S lands focus here: pane-scoped keys (arrows / Ctrl zoom / R / Esc)
+  // smooth scrolling: OverlayScrollbars suppresses the native smooth
+  // scroll-behavior on its viewport, so animate scrollTop/scrollLeft
+  const smoothScroll = (top: number, left: number) => {
+    const vp = vpEl();
+    if (!vp) return;
+    const fromTop = vp.scrollTop;
+    const fromLeft = vp.scrollLeft;
+    const dx = left - fromLeft;
+    const dy = top - fromTop;
+    const t0 = performance.now();
+    const tick = (t: number) => {
+      const k = Math.min(1, (t - t0) / 280);
+      const e = 1 - Math.pow(1 - k, 3); // easeOutCubic
+      vp.scrollTop = fromTop + dy * e;
+      vp.scrollLeft = fromLeft + dx * e;
+      if (k < 1) {
+        // RAF preferred; the timer keeps the animation alive when RAF
+        // callbacks are suspended (hidden/background frames, headless).
+        // Double-firing is harmless: k comes from the timestamp.
+        requestAnimationFrame((r) => tick(r));
+        window.setTimeout(() => tick(performance.now()), 32);
+      }
+    };
+    requestAnimationFrame((r) => tick(r));
+    window.setTimeout(() => tick(performance.now()), 32);
+  };
+
   const onKey = (e: React.KeyboardEvent) => {
     if (e.key === "Escape") {
       e.preventDefault();
@@ -246,19 +272,19 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     switch (e.key) {
       case "ArrowUp":
         e.preventDefault();
-        vpEl()?.scrollBy({ top: -SCROLL_STEP });
+        smoothScroll((vpEl()?.scrollTop ?? 0) - SCROLL_STEP, vpEl()?.scrollLeft ?? 0);
         return;
       case "ArrowDown":
         e.preventDefault();
-        vpEl()?.scrollBy({ top: SCROLL_STEP });
+        smoothScroll((vpEl()?.scrollTop ?? 0) + SCROLL_STEP, vpEl()?.scrollLeft ?? 0);
         return;
       case "ArrowLeft":
         e.preventDefault();
-        vpEl()?.scrollBy({ left: -SCROLL_STEP });
+        smoothScroll(vpEl()?.scrollTop ?? 0, (vpEl()?.scrollLeft ?? 0) - SCROLL_STEP);
         return;
       case "ArrowRight":
         e.preventDefault();
-        vpEl()?.scrollBy({ left: SCROLL_STEP });
+        smoothScroll(vpEl()?.scrollTop ?? 0, (vpEl()?.scrollLeft ?? 0) + SCROLL_STEP);
         return;
     }
     if (
@@ -279,16 +305,18 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
       step(-0.25);
       return;
     }
+
+    if (!e.ctrlKey && !e.metaKey && !e.altKey && !e.shiftKey && e.code === "KeyT") {
+      e.preventDefault();
+      viewerRef.current?.querySelector<HTMLButtonElement>(".invertbtn")?.click();
+      return;
+    }
     if (!e.ctrlKey && !e.metaKey && !e.altKey && e.code === "KeyR") {
       e.preventDefault();
       if (Math.abs(zoomRef.current - defaultZoomRef.current) > 0.005) {
         animateTo(clampToBounds(1));
       } else {
-        const vp = vpEl();
-        if (vp) {
-          vp.scrollTop = 0;
-          vp.scrollLeft = 0;
-        }
+        smoothScroll(0, 0);
       }
     }
   };

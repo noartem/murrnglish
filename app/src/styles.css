@@ -241,7 +241,8 @@ body {
   align-items: center;
 }
 
-.themebtn {
+.themebtn,
+.helpbtn {
   border: 1px solid var(--border);
   background: var(--panel);
   border-radius: 4px;
@@ -252,12 +253,10 @@ body {
   align-items: center;
 }
 
-.themebtn:hover {
+.themebtn:hover,
+.helpbtn:hover {
   color: var(--text);
   border-color: var(--input-border);
-}
-.helpbtn {
-  margin-left: 6px;
 }
 
 .main {
@@ -1256,4 +1255,18 @@ kbd {
   background: var(--panel);
   color: var(--text);
   white-space: nowrap;
+}
+
+/* keyboard-shortcut chips: each key is its own kbd, combos joined by "+" */
+.keychips {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.keyplus,
+.keysep {
+  color: var(--muted);
+  font-size: 11px;
 }

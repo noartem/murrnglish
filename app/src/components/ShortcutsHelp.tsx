@@ -3,7 +3,7 @@
 // in useCourseShortcuts (helpOpen state lives in App); the backdrop click
 // is the only local handler here.
 
-import { useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { Keyboard, X } from "lucide-react";
 import { SC, SHORTCUT_HELP } from "../shortcuts";
 
@@ -46,16 +46,28 @@ export function ShortcutsModal({ onClose }: { onClose: () => void }) {
           </button>
         </div>
         {SHORTCUT_HELP.map((entry) => (
-          <section className="helpentry" key={entry.keys}>
+          <section className="helpentry" key={entry.title}>
             <div className="helpentryhead">
-              <kbd>{entry.keys}</kbd> <strong>{entry.title}</strong>
+              <span className="keychips">
+                <KeyChips combo={entry.keys} />
+              </span>{" "}
+              <strong>{entry.title}</strong>
             </div>
             <p>{entry.desc}</p>
             {entry.sub && (
               <ul>
                 {entry.sub.map((s) => (
-                  <li key={s.keys + s.desc}>
-                    <kbd>{s.keys}</kbd> — {s.desc}
+                  <li key={s.desc}>
+                    <span className="keychips">
+                      <KeyChips combo={s.keys} />
+                      {s.alt && (
+                        <>
+                          <span className="keysep">/</span>
+                          <KeyChips combo={s.alt} />
+                        </>
+                      )}
+                    </span>{" "}
+                    {"\u2014"} {s.desc}
                   </li>
                 ))}
               </ul>
@@ -64,5 +76,19 @@ export function ShortcutsModal({ onClose }: { onClose: () => void }) {
         ))}
       </div>
     </div>
+  );
+}
+
+// one combo = separate key chips joined by "+"
+function KeyChips({ combo }: { combo: string[] }) {
+  return (
+    <>
+      {combo.map((k, i) => (
+        <Fragment key={i}>
+          {i > 0 && <span className="keyplus">+</span>}
+          <kbd>{k}</kbd>
+        </Fragment>
+      ))}
+    </>
   );
 }
