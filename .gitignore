@@ -9,10 +9,13 @@ __pycache__/
 # Generated copy of data/ (scripts/sync_data.mjs)
 app/public/data/
 
-# work/ holds only committed spec + validator inputs (PARSING-SPEC.md,
-# layout.json, missing-key.txt); everything else is session artifacts
+# Session artifacts (screenshots, logs, reports, one-off scripts, backups)
 work/*.png
 work/*.log
 work/*.txt
 work/*.py
-work/*/
+
+# Extracted book artifacts: only plain page text is tracked (validator
+# ground truth for coverage checks); block text and the split key stay local
+work/pages/blocks/
+work/key/

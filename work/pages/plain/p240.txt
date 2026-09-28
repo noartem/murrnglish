@@ -1,0 +1,56 @@
+Unit
+114 in case
+       A   Study this example situation:
+
+                                                                   Your car should have a spare wheel in case you have
+                                                                   a puncture.
+                                                                   (= because it is possible you will have a puncture)
+                                                                   in case something happens =
+                                                                   because it is possible it will happen
+
+
+
+
+           Some more examples of in case:
+                  I’d better write down my password in case I forget it.
+                  (= because it is possible I will forget it)
+                  Shall I draw a map for you in case you have a problem finding our house?
+                  (= because it is possible you will have problems finding it)
+                  I’ll remind them about the meeting in case they’ve forgotten.
+                  (= because it is possible they have forgotten)
+           We use just in case for a smaller possibility:
+                    I don’t think it will rain, but I’ll take an umbrella just in case. (= just in case it rains)
+           We do not use will after in case (see also Unit 25):
+                   I’ll write down my password in case I forget it. (not in case I will forget)
+
+       B   In case and if are not the same. We use in case to say why somebody does (or doesn’t do) something.
+           You do something now in case something happens later.
+           Compare:
+
+             in case                                                    if
+                    We’ll buy some more food in case                            We’ll buy some more food if Tom
+                    Tom comes.                                                  comes.
+                    (= Maybe Tom will come. We’ll buy                           (= Maybe Tom will come. If he comes,
+                    some more food now, whether he comes                        we’ll buy some more food. If he doesn’t
+                    or not. Then we’ll already have the food                    come, we won’t buy any more food.)
+                    if he comes.)
+                    I’ll give you my phone number in case                       You can call me on this number if you
+                    you need to contact me.                                     need to contact me.
+                    You should insure your bike in case it                      You should inform the police if your
+                    is stolen.                                                  bike is stolen.
+
+
+       C   You can use in case + past to say why somebody did something:
+                    I gave him my phone number in case he needed to contact me.
+                    (= because it was possible that he would need to contact me)
+                    I drew a map for Sarah in case she had a problem finding our house.
+                    We rang the doorbell again in case they hadn’t heard it the first time.
+
+       D   in case of = if there is … (especially on notices, instructions etc.):
+                    In case of fire, please leave the building as quickly as possible. (= if there is a fire)
+                    In case of emergency, call this number. (= if there is an emergency)
+
+
+
+228             if ➜ Units 25, 38–40
+
