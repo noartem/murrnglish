@@ -70,7 +70,7 @@ function getDoc(): Promise<PDFDocumentProxy> {
         /* keep the original worker URL */
       }
       pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
-      const r = await fetch("/book.pdf");
+      const r = await fetch(`${import.meta.env.BASE_URL}book.pdf`);
       if (!r.ok) throw new Error(`book.pdf: ${r.status}`);
       return pdfjs.getDocument({ data: await r.arrayBuffer() }).promise;
     })();
