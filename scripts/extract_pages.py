@@ -1,4 +1,4 @@
-"""Extract per-page text from original/book.pdf.
+"""Extract per-page text from app/public/book.pdf.
 
 Plain output:  pdftotext -layout, one file per page -> work/pages/plain/pNNN.txt
 Block output:  PyMuPDF blocks, 2-column reading order for key pages ->
@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PDF = ROOT / "original" / "book.pdf"
+PDF = ROOT / "app" / "public" / "book.pdf"
 PLAIN = ROOT / "work" / "pages" / "plain"
 BLOCKS = ROOT / "work" / "pages" / "blocks"
 LAYOUT = ROOT / "work" / "layout.json"

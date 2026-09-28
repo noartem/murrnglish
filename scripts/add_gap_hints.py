@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Add missing bracket hints (e.g. "(not / use)") to fill-in items in data/.
 
-Book ground truth: original/book.pdf prints a parenthetical hint after many
+Book ground truth: app/public/book.pdf prints a parenthetical hint after many
 fill-in gaps.  Extraction of some exercises lost that hint text, so the app
 shows bare gaps.  This script scans the book pages for hint parens and adds
 them to items' `parts` verbatim.
@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PDF = ROOT / "original" / "book.pdf"
+PDF = ROOT / "app" / "public" / "book.pdf"
 UNITS = ROOT / "data" / "units"
 ADDITIONAL = ROOT / "data" / "additional"
 REPORT = ROOT / "work" / "hint-gaps-report.txt"
