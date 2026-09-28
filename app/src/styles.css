@@ -237,7 +237,6 @@ body {
 }
 
 .themebtn {
-  margin-left: auto;
   border: 1px solid var(--border);
   background: var(--panel);
   border-radius: 4px;
@@ -959,4 +958,147 @@ textarea.winline {
 .score.ok {
   color: var(--ok-text);
   font-weight: 600;
+}
+
+/* progress modal: import / export / share over a unit-square overview */
+.topbar-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 60; /* sidebar card sits at 40 */
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  animation: overlay-in 0.18s ease-out;
+}
+
+.modal-overlay.closing {
+  animation: overlay-out 0.14s ease-in forwards;
+}
+
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: min(720px, 92vw);
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px;
+  /* slides in from the bottom edge; .closing (added while open=false for the
+     150ms JS unmount delay) plays the reverse instead */
+  animation: modal-in 0.18s ease-out;
+}
+
+.modal.closing {
+  animation: modal-out 0.14s ease-in forwards;
+}
+
+.modal-body {
+  flex: 1;
+  min-height: 0;
+}
+
+@keyframes modal-in {
+  from {
+    transform: translateY(56px);
+    opacity: 0;
+  }
+}
+
+@keyframes modal-out {
+  to {
+    transform: translateY(56px);
+    opacity: 0;
+  }
+}
+
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes overlay-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal,
+  .modal-overlay {
+    animation: none;
+  }
+}
+
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.modal-summary {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.unitgrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+/* untouched unit = flat grey; partial = the ok fill mixed toward grey by its
+   percent (set inline); done = full ok fill. Borderless 18px mosaic, 2px apart. */
+.unitsq {
+  width: 18px;
+  height: 18px;
+  background: var(--border);
+}
+
+.unitsq.done {
+  background: var(--ok-solid);
+}
+
+.modal-opt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* the preview's apply button is the modal's one strong action */
+.modal-actions .primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.modal-msg {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 10px;
+  min-height: 18px;
 }

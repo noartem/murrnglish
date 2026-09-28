@@ -8,21 +8,29 @@ import { PageViewer } from "./components/PageViewer";
 import { Home } from "./components/Home";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
-import { ArrowLeft, ArrowRight, Check, Menu } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Menu, Share2 } from "lucide-react";
 import {
   OverlayScrollbarsComponent,
   type OverlayScrollbarsComponentRef,
 } from "overlayscrollbars-react";
 import {
+  completedUnitIds,
   countCorrect,
   emptyProgress,
   lastUnitFromProgress,
   loadLastRoute,
   loadProgress,
+  parseProgressText,
+  pct,
+  progressPayload,
   saveLastRoute,
+  saveProgress,
+  scopeStats,
   unitCompleted,
 } from "./progress";
 import type { Progress } from "./progress";
+import { ProgressModal } from "./components/ProgressModal";
+import { SHARE_HASH_RE, decodeShare, encodeShare } from "./share";
 // home landing: bare "/", "#home", or any unknown hash; the rest are content
 type Route = { kind: "home" } | { kind: "unit"; n: number } | { kind: "additional"; n: number };
 
@@ -56,28 +64,6 @@ function routeToHash(r: Route): string {
   return r.kind === "unit" ? `u${r.n}` : r.kind === "additional" ? `a${r.n}` : "home";
 }
 
-function scopeStats(
-  totals: TotalsMap | null,
-  keys: string[],
-  progress: Progress,
-): { correct: number; total: number } {
-  if (!totals) return { correct: 0, total: 0 };
-  let correct = 0;
-  let total = 0;
-  for (const k of keys) {
-    const t = totals[k];
-    if (!t) continue;
-    total += t.total;
-    for (const [id, n] of Object.entries(t.exercises))
-      if (n > 0) correct += Math.min(progress.results[id]?.correct ?? 0, n); // cap stale saved results
-  }
-  return { correct, total };
-}
-
-function pct(s: { correct: number; total: number }): number {
-  return s.total ? Math.min(100, Math.round((s.correct / s.total) * 100)) : 0;
-}
-
 export default function App() {
   const [route, setRoute] = useState<Route>(parseHash);
   const [index, setIndex] = useState<IndexData | null>(null);
@@ -88,7 +74,18 @@ export default function App() {
     () => localStorage.getItem("egu-course-sidebar-collapsed") !== "1",
   );
   const [totals, setTotals] = useState<TotalsMap | null>(null);
+  // incoming progress held for the preview modal; applied only on confirm.
+  // ONE mechanism for both the #p= link open and the JSON file import.
+  const [preview, setPreview] = useState<{ p: Progress; src: "file" | "link" } | null>(null);
   const [progress, setProgressState] = useState<Progress>(emptyProgress);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [notice, setNotice] = useState("");
+  // transient topbar notice, auto-clears
+  useEffect(() => {
+    if (!notice) return;
+    const t = setTimeout(() => setNotice(""), 6000);
+    return () => clearTimeout(t);
+  }, [notice]);
   const rightpaneRef = useRef<OverlayScrollbarsComponentRef>(null);
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
@@ -125,6 +122,7 @@ export default function App() {
     }
     fetchIndex().then(setIndex).catch((e) => setError(String(e)));
     fetchTotals().then(setTotals).catch(() => setTotals(null));
+    void applyShareHash();
   }, []);
   // remember the last content page for the "/" entry redirect
   useEffect(() => {
@@ -134,7 +132,14 @@ export default function App() {
   }, [route]);
 
   useEffect(() => {
-    const onHash = () => setRoute(parseHash());
+    const onHash = () => {
+      // "#p=..." share links replace progress; routeFromHash never sees them
+      if (SHARE_HASH_RE.test(window.location.hash)) {
+        void applyShareHash();
+        return;
+      }
+      setRoute(parseHash());
+    };
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
@@ -185,6 +190,72 @@ export default function App() {
 
   const doneUnits = useMemo(() => completedUnitIds(progress), [progress]);
   const counts = useMemo(() => countCorrect(progress), [progress]);
+
+  // ---- progress import / export / share -------------------------------------
+
+  // file import goes through the same preview-confirm modal as share links:
+  // parse, hold, show — nothing is applied until the user confirms
+  async function handleImportFile(file: File): Promise<string> {
+    let text: string;
+    try {
+      text = await file.text();
+    } catch {
+      return "Could not read the file";
+    }
+    const p = parseProgressText(text);
+    if (!p) return "Invalid progress file";
+    setPreview({ p, src: "file" });
+    return ""; // the preview modal takes over
+  }
+
+  function handleExport(includeAnswers: boolean): string {
+    const blob = new Blob([JSON.stringify(progressPayload(progress, includeAnswers))], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `egu-course-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    return includeAnswers
+      ? "File downloaded (answers included)"
+      : "File downloaded (answers excluded)";
+  }
+
+  async function handleShare(includeAnswers: boolean): Promise<string> {
+    const code = await encodeShare(progressPayload(progress, includeAnswers));
+    const url = `${location.origin}${location.pathname}#p=${code}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      return "Link copied to clipboard";
+    } catch {
+      window.prompt("Copy this link:", url);
+      return "Copy the link from the prompt";
+    }
+  }
+
+  // "#p=..." share links: decode and hold the INCOMING progress for a preview
+  // modal — nothing is applied until the user confirms; the hash is rewritten
+  // to a plain unit route (replaceState — no hashchange, so no re-entry loop).
+  async function applyShareHash(): Promise<void> {
+    const m = window.location.hash.match(SHARE_HASH_RE);
+    if (!m) return;
+    const p = await decodeShare(`${m[1]}.${m[2]}`);
+    if (p) setPreview({ p, src: "link" });
+    else setNotice("Share link is invalid or corrupted");
+    window.history.replaceState(null, "", `${window.location.pathname}#u1`);
+    setRoute({ kind: "unit", n: 1 });
+  }
+
+  function handleApplyPreview(): void {
+    if (!preview) return;
+    setProgressState(preview.p);
+    saveProgress(preview.p, 0);
+    setPreview(null);
+    setModalOpen(false); // close entirely: the notice must be visible
+    setNotice(preview.src === "link" ? "Progress loaded from link" : "Progress imported");
+  }
 
   function navUnit(n: number) {
     window.location.hash = `u${n}`;
@@ -256,8 +327,23 @@ export default function App() {
           {isUnitDone && (
             <span className="donetag"><Check size={13} aria-hidden /> Unit {route.kind === "unit" ? route.n : ""} done</span>
           )}
+          {notice && (
+            <span className="progressline" role="status">
+              {notice}
+            </span>
+          )}
         </div>
-        <ThemeToggle />
+        <div className="topbar-actions">
+          <button
+            className="themebtn"
+            onClick={() => setModalOpen(true)}
+            title="Progress: import, export, share"
+            aria-label="Progress: import, export, share"
+          >
+            <Share2 size={15} aria-hidden />
+          </button>
+          <ThemeToggle />
+        </div>
       </header>
       <div className="main">
         {!sidebarOpen && <div className="sidebar-edge" aria-hidden />}
@@ -406,30 +492,23 @@ export default function App() {
         </div>
       )}
       </div>
+      <ProgressModal
+        open={modalOpen || preview !== null}
+        onClose={() => {
+          setModalOpen(false);
+          setPreview(null);
+        }}
+        progress={progress}
+        preview={preview ? preview.p : null}
+        index={index}
+        totals={totals}
+        onApplyPreview={handleApplyPreview}
+        onImport={handleImportFile}
+        onExport={handleExport}
+        onShare={handleShare}
+      />
     </div>
   );
-}
-
-function completedUnitIds(progress: Progress): Set<number> {
-  // A unit is done when its results entries N.1..N.k are present and
-  // consecutive (item results exist only for checked exercises).
-  const byUnit = new Map<number, Set<string>>();
-  for (const id of Object.keys(progress.results)) {
-    const m = id.match(/^(\d+)\./);
-    if (!m) continue;
-    const u = Number(m[1]);
-    const set = byUnit.get(u) ?? new Set<string>();
-    set.add(id);
-    byUnit.set(u, set);
-  }
-  const done = new Set<number>();
-  for (const [u, ids] of byUnit) {
-    let k = 1;
-    while (ids.has(`${u}.${k}`)) k++;
-    k -= 1;
-    if (k >= 1 && ids.size === k) done.add(u);
-  }
-  return done;
 }
 
 interface NavTarget {
