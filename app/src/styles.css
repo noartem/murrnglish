@@ -808,6 +808,16 @@ textarea.winline {
   outline-offset: 1px;
 }
 
+/* programmatic focus lands in the first exercise input on every new page */
+.gap:focus:not(.ok):not(.bad),
+.winline:focus:not(.ok):not(.bad) {
+  border-bottom-color: var(--accent);
+}
+.wfull:focus,
+.selfcheck textarea:focus {
+  border-color: var(--accent);
+}
+
 .selfcheck textarea {
   width: 100%;
   border: 1px solid var(--input-border);

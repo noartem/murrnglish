@@ -122,6 +122,18 @@ export default function App() {
     if (vp) vp.scrollTop = 0;
   }, [route]);
 
+  // a fresh page puts the caret into the first exercise input so keyboard
+  // work starts immediately; fires when the data lands, which covers every
+  // way of opening a page (hash, sidebar link, bottom pager buttons)
+  useEffect(() => {
+    if (!unit && !additional) return;
+    const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
+    const first = vp?.querySelector<HTMLElement>(
+      ".exercise textarea, .exercise input, .exercise select, .exercise button",
+    );
+    first?.focus({ preventScroll: true });
+  }, [unit, additional]);
+
   // keep the active unit button in the visible part of the sidebar
   const activeRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
