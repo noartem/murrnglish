@@ -18,6 +18,11 @@
   --bad-bg: #fef2f2;
   --img-bg: #ffffff;
   --img-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* book-page paper shown behind the canvas until pdf.js paints it. NOT
+     themed: in dark mode the pagebox invert filter flips it to the dark
+     page, with inversion off the raw white page shows — either way the
+     loading placeholder must match the rendered canvas color */
+  --page-bg: #ffffff;
   /* status text on --bg must clear 4.5:1 (the bare --ok/--bad don't at small sizes) */
   --ok-text: #15803d;
   --bad-text: #b91c1c;
@@ -401,12 +406,26 @@ body {
   min-width: 0;
 }
 
-/* floating zoom controls, bottom-right overlay */
-.pagetoolbar {
+/* floating page controls, bottom-right overlay: two sibling cards — the
+   inverted-page toggle and the zoom group — with a gap between them;
+   the wrapper is click-transparent so the gap between the cards stays
+   clickable for the pages underneath */
+.pagetools {
   position: absolute;
   right: 14px;
   bottom: 14px;
   z-index: 10;
+  display: flex;
+  gap: 6px;
+  align-items: stretch;
+  pointer-events: none;
+}
+
+.pagetools .pagetoolbar {
+  pointer-events: auto;
+}
+
+.pagetoolbar {
   display: flex;
   gap: 4px;
   align-items: center;
@@ -441,13 +460,28 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* inverted-page toggle card: dark theme only — light pages never invert,
+   so there is nothing to toggle */
+.pagetools .invertbar {
+  display: none;
+}
+
+[data-theme="dark"] .pagetools .invertbar {
+  display: flex;
+}
+
+[data-theme="dark"] .pagetools .invertbtn[aria-pressed="true"] {
+  background: var(--active-bg);
+  color: var(--active-fg);
+}
+
 
 /* pdf.js page box: width comes from .pagesflow (one --z write rescales
    everything synchronously); the canvas fills it and re-renders
    at screen resolution after the zoom settles */
 .pagebox {
   width: 100%;
-  background: var(--img-bg);
+  background: var(--page-bg);
   user-select: none;
 }
 
@@ -467,7 +501,10 @@ body {
   outline-offset: -2px;
 }
 
-[data-theme="dark"] .pagebox {
+/* inverted pages in dark theme; data-page-invert="off" opts out. The pagebox
+   background stays the paper color (--page-bg) so the loading placeholder
+   comes out dark here, matching what the inverted canvas will show */
+[data-theme="dark"]:not([data-page-invert="off"]) .pagebox {
   filter: invert(1) hue-rotate(180deg);
 }
 

@@ -29,7 +29,8 @@ import {
   type OverlayScrollbarsComponentRef,
 } from "overlayscrollbars-react";
 import pagesMeta from "../pages-meta.json";
-import { RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
+import { Contrast, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
+import { loadPageInvert, savePageInvert } from "../pageinvert";
 
 interface Props {
   pdfPages: number[];
@@ -87,6 +88,9 @@ function getDoc(): Promise<PDFDocumentProxy> {
 export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
   const [zoom, setZoom] = useState(1);
   const [docReady, setDocReady] = useState(false);
+  // inverted page colors: one shared pref (data-page-invert on <html>),
+  // persisted independently of the theme
+  const [invert, setInvert] = useState(loadPageInvert);
   const osRef = useRef<OverlayScrollbarsComponentRef>(null);
   const viewerRef = useRef<HTMLDivElement>(null);
   const flowRef = useRef<HTMLDivElement>(null);
@@ -325,6 +329,12 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
   const step = (dz: number) =>
     animateTo(clampToBounds(Math.round((zoomRef.current + dz) * 100) / 100));
 
+  const toggleInvert = () => {
+    const next = !invert;
+    savePageInvert(next);
+    setInvert(next);
+  };
+
   return (
     <div
       className="pageviewer"
@@ -333,17 +343,31 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
       aria-label="Book page"
       onKeyDown={onKey}
     >
-      <div className="pagetoolbar">
-        <button type="button" aria-label="Zoom out" title="Zoom out — Ctrl -" onClick={() => step(-0.25)}>
-          <ZoomOut size={15} aria-hidden />
-        </button>
-        <span className="zoomlabel">{Math.round(zoom * 100)}%</span>
-        <button type="button" aria-label="Zoom in" title="Zoom in — Ctrl +" onClick={() => step(0.25)}>
-          <ZoomIn size={15} aria-hidden />
-        </button>
-        <button type="button" title="Reset zoom — R" onClick={() => animateTo(clampToBounds(1))}>
-          <RotateCcw size={13} aria-hidden /> Reset
-        </button>
+      <div className="pagetools">
+        <div className="pagetoolbar invertbar">
+          <button
+            type="button"
+            className="invertbtn"
+            aria-pressed={invert}
+            aria-label="Invert page colors"
+            title="Invert page colors"
+            onClick={toggleInvert}
+          >
+            <Contrast size={15} aria-hidden />
+          </button>
+        </div>
+        <div className="pagetoolbar">
+          <button type="button" aria-label="Zoom out" title="Zoom out — Ctrl -" onClick={() => step(-0.25)}>
+            <ZoomOut size={15} aria-hidden />
+          </button>
+          <span className="zoomlabel">{Math.round(zoom * 100)}%</span>
+          <button type="button" aria-label="Zoom in" title="Zoom in — Ctrl +" onClick={() => step(0.25)}>
+            <ZoomIn size={15} aria-hidden />
+          </button>
+          <button type="button" title="Reset zoom — R" onClick={() => animateTo(clampToBounds(1))}>
+            <RotateCcw size={13} aria-hidden /> Reset
+          </button>
+        </div>
       </div>
       <OverlayScrollbarsComponent
         ref={osRef}

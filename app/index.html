@@ -10,12 +10,15 @@
       (function () {
         try {
           var t = localStorage.getItem("theme");
+          var inv = localStorage.getItem("egu-course-page-invert");
           var dark =
             t === "dark" ||
             (t !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
           document.documentElement.dataset.theme = dark ? "dark" : "light";
+          document.documentElement.dataset.pageInvert = inv === "0" ? "off" : "on";
         } catch (e) {
           document.documentElement.dataset.theme = "light";
+          document.documentElement.dataset.pageInvert = "on";
         }
       })();
     </script>
