@@ -1,9 +1,12 @@
-# CI/CD: tests + data validation, then deploy the app to GitHub Pages.
+# CI/CD: data validation, unit tests, build, then publish app/dist to the VPS.
 #
-# Pages source must be set to "GitHub Actions" once in repo settings
-# (Settings -> Pages -> Build and deployment -> Source).
+# Requires repo secret DEPLOY_SSH_KEY — the private ed25519 deploy key whose
+# public part is installed for bm-deploy on the VPS (84.54.30.169).
+#
+# Note: GitHub Pages deploy was replaced by the VPS (blue-murphy.noartem.ru,
+# Caddy). Settings -> Pages can be switched back to "Disabled" at any time.
 
-name: CI & Pages deploy
+name: CI & VPS deploy
 
 on:
   push:
@@ -12,16 +15,14 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: github-pages
+  group: deploy-vps
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Validate, test, build
+  deploy:
+    name: Validate, test, build, publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -47,21 +48,16 @@ jobs:
         run: npm test
         working-directory: app
 
-      - name: Build (base = /<repo>/)
-        run: npm run build -- --base="/${GITHUB_REPOSITORY#*/}/"
+      - name: Build
+        run: npm run build
         working-directory: app
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: app/dist
+      - name: Write deploy key
+        run: |
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > "$RUNNER_TEMP/deploy_key"
+          chmod 600 "$RUNNER_TEMP/deploy_key"
 
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish to VPS
+        run: bash scripts/deploy.sh
+        env:
+          DEPLOY_KEY: ${{ runner.temp }}/deploy_key
