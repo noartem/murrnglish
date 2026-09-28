@@ -1,48 +1,110 @@
 {
   "unit": 29,
   "title": "may and might 1",
-  "pdfPages": [70, 71],
+  "pdfPages": [
+    70,
+    71
+  ],
   "exercises": [
     {
       "id": "29.1",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from the box.",
-      "wordBank": ["may be Tom\u2019s", "may not be feeling well", "may not be possible", "might be in her room", "might be Brazilian", "might be driving", "might have one", "might know"],
+      "wordBank": [
+        "may be Tom’s",
+        "may not be feeling well",
+        "may not be possible",
+        "might be in her room",
+        "might be Brazilian",
+        "might be driving",
+        "might have one",
+        "might know"
+      ],
       "items": [
         {
           "num": 2,
-          "parts": ["I'm not sure, but ask Anna. She ", "."],
-          "answers": [["might know"]]
+          "parts": [
+            "I'm not sure, but ask Anna. She ",
+            "."
+          ],
+          "answers": [
+            [
+              "might know"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I don\u2019t know. They ", "."],
-          "answers": [["might be Brazilian"]]
+          "parts": [
+            "I don’t know. They ",
+            "."
+          ],
+          "answers": [
+            [
+              "might be Brazilian"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 4,
-          "parts": ["I\u2019ll try, but it ", "."],
-          "answers": [["may not be possible"]]
+          "parts": [
+            "I’ll try, but it ",
+            "."
+          ],
+          "answers": [
+            [
+              "may not be possible"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["It\u2019s not mine. It ", "."],
-          "answers": [["may be Tom\u2019s"]]
+          "parts": [
+            "It’s not mine. It ",
+            "."
+          ],
+          "answers": [
+            [
+              "may be Tom’s"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["He ", "."],
-          "answers": [["might be driving"]]
+          "parts": [
+            "He ",
+            "."
+          ],
+          "answers": [
+            [
+              "might be driving"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Rachel ", ", but I\u2019m not sure."],
-          "answers": [["might have one"]]
+          "parts": [
+            "Rachel ",
+            ", but I’m not sure."
+          ],
+          "answers": [
+            [
+              "might have one"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Yes, he is. He ", "."],
-          "answers": [["may not be feeling well"]]
+          "parts": [
+            "Yes, he is. He ",
+            "."
+          ],
+          "answers": [
+            [
+              "may not be feeling well"
+            ]
+          ]
         }
       ]
     },
@@ -53,80 +115,178 @@
       "items": [
         {
           "num": 2,
-          "parts": ["It may ", " her brother."],
-          "answers": [["have been"]]
+          "parts": [
+            "It may ",
+            " her brother. (be)"
+          ],
+          "answers": [
+            [
+              "have been"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I can\u2019t see her. She may not ", " yet."],
-          "answers": [["have arrived"]]
+          "parts": [
+            "I can’t see her. She may not ",
+            " yet. (arrive)"
+          ],
+          "answers": [
+            [
+              "have arrived"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["He might ", " outside. I\u2019ll go and look."],
-          "answers": [["be waiting"]]
+          "parts": [
+            "He might ",
+            " outside. I’ll go and look. (wait)"
+          ],
+          "answers": [
+            [
+              "be waiting"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I don\u2019t know. I suppose Sam may ", " him."],
-          "answers": [["have told"]]
+          "parts": [
+            "I don’t know. I suppose Sam may ",
+            " him. (tell)"
+          ],
+          "answers": [
+            [
+              "have told"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["He was here earlier, but he might ", " home."],
-          "answers": [["have gone"]]
+          "parts": [
+            "He was here earlier, but he might ",
+            " home. (go)"
+          ],
+          "answers": [
+            [
+              "have gone"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I\u2019m not sure. She might ", " TV."],
-          "answers": [["be watching"]]
+          "parts": [
+            "I’m not sure. She might ",
+            " TV. (watch)"
+          ],
+          "answers": [
+            [
+              "be watching"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["I\u2019m not sure. I think he may ", " a younger sister."],
-          "answers": [["have"]]
+          "parts": [
+            "I’m not sure. I think he may ",
+            " a younger sister. (have)"
+          ],
+          "answers": [
+            [
+              "have"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["You may ", " it in the restaurant last night."],
-          "answers": [["have left"]]
+          "parts": [
+            "You may ",
+            " it in the restaurant last night. (leave)"
+          ],
+          "answers": [
+            [
+              "have left"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["He might not ", " the doorbell."],
-          "answers": [["hear"]]
+          "parts": [
+            "He might not ",
+            " the doorbell. (hear)"
+          ],
+          "answers": [
+            [
+              "hear"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["She may ", ". She\u2019s always forgetting things."],
-          "answers": [["have forgotten"]]
+          "parts": [
+            "She may ",
+            ". She’s always forgetting things. (forget)"
+          ],
+          "answers": [
+            [
+              "have forgotten"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "29.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using might not have \u2026 or couldn\u2019t have \u2026 .",
+      "instruction": "Complete the sentences using might not have … or couldn’t have … .",
       "items": [
         {
           "num": 2,
-          "parts": ["It\u2019s possible. He ", " to come."],
-          "answers": [["might not have wanted"]]
+          "parts": [
+            "It’s possible. He ",
+            " to come."
+          ],
+          "answers": [
+            [
+              "might not have wanted"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["No, the police say it ", " an accident. It was deliberate."],
-          "answers": [["couldn\u2019t have been"]]
+          "parts": [
+            "No, the police say it ",
+            " an accident. It was deliberate."
+          ],
+          "answers": [
+            [
+              "couldn’t have been"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Well, he ", " very hard. I was in my office all day."],
-          "answers": [["couldn\u2019t have tried"]]
+          "parts": [
+            "Well, he ",
+            " very hard. I was in my office all day."
+          ],
+          "answers": [
+            [
+              "couldn’t have tried"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["No, I\u2019m not sure. He ", "."],
-          "answers": [["might not have been American"]]
+          "parts": [
+            "No, I’m not sure. He ",
+            "."
+          ],
+          "answers": [
+            [
+              "might not have been American"
+            ]
+          ]
         }
       ]
     }

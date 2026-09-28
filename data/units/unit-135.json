@@ -11,7 +11,7 @@
         {"num": 2, "parts": ["Are you going to apologise ", " what you did?"], "answers": [["for"]]},
         {"num": 3, "parts": ["The apartment consists ", " three rooms, a kitchen and bathroom."], "answers": [["of"]]},
         {"num": 4, "parts": ["I was accused ", " lying, but I was telling the truth."], "answers": [["of"]]},
-        {"num": 5, "parts": ["We finished our meal, paid the bill, and left the restaurant."], "answers": []},
+        {"num": 5, "parts": ["We finished our meal, paid ", " the bill, and left the restaurant."], "answers": [["\u2013"]]},
         {"num": 6, "parts": ["The accident was my fault, so I had to pay ", " the repairs."], "answers": [["for"]]},
         {"num": 7, "parts": ["Some people are dying ", " hunger, while others eat too much."], "answers": [["of", "from"]]},
         {"num": 8, "parts": ["I called Helen to thank her ", " the present she sent me."], "answers": [["for"]]},
@@ -56,7 +56,7 @@
       "items": [
         {"num": 2, "parts": ["Vaccinations may protect you ", " a number of diseases."], "answers": [["from"]]},
         {"num": 3, "parts": ["You know you can always rely ", " me if you need any help."], "answers": [["on"]]},
-        {"num": 4, "parts": ["Sophie will have to borrow money to pay her college fees."], "answers": []},
+        {"num": 4, "parts": ["Sophie will have to borrow money to pay ", " her college fees."], "answers": [["\u2013"]]},
         {"num": 5, "parts": ["She's often unwell. She suffers ", " very bad headaches."], "answers": [["from"]]},
         {"num": 6, "parts": ["I don't know whether I'll go out tonight. It depends ", " how I feel."], "answers": [["depends how", "depends on how"]]},
         {"num": 7, "parts": ["Anna doesn't have a job. She depends ", " her parents for money."], "answers": [["on"]]},

@@ -7,6 +7,7 @@
       "id": "11.1",
       "type": "choice",
       "instruction": "Which is right?",
+      "example": [1],
       "items": [
         {
           "num": 1,
@@ -21,7 +22,7 @@
         {
           "num": 3,
           "options": ["It's raining.", "It's been raining."],
-          "answer": 1
+          "answer": 0
         },
         {
           "num": 4,
@@ -36,7 +37,7 @@
         {
           "num": 6,
           "options": ["We're living in New Street now.", "We've been living in New Street now."],
-          "answer": 1
+          "answer": 0
         },
         {
           "num": 7,
@@ -45,8 +46,8 @@
         },
         {
           "num": 8,
-          "options": ["She's been there on a business trip.", "She's there on a business trip."],
-          "answer": 1
+          "options": ["She's there on a business trip.", "She's been there on a business trip."],
+          "answer": 0
         },
         {
           "num": 9,
@@ -164,7 +165,7 @@
         },
         {
           "num": 15,
-          "parts": ["Yes, I ", " to go to New York."],
+          "parts": ["Yes, I ", " to go to New York. (use always / want)"],
           "answers": [["'ve always wanted", "have always wanted"]]
         }
       ]

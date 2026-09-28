@@ -47,22 +47,22 @@
       "items": [
         {
           "num": 1,
-          "parts": ["", " for half an hour when ", " to rain."],
+          "parts": ["(We / play) ", " for half an hour when ", " (it / start) to rain."],
           "answers": [["We\u2019d been playing", "We had been playing"], ["it started"]]
         },
         {
           "num": 2,
-          "parts": ["", " for 20 minutes when ", " that ", " in the wrong restaurant."],
+          "parts": ["(I / wait) ", " for 20 minutes when ", " (I / realise) that ", " (I / be) in the wrong restaurant."],
           "answers": [["I\u2019d been waiting", "I had been waiting"], ["I realised"], ["I was"]]
         },
         {
           "num": 3,
-          "parts": ["At the time the company ", " out of business, Sarah ", " there for twelve years."],
+          "parts": ["At the time the company ", " (go) out of business, Sarah ", " (work) there for twelve years."],
           "answers": [["went"], ["had been working", "had worked"]]
         },
         {
           "num": 4,
-          "parts": ["The orchestra ", " for about ten minutes when a man in the audience suddenly ", " shouting."],
+          "parts": ["The orchestra ", " (play) for about ten minutes when a man in the audience suddenly ", " (start) shouting."],
           "answers": [["had been playing"], ["started"]]
         },
         {

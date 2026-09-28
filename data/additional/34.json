@@ -2,7 +2,9 @@
   "id": 34,
   "topic": "Prepositions (position and other uses)",
   "refs": "Units 123–128",
-  "pdfPages": [334, 335],
+  "pdfPages": [
+    334
+  ],
   "exercise": {
     "id": "34",
     "type": "fill-in",
@@ -10,128 +12,337 @@
     "items": [
       {
         "num": 1,
-        "parts": ["I'd love to be able to visit every country ", " the world."],
-        "answers": [["in"]]
+        "parts": [
+          "I'd love to be able to visit every country ",
+          " the world."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
       },
       {
         "num": 2,
-        "parts": ["Jessica White is my favourite author. Have you read anything ", " her?"],
-        "answers": [["by"]]
+        "parts": [
+          "Jessica White is my favourite author. Have you read anything ",
+          " her?"
+        ],
+        "answers": [
+          [
+            "by"
+          ]
+        ]
       },
       {
         "num": 3,
-        "parts": ["There's a small shop ", " the end of this road."],
-        "answers": [["at"]]
+        "parts": [
+          "There's a small shop ",
+          " the end of this road."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 4,
-        "parts": ["Tom is away at the moment. He's ", " holiday."],
-        "answers": [["on"]]
+        "parts": [
+          "Tom is away at the moment. He's ",
+          " holiday."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 5,
-        "parts": ["We live ", " the country, a long way from the nearest town."],
-        "answers": [["in"]]
+        "parts": [
+          "We live ",
+          " the country, a long way from the nearest town."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
       },
       {
         "num": 6,
-        "parts": ["I've got a stain ", " my jacket. I'll have to have it cleaned."],
-        "answers": [["on"]]
+        "parts": [
+          "I've got a stain ",
+          " my jacket. I'll have to have it cleaned."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 7,
-        "parts": ["We went ", " a party ", " Lisa's house on Saturday."],
-        "answers": [["to"], ["at"]]
+        "parts": [
+          "We went ",
+          " a party ",
+          " Lisa's house on Saturday."
+        ],
+        "answers": [
+          [
+            "to"
+          ],
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 8,
-        "parts": ["Boston is ", " the east coast of the United States."],
-        "answers": [["on"]]
+        "parts": [
+          "Boston is ",
+          " the east coast of the United States."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 9,
-        "parts": ["Look at the leaves ", " that tree. They're a beautiful colour."],
-        "answers": [["on"]]
+        "parts": [
+          "Look at the leaves ",
+          " that tree. They're a beautiful colour."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 10,
-        "parts": ["I've never been ", " Japan, but I'd like to go very much."],
-        "answers": [["to"]]
+        "parts": [
+          "I've never been ",
+          " Japan, but I'd like to go very much."
+        ],
+        "answers": [
+          [
+            "to"
+          ]
+        ]
       },
       {
         "num": 11,
-        "parts": ["Mozart died ", " Vienna in 1791 ", " the age of 35."],
-        "answers": [["in"], ["at"]]
+        "parts": [
+          "Mozart died ",
+          " Vienna in 1791 ",
+          " the age of 35."
+        ],
+        "answers": [
+          [
+            "in"
+          ],
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 12,
-        "parts": ["'Are you ", " this photo?' 'Yes, that's me, ", " the left.'"],
-        "answers": [["in"], ["on"]]
+        "parts": [
+          "'Are you ",
+          " this photo?' 'Yes, that's me, ",
+          " the left.'"
+        ],
+        "answers": [
+          [
+            "in"
+          ],
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 13,
-        "parts": ["We went ", " the theatre last night. We had seats ", " the front row."],
-        "answers": [["to"], ["in"]]
+        "parts": [
+          "We went ",
+          " the theatre last night. We had seats ",
+          " the front row."
+        ],
+        "answers": [
+          [
+            "to"
+          ],
+          [
+            "in"
+          ]
+        ]
       },
       {
         "num": 14,
-        "parts": ["If you want to turn the light on, the switch is ", " the wall ", " the door."],
-        "answers": [["on"], ["by", "next to", "beside"]]
+        "parts": [
+          "If you want to turn the light on, the switch is ",
+          " the wall ",
+          " the door."
+        ],
+        "answers": [
+          [
+            "on"
+          ],
+          [
+            "by",
+            "next to",
+            "beside"
+          ]
+        ]
       },
       {
         "num": 15,
-        "parts": ["It was late when we arrived ", " the hotel."],
-        "answers": [["at"]]
+        "parts": [
+          "It was late when we arrived ",
+          " the hotel."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 16,
-        "parts": ["I couldn't decide what to eat. There was nothing ", " the menu that I liked."],
-        "answers": [["on"]]
+        "parts": [
+          "I couldn't decide what to eat. There was nothing ",
+          " the menu that I liked."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 17,
-        "parts": ["We live ", " a tower block. Our apartment is ", " the fifteenth floor."],
-        "answers": [["in"], ["on"]]
+        "parts": [
+          "We live ",
+          " a tower block. Our apartment is ",
+          " the fifteenth floor."
+        ],
+        "answers": [
+          [
+            "in"
+          ],
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 18,
-        "parts": ["Some parts of the film were a bit stupid, but ", " the whole I enjoyed it."],
-        "answers": [["on"]]
+        "parts": [
+          "Some parts of the film were a bit stupid, but ",
+          " the whole I enjoyed it."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 19,
-        "parts": ["'When you paid the restaurant bill, did you pay cash?' 'No, I paid ", " credit card.'"],
-        "answers": [["by"]]
+        "parts": [
+          "'When you paid the restaurant bill, did you pay cash?' 'No, I paid ",
+          " credit card.'"
+        ],
+        "answers": [
+          [
+            "by"
+          ]
+        ]
       },
       {
         "num": 20,
-        "parts": ["'How did you get here? Did you come ", " the bus?' 'No, ", " car.'"],
-        "answers": [["on"], ["by"]]
+        "parts": [
+          "'How did you get here? Did you come ",
+          " the bus?' 'No, ",
+          " car.'"
+        ],
+        "answers": [
+          [
+            "on"
+          ],
+          [
+            "by"
+          ]
+        ]
       },
       {
         "num": 21,
-        "parts": ["I watched a really interesting programme ", " TV last night."],
-        "answers": [["on"]]
+        "parts": [
+          "I watched a really interesting programme ",
+          " TV last night."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 22,
-        "parts": ["Helen works for a large company. She works ", " the customer services department."],
-        "answers": [["in"]]
+        "parts": [
+          "Helen works for a large company. She works ",
+          " the customer services department."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
       },
       {
         "num": 23,
-        "parts": ["Anna spent two years working ", " London before returning ", " Italy."],
-        "answers": [["in"], ["to"]]
+        "parts": [
+          "Anna spent two years working ",
+          " London before returning ",
+          " Italy."
+        ],
+        "answers": [
+          [
+            "in"
+          ],
+          [
+            "to"
+          ]
+        ]
       },
       {
         "num": 24,
-        "parts": ["How was your trip ", " the beach? Did you have a good day?"],
-        "answers": [["to"]]
+        "parts": [
+          "How was your trip ",
+          " the beach? Did you have a good day?"
+        ],
+        "answers": [
+          [
+            "to"
+          ]
+        ]
       },
       {
         "num": 25,
-        "parts": ["On our first day in Paris, we went ", " a trip round the city."],
-        "answers": [["on"]]
+        "parts": [
+          "On our first day in Paris, we went ",
+          " a trip round the city."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       }
     ]
   }

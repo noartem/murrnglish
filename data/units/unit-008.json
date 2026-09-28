@@ -1,49 +1,255 @@
 {
   "unit": 8,
   "title": "Present perfect 2 (I have done)",
-  "pdfPages": [28, 29],
+  "pdfPages": [
+    28,
+    29
+  ],
   "exercises": [
     {
       "id": "8.1",
       "type": "write",
       "instruction": "You ask people about things they have done. Write questions with ever.",
       "items": [
-        {"num": 1, "prompt": "(ride / horse?)", "answers": ["Have you ever ridden a horse?"]},
-        {"num": 2, "prompt": "(be / California?)", "answers": ["Have you ever been to California?"]},
-        {"num": 3, "prompt": "(run / marathon?)", "answers": ["Have you ever run a marathon?"]},
-        {"num": 4, "prompt": "(speak / famous person?)", "answers": ["Have you ever spoken to a famous person?"]},
-        {"num": 5, "prompt": "(most beautiful place / visit?)", "answers": ["What\u2019s the most beautiful place you\u2019ve ever visited? / What\u2019s the most beautiful place you have ever visited?"]}
+        {
+          "num": 1,
+          "prompt": "(ride / horse?)",
+          "answers": [
+            "Have you ever ridden a horse?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(be / California?)",
+          "answers": [
+            "Have you ever been to California?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(run / marathon?)",
+          "answers": [
+            "Have you ever run a marathon?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(speak / famous person?)",
+          "answers": [
+            "Have you ever spoken to a famous person?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(most beautiful place / visit?)",
+          "answers": [
+            "What’s the most beautiful place you’ve ever visited? / What’s the most beautiful place you have ever visited?"
+          ]
+        }
       ]
     },
     {
       "id": "8.2",
       "type": "fill-in",
-      "instruction": "Complete B\u2019s answers. Some sentences are positive and some negative. Use these verbs:",
-      "wordBank": ["be", "be", "eat", "happen", "have", "have", "meet", "play", "read", "see", "try"],
+      "instruction": "Complete B’s answers. Some sentences are positive and some negative. Use these verbs:",
+      "wordBank": [
+        "be",
+        "be",
+        "eat",
+        "happen",
+        "have",
+        "have",
+        "meet",
+        "play",
+        "read",
+        "see",
+        "try"
+      ],
       "items": [
-        {"num": 1, "parts": ["\u2018What\u2019s Mark\u2019s sister like?\u2019 \u2018I\u2019ve never ", " her.\u2019"], "answers": [["met"]]},
-        {"num": 2, "parts": ["\u2018Is everything going well?\u2019 \u2018Yes, we haven\u2019t ", " any problems so far.\u2019"], "answers": [["had"]]},
-        {"num": 3, "parts": ["\u2018Are you hungry?\u2019 \u2018Yes. I ", " much today.\u2019"], "answers": [["haven\u2019t eaten"]]},
-        {"num": 4, "parts": ["\u2018Can you play chess?\u2019 \u2018Yes, but ", " for ages.\u2019"], "answers": [["I haven\u2019t played"]]},
-        {"num": 5, "parts": ["\u2018Are you enjoying your holiday?\u2019 \u2018Yes, it\u2019s the best holiday ", " for a long time.\u2019"], "answers": [["I\u2019ve had", "I have had"]]},
-        {"num": 6, "parts": ["\u2018What\u2019s that book about?\u2019 \u2018I don\u2019t know. ", " it.\u2019"], "answers": [["I haven\u2019t read"]]},
-        {"num": 7, "parts": ["\u2018Is Brussels an interesting place?\u2019 \u2018I\u2019ve no idea. ", " there.\u2019"], "answers": [["I\u2019ve never been", "I haven\u2019t been"]]},
-        {"num": 8, "parts": ["\u2018I hear your car broke down again yesterday.\u2019 \u2018Yes, it\u2019s the second time ", " this month.\u2019"], "answers": [["it\u2019s happened", "it has happened", "that\u2019s happened", "that has happened"]]},
-        {"num": 9, "parts": ["\u2018Do you like caviar?\u2019 \u2018I don\u2019t know. ", " it.\u2019"], "answers": [["I\u2019ve never tried", "I haven\u2019t tried", "I\u2019ve never eaten", "I haven\u2019t eaten"]]},
-        {"num": 10, "parts": ["\u2018Mike was late for work again today.\u2019 \u2018Again? He ", " late every day this week.\u2019"], "answers": [["\u2019s been", "has been"]]},
-        {"num": 11, "parts": ["\u2018Who\u2019s that woman by the door?\u2019 \u2018I don\u2019t know. ", " her before.\u2019"], "answers": [["I\u2019ve never seen", "I haven\u2019t seen"]]}
+        {
+          "num": 1,
+          "parts": [
+            "‘What’s Mark’s sister like?’ ‘I’ve never ",
+            " her.’"
+          ],
+          "answers": [
+            [
+              "met"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Is everything going well?’ ‘Yes, we haven’t ",
+            " any problems so far.’"
+          ],
+          "answers": [
+            [
+              "had"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘Are you hungry?’ ‘Yes. I ",
+            " much today.’"
+          ],
+          "answers": [
+            [
+              "haven’t eaten"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "‘Can you play chess?’ ‘Yes, but ",
+            " for ages.’"
+          ],
+          "answers": [
+            [
+              "I haven’t played"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "‘Are you enjoying your holiday?’ ‘Yes, it’s the best holiday ",
+            " for a long time.’"
+          ],
+          "answers": [
+            [
+              "I’ve had",
+              "I have had"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "‘What’s that book about?’ ‘I don’t know. ",
+            " it.’"
+          ],
+          "answers": [
+            [
+              "I haven’t read"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "‘Is Brussels an interesting place?’ ‘I’ve no idea. ",
+            " there.’"
+          ],
+          "answers": [
+            [
+              "I’ve never been",
+              "I haven’t been"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "‘I hear your car broke down again yesterday.’ ‘Yes, it’s the second time ",
+            " this month.’"
+          ],
+          "answers": [
+            [
+              "it’s happened",
+              "it has happened",
+              "that’s happened",
+              "that has happened"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "‘Do you like caviar?’ ‘I don’t know. ",
+            " it.’"
+          ],
+          "answers": [
+            [
+              "I’ve never tried",
+              "I haven’t tried",
+              "I’ve never eaten",
+              "I haven’t eaten"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "‘Mike was late for work again today.’ ‘Again? He ",
+            " late every day this week.’"
+          ],
+          "answers": [
+            [
+              "’s been",
+              "has been"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "‘Who’s that woman by the door?’ ‘I don’t know. ",
+            " her before.’"
+          ],
+          "answers": [
+            [
+              "I’ve never seen",
+              "I haven’t seen"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "8.3",
       "type": "self-check",
-      "instruction": "Write four sentences about yourself. Use I haven\u2019t and choose from the boxes.",
+      "instruction": "Write four sentences about yourself. Use I haven’t and choose from the boxes.",
       "items": [
-        {"num": 1, "prompt": "I haven\u2019t used a computer today.", "modelAnswers": ["I haven\u2019t used a computer today."]},
-        {"num": 2, "prompt": "", "modelAnswers": ["I haven\u2019t travelled by bus this week."]},
-        {"num": 3, "prompt": "", "modelAnswers": ["I haven\u2019t been to the cinema recently."]},
-        {"num": 4, "prompt": "", "modelAnswers": ["I haven\u2019t read a book for ages."]},
-        {"num": 5, "prompt": "", "modelAnswers": ["I haven\u2019t lost anything today."]}
+        {
+          "num": 1,
+          "prompt": "I haven’t used a computer today.",
+          "modelAnswers": [
+            "I haven’t used a computer today."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "",
+          "modelAnswers": [
+            "I haven’t travelled by bus this week."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "modelAnswers": [
+            "I haven’t been to the cinema recently."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "modelAnswers": [
+            "I haven’t read a book for ages."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "modelAnswers": [
+            "I haven’t lost anything today."
+          ]
+        }
       ]
     },
     {
@@ -51,12 +257,86 @@
       "type": "fill-in",
       "instruction": "Read the situations and complete the sentences.",
       "items": [
-        {"num": 1, "parts": ["It\u2019s the first time ", " a car."], "answers": [["he\u2019s driven"]]},
-        {"num": 2, "parts": ["It\u2019s the first time ", " a giraffe."], "answers": [["they\u2019ve seen", "they have seen"]]},
-        {"num": 3, "parts": ["She ", " before."], "answers": [["She\u2019s never ridden a horse", "She has never ridden a horse"]]},
-        {"num": 4, "parts": ["This is the second time ", "."], "answers": [["they\u2019ve been to Japan", "they have been to Japan"]]},
-        {"num": 5, "parts": ["It\u2019s not the first ", " this hotel."], "answers": [["time she\u2019s stayed at", "time she has stayed at", "time Emily has stayed at"]]},
-        {"num": 6, "parts": ["", " before."], "answers": [["He\u2019s never played tennis", "He has never played tennis", "He/Ben hasn\u2019t played tennis"]]}
+        {
+          "num": 1,
+          "parts": [
+            "It’s the first time ",
+            " a car."
+          ],
+          "answers": [
+            [
+              "he’s driven"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "It’s the first time ",
+            " a giraffe."
+          ],
+          "answers": [
+            [
+              "they’ve seen",
+              "they have seen"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She ",
+            " before."
+          ],
+          "answers": [
+            [
+              "She’s never ridden a horse",
+              "She has never ridden a horse"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This is the second time ",
+            "."
+          ],
+          "answers": [
+            [
+              "they’ve been to Japan",
+              "they have been to Japan"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "It’s not the first ",
+            " this hotel."
+          ],
+          "answers": [
+            [
+              "time she’s stayed at",
+              "time she has stayed at",
+              "time Emily has stayed at"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " before."
+          ],
+          "answers": [
+            [
+              "He’s never played tennis",
+              "He has never played tennis",
+              "He/Ben hasn’t played tennis"
+            ]
+          ]
+        }
       ]
     }
   ]

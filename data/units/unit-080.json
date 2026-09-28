@@ -135,22 +135,22 @@
       "items": [
         {
           "num": 2,
-          "parts": ["Jack likes sport. He plays for his ", "."],
+          "parts": ["Jack likes sport. He plays for his ", ". (team / school / football)"],
           "answers": [["school football team"]]
         },
         {
           "num": 3,
-          "parts": ["Anna works for a ", "."],
+          "parts": ["Anna works for a ", ". (company / production / film)"],
           "answers": [["film production company"]]
         },
         {
           "num": 4,
-          "parts": ["Many people invest in a ", "."],
+          "parts": ["Many people invest in a ", ". (life / policy / insurance)"],
           "answers": [["life insurance policy"]]
         },
         {
           "num": 5,
-          "parts": ["You can get a map at the ", "."],
+          "parts": ["You can get a map at the ", ". (information / office / tourist)"],
           "answers": [["tourist information office"]]
         }
       ]
@@ -198,7 +198,7 @@
         {
           "num": 9,
           "options": ["five-day", "five days"],
-          "answer": 0
+          "answer": 1
         },
         {
           "num": 10,

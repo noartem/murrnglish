@@ -1,57 +1,391 @@
 {
   "unit": 108,
   "title": "Superlative (the longest / the most enjoyable etc.)",
-  "pdfPages": [228, 229],
+  "pdfPages": [
+    228,
+    229
+  ],
   "exercises": [
     {
       "id": "108.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use the superlative forms (-est or most \u2026) of the words in the box.",
-      "wordBank": ["bad", "cheap", "good", "honest", "popular", "short", "tall"],
+      "instruction": "Complete the sentences. Use the superlative forms (-est or most …) of the words in the box.",
+      "wordBank": [
+        "bad",
+        "cheap",
+        "good",
+        "honest",
+        "popular",
+        "short",
+        "tall"
+      ],
       "items": [
-        {"num": 1, "parts": ["We didn\u2019t have much money, so we stayed at the ", " hotel in the town."], "answers": [["cheapest"]]},
-        {"num": 2, "parts": ["This building is 250 metres high, but it\u2019s not ", " in the city."], "answers": [["the tallest"]]},
-        {"num": 3, "parts": ["It was an awful day. It was ", " day of my life."], "answers": [["the worst"]]},
-        {"num": 4, "parts": ["What is ", " sport in your country?"], "answers": [["the most popular"]]},
-        {"num": 5, "parts": ["I like the morning. For me it\u2019s ", " part of the day."], "answers": [["the best"]]},
-        {"num": 6, "parts": ["Sarah always tells the truth. She\u2019s one of ", " people I know."], "answers": [["the most honest"]]},
-        {"num": 7, "parts": ["A straight line is ", " distance between two points."], "answers": [["the shortest"]]}
+        {
+          "num": 1,
+          "parts": [
+            "We didn’t have much money, so we stayed at the ",
+            " hotel in the town."
+          ],
+          "answers": [
+            [
+              "cheapest"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "This building is 250 metres high, but it’s not ",
+            " in the city."
+          ],
+          "answers": [
+            [
+              "the tallest"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "It was an awful day. It was ",
+            " day of my life."
+          ],
+          "answers": [
+            [
+              "the worst"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "What is ",
+            " sport in your country?"
+          ],
+          "answers": [
+            [
+              "the most popular"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I like the morning. For me it’s ",
+            " part of the day."
+          ],
+          "answers": [
+            [
+              "the best"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Sarah always tells the truth. She’s one of ",
+            " people I know."
+          ],
+          "answers": [
+            [
+              "the most honest"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A straight line is ",
+            " distance between two points."
+          ],
+          "answers": [
+            [
+              "the shortest"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "108.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use a superlative (-est or most \u2026) or a comparative (-er or more \u2026).",
+      "instruction": "Complete the sentences. Use a superlative (-est or most …) or a comparative (-er or more …).",
       "items": [
-        {"num": 1, "parts": ["We stayed at the cheapest hotel in the town."], "answers": []},
-        {"num": 2, "parts": ["Our hotel was cheaper than all the others in the town."], "answers": []},
-        {"num": 3, "parts": ["I wasn\u2019t feeling well yesterday, but I feel a bit ", " today."], "answers": [["better"]]},
-        {"num": 4, "parts": ["What\u2019s ", " thing you\u2019ve ever bought?"], "answers": [["the most expensive"]]},
-        {"num": 5, "parts": ["I prefer this chair to the other one. It\u2019s ", "."], "answers": [["more comfortable"]]},
-        {"num": 6, "parts": ["Amy and Ben have three daughters. ", " is 14 years old."], "answers": [["The eldest", "The oldest"]]},
-        {"num": 7, "parts": ["Who is the ", " person you know?"], "answers": [["oldest"]]},
-        {"num": 8, "parts": ["What\u2019s ", " way to get to the station?"], "answers": [["the quickest"]]},
-        {"num": 9, "parts": ["Which is ", " \u2013 the bus or the train?"], "answers": [["quicker"]]},
-        {"num": 10, "parts": ["I can remember when I was three years old. It\u2019s ", " memory."], "answers": [["my earliest"]]},
-        {"num": 11, "parts": ["Everest is ", " mountain in the world. It is ", " than any other mountain."], "answers": [["the highest"], ["higher"]]},
-        {"num": 12, "parts": ["A: This knife isn\u2019t very sharp. Do you have a ", " one?\nB: No, it\u2019s ", " one I have."], "answers": [["sharper"], ["the sharpest"]]}
+        {
+          "num": 1,
+          "parts": [
+            "We stayed at the cheapest hotel in the town."
+          ],
+          "answers": [],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Our hotel was cheaper than all the others in the town."
+          ],
+          "answers": [],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I wasn’t feeling well yesterday, but I feel a bit ",
+            " today. (good)"
+          ],
+          "answers": [
+            [
+              "better"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "What’s ",
+            " thing you’ve ever bought? (expensive)"
+          ],
+          "answers": [
+            [
+              "the most expensive"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I prefer this chair to the other one. It’s ",
+            ". (comfortable)"
+          ],
+          "answers": [
+            [
+              "more comfortable"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Amy and Ben have three daughters. ",
+            " is 14 years old. (old)"
+          ],
+          "answers": [
+            [
+              "The eldest",
+              "The oldest"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Who is the ",
+            " person you know? (old)"
+          ],
+          "answers": [
+            [
+              "oldest"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "What’s ",
+            " way to get to the station? (quick)"
+          ],
+          "answers": [
+            [
+              "the quickest"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Which is ",
+            " – the bus or the train? (quick)"
+          ],
+          "answers": [
+            [
+              "quicker"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I can remember when I was three years old. It’s ",
+            " memory. (early)"
+          ],
+          "answers": [
+            [
+              "my earliest"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Everest is ",
+            " mountain in the world. It is ",
+            " than any other mountain. (high)"
+          ],
+          "answers": [
+            [
+              "the highest"
+            ],
+            [
+              "higher"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "A: This knife isn’t very sharp. Do you have a ",
+            " one?\nB: No, it’s ",
+            " one I have. (sharp)"
+          ],
+          "answers": [
+            [
+              "sharper"
+            ],
+            [
+              "the sharpest"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "108.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use a superlative (-est or most \u2026) + a preposition (of or in).",
+      "instruction": "Complete the sentences. Use a superlative (-est or most …) + a preposition (of or in).",
       "items": [
-        {"num": 1, "parts": ["It\u2019s a very good room. It\u2019s the best room in ", "."], "answers": [["the hotel"]]},
-        {"num": 2, "parts": ["Brazil is a very large country. It\u2019s ", " South America."], "answers": [["the largest country in"]]},
-        {"num": 3, "parts": ["It was a very happy day. It was ", " my life."], "answers": [["the happiest day of"]]},
-        {"num": 4, "parts": ["This is a very valuable painting. It\u2019s ", " the museum."], "answers": [["the most valuable painting in"]]},
-        {"num": 5, "parts": ["Spring is a very busy time for me. It\u2019s ", " the year."], "answers": [["the busiest time of"]]},
-        {"num": 6, "parts": ["It\u2019s a very good room. It\u2019s one of the best rooms in ", "."], "answers": [["the hotel"]]},
-        {"num": 7, "parts": ["He\u2019s a very rich man. He\u2019s one ", " the country."], "answers": [["of the richest men in"]]},
-        {"num": 8, "parts": ["She\u2019s a very good student. She\u2019s ", " the class."], "answers": [["one of the best students in"]]},
-        {"num": 9, "parts": ["It was a very bad experience. It was ", " my life."], "answers": [["one of the worst experiences of"]]},
-        {"num": 10, "parts": ["It\u2019s a very famous university. It\u2019s ", " the world."], "answers": [["one of the most famous universities in"]]}
+        {
+          "num": 1,
+          "parts": [
+            "It’s a very good room. It’s the best room in ",
+            "."
+          ],
+          "answers": [
+            [
+              "the hotel"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Brazil is a very large country. It’s ",
+            " South America."
+          ],
+          "answers": [
+            [
+              "the largest country in"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "It was a very happy day. It was ",
+            " my life."
+          ],
+          "answers": [
+            [
+              "the happiest day of"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This is a very valuable painting. It’s ",
+            " the museum."
+          ],
+          "answers": [
+            [
+              "the most valuable painting in"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Spring is a very busy time for me. It’s ",
+            " the year."
+          ],
+          "answers": [
+            [
+              "the busiest time of"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "It’s a very good room. It’s one of the best rooms in ",
+            "."
+          ],
+          "answers": [
+            [
+              "the hotel"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 7,
+          "parts": [
+            "He’s a very rich man. He’s one ",
+            " the country."
+          ],
+          "answers": [
+            [
+              "of the richest men in"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "She’s a very good student. She’s ",
+            " the class."
+          ],
+          "answers": [
+            [
+              "one of the best students in"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "It was a very bad experience. It was ",
+            " my life."
+          ],
+          "answers": [
+            [
+              "one of the worst experiences of"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "It’s a very famous university. It’s ",
+            " the world."
+          ],
+          "answers": [
+            [
+              "one of the most famous universities in"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -59,12 +393,50 @@
       "type": "write",
       "instruction": "What do you say in these situations? Use a superlative + ever.",
       "items": [
-        {"num": 1, "prompt": "(boring / movie / ever / see)", "answers": ["That\u2019s the most boring movie I\u2019ve ever seen."]},
-        {"num": 2, "prompt": "(funny / joke / ever / hear)", "answers": ["That\u2019s the funniest joke I\u2019ve ever heard."]},
-        {"num": 3, "prompt": "(good / coffee / ever / taste)", "answers": ["This is the best coffee I\u2019ve ever tasted."]},
-        {"num": 4, "prompt": "(far / ever / run)", "answers": ["That\u2019s the furthest I\u2019ve ever run.", "That\u2019s the farthest I\u2019ve ever run."]},
-        {"num": 5, "prompt": "(bad / mistake / ever / make)", "answers": ["It\u2019s the worst mistake I\u2019ve ever made.", "It was the worst mistake I\u2019ve ever made."]},
-        {"num": 6, "prompt": "(famous / person / ever / meet?)", "answers": ["Who\u2019s the most famous person you\u2019ve ever met?"]}
+        {
+          "num": 1,
+          "prompt": "(boring / movie / ever / see)",
+          "answers": [
+            "That’s the most boring movie I’ve ever seen."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(funny / joke / ever / hear)",
+          "answers": [
+            "That’s the funniest joke I’ve ever heard."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(good / coffee / ever / taste)",
+          "answers": [
+            "This is the best coffee I’ve ever tasted."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(far / ever / run)",
+          "answers": [
+            "That’s the furthest I’ve ever run.",
+            "That’s the farthest I’ve ever run."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(bad / mistake / ever / make)",
+          "answers": [
+            "It’s the worst mistake I’ve ever made.",
+            "It was the worst mistake I’ve ever made."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(famous / person / ever / meet?)",
+          "answers": [
+            "Who’s the most famous person you’ve ever met?"
+          ]
+        }
       ]
     }
   ]

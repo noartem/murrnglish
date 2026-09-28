@@ -1,19 +1,93 @@
 {
   "unit": 115,
   "title": "unless as long as provided",
-  "pdfPages": [242, 243],
+  "pdfPages": [
+    242,
+    243
+  ],
   "exercises": [
     {
       "id": "115.1",
       "type": "fill-in",
       "instruction": "Write a new sentence with the same meaning. Use unless in your sentence.",
       "items": [
-        {"num": 1, "parts": ["", ""], "answers": [["You won't pass the exam unless you try a bit harder."]]},
-        {"num": 2, "parts": ["", ""], "answers": [["You won't know what to do unless you listen carefully."]]},
-        {"num": 3, "parts": ["", ""], "answers": [["I'll never speak to her again unless she apologises (to me).", "Unless she apologises (to me), I'll never speak to her again."]]},
-        {"num": 4, "parts": ["", ""], "answers": [["He won't understand you unless you speak very slowly.", "Unless you speak very slowly, he won't understand you."]]},
-        {"num": 5, "parts": ["", ""], "answers": [["The company will have to close unless business improves soon.", "Unless business improves soon, the company will have to close."]]},
-        {"num": 6, "parts": ["", ""], "answers": [["The problem will get worse unless we do something soon.", "Unless we do something soon, the problem will get worse."]]}
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "You won't pass the exam unless you try a bit harder."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "You won't know what to do unless you listen carefully."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "I'll never speak to her again unless she apologises (to me).",
+              "Unless she apologises (to me), I'll never speak to her again."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "He won't understand you unless you speak very slowly.",
+              "Unless you speak very slowly, he won't understand you."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "The company will have to close unless business improves soon.",
+              "Unless business improves soon, the company will have to close."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "The problem will get worse unless we do something soon.",
+              "Unless we do something soon, the problem will get worse."
+            ]
+          ]
+        }
       ]
     },
     {
@@ -21,28 +95,157 @@
       "type": "fill-in",
       "instruction": "Write sentences with unless.",
       "items": [
-        {"num": 1, "parts": ["", ""], "answers": [["You aren't allowed in the club unless you're a member."]]},
-        {"num": 2, "parts": ["", ""], "answers": [["I'm not going (to the party) unless you go too.", "I'm not going (to the party) unless you're going too."]]},
-        {"num": 3, "parts": ["", ""], "answers": [["The dog won't chase you unless you move suddenly."]]},
-        {"num": 4, "parts": ["", ""], "answers": [["Ben won't speak to you unless you ask him something."]]},
-        {"num": 5, "parts": ["", ""], "answers": [["The doctor won't see you unless it's an emergency.", "The doctor won't see you unless it's an emergency."]]}
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "You aren't allowed in the club unless you're a member."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "I'm not going (to the party) unless you go too.",
+              "I'm not going (to the party) unless you're going too."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "The dog won't chase you unless you move suddenly."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Ben won't speak to you unless you ask him something."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "The doctor won't see you unless it's an emergency.",
+              "The doctor won't see you unless it's an emergency."
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "115.3",
       "type": "choice",
       "instruction": "Which is correct?",
+      "example": [1],
       "items": [
-        {"num": 1, "options": ["unless", "as long as"], "answer": 1},
-        {"num": 2, "options": ["unless", "providing"], "answer": 1},
-        {"num": 3, "options": ["unless", "providing"], "answer": 1},
-        {"num": 4, "options": ["unless", "as long as"], "answer": 1},
-        {"num": 5, "options": ["unless", "provided"], "answer": 1},
-        {"num": 6, "options": ["unless", "as long as"], "answer": 1},
-        {"num": 7, "options": ["unless", "provided"], "answer": 1},
-        {"num": 8, "options": ["Unless", "Provided"], "answer": 1},
-        {"num": 9, "options": ["unless", "as long as"], "answer": 1},
-        {"num": 10, "options": ["unless", "as long as"], "answer": 1}
+        {
+          "num": 1,
+          "options": [
+            "unless",
+            "as long as"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "unless",
+            "providing"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 3,
+          "options": [
+            "unless",
+            "providing"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": [
+            "unless",
+            "as long as"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": [
+            "unless",
+            "provided"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": [
+            "unless",
+            "as long as"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": [
+            "unless",
+            "provided"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": [
+            "Unless",
+            "Provided"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": [
+            "unless",
+            "as long as"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 10,
+          "options": [
+            "unless",
+            "as long as"
+          ],
+          "answer": 1
+        }
       ]
     },
     {
@@ -50,15 +253,69 @@
       "type": "self-check",
       "instruction": "Use your own ideas to complete these sentences.",
       "items": [
-        {"num": 1, "prompt": "We'll be late unless", "modelAnswers": ["We'll be late unless we take a taxi."]},
-        {"num": 2, "prompt": "I like hot weather as long as", "modelAnswers": ["it's not too hot."]},
-        {"num": 3, "prompt": "It takes 20 minutes to drive to the airport provided", "modelAnswers": ["there isn't too much traffic."]},
-        {"num": 4, "prompt": "I don't mind walking home as long as", "modelAnswers": ["it isn't raining."]},
-        {"num": 5, "prompt": "I like to walk to work in the morning unless", "modelAnswers": ["I'm in a hurry."]},
-        {"num": 6, "prompt": "We can meet tomorrow unless", "modelAnswers": ["you have something else to do."]},
-        {"num": 7, "prompt": "I'll lend you the money providing", "modelAnswers": ["you pay it back next week."]},
-        {"num": 8, "prompt": "I'll tell you a secret as long as", "modelAnswers": ["you don't tell anyone else."]},
-        {"num": 9, "prompt": "You won't achieve anything unless", "modelAnswers": ["you take risks."]}
+        {
+          "num": 1,
+          "prompt": "We'll be late unless",
+          "modelAnswers": [
+            "We'll be late unless we take a taxi."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I like hot weather as long as",
+          "modelAnswers": [
+            "it's not too hot."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "It takes 20 minutes to drive to the airport provided",
+          "modelAnswers": [
+            "there isn't too much traffic."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I don't mind walking home as long as",
+          "modelAnswers": [
+            "it isn't raining."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I like to walk to work in the morning unless",
+          "modelAnswers": [
+            "I'm in a hurry."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "We can meet tomorrow unless",
+          "modelAnswers": [
+            "you have something else to do."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "I'll lend you the money providing",
+          "modelAnswers": [
+            "you pay it back next week."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "I'll tell you a secret as long as",
+          "modelAnswers": [
+            "you don't tell anyone else."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "You won't achieve anything unless",
+          "modelAnswers": [
+            "you take risks."
+          ]
+        }
       ]
     }
   ]

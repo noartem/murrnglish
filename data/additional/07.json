@@ -1,45 +1,404 @@
 {
   "id": 7,
   "topic": "Present and past",
-  "refs": "Units 1\u201317",
-  "pdfPages": [318, 319],
+  "refs": "Units 1–17",
+  "pdfPages": [
+    318
+  ],
   "exercise": {
     "id": "7",
     "type": "fill-in",
     "instruction": "Put the verb into the correct form.",
     "items": [
-      {"num": 1, "parts": ["Hello, Joe. ", " you for ages. How are you?"], "answers": [["I haven\u2019t seen"]]},
-      {"num": 2, "parts": ["I\u2019m fine. How about you? ", " good."], "answers": [["You look", "You\u2019re looking"]]},
-      {"num": 3, "parts": ["So, ", " somewhere or "], "answers": [["are you going"]]},
-      {"num": 4, "parts": ["", " somebody?"], "answers": [["are you meeting"]]},
-      {"num": 5, "parts": ["", " to London for a business meeting."], "answers": [["I\u2019m going"]]},
-      {"num": 6, "parts": ["Oh. ", " away on business?"], "answers": [["Do you often go"]]},
-      {"num": 7, "parts": ["Quite often, yes. And you? Where ", "?"], "answers": [["are you going"]]},
-      {"num": 8, "parts": ["Nowhere. ", " a friend. Unfortunately"], "answers": [["I\u2019m meeting"]]},
-      {"num": 9, "parts": ["her train ", " \u2013"], "answers": [["has been", "is"]]},
-      {"num": 10, "parts": ["", " here for nearly an hour."], "answers": [["I\u2019ve been waiting"]]},
-      {"num": 11, "parts": ["The youngest ", " school."], "answers": [["has just started", "just started"]]},
-      {"num": 12, "parts": ["How ", " on?"], "answers": [["is she getting"]]},
-      {"num": 13, "parts": ["", " it?"], "answers": [["Does she like"]]},
-      {"num": 14, "parts": ["Yes, ", " it\u2019s great."], "answers": [["she thinks"]]},
-      {"num": 15, "parts": ["", " at the moment? The last time I"], "answers": [["Are you working"]]},
-      {"num": 16, "parts": ["", " to you, "], "answers": [["spoke"]]},
-      {"num": 17, "parts": ["", " for an insurance company."], "answers": [["you were working"]]},
-      {"num": 18, "parts": ["That\u2019s right. Unfortunately the company ", " out"], "answers": [["went"]]},
-      {"num": 19, "parts": ["of business a couple of months after ", " work there, so "], "answers": [["I started", "I\u2019d started"]]},
-      {"num": 20, "parts": ["", " my job."], "answers": [["I lost"]]},
-      {"num": 21, "parts": ["And ", " a job since then?"], "answers": [["you haven\u2019t had"]]},
-      {"num": 22, "parts": ["Not a permanent job. ", " a few temporary"], "answers": [["I\u2019ve had"]]},
-      {"num": 23, "parts": ["jobs. By the way, ", " Matt recently?"], "answers": [["have you seen"]]},
-      {"num": 24, "parts": ["Really? How long ", " in Canada?"], "answers": [["has he been"]]},
-      {"num": 25, "parts": ["About a year now. ", " him a few days before"], "answers": [["I saw"]]},
-      {"num": 26, "parts": [" ", "."], "answers": [["he went"]]},
-      {"num": 27, "parts": ["", " unemployed for months, so "], "answers": [["He\u2019d been"]]},
-      {"num": 28, "parts": ["", " to try his"], "answers": [["he decided", "he\u2019d decided"]]},
-      {"num": 29, "parts": ["luck somewhere else. ", " to going."], "answers": [["He was really looking forward"]]},
-      {"num": 30, "parts": ["So, what ", " there?"], "answers": [["is he doing"]]},
-      {"num": 31, "parts": ["I have no idea. ", " from him since"], "answers": [["I haven\u2019t heard"]]},
-      {"num": 32, "parts": [" ", "."], "answers": [["he left"]]}
+      {
+        "num": 1,
+        "parts": [
+          "Hello, Joe. ",
+          " (I / not / see) you for ages. How are you?"
+        ],
+        "answers": [
+          [
+            "I haven’t seen"
+          ]
+        ]
+      },
+      {
+        "num": 2,
+        "parts": [
+          "I’m fine. How about you? ",
+          " (you / look) good."
+        ],
+        "answers": [
+          [
+            "You look",
+            "You’re looking"
+          ]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "So, ",
+          " (you / go) somewhere or "
+        ],
+        "answers": [
+          [
+            "are you going"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "(you / meet) ",
+          " somebody?"
+        ],
+        "answers": [
+          [
+            "are you meeting"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "(I / go) ",
+          " to London for a business meeting."
+        ],
+        "answers": [
+          [
+            "I’m going"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "Oh. ",
+          " (you / oft en / go) away on business?"
+        ],
+        "answers": [
+          [
+            "Do you often go"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "Quite often, yes. And you? Where ",
+          "(you / go)?"
+        ],
+        "answers": [
+          [
+            "are you going"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "Nowhere. ",
+          " (I / meet) a friend. Unfortunately"
+        ],
+        "answers": [
+          [
+            "I’m meeting"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "her train ",
+          "(be) –"
+        ],
+        "answers": [
+          [
+            "has been",
+            "is"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "(I / wait) ",
+          " here for nearly an hour."
+        ],
+        "answers": [
+          [
+            "I’ve been waiting"
+          ]
+        ]
+      },
+      {
+        "num": 11,
+        "parts": [
+          "The youngest ",
+          " (just / start) school."
+        ],
+        "answers": [
+          [
+            "has just started",
+            "just started"
+          ]
+        ]
+      },
+      {
+        "num": 12,
+        "parts": [
+          "How ",
+          " (she / get) on?"
+        ],
+        "answers": [
+          [
+            "is she getting"
+          ]
+        ]
+      },
+      {
+        "num": 13,
+        "parts": [
+          "(she / like) ",
+          " it?"
+        ],
+        "answers": [
+          [
+            "Does she like"
+          ]
+        ]
+      },
+      {
+        "num": 14,
+        "parts": [
+          "Yes, ",
+          " (she / think) it’s great."
+        ],
+        "answers": [
+          [
+            "she thinks"
+          ]
+        ]
+      },
+      {
+        "num": 15,
+        "parts": [
+          "(you / work) ",
+          " at the moment? The last time I"
+        ],
+        "answers": [
+          [
+            "Are you working"
+          ]
+        ]
+      },
+      {
+        "num": 16,
+        "parts": [
+          "(speak) ",
+          " to you, "
+        ],
+        "answers": [
+          [
+            "spoke"
+          ]
+        ]
+      },
+      {
+        "num": 17,
+        "parts": [
+          "(you / work) ",
+          " for an insurance company."
+        ],
+        "answers": [
+          [
+            "you were working"
+          ]
+        ]
+      },
+      {
+        "num": 18,
+        "parts": [
+          "That’s right. Unfortunately the company ",
+          " (go) out"
+        ],
+        "answers": [
+          [
+            "went"
+          ]
+        ]
+      },
+      {
+        "num": 19,
+        "parts": [
+          "of business a couple of months after ",
+          " (I / start) work there, so "
+        ],
+        "answers": [
+          [
+            "I started",
+            "I’d started"
+          ]
+        ]
+      },
+      {
+        "num": 20,
+        "parts": [
+          "(I / lose) ",
+          " my job."
+        ],
+        "answers": [
+          [
+            "I lost"
+          ]
+        ]
+      },
+      {
+        "num": 21,
+        "parts": [
+          "And ",
+          " (you / not / have) a job since then?"
+        ],
+        "answers": [
+          [
+            "you haven’t had"
+          ]
+        ]
+      },
+      {
+        "num": 22,
+        "parts": [
+          "Not a permanent job. ",
+          " (I / have) a few temporary"
+        ],
+        "answers": [
+          [
+            "I’ve had"
+          ]
+        ]
+      },
+      {
+        "num": 23,
+        "parts": [
+          "jobs. By the way, ",
+          " (you / see) Matt recently?"
+        ],
+        "answers": [
+          [
+            "have you seen"
+          ]
+        ]
+      },
+      {
+        "num": 24,
+        "parts": [
+          "Really? How long ",
+          " (he / be) in Canada?"
+        ],
+        "answers": [
+          [
+            "has he been"
+          ]
+        ]
+      },
+      {
+        "num": 25,
+        "parts": [
+          "About a year now. ",
+          " (I / see) him a few days before"
+        ],
+        "answers": [
+          [
+            "I saw"
+          ]
+        ]
+      },
+      {
+        "num": 26,
+        "parts": [
+          " ",
+          ". (he / go)"
+        ],
+        "answers": [
+          [
+            "he went"
+          ]
+        ]
+      },
+      {
+        "num": 27,
+        "parts": [
+          "(he / be) ",
+          " unemployed for months, so "
+        ],
+        "answers": [
+          [
+            "He’d been"
+          ]
+        ]
+      },
+      {
+        "num": 28,
+        "parts": [
+          "(he / decide) ",
+          " to try his"
+        ],
+        "answers": [
+          [
+            "he decided",
+            "he’d decided"
+          ]
+        ]
+      },
+      {
+        "num": 29,
+        "parts": [
+          "luck somewhere else. ",
+          " (he / really / look forward) to going."
+        ],
+        "answers": [
+          [
+            "He was really looking forward"
+          ]
+        ]
+      },
+      {
+        "num": 30,
+        "parts": [
+          "So, what ",
+          " (he / do) there?"
+        ],
+        "answers": [
+          [
+            "is he doing"
+          ]
+        ]
+      },
+      {
+        "num": 31,
+        "parts": [
+          "I have no idea. ",
+          " (I / not / hear) from him since"
+        ],
+        "answers": [
+          [
+            "I haven’t heard"
+          ]
+        ]
+      },
+      {
+        "num": 32,
+        "parts": [
+          " ",
+          ". (he / leave)"
+        ],
+        "answers": [
+          [
+            "he left"
+          ]
+        ]
+      }
     ]
   }
 }

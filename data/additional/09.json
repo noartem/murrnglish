@@ -2,61 +2,135 @@
   "id": 9,
   "topic": "Past continuous and used to",
   "refs": "Units 6, 18",
-  "pdfPages": [319, 320],
+  "pdfPages": [
+    319
+  ],
   "exercise": {
     "id": "9",
     "type": "fill-in",
-    "instruction": "Complete the sentences using the past continuous (was/were -ing) or used to \u2026 . Use the verb in brackets.",
+    "instruction": "Complete the sentences using the past continuous (was/were -ing) or used to … . Use the verb in brackets.",
     "items": [
       {
         "num": 1,
-        "parts": ["I haven\u2019t been to the cinema for ages now. We ", " a lot."],
-        "answers": [["used to go"]]
+        "parts": [
+          "I haven’t been to the cinema for ages now. We ",
+          " a lot. (go)"
+        ],
+        "answers": [
+          [
+            "used to go"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 2,
-        "parts": ["Ann didn\u2019t see me wave to her. She ", " in the other direction."],
-        "answers": [["was looking"]]
+        "parts": [
+          "Ann didn’t see me wave to her. She ",
+          " in the other direction. (look)"
+        ],
+        "answers": [
+          [
+            "was looking"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 3,
-        "parts": ["I ", " a lot, but I don\u2019t use my car very much these days."],
-        "answers": [["used to drive"]]
+        "parts": [
+          "I ",
+          " a lot, but I don’t use my car very much these days. (drive)"
+        ],
+        "answers": [
+          [
+            "used to drive"
+          ]
+        ]
       },
       {
         "num": 4,
-        "parts": ["I asked the taxi driver to slow down. She ", " too fast."],
-        "answers": [["was driving"]]
+        "parts": [
+          "I asked the taxi driver to slow down. She ",
+          " too fast. (drive)"
+        ],
+        "answers": [
+          [
+            "was driving"
+          ]
+        ]
       },
       {
         "num": 5,
-        "parts": ["Rosemary and Jonathan met for the first time when they ", " in the same bank."],
-        "answers": [["were working"]]
+        "parts": [
+          "Rosemary and Jonathan met for the first time when they ",
+          " in the same bank. (work)"
+        ],
+        "answers": [
+          [
+            "were working"
+          ]
+        ]
       },
       {
         "num": 6,
-        "parts": ["When I was a child, I ", " a lot of bad dreams."],
-        "answers": [["used to have"]]
+        "parts": [
+          "When I was a child, I ",
+          " a lot of bad dreams. (have)"
+        ],
+        "answers": [
+          [
+            "used to have"
+          ]
+        ]
       },
       {
         "num": 7,
-        "parts": ["I wonder what Joe is doing these days. He ", " in Spain when I last heard from him."],
-        "answers": [["was living"]]
+        "parts": [
+          "I wonder what Joe is doing these days. He ",
+          " in Spain when I last heard from him. (live)"
+        ],
+        "answers": [
+          [
+            "was living"
+          ]
+        ]
       },
       {
         "num": 8,
-        "parts": ["\u2018Where were you yesterday afternoon?\u2019 \u2018I ", " volleyball.\u2019"],
-        "answers": [["was playing"]]
+        "parts": [
+          "‘Where were you yesterday afternoon?’ ‘I ",
+          " volleyball.’ (play)"
+        ],
+        "answers": [
+          [
+            "was playing"
+          ]
+        ]
       },
       {
         "num": 9,
-        "parts": ["\u2018Do you do any sports?\u2019 \u2018Not these days, but I ", " volleyball.\u2019"],
-        "answers": [["used to play"]]
+        "parts": [
+          "‘Do you do any sports?’ ‘Not these days, but I ",
+          " volleyball.’ (play)"
+        ],
+        "answers": [
+          [
+            "used to play"
+          ]
+        ]
       },
       {
         "num": 10,
-        "parts": ["George looked very smart at the party. He ", " a very nice suit."],
-        "answers": [["was wearing"]]
+        "parts": [
+          "George looked very smart at the party. He ",
+          " a very nice suit. (wear)"
+        ],
+        "answers": [
+          [
+            "was wearing"
+          ]
+        ]
       }
     ]
   }

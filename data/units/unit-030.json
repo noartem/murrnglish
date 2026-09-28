@@ -1,7 +1,10 @@
 {
   "unit": 30,
   "title": "may and might 2",
-  "pdfPages": [72, 73],
+  "pdfPages": [
+    72,
+    73
+  ],
   "exercises": [
     {
       "id": "30.1",
@@ -10,28 +13,64 @@
       "items": [
         {
           "num": 2,
-          "parts": ["Yes, I ", " a sports car."],
-          "answers": [["I'm going to get"]]
+          "parts": [
+            "Yes, I ",
+            " a sports car."
+          ],
+          "answers": [
+            [
+              "I'm going to get"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["He hasn't said yet. He ", " on Sunday."],
-          "answers": [["might come"]]
+          "parts": [
+            "He hasn't said yet. He ",
+            " on Sunday."
+          ],
+          "answers": [
+            [
+              "might come"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don't know yet. I ", " it in the bedroom."],
-          "answers": [["might hang"]]
+          "parts": [
+            "I don't know yet. I ",
+            " it in the bedroom."
+          ],
+          "answers": [
+            [
+              "might hang"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Yes, she's decided. She ", " to university."],
-          "answers": [["She's going"]]
+          "parts": [
+            "Yes, she's decided. She ",
+            " to university."
+          ],
+          "answers": [
+            [
+              "She's going"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Nothing fixed. I ", "."],
-          "answers": [["might go away"]]
+          "parts": [
+            "Nothing fixed. I ",
+            "."
+          ],
+          "answers": [
+            [
+              "might go away"
+            ]
+          ],
+          "example": true
         }
       ]
     },
@@ -39,32 +78,74 @@
       "id": "30.2",
       "type": "fill-in",
       "instruction": "Complete the sentences using might + a verb from the box:",
-      "wordBank": ["hear", "need", "rain", "slip", "spill", "wake"],
+      "wordBank": [
+        "hear",
+        "need",
+        "rain",
+        "slip",
+        "spill",
+        "wake"
+      ],
       "items": [
         {
           "num": 2,
-          "parts": ["Don\u2019t make too much noise. You ", " the baby."],
-          "answers": [["might wake"]]
+          "parts": [
+            "Don’t make too much noise. You ",
+            " the baby."
+          ],
+          "answers": [
+            [
+              "might wake"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Be careful with your coffee. You ", " it."],
-          "answers": [["might spill"]]
+          "parts": [
+            "Be careful with your coffee. You ",
+            " it."
+          ],
+          "answers": [
+            [
+              "might spill"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Don\u2019t forget your phone. You ", " it."],
-          "answers": [["might need"]]
+          "parts": [
+            "Don’t forget your phone. You ",
+            " it."
+          ],
+          "answers": [
+            [
+              "might need"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["It\u2019s better if we don\u2019t talk so loud. Somebody ", " us."],
-          "answers": [["might hear"]]
+          "parts": [
+            "It’s better if we don’t talk so loud. Somebody ",
+            " us."
+          ],
+          "answers": [
+            [
+              "might hear"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Be careful. This footpath is icy. You ", "."],
-          "answers": [["might slip"]]
+          "parts": [
+            "Be careful. This footpath is icy. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "might slip"
+            ]
+          ]
         }
       ]
     },
@@ -72,32 +153,74 @@
       "id": "30.3",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use might be able to or might have to + one of these verbs:",
-      "wordBank": ["fix", "help", "leave", "meet", "pay", "wait"],
+      "wordBank": [
+        "fix",
+        "help",
+        "leave",
+        "meet",
+        "pay",
+        "wait"
+      ],
       "items": [
         {
           "num": 2,
-          "parts": ["I can come to the meeting, but I ", " before the end."],
-          "answers": [["might have to leave"]]
+          "parts": [
+            "I can come to the meeting, but I ",
+            " before the end."
+          ],
+          "answers": [
+            [
+              "might have to leave"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I\u2019m not free this evening, but I ", " you tomorrow evening."],
-          "answers": [["might be able to meet"]]
+          "parts": [
+            "I’m not free this evening, but I ",
+            " you tomorrow evening."
+          ],
+          "answers": [
+            [
+              "might be able to meet"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I\u2019m not sure whether this car park is free or not. We ", "."],
-          "answers": [["might have to pay"]]
+          "parts": [
+            "I’m not sure whether this car park is free or not. We ",
+            "."
+          ],
+          "answers": [
+            [
+              "might have to pay"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["There\u2019s a long queue. We ", " a long time."],
-          "answers": [["might have to wait"]]
+          "parts": [
+            "There’s a long queue. We ",
+            " a long time."
+          ],
+          "answers": [
+            [
+              "might have to wait"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["\u2018I\u2019ve got a problem with my bike.\u2019 \u2018Let me have a look. I ", " it.\u2019"],
-          "answers": [["might be able to fix"]]
+          "parts": [
+            "‘I’ve got a problem with my bike.’ ‘Let me have a look. I ",
+            " it.’"
+          ],
+          "answers": [
+            [
+              "might be able to fix"
+            ]
+          ]
         }
       ]
     },
@@ -108,23 +231,31 @@
       "items": [
         {
           "num": 2,
-          "prompt": "I haven\u2019t seen him for a long time. I don\u2019t know if I will recognise him or not.",
-          "answers": ["I might not recognise him."]
+          "prompt": "I haven’t seen him for a long time. I don’t know if I will recognise him or not.",
+          "answers": [
+            "I might not recognise him."
+          ]
         },
         {
           "num": 3,
-          "prompt": "We want to go to the game, but I don\u2019t know whether we\u2019ll be able to get tickets.",
-          "answers": ["We might not be able to get tickets for the game."]
+          "prompt": "We want to go to the game, but I don’t know whether we’ll be able to get tickets.",
+          "answers": [
+            "We might not be able to get tickets for the game."
+          ]
         },
         {
           "num": 4,
-          "prompt": "I said I\u2019d do the shopping, but it\u2019s possible I won\u2019t have time.",
-          "answers": ["I might not have time to do the shopping."]
+          "prompt": "I said I’d do the shopping, but it’s possible I won’t have time.",
+          "answers": [
+            "I might not have time to do the shopping."
+          ]
         },
         {
           "num": 5,
-          "prompt": "I\u2019ve been invited to the wedding, but I\u2019m not sure that I\u2019ll be able to go.",
-          "answers": ["I might not be able to go to the wedding."]
+          "prompt": "I’ve been invited to the wedding, but I’m not sure that I’ll be able to go.",
+          "answers": [
+            "I might not be able to go to the wedding."
+          ]
         }
       ]
     },
@@ -135,18 +266,24 @@
       "items": [
         {
           "num": 2,
-          "prompt": "Your computer doesn\u2019t work any more. It will cost a lot to repair.",
-          "answers": ["I might as well buy a new one."]
+          "prompt": "Your computer doesn’t work any more. It will cost a lot to repair.",
+          "answers": [
+            "I might as well buy a new one."
+          ]
         },
         {
           "num": 3,
-          "prompt": "You\u2019ve painted the kitchen. You still have a lot of paint, so why not paint the bathroom too?",
-          "answers": ["I might as well paint the bathroom too."]
+          "prompt": "You’ve painted the kitchen. You still have a lot of paint, so why not paint the bathroom too?",
+          "answers": [
+            "I might as well paint the bathroom too."
+          ]
         },
         {
           "num": 4,
-          "prompt": "You and a friend are at home. You\u2019re bored. There\u2019s a film on TV starting in a few minutes.",
-          "answers": ["We might as well watch it."]
+          "prompt": "You and a friend are at home. You’re bored. There’s a film on TV starting in a few minutes.",
+          "answers": [
+            "We might as well watch it."
+          ]
         }
       ]
     }

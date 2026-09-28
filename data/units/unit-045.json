@@ -1,7 +1,10 @@
 {
   "unit": 45,
   "title": "it is said that … he is said to … he is supposed to …",
-  "pdfPages": [102, 103],
+  "pdfPages": [
+    102,
+    103
+  ],
   "exercises": [
     {
       "id": "45.1",
@@ -11,42 +14,59 @@
         {
           "num": 1,
           "prompt": "It is expected that the strike will end soon.",
-          "answers": ["The strike is expected to end soon."]
+          "answers": [
+            "The strike is expected to end soon."
+          ]
         },
         {
           "num": 2,
           "prompt": "It is reported that many people are homeless after the floods.",
-          "answers": ["Many people are reported to be homeless after the floods."]
+          "answers": [
+            "Many people are reported to be homeless after the floods."
+          ]
         },
         {
           "num": 3,
           "prompt": "It is thought that the thieves got in through a window in the roof.",
-          "answers": ["The thieves are thought to have got in through a window in the roof."]
+          "answers": [
+            "The thieves are thought to have got in through a window in the roof."
+          ]
         },
         {
           "num": 4,
           "prompt": "It is alleged that the driver of the car was driving at 110 miles an hour.",
-          "answers": ["The driver (of the car) is alleged to have been driving at 110 miles an hour.", "The driver (of the car) is alleged to have driven at 110 miles an hour."]
+          "answers": [
+            "The driver (of the car) is alleged to have been driving at 110 miles an hour.",
+            "The driver (of the car) is alleged to have driven at 110 miles an hour."
+          ]
         },
         {
           "num": 5,
           "prompt": "It is reported that the building has been badly damaged by the fire.",
-          "answers": ["The building is reported to have been badly damaged by the fire."]
+          "answers": [
+            "The building is reported to have been badly damaged by the fire."
+          ]
         },
         {
           "num": 6,
           "prompt": "It is said that the company is losing a lot of money.",
-          "answers": ["The company is said to be losing a lot of money."]
+          "answers": [
+            "The company is said to be losing a lot of money."
+          ]
         },
         {
           "num": 7,
           "prompt": "It is believed that the company lost a lot of money last year.",
-          "answers": ["The company is believed to have lost a lot of money last year."]
+          "answers": [
+            "The company is believed to have lost a lot of money last year."
+          ]
         },
         {
           "num": 8,
           "prompt": "It is expected that the company will make a loss this year.",
-          "answers": ["The company is expected to make a loss this year."]
+          "answers": [
+            "The company is expected to make a loss this year."
+          ]
         }
       ]
     },
@@ -57,33 +77,80 @@
       "items": [
         {
           "num": 1,
-          "parts": ["a: What's the City Hotel like? Can you recommend it? b: I've never stayed there, but it's ", " (it / supposed) very good."],
-          "answers": [["supposed to be"]]
+          "parts": [
+            "a: What's the City Hotel like? Can you recommend it? b: I've never stayed there, but it's ",
+            " (it / supposed) very good."
+          ],
+          "answers": [
+            [
+              "supposed to be"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["a: How much are these paintings worth? b: I'm not sure, but ", " (they / supposed) very valuable."],
-          "answers": [["they're supposed to be", "they are supposed to be"]]
+          "parts": [
+            "a: How much are these paintings worth? b: I'm not sure, but ",
+            " (they / supposed) very valuable."
+          ],
+          "answers": [
+            [
+              "they're supposed to be",
+              "they are supposed to be"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["a: This looks an interesting building. b: Yes, ", " (it / supposed) a prison a long time ago."],
-          "answers": [["it's supposed to have been", "it is supposed to have been"]]
+          "parts": [
+            "a: This looks an interesting building. b: Yes, ",
+            " (it / supposed) a prison a long time ago."
+          ],
+          "answers": [
+            [
+              "it's supposed to have been",
+              "it is supposed to have been"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["a: Is it true that your neighbours were lucky in the lottery? b: Yes, ", " (they / supposed / win) a lot of money."],
-          "answers": [["they're supposed to have won", "they are supposed to have won"]]
+          "parts": [
+            "a: Is it true that your neighbours were lucky in the lottery? b: Yes, ",
+            " (they / supposed / win) a lot of money."
+          ],
+          "answers": [
+            [
+              "they're supposed to have won",
+              "they are supposed to have won"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["a: Is it possible to climb to the top of the tower? b: Yes, ", " (the view / supposed) very nice."],
-          "answers": [["the view is supposed to be"]]
+          "parts": [
+            "a: Is it possible to climb to the top of the tower? b: Yes, ",
+            " (the view / supposed) very nice."
+          ],
+          "answers": [
+            [
+              "the view is supposed to be"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["a: I heard that Laura has gone away. b: Yes, ", " (she / supposed / living) in London now."],
-          "answers": [["she's supposed to be living", "she is supposed to be living"]]
+          "parts": [
+            "a: I heard that Laura has gone away. b: Yes, ",
+            " (she / supposed / living) in London now."
+          ],
+          "answers": [
+            [
+              "she's supposed to be living",
+              "she is supposed to be living"
+            ]
+          ]
         }
       ]
     },
@@ -95,37 +162,55 @@
         {
           "num": 1,
           "prompt": "How is it that everybody knows about the plan?",
-          "answers": ["It's supposed to be a secret."]
+          "answers": [
+            "It's supposed to be a secret."
+          ]
         },
         {
           "num": 2,
           "prompt": "You shouldn't criticise me all the time.",
-          "answers": ["You're supposed to be my friend.", "You are supposed to be my friend."]
+          "answers": [
+            "You're supposed to be my friend.",
+            "You are supposed to be my friend."
+          ]
         },
         {
           "num": 3,
           "prompt": "I shouldn't be eating this cake really.",
-          "answers": ["I'm supposed to be on a diet.", "I am supposed to be on a diet."]
+          "answers": [
+            "I'm supposed to be on a diet.",
+            "I am supposed to be on a diet."
+          ]
         },
         {
           "num": 4,
           "prompt": "I'm sorry for what I said. I was trying to be funny.",
-          "answers": ["It was supposed to be a joke."]
+          "answers": [
+            "It was supposed to be a joke."
+          ]
         },
         {
           "num": 5,
           "prompt": "What's this drawing? Is it a tree? Or maybe",
-          "answers": ["Or maybe it's supposed to be a flower.", "Or maybe it is supposed to be a flower."]
+          "answers": [
+            "Or maybe it's supposed to be a flower.",
+            "Or maybe it is supposed to be a flower."
+          ]
         },
         {
           "num": 6,
           "prompt": "You shouldn't be playing a game now.",
-          "answers": ["You're supposed to be working.", "You are supposed to be working."]
+          "answers": [
+            "You're supposed to be working.",
+            "You are supposed to be working."
+          ]
         },
         {
           "num": 7,
           "prompt": "That's strange. The museum seems to be closed.",
-          "answers": ["It's supposed to be open every day."]
+          "answers": [
+            "It's supposed to be open every day."
+          ]
         }
       ]
     },
@@ -137,32 +222,50 @@
         {
           "num": 1,
           "prompt": "(park)",
-          "answers": ["You're not supposed to park your car here.", "You are not supposed to park your car here."]
+          "answers": [
+            "You're not supposed to park your car here.",
+            "You are not supposed to park your car here."
+          ]
         },
         {
           "num": 2,
           "prompt": "(start)",
-          "answers": ["We're supposed to start work at 8.15, but we rarely do anything before 8.30.", "We are supposed to start work at 8.15, but we rarely do anything before 8.30."]
+          "answers": [
+            "We're supposed to start work at 8.15, but we rarely do anything before 8.30.",
+            "We are supposed to start work at 8.15, but we rarely do anything before 8.30."
+          ]
         },
         {
           "num": 3,
           "prompt": "(phone)",
-          "answers": ["I was supposed to phone Helen last night, but I completely forgot."]
+          "answers": [
+            "I was supposed to phone Helen last night, but I completely forgot."
+          ]
         },
         {
           "num": 4,
           "prompt": "(put)",
-          "answers": ["This door is a fire exit. We aren't supposed to put anything in front of it.", "This door is a fire exit. We're not supposed to put anything in front of it.", "This door is a fire exit. We are not supposed to put anything in front of it."]
+          "answers": [
+            "This door is a fire exit. We aren't supposed to put anything in front of it.",
+            "This door is a fire exit. We're not supposed to put anything in front of it.",
+            "This door is a fire exit. We are not supposed to put anything in front of it."
+          ]
         },
         {
           "num": 5,
           "prompt": "(depart)",
-          "answers": ["My flight was supposed to depart at 10.15, but it didn't leave until 11.30."]
+          "answers": [
+            "My flight was supposed to depart at 10.15, but it didn't leave until 11.30."
+          ]
         },
         {
           "num": 6,
           "prompt": "(lift)",
-          "answers": ["Jonathan has a problem with his back. He isn't supposed to lift anything heavy.", "Jonathan has a problem with his back. He's not supposed to lift anything heavy.", "Jonathan has a problem with his back. He is not supposed to lift anything heavy."]
+          "answers": [
+            "Jonathan has a problem with his back. He isn't supposed to lift anything heavy.",
+            "Jonathan has a problem with his back. He's not supposed to lift anything heavy.",
+            "Jonathan has a problem with his back. He is not supposed to lift anything heavy."
+          ]
         }
       ]
     }

@@ -1,55 +1,366 @@
 {
   "unit": 84,
-  "title": "there \u2026 and it \u2026",
-  "pdfPages": [180, 181],
+  "title": "there … and it …",
+  "pdfPages": [
+    180,
+    181
+  ],
   "exercises": [
     {
       "id": "84.1",
       "type": "fill-in",
-      "instruction": "Put in there is/was or it is/was. Some sentences are questions (is there \u2026 ? / was it \u2026 ? etc.) and some are negative (there isn\u2019t / it wasn\u2019t etc.).",
+      "instruction": "Put in there is/was or it is/was. Some sentences are questions (is there … ? / was it … ? etc.) and some are negative (there isn’t / it wasn’t etc.).",
       "items": [
-        {"num": 1, "parts": ["The journey took a long time. ", " a lot of traffic."], "answers": [["There was"]]},
-        {"num": 2, "parts": ["What\u2019s the new restaurant like? ", " good?"], "answers": [["Is it"]]},
-        {"num": 3, "parts": [" ", " something wrong with the washing machine. It\u2019s not working properly."], "answers": [["There\u2019s", "There is"]]},
-        {"num": 4, "parts": ["I wanted to visit the museum yesterday, but ", " enough time."], "answers": [["there wasn\u2019t"]]},
-        {"num": 5, "parts": ["What\u2019s that new building over there? ", " a hotel?"], "answers": [["Is it"]]},
-        {"num": 6, "parts": ["How can we get across the river? ", " a bridge?"], "answers": [["Is there"]]},
-        {"num": 7, "parts": ["A few days ago ", " a big storm, which caused a lot of damage."], "answers": [["there was"]]},
-        {"num": 8, "parts": ["I can\u2019t find my phone. ", " in my bag \u2013 I just looked."], "answers": [["It isn\u2019t", "It\u2019s not"]]},
-        {"num": 9, "parts": [" ", " anything interesting on TV, so I turned it off."], "answers": [["There wasn\u2019t"]]},
-        {"num": 10, "parts": [" ", " often very cold here, but ", " much snow."], "answers": [["It\u2019s", "It is"], ["there isn\u2019t"]]},
-        {"num": 11, "parts": ["I couldn\u2019t see anything. ", " completely dark."], "answers": [["It was"]]},
-        {"num": 12, "parts": ["\u2018 ", " a bookshop near here?\u2019 \u2018Yes, ", " one in Hudson Street.\u2019"], "answers": [["Is there"], ["there\u2019s", "there is"]]},
-        {"num": 13, "parts": [" ", " difficult to get a job right now. ", " a lot of unemployment."], "answers": [["It\u2019s", "It is"], ["There\u2019s", "There is"]]},
-        {"num": 14, "parts": ["When we got to the cinema, ", " a queue outside. ", " a very long queue, so we decided not to wait."], "answers": [["there was"], ["It was"]]}
+        {
+          "num": 1,
+          "parts": [
+            "The journey took a long time. ",
+            " a lot of traffic."
+          ],
+          "answers": [
+            [
+              "There was"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "What’s the new restaurant like? ",
+            " good?"
+          ],
+          "answers": [
+            [
+              "Is it"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            " ",
+            " something wrong with the washing machine. It’s not working properly."
+          ],
+          "answers": [
+            [
+              "There’s",
+              "There is"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I wanted to visit the museum yesterday, but ",
+            " enough time."
+          ],
+          "answers": [
+            [
+              "there wasn’t"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "What’s that new building over there? ",
+            " a hotel?"
+          ],
+          "answers": [
+            [
+              "Is it"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "How can we get across the river? ",
+            " a bridge?"
+          ],
+          "answers": [
+            [
+              "Is there"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A few days ago ",
+            " a big storm, which caused a lot of damage."
+          ],
+          "answers": [
+            [
+              "there was"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I can’t find my phone. ",
+            " in my bag – I just looked."
+          ],
+          "answers": [
+            [
+              "It isn’t",
+              "It’s not"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            " ",
+            " anything interesting on TV, so I turned it off."
+          ],
+          "answers": [
+            [
+              "There wasn’t"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            " ",
+            " often very cold here, but ",
+            " much snow."
+          ],
+          "answers": [
+            [
+              "It’s",
+              "It is"
+            ],
+            [
+              "there isn’t"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I couldn’t see anything. ",
+            " completely dark."
+          ],
+          "answers": [
+            [
+              "It was"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "‘ ",
+            " a bookshop near here?’ ‘Yes, ",
+            " one in Hudson Street.’"
+          ],
+          "answers": [
+            [
+              "Is there"
+            ],
+            [
+              "there’s",
+              "there is"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            " ",
+            " difficult to get a job right now. ",
+            " a lot of unemployment."
+          ],
+          "answers": [
+            [
+              "It’s",
+              "It is"
+            ],
+            [
+              "There’s",
+              "There is"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "When we got to the cinema, ",
+            " a queue outside. ",
+            " a very long queue, so we decided not to wait."
+          ],
+          "answers": [
+            [
+              "there was"
+            ],
+            [
+              "It was"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "84.2",
       "type": "write",
-      "instruction": "Read the first sentence and then write a sentence beginning There \u2026 .",
+      "instruction": "Read the first sentence and then write a sentence beginning There … .",
       "items": [
-        {"num": 1, "prompt": "The roads were busy yesterday.", "answers": ["There was a lot of traffic."]},
-        {"num": 2, "prompt": "This soup is very salty.", "answers": ["There\u2019s a lot of salt in the soup.", "There is a lot of salt in the soup.", "There\u2019s too much salt in the soup.", "There is too much salt in the soup."]},
-        {"num": 3, "prompt": "The box was empty.", "answers": ["There was nothing in the box."]},
-        {"num": 4, "prompt": "About 50 people came to the meeting.", "answers": ["There were about 50 people at the meeting."]},
-        {"num": 5, "prompt": "The film is very violent.", "answers": ["There\u2019s a lot of violence in the film.", "There is a lot of violence in the film."]},
-        {"num": 6, "prompt": "I like this town \u2013 it\u2019s lively.", "answers": ["There is a lot to do in this town.", "There is plenty to do in this town.", "There is a lot happening in this town.", "There are a lot of places to go in this town."]}
+        {
+          "num": 1,
+          "prompt": "The roads were busy yesterday.",
+          "answers": [
+            "There was a lot of traffic."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "This soup is very salty.",
+          "answers": [
+            "There’s a lot of salt in the soup.",
+            "There is a lot of salt in the soup.",
+            "There’s too much salt in the soup.",
+            "There is too much salt in the soup."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "The box was empty.",
+          "answers": [
+            "There was nothing in the box."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "About 50 people came to the meeting.",
+          "answers": [
+            "There were about 50 people at the meeting."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "The film is very violent.",
+          "answers": [
+            "There’s a lot of violence in the film.",
+            "There is a lot of violence in the film."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I like this town – it’s lively.",
+          "answers": [
+            "There is a lot to do in this town.",
+            "There is plenty to do in this town.",
+            "There is a lot happening in this town.",
+            "There are a lot of places to go in this town."
+          ]
+        }
       ]
     },
     {
       "id": "84.3",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use there would be, there used to be etc. Choose from:",
-      "wordBank": ["won\u2019t", "may", "would", "wouldn\u2019t", "should", "used to", "is going to"],
+      "wordBank": [
+        "won’t",
+        "may",
+        "would",
+        "wouldn’t",
+        "should",
+        "used to",
+        "is going to"
+      ],
       "items": [
-        {"num": 1, "parts": ["If people drove more carefully, there ", " fewer accidents."], "answers": [["would be"]]},
-        {"num": 2, "parts": ["\u2018Do we have any eggs?\u2019 \u2018I\u2019m not sure. ", " some in the fridge.\u2019"], "answers": [["There may be"]]},
-        {"num": 3, "parts": ["I think everything will be OK. ", " any problems."], "answers": [["There won\u2019t be"]]},
-        {"num": 4, "parts": ["Look at those clouds. ", " a storm. I\u2019m sure of it."], "answers": [["There\u2019s going to be", "There is going to be"]]},
-        {"num": 5, "parts": ["There isn\u2019t a school in the village. ", " one, but it closed a few years ago."], "answers": [["There used to be"]]},
-        {"num": 6, "parts": ["People drive too fast on this road. I think ", " a speed limit."], "answers": [["there should be"]]},
-        {"num": 7, "parts": ["If people weren\u2019t so aggressive, ", " any wars."], "answers": [["there wouldn\u2019t be"]]}
+        {
+          "num": 1,
+          "parts": [
+            "If people drove more carefully, there ",
+            " fewer accidents."
+          ],
+          "answers": [
+            [
+              "would be"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Do we have any eggs?’ ‘I’m not sure. ",
+            " some in the fridge.’"
+          ],
+          "answers": [
+            [
+              "There may be"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I think everything will be OK. ",
+            " any problems."
+          ],
+          "answers": [
+            [
+              "There won’t be"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Look at those clouds. ",
+            " a storm. I’m sure of it."
+          ],
+          "answers": [
+            [
+              "There’s going to be",
+              "There is going to be"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "There isn’t a school in the village. ",
+            " one, but it closed a few years ago."
+          ],
+          "answers": [
+            [
+              "There used to be"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "People drive too fast on this road. I think ",
+            " a speed limit."
+          ],
+          "answers": [
+            [
+              "there should be"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "If people weren’t so aggressive, ",
+            " any wars."
+          ],
+          "answers": [
+            [
+              "there wouldn’t be"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -57,18 +368,90 @@
       "type": "write",
       "instruction": "Are these sentences OK? Change it to there where necessary.",
       "items": [
-        {"num": 1, "prompt": "They live on a busy road. It must be a lot of noise.", "answers": ["There must be a lot of noise."]},
-        {"num": 2, "prompt": "It\u2019s a long way from my house to the nearest shop.", "answers": ["OK"]},
-        {"num": 3, "prompt": "After the lecture it will be an opportunity to ask questions.", "answers": ["there will be an opportunity to ask questions."]},
-        {"num": 4, "prompt": "Why was she so unfriendly? It must have been a reason.", "answers": ["There must have been a reason."]},
-        {"num": 5, "prompt": "I like where I live, but it would be nicer to live by the sea.", "answers": ["OK"]},
-        {"num": 6, "prompt": "How long is it since you last went to the theatre?", "answers": ["OK"]},
-        {"num": 7, "prompt": "It used to be a lot of tourists here, but not many come now.", "answers": ["There used to be a lot of tourists here, but not many come now."]},
-        {"num": 8, "prompt": "My phone won\u2019t work here. It\u2019s no signal.", "answers": ["There\u2019s no signal."]},
-        {"num": 9, "prompt": "It was Ken\u2019s birthday yesterday. We had a party.", "answers": ["OK"]},
-        {"num": 10, "prompt": "We won\u2019t have any problem parking the car. It\u2019s sure to be a car park somewhere.", "answers": ["There\u2019s sure to be a car park somewhere."]},
-        {"num": 11, "prompt": "I\u2019m sorry about what happened. It was my fault.", "answers": ["OK"]},
-        {"num": 12, "prompt": "I was told that it would be somebody to meet me at the station, but it wasn\u2019t anybody.", "answers": ["there would be somebody to meet me at the station, but there wasn\u2019t anybody."]}
+        {
+          "num": 1,
+          "prompt": "They live on a busy road. It must be a lot of noise.",
+          "answers": [
+            "There must be a lot of noise."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "It’s a long way from my house to the nearest shop.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "After the lecture it will be an opportunity to ask questions.",
+          "answers": [
+            "there will be an opportunity to ask questions."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Why was she so unfriendly? It must have been a reason.",
+          "answers": [
+            "There must have been a reason."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I like where I live, but it would be nicer to live by the sea.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "How long is it since you last went to the theatre?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "It used to be a lot of tourists here, but not many come now.",
+          "answers": [
+            "There used to be a lot of tourists here, but not many come now."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "My phone won’t work here. It’s no signal.",
+          "answers": [
+            "There’s no signal."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "It was Ken’s birthday yesterday. We had a party.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "We won’t have any problem parking the car. It’s sure to be a car park somewhere.",
+          "answers": [
+            "There’s sure to be a car park somewhere."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "I’m sorry about what happened. It was my fault.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "I was told that it would be somebody to meet me at the station, but it wasn’t anybody.",
+          "answers": [
+            "there would be somebody to meet me at the station, but there wasn’t anybody."
+          ]
+        }
       ]
     }
   ]

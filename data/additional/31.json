@@ -2,7 +2,9 @@
   "id": 31,
   "topic": "Adjectives and adverbs",
   "refs": "Units 98–108",
-  "pdfPages": [332, 333],
+  "pdfPages": [
+    332
+  ],
   "exercise": {
     "id": "31",
     "type": "write",
@@ -11,77 +13,108 @@
       {
         "num": 1,
         "prompt": "The building was total destroyed in the fire.",
-        "answers": ["totally destroyed"]
+        "answers": [
+          "totally destroyed"
+        ]
       },
       {
         "num": 2,
         "prompt": "I didn't like the book. It was such a stupid story.",
-        "answers": ["OK"]
+        "answers": [
+          "OK"
+        ]
       },
       {
         "num": 3,
         "prompt": "The city is very polluted. It's the more polluted place I've ever been to.",
-        "answers": ["It's the most polluted place I've ever been to."]
+        "answers": [
+          "It's the most polluted place I've ever been to."
+        ]
       },
       {
         "num": 4,
         "prompt": "I was disappointing that I didn't get the job. I was well-qualified and the interview went well.",
-        "answers": ["I was disappointed that I didn't get the job."]
+        "answers": [
+          "I was disappointed that I didn't get the job."
+        ]
       },
       {
         "num": 5,
         "prompt": "It's warm today, but there's quite a strong wind.",
-        "answers": ["OK"]
+        "answers": [
+          "OK"
+        ]
       },
       {
         "num": 6,
         "prompt": "Joe works hardly, but he doesn't get paid very much.",
-        "answers": ["Joe works hard, but he doesn't get paid very much."]
+        "answers": [
+          "Joe works hard, but he doesn't get paid very much."
+        ]
       },
       {
         "num": 7,
         "prompt": "The company's offices are in a modern large building.",
-        "answers": ["The company's offices are in a large modern building."]
+        "answers": [
+          "The company's offices are in a large modern building."
+        ]
       },
       {
         "num": 8,
         "prompt": "Dan is a very fast runner. I wish I could run as fast as him.",
-        "answers": ["OK"]
+        "answers": [
+          "OK"
+        ]
       },
       {
         "num": 9,
         "prompt": "I missed the three last days of the course because I was ill.",
-        "answers": ["I missed the last three days of the course because I was ill."]
+        "answers": [
+          "I missed the last three days of the course because I was ill."
+        ]
       },
       {
         "num": 10,
         "prompt": "You don't look happy. What's the matter?",
-        "answers": ["OK"]
+        "answers": [
+          "OK"
+        ]
       },
       {
         "num": 11,
         "prompt": "The weather has been unusual cold for the time of the year.",
-        "answers": ["The weather has been unusually cold for the time of the year."]
+        "answers": [
+          "The weather has been unusually cold for the time of the year."
+        ]
       },
       {
         "num": 12,
         "prompt": "The water in the pool was too dirty to swim in it.",
-        "answers": ["The water in the pool was too dirty to swim in."]
+        "answers": [
+          "The water in the pool was too dirty to swim in."
+        ]
       },
       {
         "num": 13,
         "prompt": "I got impatient because we had to wait so long time.",
-        "answers": ["I got impatient because we had to wait such a long time.", "I got impatient because we had to wait so long."]
+        "answers": [
+          "I got impatient because we had to wait such a long time.",
+          "I got impatient because we had to wait so long."
+        ]
       },
       {
         "num": 14,
         "prompt": "Is this box big enough or do you need a bigger one?",
-        "answers": ["OK"]
+        "answers": [
+          "OK"
+        ]
       },
       {
         "num": 15,
         "prompt": "This morning I got up more early than usual.",
-        "answers": ["This morning I got up earlier than usual."]
+        "answers": [
+          "This morning I got up earlier than usual."
+        ]
       }
     ]
   }

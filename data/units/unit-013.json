@@ -89,47 +89,47 @@
       "items": [
         {
           "num": 3,
-          "parts": ["I studied German at school, but ", " most of it now."],
+          "parts": ["I studied German at school, but ", " most of it now. (I / forget)"],
           "answers": [["I've forgotten", "I have forgotten"]]
         },
         {
           "num": 4,
-          "parts": ["The police ", " three people, but later they let them go."],
+          "parts": ["The police ", " three people, but later they let them go. (arrest)"],
           "answers": [["arrested"]]
         },
         {
           "num": 5,
-          "parts": ["Do you think ", "?"],
+          "parts": ["Do you think ", "? (it / improve)"],
           "answers": [["it's improved", "it has improved"]]
         },
         {
           "num": 6,
-          "parts": ["", " your coffee?"],
+          "parts": ["", " your coffee? (you / finish)"],
           "answers": [["Have you finished"]]
         },
         {
           "num": 7,
-          "parts": ["", " for a job as a tour guide, but I wasn't successful."],
+          "parts": ["", " for a job as a tour guide, but I wasn't successful. (I / apply)"],
           "answers": [["I applied"]]
         },
         {
           "num": 8,
-          "parts": ["", " outside the house, but it's not there now."],
+          "parts": ["", " outside the house, but it's not there now. (it / be)"],
           "answers": [["It was"]]
         },
         {
           "num": 9,
-          "parts": ["", " an accident."],
+          "parts": ["", " an accident. (there / be)"],
           "answers": [["There's been", "There has been"]]
         },
         {
           "num": 10,
-          "parts": ["a: I've found my phone. b: Oh, good. Where ", " it? a: ", " at the bottom of my bag."],
+          "parts": ["a: I've found my phone. b: Oh, good. Where ", " (you / find) it? a: ", " at the bottom of my bag. (It / be)"],
           "answers": [["did you find"], ["It was"]]
         },
         {
           "num": 11,
-          "parts": ["a: Ben won't be able to play tennis for a while. ", " his arm. b: Oh. How ", "? a: ", " off a ladder."],
+          "parts": ["a: Ben won't be able to play tennis for a while. ", " (He / break) his arm. b: Oh. How ", "(that / happen)? a: ", " off a ladder. (He / fall)"],
           "answers": [["He's broken", "He has broken", "He broke"], ["did that happen"], ["He fell"]]
         }
       ]

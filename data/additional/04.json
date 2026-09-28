@@ -10,8 +10,8 @@
     "items": [
       {
         "num": 1,
-        "prompt": "a: What's Chicago like? Is it a good place to visit?\n  b: I've no idea. I've never been …",
-        "modelAnswers": []
+        "prompt": "a: What's Chicago like? Is it a good place to visit?\n  b: I've no idea. I've never been there.",
+        "modelAnswers": ["I've no idea. I've never been there."]
       },
       {
         "num": 2,
@@ -46,12 +46,12 @@
       {
         "num": 8,
         "prompt": "a: How often do you go to the cinema?\n  b: Very rarely. It's nearly a year …",
-        "modelAnswers": []
+        "modelAnswers": ["since I've been", "since I went", "since I last went"]
       },
       {
         "num": 9,
         "prompt": "a: I bought some new shoes. Do you like them?\n  b: Yes, they're very nice. Where …",
-        "modelAnswers": []
+        "modelAnswers": ["did you buy", "did you get"]
       }
     ]
   }

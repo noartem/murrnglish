@@ -1,17 +1,44 @@
 {
   "unit": 9,
   "title": "Present perfect continuous (I have been doing)",
-  "pdfPages": [30, 31],
+  "pdfPages": [
+    30,
+    31
+  ],
   "exercises": [
     {
       "id": "9.1",
       "type": "self-check",
       "instruction": "What have these people been doing or what has been happening?",
       "items": [
-        {"num": 1, "prompt": "It\u2019s been raining.", "modelAnswers": ["It\u2019s been raining."]},
-        {"num": 2, "prompt": "", "modelAnswers": ["She\u2019s been watching TV / She has been watching TV"]},
-        {"num": 3, "prompt": "", "modelAnswers": ["They\u2019ve been playing tennis / They have been playing tennis"]},
-        {"num": 4, "prompt": "", "modelAnswers": ["He\u2019s been running / He has been running"]}
+        {
+          "num": 1,
+          "prompt": "It’s been raining.",
+          "modelAnswers": [
+            "It’s been raining."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "",
+          "modelAnswers": [
+            "She’s been watching TV / She has been watching TV"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "modelAnswers": [
+            "They’ve been playing tennis / They have been playing tennis"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "modelAnswers": [
+            "He’s been running / He has been running"
+          ]
+        }
       ]
     },
     {
@@ -19,11 +46,41 @@
       "type": "write",
       "instruction": "Write a question for each situation.",
       "items": [
-        {"num": 1, "prompt": "(you / swim?)", "answers": ["Have you been swimming?"]},
-        {"num": 2, "prompt": "(you / wait / long?)", "answers": ["Have you been waiting long?"]},
-        {"num": 3, "prompt": "(what / you / do?)", "answers": ["What have you been doing?"]},
-        {"num": 4, "prompt": "(how long / you / work / here?)", "answers": ["How long have you been working here?"]},
-        {"num": 5, "prompt": "(how long / you / do / that?)", "answers": ["How long have you been doing that?"]}
+        {
+          "num": 1,
+          "prompt": "(you / swim?)",
+          "answers": [
+            "Have you been swimming?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(you / wait / long?)",
+          "answers": [
+            "Have you been waiting long?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(what / you / do?)",
+          "answers": [
+            "What have you been doing?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(how long / you / work / here?)",
+          "answers": [
+            "How long have you been working here?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(how long / you / do / that?)",
+          "answers": [
+            "How long have you been doing that?"
+          ]
+        }
       ]
     },
     {
@@ -31,11 +88,72 @@
       "type": "fill-in",
       "instruction": "Read the situations and complete the sentences.",
       "items": [
-        {"num": 1, "parts": ["It ", " for two hours."], "answers": [["\u2019s been raining", "has been raining"]]},
-        {"num": 2, "parts": ["We ", " for 20 minutes."], "answers": [["\u2019ve been waiting", "have been waiting"]]},
-        {"num": 3, "parts": ["I ", " since December."], "answers": [["\u2019ve been learning Japanese", "have been learning Japanese"]]},
-        {"num": 4, "parts": ["", " since 18 January."], "answers": [["She\u2019s been working there", "She has been working there"]]},
-        {"num": 5, "parts": ["", " for years."], "answers": [["They\u2019ve been going there", "They have been going there"]]}
+        {
+          "num": 1,
+          "parts": [
+            "It ",
+            " for two hours."
+          ],
+          "answers": [
+            [
+              "’s been raining",
+              "has been raining"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "We ",
+            " for 20 minutes."
+          ],
+          "answers": [
+            [
+              "’ve been waiting",
+              "have been waiting"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I ",
+            " since December."
+          ],
+          "answers": [
+            [
+              "’ve been learning Japanese",
+              "have been learning Japanese"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " since 18 January."
+          ],
+          "answers": [
+            [
+              "She’s been working there",
+              "She has been working there"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " for years."
+          ],
+          "answers": [
+            [
+              "They’ve been going there",
+              "They have been going there"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -43,15 +161,120 @@
       "type": "fill-in",
       "instruction": "Put the verb into the present continuous (am/is/are + -ing) or present perfect continuous (have/has been + -ing).",
       "items": [
-        {"num": 1, "parts": ["Maria ", " English for two years."], "answers": [["has been learning"]]},
-        {"num": 2, "parts": ["Hi, Tom. ", " (I / look) for you. I need to ask you something."], "answers": [["I\u2019ve been looking", "I have been looking"]]},
-        {"num": 3, "parts": ["Why ", " (you / look) at me like that? Stop it!"], "answers": [["are you looking"]]},
-        {"num": 4, "parts": ["Rachel is a teacher. ", " (she / teach) for ten years."], "answers": [["She\u2019s been teaching", "She has been teaching"]]},
-        {"num": 5, "parts": ["", " (I / think) about what you said and I\u2019ve decided to take your advice."], "answers": [["I\u2019ve been thinking", "I have been thinking"]]},
-        {"num": 6, "parts": ["\u2018Is Paul on holiday this week?\u2019 \u2018No, ", " (he / work).\u2019"], "answers": [["he\u2019s working", "he is working"]]},
-        {"num": 7, "parts": ["Sarah is very tired. ", " (she / work) very hard recently."], "answers": [["She\u2019s been working", "She has been working"]]},
-        {"num": 8, "parts": ["It\u2019s dangerous to use your phone when ", " (you / drive)."], "answers": [["you\u2019re driving", "you are driving"]]},
-        {"num": 9, "parts": ["Laura ", " (travel) in South America for the last three months."], "answers": [["has been travelling"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Maria ",
+            " (Maria / learn) English for two years."
+          ],
+          "answers": [
+            [
+              "has been learning"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Hi, Tom. ",
+            " (I / look) for you. I need to ask you something."
+          ],
+          "answers": [
+            [
+              "I’ve been looking",
+              "I have been looking"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Why ",
+            " (you / look) at me like that? Stop it!"
+          ],
+          "answers": [
+            [
+              "are you looking"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Rachel is a teacher. ",
+            " (she / teach) for ten years."
+          ],
+          "answers": [
+            [
+              "She’s been teaching",
+              "She has been teaching"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " (I / think) about what you said and I’ve decided to take your advice."
+          ],
+          "answers": [
+            [
+              "I’ve been thinking",
+              "I have been thinking"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "‘Is Paul on holiday this week?’ ‘No, ",
+            " (he / work).’"
+          ],
+          "answers": [
+            [
+              "he’s working",
+              "he is working"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Sarah is very tired. ",
+            " (she / work) very hard recently."
+          ],
+          "answers": [
+            [
+              "She’s been working",
+              "She has been working"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "It’s dangerous to use your phone when ",
+            " (you / drive)."
+          ],
+          "answers": [
+            [
+              "you’re driving",
+              "you are driving"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Laura ",
+            " (travel) in South America for the last three months."
+          ],
+          "answers": [
+            [
+              "has been travelling"
+            ]
+          ]
+        }
       ]
     }
   ]

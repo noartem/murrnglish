@@ -10,42 +10,42 @@
     "items": [
       {
         "num": 3,
-        "parts": ["Not at the moment, but it ", " later."],
+        "parts": ["Not at the moment, but it ", " later. (rain)"],
         "answers": [["could rain", "might rain"]]
       },
       {
         "num": 4,
-        "parts": ["I'm not sure. She ", " out."],
+        "parts": ["I'm not sure. She ", " out. (go)"],
         "answers": [["might have gone", "could have gone"]]
       },
       {
         "num": 5,
-        "parts": ["No, I had to work that night, so I ", "."],
+        "parts": ["No, I had to work that night, so I ", ". (go)"],
         "answers": [["couldn't go"]]
       },
       {
         "num": 6,
-        "parts": ["No, you ", " him this morning. He's away on holiday."],
+        "parts": ["No, you ", " him this morning. He's away on holiday. (see)"],
         "answers": [["couldn't have seen", "can't have seen"]]
       },
       {
         "num": 7,
-        "parts": ["Well, it takes about one and a half hours, so if we leave at 3 o'clock, we ", " there by 4.30."],
+        "parts": ["Well, it takes about one and a half hours, so if we leave at 3 o'clock, we ", " there by 4.30. (get)"],
         "answers": [["should get"]]
       },
       {
         "num": 8,
-        "parts": ["Years ago. I ", " him if I saw him now."],
+        "parts": ["Years ago. I ", " him if I saw him now. (recognise)"],
         "answers": [["wouldn't recognise", "might not recognise"]]
       },
       {
         "num": 9,
-        "parts": ["There was a loud explosion about an hour ago. You ", " it."],
+        "parts": ["There was a loud explosion about an hour ago. You ", " it. (hear)"],
         "answers": [["must have heard"]]
       },
       {
         "num": 10,
-        "parts": ["You went the wrong way. You ", " left."],
+        "parts": ["You went the wrong way. You ", " left. (turn) (conditional)"],
         "answers": [["should have turned"]]
       }
     ]

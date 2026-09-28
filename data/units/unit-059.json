@@ -6,14 +6,15 @@
     {
       "id": "59.1",
       "type": "write",
-      "instruction": "Which do you prefer? Write sentences using \u2018I prefer (something) to (something else)\u2019.",
+      "instruction": "Which do you prefer? Write sentences using \u2018I prefer (something) to (something else)\u2019. Now rewrite sentences 3 and 4 using rather than:",
       "items": [
-        {"num": 1, "prompt": "(driving / travelling by train)", "answers": ["I prefer driving to travelling by train."]},
+        {"num": 1, "prompt": "(driving / travelling by train)", "answers": ["I prefer driving to travelling by train."], "example": true},
         {"num": 2, "prompt": "(basketball / football)", "answers": ["I prefer basketball to football."]},
         {"num": 3, "prompt": "(going to the cinema / watching movies at home)", "answers": ["I prefer going to the cinema to watching movies at home."]},
         {"num": 4, "prompt": "(being very busy / having nothing to do)", "answers": ["I prefer being very busy to having nothing to do."]},
-        {"num": 6, "prompt": "(3) rewrite using rather than", "answers": ["I prefer to go to the cinema rather than watch movies at home.", "I prefer going to the cinema rather than watching movies at home."]},
-        {"num": 7, "prompt": "(4) rewrite using rather than", "answers": ["I prefer to be very busy rather than have nothing to do.", "I prefer being very busy to having nothing to do."]}
+        {"num": 5, "prompt": "(1)", "answers": ["I prefer to drive rather than travel by train.", "I prefer driving rather than travelling by train."], "example": true},
+        {"num": 6, "prompt": "(3)", "answers": ["I prefer to go to the cinema rather than watch movies at home.", "I prefer going to the cinema rather than watching movies at home."]},
+        {"num": 7, "prompt": "(4)", "answers": ["I prefer to be very busy rather than have nothing to do.", "I prefer being very busy to having nothing to do."]}
       ]
     },
     {
@@ -21,16 +22,16 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Sometimes you need one word, sometimes more.",
       "items": [
-        {"num": 1, "parts": ["Shall we walk home?"], "answers": []},
-        {"num": 2, "parts": ["Do you want to eat now?"], "answers": []},
+        {"num": 1, "parts": ["Shall we walk home? I\u2019d rather get a taxi."], "answers": [], "example": true},
+        {"num": 2, "parts": ["Do you want to eat now? I\u2019d prefer to wait till later."], "answers": [], "example": true},
         {"num": 3, "parts": ["Would you like to watch TV? I\u2019d ", " to listen to some music."], "answers": [["prefer"]]},
-        {"num": 4, "parts": ["Do you want to go to a restaurant? I\u2019d prefer to ", " at home."], "answers": [["eat", "stay"]]},
+        {"num": 4, "parts": ["Do you want to go to a restaurant? I\u2019d rather ", " at home."], "answers": [["eat", "stay"]]},
         {"num": 5, "parts": ["Let\u2019s go now. ", " wait a few minutes."], "answers": [["I\u2019d rather", "I\u2019d prefer to"]]},
         {"num": 6, "parts": ["What about a game of tennis? I\u2019d prefer ", " for a swim."], "answers": [["to go"]]},
         {"num": 7, "parts": ["I think we should decide now. I\u2019d ", " think about it for a while."], "answers": [["rather", "prefer to"]]},
         {"num": 8, "parts": ["Would you like to sit down? ", " to stand."], "answers": [["I\u2019d prefer"]]},
         {"num": 9, "parts": ["Do you want me to come with you? I\u2019d rather ", " alone."], "answers": [["go"]]},
-        {"num": 10, "parts": ["(1) I\u2019d rather get a taxi than wait for a bus."], "answers": []},
+        {"num": 10, "parts": ["(1) I\u2019d rather get a taxi than wait for a bus."], "answers": [], "example": true},
         {"num": 11, "parts": ["(3) I\u2019d rather ", " some music ", "."], "answers": [["listen to"], ["than watch TV"]]},
         {"num": 12, "parts": ["(4) I\u2019d prefer ", " at home ", "."], "answers": [["to eat", "to stay"], ["rather than go to a restaurant"]]},
         {"num": 13, "parts": ["(6) I\u2019d rather ", " for a swim ", "."], "answers": [["go"], ["than play tennis", "than have a game of tennis"]]},
@@ -42,7 +43,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences using would you rather I \u2026 .",
       "items": [
-        {"num": 1, "parts": ["Are you going to make dinner or would you rather I made it tonight?"], "answers": []},
+        {"num": 1, "parts": ["Are you going to make dinner or would you rather I made it tonight?"], "answers": [], "example": true},
         {"num": 2, "parts": ["Are you going to pay the bill or ", "?"], "answers": [["would you rather I paid it"]]},
         {"num": 3, "parts": ["Are you going to do the shopping or ", "?"], "answers": [["would you rather I did it"]]},
         {"num": 4, "parts": ["Are you going to phone Tina or ", "?"], "answers": [["would you rather I phoned her"]]}
@@ -53,7 +54,7 @@
       "type": "fill-in",
       "instruction": "Use your own ideas (one or two words) to complete these sentences.",
       "items": [
-        {"num": 1, "parts": ["\u2018Shall I tell Anna what happened?\u2019 \u2018No, I\u2019d rather she didn\u2019t know.\u2019"], "answers": []},
+        {"num": 1, "parts": ["\u2018Shall I tell Anna what happened?\u2019 \u2018No, I\u2019d rather she didn\u2019t know.\u2019"], "answers": [], "example": true},
         {"num": 2, "parts": ["You can stay here if you want to, but I\u2019d rather you ", " with us."], "answers": [["came"]]},
         {"num": 3, "parts": ["I don\u2019t like this programme. I\u2019d rather not ", " it."], "answers": [["watch"]]},
         {"num": 4, "parts": ["I\u2019d rather work outdoors ", " work in an office."], "answers": [["than"]]},

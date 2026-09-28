@@ -16,7 +16,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences using a verb + out.",
       "items": [
-        {"num": 1, "parts": ["The company is trying out a new computer system at the moment."], "answers": []},
+        {"num": 1, "parts": ["The company is trying out a new computer system at the moment."], "answers": [], "example": true},
         {"num": 2, "parts": ["Steve is very fit. He does a lot of sport and ", " regularly."], "answers": [["works out"]]},
         {"num": 3, "parts": ["The road will be closed for two days while building work is ", "."], "answers": [["carried out"]]},
         {"num": 4, "parts": ["We didn't manage to discuss everything at the meeting. We ", " of time."], "answers": [["ran out"]]},
@@ -38,7 +38,7 @@
       "type": "fill-in",
       "instruction": "For each picture, complete the sentence using a verb + out.",
       "items": [
-        {"num": 1, "parts": ["They've run out of petrol."], "answers": []},
+        {"num": 1, "parts": ["They've run out of petrol."], "answers": [], "example": true},
         {"num": 2, "parts": ["The man with the beard is ", " leaflets."], "answers": [["giving out", "handing out"]]},
         {"num": 3, "parts": ["The weather has ", "."], "answers": [["turned out nice", "turned out fine", "turned out sunny"]]},
         {"num": 4, "parts": ["Sally and Kim are ", " at the gym."], "answers": [["working out"]]},
@@ -51,7 +51,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Each time use a verb + out.",
       "items": [
-        {"num": 1, "parts": ["a: Was the fire serious?\nB: No, we were able to put it out."], "answers": []},
+        {"num": 1, "parts": ["a: Was the fire serious?\nB: No, we were able to put it out."], "answers": [], "example": true},
         {"num": 2, "parts": ["a: This recipe looks interesting.\nB: Yes, let's ", "."], "answers": [["try it out"]]},
         {"num": 3, "parts": ["a: How much money do I owe you exactly?\nB: Just a moment. I'll have to ", "."], "answers": [["work it out"]]},
         {"num": 4, "parts": ["a: What happened about your problem with your bank?\nB: It's OK now. I went to see them and we ", "."], "answers": [["sorted it out", "worked it out"]]},

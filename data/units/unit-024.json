@@ -1,42 +1,91 @@
 {
   "unit": 24,
   "title": "will be doing and will have done",
-  "pdfPages": [60, 61],
+  "pdfPages": [
+    60,
+    61
+  ],
   "exercises": [
     {
       "id": "24.1",
       "type": "fill-in",
-      "instruction": "Read about Andy. Then tick (\u2713) the sentences which are true. In each group of sentences at least one is true.",
+      "instruction": "Read about Andy. Then tick (✓) the sentences which are true. In each group of sentences at least one is true.",
       "items": [
         {
           "num": 1,
-          "parts": ["At 7.45 ", ""],
-          "answers": [["he\u2019ll be at home", "he\u2019ll be having breakfast"]]
+          "parts": [
+            "At 7.45 ",
+            ""
+          ],
+          "answers": [
+            [
+              "he’ll be at home",
+              "he’ll be having breakfast"
+            ]
+          ]
         },
         {
           "num": 2,
-          "parts": ["At 8.15 ", ""],
-          "answers": [["he\u2019ll have left the house"]]
+          "parts": [
+            "At 8.15 ",
+            ""
+          ],
+          "answers": [
+            [
+              "he’ll have left the house"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["At 9.15 ", ""],
-          "answers": [["he\u2019ll be working", "he\u2019ll have started work"]]
+          "parts": [
+            "At 9.15 ",
+            ""
+          ],
+          "answers": [
+            [
+              "he’ll be working",
+              "he’ll have started work"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["At 12.45 ", ""],
-          "answers": [["he\u2019ll be having lunch", "he\u2019ll have started his lunch"]]
+          "parts": [
+            "At 12.45 ",
+            ""
+          ],
+          "answers": [
+            [
+              "he’ll be having lunch",
+              "he’ll have started his lunch"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["At 4 o\u2019clock ", ""],
-          "answers": [["he\u2019ll be working", "he won\u2019t have finished work"]]
+          "parts": [
+            "At 4 o’clock ",
+            ""
+          ],
+          "answers": [
+            [
+              "he’ll be working",
+              "he won’t have finished work"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["At 4.45 ", ""],
-          "answers": [["he\u2019ll have left work"]]
+          "parts": [
+            "At 4.45 ",
+            ""
+          ],
+          "answers": [
+            [
+              "he’ll have left work"
+            ]
+          ]
         }
       ]
     },
@@ -44,47 +93,113 @@
       "id": "24.2",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from the box.",
-      "wordBank": ["be watching", "will be landing", "won\u2019t be playing", "will be starting", "will you be voting", "won\u2019t be going", "be going", "will you be doing"],
+      "wordBank": [
+        "be watching",
+        "will be landing",
+        "won’t be playing",
+        "will be starting",
+        "will you be voting",
+        "won’t be going",
+        "be going",
+        "will you be doing"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["There\u2019s an election next week. Who ", " for?"],
-          "answers": [["will you be voting"]]
+          "parts": [
+            "There’s an election next week. Who ",
+            " for?"
+          ],
+          "answers": [
+            [
+              "will you be voting"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["I\u2019ll ", " shopping later. Can I get you anything?"],
-          "answers": [["be going"]]
+          "parts": [
+            "I’ll ",
+            " shopping later. Can I get you anything?"
+          ],
+          "answers": [
+            [
+              "be going"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Emily is not well, so she ", " volleyball tomorrow."],
-          "answers": [["won\u2019t be playing"]]
+          "parts": [
+            "Emily is not well, so she ",
+            " volleyball tomorrow."
+          ],
+          "answers": [
+            [
+              "won’t be playing"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Little Emma ", " school soon. She\u2019s growing up fast."],
-          "answers": [["will be starting"]]
+          "parts": [
+            "Little Emma ",
+            " school soon. She’s growing up fast."
+          ],
+          "answers": [
+            [
+              "will be starting"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["The match is on TV tonight. Will you ", " it?"],
-          "answers": [["be watching"]]
+          "parts": [
+            "The match is on TV tonight. Will you ",
+            " it?"
+          ],
+          "answers": [
+            [
+              "be watching"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["What ", " in your new job? The same as before?"],
-          "answers": [["will you be doing"]]
+          "parts": [
+            "What ",
+            " in your new job? The same as before?"
+          ],
+          "answers": [
+            [
+              "will you be doing"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I ", " to the wedding. I\u2019ll be away on holiday."],
-          "answers": [["won\u2019t be going"]]
+          "parts": [
+            "I ",
+            " to the wedding. I’ll be away on holiday."
+          ],
+          "answers": [
+            [
+              "won’t be going"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Please fasten your seat belts. The plane ", " in ten minutes."],
-          "answers": [["will be landing"]]
+          "parts": [
+            "Please fasten your seat belts. The plane ",
+            " in ten minutes."
+          ],
+          "answers": [
+            [
+              "will be landing"
+            ]
+          ]
         }
       ]
     },
@@ -95,48 +210,120 @@
       "items": [
         {
           "num": 1,
-          "parts": ["Don\u2019t phone between 7 and 8. ", " then. (we / eat)"],
-          "answers": [["We\u2019ll be eating"]]
+          "parts": [
+            "Don’t phone between 7 and 8. ",
+            " then. (we / eat)"
+          ],
+          "answers": [
+            [
+              "We’ll be eating"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["Tomorrow afternoon we\u2019re going to play tennis from 3 o\u2019clock until 4.30. So at 4 o\u2019clock, ", " tennis. (we / play)"],
-          "answers": [["we\u2019ll be playing", "we will be playing"]]
+          "parts": [
+            "Tomorrow afternoon we’re going to play tennis from 3 o’clock until 4.30. So at 4 o’clock, ",
+            " tennis. (we / play)"
+          ],
+          "answers": [
+            [
+              "we’ll be playing",
+              "we will be playing"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Sarah will meet you at the station. ", " for you when you arrive. (she / wait)"],
-          "answers": [["She\u2019ll be waiting", "She will be waiting"]]
+          "parts": [
+            "Sarah will meet you at the station. ",
+            " for you when you arrive. (she / wait)"
+          ],
+          "answers": [
+            [
+              "She’ll be waiting",
+              "She will be waiting"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["The meeting starts at 9.30 and won\u2019t last longer than an hour. You can be sure that ", " by 11 o\u2019clock. (it / finish)"],
-          "answers": [["it will have finished", "it will be finished"]]
+          "parts": [
+            "The meeting starts at 9.30 and won’t last longer than an hour. You can be sure that ",
+            " by 11 o’clock. (it / finish)"
+          ],
+          "answers": [
+            [
+              "it will have finished",
+              "it will be finished"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Do you think ", " in the same place in ten years\u2019 time? (you / still / live)"],
-          "answers": [["you\u2019ll still be living", "you will still be living"]]
+          "parts": [
+            "Do you think ",
+            " in the same place in ten years’ time? (you / still / live)"
+          ],
+          "answers": [
+            [
+              "you’ll still be living",
+              "you will still be living"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Lisa is travelling in Europe and so far she has travelled about 1,000 miles. By the end of the trip, ", " more than 3,000 miles. (she / travel)"],
-          "answers": [["she\u2019ll have travelled", "she will have travelled"]]
+          "parts": [
+            "Lisa is travelling in Europe and so far she has travelled about 1,000 miles. By the end of the trip, ",
+            " more than 3,000 miles. (she / travel)"
+          ],
+          "answers": [
+            [
+              "she’ll have travelled",
+              "she will have travelled"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["If you need to contact me, ", " at the Lion Hotel until Friday. (I / stay)"],
-          "answers": [["I\u2019ll be staying", "I will be staying"]]
+          "parts": [
+            "If you need to contact me, ",
+            " at the Lion Hotel until Friday. (I / stay)"
+          ],
+          "answers": [
+            [
+              "I’ll be staying",
+              "I will be staying"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Ben is on holiday and is spending his money very quickly. If he continues like this, ", " all his money before the end of his holiday. (he / spend)"],
-          "answers": [["he\u2019ll have spent", "he will have spent"]]
+          "parts": [
+            "Ben is on holiday and is spending his money very quickly. If he continues like this, ",
+            " all his money before the end of his holiday. (he / spend)"
+          ],
+          "answers": [
+            [
+              "he’ll have spent",
+              "he will have spent"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["I\u2019m fed up with my job. I hope ", " it much longer. (I / not / do)"],
-          "answers": [["I won\u2019t be doing", "I will not be doing"]]
+          "parts": [
+            "I’m fed up with my job. I hope ",
+            " it much longer. (I / not / do)"
+          ],
+          "answers": [
+            [
+              "I won’t be doing",
+              "I will not be doing"
+            ]
+          ]
         }
       ]
     }

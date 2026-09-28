@@ -7,6 +7,7 @@
       "id": "141.1",
       "type": "choice",
       "instruction": "What do these sentences mean?",
+      "example": [1],
       "items": [
         {
           "num": 1,

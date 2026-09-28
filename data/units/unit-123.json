@@ -1,39 +1,201 @@
 {
   "unit": 123,
   "title": "in/at/on (position) 1",
-  "pdfPages": [258, 259],
+  "pdfPages": [
+    258,
+    259
+  ],
   "exercises": [
     {
       "id": "123.1",
       "type": "write",
       "instruction": "Answer the questions about the pictures. Use in, at or on with the words below the pictures.",
       "items": [
-        {"num": 1, "prompt": "(bottle) Where\u2019s the label?", "answers": ["On the bottle."]},
-        {"num": 2, "prompt": "(arm) Where\u2019s the fly?", "answers": ["On his arm.", "On the man\u2019s arm."]},
-        {"num": 3, "prompt": "(traffic lights) Where\u2019s the car waiting?", "answers": ["At the traffic lights."]},
-        {"num": 4, "prompt": "(door) Where\u2019s the notice?", "answers": ["On the door."]},
-        {"num": 5, "prompt": "(door) Where\u2019s the key?", "answers": ["In the door."]},
-        {"num": 6, "prompt": "(wall) Where are the shelves?", "answers": ["On the wall."]},
-        {"num": 7, "prompt": "(Paris) Where\u2019s the Eiffel Tower?", "answers": ["In Paris."]},
-        {"num": 8, "prompt": "(gate) Where\u2019s the man standing?", "answers": ["At the gate."]},
-        {"num": 9, "prompt": "(gate) Where\u2019s the bird?", "answers": ["On the gate."]},
-        {"num": 10, "prompt": "(beach) Where are the children playing?", "answers": ["On the beach."]}
+        {
+          "num": 1,
+          "prompt": "(bottle) Where’s the label?",
+          "answers": [
+            "On the bottle."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(arm) Where’s the fly?",
+          "answers": [
+            "On his arm.",
+            "On the man’s arm."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(traffic lights) Where’s the car waiting?",
+          "answers": [
+            "At the traffic lights."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(door) Where’s the notice?",
+          "answers": [
+            "On the door."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(door) Where’s the key?",
+          "answers": [
+            "In the door."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(wall) Where are the shelves?",
+          "answers": [
+            "On the wall."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(Paris) Where’s the Eiffel Tower?",
+          "answers": [
+            "In Paris."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(gate) Where’s the man standing?",
+          "answers": [
+            "At the gate."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(gate) Where’s the bird?",
+          "answers": [
+            "On the gate."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(beach) Where are the children playing?",
+          "answers": [
+            "On the beach."
+          ]
+        }
       ]
     },
     {
       "id": "123.2",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use in, at or on + the following:",
-      "wordBank": ["the window", "his hand", "the mountains", "that tree", "my guitar", "the river", "the island", "junction 14"],
+      "wordBank": [
+        "the window",
+        "his hand",
+        "the mountains",
+        "that tree",
+        "my guitar",
+        "the river",
+        "the island",
+        "junction 14"
+      ],
       "items": [
-        {"num": 1, "parts": ["There were some people swimming ", "."], "answers": [["in the river"]]},
-        {"num": 2, "parts": ["One of the strings ", " is broken."], "answers": [["on my guitar"]]},
-        {"num": 3, "parts": ["Leave the motorway ", " and then turn left."], "answers": [["at junction 14"]]},
-        {"num": 4, "parts": ["He was holding something ", ", but I couldn\u2019t see what it was."], "answers": [["in his hand"]]},
-        {"num": 5, "parts": ["The leaves ", " are a beautiful colour."], "answers": [["on that tree"]]},
-        {"num": 6, "parts": ["You can go skiing ", " near here. There\u2019s plenty of snow."], "answers": [["in the mountains"]]},
-        {"num": 7, "parts": ["There\u2019s nobody living ", ". It\u2019s uninhabited."], "answers": [["on the island"]]},
-        {"num": 8, "parts": ["He spends most of the day sitting ", " and looking outside."], "answers": [["at the window"]]}
+        {
+          "num": 1,
+          "parts": [
+            "There were some people swimming ",
+            "."
+          ],
+          "answers": [
+            [
+              "in the river"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "One of the strings ",
+            " is broken."
+          ],
+          "answers": [
+            [
+              "on my guitar"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Leave the motorway ",
+            " and then turn left."
+          ],
+          "answers": [
+            [
+              "at junction 14"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "He was holding something ",
+            ", but I couldn’t see what it was."
+          ],
+          "answers": [
+            [
+              "in his hand"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "The leaves ",
+            " are a beautiful colour."
+          ],
+          "answers": [
+            [
+              "on that tree"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "You can go skiing ",
+            " near here. There’s plenty of snow."
+          ],
+          "answers": [
+            [
+              "in the mountains"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "There’s nobody living ",
+            ". It’s uninhabited."
+          ],
+          "answers": [
+            [
+              "on the island"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "He spends most of the day sitting ",
+            " and looking outside."
+          ],
+          "answers": [
+            [
+              "at the window"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -41,20 +203,183 @@
       "type": "fill-in",
       "instruction": "Complete the sentences with in, at or on.",
       "items": [
-        {"num": 1, "parts": ["There was a long queue of people ", " the bus stop."], "answers": [["at"]]},
-        {"num": 2, "parts": ["Nicola was wearing a silver ring ", " her little finger."], "answers": [["on"]]},
-        {"num": 3, "parts": ["There was a security guard standing ", " the entrance to the building."], "answers": [["at"]]},
-        {"num": 4, "parts": ["I wasn\u2019t sure whether I had come to the right office. There was no name ", " the door."], "answers": [["on"]]},
-        {"num": 5, "parts": ["There are plenty of shops and restaurants ", " the town centre."], "answers": [["in"]]},
-        {"num": 6, "parts": ["You\u2019ll find the weather forecast ", " the back page of the newspaper."], "answers": [["on"]]},
-        {"num": 7, "parts": ["The headquarters of the company are ", " California."], "answers": [["in"]]},
-        {"num": 8, "parts": ["I wouldn\u2019t like an office job. I couldn\u2019t spend the whole day sitting ", " a desk."], "answers": [["at"]]},
-        {"num": 9, "parts": ["The man the police are looking for has a scar ", " his right cheek."], "answers": [["on"]]},
-        {"num": 10, "parts": ["If you come here by bus, get off ", " the stop after the traffic lights."], "answers": [["at"]]},
-        {"num": 11, "parts": ["Have you ever been camping? Have you ever slept ", " a tent?"], "answers": [["in"]]},
-        {"num": 12, "parts": ["Emily was sitting ", " the balcony reading a book."], "answers": [["on"]]},
-        {"num": 13, "parts": ["My brother lives ", " a small village ", " the south-west of England."], "answers": [["in"], ["in"]]},
-        {"num": 14, "parts": ["I like that picture hanging ", " the wall ", " the kitchen."], "answers": [["on"], ["in"]]}
+        {
+          "num": 1,
+          "parts": [
+            "There was a long queue of people ",
+            " the bus stop."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Nicola was wearing a silver ring ",
+            " her little finger."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "There was a security guard standing ",
+            " the entrance to the building."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I wasn’t sure whether I had come to the right office. There was no name ",
+            " the door."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "There are plenty of shops and restaurants ",
+            " the town centre."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "You’ll find the weather forecast ",
+            " the back page of the newspaper."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "The headquarters of the company are ",
+            " California."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I wouldn’t like an office job. I couldn’t spend the whole day sitting ",
+            " a desk."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "The man the police are looking for has a scar ",
+            " his right cheek."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "If you come here by bus, get off ",
+            " the stop after the traffic lights."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Have you ever been camping? Have you ever slept ",
+            " a tent?"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Emily was sitting ",
+            " the balcony reading a book."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "My brother lives ",
+            " a small village ",
+            " the south-west of England."
+          ],
+          "answers": [
+            [
+              "in"
+            ],
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "I like that picture hanging ",
+            " the wall ",
+            " the kitchen."
+          ],
+          "answers": [
+            [
+              "on"
+            ],
+            [
+              "in"
+            ]
+          ]
+        }
       ]
     }
   ]

@@ -109,37 +109,37 @@
       "items": [
         {
           "num": 2,
-          "parts": ["Why ", "? There\u2019s plenty of time."],
+          "parts": ["Why ", "? There\u2019s plenty of time. (a / such / hurry / you / in / are)"],
           "answers": [["are you in such a hurry"]]
         },
         {
           "num": 3,
-          "parts": ["It took us an hour to get here. I\u2019m ", "."],
+          "parts": ["It took us an hour to get here. I\u2019m ", ". (long / it / surprised / so / took)"],
           "answers": [["surprised it took so long"]]
         },
         {
           "num": 4,
-          "parts": ["He said he worked for a company called Elcron, but ", "."],
+          "parts": ["He said he worked for a company called Elcron, but ", ". (such / there’s / company / no)"],
           "answers": [["there\u2019s no such company"]]
         },
         {
           "num": 5,
-          "parts": ["I regret what I did. I don\u2019t know why ", "."],
+          "parts": ["I regret what I did. I don\u2019t know why ", ". (such / thing / I / did / a / stupid)"],
           "answers": [["I did such a stupid thing"]]
         },
         {
           "num": 6,
-          "parts": ["Why ", "? Can\u2019t you drive faster?"],
+          "parts": ["Why ", "? Can\u2019t you drive faster? (driving / so / you / slowly / are)"],
           "answers": [["are you driving so slowly"]]
         },
         {
           "num": 7,
-          "parts": ["Two months? How did you ", "?"],
+          "parts": ["Two months? How did you ", "? (English / time / learn / short / a / such / in)"],
           "answers": [["learn English in such a short time"]]
         },
         {
           "num": 8,
-          "parts": ["Why ", "? You could have got a cheaper one."],
+          "parts": ["Why ", "? You could have got a cheaper one. (expensive / you / an / phone / did / such / buy)"],
           "answers": [["did you buy such an expensive phone"]]
         }
       ]

@@ -1,127 +1,238 @@
 {
   "unit": 66,
-  "title": "to \u2026 (afraid to do) and preposition + -ing (afraid of -ing)",
-  "pdfPages": [144, 145],
+  "title": "to … (afraid to do) and preposition + -ing (afraid of -ing)",
+  "pdfPages": [
+    144,
+    145
+  ],
   "exercises": [
     {
       "id": "66.1",
       "type": "write",
-      "instruction": "Write sentences using afraid to \u2026 or afraid of -ing.",
+      "instruction": "Write sentences using afraid to … or afraid of -ing.",
       "items": [
         {
           "num": 1,
           "prompt": "The streets here are not safe at night. (a lot of people / afraid / go / out)",
-          "answers": ["A lot of people are afraid to go out."]
+          "answers": [
+            "A lot of people are afraid to go out."
+          ]
         },
         {
           "num": 2,
           "prompt": "We walked very carefully along the icy path. (we / afraid / fall)",
-          "answers": ["We were afraid of falling."]
+          "answers": [
+            "We were afraid of falling."
+          ]
         },
         {
           "num": 3,
-          "prompt": "I don\u2019t usually carry my passport with me. (I / afraid / lose / it)",
-          "answers": ["I\u2019m afraid of losing it."]
+          "prompt": "I don’t usually carry my passport with me. (I / afraid / lose / it)",
+          "answers": [
+            "I’m afraid of losing it."
+          ]
         },
         {
           "num": 4,
           "prompt": "I thought she would be angry if I told her what had happened. (I / afraid / tell / her)",
-          "answers": ["I was afraid to tell her."]
+          "answers": [
+            "I was afraid to tell her."
+          ]
         },
         {
           "num": 5,
           "prompt": "We ran to the station. (we / afraid / miss / our train)",
-          "answers": ["We were afraid of missing our train."]
+          "answers": [
+            "We were afraid of missing our train."
+          ]
         },
         {
           "num": 6,
           "prompt": "In the middle of the film there was a very horrifying scene. (we / afraid / look)",
-          "answers": ["We were afraid to look."]
+          "answers": [
+            "We were afraid to look."
+          ]
         },
         {
           "num": 7,
           "prompt": "The vase was very valuable, so I held it carefully. (I / afraid / drop / it)",
-          "answers": ["I was afraid of dropping it."]
+          "answers": [
+            "I was afraid of dropping it."
+          ]
         },
         {
           "num": 8,
-          "prompt": "If there\u2019s anything you want to know, you can ask me. (don\u2019t / afraid / ask)",
-          "answers": ["Don\u2019t be afraid to ask."]
+          "prompt": "If there’s anything you want to know, you can ask me. (don’t / afraid / ask)",
+          "answers": [
+            "Don’t be afraid to ask."
+          ]
         },
         {
           "num": 9,
-          "prompt": "I was worried because we didn\u2019t have much petrol. (I / afraid / run out of petrol)",
-          "answers": ["I was afraid of running out of petrol."]
+          "prompt": "I was worried because we didn’t have much petrol. (I / afraid / run out of petrol)",
+          "answers": [
+            "I was afraid of running out of petrol."
+          ]
         }
       ]
     },
     {
       "id": "66.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using interested in \u2026 or interested to \u2026. Choose from these verbs:",
-      "wordBank": ["buy", "hear", "know", "look", "start", "study"],
+      "instruction": "Complete the sentences using interested in … or interested to …. Choose from these verbs:",
+      "wordBank": [
+        "buy",
+        "hear",
+        "know",
+        "look",
+        "start",
+        "study"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["I\u2019m trying to sell my car, but nobody is interested in ", "."],
-          "answers": [["buying"]]
+          "parts": [
+            "I’m trying to sell my car, but nobody is interested in ",
+            "."
+          ],
+          "answers": [
+            [
+              "buying"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["Nicola is interested in ", " her own business."],
-          "answers": [["starting"]]
+          "parts": [
+            "Nicola is interested in ",
+            " her own business."
+          ],
+          "answers": [
+            [
+              "starting"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I saw Joe recently. You\u2019ll be interested ", " that he\u2019s getting married soon."],
-          "answers": [["to know", "to hear"]]
+          "parts": [
+            "I saw Joe recently. You’ll be interested ",
+            " that he’s getting married soon."
+          ],
+          "answers": [
+            [
+              "to know",
+              "to hear"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I didn\u2019t enjoy school. I wasn\u2019t interested in ", "."],
-          "answers": [["studying"]]
+          "parts": [
+            "I didn’t enjoy school. I wasn’t interested in ",
+            "."
+          ],
+          "answers": [
+            [
+              "studying"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I went to a public meeting to discuss the plans for a new road. I was interested ", " how people felt about the project."],
-          "answers": [["to hear", "to know"]]
+          "parts": [
+            "I went to a public meeting to discuss the plans for a new road. I was interested ",
+            " how people felt about the project."
+          ],
+          "answers": [
+            [
+              "to hear",
+              "to know"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Paul doesn\u2019t enjoy sightseeing. He\u2019s not interested in ", " at old buildings."],
-          "answers": [["looking"]]
+          "parts": [
+            "Paul doesn’t enjoy sightseeing. He’s not interested in ",
+            " at old buildings."
+          ],
+          "answers": [
+            [
+              "looking"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "66.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using sorry for \u2026 or sorry to \u2026. Use the verb in brackets.",
+      "instruction": "Complete the sentences using sorry for … or sorry to …. Use the verb in brackets.",
       "items": [
         {
           "num": 1,
-          "parts": ["I\u2019m ", " you, but I need to ask you something."],
-          "answers": [["sorry to bother"]]
+          "parts": [
+            "I’m ",
+            " you, but I need to ask you something. (bother)"
+          ],
+          "answers": [
+            [
+              "sorry to bother"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["We were ", " that you can\u2019t come to the wedding."],
-          "answers": [["sorry to hear"]]
+          "parts": [
+            "We were ",
+            " that you can’t come to the wedding. (hear)"
+          ],
+          "answers": [
+            [
+              "sorry to hear"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I\u2019m ", " bad things about you. I didn\u2019t mean what I said."],
-          "answers": [["sorry for saying", "sorry I said"]]
+          "parts": [
+            "I’m ",
+            " bad things about you. I didn’t mean what I said. (say)"
+          ],
+          "answers": [
+            [
+              "sorry for saying",
+              "sorry I said"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["It\u2019s a shame Alan is leaving the company. I\u2019ll be ", " him go."],
-          "answers": [["sorry to see"]]
+          "parts": [
+            "It’s a shame Alan is leaving the company. I’ll be ",
+            " him go. (see)"
+          ],
+          "answers": [
+            [
+              "sorry to see"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I\u2019m ", " so much noise last night."],
-          "answers": [["sorry for making", "sorry I made"]]
+          "parts": [
+            "I’m ",
+            " so much noise last night. (make)"
+          ],
+          "answers": [
+            [
+              "sorry for making",
+              "sorry I made"
+            ]
+          ]
         }
       ]
     },
@@ -132,73 +243,174 @@
       "items": [
         {
           "num": "1a",
-          "parts": ["We wanted ", " the building."],
-          "answers": [["to leave"]]
+          "parts": [
+            "We wanted ",
+            " the building. (leave)"
+          ],
+          "answers": [
+            [
+              "to leave"
+            ]
+          ],
+          "example": true
         },
         {
           "num": "1b",
-          "parts": ["We weren\u2019t allowed ", " the building."],
-          "answers": [["to leave"]]
+          "parts": [
+            "We weren’t allowed ",
+            " the building. (leave)"
+          ],
+          "answers": [
+            [
+              "to leave"
+            ]
+          ]
         },
         {
           "num": "1c",
-          "parts": ["We were prevented ", " the building."],
-          "answers": [["from leaving"]]
+          "parts": [
+            "We were prevented ",
+            " the building. (leave)"
+          ],
+          "answers": [
+            [
+              "from leaving"
+            ]
+          ]
         },
         {
           "num": "2a",
-          "parts": ["Sam and Chris hoped ", " the problem."],
-          "answers": [["to solve"]]
+          "parts": [
+            "Sam and Chris hoped ",
+            " the problem. (solve)"
+          ],
+          "answers": [
+            [
+              "to solve"
+            ]
+          ]
         },
         {
           "num": "2b",
-          "parts": ["Sam failed ", " the problem."],
-          "answers": [["to solve"]]
+          "parts": [
+            "Sam failed ",
+            " the problem. (solve)"
+          ],
+          "answers": [
+            [
+              "to solve"
+            ]
+          ]
         },
         {
           "num": "2c",
-          "parts": ["Chris succeeded ", " the problem."],
-          "answers": [["in solving"]]
+          "parts": [
+            "Chris succeeded ",
+            " the problem. (solve)"
+          ],
+          "answers": [
+            [
+              "in solving"
+            ]
+          ]
         },
         {
           "num": "3a",
-          "parts": ["I\u2019m thinking ", " away next week."],
-          "answers": [["of going", "about going"]]
+          "parts": [
+            "I’m thinking ",
+            " away next week. (go)"
+          ],
+          "answers": [
+            [
+              "of going",
+              "about going"
+            ]
+          ]
         },
         {
           "num": "3b",
-          "parts": ["I\u2019m planning ", " away next week."],
-          "answers": [["to go", "on going"]]
+          "parts": [
+            "I’m planning ",
+            " away next week. (go)"
+          ],
+          "answers": [
+            [
+              "to go",
+              "on going"
+            ]
+          ]
         },
         {
           "num": "3c",
-          "parts": ["I\u2019d like ", " away next week."],
-          "answers": [["to go"]]
+          "parts": [
+            "I’d like ",
+            " away next week. (go)"
+          ],
+          "answers": [
+            [
+              "to go"
+            ]
+          ]
         },
         {
           "num": "3d",
-          "parts": ["I\u2019m looking forward ", " away next week."],
-          "answers": [["to going"]]
+          "parts": [
+            "I’m looking forward ",
+            " away next week. (go)"
+          ],
+          "answers": [
+            [
+              "to going"
+            ]
+          ]
         },
         {
           "num": "4a",
-          "parts": ["Helen wanted ", " me lunch."],
-          "answers": [["to buy"]]
+          "parts": [
+            "Helen wanted ",
+            " me lunch. (buy)"
+          ],
+          "answers": [
+            [
+              "to buy"
+            ]
+          ]
         },
         {
           "num": "4b",
-          "parts": ["Helen insisted ", " me lunch."],
-          "answers": [["on buying"]]
+          "parts": [
+            "Helen insisted ",
+            " me lunch. (buy)"
+          ],
+          "answers": [
+            [
+              "on buying"
+            ]
+          ]
         },
         {
           "num": "4c",
-          "parts": ["Helen promised ", " me lunch."],
-          "answers": [["to buy"]]
+          "parts": [
+            "Helen promised ",
+            " me lunch. (buy)"
+          ],
+          "answers": [
+            [
+              "to buy"
+            ]
+          ]
         },
         {
           "num": "4d",
-          "parts": ["Helen wouldn\u2019t dream ", " me lunch."],
-          "answers": [["of buying"]]
+          "parts": [
+            "Helen wouldn’t dream ",
+            " me lunch. (buy)"
+          ],
+          "answers": [
+            [
+              "of buying"
+            ]
+          ]
         }
       ]
     }

@@ -1,37 +1,226 @@
 {
   "unit": 87,
   "title": "much, many, little, few, a lot, plenty",
-  "pdfPages": [186, 187],
+  "pdfPages": [
+    186,
+    187
+  ],
   "exercises": [
     {
       "id": "87.1",
       "type": "fill-in",
-      "instruction": "In some of these sentences much is incorrect or unnatural. Change much to many or a lot (of) where necessary. Write \u2018OK\u2019 if the sentence is correct.",
+      "instruction": "In some of these sentences much is incorrect or unnatural. Change much to many or a lot (of) where necessary. Write ‘OK’ if the sentence is correct.",
       "items": [
-        {"num": 1, "parts": ["We didn\u2019t eat ", "."], "answers": [["OK"]]},
-        {"num": 2, "parts": ["My mother drinks ", " tea."], "answers": [["a lot of"]]},
-        {"num": 3, "parts": ["Be quick. We don\u2019t have ", " time."], "answers": [["OK"]]},
-        {"num": 4, "parts": ["It cost ", " to repair the car."], "answers": [["a lot"]]},
-        {"num": 5, "parts": ["Did it cost ", " to repair the car?"], "answers": [["OK"]]},
-        {"num": 6, "parts": ["You have ", " luggage. Let me help you."], "answers": [["a lot of"]]},
-        {"num": 7, "parts": ["There wasn\u2019t ", " traffic this morning."], "answers": [["OK"]]},
-        {"num": 8, "parts": ["I don\u2019t know ", " people in this town."], "answers": [["many", "a lot of"]]},
-        {"num": 9, "parts": ["Do you eat ", " fruit?"], "answers": [["OK"]]},
-        {"num": 10, "parts": ["Mike likes travelling. He travels ", "."], "answers": [["a lot"]]}
+        {
+          "num": 1,
+          "parts": [
+            "We didn’t eat ",
+            "."
+          ],
+          "answers": [
+            [
+              "OK"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My mother drinks ",
+            " tea."
+          ],
+          "answers": [
+            [
+              "a lot of"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Be quick. We don’t have ",
+            " time."
+          ],
+          "answers": [
+            [
+              "OK"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "It cost ",
+            " to repair the car."
+          ],
+          "answers": [
+            [
+              "a lot"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Did it cost ",
+            " to repair the car?"
+          ],
+          "answers": [
+            [
+              "OK"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "You have ",
+            " luggage. Let me help you."
+          ],
+          "answers": [
+            [
+              "a lot of"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "There wasn’t ",
+            " traffic this morning."
+          ],
+          "answers": [
+            [
+              "OK"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I don’t know ",
+            " people in this town."
+          ],
+          "answers": [
+            [
+              "many",
+              "a lot of"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Do you eat ",
+            " fruit?"
+          ],
+          "answers": [
+            [
+              "OK"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Mike likes travelling. He travels ",
+            "."
+          ],
+          "answers": [
+            [
+              "a lot"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "87.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using plenty of \u2026 or plenty to \u2026. Choose from:",
-      "wordBank": ["hotels", "learn", "money", "room", "see", "time"],
+      "instruction": "Complete the sentences using plenty of … or plenty to …. Choose from:",
+      "wordBank": [
+        "hotels",
+        "learn",
+        "money",
+        "room",
+        "see",
+        "time"
+      ],
       "items": [
-        {"num": 1, "parts": ["There\u2019s no need to hurry. There\u2019s plenty of ", "."], "answers": [["time"]]},
-        {"num": 2, "parts": ["He has no financial problems. He has ", "."], "answers": [["plenty of money"]]},
-        {"num": 3, "parts": ["Come and sit with us. There\u2019s ", "."], "answers": [["plenty of room"]]},
-        {"num": 4, "parts": ["She knows a lot, but she still has ", "."], "answers": [["plenty to learn"]]},
-        {"num": 5, "parts": ["It\u2019s an interesting town to visit. There ", "."], "answers": [["is plenty to see"]]},
-        {"num": 6, "parts": ["I\u2019m sure we\u2019ll find somewhere to stay. There are ", "."], "answers": [["plenty of hotels"]]}
+        {
+          "num": 1,
+          "parts": [
+            "There’s no need to hurry. There’s plenty of ",
+            "."
+          ],
+          "answers": [
+            [
+              "time"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He has no financial problems. He has ",
+            "."
+          ],
+          "answers": [
+            [
+              "plenty of money"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Come and sit with us. There’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "plenty of room"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "She knows a lot, but she still has ",
+            "."
+          ],
+          "answers": [
+            [
+              "plenty to learn"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "It’s an interesting town to visit. There ",
+            "."
+          ],
+          "answers": [
+            [
+              "is plenty to see"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I’m sure we’ll find somewhere to stay. There are ",
+            "."
+          ],
+          "answers": [
+            [
+              "plenty of hotels"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -39,15 +228,115 @@
       "type": "fill-in",
       "instruction": "Put in much/many/little/few (one word only).",
       "items": [
-        {"num": 1, "parts": ["She isn\u2019t popular. She has ", " friends."], "answers": [["few"]]},
-        {"num": 2, "parts": ["Anna is very busy these days. She has ", " free time."], "answers": [["little"]]},
-        {"num": 3, "parts": ["Did you take ", " pictures at the wedding?"], "answers": [["many"]]},
-        {"num": 4, "parts": ["This is a modern city. There are ", " old buildings."], "answers": [["few"]]},
-        {"num": 5, "parts": ["The weather has been very dry recently. We\u2019ve had ", " rain."], "answers": [["little"]]},
-        {"num": 6, "parts": ["I don\u2019t know London well. I haven\u2019t been there for ", " years."], "answers": [["many"]]},
-        {"num": 7, "parts": ["The two cars are similar. There is ", " difference between them."], "answers": [["little"]]},
-        {"num": 8, "parts": ["I\u2019m not very busy today. I don\u2019t have ", " to do."], "answers": [["much"]]},
-        {"num": 9, "parts": ["It\u2019s a wonderful place to live. There are ", " better places to be."], "answers": [["few"]]}
+        {
+          "num": 1,
+          "parts": [
+            "She isn’t popular. She has ",
+            " friends."
+          ],
+          "answers": [
+            [
+              "few"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Anna is very busy these days. She has ",
+            " free time."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Did you take ",
+            " pictures at the wedding?"
+          ],
+          "answers": [
+            [
+              "many"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This is a modern city. There are ",
+            " old buildings."
+          ],
+          "answers": [
+            [
+              "few"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "The weather has been very dry recently. We’ve had ",
+            " rain."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I don’t know London well. I haven’t been there for ",
+            " years."
+          ],
+          "answers": [
+            [
+              "many"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "The two cars are similar. There is ",
+            " difference between them."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I’m not very busy today. I don’t have ",
+            " to do."
+          ],
+          "answers": [
+            [
+              "much"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "It’s a wonderful place to live. There are ",
+            " better places to be."
+          ],
+          "answers": [
+            [
+              "few"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -55,13 +344,62 @@
       "type": "choice",
       "instruction": "Which is right?",
       "items": [
-        {"num": 1, "options": ["few problems", "a few problems"], "answer": 0},
-        {"num": 2, "options": ["few dollars", "a few dollars"], "answer": 1},
-        {"num": 3, "options": ["little traffic", "a little traffic"], "answer": 1},
-        {"num": 4, "options": ["few years ago", "a few years ago"], "answer": 1},
-        {"num": 5, "options": ["little time", "a little time"], "answer": 1},
-        {"num": 6, "options": ["only few words", "only a few words"], "answer": 1},
-        {"num": 7, "options": ["Few people", "A few people"], "answer": 0}
+        {
+          "num": 1,
+          "options": [
+            "few problems",
+            "a few problems"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": [
+            "few dollars",
+            "a few dollars"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "little traffic",
+            "a little traffic"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": [
+            "few years ago",
+            "a few years ago"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": [
+            "little time",
+            "a little time"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": [
+            "only few words",
+            "only a few words"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": [
+            "Few people",
+            "A few people"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
@@ -69,16 +407,127 @@
       "type": "fill-in",
       "instruction": "Put in little / a little / few / a few.",
       "items": [
-        {"num": 1, "parts": ["Gary is very busy with his job. He has ", " time for other things."], "answers": [["little"]]},
-        {"num": 2, "parts": ["Listen carefully. I\u2019m going to give you ", " advice."], "answers": [["a little"]]},
-        {"num": 3, "parts": ["Do you mind if I ask you ", " questions?"], "answers": [["a few"]]},
-        {"num": 4, "parts": ["It\u2019s not a very interesting place, so ", " tourists visit."], "answers": [["few"]]},
-        {"num": 5, "parts": ["I don\u2019t think Amy would be a good teacher. She has ", " patience."], "answers": [["little"]]},
-        {"num": 6, "parts": ["\u2018Would you like milk in your coffee?\u2019 \u2018Yes, ", ", please.\u2019"], "answers": [["a little"]]},
-        {"num": 7, "parts": ["This is a boring place to live. There\u2019s ", " to do."], "answers": [["little"]]},
-        {"num": 8, "parts": ["I know Hong Kong quite well. I\u2019ve been there ", " times."], "answers": [["a few"]]},
-        {"num": 9, "parts": ["There were only ", " people at the meeting."], "answers": [["a few"]]},
-        {"num": 10, "parts": ["\u2018Did you do all this work on your own?\u2019 \u2018No, I had ", " help from my friends.\u2019"], "answers": [["a little"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Gary is very busy with his job. He has ",
+            " time for other things."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Listen carefully. I’m going to give you ",
+            " advice."
+          ],
+          "answers": [
+            [
+              "a little"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Do you mind if I ask you ",
+            " questions?"
+          ],
+          "answers": [
+            [
+              "a few"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "It’s not a very interesting place, so ",
+            " tourists visit."
+          ],
+          "answers": [
+            [
+              "few"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I don’t think Amy would be a good teacher. She has ",
+            " patience."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "‘Would you like milk in your coffee?’ ‘Yes, ",
+            ", please.’"
+          ],
+          "answers": [
+            [
+              "a little"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "This is a boring place to live. There’s ",
+            " to do."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I know Hong Kong quite well. I’ve been there ",
+            " times."
+          ],
+          "answers": [
+            [
+              "a few"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "There were only ",
+            " people at the meeting."
+          ],
+          "answers": [
+            [
+              "a few"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "‘Did you do all this work on your own?’ ‘No, I had ",
+            " help from my friends.’"
+          ],
+          "answers": [
+            [
+              "a little"
+            ]
+          ]
+        }
       ]
     }
   ]

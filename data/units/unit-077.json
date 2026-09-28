@@ -1,7 +1,10 @@
 {
   "unit": 77,
   "title": "Names with and without the 1",
-  "pdfPages": [166, 167],
+  "pdfPages": [
+    166,
+    167
+  ],
   "exercises": [
     {
       "id": "77.1",
@@ -10,52 +13,82 @@
       "items": [
         {
           "num": 1,
-          "options": ["Doctor Johnson", "the Doctor Johnson"],
+          "options": [
+            "Doctor Johnson",
+            "the Doctor Johnson"
+          ],
           "answer": 0
         },
         {
           "num": 2,
-          "options": ["Doctor", "The doctor"],
+          "options": [
+            "Doctor",
+            "The doctor"
+          ],
           "answer": 1
         },
         {
           "num": 3,
-          "options": ["Doctor Thomas", "The Doctor Thomas"],
+          "options": [
+            "Doctor Thomas",
+            "The Doctor Thomas"
+          ],
           "answer": 0
         },
         {
           "num": 4,
-          "options": ["Professor Brown", "the Professor Brown"],
+          "options": [
+            "Professor Brown",
+            "the Professor Brown"
+          ],
           "answer": 0
         },
         {
           "num": 5,
-          "options": ["President", "the President"],
+          "options": [
+            "President",
+            "the President"
+          ],
           "answer": 1
         },
         {
           "num": 6,
-          "options": ["President Kennedy", "The President Kennedy"],
+          "options": [
+            "President Kennedy",
+            "The President Kennedy"
+          ],
           "answer": 0
         },
         {
           "num": 7,
-          "options": ["Inspector Roberts", "the Inspector Roberts"],
+          "options": [
+            "Inspector Roberts",
+            "the Inspector Roberts"
+          ],
           "answer": 0
         },
         {
           "num": 8,
-          "options": ["Wilsons", "the Wilsons"],
+          "options": [
+            "Wilsons",
+            "the Wilsons"
+          ],
           "answer": 1
         },
         {
           "num": 9,
-          "options": ["United States", "the United States"],
+          "options": [
+            "United States",
+            "the United States"
+          ],
           "answer": 1
         },
         {
           "num": 10,
-          "options": ["France", "The France"],
+          "options": [
+            "France",
+            "The France"
+          ],
           "answer": 0
         }
       ]
@@ -68,62 +101,86 @@
         {
           "num": 1,
           "prompt": "Everest was first climbed in 1953.",
-          "answers": ["OK"]
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 2,
           "prompt": "Milan and Turin are cities in north of Italy.",
-          "answers": ["Milan and Turin are cities in the north of Italy."]
+          "answers": [
+            "Milan and Turin are cities in the north of Italy."
+          ]
         },
         {
           "num": 3,
           "prompt": "Africa is much larger than Europe.",
-          "answers": ["OK"]
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 4,
           "prompt": "Last year I visited Mexico and United States.",
-          "answers": ["Last year I visited Mexico and the United States."]
+          "answers": [
+            "Last year I visited Mexico and the United States."
+          ]
         },
         {
           "num": 5,
           "prompt": "Southern England is warmer than north.",
-          "answers": ["Southern England is warmer than the north."]
+          "answers": [
+            "Southern England is warmer than the north."
+          ]
         },
         {
           "num": 6,
           "prompt": "Thailand and Cambodia are in southeast Asia.",
-          "answers": ["OK"]
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 7,
           "prompt": "Chicago is on Lake Michigan.",
-          "answers": ["OK"]
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 8,
           "prompt": "Next year we're going skiing in Swiss Alps.",
-          "answers": ["Next year we're going skiing in the Swiss Alps."]
+          "answers": [
+            "Next year we're going skiing in the Swiss Alps."
+          ]
         },
         {
           "num": 9,
           "prompt": "UK consists of Great Britain and Northern Ireland.",
-          "answers": ["The UK consists of Great Britain and Northern Ireland."]
+          "answers": [
+            "The UK consists of Great Britain and Northern Ireland."
+          ]
         },
         {
           "num": 10,
           "prompt": "Seychelles are a group of islands in Indian Ocean.",
-          "answers": ["The Seychelles are a group of islands in the Indian Ocean."]
+          "answers": [
+            "The Seychelles are a group of islands in the Indian Ocean."
+          ]
         },
         {
           "num": 11,
           "prompt": "I've never been to South Africa.",
-          "answers": ["OK"]
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 12,
           "prompt": "River Volga flows into Caspian Sea.",
-          "answers": ["The River Volga flows into the Caspian Sea."]
+          "answers": [
+            "The River Volga flows into the Caspian Sea."
+          ]
         }
       ]
     },
@@ -134,78 +191,184 @@
       "items": [
         {
           "num": 1,
-          "parts": ["What do you have to cross to travel from Europe to America? ", ""],
-          "answers": [["the Atlantic"]]
+          "parts": [
+            "What do you have to cross to travel from Europe to America? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Atlantic"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["Where is Argentina? ", ""],
-          "answers": [["(in) South America"]]
+          "parts": [
+            "Where is Argentina? ",
+            ""
+          ],
+          "answers": [
+            [
+              "(in) South America"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Which is the longest river in Africa? ", ""],
-          "answers": [["the Nile"]]
+          "parts": [
+            "Which is the longest river in Africa? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Nile"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Of which country is Stockholm the capital? ", ""],
-          "answers": [["Sweden"]]
+          "parts": [
+            "Of which country is Stockholm the capital? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Sweden"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Of which country is Washington the capital? ", ""],
-          "answers": [["the United States"]]
+          "parts": [
+            "Of which country is Washington the capital? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the United States"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["What is the name of the mountain range in the west of North America? ", ""],
-          "answers": [["the Rockies"]]
+          "parts": [
+            "What is the name of the mountain range in the west of North America? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Rockies"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["What is the name of the sea between Africa and Europe? ", ""],
-          "answers": [["the Mediterranean"]]
+          "parts": [
+            "What is the name of the sea between Africa and Europe? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Mediterranean"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Which is the smallest continent in the world? ", ""],
-          "answers": [["Australia"]]
+          "parts": [
+            "Which is the smallest continent in the world? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Australia"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["What is the name of the ocean between North America and Asia? ", ""],
-          "answers": [["the Pacific"]]
+          "parts": [
+            "What is the name of the ocean between North America and Asia? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Pacific"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["What is the name of the ocean between Africa and Australia? ", ""],
-          "answers": [["the Indian Ocean"]]
+          "parts": [
+            "What is the name of the ocean between Africa and Australia? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Indian Ocean"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["Which river flows through London? ", ""],
-          "answers": [["the Thames"]]
+          "parts": [
+            "Which river flows through London? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Thames"
+            ]
+          ]
         },
         {
           "num": 12,
-          "parts": ["Which river flows through Vienna, Budapest and Belgrade? ", ""],
-          "answers": [["the Danube"]]
+          "parts": [
+            "Which river flows through Vienna, Budapest and Belgrade? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Danube"
+            ]
+          ]
         },
         {
           "num": 13,
-          "parts": ["Of which country is Bangkok the capital? ", ""],
-          "answers": [["Thailand"]]
+          "parts": [
+            "Of which country is Bangkok the capital? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Thailand"
+            ]
+          ]
         },
         {
           "num": 14,
-          "parts": ["What joins the Atlantic and Pacific Oceans? ", ""],
-          "answers": [["the Panama Canal"]]
+          "parts": [
+            "What joins the Atlantic and Pacific Oceans? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Panama Canal"
+            ]
+          ]
         },
         {
           "num": 15,
-          "parts": ["Which is the longest river in South America? ", ""],
-          "answers": [["the Amazon"]]
+          "parts": [
+            "Which is the longest river in South America? ",
+            ""
+          ],
+          "answers": [
+            [
+              "the Amazon"
+            ]
+          ]
         }
       ]
     }

@@ -1,33 +1,69 @@
 {
   "unit": 17,
   "title": "have and have got",
-  "pdfPages": [46, 47],
+  "pdfPages": [
+    46,
+    47
+  ],
   "exercises": [
     {
       "id": "17.1",
       "type": "matching",
       "instruction": "Which goes with which?",
       "leftOptions": [
-        "I\u2019m not free tomorrow morning.",
+        "I’m not free tomorrow morning.",
         "Rachel is an only child.",
-        "We\u2019ve got plenty of time.",
-        "You\u2019ve got a really good voice.",
-        "I don\u2019t feel very well this morning.",
+        "We’ve got plenty of time.",
+        "You’ve got a really good voice.",
+        "I don’t feel very well this morning.",
         "Laura studied at university.",
-        "I\u2019ve got a question.",
+        "I’ve got a question.",
         "James has got a lot of experience."
       ],
       "rightOptions": [
-        "She\u2019s got a degree in physics.",
-        "I\u2019ve got a sore throat.",
-        "There\u2019s no need to hurry.",
-        "I\u2019ve got a driving lesson.",
+        "She’s got a degree in physics.",
+        "I’ve got a sore throat.",
+        "There’s no need to hurry.",
+        "I’ve got a driving lesson.",
         "Maybe you can answer it.",
         "I think he should get the job.",
         "I wish I could sing as well as you.",
-        "She\u2019s got no brothers or sisters."
+        "She’s got no brothers or sisters."
       ],
-      "pairs": [[0, 3], [1, 7], [2, 2], [3, 6], [4, 1], [5, 0], [6, 4], [7, 5]]
+      "pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ]
+      ]
     },
     {
       "id": "17.2",
@@ -36,58 +72,147 @@
       "items": [
         {
           "num": 1,
-          "parts": ["She couldn\u2019t get into the house. She ", " a key."],
-          "answers": [["didn\u2019t have"]]
+          "parts": [
+            "She couldn’t get into the house. She ",
+            " a key."
+          ],
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["Is there anything you\u2019d like to ask? ", " any questions?"],
-          "answers": [["Do you have", "Have you got"]]
+          "parts": [
+            "Is there anything you’d like to ask? ",
+            " any questions?"
+          ],
+          "answers": [
+            [
+              "Do you have",
+              "Have you got"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["They can\u2019t pay their bills. They ", " any money."],
-          "answers": [["don\u2019t have", "haven\u2019t got"]]
+          "parts": [
+            "They can’t pay their bills. They ",
+            " any money."
+          ],
+          "answers": [
+            [
+              "don’t have",
+              "haven’t got"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["We got wet in the rain yesterday. We ", " an umbrella."],
-          "answers": [["didn\u2019t have"]]
+          "parts": [
+            "We got wet in the rain yesterday. We ",
+            " an umbrella."
+          ],
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Jack ", " a car. He can\u2019t afford one and he can\u2019t drive anyway."],
-          "answers": [["doesn\u2019t have", "hasn\u2019t got"]]
+          "parts": [
+            "Jack ",
+            " a car. He can’t afford one and he can’t drive anyway."
+          ],
+          "answers": [
+            [
+              "doesn’t have",
+              "hasn’t got"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["\u2018Excuse me, ", " a pen I could borrow?\u2019 \u2018Yes, sure. Here you are.\u2019"],
-          "answers": [["do you have", "have you got"]]
+          "parts": [
+            "‘Excuse me, ",
+            " a pen I could borrow?’ ‘Yes, sure. Here you are.’"
+          ],
+          "answers": [
+            [
+              "do you have",
+              "have you got"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I was very busy yesterday. I ", " time to go shopping."],
-          "answers": [["didn\u2019t have"]]
+          "parts": [
+            "I was very busy yesterday. I ",
+            " time to go shopping."
+          ],
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["\u2018Tell me about Jack. ", " a job?\u2019 \u2018Yes, he works at the hospital.\u2019"],
-          "answers": [["Does he have", "Has he got"]]
+          "parts": [
+            "‘Tell me about Jack. ",
+            " a job?’ ‘Yes, he works at the hospital.’"
+          ],
+          "answers": [
+            [
+              "Does he have",
+              "Has he got"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["When you worked in your last job, ", " your own office?"],
-          "answers": [["did you have"]]
+          "parts": [
+            "When you worked in your last job, ",
+            " your own office?"
+          ],
+          "answers": [
+            [
+              "did you have"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["\u2018Where\u2019s the remote control?\u2019 \u2018I don\u2019t know. I ", " it.\u2019"],
-          "answers": [["don\u2019t have", "haven\u2019t got"]]
+          "parts": [
+            "‘Where’s the remote control?’ ‘I don’t know. I ",
+            " it.’"
+          ],
+          "answers": [
+            [
+              "don’t have",
+              "haven’t got"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["\u2018Tom ", " a motorbike, ", " he?\u2019 \u2018Yes, that\u2019s right. A long time ago.\u2019"],
-          "answers": [["had"], ["didn\u2019t"]]
+          "parts": [
+            "‘Tom ",
+            " a motorbike, ",
+            " he?’ ‘Yes, that’s right. A long time ago.’"
+          ],
+          "answers": [
+            [
+              "had"
+            ],
+            [
+              "didn’t"
+            ]
+          ]
         }
       ]
     },
@@ -98,63 +223,91 @@
       "items": [
         {
           "num": 1,
-          "prompt": "I\u2019m not free tomorrow morning. I\u2019ve got a driving lesson.",
-          "answers": ["OK"]
+          "prompt": "I’m not free tomorrow morning. I’ve got a driving lesson.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 2,
           "prompt": "Lisa had got long hair when she was a child.",
-          "answers": ["Lisa had long hair when she was a child."]
+          "answers": [
+            "Lisa had long hair when she was a child."
+          ]
         },
         {
           "num": 3,
-          "prompt": "I couldn\u2019t contact you because I hadn\u2019t my phone.",
-          "answers": ["I didn\u2019t have my phone.", "I hadn\u2019t got my phone."]
+          "prompt": "I couldn’t contact you because I hadn’t my phone.",
+          "answers": [
+            "I didn’t have my phone.",
+            "I hadn’t got my phone."
+          ]
         },
         {
           "num": 4,
-          "prompt": "\u2018Are you feeling OK?\u2019 \u2018No, I\u2019m having a cold.\u2019",
-          "answers": ["I have a cold.", "I\u2019ve got a cold."]
+          "prompt": "‘Are you feeling OK?’ ‘No, I’m having a cold.’",
+          "answers": [
+            "I have a cold.",
+            "I’ve got a cold."
+          ]
         },
         {
           "num": 5,
-          "prompt": "I\u2019m not working right now. I\u2019m having a break.",
-          "answers": ["OK"]
+          "prompt": "I’m not working right now. I’m having a break.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 6,
-          "prompt": "I felt really tired. I hadn\u2019t any energy.",
-          "answers": ["I didn\u2019t have any energy."]
+          "prompt": "I felt really tired. I hadn’t any energy.",
+          "answers": [
+            "I didn’t have any energy."
+          ]
         },
         {
           "num": 7,
-          "prompt": "It\u2019s a small town. It doesn\u2019t have many shops.",
-          "answers": ["OK", "It hasn\u2019t got many shops."]
+          "prompt": "It’s a small town. It doesn’t have many shops.",
+          "answers": [
+            "OK",
+            "It hasn’t got many shops."
+          ]
         },
         {
           "num": 8,
           "prompt": "Was your trip OK? Had you any problems?",
-          "answers": ["Did you have any problems?"]
+          "answers": [
+            "Did you have any problems?"
+          ]
         },
         {
           "num": 9,
           "prompt": "My friend called me when I was having breakfast.",
-          "answers": ["OK"]
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 10,
           "prompt": "The last time I saw Steve, he was having a beard.",
-          "answers": ["He had a beard."]
+          "answers": [
+            "He had a beard."
+          ]
         },
         {
           "num": 11,
-          "prompt": "We don\u2019t need to hurry. We have plenty of time.",
-          "answers": ["OK", "We\u2019ve got plenty of time."]
+          "prompt": "We don’t need to hurry. We have plenty of time.",
+          "answers": [
+            "OK",
+            "We’ve got plenty of time."
+          ]
         },
         {
           "num": 12,
           "prompt": "How often have you a shower?",
-          "answers": ["How often do you have a shower?"]
+          "answers": [
+            "How often do you have a shower?"
+          ]
         }
       ]
     },
@@ -165,53 +318,126 @@
       "items": [
         {
           "num": 1,
-          "parts": ["I don\u2019t eat much during the day. I never ", "."],
-          "answers": [["have lunch"]]
+          "parts": [
+            "I don’t eat much during the day. I never ",
+            "."
+          ],
+          "answers": [
+            [
+              "have lunch"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["David starts work at 8 o\u2019clock and ", " at 10.30."],
-          "answers": [["has a break"]]
+          "parts": [
+            "David starts work at 8 o’clock and ",
+            " at 10.30."
+          ],
+          "answers": [
+            [
+              "has a break"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["We ", " last week. We invited lots of people."],
-          "answers": [["had a party"]]
+          "parts": [
+            "We ",
+            " last week. We invited lots of people."
+          ],
+          "answers": [
+            [
+              "had a party"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["There\u2019s something wrong with my bike. Can you ", " at it for me?"],
-          "answers": [["have a look"]]
+          "parts": [
+            "There’s something wrong with my bike. Can you ",
+            " at it for me?"
+          ],
+          "answers": [
+            [
+              "have a look"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Joe is away on holiday at the moment. I hope he ", "."],
-          "answers": [["\u2019s having a nice time", "is having a nice time"]]
+          "parts": [
+            "Joe is away on holiday at the moment. I hope he ",
+            "."
+          ],
+          "answers": [
+            [
+              "’s having a nice time",
+              "is having a nice time"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I met some friends in the supermarket yesterday. We stopped and ", "."],
-          "answers": [["had a chat"]]
+          "parts": [
+            "I met some friends in the supermarket yesterday. We stopped and ",
+            "."
+          ],
+          "answers": [
+            [
+              "had a chat"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["\u2018", " finding the book you wanted?\u2019 \u2018No, I found it OK.\u2019"],
-          "answers": [["Did you have trouble"]]
+          "parts": [
+            "‘",
+            " finding the book you wanted?’ ‘No, I found it OK.’"
+          ],
+          "answers": [
+            [
+              "Did you have trouble"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Suzanne ", " a few weeks ago. It\u2019s her second child."],
-          "answers": [["had a baby"]]
+          "parts": [
+            "Suzanne ",
+            " a few weeks ago. It’s her second child."
+          ],
+          "answers": [
+            [
+              "had a baby"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["I ", " when the light went out suddenly."],
-          "answers": [["was having a shower"]]
+          "parts": [
+            "I ",
+            " when the light went out suddenly."
+          ],
+          "answers": [
+            [
+              "was having a shower"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["I\u2019d like to go away somewhere. I ", " for a long time."],
-          "answers": [["haven\u2019t had a holiday", "haven\u2019t had a break"]]
+          "parts": [
+            "I’d like to go away somewhere. I ",
+            " for a long time."
+          ],
+          "answers": [
+            [
+              "haven’t had a holiday",
+              "haven’t had a break"
+            ]
+          ]
         }
       ]
     }

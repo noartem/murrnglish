@@ -8,7 +8,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences.",
       "items": [
-        {"num": 1, "parts": ["Here's a key so that you can let yourself in."], "answers": []},
+        {"num": 1, "parts": ["Here's a key so that you can let yourself in."], "answers": [], "example": true},
         {"num": 2, "parts": ["Lisa doesn't like cooking, so she ", " out a lot."], "answers": [["eats"]]},
         {"num": 3, "parts": ["If you're in our part of town, you should ", " in and say hello."], "answers": [["drop"]]},
         {"num": 4, "parts": ["Could you ", " in this questionnaire? It will only take five minutes."], "answers": [["fill"]]},
@@ -24,12 +24,12 @@
       "type": "fill-in",
       "instruction": "Complete the sentences with in, into, out or out of.",
       "items": [
-        {"num": 1, "parts": ["I've got a new flat. I'm moving in on Friday."], "answers": []},
+        {"num": 1, "parts": ["I've got a new flat. I'm moving in on Friday."], "answers": [], "example": true},
         {"num": 2, "parts": ["We arrived at the hotel and checked ", "."], "answers": [["in"]]},
         {"num": 3, "parts": ["When are you moving ", " your new flat?"], "answers": [["into"]]},
         {"num": 4, "parts": ["The car stopped and the driver got ", "."], "answers": [["out"]]},
         {"num": 5, "parts": ["Thieves broke ", " the house and stole some jewellery."], "answers": [["into"]]},
-        {"num": 6, "parts": ["How did the thieves break ", "? Through a window?"], "answers": [["out"]]},
+        {"num": 6, "parts": ["How did the thieves break ", "?"], "answers": [["in"]]},
         {"num": 7, "parts": ["He opened his wallet and something fell ", "."], "answers": [["out"]]},
         {"num": 8, "parts": ["Kate was angry and walked ", " the meeting."], "answers": [["out of"]]}
       ]
@@ -39,7 +39,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences using a verb + in or out (of).",
       "items": [
-        {"num": 1, "parts": ["Lisa walked to the edge of the pool, dived in and swam to the other end."], "answers": []},
+        {"num": 1, "parts": ["Lisa walked to the edge of the pool, dived in and swam to the other end."], "answers": [], "example": true},
         {"num": 2, "parts": ["Not all the runners finished the race. Three of them ", "."], "answers": [["dropped out"]]},
         {"num": 3, "parts": ["I went to see Joe and Sophie in their new house. They ", " last week."], "answers": [["moved in"]]},
         {"num": 4, "parts": ["I've told you everything you need to know. I don't think I've ", " anything."], "answers": [["left out"]]},
@@ -53,11 +53,11 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Use the word in brackets in the correct form.",
       "items": [
-        {"num": 1, "parts": ["a: The fridge isn't working.\nB: That's because you haven't plugged it in."], "answers": []},
-        {"num": 2, "parts": ["a: What do I have to do with these forms?\nB: ", " and send them to this address."], "answers": [["Fill them in", "Fill them out"]]},
-        {"num": 3, "parts": ["a: I've made a mistake on this form.\nB: That's OK. Just ", " and correct it."], "answers": [["cross it out"]]},
-        {"num": 4, "parts": ["a: Have you been to the new club I told you about?\nB: No. We went there, but they wouldn't ", " because we weren't members."], "answers": [["let us in"]]},
-        {"num": 5, "parts": ["a: Can we meet tomorrow at ten?\nB: Probably. I have another meeting, but I think I can ", "."], "answers": [["get out of it"]]}
+        {"num": 1, "parts": ["a: The fridge isn't working.\nB: That's because you haven't plugged it in."], "answers": [], "example": true},
+        {"num": 2, "parts": ["a: What do I have to do with these forms?\nB: ", " and send them to this address. (fill)"], "answers": [["Fill them in", "Fill them out"]]},
+        {"num": 3, "parts": ["a: I've made a mistake on this form.\nB: That's OK. Just ", " and correct it. (cross)"], "answers": [["cross it out"]]},
+        {"num": 4, "parts": ["a: Have you been to the new club I told you about?\nB: No. We went there, but they wouldn't ", " because we weren't members. (let)"], "answers": [["let us in"]]},
+        {"num": 5, "parts": ["a: Can we meet tomorrow at ten?\nB: Probably. I have another meeting, but I think I can ", ". (get)"], "answers": [["get out of it"]]}
       ]
     },
     {
@@ -65,7 +65,7 @@
       "type": "fill-in",
       "instruction": "Complete the second sentence so that it means the same as the first. Use a verb from Sections B or C.",
       "items": [
-        {"num": 1, "parts": ["Let's go to a restaurant tonight. Let's eat out tonight."], "answers": []},
+        {"num": 1, "parts": ["Let's go to a restaurant tonight. Let's eat out tonight."], "answers": [], "example": true},
         {"num": 2, "parts": ["Why didn't you finish college? Why did you ", "?"], "answers": [["drop out of college"]]},
         {"num": 3, "parts": ["Please complete the application form. Please ", " form."], "answers": [["fill in the application", "fill out the application"]]},
         {"num": 4, "parts": ["I can't avoid going to the party. I can't ", " to the party."], "answers": [["get out of going"]]},

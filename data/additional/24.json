@@ -2,7 +2,9 @@
   "id": 24,
   "topic": "Passive",
   "refs": "Units 42–45",
-  "pdfPages": [327, 328],
+  "pdfPages": [
+    327
+  ],
   "exercise": {
     "id": "24",
     "type": "fill-in",
@@ -10,23 +12,127 @@
     "items": [
       {
         "num": 3,
-        "parts": ["Winton Castle (1) was damaged in a fire last night. The fire, which ", " (discover) at about 9 o'clock, spread very quickly. Nobody ", " (injure), but two people had to ", " (rescue) from an upstairs room. A number of paintings ", " (believe / destroy). It ", " (not / know) how the fire started."],
-        "answers": [["was discovered"], ["was injured"], ["be rescued"], ["are believed to have been destroyed"], ["is not known"]]
+        "parts": [
+          "Winton Castle (1) was damaged in a fire last night. The fire, which ",
+          " (discover) at about 9 o'clock, spread very quickly. Nobody ",
+          " (injure), but two people had to ",
+          " (rescue) from an upstairs room. A number of paintings ",
+          " (believe / destroy). It ",
+          " (not / know) how the fire started."
+        ],
+        "answers": [
+          [
+            "was discovered"
+          ],
+          [
+            "was injured"
+          ],
+          [
+            "be rescued"
+          ],
+          [
+            "are believed to have been destroyed"
+          ],
+          [
+            "is not known"
+          ]
+        ]
       },
       {
         "num": 8,
-        "parts": ["In Paxham yesterday a shop assistant ", " (force) to hand over £500 after ", " (threaten) by a man with a knife. The man escaped in a car which ", " (steal) earlier in the day. The car ", " (later / find) in a car park where it ", " (abandon) by the thief. A man ", " (arrest) in connection with the robbery and ", " (still / question) by the police."],
-        "answers": [["was forced"], ["being threatened"], ["had been stolen"], ["was later found"], ["had been abandoned"], ["has been arrested"], ["is still being questioned"]]
+        "parts": [
+          "In Paxham yesterday a shop assistant ",
+          " (force) to hand over £500 after ",
+          " (threaten) by a man with a knife. The man escaped in a car which ",
+          " (steal) earlier in the day. The car ",
+          " (later / find) in a car park where it ",
+          " (abandon) by the thief. A man ",
+          " (arrest) in connection with the robbery and ",
+          " (still / question) by the police."
+        ],
+        "answers": [
+          [
+            "was forced"
+          ],
+          [
+            "being threatened"
+          ],
+          [
+            "had been stolen"
+          ],
+          [
+            "was later found"
+          ],
+          [
+            "had been abandoned"
+          ],
+          [
+            "has been arrested"
+          ],
+          [
+            "is still being questioned"
+          ]
+        ]
       },
       {
         "num": 15,
-        "parts": ["Repair work started yesterday on the Paxham–Longworth road. The road ", " (resurface) and there will be long delays. Drivers ", " (ask) to use an alternative route if possible. The work ", " (expect) to last two weeks. Next Sunday the road ", " (close), and traffic ", " (divert)."],
-        "answers": [["is being resurfaced"], ["are asked", "are being asked", "have been asked"], ["is expected"], ["will be closed", "is going to be closed"], ["will be diverted", "is going to be diverted"]]
+        "parts": [
+          "Repair work started yesterday on the Paxham–Longworth road. The road ",
+          " (resurface) and there will be long delays. Drivers ",
+          " (ask) to use an alternative route if possible. The work ",
+          " (expect) to last two weeks. Next Sunday the road ",
+          " (close), and traffic ",
+          " (divert)."
+        ],
+        "answers": [
+          [
+            "is being resurfaced"
+          ],
+          [
+            "are asked",
+            "are being asked",
+            "have been asked"
+          ],
+          [
+            "is expected"
+          ],
+          [
+            "will be closed",
+            "is going to be closed"
+          ],
+          [
+            "will be diverted",
+            "is going to be diverted"
+          ]
+        ]
       },
       {
         "num": 20,
-        "parts": ["A woman ", " (take) to hospital after her car collided with a lorry near Norstock yesterday. She ", " (allow) home later after treatment. The road ", " (block) for an hour after the accident, and traffic had to ", " (divert). A police inspector said afterwards: 'The woman was lucky. She could ", " (kill).'"],
-        "answers": [["was taken"], ["was allowed"], ["was blocked"], ["be diverted"], ["have been killed"]]
+        "parts": [
+          "A woman ",
+          " (take) to hospital after her car collided with a lorry near Norstock yesterday. She ",
+          " (allow) home later after treatment. The road ",
+          " (block) for an hour after the accident, and traffic had to ",
+          " (divert). A police inspector said afterwards: 'The woman was lucky. She could ",
+          " (kill).'"
+        ],
+        "answers": [
+          [
+            "was taken"
+          ],
+          [
+            "was allowed"
+          ],
+          [
+            "was blocked"
+          ],
+          [
+            "be diverted"
+          ],
+          [
+            "have been killed"
+          ]
+        ]
       }
     ]
   }

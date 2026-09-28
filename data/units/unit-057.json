@@ -8,15 +8,15 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form.",
       "items": [
-        {"num": 1, "parts": ["I was very tired. I tried to keep my eyes open, but I couldn\u2019t."], "answers": []},
-        {"num": 2, "parts": ["I tried ", " the shelf, but I wasn\u2019t tall enough."], "answers": [["to reach"]]},
-        {"num": 3, "parts": ["I rang the doorbell, but there was no answer. Then I tried ", " on the window, but there was still no answer."], "answers": [["knocking"]]},
-        {"num": 4, "parts": ["We tried ", " the fire out, but without success. We had to call the fire brigade."], "answers": [["to put"]]},
-        {"num": 5, "parts": ["Please leave me alone. I\u2019m trying ", "."], "answers": [["to concentrate"]]},
-        {"num": 6, "parts": ["Sue needed to borrow some money. She tried ", " Carl, but he didn\u2019t have any."], "answers": [["asking"]]},
-        {"num": 7, "parts": ["Mr Bennett isn\u2019t here right now. Please try ", " later."], "answers": [["calling"]]},
-        {"num": 8, "parts": ["The woman\u2019s face was familiar. I tried ", " where I\u2019d seen her before."], "answers": [["to remember"]]},
-        {"num": 9, "parts": ["If you have a problem with the computer, try ", " it."], "answers": [["restarting"]]}
+        {"num": 1, "parts": ["I was very tired. I tried to keep my eyes open, but I couldn\u2019t."], "answers": [], "example": true},
+        {"num": 2, "parts": ["I tried ", " (keep) the shelf, but I wasn\u2019t tall enough. (reach)"], "answers": [["to reach"]]},
+        {"num": 3, "parts": ["I rang the doorbell, but there was no answer. Then I tried ", " on the window, but there was still no answer. (knock)"], "answers": [["knocking"]]},
+        {"num": 4, "parts": ["We tried ", " the fire out, but without success. We had to call the fire brigade. (put)"], "answers": [["to put"]]},
+        {"num": 5, "parts": ["Please leave me alone. I\u2019m trying ", ". (concentrate)"], "answers": [["to concentrate"]]},
+        {"num": 6, "parts": ["Sue needed to borrow some money. She tried ", " Carl, but he didn\u2019t have any. (ask)"], "answers": [["asking"]]},
+        {"num": 7, "parts": ["Mr Bennett isn\u2019t here right now. Please try ", " later. (call)"], "answers": [["calling"]]},
+        {"num": 8, "parts": ["The woman\u2019s face was familiar. I tried ", " where I\u2019d seen her before. (remember)"], "answers": [["to remember"]]},
+        {"num": 9, "parts": ["If you have a problem with the computer, try ", " it. (restart)"], "answers": [["restarting"]]}
       ]
     },
     {
@@ -51,14 +51,14 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form.",
       "items": [
-        {"num": 1, "parts": ["I don\u2019t like him, but I can\u2019t help feeling sorry for him."], "answers": []},
-        {"num": 2, "parts": ["I\u2019ve lost my phone. Can you help me ", " for it?"], "answers": [["look", "to look"]]},
-        {"num": 3, "parts": ["They were talking very loudly. We couldn\u2019t help ", " what they said."], "answers": [["overhearing"]]},
-        {"num": 4, "parts": ["He looks so funny. Whenever I see him, I can\u2019t help ", "."], "answers": [["smiling"]]},
-        {"num": 5, "parts": ["The fine weather helped ", " it a really nice holiday."], "answers": [["make", "to make"]]},
-        {"num": 6, "parts": ["Did you help ", " the meeting?"], "answers": [["organise", "to organise"]]},
-        {"num": 7, "parts": ["I think about what happened all the time. I can\u2019t help ", " about it."], "answers": [["thinking"]]},
-        {"num": 8, "parts": ["I can\u2019t help you ", " a job. You have to find one yourself."], "answers": [["get", "to get"]]}
+        {"num": 1, "parts": ["I don\u2019t like him, but I can\u2019t help feeling sorry for him."], "answers": [], "example": true},
+        {"num": 2, "parts": ["I\u2019ve lost my phone. Can you help me ", " for it? (look)"], "answers": [["look", "to look"]]},
+        {"num": 3, "parts": ["They were talking very loudly. We couldn\u2019t help ", " what they said. (overhear)"], "answers": [["overhearing"]]},
+        {"num": 4, "parts": ["He looks so funny. Whenever I see him, I can\u2019t help ", ". (smile)"], "answers": [["smiling"]]},
+        {"num": 5, "parts": ["The fine weather helped ", " it a really nice holiday. (make)"], "answers": [["make", "to make"]]},
+        {"num": 6, "parts": ["Did you help ", " the meeting? (organise)"], "answers": [["organise", "to organise"]]},
+        {"num": 7, "parts": ["I think about what happened all the time. I can\u2019t help ", " about it. (think)"], "answers": [["thinking"]]},
+        {"num": 8, "parts": ["I can\u2019t help you ", " a job. You have to find one yourself. (get)"], "answers": [["get", "to get"]]}
       ]
     }
   ]

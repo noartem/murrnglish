@@ -51,14 +51,14 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Put the verb into the correct form, positive or negative.",
       "items": [
-        {"num": 3, "parts": ["I knew Sarah was busy, so I ", " her."], "answers": [["didn\u2019t disturb"]]},
-        {"num": 4, "parts": ["We were very tired, so we ", " the party early."], "answers": [["left"]]},
-        {"num": 5, "parts": ["It was hard carrying the bags. They ", " really heavy."], "answers": [["were"]]},
-        {"num": 6, "parts": ["The bed was very uncomfortable. I ", " well."], "answers": [["didn\u2019t sleep"]]},
-        {"num": 7, "parts": ["This watch wasn\u2019t expensive. It ", " much."], "answers": [["didn\u2019t cost"]]},
-        {"num": 8, "parts": ["The window was open and a bird ", " into the room."], "answers": [["flew"]]},
-        {"num": 9, "parts": ["I was in a hurry, so I ", " time to call you."], "answers": [["didn\u2019t have"]]},
-        {"num": 10, "parts": ["I didn\u2019t like the hotel. The room ", " very clean."], "answers": [["wasn\u2019t"]]}
+        {"num": 3, "parts": ["I knew Sarah was busy, so I ", " her. (disturb)"], "answers": [["didn\u2019t disturb"]]},
+        {"num": 4, "parts": ["We were very tired, so we ", " the party early. (leave)"], "answers": [["left"]]},
+        {"num": 5, "parts": ["It was hard carrying the bags. They ", " really heavy. (be)"], "answers": [["were"]]},
+        {"num": 6, "parts": ["The bed was very uncomfortable. I ", " well. (sleep)"], "answers": [["didn\u2019t sleep"]]},
+        {"num": 7, "parts": ["This watch wasn\u2019t expensive. It ", " much. (cost)"], "answers": [["didn\u2019t cost"]]},
+        {"num": 8, "parts": ["The window was open and a bird ", " into the room. (fly)"], "answers": [["flew"]]},
+        {"num": 9, "parts": ["I was in a hurry, so I ", " time to call you. (have)"], "answers": [["didn\u2019t have"]]},
+        {"num": 10, "parts": ["I didn\u2019t like the hotel. The room ", " very clean. (be)"], "answers": [["wasn\u2019t"]]}
       ]
     }
   ]

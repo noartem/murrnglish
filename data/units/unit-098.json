@@ -1,7 +1,10 @@
 {
   "unit": 98,
   "title": "Adjectives ending in -ing and -ed (boring/bored etc.)",
-  "pdfPages": [208, 209],
+  "pdfPages": [
+    208,
+    209
+  ],
   "exercises": [
     {
       "id": "98.1",
@@ -10,43 +13,99 @@
       "items": [
         {
           "num": "2a",
-          "parts": ["She enjoys her job, but it\u2019s often ", "."],
-          "answers": [["exhausting"]]
+          "parts": [
+            "She enjoys her job, but it’s often ",
+            ". (exhaust…)"
+          ],
+          "answers": [
+            [
+              "exhausting"
+            ]
+          ]
         },
         {
           "num": "2b",
-          "parts": ["At the end of a day\u2019s work, she is often ", "."],
-          "answers": [["exhausted"]]
+          "parts": [
+            "At the end of a day’s work, she is often ",
+            ". (exhaust…)"
+          ],
+          "answers": [
+            [
+              "exhausted"
+            ]
+          ]
         },
         {
           "num": "3a",
-          "parts": ["This weather is ", "."],
-          "answers": [["depressing"]]
+          "parts": [
+            "This weather is ",
+            ". (depress…)"
+          ],
+          "answers": [
+            [
+              "depressing"
+            ]
+          ]
         },
         {
           "num": "3b",
-          "parts": ["This weather makes me ", "."],
-          "answers": [["depressed"]]
+          "parts": [
+            "This weather makes me ",
+            ". (depress…)"
+          ],
+          "answers": [
+            [
+              "depressed"
+            ]
+          ]
         },
         {
           "num": "3c",
-          "parts": ["It\u2019s silly to get ", " because of the weather."],
-          "answers": [["depressed"]]
+          "parts": [
+            "It’s silly to get ",
+            " because of the weather. (depress…)"
+          ],
+          "answers": [
+            [
+              "depressed"
+            ]
+          ]
         },
         {
           "num": "4a",
-          "parts": ["It will be an ", " experience for her."],
-          "answers": [["exciting"]]
+          "parts": [
+            "It will be an ",
+            " experience for her. (excit…)"
+          ],
+          "answers": [
+            [
+              "exciting"
+            ]
+          ]
         },
         {
           "num": "4b",
-          "parts": ["Going to new places is always ", "."],
-          "answers": [["exciting"]]
+          "parts": [
+            "Going to new places is always ",
+            ". (excit…)"
+          ],
+          "answers": [
+            [
+              "exciting"
+            ]
+          ]
         },
         {
           "num": "4c",
-          "parts": ["She is really ", " about going to Mexico."],
-          "answers": [["excited"]]
+          "parts": [
+            "She is really ",
+            " about going to Mexico. (excit…)"
+          ],
+          "answers": [
+            [
+              "excited"
+            ]
+          ]
         }
       ]
     },
@@ -57,77 +116,122 @@
       "items": [
         {
           "num": 1,
-          "options": ["disappointing", "disappointed"],
+          "options": [
+            "disappointing",
+            "disappointed"
+          ],
           "answer": 1
         },
         {
           "num": 2,
-          "options": ["interesting", "interested"],
+          "options": [
+            "interesting",
+            "interested"
+          ],
           "answer": 1
         },
         {
           "num": 3,
-          "options": ["exciting", "excited"],
+          "options": [
+            "exciting",
+            "excited"
+          ],
           "answer": 0
         },
         {
           "num": 4,
-          "options": ["embarrassing", "embarrassed"],
+          "options": [
+            "embarrassing",
+            "embarrassed"
+          ],
           "answer": 0
         },
         {
           "num": 5,
-          "options": ["embarrassing", "embarrassed"],
+          "options": [
+            "embarrassing",
+            "embarrassed"
+          ],
           "answer": 1
         },
         {
           "num": 6,
-          "options": ["amazing", "amazed"],
+          "options": [
+            "amazing",
+            "amazed"
+          ],
           "answer": 1
         },
         {
           "num": 7,
-          "options": ["amazing", "amazed"],
+          "options": [
+            "amazing",
+            "amazed"
+          ],
           "answer": 0
         },
         {
           "num": 8,
-          "options": ["amusing", "amused"],
+          "options": [
+            "amusing",
+            "amused"
+          ],
           "answer": 1
         },
         {
           "num": 9,
-          "options": ["interesting", "interested"],
+          "options": [
+            "interesting",
+            "interested"
+          ],
           "answer": 1
         },
         {
           "num": "10a",
-          "options": ["terrifying", "terrified"],
+          "options": [
+            "terrifying",
+            "terrified"
+          ],
           "answer": 0
         },
         {
           "num": "10b",
-          "options": ["shocking", "shocked"],
+          "options": [
+            "shocking",
+            "shocked"
+          ],
           "answer": 1
         },
         {
           "num": "11a",
-          "options": ["boring", "bored"],
+          "options": [
+            "boring",
+            "bored"
+          ],
           "answer": 1
         },
         {
           "num": "11b",
-          "options": ["boring", "bored"],
+          "options": [
+            "boring",
+            "bored"
+          ],
           "answer": 0
         },
         {
           "num": "12a",
-          "options": ["boring", "bored"],
+          "options": [
+            "boring",
+            "bored"
+          ],
           "answer": 0
         },
         {
           "num": "12b",
-          "options": ["interesting", "interested"],
+          "options": [
+            "interesting",
+            "interested"
+          ],
           "answer": 0
         }
       ]
@@ -150,58 +254,136 @@
       "items": [
         {
           "num": 1,
-          "parts": ["You work very hard. It\u2019s not ", " that you\u2019re always tired."],
-          "answers": [["surprising"]]
+          "parts": [
+            "You work very hard. It’s not ",
+            " that you’re always tired."
+          ],
+          "answers": [
+            [
+              "surprising"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["Some people get ", " very easily. They always need something new."],
-          "answers": [["bored"]]
+          "parts": [
+            "Some people get ",
+            " very easily. They always need something new."
+          ],
+          "answers": [
+            [
+              "bored"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["The teacher\u2019s explanation was ", ". Nobody understood it."],
-          "answers": [["confusing"]]
+          "parts": [
+            "The teacher’s explanation was ",
+            ". Nobody understood it."
+          ],
+          "answers": [
+            [
+              "confusing"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["The kitchen hadn\u2019t been cleaned for ages. It was really ", "."],
-          "answers": [["disgusting"]]
+          "parts": [
+            "The kitchen hadn’t been cleaned for ages. It was really ",
+            "."
+          ],
+          "answers": [
+            [
+              "disgusting"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I don\u2019t go to art galleries very often. I\u2019m not very ", " in art."],
-          "answers": [["interested"]]
+          "parts": [
+            "I don’t go to art galleries very often. I’m not very ",
+            " in art."
+          ],
+          "answers": [
+            [
+              "interested"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["There\u2019s no need to get ", " just because I\u2019m a few minutes late."],
-          "answers": [["annoyed"]]
+          "parts": [
+            "There’s no need to get ",
+            " just because I’m a few minutes late."
+          ],
+          "answers": [
+            [
+              "annoyed"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["The lecture was ", ". I fell asleep."],
-          "answers": [["boring"]]
+          "parts": [
+            "The lecture was ",
+            ". I fell asleep."
+          ],
+          "answers": [
+            [
+              "boring"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["I\u2019ve been working very hard all day and now I\u2019m ", "."],
-          "answers": [["exhausted"]]
+          "parts": [
+            "I’ve been working very hard all day and now I’m ",
+            "."
+          ],
+          "answers": [
+            [
+              "exhausted"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["I\u2019m starting a new job next week. I\u2019m very ", " about it."],
-          "answers": [["excited"]]
+          "parts": [
+            "I’m starting a new job next week. I’m very ",
+            " about it."
+          ],
+          "answers": [
+            [
+              "excited"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["Steve is good at telling funny stories. He can be very ", "."],
-          "answers": [["amusing"]]
+          "parts": [
+            "Steve is good at telling funny stories. He can be very ",
+            "."
+          ],
+          "answers": [
+            [
+              "amusing"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["Helen is a very ", " person. She knows a lot, she\u2019s travelled a lot and she\u2019s done lots of different things."],
-          "answers": [["interesting"]]
+          "parts": [
+            "Helen is a very ",
+            " person. She knows a lot, she’s travelled a lot and she’s done lots of different things."
+          ],
+          "answers": [
+            [
+              "interesting"
+            ]
+          ]
         }
       ]
     }

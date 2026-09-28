@@ -1,21 +1,113 @@
 {
   "unit": 113,
   "title": "although though even though in spite of despite",
-  "pdfPages": [238, 239],
+  "pdfPages": [
+    238,
+    239
+  ],
   "exercises": [
     {
       "id": "113.1",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use although + a sentence from the box.",
       "items": [
-        {"num": 1, "parts": ["", " , she isn't well-paid."], "answers": [["Although she has a very important job"]]},
-        {"num": 2, "parts": ["", " , I recognised her from a photo."], "answers": [["Although I had never seen her before"]]},
-        {"num": 3, "parts": ["Sarah wasn't wearing a coat", " ."], "answers": [["although it was quite cold"]]},
-        {"num": 4, "parts": ["We decided to invite them to the party", " ."], "answers": [["although we don't like them very much"]]},
-        {"num": 5, "parts": ["", " , I managed to make myself understood."], "answers": [["Although I didn't speak the language well"]]},
-        {"num": 6, "parts": ["", " , the room wasn't warm."], "answers": [["Although the heating was on"]]},
-        {"num": 7, "parts": ["I didn't recognise her", " ."], "answers": [["although I'd met her twice before"]]},
-        {"num": 8, "parts": ["We're not close friends", " ."], "answers": [["although we've known each other a long time"]]}
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " , she isn't well-paid."
+          ],
+          "answers": [
+            [
+              "Although she has a very important job"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " , I recognised her from a photo."
+          ],
+          "answers": [
+            [
+              "Although I had never seen her before"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Sarah wasn't wearing a coat",
+            " ."
+          ],
+          "answers": [
+            [
+              "although it was quite cold"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We decided to invite them to the party",
+            " ."
+          ],
+          "answers": [
+            [
+              "although we don't like them very much"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " , I managed to make myself understood."
+          ],
+          "answers": [
+            [
+              "Although I didn't speak the language well"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " , the room wasn't warm."
+          ],
+          "answers": [
+            [
+              "Although the heating was on"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I didn't recognise her",
+            " ."
+          ],
+          "answers": [
+            [
+              "although I'd met her twice before"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "We're not close friends",
+            " ."
+          ],
+          "answers": [
+            [
+              "although we've known each other a long time"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -23,13 +115,119 @@
       "type": "fill-in",
       "instruction": "Complete the sentences with although / in spite of / because / because of. Use your own ideas to complete the following sentences.",
       "items": [
-        {"num": 1, "parts": ["", ""], "answers": [["Although it rained a lot, we had a good time."]]},
-        {"num": 2, "parts": ["a ", " all our careful plans, a lot of things went wrong.\nb ", " we'd planned everything carefully, a lot of things went wrong."], "answers": [["In spite of", "Despite"], ["Although"]]},
-        {"num": 3, "parts": ["a I went home early ", " I was feeling unwell.\nb I went to work the next day ", " I was still feeling unwell."], "answers": [["because"], ["although"]]},
-        {"num": 4, "parts": ["a Chris only accepted the job ", " the salary, which was very high.\nb Sam accepted the job ", " the salary, which was rather low."], "answers": [["because of"], ["in spite of", "Despite"]]},
-        {"num": 5, "parts": ["a ", " there was a lot of noise, I slept quite well.\nb I couldn't get to sleep ", " the noise."], "answers": [["Although"], ["because of"]]},
-        {"num": 6, "parts": ["a He passed the exam although ", ".\nb He passed the exam because ", "."], "answers": [["he hadn't studied very hard"], ["he had studied very hard"]]},
-        {"num": 7, "parts": ["a I didn't eat much although ", ".\nb I didn't eat much in spite of ", "."], "answers": [["I was hungry"], ["being hungry", "my hunger", "the fact (that) I was hungry"]]}
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Although it rained a lot, we had a good time."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "a ",
+            " all our careful plans, a lot of things went wrong.\nb ",
+            " we'd planned everything carefully, a lot of things went wrong."
+          ],
+          "answers": [
+            [
+              "In spite of",
+              "Despite"
+            ],
+            [
+              "Although"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "a I went home early ",
+            " I was feeling unwell.\nb I went to work the next day ",
+            " I was still feeling unwell."
+          ],
+          "answers": [
+            [
+              "because"
+            ],
+            [
+              "although"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "a Chris only accepted the job ",
+            " the salary, which was very high.\nb Sam accepted the job ",
+            " the salary, which was rather low."
+          ],
+          "answers": [
+            [
+              "because of"
+            ],
+            [
+              "in spite of",
+              "Despite"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "a ",
+            " there was a lot of noise, I slept quite well.\nb I couldn't get to sleep ",
+            " the noise."
+          ],
+          "answers": [
+            [
+              "Although"
+            ],
+            [
+              "because of"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "a He passed the exam although ",
+            ".\nb He passed the exam because ",
+            "."
+          ],
+          "answers": [
+            [
+              "he hadn't studied very hard"
+            ],
+            [
+              "he had studied very hard"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "a I didn't eat much although ",
+            ".\nb I didn't eat much in spite of ",
+            "."
+          ],
+          "answers": [
+            [
+              "I was hungry"
+            ],
+            [
+              "being hungry",
+              "my hunger",
+              "the fact (that) I was hungry"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -37,12 +235,56 @@
       "type": "write",
       "instruction": "Make one sentence from two. Use the word(s) in brackets in your sentences.",
       "items": [
-        {"num": 1, "prompt": "(despite)", "answers": ["I couldn't sleep despite being very tired."]},
-        {"num": 2, "prompt": "(in spite of)", "answers": ["In spite of playing quite well, we lost the game.", "In spite of the fact (that) we played quite well, we lost the game."]},
-        {"num": 3, "prompt": "(although)", "answers": ["Although I'd hurt my foot, I managed to walk home.", "I managed to walk home although I'd hurt my foot."]},
-        {"num": 4, "prompt": "(in spite of)", "answers": ["I enjoyed the film in spite of the silly story.", "I enjoyed the film in spite of the story being silly.", "I enjoyed the film in spite of the fact (that) the story was silly.", "In spite of the silly story, I enjoyed the film."]},
-        {"num": 5, "prompt": "(despite)", "answers": ["Despite living in the same building, we hardly ever see each other.", "Despite the fact (that) we live in the same building, we hardly ever see each other.", "We hardly ever see each other despite living in the same building."]},
-        {"num": 6, "prompt": "(even though)", "answers": ["They came to the party even though they hadn't been invited.", "Even though they hadn't been invited, they came to the party."]}
+        {
+          "num": 1,
+          "prompt": "(despite)",
+          "answers": [
+            "I couldn't sleep despite being very tired."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(in spite of)",
+          "answers": [
+            "In spite of playing quite well, we lost the game.",
+            "In spite of the fact (that) we played quite well, we lost the game."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(although)",
+          "answers": [
+            "Although I'd hurt my foot, I managed to walk home.",
+            "I managed to walk home although I'd hurt my foot."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(in spite of)",
+          "answers": [
+            "I enjoyed the film in spite of the silly story.",
+            "I enjoyed the film in spite of the story being silly.",
+            "I enjoyed the film in spite of the fact (that) the story was silly.",
+            "In spite of the silly story, I enjoyed the film."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(despite)",
+          "answers": [
+            "Despite living in the same building, we hardly ever see each other.",
+            "Despite the fact (that) we live in the same building, we hardly ever see each other.",
+            "We hardly ever see each other despite living in the same building."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(even though)",
+          "answers": [
+            "They came to the party even though they hadn't been invited.",
+            "Even though they hadn't been invited, they came to the party."
+          ]
+        }
       ]
     },
     {
@@ -50,10 +292,34 @@
       "type": "write",
       "instruction": "Use the words in brackets to make a sentence with though at the end.",
       "items": [
-        {"num": 1, "prompt": "(like / garden)", "answers": ["The house isn't very nice. I like the garden though."]},
-        {"num": 2, "prompt": "(very long)", "answers": ["It's very long though."]},
-        {"num": 3, "prompt": "(ate)", "answers": ["We ate it though."]},
-        {"num": 4, "prompt": "(don't like / husband)", "answers": ["I don't like her husband though."]}
+        {
+          "num": 1,
+          "prompt": "(like / garden)",
+          "answers": [
+            "The house isn't very nice. I like the garden though."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(very long)",
+          "answers": [
+            "It's very long though."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(ate)",
+          "answers": [
+            "We ate it though."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(don't like / husband)",
+          "answers": [
+            "I don't like her husband though."
+          ]
+        }
       ]
     }
   ]

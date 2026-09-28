@@ -1,446 +1,450 @@
 {
- "unit": 44,
- "title": "Passive 3",
- "pdfPages": [
-  100,
-  101
- ],
- "exercises": [
-  {
-   "id": "44.1",
-   "type": "fill-in",
-   "instruction": "Complete the sentences using the correct form of the verb.",
-   "items": [
+  "unit": 44,
+  "title": "Passive 3",
+  "pdfPages": [
+    100,
+    101
+  ],
+  "exercises": [
     {
-     "num": 1,
-     "parts": [
-      "I tried to contact Tom. I called his office but I ",
-      " that he was in a meeting. (tell)"
-     ],
-     "answers": [
-      [
-       "was told"
+      "id": "44.1",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using the correct form of the verb.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I tried to contact Tom. I called his office but I ",
+            " that he was in a meeting. (tell)"
+          ],
+          "answers": [
+            [
+              "was told"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Amy retired from her job recently. She ",
+            " a present by her colleagues. (give)"
+          ],
+          "answers": [
+            [
+              "was given"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I didn't know there was a meeting yesterday. I ",
+            " about it. (not / tell)"
+          ],
+          "answers": [
+            [
+              "wasn't told",
+              "was not told"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Sarah's salary is very low. I don't understand why she ",
+            " so little. (pay)"
+          ],
+          "answers": [
+            [
+              "'s paid",
+              "is paid"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "You will need to use this machine. Have you ",
+            " how it works? (show)"
+          ],
+          "answers": [
+            [
+              "been shown"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I had an interview for a job recently. It wasn't easy. I ",
+            " some questions that were very hard for me to answer. (ask)"
+          ],
+          "answers": [
+            [
+              "was asked"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "They didn't tell us much about the project. We ",
+            " enough information. (not / give)"
+          ],
+          "answers": [
+            [
+              "weren't given",
+              "were not given"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I was surprised to get the job I applied for. I didn't expect ",
+            ". (offer)"
+          ],
+          "answers": [
+            [
+              "to be offered"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 2,
-     "parts": [
-      "Amy retired from her job recently. She ",
-      " a present by her colleagues. (give)"
-     ],
-     "answers": [
-      [
-       "was given"
+      "id": "44.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using being + the following verbs (in the correct form):",
+      "wordBank": [
+        "bite",
+        "give",
+        "invite",
+        "keep",
+        "knock down",
+        "stick",
+        "treat"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Steve hates ",
+            " waiting."
+          ],
+          "answers": [
+            [
+              "being kept"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "We went to the wedding without ",
+            "."
+          ],
+          "answers": [
+            [
+              "being invited"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I like giving presents and I also like ",
+            " them."
+          ],
+          "answers": [
+            [
+              "being given"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "It's a busy road and I don't like crossing it. I'm afraid of ",
+            "."
+          ],
+          "answers": [
+            [
+              "being knocked down"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "How do you avoid ",
+            " by mosquitoes?"
+          ],
+          "answers": [
+            [
+              "being bitten"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I'm an adult. I don't like ",
+            " like a child."
+          ],
+          "answers": [
+            [
+              "being treated"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "You can't do anything about ",
+            " in a traffic jam."
+          ],
+          "answers": [
+            [
+              "being stuck"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 3,
-     "parts": [
-      "I didn't know there was a meeting yesterday. I ",
-      " about it. (not / tell)"
-     ],
-     "answers": [
-      [
-       "wasn't told",
-       "was not told"
+      "id": "44.3",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using get or got + the following verbs (in the correct form):",
+      "wordBank": [
+        "ask",
+        "break",
+        "hurt",
+        "pay",
+        "steal",
+        "sting",
+        "stop",
+        "use"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "There was a fight, but nobody ",
+            "."
+          ],
+          "answers": [
+            [
+              "got hurt"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Alex ",
+            " by a bee while he was sitting in the garden."
+          ],
+          "answers": [
+            [
+              "got stung"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "These tennis courts don't ",
+            " very often. Not many people want to play here."
+          ],
+          "answers": [
+            [
+              "get used"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I used to have a bike, but it ",
+            " a few months ago."
+          ],
+          "answers": [
+            [
+              "got stolen"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Rachel works hard, but she doesn't ",
+            " very much."
+          ],
+          "answers": [
+            [
+              "get paid"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Please pack these things very carefully. I don't want anything to ",
+            "."
+          ],
+          "answers": [
+            [
+              "get broken"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "People often want to know what my job is. I ",
+            " that question a lot."
+          ],
+          "answers": [
+            [
+              "get asked"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Last night I ",
+            " by the police as I was driving home. One of the lights on my car wasn't working."
+          ],
+          "answers": [
+            [
+              "got stopped"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 4,
-     "parts": [
-      "Sarah's salary is very low. I don't understand why she ",
-      " so little. (pay)"
-     ],
-     "answers": [
-      [
-       "'s paid",
-       "is paid"
+      "id": "44.4",
+      "type": "fill-in",
+      "instruction": "Complete the sentences.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I've been offered the job, but I don't think I'll accept it."
+          ],
+          "answers": [],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I don’t get invited to many parties."
+          ],
+          "answers": [],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Which year ",
+            " you born in?"
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I haven't been ",
+            " any information yet."
+          ],
+          "answers": [
+            [
+              "given"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I didn't know the way, so I got ",
+            "."
+          ],
+          "answers": [
+            [
+              "lost"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "He doesn't like ",
+            " interrupted when he's speaking."
+          ],
+          "answers": [
+            [
+              "being"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "How did the window ",
+            " broken? What happened?"
+          ],
+          "answers": [
+            [
+              "get"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "She's a voluntary worker. She ",
+            " get paid."
+          ],
+          "answers": [
+            [
+              "doesn't"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I ",
+            " born in a small town in the north of the country."
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "We had to do what we did. We ",
+            " given any choice."
+          ],
+          "answers": [
+            [
+              "weren't"
+            ]
+          ]
+        }
       ]
-     ]
-    },
-    {
-     "num": 5,
-     "parts": [
-      "You will need to use this machine. Have you ",
-      " how it works? (show)"
-     ],
-     "answers": [
-      [
-       "been shown"
-      ]
-     ]
-    },
-    {
-     "num": 6,
-     "parts": [
-      "I had an interview for a job recently. It wasn't easy. I ",
-      " some questions that were very hard for me to answer. (ask)"
-     ],
-     "answers": [
-      [
-       "was asked"
-      ]
-     ]
-    },
-    {
-     "num": 7,
-     "parts": [
-      "They didn't tell us much about the project. We ",
-      " enough information. (not / give)"
-     ],
-     "answers": [
-      [
-       "weren't given",
-       "were not given"
-      ]
-     ]
-    },
-    {
-     "num": 8,
-     "parts": [
-      "I was surprised to get the job I applied for. I didn't expect ",
-      ". (offer)"
-     ],
-     "answers": [
-      [
-       "to be offered"
-      ]
-     ]
     }
-   ]
-  },
-  {
-   "id": "44.2",
-   "type": "fill-in",
-   "instruction": "Complete the sentences using being + the following verbs (in the correct form):",
-   "wordBank": [
-    "bite",
-    "give",
-    "invite",
-    "keep",
-    "knock down",
-    "stick",
-    "treat"
-   ],
-   "items": [
-    {
-     "num": 1,
-     "parts": [
-      "Steve hates ",
-      " waiting."
-     ],
-     "answers": [
-      [
-       "being kept"
-      ]
-     ]
-    },
-    {
-     "num": 2,
-     "parts": [
-      "We went to the wedding without ",
-      "."
-     ],
-     "answers": [
-      [
-       "being invited"
-      ]
-     ]
-    },
-    {
-     "num": 3,
-     "parts": [
-      "I like giving presents and I also like ",
-      " them."
-     ],
-     "answers": [
-      [
-       "being given"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "It's a busy road and I don't like crossing it. I'm afraid of ",
-      "."
-     ],
-     "answers": [
-      [
-       "being knocked down"
-      ]
-     ]
-    },
-    {
-     "num": 5,
-     "parts": [
-      "How do you avoid ",
-      " by mosquitoes?"
-     ],
-     "answers": [
-      [
-       "being bitten"
-      ]
-     ]
-    },
-    {
-     "num": 6,
-     "parts": [
-      "I'm an adult. I don't like ",
-      " like a child."
-     ],
-     "answers": [
-      [
-       "being treated"
-      ]
-     ]
-    },
-    {
-     "num": 7,
-     "parts": [
-      "You can't do anything about ",
-      " in a traffic jam."
-     ],
-     "answers": [
-      [
-       "being stuck"
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "44.3",
-   "type": "fill-in",
-   "instruction": "Complete the sentences using get or got + the following verbs (in the correct form):",
-   "wordBank": [
-    "ask",
-    "break",
-    "hurt",
-    "pay",
-    "steal",
-    "sting",
-    "stop",
-    "use"
-   ],
-   "items": [
-    {
-     "num": 1,
-     "parts": [
-      "There was a fight, but nobody ",
-      "."
-     ],
-     "answers": [
-      [
-       "got hurt"
-      ]
-     ]
-    },
-    {
-     "num": 2,
-     "parts": [
-      "Alex ",
-      " by a bee while he was sitting in the garden."
-     ],
-     "answers": [
-      [
-       "got stung"
-      ]
-     ]
-    },
-    {
-     "num": 3,
-     "parts": [
-      "These tennis courts don't ",
-      " very often. Not many people want to play here."
-     ],
-     "answers": [
-      [
-       "get used"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "I used to have a bike, but it ",
-      " a few months ago."
-     ],
-     "answers": [
-      [
-       "got stolen"
-      ]
-     ]
-    },
-    {
-     "num": 5,
-     "parts": [
-      "Rachel works hard, but she doesn't ",
-      " very much."
-     ],
-     "answers": [
-      [
-       "get paid"
-      ]
-     ]
-    },
-    {
-     "num": 6,
-     "parts": [
-      "Please pack these things very carefully. I don't want anything to ",
-      "."
-     ],
-     "answers": [
-      [
-       "get broken"
-      ]
-     ]
-    },
-    {
-     "num": 7,
-     "parts": [
-      "People often want to know what my job is. I ",
-      " that question a lot."
-     ],
-     "answers": [
-      [
-       "get asked"
-      ]
-     ]
-    },
-    {
-     "num": 8,
-     "parts": [
-      "Last night I ",
-      " by the police as I was driving home. One of the lights on my car wasn't working."
-     ],
-     "answers": [
-      [
-       "got stopped"
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "44.4",
-   "type": "fill-in",
-   "instruction": "Complete the sentences.",
-   "items": [
-    {
-     "num": 1,
-     "parts": [
-      "I've been offered the job, but I don't think I'll accept it."
-     ],
-     "answers": []
-    },
-    {
-     "num": 2,
-     "parts": [
-      "I don’t get invited to many parties."
-     ],
-     "answers": []
-    },
-    {
-     "num": 3,
-     "parts": [
-      "Which year ",
-      " you born in?"
-     ],
-     "answers": [
-      [
-       "were"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "I haven't been ",
-      " any information yet."
-     ],
-     "answers": [
-      [
-       "given"
-      ]
-     ]
-    },
-    {
-     "num": 5,
-     "parts": [
-      "I didn't know the way, so I got ",
-      "."
-     ],
-     "answers": [
-      [
-       "lost"
-      ]
-     ]
-    },
-    {
-     "num": 6,
-     "parts": [
-      "He doesn't like ",
-      " interrupted when he's speaking."
-     ],
-     "answers": [
-      [
-       "being"
-      ]
-     ]
-    },
-    {
-     "num": 7,
-     "parts": [
-      "How did the window ",
-      " broken? What happened?"
-     ],
-     "answers": [
-      [
-       "get"
-      ]
-     ]
-    },
-    {
-     "num": 8,
-     "parts": [
-      "She's a voluntary worker. She ",
-      " get paid."
-     ],
-     "answers": [
-      [
-       "doesn't"
-      ]
-     ]
-    },
-    {
-     "num": 9,
-     "parts": [
-      "I ",
-      " born in a small town in the north of the country."
-     ],
-     "answers": [
-      [
-       "was"
-      ]
-     ]
-    },
-    {
-     "num": 10,
-     "parts": [
-      "We had to do what we did. We ",
-      " given any choice."
-     ],
-     "answers": [
-      [
-       "weren't"
-      ]
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }

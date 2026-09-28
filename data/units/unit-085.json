@@ -1,24 +1,157 @@
 {
   "unit": 85,
   "title": "some and any",
-  "pdfPages": [182, 183],
+  "pdfPages": [
+    182,
+    183
+  ],
   "exercises": [
     {
       "id": "85.1",
       "type": "fill-in",
       "instruction": "Put in some or any.",
       "items": [
-        {"num": 1, "parts": ["We didn\u2019t buy ", " flowers."], "answers": [["any"]]},
-        {"num": 2, "parts": ["Tonight I\u2019m going out with ", " friends of mine."], "answers": [["some"]]},
-        {"num": 3, "parts": ["Have you seen ", " good movies recently?"], "answers": [["any"]]},
-        {"num": 4, "parts": ["I\u2019d like ", " information about what there is to see in this town."], "answers": [["some"]]},
-        {"num": 5, "parts": ["I didn\u2019t have ", " money. I had to borrow ", "."], "answers": [["any"], ["some"]]},
-        {"num": 6, "parts": ["You can use your card to withdraw money at ", " cash machine."], "answers": [["any"]]},
-        {"num": 7, "parts": ["Those apples look nice. Shall we get ", "?"], "answers": [["some"]]},
-        {"num": 8, "parts": ["With the special tourist train ticket, you can travel on ", " train you like."], "answers": [["any"]]},
-        {"num": 9, "parts": ["\u2018Can I have ", " more coffee, please?\u2019 \u2018Sure. Help yourself.\u2019"], "answers": [["some"]]},
-        {"num": 10, "parts": ["If there are ", " words you don\u2019t understand, look them up in a dictionary."], "answers": [["any"]]},
-        {"num": 11, "parts": ["We wanted to buy ", " grapes, but they didn\u2019t have ", " in the shop."], "answers": [["some"], ["any"]]}
+        {
+          "num": 1,
+          "parts": [
+            "We didn’t buy ",
+            " flowers."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Tonight I’m going out with ",
+            " friends of mine."
+          ],
+          "answers": [
+            [
+              "some"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Have you seen ",
+            " good movies recently?"
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I’d like ",
+            " information about what there is to see in this town."
+          ],
+          "answers": [
+            [
+              "some"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I didn’t have ",
+            " money. I had to borrow ",
+            "."
+          ],
+          "answers": [
+            [
+              "any"
+            ],
+            [
+              "some"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "You can use your card to withdraw money at ",
+            " cash machine."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Those apples look nice. Shall we get ",
+            "?"
+          ],
+          "answers": [
+            [
+              "some"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "With the special tourist train ticket, you can travel on ",
+            " train you like."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "‘Can I have ",
+            " more coffee, please?’ ‘Sure. Help yourself.’"
+          ],
+          "answers": [
+            [
+              "some"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "If there are ",
+            " words you don’t understand, look them up in a dictionary."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "We wanted to buy ",
+            " grapes, but they didn’t have ",
+            " in the shop."
+          ],
+          "answers": [
+            [
+              "some"
+            ],
+            [
+              "any"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -26,24 +159,239 @@
       "type": "fill-in",
       "instruction": "Complete the sentences with some- or any- + -body/-thing/-where.",
       "items": [
-        {"num": 1, "parts": ["I was too surprised to say ", "."], "answers": [["anything"]]},
-        {"num": 2, "parts": ["There\u2019s ", " at the door. Can you go and see who it is?"], "answers": [["somebody/someone"]]},
-        {"num": 3, "parts": ["Does ", " mind if I open the window?"], "answers": [["anybody/anyone"]]},
-        {"num": 4, "parts": ["I can\u2019t drive and I don\u2019t know ", " about cars."], "answers": [["anything"]]},
-        {"num": 5, "parts": ["You must be hungry. Why don\u2019t I get you ", " to eat?"], "answers": [["something"]]},
-        {"num": 6, "parts": ["Emma is very tolerant. She never complains about ", "."], "answers": [["anything or anybody/anyone"]]},
-        {"num": 7, "parts": ["There was hardly ", " on the beach. It was almost deserted."], "answers": [["anybody/anyone"]]},
-        {"num": 8, "parts": ["Let\u2019s go away. Let\u2019s go ", " warm and sunny."], "answers": [["somewhere"]]},
-        {"num": 9, "parts": ["I\u2019m going out now. If ", " asks where I am, tell them you don\u2019t know."], "answers": [["anybody/anyone"]]},
-        {"num": 10, "parts": ["Why are you looking under the bed? Have you lost ", "?"], "answers": [["something"]]},
-        {"num": 11, "parts": ["This is a no-parking area. ", " who parks their car here will have to pay a fine."], "answers": [["Anybody/Anyone"]]},
-        {"num": 12, "parts": ["Quick, let\u2019s go! There\u2019s ", " coming and I don\u2019t want ", " to see us."], "answers": [["somebody/someone"], ["anybody/anyone"]]},
-        {"num": 13, "parts": ["They stay at home all the time. They never seem to go ", "."], "answers": [["anywhere"]]},
-        {"num": 14, "parts": ["Jonathan stood up and left the room without saying ", "."], "answers": [["anything"]]},
-        {"num": 15, "parts": ["\u2018Can I ask you ", "?\u2019 \u2018Sure. What do you want to ask?\u2019"], "answers": [["something"]]},
-        {"num": 16, "parts": ["Sarah was upset about ", " and refused to talk to ", "."], "answers": [["something"], ["anybody/anyone"]]},
-        {"num": 17, "parts": ["I need ", " to translate. Is there ", " here who speaks English?"], "answers": [["somebody/someone"], ["anybody/anyone"]]},
-        {"num": 18, "parts": ["Sue is very secretive. She never tells ", " ", "."], "answers": [["anybody/anyone"], ["anything"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I was too surprised to say ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "There’s ",
+            " at the door. Can you go and see who it is?"
+          ],
+          "answers": [
+            [
+              "somebody/someone"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Does ",
+            " mind if I open the window?"
+          ],
+          "answers": [
+            [
+              "anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I can’t drive and I don’t know ",
+            " about cars."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "You must be hungry. Why don’t I get you ",
+            " to eat?"
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Emma is very tolerant. She never complains about ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything or anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "There was hardly ",
+            " on the beach. It was almost deserted."
+          ],
+          "answers": [
+            [
+              "anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Let’s go away. Let’s go ",
+            " warm and sunny."
+          ],
+          "answers": [
+            [
+              "somewhere"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I’m going out now. If ",
+            " asks where I am, tell them you don’t know."
+          ],
+          "answers": [
+            [
+              "anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Why are you looking under the bed? Have you lost ",
+            "?"
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "This is a no-parking area. ",
+            " who parks their car here will have to pay a fine."
+          ],
+          "answers": [
+            [
+              "Anybody/Anyone"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Quick, let’s go! There’s ",
+            " coming and I don’t want ",
+            " to see us."
+          ],
+          "answers": [
+            [
+              "somebody/someone"
+            ],
+            [
+              "anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "They stay at home all the time. They never seem to go ",
+            "."
+          ],
+          "answers": [
+            [
+              "anywhere"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Jonathan stood up and left the room without saying ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "‘Can I ask you ",
+            "?’ ‘Sure. What do you want to ask?’"
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ]
+        },
+        {
+          "num": 16,
+          "parts": [
+            "Sarah was upset about ",
+            " and refused to talk to ",
+            "."
+          ],
+          "answers": [
+            [
+              "something"
+            ],
+            [
+              "anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 17,
+          "parts": [
+            "I need ",
+            " to translate. Is there ",
+            " here who speaks English?"
+          ],
+          "answers": [
+            [
+              "somebody/someone"
+            ],
+            [
+              "anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 18,
+          "parts": [
+            "Sue is very secretive. She never tells ",
+            " ",
+            "."
+          ],
+          "answers": [
+            [
+              "anybody/anyone"
+            ],
+            [
+              "anything"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -51,13 +399,92 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Use any (+ noun) or anybody/anything/anywhere.",
       "items": [
-        {"num": 1, "parts": ["Which bus do I have to take? ", ". They all go to the centre."], "answers": [["Any bus"]]},
-        {"num": 2, "parts": ["When shall we meet? Monday? I don\u2019t mind. ", " next week will be OK for me."], "answers": [["Any day"]]},
-        {"num": 3, "parts": ["What do you want to eat? ", ". I don\u2019t mind."], "answers": [["Anything"]]},
-        {"num": 4, "parts": ["Who shall I invite to the party? It\u2019s your party. You can invite ", " you want."], "answers": [["anybody/anyone"]]},
-        {"num": 5, "parts": ["What sort of job are you looking for? ", ". It doesn\u2019t matter what it is."], "answers": [["Any job", "Anything"]]},
-        {"num": 6, "parts": ["Where shall I sit? It\u2019s up to you. You can sit ", " you like."], "answers": [["anywhere"]]},
-        {"num": 7, "parts": ["Is this machine difficult to use? No, it\u2019s easy. ", " can learn to use it very quickly."], "answers": [["Anybody/Anyone"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Which bus do I have to take? ",
+            ". They all go to the centre."
+          ],
+          "answers": [
+            [
+              "Any bus"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "When shall we meet? Monday? I don’t mind. ",
+            " next week will be OK for me."
+          ],
+          "answers": [
+            [
+              "Any day"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What do you want to eat? ",
+            ". I don’t mind."
+          ],
+          "answers": [
+            [
+              "Anything"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Who shall I invite to the party? It’s your party. You can invite ",
+            " you want."
+          ],
+          "answers": [
+            [
+              "anybody/anyone"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "What sort of job are you looking for? ",
+            ". It doesn’t matter what it is."
+          ],
+          "answers": [
+            [
+              "Any job",
+              "Anything"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Where shall I sit? It’s up to you. You can sit ",
+            " you like."
+          ],
+          "answers": [
+            [
+              "anywhere"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Is this machine difficult to use? No, it’s easy. ",
+            " can learn to use it very quickly."
+          ],
+          "answers": [
+            [
+              "Anybody/Anyone"
+            ]
+          ]
+        }
       ]
     }
   ]

@@ -8,11 +8,11 @@
       "type": "fill-in",
       "instruction": "Complete the sentences using nice of …, kind of … etc.",
       "items": [
-        {"num": 2, "parts": ["I needed money and Lisa gave me some. That was ", " her."], "answers": [["generous of"]]},
-        {"num": 3, "parts": ["They didn't invite us to their party. That wasn't ", " them."], "answers": [["very nice of"]]},
-        {"num": 4, "parts": ["Can I help you with your luggage? That's ", " you."], "answers": [["very kind of"]]},
-        {"num": 5, "parts": ["Kevin never says 'thank you'. That isn't ", " him."], "answers": [["very polite of"]]},
-        {"num": 6, "parts": ["They've had an argument and now they refuse to speak to each other. That's ", " them."], "answers": [["a bit childish of"]]}
+        {"num": 2, "parts": ["I needed money and Lisa gave me some. That was ", " her. (generous)"], "answers": [["generous of"]]},
+        {"num": 3, "parts": ["They didn't invite us to their party. That wasn't ", " them. (not very nice)"], "answers": [["very nice of"]]},
+        {"num": 4, "parts": ["Can I help you with your luggage? That's ", " you. (very kind)"], "answers": [["very kind of"]]},
+        {"num": 5, "parts": ["Kevin never says 'thank you'. That isn't ", " him. (not very polite)"], "answers": [["very polite of"]]},
+        {"num": 6, "parts": ["They've had an argument and now they refuse to speak to each other. That's ", " them. (a bit childish)"], "answers": [["a bit childish of"]]}
       ]
     },
     {

@@ -1,17 +1,48 @@
 {
   "unit": 46,
   "title": "have something done",
-  "pdfPages": [104, 105],
+  "pdfPages": [
+    104,
+    105
+  ],
   "exercises": [
     {
       "id": "46.1",
       "type": "choice",
       "instruction": "Tick (✓) the correct sentence, (a) or (b), for each picture.",
       "items": [
-        { "num": 1, "options": ["Sarah is cutting her hair.", "Sarah is having her hair cut."], "answer": 1 },
-        { "num": 2, "options": ["Dan is cutting his hair.", "Dan is having his hair cut."], "answer": 0 },
-        { "num": 3, "options": ["Kate is painting the gate.", "Kate is having the gate painted."], "answer": 0 },
-        { "num": 4, "options": ["Sue is taking a picture.", "Sue is having her picture taken."], "answer": 1 }
+        {
+          "num": 1,
+          "options": [
+            "Sarah is cutting her hair.",
+            "Sarah is having her hair cut."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "Dan is cutting his hair.",
+            "Dan is having his hair cut."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 3,
+          "options": [
+            "Kate is painting the gate.",
+            "Kate is having the gate painted."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": [
+            "Sue is taking a picture.",
+            "Sue is having her picture taken."
+          ],
+          "answer": 1
+        }
       ]
     },
     {
@@ -19,12 +50,79 @@
       "type": "fill-in",
       "instruction": "Put the words in the correct order.",
       "items": [
-        { "num": 1, "parts": ["We had ", " the house painted a few weeks ago."], "answers": [["the house"]] },
-        { "num": 2, "parts": ["Sarah has her car ", " once a year."], "answers": [["serviced"]] },
-        { "num": 3, "parts": ["Have you had your eyes ", " recently?"], "answers": [["tested"]] },
-        { "num": 4, "parts": ["I don't like ", " my hair cut."], "answers": [["having"]] },
-        { "num": 5, "parts": ["It cost fifteen pounds to have my suit ", "."], "answers": [["cleaned"]] },
-        { "num": 6, "parts": ["You need to get this document ", " as soon as possible."], "answers": [["translated"]] }
+        {
+          "num": 1,
+          "parts": [
+            "We had ",
+            " the house painted a few weeks ago."
+          ],
+          "answers": [
+            [
+              "the house"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Sarah has her car ",
+            " once a year."
+          ],
+          "answers": [
+            [
+              "serviced"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Have you had your eyes ",
+            " recently?"
+          ],
+          "answers": [
+            [
+              "tested"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I don't like ",
+            " my hair cut."
+          ],
+          "answers": [
+            [
+              "having"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "It cost fifteen pounds to have my suit ",
+            "."
+          ],
+          "answers": [
+            [
+              "cleaned"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "You need to get this document ",
+            " as soon as possible."
+          ],
+          "answers": [
+            [
+              "translated"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -32,31 +130,181 @@
       "type": "fill-in",
       "instruction": "Write sentences in the way shown.",
       "items": [
-        { "num": 1, "parts": ["Lisa didn't repair the roof herself. She had it ", "."], "answers": [["repaired"]] },
-        { "num": 2, "parts": ["I didn't cut my hair myself. I had it ", "."], "answers": [["cut"]] },
-        { "num": 3, "parts": ["We didn't clean the carpets ourselves. We had them ", "."], "answers": [["cleaned"]] },
-        { "num": 4, "parts": ["Ben didn't build that wall himself. He had it ", "."], "answers": [["built"]] },
-        { "num": 5, "parts": ["I didn't deliver the flowers myself. I had them ", "."], "answers": [["delivered"]] },
-        { "num": 6, "parts": ["Sarah didn't repair her shoes herself. She had them ", "."], "answers": [["repaired"]] }
+        {
+          "num": 1,
+          "parts": [
+            "Lisa didn't repair the roof herself. She had it ",
+            "."
+          ],
+          "answers": [
+            [
+              "repaired"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I didn't cut my hair myself. I had it ",
+            "."
+          ],
+          "answers": [
+            [
+              "cut"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "We didn't clean the carpets ourselves. We had them ",
+            "."
+          ],
+          "answers": [
+            [
+              "cleaned"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Ben didn't build that wall himself. He had it ",
+            "."
+          ],
+          "answers": [
+            [
+              "built"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I didn't deliver the flowers myself. I had them ",
+            "."
+          ],
+          "answers": [
+            [
+              "delivered"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Sarah didn't repair her shoes herself. She had them ",
+            "."
+          ],
+          "answers": [
+            [
+              "repaired"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "46.4",
       "type": "matching",
       "instruction": "Which goes with which?",
-      "leftOptions": ["My hair is getting long.", "I really like this picture.", "The washing machine is broken.", "I want to wear earrings.", "Can you recommend a dentist?", "I've lost my key."],
-      "rightOptions": ["I need to get it fixed.", "I'll have to get a new one made.", "I need to get my teeth checked.", "I should get it cut.", "I'm going to get my ears pierced.", "I'm going to get it framed."],
-      "pairs": [[0, 3], [1, 5], [2, 0], [3, 4], [4, 2], [5, 1]]
+      "leftOptions": [
+        "My hair is getting long.",
+        "I really like this picture.",
+        "The washing machine is broken.",
+        "I want to wear earrings.",
+        "Can you recommend a dentist?",
+        "I've lost my key."
+      ],
+      "rightOptions": [
+        "I need to get it fixed.",
+        "I'll have to get a new one made.",
+        "I need to get my teeth checked.",
+        "I should get it cut.",
+        "I'm going to get my ears pierced.",
+        "I'm going to get it framed."
+      ],
+      "pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ]
     },
     {
       "id": "46.5",
       "type": "fill-in",
       "instruction": "Use the words in brackets to complete the sentences.",
       "items": [
-        { "num": 1, "parts": ["Did I tell you about Paul and Karen? They had their bags ", "."], "answers": [["stolen"]] },
-        { "num": 2, "parts": ["Security at the airport was strict. We had our bags ", "."], "answers": [["searched"]] },
-        { "num": 3, "parts": ["I've had some good news! I've had my salary ", "."], "answers": [["increased"]] },
-        { "num": 4, "parts": ["Joe can't get a visa. He's had his application ", "."], "answers": [["refused"]] }
+        {
+          "num": 1,
+          "parts": [
+            "Did I tell you about Paul and Karen? They had their bags ",
+            "."
+          ],
+          "answers": [
+            [
+              "stolen"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Security at the airport was strict. We had our bags ",
+            "."
+          ],
+          "answers": [
+            [
+              "searched"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I've had some good news! I've had my salary ",
+            "."
+          ],
+          "answers": [
+            [
+              "increased"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Joe can't get a visa. He's had his application ",
+            "."
+          ],
+          "answers": [
+            [
+              "refused"
+            ]
+          ]
+        }
       ]
     }
   ]

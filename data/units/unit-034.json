@@ -1,7 +1,10 @@
 {
   "unit": 34,
   "title": "should 2",
-  "pdfPages": [80, 81],
+  "pdfPages": [
+    80,
+    81
+  ],
   "exercises": [
     {
       "id": "34.1",
@@ -10,28 +13,71 @@
       "items": [
         {
           "num": 1,
-          "parts": ["'It would be a good idea to eat more fruit,' the doctor said to me.\nThe doctor recommended that I ", "."],
-          "answers": [["should eat more fruit"]]
+          "parts": [
+            "'It would be a good idea to eat more fruit,' the doctor said to me.\nThe doctor recommended that I ",
+            "."
+          ],
+          "answers": [
+            [
+              "should eat more fruit"
+            ]
+          ]
         },
         {
           "num": 2,
-          "parts": ["'You really must stay a little longer,' she said to me.\nShe insisted that I ", "."],
-          "answers": [["should stay a little longer", "stay a little longer", "stayed a little longer"]]
+          "parts": [
+            "'You really must stay a little longer,' she said to me.\nShe insisted that I ",
+            "."
+          ],
+          "answers": [
+            [
+              "should stay a little longer",
+              "stay a little longer",
+              "stayed a little longer"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["'Why don't you visit the museum after lunch?' I said to them.\nI suggested that ", "."],
-          "answers": [["they should visit the museum after lunch", "they visit the museum after lunch", "they visited the museum after lunch"]]
+          "parts": [
+            "'Why don't you visit the museum after lunch?' I said to them.\nI suggested that ",
+            "."
+          ],
+          "answers": [
+            [
+              "they should visit the museum after lunch",
+              "they visit the museum after lunch",
+              "they visited the museum after lunch"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["'You must pay the rent by Friday,' the landlord said to us.\nThe landlord demanded that ", "."],
-          "answers": [["we should pay the rent by Friday", "we pay the rent by Friday", "we paid the rent by Friday"]]
+          "parts": [
+            "'You must pay the rent by Friday,' the landlord said to us.\nThe landlord demanded that ",
+            "."
+          ],
+          "answers": [
+            [
+              "we should pay the rent by Friday",
+              "we pay the rent by Friday",
+              "we paid the rent by Friday"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["'Let's go to the cinema,' Chris said to me.\nChris suggested that ", "."],
-          "answers": [["we should go to the cinema", "we go to the cinema", "we went to the cinema"]]
+          "parts": [
+            "'Let's go to the cinema,' Chris said to me.\nChris suggested that ",
+            "."
+          ],
+          "answers": [
+            [
+              "we should go to the cinema",
+              "we go to the cinema",
+              "we went to the cinema"
+            ]
+          ]
         }
       ]
     },
@@ -53,42 +99,100 @@
       "id": "34.3",
       "type": "fill-in",
       "instruction": "Complete the sentences using should + verb. Choose from:",
-      "wordBank": ["ask", "be", "be done", "leave", "say", "vote", "worry"],
+      "wordBank": [
+        "ask",
+        "be",
+        "be done",
+        "leave",
+        "say",
+        "vote",
+        "worry"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["It's strange that he ", ". He's usually on time."],
-          "answers": [["should be late"]]
+          "parts": [
+            "It's strange that he ",
+            ". He's usually on time."
+          ],
+          "answers": [
+            [
+              "should be late"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["It's funny that you ", " that. I was thinking the same thing."],
-          "answers": [["should say"]]
+          "parts": [
+            "It's funny that you ",
+            " that. I was thinking the same thing."
+          ],
+          "answers": [
+            [
+              "should say"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["It's only natural that parents ", " about their children."],
-          "answers": [["should worry"]]
+          "parts": [
+            "It's only natural that parents ",
+            " about their children."
+          ],
+          "answers": [
+            [
+              "should worry"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Isn't it typical of Joe that he ", " without saying goodbye to anybody?"],
-          "answers": [["should leave"]]
+          "parts": [
+            "Isn't it typical of Joe that he ",
+            " without saying goodbye to anybody?"
+          ],
+          "answers": [
+            [
+              "should leave"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I was surprised that they ", " me for advice. What advice could I give them?"],
-          "answers": [["should ask"]]
+          "parts": [
+            "I was surprised that they ",
+            " me for advice. What advice could I give them?"
+          ],
+          "answers": [
+            [
+              "should ask"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["This is a democratic election, and it's important that you ", "."],
-          "answers": [["should vote"]]
+          "parts": [
+            "This is a democratic election, and it's important that you ",
+            "."
+          ],
+          "answers": [
+            [
+              "should vote"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["The bridge needs to be repaired. It's essential that the work ", " as soon as possible."],
-          "answers": [["should be done"]]
+          "parts": [
+            "The bridge needs to be repaired. It's essential that the work ",
+            " as soon as possible."
+          ],
+          "answers": [
+            [
+              "should be done"
+            ]
+          ]
         }
       ]
     },
@@ -96,47 +200,110 @@
       "id": "34.4",
       "type": "fill-in",
       "instruction": "Complete the sentences using If … should … . Choose from:",
-      "wordBank": ["anyone / ask", "the situation / change", "it / rain", "there / any problems"],
+      "wordBank": [
+        "anyone / ask",
+        "the situation / change",
+        "it / rain",
+        "there / any problems"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["We have no jobs at present. If ", " , we'll let you know."],
-          "answers": [["the situation should change"]]
+          "parts": [
+            "We have no jobs at present. If ",
+            " , we'll let you know."
+          ],
+          "answers": [
+            [
+              "the situation should change"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["I've hung out the washing to dry on the balcony. If ", " , can you bring it inside?"],
-          "answers": [["it should rain"]]
+          "parts": [
+            "I've hung out the washing to dry on the balcony. If ",
+            " , can you bring it inside?"
+          ],
+          "answers": [
+            [
+              "it should rain"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I think everything will be OK. ", " , I'm sure we'll be able to solve them."],
-          "answers": [["If there should be any problems"]]
+          "parts": [
+            "I think everything will be OK. ",
+            " , I'm sure we'll be able to solve them."
+          ],
+          "answers": [
+            [
+              "If there should be any problems"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don't want anyone to know where I'm going. ", " , say you don't know."],
-          "answers": [["If anyone should ask"]]
+          "parts": [
+            "I don't want anyone to know where I'm going. ",
+            " , say you don't know."
+          ],
+          "answers": [
+            [
+              "If anyone should ask"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["", " , we'll let you know."],
-          "answers": [["Should the situation change"]]
+          "parts": [
+            "",
+            " , we'll let you know."
+          ],
+          "answers": [
+            [
+              "Should the situation change"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 6,
-          "parts": ["", " , can you bring the washing inside?"],
-          "answers": [["Should it rain"]]
+          "parts": [
+            "",
+            " , can you bring the washing inside?"
+          ],
+          "answers": [
+            [
+              "Should it rain"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["", " , I'm sure we'll be able to solve them."],
-          "answers": [["Should there be any problems"]]
+          "parts": [
+            "",
+            " , I'm sure we'll be able to solve them."
+          ],
+          "answers": [
+            [
+              "Should there be any problems"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["", " , say you don't know."],
-          "answers": [["Should anyone ask"]]
+          "parts": [
+            "",
+            " , say you don't know."
+          ],
+          "answers": [
+            [
+              "Should anyone ask"
+            ]
+          ]
         }
       ]
     },
@@ -144,27 +311,60 @@
       "id": "34.5",
       "type": "fill-in",
       "instruction": "Complete the sentences using I should. Choose from:",
-      "wordBank": ["call", "get", "keep", "wait"],
+      "wordBank": [
+        "call",
+        "get",
+        "keep",
+        "wait"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["'Shall I leave now?' 'No, I ", " a bit.'"],
-          "answers": [["should wait"]]
+          "parts": [
+            "'Shall I leave now?' 'No, I ",
+            " a bit.'"
+          ],
+          "answers": [
+            [
+              "should wait"
+            ]
+          ]
         },
         {
           "num": 2,
-          "parts": ["'Shall I throw these things away?' 'No, ", ". You may need them.'"],
-          "answers": [["I should keep"]]
+          "parts": [
+            "'Shall I throw these things away?' 'No, ",
+            ". You may need them.'"
+          ],
+          "answers": [
+            [
+              "I should keep"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["'Shall I go and see Paul?' 'Yes, but ", " him first.'"],
-          "answers": [["I should call"]]
+          "parts": [
+            "'Shall I go and see Paul?' 'Yes, but ",
+            " him first.'"
+          ],
+          "answers": [
+            [
+              "I should call"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["'Is it worth getting this computer repaired?' 'No, ", " a new one.'"],
-          "answers": [["I should get"]]
+          "parts": [
+            "'Is it worth getting this computer repaired?' 'No, ",
+            " a new one.'"
+          ],
+          "answers": [
+            [
+              "I should get"
+            ]
+          ]
         }
       ]
     }

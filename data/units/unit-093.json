@@ -1,22 +1,83 @@
 {
   "unit": 93,
   "title": "Relative clauses 2: clauses with and without who/that/which",
-  "pdfPages": [198, 199],
+  "pdfPages": [
+    198,
+    199
+  ],
   "exercises": [
     {
       "id": "93.1",
       "type": "write",
       "instruction": "In some of these sentences you need who or that. Correct the sentences where necessary.",
       "items": [
-        {"num": 1, "prompt": "The woman lives next door is a doctor.", "answers": ["The woman who lives next door is a doctor."]},
-        {"num": 2, "prompt": "Did you find the keys you lost?", "answers": ["OK"]},
-        {"num": 3, "prompt": "The people we met last night were very friendly.", "answers": ["OK", "The people who/that we met last night were very friendly."]},
-        {"num": 4, "prompt": "The people work in the office are very friendly.", "answers": ["The people who/that work in the office are very friendly."]},
-        {"num": 5, "prompt": "I like the people I work with.", "answers": ["OK", "I like the people who/that I work with."]},
-        {"num": 6, "prompt": "What have you done with the money I gave you?", "answers": ["OK", "What have you done with the money that/which I gave you?"]},
-        {"num": 7, "prompt": "What happened to the money was on the table?", "answers": ["What happened to the money that/which was on the table?"]},
-        {"num": 8, "prompt": "What\u2019s the worst film you\u2019ve ever seen?", "answers": ["OK", "What\u2019s the worst film that/which you\u2019ve ever seen?"]},
-        {"num": 9, "prompt": "What\u2019s the best thing it has ever happened to you?", "answers": ["What\u2019s the best thing that/which has ever happened to you?"]}
+        {
+          "num": 1,
+          "prompt": "The woman lives next door is a doctor.",
+          "answers": [
+            "The woman who lives next door is a doctor."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Did you find the keys you lost?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "The people we met last night were very friendly.",
+          "answers": [
+            "OK",
+            "The people who/that we met last night were very friendly."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "The people work in the office are very friendly.",
+          "answers": [
+            "The people who/that work in the office are very friendly."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I like the people I work with.",
+          "answers": [
+            "OK",
+            "I like the people who/that I work with."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "What have you done with the money I gave you?",
+          "answers": [
+            "OK",
+            "What have you done with the money that/which I gave you?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "What happened to the money was on the table?",
+          "answers": [
+            "What happened to the money that/which was on the table?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "What’s the worst film you’ve ever seen?",
+          "answers": [
+            "OK",
+            "What’s the worst film that/which you’ve ever seen?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "What’s the best thing it has ever happened to you?",
+          "answers": [
+            "What’s the best thing that/which has ever happened to you?"
+          ]
+        }
       ]
     },
     {
@@ -24,13 +85,97 @@
       "type": "fill-in",
       "instruction": "What do you say in these situations? Complete each sentence with a relative clause.",
       "items": [
-        {"num": 1, "parts": ["Did you find the keys ", "?"], "answers": [["you lost"]]},
-        {"num": 2, "parts": ["I like the dress ", "."], "answers": [["you\u2019re wearing", "that/which you\u2019re wearing"]]},
-        {"num": 3, "parts": ["What\u2019s the name of the film ", "?"], "answers": [["you\u2019re going to see", "that/which you\u2019re going to see"]]},
-        {"num": 4, "parts": ["The museum ", " was shut."], "answers": [["I/we wanted to visit", "that/which I/we wanted to visit"]]},
-        {"num": 5, "parts": ["Some of the people ", " couldn\u2019t come."], "answers": [["I/we invited to the party", "who/whom/that we invited to the party"]]},
-        {"num": 6, "parts": ["Have you finished the work ", "?"], "answers": [["you had to do", "that/which you had to do"]]},
-        {"num": 7, "parts": ["Unfortunately the car ", " broke down after a few miles."], "answers": [["I/we rented", "that/which I/we rented"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Did you find the keys ",
+            "?"
+          ],
+          "answers": [
+            [
+              "you lost"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I like the dress ",
+            "."
+          ],
+          "answers": [
+            [
+              "you’re wearing",
+              "that/which you’re wearing"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What’s the name of the film ",
+            "?"
+          ],
+          "answers": [
+            [
+              "you’re going to see",
+              "that/which you’re going to see"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "The museum ",
+            " was shut."
+          ],
+          "answers": [
+            [
+              "I/we wanted to visit",
+              "that/which I/we wanted to visit"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Some of the people ",
+            " couldn’t come."
+          ],
+          "answers": [
+            [
+              "I/we invited to the party",
+              "who/whom/that we invited to the party"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Have you finished the work ",
+            "?"
+          ],
+          "answers": [
+            [
+              "you had to do",
+              "that/which you had to do"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Unfortunately the car ",
+            " broke down after a few miles."
+          ],
+          "answers": [
+            [
+              "I/we rented",
+              "that/which I/we rented"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -38,13 +183,91 @@
       "type": "fill-in",
       "instruction": "These sentences all have a relative clause with a preposition. Put the words in the correct order.",
       "items": [
-        {"num": 1, "parts": ["Did you find ", "?"], "answers": [["the books you were looking for"]]},
-        {"num": 2, "parts": ["We couldn\u2019t go to ", "."], "answers": [["the wedding we were invited to"]]},
-        {"num": 3, "parts": ["What\u2019s the name of ", "?"], "answers": [["the hotel you told me about"]]},
-        {"num": 4, "parts": ["Unfortunately I didn\u2019t get ", "."], "answers": [["the job I applied for"]]},
-        {"num": 5, "parts": ["Did you enjoy ", "?"], "answers": [["the concert you went to"]]},
-        {"num": 6, "parts": ["Gary is a good person to know. He\u2019s ", "."], "answers": [["somebody you can rely on"]]},
-        {"num": 7, "parts": ["Who were ", " in the restaurant yesterday?"], "answers": [["the people you were with"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Did you find ",
+            "(looking / for / you / the books / were)?"
+          ],
+          "answers": [
+            [
+              "the books you were looking for"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "We couldn’t go to ",
+            "(we / invited / to / were / the wedding)."
+          ],
+          "answers": [
+            [
+              "the wedding we were invited to"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What’s the name of ",
+            "(the hotel / about / me / told / you)?"
+          ],
+          "answers": [
+            [
+              "the hotel you told me about"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Unfortunately I didn’t get ",
+            "(applied / I / the job / for)."
+          ],
+          "answers": [
+            [
+              "the job I applied for"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Did you enjoy ",
+            "(you / the concert / to / went)?"
+          ],
+          "answers": [
+            [
+              "the concert you went to"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Gary is a good person to know. He’s ",
+            "(on / rely / can / somebody / you)."
+          ],
+          "answers": [
+            [
+              "somebody you can rely on"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Who were ",
+            " (the people / with / were / you) in the restaurant yesterday?"
+          ],
+          "answers": [
+            [
+              "the people you were with"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -52,15 +275,114 @@
       "type": "fill-in",
       "instruction": "Put in that or what where necessary. If the sentence is already complete, leave the space empty.",
       "items": [
-        {"num": 1, "parts": ["I gave her all the money \u2013 I had.", ""], "answers": [["\u2013"]]},
-        {"num": 2, "parts": ["Did you hear what they said?", ""], "answers": [["\u2013"]]},
-        {"num": 3, "parts": ["She gives her children everything ", " they want."], "answers": [["that"]]},
-        {"num": 4, "parts": ["Tell me ", " you want and I\u2019ll try to get it for you."], "answers": [["what"]]},
-        {"num": 5, "parts": ["Why do you blame me for everything ", " goes wrong?"], "answers": [["that"]]},
-        {"num": 6, "parts": ["I won\u2019t be able to do much, but I\u2019ll do ", " I can."], "answers": [["what"]]},
-        {"num": 7, "parts": ["I won\u2019t be able to do much, but I\u2019ll do the best ", " I can."], "answers": [["\u2013"]]},
-        {"num": 8, "parts": ["I don\u2019t agree with ", " you said."], "answers": [["what"]]},
-        {"num": 9, "parts": ["I don\u2019t trust him. I don\u2019t believe anything ", " he says."], "answers": [["\u2013"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I gave her all the money – I had.",
+            ""
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Did you hear what they said?",
+            ""
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She gives her children everything ",
+            " they want."
+          ],
+          "answers": [
+            [
+              "that"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Tell me ",
+            " you want and I’ll try to get it for you."
+          ],
+          "answers": [
+            [
+              "what"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Why do you blame me for everything ",
+            " goes wrong?"
+          ],
+          "answers": [
+            [
+              "that"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I won’t be able to do much, but I’ll do ",
+            " I can."
+          ],
+          "answers": [
+            [
+              "what"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I won’t be able to do much, but I’ll do the best ",
+            " I can."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I don’t agree with ",
+            " you said."
+          ],
+          "answers": [
+            [
+              "what"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I don’t trust him. I don’t believe anything ",
+            " he says."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        }
       ]
     }
   ]

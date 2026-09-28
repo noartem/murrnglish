@@ -10,82 +10,82 @@
     "items": [
       {
         "num": 3,
-        "parts": ["I can't make a decision. I keep ", " my mind."],
+        "parts": ["I can't make a decision. I keep ", " my mind. (change)"],
         "answers": [["changing"]]
       },
       {
         "num": 4,
-        "parts": ["He had made his decision and refused ", " his mind."],
+        "parts": ["He had made his decision and refused ", " his mind. (change)"],
         "answers": [["to change"]]
       },
       {
         "num": 5,
-        "parts": ["Why did you change your decision? What made you ", " your mind?"],
+        "parts": ["Why did you change your decision? What made you ", " your mind? (change)"],
         "answers": [["change"]]
       },
       {
         "num": 6,
-        "parts": ["It was a really good holiday. I really enjoyed ", " by the sea again."],
+        "parts": ["It was a really good holiday. I really enjoyed ", " by the sea again. (be)"],
         "answers": [["being"]]
       },
       {
         "num": 7,
-        "parts": ["Did I really tell you I was unhappy? I don't remember ", " that."],
+        "parts": ["Did I really tell you I was unhappy? I don't remember ", " that. (say)"],
         "answers": [["saying"]]
       },
       {
         "num": 8,
-        "parts": ["'Remember ", " Tom tomorrow.' 'OK. I won't forget.'"],
+        "parts": ["'Remember ", " Tom tomorrow.' 'OK. I won't forget.' (call)"],
         "answers": [["to call"]]
       },
       {
         "num": 9,
-        "parts": ["The water here is not very good. I'd avoid ", " it if I were you."],
+        "parts": ["The water here is not very good. I'd avoid ", " it if I were you. (drink)"],
         "answers": [["drinking"]]
       },
       {
         "num": 10,
-        "parts": ["I pretended ", " interested in the conversation, but really it was very boring."],
+        "parts": ["I pretended ", " interested in the conversation, but really it was very boring. (be)"],
         "answers": [["to be"]]
       },
       {
         "num": 11,
-        "parts": ["I got up and looked out of the window ", " what the weather was like."],
+        "parts": ["I got up and looked out of the window ", " what the weather was like. (see)"],
         "answers": [["to see"]]
       },
       {
         "num": 12,
-        "parts": ["I don't have far to go. It's not worth ", " a taxi."],
+        "parts": ["I don't have far to go. It's not worth ", " a taxi. (take)"],
         "answers": [["taking"]]
       },
       {
         "num": 13,
-        "parts": ["I have a friend who claims ", " able to speak five languages."],
+        "parts": ["I have a friend who claims ", " able to speak five languages. (be)"],
         "answers": [["to be"]]
       },
       {
         "num": 14,
-        "parts": ["I like ", " carefully about things before ", " a decision."],
+        "parts": ["I like ", " carefully about things before ", " a decision. (think, make)"],
         "answers": [["to think"], ["making"]]
       },
       {
         "num": 15,
-        "parts": ["I had a flat in the centre of town but I didn't like ", " there, so I decided ", "."],
+        "parts": ["I had a flat in the centre of town but I didn't like ", " there, so I decided ", ". (live, move)"],
         "answers": [["living"], ["to move"]]
       },
       {
         "num": 16,
-        "parts": ["Steve used ", " a footballer. He had to stop ", " because of an injury."],
+        "parts": ["Steve used ", " a footballer. He had to stop ", " because of an injury. (be, play)"],
         "answers": [["to be"], ["playing"]]
       },
       {
         "num": 17,
-        "parts": ["After ", " by the police, the man admitted ", " the car but denied ", " at 100 miles an hour."],
+        "parts": ["After ", " by the police, the man admitted ", " the car but denied ", " at 100 miles an hour. (stop, steal, drive)"],
         "answers": [["being stopped"], ["stealing"], ["driving"]]
       },
       {
         "num": 18,
-        "parts": ["a: How do you make this machine ", "?\nb: I'm not sure. Try ", " that button and see what happens."],
+        "parts": ["a: How do you make this machine ", "(work)?\nb: I'm not sure. Try ", " that button and see what happens. (press)"],
         "answers": [["work"], ["pressing"]]
       }
     ]

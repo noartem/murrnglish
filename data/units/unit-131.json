@@ -1,51 +1,287 @@
 {
   "unit": 131,
   "title": "Adjective + preposition 2",
-  "pdfPages": [274, 275],
+  "pdfPages": [
+    274,
+    275
+  ],
   "exercises": [
     {
       "id": "131.1",
       "type": "fill-in",
       "instruction": "Complete the sentences using an adjective + of. Choose from:",
-      "wordBank": ["ashamed", "aware", "capable", "envious", "proud", "scared", "short", "typical"],
+      "wordBank": [
+        "ashamed",
+        "aware",
+        "capable",
+        "envious",
+        "proud",
+        "scared",
+        "short",
+        "typical"
+      ],
       "items": [
-        {"num": 1, "parts": ["I'm a bit ", " of money. Can you lend me some?"], "answers": [["short"]]},
-        {"num": 2, "parts": ["My children have done very well. I'm ", " them."], "answers": [["proud of"]]},
-        {"num": 3, "parts": ["What I did was very bad. I'm ", " myself."], "answers": [["ashamed of"]]},
-        {"num": 4, "parts": ["She always behaves like that. It's ", " her."], "answers": [["typical of"]]},
-        {"num": 5, "parts": ["He wouldn't be able to run his own business. He's not ", " it."], "answers": [["capable of"]]},
-        {"num": 6, "parts": ["I don't like going up ladders. I'm ", " heights."], "answers": [["scared of"]]},
-        {"num": 7, "parts": ["Nobody told me she was ill. I wasn't ", " it."], "answers": [["aware of"]]},
-        {"num": 8, "parts": ["I wish I had what Sarah has. I'm ", " her."], "answers": [["envious of"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I'm a bit ",
+            " of money. Can you lend me some?"
+          ],
+          "answers": [
+            [
+              "short"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My children have done very well. I'm ",
+            " them."
+          ],
+          "answers": [
+            [
+              "proud of"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What I did was very bad. I'm ",
+            " myself."
+          ],
+          "answers": [
+            [
+              "ashamed of"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "She always behaves like that. It's ",
+            " her."
+          ],
+          "answers": [
+            [
+              "typical of"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "He wouldn't be able to run his own business. He's not ",
+            " it."
+          ],
+          "answers": [
+            [
+              "capable of"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I don't like going up ladders. I'm ",
+            " heights."
+          ],
+          "answers": [
+            [
+              "scared of"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Nobody told me she was ill. I wasn't ",
+            " it."
+          ],
+          "answers": [
+            [
+              "aware of"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I wish I had what Sarah has. I'm ",
+            " her."
+          ],
+          "answers": [
+            [
+              "envious of"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "131.2",
       "type": "self-check",
       "instruction": "Write sentences about yourself. Are you good at these things or not? You can use:",
-      "wordBank": ["good", "pretty good", "not very good", "hopeless"],
+      "wordBank": [
+        "good",
+        "pretty good",
+        "not very good",
+        "hopeless"
+      ],
       "items": [
-        {"num": 1, "prompt": "(repairing things)", "modelAnswers": ["I'm not very good at repairing things."]},
-        {"num": 2, "prompt": "(telling jokes)", "modelAnswers": ["I'm hopeless at telling jokes."]},
-        {"num": 3, "prompt": "(maths)", "modelAnswers": ["I'm not very good at maths."]},
-        {"num": 4, "prompt": "(remembering names)", "modelAnswers": ["I'm pretty good at remembering names."]},
-        {"num": 5, "prompt": "(making decisions)", "modelAnswers": ["I'm good at making decisions."]}
+        {
+          "num": 1,
+          "prompt": "(repairing things)",
+          "modelAnswers": [
+            "I'm not very good at repairing things."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(telling jokes)",
+          "modelAnswers": [
+            "I'm hopeless at telling jokes."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(maths)",
+          "modelAnswers": [
+            "I'm not very good at maths."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(remembering names)",
+          "modelAnswers": [
+            "I'm pretty good at remembering names."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(making decisions)",
+          "modelAnswers": [
+            "I'm good at making decisions."
+          ]
+        }
       ]
     },
     {
       "id": "131.3",
       "type": "fill-in",
       "instruction": "Complete the sentences using an adjective + preposition. Choose from:",
-      "wordBank": ["afraid", "capable", "different", "interested", "proud", "responsible", "similar", "sure"],
+      "wordBank": [
+        "afraid",
+        "capable",
+        "different",
+        "interested",
+        "proud",
+        "responsible",
+        "similar",
+        "sure"
+      ],
       "items": [
-        {"num": 1, "parts": ["I think she's arriving this evening, but I'm not ", " that."], "answers": [["sure of"]]},
-        {"num": 2, "parts": ["Your camera is ", " mine, but it isn't exactly the same."], "answers": [["similar to"]]},
-        {"num": 3, "parts": ["Don't worry. I'll look after you. There's nothing to be ", "."], "answers": [["afraid of"]]},
-        {"num": 4, "parts": ["I never watch the news on TV. I'm not ", " the news."], "answers": [["interested in"]]},
-        {"num": 5, "parts": ["The editor is the person who is ", " what appears in a newspaper."], "answers": [["responsible for"]]},
-        {"num": 6, "parts": ["Sarah is a keen gardener and is very ", " her garden."], "answers": [["proud of"]]},
-        {"num": 7, "parts": ["I was surprised when I first met Tina. She was ", " what I expected."], "answers": [["different from", "different to", "different than"]]},
-        {"num": 8, "parts": ["Ben could become world champion one day. He's ", " it."], "answers": [["capable of"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I think she's arriving this evening, but I'm not ",
+            " that."
+          ],
+          "answers": [
+            [
+              "sure of"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Your camera is ",
+            " mine, but it isn't exactly the same."
+          ],
+          "answers": [
+            [
+              "similar to"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Don't worry. I'll look after you. There's nothing to be ",
+            "."
+          ],
+          "answers": [
+            [
+              "afraid of"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I never watch the news on TV. I'm not ",
+            " the news."
+          ],
+          "answers": [
+            [
+              "interested in"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "The editor is the person who is ",
+            " what appears in a newspaper."
+          ],
+          "answers": [
+            [
+              "responsible for"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Sarah is a keen gardener and is very ",
+            " her garden."
+          ],
+          "answers": [
+            [
+              "proud of"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I was surprised when I first met Tina. She was ",
+            " what I expected."
+          ],
+          "answers": [
+            [
+              "different from",
+              "different to",
+              "different than"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Ben could become world champion one day. He's ",
+            " it."
+          ],
+          "answers": [
+            [
+              "capable of"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -72,23 +308,167 @@
         "I'm suspicious of him / of Robert.",
         "My problem is different from yours / from your problem or to yours / to your problem."
       ],
-      "pairs": [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6], [7, 7]]
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ]
+      ]
     },
     {
       "id": "131.5",
       "type": "fill-in",
       "instruction": "Put in the correct preposition.",
       "items": [
-        {"num": 1, "parts": ["Amy is always full ", " energy."], "answers": [["of"]]},
-        {"num": 2, "parts": ["My home town is not a very interesting place. It's not famous ", " anything."], "answers": [["for"]]},
-        {"num": 3, "parts": ["Kate is very fond ", " her younger brother."], "answers": [["of"]]},
-        {"num": 4, "parts": ["You look bored. You don't seem interested ", " what I'm saying."], "answers": [["in"]]},
-        {"num": 5, "parts": ["'Our flight departs at 10.35.' 'Are you sure ", " that?'"], "answers": [["of"]]},
-        {"num": 6, "parts": ["I wanted to go out for a meal, but nobody else was keen ", " the idea."], "answers": [["on"]]},
-        {"num": 7, "parts": ["These days everybody is aware ", " the dangers of smoking."], "answers": [["of"]]},
-        {"num": 8, "parts": ["The station platform was crowded ", " people waiting for the train."], "answers": [["with"]]},
-        {"num": 9, "parts": ["Mark has no money of his own. He's completely dependent ", " his parents."], "answers": [["on"]]},
-        {"num": 10, "parts": ["We're short ", " staff in our office right now. We need more people to do the work."], "answers": [["of"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Amy is always full ",
+            " energy."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My home town is not a very interesting place. It's not famous ",
+            " anything."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Kate is very fond ",
+            " her younger brother."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "You look bored. You don't seem interested ",
+            " what I'm saying."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "'Our flight departs at 10.35.' 'Are you sure ",
+            " that?'"
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I wanted to go out for a meal, but nobody else was keen ",
+            " the idea."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "These days everybody is aware ",
+            " the dangers of smoking."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The station platform was crowded ",
+            " people waiting for the train."
+          ],
+          "answers": [
+            [
+              "with"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Mark has no money of his own. He's completely dependent ",
+            " his parents."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "We're short ",
+            " staff in our office right now. We need more people to do the work."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        }
       ]
     }
   ]

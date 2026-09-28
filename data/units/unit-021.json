@@ -1,84 +1,183 @@
 {
   "unit": 21,
   "title": "will and shall 1",
-  "pdfPages": [54, 55],
+  "pdfPages": [
+    54,
+    55
+  ],
   "exercises": [
     {
       "id": "21.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences with I\u2019ll + a suitable verb.",
+      "instruction": "Complete the sentences with I’ll + a suitable verb.",
       "items": [
         {
           "num": 1,
-          "parts": ["\u2018How are you going to get home?\u2019 \u2018I think ", " a taxi.\u2019"],
-          "answers": [["I\u2019ll take"]]
+          "parts": [
+            "‘How are you going to get home?’ ‘I think ",
+            " a taxi.’"
+          ],
+          "answers": [
+            [
+              "I’ll take"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["\u2018It\u2019s cold in this room.\u2019 \u2018Is it? ", " on the heating then.\u2019"],
-          "answers": [["I\u2019ll turn", "I\u2019ll switch", "I\u2019ll put"]]
+          "parts": [
+            "‘It’s cold in this room.’ ‘Is it? ",
+            " on the heating then.’"
+          ],
+          "answers": [
+            [
+              "I’ll turn",
+              "I’ll switch",
+              "I’ll put"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["\u2018Are you free next Friday?\u2019 \u2018Let me see. ", " my diary.\u2019"],
-          "answers": [["I\u2019ll check"]]
+          "parts": [
+            "‘Are you free next Friday?’ ‘Let me see. ",
+            " my diary.’"
+          ],
+          "answers": [
+            [
+              "I’ll check"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["\u2018Shall I do the washing-up?\u2019 \u2018No, it\u2019s all right. ", " it later.\u2019"],
-          "answers": [["I\u2019ll do"]]
+          "parts": [
+            "‘Shall I do the washing-up?’ ‘No, it’s all right. ",
+            " it later.’"
+          ],
+          "answers": [
+            [
+              "I’ll do"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["\u2018I don\u2019t know how to use this phone.\u2019 \u2018OK, ", " you.\u2019"],
-          "answers": [["I\u2019ll show"]]
+          "parts": [
+            "‘I don’t know how to use this phone.’ ‘OK, ",
+            " you.’"
+          ],
+          "answers": [
+            [
+              "I’ll show"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["\u2018Would you like tea or coffee?\u2019 \u2018", " coffee, please.\u2019"],
-          "answers": [["I\u2019ll have"]]
+          "parts": [
+            "‘Would you like tea or coffee?’ ‘",
+            " coffee, please.’"
+          ],
+          "answers": [
+            [
+              "I’ll have"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["\u2018Are you coming with us?\u2019 \u2018No, I think ", " here.\u2019"],
-          "answers": [["I\u2019ll stay", "I\u2019ll wait"]]
+          "parts": [
+            "‘Are you coming with us?’ ‘No, I think ",
+            " here.’"
+          ],
+          "answers": [
+            [
+              "I’ll stay",
+              "I’ll wait"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["\u2018Can you finish this report today?\u2019 \u2018Well, ", ", but I can\u2019t promise.\u2019"],
-          "answers": [["I\u2019ll try"]]
+          "parts": [
+            "‘Can you finish this report today?’ ‘Well, ",
+            ", but I can’t promise.’"
+          ],
+          "answers": [
+            [
+              "I’ll try"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "21.2",
       "type": "fill-in",
-      "instruction": "Read the situations and write sentences with I think I\u2019ll \u2026 or I don\u2019t think I\u2019ll \u2026 .",
+      "instruction": "Read the situations and write sentences with I think I’ll … or I don’t think I’ll … .",
       "items": [
         {
           "num": 1,
-          "parts": ["It\u2019s cold with the window open. ", "."],
-          "answers": [["I think I\u2019ll close it"]]
+          "parts": [
+            "It’s cold with the window open. ",
+            "."
+          ],
+          "answers": [
+            [
+              "I think I’ll close it"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["I\u2019m tired, so ", ". Goodnight!"],
-          "answers": [["I think I\u2019ll go to bed"]]
+          "parts": [
+            "I’m tired, so ",
+            ". Goodnight!"
+          ],
+          "answers": [
+            [
+              "I think I’ll go to bed"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["It\u2019s a lovely morning. ", ". Do you want to come too?"],
-          "answers": [["I think I\u2019ll go for a walk"]]
+          "parts": [
+            "It’s a lovely morning. ",
+            ". Do you want to come too?"
+          ],
+          "answers": [
+            [
+              "I think I’ll go for a walk"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don\u2019t feel hungry any more. ", " lunch."],
-          "answers": [["I don\u2019t think I\u2019ll have (any)"]]
+          "parts": [
+            "I don’t feel hungry any more. ",
+            " lunch."
+          ],
+          "answers": [
+            [
+              "I don’t think I’ll have (any)"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I\u2019ve got a lot to do, so ", " today."],
-          "answers": [["I don\u2019t think I\u2019ll go swimming"]]
+          "parts": [
+            "I’ve got a lot to do, so ",
+            " today."
+          ],
+          "answers": [
+            [
+              "I don’t think I’ll go swimming"
+            ]
+          ]
         }
       ]
     },
@@ -89,62 +188,98 @@
       "items": [
         {
           "num": 1,
-          "options": ["I call", "I\u2019ll call"],
+          "options": [
+            "I call",
+            "I’ll call"
+          ],
           "answer": 1
         },
         {
           "num": 2,
-          "options": ["I\u2019m playing", "I\u2019ll play"],
+          "options": [
+            "I’m playing",
+            "I’ll play"
+          ],
           "answer": 0
         },
         {
           "num": 3,
-          "options": ["I meet", "I\u2019ll meet"],
+          "options": [
+            "I meet",
+            "I’ll meet"
+          ],
           "answer": 1
         },
         {
           "num": 4,
-          "options": ["I\u2019m staying", "I\u2019ll stay"],
+          "options": [
+            "I’m staying",
+            "I’ll stay"
+          ],
           "answer": 1
         },
         {
           "num": 5,
-          "options": ["I\u2019m having", "I\u2019ll have"],
+          "options": [
+            "I’m having",
+            "I’ll have"
+          ],
           "answer": 0
         },
         {
           "num": 6,
-          "options": ["I don\u2019t forget", "I won\u2019t forget"],
+          "options": [
+            "I don’t forget",
+            "I won’t forget"
+          ],
           "answer": 1
         },
         {
           "num": 7,
-          "options": ["we\u2019re going", "we\u2019ll go"],
+          "options": [
+            "we’re going",
+            "we’ll go"
+          ],
           "answer": 0
         },
         {
           "num": 8,
-          "options": ["Are you doing", "Will you do"],
+          "options": [
+            "Are you doing",
+            "Will you do"
+          ],
           "answer": 0
         },
         {
           "num": 9,
-          "options": ["Do you do", "Will you do"],
+          "options": [
+            "Do you do",
+            "Will you do"
+          ],
           "answer": 1
         },
         {
           "num": 10,
-          "options": ["Do you go", "Will you go"],
+          "options": [
+            "Do you go",
+            "Will you go"
+          ],
           "answer": 0
         },
         {
           "num": 11,
-          "options": ["doesn\u2019t tell", "won\u2019t tell"],
+          "options": [
+            "doesn’t tell",
+            "won’t tell"
+          ],
           "answer": 1
         },
         {
           "num": 12,
-          "options": ["I\u2019m doing", "I\u2019ll do"],
+          "options": [
+            "I’m doing",
+            "I’ll do"
+          ],
           "answer": 1
         }
       ]
@@ -152,37 +287,84 @@
     {
       "id": "21.4",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Write sentences with shall I \u2026 ? or shall we \u2026 ?",
+      "instruction": "What do you say in these situations? Write sentences with shall I … ? or shall we … ?",
       "items": [
         {
           "num": 1,
-          "parts": ["", ""],
-          "answers": [["What shall we do this evening?"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "What shall we do this evening?"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["You ask your friend: ", "?"],
-          "answers": [["Where shall we go (on holiday)"]]
+          "parts": [
+            "You ask your friend: ",
+            "?"
+          ],
+          "answers": [
+            [
+              "Where shall we go (on holiday)"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["You ask a friend for advice: ", "? What do you think?"],
-          "answers": [["Shall I buy it"]]
+          "parts": [
+            "You ask a friend for advice: ",
+            "? What do you think?"
+          ],
+          "answers": [
+            [
+              "Shall I buy it"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["You ask your friend: ", " or ", "?"],
-          "answers": [["Shall we get a taxi"], ["shall we walk"]]
+          "parts": [
+            "You ask your friend: ",
+            " or ",
+            "?"
+          ],
+          "answers": [
+            [
+              "Shall we get a taxi"
+            ],
+            [
+              "shall we walk"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["You ask a friend: What ", " Helen (for her birthday)?"],
-          "answers": [["shall I give/buy/get"]]
+          "parts": [
+            "You ask a friend: What ",
+            " Helen (for her birthday)?"
+          ],
+          "answers": [
+            [
+              "shall I give/buy/get"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["You say: ", "? Is 10.30 OK for you?"],
-          "answers": [["What time shall we meet"]]
+          "parts": [
+            "You say: ",
+            "? Is 10.30 OK for you?"
+          ],
+          "answers": [
+            [
+              "What time shall we meet"
+            ]
+          ]
         }
       ]
     }

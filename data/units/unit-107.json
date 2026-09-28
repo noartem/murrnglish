@@ -1,20 +1,107 @@
 {
   "unit": 107,
   "title": "Comparative 3 (as … as / than)",
-  "pdfPages": [226, 227],
+  "pdfPages": [
+    226,
+    227
+  ],
   "exercises": [
     {
       "id": "107.1",
       "type": "fill-in",
       "instruction": "Complete the sentences using as … as.",
       "items": [
-        {"num": 1, "parts": ["I'm not ", " you."], "answers": [["as tall as"]]},
-        {"num": 2, "parts": ["My salary isn't ", "."], "answers": [["as high as yours"]]},
-        {"num": 3, "parts": ["You don't ", "."], "answers": [["know as much about cars as me", "know as much about cars as I do", "know as much about cars as I know"]]},
-        {"num": 4, "parts": ["We aren't ", "."], "answers": [["as busy today as we were yesterday", "as busy today as yesterday"]]},
-        {"num": 5, "parts": ["I don't ", "."], "answers": [["feel as bad as I did earlier", "feel as bad as I felt earlier"]]},
-        {"num": 6, "parts": ["Our neighbours haven't lived here ", "."], "answers": [["as long as us", "as long as we have"]]},
-        {"num": 7, "parts": ["I wasn't ", "."], "answers": [["as nervous (before the interview) as I usually am", "as nervous as usual"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I'm not ",
+            " you."
+          ],
+          "answers": [
+            [
+              "as tall as"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My salary isn't ",
+            "."
+          ],
+          "answers": [
+            [
+              "as high as yours"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "You don't ",
+            "."
+          ],
+          "answers": [
+            [
+              "know as much about cars as me",
+              "know as much about cars as I do",
+              "know as much about cars as I know"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We aren't ",
+            "."
+          ],
+          "answers": [
+            [
+              "as busy today as we were yesterday",
+              "as busy today as yesterday"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I don't ",
+            "."
+          ],
+          "answers": [
+            [
+              "feel as bad as I did earlier",
+              "feel as bad as I felt earlier"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Our neighbours haven't lived here ",
+            "."
+          ],
+          "answers": [
+            [
+              "as long as us",
+              "as long as we have"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I wasn't ",
+            "."
+          ],
+          "answers": [
+            [
+              "as nervous (before the interview) as I usually am",
+              "as nervous as usual"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -22,29 +109,208 @@
       "type": "fill-in",
       "instruction": "Write a new sentence with the same meaning.",
       "items": [
-        {"num": 1, "parts": ["Jack isn't ", "."], "answers": [["as old as he looks"]]},
-        {"num": 2, "parts": ["You spent ", "."], "answers": [["more money than me", "more money than I do"]]},
-        {"num": 3, "parts": ["The station wasn't ", "."], "answers": [["as far as I thought"]]},
-        {"num": 4, "parts": ["The meal cost ", "."], "answers": [["less than I expected"]]},
-        {"num": 5, "parts": ["I don't ", "."], "answers": [["watch TV as much as I used to", "watch TV as often as I used to"]]},
-        {"num": 6, "parts": ["Karen used to ", "."], "answers": [["have longer hair"]]},
-        {"num": 7, "parts": ["You don't ", "."], "answers": [["know them as well as me", "know them as I do"]]},
-        {"num": 8, "parts": ["There aren't ", "."], "answers": [["as many students in this class as in the other one"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Jack isn't ",
+            "."
+          ],
+          "answers": [
+            [
+              "as old as he looks"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "You spent ",
+            "."
+          ],
+          "answers": [
+            [
+              "more money than me",
+              "more money than I do"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The station wasn't ",
+            "."
+          ],
+          "answers": [
+            [
+              "as far as I thought"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "The meal cost ",
+            "."
+          ],
+          "answers": [
+            [
+              "less than I expected"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I don't ",
+            "."
+          ],
+          "answers": [
+            [
+              "watch TV as much as I used to",
+              "watch TV as often as I used to"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Karen used to ",
+            "."
+          ],
+          "answers": [
+            [
+              "have longer hair"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "You don't ",
+            "."
+          ],
+          "answers": [
+            [
+              "know them as well as me",
+              "know them as I do"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "There aren't ",
+            "."
+          ],
+          "answers": [
+            [
+              "as many students in this class as in the other one"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "107.3",
       "type": "fill-in",
       "instruction": "Complete the sentences using as … as. Choose from: fast hard long often quietly soon well",
-      "wordBank": ["fast", "hard", "long", "often", "quietly", "soon", "well"],
+      "wordBank": [
+        "fast",
+        "hard",
+        "long",
+        "often",
+        "quietly",
+        "soon",
+        "well"
+      ],
       "items": [
-        {"num": 1, "parts": ["I got here ", " I could."], "answers": [["as fast as"]]},
-        {"num": 2, "parts": ["I answered it ", " I could."], "answers": [["as well as"]]},
-        {"num": 3, "parts": ["You can stay ", " you like."], "answers": [["as long as"]]},
-        {"num": 4, "parts": ["Let me know ", " possible."], "answers": [["as soon as"]]},
-        {"num": 5, "parts": ["I go swimming ", " I can."], "answers": [["as often as"]]},
-        {"num": 6, "parts": ["I came in ", " I could."], "answers": [["as quietly as"]]},
-        {"num": 7, "parts": ["I work just ", " you."], "answers": [["as hard as"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I got here ",
+            " I could."
+          ],
+          "answers": [
+            [
+              "as fast as"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I answered it ",
+            " I could."
+          ],
+          "answers": [
+            [
+              "as well as"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "You can stay ",
+            " you like."
+          ],
+          "answers": [
+            [
+              "as long as"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Let me know ",
+            " possible."
+          ],
+          "answers": [
+            [
+              "as soon as"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I go swimming ",
+            " I can."
+          ],
+          "answers": [
+            [
+              "as often as"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I came in ",
+            " I could."
+          ],
+          "answers": [
+            [
+              "as quietly as"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I work just ",
+            " you."
+          ],
+          "answers": [
+            [
+              "as hard as"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -52,27 +318,183 @@
       "type": "fill-in",
       "instruction": "Write sentences using the same as.",
       "items": [
-        {"num": 1, "parts": ["David is ", " James."], "answers": [["the same age as"]]},
-        {"num": 2, "parts": ["Your hair is ", " mine."], "answers": [["the same colour as"]]},
-        {"num": 3, "parts": ["I arrived ", " you."], "answers": [["(at) the same time as"]]},
-        {"num": 4, "parts": ["My birthday is ", " Tom's."], "answers": [["(on) the same day as", "the same as"]]}
+        {
+          "num": 1,
+          "parts": [
+            "David is ",
+            " James."
+          ],
+          "answers": [
+            [
+              "the same age as"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Your hair is ",
+            " mine."
+          ],
+          "answers": [
+            [
+              "the same colour as"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I arrived ",
+            " you."
+          ],
+          "answers": [
+            [
+              "(at) the same time as"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "My birthday is ",
+            " Tom's."
+          ],
+          "answers": [
+            [
+              "(on) the same day as",
+              "the same as"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "107.5",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from: as him is less me much soon than twice",
-      "wordBank": ["as", "him", "is", "less", "me", "much", "soon", "than", "twice"],
+      "wordBank": [
+        "as",
+        "him",
+        "is",
+        "less",
+        "me",
+        "much",
+        "soon",
+        "than",
+        "twice"
+      ],
       "items": [
-        {"num": 1, "parts": ["I'll let you know ", " I have any more news."], "answers": [["as soon as"]]},
-        {"num": 2, "parts": ["My friends arrived earlier ", " I expected."], "answers": [["than"]]},
-        {"num": 3, "parts": ["I live in the same street ", " Katherine."], "answers": [["as"]]},
-        {"num": 4, "parts": ["I know more than ", "."], "answers": [["him"]]},
-        {"num": 5, "parts": ["This morning there was ", " traffic than usual."], "answers": [["less"]]},
-        {"num": 6, "parts": ["I don't watch TV as ", " as I used to."], "answers": [["much"]]},
-        {"num": 7, "parts": ["Mine is ", " as heavy as yours."], "answers": [["twice"]]},
-        {"num": 8, "parts": ["I'm a little older than she ", "."], "answers": [["is"]]},
-        {"num": 9, "parts": ["Nobody was more surprised than ", "."], "answers": [["me"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I'll let you know ",
+            " I have any more news."
+          ],
+          "answers": [
+            [
+              "as soon as"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My friends arrived earlier ",
+            " I expected."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I live in the same street ",
+            " Katherine."
+          ],
+          "answers": [
+            [
+              "as"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I know more than ",
+            "."
+          ],
+          "answers": [
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "This morning there was ",
+            " traffic than usual."
+          ],
+          "answers": [
+            [
+              "less"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I don't watch TV as ",
+            " as I used to."
+          ],
+          "answers": [
+            [
+              "much"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Mine is ",
+            " as heavy as yours."
+          ],
+          "answers": [
+            [
+              "twice"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I'm a little older than she ",
+            "."
+          ],
+          "answers": [
+            [
+              "is"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Nobody was more surprised than ",
+            "."
+          ],
+          "answers": [
+            [
+              "me"
+            ]
+          ]
+        }
       ]
     }
   ]

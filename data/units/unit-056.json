@@ -1,60 +1,410 @@
 {
   "unit": 56,
-  "title": "Verb + -ing or to \u2026 1 (remember, regret etc.)",
-  "pdfPages": [124, 125],
+  "title": "Verb + -ing or to … 1 (remember, regret etc.)",
+  "pdfPages": [
+    124,
+    125
+  ],
   "exercises": [
     {
       "id": "56.1",
       "type": "fill-in",
-      "instruction": "Put the verb into the correct form, -ing or to \u2026 .",
+      "instruction": "Put the verb into the correct form, -ing or to … .",
       "items": [
-        {"num": 1, "parts": ["They denied ", " the money."], "answers": [["stealing"]]},
-        {"num": 2, "parts": ["I don\u2019t enjoy ", " very much."], "answers": [["driving"]]},
-        {"num": 3, "parts": ["I can\u2019t afford ", " away."], "answers": [["to go"]]},
-        {"num": 4, "parts": ["Have you ever considered ", " to live in another country?"], "answers": [["going"]]},
-        {"num": 5, "parts": ["We were unlucky to lose the game. We played well and deserved ", "."], "answers": [["to win"]]},
-        {"num": 6, "parts": ["Why do you keep ", " me questions? Leave me alone!"], "answers": [["asking"]]},
-        {"num": 7, "parts": ["Please stop ", " me questions!"], "answers": [["asking"]]},
-        {"num": 8, "parts": ["I refuse ", " any more questions."], "answers": [["to answer"]]},
-        {"num": 9, "parts": ["The driver of one of the cars admitted ", " the accident."], "answers": [["causing"]]},
-        {"num": 10, "parts": ["Mark needed our help, and we promised ", " what we could."], "answers": [["to do"]]},
-        {"num": 11, "parts": ["I don\u2019t mind ", " alone, but I\u2019d rather be with other people."], "answers": [["being"]]},
-        {"num": 12, "parts": ["The wall was quite high, but I managed ", " over it."], "answers": [["to climb"]]},
-        {"num": 13, "parts": ["Sarah doesn\u2019t know about the meeting. I forgot ", " her."], "answers": [["to tell"]]},
-        {"num": 14, "parts": ["I\u2019ve enjoyed ", " to you. I hope ", " you again soon."], "answers": [["talking"], ["to see"]]}
+        {
+          "num": 1,
+          "parts": [
+            "They denied ",
+            " the money. (steal)"
+          ],
+          "answers": [
+            [
+              "stealing"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I don’t enjoy ",
+            " very much. (drive)"
+          ],
+          "answers": [
+            [
+              "driving"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I can’t afford ",
+            " away. (go)"
+          ],
+          "answers": [
+            [
+              "to go"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Have you ever considered ",
+            " to live in another country? (go)"
+          ],
+          "answers": [
+            [
+              "going"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We were unlucky to lose the game. We played well and deserved ",
+            ". (win)"
+          ],
+          "answers": [
+            [
+              "to win"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Why do you keep ",
+            " me questions? Leave me alone! (ask)"
+          ],
+          "answers": [
+            [
+              "asking"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Please stop ",
+            " me questions! (ask)"
+          ],
+          "answers": [
+            [
+              "asking"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I refuse ",
+            " any more questions. (answer)"
+          ],
+          "answers": [
+            [
+              "to answer"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "The driver of one of the cars admitted ",
+            " the accident. (cause)"
+          ],
+          "answers": [
+            [
+              "causing"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Mark needed our help, and we promised ",
+            " what we could. (do)"
+          ],
+          "answers": [
+            [
+              "to do"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I don’t mind ",
+            " alone, but I’d rather be with other people. (be)"
+          ],
+          "answers": [
+            [
+              "being"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "The wall was quite high, but I managed ",
+            " over it. (climb)"
+          ],
+          "answers": [
+            [
+              "to climb"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "Sarah doesn’t know about the meeting. I forgot ",
+            " her. (tell)"
+          ],
+          "answers": [
+            [
+              "to tell"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "I’ve enjoyed ",
+            " to you. I hope ",
+            " you again soon. (talk, see)"
+          ],
+          "answers": [
+            [
+              "talking"
+            ],
+            [
+              "to see"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "56.2",
       "type": "write",
-      "instruction": "Tom can remember some things about his childhood, but he can\u2019t remember others. Write sentences with He remembers \u2026 or He doesn\u2019t remember \u2026 .",
+      "instruction": "Tom can remember some things about his childhood, but he can’t remember others. Write sentences with He remembers … or He doesn’t remember … .",
       "items": [
-        {"num": 1, "prompt": "He was in hospital when he was a small child. He can still remember this.", "answers": ["He remembers being in hospital when he was a small child."]},
-        {"num": 2, "prompt": "He cried on his first day at school. He doesn\u2019t remember this.", "answers": ["He doesn\u2019t remember crying on his first day at school."]},
-        {"num": 3, "prompt": "Once he fell into the river. He remembers this.", "answers": ["He remembers falling into the river."]},
-        {"num": 4, "prompt": "He said he wanted to be a doctor. He doesn\u2019t remember this.", "answers": ["He doesn\u2019t remember saying he wanted to be a doctor.", "He doesn\u2019t remember wanting to be a doctor."]},
-        {"num": 5, "prompt": "Once he was bitten by a dog. He doesn\u2019t remember this.", "answers": ["He doesn\u2019t remember being bitten by a dog."]},
-        {"num": 6, "prompt": "His sister was born when he was four. He remembers this.", "answers": ["He remembers his sister being born (when he was four)."]}
+        {
+          "num": 1,
+          "prompt": "He was in hospital when he was a small child. He can still remember this.",
+          "answers": [
+            "He remembers being in hospital when he was a small child."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "He cried on his first day at school. He doesn’t remember this.",
+          "answers": [
+            "He doesn’t remember crying on his first day at school."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Once he fell into the river. He remembers this.",
+          "answers": [
+            "He remembers falling into the river."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "He said he wanted to be a doctor. He doesn’t remember this.",
+          "answers": [
+            "He doesn’t remember saying he wanted to be a doctor.",
+            "He doesn’t remember wanting to be a doctor."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Once he was bitten by a dog. He doesn’t remember this.",
+          "answers": [
+            "He doesn’t remember being bitten by a dog."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "His sister was born when he was four. He remembers this.",
+          "answers": [
+            "He remembers his sister being born (when he was four)."
+          ]
+        }
       ]
     },
     {
       "id": "56.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences with a suitable verb in the correct form, -ing or to \u2026 .",
+      "instruction": "Complete the sentences with a suitable verb in the correct form, -ing or to … .",
       "items": [
-        {"num": "1b", "parts": ["He says we\u2019ve met before, but I don\u2019t remember ", " him."], "answers": [["meeting"]]},
-        {"num": "1c", "parts": ["Someone must have taken my bag. I clearly remember ", " it by the window and now it isn\u2019t there."], "answers": [["leaving", "putting"]]},
-        {"num": "1d", "parts": ["When you see Steve, remember ", " hello to him from me."], "answers": [["to say"]]},
-        {"num": "1e", "parts": ["Did I? Are you sure? I don\u2019t remember ", " you any money."], "answers": [["lending"]]},
-        {"num": "1f", "parts": ["Did you remember ", " your sister?"], "answers": [["to call", "to phone"]]},
-        {"num": "2a", "parts": ["The course I did wasn\u2019t very good, but I don\u2019t regret ", " it."], "answers": [["doing"]]},
-        {"num": "2b", "parts": ["I knew they were in trouble, but I regret ", " I did nothing to help them."], "answers": [["to say"]]},
-        {"num": "2c", "parts": ["It started to get cold, and he regretted not ", " his coat."], "answers": [["wearing", "having", "taking", "putting on"]]},
-        {"num": "2d", "parts": ["I now regret ", " my job. It was a big mistake."], "answers": [["leaving", "giving up"]]},
-        {"num": "3a", "parts": ["Ben joined the company nine years ago. He became assistant manager after two years, and a few years later he went on ", " manager of the company."], "answers": [["to become"]]},
-        {"num": "3b", "parts": ["I can\u2019t go on ", " here any more. I want a different job."], "answers": [["working"]]},
-        {"num": "3c", "parts": ["When I came into the room, Lisa was reading a book. She looked up and said hello, and then went on ", " her book."], "answers": [["reading"]]},
-        {"num": "3d", "parts": ["Food prices have gone up again. How are we going to manage if prices go on ", "?"], "answers": [["going up", "rising", "increasing"]]}
+        {
+          "num": "1b",
+          "parts": [
+            "He says we’ve met before, but I don’t remember ",
+            " him."
+          ],
+          "answers": [
+            [
+              "meeting"
+            ]
+          ]
+        },
+        {
+          "num": "1c",
+          "parts": [
+            "Someone must have taken my bag. I clearly remember ",
+            " it by the window and now it isn’t there."
+          ],
+          "answers": [
+            [
+              "leaving",
+              "putting"
+            ]
+          ]
+        },
+        {
+          "num": "1d",
+          "parts": [
+            "When you see Steve, remember ",
+            " hello to him from me."
+          ],
+          "answers": [
+            [
+              "to say"
+            ]
+          ]
+        },
+        {
+          "num": "1e",
+          "parts": [
+            "Did I? Are you sure? I don’t remember ",
+            " you any money."
+          ],
+          "answers": [
+            [
+              "lending"
+            ]
+          ]
+        },
+        {
+          "num": "1f",
+          "parts": [
+            "Did you remember ",
+            " your sister?"
+          ],
+          "answers": [
+            [
+              "to call",
+              "to phone"
+            ]
+          ]
+        },
+        {
+          "num": "2a",
+          "parts": [
+            "The course I did wasn’t very good, but I don’t regret ",
+            " it."
+          ],
+          "answers": [
+            [
+              "doing"
+            ]
+          ]
+        },
+        {
+          "num": "2b",
+          "parts": [
+            "I knew they were in trouble, but I regret ",
+            " I did nothing to help them."
+          ],
+          "answers": [
+            [
+              "to say"
+            ]
+          ]
+        },
+        {
+          "num": "2c",
+          "parts": [
+            "It started to get cold, and he regretted not ",
+            " his coat."
+          ],
+          "answers": [
+            [
+              "wearing",
+              "having",
+              "taking",
+              "putting on"
+            ]
+          ]
+        },
+        {
+          "num": "2d",
+          "parts": [
+            "I now regret ",
+            " my job. It was a big mistake."
+          ],
+          "answers": [
+            [
+              "leaving",
+              "giving up"
+            ]
+          ]
+        },
+        {
+          "num": "3a",
+          "parts": [
+            "Ben joined the company nine years ago. He became assistant manager after two years, and a few years later he went on ",
+            " manager of the company."
+          ],
+          "answers": [
+            [
+              "to become"
+            ]
+          ]
+        },
+        {
+          "num": "3b",
+          "parts": [
+            "I can’t go on ",
+            " here any more. I want a different job."
+          ],
+          "answers": [
+            [
+              "working"
+            ]
+          ]
+        },
+        {
+          "num": "3c",
+          "parts": [
+            "When I came into the room, Lisa was reading a book. She looked up and said hello, and then went on ",
+            " her book."
+          ],
+          "answers": [
+            [
+              "reading"
+            ]
+          ]
+        },
+        {
+          "num": "3d",
+          "parts": [
+            "Food prices have gone up again. How are we going to manage if prices go on ",
+            "?"
+          ],
+          "answers": [
+            [
+              "going up",
+              "rising",
+              "increasing"
+            ]
+          ]
+        }
       ]
     }
   ]

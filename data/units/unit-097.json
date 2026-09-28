@@ -1,7 +1,10 @@
 {
   "unit": 97,
   "title": "-ing and -ed clauses (the woman talking to Tom, the boy injured in the accident)",
-  "pdfPages": [206, 207],
+  "pdfPages": [
+    206,
+    207
+  ],
   "exercises": [
     {
       "id": "97.1",
@@ -10,33 +13,76 @@
       "items": [
         {
           "num": 1,
-          "parts": ["I was woken up by a bell ", "."],
-          "answers": [["ringing"]]
+          "parts": [
+            "I was woken up by a bell ",
+            "."
+          ],
+          "answers": [
+            [
+              "ringing"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["The ", " broke down."],
-          "answers": [["taxi taking us to the airport"]]
+          "parts": [
+            "The ",
+            " broke down."
+          ],
+          "answers": [
+            [
+              "taxi taking us to the airport"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["At the end of the street there\u2019s ", "."],
-          "answers": [["a path leading to the river"]]
+          "parts": [
+            "At the end of the street there’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "a path leading to the river"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["", " has just opened in the town."],
-          "answers": [["A factory employing 500 people"]]
+          "parts": [
+            "",
+            " has just opened in the town."
+          ],
+          "answers": [
+            [
+              "A factory employing 500 people"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["The ", " was asleep most of the time."],
-          "answers": [["man sitting next to me on the plane"]]
+          "parts": [
+            "The ",
+            " was asleep most of the time."
+          ],
+          "answers": [
+            [
+              "man sitting next to me on the plane"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["The company sent me a ", "."],
-          "answers": [["brochure containing the information I needed"]]
+          "parts": [
+            "The company sent me a ",
+            "."
+          ],
+          "answers": [
+            [
+              "brochure containing the information I needed"
+            ]
+          ]
         }
       ]
     },
@@ -55,33 +101,76 @@
       "items": [
         {
           "num": 1,
-          "parts": ["The boy ", " was taken to hospital."],
-          "answers": [["injured in the accident"]]
+          "parts": [
+            "The boy ",
+            " was taken to hospital."
+          ],
+          "answers": [
+            [
+              "injured in the accident"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["The paintings ", " haven\u2019t been found yet."],
-          "answers": [["stolen from the museum"]]
+          "parts": [
+            "The paintings ",
+            " haven’t been found yet."
+          ],
+          "answers": [
+            [
+              "stolen from the museum"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["We\u2019ve repaired the gate ", "."],
-          "answers": [["damaged in the storm"]]
+          "parts": [
+            "We’ve repaired the gate ",
+            "."
+          ],
+          "answers": [
+            [
+              "damaged in the storm"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Most of the suggestions ", " were not practical."],
-          "answers": [["made at the meeting"]]
+          "parts": [
+            "Most of the suggestions ",
+            " were not practical."
+          ],
+          "answers": [
+            [
+              "made at the meeting"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Our friends live in a beautiful house ", "."],
-          "answers": [["surrounded by trees"]]
+          "parts": [
+            "Our friends live in a beautiful house ",
+            "."
+          ],
+          "answers": [
+            [
+              "surrounded by trees"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Everybody ", " worked very well."],
-          "answers": [["involved in the project"]]
+          "parts": [
+            "Everybody ",
+            " worked very well."
+          ],
+          "answers": [
+            [
+              "involved in the project"
+            ]
+          ]
         }
       ]
     },
@@ -89,57 +178,150 @@
       "id": "97.3",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use the following verbs in the correct form:",
-      "wordBank": ["blow", "call", "cause", "invite", "live", "offer", "paint", "read", "ring", "sit", "study", "work"],
+      "wordBank": [
+        "blow",
+        "call",
+        "cause",
+        "invite",
+        "live",
+        "offer",
+        "paint",
+        "read",
+        "ring",
+        "sit",
+        "study",
+        "work"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["I was woken up by a bell ", "."],
-          "answers": [["ringing"]]
+          "parts": [
+            "I was woken up by a bell ",
+            "."
+          ],
+          "answers": [
+            [
+              "ringing"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["George showed me some pictures ", " by his father."],
-          "answers": [["painted"]]
+          "parts": [
+            "George showed me some pictures ",
+            " by his father."
+          ],
+          "answers": [
+            [
+              "painted"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["Some of the people ", " to the party can\u2019t come."],
-          "answers": [["invited"]]
+          "parts": [
+            "Some of the people ",
+            " to the party can’t come."
+          ],
+          "answers": [
+            [
+              "invited"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Somebody ", " Jack phoned while you were out."],
-          "answers": [["called"]]
+          "parts": [
+            "Somebody ",
+            " Jack phoned while you were out."
+          ],
+          "answers": [
+            [
+              "called"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Life must be very unpleasant for people ", " near busy airports."],
-          "answers": [["living"]]
+          "parts": [
+            "Life must be very unpleasant for people ",
+            " near busy airports."
+          ],
+          "answers": [
+            [
+              "living"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["A few days after the interview, I received an email ", " me the job."],
-          "answers": [["offering"]]
+          "parts": [
+            "A few days after the interview, I received an email ",
+            " me the job."
+          ],
+          "answers": [
+            [
+              "offering"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["The building was badly damaged in a fire ", " by an electrical fault."],
-          "answers": [["caused"]]
+          "parts": [
+            "The building was badly damaged in a fire ",
+            " by an electrical fault."
+          ],
+          "answers": [
+            [
+              "caused"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Did you see the picture of the trees ", " down in the storm?"],
-          "answers": [["blown"]]
+          "parts": [
+            "Did you see the picture of the trees ",
+            " down in the storm?"
+          ],
+          "answers": [
+            [
+              "blown"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["The waiting room was empty except for an old man ", " in the corner ", " a magazine."],
-          "answers": [["sitting"], ["reading"]]
+          "parts": [
+            "The waiting room was empty except for an old man ",
+            " in the corner ",
+            " a magazine."
+          ],
+          "answers": [
+            [
+              "sitting"
+            ],
+            [
+              "reading"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["Ian has a brother ", " in a bank in London and a sister ", " economics at university in Manchester."],
-          "answers": [["working"], ["studying"]]
+          "parts": [
+            "Ian has a brother ",
+            " in a bank in London and a sister ",
+            " economics at university in Manchester."
+          ],
+          "answers": [
+            [
+              "working"
+            ],
+            [
+              "studying"
+            ]
+          ]
         }
       ]
     },
@@ -151,42 +333,58 @@
         {
           "num": 1,
           "prompt": "(nobody / live / in it)",
-          "answers": ["There\u2019s nobody living in it."]
+          "answers": [
+            "There’s nobody living in it."
+          ]
         },
         {
           "num": 2,
           "prompt": "(nobody / injure)",
-          "answers": ["There was nobody injured."]
+          "answers": [
+            "There was nobody injured."
+          ]
         },
         {
           "num": 3,
           "prompt": "(somebody / come)",
-          "answers": ["There\u2019s somebody coming."]
+          "answers": [
+            "There’s somebody coming."
+          ]
         },
         {
           "num": 4,
           "prompt": "(nothing / leave)",
-          "answers": ["There\u2019s nothing left."]
+          "answers": [
+            "There’s nothing left."
+          ]
         },
         {
           "num": 5,
           "prompt": "(a lot of people / travel)",
-          "answers": ["There were a lot of people travelling."]
+          "answers": [
+            "There were a lot of people travelling."
+          ]
         },
         {
           "num": 6,
           "prompt": "(nobody else / stay there)",
-          "answers": ["There was nobody else staying there."]
+          "answers": [
+            "There was nobody else staying there."
+          ]
         },
         {
           "num": 7,
           "prompt": "(nothing / write / on it)",
-          "answers": ["There was nothing written on it."]
+          "answers": [
+            "There was nothing written on it."
+          ]
         },
         {
           "num": 8,
           "prompt": "(a course / begin / next Monday)",
-          "answers": ["There\u2019s a course beginning next Monday."]
+          "answers": [
+            "There’s a course beginning next Monday."
+          ]
         }
       ]
     }

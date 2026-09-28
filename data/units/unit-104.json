@@ -48,32 +48,32 @@
       "items": [
         {
           "num": 2,
-          "parts": ["Tom likes to sing. He has ", "."],
+          "parts": ["Tom likes to sing. He has ", "(voice / quite / good / a)."],
           "answers": [["quite a good voice"]]
         },
         {
           "num": 3,
-          "parts": ["The bus stop wasn\u2019t near the hotel. We had to walk ", "."],
+          "parts": ["The bus stop wasn\u2019t near the hotel. We had to walk ", "(quite / way / a / long)."],
           "answers": [["quite a long way"]]
         },
         {
           "num": 4,
-          "parts": ["It\u2019s not so warm today. There\u2019s ", "."],
+          "parts": ["It\u2019s not so warm today. There\u2019s ", "(a / wind / cold / pretty)."],
           "answers": [["a pretty cold wind"]]
         },
         {
           "num": 5,
-          "parts": ["The roads were busy. There was ", "."],
+          "parts": ["The roads were busy. There was ", "(lot / traffic / a / of / quite)."],
           "answers": [["quite a lot of traffic"]]
         },
         {
           "num": 6,
-          "parts": ["I\u2019m tired. I\u2019ve had ", "."],
+          "parts": ["I\u2019m tired. I\u2019ve had ", "(pretty / day / a / busy)."],
           "answers": [["a pretty busy day"]]
         },
         {
           "num": 7,
-          "parts": ["Sarah hasn\u2019t been working here long. She ", "."],
+          "parts": ["Sarah hasn\u2019t been working here long. She ", "(fairly / started / recently)."],
           "answers": [["started fairly recently"]]
         }
       ]

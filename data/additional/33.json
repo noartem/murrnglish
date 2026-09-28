@@ -2,87 +2,217 @@
   "id": 33,
   "topic": "Prepositions (time)",
   "refs": "Units 12, 119–122",
-  "pdfPages": [333, 334],
+  "pdfPages": [
+    333
+  ],
   "exercise": {
     "id": "33",
     "type": "fill-in",
     "instruction": "Put in one of the following: at on in during for since by until",
-    "wordBank": ["at", "on", "in", "during", "for", "since", "by", "until"],
+    "wordBank": [
+      "at",
+      "on",
+      "in",
+      "during",
+      "for",
+      "since",
+      "by",
+      "until"
+    ],
     "items": [
       {
         "num": 1,
-        "parts": ["Jack has gone away. He'll be back ", " a week."],
-        "answers": [["in"]]
+        "parts": [
+          "Jack has gone away. He'll be back ",
+          " a week."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 2,
-        "parts": ["We're having a party ", " Saturday. Can you come?"],
-        "answers": [["on"]]
+        "parts": [
+          "We're having a party ",
+          " Saturday. Can you come?"
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 3,
-        "parts": ["I've got an interview next week. It's ", " Tuesday morning ", " 9.30."],
-        "answers": [["on"], ["at"]]
+        "parts": [
+          "I've got an interview next week. It's ",
+          " Tuesday morning ",
+          " 9.30."
+        ],
+        "answers": [
+          [
+            "on"
+          ],
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 4,
-        "parts": ["Sue isn't usually here ", " weekends. She goes away."],
-        "answers": [["at", "on"]]
+        "parts": [
+          "Sue isn't usually here ",
+          " weekends. She goes away."
+        ],
+        "answers": [
+          [
+            "at",
+            "on"
+          ]
+        ]
       },
       {
         "num": 5,
-        "parts": ["The train service is very good. The trains are nearly always ", " time."],
-        "answers": [["on"]]
+        "parts": [
+          "The train service is very good. The trains are nearly always ",
+          " time."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 6,
-        "parts": ["It was a confusing situation. Many things were happening ", " the same time."],
-        "answers": [["at"]]
+        "parts": [
+          "It was a confusing situation. Many things were happening ",
+          " the same time."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 7,
-        "parts": ["I couldn't decide whether or not to buy the sweater. ", " the end I decided not to."],
-        "answers": [["In"]]
+        "parts": [
+          "I couldn't decide whether or not to buy the sweater. ",
+          " the end I decided not to."
+        ],
+        "answers": [
+          [
+            "In"
+          ]
+        ]
       },
       {
         "num": 8,
-        "parts": ["The road is busy all the time, even ", " night."],
-        "answers": [["at"]]
+        "parts": [
+          "The road is busy all the time, even ",
+          " night."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 9,
-        "parts": ["I met a lot of nice people ", " my stay in New York."],
-        "answers": [["during"]]
+        "parts": [
+          "I met a lot of nice people ",
+          " my stay in New York."
+        ],
+        "answers": [
+          [
+            "during"
+          ]
+        ]
       },
       {
         "num": 10,
-        "parts": ["I saw Helen ", " Friday, but I haven't seen her ", " then."],
-        "answers": [["on"], ["since"]]
+        "parts": [
+          "I saw Helen ",
+          " Friday, but I haven't seen her ",
+          " then."
+        ],
+        "answers": [
+          [
+            "on"
+          ],
+          [
+            "since"
+          ]
+        ]
       },
       {
         "num": 11,
-        "parts": ["Robert has been doing the same job ", " five years."],
-        "answers": [["for"]]
+        "parts": [
+          "Robert has been doing the same job ",
+          " five years."
+        ],
+        "answers": [
+          [
+            "for"
+          ]
+        ]
       },
       {
         "num": 12,
-        "parts": ["Lisa's birthday is ", " the end of March. I'm not sure exactly which day it is."],
-        "answers": [["at"]]
+        "parts": [
+          "Lisa's birthday is ",
+          " the end of March. I'm not sure exactly which day it is."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 13,
-        "parts": ["We have friends staying with us ", " the moment. They're staying ", " Friday."],
-        "answers": [["at"], ["until"]]
+        "parts": [
+          "We have friends staying with us ",
+          " the moment. They're staying ",
+          " Friday."
+        ],
+        "answers": [
+          [
+            "at"
+          ],
+          [
+            "until"
+          ]
+        ]
       },
       {
         "num": 14,
-        "parts": ["If you're interested in applying for the job, your application must be received ", " Friday."],
-        "answers": [["by"]]
+        "parts": [
+          "If you're interested in applying for the job, your application must be received ",
+          " Friday."
+        ],
+        "answers": [
+          [
+            "by"
+          ]
+        ]
       },
       {
         "num": 15,
-        "parts": ["I'm just going out. I won't be long \u2013 I'll be back ", " ten minutes."],
-        "answers": [["in"]]
+        "parts": [
+          "I'm just going out. I won't be long – I'll be back ",
+          " ten minutes."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
       }
     ]
   }

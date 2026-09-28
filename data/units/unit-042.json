@@ -1,73 +1,174 @@
 {
   "unit": 42,
   "title": "Passive 1 (is done / was done)",
-  "pdfPages": [96, 97],
+  "pdfPages": [
+    96,
+    97
+  ],
   "exercises": [
     {
       "id": "42.1",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use these verbs in the correct form, present or past:",
-      "wordBank": ["cause", "damage", "find", "hold", "injure", "invite", "make", "overtake", "own", "send", "show", "surround"],
+      "wordBank": [
+        "cause",
+        "damage",
+        "find",
+        "hold",
+        "injure",
+        "invite",
+        "make",
+        "overtake",
+        "own",
+        "send",
+        "show",
+        "surround"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["Many accidents ", " by careless driving."],
-          "answers": [["are caused"]]
+          "parts": [
+            "Many accidents ",
+            " by careless driving."
+          ],
+          "answers": [
+            [
+              "are caused"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["Cheese ", " from milk."],
-          "answers": [["is made"]]
+          "parts": [
+            "Cheese ",
+            " from milk."
+          ],
+          "answers": [
+            [
+              "is made"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["The roof of the building ", " in a storm a few days ago."],
-          "answers": [["was damaged"]]
+          "parts": [
+            "The roof of the building ",
+            " in a storm a few days ago."
+          ],
+          "answers": [
+            [
+              "was damaged"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["A cinema is a place where films ", "."],
-          "answers": [["are shown"]]
+          "parts": [
+            "A cinema is a place where films ",
+            "."
+          ],
+          "answers": [
+            [
+              "are shown"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["You ", " to the party. Why didn't you go?"],
-          "answers": [["were invited"]]
+          "parts": [
+            "You ",
+            " to the party. Why didn't you go?"
+          ],
+          "answers": [
+            [
+              "were invited"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["This plant is very rare. It ", " in very few places."],
-          "answers": [["'s/is found"]]
+          "parts": [
+            "This plant is very rare. It ",
+            " in very few places."
+          ],
+          "answers": [
+            [
+              "'s/is found"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Although we were driving fast, we ", " by a lot of other cars."],
-          "answers": [["were overtaken"]]
+          "parts": [
+            "Although we were driving fast, we ",
+            " by a lot of other cars."
+          ],
+          "answers": [
+            [
+              "were overtaken"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["In the US, elections for president ", " every four years."],
-          "answers": [["are held"]]
+          "parts": [
+            "In the US, elections for president ",
+            " every four years."
+          ],
+          "answers": [
+            [
+              "are held"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["There was an accident last night, but fortunately nobody ", "."],
-          "answers": [["was injured"]]
+          "parts": [
+            "There was an accident last night, but fortunately nobody ",
+            "."
+          ],
+          "answers": [
+            [
+              "was injured"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["You can't see the house from the road. It ", " by trees."],
-          "answers": [["is surrounded"]]
+          "parts": [
+            "You can't see the house from the road. It ",
+            " by trees."
+          ],
+          "answers": [
+            [
+              "is surrounded"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["I never received the letter. It ", " to the wrong address."],
-          "answers": [["was sent"]]
+          "parts": [
+            "I never received the letter. It ",
+            " to the wrong address."
+          ],
+          "answers": [
+            [
+              "was sent"
+            ]
+          ]
         },
         {
           "num": 12,
-          "parts": ["The company I work for ", " by a much larger company."],
-          "answers": [["is owned"]]
+          "parts": [
+            "The company I work for ",
+            " by a much larger company."
+          ],
+          "answers": [
+            [
+              "is owned"
+            ]
+          ]
         }
       ]
     },
@@ -79,27 +180,37 @@
         {
           "num": 1,
           "prompt": "(how / make?)",
-          "answers": ["How is glass made?"]
+          "answers": [
+            "How is glass made?"
+          ]
         },
         {
           "num": 2,
           "prompt": "(when / invent?)",
-          "answers": ["When was television invented?"]
+          "answers": [
+            "When was television invented?"
+          ]
         },
         {
           "num": 3,
           "prompt": "(how / form?)",
-          "answers": ["How are mountains formed?"]
+          "answers": [
+            "How are mountains formed?"
+          ]
         },
         {
           "num": 4,
           "prompt": "(when / discover?)",
-          "answers": ["When was DNA discovered?"]
+          "answers": [
+            "When was DNA discovered?"
+          ]
         },
         {
           "num": 5,
           "prompt": "(what / use for?)",
-          "answers": ["What is silver used for?"]
+          "answers": [
+            "What is silver used for?"
+          ]
         }
       ]
     },
@@ -110,47 +221,74 @@
       "items": [
         {
           "num": 1,
-          "options": ["a Two hundred people are employed by the company.", "b The company employs 200 people."],
+          "options": [
+            "a Two hundred people are employed by the company.",
+            "b The company employs 200 people."
+          ],
           "answer": 0
         },
         {
           "num": 2,
-          "options": ["a covers", "b is covered"],
+          "options": [
+            "a covers",
+            "b is covered"
+          ],
           "answer": 0
         },
         {
           "num": 3,
-          "options": ["a was stolen", "b disappeared"],
+          "options": [
+            "a was stolen",
+            "b disappeared"
+          ],
           "answer": 0
         },
         {
           "num": 4,
-          "options": ["a died", "b were brought up"],
+          "options": [
+            "a died",
+            "b were brought up"
+          ],
           "answer": 0
         },
         {
           "num": 5,
-          "options": ["a sank", "b was rescued"],
+          "options": [
+            "a sank",
+            "b was rescued"
+          ],
           "answer": 0
         },
         {
           "num": 6,
-          "options": ["a was fired", "b resigned"],
+          "options": [
+            "a was fired",
+            "b resigned"
+          ],
           "answer": 0
         },
         {
           "num": 7,
-          "options": ["a doesn't bother", "b 'm/am not bothered"],
+          "options": [
+            "a doesn't bother",
+            "b 'm/am not bothered"
+          ],
           "answer": 0
         },
         {
           "num": 8,
-          "options": ["a was knocked", "b fell"],
+          "options": [
+            "a was knocked",
+            "b fell"
+          ],
           "answer": 0
         },
         {
           "num": 9,
-          "options": ["a are they called", "b do you call"],
+          "options": [
+            "a are they called",
+            "b do you call"
+          ],
           "answer": 0
         }
       ]
@@ -163,42 +301,58 @@
         {
           "num": 1,
           "prompt": "Somebody cleans the room every day.",
-          "answers": ["The room is cleaned every day."]
+          "answers": [
+            "The room is cleaned every day."
+          ]
         },
         {
           "num": 2,
           "prompt": "They cancelled all flights because of fog.",
-          "answers": ["All flights were cancelled because of fog."]
+          "answers": [
+            "All flights were cancelled because of fog."
+          ]
         },
         {
           "num": 3,
           "prompt": "Somebody accused me of stealing money.",
-          "answers": ["I was accused of stealing money."]
+          "answers": [
+            "I was accused of stealing money."
+          ]
         },
         {
           "num": 4,
           "prompt": "How do you use this word?",
-          "answers": ["How is this word used?"]
+          "answers": [
+            "How is this word used?"
+          ]
         },
         {
           "num": 5,
           "prompt": "The price includes all taxes.",
-          "answers": ["All taxes are included in the price."]
+          "answers": [
+            "All taxes are included in the price."
+          ]
         },
         {
           "num": 6,
           "prompt": "People warned us not to go out alone.",
-          "answers": ["We were warned not to go out alone."]
+          "answers": [
+            "We were warned not to go out alone."
+          ]
         },
         {
           "num": 7,
           "prompt": "We don't use this office any more.",
-          "answers": ["This office isn't / is not used any more."]
+          "answers": [
+            "This office isn't / is not used any more."
+          ]
         },
         {
           "num": 8,
           "prompt": "They invited five hundred people to the wedding.",
-          "answers": ["Five hundred people were invited to the wedding."]
+          "answers": [
+            "Five hundred people were invited to the wedding."
+          ]
         }
       ]
     }

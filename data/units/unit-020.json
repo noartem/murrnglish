@@ -1,7 +1,10 @@
 {
   "unit": 20,
-  "title": "I\u2019m going to (do)",
-  "pdfPages": [52, 53],
+  "title": "I’m going to (do)",
+  "pdfPages": [
+    52,
+    53
+  ],
   "exercises": [
     {
       "id": "20.1",
@@ -11,80 +14,164 @@
         {
           "num": 1,
           "prompt": "(what / do?)",
-          "answers": ["What are you going to do with it?"]
+          "answers": [
+            "What are you going to do with it?"
+          ]
         },
         {
           "num": 2,
           "prompt": "(what / wear?)",
-          "answers": ["What are you going to wear?"]
+          "answers": [
+            "What are you going to wear?"
+          ]
         },
         {
           "num": 3,
           "prompt": "(where / put?)",
-          "answers": ["Where are you going to put it?"]
+          "answers": [
+            "Where are you going to put it?"
+          ]
         },
         {
           "num": 4,
           "prompt": "(who / invite?)",
-          "answers": ["Who are you going to invite?"]
+          "answers": [
+            "Who are you going to invite?"
+          ]
         },
         {
           "num": 5,
           "prompt": "(how / cook?)",
-          "answers": ["How are you going to cook it?"]
+          "answers": [
+            "How are you going to cook it?"
+          ]
         }
       ]
     },
     {
       "id": "20.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using I\u2019m going to \u2026 / I\u2019m not going to \u2026. Choose from:",
-      "wordBank": ["complain", "learn", "run", "say", "try", "wash", "not/accept", "not/eat", "not/tell"],
+      "instruction": "Complete the sentences using I’m going to … / I’m not going to …. Choose from:",
+      "wordBank": [
+        "complain",
+        "learn",
+        "run",
+        "say",
+        "try",
+        "wash",
+        "not/accept",
+        "not/eat",
+        "not/tell"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["This cheese smells horrible. I\u2019m not going to ", "."],
-          "answers": [["eat it"]]
+          "parts": [
+            "This cheese smells horrible. I’m not going to ",
+            "."
+          ],
+          "answers": [
+            [
+              "eat it"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["I haven\u2019t been trying hard enough. From now on I\u2019m going to ", "."],
-          "answers": [["try"]]
+          "parts": [
+            "I haven’t been trying hard enough. From now on I’m going to ",
+            "."
+          ],
+          "answers": [
+            [
+              "try"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I have to make a speech tomorrow, but I don\u2019t know what ", "."],
-          "answers": [["I\u2019m going to say"]]
+          "parts": [
+            "I have to make a speech tomorrow, but I don’t know what ",
+            "."
+          ],
+          "answers": [
+            [
+              "I’m going to say"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["\u2018The car is very dirty.\u2019 \u2018I know. I\u2019m going to ", " it.\u2019"],
-          "answers": [["wash"]]
+          "parts": [
+            "‘The car is very dirty.’ ‘I know. I’m going to ",
+            " it.’"
+          ],
+          "answers": [
+            [
+              "wash"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I\u2019ve been offered a job, but I\u2019m not going to ", " it. The pay is too low."],
-          "answers": [["accept"]]
+          "parts": [
+            "I’ve been offered a job, but I’m not going to ",
+            " it. The pay is too low."
+          ],
+          "answers": [
+            [
+              "accept"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I\u2019m going to ", " a language, but I haven\u2019t decided yet which one."],
-          "answers": [["learn"]]
+          "parts": [
+            "I’m going to ",
+            " a language, but I haven’t decided yet which one."
+          ],
+          "answers": [
+            [
+              "learn"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["One day I\u2019m going to ", " in a marathon. It\u2019s my ambition."],
-          "answers": [["run"]]
+          "parts": [
+            "One day I’m going to ",
+            " in a marathon. It’s my ambition."
+          ],
+          "answers": [
+            [
+              "run"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["The food in this restaurant is awful. I\u2019m going to ", "."],
-          "answers": [["complain"]]
+          "parts": [
+            "The food in this restaurant is awful. I’m going to ",
+            "."
+          ],
+          "answers": [
+            [
+              "complain"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["Ben doesn\u2019t need to know what happened, so I\u2019m not going to ", " him."],
-          "answers": [["tell"]]
+          "parts": [
+            "Ben doesn’t need to know what happened, so I’m not going to ",
+            " him."
+          ],
+          "answers": [
+            [
+              "tell"
+            ]
+          ]
         }
       ]
     },
@@ -95,28 +182,63 @@
       "items": [
         {
           "num": 1,
-          "parts": ["There are a lot of black clouds in the sky. ", "."],
-          "answers": [["It\u2019s going to rain"]]
+          "parts": [
+            "There are a lot of black clouds in the sky. ",
+            ". (rain)"
+          ],
+          "answers": [
+            [
+              "It’s going to rain"
+            ]
+          ]
         },
         {
           "num": 2,
-          "parts": ["He ", "."],
-          "answers": [["is going to be late"]]
+          "parts": [
+            "He ",
+            ". (late)"
+          ],
+          "answers": [
+            [
+              "is going to be late"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["The boat ", "."],
-          "answers": [["is going to sink"]]
+          "parts": [
+            "The boat ",
+            ". (sink)"
+          ],
+          "answers": [
+            [
+              "is going to sink"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["They ", "."],
-          "answers": [["are going to run out of petrol"]]
+          "parts": [
+            "(run out) They ",
+            "."
+          ],
+          "answers": [
+            [
+              "are going to run out of petrol"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["It ", " to repair the car."],
-          "answers": [["is going to cost a lot (of money)"]]
+          "parts": [
+            "(cost a lot) It ",
+            " to repair the car."
+          ],
+          "answers": [
+            [
+              "is going to cost a lot (of money)"
+            ]
+          ]
         }
       ]
     },
@@ -124,42 +246,104 @@
       "id": "20.4",
       "type": "fill-in",
       "instruction": "Complete the sentences with was/were going to. Choose from:",
-      "wordBank": ["be", "buy", "give up", "phone", "play", "say", "travel"],
+      "wordBank": [
+        "be",
+        "buy",
+        "give up",
+        "phone",
+        "play",
+        "say",
+        "travel"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["We ", " by train, but then we decided to go by car instead."],
-          "answers": [["were going to travel"]]
+          "parts": [
+            "We ",
+            " by train, but then we decided to go by car instead."
+          ],
+          "answers": [
+            [
+              "were going to travel"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["I ", " some new clothes yesterday, but I didn\u2019t have time to go to the shops."],
-          "answers": [["was going to buy"]]
+          "parts": [
+            "I ",
+            " some new clothes yesterday, but I didn’t have time to go to the shops."
+          ],
+          "answers": [
+            [
+              "was going to buy"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Tom and I ", " tennis last week, but he\u2019d hurt his knee and had to cancel."],
-          "answers": [["were going to play"]]
+          "parts": [
+            "Tom and I ",
+            " tennis last week, but he’d hurt his knee and had to cancel."
+          ],
+          "answers": [
+            [
+              "were going to play"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I ", " Jane, but I sent her an email instead."],
-          "answers": [["was going to phone"]]
+          "parts": [
+            "I ",
+            " Jane, but I sent her an email instead."
+          ],
+          "answers": [
+            [
+              "was going to phone"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I thought the exam ", " hard, but it was easier than I expected."],
-          "answers": [["was going to be"]]
+          "parts": [
+            "I thought the exam ",
+            " hard, but it was easier than I expected."
+          ],
+          "answers": [
+            [
+              "was going to be"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Peter ", " his job, but in the end he decided to stay where he was."],
-          "answers": [["was going to give up"]]
+          "parts": [
+            "Peter ",
+            " his job, but in the end he decided to stay where he was."
+          ],
+          "answers": [
+            [
+              "was going to give up"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I\u2019m sorry I interrupted you. What ", " you ", "?"],
-          "answers": [["were"], ["going to say"]]
+          "parts": [
+            "I’m sorry I interrupted you. What ",
+            " you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "were"
+            ],
+            [
+              "going to say"
+            ]
+          ]
         }
       ]
     }

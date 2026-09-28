@@ -1,7 +1,10 @@
 {
   "unit": 10,
   "title": "Present perfect continuous and simple (I have been doing and I have done)",
-  "pdfPages": [32, 33],
+  "pdfPages": [
+    32,
+    33
+  ],
   "exercises": [
     {
       "id": "10.1",
@@ -10,23 +13,74 @@
       "items": [
         {
           "num": 1,
-          "parts": ["He ", " for two hours. (read)\nHe ", " 53 pages so far. (read)"],
-          "answers": [["has been reading"], ["has read"]]
+          "parts": [
+            "He ",
+            " for two hours. (read)\nHe ",
+            " 53 pages so far. (read)"
+          ],
+          "answers": [
+            [
+              "has been reading"
+            ],
+            [
+              "has read"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["She ", " for three months. (travel)\n", " six countries so far. (visit)"],
-          "answers": [["She\u2019s been travelling", "She has been travelling"], ["She\u2019s visited", "She has visited"]]
+          "parts": [
+            "She ",
+            " for three months. (travel)\n",
+            " six countries so far. (visit)"
+          ],
+          "answers": [
+            [
+              "She’s been travelling",
+              "She has been travelling"
+            ],
+            [
+              "She’s visited",
+              "She has visited"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["", " the national championship four times. (win)\n", " since he was ten. (play)"],
-          "answers": [["He\u2019s won", "He has won"], ["He\u2019s been playing tennis", "He has been playing tennis"]]
+          "parts": [
+            "",
+            " the national championship four times. (win)\n",
+            " since he was ten. (play)"
+          ],
+          "answers": [
+            [
+              "He’s won",
+              "He has won"
+            ],
+            [
+              "He’s been playing tennis",
+              "He has been playing tennis"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["They ", " films since they left college. (make)\n", " five films since they left college. (make)"],
-          "answers": [["They\u2019ve been making", "They have been making"], ["They\u2019ve made", "They have made"]]
+          "parts": [
+            "They ",
+            " films since they left college. (make)\n",
+            " five films since they left college. (make)"
+          ],
+          "answers": [
+            [
+              "They’ve been making",
+              "They have been making"
+            ],
+            [
+              "They’ve made",
+              "They have made"
+            ]
+          ]
         }
       ]
     },
@@ -35,15 +89,69 @@
       "type": "write",
       "instruction": "Ask questions using the words in brackets. Use the present perfect simple (have/has done) or continuous (have/has been doing).",
       "items": [
-        {"num": 1, "prompt": "(how long / learn / Arabic?)", "answers": ["How long have you been learning Arabic?"]},
-        {"num": 2, "prompt": "(wait / long?)", "answers": ["Have you been waiting long?"]},
-        {"num": 3, "prompt": "(catch / any fish?)", "answers": ["Have you caught any fish?"]},
-        {"num": 4, "prompt": "(how many people / invite?)", "answers": ["How many people have you invited?"]},
-        {"num": 5, "prompt": "(how long / teach?)", "answers": ["How long have you been teaching?"]},
-        {"num": 6, "prompt": "(how many books / write?)", "answers": ["How many books have you written?"]},
-        {"num": 7, "prompt": "(how long / write / books?)", "answers": ["How long have you been writing books?"]},
-        {"num": 8, "prompt": "(how long / save?)", "answers": ["How long have you been saving (money)?"]},
-        {"num": 9, "prompt": "(how much money / save?)", "answers": ["How much money have you saved?"]}
+        {
+          "num": 1,
+          "prompt": "(how long / learn / Arabic?)",
+          "answers": [
+            "How long have you been learning Arabic?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(wait / long?)",
+          "answers": [
+            "Have you been waiting long?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(catch / any fish?)",
+          "answers": [
+            "Have you caught any fish?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(how many people / invite?)",
+          "answers": [
+            "How many people have you invited?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(how long / teach?)",
+          "answers": [
+            "How long have you been teaching?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(how many books / write?)",
+          "answers": [
+            "How many books have you written?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(how long / write / books?)",
+          "answers": [
+            "How long have you been writing books?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(how long / save?)",
+          "answers": [
+            "How long have you been saving (money)?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(how much money / save?)",
+          "answers": [
+            "How much money have you saved?"
+          ]
+        }
       ]
     },
     {
@@ -51,21 +159,205 @@
       "type": "fill-in",
       "instruction": "Put the verb into the present perfect simple or continuous.",
       "items": [
-        {"num": 1, "parts": ["Where have you been? ", " (you / play) tennis?"], "answers": [["Have you been playing"]]},
-        {"num": 2, "parts": ["Look! ", " (somebody / break) that window."], "answers": [["Somebody\u2019s broken", "Somebody has broken"]]},
-        {"num": 3, "parts": ["You look tired. ", " (you / work) hard?"], "answers": [["Have you been working"]]},
-        {"num": 4, "parts": ["\u2018", " (you / ever / work) in a factory?\u2019 \u2018No, never.\u2019"], "answers": [["Have you ever worked"]]},
-        {"num": 5, "parts": ["Where\u2019s Lisa? Where ", " (she / go)?"], "answers": [["has she gone"]]},
-        {"num": 6, "parts": ["This is a very old book. ", " (I / have) it since I was a child."], "answers": [["I\u2019ve had", "I have had"]]},
-        {"num": 7, "parts": ["\u2018Have you been busy?\u2019 \u2018No, ", " (I / watch) TV.\u2019"], "answers": [["I\u2019ve been watching", "I have been watching"]]},
-        {"num": 8, "parts": ["My brother is an actor. ", " (he / appear) in several films."], "answers": [["He\u2019s appeared", "He has appeared"]]},
-        {"num": 9, "parts": ["\u2018Sorry I\u2019m late.\u2019 \u2018That\u2019s all right. ", " (I / not / wait) long.\u2019"], "answers": [["I haven\u2019t been waiting"]]},
-        {"num": 10, "parts": ["Are you OK? You look as if ", " (you / cry)."], "answers": [["you\u2019ve been crying", "you have been crying"]]},
-        {"num": 11, "parts": ["\u2018Is it still raining?\u2019 \u2018No, ", " (it / stop).\u2019"], "answers": [["it\u2019s stopped", "it has stopped"]]},
-        {"num": 12, "parts": ["The children are tired now. ", " (they / play) in the garden."], "answers": [["They\u2019ve been playing", "They have been playing"]]},
-        {"num": 13, "parts": ["", " (I / lose) my phone. ", " (you / see) it?"], "answers": [["I\u2019ve lost", "I have lost"], ["Have you seen"]]},
-        {"num": 14, "parts": ["", " (I / read) the book you lent me, but ", " (I / not / finish) it yet."], "answers": [["I\u2019ve been reading", "I have been reading"], ["I haven\u2019t finished"]]},
-        {"num": 15, "parts": ["", " (I / read) the book you lent me, so you can have it back now."], "answers": [["I\u2019ve read", "I have read"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Where have you been? ",
+            " (you / play) tennis?"
+          ],
+          "answers": [
+            [
+              "Have you been playing"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Look! ",
+            " (somebody / break) that window."
+          ],
+          "answers": [
+            [
+              "Somebody’s broken",
+              "Somebody has broken"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "You look tired. ",
+            " (you / work) hard?"
+          ],
+          "answers": [
+            [
+              "Have you been working"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "‘",
+            " (you / ever / work) in a factory?’ ‘No, never.’"
+          ],
+          "answers": [
+            [
+              "Have you ever worked"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Where’s Lisa? Where ",
+            " (she / go)?"
+          ],
+          "answers": [
+            [
+              "has she gone"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "This is a very old book. ",
+            " (I / have) it since I was a child."
+          ],
+          "answers": [
+            [
+              "I’ve had",
+              "I have had"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "‘Have you been busy?’ ‘No, ",
+            " (I / watch) TV.’"
+          ],
+          "answers": [
+            [
+              "I’ve been watching",
+              "I have been watching"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "My brother is an actor. ",
+            " (he / appear) in several films."
+          ],
+          "answers": [
+            [
+              "He’s appeared",
+              "He has appeared"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "‘Sorry I’m late.’ ‘That’s all right. ",
+            " (I / not / wait) long.’"
+          ],
+          "answers": [
+            [
+              "I haven’t been waiting"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Are you OK? You look as if ",
+            " (you / cry)."
+          ],
+          "answers": [
+            [
+              "you’ve been crying",
+              "you have been crying"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "‘Is it still raining?’ ‘No, ",
+            " (it / stop).’"
+          ],
+          "answers": [
+            [
+              "it’s stopped",
+              "it has stopped"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "The children are tired now. ",
+            " (they / play) in the garden."
+          ],
+          "answers": [
+            [
+              "They’ve been playing",
+              "They have been playing"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "",
+            " (I / lose) my phone. ",
+            " (you / see) it?"
+          ],
+          "answers": [
+            [
+              "I’ve lost",
+              "I have lost"
+            ],
+            [
+              "Have you seen"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "",
+            " (I / read) the book you lent me, but ",
+            " (I / not / finish) it yet."
+          ],
+          "answers": [
+            [
+              "I’ve been reading",
+              "I have been reading"
+            ],
+            [
+              "I haven’t finished"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "",
+            " (I / read) the book you lent me, so you can have it back now."
+          ],
+          "answers": [
+            [
+              "I’ve read",
+              "I have read"
+            ]
+          ]
+        }
       ]
     }
   ]

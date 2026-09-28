@@ -1,19 +1,88 @@
 {
   "unit": 91,
   "title": "each and every",
-  "pdfPages": [194, 195],
+  "pdfPages": [
+    194,
+    195
+  ],
   "exercises": [
     {
       "id": "91.1",
       "type": "fill-in",
       "instruction": "Look at the pictures and complete the sentences with each or every.",
       "items": [
-        {"num": 3, "parts": ["", " side of a square is the same length."], "answers": [["Each"]]},
-        {"num": 4, "parts": ["", " seat in the theatre was taken."], "answers": [["Every"]]},
-        {"num": 5, "parts": ["There are six apartments in the building. ", " one has a balcony."], "answers": [["Each"]]},
-        {"num": 6, "parts": ["There\u2019s a train to London ", " hour."], "answers": [["every"]]},
-        {"num": 7, "parts": ["She was wearing four rings \u2013 one on ", " finger."], "answers": [["each"]]},
-        {"num": 8, "parts": ["Our football team is playing well. We\u2019ve won ", " game this season."], "answers": [["every"]]}
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " side of a square is the same length."
+          ],
+          "answers": [
+            [
+              "Each"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " seat in the theatre was taken."
+          ],
+          "answers": [
+            [
+              "Every"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "There are six apartments in the building. ",
+            " one has a balcony."
+          ],
+          "answers": [
+            [
+              "Each"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "There’s a train to London ",
+            " hour."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "She was wearing four rings – one on ",
+            " finger."
+          ],
+          "answers": [
+            [
+              "each"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Our football team is playing well. We’ve won ",
+            " game this season."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -21,18 +90,152 @@
       "type": "fill-in",
       "instruction": "Put in each, each of or every.",
       "items": [
-        {"num": 1, "parts": ["There were four books on the table. ", " book was a different colour."], "answers": [["Each"]]},
-        {"num": 2, "parts": ["The Olympic Games are held ", " four years."], "answers": [["every"]]},
-        {"num": 3, "parts": ["", " parent worries about their children."], "answers": [["Every"]]},
-        {"num": 4, "parts": ["In a game of tennis there are two or four players. ", " player has a racket."], "answers": [["Each"]]},
-        {"num": 5, "parts": ["Nicola plays volleyball ", " Thursday evening."], "answers": [["every"]]},
-        {"num": 6, "parts": ["I understood most of what they said but not ", " word."], "answers": [["every"]]},
-        {"num": 7, "parts": ["The book is divided into five parts and ", " these has three sections."], "answers": [["each of"]]},
-        {"num": 8, "parts": ["I get paid ", " four weeks."], "answers": [["every"]]},
-        {"num": 9, "parts": ["I called the office two or three times, but ", " time it was closed."], "answers": [["each"]]},
-        {"num": 10, "parts": ["Car seat belts save lives. ", " driver should wear one."], "answers": [["Every"]]},
-        {"num": 11, "parts": ["A friend of mine has three children. I always give ", " them a present at Christmas."], "answers": [["each of"]]},
-        {"num": 12, "parts": ["(from an exam) Answer all five questions. Write your answer to ", " question on a separate sheet of paper."], "answers": [["each"]]}
+        {
+          "num": 1,
+          "parts": [
+            "There were four books on the table. ",
+            " book was a different colour."
+          ],
+          "answers": [
+            [
+              "Each"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The Olympic Games are held ",
+            " four years."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " parent worries about their children."
+          ],
+          "answers": [
+            [
+              "Every"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "In a game of tennis there are two or four players. ",
+            " player has a racket."
+          ],
+          "answers": [
+            [
+              "Each"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Nicola plays volleyball ",
+            " Thursday evening."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I understood most of what they said but not ",
+            " word."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "The book is divided into five parts and ",
+            " these has three sections."
+          ],
+          "answers": [
+            [
+              "each of"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I get paid ",
+            " four weeks."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I called the office two or three times, but ",
+            " time it was closed."
+          ],
+          "answers": [
+            [
+              "each"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Car seat belts save lives. ",
+            " driver should wear one."
+          ],
+          "answers": [
+            [
+              "Every"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "A friend of mine has three children. I always give ",
+            " them a present at Christmas."
+          ],
+          "answers": [
+            [
+              "each of"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "(from an exam) Answer all five questions. Write your answer to ",
+            " question on a separate sheet of paper."
+          ],
+          "answers": [
+            [
+              "each"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -40,10 +243,37 @@
       "type": "write",
       "instruction": "Complete the sentences using each.",
       "items": [
-        {"num": 1, "prompt": "The price of one of those oranges is 40 pence. Those oranges are 40 pence each.", "answers": ["Those oranges are 40 pence each."]},
-        {"num": 2, "prompt": "I had ten pounds and so did Sonia. Sonia and I ___________.", "answers": ["Sonia and I each had ten pounds.", "Sonia and I had ten pounds each."]},
-        {"num": 3, "prompt": "One of those postcards costs a pound. Those ___________.", "answers": ["Those postcards cost a pound each.", "Those postcards are a pound each."]},
-        {"num": 4, "prompt": "The hotel was expensive. I paid 200 dollars and so did you. We ___________.", "answers": ["We each paid 200 dollars.", "We paid 200 dollars each."]}
+        {
+          "num": 1,
+          "prompt": "The price of one of those oranges is 40 pence. Those oranges are 40 pence each.",
+          "answers": [
+            "Those oranges are 40 pence each."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I had ten pounds and so did Sonia. Sonia and I ___________.",
+          "answers": [
+            "Sonia and I each had ten pounds.",
+            "Sonia and I had ten pounds each."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "One of those postcards costs a pound. Those ___________.",
+          "answers": [
+            "Those postcards cost a pound each.",
+            "Those postcards are a pound each."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "The hotel was expensive. I paid 200 dollars and so did you. We ___________.",
+          "answers": [
+            "We each paid 200 dollars.",
+            "We paid 200 dollars each."
+          ]
+        }
       ]
     },
     {
@@ -51,11 +281,67 @@
       "type": "fill-in",
       "instruction": "Put in everyone (1 word) or every one (2 words).",
       "items": [
-        {"num": 1, "parts": ["Sarah is invited to a lot of parties and she goes to ", "."], "answers": [["every one"]]},
-        {"num": 2, "parts": ["I remember school very clearly. I remember ", " in my class."], "answers": [["everyone"]]},
-        {"num": 3, "parts": ["I asked her lots of questions and she answered ", " correctly."], "answers": [["every one"]]},
-        {"num": 4, "parts": ["", " likes her."], "answers": [["Everyone"]]},
-        {"num": 5, "parts": ["I dropped a tray of glasses. Unfortunately ", " broke."], "answers": [["every one"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Sarah is invited to a lot of parties and she goes to ",
+            "."
+          ],
+          "answers": [
+            [
+              "every one"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I remember school very clearly. I remember ",
+            " in my class."
+          ],
+          "answers": [
+            [
+              "everyone"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I asked her lots of questions and she answered ",
+            " correctly."
+          ],
+          "answers": [
+            [
+              "every one"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " likes her."
+          ],
+          "answers": [
+            [
+              "Everyone"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I dropped a tray of glasses. Unfortunately ",
+            " broke."
+          ],
+          "answers": [
+            [
+              "every one"
+            ]
+          ]
+        }
       ]
     }
   ]

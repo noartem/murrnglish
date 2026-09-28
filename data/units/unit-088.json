@@ -1,38 +1,244 @@
 {
   "unit": 88,
   "title": "all / all of most / most of no / none of etc.",
-  "pdfPages": [188, 189],
+  "pdfPages": [
+    188,
+    189
+  ],
   "exercises": [
     {
       "id": "88.1",
       "type": "fill-in",
       "instruction": "Put in of where necessary. Leave the space empty if the sentence is already complete.",
       "items": [
-        {"num": 2, "parts": ["None ", " this money is mine."], "answers": [["of"]]},
-        {"num": 4, "parts": ["Some ", " the films I\u2019ve seen recently have been very violent."], "answers": [["of"]]},
-        {"num": 7, "parts": ["Do you want any ", " these magazines or can I throw them away?"], "answers": [["of"]]},
-        {"num": 8, "parts": ["Kate has lived in London most ", " her life."], "answers": [["of"]]},
-        {"num": 12, "parts": ["They won the lottery a few years ago, but they\u2019ve spent most ", " the money."], "answers": [["of"]]}
+        {
+          "num": 2,
+          "parts": [
+            "None ",
+            " this money is mine."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Some ",
+            " the films I’ve seen recently have been very violent."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Do you want any ",
+            " these magazines or can I throw them away?"
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Kate has lived in London most ",
+            " her life."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "They won the lottery a few years ago, but they’ve spent most ",
+            " the money."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "88.2",
       "type": "fill-in",
       "instruction": "Choose from the list and complete the sentences. Use of (some of / most of etc.) where necessary.",
-      "wordBank": ["accidents", "European countries", "my dinner", "the players", "birds", "her friends", "my spare time", "the population", "cars", "her opinions", "the buildings", "these books"],
+      "wordBank": [
+        "accidents",
+        "European countries",
+        "my dinner",
+        "the players",
+        "birds",
+        "her friends",
+        "my spare time",
+        "the population",
+        "cars",
+        "her opinions",
+        "the buildings",
+        "these books"
+      ],
       "items": [
-        {"num": 1, "parts": ["I haven\u2019t read many of ", "."], "answers": [["these books"]]},
-        {"num": 2, "parts": ["All ", " have wheels."], "answers": [["cars"]]},
-        {"num": 3, "parts": ["I spend much ", " gardening."], "answers": [["of my spare time"]]},
-        {"num": 4, "parts": ["Many ", " are caused by bad driving."], "answers": [["accidents"]]},
-        {"num": 5, "parts": ["It\u2019s a historic town. Many ", " are over 400 years old."], "answers": [["the buildings"]]},
-        {"num": 6, "parts": ["When Emily got married, she kept it a secret. She didn\u2019t tell any ", "."], "answers": [["of her friends"]]},
-        {"num": 7, "parts": ["Not many people live in the north of the country. Most ", " live in the south."], "answers": [["of the population"]]},
-        {"num": 8, "parts": ["Not all ", " can fly. For example, the penguin can\u2019t fly."], "answers": [["birds"]]},
-        {"num": 9, "parts": ["Our team played badly and lost the game. None ", " played well."], "answers": [["of the players"]]},
-        {"num": 10, "parts": ["Emma and I have different ideas. I don\u2019t agree with many ", "."], "answers": [["of her opinions"]]},
-        {"num": 11, "parts": ["Sarah travels a lot in Europe. She has been to most ", "."], "answers": [["European countries"]]},
-        {"num": 12, "parts": ["I had no appetite. I could only eat half ", "."], "answers": [["of my dinner"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I haven’t read many of ",
+            "."
+          ],
+          "answers": [
+            [
+              "these books"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "All ",
+            " have wheels."
+          ],
+          "answers": [
+            [
+              "cars"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I spend much ",
+            " gardening."
+          ],
+          "answers": [
+            [
+              "of my spare time"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Many ",
+            " are caused by bad driving."
+          ],
+          "answers": [
+            [
+              "accidents"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "It’s a historic town. Many ",
+            " are over 400 years old."
+          ],
+          "answers": [
+            [
+              "the buildings"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "When Emily got married, she kept it a secret. She didn’t tell any ",
+            "."
+          ],
+          "answers": [
+            [
+              "of her friends"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Not many people live in the north of the country. Most ",
+            " live in the south."
+          ],
+          "answers": [
+            [
+              "of the population"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Not all ",
+            " can fly. For example, the penguin can’t fly."
+          ],
+          "answers": [
+            [
+              "birds"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Our team played badly and lost the game. None ",
+            " played well."
+          ],
+          "answers": [
+            [
+              "of the players"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Emma and I have different ideas. I don’t agree with many ",
+            "."
+          ],
+          "answers": [
+            [
+              "of her opinions"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Sarah travels a lot in Europe. She has been to most ",
+            "."
+          ],
+          "answers": [
+            [
+              "European countries"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I had no appetite. I could only eat half ",
+            "."
+          ],
+          "answers": [
+            [
+              "of my dinner"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -40,11 +246,43 @@
       "type": "self-check",
       "instruction": "Use your own ideas to complete these sentences.",
       "items": [
-        {"num": 2, "prompt": "We argue sometimes, but get on well most of ___ .", "modelAnswers": ["the time"]},
-        {"num": 3, "prompt": "I went to the cinema by myself. None of ___ wanted to come.", "modelAnswers": ["my friends"]},
-        {"num": 4, "prompt": "The test was hard. I could only answer half ___ .", "modelAnswers": ["of the questions"]},
-        {"num": 5, "prompt": "Some of ___ you took at the wedding were really good.", "modelAnswers": ["the pictures", "the photos", "the photographs"]},
-        {"num": 6, "prompt": "\u2018Did you spend all ___ I gave you?\u2019 \u2018No, there\u2019s some left.\u2019", "modelAnswers": ["of the money"]}
+        {
+          "num": 2,
+          "prompt": "We argue sometimes, but get on well most of ___ .",
+          "modelAnswers": [
+            "the time"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I went to the cinema by myself. None of ___ wanted to come.",
+          "modelAnswers": [
+            "my friends"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "The test was hard. I could only answer half ___ .",
+          "modelAnswers": [
+            "of the questions"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Some of ___ you took at the wedding were really good.",
+          "modelAnswers": [
+            "the pictures",
+            "the photos",
+            "the photographs"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "‘Did you spend all ___ I gave you?’ ‘No, there’s some left.’",
+          "modelAnswers": [
+            "of the money"
+          ]
+        }
       ]
     },
     {
@@ -52,13 +290,90 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Use: all of / some of / none of + it/them/us (all of it / some of them etc.)",
       "items": [
-        {"num": 2, "parts": ["\u2018How many of these books have you read?\u2019 \u2018", ". Every one.\u2019"], "answers": [["All of them"]]},
-        {"num": 3, "parts": ["We all got wet in the rain because ", " had an umbrella."], "answers": [["none of us"]]},
-        {"num": 4, "parts": ["Some of this money is yours and ", " is mine."], "answers": [["some of it"]]},
-        {"num": 5, "parts": ["Many of my friends have travelled a lot, but ", " has ever been to Africa."], "answers": [["none of them"]]},
-        {"num": 6, "parts": ["Not all the tourists in the group were Spanish. ", " were French."], "answers": [["Some of them"]]},
-        {"num": 7, "parts": ["I watched most of the film, but not ", "."], "answers": [["all of it"]]},
-        {"num": 8, "parts": ["He told us his life story, but ", " was true. It was all invented."], "answers": [["none of it"]]}
+        {
+          "num": 2,
+          "parts": [
+            "‘How many of these books have you read?’ ‘",
+            ". Every one.’"
+          ],
+          "answers": [
+            [
+              "All of them"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "We all got wet in the rain because ",
+            " had an umbrella."
+          ],
+          "answers": [
+            [
+              "none of us"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Some of this money is yours and ",
+            " is mine."
+          ],
+          "answers": [
+            [
+              "some of it"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Many of my friends have travelled a lot, but ",
+            " has ever been to Africa."
+          ],
+          "answers": [
+            [
+              "none of them"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Not all the tourists in the group were Spanish. ",
+            " were French."
+          ],
+          "answers": [
+            [
+              "Some of them"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I watched most of the film, but not ",
+            "."
+          ],
+          "answers": [
+            [
+              "all of it"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "He told us his life story, but ",
+            " was true. It was all invented."
+          ],
+          "answers": [
+            [
+              "none of it"
+            ]
+          ]
+        }
       ]
     }
   ]

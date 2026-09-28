@@ -1,104 +1,242 @@
 {
   "unit": 23,
-  "title": "I will and I\u2019m going to",
-  "pdfPages": [58, 59],
+  "title": "I will and I’m going to",
+  "pdfPages": [
+    58,
+    59
+  ],
   "exercises": [
     {
       "id": "23.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using will (\u2019ll) or (be) going to.",
+      "instruction": "Complete the sentences using will (’ll) or (be) going to.",
       "items": [
         {
           "num": 1,
-          "parts": ["a: Why are you turning on the TV?\n           b: ", ". (I / watch)"],
-          "answers": [["I\u2019m going to watch the news"]]
+          "parts": [
+            "a: Why are you turning on the TV?\n           b: ",
+            ". (I / watch)"
+          ],
+          "answers": [
+            [
+              "I’m going to watch the news"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["a: I forgot my wallet. I don\u2019t have any money.\n           b: Not to worry. ", " you some. (I / lend)"],
-          "answers": [["I\u2019ll lend"]]
+          "parts": [
+            "a: I forgot my wallet. I don’t have any money.\n           b: Not to worry. ",
+            " you some. (I / lend)"
+          ],
+          "answers": [
+            [
+              "I’ll lend"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["a: Why are you filling that bucket with water?\n           b: ", " the car. (I / wash)"],
-          "answers": [["I\u2019m going to wash"]]
+          "parts": [
+            "a: Why are you filling that bucket with water?\n           b: ",
+            " the car. (I / wash)"
+          ],
+          "answers": [
+            [
+              "I’m going to wash"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["a: I don\u2019t know how to use the washing machine.\n           b: It\u2019s easy. ", " you. (I / show)"],
-          "answers": [["I\u2019ll show"]]
+          "parts": [
+            "a: I don’t know how to use the washing machine.\n           b: It’s easy. ",
+            " you. (I / show)"
+          ],
+          "answers": [
+            [
+              "I’ll show"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["a: I\u2019ve decided to paint this room.\n           b: That\u2019s nice. What colour ", " it? (you / paint)"],
-          "answers": [["are you going to paint"]]
+          "parts": [
+            "a: I’ve decided to paint this room.\n           b: That’s nice. What colour ",
+            " it? (you / paint)"
+          ],
+          "answers": [
+            [
+              "are you going to paint"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["a: Where are you going? Are you going shopping?\n           b: Yes, ", " some things for dinner tonight. (I / buy)"],
-          "answers": [["I\u2019m going to buy"]]
+          "parts": [
+            "a: Where are you going? Are you going shopping?\n           b: Yes, ",
+            " some things for dinner tonight. (I / buy)"
+          ],
+          "answers": [
+            [
+              "I’m going to buy"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["a: What would you like to eat?\n           b: ", " a pizza, please. (I / have)"],
-          "answers": [["I\u2019ll have"]]
+          "parts": [
+            "a: What would you like to eat?\n           b: ",
+            " a pizza, please. (I / have)"
+          ],
+          "answers": [
+            [
+              "I’ll have"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["a: This food doesn\u2019t taste very good, does it?\n           b: No, it\u2019s horrible. ", " it. (I / not / finish)"],
-          "answers": [["I\u2019m not going to finish"]]
+          "parts": [
+            "a: This food doesn’t taste very good, does it?\n           b: No, it’s horrible. ",
+            " it. (I / not / finish)"
+          ],
+          "answers": [
+            [
+              "I’m not going to finish"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["a: Tom is starting an evening class next month.\n           b: Is he? What ", " ? (he / study)"],
-          "answers": [["(What) is he going to study", "(What)\u2019s he going to study"]]
+          "parts": [
+            "a: Tom is starting an evening class next month.\n           b: Is he? What ",
+            " ? (he / study)"
+          ],
+          "answers": [
+            [
+              "(What) is he going to study",
+              "(What)’s he going to study"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["a: Did you call Lisa?\n           b: Oh, no. I completely forgot. ", " her now. (I / call)"],
-          "answers": [["I\u2019ll call"]]
+          "parts": [
+            "a: Did you call Lisa?\n           b: Oh, no. I completely forgot. ",
+            " her now. (I / call)"
+          ],
+          "answers": [
+            [
+              "I’ll call"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["a: Has Dan decided what to do when he leaves school?\n           b: Yes. Everything is planned. First ", " a holiday for a few weeks. (he / have) Then ", " a management training course. (he / do)"],
-          "answers": [["he\u2019s going to have"], ["he\u2019s going to do"]]
+          "parts": [
+            "a: Has Dan decided what to do when he leaves school?\n           b: Yes. Everything is planned. First ",
+            " a holiday for a few weeks. (he / have) Then ",
+            " a management training course. (he / do)"
+          ],
+          "answers": [
+            [
+              "he’s going to have"
+            ],
+            [
+              "he’s going to do"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "23.2",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences using will (\u2019ll) or (be) going to.",
+      "instruction": "Read the situations and complete the sentences using will (’ll) or (be) going to.",
       "items": [
         {
           "num": 1,
-          "parts": ["", "."],
-          "answers": [["I\u2019m going to make some coffee. Would you like some?"]]
+          "parts": [
+            "",
+            "."
+          ],
+          "answers": [
+            [
+              "I’m going to make some coffee. Would you like some?"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["You say: ", " you at 10.30 in the hotel lobby, OK? (I/see)"],
-          "answers": [["I\u2019ll see"]]
+          "parts": [
+            "You say: ",
+            " you at 10.30 in the hotel lobby, OK? (I/see)"
+          ],
+          "answers": [
+            [
+              "I’ll see"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["You say: I don\u2019t need my car any more. ", " it. (I/sell)"],
-          "answers": [["I\u2019m going to sell"]]
+          "parts": [
+            "You say: I don’t need my car any more. ",
+            " it. (I/sell)"
+          ],
+          "answers": [
+            [
+              "I’m going to sell"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["You say: Don\u2019t worry. I\u2019m sure ", " it. (you/find)"],
-          "answers": [["you\u2019ll find", "you\u2019re going to find"]]
+          "parts": [
+            "You say: Don’t worry. I’m sure ",
+            " it. (you/find)"
+          ],
+          "answers": [
+            [
+              "you’ll find",
+              "you’re going to find"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["You say: This camera is broken. ", " it away. (I/throw)", " it. (I/have)"],
-          "answers": [["I\u2019m going to throw"], ["I\u2019ll have"]]
+          "parts": [
+            "You say: This camera is broken. ",
+            " it away. (I/throw)",
+            " it. (I/have)"
+          ],
+          "answers": [
+            [
+              "I’m going to throw"
+            ],
+            [
+              "I’ll have"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Amy says: Don\u2019t worry about getting to the airport, Joe. ", " you. (I/take)", " me. (Amy/take)"],
-          "answers": [["I\u2019ll take"], ["Amy is going to take"]]
+          "parts": [
+            "Amy says: Don’t worry about getting to the airport, Joe. ",
+            " you. (I/take)",
+            " me. (Amy/take)"
+          ],
+          "answers": [
+            [
+              "I’ll take"
+            ],
+            [
+              "Amy is going to take"
+            ]
+          ]
         }
       ]
     },
@@ -107,26 +245,59 @@
       "type": "matching",
       "instruction": "Which goes with which?",
       "leftOptions": [
-        "Why don\u2019t you come to the party with us?",
+        "Why don’t you come to the party with us?",
         "That ceiling looks dangerous.",
-        "He\u2019s looking very tired.",
+        "He’s looking very tired.",
         "This table is too big.",
         "The weather forecast is good.",
         "Jack is very determined.",
         "They are building a new skyscraper here.",
-        "I haven\u2019t seen Ben for ages."
+        "I haven’t seen Ben for ages."
       ],
       "rightOptions": [
-        "He\u2019ll get what he wants.",
-        "He probably won\u2019t remember me.",
-        "It\u2019s going to be a nice day.",
-        "It looks as if it\u2019s going to fall down.",
-        "It\u2019s going to be 200 metres high.",
-        "You\u2019ll enjoy it.",
-        "I don\u2019t think it will fit in the room.",
-        "I think he\u2019s going to fall asleep."
+        "He’ll get what he wants.",
+        "He probably won’t remember me.",
+        "It’s going to be a nice day.",
+        "It looks as if it’s going to fall down.",
+        "It’s going to be 200 metres high.",
+        "You’ll enjoy it.",
+        "I don’t think it will fit in the room.",
+        "I think he’s going to fall asleep."
       ],
-      "pairs": [[0, 5], [1, 3], [2, 7], [3, 6], [4, 2], [5, 0], [6, 4], [7, 1]]
+      "pairs": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          1
+        ]
+      ]
     }
   ]
 }

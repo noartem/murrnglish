@@ -40,18 +40,18 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form, present perfect or past simple.",
       "items": [
-        {"num": 1, "parts": ["I ", " to Canada, but I'd like to go there."], "answers": [["haven't been"]]},
-        {"num": 2, "parts": ["Paul and Lucy ", " about ten minutes ago."], "answers": [["arrived"]]},
-        {"num": 3, "parts": ["I'm tired. ", " well last night."], "answers": [["I didn't sleep"]]},
-        {"num": 4, "parts": ["", " a bus drivers' strike last week, so ", " no buses."], "answers": [["There was"], ["there were"]]},
-        {"num": 5, "parts": ["Edward ", " in a bank for 15 years. Then ", " it up. Now he works as a gardener."], "answers": [["worked"], ["he gave"]]},
-        {"num": 6, "parts": ["Mary lives in Dublin. ", " there all her life."], "answers": [["She's lived", "She has lived"]]},
-        {"num": 7, "parts": ["My grandfather ", " before I was born. ", " him."], "answers": [["died"], ["I never met"]]},
-        {"num": 8, "parts": ["I don't know Karen's husband. ", " him."], "answers": [["I've never met", "I have never met"]]},
-        {"num": 9, "parts": ["It's nearly lunchtime, and ", " Martin all morning. I wonder where he is."], "answers": [["I haven't seen"]]},
-        {"num": 10, "parts": ["a: ", " to the cinema last night? b: Yes, but the movie ", " awful."], "answers": [["Did you go"], ["was"]]},
-        {"num": 11, "parts": ["a: ", " very warm here since we arrived. b: Yes, ", " 35 degrees yesterday."], "answers": [["It's been", "It has been"], ["it was"]]},
-        {"num": 12, "parts": ["a: How long ", " there? b: Five years. a: Where ", " before that? b: In Chicago. a: And how long ", " in Chicago? b: Two years."], "answers": [["have you lived", "have you been living"], ["did you live"], ["did you live"]]}
+        {"num": 1, "parts": ["I ", " (I / not / be) to Canada, but I'd like to go there."], "answers": [["haven't been"]]},
+        {"num": 2, "parts": ["Paul and Lucy ", " (arrive) about ten minutes ago."], "answers": [["arrived"]]},
+        {"num": 3, "parts": ["I'm tired. ", " (I / not / sleep) well last night."], "answers": [["I didn't sleep"]]},
+        {"num": 4, "parts": ["(There / be) ", " a bus drivers' strike last week, so ", " (there / be) no buses."], "answers": [["There was"], ["there were"]]},
+        {"num": 5, "parts": ["Edward ", " (work) in a bank for 15 years. Then ", " (he / give) it up. Now he works as a gardener."], "answers": [["worked"], ["he gave"]]},
+        {"num": 6, "parts": ["Mary lives in Dublin. ", " (She / live) there all her life."], "answers": [["She's lived", "She has lived"]]},
+        {"num": 7, "parts": ["My grandfather ", " (die) before I was born. ", " (I / never / meet) him."], "answers": [["died"], ["I never met"]]},
+        {"num": 8, "parts": ["I don't know Karen's husband. ", " (I / never / meet) him."], "answers": [["I've never met", "I have never met"]]},
+        {"num": 9, "parts": ["It's nearly lunchtime, and ", " (I / not / see) Martin all morning. I wonder where he is."], "answers": [["I haven't seen"]]},
+        {"num": 10, "parts": ["a: ", " (you / go) to the cinema last night? b: Yes, but the movie ", " (be) awful."], "answers": [["Did you go"], ["was"]]},
+        {"num": 11, "parts": ["a: ", " (It / be) very warm here since we arrived. b: Yes, ", " (it / be) 35 degrees yesterday."], "answers": [["It's been", "It has been"], ["it was"]]},
+        {"num": 12, "parts": ["a: How long ", " (you / live) there? b: Five years. a: Where ", " (you / live) before that? b: In Chicago. a: And how long ", " (you / live) in Chicago? b: Two years."], "answers": [["have you lived", "have you been living"], ["did you live"], ["did you live"]]}
       ]
     },
     {

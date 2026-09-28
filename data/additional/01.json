@@ -1,201 +1,202 @@
 {
- "id": 1,
- "topic": "Present and past",
- "refs": "Units 1–6",
- "pdfPages": [
-  314,
-  315
- ],
- "exercise": {
-  "id": "1",
-  "type": "fill-in",
-  "instruction": "Put the verb into the correct form: present simple (I do), present continuous (I am doing), past simple (I did) or past continuous (I was doing).",
-  "items": [
-   {
-    "num": 1,
-    "parts": [
-     "We can go out now. It ",
-     " (it / not / rain) any more."
-    ],
-    "answers": [
-     [
-      "isn't raining"
-     ]
+  "id": 1,
+  "topic": "Present and past",
+  "refs": "Units 1–6",
+  "pdfPages": [
+    314
+  ],
+  "exercise": {
+    "id": "1",
+    "type": "fill-in",
+    "instruction": "Put the verb into the correct form: present simple (I do), present continuous (I am doing), past simple (I did) or past continuous (I was doing).",
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "We can go out now. It ",
+          " (it / not / rain) any more."
+        ],
+        "answers": [
+          [
+            "isn't raining"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 2,
+        "parts": [
+          "Katherine ",
+          " (wait) for me when I ",
+          ". (I / arrive)"
+        ],
+        "answers": [
+          [
+            "was waiting"
+          ],
+          [
+            "arrived"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 3,
+        "parts": [
+          "",
+          " (I / get) hungry. Let's go and have something to eat."
+        ],
+        "answers": [
+          [
+            "I’m getting",
+            "I am getting"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "What ",
+          " (you / do) in your spare time? Do you have any hobbies?"
+        ],
+        "answers": [
+          [
+            "do you do"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "The weather was horrible when ",
+          " (we / arrive). It was cold and ",
+          " (it / rain) hard."
+        ],
+        "answers": [
+          [
+            "we arrived"
+          ],
+          [
+            "it was raining"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "Louise usually ",
+          " (phone) me on Fridays, but ",
+          " (she / not / phone) last Friday."
+        ],
+        "answers": [
+          [
+            "phones"
+          ],
+          [
+            "she didn't phone"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "a: When I last saw you, ",
+          " (you / think) of moving to a new flat.\n  b: That's right, but in the end ",
+          " (I / decide) to stay where I was."
+        ],
+        "answers": [
+          [
+            "you were thinking"
+          ],
+          [
+            "I decided"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "Why ",
+          " (you / look) at me like that? What's the matter?"
+        ],
+        "answers": [
+          [
+            "are you looking"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "It's usually dry here at this time of the year. ",
+          " (it / not / rain) much."
+        ],
+        "answers": [
+          [
+            "It doesn't rain"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "I waved to Ben, but he didn't see me. ",
+          " (he / not / look) in my direction."
+        ],
+        "answers": [
+          [
+            "He wasn't looking"
+          ]
+        ]
+      },
+      {
+        "num": 11,
+        "parts": [
+          "Lisa was busy when ",
+          " (we / go) to see her yesterday. She had an exam today and ",
+          " (she / prepare) for it. ",
+          " (we / not / want) to disturb her, so ",
+          " (we / not / stay) very long."
+        ],
+        "answers": [
+          [
+            "we went"
+          ],
+          [
+            "she was preparing"
+          ],
+          [
+            "We didn't want"
+          ],
+          [
+            "we didn't stay"
+          ]
+        ]
+      },
+      {
+        "num": 12,
+        "parts": [
+          "When I first ",
+          " (tell) Tom what happened, ",
+          " (he / not / believe) me. ",
+          " (he / think) that ",
+          " (I / joke)."
+        ],
+        "answers": [
+          [
+            "told"
+          ],
+          [
+            "he didn't believe"
+          ],
+          [
+            "He thought"
+          ],
+          [
+            "I was joking"
+          ]
+        ]
+      }
     ]
-   },
-   {
-    "num": 2,
-    "parts": [
-     "Katherine ",
-     " (wait) for me when I ",
-     "."
-    ],
-    "answers": [
-     [
-      "was waiting"
-     ],
-     [
-      "arrived"
-     ]
-    ]
-   },
-   {
-    "num": 3,
-    "parts": [
-     "",
-     " (I / get) hungry. Let's go and have something to eat."
-    ],
-    "answers": [
-     [
-      "I’m getting",
-      "I am getting"
-     ]
-    ]
-   },
-   {
-    "num": 4,
-    "parts": [
-     "What ",
-     " (you / do) in your spare time? Do you have any hobbies?"
-    ],
-    "answers": [
-     [
-      "do you do"
-     ]
-    ]
-   },
-   {
-    "num": 5,
-    "parts": [
-     "The weather was horrible when ",
-     " (we / arrive). It was cold and ",
-     " (it / rain) hard."
-    ],
-    "answers": [
-     [
-      "we arrived"
-     ],
-     [
-      "it was raining"
-     ]
-    ]
-   },
-   {
-    "num": 6,
-    "parts": [
-     "Louise usually ",
-     " (phone) me on Fridays, but ",
-     " (she / not / phone) last Friday."
-    ],
-    "answers": [
-     [
-      "phones"
-     ],
-     [
-      "she didn't phone"
-     ]
-    ]
-   },
-   {
-    "num": 7,
-    "parts": [
-     "a: When I last saw you, ",
-     " (you / think) of moving to a new flat.\n  b: That's right, but in the end ",
-     " (I / decide) to stay where I was."
-    ],
-    "answers": [
-     [
-      "you were thinking"
-     ],
-     [
-      "I decided"
-     ]
-    ]
-   },
-   {
-    "num": 8,
-    "parts": [
-     "Why ",
-     " (you / look) at me like that? What's the matter?"
-    ],
-    "answers": [
-     [
-      "are you looking"
-     ]
-    ]
-   },
-   {
-    "num": 9,
-    "parts": [
-     "It's usually dry here at this time of the year. ",
-     " (it / not / rain) much."
-    ],
-    "answers": [
-     [
-      "It doesn't rain"
-     ]
-    ]
-   },
-   {
-    "num": 10,
-    "parts": [
-     "I waved to Ben, but he didn't see me. ",
-     " (he / not / look) in my direction."
-    ],
-    "answers": [
-     [
-      "He wasn't looking"
-     ]
-    ]
-   },
-   {
-    "num": 11,
-    "parts": [
-     "Lisa was busy when ",
-     " (we / go) to see her yesterday. She had an exam today and ",
-     " (she / prepare) for it. ",
-     " (we / not / want) to disturb her, so ",
-     " (we / not / stay) very long."
-    ],
-    "answers": [
-     [
-      "we went"
-     ],
-     [
-      "she was preparing"
-     ],
-     [
-      "We didn't want"
-     ],
-     [
-      "we didn't stay"
-     ]
-    ]
-   },
-   {
-    "num": 12,
-    "parts": [
-     "When I first ",
-     " (tell) Tom what happened, ",
-     " (he / not / believe) me. ",
-     " (he / think) that ",
-     " (I / joke)."
-    ],
-    "answers": [
-     [
-      "told"
-     ],
-     [
-      "he didn't believe"
-     ],
-     [
-      "He thought"
-     ],
-     [
-      "I was joking"
-     ]
-    ]
-   }
-  ]
- }
+  }
 }

@@ -35,13 +35,13 @@
       "type": "fill-in",
       "instruction": "Complete the sentences.",
       "items": [
-        {"num": 2, "parts": ["I can't afford to buy a car. If ", " a car, I'd have to borrow the money."], "answers": [["I bought"]]},
-        {"num": 3, "parts": ["If you had a party, who ", " you ", "?"], "answers": [["would"], ["invite"]]},
-        {"num": 4, "parts": ["Don't lend James your car. If ", " me, I wouldn't lend him mine."], "answers": [["he asked"]]},
-        {"num": 5, "parts": ["I don't think Gary and Emma will get married. ", " amazed if they did."], "answers": [["I'd be", "I would be"]]},
-        {"num": 6, "parts": ["If ", " me $20,000, ", " a long holiday."], "answers": [["somebody gave"], ["I'd have", "I would have"]]},
-        {"num": 7, "parts": ["", " nervous if ", " a famous person?"], "answers": [["Would you be"], ["you met"]]},
-        {"num": 8, "parts": ["What ", " you ", " if ", " in a lift and ", " between floors?"], "answers": [["would"], ["do"], ["you were"], ["it stopped"]]}
+        {"num": 2, "parts": ["I can't afford to buy a car. If ", " (I / buy) a car, I'd have to borrow the money."], "answers": [["I bought"]]},
+        {"num": 3, "parts": ["If you had a party, who ", " (you / invite) you ", "?"], "answers": [["would"], ["invite"]]},
+        {"num": 4, "parts": ["Don't lend James your car. If ", " (he / ask) me, I wouldn't lend him mine."], "answers": [["he asked"]]},
+        {"num": 5, "parts": ["I don't think Gary and Emma will get married. ", " (I / be) amazed if they did."], "answers": [["I'd be", "I would be"]]},
+        {"num": 6, "parts": ["If ", " (somebody / give) me $20,000, ", " (I / have) a long holiday."], "answers": [["somebody gave"], ["I'd have", "I would have"]]},
+        {"num": 7, "parts": ["(you / be) ", " nervous if ", " (you / meet) a famous person?"], "answers": [["Would you be"], ["you met"]]},
+        {"num": 8, "parts": ["What ", " (you / do) you ", " if ", " (you / be) in a lift and ", " (it / stop) between floors?"], "answers": [["would"], ["do"], ["you were"], ["it stopped"]]}
       ]
     },
     {

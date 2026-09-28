@@ -1,536 +1,537 @@
 {
- "unit": 72,
- "title": "a/an and the",
- "pdfPages": [
-  156,
-  157
- ],
- "exercises": [
-  {
-   "id": "72.1",
-   "type": "fill-in",
-   "instruction": "Put in a/an or the.",
-   "items": [
+  "unit": 72,
+  "title": "a/an and the",
+  "pdfPages": [
+    156,
+    157
+  ],
+  "exercises": [
     {
-     "num": 1,
-     "parts": [
-      "This morning I bought a book and ",
-      " magazine. ",
-      " book is in my bag, but I can’t remember where I put ",
-      " magazine."
-     ],
-     "answers": [
-      [
-       "a"
-      ],
-      [
-       "The"
-      ],
-      [
-       "the"
+      "id": "72.1",
+      "type": "fill-in",
+      "instruction": "Put in a/an or the.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "This morning I bought a book and ",
+            " magazine. ",
+            " book is in my bag, but I can’t remember where I put ",
+            " magazine."
+          ],
+          "answers": [
+            [
+              "a"
+            ],
+            [
+              "The"
+            ],
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I saw ",
+            " accident this morning. ",
+            " car crashed into ",
+            " tree. ",
+            " driver of ",
+            " car wasn’t hurt, but ",
+            " car was badly damaged."
+          ],
+          "answers": [
+            [
+              "an"
+            ],
+            [
+              "A"
+            ],
+            [
+              "a"
+            ],
+            [
+              "The"
+            ],
+            [
+              "the"
+            ],
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "There are two cars parked outside: ",
+            " blue one and ",
+            " grey one. ",
+            " blue one belongs to my neighbours. I don’t know who ",
+            " owner of ",
+            " grey one is."
+          ],
+          "answers": [
+            [
+              "a"
+            ],
+            [
+              "a"
+            ],
+            [
+              "The"
+            ],
+            [
+              "the"
+            ],
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "My friends live in ",
+            " old house in ",
+            " small village. There is ",
+            " beautiful garden behind ",
+            " house. I would like to have ",
+            " garden like that."
+          ],
+          "answers": [
+            [
+              "an"
+            ],
+            [
+              "a"
+            ],
+            [
+              "a"
+            ],
+            [
+              "the"
+            ],
+            [
+              "a"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 2,
-     "parts": [
-      "I saw ",
-      " accident this morning. ",
-      " car crashed into ",
-      " tree. ",
-      " driver of ",
-      " car wasn’t hurt, but ",
-      " car was badly damaged."
-     ],
-     "answers": [
-      [
-       "an"
-      ],
-      [
-       "A"
-      ],
-      [
-       "a"
-      ],
-      [
-       "The"
-      ],
-      [
-       "the"
-      ],
-      [
-       "the"
+      "id": "72.2",
+      "type": "fill-in",
+      "instruction": "Put in a/an or the.",
+      "items": [
+        {
+          "num": "1a",
+          "parts": [
+            "This house is very nice. Does it have ",
+            " garden?"
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": "1b",
+          "parts": [
+            "It’s a beautiful day. Let’s sit in ",
+            " garden."
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": "1c",
+          "parts": [
+            "I like living in this house, but it’s a shame that ",
+            " garden is so small."
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": "2a",
+          "parts": [
+            "Can you recommend ",
+            " good restaurant?"
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": "2b",
+          "parts": [
+            "We had dinner in ",
+            " very nice restaurant."
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": "2c",
+          "parts": [
+            "We had dinner in ",
+            " best restaurant in town."
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": "3a",
+          "parts": [
+            "What’s ",
+            " name of that man we met yesterday?"
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": "3b",
+          "parts": [
+            "We stayed at a very nice hotel – I can’t remember ",
+            " name now."
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": "3c",
+          "parts": [
+            "My neighbour has ",
+            " French name, but in fact she’s English, not French."
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": "4a",
+          "parts": [
+            "Did Paula get ",
+            " job she applied for?"
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": "4b",
+          "parts": [
+            "It’s not easy to get ",
+            " job at the moment."
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": "4c",
+          "parts": [
+            "Do you enjoy your work? Is it ",
+            " interesting job?"
+          ],
+          "answers": [
+            [
+              "an"
+            ]
+          ]
+        },
+        {
+          "num": "5a",
+          "parts": [
+            "‘Are you going away next week?’ ‘No, ",
+            " week after next.’"
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": "5b",
+          "parts": [
+            "I’m going away for ",
+            " week in September."
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": "5c",
+          "parts": [
+            "Gary has a part-time job. He works three mornings ",
+            " week."
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 3,
-     "parts": [
-      "There are two cars parked outside: ",
-      " blue one and ",
-      " grey one. ",
-      " blue one belongs to my neighbours. I don’t know who ",
-      " owner of ",
-      " grey one is."
-     ],
-     "answers": [
-      [
-       "a"
-      ],
-      [
-       "a"
-      ],
-      [
-       "The"
-      ],
-      [
-       "the"
-      ],
-      [
-       "the"
+      "id": "72.3",
+      "type": "fill-in",
+      "instruction": "Put in a/an or the where necessary.",
+      "items": [
+        {
+          "num": 2,
+          "parts": [
+            "How often do you go to ",
+            " dentist?"
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Can you close ",
+            " door, please?"
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I have ",
+            " problem. I need your help."
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "How far is it from here to ",
+            " station?"
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I’m going to ",
+            " post office. I won’t be long."
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Paul plays tennis. He’s ",
+            " very good player."
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "There isn’t ",
+            " airport near where I live."
+          ],
+          "answers": [
+            [
+              "an"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "",
+            " nearest airport is 70 miles away."
+          ],
+          "answers": [
+            [
+              "The"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "There were no chairs, so we sat on ",
+            " floor."
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Have you finished with ",
+            " book I lent you?"
+          ],
+          "answers": [
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Chris has just got ",
+            " job in ",
+            " bank in Zurich."
+          ],
+          "answers": [
+            [
+              "a"
+            ],
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "We live in ",
+            " small apartment in ",
+            " city centre."
+          ],
+          "answers": [
+            [
+              "a"
+            ],
+            [
+              "the"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "There’s ",
+            " shop at ",
+            " end of street I live in."
+          ],
+          "answers": [
+            [
+              "a"
+            ],
+            [
+              "the"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 4,
-     "parts": [
-      "My friends live in ",
-      " old house in ",
-      " small village. There is ",
-      " beautiful garden behind ",
-      " house. I would like to have ",
-      " garden like that."
-     ],
-     "answers": [
-      [
-       "an"
-      ],
-      [
-       "a"
-      ],
-      [
-       "a"
-      ],
-      [
-       "the"
-      ],
-      [
-       "a"
+      "id": "72.4",
+      "type": "self-check",
+      "instruction": "Answer these questions. Where possible, use once a week / three times a day etc.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "How often do you go to the dentist?",
+          "modelAnswers": [
+            "About once a month."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "How often do you go away on holiday?",
+          "modelAnswers": [
+            "Once or twice a year."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "How long do you usually sleep?",
+          "modelAnswers": [
+            "About seven hours a night."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "How often do you go out in the evening?",
+          "modelAnswers": [
+            "Two or three times a week."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "How many hours of TV do you watch (on average)?",
+          "modelAnswers": [
+            "About two hours a day."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "What’s the usual speed limit in towns in your country?",
+          "modelAnswers": [
+            "50 kilometres an hour."
+          ]
+        }
       ]
-     ]
     }
-   ]
-  },
-  {
-   "id": "72.2",
-   "type": "fill-in",
-   "instruction": "Put in a/an or the.",
-   "items": [
-    {
-     "num": "1a",
-     "parts": [
-      "This house is very nice. Does it have ",
-      " garden?"
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": "1b",
-     "parts": [
-      "It’s a beautiful day. Let’s sit in ",
-      " garden."
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": "1c",
-     "parts": [
-      "I like living in this house, but it’s a shame that ",
-      " garden is so small."
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": "2a",
-     "parts": [
-      "Can you recommend ",
-      " good restaurant?"
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": "2b",
-     "parts": [
-      "We had dinner in ",
-      " very nice restaurant."
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": "2c",
-     "parts": [
-      "We had dinner in ",
-      " best restaurant in town."
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": "3a",
-     "parts": [
-      "What’s ",
-      " name of that man we met yesterday?"
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": "3b",
-     "parts": [
-      "We stayed at a very nice hotel – I can’t remember ",
-      " name now."
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": "3c",
-     "parts": [
-      "My neighbour has ",
-      " French name, but in fact she’s English, not French."
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": "4a",
-     "parts": [
-      "Did Paula get ",
-      " job she applied for?"
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": "4b",
-     "parts": [
-      "It’s not easy to get ",
-      " job at the moment."
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": "4c",
-     "parts": [
-      "Do you enjoy your work? Is it ",
-      " interesting job?"
-     ],
-     "answers": [
-      [
-       "an"
-      ]
-     ]
-    },
-    {
-     "num": "5a",
-     "parts": [
-      "‘Are you going away next week?’ ‘No, ",
-      " week after next.’"
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": "5b",
-     "parts": [
-      "I’m going away for ",
-      " week in September."
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": "5c",
-     "parts": [
-      "Gary has a part-time job. He works three mornings ",
-      " week."
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "72.3",
-   "type": "fill-in",
-   "instruction": "Put in a/an or the where necessary.",
-   "items": [
-    {
-     "num": 2,
-     "parts": [
-      "How often do you go to ",
-      " dentist?"
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": 3,
-     "parts": [
-      "Can you close ",
-      " door, please?"
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "I have ",
-      " problem. I need your help."
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": 5,
-     "parts": [
-      "How far is it from here to ",
-      " station?"
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": 6,
-     "parts": [
-      "I’m going to ",
-      " post office. I won’t be long."
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": 7,
-     "parts": [
-      "Paul plays tennis. He’s ",
-      " very good player."
-     ],
-     "answers": [
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": 8,
-     "parts": [
-      "There isn’t ",
-      " airport near where I live."
-     ],
-     "answers": [
-      [
-       "an"
-      ]
-     ]
-    },
-    {
-     "num": 9,
-     "parts": [
-      "",
-      " nearest airport is 70 miles away."
-     ],
-     "answers": [
-      [
-       "The"
-      ]
-     ]
-    },
-    {
-     "num": 10,
-     "parts": [
-      "There were no chairs, so we sat on ",
-      " floor."
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": 11,
-     "parts": [
-      "Have you finished with ",
-      " book I lent you?"
-     ],
-     "answers": [
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": 12,
-     "parts": [
-      "Chris has just got ",
-      " job in ",
-      " bank in Zurich."
-     ],
-     "answers": [
-      [
-       "a"
-      ],
-      [
-       "a"
-      ]
-     ]
-    },
-    {
-     "num": 13,
-     "parts": [
-      "We live in ",
-      " small apartment in ",
-      " city centre."
-     ],
-     "answers": [
-      [
-       "a"
-      ],
-      [
-       "the"
-      ]
-     ]
-    },
-    {
-     "num": 14,
-     "parts": [
-      "There’s ",
-      " shop at ",
-      " end of street I live in."
-     ],
-     "answers": [
-      [
-       "a"
-      ],
-      [
-       "the"
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "72.4",
-   "type": "self-check",
-   "instruction": "Answer these questions. Where possible, use once a week / three times a day etc.",
-   "items": [
-    {
-     "num": 2,
-     "prompt": "How often do you go to the dentist?",
-     "modelAnswers": [
-      "About once a month."
-     ]
-    },
-    {
-     "num": 3,
-     "prompt": "How often do you go away on holiday?",
-     "modelAnswers": [
-      "Once or twice a year."
-     ]
-    },
-    {
-     "num": 4,
-     "prompt": "How long do you usually sleep?",
-     "modelAnswers": [
-      "About seven hours a night."
-     ]
-    },
-    {
-     "num": 5,
-     "prompt": "How often do you go out in the evening?",
-     "modelAnswers": [
-      "Two or three times a week."
-     ]
-    },
-    {
-     "num": 6,
-     "prompt": "How many hours of TV do you watch (on average)?",
-     "modelAnswers": [
-      "About two hours a day."
-     ]
-    },
-    {
-     "num": 7,
-     "prompt": "What’s the usual speed limit in towns in your country?",
-     "modelAnswers": [
-      "50 kilometres an hour."
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }

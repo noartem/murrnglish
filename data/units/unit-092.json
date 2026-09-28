@@ -1,22 +1,123 @@
 {
   "unit": 92,
   "title": "Relative clauses 1: clauses with who/that/which",
-  "pdfPages": [196, 197],
+  "pdfPages": [
+    196,
+    197
+  ],
   "exercises": [
     {
       "id": "92.1",
       "type": "fill-in",
       "instruction": "What do these words mean? Choose from the box and write sentences with who.",
-      "wordBank": ["steals from a shop", "buys something from a shop", "designs buildings", "pays rent to live somewhere", "doesn\u2019t tell the truth", "breaks into a house to steal things", "is not brave", "expects the worst to happen"],
+      "wordBank": [
+        "steals from a shop",
+        "buys something from a shop",
+        "designs buildings",
+        "pays rent to live somewhere",
+        "doesn’t tell the truth",
+        "breaks into a house to steal things",
+        "is not brave",
+        "expects the worst to happen"
+      ],
       "items": [
-        {"num": 1, "parts": ["An architect is someone who ", "."], "answers": [["designs buildings"]]},
-        {"num": 2, "parts": ["A customer is someone who ", "."], "answers": [["buys something from a shop"]]},
-        {"num": 3, "parts": ["A burglar is someone who ", "."], "answers": [["breaks into a house to steal things"]]},
-        {"num": 4, "parts": ["A coward is someone who ", "."], "answers": [["is not brave"]]},
-        {"num": 5, "parts": ["A tenant is someone who ", "."], "answers": [["pays rent to live somewhere"]]},
-        {"num": 6, "parts": ["A shoplifter is someone who ", "."], "answers": [["steals from a shop"]]},
-        {"num": 7, "parts": ["A liar is someone who ", "."], "answers": [["doesn\u2019t tell the truth"]]},
-        {"num": 8, "parts": ["A pessimist is someone who ", "."], "answers": [["expects the worst to happen"]]}
+        {
+          "num": 1,
+          "parts": [
+            "An architect is someone who ",
+            ". (an architect)"
+          ],
+          "answers": [
+            [
+              "designs buildings"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A customer is someone who ",
+            ". (a customer)"
+          ],
+          "answers": [
+            [
+              "buys something from a shop"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "A burglar is someone who ",
+            ". (a burglar)"
+          ],
+          "answers": [
+            [
+              "breaks into a house to steal things"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A coward is someone who ",
+            ". (a coward)"
+          ],
+          "answers": [
+            [
+              "is not brave"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "A tenant is someone who ",
+            ". (a tenant)"
+          ],
+          "answers": [
+            [
+              "pays rent to live somewhere"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "A shoplifter is someone who ",
+            ". (a shoplifter)"
+          ],
+          "answers": [
+            [
+              "steals from a shop"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A liar is someone who ",
+            ". (a liar)"
+          ],
+          "answers": [
+            [
+              "doesn’t tell the truth"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "A pessimist is someone who ",
+            ". (a pessimist)"
+          ],
+          "answers": [
+            [
+              "expects the worst to happen"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -24,27 +125,155 @@
       "type": "write",
       "instruction": "Make one sentence from two. Use who/that/which.",
       "items": [
-        {"num": 1, "prompt": "A girl was injured in the accident. She is now in hospital.", "answers": ["The girl who was injured in the accident is now in hospital."]},
-        {"num": 2, "prompt": "A waiter served us. He was impolite and impatient.", "answers": ["The waiter who/that served us was impolite and impatient."]},
-        {"num": 3, "prompt": "A building was destroyed in the fire. It has now been rebuilt.", "answers": ["The building that/which was destroyed in the fire has now been rebuilt."]},
-        {"num": 4, "prompt": "Some people were arrested. They have now been released.", "answers": ["The people who/that were arrested have now been released."]},
-        {"num": 5, "prompt": "A bus goes to the airport. It runs every half hour.", "answers": ["The bus that/which goes to the airport runs every half hour."]}
+        {
+          "num": 1,
+          "prompt": "A girl was injured in the accident. She is now in hospital.",
+          "answers": [
+            "The girl who was injured in the accident is now in hospital."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "A waiter served us. He was impolite and impatient.",
+          "answers": [
+            "The waiter who/that served us was impolite and impatient."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "A building was destroyed in the fire. It has now been rebuilt.",
+          "answers": [
+            "The building that/which was destroyed in the fire has now been rebuilt."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Some people were arrested. They have now been released.",
+          "answers": [
+            "The people who/that were arrested have now been released."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "A bus goes to the airport. It runs every half hour.",
+          "answers": [
+            "The bus that/which goes to the airport runs every half hour."
+          ]
+        }
       ]
     },
     {
       "id": "92.3",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from the box and use who/that/which.",
-      "wordBank": ["happened in the past", "makes furniture", "runs away from home", "can support life", "cannot be explained", "has stayed there", "developed the theory of relativity", "were hanging on the wall"],
+      "wordBank": [
+        "happened in the past",
+        "makes furniture",
+        "runs away from home",
+        "can support life",
+        "cannot be explained",
+        "has stayed there",
+        "developed the theory of relativity",
+        "were hanging on the wall"
+      ],
       "items": [
-        {"num": 1, "parts": ["Helen works for a company that makes furniture", "."], "answers": [["that makes furniture"]]},
-        {"num": 2, "parts": ["The movie is about a girl ", "."], "answers": [["who/that runs away from home"]]},
-        {"num": 3, "parts": ["What happened to the pictures ", "?"], "answers": [["that/which were hanging on the wall"]]},
-        {"num": 4, "parts": ["A mystery is something ", "."], "answers": [["that/which cannot be explained"]]},
-        {"num": 5, "parts": ["I\u2019ve heard it\u2019s a good hotel, but I don\u2019t know anyone ", "."], "answers": [["who/that has stayed there"]]},
-        {"num": 6, "parts": ["History is the study of things ", "."], "answers": [["that/which happened in the past"]]},
-        {"num": 7, "parts": ["Albert Einstein was the scientist ", "."], "answers": [["who/that developed the theory of relativity"]]},
-        {"num": 8, "parts": ["It seems that Earth is the only planet ", "."], "answers": [["that/which can support life"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Helen works for a company that makes furniture",
+            "."
+          ],
+          "answers": [
+            [
+              "that makes furniture"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The movie is about a girl ",
+            "."
+          ],
+          "answers": [
+            [
+              "who/that runs away from home"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What happened to the pictures ",
+            "?"
+          ],
+          "answers": [
+            [
+              "that/which were hanging on the wall"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A mystery is something ",
+            "."
+          ],
+          "answers": [
+            [
+              "that/which cannot be explained"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I’ve heard it’s a good hotel, but I don’t know anyone ",
+            "."
+          ],
+          "answers": [
+            [
+              "who/that has stayed there"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "History is the study of things ",
+            "."
+          ],
+          "answers": [
+            [
+              "that/which happened in the past"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Albert Einstein was the scientist ",
+            "."
+          ],
+          "answers": [
+            [
+              "who/that developed the theory of relativity"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "It seems that Earth is the only planet ",
+            "."
+          ],
+          "answers": [
+            [
+              "that/which can support life"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -52,15 +281,69 @@
       "type": "write",
       "instruction": "Are these sentences right or wrong? Correct them where necessary.",
       "items": [
-        {"num": 1, "prompt": "I don\u2019t like stories who have unhappy endings.", "answers": ["I don\u2019t like stories that have unhappy endings."]},
-        {"num": 2, "prompt": "What was the name of the person who phoned?", "answers": ["OK"]},
-        {"num": 3, "prompt": "Where\u2019s the nearest shop who sells bread?", "answers": ["Where\u2019s the nearest shop that/which sells bread?"]},
-        {"num": 4, "prompt": "Dan said some things about me they were not true.", "answers": ["Dan said some things about me that/which were not true."]},
-        {"num": 5, "prompt": "The driver which caused the accident was fined \u00a3500.", "answers": ["The driver who/that caused the accident was fined \u00a3500."]},
-        {"num": 6, "prompt": "Do you know the person that took these pictures?", "answers": ["OK"]},
-        {"num": 7, "prompt": "We live in a world what is changing all the time.", "answers": ["We live in a world that/which is changing all the time."]},
-        {"num": 8, "prompt": "Gary apologised for what he said.", "answers": ["OK"]},
-        {"num": 9, "prompt": "What was the name of the horse what won the race?", "answers": ["What was the name of the horse that/which won the race?"]}
+        {
+          "num": 1,
+          "prompt": "I don’t like stories who have unhappy endings.",
+          "answers": [
+            "I don’t like stories that have unhappy endings."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "What was the name of the person who phoned?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Where’s the nearest shop who sells bread?",
+          "answers": [
+            "Where’s the nearest shop that/which sells bread?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Dan said some things about me they were not true.",
+          "answers": [
+            "Dan said some things about me that/which were not true."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "The driver which caused the accident was fined £500.",
+          "answers": [
+            "The driver who/that caused the accident was fined £500."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Do you know the person that took these pictures?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "We live in a world what is changing all the time.",
+          "answers": [
+            "We live in a world that/which is changing all the time."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Gary apologised for what he said.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "What was the name of the horse what won the race?",
+          "answers": [
+            "What was the name of the horse that/which won the race?"
+          ]
+        }
       ]
     }
   ]

@@ -21,7 +21,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Use a suitable verb.",
       "items": [
-        {"num": 1, "parts": ["Don\u2019t forget to lock the door when you go out."], "answers": []},
+        {"num": 1, "parts": ["Don\u2019t forget to lock the door when you go out."], "answers": [], "example": true},
         {"num": 2, "parts": ["There was a lot of traffic, but we managed ", " to the airport in time."], "answers": [["to get"]]},
         {"num": 3, "parts": ["We couldn\u2019t afford ", " in London. It\u2019s too expensive."], "answers": [["to live"]]},
         {"num": 4, "parts": ["I can\u2019t play a musical instrument, but I\u2019d like to learn ", " the guitar."], "answers": [["to play"]]},
@@ -34,7 +34,7 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form, to \u2026 or -ing. (See Unit 53 for verbs + -ing.)",
       "items": [
-        {"num": 1, "parts": ["When I\u2019m tired, I enjoy watching TV. It\u2019s relaxing. (watch)"], "answers": []},
+        {"num": 1, "parts": ["When I\u2019m tired, I enjoy watching TV. It\u2019s relaxing. (watch)"], "answers": [], "example": true},
         {"num": 2, "parts": ["I\u2019ve decided ", " for another job. I need a change. (look)"], "answers": [["to look"]]},
         {"num": 3, "parts": ["I\u2019m not going anywhere! I refuse ", ". (move)"], "answers": [["to move"]]},
         {"num": 4, "parts": ["I\u2019m not in a hurry. I don\u2019t mind ", ". (wait)"], "answers": [["waiting"]]},
@@ -65,7 +65,7 @@
       "type": "fill-in",
       "instruction": "Complete each sentence using what/how/where/whether + these verbs: do get go put ride use",
       "items": [
-        {"num": 1, "parts": ["Do you know how to get to the airport from here?"], "answers": []},
+        {"num": 1, "parts": ["Do you know how to get to the airport from here?"], "answers": [], "example": true},
         {"num": 2, "parts": ["Would you know ", " if there was a fire in the building?"], "answers": [["what to do"]]},
         {"num": 3, "parts": ["You\u2019ll never forget ", " a bike once you\u2019ve learnt."], "answers": [["how to ride"]]},
         {"num": 4, "parts": ["I\u2019ve been invited to the party, but I haven\u2019t decided ", " or not."], "answers": [["whether to go"]]},

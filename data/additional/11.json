@@ -2,7 +2,9 @@
   "id": 11,
   "topic": "The future",
   "refs": "Units 19–25, Appendix 3",
-  "pdfPages": [320, 321],
+  "pdfPages": [
+    320
+  ],
   "exercise": {
     "id": "11",
     "type": "choice",
@@ -11,49 +13,81 @@
       {
         "num": 1,
         "prompt": "'Are you doing anything tomorrow evening?' 'No, why?'",
-        "options": ["Do you do", "Are you doing", "Will you do"],
+        "options": [
+          "Do you do",
+          "Are you doing",
+          "Will you do"
+        ],
         "answer": 1
       },
       {
         "num": 2,
         "prompt": "'I can't open this bottle.' 'Give it to me. ___ it.'",
-        "options": ["I open", "I'll open", "I'm going to open"],
+        "options": [
+          "I open",
+          "I'll open",
+          "I'm going to open"
+        ],
         "answer": 1
       },
       {
         "num": 3,
         "prompt": "'Is Emily here yet?' 'Not yet. I'll let you know as soon as ___.'",
-        "options": ["she arrives", "she's arriving", "she'll arrive"],
+        "options": [
+          "she arrives",
+          "she's arriving",
+          "she'll arrive"
+        ],
         "answer": 0
       },
       {
         "num": 4,
         "prompt": "'Are you free tomorrow afternoon?' 'No, ___.'",
-        "options": ["I work", "I'm working", "I'll work"],
+        "options": [
+          "I work",
+          "I'm working",
+          "I'll work"
+        ],
         "answer": 1
       },
       {
         "num": 5,
         "prompt": "'What time is the film tonight?' '___ at 8.40.'",
-        "options": ["It starts", "It's going to start", "It will start"],
+        "options": [
+          "It starts",
+          "It's going to start",
+          "It will start"
+        ],
         "answer": 0
       },
       {
         "num": 6,
         "prompt": "'Are you going to the beach tomorrow?' 'Yes, if the weather ___ good.'",
-        "options": ["is going to be", "will be", "is"],
+        "options": [
+          "is going to be",
+          "will be",
+          "is"
+        ],
         "answer": 2
       },
       {
         "num": 7,
         "prompt": "'What time ___ tomorrow?' 'How about 8.30?'",
-        "options": ["do we meet", "are we meeting", "shall we meet"],
+        "options": [
+          "do we meet",
+          "are we meeting",
+          "shall we meet"
+        ],
         "answer": 2
       },
       {
         "num": 8,
         "prompt": "'When ___?' 'Tomorrow.'",
-        "options": ["does the festival finish", "is the festival finished", "is the festival finishing"],
+        "options": [
+          "does the festival finish",
+          "is the festival finished",
+          "is the festival finishing"
+        ],
         "answer": 2
       }
     ]

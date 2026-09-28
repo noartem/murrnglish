@@ -1,19 +1,89 @@
 {
   "unit": 112,
   "title": "even",
-  "pdfPages": [236, 237],
+  "pdfPages": [
+    236,
+    237
+  ],
   "exercises": [
     {
       "id": "112.1",
       "type": "fill-in",
       "instruction": "Amy, Kate and Lisa are three friends who went on holiday together. Use the information given about them to complete the sentences using even or not even.",
       "items": [
-        {"num": 1, "parts": ["They stayed at a hotel. Everybody liked it, ", "."], "answers": [["even Kate"]]},
-        {"num": 2, "parts": ["They arranged to meet. They all arrived on time, ", "."], "answers": [["even Lisa"]]},
-        {"num": 3, "parts": ["They went to an art gallery. Nobody enjoyed it, ", "."], "answers": [["not even Amy"]]},
-        {"num": 4, "parts": ["Yesterday they had to get up early. They all managed to do this, ", "."], "answers": [["even Lisa"]]},
-        {"num": 5, "parts": ["They were together yesterday. They were all in a good mood, ", "."], "answers": [["even Kate"]]},
-        {"num": 6, "parts": ["None of them took any pictures, ", "."], "answers": [["not even Lisa"]]}
+        {
+          "num": 1,
+          "parts": [
+            "They stayed at a hotel. Everybody liked it, ",
+            "."
+          ],
+          "answers": [
+            [
+              "even Kate"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "They arranged to meet. They all arrived on time, ",
+            "."
+          ],
+          "answers": [
+            [
+              "even Lisa"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "They went to an art gallery. Nobody enjoyed it, ",
+            "."
+          ],
+          "answers": [
+            [
+              "not even Amy"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Yesterday they had to get up early. They all managed to do this, ",
+            "."
+          ],
+          "answers": [
+            [
+              "even Lisa"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "They were together yesterday. They were all in a good mood, ",
+            "."
+          ],
+          "answers": [
+            [
+              "even Kate"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "None of them took any pictures, ",
+            "."
+          ],
+          "answers": [
+            [
+              "not even Lisa"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -21,15 +91,119 @@
       "type": "fill-in",
       "instruction": "Make sentences with even. Use the words in brackets.",
       "items": [
-        {"num": 1, "parts": ["", ""], "answers": [["She has even been to the Antarctic."]]},
-        {"num": 2, "parts": ["We ", "."], "answers": [["even painted the floor"]]},
-        {"num": 3, "parts": ["She ", "."], "answers": [["even met the prime minister", "even met the Prime Minister"]]},
-        {"num": 4, "parts": ["You ", "."], "answers": [["could even hear it from the next street", "could even hear the noise from the next street", "could hear it / the noise even from the next street"]]},
-        {"num": 5, "parts": ["", ""], "answers": [["They didn't even say hello."]]},
-        {"num": 6, "parts": ["I ", "."], "answers": [["can't even remember her name"]]},
-        {"num": 7, "parts": ["There ", "."], "answers": [["isn't even a cinema"]]},
-        {"num": 8, "parts": ["He ", "."], "answers": [["didn't even tell his wife (where he was going)"]]},
-        {"num": 9, "parts": ["I ", "."], "answers": [["don't even know my neighbours"]]}
+        {
+          "num": 1,
+          "parts": [
+            "",
+            "(the Antarctic)"
+          ],
+          "answers": [
+            [
+              "She has even been to the Antarctic."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "We ",
+            ". (the floor)"
+          ],
+          "answers": [
+            [
+              "even painted the floor"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "(the prime minister) She ",
+            "."
+          ],
+          "answers": [
+            [
+              "even met the prime minister",
+              "even met the Prime Minister"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "You ",
+            ". (from the next street)"
+          ],
+          "answers": [
+            [
+              "could even hear it from the next street",
+              "could even hear the noise from the next street",
+              "could hear it / the noise even from the next street"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            "(hello)"
+          ],
+          "answers": [
+            [
+              "They didn't even say hello."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I ",
+            ". (her name)"
+          ],
+          "answers": [
+            [
+              "can't even remember her name"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "There ",
+            ". (a cinema)"
+          ],
+          "answers": [
+            [
+              "isn't even a cinema"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "He ",
+            ". (his wife)"
+          ],
+          "answers": [
+            [
+              "didn't even tell his wife (where he was going)"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I ",
+            ". (my neighbours)"
+          ],
+          "answers": [
+            [
+              "don't even know my neighbours"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -37,12 +211,79 @@
       "type": "fill-in",
       "instruction": "Complete the sentences using even + comparative.",
       "items": [
-        {"num": 1, "parts": ["It was very hot yesterday, but today it's ", "."], "answers": [["even hotter"]]},
-        {"num": 2, "parts": ["The church is 700 years old, but the house next to it is ", "."], "answers": [["even older"]]},
-        {"num": 3, "parts": ["That's a very good idea, but I've got an ", " one."], "answers": [["even better"]]},
-        {"num": 4, "parts": ["The first question was very difficult to answer. The second one was ", "."], "answers": [["even more difficult"]]},
-        {"num": 5, "parts": ["I did very badly in the exam, but most of my friends did ", "."], "answers": [["even worse"]]},
-        {"num": 6, "parts": ["Neither of us was hungry. I ate very little and my friend ate ", "."], "answers": [["even less"]]}
+        {
+          "num": 1,
+          "parts": [
+            "It was very hot yesterday, but today it's ",
+            "."
+          ],
+          "answers": [
+            [
+              "even hotter"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The church is 700 years old, but the house next to it is ",
+            "."
+          ],
+          "answers": [
+            [
+              "even older"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "That's a very good idea, but I've got an ",
+            " one."
+          ],
+          "answers": [
+            [
+              "even better"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "The first question was very difficult to answer. The second one was ",
+            "."
+          ],
+          "answers": [
+            [
+              "even more difficult"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I did very badly in the exam, but most of my friends did ",
+            "."
+          ],
+          "answers": [
+            [
+              "even worse"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Neither of us was hungry. I ate very little and my friend ate ",
+            "."
+          ],
+          "answers": [
+            [
+              "even less"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -50,15 +291,90 @@
       "type": "choice",
       "instruction": "Complete the sentences. Choose from: if, even, even if, even though.",
       "items": [
-        {"num": 1, "options": ["even though", "if"], "answer": 0},
-        {"num": 2, "options": ["if", "even if", "even though"], "answer": 1},
-        {"num": 3, "options": ["if", "even if", "even though"], "answer": 1},
-        {"num": 4, "options": ["if", "even", "even if", "even though"], "answer": 1},
-        {"num": 5, "options": ["if", "even", "even if", "even though"], "answer": 3},
-        {"num": 6, "options": ["even", "even if", "even though"], "answer": 0},
-        {"num": 7, "options": ["if", "even", "even if", "even though"], "answer": 3},
-        {"num": 8, "options": ["if", "even", "even if", "even though"], "answer": 2},
-        {"num": 9, "options": ["even", "even if", "even though"], "answer": 2}
+        {
+          "num": 1,
+          "options": [
+            "even though",
+            "if"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 2,
+          "options": [
+            "if",
+            "even if",
+            "even though"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "if",
+            "even if",
+            "even though"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": [
+            "if",
+            "even",
+            "even if",
+            "even though"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": [
+            "if",
+            "even",
+            "even if",
+            "even though"
+          ],
+          "answer": 3
+        },
+        {
+          "num": 6,
+          "options": [
+            "even",
+            "even if",
+            "even though"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": [
+            "if",
+            "even",
+            "even if",
+            "even though"
+          ],
+          "answer": 3
+        },
+        {
+          "num": 8,
+          "options": [
+            "if",
+            "even",
+            "even if",
+            "even though"
+          ],
+          "answer": 2
+        },
+        {
+          "num": 9,
+          "options": [
+            "even",
+            "even if",
+            "even though"
+          ],
+          "answer": 2
+        }
       ]
     }
   ]

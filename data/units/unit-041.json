@@ -11,7 +11,8 @@
         {
           "num": 1,
           "parts": ["I wish you a pleasant stay at this hotel."],
-          "answers": []
+          "answers": [],
+          "example": true
         },
         {
           "num": 2,
@@ -53,7 +54,8 @@
         {
           "num": 1,
           "parts": ["Jack is going on a trip to Mexico soon. I wish I was going too."],
-          "answers": []
+          "answers": [],
+          "example": true
         },
         {
           "num": 2,
@@ -142,12 +144,14 @@
         {
           "num": 1,
           "parts": ["It was a stupid thing to say. I wish I hadn't said it. (I / not / say)"],
-          "answers": []
+          "answers": [],
+          "example": true
         },
         {
           "num": 2,
           "parts": ["I'm fed up with this rain. I wish it would stop . (it / stop)"],
-          "answers": []
+          "answers": [],
+          "example": true
         },
         {
           "num": 3,

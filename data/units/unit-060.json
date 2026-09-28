@@ -8,7 +8,7 @@
       "type": "fill-in",
       "instruction": "Complete the second sentence so that it means the same as the first.",
       "items": [
-        {"num": 1, "parts": ["Why is it useful to have a car? What are the advantages of having a car?"], "answers": []},
+        {"num": 1, "parts": ["Why is it useful to have a car? What are the advantages of having a car?"], "answers": [], "example": true},
         {"num": 2, "parts": ["I don\u2019t intend to apply for the job. I have no intention of ", "."], "answers": [["applying for the job"]]},
         {"num": 3, "parts": ["Helen has a good memory for names. Helen is good at ", "."], "answers": [["remembering names"]]},
         {"num": 4, "parts": ["You probably won\u2019t win the lottery. You have little chance. You have little chance of ", "."], "answers": [["winning the lottery"]]},
@@ -23,7 +23,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences using by -ing. Choose from these verbs: borrow, break, drive, press, put, stand",
       "items": [
-        {"num": 1, "parts": ["The burglars got into the house by breaking a window."], "answers": []},
+        {"num": 1, "parts": ["The burglars got into the house by breaking a window."], "answers": [], "example": true},
         {"num": 2, "parts": ["I was able to reach the top shelf ", " on a chair."], "answers": [["by standing"]]},
         {"num": 3, "parts": ["You turn on the computer ", " the button at the back."], "answers": [["by pressing"]]},
         {"num": 4, "parts": ["Kevin got himself into financial trouble ", " too much money."], "answers": [["by borrowing"]]},
@@ -36,7 +36,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences with a suitable word. Use only one word each time.",
       "items": [
-        {"num": 1, "parts": ["We ran ten kilometres without stopping."], "answers": []},
+        {"num": 1, "parts": ["We ran ten kilometres without stopping."], "answers": [], "example": true},
         {"num": 2, "parts": ["Dan left the hotel without ", " his bill."], "answers": [["paying", "settling"]]},
         {"num": 3, "parts": ["It\u2019s a nice morning. How about ", " for a walk?"], "answers": [["going"]]},
         {"num": 4, "parts": ["You need to think carefully before ", " an important decision."], "answers": [["making"]]},

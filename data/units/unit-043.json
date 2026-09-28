@@ -1,73 +1,175 @@
 {
   "unit": 43,
   "title": "Passive 2 (be done / been done / being done)",
-  "pdfPages": [98, 99],
+  "pdfPages": [
+    98,
+    99
+  ],
   "exercises": [
     {
       "id": "43.1",
       "type": "fill-in",
       "instruction": "Complete these sentences. Use the following verbs in the passive:",
-      "wordBank": ["arrest", "carry", "cause", "delay", "do", "forget", "keep", "knock", "know", "make", "repair", "send"],
+      "wordBank": [
+        "arrest",
+        "carry",
+        "cause",
+        "delay",
+        "do",
+        "forget",
+        "keep",
+        "knock",
+        "know",
+        "make",
+        "repair",
+        "send"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["The situation is serious. Something must ", " before it's too late."],
-          "answers": [["be done"]]
+          "parts": [
+            "The situation is serious. Something must ",
+            " before it's too late."
+          ],
+          "answers": [
+            [
+              "be done"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["I haven't received the letter yet. It might ", " to the wrong address."],
-          "answers": [["have been sent"]]
+          "parts": [
+            "I haven't received the letter yet. It might ",
+            " to the wrong address."
+          ],
+          "answers": [
+            [
+              "have been sent"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["A decision will not ", " until the next meeting."],
-          "answers": [["be made"]]
+          "parts": [
+            "A decision will not ",
+            " until the next meeting."
+          ],
+          "answers": [
+            [
+              "be made"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["These documents are important. They should always ", " in a safe place."],
-          "answers": [["be kept"]]
+          "parts": [
+            "These documents are important. They should always ",
+            " in a safe place."
+          ],
+          "answers": [
+            [
+              "be kept"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["This road is in bad condition. It should ", " a long time ago."],
-          "answers": [["have been repaired"]]
+          "parts": [
+            "This road is in bad condition. It should ",
+            " a long time ago."
+          ],
+          "answers": [
+            [
+              "have been repaired"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["The injured man couldn't walk and had to ", "."],
-          "answers": [["be carried"]]
+          "parts": [
+            "The injured man couldn't walk and had to ",
+            "."
+          ],
+          "answers": [
+            [
+              "be carried"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["If you hadn't shouted at the policeman, you wouldn't ", "."],
-          "answers": [["have been arrested"]]
+          "parts": [
+            "If you hadn't shouted at the policeman, you wouldn't ",
+            "."
+          ],
+          "answers": [
+            [
+              "have been arrested"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["I'm not sure what time I'll arrive tomorrow. I may ", "."],
-          "answers": [["be delayed"]]
+          "parts": [
+            "I'm not sure what time I'll arrive tomorrow. I may ",
+            "."
+          ],
+          "answers": [
+            [
+              "be delayed"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["It's not certain how the fire started. It might ", " by an electrical fault."],
-          "answers": [["have been caused"]]
+          "parts": [
+            "It's not certain how the fire started. It might ",
+            " by an electrical fault."
+          ],
+          "answers": [
+            [
+              "have been caused"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["A new school is being built. The old one is going to ", " down."],
-          "answers": [["be knocked"]]
+          "parts": [
+            "A new school is being built. The old one is going to ",
+            " down."
+          ],
+          "answers": [
+            [
+              "be knocked"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["The election is next Sunday. The full results will ", " on Tuesday."],
-          "answers": [["be known"]]
+          "parts": [
+            "The election is next Sunday. The full results will ",
+            " on Tuesday."
+          ],
+          "answers": [
+            [
+              "be known"
+            ]
+          ]
         },
         {
           "num": 12,
-          "parts": ["Last week they weren't speaking to one another. Now they're happy again. The problem seems to ", "."],
-          "answers": [["have been forgotten"]]
+          "parts": [
+            "Last week they weren't speaking to one another. Now they're happy again. The problem seems to ",
+            "."
+          ],
+          "answers": [
+            [
+              "have been forgotten"
+            ]
+          ]
         }
       ]
     },
@@ -79,52 +181,76 @@
         {
           "num": 1,
           "prompt": "(We / follow)",
-          "answers": ["We're being followed."]
+          "answers": [
+            "We're being followed."
+          ]
         },
         {
           "num": 2,
           "prompt": "(you / paint?)",
-          "answers": ["Have you painted it?"]
+          "answers": [
+            "Have you painted it?"
+          ]
         },
         {
           "num": 3,
           "prompt": "(It / steal!)",
-          "answers": ["It's been stolen!", "It has been stolen!"]
+          "answers": [
+            "It's been stolen!",
+            "It has been stolen!"
+          ]
         },
         {
           "num": 4,
           "prompt": "(Somebody / take)",
-          "answers": ["Somebody has taken it.", "Somebody has taken my umbrella."]
+          "answers": [
+            "Somebody has taken it.",
+            "Somebody has taken my umbrella."
+          ]
         },
         {
           "num": 5,
           "prompt": "(He / not / see / since then)",
-          "answers": ["He hasn't been seen since then."]
+          "answers": [
+            "He hasn't been seen since then."
+          ]
         },
         {
           "num": 6,
           "prompt": "(I / not / see / for ages)",
-          "answers": ["I haven't seen her for ages."]
+          "answers": [
+            "I haven't seen her for ages."
+          ]
         },
         {
           "num": 7,
           "prompt": "(you / ever / sting / bee?)",
-          "answers": ["Have you ever been stung by a bee?"]
+          "answers": [
+            "Have you ever been stung by a bee?"
+          ]
         },
         {
           "num": 8,
           "prompt": "(It / repair / at the moment)",
-          "answers": ["It's being repaired at the moment.", "It is being repaired at the moment."]
+          "answers": [
+            "It's being repaired at the moment.",
+            "It is being repaired at the moment."
+          ]
         },
         {
           "num": 9,
           "prompt": "(It / not / find / yet)",
-          "answers": ["It hasn't been found yet.", "It has not been found yet."]
+          "answers": [
+            "It hasn't been found yet.",
+            "It has not been found yet."
+          ]
         },
         {
           "num": 10,
           "prompt": "(The furniture / move)",
-          "answers": ["The furniture had been moved."]
+          "answers": [
+            "The furniture had been moved."
+          ]
         }
       ]
     },
@@ -136,42 +262,59 @@
         {
           "num": 1,
           "prompt": "Somebody has cleaned the room.",
-          "answers": ["The room has been cleaned."]
+          "answers": [
+            "The room has been cleaned."
+          ]
         },
         {
           "num": 2,
           "prompt": "They are building a new road around the city.",
-          "answers": ["A new road is being built around the city."]
+          "answers": [
+            "A new road is being built around the city."
+          ]
         },
         {
           "num": 3,
           "prompt": "They have built two new hotels near the airport.",
-          "answers": ["Two new hotels have been built near the airport."]
+          "answers": [
+            "Two new hotels have been built near the airport."
+          ]
         },
         {
           "num": 4,
           "prompt": "When I last visited, they were building some new houses here.",
-          "answers": ["When I last visited, some new houses were being built."]
+          "answers": [
+            "When I last visited, some new houses were being built."
+          ]
         },
         {
           "num": 5,
           "prompt": "The meeting is now on 15 April. They have changed the date.",
-          "answers": ["The date of the meeting has been changed."]
+          "answers": [
+            "The date of the meeting has been changed."
+          ]
         },
         {
           "num": 6,
           "prompt": "I didn't know that somebody was recording our conversation.",
-          "answers": ["I didn't know that our conversation was being recorded."]
+          "answers": [
+            "I didn't know that our conversation was being recorded."
+          ]
         },
         {
           "num": 7,
           "prompt": "Is anyone doing anything about the problem?",
-          "answers": ["Is anything being done about the problem?"]
+          "answers": [
+            "Is anything being done about the problem?"
+          ]
         },
         {
           "num": 8,
           "prompt": "The windows were very dirty. Nobody had cleaned them for ages.",
-          "answers": ["The windows were very dirty. They hadn't been cleaned for ages.", "The windows were very dirty. They had not been cleaned for ages."]
+          "answers": [
+            "The windows were very dirty. They hadn't been cleaned for ages.",
+            "The windows were very dirty. They had not been cleaned for ages."
+          ]
         }
       ]
     }

@@ -1,22 +1,123 @@
 {
   "unit": 6,
   "title": "Past continuous (I was doing)",
-  "pdfPages": [24, 25],
+  "pdfPages": [
+    24,
+    25
+  ],
   "exercises": [
     {
       "id": "6.1",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from:",
-      "wordBank": ["was looking", "was wearing", "wasn\u2019t listening", "weren\u2019t looking", "was snowing", "was working", "were sitting", "were you going"],
+      "wordBank": [
+        "was looking",
+        "was wearing",
+        "wasn’t listening",
+        "weren’t looking",
+        "was snowing",
+        "was working",
+        "were sitting",
+        "were you going"
+      ],
       "items": [
-        {"num": 1, "parts": ["Today Helen is wearing a skirt. Yesterday she ", " trousers."], "answers": [["was wearing"]]},
-        {"num": 2, "parts": ["\u2018What did he say?\u2019 \u2018I don\u2019t know. I ", ".\u2019"], "answers": [["wasn\u2019t listening"]]},
-        {"num": 3, "parts": ["We ", " at the back of the theatre. We couldn\u2019t hear very well."], "answers": [["were sitting"]]},
-        {"num": 4, "parts": ["This time last year Steve ", " on a farm."], "answers": [["was working"]]},
-        {"num": 5, "parts": ["They didn\u2019t see me. They ", " in my direction."], "answers": [["weren\u2019t looking"]]},
-        {"num": 6, "parts": ["The weather was bad. It was very cold and it ", "."], "answers": [["was snowing"]]},
-        {"num": 7, "parts": ["I saw you in your car. Where ", "?"], "answers": [["were you going"]]},
-        {"num": 8, "parts": ["I saw Kate a few minutes ago. She ", " for you."], "answers": [["was looking"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Today Helen is wearing a skirt. Yesterday she ",
+            " trousers."
+          ],
+          "answers": [
+            [
+              "was wearing"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘What did he say?’ ‘I don’t know. I ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "wasn’t listening"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "We ",
+            " at the back of the theatre. We couldn’t hear very well."
+          ],
+          "answers": [
+            [
+              "were sitting"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This time last year Steve ",
+            " on a farm."
+          ],
+          "answers": [
+            [
+              "was working"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "They didn’t see me. They ",
+            " in my direction."
+          ],
+          "answers": [
+            [
+              "weren’t looking"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "The weather was bad. It was very cold and it ",
+            "."
+          ],
+          "answers": [
+            [
+              "was snowing"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I saw you in your car. Where ",
+            "?"
+          ],
+          "answers": [
+            [
+              "were you going"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I saw Kate a few minutes ago. She ",
+            " for you."
+          ],
+          "answers": [
+            [
+              "was looking"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -27,7 +128,7 @@
         "1 When I got to the cafe",
         "2 We fell asleep",
         "3 Amy learnt Italian",
-        "4 Tom didn\u2019t come out with us",
+        "4 Tom didn’t come out with us",
         "5 The car began to make a strange noise",
         "6 The TV was on",
         "7 When I first met Jessica"
@@ -39,17 +140,92 @@
         "d but nobody was watching it.",
         "e while we were watching a film.",
         "f my friends were waiting for me.",
-        "g because he wasn\u2019t feeling well."
+        "g because he wasn’t feeling well."
       ],
-      "pairs": [[0,5],[1,4],[2,0],[3,6],[4,2],[5,3],[6,1]]
+      "pairs": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          1
+        ]
+      ]
     },
     {
       "id": "6.3",
       "type": "fill-in",
       "instruction": "Put the verb into the correct form, past continuous or past simple.",
       "items": [
-        {"num": 1, "parts": ["I ", " (see) Sue in town yesterday, but she ", " (not/see) me. She ", " (look) the other way."], "answers": [["saw"],["didn\u2019t see"],["was looking"]]},
-        {"num": 2, "parts": ["I ", " (cycle) home yesterday when a man ", " (step) out into the road in front of me. I ", " (go) quite fast, but luckily I ", " (manage) to stop in time, and I ", " (not/hit) him."], "answers": [["was cycling"],["stepped"],["was going"],["managed"],["didn\u2019t hit"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I ",
+            " (see) Sue in town yesterday, but she ",
+            " (not/see) me. She ",
+            " (look) the other way."
+          ],
+          "answers": [
+            [
+              "saw"
+            ],
+            [
+              "didn’t see"
+            ],
+            [
+              "was looking"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I ",
+            " (cycle) home yesterday when a man ",
+            " (step) out into the road in front of me. I ",
+            " (go) quite fast, but luckily I ",
+            " (manage) to stop in time, and I ",
+            " (not/hit) him."
+          ],
+          "answers": [
+            [
+              "was cycling"
+            ],
+            [
+              "stepped"
+            ],
+            [
+              "was going"
+            ],
+            [
+              "managed"
+            ],
+            [
+              "didn’t hit"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -57,16 +233,171 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form, past continuous or past simple.",
       "items": [
-        {"num": 1, "parts": ["Jenny ", " (wait) for me when I ", " (arrive)."], "answers": [["was waiting"],["arrived"]]},
-        {"num": 2, "parts": ["\u2018What ", " (you / do) at this time yesterday?\u2019 \u2018I was asleep.\u2019"], "answers": [["were you doing"]]},
-        {"num": 3, "parts": ["\u2018", " (you / go) out last night?\u2019 \u2018No, I was too tired.\u2019"], "answers": [["Did you go"]]},
-        {"num": 4, "parts": ["How fast ", " (you / drive) when the accident ", "(happen)?"], "answers": [["were you driving"],["happened"]]},
-        {"num": 5, "parts": ["Sam ", " (take) a picture of me while I ", " (not / look)."], "answers": [["took"],["wasn\u2019t looking"]]},
-        {"num": 6, "parts": ["We were in a very difficult position. We ", " (not / know) what to do, so we ", " (do) nothing."], "answers": [["didn\u2019t know"],["did"]]},
-        {"num": 7, "parts": ["I haven\u2019t seen Alan for ages. When I last ", " (see) him, he ", " (try) to find a job."], "answers": [["saw"],["was trying"]]},
-        {"num": 8, "parts": ["I ", " (walk) along the street when suddenly I ", " (hear) something behind me. Somebody ", " (follow) me. I was scared and I ", " (start) to run."], "answers": [["was walking"],["heard"],["was following"],["started"]]},
-        {"num": 9, "parts": ["When I was young, I ", " (want) to be a pilot. Later I ", " (change) my mind."], "answers": [["wanted"],["changed"]]},
-        {"num": 10, "parts": ["Last night I ", " (drop) a plate when I ", " (do) the washing up. Fortunately it ", " (not / break)."], "answers": [["dropped"],["was doing"],["didn\u2019t break"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Jenny ",
+            " (wait) for me when I ",
+            " (arrive)."
+          ],
+          "answers": [
+            [
+              "was waiting"
+            ],
+            [
+              "arrived"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘What ",
+            " (you / do) at this time yesterday?’ ‘I was asleep.’"
+          ],
+          "answers": [
+            [
+              "were you doing"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘",
+            " (you / go) out last night?’ ‘No, I was too tired.’"
+          ],
+          "answers": [
+            [
+              "Did you go"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "How fast ",
+            " (you / drive) when the accident ",
+            "(happen)?"
+          ],
+          "answers": [
+            [
+              "were you driving"
+            ],
+            [
+              "happened"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Sam ",
+            " (take) a picture of me while I ",
+            " (not / look)."
+          ],
+          "answers": [
+            [
+              "took"
+            ],
+            [
+              "wasn’t looking"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We were in a very difficult position. We ",
+            " (not / know) what to do, so we ",
+            " (do) nothing."
+          ],
+          "answers": [
+            [
+              "didn’t know"
+            ],
+            [
+              "did"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I haven’t seen Alan for ages. When I last ",
+            " (see) him, he ",
+            " (try) to find a job."
+          ],
+          "answers": [
+            [
+              "saw"
+            ],
+            [
+              "was trying"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I ",
+            " (walk) along the street when suddenly I ",
+            " (hear) something behind me. Somebody ",
+            " (follow) me. I was scared and I ",
+            " (start) to run."
+          ],
+          "answers": [
+            [
+              "was walking"
+            ],
+            [
+              "heard"
+            ],
+            [
+              "was following"
+            ],
+            [
+              "started"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "When I was young, I ",
+            " (want) to be a pilot. Later I ",
+            " (change) my mind."
+          ],
+          "answers": [
+            [
+              "wanted"
+            ],
+            [
+              "changed"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Last night I ",
+            " (drop) a plate when I ",
+            " (do) the washing up. Fortunately it ",
+            " (not / break)."
+          ],
+          "answers": [
+            [
+              "dropped"
+            ],
+            [
+              "was doing"
+            ],
+            [
+              "didn’t break"
+            ]
+          ]
+        }
       ]
     }
   ]

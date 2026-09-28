@@ -22,13 +22,13 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form.",
       "items": [
-        {"num": 2, "parts": ["What time ", " here?"], "answers": [["do the banks close"]]},
-        {"num": 3, "parts": ["I have a car, but I ", " it much."], "answers": [["don\u2019t use"]]},
-        {"num": 4, "parts": ["Where ", " from? Is she Spanish?"], "answers": [["does Maria come"]]},
-        {"num": 5, "parts": ["\u2018What ", "?\u2019 \u2018I\u2019m an electrician.\u2019"], "answers": [["do you do"]]},
-        {"num": 6, "parts": ["Look at this sentence. What ", "?"], "answers": [["does this word mean"]]},
-        {"num": 7, "parts": ["David isn\u2019t very fit. He ", " any sport."], "answers": [["doesn\u2019t do"]]},
-        {"num": 8, "parts": ["It ", " me an hour to get to work in the morning. How long ", " you?"], "answers": [["takes"], ["does it take"]]}
+        {"num": 2, "parts": ["What time ", " (the banks / close) here?"], "answers": [["do the banks close"]]},
+        {"num": 3, "parts": ["I have a car, but I ", " (not / use) it much."], "answers": [["don\u2019t use"]]},
+        {"num": 4, "parts": ["Where ", " (Maria / come) from? Is she Spanish?"], "answers": [["does Maria come"]]},
+        {"num": 5, "parts": ["\u2018What ", "(you / do)?\u2019 \u2018I\u2019m an electrician.\u2019"], "answers": [["do you do"]]},
+        {"num": 6, "parts": ["Look at this sentence. What ", "(this word / mean)?"], "answers": [["does this word mean"]]},
+        {"num": 7, "parts": ["David isn\u2019t very fit. He ", " (not / do) any sport."], "answers": [["doesn\u2019t do"]]},
+        {"num": 8, "parts": ["It ", " (take) me an hour to get to work in the morning. How long ", " (it / take) you?"], "answers": [["takes"], ["does it take"]]}
       ]
     },
     {

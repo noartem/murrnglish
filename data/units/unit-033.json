@@ -1,7 +1,10 @@
 {
   "unit": 33,
   "title": "should 1",
-  "pdfPages": [78, 79],
+  "pdfPages": [
+    78,
+    79
+  ],
   "exercises": [
     {
       "id": "33.1",
@@ -11,32 +14,44 @@
         {
           "num": 1,
           "prompt": "Anna needs a change.",
-          "answers": ["She should go away for a few days."]
+          "answers": [
+            "She should go away for a few days."
+          ]
         },
         {
           "num": 2,
           "prompt": "Your salary is very low.",
-          "answers": ["You should look for another job."]
+          "answers": [
+            "You should look for another job."
+          ]
         },
         {
           "num": 3,
           "prompt": "Jack always finds it hard to get up.",
-          "answers": ["He shouldn't stay up so late."]
+          "answers": [
+            "He shouldn't stay up so late."
+          ]
         },
         {
           "num": 4,
           "prompt": "What a beautiful view!",
-          "answers": ["You should take a picture."]
+          "answers": [
+            "You should take a picture."
+          ]
         },
         {
           "num": 5,
           "prompt": "Laura is always anxious.",
-          "answers": ["She shouldn't worry so much."]
+          "answers": [
+            "She shouldn't worry so much."
+          ]
         },
         {
           "num": 6,
           "prompt": "Dan's room isn't very nice.",
-          "answers": ["He should put some pictures on the walls."]
+          "answers": [
+            "He should put some pictures on the walls."
+          ]
         }
       ]
     },
@@ -44,47 +59,113 @@
       "id": "33.2",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from:",
-      "wordBank": ["should solve", "should be working OK", "shouldn't cost more", "shouldn't take long", "should receive", "should pass the exam", "should be much warmer", "should be here soon"],
+      "wordBank": [
+        "should solve",
+        "should be working OK",
+        "shouldn't cost more",
+        "shouldn't take long",
+        "should receive",
+        "should pass the exam",
+        "should be much warmer",
+        "should be here soon"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["Helen has been studying hard, so she ", "."],
-          "answers": [["should pass the exam"]]
+          "parts": [
+            "Helen has been studying hard, so she ",
+            "."
+          ],
+          "answers": [
+            [
+              "should pass the exam"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["Joe hasn't arrived yet, but he ", "."],
-          "answers": [["should be here soon"]]
+          "parts": [
+            "Joe hasn't arrived yet, but he ",
+            "."
+          ],
+          "answers": [
+            [
+              "should be here soon"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["The TV has been repaired. It ", " now."],
-          "answers": [["should be working OK"]]
+          "parts": [
+            "The TV has been repaired. It ",
+            " now."
+          ],
+          "answers": [
+            [
+              "should be working OK"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["It ", " to get to the hotel. About 20 minutes."],
-          "answers": [["shouldn't take long"]]
+          "parts": [
+            "It ",
+            " to get to the hotel. About 20 minutes."
+          ],
+          "answers": [
+            [
+              "shouldn't take long"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I sent the documents to you today, so you ", " them tomorrow."],
-          "answers": [["should receive"]]
+          "parts": [
+            "I sent the documents to you today, so you ",
+            " them tomorrow."
+          ],
+          "answers": [
+            [
+              "should receive"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["The weather is unusually cold. It ", " at this time of year."],
-          "answers": [["should be much warmer"]]
+          "parts": [
+            "The weather is unusually cold. It ",
+            " at this time of year."
+          ],
+          "answers": [
+            [
+              "should be much warmer"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["The best way to get to the airport is by taxi. It ", " than ten pounds."],
-          "answers": [["shouldn't cost more"]]
+          "parts": [
+            "The best way to get to the airport is by taxi. It ",
+            " than ten pounds."
+          ],
+          "answers": [
+            [
+              "shouldn't cost more"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["If you have a problem with the computer, try restarting it. That ", "."],
-          "answers": [["should solve the problem"]]
+          "parts": [
+            "If you have a problem with the computer, try restarting it. That ",
+            "."
+          ],
+          "answers": [
+            [
+              "should solve the problem"
+            ]
+          ]
         }
       ]
     },
@@ -95,43 +176,101 @@
       "items": [
         {
           "num": 1,
-          "parts": ["You look tired. You ", " to bed."],
-          "answers": [["should go"]]
+          "parts": [
+            "You look tired. You ",
+            " to bed. (go)"
+          ],
+          "answers": [
+            [
+              "should go"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["You missed a great party last night. You ", "."],
-          "answers": [["should have come"]]
+          "parts": [
+            "You missed a great party last night. You ",
+            ". (come)"
+          ],
+          "answers": [
+            [
+              "should have come"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["I'm in a difficult position. What do you think I ", " now?"],
-          "answers": [["should do"]]
+          "parts": [
+            "I'm in a difficult position. What do you think I ",
+            " now? (do)"
+          ],
+          "answers": [
+            [
+              "should do"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I'm sorry that I didn't take your advice. I ", " what you said."],
-          "answers": [["should have done"]]
+          "parts": [
+            "I'm sorry that I didn't take your advice. I ",
+            " what you said. (do)"
+          ],
+          "answers": [
+            [
+              "should have done"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["We lost the game, but we were the better team. We ", "."],
-          "answers": [["should have won"]]
+          "parts": [
+            "We lost the game, but we were the better team. We ",
+            ". (win)"
+          ],
+          "answers": [
+            [
+              "should have won"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["We don't see you enough. You ", " and see us more often."],
-          "answers": [["should come"]]
+          "parts": [
+            "We don't see you enough. You ",
+            " and see us more often. (come)"
+          ],
+          "answers": [
+            [
+              "should come"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["We went the wrong way and got lost. We ", " right, not left."],
-          "answers": [["should have turned"]]
+          "parts": [
+            "We went the wrong way and got lost. We ",
+            " right, not left. (turn)"
+          ],
+          "answers": [
+            [
+              "should have turned"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["My exam results weren't good. I ", " better."],
-          "answers": [["should have done"]]
+          "parts": [
+            "My exam results weren't good. I ",
+            " better. (do)"
+          ],
+          "answers": [
+            [
+              "should have done"
+            ]
+          ]
         }
       ]
     },
@@ -143,47 +282,72 @@
         {
           "num": 1,
           "prompt": "I'm feeling sick. I ate too much.",
-          "answers": ["I shouldn't have eaten so much."]
+          "answers": [
+            "I shouldn't have eaten so much."
+          ]
         },
         {
           "num": 2,
           "prompt": "When we got to the restaurant, there were no free tables. We hadn't reserved one.",
-          "answers": ["We should have reserved a table."]
+          "answers": [
+            "We should have reserved a table."
+          ]
         },
         {
           "num": 3,
           "prompt": "Laura told me her address, but I didn't write it down. Now I can't remember the house number.",
-          "answers": ["I should have written down her address.", "I should have written her address down.", "I should have written it down."]
+          "answers": [
+            "I should have written down her address.",
+            "I should have written her address down.",
+            "I should have written it down."
+          ]
         },
         {
           "num": 4,
           "prompt": "The shop is open every day from 8.30. It is 9 o'clock now, but the shop isn't open yet.",
-          "answers": ["The shop should be open by now.", "The shop should have opened by now."]
+          "answers": [
+            "The shop should be open by now.",
+            "The shop should have opened by now."
+          ]
         },
         {
           "num": 5,
           "prompt": "I was looking at my phone. I wasn't looking where I was going. I walked into a wall.",
-          "answers": ["I shouldn't have been looking at my phone.", "I should have looked where I was going."]
+          "answers": [
+            "I shouldn't have been looking at my phone.",
+            "I should have looked where I was going."
+          ]
         },
         {
           "num": 6,
           "prompt": "Kate is driving. The speed limit is 30 miles an hour, but Kate is doing 50.",
-          "answers": ["She shouldn't be doing 50.", "She shouldn't be driving so fast.", "She should be driving more slowly."]
+          "answers": [
+            "She shouldn't be doing 50.",
+            "She shouldn't be driving so fast.",
+            "She should be driving more slowly."
+          ]
         },
         {
           "num": 7,
           "prompt": "I wasn't feeling well yesterday, but I went to work. That was a mistake. Now I feel worse.",
-          "answers": ["I shouldn't have gone to work yesterday."]
+          "answers": [
+            "I shouldn't have gone to work yesterday."
+          ]
         },
         {
           "num": 8,
           "prompt": "Tomorrow there is a football match between Team A and Team B. Team A are much better.",
-          "answers": ["Team A should win the match."]
+          "answers": [
+            "Team A should win the match."
+          ]
         },
         {
           "num": 9,
           "prompt": "I was driving. The car in front stopped suddenly and I drove into it. It wasn't my fault.",
-          "answers": ["The driver in front shouldn't have stopped without warning.", "The driver in front shouldn't have stopped so suddenly."]
+          "answers": [
+            "The driver in front shouldn't have stopped without warning.",
+            "The driver in front shouldn't have stopped so suddenly."
+          ]
         }
       ]
     }

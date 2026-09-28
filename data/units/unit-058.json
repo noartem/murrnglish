@@ -1,67 +1,350 @@
 {
   "unit": 58,
-  "title": "Verb + -ing or to \u2026 3 (like / would like etc.)",
-  "pdfPages": [128, 129],
+  "title": "Verb + -ing or to … 3 (like / would like etc.)",
+  "pdfPages": [
+    128,
+    129
+  ],
   "exercises": [
     {
       "id": "58.1",
       "type": "self-check",
-      "instruction": "Write sentences about yourself. Do you like these activities? Choose from these verbs: like / don\u2019t like, love, hate, enjoy, don\u2019t mind",
-      "modelAnswers": ["I don\u2019t like flying.", "I don\u2019t like to fly.", "I don\u2019t mind playing cards.", "I don\u2019t like being alone.", "I don\u2019t like to be alone.", "I enjoy going to museums.", "I love cooking.", "I love to cook.", "I hate getting up early."],
+      "instruction": "Write sentences about yourself. Do you like these activities? Choose from these verbs: like / don’t like, love, hate, enjoy, don’t mind",
+      "modelAnswers": [
+        "I don’t like flying.",
+        "I don’t like to fly.",
+        "I don’t mind playing cards.",
+        "I don’t like being alone.",
+        "I don’t like to be alone.",
+        "I enjoy going to museums.",
+        "I love cooking.",
+        "I love to cook.",
+        "I hate getting up early."
+      ],
       "items": [
-        {"num": 1, "prompt": "(flying)", "modelAnswers": ["I don\u2019t like flying.", "I don\u2019t like to fly."]},
-        {"num": 2, "prompt": "(playing cards)", "modelAnswers": ["I don\u2019t mind playing cards."]},
-        {"num": 3, "prompt": "(being alone)", "modelAnswers": ["I don\u2019t like being alone.", "I don\u2019t like to be alone."]},
-        {"num": 4, "prompt": "(going to museums)", "modelAnswers": ["I enjoy going to museums."]},
-        {"num": 5, "prompt": "(cooking)", "modelAnswers": ["I love cooking.", "I love to cook."]},
-        {"num": 6, "prompt": "(getting up early)", "modelAnswers": ["I hate getting up early."]}
+        {
+          "num": 1,
+          "prompt": "(flying)",
+          "modelAnswers": [
+            "I don’t like flying.",
+            "I don’t like to fly."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(playing cards)",
+          "modelAnswers": [
+            "I don’t mind playing cards."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(being alone)",
+          "modelAnswers": [
+            "I don’t like being alone.",
+            "I don’t like to be alone."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(going to museums)",
+          "modelAnswers": [
+            "I enjoy going to museums."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(cooking)",
+          "modelAnswers": [
+            "I love cooking.",
+            "I love to cook."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(getting up early)",
+          "modelAnswers": [
+            "I hate getting up early."
+          ]
+        }
       ]
     },
     {
       "id": "58.2",
       "type": "write",
-      "instruction": "Make sentences using -ing or to \u2026 . Sometimes either form is possible.",
+      "instruction": "Make sentences using -ing or to … . Sometimes either form is possible.",
       "items": [
-        {"num": 1, "prompt": "Paul lives in Berlin now. It\u2019s nice. He likes it. (He / like / live / there)", "answers": ["He likes living there."]},
-        {"num": 2, "prompt": "Jane is a biology teacher. She likes her job. (She / like / teach / biology)", "answers": ["She likes teaching biology."]},
-        {"num": 3, "prompt": "Joe always has his camera with him and takes a lot of pictures. (He / like / take / pictures)", "answers": ["He likes taking pictures.", "He likes to take pictures."]},
-        {"num": 4, "prompt": "I used to work in a supermarket. I didn\u2019t like it much. (I / not / like / work / there)", "answers": ["I didn\u2019t like working there."]},
-        {"num": 5, "prompt": "Rachel is studying medicine. She likes it. (She / like / study / medicine)", "answers": ["She likes studying medicine."]},
-        {"num": 6, "prompt": "Dan is famous, but he doesn\u2019t like it. (He / not / like / be / famous)", "answers": ["He doesn\u2019t like being famous."]},
-        {"num": 7, "prompt": "Jennifer is a very careful person. She doesn\u2019t take many risks. (She / not / like / take / risks)", "answers": ["She doesn\u2019t like taking risks.", "She doesn\u2019t like to take risks."]},
-        {"num": 8, "prompt": "I don\u2019t like surprises. (I / like / know / things / in advance)", "answers": ["I like to know things in advance."]}
+        {
+          "num": 1,
+          "prompt": "Paul lives in Berlin now. It’s nice. He likes it. (He / like / live / there)",
+          "answers": [
+            "He likes living there."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Jane is a biology teacher. She likes her job. (She / like / teach / biology)",
+          "answers": [
+            "She likes teaching biology."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Joe always has his camera with him and takes a lot of pictures. (He / like / take / pictures)",
+          "answers": [
+            "He likes taking pictures.",
+            "He likes to take pictures."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I used to work in a supermarket. I didn’t like it much. (I / not / like / work / there)",
+          "answers": [
+            "I didn’t like working there."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Rachel is studying medicine. She likes it. (She / like / study / medicine)",
+          "answers": [
+            "She likes studying medicine."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Dan is famous, but he doesn’t like it. (He / not / like / be / famous)",
+          "answers": [
+            "He doesn’t like being famous."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Jennifer is a very careful person. She doesn’t take many risks. (She / not / like / take / risks)",
+          "answers": [
+            "She doesn’t like taking risks.",
+            "She doesn’t like to take risks."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "I don’t like surprises. (I / like / know / things / in advance)",
+          "answers": [
+            "I like to know things in advance."
+          ]
+        }
       ]
     },
     {
       "id": "58.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences with a verb in the correct form, -ing or to \u2026 . In two sentences either form is possible.",
+      "instruction": "Complete the sentences with a verb in the correct form, -ing or to … . In two sentences either form is possible.",
       "items": [
-        {"num": 1, "parts": ["It\u2019s fun to go to new places \u2013 I enjoy ", "."], "answers": [["travelling"]]},
-        {"num": 2, "parts": ["\u2018Would you like ", " down?\u2019 \u2018No, thanks. I\u2019ll stand.\u2019"], "answers": [["to sit"]]},
-        {"num": 3, "parts": ["The music is very loud. Would you mind ", " it down?"], "answers": [["turning"]]},
-        {"num": 4, "parts": ["How do you relax? What do you like ", " in your spare time?"], "answers": [["doing", "to do"]]},
-        {"num": 5, "parts": ["When I have to take a train, I\u2019m always worried that I\u2019ll miss it. So I like ", " to the station in plenty of time."], "answers": [["to get"]]},
-        {"num": 6, "parts": ["I enjoy ", " busy. I don\u2019t like it when there\u2019s nothing to do."], "answers": [["being"]]},
-        {"num": 7, "parts": ["I would love ", " to your wedding, but I\u2019m afraid I\u2019ll be away."], "answers": [["to come", "to go"]]},
-        {"num": 8, "parts": ["I don\u2019t like ", " in this part of town. I want to move somewhere else."], "answers": [["living", "being"]]},
-        {"num": 9, "parts": ["Do you have a minute? I\u2019d like ", " to you about something."], "answers": [["to talk"]]},
-        {"num": 10, "parts": ["If there\u2019s bad news and good news, I like ", " the bad news first."], "answers": [["to have", "to know", "to get", "to hear", "to be told"]]},
-        {"num": 11, "parts": ["Shall we leave now, or would you prefer ", " a little?"], "answers": [["to wait"]]},
-        {"num": 12, "parts": ["Steve wants to win every time. He hates ", "."], "answers": [["losing", "to lose"]]}
+        {
+          "num": 1,
+          "parts": [
+            "It’s fun to go to new places – I enjoy ",
+            "."
+          ],
+          "answers": [
+            [
+              "travelling"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Would you like ",
+            " down?’ ‘No, thanks. I’ll stand.’"
+          ],
+          "answers": [
+            [
+              "to sit"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The music is very loud. Would you mind ",
+            " it down?"
+          ],
+          "answers": [
+            [
+              "turning"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "How do you relax? What do you like ",
+            " in your spare time?"
+          ],
+          "answers": [
+            [
+              "doing",
+              "to do"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "When I have to take a train, I’m always worried that I’ll miss it. So I like ",
+            " to the station in plenty of time."
+          ],
+          "answers": [
+            [
+              "to get"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I enjoy ",
+            " busy. I don’t like it when there’s nothing to do."
+          ],
+          "answers": [
+            [
+              "being"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I would love ",
+            " to your wedding, but I’m afraid I’ll be away."
+          ],
+          "answers": [
+            [
+              "to come",
+              "to go"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I don’t like ",
+            " in this part of town. I want to move somewhere else."
+          ],
+          "answers": [
+            [
+              "living",
+              "being"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Do you have a minute? I’d like ",
+            " to you about something."
+          ],
+          "answers": [
+            [
+              "to talk"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "If there’s bad news and good news, I like ",
+            " the bad news first."
+          ],
+          "answers": [
+            [
+              "to have",
+              "to know",
+              "to get",
+              "to hear",
+              "to be told"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Shall we leave now, or would you prefer ",
+            " a little?"
+          ],
+          "answers": [
+            [
+              "to wait"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Steve wants to win every time. He hates ",
+            "."
+          ],
+          "answers": [
+            [
+              "losing",
+              "to lose"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "58.4",
       "type": "write",
-      "instruction": "Write sentences using would \u2026 to have (done). Use the verbs in brackets.",
+      "instruction": "Write sentences using would … to have (done). Use the verbs in brackets.",
       "items": [
-        {"num": 1, "prompt": "It\u2019s a shame I couldn\u2019t go to the party. (like)", "answers": ["I would like to have gone to the party."]},
-        {"num": 2, "prompt": "It\u2019s a shame I didn\u2019t see the programme. (like)", "answers": ["I would like to have seen the programme.", "I\u2019d like to have seen the programme."]},
-        {"num": 3, "prompt": "I\u2019m glad I didn\u2019t lose my watch. (hate)", "answers": ["I would hate to have lost my watch.", "I\u2019d hate to have lost my watch."]},
-        {"num": 4, "prompt": "It\u2019s too bad I didn\u2019t meet your parents. (love)", "answers": ["I would love to have met your parents.", "I\u2019d love to have met your parents."]},
-        {"num": 5, "prompt": "I\u2019m glad I wasn\u2019t alone. (not / like)", "answers": ["I wouldn\u2019t like to have been alone."]},
-        {"num": 6, "prompt": "We should have travelled by train. (prefer)", "answers": ["I would prefer to have travelled by train.", "I\u2019d prefer to have travelled by train."]}
+        {
+          "num": 1,
+          "prompt": "It’s a shame I couldn’t go to the party. (like)",
+          "answers": [
+            "I would like to have gone to the party."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "It’s a shame I didn’t see the programme. (like)",
+          "answers": [
+            "I would like to have seen the programme.",
+            "I’d like to have seen the programme."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I’m glad I didn’t lose my watch. (hate)",
+          "answers": [
+            "I would hate to have lost my watch.",
+            "I’d hate to have lost my watch."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "It’s too bad I didn’t meet your parents. (love)",
+          "answers": [
+            "I would love to have met your parents.",
+            "I’d love to have met your parents."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I’m glad I wasn’t alone. (not / like)",
+          "answers": [
+            "I wouldn’t like to have been alone."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "We should have travelled by train. (prefer)",
+          "answers": [
+            "I would prefer to have travelled by train.",
+            "I’d prefer to have travelled by train."
+          ]
+        }
       ]
     }
   ]

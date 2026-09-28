@@ -8,14 +8,14 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form.",
       "items": [
-        {"num": 2, "parts": ["Sarah got to the station just in time to catch her train to the airport. If ", " the train, ", " her flight too."], "answers": [["she'd missed", "she had missed"], ["she'd have missed", "she would have missed"]]},
-        {"num": 3, "parts": ["Thanks for reminding me about Lisa's birthday. ", " if ", " me."], "answers": [["I'd have forgotten", "I would have forgotten"], ["you hadn't reminded"]]},
-        {"num": 4, "parts": ["I didn't have your email address, so I couldn't contact you. If ", " your email address, ", " you an email."], "answers": [["I'd had", "I had had"], ["I'd have sent", "I would have sent"]]},
-        {"num": 5, "parts": ["Their trip was OK, but ", " it more if the weather ", " better."], "answers": [["they'd have enjoyed", "they would have enjoyed"], ["had been"]]},
-        {"num": 6, "parts": ["Sorry we're late. Our taxi got stuck in the traffic. ", " quicker if ", "."], "answers": [["It would have been"], ["we'd walked", "we had walked"]]},
-        {"num": 7, "parts": ["Why didn't you tell me about your problem? If ", " me, ", " to help you."], "answers": [["you'd told", "you had told"], ["I'd have tried", "I would have tried"]]},
-        {"num": 8, "parts": ["I'm not tired. If ", " tired, I'd go home now."], "answers": [["I were", "I was"]]},
-        {"num": 9, "parts": ["I wasn't tired last night. If ", " tired, I would have gone home earlier."], "answers": [["I'd been", "I had been"]]}
+        {"num": 2, "parts": ["Sarah got to the station just in time to catch her train to the airport. If ", " (she / miss) the train, ", " (she / miss) her flight too."], "answers": [["she'd missed", "she had missed"], ["she'd have missed", "she would have missed"]]},
+        {"num": 3, "parts": ["Thanks for reminding me about Lisa's birthday. ", " (I / forget) if ", " (you / not / remind) me."], "answers": [["I'd have forgotten", "I would have forgotten"], ["you hadn't reminded"]]},
+        {"num": 4, "parts": ["I didn't have your email address, so I couldn't contact you. If ", " (I / have) your email address, ", " (I / send) you an email."], "answers": [["I'd had", "I had had"], ["I'd have sent", "I would have sent"]]},
+        {"num": 5, "parts": ["Their trip was OK, but ", " (they / enjoy) it more if the weather ", " (be) better."], "answers": [["they'd have enjoyed", "they would have enjoyed"], ["had been"]]},
+        {"num": 6, "parts": ["Sorry we're late. Our taxi got stuck in the traffic. ", " (it / be) quicker if ", "(we / walk)."], "answers": [["It would have been"], ["we'd walked", "we had walked"]]},
+        {"num": 7, "parts": ["Why didn't you tell me about your problem? If ", " (you / tell) me, ", " (I / try) to help you."], "answers": [["you'd told", "you had told"], ["I'd have tried", "I would have tried"]]},
+        {"num": 8, "parts": ["I'm not tired. If ", " (I / be) tired, I'd go home now."], "answers": [["I were", "I was"]]},
+        {"num": 9, "parts": ["I wasn't tired last night. If ", " (I / be) tired, I would have gone home earlier."], "answers": [["I'd been", "I had been"]]}
       ]
     },
     {

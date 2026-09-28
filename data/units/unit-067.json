@@ -1,7 +1,10 @@
 {
   "unit": 67,
   "title": "see somebody do and see somebody doing",
-  "pdfPages": [146, 147],
+  "pdfPages": [
+    146,
+    147
+  ],
   "exercises": [
     {
       "id": "67.1",
@@ -10,53 +13,124 @@
       "items": [
         {
           "num": "1a",
-          "parts": ["Tom doesn\u2019t have the keys. He ", " them to Lisa."],
-          "answers": [["gave"]]
+          "parts": [
+            "Tom doesn’t have the keys. He ",
+            " them to Lisa. (give)"
+          ],
+          "answers": [
+            [
+              "gave"
+            ]
+          ],
+          "example": true
         },
         {
           "num": "1b",
-          "parts": ["Tom doesn\u2019t have the keys. I saw him ", " them to Lisa."],
-          "answers": [["give"]]
+          "parts": [
+            "Tom doesn’t have the keys. I saw him ",
+            " them to Lisa. (give)"
+          ],
+          "answers": [
+            [
+              "give"
+            ]
+          ]
         },
         {
           "num": "2a",
-          "parts": ["A car ", " outside our house, and then it drove off again."],
-          "answers": [["stopped"]]
+          "parts": [
+            "A car ",
+            " outside our house, and then it drove off again. (stop)"
+          ],
+          "answers": [
+            [
+              "stopped"
+            ]
+          ]
         },
         {
           "num": "2b",
-          "parts": ["We heard a car ", " outside our house, and then it drove off again."],
-          "answers": [["stop"]]
+          "parts": [
+            "We heard a car ",
+            " outside our house, and then it drove off again. (stop)"
+          ],
+          "answers": [
+            [
+              "stop"
+            ]
+          ]
         },
         {
           "num": "3a",
-          "parts": ["Ben gave me the envelope and watched me ", " it."],
-          "answers": [["open"]]
+          "parts": [
+            "Ben gave me the envelope and watched me ",
+            " it. (open)"
+          ],
+          "answers": [
+            [
+              "open"
+            ]
+          ]
         },
         {
           "num": "3b",
-          "parts": ["Ben gave me the envelope and I ", " it."],
-          "answers": [["opened"]]
+          "parts": [
+            "Ben gave me the envelope and I ",
+            " it. (open)"
+          ],
+          "answers": [
+            [
+              "opened"
+            ]
+          ]
         },
         {
           "num": "4a",
-          "parts": ["Sarah is Canadian. I heard her ", " she\u2019s from Toronto."],
-          "answers": [["say"]]
+          "parts": [
+            "Sarah is Canadian. I heard her ",
+            " she’s from Toronto. (say)"
+          ],
+          "answers": [
+            [
+              "say"
+            ]
+          ]
         },
         {
           "num": "4b",
-          "parts": ["Sarah is Canadian. She ", " she\u2019s from Toronto."],
-          "answers": [["said"]]
+          "parts": [
+            "Sarah is Canadian. She ",
+            " she’s from Toronto. (say)"
+          ],
+          "answers": [
+            [
+              "said"
+            ]
+          ]
         },
         {
           "num": "5a",
-          "parts": ["A man ", " over in the street, so we went to help him."],
-          "answers": [["fell"]]
+          "parts": [
+            "A man ",
+            " over in the street, so we went to help him. (fall)"
+          ],
+          "answers": [
+            [
+              "fell"
+            ]
+          ]
         },
         {
           "num": "5b",
-          "parts": ["We saw a man ", " over in the street, so we went to help him."],
-          "answers": [["fall"]]
+          "parts": [
+            "We saw a man ",
+            " over in the street, so we went to help him. (fall)"
+          ],
+          "answers": [
+            [
+              "fall"
+            ]
+          ]
         }
       ]
     },
@@ -67,33 +141,78 @@
       "items": [
         {
           "num": 1,
-          "parts": ["We saw Kate ", "."],
-          "answers": [["waiting for a bus"]]
+          "parts": [
+            "We saw Kate ",
+            "."
+          ],
+          "answers": [
+            [
+              "waiting for a bus"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["We saw Clare ", " in a restaurant."],
-          "answers": [["eating", "sitting"]]
+          "parts": [
+            "We saw Clare ",
+            " in a restaurant."
+          ],
+          "answers": [
+            [
+              "eating",
+              "sitting"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["We saw David and Helen ", "."],
-          "answers": [["playing tennis"]]
+          "parts": [
+            "We saw David and Helen ",
+            "."
+          ],
+          "answers": [
+            [
+              "playing tennis"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["We could smell something ", "."],
-          "answers": [["burning"]]
+          "parts": [
+            "We could smell something ",
+            "."
+          ],
+          "answers": [
+            [
+              "burning"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["We could hear ", "."],
-          "answers": [["Bill playing his/the guitar"]]
+          "parts": [
+            "We could hear ",
+            "."
+          ],
+          "answers": [
+            [
+              "Bill playing his/the guitar"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["We saw Linda ", "."],
-          "answers": [["jogging", "running"]]
+          "parts": [
+            "We saw Linda ",
+            "."
+          ],
+          "answers": [
+            [
+              "jogging",
+              "running"
+            ]
+          ]
         }
       ]
     },
@@ -101,67 +220,166 @@
       "id": "67.3",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use these verbs (in the correct form):",
-      "wordBank": ["crawl", "cry", "explode", "get", "happen", "lie", "put", "ride", "say", "slam", "stand", "tell"],
+      "wordBank": [
+        "crawl",
+        "cry",
+        "explode",
+        "get",
+        "happen",
+        "lie",
+        "put",
+        "ride",
+        "say",
+        "slam",
+        "stand",
+        "tell"
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["The bus stopped at the bus stop but I didn\u2019t see anybody ", " off."],
-          "answers": [["get"]]
+          "parts": [
+            "The bus stopped at the bus stop but I didn’t see anybody ",
+            " off."
+          ],
+          "answers": [
+            [
+              "get"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["I saw two people ", " outside your house. I don\u2019t know who they were."],
-          "answers": [["standing"]]
+          "parts": [
+            "I saw two people ",
+            " outside your house. I don’t know who they were."
+          ],
+          "answers": [
+            [
+              "standing"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["I thought I heard somebody ", " \u2018Hi\u2019, so I turned round."],
-          "answers": [["say"]]
+          "parts": [
+            "I thought I heard somebody ",
+            " ‘Hi’, so I turned round."
+          ],
+          "answers": [
+            [
+              "say"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["There was an accident outside my house, but I didn\u2019t see it ", "."],
-          "answers": [["happen"]]
+          "parts": [
+            "There was an accident outside my house, but I didn’t see it ",
+            "."
+          ],
+          "answers": [
+            [
+              "happen"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Listen. Can you hear a baby ", "?"],
-          "answers": [["crying"]]
+          "parts": [
+            "Listen. Can you hear a baby ",
+            "?"
+          ],
+          "answers": [
+            [
+              "crying"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I know you took the key. I saw you ", " it in your pocket."],
-          "answers": [["put"]]
+          "parts": [
+            "I know you took the key. I saw you ",
+            " it in your pocket."
+          ],
+          "answers": [
+            [
+              "put"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["We listened to the old man ", " his story from beginning to end."],
-          "answers": [["tell"]]
+          "parts": [
+            "We listened to the old man ",
+            " his story from beginning to end."
+          ],
+          "answers": [
+            [
+              "tell"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Everybody heard the bomb ", ". It was a tremendous noise."],
-          "answers": [["explode"]]
+          "parts": [
+            "Everybody heard the bomb ",
+            ". It was a tremendous noise."
+          ],
+          "answers": [
+            [
+              "explode"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["Oh! I can feel something ", " up my leg. It must be an insect."],
-          "answers": [["crawling"]]
+          "parts": [
+            "Oh! I can feel something ",
+            " up my leg. It must be an insect."
+          ],
+          "answers": [
+            [
+              "crawling"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["I looked out of the window and saw Dan ", " his bike along the road."],
-          "answers": [["riding"]]
+          "parts": [
+            "I looked out of the window and saw Dan ",
+            " his bike along the road."
+          ],
+          "answers": [
+            [
+              "riding"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["I heard somebody ", " a door in the middle of the night. It woke me up."],
-          "answers": [["slam"]]
+          "parts": [
+            "I heard somebody ",
+            " a door in the middle of the night. It woke me up."
+          ],
+          "answers": [
+            [
+              "slam"
+            ]
+          ]
         },
         {
           "num": 12,
-          "parts": ["When I got home, I found a cat ", " on the kitchen table."],
-          "answers": [["lying"]]
+          "parts": [
+            "When I got home, I found a cat ",
+            " on the kitchen table."
+          ],
+          "answers": [
+            [
+              "lying"
+            ]
+          ]
         }
       ]
     }

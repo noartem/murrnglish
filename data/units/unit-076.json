@@ -5,29 +5,21 @@
   "exercises": [
     {
       "id": "76.1",
-      "type": "choice",
+      "type": "write",
       "instruction": "Answer the questions. Choose the right answer from the box. Don't forget the.",
       "items": [
-        {
-          "num": 1,
-          "options": ["a the giraffe", "b the cheetah", "c the kangaroo"],
-          "answer": 0
-        },
-        {
-          "num": 2,
-          "options": ["a the swan", "b the penguin", "c the owl"],
-          "answer": 0
-        },
-        {
-          "num": 3,
-          "options": ["a the wheel", "b the laser", "c the telescope"],
-          "answer": 0
-        },
-        {
-          "num": 4,
-          "options": ["a the rupee", "b the (Canadian) dollar", "c the yen"],
-          "answer": 0
-        }
+        {"num": "1a", "prompt": "Which of the animals is the tallest?", "answers": []},
+        {"num": "1b", "prompt": "Which animal can run the fastest?", "answers": ["the cheetah"]},
+        {"num": "1c", "prompt": "Which of these animals is found in Australia?", "answers": ["the kangaroo"]},
+        {"num": "2a", "prompt": "Which of these birds has a long neck?", "answers": ["the swan"]},
+        {"num": "2b", "prompt": "Which of these birds cannot fly?", "answers": ["the penguin"]},
+        {"num": "2c", "prompt": "Which bird flies at night?", "answers": ["the owl"]},
+        {"num": "3a", "prompt": "Which of these inventions is the oldest?", "answers": ["the wheel"]},
+        {"num": "3b", "prompt": "Which one is the most recent?", "answers": ["the laser"]},
+        {"num": "3c", "prompt": "Which one was especially important for astronomy?", "answers": ["the telescope"]},
+        {"num": "4a", "prompt": "What is the currency of India?", "answers": ["the rupee"]},
+        {"num": "4b", "prompt": "What is the currency of Canada?", "answers": ["the dollar", "the Canadian dollar"]},
+        {"num": "4c", "prompt": "And the currency of your country?", "answers": []}
       ]
     },
     {

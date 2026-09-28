@@ -14,7 +14,7 @@
     {
      "num": 3,
      "parts": [
-      "",
+      "(I / help) ",
       " you if I could, but I'm afraid I can't."
      ],
      "answers": [
@@ -28,7 +28,7 @@
      "num": 4,
      "parts": [
       "This soup isn't very nice. ",
-      " better if it wasn't so salty."
+      " (it / taste) better if it wasn't so salty."
      ],
      "answers": [
       [
@@ -40,7 +40,7 @@
      "num": 5,
      "parts": [
       "We live in a city and don't need a car, but we would need one if ",
-      " in the country."
+      " (we / live) in the country."
      ],
      "answers": [
       [
@@ -52,7 +52,7 @@
      "num": 6,
      "parts": [
       "If we had the choice, ",
-      " in the country."
+      " (we / live) in the country."
      ],
      "answers": [
       [
@@ -65,7 +65,7 @@
      "num": 7,
      "parts": [
       "I'd make a lot of changes if ",
-      " the manager of the company."
+      " (I / be) the manager of the company."
      ],
      "answers": [
       [
@@ -78,7 +78,7 @@
      "num": 8,
      "parts": [
       "I wouldn't call someone in the middle of the night if ",
-      " important."
+      " (it / not / be) important."
      ],
      "answers": [
       [
@@ -91,8 +91,8 @@
      "num": 9,
      "parts": [
       "If I were you, ",
-      ". ",
-      " now."
+      "(I / not / wait). ",
+      "(I / go) now."
      ],
      "answers": [
       [
@@ -108,8 +108,8 @@
      "num": 10,
      "parts": [
       "You're always tired because you go to bed so late. If ",
-      " to bed so late every night, ",
-      " tired all the time."
+      " (you / not / go) to bed so late every night, ",
+      " (you / not / be) tired all the time."
      ],
      "answers": [
       [
@@ -124,8 +124,8 @@
      "num": 11,
      "parts": [
       "I think there are too many cars. If ",
-      " so many cars, ",
-      " so much pollution."
+      " (there / not / be) so many cars, ",
+      " (there / not / be) so much pollution."
      ],
      "answers": [
       [
@@ -140,9 +140,9 @@
      "num": 12,
      "parts": [
       "We all need jobs and money, but what ",
-      " you ",
+      " (you / do) you ",
       " if ",
-      " to work?"
+      " (you / not / have) to work?"
      ],
      "answers": [
       [

@@ -1,7 +1,10 @@
 {
   "unit": 105,
   "title": "Comparative 1 (cheaper, more expensive etc.)",
-  "pdfPages": [222, 223],
+  "pdfPages": [
+    222,
+    223
+  ],
   "exercises": [
     {
       "id": "105.1",
@@ -10,58 +13,141 @@
       "items": [
         {
           "num": 2,
-          "parts": ["This coffee is very weak. I like it ", "."],
-          "answers": [["stronger"]]
+          "parts": [
+            "This coffee is very weak. I like it ",
+            "."
+          ],
+          "answers": [
+            [
+              "stronger"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["The town was surprisingly big. I expected it to be ", "."],
-          "answers": [["smaller"]]
+          "parts": [
+            "The town was surprisingly big. I expected it to be ",
+            "."
+          ],
+          "answers": [
+            [
+              "smaller"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["The hotel was surprisingly cheap. I expected it to be ", "."],
-          "answers": [["more expensive"]]
+          "parts": [
+            "The hotel was surprisingly cheap. I expected it to be ",
+            "."
+          ],
+          "answers": [
+            [
+              "more expensive"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["The weather is too cold here. I\u2019d like to live somewhere ", "."],
-          "answers": [["warmer", "hotter"]]
+          "parts": [
+            "The weather is too cold here. I’d like to live somewhere ",
+            "."
+          ],
+          "answers": [
+            [
+              "warmer",
+              "hotter"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Sometimes my job is a bit boring. I\u2019d like to do something ", "."],
-          "answers": [["more interesting", "more exciting"]]
+          "parts": [
+            "Sometimes my job is a bit boring. I’d like to do something ",
+            "."
+          ],
+          "answers": [
+            [
+              "more interesting",
+              "more exciting"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["It\u2019s a shame you live so far away. I wish you lived ", "."],
-          "answers": [["nearer", "closer"]]
+          "parts": [
+            "It’s a shame you live so far away. I wish you lived ",
+            "."
+          ],
+          "answers": [
+            [
+              "nearer",
+              "closer"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["It was quite easy to find a place to live. I thought it would be ", "."],
-          "answers": [["harder", "more difficult", "more complicated"]]
+          "parts": [
+            "It was quite easy to find a place to live. I thought it would be ",
+            "."
+          ],
+          "answers": [
+            [
+              "harder",
+              "more difficult",
+              "more complicated"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["Your work isn\u2019t very good. I\u2019m sure you can do ", "."],
-          "answers": [["better"]]
+          "parts": [
+            "Your work isn’t very good. I’m sure you can do ",
+            "."
+          ],
+          "answers": [
+            [
+              "better"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["Don\u2019t worry. The situation isn\u2019t so bad. It could be ", "."],
-          "answers": [["worse"]]
+          "parts": [
+            "Don’t worry. The situation isn’t so bad. It could be ",
+            "."
+          ],
+          "answers": [
+            [
+              "worse"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["You hardly ever call me. Why don\u2019t you call me ", "?"],
-          "answers": [["more often"]]
+          "parts": [
+            "You hardly ever call me. Why don’t you call me ",
+            "?"
+          ],
+          "answers": [
+            [
+              "more often"
+            ]
+          ]
         },
         {
           "num": 12,
-          "parts": ["You\u2019re too near the camera. Can you move a bit ", "?"],
-          "answers": [["further", "farther"]]
+          "parts": [
+            "You’re too near the camera. Can you move a bit ",
+            "?"
+          ],
+          "answers": [
+            [
+              "further",
+              "farther"
+            ]
+          ]
         }
       ]
     },
@@ -69,47 +155,114 @@
       "id": "105.2",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use the comparative forms of the words in the box. Use than where necessary.",
-      "wordBank": ["big", "early", "high", "important", "interested", "peaceful", "reliable", "serious", "slowly", "thin"],
+      "wordBank": [
+        "big",
+        "early",
+        "high",
+        "important",
+        "interested",
+        "peaceful",
+        "reliable",
+        "serious",
+        "slowly",
+        "thin"
+      ],
       "items": [
         {
           "num": 3,
-          "parts": ["Unfortunately the problem was ", " we thought at first."],
-          "answers": [["more serious than"]]
+          "parts": [
+            "Unfortunately the problem was ",
+            " we thought at first."
+          ],
+          "answers": [
+            [
+              "more serious than"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["You look ", ". Have you lost weight?"],
-          "answers": [["thinner"]]
+          "parts": [
+            "You look ",
+            ". Have you lost weight?"
+          ],
+          "answers": [
+            [
+              "thinner"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["We don\u2019t have enough space here. We need a ", " apartment."],
-          "answers": [["bigger"]]
+          "parts": [
+            "We don’t have enough space here. We need a ",
+            " apartment."
+          ],
+          "answers": [
+            [
+              "bigger"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["James doesn\u2019t study very hard. He\u2019s ", " in having a good time."],
-          "answers": [["more interested"]]
+          "parts": [
+            "James doesn’t study very hard. He’s ",
+            " in having a good time."
+          ],
+          "answers": [
+            [
+              "more interested"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Health and happiness are ", " money."],
-          "answers": [["more important than"]]
+          "parts": [
+            "Health and happiness are ",
+            " money."
+          ],
+          "answers": [
+            [
+              "more important than"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["I like living in the country. It\u2019s ", " living in a town."],
-          "answers": [["more peaceful than"]]
+          "parts": [
+            "I like living in the country. It’s ",
+            " living in a town."
+          ],
+          "answers": [
+            [
+              "more peaceful than"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["I\u2019m sorry I don\u2019t understand. Can you speak more ", ", please?"],
-          "answers": [["slowly"]]
+          "parts": [
+            "I’m sorry I don’t understand. Can you speak more ",
+            ", please?"
+          ],
+          "answers": [
+            [
+              "slowly"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["In some parts of the country, prices are ", " in others."],
-          "answers": [["higher than"]]
+          "parts": [
+            "In some parts of the country, prices are ",
+            " in others."
+          ],
+          "answers": [
+            [
+              "higher than"
+            ]
+          ]
         }
       ]
     },
@@ -117,69 +270,135 @@
       "id": "105.3",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from:",
-      "wordBank": ["than", "more", "worse", "quietly", "longer", "better", "careful", "frequent"],
+      "wordBank": [
+        "than",
+        "more",
+        "worse",
+        "quietly",
+        "longer",
+        "better",
+        "careful",
+        "frequent"
+      ],
       "items": [
         {
           "num": 2,
-          "parts": ["Sorry about my mistake. I\u2019ll try and be more ", " in future."],
-          "answers": [["careful"]]
+          "parts": [
+            "Sorry about my mistake. I’ll try and be more ",
+            " in future."
+          ],
+          "answers": [
+            [
+              "careful"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Your English has improved. It\u2019s ", " than it was."],
-          "answers": [["better"]]
+          "parts": [
+            "Your English has improved. It’s ",
+            " than it was."
+          ],
+          "answers": [
+            [
+              "better"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["You can travel by bus or by train. The buses are more ", " than the trains."],
-          "answers": [["frequent"]]
+          "parts": [
+            "You can travel by bus or by train. The buses are more ",
+            " than the trains."
+          ],
+          "answers": [
+            [
+              "frequent"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["You can\u2019t always have things immediately. You have to be more ", " patient."],
-          "answers": [["more"]]
+          "parts": [
+            "You can’t always have things immediately. You have to be ",
+            " patient."
+          ],
+          "answers": [
+            [
+              "more"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I\u2019m a pessimist. I always think things are going to get ", "."],
-          "answers": [["worse"]]
+          "parts": [
+            "I’m a pessimist. I always think things are going to get ",
+            "."
+          ],
+          "answers": [
+            [
+              "worse"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["We were busier ", " usual in the office today. It\u2019s not usually so busy."],
-          "answers": [["than"]]
+          "parts": [
+            "We were busier ",
+            " usual in the office today. It’s not usually so busy."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["You\u2019re talking very loudly. Can you speak more ", "?"],
-          "answers": [["quietly"]]
+          "parts": [
+            "You’re talking very loudly. Can you speak more ",
+            "?"
+          ],
+          "answers": [
+            [
+              "quietly"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "105.4",
       "type": "write",
-      "instruction": "Read the situations and complete the sentences. Use a comparative form (-er or more \u2026).",
+      "instruction": "Read the situations and complete the sentences. Use a comparative form (-er or more …).",
       "items": [
         {
           "num": 2,
           "prompt": "Dan and I went for a run. I ran ten kilometres. Dan stopped after eight kilometres.",
-          "answers": ["I ran further/farther than Dan."]
+          "answers": [
+            "I ran further/farther than Dan."
+          ]
         },
         {
           "num": 3,
           "prompt": "The journey takes four hours by car and five hours by train.",
-          "answers": ["The journey takes longer by train than by car."]
+          "answers": [
+            "The journey takes longer by train than by car."
+          ]
         },
         {
           "num": 4,
-          "prompt": "I expected my friends to arrive at about 4 o\u2019clock. In fact they arrived at 2.30.",
-          "answers": ["My friends arrived earlier than I expected."]
+          "prompt": "I expected my friends to arrive at about 4 o’clock. In fact they arrived at 2.30.",
+          "answers": [
+            "My friends arrived earlier than I expected."
+          ]
         },
         {
           "num": 5,
           "prompt": "There is always a lot of traffic here, but today the traffic is really bad.",
-          "answers": ["The traffic today is worse than usual."]
+          "answers": [
+            "The traffic today is worse than usual."
+          ]
         }
       ]
     }

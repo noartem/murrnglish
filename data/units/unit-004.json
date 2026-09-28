@@ -1,24 +1,153 @@
 {
   "unit": 4,
   "title": "Present continuous and present simple 2 (I am doing and I do)",
-  "pdfPages": [20, 21],
+  "pdfPages": [
+    20,
+    21
+  ],
   "exercises": [
     {
       "id": "4.1",
       "type": "fill-in",
       "instruction": "Put the verb into the correct form, present continuous or present simple.",
       "items": [
-        {"num": 2, "parts": ["Alan says he\u2019s 90 years old, but nobody ", " him."], "answers": [["believes"]]},
-        {"num": 3, "parts": ["She told me her name, but ", " it now."], "answers": [["I don\u2019t remember", "I do not remember", "I can\u2019t remember"]]},
-        {"num": 4, "parts": ["Don\u2019t put the dictionary away. ", " it."], "answers": [["I\u2019m using", "I am using"]]},
-        {"num": 5, "parts": ["Don\u2019t put the dictionary away. ", " it."], "answers": [["I need"]]},
-        {"num": 6, "parts": ["Air ", " mainly of nitrogen and oxygen."], "answers": [["consists"]]},
-        {"num": 7, "parts": ["Who is that man? What ", "?"], "answers": [["does he want"]]},
-        {"num": 8, "parts": ["Who is that man? Why ", " at us?"], "answers": [["is he looking"]]},
-        {"num": 9, "parts": ["Who is that man? ", "?"], "answers": [["Do you recognise"]]},
-        {"num": 10, "parts": [" ", " of selling my car. Would you be interested in buying it?"], "answers": [["I\u2019m thinking", "I am thinking"]]},
-        {"num": 11, "parts": ["I can\u2019t make up my mind. What ", " I should do?"], "answers": [["do you think"]]},
-        {"num": 12, "parts": ["Gary wasn\u2019t well earlier, but ", " OK now."], "answers": [["he seems"]]}
+        {
+          "num": 2,
+          "parts": [
+            "Alan says he’s 90 years old, but nobody ",
+            " (believe) him."
+          ],
+          "answers": [
+            [
+              "believes"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She told me her name, but ",
+            " (I / not / remember) it now."
+          ],
+          "answers": [
+            [
+              "I don’t remember",
+              "I do not remember",
+              "I can’t remember"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Don’t put the dictionary away. ",
+            " (I / use) it."
+          ],
+          "answers": [
+            [
+              "I’m using",
+              "I am using"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Don’t put the dictionary away. ",
+            " (I / need) it."
+          ],
+          "answers": [
+            [
+              "I need"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Air ",
+            " (consist) mainly of nitrogen and oxygen."
+          ],
+          "answers": [
+            [
+              "consists"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Who is that man? What ",
+            "(he / want)?"
+          ],
+          "answers": [
+            [
+              "does he want"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Who is that man? Why ",
+            " (he / look) at us?"
+          ],
+          "answers": [
+            [
+              "is he looking"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Who is that man? ",
+            "(you / recognise)?"
+          ],
+          "answers": [
+            [
+              "Do you recognise"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "(I / think) ",
+            " of selling my car. Would you be interested in buying it?"
+          ],
+          "answers": [
+            [
+              "I’m thinking",
+              "I am thinking"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I can’t make up my mind. What ",
+            " (you / think) I should do?"
+          ],
+          "answers": [
+            [
+              "do you think"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Gary wasn’t well earlier, but ",
+            " (he / seem) OK now."
+          ],
+          "answers": [
+            [
+              "he seems"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -26,24 +155,108 @@
       "type": "write",
       "instruction": "Use the words in brackets to make sentences.",
       "items": [
-        {"num": 1, "prompt": "(you / not / seem / very happy today)", "answers": ["You don\u2019t seem very happy today."]},
-        {"num": 2, "prompt": "(I / think)", "answers": ["I\u2019m thinking."]},
-        {"num": 3, "prompt": "(who / this umbrella / belong to?)", "answers": ["Who does this umbrella belong to?"]},
-        {"num": 4, "prompt": "(this / smell / good)", "answers": ["This smells good."]},
-        {"num": 5, "prompt": "(anybody / sit / there?)", "answers": ["Is anybody sitting there?"]},
-        {"num": 6, "prompt": "(these gloves / not / fit / me)", "answers": ["These gloves don\u2019t fit me."]}
+        {
+          "num": 1,
+          "prompt": "(you / not / seem / very happy today)",
+          "answers": [
+            "You don’t seem very happy today."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(I / think)",
+          "answers": [
+            "I’m thinking."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(who / this umbrella / belong to?)",
+          "answers": [
+            "Who does this umbrella belong to?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(this / smell / good)",
+          "answers": [
+            "This smells good."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(anybody / sit / there?)",
+          "answers": [
+            "Is anybody sitting there?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(these gloves / not / fit / me)",
+          "answers": [
+            "These gloves don’t fit me."
+          ]
+        }
       ]
     },
     {
       "id": "4.3",
-      "type": "fill-in",
+      "type": "write",
       "instruction": "Are the underlined verbs OK? Correct them where necessary.",
       "items": [
-        {"num": 3, "parts": ["I\u2019m feeling hungry. Is there anything to eat?"], "answers": []},
-        {"num": 4, "parts": ["I\u2019ve never eaten that fruit. What ", "?"], "answers": [["does it taste"]]},
-        {"num": 5, "parts": ["I\u2019m not sure what she does. I think she works in a shop."], "answers": []},
-        {"num": 6, "parts": ["Look over there. What ", "?"], "answers": [["do you see"]]},
-        {"num": 7, "parts": ["You\u2019re very quiet. What ", "?"], "answers": [["OK"]]}
+        {
+          "num": 1,
+          "prompt": "Nicky [is thinking] of giving up her job.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "It’s not true. I’m [not believing] it.",
+          "answers": [
+            "I don’t believe it"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I’m [feeling] hungry. Is there anything to eat?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I’ve never eaten that fruit. What [is it tasting] like?",
+          "answers": [
+            "does it taste"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I’m not sure what she does. I think she [works] in a shop.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Look over there. What [are you seeing]?",
+          "answers": [
+            "do you see"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "You’re very quiet. What [are you thinking] about?",
+          "answers": [
+            "OK"
+          ]
+        }
+      ],
+      "example": [
+        1,
+        2
       ]
     },
     {
@@ -51,11 +264,66 @@
       "type": "fill-in",
       "instruction": "Complete the sentences. Use is/are being (continuous) or is/are (simple).",
       "items": [
-        {"num": 2, "parts": ["You\u2019ll like Sophie when you meet her. She ", " very nice."], "answers": [["is"]]},
-        {"num": 3, "parts": ["Sarah ", " very nice to me at the moment. I wonder why."], "answers": [["is being"]]},
-        {"num": 4, "parts": ["They ", " very happy. They\u2019ve just got married."], "answers": [["are"]]},
-        {"num": 5, "parts": ["You\u2019re normally very patient, so why ", " so unreasonable about waiting ten more minutes?"], "answers": [["are you being"]]},
-        {"num": 6, "parts": ["Would you like something to eat? ", "?"], "answers": [["Are you"]]}
+        {
+          "num": 2,
+          "parts": [
+            "You’ll like Sophie when you meet her. She ",
+            " very nice."
+          ],
+          "answers": [
+            [
+              "is"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Sarah ",
+            " very nice to me at the moment. I wonder why."
+          ],
+          "answers": [
+            [
+              "is being"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "They ",
+            " very happy. They’ve just got married."
+          ],
+          "answers": [
+            [
+              "are"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "You’re normally very patient, so why ",
+            " so unreasonable about waiting ten more minutes?"
+          ],
+          "answers": [
+            [
+              "are you being"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Would you like something to eat? ",
+            "?"
+          ],
+          "answers": [
+            [
+              "Are you"
+            ]
+          ]
+        }
       ]
     }
   ]
