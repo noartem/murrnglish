@@ -3,8 +3,9 @@
 // in useCourseShortcuts (helpOpen state lives in App); the backdrop click
 // is the only local handler here.
 
-import { Fragment, useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { Keyboard, X } from "lucide-react";
+import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { SC, SHORTCUT_HELP } from "../shortcuts";
 
 export function ShortcutsHelpButton({ onOpen }: { onOpen: () => void }) {
@@ -25,68 +26,94 @@ export function ShortcutsModal({ onClose }: { onClose: () => void }) {
   useEffect(() => {
     closeRef.current?.focus();
   }, []);
+  // divider fade: shows once the body has scrolled away from the top
+  const [scrolled, setScrolled] = useState(false);
   return (
     <div className="helpoverlay" onClick={onClose}>
       <div
-        className="helpcard"
+        className={"helpcard" + (scrolled ? " scrolled" : "")}
         role="dialog"
         aria-modal="true"
         aria-label="Keyboard shortcuts"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="helpcardhead">
-          <h3>Keyboard shortcuts</h3>
-          <button
-            className="helpclose"
-            ref={closeRef}
-            onClick={onClose}
-            aria-label="Close"
-          >
-            <X size={15} aria-hidden />
-          </button>
-        </div>
-        {SHORTCUT_HELP.map((entry) => (
-          <section className="helpentry" key={entry.title}>
-            <div className="helpentryhead">
-              <span className="keychips">
-                <KeyChips combo={entry.keys} />
-              </span>{" "}
-              <strong>{entry.title}</strong>
-            </div>
-            <p>{entry.desc}</p>
-            {entry.sub && (
-              <ul>
-                {entry.sub.map((s) => (
-                  <li key={s.desc}>
-                    <span className="keychips">
-                      <KeyChips combo={s.keys} />
-                      {s.alt && (
-                        <>
-                          <span className="keysep">/</span>
-                          <KeyChips combo={s.alt} />
-                        </>
-                      )}
-                    </span>{" "}
-                    {"\u2014"} {s.desc}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
-        ))}
+      <div className="helpcardhead">
+        <h3>Keyboard shortcuts</h3>
+        <button
+          className="helpclose"
+          ref={closeRef}
+          onClick={onClose}
+          aria-label="Close"
+        >
+          <X size={15} aria-hidden />
+        </button>
+      </div>
+      <OverlayScrollbarsComponent
+        className="helpscroll"
+        options={{
+          overflow: { x: "hidden" as const },
+          scrollbars: {
+            theme: "os-theme-dark",
+            autoHide: "leave" as const,
+            autoHideDelay: 500,
+          },
+        }}
+          events={{
+            scroll: (_instance, event) => {
+              const target = event.target as HTMLElement;
+              setScrolled(target.scrollTop > 0);
+            },
+          }}
+      >
+      {SHORTCUT_HELP.map((entry) => (
+        <section className="helpentry" key={entry.title}>
+          <div className="helpentryhead">
+            <span className="keychips">
+              <KeyChips combo={entry.keys} />
+            </span>{" "}
+            <strong>{entry.title}</strong>
+          </div>
+          <p>{entry.desc}</p>
+          {entry.sub && (
+            <ul>
+              {entry.sub.map((s) => (
+                <li key={s.desc}>
+                  <span className="keychips">
+                    <KeyChips combo={s.keys} />
+                    {s.alt && (
+                      <>
+                        <span className="keysep">/</span>
+                        <KeyChips combo={s.alt} />
+                      </>
+                    )}
+                  </span>{" "}
+                  {"\u2014"} {s.desc}
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))}
+      </OverlayScrollbarsComponent>
       </div>
     </div>
   );
 }
 
-// one combo = separate key chips joined by "+"
+// one combo = separate key chips joined by "+"; a token may hold "/"
+// alternatives (["↑ / ↓"]) — those render as chips joined by "/"
 function KeyChips({ combo }: { combo: string[] }) {
   return (
     <>
       {combo.map((k, i) => (
         <Fragment key={i}>
           {i > 0 && <span className="keyplus">+</span>}
-          <kbd>{k}</kbd>
+          {k.split("/").map((key, j) => (
+            <Fragment key={j}>
+              {j > 0 && <span className="keysep">/</span>}
+              <kbd>{key.trim()}</kbd>
+            </Fragment>
+          ))}
         </Fragment>
       ))}
     </>

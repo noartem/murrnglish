@@ -1181,21 +1181,46 @@ textarea.winline {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 10px;
-  width: min(92vw, 600px);
+  width: min(92vw, 680px);
   max-height: 82vh;
-  overflow: auto;
-  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.helpscroll {
+  min-height: 0;
+  padding: 0 22px 18px;
 }
 
 .helpcardhead {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 18px 22px 10px;
 }
 
 .helpcardhead h3 {
   margin: 0;
   font-size: 16px;
+}
+
+/* hairline under the header, fades in once the body is scrolled */
+.helpcardhead::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--border);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.helpcard.scrolled .helpcardhead::after {
+  opacity: 1;
 }
 
 .helpclose {
@@ -1215,7 +1240,15 @@ textarea.winline {
 }
 
 .helpentry {
-  margin-top: 14px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.helpentry:first-of-type {
+  margin-top: 6px;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .helpentryhead {
@@ -1235,7 +1268,7 @@ textarea.winline {
   padding-left: 0;
   list-style: none;
   display: grid;
-  gap: 4px;
+  gap: 8px;
   font-size: 13px;
   color: var(--muted);
 }
@@ -1262,7 +1295,9 @@ kbd {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  flex-wrap: wrap;
+  /* chips never wrap inside a row; only the description text wraps */
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 .keyplus,

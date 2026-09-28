@@ -73,7 +73,7 @@ export const SHORTCUT_HELP: HelpEntry[] = [
     title: "Book page",
     desc: "Moves the focus to the book page on the left.",
     sub: [
-      { keys: ["\u2191"], alt: ["\u2193", "\u2190", "\u2192"], desc: "scroll the page" },
+      { keys: ["\u2191 / \u2193", "\u2190 / \u2192"], desc: "scroll the page" },
       { keys: ["Ctrl", "="], alt: ["Ctrl", "\u2212"], desc: "zoom in / zoom out" },
       { keys: ["Ctrl", "="], alt: ["Ctrl", "\u2212"], desc: "zoom in / zoom out" },
       { keys: ["T"], desc: "invert the page colors (dark theme only)" },
