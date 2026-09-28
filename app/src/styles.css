@@ -96,6 +96,92 @@ body {
   font-family: var(--font-book);
 }
 
+/* home: centered cover, description, single CTA, quiet credit line */
+.home {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  place-items: center;
+  padding: 40px 16px 64px;
+}
+
+.homecol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 30rem;
+}
+
+.homecover {
+  /* actual cover art aspect (1112x1497) */
+  aspect-ratio: 1112 / 1497;
+  height: min(56vh, 480px);
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  background: var(--img-bg);
+}
+
+.homedesc {
+  font-family: var(--font-book);
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--text);
+  max-width: 30rem;
+  margin: 28px 0 0;
+}
+
+.homecta {
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-contrast);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 10px 26px;
+  margin-top: 26px;
+  cursor: pointer;
+}
+
+.homecta:hover {
+  filter: brightness(1.08);
+}
+
+.homecta:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.homecredit {
+  margin-top: 40px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.homecredit a {
+  color: inherit;
+}
+
+/* topbar title doubles as the home button on content pages */
+.topbar-home {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  display: inline-flex;
+}
+
+.topbar-home:disabled {
+  cursor: default;
+}
+
 :root {
   --topbar-h: 47px;
 }

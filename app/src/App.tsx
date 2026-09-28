@@ -1,10 +1,11 @@
 // App: hash-routed split-pane course UI.
-// Routes: #u<N> = unit N, #a<N> = additional exercise N.
+// Routes: #home (or bare "/") = landing, #u<N> = unit N, #a<N> = additional exercise N.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { AdditionalData, IndexData, TotalsMap, UnitData } from "./data";
 import { fetchAdditional, fetchIndex, fetchTotals, fetchUnit } from "./data";
 import { PageViewer } from "./components/PageViewer";
+import { Home } from "./components/Home";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
 import { ArrowLeft, ArrowRight, Check, Menu } from "lucide-react";
@@ -15,21 +16,46 @@ import {
 import {
   countCorrect,
   emptyProgress,
+  lastUnitFromProgress,
+  loadLastRoute,
   loadProgress,
+  saveLastRoute,
   unitCompleted,
 } from "./progress";
 import type { Progress } from "./progress";
+// home landing: bare "/", "#home", or any unknown hash; the rest are content
+type Route = { kind: "home" } | { kind: "unit"; n: number } | { kind: "additional"; n: number };
 
-type Route = { kind: "unit"; n: number } | { kind: "additional"; n: number };
-
-function parseHash(): Route {
-  const h = window.location.hash.replace(/^#/, "");
+// unit/additional hash -> route, or null for anything else
+function routeFromHash(h: string): Route | null {
   const mu = h.match(/^u(\d+)$/);
   if (mu) return { kind: "unit", n: Math.min(145, Math.max(1, Number(mu[1]))) };
   const ma = h.match(/^a(\d+)$/);
   if (ma) return { kind: "additional", n: Math.min(41, Math.max(1, Number(ma[1]))) };
-  return { kind: "unit", n: 1 };
+  return null;
 }
+
+// bare "/" resolves to the landing — or, for learners with saved progress,
+// straight to their last page (the URL is fixed up by the mount effect)
+function entryRoute(): Route {
+  const p = loadProgress();
+  const hasProgress =
+    Object.keys(p.results).length > 0 || Object.keys(p.selfMarks).length > 0;
+  if (!hasProgress) return { kind: "home" };
+  return routeFromHash(loadLastRoute() ?? lastUnitFromProgress(p) ?? "") ?? { kind: "home" };
+}
+
+function parseHash(): Route {
+  const h = window.location.hash.replace(/^#/, "");
+  if (h === "") return entryRoute();
+  if (h === "home") return { kind: "home" };
+  return routeFromHash(h) ?? { kind: "home" };
+}
+
+function routeToHash(r: Route): string {
+  return r.kind === "unit" ? `u${r.n}` : r.kind === "additional" ? `a${r.n}` : "home";
+}
+
 function scopeStats(
   totals: TotalsMap | null,
   keys: string[],
@@ -92,9 +118,20 @@ export default function App() {
 
   useEffect(() => {
     setProgressState(loadProgress());
+    // bare "/" resolved to a content page by entryRoute(): write the hash
+    // back (replaceState — no history entry) so the URL matches the page
+    if (window.location.hash === "" && route.kind !== "home") {
+      window.history.replaceState(null, "", `#${routeToHash(route)}`);
+    }
     fetchIndex().then(setIndex).catch((e) => setError(String(e)));
     fetchTotals().then(setTotals).catch(() => setTotals(null));
   }, []);
+  // remember the last content page for the "/" entry redirect
+  useEffect(() => {
+    if (route.kind !== "home") {
+      saveLastRoute(route.kind === "unit" ? `u${route.n}` : `a${route.n}`);
+    }
+  }, [route]);
 
   useEffect(() => {
     const onHash = () => setRoute(parseHash());
@@ -110,7 +147,7 @@ export default function App() {
       fetchUnit(route.n)
         .then(setUnit)
         .catch((e) => setError(String(e)));
-    } else {
+    } else if (route.kind === "additional") {
       fetchAdditional(route.n)
         .then(setAdditional)
         .catch((e) => setError(String(e)));
@@ -156,44 +193,55 @@ export default function App() {
   function navAdditional(n: number) {
     window.location.hash = `a${n}`;
   }
-  // course order for the bottom pager: units 1..145, then additional 1..41
-  const course = useMemo<Route[]>(() => {
-    if (!index) return [];
-    const list: Route[] = [];
-    for (const g of index.groups) for (const u of g.units) list.push({ kind: "unit", n: u });
-    for (const n of index.additional.exercises) list.push({ kind: "additional", n });
-    return list;
-  }, [index]);
-  const pager = useMemo(() => {
-    const pos = course.findIndex((r) => r.kind === route.kind && r.n === route.n);
-    const at = (r?: Route): NavTarget | null => {
-      if (!r) return null;
+  // pager: null on home/unknown routes, else prev/next course positions.
+  // Built from raw index (the old `course` list duplicated this logic).
+  type ContentRoute = { kind: "unit"; n: number } | { kind: "additional"; n: number };
+  const pager = useMemo<null | { prev: NavTarget | null; next: NavTarget | null }>(() => {
+    if (route.kind === "home" || !index) return null;
+    const at = (r?: Route | null): NavTarget | null => {
+      if (!r || r.kind === "home") return null;
+      const cr = r as ContentRoute;
       return {
-        kind: r.kind,
-        n: r.n,
-        label: r.kind === "unit" ? `Unit ${r.n}` : `Additional exercise ${r.n}`,
-        desc: index?.titles?.[r.kind === "unit" ? `u${r.n}` : `a${r.n}`] ?? "",
+        kind: cr.kind,
+        n: cr.n,
+        label: cr.kind === "unit" ? `Unit ${cr.n}` : `Additional exercise ${cr.n}`,
+        desc: index.titles?.[cr.kind === "unit" ? `u${cr.n}` : `a${cr.n}`] ?? "",
       };
     };
+    const course: ContentRoute[] = [
+      ...index.groups.flatMap((g) => g.units.map((u) => ({ kind: "unit" as const, n: u }))),
+      ...index.additional.exercises.map((n) => ({ kind: "additional" as const, n })),
+    ];
+    const pos = course.findIndex((r) => r.kind === route.kind && r.n === route.n);
     return { prev: at(course[pos - 1]), next: at(course[pos + 1]) };
-  }, [course, index, route]);
+  }, [index, route]);
 
   const exerciseIds = unit ? unit.exercises.map((e) => e.id) : [];
   const isUnitDone =
     route.kind === "unit" && unit ? unitCompleted(progress, exerciseIds) : false;
   const ov = scopeStats(totals, totals ? Object.keys(totals) : [], progress);
 
+  function goHome() {
+    window.location.hash = "home";
+  }
+
+  const isHome = route.kind === "home";
+
   return (
     <div className="app">
       <header className="topbar">
-        <button
-          className="sidebartoggle"
-          onClick={toggleSidebar}
-        >
+        <button className="sidebartoggle" onClick={toggleSidebar}>
           <Menu size={16} aria-hidden />
         </button>
         <div className="topbar-mid">
-          <h1>English Grammar in Use</h1>
+          <button
+            type="button"
+            className="topbar-home"
+            onClick={isHome ? undefined : goHome}
+            disabled={isHome}
+          >
+            <h1>English Grammar in Use</h1>
+          </button>
           <span className="progressline">
             Units completed <strong>{doneUnits.size}/145</strong> ·{" "}
             {totals ? (
@@ -309,6 +357,9 @@ export default function App() {
             </OverlayScrollbarsComponent>
           );
         })()}
+        {isHome ? (
+          <Home onStart={() => (window.location.hash = "u1")} />
+        ) : (
           <div className="split">
             <div className="leftpane">
             {unit && <PageViewer pdfPages={unit.pdfPages} />}
@@ -348,11 +399,12 @@ export default function App() {
                 <ExerciseCard exercise={additional.exercise} progress={progress} setProgress={setProgress} />
               </>
             )}
-            {(pager.prev || pager.next) && (
+            {pager && (pager.prev || pager.next) && (
               <UnitNav prev={pager.prev} next={pager.next} onGo={(t) => (t.kind === "unit" ? navUnit(t.n) : navAdditional(t.n))} />
             )}
           </OverlayScrollbarsComponent>
         </div>
+      )}
       </div>
     </div>
   );

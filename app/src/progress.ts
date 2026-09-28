@@ -72,3 +72,35 @@ export function countCorrect(progress: Progress): ProgressCounts {
   }
   return { correct, total };
 }
+
+// Last opened content page ("u13"/"a41"), used by the "/" entry redirect.
+const LAST_KEY = "egu-course-last-route-v1";
+
+export function loadLastRoute(): string | null {
+  try {
+    const raw = localStorage.getItem(LAST_KEY);
+    return raw !== null && /^(u|a)\d+$/.test(raw) ? raw : null;
+  } catch {
+    return null; // storage unavailable: entry falls back to progress
+  }
+}
+
+export function saveLastRoute(route: string): void {
+  try {
+    localStorage.setItem(LAST_KEY, route);
+  } catch {
+    // storage unavailable: redirect falls back to progress-derived unit
+  }
+}
+
+// Fallback for progress saved before last-route tracking existed: the unit
+// of the most recently answered exercise (results keys keep insertion
+// order; additional exercises use bare ids, so only units match).
+export function lastUnitFromProgress(p: Progress): string | null {
+  const keys = Object.keys(p.results);
+  for (let i = keys.length - 1; i >= 0; i--) {
+    const m = keys[i].match(/^(\d+)\./);
+    if (m) return `u${m[1]}`;
+  }
+  return null;
+}
