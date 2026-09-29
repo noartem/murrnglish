@@ -93,7 +93,7 @@ export const SHORTCUT_HELP: HelpEntry[] = [
   {
     keys: ["Shift", "I"],
     title: "Progress window",
-    desc: "Shows the progress overview and its import / export / share actions. Opened this way, the window puts a key on each action: the first letter of the controls is underlined, and pressing that letter does the same as clicking the control.",
+    desc: "Shows the progress overview and its import / export / share actions. Opened this way, the window marks a key letter of each control — I, E, S, and the a of \u201canswer\u201d — and pressing that letter does the same as clicking the control.",
     sub: [
       { keys: ["A"], desc: "include or leave out the answer texts" },
       { keys: ["I"], desc: "import progress from a file" },
