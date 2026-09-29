@@ -186,12 +186,21 @@ ok(
   await mp.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
 );
 
-// drawer: open via hamburger, close via backdrop
+// drawer: open via hamburger; the backdrop is always mounted and inert —
+// closing happens through the drawer's own chrome (toggle, topbar title),
+// never through a backdrop tap: the full-width drawer covers it anyway
 await mp.locator(".sidebartoggle").click();
 ok("F8 drawer opens", await mp.locator(".sidebar.mobile-open").isVisible());
-await mp.locator(".sidebar-backdrop").click();
+ok(
+  "F8 backdrop mounted, enabled and inert",
+  (await mp.locator(".sidebar-backdrop.enabled").count()) === 1 &&
+    (await mp
+      .locator(".sidebar-backdrop")
+      .evaluate((el) => getComputedStyle(el).interactivity === "inert")),
+);
+await mp.locator(".sidebartoggle").click();
 await sleep(300);
-ok("F8 backdrop closes drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
+ok("F8 sidebartoggle closes drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
 
 // drawer: unit tap navigates and closes
 await mp.locator(".sidebartoggle").click();
@@ -210,6 +219,11 @@ await mp.locator(".topbar-home").click();
 await sleep(300);
 ok("F8 topbar title closes drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
 ok("F8 topbar title goes home", /#home/.test(mp.url()));
+// back on a unit for the pinch-zoom test (the topbar title left us at home
+// on the Exercises tab; the hash change doesn't reload, so re-pick Book)
+await mp.goto(BASE + "/#u2", { waitUntil: "load" });
+await mp.locator('.tabswitch button:has-text("Book")').click();
+await mp.waitForSelector(".zoomlabel", { timeout: 30000 });
 
 // pinch zoom: synthetic two-finger gesture changes the zoom label
 const z00 = await mp.locator(".zoomlabel").textContent();
