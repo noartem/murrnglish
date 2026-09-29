@@ -30,7 +30,7 @@ AUX = ("is|are|was|were|do|does|did|have|has|had|could|would|should|must|need|"
 
 
 def normalize(s):
-    """Port of app/src/checker.ts normalize(): contractions expanded."""
+    """Port of src/checker.ts normalize(): contractions expanded."""
     s = s.strip().replace("’", "'").replace("‘", "'").lower()
     s = re.sub(r"\s*'", "'", s)
     s = re.sub(r"\b(%s)n't\b" % AUX, r"\1 not", s)

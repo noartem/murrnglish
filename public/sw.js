@@ -1,10 +1,10 @@
 // Offline cache. No precache manifest: everything is cached at runtime
 // (stale-while-revalidate), plus the explicit "Download" buttons
-// (app/src/offline.ts) fill the same caches from the page side.
+// (src/offline.ts) fill the same caches from the page side.
 //
 // One cache for the app shell, one per book (everything under /books/<id>/),
 // so removing a book's offline copy is deleting one cache. The names must
-// equal SHELL_CACHE / bookCache() in app/src/offline.ts — change both together.
+// equal SHELL_CACHE / bookCache() in src/offline.ts — change both together.
 const PREFIX = "murrnglish-";
 const VERSION = "-v1";
 const SHELL = `${PREFIX}shell${VERSION}`;

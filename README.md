@@ -16,15 +16,15 @@ reaches back into red-murphy).
 ## Layout
 
 ```
-app/                    the web app (Vite + React + TypeScript), one for every book
-  src/App.tsx           router: library (#/) or a book's course (#/<book>/...)
-  src/CourseApp.tsx     one book's course UI (landing, units, additional exercises)
-  src/components/Library.tsx   the library landing
-  src/books.ts          book registry (generated from books/*/book.json)
-  src/routes.ts         hash routes
-  src/keys.ts           every localStorage key
-  src/offline.ts        offline downloads, one per book
-  public/sw.js          service worker: shell cache + one cache per book
+src/                    the web app (Vite + React + TypeScript), one for every book
+  App.tsx               router: library (#/) or a book's course (#/<book>/...)
+  CourseApp.tsx         one book's course UI (landing, units, additional exercises)
+  components/Library.tsx   the library landing
+  books.ts              book registry (generated from books/*/book.json)
+  routes.ts             hash routes
+  keys.ts               every localStorage key
+  offline.ts            offline downloads, one per book
+public/                 static files; sw.js = shell cache + one cache per book
 books/<id>/             everything of one book
   book.json             title, edition, level, authors, cover color and size
   book.pdf, cover.*     served as /books/<id>/...
@@ -33,22 +33,22 @@ books/<id>/             everything of one book
   work/                 extraction work files (page text, layout, parsing spec)
   original/             red only: the EPUB the LLM pipeline reads hints from
 scripts/
-  sync_books.mjs        books/* -> app/public/books/* + app/src/generated/books.json
+  sync_books.mjs        books/* -> public/books/* + src/generated/books.json
   make_page_meta.mjs    book.pdf -> data/pages.json (page aspect ratios)
-  deploy.sh             publish app/dist to the VPS
+  deploy.sh             publish dist/ to the VPS
+e2e.mjs                 end-to-end flows (Playwright)
 ```
 
-`app/public/books/` and `app/src/generated/` are generated before every
-`dev`, `build` and `test` run and are not committed.
+`public/books/` and `src/generated/` are generated before every `dev`,
+`build` and `test` run and are not committed.
 
 ## Develop
 
 ```sh
-cd app
 npm ci
 npm run dev        # http://127.0.0.1:5173
 npm test           # unit tests (vitest)
-npm run build      # type-check + production build into app/dist
+npm run build      # type-check + production build into dist/
 ```
 
 End-to-end flows (Playwright from the npx cache) run against the dev server,
@@ -88,7 +88,7 @@ segment next to the book ids.
 
 Progress, the last page and the offline flags are per book
 (`murrnglish.<book>.progress-v1`, ...); theme, page inversion and the sidebar
-state are shared (`murrnglish.theme`, ...). See `app/src/keys.ts`.
+state are shared (`murrnglish.theme`, ...). See `src/keys.ts`.
 
 Progress from the old single-book sites (other origins, so their
 localStorage is out of reach) moves over by hand: *Progress → Export* there,
@@ -116,5 +116,5 @@ open book by itself unless that book was removed by hand.
 ## Deploy
 
 Pushes to `main` validate, test, build and — once the `DEPLOY_SSH_KEY`
-secret exists — publish `app/dist` with `scripts/deploy.sh` (host, user, path
+secret exists — publish `dist/` with `scripts/deploy.sh` (host, user, path
 and URL at the top of the script, overridable through `DEPLOY_*` env).

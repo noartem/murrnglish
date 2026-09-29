@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Publish app/dist (every book, one site) to the VPS (Caddy static root).
+# Publish dist (every book, one site) to the VPS (Caddy static root).
 #
 # Env: DEPLOY_KEY  — path to the deploy user's ed25519 private key.
 #      DEPLOY_HOST, DEPLOY_ROOT, DEPLOY_URL — override the target below.
@@ -34,7 +34,7 @@ SSH_OPTS=(-i "$DEPLOY_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept
 ssh "${SSH_OPTS[@]}" "$HOST" "rm -rf $ROOT/.staging && mkdir -p $ROOT/.staging"
 rsync -az --delete --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
   -e "ssh ${SSH_OPTS[*]}" \
-  app/dist/ "$HOST:$ROOT/.staging/"
+  dist/ "$HOST:$ROOT/.staging/"
 
 # 2. Swap it in. .old is kept only across the two renames; if the second one
 #    fails the previous tree is still there to put back.
@@ -56,9 +56,9 @@ ssh "${SSH_OPTS[@]}" "$HOST" "
 #    local cache can hand back the previous index.html and call it a success.
 #    (Not curl --no-cache: that needs curl >= 7.76 and exits 2 on the older
 #    builds, which would fail the check with an empty body.)
-want="$(sed -n 's/.*src="\/\(assets\/index-[^"]*\.js\)".*/\1/p' app/dist/index.html | head -1)"
+want="$(sed -n 's/.*src="\/\(assets\/index-[^"]*\.js\)".*/\1/p' dist/index.html | head -1)"
 if [ -z "$want" ]; then
-  echo "could not find the built bundle in app/dist/index.html" >&2
+  echo "could not find the built bundle in dist/index.html" >&2
   exit 1
 fi
 

@@ -1,20 +1,20 @@
 // Build what the app serves from books/<id>/ and tell the app which books
-// exist. Runs before `npm run dev` / `npm run build` (app/package.json
+// exist. Runs before `npm run dev` / `npm run build` (package.json
 // predev/prebuild hooks).
 //
 // For every books/<id>/ with a book.json:
-//   app/public/books/<id>/data/        copy of books/<id>/data/, plus
-//   app/public/books/<id>/data/course.json   every exercise file in one pack
-//   app/public/books/<id>/book.pdf     the book
-//   app/public/books/<id>/<cover>      the cover art
-// and app/src/generated/books.json — the registry the app imports: book.json
+//   public/books/<id>/data/        copy of books/<id>/data/, plus
+//   public/books/<id>/data/course.json   every exercise file in one pack
+//   public/books/<id>/book.pdf     the book
+//   public/books/<id>/<cover>      the cover art
+// and src/generated/books.json — the registry the app imports: book.json
 // plus what is counted here (units, additional exercises, download size), so
 // nothing the app shows can drift from the files.
 //
 // Why the pack: the offline download used to pull every unit file and every
 // additional file one by one — ~190 requests for 1.4 MB. course.json is that
 // same data in a single request, and it gives the app a second source to read
-// from when a per-unit fetch fails offline (app/src/data.ts loadBundle).
+// from when a per-unit fetch fails offline (src/data.ts loadBundle).
 // Generated here rather than committed, so it cannot drift from data/ — the
 // per-file JSON stays the source of truth.
 
@@ -34,8 +34,8 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const booksDir = join(root, "books");
-const publicBooks = join(root, "app", "public", "books");
-const registryFile = join(root, "app", "src", "generated", "books.json");
+const publicBooks = join(root, "public", "books");
+const registryFile = join(root, "src", "generated", "books.json");
 
 const readJson = (file) => JSON.parse(readFileSync(file, "utf8"));
 const need = (cond, msg) => {
@@ -106,14 +106,14 @@ for (const id of ids) {
     `books/${id}: index.json lists ${index.additional.exercises.length} additional, data/additional has ${additional}`,
   );
 
-  // what the offline download stores (app/src/offline.ts bookUrls)
+  // what the offline download stores (src/offline.ts bookUrls)
   const size = (f) => statSync(join(dest, f)).size;
   const downloadBytes = ["book.pdf", meta.cover.file, "data/index.json", "data/totals.json", "data/pages.json", "data/course.json"]
     .map(size)
     .reduce((a, b) => a + b, 0);
 
   registry.push({ id, ...meta, units, additional, downloadBytes });
-  console.log(`synced books/${id} -> app/public/books/${id} (${units} units, ${additional} additional)`);
+  console.log(`synced books/${id} -> public/books/${id} (${units} units, ${additional} additional)`);
 }
 
 // books removed from books/ disappear from public/ as well

@@ -14,9 +14,9 @@ if (!ids.length) {
   process.exit(2);
 }
 
-// pdfjs-dist v4 legacy build is ESM-only; import it from app's node_modules
+// pdfjs-dist v4 legacy build is ESM-only; import it from node_modules
 const pdfjs = await import(
-  pathToFileURL(path.join(root, "app", "node_modules", "pdfjs-dist", "legacy", "build", "pdf.mjs")).href
+  pathToFileURL(path.join(root, "node_modules", "pdfjs-dist", "legacy", "build", "pdf.mjs")).href
 );
 
 for (const id of ids) {

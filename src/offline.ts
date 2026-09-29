@@ -5,7 +5,7 @@ import { COURSE_BUNDLE } from "./data";
 import { offlineKey, offlineRemovedKey } from "./keys";
 
 // Offline downloads: the page-side engine behind the "Download" buttons. They
-// fill the same Cache Storage buckets the service worker (app/public/sw.js)
+// fill the same Cache Storage buckets the service worker (public/sw.js)
 // serves from, so one download makes a WHOLE book work without network — the
 // document, the bundles, the book PDF and its data.
 //
@@ -18,7 +18,7 @@ import { offlineKey, offlineRemovedKey } from "./keys";
 // unit and additional exercise (packed by scripts/sync_books.mjs) and the
 // fetchers in data.ts read it when a per-exercise request fails offline.
 //
-// Cache names must equal the ones in app/public/sw.js — change both together.
+// Cache names must equal the ones in public/sw.js — change both together.
 export const SHELL_CACHE = "murrnglish-shell-v1";
 export const bookCache = (bookId: string) => `murrnglish-book-${bookId}-v1`;
 
@@ -27,7 +27,7 @@ const BASE = import.meta.env.BASE_URL;
 // header on the response (vite preview sends Origin, Caddy's `encode` sends
 // Accept-Encoding) would otherwise hide an entry from a request that carries
 // that header — and offline that miss is a hard failure. Mirrored in
-// app/public/sw.js, which reads the same caches.
+// public/sw.js, which reads the same caches.
 const MATCH = { ignoreVary: true };
 
 /** Files of the app itself that no page load is guaranteed to have fetched. */

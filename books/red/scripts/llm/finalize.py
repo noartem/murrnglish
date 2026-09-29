@@ -7,14 +7,10 @@
 - data/totals.json              <- graded-item counts (scripts/make_totals.py)
 - work/layout.json              <- unit -> pdfPages/title (validator input)
 
-The first run backs the previous data/ (the Blue Murphy dataset) up to
-work/blue-data-backup/ before replacing it.
-
 Usage:  python scripts/llm/finalize.py [--dry-run]
 """
 import argparse
 import json
-import shutil
 import sys
 from pathlib import Path
 
@@ -30,7 +26,6 @@ DATA = ROOT / "data"
 # Russian edition's translation exercise
 NOT_IN_SCAN = {"51.4": "unit 51 exercise page is from the English edition",
                "76.4": "unit 76 exercise page is from the English edition"}
-BACKUP = ROOT / "work" / "blue-data-backup"
 
 
 def dump(path, obj):
@@ -63,9 +58,6 @@ def main():
     if a.dry_run:
         return
 
-    if not BACKUP.exists():
-        shutil.copytree(DATA, BACKUP)
-        print("backed up previous data/ -> %s" % BACKUP)
     for sub in ("units", "additional"):
         for f in (DATA / sub).glob("*.json"):
             f.unlink()
