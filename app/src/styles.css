@@ -1221,14 +1221,6 @@ textarea.winline {
   padding-top: 14px;
 }
 
-.variants.matchlist {
-  color: var(--muted);
-}
-
-.variants.matchlist .ok {
-  color: var(--ok-text);
-  font-weight: 900;
-}
 
 .options {
   display: flex;
@@ -1256,21 +1248,47 @@ textarea.winline {
   margin-top: 4px;
 }
 
+/* sentence | select, and the revealed key right under that row's select */
 .matchrow {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 10px;
   align-items: center;
   margin: 6px 0;
 }
 
 .matchleft {
-  flex: 1;
   padding: 3px 6px;
   border-radius: 8px;
 }
 
 .matchleft.ok {
   background: var(--ok-bg);
+}
+
+/* phone-only piece of a matching row (see the mobile block): on desktop the
+   picker wrapper is layout-transparent and the select shows its own value */
+.matchpick {
+  display: contents;
+}
+.matchvalue {
+  display: none;
+}
+
+/* width 0 + min-width 100%: exactly the select's column, so a long key
+   wraps there instead of widening the column */
+.matchans {
+  grid-column: 2;
+  width: 0;
+  min-width: 100%;
+  margin-top: 4px;
+}
+.matchans.ok {
+  color: var(--ok-text);
+  font-weight: 900;
+}
+.matchans.ok::before {
+  content: "\2713\00a0";
 }
 
 .grouppct {
@@ -1899,8 +1917,86 @@ kbd {
     flex-basis: 100%;
     min-width: 0;
   }
-  .matchrow select {
-    max-width: 100%;
+  /* matching: sentence on top, a full-width picker under it; the picker
+     shows the chosen sentence wrapped (a closed native select cuts it to one
+     line) with the real select as an invisible tap target on top */
+  .matchrow {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    margin: 0;
+    padding: 10px 0;
+    border-top: 2px dashed var(--border);
+  }
+  .matchrow:first-child {
+    border-top: none;
+    padding-top: 2px;
+  }
+  .matchleft {
+    padding: 2px 6px;
+    margin: 0 -6px;
+  }
+  .matchleft.bad {
+    background: var(--bad-bg);
+  }
+  .matchpick {
+    display: block;
+    position: relative;
+  }
+  .matchvalue {
+    display: block;
+    border: 2px solid var(--input-border);
+    border-radius: 12px;
+    background: var(--panel);
+    padding: 7px 36px 7px 12px;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .matchvalue.empty {
+    color: var(--muted);
+  }
+  .matchpick::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid var(--muted);
+    border-bottom: 2px solid var(--muted);
+    transform: translateY(-70%) rotate(45deg);
+    pointer-events: none;
+  }
+  .matchpick select {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    opacity: 0;
+    font-size: 16px; /* below 16px iOS zooms the page in on focus */
+  }
+  .matchpick:focus-within .matchvalue {
+    border-color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .matchpick.ok .matchvalue {
+    border-color: var(--ok);
+    background: var(--ok-bg);
+  }
+  .matchpick.bad .matchvalue {
+    border-color: var(--bad);
+    background: var(--bad-bg);
+  }
+  /* stacked rows: the key hugs its text like the other .variants notes */
+  .matchans {
+    width: fit-content;
+    min-width: 0;
+    margin-top: 0;
   }
 
   /* prev/next pager: full-width rows instead of two squeezed cards; no

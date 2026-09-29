@@ -205,43 +205,46 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
         </header>
         <div className="matching">
           <div className="matchcol">
-            {left.map((l, i) => (
-              <div key={i} className="matchrow">
-                <span className={st[i] === true ? "matchleft ok" : st[i] === false ? "matchleft bad" : "matchleft"}>
-                  {l}
-                </span>
-                <select
-                  value={sel[i] ?? ""}
-                  onChange={(e) => {
-                    const v = e.target.value === "" ? null : Number(e.target.value);
-                    const next = [...sel];
-                    next[i] = v;
-                    updateAnswer({ pairs: next });
-                  }}
-                >
-                  <option value="">—</option>
-                  {right.map((r, ri) => (
-                    <option key={ri} value={ri}>
-                      {r}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            ))}
-          </div>
-        </div>
-        {revealed && (
-          <div className="variants matchlist">
             {left.map((l, i) => {
               const correct = pairs.find(([li]) => li === i)?.[1] ?? null;
+              const stCls = st[i] === true ? " ok" : st[i] === false ? " bad" : "";
               return (
-                <div key={i} className={sel[i] === correct ? "ok" : undefined}>
-                  {l} {"\u2192"} {correct !== null ? right[correct] : ""}
+                <div key={i} className="matchrow">
+                  <span className={"matchleft" + stCls}>{l}</span>
+                  {/* phones: the select is an invisible tap target over
+                      .matchvalue, which wraps the long chosen sentence that a
+                      native closed select would cut off */}
+                  <span className={"matchpick" + stCls}>
+                    <span className={sel[i] == null ? "matchvalue empty" : "matchvalue"} aria-hidden>
+                      {sel[i] == null ? "Choose…" : right[sel[i] as number]}
+                    </span>
+                    <select
+                      value={sel[i] ?? ""}
+                      onChange={(e) => {
+                        const v = e.target.value === "" ? null : Number(e.target.value);
+                        const next = [...sel];
+                        next[i] = v;
+                        updateAnswer({ pairs: next });
+                      }}
+                    >
+                      <option value="">—</option>
+                      {right.map((r, ri) => (
+                        <option key={ri} value={ri}>
+                          {r}
+                        </option>
+                      ))}
+                    </select>
+                  </span>
+                  {revealed && (
+                    <span className={sel[i] === correct ? "variants matchans ok" : "variants matchans"}>
+                      {correct !== null ? right[correct] : ""}
+                    </span>
+                  )}
                 </div>
               );
             })}
           </div>
-        )}
+        </div>
         <CardActions
           onCheck={() => {
             setChecked(true);
