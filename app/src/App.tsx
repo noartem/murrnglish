@@ -33,7 +33,14 @@ import {
 import type { Progress } from "./progress";
 import { ProgressModal } from "./components/ProgressModal";
 import { OfflinePanel } from "./components/OfflinePanel";
-import { isStandalone } from "./offline";
+import { OfflineButton, OfflineChip } from "./components/OfflineButton";
+import {
+  autoDownloadAllowed,
+  downloadCourse,
+  downloadState,
+  isDownloaded,
+  isStandalone,
+} from "./offline";
 import { Home, type HomeContinue } from "./components/Home";
 import { SHARE_HASH_RE, decodeShare, encodeShare } from "./share";
 // content routes (what a hash can deep-link to); Route adds the landing
@@ -82,6 +89,10 @@ function routeToHash(r: Route): string {
       : "home";
 }
 
+// How long an installed app waits before it starts filling the offline cache
+// by itself: past the first paint and the page's own requests.
+const AUTO_DOWNLOAD_MS = 3000;
+
 export default function App() {
   const [route, setRoute] = useState<Route>(parseHash);
   const [index, setIndex] = useState<IndexData | null>(null);
@@ -120,6 +131,33 @@ export default function App() {
     const t = setTimeout(() => setNotice(""), 6000);
     return () => clearTimeout(t);
   }, [notice]);
+  // An installed app pulls the course into the cache on its own, so a fresh
+  // install is offline-ready without anyone pressing the button — the
+  // progress shows up on the topbar button (and, on a phone, on the chip).
+  // Started once the page has settled, and again if the browser comes back
+  // online: the launch that installs the app may well have no network yet. A
+  // failed run is never retried in a loop — the panel and the chip both offer
+  // it again.
+  useEffect(() => {
+    if (!standalone) return;
+    let stopped = false;
+    const attempt = async () => {
+      if (stopped || downloadState().active || navigator.onLine === false) return;
+      if (!autoDownloadAllowed()) return; // removed by hand: leave it removed
+      if (await isDownloaded()) return;
+      if (stopped || downloadState().active) return;
+      downloadCourse().catch(() => {
+        /* offline, or a file gone: the panel offers a retry */
+      });
+    };
+    const t = window.setTimeout(() => void attempt(), AUTO_DOWNLOAD_MS);
+    window.addEventListener("online", attempt);
+    return () => {
+      stopped = true;
+      window.clearTimeout(t);
+      window.removeEventListener("online", attempt);
+    };
+  }, [standalone]);
   // phone layout (<=768px): the split becomes Book | Exercises tabs and the
   // sidebar becomes a drawer; desktop layout is pixel-identical
   const [isMobile, setIsMobile] = useState(
@@ -678,6 +716,9 @@ export default function App() {
           )}
         </div>
         <div className="topstats">{stats}</div>
+        {isMobile && standalone && (
+          <OfflineChip onOpen={() => setOfflineOpen(true)} />
+        )}
         {/* phones keep the topbar to the title alone: progress, download and
             theme move into the unit drawer (see .draweractions), and the
             shortcuts help is dropped — its key hints are inert on touch */}
@@ -696,16 +737,7 @@ export default function App() {
             >
               <Share2 size={15} aria-hidden />
             </button>
-            {standalone && (
-              <button
-                className="themebtn"
-                onClick={() => setOfflineOpen(true)}
-                title="Offline — download the course"
-                aria-label="Offline: download the course"
-              >
-                <Download size={15} aria-hidden />
-              </button>
-            )}
+            {standalone && <OfflineButton onOpen={() => setOfflineOpen(true)} />}
             <ThemeToggle />
           </div>
         )}

@@ -570,10 +570,31 @@ if (BASE.includes("4173")) {
     "F12 installed app shows the offline button",
     await p2.locator('[aria-label="Offline: download the course"]').isVisible(),
   );
+
+  // Installed, the app pulls the course into the cache by itself — nothing is
+  // pressed here. On desktop the button is that run's status: green fills it
+  // from the top down and stays full when the course is cached.
+  await p2.locator(".dlbtn.done").waitFor({ timeout: 180000 });
+  ok("F12 the download starts by itself and finishes green", true);
+
+  const cached = await p2.evaluate(async () => {
+    const c = await caches.open("egu-course-offline-v1");
+    const has = async (u) => (await c.match(u, { ignoreVary: true })) !== undefined;
+    return {
+      index: await has("/data/index.json"),
+      bundle: await has("/data/course.json"),
+      perUnit: await has("/data/units/unit-005.json"),
+      book: await has("/book.pdf"),
+    };
+  });
+  ok(
+    "F12 the course arrives as one packed file, not per unit",
+    cached.index && cached.bundle && cached.book && !cached.perUnit,
+    JSON.stringify(cached),
+  );
+
   await p2.locator('[aria-label="Offline: download the course"]').click();
-  await p2.getByRole("button", { name: "Download course", exact: true }).click();
-  ok("F12 progress bar appears", await p2.locator(".dlbar").isVisible());
-  await p2.locator("text=Downloaded for offline use").waitFor({ timeout: 180000 });
+  await p2.locator("text=Downloaded for offline use").waitFor({ timeout: 30000 });
   ok(
     "F12 download finishes and offers a remove action",
     await p2.getByRole("button", { name: "Remove downloaded files", exact: true }).isVisible(),
@@ -610,7 +631,52 @@ if (BASE.includes("4173")) {
     !removed.book && removed.flag === null,
     JSON.stringify(removed),
   );
+
+  // back online: ~72 MB that were deleted on purpose must not come back by
+  // themselves (the background start checks the removal marker first)
   await ctx2.setOffline(false);
+  await sleep(7000);
+  const back = await p2.evaluate(async () => {
+    const c = await caches.open("egu-course-offline-v1");
+    return (await c.match("/book.pdf", { ignoreVary: true })) !== undefined;
+  });
+  ok("F12 a removed download is not fetched again on its own", !back);
+
+  // phone: the topbar has no download button at all (it is a drawer row), so a
+  // run in flight shows up as a chip beside the title. Throttled, or the whole
+  // course would land before the chip could be seen; the service worker is
+  // blocked because CDP throttling applies to the page target alone, and the
+  // download is page-side either way.
+  const ctx3 = await browser.newContext({
+    viewport: { width: 390, height: 844 },
+    serviceWorkers: "block",
+  });
+  await ctx3.addInitScript(() => {
+    const orig = window.matchMedia.bind(window);
+    window.matchMedia = (q) =>
+      /display-mode/.test(q) ? Object.create(orig(q), { matches: { value: true } }) : orig(q);
+  });
+  const p3 = await ctx3.newPage();
+  const cdp3 = await ctx3.newCDPSession(p3);
+  await cdp3.send("Network.enable");
+  await cdp3.send("Network.emulateNetworkConditions", {
+    offline: false,
+    latency: 40,
+    downloadThroughput: 200 * 1024,
+    uploadThroughput: 200 * 1024,
+  });
+  await p3.goto(BASE + "/", { waitUntil: "load" });
+  await p3.locator(".dlchip").waitFor({ timeout: 60000 });
+  ok(
+    "F12 phone shows the running download as a chip, not a topbar button",
+    (await p3.locator(".dlbtn").count()) === 0,
+  );
+  const chip = await p3.evaluate(() => {
+    const c = document.querySelector(".dlchip");
+    return { text: c.textContent.trim(), p: getComputedStyle(c).getPropertyValue("--p").trim() };
+  });
+  ok("F12 the chip carries the percentage", /^\d+%$/.test(chip.text), JSON.stringify(chip));
+  await ctx3.close();
   await ctx2.close();
 }
 
