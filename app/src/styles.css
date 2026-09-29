@@ -765,6 +765,7 @@ body {
   line-height: 1.2;
   letter-spacing: -0.015em;
   margin: 2px 0 18px;
+  text-wrap: balance;
 }
 
 .refs {
@@ -787,6 +788,7 @@ body {
   border-radius: 20px;
   padding: 18px 20px 16px;
   margin-bottom: 20px;
+  text-wrap: pretty;
 }
 /* bottom-of-page prev/next pager: big tactile cards; the empty slot keeps
    the missing edge button space so the row stays balanced */
@@ -1013,7 +1015,7 @@ textarea.winline {
   resize: none;
   overflow: hidden;
   display: inline-block;
-  vertical-align: -9px;
+  vertical-align: -13px;
   line-height: inherit;
   white-space: pre-wrap;
   /* sink the field so its box reads on the text line; unlike a negative
