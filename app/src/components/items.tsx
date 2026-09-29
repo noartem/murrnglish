@@ -14,17 +14,36 @@ function GapInput({ className, value, onChange, ariaLabel }: {
   ariaLabel: string;
 }) {
   const ref = useRef<HTMLTextAreaElement>(null);
-  useLayoutEffect(() => {
+  const fit = () => {
     const el = ref.current;
     if (!el || !measure) return;
+    const body = el.closest(".itembody") as HTMLElement | null;
+    const max = body?.clientWidth ?? 800;
+    // hidden pane (mobile tab not shown): everything measures 0, so sizing
+    // now would collapse the field until the first keystroke
+    if (!max) return;
     measure.font = getComputedStyle(el).font;
-    const w = measure.measureText(value).width + 30; // padding + caret slop
-    const max = (el.closest(".itembody") as HTMLElement | null)?.clientWidth ?? 800;
+    const w = measure.measureText(el.value).width + 30; // padding + caret slop
     // one inline line while it fits, then a wrapped, vertically-growing field
     el.style.width = `${Math.min(Math.max(w, 120), max)}px`;
     el.style.height = "auto";
     el.style.height = `${el.scrollHeight}px`;
-  }, [value]);
+  };
+  useLayoutEffect(fit, [value]);
+  // re-fit once the pane becomes visible and when the column width changes
+  useLayoutEffect(() => {
+    const body = ref.current?.closest(".itembody");
+    if (!body) return;
+    let lastW = -1;
+    const ro = new ResizeObserver(([entry]) => {
+      const w = entry.contentRect.width;
+      if (w === lastW) return; // our own height changes resize the body too
+      lastW = w;
+      fit();
+    });
+    ro.observe(body);
+    return () => ro.disconnect();
+  }, []);
   return (
     <textarea
       ref={ref}
