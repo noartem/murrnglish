@@ -3,6 +3,9 @@
 /** URL prefix for static assets: "/" locally, "/<repo>/" on GitHub Pages. */
 const BASE = import.meta.env.BASE_URL;
 
+/** data-relative path of every exercise in one file (scripts/sync_data.mjs) */
+export const COURSE_BUNDLE = "data/course.json";
+
 export type ExerciseType = "fill-in" | "choice" | "matching" | "write" | "self-check";
 
 export interface FillInItem {
@@ -86,16 +89,63 @@ export async function fetchIndex(): Promise<IndexData> {
   return r.json();
 }
 
-export async function fetchUnit(n: number): Promise<UnitData> {
-  const r = await fetch(`${BASE}data/units/unit-${String(n).padStart(3, "0")}.json`);
-  if (!r.ok) throw new Error(`unit-${n}: ${r.status}`);
-  return r.json();
+/** The packed course: every exercise file keyed as the app asks for it. */
+interface CourseBundle {
+  units: Record<string, UnitData>;
+  additional: Record<string, AdditionalData>;
 }
 
-export async function fetchAdditional(n: number): Promise<AdditionalData> {
-  const r = await fetch(`${BASE}data/additional/${String(n).padStart(2, "0")}.json`);
-  if (!r.ok) throw new Error(`additional-${n}: ${r.status}`);
-  return r.json();
+// the packed course, fetched at most once per session; a load that failed is
+// not kept, so the next exercise opened retries (the cache may have been
+// filled since — the offline download stores this file)
+let bundle: Promise<CourseBundle> | null = null;
+
+function loadBundle(): Promise<CourseBundle> {
+  if (!bundle) {
+    bundle = fetch(`${BASE}${COURSE_BUNDLE}`)
+      .then((r) => {
+        if (!r.ok) throw new Error(`course.json: ${r.status}`);
+        return r.json() as Promise<CourseBundle>;
+      })
+      .catch((e: unknown) => {
+        bundle = null;
+        throw e;
+      });
+  }
+  return bundle;
+}
+
+/**
+ * One exercise file, or — when that request fails, which offline means the
+ * file was never cached — the same exercise out of the packed course. The
+ * offline download (offline.ts) stores the pack INSTEAD of the ~190 per-file
+ * copies, so this fallback is what makes a downloaded unit open offline.
+ * Online the per-file request wins, so a fresh deploy is never served from a
+ * stale pack.
+ */
+async function fetchExercise<T>(file: string, pick: (b: CourseBundle) => T | undefined): Promise<T> {
+  try {
+    const r = await fetch(`${BASE}${file}`);
+    if (!r.ok) throw new Error(`${file}: ${r.status}`);
+    return (await r.json()) as T;
+  } catch (e) {
+    let packed: T | undefined;
+    try {
+      packed = pick(await loadBundle());
+    } catch {
+      throw e; // no pack either: the per-file error is the informative one
+    }
+    if (packed === undefined) throw e;
+    return packed;
+  }
+}
+
+export function fetchUnit(n: number): Promise<UnitData> {
+  return fetchExercise(`data/units/unit-${String(n).padStart(3, "0")}.json`, (b) => b.units[n]);
+}
+
+export function fetchAdditional(n: number): Promise<AdditionalData> {
+  return fetchExercise(`data/additional/${String(n).padStart(2, "0")}.json`, (b) => b.additional[n]);
 }
 
 export interface UnitTotals {

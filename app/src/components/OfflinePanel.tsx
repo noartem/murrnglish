@@ -1,15 +1,17 @@
 // Offline panel: the download window of the installed app. Structure copies
 // ProgressModal (overlay + card + exit animation); the download itself lives in
-// ../offline, so closing the panel never interrupts one that is in flight.
+// ../offline, so closing the panel never interrupts one that is in flight. The
+// numbers come from that module's store, not from a per-panel subscription —
+// the background start after install (App.tsx) runs one without this panel.
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Download, Trash2, X } from "lucide-react";
-import type { DownloadProgress } from "../offline";
 import {
-  currentDownload,
   downloadCourse,
-  getDownloadedTs,
+  downloadFraction,
+  downloadState,
   isDownloaded,
   removeDownloaded,
+  useDownload,
 } from "../offline";
 
 type Phase = "checking" | "idle" | "downloading" | "done" | "error";
@@ -24,19 +26,14 @@ export function OfflinePanel({
   onClose: () => void;
 }): JSX.Element | null {
   const [phase, setPhase] = useState<Phase>("checking");
-  const [progress, setProgress] = useState<DownloadProgress | null>(null);
-  const [savedTs, setSavedTs] = useState<number | null>(null);
   const [errorFile, setErrorFile] = useState("");
+  const live = useDownload();
   const closeRef = useRef<HTMLButtonElement>(null);
   // exit: the card stays mounted under .closing while modal-out plays, then
   // drops from the DOM (same 150ms hunt as ProgressModal)
   const [shown, setShown] = useState(open);
 
-  const onProgress = useCallback((p: DownloadProgress) => setProgress(p), []);
-  const onDone = useCallback(() => {
-    setSavedTs(getDownloadedTs());
-    setPhase("done");
-  }, []);
+  const onDone = useCallback(() => setPhase("done"), []);
   const onFail = useCallback((e: unknown) => {
     setErrorFile(e instanceof Error ? e.message : String(e));
     setPhase("error");
@@ -69,15 +66,11 @@ export function OfflinePanel({
   useEffect(() => {
     if (!open) return;
     setErrorFile("");
-    setSavedTs(getDownloadedTs());
-    const live = currentDownload();
-    if (live.active) {
-      setProgress(live.progress);
+    if (downloadState().active) {
       setPhase("downloading");
-      downloadCourse(onProgress).then(onDone, onFail); // rejoin, don't restart
+      downloadCourse().then(onDone, onFail); // rejoin, don't restart
       return;
     }
-    setProgress(null);
     setPhase("checking");
     let alive = true;
     isDownloaded().then((yes) => {
@@ -86,39 +79,26 @@ export function OfflinePanel({
     return () => {
       alive = false;
     };
-  }, [open, onProgress, onDone, onFail]);
+  }, [open, onDone, onFail]);
 
   if (!shown) return null;
   const closing = !open;
 
   const start = () => {
     setErrorFile("");
-    setProgress(null);
     setPhase("downloading");
-    downloadCourse(onProgress).then(onDone, onFail);
+    downloadCourse().then(onDone, onFail);
   };
 
   const remove = async () => {
     await removeDownloaded();
-    setProgress(null);
-    setSavedTs(null);
     setPhase("idle");
   };
 
-  // the book is one file of the total, streamed last — the bar mixes its bytes
-  // in as a fraction so it never jumps the whole tail at once
-  const frac = progress
-    ? Math.min(
-        1,
-        (progress.filesDone +
-          (progress.bookTotalBytes
-            ? progress.bookBytes / progress.bookTotalBytes
-            : 0)) /
-          (progress.filesTotal + 1),
-      )
-    : 0;
-  const onBook =
-    progress !== null && progress.filesDone === progress.filesTotal;
+  // 0 while the total is unknown (a HEAD that never answered and the book not
+  // started yet): the bar sits empty for that instant rather than guessing
+  const p = live.progress;
+  const frac = p ? (downloadFraction(p) ?? 0) : 0;
 
   return (
     <div className={"modal-overlay" + (closing ? " closing" : "")} onClick={onClose}>
@@ -148,17 +128,10 @@ export function OfflinePanel({
                 <div className="dlbar-fill" style={{ width: `${frac * 100}%` }} />
               </div>
               <div className="modal-summary">
-                {progress
-                  ? `Downloading… ${progress.filesDone}/${progress.filesTotal} files`
+                {p && p.totalBytes > 0
+                  ? `Downloading… ${mb(p.bytes)} of ${mb(p.totalBytes)} MB`
                   : "Preparing…"}
               </div>
-              {onBook && (
-                <div className="modal-summary">
-                  {progress.bookTotalBytes
-                    ? `book.pdf — ${mb(progress.bookBytes)} of ${mb(progress.bookTotalBytes)} MB`
-                    : `book.pdf — ${mb(progress.bookBytes)} MB downloaded`}
-                </div>
-              )}
             </>
           )}
           {phase === "checking" && <div className="modal-summary">Checking…</div>}
@@ -171,7 +144,7 @@ export function OfflinePanel({
           {phase === "done" && (
             <div className="modal-summary">
               {`Downloaded for offline use${
-                savedTs ? ` — ${new Date(savedTs).toLocaleString()}` : ""
+                live.ts ? ` — ${new Date(live.ts).toLocaleString()}` : ""
               }`}
             </div>
           )}

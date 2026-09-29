@@ -1656,6 +1656,56 @@ textarea.winline {
   transition: width 0.15s ease;
 }
 
+/* The download's own progress, on the control that opens its panel: green
+   fills the button (and the phone chip) from the bottom up, the fraction
+   carried in --p. A background gradient rather than a child element, so the
+   rounded corners, the 2px border and the box-shadow press edge stay exactly
+   as they are — and it needs no transition: the book streams in small chunks,
+   and the fill follows them. */
+.dlbtn,
+.dlchip {
+  --p: 0%;
+  background-image: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--ok-solid) 32%, transparent) var(--p),
+    transparent var(--p)
+  );
+}
+
+/* downloaded just now: the button reads as a status, not an action. Only for
+   a run of this session — a course cached on an earlier launch leaves the
+   button neutral, so nothing looks like it is still working. */
+.dlbtn.done,
+.dlbtn.done:hover {
+  border-color: var(--ok);
+  color: var(--ok-text);
+}
+
+/* Phone topbar: the chip that stands in for the button while a download runs
+   (the button itself is a row inside the drawer, behind the hamburger). */
+.dlchip {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px;
+  border: 2px solid var(--ok);
+  border-radius: 999px;
+  background-color: var(--panel);
+  color: var(--ok-text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+.dlchip.failed {
+  border-color: var(--bad);
+  color: var(--bad-text);
+}
+
 .modal-opt {
   display: flex;
   align-items: center;
