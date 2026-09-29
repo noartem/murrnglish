@@ -73,23 +73,28 @@ export function FillInItemView({ item, values, onChange, states, revealed }: Gap
   return (
     <div className="item">
       <span className="itemnum">{item.num}</span>
-      <span className="itembody">{nodes}</span>
-      {(revealed || wrong) && (
-        <div className="variants">
-          {item.answers.map((vs, i) => (
-            <div key={i}>
-              gap {i + 1}: {vs.map((a, j) => (
-                <Fragment key={j}>
-                  {j > 0 && " / "}
-                  <span className={checkFill(values[i] ?? "", [a]) ? "ok" : undefined}>
-                    {a}
-                  </span>
-                </Fragment>
-              ))}
-            </div>
-          ))}
-        </div>
-      )}
+      <span className="itembody">
+        {nodes}
+        {/* inside the body: under the sentence, not a flex sibling that
+            squeezed the sentence into a one-word column */}
+        {(revealed || wrong) && (
+          <div className="variants">
+            {item.answers.map((vs, i) => (
+              <div key={i}>
+                {item.answers.length > 1 && <span className="gapno">{i + 1}</span>}
+                {vs.map((a, j) => (
+                  <Fragment key={j}>
+                    {j > 0 && " / "}
+                    <span className={checkFill(values[i] ?? "", [a]) ? "ok" : undefined}>
+                      {a}
+                    </span>
+                  </Fragment>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
+      </span>
     </div>
   );
 }
@@ -200,7 +205,7 @@ interface SelfCheckProps {
 export function SelfCheckItemView({ item, value, onChange, mark, onMark }: SelfCheckProps) {
   const [show, setShow] = useState(false);
   return (
-    <div className="item selfcheck">
+    <div className={item.prompt ? "item selfcheck" : "item selfcheck noprompt"}>
       <span className="itemnum">{item.num}</span>
       <span className="itembody">
         {item.prompt && <span className="prompt">{item.prompt}</span>}

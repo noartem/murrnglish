@@ -1166,18 +1166,59 @@ textarea.winline {
   border-color: var(--bad);
 }
 
+/* answer key: a tinted note under the sentence (fill-in, write, self-check
+   and the desktop matching list) */
 .variants {
-  margin-top: 4px;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-left: 3px solid var(--ok);
+  border-radius: 4px 10px 10px 4px;
+  background: var(--ok-bg);
   font-family: var(--font-ui);
   font-weight: 700;
-  font-size: 13.5px;
-  color: var(--bad-text);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text);
 }
 
-/* revealed answers turn green when they match what the user typed */
+/* revealed answers turn green (with a tick) when they match what the user
+   typed */
 .variants span.ok {
   color: var(--ok-text);
   font-weight: 900;
+}
+.variants span.ok::before {
+  content: "\2713\00a0";
+}
+
+/* gap number in a multi-gap key */
+.gapno {
+  display: inline-block;
+  min-width: 17px;
+  margin-right: 6px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  background: var(--ok);
+  color: var(--ok-solid-contrast);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 17px;
+  text-align: center;
+  vertical-align: 1px;
+}
+
+/* self-check without a prompt: the number sits by the field's first line,
+   not on the textarea's baseline halfway down */
+.selfcheck.noprompt {
+  align-items: flex-start;
+}
+.selfcheck.noprompt .itemnum {
+  padding-top: 14px;
 }
 
 .variants.matchlist {
@@ -1881,6 +1922,19 @@ kbd {
   .cardactions,
   .modal-actions {
     flex-wrap: wrap;
+  }
+  /* self-check: example toggle on its own line, then the two marks as an
+     even pair (flex-wrap left "I was wrong" alone on a second row) */
+  .selfcheck-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .selfcheck-controls .examplebtn {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+  .selfcheck-controls .mark {
+    justify-content: center;
   }
 
 
