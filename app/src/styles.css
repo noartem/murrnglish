@@ -395,6 +395,69 @@ body {
   font-weight: 900;
 }
 
+/* topbar progress batteries: label, then a short rounded cell;
+   the fill is a translucent marker band so the count printed on top reads
+   the same over filled and empty parts */
+.topstats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.battery {
+  --fill: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.battery.ok {
+  --fill: var(--ok-solid);
+}
+
+.battery-label {
+  color: var(--muted);
+}
+
+.battery-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px; /* fits "96/4925", so the cell keeps its size when the count appears */
+  height: 22px;
+  padding: 0 7px;
+  box-sizing: border-box;
+  border: 2px solid var(--input-border);
+  border-radius: 6px;
+  background: var(--panel);
+}
+
+.battery-fill {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  max-width: calc(100% - 4px);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--fill) 32%, transparent);
+  transition: width 0.3s ease;
+}
+
+.battery-value {
+  position: relative;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+/* done chip at the end of the unit heading: green pill with a check icon;
+   middle-aligned against the big heading text */
 .donetag {
   color: var(--ok-text);
   background: var(--ok-bg);
@@ -405,6 +468,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 3px;
+  vertical-align: middle;
+  margin-left: 5px;
+  white-space: nowrap;
 }
 
 /* square icon buttons in the topbar and modal heads */
@@ -1640,6 +1706,7 @@ kbd {
     gap: 8px;
   }
   .topbar-mid {
+    margin-top: 2px;
     gap: 8px;
   }
   .topbar-actions {
@@ -1655,10 +1722,9 @@ kbd {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  /* the tall progress counters and the done tag don't fit; progress
-     lives in the modal and the drawer marks */
-  .topstats,
-  .donetag {
+  /* the progress batteries don't fit here; they move to the top of the
+     unit drawer (.drawerstats) */
+  .topstats {
     display: none;
   }
 
@@ -1719,6 +1785,23 @@ kbd {
   }
   .sidebar-inner {
     width: auto;
+  }
+  /* the topbar batteries, moved to the top of the drawer: one per row,
+     label left and cell right, ruled off from the unit list */
+  .drawerstats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 2px 14px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid var(--border);
+  }
+  .drawerstats .battery {
+    justify-content: space-between;
+    font-size: 13px;
+  }
+  .drawerstats .battery-cell {
+    min-width: 96px;
   }
   /* hover-reveal edge is a desktop affordance */
   .sidebar-edge {

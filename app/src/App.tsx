@@ -16,8 +16,6 @@ import {
 } from "overlayscrollbars-react";
 import {
   completedUnitIds,
-  countCorrect,
-  emptyProgress,
   lastUnitFromProgress,
   loadLastRoute,
   loadProgress,
@@ -86,7 +84,7 @@ export default function App() {
   // incoming progress held for the preview modal; applied only on confirm.
   // ONE mechanism for both the #p= link open and the JSON file import.
   const [preview, setPreview] = useState<{ p: Progress; src: "file" | "link" } | null>(null);
-  const [progress, setProgressState] = useState<Progress>(emptyProgress);
+  const [progress, setProgressState] = useState<Progress>(loadProgress);
   // keyboard-shortcuts help modal + pane focus pump (Shift+S)
   const [helpOpen, setHelpOpen] = useState(false);
   const [paneFocusTick, setPaneFocusTick] = useState(0);
@@ -153,7 +151,6 @@ export default function App() {
   useEffect(() => clearAnimTimers, []);
 
   useEffect(() => {
-    setProgressState(loadProgress());
     // bare "/" resolved to a content page by entryRoute(): write the hash
     // back (replaceState — no history entry) so the URL matches the page
     if (window.location.hash === "" && route.kind !== "home") {
@@ -248,7 +245,6 @@ export default function App() {
   }, []);
 
   const doneUnits = useMemo(() => completedUnitIds(progress), [progress]);
-  const counts = useMemo(() => countCorrect(progress), [progress]);
 
   // the landing CTA: learners with saved progress continue with the unit
   // AFTER the last one where they did at least one exercise (a result or a
@@ -430,6 +426,28 @@ export default function App() {
       )?.click(),
   });
   const isHome = route.kind === "home";
+  // progress batteries: in the topbar on desktop, atop the unit drawer on
+  // phones (the phone topbar has no room for them)
+  const stats = (
+    <>
+      <Battery
+        label="Units completed"
+        done={doneUnits.size}
+        total={145}
+        tone="accent"
+      />
+      {/* blank until the course totals load: saved progress alone only
+          knows the attempted blanks, and showing that count first made
+          the value jump to the real total a moment later */}
+      <Battery
+        label="Answers correct"
+        done={ov.correct}
+        total={ov.total}
+        tone="ok"
+        pending={!totals}
+      />
+    </>
+  );
 
   return (
     <div className="app">
@@ -451,26 +469,13 @@ export default function App() {
           >
             <h1>English Grammar in Use</h1>
           </button>
-          <span className="progressline topstats">
-            Units completed <strong>{doneUnits.size}/145</strong> ·{" "}
-            {totals ? (
-              <>
-                Answers correct {ov.correct}/{ov.total}
-                {pct(ov) > 0 ? <> · {pct(ov)}%</> : null}
-              </>
-            ) : (
-              <>Answers correct {counts.correct}/{counts.total}</>
-            )}
-          </span>
-          {isUnitDone && (
-            <span className="donetag"><Check size={13} aria-hidden /> Unit {route.kind === "unit" ? route.n : ""} done</span>
-          )}
           {notice && (
             <span className="progressline" role="status">
               {notice}
             </span>
           )}
         </div>
+        <div className="topstats">{stats}</div>
         <div className="topbar-actions">
           <ShortcutsHelpButton onOpen={openHelp} />
           <button
@@ -507,6 +512,7 @@ export default function App() {
           return (
             <OverlayScrollbarsComponent element="nav" className={sideCls} options={osOptions}>
             <div className="sidebar-inner">
+              {isMobile && <div className="drawerstats">{stats}</div>}
               {index.groups.map((g) => {
                 const gpct = pct(scopeStats(totals, g.units.map((u) => `u${u}`), progress));
                 return (
@@ -625,6 +631,11 @@ export default function App() {
               <>
                 <h2 className="unitheading">
                   Unit {unit.unit} — {unit.title}
+                  {isUnitDone && (
+                    <span className="donetag">
+                      <Check size={13} aria-hidden /> done
+                    </span>
+                  )}
                 </h2>
                 {unit.exercises.map((ex) => (
                   <ExerciseCard key={ex.id} exercise={ex} progress={progress} setProgress={setProgress} />
@@ -741,6 +752,51 @@ function MobileTabSwitch({
       >
         Exercises
       </button>
+    </div>
+  );
+}
+
+// Topbar progress meter drawn as a battery: label on the left, then a cell
+// filled to done/total with the count printed inside. `empty` keeps the
+// cell blank while the real total isn't known yet.
+function Battery({
+  label,
+  done,
+  total,
+  tone,
+  pending = false,
+}: {
+  label: string;
+  done: number;
+  total: number;
+  tone: "accent" | "ok";
+  pending?: boolean;
+}) {
+  const percent = pending ? 0 : pct({ correct: done, total });
+  const text = `${done}/${total}`;
+  return (
+    <div
+      className={`battery ${tone}`}
+      role="progressbar"
+      aria-label={label}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={pending ? undefined : percent}
+      aria-valuetext={pending ? undefined : `${text} (${percent}%)`}
+      title={pending ? label : `${label}: ${text} (${percent}%)`}
+    >
+      <span className="battery-label">{label}</span>
+      <span className="battery-cell">
+        {/* any progress shows a sliver, so 1 of 145 doesn't read as empty */}
+        <span
+          className="battery-fill"
+          style={{
+            width: `${percent}%`,
+            minWidth: !pending && done > 0 ? 3 : 0,
+          }}
+        />
+        {!pending && <strong className="battery-value">{text}</strong>}
+      </span>
     </div>
   );
 }
