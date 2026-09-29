@@ -9,7 +9,8 @@
 // scrollNew = (scrollOld + anchor) * r - anchor — the anchor is the gesture
 // point in viewport coords (cursor for ctrl+wheel/pinch, the visual center
 // for buttons/reset). Buttons animate ~180ms eased; ctrl+wheel is instant.
-// Zoom range: min = the tallest page of the set fills the pane height, max =
+// Zoom range: min = the tallest page of the set fills the pane height (never
+// above fit-width, so a tall phone pane still starts at 100%), max =
 // a page twice the pane wide. Nothing is persisted — every pdfPages change
 // (unit ↔ unit, unit ↔ additional) and every mount starts at the default
 // fit-the-pane-width zoom, scrolled to the very top.
@@ -187,7 +188,9 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     const maxA = pdfPages.length
       ? Math.max(...pdfPages.map(pageAspect))
       : 297 / 210;
-    const min = Math.max(0.05, vh / (pw * maxA + 2 * pad));
+    // capped at 1: on a tall narrow pane (phone) fitting the height would
+    // need a page wider than the pane, pushing the default above 100%
+    const min = Math.min(1, Math.max(0.05, vh / (pw * maxA + 2 * pad)));
     boundsRef.current = { min, max: Math.max(MAX_ZOOM, min) };
   };
 
