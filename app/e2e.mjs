@@ -437,6 +437,59 @@ await sleep(200);
 const zr = await mp.locator(".zoomlabel").textContent();
 ok("F8 pinch zoom changes zoom", z00 !== zr, `${z00} -> ${zr}`);
 
+// phone chrome: the topbar keeps the title alone — progress, download and
+// theme are labelled rows at the top of the drawer, ruled off above the
+// progress bars and the unit list
+ok("F8 phone topbar has no action buttons", (await mp.locator(".topbar-actions").count()) === 0);
+await mp.locator(".sidebartoggle").click();
+await sleep(350);
+ok(
+  "F8 drawer leads with the labelled controls",
+  (await mp.locator('.draweractions .draweraction:has-text("Progress & share")').count()) === 1 &&
+    (await mp.locator('.draweractions .themebtn:has-text("Theme:")').count()) === 1,
+);
+ok(
+  "F8 controls sit above the progress bars and the unit list",
+  (await mp.evaluate(() => document.querySelector(".draweractions + .drawerstats") !== null)) &&
+    (await mp.evaluate(
+      () =>
+        document.querySelector(".draweractions").getBoundingClientRect().bottom <=
+        document.querySelector(".sidebar .unitlink").getBoundingClientRect().top,
+    )),
+);
+
+// drawer gestures: a leftward swipe over the drawer pushes it back, a
+// rightward one pulls it in — but a drag that starts on the book pages
+// belongs to the reader and never summons the drawer
+const swipe = (sel, dx) =>
+  mp.evaluate(
+    ([sel, dx]) => {
+      const el = document.querySelector(sel);
+      const mk = (x, y) =>
+        new Touch({ identifier: 1, target: el, clientX: x, clientY: y, radiusX: 2, radiusY: 2, force: 1 });
+      const fire = (type, touches) =>
+        el.dispatchEvent(new TouchEvent(type, { touches, cancelable: true, bubbles: true }));
+      fire("touchstart", [mk(120, 200)]);
+      for (let i = 1; i <= 4; i++) fire("touchmove", [mk(120 + (dx * i) / 4, 200)]);
+      fire("touchend", []);
+    },
+    [sel, dx],
+  );
+await swipe(".sidebar-inner", -90);
+await sleep(400);
+ok("F8 swipe left closes the drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
+await swipe(".pagecanvas", 90);
+await sleep(400);
+ok(
+  "F8 swipe on the book pages leaves the drawer shut",
+  (await mp.locator(".sidebar.mobile-open").count()) === 0,
+);
+await mp.locator('.tabswitch button:has-text("Exercises")').click();
+await mp.waitForSelector(".rightpane .unitheading", { timeout: 30000 });
+await swipe(".unitheading", 90);
+await sleep(400);
+ok("F8 swipe right opens the drawer", (await mp.locator(".sidebar.mobile-open").count()) === 1);
+
 // ---------- Flow 11: Shift+E on the landing opens the unit list ----------
 // The landing has no active unit, so there is nothing for the shortcut to
 // focus the old way; the key must still reveal the collapsed card and land

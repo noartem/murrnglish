@@ -1,4 +1,6 @@
-// Top-right control cycling the theme: system → light → dark → system.
+// Control cycling the theme: system → light → dark → system. An icon square
+// in the desktop topbar; `labelled` renders the drawer row used on phones,
+// where the icon gains the current theme's name.
 
 import { useEffect, useState } from "react";
 import type { ReactElement } from "react";
@@ -20,7 +22,7 @@ const ICON: Record<Theme, ReactElement> = {
   dark: <Moon size={15} aria-hidden />,
 };
 
-export function ThemeToggle() {
+export function ThemeToggle({ labelled = false }: { labelled?: boolean }) {
   const [theme, setTheme] = useState<Theme>(loadTheme);
 
   useEffect(() => {
@@ -35,12 +37,13 @@ export function ThemeToggle() {
 
   return (
     <button
-      className="themebtn"
+      className={labelled ? "themebtn labelled" : "themebtn"}
       onClick={cycle}
       title={LABEL[theme]}
       aria-label={LABEL[theme]}
     >
       {ICON[theme]}
+      {labelled && <span>{LABEL[theme]}</span>}
     </button>
   );
 }

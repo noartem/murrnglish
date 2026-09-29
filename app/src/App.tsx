@@ -133,6 +133,65 @@ export default function App() {
     mq.addEventListener("change", on);
     return () => mq.removeEventListener("change", on);
   }, []);
+  // Phone drawer gestures: a leftward swipe pushes the open drawer back, a
+  // rightward one pulls it in over either pane. No drawer state is read — a
+  // drag only ever sets the panel to where it already is — so the listeners
+  // survive every open/close. Passive listeners plus the vertical slop leave
+  // page scrolling alone. Places that own their touches are left out: the
+  // book pages (dragging there must never summon the drawer), form controls
+  // (caret placement, text selection) and open dialogs (the drawer would
+  // otherwise slide in behind the modal, which already covers the screen).
+  useEffect(() => {
+    if (!isMobile) return;
+    const SWIPE_OWNED =
+      "input, textarea, select, .pageviewer, .modal-overlay, .helpoverlay";
+    const COMMIT = 60; // horizontal travel that commits the gesture (px)
+    const SLOP = 12; // vertical travel that hands the drag back to scrolling
+    let x0 = 0;
+    let y0 = 0;
+    let tracking = false;
+    const onStart = (e: TouchEvent) => {
+      tracking = false;
+      if (e.touches.length !== 1) return;
+      const t = e.touches[0];
+      if (t.target instanceof Element && t.target.closest(SWIPE_OWNED)) return;
+      x0 = t.clientX;
+      y0 = t.clientY;
+      tracking = true;
+    };
+    const onMove = (e: TouchEvent) => {
+      if (!tracking) return;
+      if (e.touches.length !== 1) {
+        // a second finger means a pinch, not a swipe
+        tracking = false;
+        return;
+      }
+      const t = e.touches[0];
+      const dx = t.clientX - x0;
+      const dy = t.clientY - y0;
+      if (Math.abs(dy) > SLOP && Math.abs(dy) > Math.abs(dx)) {
+        tracking = false;
+        return;
+      }
+      if (Math.abs(dx) < COMMIT || Math.abs(dx) <= Math.abs(dy)) return;
+      tracking = false;
+      setDrawerOpen(dx > 0);
+    };
+    const onEnd = () => {
+      tracking = false;
+    };
+    const opts = { passive: true } as const;
+    window.addEventListener("touchstart", onStart, opts);
+    window.addEventListener("touchmove", onMove, opts);
+    window.addEventListener("touchend", onEnd, opts);
+    window.addEventListener("touchcancel", onEnd, opts);
+    return () => {
+      window.removeEventListener("touchstart", onStart);
+      window.removeEventListener("touchmove", onMove);
+      window.removeEventListener("touchend", onEnd);
+      window.removeEventListener("touchcancel", onEnd);
+    };
+  }, [isMobile]);
   const rightpaneRef = useRef<OverlayScrollbarsComponentRef>(null);
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
@@ -619,32 +678,37 @@ export default function App() {
           )}
         </div>
         <div className="topstats">{stats}</div>
-        <div className="topbar-actions">
-          <ShortcutsHelpButton onOpen={openHelp} />
-          <button
-            className="themebtn"
-            onClick={() => {
-              // pointer open: no underlined letters, just the plain window
-              setModalHints(false);
-              setModalOpen(true);
-            }}
-            title={"Progress: import, export, share — " + SC.progress}
-            aria-label="Progress: import, export, share"
-          >
-            <Share2 size={15} aria-hidden />
-          </button>
-          {standalone && (
+        {/* phones keep the topbar to the title alone: progress, download and
+            theme move into the unit drawer (see .draweractions), and the
+            shortcuts help is dropped — its key hints are inert on touch */}
+        {!isMobile && (
+          <div className="topbar-actions">
+            <ShortcutsHelpButton onOpen={openHelp} />
             <button
               className="themebtn"
-              onClick={() => setOfflineOpen(true)}
-              title="Offline — download the course"
-              aria-label="Offline: download the course"
+              onClick={() => {
+                // pointer open: no underlined letters, just the plain window
+                setModalHints(false);
+                setModalOpen(true);
+              }}
+              title={"Progress: import, export, share — " + SC.progress}
+              aria-label="Progress: import, export, share"
             >
-              <Download size={15} aria-hidden />
+              <Share2 size={15} aria-hidden />
             </button>
-          )}
-          <ThemeToggle />
-        </div>
+            {standalone && (
+              <button
+                className="themebtn"
+                onClick={() => setOfflineOpen(true)}
+                title="Offline — download the course"
+                aria-label="Offline: download the course"
+              >
+                <Download size={15} aria-hidden />
+              </button>
+            )}
+            <ThemeToggle />
+          </div>
+        )}
       </header>
       <div className="main">
         {!sidebarOpen && !isMobile && (
@@ -685,6 +749,39 @@ export default function App() {
                 events={sidebarEvents}
               >
                 <div className="sidebar-inner">
+                  {isMobile && (
+                    <div className="draweractions">
+                      <button
+                        type="button"
+                        className="draweraction"
+                        onClick={() => {
+                          setDrawerOpen(false);
+                          // pointer open: no underlined letters, plain window
+                          setModalHints(false);
+                          setModalOpen(true);
+                        }}
+                        title={"Progress: import, export, share — " + SC.progress}
+                      >
+                        <Share2 size={16} aria-hidden />
+                        <span>Progress &amp; share</span>
+                      </button>
+                      {standalone && (
+                        <button
+                          type="button"
+                          className="draweraction"
+                          onClick={() => {
+                            setDrawerOpen(false);
+                            setOfflineOpen(true);
+                          }}
+                          title="Offline — download the course"
+                        >
+                          <Download size={16} aria-hidden />
+                          <span>Download course</span>
+                        </button>
+                      )}
+                      <ThemeToggle labelled />
+                    </div>
+                  )}
                   {isMobile && <div className="drawerstats">{stats}</div>}
                   {index.groups.map((g) => {
                     const gpct = pct(
