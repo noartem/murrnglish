@@ -252,13 +252,42 @@ export default function App() {
     return () => cancelAnimationFrame(raf);
   }, [unit, additional]);
 
-  // keep the active unit button in the visible part of the sidebar
+  // keep the active unit button in the upper third of the panel: plain
+  // scrollIntoView("nearest") pinned it to the very bottom edge, and the
+  // panel's scrollbars instance re-initializes on mount (twice under
+  // StrictMode) right after the list renders, zeroing the scroll again — so
+  // it is re-asserted on every (re)initialization too
   const activeRef = useRef<HTMLButtonElement>(null);
-  useEffect(() => {
+  const sidebarRef = useRef<OverlayScrollbarsComponentRef<"nav">>(null);
+  // false while the panel's overlay-scrollbars viewport is not up yet
+  const revealActiveUnit = useCallback((): boolean => {
     const el = activeRef.current;
-    if (!el) return;
-    el.scrollIntoView({ block: "nearest" });
-  }, [route, sidebarOpen, index]);
+    const vp = sidebarRef.current?.osInstance()?.elements().viewport;
+    if (!el || !vp) return false;
+    const vpRect = vp.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    // fully visible already: leave the scroll alone, so clicking a unit that
+    // is on screen never jumps the list
+    if (elRect.top >= vpRect.top && elRect.bottom <= vpRect.bottom) return true;
+    const slack = Math.max(0, vpRect.height - elRect.height);
+    vp.scrollTop += elRect.top - vpRect.top - slack / 3;
+    return true;
+  }, []);
+  const sidebarEvents = useMemo(
+    () => ({
+      initialized: () => {
+        // after the constructor settled: a write made during it is undone by
+        // the instance's own setup
+        requestAnimationFrame(() => void revealActiveUnit());
+      },
+    }),
+    [revealActiveUnit],
+  );
+  // route/list changes; the first load is covered by the panel's own
+  // `initialized` event, its instance only appears a frame after the list
+  useEffect(() => {
+    revealActiveUnit();
+  }, [revealActiveUnit, route, sidebarOpen, index]);
 
   const setProgress = useCallback((fn: (p: Progress) => Progress) => {
     setProgressState((p) => fn(p));
@@ -464,7 +493,14 @@ export default function App() {
     goNextUnit: () => goTarget(pager?.next ?? null),
     goPrevUnit: () => goTarget(pager?.prev ?? null),
     focusPagePane: () => setPaneFocusTick((t) => t + 1),
-    focusUnitPanel: () => activeRef.current?.focus(),
+    focusUnitPanel: () => {
+      const el = activeRef.current;
+      if (!el) return;
+      // reveal first — focus() alone would scroll the unit to the bottom edge;
+      // preventScroll then keeps it where the reveal put it
+      if (revealActiveUnit()) el.focus({ preventScroll: true });
+      else el.focus();
+    },
     toggleSidebar,
     cycleTheme: () =>
       document
@@ -582,9 +618,11 @@ export default function App() {
             };
             return (
               <OverlayScrollbarsComponent
+                ref={sidebarRef}
                 element="nav"
                 className={sideCls}
                 options={osOptions}
+                events={sidebarEvents}
               >
                 <div className="sidebar-inner">
                   {isMobile && <div className="drawerstats">{stats}</div>}
