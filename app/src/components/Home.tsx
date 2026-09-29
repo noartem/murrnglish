@@ -1,13 +1,27 @@
 // Home: the "/#/ landing. The hero is the actual book cover (page 1 of the
 // same PDF the viewer renders) with a one-paragraph description and a single
-// call to action beside it on desktop (stacked and centered on phones).
-// Progress numbers live in the topbar, the unit list behind the hamburger on
-// content pages — the landing stays quiet. Scrolling is OverlayScrollbars,
-// like every other pane.
+// call to action beside it on desktop (stacked and centered on phones). The
+// cover is a real button mirroring the CTA — same action, mouse or keyboard.
+// Learners with saved progress get the CTA corrected to "Continue with …"
+// pointing where they left off; Progress numbers live in the topbar, the
+// unit list behind the hamburger on content pages — the landing stays
+// quiet. Scrolling is OverlayScrollbars, like every other pane.
 
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 
-export function Home({ onStart }: { onStart: () => void }) {
+/** Where a learner with saved progress should resume; null = fresh start. */
+export interface HomeContinue {
+  hash: string;
+  label: string;
+}
+
+export function Home({
+  onStart,
+  continueTo,
+}: {
+  onStart: () => void;
+  continueTo: HomeContinue | null;
+}) {
   return (
     <OverlayScrollbarsComponent
       element="main"
@@ -22,16 +36,17 @@ export function Home({ onStart }: { onStart: () => void }) {
       }}
     >
       <div className="homecol">
-        {/* focusable so keyboard users get the same tip-over as hover */}
-        <img
-          className="homecover"
-          src={`${import.meta.env.BASE_URL}cover.png`}
-          alt="Cover of English Grammar in Use, Fifth Edition, by Raymond Murphy"
-          width={1112}
-          height={1497}
-          decoding="async"
-          tabIndex={0}
-        />
+        <button type="button" className="homecoverbtn" onClick={onStart}>
+          <img
+            className="homecover"
+            src={`${import.meta.env.BASE_URL}cover.png`}
+            alt="Cover of English Grammar in Use, Fifth Edition, by Raymond Murphy"
+            width={1112}
+            height={1497}
+            decoding="async"
+            draggable={false}
+          />
+        </button>
         <div className="hometext">
           <p className="homedesc">
             Raymond Murphy’s <em>English Grammar in Use</em> (Fifth edition) as
@@ -40,7 +55,13 @@ export function Home({ onStart }: { onStart: () => void }) {
             units and 41 additional exercises.
           </p>
           <button type="button" className="homecta" onClick={onStart}>
-            Start with Unit 1
+            {continueTo ? (
+              <>
+                <s>Start with Unit 1</s> {continueTo.label}
+              </>
+            ) : (
+              "Start with Unit 1"
+            )}
           </button>
           <footer className="homecredit">
             Web edition by{" "}

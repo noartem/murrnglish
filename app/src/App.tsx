@@ -5,7 +5,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { AdditionalData, IndexData, TotalsMap, UnitData } from "./data";
 import { fetchAdditional, fetchIndex, fetchTotals, fetchUnit } from "./data";
 import { PageViewer } from "./components/PageViewer";
-import { Home } from "./components/Home";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
 import { ShortcutsHelpButton, ShortcutsModal } from "./components/ShortcutsHelp";
@@ -32,16 +31,22 @@ import {
 } from "./progress";
 import type { Progress } from "./progress";
 import { ProgressModal } from "./components/ProgressModal";
+import { Home, type HomeContinue } from "./components/Home";
 import { SHARE_HASH_RE, decodeShare, encodeShare } from "./share";
+// content routes (what a hash can deep-link to); Route adds the landing
+type ContentRoute =
+  { kind: "unit"; n: number } | { kind: "additional"; n: number };
+
 // home landing: bare "/", "#home", or any unknown hash; the rest are content
-type Route = { kind: "home" } | { kind: "unit"; n: number } | { kind: "additional"; n: number };
+type Route = { kind: "home" } | ContentRoute;
 
 // unit/additional hash -> route, or null for anything else
-function routeFromHash(h: string): Route | null {
+function routeFromHash(h: string): ContentRoute | null {
   const mu = h.match(/^u(\d+)$/);
   if (mu) return { kind: "unit", n: Math.min(145, Math.max(1, Number(mu[1]))) };
   const ma = h.match(/^a(\d+)$/);
-  if (ma) return { kind: "additional", n: Math.min(41, Math.max(1, Number(ma[1]))) };
+  if (ma)
+    return { kind: "additional", n: Math.min(41, Math.max(1, Number(ma[1]))) };
   return null;
 }
 
@@ -245,6 +250,41 @@ export default function App() {
   const doneUnits = useMemo(() => completedUnitIds(progress), [progress]);
   const counts = useMemo(() => countCorrect(progress), [progress]);
 
+  // the landing CTA: learners with saved progress continue with the unit
+  // AFTER the last one where they did at least one exercise (a result or a
+  // self-check mark); once that would be past unit 145, the first
+  // additional exercise without results. Fresh users get plain
+  // "Start with Unit 1".
+  const homeContinue = useMemo<HomeContinue | null>(() => {
+    const hasProgress =
+      Object.keys(progress.results).length > 0 ||
+      Object.keys(progress.selfMarks).length > 0;
+    if (!hasProgress) return null;
+    let lastTouched = 0;
+    for (const keys of [progress.results, progress.selfMarks]) {
+      for (const id of Object.keys(keys)) {
+        const m = id.match(/^(\d+)\./);
+        if (m) lastTouched = Math.max(lastTouched, Number(m[1]));
+      }
+    }
+    if (lastTouched < 145) {
+      return {
+        hash: `u${lastTouched + 1}`,
+        label: `Continue with Unit ${lastTouched + 1}`,
+      };
+    }
+    const nextAdditional = Array.from({ length: 41 }, (_, i) => i + 1).find(
+      (n) => !unitCompleted(progress, [String(n)]),
+    );
+    if (nextAdditional) {
+      return {
+        hash: `a${nextAdditional}`,
+        label: `Continue with Additional exercise ${nextAdditional}`,
+      };
+    }
+    return null;
+  }, [progress]);
+
   // ---- progress import / export / share -------------------------------------
 
   // file import goes through the same preview-confirm modal as share links:
@@ -351,6 +391,11 @@ export default function App() {
 
   function goHome() {
     window.location.hash = "home";
+  }
+
+  // landing CTA + cover: resume where the learner left off, or Unit 1
+  function startCourse() {
+    window.location.hash = homeContinue ? homeContinue.hash : "u1";
   }
 
   // focus restoration around the help modal: the element active when help
@@ -544,7 +589,7 @@ export default function App() {
           );
         })()}
         {isHome ? (
-          <Home onStart={() => (window.location.hash = "u1")} />
+          <Home onStart={startCourse} continueTo={homeContinue} />
         ) : (
           <div className="split" data-tab={mobileTab}>
             <div className="leftpane">

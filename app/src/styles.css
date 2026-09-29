@@ -200,6 +200,22 @@ body {
   align-items: center;
 }
 
+/* the cover doubles as the CTA: a real <button> wraps the img so clicking
+   the cover is the same action as the CTA beside it, keyboard included;
+   hover/focus live on the wrapper, the img inside does the tipping */
+.homecoverbtn {
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.homecoverbtn img {
+  /* block: kills the inline-image baseline gap inside the button */
+  display: block;
+}
+
 .homecover {
   /* actual cover art aspect (1112x1497) */
   aspect-ratio: 1112 / 1497;
@@ -207,10 +223,11 @@ body {
   width: auto;
   border: 6px solid var(--panel);
   border-radius: 8px;
+  /* rests tilted on its bottom-left corner ("standing on one leg"); on
+     hover/focus it swings upright onto its full base and settles with a
+     soft ease-out (no bounce). will-change keeps it on its own layer so the
+     big shadow isn't repainted every frame */
   transform: rotate(2deg);
-  /* pivot on the bottom-left corner: hover/focus tips it over onto its left
-     side and it settles with a soft ease-out (no bounce). will-change keeps
-     it on its own layer so the big shadow isn't repainted every frame */
   transform-origin: 8% 100%;
   transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
@@ -218,16 +235,18 @@ body {
   background: var(--img-bg);
 }
 
-.homecover:hover,
-.homecover:focus {
-  transform: rotate(-9deg);
+.homecoverbtn:hover .homecover,
+.homecoverbtn:focus .homecover {
+  /* both bottom corners planted: rotate(0) is the identity, so it lands in
+     its exact unrotated layout box, pivoting up on the bottom-left corner */
+  transform: rotate(0deg);
 }
 
-.homecover:focus {
+.homecoverbtn:focus {
   outline: none;
 }
 
-.homecover:focus-visible {
+.homecoverbtn:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
@@ -261,9 +280,11 @@ body {
     align-items: flex-start;
     max-width: 30rem;
   }
+  .homecoverbtn {
+    flex: 0 0 auto;
+  }
   .homecover {
     height: min(68vh, 540px);
-    flex: 0 0 auto;
   }
   .homedesc {
     margin-top: 0;
@@ -284,6 +305,11 @@ body {
   margin-top: 26px;
   cursor: pointer;
   box-shadow: 0 5px 0 var(--press-edge);
+}
+
+/* the struck-through "Start with Unit 1" inside the continue CTA */
+.homecta s {
+  opacity: 0.6;
 }
 
 .homecta:hover {
