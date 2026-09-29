@@ -357,6 +357,7 @@ body {
 }
 
 .topbar {
+  z-index: 47;
   height: var(--topbar-h);
   display: flex;
   align-items: center;
@@ -1773,7 +1774,7 @@ kbd {
     top: var(--topbar-h);
     left: 0;
     bottom: 0;
-    width: min(85vw, 320px);
+    width: 100%;
     z-index: 46;
     border-radius: 0;
     transform: translateX(-100%);
@@ -1815,6 +1816,12 @@ kbd {
     bottom: 0;
     z-index: 45;
     background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    interactivity: inert;
+  }
+  .sidebar-backdrop.enabled {
+    opacity: 1;
   }
 
   /* one pane at a time: data-tab on .split picks the visible one */

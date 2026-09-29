@@ -464,7 +464,16 @@ export default function App() {
           <button
             type="button"
             className="topbar-home"
-            onClick={isHome ? undefined : goHome}
+            onClick={
+              isHome
+                ? undefined
+                : // mobile: the unit drawer might be open behind the topbar;
+                  // going home also closes it so the tab bar is visible again
+                  () => {
+                    if (isMobile) setDrawerOpen(false);
+                    goHome();
+                  }
+            }
             disabled={isHome}
           >
             <h1>English Grammar in Use</h1>
@@ -492,8 +501,11 @@ export default function App() {
       <div className="main">
         {!sidebarOpen && !isMobile && <div className="sidebar-edge" aria-hidden />}
         {!isHome && <MobileTabSwitch tab={mobileTab} onTab={setMobileTab} />}
-        {isMobile && drawerOpen && (
-          <div className="sidebar-backdrop" onClick={() => setDrawerOpen(false)} />
+        {isMobile && (
+          <div
+            className={`sidebar-backdrop ${drawerOpen && 'enabled'}`}
+            onClick={() => setDrawerOpen(false)}
+          />
         )}
         {index && (() => {
           const sideCls = isMobile
