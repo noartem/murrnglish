@@ -149,6 +149,7 @@ body {
   background: var(--panel);
   box-shadow: 0 3px 0 var(--press-edge);
   transition: transform 0.07s ease, box-shadow 0.07s ease, border-color 0.12s;
+  text-wrap: balance;
 }
 
 .sidebartoggle:active,
