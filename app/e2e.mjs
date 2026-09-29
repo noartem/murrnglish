@@ -274,6 +274,67 @@ await page.keyboard.press("Escape");
 await sleep(350);
 ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
 
+// ---------- Flow 10: unit loading placeholder + parallel page start ----------
+// With the unit JSON held, the exercises pane shows the placeholder and the
+// book pages are already mounted from index.json — that is the whole point of
+// the change: the 14 MB PDF load no longer waits for the unit JSON.
+const UNIT13_TITLE =
+  "Unit 13 — " + (await (await fetch(BASE + "/data/index.json")).json()).exercises.u13.title;
+{
+  // fresh context: an empty HTTP cache, so book.pdf is a real network load
+  // and the resource timings below describe a first visit
+  const octx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
+  const slow = await octx.newPage();
+  await slow.route("**/data/units/unit-013.json", async (route) => {
+    await sleep(2500);
+    await route.continue();
+  });
+  await slow.goto(BASE + "/#u13", { waitUntil: "domcontentloaded" });
+  await slow.waitForSelector(".unitloading .skel-card", { timeout: 30000 });
+  const held = await slow.evaluate(() => ({
+    skelCards: document.querySelectorAll(".unitloading .skel-card").length,
+    skelRows: document.querySelectorAll(".unitloading .skel-item").length,
+    label: document.querySelector(".unitloading")?.getAttribute("aria-label"),
+    liveCards: document.querySelectorAll(".rightpane .exercise:not(.skel-card)").length,
+    pageboxes: document.querySelectorAll(".leftpane .pagebox").length,
+    heading: document.querySelector(".unitloading .skel-heading")?.textContent ?? "",
+  }));
+  ok("F10 placeholder while unit JSON is in flight", held.skelCards === 2 && held.liveCards === 0);
+  ok("F10 placeholder mirrors the card shape", held.skelRows === 8, JSON.stringify(held));
+  ok("F10 placeholder is announced as loading", held.label === "Loading exercises", held.label ?? "none");
+  ok("F10 placeholder shows the real title, not a bar", held.heading === UNIT13_TITLE, held.heading);
+  ok("F10 book pages mount before the unit JSON", held.pageboxes === 2, `${held.pageboxes} pages`);
+  await slow.waitForSelector(".rightpane .exercise:not(.skel-card)", { timeout: 30000 });
+  // The claim is that the PDF no longer waits for the unit JSON. Before the
+  // change the stack mounted on the unit object, so book.pdf could not start
+  // until that JSON resolved; now it starts alongside. Resource timing is the
+  // observable: pdf.start < json.end holds only in the parallel case.
+  const timings = await slow.evaluate(() => {
+    const entries = performance.getEntriesByType("resource");
+    const pick = (re) => {
+      const e = entries.find((x) => re.test(x.name));
+      return e ? { start: Math.round(e.startTime), end: Math.round(e.startTime + e.duration) } : null;
+    };
+    return { pdf: pick(/book\.pdf/), json: pick(/unit-013\.json/) };
+  });
+  ok(
+    "F10 book.pdf starts before the unit JSON resolves",
+    !!timings.pdf && !!timings.json && timings.pdf.start < timings.json.end,
+    JSON.stringify(timings),
+  );
+  const landed = await slow.evaluate(() => ({
+    skel: document.querySelectorAll(".unitloading").length,
+    liveCards: document.querySelectorAll(".rightpane .exercise").length,
+    heading: document.querySelector(".unitheading")?.textContent?.trim() ?? "",
+  }));
+  ok("F10 placeholder clears when the unit arrives", landed.skel === 0 && landed.liveCards > 0);
+  // same string the placeholder showed: the title never swaps, only the cards
+  // under it do
+  ok("F10 heading is identical before and after the unit lands",
+    landed.heading === held.heading.trim(), JSON.stringify({ before: held.heading, after: landed.heading }));
+  await octx.close();
+}
+
 // ---------- Flow 7: keyboard shortcuts modal ----------
 await page.locator('button[aria-label="Keyboard shortcuts"]').click();
 await page.waitForSelector(".helpcard", { timeout: 30000 });
