@@ -104,6 +104,8 @@ export default function App() {
   const [paneFocusTick, setPaneFocusTick] = useState(0);
   const preHelpFocus = useRef<HTMLElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
+  // Shift+I open: the modal underlines each control's trigger letter
+  const [modalHints, setModalHints] = useState(false);
   const [notice, setNotice] = useState("");
   // transient topbar notice, auto-clears
   useEffect(() => {
@@ -198,6 +200,35 @@ export default function App() {
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
+  // which exercise of the route is still in flight: its pane shows a skeleton
+  // that mirrors the real card shape (heading, instruction, numbered rows).
+  // Reading the route instead of a set-then-cleared flag makes a strike on
+  // the exercises impossible — the key flips to null only when the matching
+  // JSON lands (or fails; the error message is the pane's content then).
+  const routeKey =
+    route.kind === "unit"
+      ? `u${route.n}`
+      : route.kind === "additional"
+        ? `a${route.n}`
+        : null;
+  const pending = routeKey && !unit && !additional && !error ? routeKey : null;
+  // route numbers go into the placeholder heading, which must read exactly
+  // like the loaded heading
+  const routeN = routeKey ? Number(routeKey.slice(1)) : 0;
+  // Everything index.json already knows about the route, available as soon as
+  // the index lands: the heading text and the book pages. That is what lets a
+  // route paint its real title and start the PDF alongside the exercise JSON.
+  const routeInfo = routeKey ? index?.exercises?.[routeKey] : undefined;
+  // The page stack mounts on index pages for the whole visit, never on the
+  // loaded unit object: the PDF fetch (74.6 MB, the slowest thing the app
+  // does) then runs alongside the exercise JSON. Index pages are a stable
+  // reference, so the unit arriving does not re-identify the array and
+  // PageViewer keeps its zoom/scroll state. validate.py fails the build if
+  // this copy drifts from the per-file pdfPages, which the fallback below
+  // covers for a stale browser cache.
+  const mountPages =
+    routeInfo?.pages ?? unit?.pdfPages ?? additional?.pdfPages;
+
   useEffect(() => {
     setUnit(null);
     setAdditional(null);
@@ -250,13 +281,57 @@ export default function App() {
     return () => cancelAnimationFrame(raf);
   }, [unit, additional]);
 
-  // keep the active unit button in the visible part of the sidebar
+  // keep a unit button in the upper third of the panel: plain
+  // scrollIntoView("nearest") pinned it to the very bottom edge, and the
+  // panel's scrollbars instance re-initializes on mount (twice under
+  // StrictMode) right after the list renders, zeroing the scroll again — so
+  // it is re-asserted on every (re)initialization too
   const activeRef = useRef<HTMLButtonElement>(null);
+  const sidebarRef = useRef<OverlayScrollbarsComponentRef<"nav">>(null);
+  // false while the panel's overlay-scrollbars viewport is not up yet
+  const revealUnit = useCallback((el: HTMLButtonElement | null): boolean => {
+    const vp = sidebarRef.current?.osInstance()?.elements().viewport;
+    if (!el || !vp) return false;
+    const vpRect = vp.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    // fully visible already: leave the scroll alone, so clicking a unit that
+    // is on screen never jumps the list
+    if (elRect.top >= vpRect.top && elRect.bottom <= vpRect.bottom) return true;
+    const slack = Math.max(0, vpRect.height - elRect.height);
+    vp.scrollTop += elRect.top - vpRect.top - slack / 3;
+    return true;
+  }, []);
+  const revealActiveUnit = useCallback(
+    (): boolean => revealUnit(activeRef.current),
+    [revealUnit],
+  );
+  // the route's own unit button; the landing has no active unit, so Shift+E
+  // falls back to the first entry of the list there
+  const unitPanelTarget = useCallback((): HTMLButtonElement | null => {
+    return (
+      activeRef.current ??
+      sidebarRef.current
+        ?.osInstance()
+        ?.elements()
+        .viewport?.querySelector<HTMLButtonElement>(".unitlink") ??
+      null
+    );
+  }, []);
+  const sidebarEvents = useMemo(
+    () => ({
+      initialized: () => {
+        // after the constructor settled: a write made during it is undone by
+        // the instance's own setup
+        requestAnimationFrame(() => void revealActiveUnit());
+      },
+    }),
+    [revealActiveUnit],
+  );
+  // route/list changes; the first load is covered by the panel's own
+  // `initialized` event, its instance only appears a frame after the list
   useEffect(() => {
-    const el = activeRef.current;
-    if (!el) return;
-    el.scrollIntoView({ block: "nearest" });
-  }, [route, sidebarOpen, index]);
+    revealActiveUnit();
+  }, [revealActiveUnit, route, sidebarOpen, index]);
 
   const setProgress = useCallback((fn: (p: Progress) => Progress) => {
     setProgressState((p) => fn(p));
@@ -397,8 +472,7 @@ export default function App() {
         n: cr.n,
         label:
           cr.kind === "unit" ? `Unit ${cr.n}` : `Additional exercise ${cr.n}`,
-        desc:
-          index.titles?.[cr.kind === "unit" ? `u${cr.n}` : `a${cr.n}`] ?? "",
+        desc: index.exercises?.[cr.kind === "unit" ? `u${cr.n}` : `a${cr.n}`]?.title ?? "",
       };
     };
     const course: ContentRoute[] = [
@@ -453,10 +527,23 @@ export default function App() {
     helpOpen,
     openHelp,
     closeHelp,
+    progressOpen: modalOpen || preview !== null,
+    progressHints: modalOpen && modalHints,
+    hintProgress: () => {
+      setModalHints(true);
+      setModalOpen(true);
+    },
     goNextUnit: () => goTarget(pager?.next ?? null),
     goPrevUnit: () => goTarget(pager?.prev ?? null),
     focusPagePane: () => setPaneFocusTick((t) => t + 1),
-    focusUnitPanel: () => activeRef.current?.focus(),
+    focusUnitPanel: () => {
+      const el = unitPanelTarget();
+      if (!el) return;
+      // reveal first — focus() alone would scroll the unit to the bottom edge;
+      // preventScroll then keeps it where the reveal put it
+      if (revealUnit(el)) el.focus({ preventScroll: true });
+      else el.focus();
+    },
     toggleSidebar,
     cycleTheme: () =>
       document
@@ -529,8 +616,12 @@ export default function App() {
           <ShortcutsHelpButton onOpen={openHelp} />
           <button
             className="themebtn"
-            onClick={() => setModalOpen(true)}
-            title="Progress: import, export, share"
+            onClick={() => {
+              // pointer open: no underlined letters, just the plain window
+              setModalHints(false);
+              setModalOpen(true);
+            }}
+            title={"Progress: import, export, share — " + SC.progress}
             aria-label="Progress: import, export, share"
           >
             <Share2 size={15} aria-hidden />
@@ -570,9 +661,11 @@ export default function App() {
             };
             return (
               <OverlayScrollbarsComponent
+                ref={sidebarRef}
                 element="nav"
                 className={sideCls}
                 options={osOptions}
+                events={sidebarEvents}
               >
                 <div className="sidebar-inner">
                   {isMobile && <div className="drawerstats">{stats}</div>}
@@ -714,16 +807,9 @@ export default function App() {
         ) : (
           <div className="split" data-tab={mobileTab}>
             <div className="leftpane">
-              {unit && (
+              {mountPages && (
                 <PageViewer
-                  pdfPages={unit.pdfPages}
-                  focusTick={paneFocusTick}
-                  onPaneEscape={sc.restoreFocus}
-                />
-              )}
-              {additional && (
-                <PageViewer
-                  pdfPages={additional.pdfPages}
+                  pdfPages={mountPages}
                   focusTick={paneFocusTick}
                   onPaneEscape={sc.restoreFocus}
                 />
@@ -742,6 +828,13 @@ export default function App() {
               }}
             >
               {error && <div className="loaderror">{error}</div>}
+              {pending && (
+                <UnitLoading
+                  kind={pending[0] === "u" ? "unit" : "additional"}
+                  n={routeN}
+                  title={routeInfo?.title ?? ""}
+                />
+              )}
               {unit && (
                 <>
                   <h2 className="unitheading">
@@ -798,6 +891,7 @@ export default function App() {
         onImport={handleImportFile}
         onExport={handleExport}
         onShare={handleShare}
+        hintKeys={modalHints}
       />
       {helpOpen && <ShortcutsModal onClose={closeHelp} />}
     </div>
@@ -809,6 +903,50 @@ interface NavTarget {
   n: number;
   label: string;
   desc: string;
+}
+
+// Exercises-pane placeholder shown from navigation until the exercise JSON
+// lands. The heading is REAL from the first frame — index.json carries every
+// title, so there is no reason to skeleton that text. Only the card shape is
+// guessed: instruction and numbered rows at the sizes the loaded card renders
+// at, so the swap does not jump. Deliberately static (no shimmer): the shape
+// already says "loading", and motion here would compete with the page stack
+// filling in beside it. Row counts are illustrative — the real ones are not
+// known until the JSON is parsed.
+function UnitLoading({
+  kind,
+  n,
+  title,
+}: {
+  kind: "unit" | "additional";
+  n: number;
+  title: string;
+}) {
+  // must match the loaded headings exactly, or the title visibly rewrites
+  // itself the moment the JSON lands
+  const label =
+    kind === "unit" ? `Unit ${n}` : `Additional exercise ${n}`;
+  return (
+    <div className="unitloading" role="status" aria-label="Loading exercises">
+      <h2 className="unitheading skel-heading">
+        {title ? `${label} — ${title}` : label}
+      </h2>
+      {[0, 1].map((card) => (
+        <div className="exercise skel-card" key={card}>
+          <p className="instruction skel-instruction">
+            <span className="skel-fill" />
+            <span className="skel-fill short" />
+          </p>
+          {Array.from({ length: card === 0 ? 5 : 3 }, (_, i) => (
+            <div className="skel-item" key={i}>
+              <span className="skel-bar" />
+              <span className="skel-bar" />
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
 }
 
 // Bottom-of-page prev/next: two big ghost buttons; at course edges the

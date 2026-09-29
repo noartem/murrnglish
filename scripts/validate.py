@@ -117,6 +117,42 @@ def check_exercise(ex, name, missing_key_txt, errors):
                               % (name, eid, it.get("num")))
 
 
+def check_index_exercises(index, errors):
+    """index.json "exercises" is generated from the exercise files by
+    scripts/make_index.py. The app reads a unit's title and book pages from it
+    to label the page and start the PDF before that unit's own JSON arrives,
+    so a stale copy would show the wrong title or mount the wrong pages; fail
+    the build here instead. This mirrors the generator on purpose — sharing
+    its code would validate the generator against itself.
+    """
+    want = {}
+    for un in range(1, N_UNITS + 1):
+        path = ROOT / "data" / "units" / ("unit-%03d.json" % un)
+        if not path.exists():
+            continue
+        d = json.loads(path.read_text(encoding="utf-8"))
+        want["u%d" % un] = {"title": d.get("title") or "", "pages": d.get("pdfPages")}
+    for path in sorted((ROOT / "data" / "additional").glob("*.json")):
+        if not path.name[:2].isdigit():
+            continue
+        pn = int(path.name[:2])
+        d = json.loads(path.read_text(encoding="utf-8"))
+        topic = d.get("topic") or ""
+        refs = d.get("refs") or ""
+        want["a%d" % pn] = {
+            "title": "%s · %s" % (topic, refs) if refs else topic,
+            "pages": d.get("pdfPages"),
+        }
+    got = index.get("exercises") or {}
+    if got != want:
+        diff = sorted(set(want) ^ set(got)) or [
+            k for k in sorted(want) if got.get(k) != want[k]
+        ]
+        errors.append("index.json 'exercises' stale: %d keys expected, %d present, "
+                      "diff %s - re-run scripts/make_index.py"
+                      % (len(want), len(got), diff[:5]))
+
+
 def validate_unit_file(path, errors):
     name = path.name
     try:
@@ -219,6 +255,7 @@ def full_run():
     if add_list != add_ids:
         errors.append("additional index %d != files %d (diff %s)"
                       % (len(add_list), len(add_ids), sorted(add_list ^ add_ids)[:10]))
+    check_index_exercises(index, errors)
     n_add = len(add_files)
 
     print("units: %d/%d, unit exercises: %d, additional files: %d"

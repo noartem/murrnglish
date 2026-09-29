@@ -261,156 +261,1023 @@
       35
     ]
   },
-  "titles": {
-    "u1": "am/is/are",
-    "u2": "am/is/are (вопросы)",
-    "u3": "I’m scared / I’m late / I’m tired и т. д.",
-    "u4": "I am doing (present continuous)",
-    "u5": "are you doing? (present continuous, вопросы)",
-    "u6": "I do/work/like и т. д. (present simple)",
-    "u7": "I don’t … (present simple, отрицания)",
-    "u8": "Do you … ? (present simple, вопросы)",
-    "u9": "I am doing (present continuous) и I do (present simple)",
-    "u10": "I have … и I’ve got …",
-    "u11": "was/were",
-    "u12": "worked/got/went и т. д. (past simple)",
-    "u13": "I didn’t … · Did you … ? (past simple, отрицания и вопросы)",
-    "u14": "I was doing (past continuous)",
-    "u15": "I was doing (past continuous) и I did (past simple)",
-    "u16": "I have done (present perfect 1)",
-    "u17": "I’ve just … · I’ve already … · I haven’t … yet (present perfect 2)",
-    "u18": "Have you ever … ? (present perfect 3)",
-    "u19": "How long have you … ? (present perfect 4)",
-    "u20": "for · since · ago",
-    "u21": "I have done (present perfect) и I did (past)",
-    "u22": "is done · was done (пассивные конструкции 1)",
-    "u23": "is being done · has been done (пассивные конструкции 2)",
-    "u24": "be/have/do в настоящем и прошедшем времени",
-    "u25": "Правильные и неправильные глаголы",
-    "u26": "What are you doing tomorrow?",
-    "u27": "I’m going to …",
-    "u28": "will/shall 1",
-    "u29": "will/shall 2",
-    "u30": "might",
-    "u31": "can и could",
-    "u32": "must · mustn’t · don’t need to",
-    "u33": "should",
-    "u34": "I have to …",
-    "u35": "Would you like … ? · I’d like …",
-    "u36": "Do this! · Don’t do that! · Let’s do this!",
-    "u37": "I used to …",
-    "u38": "there is · there are",
-    "u39": "there was/were · there has/have been · there will be",
-    "u40": "It …",
-    "u41": "I am, I don’t и т. д.",
-    "u42": "Have you? · Are you? · Don’t you? и т. д.",
-    "u43": "too/either · so am I / neither do I и т. д.",
-    "u44": "isn’t, haven’t, don’t и т. д. (отрицания)",
-    "u45": "is it … ? · have you … ? · do they … ? и т. д. (вопросы 1)",
-    "u46": "Who saw you? · Who did you see? (вопросы 2)",
-    "u47": "Who is she talking to? · What is it like? (вопросы 3)",
-    "u48": "What … ? · Which … ? · How … ? (вопросы 4)",
-    "u49": "How long does it take … ?",
-    "u50": "Do you know where … ? · I don’t know what … и т. д.",
-    "u51": "She said that … · He told me that …",
-    "u52": "work/working · go/going · do/doing",
-    "u53": "to … (I want to do) и -ing (I enjoy doing)",
-    "u54": "I want you to … · I told you to …",
-    "u55": "I went to the shop to …",
-    "u56": "go to … · go on … · go for … · go -ing",
-    "u57": "get",
-    "u58": "do и make",
-    "u59": "have",
-    "u60": "I/me · he/him · they/them и т. д.",
-    "u61": "my/his/their и т. д.",
-    "u62": "Whose is this? · It’s mine/yours/hers и т. д.",
-    "u63": "I/me/my/mine",
-    "u64": "myself/yourself/themselves и т. д.",
-    "u65": "-’s (Kate’s camera / my brother’s car и т. д.)",
-    "u66": "a/an …",
-    "u67": "train(s) · bus(es) (единственное и множественное число)",
-    "u68": "a bottle / some water (исчисляемые/неисчисляемые существительные 1)",
-    "u69": "a cake / some cake / some cakes (исчисляемые/неисчисляемые существительные 2)",
-    "u70": "a/an и the",
-    "u71": "the …",
-    "u72": "go to work · go home · go to the cinema",
-    "u73": "I like music · I hate exams",
-    "u74": "the … (с географическими названиями)",
-    "u75": "this/that/these/those",
-    "u76": "one/ones",
-    "u77": "some и any",
-    "u78": "not + any · no · none",
-    "u79": "not + anybody/anyone/anything · nobody/no-one/nothing",
-    "u80": "somebody/anything/nowhere и т. д.",
-    "u81": "every и all",
-    "u82": "all · most · some · any · no/none",
-    "u83": "both · either · neither",
-    "u84": "a lot · much · many",
-    "u85": "(a) little · (a) few",
-    "u86": "old/nice/interesting и т. д. (прилагательные)",
-    "u87": "quickly/badly/suddenly и т. д. (наречия)",
-    "u88": "old/older · expensive / more expensive",
-    "u89": "older than … · more expensive than …",
-    "u90": "not as … as",
-    "u91": "the oldest · the most expensive",
-    "u92": "enough",
-    "u93": "too",
-    "u94": "He caught a big fish. (порядок слов 1)",
-    "u95": "always/usually/often и т. д. (порядок слов 2)",
-    "u96": "still · yet · already",
-    "u97": "Give me that book! · Give it to me!",
-    "u98": "and · but · or · so · because",
-    "u99": "When … · If …",
-    "u100": "If I had … · If we went … и т. д.",
-    "u101": "a person who … · a thing that/which … (относительные придаточные предложения 1)",
-    "u102": "the people we met · the hotel you stayed at (относительные придаточные предложения 2)",
-    "u103": "at 8 o’clock · on Monday · in April",
-    "u104": "from … to · until · since · for",
-    "u105": "before · after · during · while",
-    "u106": "in · at · on (предлоги места 1)",
-    "u107": "in · at · on (предлоги места 2)",
-    "u108": "to · in · at (предлоги места 3)",
-    "u109": "under, behind, opposite и т. д.",
-    "u110": "up, over, through и т. д.",
-    "u111": "on · at · by · with · about",
-    "u112": "full of …, good at … и т. д. · of/at/for и т. д. (предлоги) + -ing",
-    "u113": "listen to …, look at … и т. д. (глагол + предлог)",
-    "u114": "go in, fall off, run away и т. д. (phrasal verbs 1)",
-    "u115": "put on your shoes · put your shoes on (phrasal verbs 2)",
-    "a1": "am/is/are · Разделы 1–3",
-    "a2": "am/is/are · Разделы 1–3",
-    "a3": "present continuous · Разделы 4–5",
-    "a4": "present simple · Разделы 6–8",
-    "a5": "present simple, am/is/are и have (got) · Разделы 1–3, 6–8, 10",
-    "a6": "present simple, am/is/are и have (got) · Разделы 1–3, 6–8, 10",
-    "a7": "present simple, am/is/are и have (got) · Разделы 1–3, 6–8, 10",
-    "a8": "present continuous и present simple · Разделы 4–9",
-    "a9": "present continuous и present simple · Разделы 4–9",
-    "a10": "was/were и past simple · Разделы 11–13",
-    "a11": "was/were и past simple · Разделы 11–13",
-    "a12": "was/were и past simple · Разделы 11–13",
-    "a13": "was/were и past simple · Разделы 11–13",
-    "a14": "past simple и past continuous · Разделы 12–15",
-    "a15": "настоящее и прошедшее время · Разделы 4–15",
-    "a16": "present perfect · Разделы 16–20",
-    "a17": "present perfect · Разделы 16–20",
-    "a18": "present perfect · Разделы 16–20",
-    "a19": "present perfect и past simple · Разделы 19–21",
-    "a20": "present perfect и past simple · Разделы 19–21",
-    "a21": "present perfect и past simple · Разделы 19–21",
-    "a22": "present perfect и past simple · Разделы 19–21",
-    "a23": "настоящее время, прошедшее время и present perfect · Разделы 4–21",
-    "a24": "пассивные конструкции · Разделы 22–23",
-    "a25": "пассивные конструкции · Разделы 22–23",
-    "a26": "пассивные конструкции · Разделы 22–23",
-    "a27": "пассивные конструкции · Разделы 22–23",
-    "a28": "будущее время · Разделы 26–29",
-    "a29": "прошедшее, настоящее и будущее время · Разделы 4–21, 26–29",
-    "a30": "прошедшее, настоящее и будущее время · Разделы 4–23, 26–29, 53, 55, 99, 105",
-    "a31": "прошедшее, настоящее и будущее время · Разделы 4–23, 26–29, 53, 55, 99, 105",
-    "a32": "-ing и to … · Разделы 52–56, 105, 112",
-    "a33": "a и the · Разделы 66, 70–74",
-    "a34": "a и the · Разделы 66, 70–74",
-    "a35": "предлоги · Разделы 103–108, 111"
+  "exercises": {
+    "u1": {
+      "title": "am/is/are",
+      "pages": [
+        13,
+        14
+      ]
+    },
+    "u2": {
+      "title": "am/is/are (вопросы)",
+      "pages": [
+        15,
+        16
+      ]
+    },
+    "u3": {
+      "title": "I’m scared / I’m late / I’m tired и т. д.",
+      "pages": [
+        17,
+        18
+      ]
+    },
+    "u4": {
+      "title": "I am doing (present continuous)",
+      "pages": [
+        19,
+        20
+      ]
+    },
+    "u5": {
+      "title": "are you doing? (present continuous, вопросы)",
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "u6": {
+      "title": "I do/work/like и т. д. (present simple)",
+      "pages": [
+        23,
+        24
+      ]
+    },
+    "u7": {
+      "title": "I don’t … (present simple, отрицания)",
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "u8": {
+      "title": "Do you … ? (present simple, вопросы)",
+      "pages": [
+        27,
+        28
+      ]
+    },
+    "u9": {
+      "title": "I am doing (present continuous) и I do (present simple)",
+      "pages": [
+        29,
+        30
+      ]
+    },
+    "u10": {
+      "title": "I have … и I’ve got …",
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "u11": {
+      "title": "was/were",
+      "pages": [
+        33,
+        34
+      ]
+    },
+    "u12": {
+      "title": "worked/got/went и т. д. (past simple)",
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "u13": {
+      "title": "I didn’t … · Did you … ? (past simple, отрицания и вопросы)",
+      "pages": [
+        37,
+        38
+      ]
+    },
+    "u14": {
+      "title": "I was doing (past continuous)",
+      "pages": [
+        39,
+        40
+      ]
+    },
+    "u15": {
+      "title": "I was doing (past continuous) и I did (past simple)",
+      "pages": [
+        41,
+        42
+      ]
+    },
+    "u16": {
+      "title": "I have done (present perfect 1)",
+      "pages": [
+        43,
+        44
+      ]
+    },
+    "u17": {
+      "title": "I’ve just … · I’ve already … · I haven’t … yet (present perfect 2)",
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "u18": {
+      "title": "Have you ever … ? (present perfect 3)",
+      "pages": [
+        47,
+        48
+      ]
+    },
+    "u19": {
+      "title": "How long have you … ? (present perfect 4)",
+      "pages": [
+        49,
+        50
+      ]
+    },
+    "u20": {
+      "title": "for · since · ago",
+      "pages": [
+        51,
+        52
+      ]
+    },
+    "u21": {
+      "title": "I have done (present perfect) и I did (past)",
+      "pages": [
+        53,
+        54
+      ]
+    },
+    "u22": {
+      "title": "is done · was done (пассивные конструкции 1)",
+      "pages": [
+        55,
+        56
+      ]
+    },
+    "u23": {
+      "title": "is being done · has been done (пассивные конструкции 2)",
+      "pages": [
+        57,
+        58
+      ]
+    },
+    "u24": {
+      "title": "be/have/do в настоящем и прошедшем времени",
+      "pages": [
+        59,
+        60
+      ]
+    },
+    "u25": {
+      "title": "Правильные и неправильные глаголы",
+      "pages": [
+        61,
+        62
+      ]
+    },
+    "u26": {
+      "title": "What are you doing tomorrow?",
+      "pages": [
+        63,
+        64
+      ]
+    },
+    "u27": {
+      "title": "I’m going to …",
+      "pages": [
+        65,
+        66
+      ]
+    },
+    "u28": {
+      "title": "will/shall 1",
+      "pages": [
+        67,
+        68
+      ]
+    },
+    "u29": {
+      "title": "will/shall 2",
+      "pages": [
+        69,
+        70
+      ]
+    },
+    "u30": {
+      "title": "might",
+      "pages": [
+        71,
+        72
+      ]
+    },
+    "u31": {
+      "title": "can и could",
+      "pages": [
+        73,
+        74
+      ]
+    },
+    "u32": {
+      "title": "must · mustn’t · don’t need to",
+      "pages": [
+        75,
+        76
+      ]
+    },
+    "u33": {
+      "title": "should",
+      "pages": [
+        77,
+        78
+      ]
+    },
+    "u34": {
+      "title": "I have to …",
+      "pages": [
+        79,
+        80
+      ]
+    },
+    "u35": {
+      "title": "Would you like … ? · I’d like …",
+      "pages": [
+        81,
+        82
+      ]
+    },
+    "u36": {
+      "title": "Do this! · Don’t do that! · Let’s do this!",
+      "pages": [
+        83,
+        84
+      ]
+    },
+    "u37": {
+      "title": "I used to …",
+      "pages": [
+        85,
+        86
+      ]
+    },
+    "u38": {
+      "title": "there is · there are",
+      "pages": [
+        87,
+        88
+      ]
+    },
+    "u39": {
+      "title": "there was/were · there has/have been · there will be",
+      "pages": [
+        89,
+        90
+      ]
+    },
+    "u40": {
+      "title": "It …",
+      "pages": [
+        91,
+        92
+      ]
+    },
+    "u41": {
+      "title": "I am, I don’t и т. д.",
+      "pages": [
+        93,
+        94
+      ]
+    },
+    "u42": {
+      "title": "Have you? · Are you? · Don’t you? и т. д.",
+      "pages": [
+        95,
+        96
+      ]
+    },
+    "u43": {
+      "title": "too/either · so am I / neither do I и т. д.",
+      "pages": [
+        97,
+        98
+      ]
+    },
+    "u44": {
+      "title": "isn’t, haven’t, don’t и т. д. (отрицания)",
+      "pages": [
+        99,
+        100
+      ]
+    },
+    "u45": {
+      "title": "is it … ? · have you … ? · do they … ? и т. д. (вопросы 1)",
+      "pages": [
+        101,
+        102
+      ]
+    },
+    "u46": {
+      "title": "Who saw you? · Who did you see? (вопросы 2)",
+      "pages": [
+        103,
+        104
+      ]
+    },
+    "u47": {
+      "title": "Who is she talking to? · What is it like? (вопросы 3)",
+      "pages": [
+        105,
+        106
+      ]
+    },
+    "u48": {
+      "title": "What … ? · Which … ? · How … ? (вопросы 4)",
+      "pages": [
+        107,
+        108
+      ]
+    },
+    "u49": {
+      "title": "How long does it take … ?",
+      "pages": [
+        109,
+        110
+      ]
+    },
+    "u50": {
+      "title": "Do you know where … ? · I don’t know what … и т. д.",
+      "pages": [
+        111,
+        112
+      ]
+    },
+    "u51": {
+      "title": "She said that … · He told me that …",
+      "pages": [
+        113,
+        114
+      ]
+    },
+    "u52": {
+      "title": "work/working · go/going · do/doing",
+      "pages": [
+        115,
+        116
+      ]
+    },
+    "u53": {
+      "title": "to … (I want to do) и -ing (I enjoy doing)",
+      "pages": [
+        117,
+        118
+      ]
+    },
+    "u54": {
+      "title": "I want you to … · I told you to …",
+      "pages": [
+        119,
+        120
+      ]
+    },
+    "u55": {
+      "title": "I went to the shop to …",
+      "pages": [
+        121,
+        122
+      ]
+    },
+    "u56": {
+      "title": "go to … · go on … · go for … · go -ing",
+      "pages": [
+        123,
+        124
+      ]
+    },
+    "u57": {
+      "title": "get",
+      "pages": [
+        125,
+        126
+      ]
+    },
+    "u58": {
+      "title": "do и make",
+      "pages": [
+        127,
+        128
+      ]
+    },
+    "u59": {
+      "title": "have",
+      "pages": [
+        129,
+        130
+      ]
+    },
+    "u60": {
+      "title": "I/me · he/him · they/them и т. д.",
+      "pages": [
+        131,
+        132
+      ]
+    },
+    "u61": {
+      "title": "my/his/their и т. д.",
+      "pages": [
+        133,
+        134
+      ]
+    },
+    "u62": {
+      "title": "Whose is this? · It’s mine/yours/hers и т. д.",
+      "pages": [
+        135,
+        136
+      ]
+    },
+    "u63": {
+      "title": "I/me/my/mine",
+      "pages": [
+        137,
+        138
+      ]
+    },
+    "u64": {
+      "title": "myself/yourself/themselves и т. д.",
+      "pages": [
+        139,
+        140
+      ]
+    },
+    "u65": {
+      "title": "-’s (Kate’s camera / my brother’s car и т. д.)",
+      "pages": [
+        141,
+        142
+      ]
+    },
+    "u66": {
+      "title": "a/an …",
+      "pages": [
+        143,
+        144
+      ]
+    },
+    "u67": {
+      "title": "train(s) · bus(es) (единственное и множественное число)",
+      "pages": [
+        145,
+        146
+      ]
+    },
+    "u68": {
+      "title": "a bottle / some water (исчисляемые/неисчисляемые существительные 1)",
+      "pages": [
+        147,
+        148
+      ]
+    },
+    "u69": {
+      "title": "a cake / some cake / some cakes (исчисляемые/неисчисляемые существительные 2)",
+      "pages": [
+        149,
+        150
+      ]
+    },
+    "u70": {
+      "title": "a/an и the",
+      "pages": [
+        151,
+        152
+      ]
+    },
+    "u71": {
+      "title": "the …",
+      "pages": [
+        153,
+        154
+      ]
+    },
+    "u72": {
+      "title": "go to work · go home · go to the cinema",
+      "pages": [
+        155,
+        156
+      ]
+    },
+    "u73": {
+      "title": "I like music · I hate exams",
+      "pages": [
+        157,
+        158
+      ]
+    },
+    "u74": {
+      "title": "the … (с географическими названиями)",
+      "pages": [
+        159,
+        160
+      ]
+    },
+    "u75": {
+      "title": "this/that/these/those",
+      "pages": [
+        161,
+        162
+      ]
+    },
+    "u76": {
+      "title": "one/ones",
+      "pages": [
+        163,
+        164
+      ]
+    },
+    "u77": {
+      "title": "some и any",
+      "pages": [
+        165,
+        166
+      ]
+    },
+    "u78": {
+      "title": "not + any · no · none",
+      "pages": [
+        167,
+        168
+      ]
+    },
+    "u79": {
+      "title": "not + anybody/anyone/anything · nobody/no-one/nothing",
+      "pages": [
+        169,
+        170
+      ]
+    },
+    "u80": {
+      "title": "somebody/anything/nowhere и т. д.",
+      "pages": [
+        171,
+        172
+      ]
+    },
+    "u81": {
+      "title": "every и all",
+      "pages": [
+        173,
+        174
+      ]
+    },
+    "u82": {
+      "title": "all · most · some · any · no/none",
+      "pages": [
+        175,
+        176
+      ]
+    },
+    "u83": {
+      "title": "both · either · neither",
+      "pages": [
+        177,
+        178
+      ]
+    },
+    "u84": {
+      "title": "a lot · much · many",
+      "pages": [
+        179,
+        180
+      ]
+    },
+    "u85": {
+      "title": "(a) little · (a) few",
+      "pages": [
+        181,
+        182
+      ]
+    },
+    "u86": {
+      "title": "old/nice/interesting и т. д. (прилагательные)",
+      "pages": [
+        183,
+        184
+      ]
+    },
+    "u87": {
+      "title": "quickly/badly/suddenly и т. д. (наречия)",
+      "pages": [
+        185,
+        186
+      ]
+    },
+    "u88": {
+      "title": "old/older · expensive / more expensive",
+      "pages": [
+        187,
+        188
+      ]
+    },
+    "u89": {
+      "title": "older than … · more expensive than …",
+      "pages": [
+        189,
+        190
+      ]
+    },
+    "u90": {
+      "title": "not as … as",
+      "pages": [
+        191,
+        192
+      ]
+    },
+    "u91": {
+      "title": "the oldest · the most expensive",
+      "pages": [
+        193,
+        194
+      ]
+    },
+    "u92": {
+      "title": "enough",
+      "pages": [
+        195,
+        196
+      ]
+    },
+    "u93": {
+      "title": "too",
+      "pages": [
+        197,
+        198
+      ]
+    },
+    "u94": {
+      "title": "He caught a big fish. (порядок слов 1)",
+      "pages": [
+        199,
+        200
+      ]
+    },
+    "u95": {
+      "title": "always/usually/often и т. д. (порядок слов 2)",
+      "pages": [
+        201,
+        202
+      ]
+    },
+    "u96": {
+      "title": "still · yet · already",
+      "pages": [
+        203,
+        204
+      ]
+    },
+    "u97": {
+      "title": "Give me that book! · Give it to me!",
+      "pages": [
+        205,
+        206
+      ]
+    },
+    "u98": {
+      "title": "and · but · or · so · because",
+      "pages": [
+        207,
+        208
+      ]
+    },
+    "u99": {
+      "title": "When … · If …",
+      "pages": [
+        209,
+        210
+      ]
+    },
+    "u100": {
+      "title": "If I had … · If we went … и т. д.",
+      "pages": [
+        211,
+        212
+      ]
+    },
+    "u101": {
+      "title": "a person who … · a thing that/which … (относительные придаточные предложения 1)",
+      "pages": [
+        213,
+        214
+      ]
+    },
+    "u102": {
+      "title": "the people we met · the hotel you stayed at (относительные придаточные предложения 2)",
+      "pages": [
+        215,
+        216
+      ]
+    },
+    "u103": {
+      "title": "at 8 o’clock · on Monday · in April",
+      "pages": [
+        217,
+        218
+      ]
+    },
+    "u104": {
+      "title": "from … to · until · since · for",
+      "pages": [
+        219,
+        220
+      ]
+    },
+    "u105": {
+      "title": "before · after · during · while",
+      "pages": [
+        221,
+        222
+      ]
+    },
+    "u106": {
+      "title": "in · at · on (предлоги места 1)",
+      "pages": [
+        223,
+        224
+      ]
+    },
+    "u107": {
+      "title": "in · at · on (предлоги места 2)",
+      "pages": [
+        225,
+        226
+      ]
+    },
+    "u108": {
+      "title": "to · in · at (предлоги места 3)",
+      "pages": [
+        227,
+        228
+      ]
+    },
+    "u109": {
+      "title": "under, behind, opposite и т. д.",
+      "pages": [
+        229,
+        230
+      ]
+    },
+    "u110": {
+      "title": "up, over, through и т. д.",
+      "pages": [
+        231,
+        232
+      ]
+    },
+    "u111": {
+      "title": "on · at · by · with · about",
+      "pages": [
+        233,
+        234
+      ]
+    },
+    "u112": {
+      "title": "full of …, good at … и т. д. · of/at/for и т. д. (предлоги) + -ing",
+      "pages": [
+        235,
+        236
+      ]
+    },
+    "u113": {
+      "title": "listen to …, look at … и т. д. (глагол + предлог)",
+      "pages": [
+        237,
+        238
+      ]
+    },
+    "u114": {
+      "title": "go in, fall off, run away и т. д. (phrasal verbs 1)",
+      "pages": [
+        239,
+        240
+      ]
+    },
+    "u115": {
+      "title": "put on your shoes · put your shoes on (phrasal verbs 2)",
+      "pages": [
+        241,
+        242
+      ]
+    },
+    "a1": {
+      "title": "am/is/are · Разделы 1–3",
+      "pages": [
+        252
+      ]
+    },
+    "a2": {
+      "title": "am/is/are · Разделы 1–3",
+      "pages": [
+        253
+      ]
+    },
+    "a3": {
+      "title": "present continuous · Разделы 4–5",
+      "pages": [
+        253
+      ]
+    },
+    "a4": {
+      "title": "present simple · Разделы 6–8",
+      "pages": [
+        253
+      ]
+    },
+    "a5": {
+      "title": "present simple, am/is/are и have (got) · Разделы 1–3, 6–8, 10",
+      "pages": [
+        254
+      ]
+    },
+    "a6": {
+      "title": "present simple, am/is/are и have (got) · Разделы 1–3, 6–8, 10",
+      "pages": [
+        254
+      ]
+    },
+    "a7": {
+      "title": "present simple, am/is/are и have (got) · Разделы 1–3, 6–8, 10",
+      "pages": [
+        254
+      ]
+    },
+    "a8": {
+      "title": "present continuous и present simple · Разделы 4–9",
+      "pages": [
+        255
+      ]
+    },
+    "a9": {
+      "title": "present continuous и present simple · Разделы 4–9",
+      "pages": [
+        255
+      ]
+    },
+    "a10": {
+      "title": "was/were и past simple · Разделы 11–13",
+      "pages": [
+        256
+      ]
+    },
+    "a11": {
+      "title": "was/were и past simple · Разделы 11–13",
+      "pages": [
+        256
+      ]
+    },
+    "a12": {
+      "title": "was/were и past simple · Разделы 11–13",
+      "pages": [
+        256
+      ]
+    },
+    "a13": {
+      "title": "was/were и past simple · Разделы 11–13",
+      "pages": [
+        256
+      ]
+    },
+    "a14": {
+      "title": "past simple и past continuous · Разделы 12–15",
+      "pages": [
+        257
+      ]
+    },
+    "a15": {
+      "title": "настоящее и прошедшее время · Разделы 4–15",
+      "pages": [
+        258
+      ]
+    },
+    "a16": {
+      "title": "present perfect · Разделы 16–20",
+      "pages": [
+        258,
+        259
+      ]
+    },
+    "a17": {
+      "title": "present perfect · Разделы 16–20",
+      "pages": [
+        260
+      ]
+    },
+    "a18": {
+      "title": "present perfect · Разделы 16–20",
+      "pages": [
+        260
+      ]
+    },
+    "a19": {
+      "title": "present perfect и past simple · Разделы 19–21",
+      "pages": [
+        260
+      ]
+    },
+    "a20": {
+      "title": "present perfect и past simple · Разделы 19–21",
+      "pages": [
+        261
+      ]
+    },
+    "a21": {
+      "title": "present perfect и past simple · Разделы 19–21",
+      "pages": [
+        261
+      ]
+    },
+    "a22": {
+      "title": "present perfect и past simple · Разделы 19–21",
+      "pages": [
+        262
+      ]
+    },
+    "a23": {
+      "title": "настоящее время, прошедшее время и present perfect · Разделы 4–21",
+      "pages": [
+        262
+      ]
+    },
+    "a24": {
+      "title": "пассивные конструкции · Разделы 22–23",
+      "pages": [
+        263
+      ]
+    },
+    "a25": {
+      "title": "пассивные конструкции · Разделы 22–23",
+      "pages": [
+        263
+      ]
+    },
+    "a26": {
+      "title": "пассивные конструкции · Разделы 22–23",
+      "pages": [
+        263
+      ]
+    },
+    "a27": {
+      "title": "пассивные конструкции · Разделы 22–23",
+      "pages": [
+        264
+      ]
+    },
+    "a28": {
+      "title": "будущее время · Разделы 26–29",
+      "pages": [
+        264
+      ]
+    },
+    "a29": {
+      "title": "прошедшее, настоящее и будущее время · Разделы 4–21, 26–29",
+      "pages": [
+        265
+      ]
+    },
+    "a30": {
+      "title": "прошедшее, настоящее и будущее время · Разделы 4–23, 26–29, 53, 55, 99, 105",
+      "pages": [
+        266
+      ]
+    },
+    "a31": {
+      "title": "прошедшее, настоящее и будущее время · Разделы 4–23, 26–29, 53, 55, 99, 105",
+      "pages": [
+        266,
+        267
+      ]
+    },
+    "a32": {
+      "title": "-ing и to … · Разделы 52–56, 105, 112",
+      "pages": [
+        268
+      ]
+    },
+    "a33": {
+      "title": "a и the · Разделы 66, 70–74",
+      "pages": [
+        269
+      ]
+    },
+    "a34": {
+      "title": "a и the · Разделы 66, 70–74",
+      "pages": [
+        270
+      ]
+    },
+    "a35": {
+      "title": "предлоги · Разделы 103–108, 111",
+      "pages": [
+        270
+      ]
+    }
   }
 }

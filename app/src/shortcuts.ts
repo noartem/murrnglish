@@ -21,8 +21,17 @@ export const SC = {
   sidebarToggle: "Alt+Shift+E",
   cycleTheme: "Shift+T",
   invertPage: "T",
+  progress: "Shift+I",
   help: "Shift+?",
 } as const;
+
+/** First letter -> control of the progress modal, for its Shift+I hint mode. */
+export const PROGRESS_HINTS: Record<string, string> = {
+  KeyA: "A", // Include answer texts
+  KeyI: "I", // Import
+  KeyE: "E", // Export
+  KeyS: "S", // Share
+};
 
 export interface HelpEntry {
   keys: string[]; // one combo, rendered as separate key chips
@@ -55,7 +64,7 @@ export const SHORTCUT_HELP: HelpEntry[] = [
   {
     keys: ["Shift", "E"],
     title: "Unit list",
-    desc: "Shows the unit list and focuses the current unit. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
+    desc: "Shows the unit list and focuses the current unit. On the landing, where no unit is open, it focuses Unit 1. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
     sub: [
       { keys: ["\u2190"], alt: ["\u2192"], desc: "move to the next or previous unit; at the end of a group you jump to the next group" },
       { keys: ["\u2191"], alt: ["\u2193"], desc: "move to the next or previous group (first unit)" },
@@ -82,6 +91,18 @@ export const SHORTCUT_HELP: HelpEntry[] = [
     ],
   },
   {
+    keys: ["Shift", "I"],
+    title: "Progress window",
+    desc: "Shows the progress overview and its import / export / share actions. Opened this way, the window marks a key letter of each control — I, E, S, and the a of \u201canswer\u201d — and pressing that letter does the same as clicking the control.",
+    sub: [
+      { keys: ["A"], desc: "include or leave out the answer texts" },
+      { keys: ["I"], desc: "import progress from a file" },
+      { keys: ["E"], desc: "export progress to a file" },
+      { keys: ["S"], desc: "copy the share link" },
+      { keys: ["Esc"], desc: "close the window" },
+    ],
+  },
+  {
     keys: ["Shift", "?"],
     title: "This help",
     desc: "Open this window from any place. Press Esc to close it.",
@@ -95,18 +116,23 @@ export const SHORTCUT_HELP: HelpEntry[] = [
 
 
 // "Shift+?" arrives as e.key === "?" with shiftKey set on every layout.
-// Letter shortcuts (S/E/N/P/A) always check e.code, so they work on any
+// Letter shortcuts (S/E/N/P/A/I) always check e.code, so they work on any
 // keyboard layout. Handler order (critical):
-//   1. help modal open  2. exercise scope  3. defaultPrevented guard
-//   4. help toggle  5. sidebar scope  6. global letters
+//   1. help modal open  2. progress window  3. exercise scope
+//   4. defaultPrevented guard  5. help toggle  6. sidebar scope
+//   7. global letters
 export interface ShortcutDeps {
   helpOpen: boolean;
   openHelp(): void;
   closeHelp(): void;
+  /** progress window: any open state, plus the Shift+I hint mode */
+  progressOpen: boolean;
+  progressHints: boolean; // armed only for the Shift+I open
+  hintProgress(): void; // Shift+I: open with the keys hinted
   goNextUnit(): void; // App computes prev/next from its pager memo
   goPrevUnit(): void;
   focusPagePane(): void; // App bumps the pane focus tick
-  focusUnitPanel(): void; // App focuses the active unit button
+  focusUnitPanel(): void; // App focuses the route's unit (first one on the landing)
   toggleSidebar(): void; // App: burger toggle (no focus move)
   cycleTheme(): void; // App cycles system/light/dark
 }
@@ -120,11 +146,14 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
   const lastFocus = useRef<HTMLElement | null>(null);
 
   // never anchor on the two panes that have their own scoped keys, so
-  // chaining Shift+S then Shift+E still returns to the exercise side
+  // chaining Shift+S then Shift+E still returns to the exercise side; the
+  // body is not a focus location (focus() on it is a no-op), so leaving it
+  // out lets restoreFocus fall back instead of stranding the focus
   const rememberFocus = () => {
     const el = document.activeElement;
     if (
       el instanceof HTMLElement &&
+      el !== document.body &&
       !el.closest(".pageviewer") &&
       !el.closest("nav.sidebar")
     ) {
@@ -153,7 +182,37 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
         return;
       }
 
-      // 2. exercise scope — BEFORE the defaultPrevented guard, because
+      // 2. progress window that Shift+I opened: a plain letter clicks the
+      // control carrying it (A / I / E / S). Only in hint mode — the window
+      // opened from the topbar button leaves plain letters alone.
+      // Esc is the modal's own window listener — not repeated here, so one
+      // key press can never run the close path twice.
+      if (depsRef.current.progressOpen && depsRef.current.progressHints) {
+        // plain letters only: no modifiers, no auto-repeat. Shift+I while
+        // the window is open falls through to the global Shift+I branch
+        // instead of clicking Import a second time.
+        if (
+          !e.shiftKey &&
+          !e.ctrlKey &&
+          !e.metaKey &&
+          !e.altKey &&
+          !e.repeat
+        ) {
+          const hint = PROGRESS_HINTS[e.code];
+          const target =
+            hint &&
+            document.querySelector<HTMLElement>(`[data-modal-key="${hint}"]`);
+          if (target) {
+            e.preventDefault();
+            // a click lands the same way as the pointer: buttons fire
+            // onClick, the checkbox label forwards to its hidden input
+            target.click();
+            return;
+          }
+        }
+      }
+
+      // 3. exercise scope — BEFORE the defaultPrevented guard, because
       // GapInput calls preventDefault on every plain Enter
       const ex = document.activeElement?.closest(".exercise");
       if (ex) {
@@ -180,17 +239,17 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
         }
       }
 
-      // 3. the pane container's own onKeyDown wins for arrows/Esc/zoom/R
+      // 4. the pane container's own onKeyDown wins for arrows/Esc/zoom/R
       if (e.defaultPrevented) return;
 
-      // 4. Shift+? opens help (e.key === "?" already implies Shift)
+      // 5. Shift+? opens help (e.key === "?" already implies Shift)
       if (e.key === "?" && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
         depsRef.current.openHelp();
         return;
       }
 
-      // 5. sidebar scope: arrows move focus among the unit buttons
+      // 6. sidebar scope: arrows move focus among the unit buttons
       if (document.activeElement?.closest(".sidebar")) {
         if (e.key === "Escape") {
           e.preventDefault();
@@ -216,7 +275,7 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
         return;
       }
 
-      // 6. global letter shortcuts (after sidebar scope so they still work
+      // 7. global letter shortcuts (after sidebar scope so they still work
       // while focus sits in the unit panel)
       if (e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey) {
         switch (e.code) {
@@ -242,6 +301,10 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
             e.preventDefault();
             depsRef.current.cycleTheme();
             return;
+          case "KeyI":
+            e.preventDefault();
+            depsRef.current.hintProgress();
+            return;
         }
       }
     };
@@ -252,14 +315,19 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
   return { restoreFocus };
 }
 
-/** Focus the first interactive element of the first exercise in the pane. */
+/**
+ * Focus the first interactive element of the first exercise in the pane.
+ * The landing has no exercises: its call to action takes that place, so
+ * "Esc = go back" from the unit list there returns to the page's own button.
+ */
 export function focusFirstExercise(): void {
-  const first = document
-    .querySelector(".rightpane")
-    ?.querySelector<HTMLElement>(
-      ".exercise textarea, .exercise input, .exercise select, .exercise button",
-    );
-  first?.focus({ preventScroll: true });
+  const target =
+    document
+      .querySelector(".rightpane")
+      ?.querySelector<HTMLElement>(
+        ".exercise textarea, .exercise input, .exercise select, .exercise button",
+      ) ?? document.querySelector<HTMLElement>(".home .homecta");
+  target?.focus({ preventScroll: true });
 }
 
 // sidebar arrow navigation: from nav.sidebar, groups of .unitlink buttons;

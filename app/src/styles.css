@@ -873,6 +873,58 @@ body {
   padding: 10px;
 }
 
+/* Exercises-pane placeholder while the unit JSON is in flight. Static by
+   design: the shapes alone say "loading", and the page stack beside it is
+   already filling in. Sizes track .unitheading / .instruction / .item so the
+   swap for real content does not jump (a mis-sized bar is invisible; a
+   jumping layout is not). Only per-card row counts vary. */
+.unitloading {
+  pointer-events: none;
+}
+
+.skel-fill,
+.skel-bar {
+  display: inline-block;
+  border-radius: 5px;
+  background: var(--border);
+}
+
+.skel-instruction {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-start;
+}
+
+.skel-instruction .skel-fill {
+  width: 100%;
+  height: 13px;
+}
+
+.skel-instruction .skel-fill.short {
+  width: 58%;
+}
+
+/* one blank row: the sunken gap line, then the variants under it */
+.skel-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-start;
+  margin: 9px 0;
+}
+
+.skel-item .skel-bar:first-child {
+  width: min(100%, 340px);
+  height: 11px;
+}
+
+.skel-item .skel-bar:last-child {
+  width: 116px;
+  height: 7px;
+  opacity: 0.6;
+}
+
 /* exercise card: static chunky bottom edge (a border is fine here, the
    card never animates) */
 .exercise {
@@ -1597,6 +1649,16 @@ textarea.winline {
   margin-top: 12px;
 }
 
+/* Shift+I hint mode: the trigger letter of each control is underlined and
+   tinted, and is the same character the key press matches. Only the tint
+   changes when hints toggle, so the label never shifts. */
+.hintkey {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 /* the preview's apply button is the modal's one strong action */
 .modal-actions .primary {
   background: var(--accent);
@@ -1610,6 +1672,77 @@ textarea.winline {
   font-size: 13px;
   margin-top: 10px;
   min-height: 18px;
+}
+
+/* status line entry: fades up in. Re-keyed per message, so it replays. */
+.msgtext {
+  display: inline-block;
+  animation: msg-in 0.18s ease-out;
+}
+
+/* "Link copied to clipboard": a quick wiggle that reads as confirmation,
+   on top of the ordinary fade-in. Two animations so they don't fight —
+   msg-in carries the opacity, msg-shake the transform (later in the list
+   wins where they overlap). */
+.msgtext.shake {
+  color: var(--ok);
+  font-weight: 700;
+  animation:
+    msg-in 0.18s ease-out,
+    msg-shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* auto-clear: fade out while the node is held mounted, then it is dropped.
+   Declared after .shake — same specificity, so this must come last to win
+   and end the wiggle with the fade. */
+.msgtext.leaving,
+.msgtext.shake.leaving {
+  animation: msg-out 0.18s ease-in forwards;
+}
+
+@keyframes msg-in {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+}
+
+@keyframes msg-out {
+  to {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes msg-shake {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  12% {
+    transform: translateX(-5px) rotate(-1.2deg);
+  }
+  28% {
+    transform: translateX(4px) rotate(1deg);
+  }
+  44% {
+    transform: translateX(-3px) rotate(-0.6deg);
+  }
+  62% {
+    transform: translateX(2px) rotate(0.4deg);
+  }
+  80% {
+    transform: translateX(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .msgtext,
+  .msgtext.shake,
+  .msgtext.leaving,
+  .msgtext.shake.leaving {
+    animation: none;
+  }
 }
 
 /* keyboard shortcuts help modal */

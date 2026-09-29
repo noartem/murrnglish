@@ -21,6 +21,7 @@ export function ProgressModal({
   onImport,
   onExport,
   onShare,
+  hintKeys,
 }: {
   open: boolean;
   onClose: () => void;
@@ -33,10 +34,24 @@ export function ProgressModal({
   onImport: (file: File) => Promise<string>;
   onExport: (includeAnswers: boolean) => string;
   onShare: (includeAnswers: boolean) => Promise<string>;
+  /** opened via Shift+I: underline each control's trigger letter */
+  hintKeys: boolean;
 }): JSX.Element | null {
   const [withAnswers, setWithAnswers] = useState(true);
   const [busy, setBusy] = useState(false);
-  const [msg, setMsg] = useState("");
+  // status line: seq re-keys the node so the entry animation (fade, plus the
+  // copy-shake) replays even when the same text is set twice in a row.
+  // `leaving` holds the node mounted through the fade-out.
+  const [msg, setMsgState] = useState<{ text: string; shake: boolean; seq: number }>({
+    text: "",
+    shake: false,
+    seq: 0,
+  });
+  const [msgLeaving, setMsgLeaving] = useState(false);
+  const setMsg = (text: string, shake = false) => {
+    setMsgLeaving(false);
+    setMsgState((m) => ({ text, shake, seq: m.seq + 1 }));
+  };
   // exit: the card stays mounted under .closing while modal-out plays, then
   // drops from the DOM. closing is derived from open (not set in an effect),
   // so the class lands in the same commit as open=false — unmounting first
@@ -59,11 +74,19 @@ export function ProgressModal({
     closeRef.current?.focus();
   }, [open]);
 
-  // result message auto-clears
+  // result message auto-clears: fade out, then drop the text once the
+  // 0.18s leave animation has played (so the line doesn't blink away)
   useEffect(() => {
-    if (!msg) return;
-    const t = setTimeout(() => setMsg(""), 6000);
-    return () => clearTimeout(t);
+    if (!msg.text) return;
+    const hide = setTimeout(() => setMsgLeaving(true), 6000);
+    const drop = setTimeout(() => {
+      setMsgState((m) => ({ ...m, text: "" }));
+      setMsgLeaving(false);
+    }, 6180);
+    return () => {
+      clearTimeout(hide);
+      clearTimeout(drop);
+    };
   }, [msg]);
   // enter: modal-in runs on mount; exit: hold the card 150ms (> 0.14s
   // modal-out) so the animation finishes before unmount
@@ -90,7 +113,10 @@ export function ProgressModal({
     if (busy) return;
     setBusy(true);
     try {
-      setMsg(await fn());
+      const text = await fn();
+      // "copied" is the one result that confirms a clipboard side effect the
+      // window can't otherwise show — it gets the shake
+      setMsg(text, /copied/i.test(text));
     } finally {
       setBusy(false);
     }
@@ -181,45 +207,85 @@ export function ProgressModal({
           </div>
         ) : (
           <>
-            <label className="modal-opt">
+            <label className="modal-opt" data-modal-key="A">
               <input
                 type="checkbox"
                 checked={withAnswers}
                 onChange={(e) => setWithAnswers(e.target.checked)}
               />
-              Include answer texts
+              <HintText text="Include answer texts" letter={hintKeys ? "A" : null} />
             </label>
             <div className="modal-actions">
               <button
                 className="themebtn"
+                data-modal-key="I"
                 disabled={busy}
                 onClick={() => fileRef.current?.click()}
               >
-                <Upload size={14} aria-hidden /> Import
+                <Upload size={14} aria-hidden />{" "}
+                <HintText text="Import" letter={hintKeys ? "I" : null} />
               </button>
               <button
                 className="themebtn"
+                data-modal-key="E"
                 disabled={busy}
                 onClick={() => setMsg(onExport(withAnswers))}
               >
-                <Download size={14} aria-hidden /> Export
+                <Download size={14} aria-hidden />{" "}
+                <HintText text="Export" letter={hintKeys ? "E" : null} />
               </button>
               <button
                 className="themebtn"
+                data-modal-key="S"
                 disabled={busy}
                 onClick={() => void run(() => onShare(withAnswers))}
               >
-                <Share2 size={14} aria-hidden /> Share
+                <Share2 size={14} aria-hidden />{" "}
+                <HintText text="Share" letter={hintKeys ? "S" : null} />
               </button>
             </div>
             <div className="modal-msg" role="status">
-              {msg}
+              {msg.text && (
+                <span
+                  key={msg.seq}
+                  className={
+                    "msgtext" +
+                    (msg.shake ? " shake" : "") +
+                    (msgLeaving ? " leaving" : "")
+                  }
+                >
+                  {msg.text}
+                </span>
+              )}
             </div>
           </>
         )}
         <input ref={fileRef} type="file" accept=".json,application/json" hidden onChange={pickFile} />
       </div>
     </div>
+  );
+}
+
+// Shift+I opens the window in "hint mode": one letter of each control is
+// underlined and pressing that letter does the same as clicking the control.
+// The letter is the control's access key (I, E, S, and the A of "Answer").
+// Everything stays inside ONE inline span: the buttons are flex rows with a
+// 6px gap, so bare text next to the highlighted letter would become its own
+// flex item and push a gap in the middle of the word.
+function HintText({ text, letter }: { text: string; letter: string | null }): JSX.Element {
+  const at = letter === null ? -1 : text.toLowerCase().indexOf(letter.toLowerCase());
+  return (
+    <span>
+      {at === -1 ? (
+        text
+      ) : (
+        <>
+          {text.slice(0, at)}
+          <span className="hintkey">{text[at]}</span>
+          {text.slice(at + 1)}
+        </>
+      )}
+    </span>
   );
 }
 

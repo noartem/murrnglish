@@ -2,7 +2,8 @@
 
 - data/units/unit-NNN.json      <- work/llm/final/units (merge.py)
 - data/additional/NN.json       <- work/llm/additional (parse_additional.py)
-- data/index.json               <- groups from work/llm/toc.json + pager titles
+- data/index.json               <- groups from work/llm/toc.json + per-exercise
+                                   title/pages (as scripts/make_index.py)
 - data/totals.json              <- graded-item counts (scripts/make_totals.py)
 - work/layout.json              <- unit -> pdfPages/title (validator input)
 
@@ -33,7 +34,8 @@ BACKUP = ROOT / "work" / "blue-data-backup"
 
 
 def dump(path, obj):
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # LF on every platform, like the rest of data/
+    path.write_bytes((json.dumps(obj, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
 
 
 def main():
@@ -69,23 +71,25 @@ def main():
             f.unlink()
 
     toc = json.loads((LLM / "toc.json").read_text(encoding="utf-8"))
-    totals, titles = {}, {}
+    totals, info = {}, {}
     for n, u in units.items():
         dump(DATA / "units" / ("unit-%03d.json" % n), u)
         exs = {e["id"]: graded_count(e) for e in u["exercises"]}
         totals["u%d" % n] = {"total": sum(exs.values()), "exercises": exs}
-        titles["u%d" % n] = u["title"]
+        info["u%d" % n] = {"title": u["title"], "pages": u["pdfPages"]}
     for n, d in sorted(adds.items()):
         dump(DATA / "additional" / ("%02d.json" % n), d)
         c = graded_count(d["exercise"])
         totals["a%d" % n] = {"total": c, "exercises": {d["exercise"]["id"]: c}}
-        titles["a%d" % n] = "%s · %s" % (d["topic"], d["refs"]) if d.get("refs") else d["topic"]
+        info["a%d" % n] = {"title": "%s · %s" % (d["topic"], d["refs"]) if d.get("refs") else d["topic"],
+                           "pages": d["pdfPages"]}
 
     index = {
         "groups": [{"name": g["name"], "units": [u["unit"] for u in g["units"] if u["unit"] in units]}
                    for g in toc["groups"]],
         "additional": {"title": "Дополнительные упражнения", "exercises": sorted(adds)},
-        "titles": titles,
+        # same shape as scripts/make_index.py (validate.py checks it)
+        "exercises": info,
     }
     dump(DATA / "index.json", index)
     dump(DATA / "totals.json", totals)
@@ -117,7 +121,7 @@ def main():
                 or (ex["type"] == "write" and not it.get("answers"))]
         if nums:
             gaps.append("additional%s item%s (no answer in the key)" % (ex["id"], ",".join(nums)))
-    (ROOT / "work" / "missing-key.txt").write_text("\n".join(gaps) + "\n", encoding="utf-8")
+    (ROOT / "work" / "missing-key.txt").write_bytes(("\n".join(gaps) + "\n").encode("utf-8"))
     print("wrote data/units (%d), data/additional (%d), index.json, totals.json, work/layout.json"
           % (len(units), len(adds)))
 

@@ -50,6 +50,8 @@ export interface Exercise {
 export interface UnitData {
   unit: number;
   title: string;
+  /** book pages of the unit — mirrored in index.json `pages` (what the app
+      mounts the page stack on); kept here for the per-file pipeline scripts */
   pdfPages: number[];
   exercises: Exercise[];
 }
@@ -70,8 +72,12 @@ export interface Group {
 export interface IndexData {
   groups: Group[];
   additional: { title: string; exercises: number[] };
-  /** prev/next pager descriptions keyed "uN"/"aN" (scripts/make_titles.py) */
-  titles: Record<string, string>;
+  /** per-exercise info the app needs before that exercise's own JSON lands,
+      keyed "uN"/"aN" (scripts/make_index.py): the heading text and the book
+      pages to mount. index.json is fetched at startup, so opening a route can
+      label the page and start the 74.6 MB book PDF without waiting for the
+      unit file — see App.tsx `routeInfo` */
+  exercises: Record<string, { title: string; pages: number[] }>;
 }
 
 export async function fetchIndex(): Promise<IndexData> {

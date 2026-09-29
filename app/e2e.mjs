@@ -144,10 +144,205 @@ await page.locator('.modal button[aria-label="Close"]').click();
 await sleep(300);
 ok("F6 modal closes", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
 
+// ---------- Flow 9: Shift+I opens the progress window with hint keys ----------
+// The window opened this way underlines the trigger letter of each control
+// (I / E / S, and the "a" of "answer") and a plain letter clicks that control.
+await page.keyboard.press("Shift+KeyI");
+await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 10000 });
+const hintLetters = await page.locator(".modal .hintkey").allTextContents();
+ok("F9 Shift+I opens with hint letters", hintLetters.join("") === "aIES", hintLetters.join(""));
+ok(
+  "F9 hint letters sit on their controls",
+  (await page.locator(".modal [data-modal-key]").evaluateAll((els) =>
+    els.map((e) => e.getAttribute("data-modal-key")),
+  )).join("") === "AIES",
+);
+// the "a" belongs to "answer", and no flex gap splits the label around it
+const hintGap = await page.locator('[data-modal-key="I"] .hintkey').evaluate((el) => {
+  const self = el.getBoundingClientRect();
+  const r = document.createRange();
+  r.setStart(el.nextSibling, 0);
+  r.setEnd(el.nextSibling, 1);
+  return r.getBoundingClientRect().left - self.right;
+});
+ok("F9 no gap inside the hinted label", hintGap < 2, `${hintGap}px`);
+
+const answersBox = page.locator('.modal input[type="checkbox"]');
+const wasChecked = await answersBox.isChecked();
+await page.keyboard.press("KeyA");
+await sleep(150);
+ok("F9 A toggles Include answer texts", (await answersBox.isChecked()) !== wasChecked);
+await page.keyboard.press("KeyA");
+await sleep(150);
+ok("F9 A toggles it back", (await answersBox.isChecked()) === wasChecked);
+ok("F9 the window stays open", (await page.locator('.modal[aria-label="Progress"]').count()) === 1);
+
+// E exports: the download is the observable effect
+const [file] = await Promise.all([
+  page.waitForEvent("download", { timeout: 8000 }),
+  page.keyboard.press("KeyE"),
+]);
+ok("F9 E downloads the progress file", /red-murphy-progress-.*\.json$/.test(file.suggestedFilename()), file.suggestedFilename());
+
+// S copies the share link and the confirmation wiggles
+await ctx.grantPermissions(["clipboard-read", "clipboard-write"], { origin: BASE });
+const shakeFrames = page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const seen = new Set();
+      const opacity = new Set();
+      const names = new Set();
+      const t0 = performance.now();
+      const tick = () => {
+        const el = document.querySelector(".modal-msg .msgtext");
+        if (el) {
+          const cs = getComputedStyle(el);
+          seen.add(cs.transform);
+          opacity.add(cs.opacity);
+          names.add(cs.animationName);
+        }
+        if (performance.now() - t0 > 900) resolve({ seen: [...seen], opacity: [...opacity], names: [...names] });
+        else requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }),
+);
+await page.keyboard.press("KeyS");
+const frames = await shakeFrames;
+ok(
+  "F9 S copies the share link",
+  (await page.evaluate(() => navigator.clipboard.readText())).includes("#p="),
+);
+ok("F9 the copied notice shakes", frames.seen.length > 2, `${frames.seen.length} distinct frames`);
+ok("F9 the copied notice fades in", frames.opacity.length > 2 && frames.opacity.includes("0"),
+  `${frames.opacity.length} opacity steps`);
+ok("F9 the notice runs both animations",
+  frames.names.join(",").includes("msg-in") && frames.names.join(",").includes("msg-shake"),
+  frames.names.join(","));
+
+// the notice fades back out on its own and is then dropped from the DOM.
+// Watch the node's own state from before the press: the .leaving window is
+// only ~0.18s, too short to race with a polling selector.
+const clearWatch = page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const seen = [];
+      const t0 = performance.now();
+      const tick = () => {
+        const el = document.querySelector(".modal-msg .msgtext");
+        const state = el
+          ? { cls: el.className, anim: getComputedStyle(el).animationName, opacity: getComputedStyle(el).opacity }
+          : null;
+        const last = seen[seen.length - 1];
+        const changed = JSON.stringify(state) !== JSON.stringify(last);
+        if (changed) seen.push(state);
+        if (!el && seen.length) resolve(seen);
+        else if (performance.now() - t0 > 10000) resolve(seen);
+        else requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }),
+);
+await page.keyboard.press("KeyS");
+const cycle = await clearWatch;
+const leavingFrames = cycle.filter((s) => s && /leaving/.test(s.cls));
+ok("F9 the notice fades out when it clears", leavingFrames.every((s) => s.anim === "msg-out"),
+  JSON.stringify(leavingFrames.map((s) => s.anim)));
+const opacities = leavingFrames.map((s) => Number(s.opacity));
+ok("F9 the fade ends faded out",
+  opacities.length > 1 && Math.min(...opacities) < 0.2 && opacities[0] > Math.min(...opacities),
+  `opacity ${opacities[0]} -> ${Math.min(...opacities)} over ${opacities.length} frames`);
+ok("F9 the notice is dropped after the fade", cycle[cycle.length - 1] === null,
+  `${cycle.length} states, last=${JSON.stringify(cycle[cycle.length - 1])}`);
+
+// Shift+I again must not double-fire Import: modifiers are not hint keys
+await page.keyboard.press("Shift+KeyI");
+await sleep(300);
+ok("F9 Shift+I does not act as the Import hint", (await page.locator('.modal[aria-label="Progress"]').count()) === 1);
+
+// reopening from the topbar button drops the hints
+await page.keyboard.press("Escape");
+await sleep(350);
+await page.locator('button[aria-label^="Progress"]').click();
+await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 10000 });
+ok("F9 button open has no hints", (await page.locator(".modal .hintkey").count()) === 0);
+const plainBefore = await answersBox.isChecked();
+await page.keyboard.press("KeyA");
+await sleep(200);
+ok("F9 plain letters are inert without hints", (await answersBox.isChecked()) === plainBefore);
+await page.keyboard.press("Escape");
+await sleep(350);
+ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
+
+// ---------- Flow 10: unit loading placeholder + parallel page start ----------
+// With the unit JSON held, the exercises pane shows the placeholder and the
+// book pages are already mounted from index.json — that is the whole point of
+// the change: the 14 MB PDF load no longer waits for the unit JSON.
+const UNIT13_TITLE =
+  "Unit 13 — " + (await (await fetch(BASE + "/data/index.json")).json()).exercises.u13.title;
+{
+  // fresh context: an empty HTTP cache, so book.pdf is a real network load
+  // and the resource timings below describe a first visit
+  const octx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
+  const slow = await octx.newPage();
+  await slow.route("**/data/units/unit-013.json", async (route) => {
+    await sleep(2500);
+    await route.continue();
+  });
+  await slow.goto(BASE + "/#u13", { waitUntil: "domcontentloaded" });
+  await slow.waitForSelector(".unitloading .skel-card", { timeout: 30000 });
+  const held = await slow.evaluate(() => ({
+    skelCards: document.querySelectorAll(".unitloading .skel-card").length,
+    skelRows: document.querySelectorAll(".unitloading .skel-item").length,
+    label: document.querySelector(".unitloading")?.getAttribute("aria-label"),
+    liveCards: document.querySelectorAll(".rightpane .exercise:not(.skel-card)").length,
+    pageboxes: document.querySelectorAll(".leftpane .pagebox").length,
+    heading: document.querySelector(".unitloading .skel-heading")?.textContent ?? "",
+  }));
+  ok("F10 placeholder while unit JSON is in flight", held.skelCards === 2 && held.liveCards === 0);
+  ok("F10 placeholder mirrors the card shape", held.skelRows === 8, JSON.stringify(held));
+  ok("F10 placeholder is announced as loading", held.label === "Loading exercises", held.label ?? "none");
+  ok("F10 placeholder shows the real title, not a bar", held.heading === UNIT13_TITLE, held.heading);
+  ok("F10 book pages mount before the unit JSON", held.pageboxes === 2, `${held.pageboxes} pages`);
+  await slow.waitForSelector(".rightpane .exercise:not(.skel-card)", { timeout: 30000 });
+  // The claim is that the PDF no longer waits for the unit JSON. Before the
+  // change the stack mounted on the unit object, so book.pdf could not start
+  // until that JSON resolved; now it starts alongside. Resource timing is the
+  // observable: pdf.start < json.end holds only in the parallel case.
+  const timings = await slow.evaluate(() => {
+    const entries = performance.getEntriesByType("resource");
+    const pick = (re) => {
+      const e = entries.find((x) => re.test(x.name));
+      return e ? { start: Math.round(e.startTime), end: Math.round(e.startTime + e.duration) } : null;
+    };
+    return { pdf: pick(/book\.pdf/), json: pick(/unit-013\.json/) };
+  });
+  ok(
+    "F10 book.pdf starts before the unit JSON resolves",
+    !!timings.pdf && !!timings.json && timings.pdf.start < timings.json.end,
+    JSON.stringify(timings),
+  );
+  const landed = await slow.evaluate(() => ({
+    skel: document.querySelectorAll(".unitloading").length,
+    liveCards: document.querySelectorAll(".rightpane .exercise").length,
+    heading: document.querySelector(".unitheading")?.textContent?.trim() ?? "",
+  }));
+  ok("F10 placeholder clears when the unit arrives", landed.skel === 0 && landed.liveCards > 0);
+  // same string the placeholder showed: the title never swaps, only the cards
+  // under it do
+  ok("F10 heading is identical before and after the unit lands",
+    landed.heading === held.heading.trim(), JSON.stringify({ before: held.heading, after: landed.heading }));
+  await octx.close();
+}
+
 // ---------- Flow 7: keyboard shortcuts modal ----------
 await page.locator('button[aria-label="Keyboard shortcuts"]').click();
 await page.waitForSelector(".helpcard", { timeout: 30000 });
 ok("F7 shortcuts modal opens", await page.locator(".helpcard h3").isVisible());
+ok(
+  "F7 help documents Shift+I and its hint letters",
+  /Progress window/.test(await page.locator(".helpcard").innerText()),
+);
 await page.keyboard.press("Escape");
 await sleep(300);
 ok("F7 shortcuts modal closes", (await page.locator(".helpcard").count()) === 0);
@@ -241,6 +436,49 @@ await mp.evaluate(() => {
 await sleep(200);
 const zr = await mp.locator(".zoomlabel").textContent();
 ok("F8 pinch zoom changes zoom", z00 !== zr, `${z00} -> ${zr}`);
+
+// ---------- Flow 11: Shift+E on the landing opens the unit list ----------
+// The landing has no active unit, so there is nothing for the shortcut to
+// focus the old way; the key must still reveal the collapsed card and land
+// on the first unit, and Esc must bring the focus back to the landing.
+// A bare hash change keeps the previous document (state and focus), so the
+// landing gets a real reload — with the default collapsed card restored.
+await page.evaluate(() =>
+  localStorage.setItem("red-murphy-sidebar-collapsed", "1"),
+);
+await page.goto(BASE + "/#home", { waitUntil: "load" });
+await page.reload({ waitUntil: "load" });
+await page.waitForSelector("nav.sidebar .unitlink", { state: "attached", timeout: 30000 });
+await sleep(400);
+ok(
+  "F11 landing shows the collapsed card",
+  (await page.locator(".sidebar.collapsed").count()) === 1,
+);
+await page.keyboard.press("Shift+KeyE");
+await sleep(500);
+const f11 = await page.evaluate(() => {
+  const el = document.activeElement;
+  const card = document.querySelector("nav.sidebar.collapsed");
+  return {
+    inList: el?.closest("nav.sidebar") !== null,
+    text: el?.textContent?.trim() ?? "",
+    opacity: card ? getComputedStyle(card).opacity : null,
+  };
+});
+ok("F11 Shift+E focuses the first unit", f11.inList && f11.text === "1", JSON.stringify(f11));
+ok("F11 the hidden card is revealed", f11.opacity === "1", String(f11.opacity));
+await page.keyboard.press("Escape");
+await sleep(300);
+ok(
+  "F11 Esc returns to the landing CTA",
+  await page.evaluate(() => document.activeElement?.classList.contains("homecta") === true),
+);
+ok(
+  "F11 the card hides again",
+  await page.evaluate(
+    () => getComputedStyle(document.querySelector("nav.sidebar")).opacity === "0",
+  ),
+);
 
 await mctx.close();
 await ctx.close();
