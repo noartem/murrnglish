@@ -1,21 +1,34 @@
 // The download's file list is the whole risk here: a missing entry is a unit
 // that cannot be opened once the plane leaves, and nothing else in the app
-// notices before that. The course's data must stay ONE request (course.json)
-// — the per-unit files are what the app falls back FROM, not what it downloads.
+// notices before that. A book's data must stay ONE request (course.json) —
+// the per-unit files are what the app falls back FROM, not what it downloads.
 
 import { describe, expect, it } from "vitest";
-import { buildCourseUrls, downloadFraction } from "./offline";
+import { BOOKS, bookById } from "./books";
+import { bookCache, bookUrls, downloadFraction } from "./offline";
 
-describe("buildCourseUrls", () => {
-  it("lists the whole course in download order", () => {
-    expect(buildCourseUrls()).toEqual([
-      "/data/index.json",
-      "/data/totals.json",
-      "/data/course.json",
-      "/cover.png",
-      "/favicon.svg",
-      "/book.pdf",
+describe("bookUrls", () => {
+  it("lists a whole book in download order", () => {
+    expect(bookUrls(bookById("blue")!)).toEqual([
+      "/books/blue/data/index.json",
+      "/books/blue/data/totals.json",
+      "/books/blue/data/pages.json",
+      "/books/blue/data/course.json",
+      "/books/blue/cover.png",
+      "/books/blue/book.pdf",
     ]);
+  });
+
+  it("keeps every file of every book under that book's path", () => {
+    // the service worker files /books/<id>/... into bookCache(id): a file
+    // outside the path would land in the shell cache and survive a removal
+    for (const b of BOOKS) {
+      for (const u of bookUrls(b)) expect(u.startsWith(`/books/${b.id}/`)).toBe(true);
+    }
+  });
+
+  it("names one cache per book", () => {
+    expect(new Set(BOOKS.map((b) => bookCache(b.id))).size).toBe(BOOKS.length);
   });
 });
 

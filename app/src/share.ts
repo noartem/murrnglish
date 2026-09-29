@@ -1,13 +1,14 @@
-// Share-code codec: a Progress <-> "#p=<version>.<base64url>" hash fragment.
-// "0." carries raw JSON bytes (the same JSON.stringify that lands in
-// localStorage), "1." the same bytes deflate-raw compressed. Pure module —
-// no window/document, so it runs and is tested under a plain node env.
+// Share-code codec: a Progress <-> "<version>.<base64url>" code, carried in a
+// book's "#/<book>/p=<code>" hash (routes.ts). "0." carries raw JSON bytes
+// (the same JSON.stringify that lands in localStorage), "1." the same bytes
+// deflate-raw compressed. Pure module — no window/document, so it runs and is
+// tested under a plain node env.
 
 import type { Progress } from "./progress";
 import { validateProgress } from "./progress";
 
-// "#p=0.<payload>" | "#p=1.<payload>"; payload is unpadded base64url.
-export const SHARE_HASH_RE = /^#p=([01])\.([A-Za-z0-9_-]+)$/;
+// "0.<payload>" | "1.<payload>"; payload is unpadded base64url.
+export const SHARE_CODE = /[01]\.[A-Za-z0-9_-]+/;
 
 export async function encodeShare(p: Progress): Promise<string> {
   const bytes = new TextEncoder().encode(JSON.stringify(p));

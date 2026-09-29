@@ -1,27 +1,37 @@
-// The download's two status surfaces, both driven by the store in ../offline.
+// The downloads' two status surfaces, both driven by the store in ../offline.
+// Inside a book they follow that book's download; in the library (no book)
+// whichever download is running, or failed, or just finished.
 // They are their own components on purpose: the progress ticks arrive a few
 // hundred times over a download, and subscribing here re-renders a button —
 // not the app around it.
 //
 // The fill is a --p percentage the CSS paints as a bottom-up green gradient, so
-// the control simply gets greener as the course lands. Green is for a download
+// the control simply gets greener as the book lands. Green is for a download
 // the user watched happen: once the page is reloaded the button goes neutral
 // again, cached course or not.
 
 import type { CSSProperties } from "react";
 import { Download } from "lucide-react";
-import { downloadFraction, useDownload } from "../offline";
+import type { DownloadState } from "../offline";
+import { downloadFraction, useDownloads } from "../offline";
 
-/** Percent of the course stored: 100 for a run that finished in this session,
+/** Percent of the book stored: 100 for a run that finished in this session,
     the bytes so far while one is running, 0 otherwise. */
-function useFill(): {
+function useFill(bookId?: string): {
   pct: number;
   active: boolean;
   failed: boolean;
   fresh: boolean;
   stored: boolean;
 } {
-  const s = useDownload();
+  const all = useDownloads();
+  const list = Object.values(all);
+  const s: DownloadState | undefined = bookId
+    ? all[bookId]
+    : (list.find((x) => x.active) ?? list.find((x) => x.failed) ?? list.find((x) => x.fresh));
+  if (!s) {
+    return { pct: 0, active: false, failed: false, fresh: false, stored: list.some((x) => x.ts !== null) };
+  }
   const frac = s.progress ? downloadFraction(s.progress) : null;
   return {
     // an unknown total (no HEAD answer, book not started) is an empty fill
@@ -35,24 +45,26 @@ function useFill(): {
 
 /**
  * Desktop topbar: the way into the offline panel, and the download's status —
- * green fills the icon square from the bottom up while the course streams in,
- * and stays full for a download of this session. A course cached on an earlier
+ * green fills the icon square from the bottom up while the book streams in,
+ * and stays full for a download of this session. A book cached on an earlier
  * launch leaves the button neutral.
  */
-export function OfflineButton({ onOpen }: { onOpen: () => void }) {
-  const { pct, active, fresh, stored } = useFill();
+export function OfflineButton({ bookId, onOpen }: { bookId?: string; onOpen: () => void }) {
+  const { pct, active, fresh, stored } = useFill(bookId);
   const title = active
     ? `Offline — downloading ${pct}%`
-    : stored
-      ? "Offline — the course is downloaded"
-      : "Offline — download the course";
+    : !bookId
+      ? "Offline — download books"
+      : stored
+        ? "Offline — the book is downloaded"
+        : "Offline — download the book";
   return (
     <button
       className={"themebtn dlbtn" + (active ? " running" : fresh ? " done" : "")}
       style={{ "--p": `${pct}%` } as CSSProperties}
       onClick={onOpen}
       title={title}
-      aria-label="Offline: download the course"
+      aria-label="Offline: download books"
     >
       <Download size={15} aria-hidden />
     </button>
@@ -65,8 +77,8 @@ export function OfflineButton({ onOpen }: { onOpen: () => void }) {
  * keeps the chip — that is the one state the user has to act on; a finished
  * one drops it. Tapping either opens the panel.
  */
-export function OfflineChip({ onOpen }: { onOpen: () => void }) {
-  const { pct, active, failed } = useFill();
+export function OfflineChip({ bookId, onOpen }: { bookId?: string; onOpen: () => void }) {
+  const { pct, active, failed } = useFill(bookId);
   if (!active && !failed) return null;
   return (
     <button
@@ -74,7 +86,7 @@ export function OfflineChip({ onOpen }: { onOpen: () => void }) {
       style={{ "--p": `${pct}%` } as CSSProperties}
       onClick={onOpen}
       title={failed ? "Offline — download failed, open for details" : `Offline — downloading ${pct}%`}
-      aria-label="Offline: download the course"
+      aria-label="Offline: download books"
     >
       <Download size={14} aria-hidden />
       <span className="dlchip-pct">{failed ? "Retry" : `${pct}%`}</span>

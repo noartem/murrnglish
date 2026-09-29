@@ -1,14 +1,15 @@
 {
-  "name": "egu-course",
+  "name": "murrnglish",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "predev": "node ../scripts/sync_data.mjs",
+    "predev": "node ../scripts/sync_books.mjs",
     "dev": "vite",
-    "prebuild": "node ../scripts/sync_data.mjs",
+    "prebuild": "node ../scripts/sync_books.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "pretest": "node ../scripts/sync_books.mjs",
     "test": "vitest run"
   },
   "dependencies": {

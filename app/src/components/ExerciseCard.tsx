@@ -19,6 +19,7 @@ import {
 } from "./items";
 import type { Progress } from "../progress";
 import { saveProgress } from "../progress";
+import { useBook } from "../bookContext";
 
 interface Props {
   exercise: Exercise;
@@ -29,6 +30,7 @@ interface Props {
 type States = (boolean | null)[];
 
 export function ExerciseCard({ exercise, progress, setProgress }: Props) {
+  const book = useBook();
   const [checked, setChecked] = useState(false);
   const [revealed, setRevealed] = useState(false);
 
@@ -114,7 +116,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
                 ...p,
                 results: { ...p.results, [exercise.id]: { correct: all.filter(Boolean).length, total: all.length } },
               };
-              saveProgress(next);
+              saveProgress(book.id, next);
               return next;
             });
           }}
@@ -178,7 +180,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
                 ...p,
                 results: { ...p.results, [exercise.id]: { correct: all.filter(Boolean).length, total: all.length } },
               };
-              saveProgress(next);
+              saveProgress(book.id, next);
               return next;
             });
           }}
@@ -256,7 +258,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
                 ...p,
                 results: { ...p.results, [exercise.id]: { correct: all.filter(Boolean).length, total: all.length } },
               };
-              saveProgress(next);
+              saveProgress(book.id, next);
               return next;
             });
           }}
@@ -320,7 +322,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
                 ...p,
                 results: { ...p.results, [exercise.id]: { correct: all.filter(Boolean).length, total: all.length } },
               };
-              saveProgress(next);
+              saveProgress(book.id, next);
               return next;
             });
           }}
@@ -359,7 +361,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
                   [exercise.id]: { ...(p.selfMarks[exercise.id] ?? {}), [it.num]: ok },
                 },
               };
-              saveProgress(next);
+              saveProgress(book.id, next);
               return next;
             });
           }}

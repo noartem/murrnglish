@@ -1,9 +1,20 @@
-// App: hash-routed split-pane course UI.
-// Routes: #home (or bare "/") = landing, #u<N> = unit N, #a<N> = additional exercise N.
+// CourseApp: one book's split-pane course UI — its landing, units and
+// additional exercises (routes.ts: #/<book>, #/<book>/u<N>, #/<book>/a<N>).
+// App mounts it keyed by the book, so switching books starts from a clean
+// slate; within a book the page arrives as a prop from the hash.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { AdditionalData, IndexData, TotalsMap, UnitData } from "./data";
-import { fetchAdditional, fetchIndex, fetchTotals, fetchUnit } from "./data";
+import type { Book } from "./books";
+import { bookUrl } from "./books";
+import { BookContext } from "./bookContext";
+import type { AdditionalData, IndexData, PageAspects, TotalsMap, UnitData } from "./data";
+import {
+  fetchAdditional,
+  fetchIndex,
+  fetchPageAspects,
+  fetchTotals,
+  fetchUnit,
+} from "./data";
 import { PageViewer } from "./components/PageViewer";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
@@ -12,15 +23,22 @@ import {
   ShortcutsModal,
 } from "./components/ShortcutsHelp";
 import { SC, useCourseShortcuts } from "./shortcuts";
-import { ArrowLeft, ArrowRight, Check, Download, Menu, Share2 } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  Download,
+  LibraryBig,
+  Menu,
+  Share2,
+} from "lucide-react";
 import {
   OverlayScrollbarsComponent,
   type OverlayScrollbarsComponentRef,
 } from "overlayscrollbars-react";
 import {
   completedUnitIds,
-  lastUnitFromProgress,
-  loadLastRoute,
+  continueTarget,
   loadProgress,
   parseProgressText,
   pct,
@@ -36,65 +54,32 @@ import { OfflinePanel } from "./components/OfflinePanel";
 import { OfflineButton, OfflineChip } from "./components/OfflineButton";
 import {
   autoDownloadAllowed,
-  downloadCourse,
+  downloadBook,
   downloadState,
   isDownloaded,
   isStandalone,
 } from "./offline";
-import { Home, type HomeContinue } from "./components/Home";
-import { SHARE_HASH_RE, decodeShare, encodeShare } from "./share";
-// content routes (what a hash can deep-link to); Route adds the landing
-type ContentRoute =
-  { kind: "unit"; n: number } | { kind: "additional"; n: number };
-
-// home landing: bare "/", "#home", or any unknown hash; the rest are content
-type Route = { kind: "home" } | ContentRoute;
-
-// unit/additional hash -> route, or null for anything else
-function routeFromHash(h: string): ContentRoute | null {
-  const mu = h.match(/^u(\d+)$/);
-  if (mu) return { kind: "unit", n: Math.min(145, Math.max(1, Number(mu[1]))) };
-  const ma = h.match(/^a(\d+)$/);
-  if (ma)
-    return { kind: "additional", n: Math.min(41, Math.max(1, Number(ma[1]))) };
-  return null;
-}
-
-// bare "/" resolves to the landing — or, for learners with saved progress,
-// straight to their last page (the URL is fixed up by the mount effect)
-function entryRoute(): Route {
-  const p = loadProgress();
-  const hasProgress =
-    Object.keys(p.results).length > 0 || Object.keys(p.selfMarks).length > 0;
-  if (!hasProgress) return { kind: "home" };
-  return (
-    routeFromHash(loadLastRoute() ?? lastUnitFromProgress(p) ?? "") ?? {
-      kind: "home",
-    }
-  );
-}
-
-function parseHash(): Route {
-  const h = window.location.hash.replace(/^#/, "");
-  if (h === "") return entryRoute();
-  if (h === "home") return { kind: "home" };
-  return routeFromHash(h) ?? { kind: "home" };
-}
-
-function routeToHash(r: Route): string {
-  return r.kind === "unit"
-    ? `u${r.n}`
-    : r.kind === "additional"
-      ? `a${r.n}`
-      : "home";
-}
+import { Home } from "./components/Home";
+import { Battery } from "./components/Battery";
+import { decodeShare, encodeShare } from "./share";
+import type { BookPage, ContentPage } from "./routes";
+import { LIBRARY_HASH, bookHash, pageKey, replaceHash } from "./routes";
+import { SIDEBAR_COLLAPSED_KEY } from "./keys";
 
 // How long an installed app waits before it starts filling the offline cache
 // by itself: past the first paint and the page's own requests.
 const AUTO_DOWNLOAD_MS = 3000;
 
-export default function App() {
-  const [route, setRoute] = useState<Route>(parseHash);
+export default function CourseApp({
+  book,
+  page: route,
+  share,
+}: {
+  book: Book;
+  page: BookPage;
+  /** code of a #/<book>/p= link: previewed, applied only on confirm */
+  share?: string;
+}) {
   const [index, setIndex] = useState<IndexData | null>(null);
   const [unit, setUnit] = useState<UnitData | null>(null);
   const [additional, setAdditional] = useState<AdditionalData | null>(null);
@@ -102,7 +87,7 @@ export default function App() {
   // first open: collapsed (hover card); a user's explicit choice persists —
   // "0" = left expanded, "1" = collapsed, absent = first-open default (collapsed)
   const [sidebarOpen, setSidebarOpen] = useState(
-    () => localStorage.getItem("egu-course-sidebar-collapsed") === "0",
+    () => localStorage.getItem(SIDEBAR_COLLAPSED_KEY) === "0",
   );
   const [totals, setTotals] = useState<TotalsMap | null>(null);
   // incoming progress held for the preview modal; applied only on confirm.
@@ -111,7 +96,10 @@ export default function App() {
     p: Progress;
     src: "file" | "link";
   } | null>(null);
-  const [progress, setProgressState] = useState<Progress>(loadProgress);
+  const [progress, setProgressState] = useState<Progress>(() => loadProgress(book.id));
+  // page heights, fetched with the index: the page stack waits for them so
+  // its placeholders take their real size from the first frame
+  const [aspects, setAspects] = useState<PageAspects | null>(null);
   // keyboard-shortcuts help modal + pane focus pump (Shift+S)
   const [helpOpen, setHelpOpen] = useState(false);
   const [paneFocusTick, setPaneFocusTick] = useState(0);
@@ -131,8 +119,8 @@ export default function App() {
     const t = setTimeout(() => setNotice(""), 6000);
     return () => clearTimeout(t);
   }, [notice]);
-  // An installed app pulls the course into the cache on its own, so a fresh
-  // install is offline-ready without anyone pressing the button — the
+  // An installed app pulls the open book into the cache on its own, so a
+  // fresh install is offline-ready without anyone pressing the button — the
   // progress shows up on the topbar button (and, on a phone, on the chip).
   // Started once the page has settled, and again if the browser comes back
   // online: the launch that installs the app may well have no network yet. A
@@ -142,11 +130,11 @@ export default function App() {
     if (!standalone) return;
     let stopped = false;
     const attempt = async () => {
-      if (stopped || downloadState().active || navigator.onLine === false) return;
-      if (!autoDownloadAllowed()) return; // removed by hand: leave it removed
-      if (await isDownloaded()) return;
-      if (stopped || downloadState().active) return;
-      downloadCourse().catch(() => {
+      if (stopped || downloadState(book.id).active || navigator.onLine === false) return;
+      if (!autoDownloadAllowed(book.id)) return; // removed by hand: leave it removed
+      if (await isDownloaded(book)) return;
+      if (stopped || downloadState(book.id).active) return;
+      downloadBook(book).catch(() => {
         /* offline, or a file gone: the panel offers a retry */
       });
     };
@@ -157,7 +145,7 @@ export default function App() {
       window.clearTimeout(t);
       window.removeEventListener("online", attempt);
     };
-  }, [standalone]);
+  }, [standalone, book]);
   // phone layout (<=768px): the split becomes Book | Exercises tabs and the
   // sidebar becomes a drawer; desktop layout is pixel-identical
   const [isMobile, setIsMobile] = useState(
@@ -234,7 +222,7 @@ export default function App() {
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
   const [cardPhase, setCardPhase] = useState(
-    () => localStorage.getItem("egu-course-sidebar-collapsed") !== "0",
+    () => localStorage.getItem(SIDEBAR_COLLAPSED_KEY) !== "0",
   );
   const [transient, setTransient] = useState(false);
   const animTimers = useRef<number[]>([]);
@@ -253,7 +241,7 @@ export default function App() {
     const next = !sidebarOpen;
     setSidebarOpen(next);
     try {
-      localStorage.setItem("egu-course-sidebar-collapsed", next ? "0" : "1");
+      localStorage.setItem(SIDEBAR_COLLAPSED_KEY, next ? "0" : "1");
     } catch {
       // storage unavailable: choice silently not persisted
     }
@@ -271,50 +259,45 @@ export default function App() {
   useEffect(() => clearAnimTimers, []);
 
   useEffect(() => {
-    // bare "/" resolved to a content page by entryRoute(): write the hash
-    // back (replaceState — no history entry) so the URL matches the page
-    if (window.location.hash === "" && route.kind !== "home") {
-      window.history.replaceState(null, "", `#${routeToHash(route)}`);
-    }
-    fetchIndex()
+    fetchIndex(book)
       .then(setIndex)
       .catch((e) => setError(String(e)));
-    fetchTotals()
+    fetchTotals(book)
       .then(setTotals)
       .catch(() => setTotals(null));
-    void applyShareHash();
-  }, []);
+    fetchPageAspects(book)
+      .then(setAspects)
+      .catch(() => setAspects({})); // no heights: the pages fall back to A4
+  }, [book]);
   // remember the last content page for the "/" entry redirect
   useEffect(() => {
-    if (route.kind !== "home") {
-      saveLastRoute(route.kind === "unit" ? `u${route.n}` : `a${route.n}`);
-    }
-  }, [route]);
+    if (route.kind !== "home") saveLastRoute(book.id, pageKey(route));
+  }, [book, route]);
 
+  // "#/<book>/p=..." share links: decode and hold the INCOMING progress for a
+  // preview modal — nothing is applied until the user confirms; the hash is
+  // rewritten to the book's landing (no history entry, so Back never replays
+  // the link)
   useEffect(() => {
-    const onHash = () => {
-      // "#p=..." share links replace progress; routeFromHash never sees them
-      if (SHARE_HASH_RE.test(window.location.hash)) {
-        void applyShareHash();
-        return;
-      }
-      setRoute(parseHash());
+    if (!share) return;
+    let alive = true;
+    void decodeShare(share).then((p) => {
+      if (!alive) return;
+      if (p) setPreview({ p, src: "link" });
+      else setNotice("Share link is invalid or corrupted");
+      replaceHash(bookHash(book));
+    });
+    return () => {
+      alive = false;
     };
-    window.addEventListener("hashchange", onHash);
-    return () => window.removeEventListener("hashchange", onHash);
-  }, []);
+  }, [book, share]);
 
   // which exercise of the route is still in flight: its pane shows a skeleton
   // that mirrors the real card shape (heading, instruction, numbered rows).
   // Reading the route instead of a set-then-cleared flag makes a strike on
   // the exercises impossible — the key flips to null only when the matching
   // JSON lands (or fails; the error message is the pane's content then).
-  const routeKey =
-    route.kind === "unit"
-      ? `u${route.n}`
-      : route.kind === "additional"
-        ? `a${route.n}`
-        : null;
+  const routeKey = route.kind === "home" ? null : pageKey(route);
   const pending = routeKey && !unit && !additional && !error ? routeKey : null;
   // route numbers go into the placeholder heading, which must read exactly
   // like the loaded heading
@@ -324,7 +307,7 @@ export default function App() {
   // route paint its real title and start the PDF alongside the exercise JSON.
   const routeInfo = routeKey ? index?.exercises?.[routeKey] : undefined;
   // The page stack mounts on index pages for the whole visit, never on the
-  // loaded unit object: the PDF fetch (13.9 MB, the slowest thing the app
+  // loaded unit object: the PDF fetch (14–75 MB, the slowest thing the app
   // does) then runs alongside the exercise JSON. Index pages are a stable
   // reference, so the unit arriving does not re-identify the array and
   // PageViewer keeps its zoom/scroll state. validate.py fails the build if
@@ -338,15 +321,15 @@ export default function App() {
     setAdditional(null);
     setError("");
     if (route.kind === "unit") {
-      fetchUnit(route.n)
+      fetchUnit(book, route.n)
         .then(setUnit)
         .catch((e) => setError(String(e)));
     } else if (route.kind === "additional") {
-      fetchAdditional(route.n)
+      fetchAdditional(book, route.n)
         .then(setAdditional)
         .catch((e) => setError(String(e)));
     }
-  }, [route]);
+  }, [book, route]);
   // a new page always starts read from the top (pager and sidebar alike)
   useEffect(() => {
     const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
@@ -443,40 +426,8 @@ export default function App() {
 
   const doneUnits = useMemo(() => completedUnitIds(progress), [progress]);
 
-  // the landing CTA: learners with saved progress continue with the unit
-  // AFTER the last one where they did at least one exercise (a result or a
-  // self-check mark); once that would be past unit 145, the first
-  // additional exercise without results. Fresh users get plain
-  // "Start with Unit 1".
-  const homeContinue = useMemo<HomeContinue | null>(() => {
-    const hasProgress =
-      Object.keys(progress.results).length > 0 ||
-      Object.keys(progress.selfMarks).length > 0;
-    if (!hasProgress) return null;
-    let lastTouched = 0;
-    for (const keys of [progress.results, progress.selfMarks]) {
-      for (const id of Object.keys(keys)) {
-        const m = id.match(/^(\d+)\./);
-        if (m) lastTouched = Math.max(lastTouched, Number(m[1]));
-      }
-    }
-    if (lastTouched < 145) {
-      return {
-        hash: `u${lastTouched + 1}`,
-        label: `Continue with Unit ${lastTouched + 1}`,
-      };
-    }
-    const nextAdditional = Array.from({ length: 41 }, (_, i) => i + 1).find(
-      (n) => !unitCompleted(progress, [String(n)]),
-    );
-    if (nextAdditional) {
-      return {
-        hash: `a${nextAdditional}`,
-        label: `Continue with Additional exercise ${nextAdditional}`,
-      };
-    }
-    return null;
-  }, [progress]);
+  // the landing CTA: resume after the last unit worked on (progress.ts)
+  const homeContinue = useMemo(() => continueTarget(progress, book), [progress, book]);
 
   // ---- progress import / export / share -------------------------------------
 
@@ -505,7 +456,7 @@ export default function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `egu-course-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `murrnglish-${book.id}-progress-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
     return includeAnswers
@@ -515,7 +466,7 @@ export default function App() {
 
   async function handleShare(includeAnswers: boolean): Promise<string> {
     const code = await encodeShare(progressPayload(progress, includeAnswers));
-    const url = `${location.origin}${location.pathname}#p=${code}`;
+    const url = `${location.origin}${location.pathname}#/${book.id}/p=${code}`;
     try {
       await navigator.clipboard.writeText(url);
       return "Link copied to clipboard";
@@ -525,23 +476,10 @@ export default function App() {
     }
   }
 
-  // "#p=..." share links: decode and hold the INCOMING progress for a preview
-  // modal — nothing is applied until the user confirms; the hash is rewritten
-  // to a plain unit route (replaceState — no hashchange, so no re-entry loop).
-  async function applyShareHash(): Promise<void> {
-    const m = window.location.hash.match(SHARE_HASH_RE);
-    if (!m) return;
-    const p = await decodeShare(`${m[1]}.${m[2]}`);
-    if (p) setPreview({ p, src: "link" });
-    else setNotice("Share link is invalid or corrupted");
-    window.history.replaceState(null, "", `${window.location.pathname}#u1`);
-    setRoute({ kind: "unit", n: 1 });
-  }
-
   function handleApplyPreview(): void {
     if (!preview) return;
     setProgressState(preview.p);
-    saveProgress(preview.p, 0);
+    saveProgress(book.id, preview.p, 0);
     setPreview(null);
     setModalOpen(false); // close entirely: the notice must be visible
     setNotice(
@@ -552,12 +490,12 @@ export default function App() {
   }
 
   function navUnit(n: number) {
-    window.location.hash = `u${n}`;
+    window.location.hash = bookHash(book, { kind: "unit", n });
     setDrawerOpen(false);
   }
 
   function navAdditional(n: number) {
-    window.location.hash = `a${n}`;
+    window.location.hash = bookHash(book, { kind: "additional", n });
     setDrawerOpen(false);
   }
 
@@ -568,9 +506,8 @@ export default function App() {
     next: NavTarget | null;
   }>(() => {
     if (route.kind === "home" || !index) return null;
-    const at = (r?: Route | null): NavTarget | null => {
-      if (!r || r.kind === "home") return null;
-      const cr = r as ContentRoute;
+    const at = (cr?: ContentPage): NavTarget | null => {
+      if (!cr) return null;
       return {
         kind: cr.kind,
         n: cr.n,
@@ -579,7 +516,7 @@ export default function App() {
         desc: index.exercises?.[cr.kind === "unit" ? `u${cr.n}` : `a${cr.n}`]?.title ?? "",
       };
     };
-    const course: ContentRoute[] = [
+    const course: ContentPage[] = [
       ...index.groups.flatMap((g) =>
         g.units.map((u) => ({ kind: "unit" as const, n: u })),
       ),
@@ -602,12 +539,14 @@ export default function App() {
   const ov = scopeStats(totals, totals ? Object.keys(totals) : [], progress);
 
   function goHome() {
-    window.location.hash = "home";
+    window.location.hash = bookHash(book);
   }
 
   // landing CTA + cover: resume where the learner left off, or Unit 1
   function startCourse() {
-    window.location.hash = homeContinue ? homeContinue.hash : "u1";
+    window.location.hash = homeContinue
+      ? `#/${book.id}/${homeContinue.page}`
+      : bookHash(book, { kind: "unit", n: 1 });
   }
 
   // focus restoration around the help modal: the element active when help
@@ -664,7 +603,7 @@ export default function App() {
       <Battery
         label="Units completed"
         done={doneUnits.size}
-        total={145}
+        total={book.units}
         tone="accent"
       />
       {/* blank until the course totals load: saved progress alone only
@@ -681,6 +620,7 @@ export default function App() {
   );
 
   return (
+    <BookContext.Provider value={book}>
     <div className="app">
       <header className="topbar">
         <button
@@ -692,6 +632,14 @@ export default function App() {
           <Menu size={16} aria-hidden />
         </button>
         <div className="topbar-mid">
+          {/* the way back to every book; phones reach it from the drawer */}
+          <a className="topbar-lib" href={LIBRARY_HASH} title="All books">
+            <LibraryBig size={17} aria-hidden />
+            <span>Murrnglish</span>
+          </a>
+          <span className="topbar-crumbsep" aria-hidden>
+            /
+          </span>
           <button
             type="button"
             className="topbar-home"
@@ -707,7 +655,7 @@ export default function App() {
             }
             disabled={isHome}
           >
-            <h1>English Grammar in Use</h1>
+            <h1>{book.title}</h1>
           </button>
           {notice && (
             <span className="progressline" role="status">
@@ -717,7 +665,7 @@ export default function App() {
         </div>
         <div className="topstats">{stats}</div>
         {isMobile && standalone && (
-          <OfflineChip onOpen={() => setOfflineOpen(true)} />
+          <OfflineChip bookId={book.id} onOpen={() => setOfflineOpen(true)} />
         )}
         {/* phones keep the topbar to the title alone: progress, download and
             theme move into the unit drawer (see .draweractions), and the
@@ -737,7 +685,9 @@ export default function App() {
             >
               <Share2 size={15} aria-hidden />
             </button>
-            {standalone && <OfflineButton onOpen={() => setOfflineOpen(true)} />}
+            {standalone && (
+              <OfflineButton bookId={book.id} onOpen={() => setOfflineOpen(true)} />
+            )}
             <ThemeToggle />
           </div>
         )}
@@ -783,6 +733,10 @@ export default function App() {
                 <div className="sidebar-inner">
                   {isMobile && (
                     <div className="draweractions">
+                      <a className="draweraction" href={LIBRARY_HASH}>
+                        <LibraryBig size={16} aria-hidden />
+                        <span>All books</span>
+                      </a>
                       <button
                         type="button"
                         className="draweraction"
@@ -805,10 +759,10 @@ export default function App() {
                             setDrawerOpen(false);
                             setOfflineOpen(true);
                           }}
-                          title="Offline — download the course"
+                          title="Offline — download books"
                         >
                           <Download size={16} aria-hidden />
-                          <span>Download course</span>
+                          <span>Download books</span>
                         </button>
                       )}
                       <ThemeToggle labelled />
@@ -949,12 +903,14 @@ export default function App() {
             );
           })()}
         {isHome ? (
-          <Home onStart={startCourse} continueTo={homeContinue} />
+          <Home book={book} onStart={startCourse} continueTo={homeContinue} />
         ) : (
           <div className="split" data-tab={mobileTab}>
             <div className="leftpane">
-              {mountPages && (
+              {mountPages && aspects && (
                 <PageViewer
+                  pdfUrl={bookUrl(book, "book.pdf")}
+                  aspects={aspects}
                   pdfPages={mountPages}
                   focusTick={paneFocusTick}
                   onPaneEscape={sc.restoreFocus}
@@ -1039,9 +995,14 @@ export default function App() {
         onShare={handleShare}
         hintKeys={modalHints}
       />
-      <OfflinePanel open={offlineOpen} onClose={() => setOfflineOpen(false)} />
+      <OfflinePanel
+        open={offlineOpen}
+        onClose={() => setOfflineOpen(false)}
+        currentBookId={book.id}
+      />
       {helpOpen && <ShortcutsModal onClose={closeHelp} />}
     </div>
+    </BookContext.Provider>
   );
 }
 
@@ -1167,51 +1128,6 @@ function MobileTabSwitch({
       >
         Exercises
       </button>
-    </div>
-  );
-}
-
-// Topbar progress meter drawn as a battery: label on the left, then a cell
-// filled to done/total with the count printed inside. `empty` keeps the
-// cell blank while the real total isn't known yet.
-function Battery({
-  label,
-  done,
-  total,
-  tone,
-  pending = false,
-}: {
-  label: string;
-  done: number;
-  total: number;
-  tone: "accent" | "ok";
-  pending?: boolean;
-}) {
-  const percent = pending ? 0 : pct({ correct: done, total });
-  const text = `${done}/${total}`;
-  return (
-    <div
-      className={`battery ${tone}`}
-      role="progressbar"
-      aria-label={label}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      aria-valuenow={pending ? undefined : percent}
-      aria-valuetext={pending ? undefined : `${text} (${percent}%)`}
-      title={pending ? label : `${label}: ${text} (${percent}%)`}
-    >
-      <span className="battery-label">{label}</span>
-      <span className="battery-cell">
-        {/* any progress shows a sliver, so 1 of 145 doesn't read as empty */}
-        <span
-          className="battery-fill"
-          style={{
-            width: `${percent}%`,
-            minWidth: !pending && done > 0 ? 3 : 0,
-          }}
-        />
-        {!pending && <strong className="battery-value">{text}</strong>}
-      </span>
     </div>
   );
 }

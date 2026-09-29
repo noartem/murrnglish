@@ -40,14 +40,27 @@ const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
 const page = await ctx.newPage();
 
-// ---------- Flow 1: landing + first open defaults ----------
+// ---------- Flow 0: a fresh visit opens the library ----------
 page.on("pageerror", (e) => results.push(["FAIL", "F1 pageerror", String(e).slice(0, 140)]));
 await page.goto(BASE + "/", { waitUntil: "load" });
+await page.waitForSelector(".libcard", { timeout: 30000 });
+ok("F0 bare / lands in the library", /#\/$/.test(page.url()), page.url());
+const libTitles = await page.locator(".libtitle").allTextContents();
+ok(
+  "F0 library lists the books in learning order",
+  libTitles.join("|") === "Essential Grammar in Use|English Grammar in Use",
+  libTitles.join("|"),
+);
+await page.locator(".libtitle a", { hasText: "English Grammar in Use" }).click();
+
+// ---------- Flow 1: book landing + first open defaults ----------
+await page.waitForSelector(".homecover", { timeout: 30000 });
 ok("F1 landing cover", await page.locator(".homecover").isVisible());
+ok("F1 landing url is #/blue", /#\/blue$/.test(page.url()), page.url());
 await page.locator(".homecta").click();
 await page.waitForSelector(".pagecanvas", { timeout: 30000 });
 await sleep(1500);
-ok("F1 url is #u1", /#u1$/.test(page.url()));
+ok("F1 url is #/blue/u1", /#\/blue\/u1$/.test(page.url()));
 ok("F1 pdf pages rendered", (await page.locator(".pagecanvas").count()) >= 1);
 ok("F1 sidebar collapsed card", (await page.locator(".sidebar.collapsed").count()) === 1);
 ok("F1 right pane exercises", await page.locator(".rightpane .exercise").first().isVisible());
@@ -90,22 +103,22 @@ ok("F3 sidebar collapsed card", true);
 await page.locator(".sidebartoggle").click();
 await sleep(500);
 await page.locator(".sidebar .unitlink", { hasText: /^2$/ }).first().click();
-await page.waitForURL(/#u2/, { timeout: 30000 });
+await page.waitForURL(/#\/blue\/u2/, { timeout: 30000 });
 await page.waitForFunction(
   () => document.querySelector(".unitheading")?.textContent?.includes("Unit 2"),
   { timeout: 10000 },
 );
-ok("F4 sidebar nav to unit 2", /#u2$/.test(page.url()));
+ok("F4 sidebar nav to unit 2", /#\/blue\/u2$/.test(page.url()));
 ok(
   "F4 heading shows unit 2",
   /Unit 2/.test((await page.locator(".unitheading").first().textContent()) ?? ""),
 );
 await page.locator(".unitnavbtn.next").click();
-await page.waitForURL(/#u3/, { timeout: 30000 });
-ok("F4 pager next to unit 3", /#u3$/.test(page.url()));
+await page.waitForURL(/#\/blue\/u3/, { timeout: 30000 });
+ok("F4 pager next to unit 3", /#\/blue\/u3$/.test(page.url()));
 await page.locator(".unitnavbtn.prev").click();
-await page.waitForURL(/#u2/, { timeout: 30000 });
-ok("F4 pager prev back to unit 2", /#u2$/.test(page.url()));
+await page.waitForURL(/#\/blue\/u2/, { timeout: 30000 });
+ok("F4 pager prev back to unit 2", /#\/blue\/u2$/.test(page.url()));
 
 // ---------- Flow 5: zoom buttons zoom in and back out ----------
 // baseline = settled label before touching the buttons
@@ -182,7 +195,7 @@ const [file] = await Promise.all([
   page.waitForEvent("download", { timeout: 8000 }),
   page.keyboard.press("KeyE"),
 ]);
-ok("F9 E downloads the progress file", /egu-course-progress-.*\.json$/.test(file.suggestedFilename()), file.suggestedFilename());
+ok("F9 E downloads the progress file", /murrnglish-blue-progress-.*\.json$/.test(file.suggestedFilename()), file.suggestedFilename());
 
 // S copies the share link and the confirmation wiggles
 await ctx.grantPermissions(["clipboard-read", "clipboard-write"], { origin: BASE });
@@ -211,7 +224,7 @@ await page.keyboard.press("KeyS");
 const frames = await shakeFrames;
 ok(
   "F9 S copies the share link",
-  (await page.evaluate(() => navigator.clipboard.readText())).includes("#p="),
+  (await page.evaluate(() => navigator.clipboard.readText())).includes("#/blue/p="),
 );
 ok("F9 the copied notice shakes", frames.seen.length > 2, `${frames.seen.length} distinct frames`);
 ok("F9 the copied notice fades in", frames.opacity.length > 2 && frames.opacity.includes("0"),
@@ -279,7 +292,7 @@ ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Progress"
 // book pages are already mounted from index.json — that is the whole point of
 // the change: the 14 MB PDF load no longer waits for the unit JSON.
 const UNIT13_TITLE =
-  "Unit 13 — " + (await (await fetch(BASE + "/data/index.json")).json()).exercises.u13.title;
+  "Unit 13 — " + (await (await fetch(BASE + "/books/blue/data/index.json")).json()).exercises.u13.title;
 {
   // fresh context: an empty HTTP cache, so book.pdf is a real network load
   // and the resource timings below describe a first visit
@@ -289,7 +302,7 @@ const UNIT13_TITLE =
     await sleep(2500);
     await route.continue();
   });
-  await slow.goto(BASE + "/#u13", { waitUntil: "domcontentloaded" });
+  await slow.goto(BASE + "/#/blue/u13", { waitUntil: "domcontentloaded" });
   await slow.waitForSelector(".unitloading .skel-card", { timeout: 30000 });
   const held = await slow.evaluate(() => ({
     skelCards: document.querySelectorAll(".unitloading .skel-card").length,
@@ -355,7 +368,7 @@ const mctx = await browser.newContext({
 });
 const mp = await mctx.newPage();
 mp.on("pageerror", (e) => results.push(["FAIL", "F8 pageerror", String(e).slice(0, 140)]));
-await mp.goto(BASE + "/#u1", { waitUntil: "load" });
+await mp.goto(BASE + "/#/blue/u1", { waitUntil: "load" });
 await mp.waitForSelector(".exercise textarea", { timeout: 30000, state: "attached" });
 await sleep(1500);
 
@@ -404,7 +417,7 @@ await sleep(600);
 
 ok("F8 drawer closes on nav", (await mp.locator(".sidebar.mobile-open").count()) === 0);
 await mp.waitForSelector(".rightpane .exercise textarea", { timeout: 30000 });
-ok("F8 navigated to unit 2", /#u2/.test(mp.url()));
+ok("F8 navigated to unit 2", /#\/blue\/u2/.test(mp.url()));
 
 // drawer: the topbar title also closes the drawer (goes home from there)
 await mp.locator(".sidebartoggle").click();
@@ -413,10 +426,10 @@ ok("F8 drawer reopens", (await mp.locator(".sidebar.mobile-open").count()) === 1
 await mp.locator(".topbar-home").click();
 await sleep(300);
 ok("F8 topbar title closes drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
-ok("F8 topbar title goes home", /#home/.test(mp.url()));
+ok("F8 topbar title goes home", /#\/blue$/.test(mp.url()));
 // back on a unit for the pinch-zoom test (the topbar title left us at home
 // on the Exercises tab; the hash change doesn't reload, so re-pick Book)
-await mp.goto(BASE + "/#u2", { waitUntil: "load" });
+await mp.goto(BASE + "/#/blue/u2", { waitUntil: "load" });
 await mp.locator('.tabswitch button:has-text("Book")').click();
 await mp.waitForSelector(".zoomlabel", { timeout: 30000 });
 
@@ -497,9 +510,9 @@ ok("F8 swipe right opens the drawer", (await mp.locator(".sidebar.mobile-open").
 // A bare hash change keeps the previous document (state and focus), so the
 // landing gets a real reload — with the default collapsed card restored.
 await page.evaluate(() =>
-  localStorage.setItem("egu-course-sidebar-collapsed", "1"),
+  localStorage.setItem("murrnglish.sidebar-collapsed", "1"),
 );
-await page.goto(BASE + "/#home", { waitUntil: "load" });
+await page.goto(BASE + "/#/blue", { waitUntil: "load" });
 await page.reload({ waitUntil: "load" });
 await page.waitForSelector("nav.sidebar .unitlink", { state: "attached", timeout: 30000 });
 await sleep(400);
@@ -540,7 +553,7 @@ if (BASE.includes("4173")) {
   // a browser tab is not an installed app: there is no download button at all
   ok(
     "F12 offline button hidden in a browser tab",
-    (await page.locator('[aria-label="Offline: download the course"]').count()) === 0,
+    (await page.locator('[aria-label="Offline: download books"]').count()) === 0,
   );
 
   // standalone is emulated — installing for real is a browser-chrome action.
@@ -556,7 +569,7 @@ if (BASE.includes("4173")) {
   });
   const p2 = await ctx2.newPage();
   p2.on("pageerror", (e) => results.push(["FAIL", "F12 pageerror", String(e).slice(0, 140)]));
-  await p2.goto(BASE + "/", { waitUntil: "load" });
+  await p2.goto(BASE + "/#/blue", { waitUntil: "load" });
   // the download fills Cache Storage from the page, but the offline reload
   // afterwards needs the page to be under this worker's control
   await p2.evaluate(async () => {
@@ -568,36 +581,43 @@ if (BASE.includes("4173")) {
   });
   ok(
     "F12 installed app shows the offline button",
-    await p2.locator('[aria-label="Offline: download the course"]').isVisible(),
+    await p2.locator('[aria-label="Offline: download books"]').isVisible(),
   );
 
-  // Installed, the app pulls the course into the cache by itself — nothing is
+  // Installed, the app pulls the open book into the cache by itself — nothing is
   // pressed here. On desktop the button is that run's status: green fills it
   // from the top down and stays full when the course is cached.
   await p2.locator(".dlbtn.done").waitFor({ timeout: 180000 });
   ok("F12 the download starts by itself and finishes green", true);
 
   const cached = await p2.evaluate(async () => {
-    const c = await caches.open("egu-course-offline-v1");
+    const c = await caches.open("murrnglish-book-blue-v1");
     const has = async (u) => (await c.match(u, { ignoreVary: true })) !== undefined;
+    const shell = await caches.open("murrnglish-shell-v1");
     return {
-      index: await has("/data/index.json"),
-      bundle: await has("/data/course.json"),
-      perUnit: await has("/data/units/unit-005.json"),
-      book: await has("/book.pdf"),
+      index: await has("/books/blue/data/index.json"),
+      bundle: await has("/books/blue/data/course.json"),
+      perUnit: await has("/books/blue/data/units/unit-005.json"),
+      book: await has("/books/blue/book.pdf"),
+      shell: (await shell.match("/", { ignoreVary: true })) !== undefined,
+      otherBook: await caches.has("murrnglish-book-red-v1"),
     };
   });
   ok(
     "F12 the course arrives as one packed file, not per unit",
-    cached.index && cached.bundle && cached.book && !cached.perUnit,
+    cached.index && cached.bundle && cached.book && cached.shell && !cached.perUnit,
     JSON.stringify(cached),
   );
 
-  await p2.locator('[aria-label="Offline: download the course"]').click();
-  await p2.locator("text=Downloaded for offline use").waitFor({ timeout: 30000 });
+  await p2.locator('[aria-label="Offline: download books"]').click();
+  const blueRow = p2.locator(".dlrow", { hasText: "English Grammar in Use" });
+  const redRow = p2.locator(".dlrow", { hasText: "Essential Grammar in Use" });
+  await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar in Use" }).waitFor({ timeout: 30000 });
+  ok("F12 download finishes and offers a remove action", true);
   ok(
-    "F12 download finishes and offers a remove action",
-    await p2.getByRole("button", { name: "Remove downloaded files", exact: true }).isVisible(),
+    "F12 only the open book was downloaded",
+    !cached.otherBook && (await redRow.getByRole("button", { name: "Download", exact: true }).isVisible()),
+    JSON.stringify(cached),
   );
 
   // offline now. The hash step is same-document, so the only request left is
@@ -605,7 +625,7 @@ if (BASE.includes("4173")) {
   // cache, followed by the unit JSON, the book and the pdf.js chunks.
   await ctx2.setOffline(true);
   await p2.evaluate(() => {
-    location.hash = "#u5";
+    location.hash = "#/blue/u5";
   });
   await p2.reload({ waitUntil: "load" });
   await p2.waitForSelector(".pagecanvas", { timeout: 60000 });
@@ -616,29 +636,28 @@ if (BASE.includes("4173")) {
 
   // the way back out: removing drops the cache and the flag, and the panel
   // offers the download again
-  await p2.locator('[aria-label="Offline: download the course"]').click();
-  await p2.getByRole("button", { name: "Remove downloaded files", exact: true }).click();
-  await p2.getByRole("button", { name: "Download course", exact: true }).waitFor({ timeout: 30000 });
+  await p2.locator('[aria-label="Offline: download books"]').click();
+  await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar in Use" }).click();
+  await blueRow.getByRole("button", { name: "Download", exact: true }).waitFor({ timeout: 30000 });
   const removed = await p2.evaluate(async () => {
-    const c = await caches.open("egu-course-offline-v1");
     return {
-      book: (await c.match("/book.pdf", { ignoreVary: true })) !== undefined,
-      flag: localStorage.getItem("egu-course-offline-v1"),
+      book: (await caches.match("/books/blue/book.pdf", { ignoreVary: true })) !== undefined,
+      flag: localStorage.getItem("murrnglish.blue.offline-v1"),
+      shell: (await caches.match("/", { ignoreVary: true })) !== undefined,
     };
   });
   ok(
-    "F12 removing the download clears the cache and the flag",
-    !removed.book && removed.flag === null,
+    "F12 removing the book clears its cache and flag, the app shell stays",
+    !removed.book && removed.flag === null && removed.shell,
     JSON.stringify(removed),
   );
 
-  // back online: 15 MB that were deleted on purpose must not come back by
+  // back online: a book that was deleted on purpose must not come back by
   // themselves (the background start checks the removal marker first)
   await ctx2.setOffline(false);
   await sleep(7000);
   const back = await p2.evaluate(async () => {
-    const c = await caches.open("egu-course-offline-v1");
-    return (await c.match("/book.pdf", { ignoreVary: true })) !== undefined;
+    return (await caches.match("/books/blue/book.pdf", { ignoreVary: true })) !== undefined;
   });
   ok("F12 a removed download is not fetched again on its own", !back);
 
@@ -665,7 +684,7 @@ if (BASE.includes("4173")) {
     downloadThroughput: 200 * 1024,
     uploadThroughput: 200 * 1024,
   });
-  await p3.goto(BASE + "/", { waitUntil: "load" });
+  await p3.goto(BASE + "/#/blue", { waitUntil: "load" });
   await p3.locator(".dlchip").waitFor({ timeout: 60000 });
   ok(
     "F12 phone shows the running download as a chip, not a topbar button",
@@ -679,6 +698,42 @@ if (BASE.includes("4173")) {
   await ctx3.close();
   await ctx2.close();
 }
+
+// ---------- Flow 13: the red book, its own progress, the library crumb ----------
+await page.goto(BASE + "/#/", { waitUntil: "load" });
+await page.waitForSelector(".libcard", { timeout: 30000 });
+const blueCard = page.locator(".libcard", { hasText: "English Grammar in Use" });
+ok(
+  "F13 the blue card resumes after the checked unit",
+  /Continue with Unit 2/.test((await blueCard.locator(".libcta").textContent()) ?? ""),
+  (await blueCard.locator(".libcta").textContent()) ?? "",
+);
+await page.locator(".libcard", { hasText: "Essential Grammar in Use" }).locator(".libcta").click();
+await page.waitForURL(/#\/red\/u1$/, { timeout: 30000 });
+await page.waitForSelector(".pagecanvas", { timeout: 60000 });
+await page.waitForSelector(".rightpane .exercise", { timeout: 30000 });
+ok("F13 red unit 1 renders", /Unit 1/.test((await page.locator(".unitheading").first().textContent()) ?? ""));
+ok("F13 the topbar names the red book", (await page.locator(".topbar h1").textContent()) === "Essential Grammar in Use");
+ok(
+  "F13 red starts with no progress of its own",
+  await page.evaluate(() => {
+    const red = JSON.parse(localStorage.getItem("murrnglish.red.progress-v1") ?? "null");
+    const blue = JSON.parse(localStorage.getItem("murrnglish.blue.progress-v1") ?? "null");
+    return (!red || Object.keys(red.results).length === 0) && Object.keys(blue?.results ?? {}).length > 0;
+  }),
+);
+ok(
+  "F13 red's unit list has 115 units",
+  (await page.locator("nav.sidebar .unitlink").count()) === 115 + 35,
+  String(await page.locator("nav.sidebar .unitlink").count()),
+);
+await page.locator(".topbar-lib").click();
+await page.waitForSelector(".libcard", { timeout: 30000 });
+ok("F13 the crumb returns to the library", /#\/$/.test(page.url()));
+// a bare "/" resumes the book that has progress, not the one glanced at last
+await page.goto(BASE + "/", { waitUntil: "load" });
+await page.waitForURL(/#\/blue\/u\d+$/, { timeout: 30000 });
+ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()), page.url());
 
 await mctx.close();
 await ctx.close();

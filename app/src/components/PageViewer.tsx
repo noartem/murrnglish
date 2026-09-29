@@ -17,7 +17,8 @@
 // Scrolling is OverlayScrollbars (overlay bars drawn over the content, hidden
 // until hover) like the sidebar and the exercise pane — and it works while
 // pages are still loading, because placeholder canvases already occupy the
-// real per-page height (baked from book.pdf in pages-meta.json), so finishing
+// real per-page height (baked from book.pdf into the book's data/pages.json,
+// the `aspects` prop), so finishing
 // a page load never reflows the layout either.
 //
 // Canvases re-render their backing store at the new resolution shortly after
@@ -30,11 +31,15 @@ import {
   OverlayScrollbarsComponent,
   type OverlayScrollbarsComponentRef,
 } from "overlayscrollbars-react";
-import pagesMeta from "../pages-meta.json";
+import type { PageAspects } from "../data";
 import { Contrast, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
 import { loadPageInvert, savePageInvert } from "../pageinvert";
 
 interface Props {
+  /** the book's PDF: one document per book, shared by every page of it */
+  pdfUrl: string;
+  /** height/width per page number, from the book's data/pages.json */
+  aspects: PageAspects;
   pdfPages: number[];
   focusTick: number; // each increment focuses the pane (Shift+S)
   onPaneEscape: () => void; // Esc in the pane: App restores the previous focus
@@ -45,9 +50,8 @@ const ANIM_MS = 180;
 const RERENDER_DEBOUNCE_MS = 140;
 const SCROLL_STEP = 80; // arrow-key scroll step (px) while the pane is focused
 
-const ASPECTS = pagesMeta as Record<string, number>;
-// fallback = A4 portrait; every real page is baked in pages-meta.json
-const pageAspect = (p: number) => ASPECTS[String(p)] ?? 297 / 210;
+// fallback = A4 portrait; every real page is baked in data/pages.json
+const pageAspect = (aspects: PageAspects, p: number) => aspects[String(p)] ?? 297 / 210;
 
 type Bounds = { min: number; max: number };
 
@@ -81,11 +85,19 @@ function frameLoop(step: (now: number) => boolean): () => void {
 const easeOutCubic = (k: number) => 1 - Math.pow(1 - k, 3);
 
 // one shared document for every viewer instance (unit ↔ additional switches);
-// pdf.js itself is dynamically imported so it stays out of the main bundle
+// pdf.js itself is dynamically imported so it stays out of the main bundle.
+// One book at a time: opening another book's PDF releases the previous one,
+// the books are 14–75 MB each.
+let docUrl = "";
 let docPromise: Promise<PDFDocumentProxy> | null = null;
-function getDoc(): Promise<PDFDocumentProxy> {
+function getDoc(url: string): Promise<PDFDocumentProxy> {
+  if (docPromise && docUrl !== url) {
+    void docPromise.then((d) => d.destroy()).catch(() => {});
+    docPromise = null;
+  }
   if (!docPromise) {
-    docPromise = (async () => {
+    docUrl = url;
+    const loading = (async () => {
       const [pdfjs, { default: workerUrl }] = await Promise.all([
         import("pdfjs-dist"),
         import("pdfjs-dist/build/pdf.worker.min.mjs?url"),
@@ -105,18 +117,19 @@ function getDoc(): Promise<PDFDocumentProxy> {
         /* keep the original worker URL */
       }
       pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
-      const r = await fetch(`${import.meta.env.BASE_URL}book.pdf`);
-      if (!r.ok) throw new Error(`book.pdf: ${r.status}`);
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(`${url}: ${r.status}`);
       return pdfjs.getDocument({ data: await r.arrayBuffer() }).promise;
     })();
-    docPromise.catch(() => {
-      docPromise = null; // allow a retry after a failure
+    docPromise = loading;
+    loading.catch(() => {
+      if (docPromise === loading) docPromise = null; // allow a retry after a failure
     });
   }
   return docPromise;
 }
 
-export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
+export function PageViewer({ pdfUrl, aspects, pdfPages, focusTick, onPaneEscape }: Props) {
   const [zoom, setZoom] = useState(1);
   const [docReady, setDocReady] = useState(false);
   // inverted page colors: one shared pref (data-page-invert on <html>),
@@ -186,7 +199,7 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     const pw = Math.max(1, vw - 2 * pad);
     flow.style.setProperty("--pw", `${pw}px`);
     const maxA = pdfPages.length
-      ? Math.max(...pdfPages.map(pageAspect))
+      ? Math.max(...pdfPages.map((p) => pageAspect(aspects, p)))
       : 297 / 210;
     // capped at 1: on a tall narrow pane (phone) fitting the height would
     // need a page wider than the pane, pushing the default above 100%
@@ -197,7 +210,8 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
   // kick off (and await) the shared document as soon as the viewer mounts
   useEffect(() => {
     let alive = true;
-    getDoc()
+    setDocReady(false);
+    getDoc(pdfUrl)
       .then(() => {
         if (alive) setDocReady(true);
       })
@@ -207,7 +221,7 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
     return () => {
       alive = false;
     };
-  }, []);
+  }, [pdfUrl]);
 
   // fresh start on mount and on pdfPages change (unit ↔ unit, unit ↔
   // additional): default zoom (fit the pane width, clamped into bounds),
@@ -525,7 +539,14 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
       >
         <div className="pagesflow" ref={flowRef}>
           {pdfPages.map((p) => (
-            <PdfPage key={p} pageNum={p} zoom={zoom} docReady={docReady} />
+            <PdfPage
+              key={p}
+              pdfUrl={pdfUrl}
+              pageNum={p}
+              aspect={pageAspect(aspects, p)}
+              zoom={zoom}
+              docReady={docReady}
+            />
           ))}
         </div>
       </OverlayScrollbarsComponent>
@@ -533,8 +554,11 @@ export function PageViewer({ pdfPages, focusTick, onPaneEscape }: Props) {
   );
 }
 
-function PdfPage({ pageNum, zoom, docReady }: {
+function PdfPage({ pdfUrl, pageNum, aspect, zoom, docReady }: {
+  pdfUrl: string;
   pageNum: number;
+  /** height/width of this page, for the placeholder */
+  aspect: number;
   zoom: number;
   docReady: boolean;
 }) {
@@ -554,7 +578,7 @@ function PdfPage({ pageNum, zoom, docReady }: {
       taskRef.current.cancel();
       taskRef.current = null;
     }
-    const doc = await getDoc();
+    const doc = await getDoc(pdfUrl);
     if (!boxRef.current || !canvasRef.current) return;
     const page = await doc.getPage(pageNum);
     if (!boxRef.current || !canvasRef.current) return;
@@ -589,7 +613,7 @@ function PdfPage({ pageNum, zoom, docReady }: {
   };
 
   // while loading, show a blank page placeholder with the REAL page aspect
-  // (baked in pages-meta.json) instead of the default 2:1 empty canvas stub,
+  // (baked in data/pages.json) instead of the default 2:1 empty canvas stub,
   // so swapping in the rendered canvas never shifts the layout
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -597,7 +621,7 @@ function PdfPage({ pageNum, zoom, docReady }: {
     if (!canvas || !box || canvas.width !== 300 || canvas.height !== 150) return;
     const w = Math.max(box.clientWidth, 100) * 2; // placeholder resolution
     canvas.width = Math.floor(w);
-    canvas.height = Math.floor(w * pageAspect(pageNum));
+    canvas.height = Math.floor(w * aspect);
     canvas.style.width = "100%";
     canvas.style.height = "auto";
   }, []);

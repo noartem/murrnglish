@@ -9,6 +9,7 @@ import { completedUnitIds, countCorrect, pct, scopeStats } from "../progress";
 import type { Progress } from "../progress";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { Check, Download, Share2, Upload, X } from "lucide-react";
+import { useBook } from "../bookContext";
 
 export function ProgressModal({
   open,
@@ -37,6 +38,7 @@ export function ProgressModal({
   /** opened via Shift+I: underline each control's trigger letter */
   hintKeys: boolean;
 }): JSX.Element | null {
+  const book = useBook();
   const [withAnswers, setWithAnswers] = useState(true);
   const [busy, setBusy] = useState(false);
   // status line: seq re-keys the node so the entry animation (fade, plus the
@@ -147,7 +149,7 @@ export function ProgressModal({
         {preview ? (
           <>
             <div className="modal-summary">
-              Incoming: Units completed {doneUnits.size}/145 · Answers correct {cc.correct}/
+              Incoming: Units completed {doneUnits.size}/{book.units} · Answers correct {cc.correct}/
               {cc.total}
             </div>
             <div className="modal-summary">
@@ -158,7 +160,7 @@ export function ProgressModal({
           </>
         ) : (
           <div className="modal-summary">
-            Units completed {doneUnits.size}/145 · Answers correct {cc.correct}/{cc.total}
+            Units completed {doneUnits.size}/{book.units} · Answers correct {cc.correct}/{cc.total}
           </div>
         )}
         {index && (

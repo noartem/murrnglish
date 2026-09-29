@@ -219,8 +219,7 @@ body {
 }
 
 .homecover {
-  /* actual cover art aspect (1112x1497) */
-  aspect-ratio: 1112 / 1497;
+  /* aspect-ratio comes inline from the book's cover size (book.json) */
   height: min(56vh, 480px);
   width: auto;
   border: 6px solid var(--panel);
@@ -259,6 +258,20 @@ body {
   }
 }
 
+/* "Elementary · Russian edition" over the description */
+.homekicker {
+  margin: 36px 0 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.homekicker + .homedesc {
+  margin-top: 8px;
+}
+
 .homedesc {
   font-family: var(--font-ui);
   font-weight: 600;
@@ -288,8 +301,11 @@ body {
   .homecover {
     height: min(68vh, 540px);
   }
-  .homedesc {
+  .homedesc,
+  .homekicker {
     margin-top: 0;
+  }
+  .homedesc {
     font-size: 18px;
   }
 }
@@ -337,6 +353,43 @@ body {
 
 .homecredit a {
   color: inherit;
+}
+
+/* topbar crumbs: "Murrnglish / <book title>" — the first goes to the
+   library, the title to the book's landing. Phones drop the first crumb (the
+   drawer has an "All books" row instead). */
+.topbar-lib {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.topbar-lib:hover,
+.topbar-lib:focus-visible {
+  color: var(--accent);
+}
+
+.topbar-crumbsep {
+  color: var(--input-border);
+  font-weight: 800;
+  margin: 0 -6px;
+}
+
+/* the library's topbar: the app name alone */
+.topbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+}
+
+.topbar-brand h1 {
+  color: var(--text);
 }
 
 /* topbar title doubles as the home button on content pages */
@@ -1639,8 +1692,58 @@ textarea.winline {
   background: var(--ok-solid);
 }
 
-/* "Download course" progress: the same track/fill language as the battery,
-   stretched to the modal width */
+/* offline panel: one row per book — cover thumbnail, title and status, the
+   row's action on the right */
+.dlrows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+
+.dlrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg);
+}
+
+.dlcover {
+  flex-shrink: 0;
+  width: 44px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: var(--img-shadow);
+}
+
+.dlinfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.dltitle {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.dlstatus {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dlrow .dlaction {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+/* a book's download progress: the same track/fill language as the battery,
+   stretched to the row width */
 .dlbar {
   height: 8px;
   margin-top: 10px;
@@ -1962,6 +2065,145 @@ kbd {
   }
 }
 
+/* ---------- library (#/): one card per book on the desk mat ---------- */
+.libcol {
+  box-sizing: border-box;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 36px 24px 56px;
+}
+
+.libintro {
+  margin: 0 0 28px;
+  max-width: 40rem;
+}
+
+.libgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
+  gap: 22px;
+}
+
+/* a card is a sheet like the modal: 2px rim, thick bottom edge */
+.libcard {
+  display: flex;
+  gap: 22px;
+  padding: 20px;
+  border: 2px solid var(--border);
+  border-bottom-width: 6px;
+  border-radius: 22px;
+  background: var(--panel);
+}
+
+.libcoverlink {
+  flex-shrink: 0;
+  align-self: flex-start;
+  border-radius: 6px;
+}
+
+.libcoverlink:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* the cover rests tilted like the book landing's, and stands up on hover */
+.libcover {
+  display: block;
+  width: 132px;
+  height: auto;
+  border: 4px solid var(--panel);
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(60, 40, 10, 0.2);
+  background: var(--img-bg);
+  transform: rotate(-2deg);
+  transform-origin: 10% 100%;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.libcard:hover .libcover,
+.libcoverlink:focus-visible .libcover {
+  transform: rotate(0deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .libcover {
+    transition: none;
+  }
+}
+
+.libinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.libkicker {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 2px 0 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* the printed cover's color, as a swatch: identity, never state */
+.libdot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.libtitle {
+  margin: 6px 0 0;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.libtitle a {
+  color: var(--text);
+  text-decoration: none;
+  background: linear-gradient(transparent 62%, var(--hl-soft) 62% 92%, transparent 92%);
+}
+
+.libtitle a:hover {
+  color: var(--accent);
+}
+
+.libmeta {
+  margin: 6px 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--soft);
+}
+
+.libcta {
+  margin-top: auto;
+  font-size: 16px;
+  padding: 10px 22px;
+  border-radius: 14px;
+}
+
+.libcard .battery {
+  margin-bottom: 18px;
+}
+
+.library .homecredit {
+  margin-top: 36px;
+  text-align: center;
+}
+
+a.draweraction {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 /* ---------- phone layout: one pane at a time behind a tab switch ----------
    Desktop rules above are untouched; everything mobile lives in this block. */
 @media (max-width: 768px) {
@@ -1976,6 +2218,32 @@ kbd {
   .topbar-home {
     min-width: 0;
     overflow: hidden;
+  }
+  /* the library crumb: the drawer's "All books" row stands in for it */
+  .topbar-lib,
+  .topbar-crumbsep {
+    display: none;
+  }
+  .libcol {
+    padding: 22px 14px 40px;
+  }
+  .libintro {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  .libcard {
+    gap: 16px;
+    padding: 16px;
+  }
+  .libcover {
+    width: 96px;
+  }
+  .libtitle {
+    font-size: 19px;
+  }
+  .libcta {
+    font-size: 15px;
+    padding: 9px 16px;
   }
   .topbar h1 {
     font-size: 16px;

@@ -1,4 +1,4 @@
-// Progress persistence in localStorage, key egu-course-progress-v1.
+// Progress persistence in localStorage, one entry per book (keys.ts).
 // Shape (per work/PARSING-SPEC.md / plan):
 //   answers[id] per type:
 //     fill-in    -> { items: { [num]: string[] } }
@@ -8,9 +8,9 @@
 //     self-check -> { items: { [num]: string } }
 //   results[id] -> { correct: number, total: number }
 //   selfMarks[id] -> { [num]: boolean }
+import type { Book } from "./books";
 import type { TotalsMap } from "./data";
-
-const KEY = "egu-course-progress-v1";
+import { LAST_BOOK_KEY, lastRouteKey, progressKey } from "./keys";
 
 export interface ResultEntry {
   correct: number;
@@ -28,15 +28,17 @@ export interface ProgressCounts {
   total: number;
 }
 
-let saveTimer: number | undefined;
+// pending debounced write per book: one shared timer would let the next
+// book's save cancel the previous book's last write
+const saveTimers = new Map<string, number>();
 
 export function emptyProgress(): Progress {
   return { answers: {}, results: {}, selfMarks: {} };
 }
 
-export function loadProgress(): Progress {
+export function loadProgress(bookId: string): Progress {
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(progressKey(bookId));
     if (!raw) return emptyProgress();
     const p = JSON.parse(raw) as Progress;
     return {
@@ -49,15 +51,24 @@ export function loadProgress(): Progress {
   }
 }
 
-export function saveProgress(p: Progress, debounceMs = 300): void {
-  clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => {
-    try {
-      localStorage.setItem(KEY, JSON.stringify(p));
-    } catch {
-      // storage full/unavailable: progress silently not persisted
-    }
-  }, debounceMs);
+export function saveProgress(bookId: string, p: Progress, debounceMs = 300): void {
+  window.clearTimeout(saveTimers.get(bookId));
+  saveTimers.set(
+    bookId,
+    window.setTimeout(() => {
+      saveTimers.delete(bookId);
+      try {
+        localStorage.setItem(progressKey(bookId), JSON.stringify(p));
+      } catch {
+        // storage full/unavailable: progress silently not persisted
+      }
+    }, debounceMs),
+  );
+}
+
+/** Anything worked on: a checked exercise or a self-check mark. */
+export function hasProgress(p: Progress): boolean {
+  return Object.keys(p.results).length > 0 || Object.keys(p.selfMarks).length > 0;
 }
 
 export function unitCompleted(progress: Progress, exerciseIds: string[]): boolean {
@@ -74,23 +85,31 @@ export function countCorrect(progress: Progress): ProgressCounts {
   return { correct, total };
 }
 
-// Last opened content page ("u13"/"a41"), used by the "/" entry redirect.
-const LAST_KEY = "egu-course-last-route-v1";
-
-export function loadLastRoute(): string | null {
+// Last opened content page of a book ("u13"/"a41") and the book itself, used
+// by the "/" entry redirect.
+export function loadLastRoute(bookId: string): string | null {
   try {
-    const raw = localStorage.getItem(LAST_KEY);
+    const raw = localStorage.getItem(lastRouteKey(bookId));
     return raw !== null && /^(u|a)\d+$/.test(raw) ? raw : null;
   } catch {
     return null; // storage unavailable: entry falls back to progress
   }
 }
 
-export function saveLastRoute(route: string): void {
+export function saveLastRoute(bookId: string, route: string): void {
   try {
-    localStorage.setItem(LAST_KEY, route);
+    localStorage.setItem(lastRouteKey(bookId), route);
+    localStorage.setItem(LAST_BOOK_KEY, bookId);
   } catch {
     // storage unavailable: redirect falls back to progress-derived unit
+  }
+}
+
+export function loadLastBook(): string | null {
+  try {
+    return localStorage.getItem(LAST_BOOK_KEY);
+  } catch {
+    return null;
   }
 }
 
@@ -126,6 +145,41 @@ export function completedUnitIds(progress: Progress): Set<number> {
     if (k >= 1 && ids.size === k) done.add(u);
   }
   return done;
+}
+
+/** Where a learner with saved progress should resume; null = fresh start. */
+export interface ContinueTarget {
+  /** the page key: "u12" / "a3" */
+  page: string;
+  label: string;
+}
+
+// Learners with saved progress continue with the unit AFTER the last one
+// where they did at least one exercise (a result or a self-check mark); once
+// that would be past the book's last unit, the first additional exercise
+// without results. Fresh learners get null: plain "Start with Unit 1".
+export function continueTarget(progress: Progress, book: Book): ContinueTarget | null {
+  if (!hasProgress(progress)) return null;
+  let lastTouched = 0;
+  for (const keys of [progress.results, progress.selfMarks]) {
+    for (const id of Object.keys(keys)) {
+      const m = id.match(/^(\d+)\./);
+      if (m) lastTouched = Math.max(lastTouched, Number(m[1]));
+    }
+  }
+  if (lastTouched < book.units) {
+    return { page: `u${lastTouched + 1}`, label: `Continue with Unit ${lastTouched + 1}` };
+  }
+  const nextAdditional = Array.from({ length: book.additional }, (_, i) => i + 1).find(
+    (n) => !unitCompleted(progress, [String(n)]),
+  );
+  if (nextAdditional) {
+    return {
+      page: `a${nextAdditional}`,
+      label: `Continue with Additional exercise ${nextAdditional}`,
+    };
+  }
+  return null;
 }
 
 // ---- import / export / share helpers ---------------------------------------

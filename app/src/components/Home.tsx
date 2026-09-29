@@ -1,4 +1,4 @@
-// Home: the "/#/ landing. The hero is the actual book cover (page 1 of the
+// Home: a book's landing (#/<book>). The hero is the actual book cover (page 1 of the
 // same PDF the viewer renders) with a one-paragraph description and a single
 // call to action beside it on desktop (stacked and centered on phones). The
 // cover is a real button mirroring the CTA — same action, mouse or keyboard.
@@ -8,19 +8,18 @@
 // quiet. Scrolling is OverlayScrollbars, like every other pane.
 
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-
-/** Where a learner with saved progress should resume; null = fresh start. */
-export interface HomeContinue {
-  hash: string;
-  label: string;
-}
+import type { Book } from "../books";
+import { bookUrl } from "../books";
+import type { ContinueTarget } from "../progress";
 
 export function Home({
+  book,
   onStart,
   continueTo,
 }: {
+  book: Book;
   onStart: () => void;
-  continueTo: HomeContinue | null;
+  continueTo: ContinueTarget | null;
 }) {
   return (
     <OverlayScrollbarsComponent
@@ -39,20 +38,24 @@ export function Home({
         <button type="button" className="homecoverbtn" onClick={onStart}>
           <img
             className="homecover"
-            src={`${import.meta.env.BASE_URL}cover.png`}
-            alt="Cover of English Grammar in Use, Fifth Edition, by Raymond Murphy"
-            width={1112}
-            height={1497}
+            src={bookUrl(book, book.cover.file)}
+            alt={`Cover of ${book.title}, ${book.edition}, by ${book.authors}`}
+            width={book.cover.width}
+            height={book.cover.height}
+            style={{ aspectRatio: `${book.cover.width} / ${book.cover.height}` }}
             decoding="async"
             draggable={false}
           />
         </button>
         <div className="hometext">
+          <p className="homekicker">
+            {book.level} · {book.edition}
+          </p>
           <p className="homedesc">
-            Raymond Murphy’s <em>English Grammar in Use</em> (Fifth edition) as
-            an interactive web course: the book’s pages with exercises beside
-            them, answers checked as you go, progress saved in this browser. 145
-            units and 41 additional exercises.
+            <em>{book.title}</em> by {book.authors} as an interactive web
+            course: the book’s pages with exercises beside them, answers checked
+            as you go, progress saved in this browser. {book.units} units and{" "}
+            {book.additional} additional exercises.
           </p>
           <button type="button" className="homecta" onClick={onStart}>
             {continueTo ? (
@@ -69,7 +72,7 @@ export function Home({
               Artem Noskov
             </a>
             <br />
-            From the book by Raymond Murphy (Cambridge University Press)
+            From the book by {book.authors} ({book.publisher})
           </footer>
         </div>
       </div>

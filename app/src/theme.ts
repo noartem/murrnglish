@@ -2,9 +2,9 @@
 // The effective scheme is applied as data-theme="light|dark" on <html>;
 // an inline script in index.html sets it before first paint.
 
-export type Theme = "light" | "dark" | "system";
+import { THEME_KEY as KEY } from "./keys";
 
-const KEY = "theme";
+export type Theme = "light" | "dark" | "system";
 
 export function loadTheme(): Theme {
   const t = localStorage.getItem(KEY);
