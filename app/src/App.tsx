@@ -7,7 +7,10 @@ import { fetchAdditional, fetchIndex, fetchTotals, fetchUnit } from "./data";
 import { PageViewer } from "./components/PageViewer";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
-import { ShortcutsHelpButton, ShortcutsModal } from "./components/ShortcutsHelp";
+import {
+  ShortcutsHelpButton,
+  ShortcutsModal,
+} from "./components/ShortcutsHelp";
 import { SC, useCourseShortcuts } from "./shortcuts";
 import { ArrowLeft, ArrowRight, Check, Menu, Share2 } from "lucide-react";
 import {
@@ -55,7 +58,11 @@ function entryRoute(): Route {
   const hasProgress =
     Object.keys(p.results).length > 0 || Object.keys(p.selfMarks).length > 0;
   if (!hasProgress) return { kind: "home" };
-  return routeFromHash(loadLastRoute() ?? lastUnitFromProgress(p) ?? "") ?? { kind: "home" };
+  return (
+    routeFromHash(loadLastRoute() ?? lastUnitFromProgress(p) ?? "") ?? {
+      kind: "home",
+    }
+  );
 }
 
 function parseHash(): Route {
@@ -66,7 +73,11 @@ function parseHash(): Route {
 }
 
 function routeToHash(r: Route): string {
-  return r.kind === "unit" ? `u${r.n}` : r.kind === "additional" ? `a${r.n}` : "home";
+  return r.kind === "unit"
+    ? `u${r.n}`
+    : r.kind === "additional"
+      ? `a${r.n}`
+      : "home";
 }
 
 export default function App() {
@@ -83,7 +94,10 @@ export default function App() {
   const [totals, setTotals] = useState<TotalsMap | null>(null);
   // incoming progress held for the preview modal; applied only on confirm.
   // ONE mechanism for both the #p= link open and the JSON file import.
-  const [preview, setPreview] = useState<{ p: Progress; src: "file" | "link" } | null>(null);
+  const [preview, setPreview] = useState<{
+    p: Progress;
+    src: "file" | "link";
+  } | null>(null);
   const [progress, setProgressState] = useState<Progress>(loadProgress);
   // keyboard-shortcuts help modal + pane focus pump (Shift+S)
   const [helpOpen, setHelpOpen] = useState(false);
@@ -156,8 +170,12 @@ export default function App() {
     if (window.location.hash === "" && route.kind !== "home") {
       window.history.replaceState(null, "", `#${routeToHash(route)}`);
     }
-    fetchIndex().then(setIndex).catch((e) => setError(String(e)));
-    fetchTotals().then(setTotals).catch(() => setTotals(null));
+    fetchIndex()
+      .then(setIndex)
+      .catch((e) => setError(String(e)));
+    fetchTotals()
+      .then(setTotals)
+      .catch(() => setTotals(null));
     void applyShareHash();
   }, []);
   // remember the last content page for the "/" entry redirect
@@ -299,9 +317,12 @@ export default function App() {
   }
 
   function handleExport(includeAnswers: boolean): string {
-    const blob = new Blob([JSON.stringify(progressPayload(progress, includeAnswers))], {
-      type: "application/json",
-    });
+    const blob = new Blob(
+      [JSON.stringify(progressPayload(progress, includeAnswers))],
+      {
+        type: "application/json",
+      },
+    );
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -344,7 +365,11 @@ export default function App() {
     saveProgress(preview.p, 0);
     setPreview(null);
     setModalOpen(false); // close entirely: the notice must be visible
-    setNotice(preview.src === "link" ? "Progress loaded from link" : "Progress imported");
+    setNotice(
+      preview.src === "link"
+        ? "Progress loaded from link"
+        : "Progress imported",
+    );
   }
 
   function navUnit(n: number) {
@@ -359,8 +384,10 @@ export default function App() {
 
   // pager: null on home/unknown routes, else prev/next course positions.
   // Built from raw index (the old `course` list duplicated this logic).
-  type ContentRoute = { kind: "unit"; n: number } | { kind: "additional"; n: number };
-  const pager = useMemo<null | { prev: NavTarget | null; next: NavTarget | null }>(() => {
+  const pager = useMemo<null | {
+    prev: NavTarget | null;
+    next: NavTarget | null;
+  }>(() => {
     if (route.kind === "home" || !index) return null;
     const at = (r?: Route | null): NavTarget | null => {
       if (!r || r.kind === "home") return null;
@@ -368,21 +395,32 @@ export default function App() {
       return {
         kind: cr.kind,
         n: cr.n,
-        label: cr.kind === "unit" ? `Unit ${cr.n}` : `Additional exercise ${cr.n}`,
-        desc: index.titles?.[cr.kind === "unit" ? `u${cr.n}` : `a${cr.n}`] ?? "",
+        label:
+          cr.kind === "unit" ? `Unit ${cr.n}` : `Additional exercise ${cr.n}`,
+        desc:
+          index.titles?.[cr.kind === "unit" ? `u${cr.n}` : `a${cr.n}`] ?? "",
       };
     };
     const course: ContentRoute[] = [
-      ...index.groups.flatMap((g) => g.units.map((u) => ({ kind: "unit" as const, n: u }))),
-      ...index.additional.exercises.map((n) => ({ kind: "additional" as const, n })),
+      ...index.groups.flatMap((g) =>
+        g.units.map((u) => ({ kind: "unit" as const, n: u })),
+      ),
+      ...index.additional.exercises.map((n) => ({
+        kind: "additional" as const,
+        n,
+      })),
     ];
-    const pos = course.findIndex((r) => r.kind === route.kind && r.n === route.n);
+    const pos = course.findIndex(
+      (r) => r.kind === route.kind && r.n === route.n,
+    );
     return { prev: at(course[pos - 1]), next: at(course[pos + 1]) };
   }, [index, route]);
 
   const exerciseIds = unit ? unit.exercises.map((e) => e.id) : [];
   const isUnitDone =
-    route.kind === "unit" && unit ? unitCompleted(progress, exerciseIds) : false;
+    route.kind === "unit" && unit
+      ? unitCompleted(progress, exerciseIds)
+      : false;
   const ov = scopeStats(totals, totals ? Object.keys(totals) : [], progress);
 
   function goHome() {
@@ -421,9 +459,11 @@ export default function App() {
     focusUnitPanel: () => activeRef.current?.focus(),
     toggleSidebar,
     cycleTheme: () =>
-      document.querySelector<HTMLButtonElement>(
-        '.topbar-actions .themebtn[aria-label^="Theme"]',
-      )?.click(),
+      document
+        .querySelector<HTMLButtonElement>(
+          '.topbar-actions .themebtn[aria-label^="Theme"]',
+        )
+        ?.click(),
   });
   const isHome = route.kind === "home";
   // progress batteries: in the topbar on desktop, atop the unit drawer on
@@ -499,7 +539,9 @@ export default function App() {
         </div>
       </header>
       <div className="main">
-        {!sidebarOpen && !isMobile && <div className="sidebar-edge" aria-hidden />}
+        {!sidebarOpen && !isMobile && (
+          <div className="sidebar-edge" aria-hidden />
+        )}
         {!isHome && <MobileTabSwitch tab={mobileTab} onTab={setMobileTab} />}
         {isMobile && (
           <div
@@ -507,54 +549,155 @@ export default function App() {
             onClick={() => setDrawerOpen(false)}
           />
         )}
-        {index && (() => {
-          const sideCls = isMobile
-            ? "sidebar" + (drawerOpen ? " mobile-open" : "")
-            : sidebarOpen
-              ? transient ? "sidebar opening" : "sidebar"
-              : cardPhase ? "sidebar collapsed" : "sidebar closing";
-          const osOptions = {
-            overflow: { x: "hidden" as const },
-            scrollbars: {
-              theme: "os-theme-dark",
-              autoHide: "leave" as const,
-              autoHideDelay: 500,
-            },
-          };
-          return (
-            <OverlayScrollbarsComponent element="nav" className={sideCls} options={osOptions}>
-            <div className="sidebar-inner">
-              {isMobile && <div className="drawerstats">{stats}</div>}
-              {index.groups.map((g) => {
-                const gpct = pct(scopeStats(totals, g.units.map((u) => `u${u}`), progress));
-                return (
-                  <div key={g.name} className="group">
+        {index &&
+          (() => {
+            const sideCls = isMobile
+              ? "sidebar" + (drawerOpen ? " mobile-open" : "")
+              : sidebarOpen
+                ? transient
+                  ? "sidebar opening"
+                  : "sidebar"
+                : cardPhase
+                  ? "sidebar collapsed"
+                  : "sidebar closing";
+            const osOptions = {
+              overflow: { x: "hidden" as const },
+              scrollbars: {
+                theme: "os-theme-dark",
+                autoHide: "leave" as const,
+                autoHideDelay: 500,
+              },
+            };
+            return (
+              <OverlayScrollbarsComponent
+                element="nav"
+                className={sideCls}
+                options={osOptions}
+              >
+                <div className="sidebar-inner">
+                  {isMobile && <div className="drawerstats">{stats}</div>}
+                  {index.groups.map((g) => {
+                    const gpct = pct(
+                      scopeStats(
+                        totals,
+                        g.units.map((u) => `u${u}`),
+                        progress,
+                      ),
+                    );
+                    return (
+                      <div key={g.name} className="group">
+                        <div className="groupname">
+                          <span>{g.name}</span>
+                          {totals && gpct > 0 && (
+                            <span
+                              className={
+                                "grouppct" + (gpct === 100 ? " full" : "")
+                              }
+                            >
+                              {gpct}%
+                            </span>
+                          )}
+                        </div>
+                        <div className="unitlinks">
+                          {g.units.map((u) => {
+                            const upct = pct(
+                              scopeStats(totals, [`u${u}`], progress),
+                            );
+                            return (
+                              <button
+                                key={u}
+                                ref={
+                                  route.kind === "unit" && route.n === u
+                                    ? activeRef
+                                    : undefined
+                                }
+                                className={
+                                  "unitlink" +
+                                  (route.kind === "unit" && route.n === u
+                                    ? " active"
+                                    : "") +
+                                  (doneUnits.has(u) ? " done" : "")
+                                }
+                                onClick={() => navUnit(u)}
+                              >
+                                {u}
+                                {doneUnits.has(u) && (
+                                  <span className="donemark">
+                                    <Check
+                                      size={11}
+                                      strokeWidth={3}
+                                      aria-hidden
+                                    />
+                                  </span>
+                                )}
+                                {totals && upct > 0 && (
+                                  <span
+                                    className={
+                                      "unitpct" + (upct === 100 ? " full" : "")
+                                    }
+                                  >
+                                    {upct}%
+                                  </span>
+                                )}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })}
+                  <div className="group">
                     <div className="groupname">
-                      <span>{g.name}</span>
-                      {totals && gpct > 0 && (
-                        <span className={"grouppct" + (gpct === 100 ? " full" : "")}>{gpct}%</span>
-                      )}
+                      <span>{index.additional.title}</span>
+                      {totals &&
+                        (() => {
+                          const apct = pct(
+                            scopeStats(
+                              totals,
+                              index.additional.exercises.map((n) => `a${n}`),
+                              progress,
+                            ),
+                          );
+                          return apct > 0 ? (
+                            <span
+                              className={
+                                "grouppct" + (apct === 100 ? " full" : "")
+                              }
+                            >
+                              {apct}%
+                            </span>
+                          ) : null;
+                        })()}
                     </div>
                     <div className="unitlinks">
-                      {g.units.map((u) => {
-                        const upct = pct(scopeStats(totals, [`u${u}`], progress));
+                      {index.additional.exercises.map((n) => {
+                        const apct = pct(
+                          scopeStats(totals, [`a${n}`], progress),
+                        );
                         return (
                           <button
-                            key={u}
+                            key={n}
                             ref={
-                              route.kind === "unit" && route.n === u ? activeRef : undefined
+                              route.kind === "additional" && route.n === n
+                                ? activeRef
+                                : undefined
                             }
                             className={
-                              "unitlink" + (route.kind === "unit" && route.n === u ? " active" : "") +
-                              (doneUnits.has(u) ? " done" : "")
+                              "unitlink" +
+                              (route.kind === "additional" && route.n === n
+                                ? " active"
+                                : "")
                             }
-                            onClick={() => navUnit(u)}
+                            onClick={() => navAdditional(n)}
                           >
-                            {u}
-                            {doneUnits.has(u) && <span className="donemark"><Check size={11} strokeWidth={3} aria-hidden /></span>}
-                            {totals && upct > 0 && (
-                              <span className={"unitpct" + (upct === 100 ? " full" : "")}>
-                                {upct}%
+                            {n}
+                            {totals && apct > 0 && (
+                              <span
+                                className={
+                                  "unitpct" + (apct === 100 ? " full" : "")
+                                }
+                              >
+                                {apct}%
                               </span>
                             )}
                           </button>
@@ -562,113 +705,84 @@ export default function App() {
                       })}
                     </div>
                   </div>
-                );
-              })}
-              <div className="group">
-                <div className="groupname">
-                  <span>{index.additional.title}</span>
-                  {totals &&
-                    (() => {
-                      const apct = pct(scopeStats(
-                        totals,
-                        index.additional.exercises.map((n) => `a${n}`),
-                        progress,
-                      ));
-                      return apct > 0 ? (
-                        <span className={"grouppct" + (apct === 100 ? " full" : "")}>{apct}%</span>
-                      ) : null;
-                    })()}
                 </div>
-                <div className="unitlinks">
-                  {index.additional.exercises.map((n) => {
-                    const apct = pct(scopeStats(totals, [`a${n}`], progress));
-                    return (
-                      <button
-                        key={n}
-                        ref={
-                          route.kind === "additional" && route.n === n ? activeRef : undefined
-                        }
-                        className={
-                          "unitlink" + (route.kind === "additional" && route.n === n ? " active" : "")
-                        }
-                        onClick={() => navAdditional(n)}
-                      >
-                        {n}
-                        {totals && apct > 0 && (
-                          <span className={"unitpct" + (apct === 100 ? " full" : "")}>{apct}%</span>
-                        )}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-            </OverlayScrollbarsComponent>
-          );
-        })()}
+              </OverlayScrollbarsComponent>
+            );
+          })()}
         {isHome ? (
           <Home onStart={startCourse} continueTo={homeContinue} />
         ) : (
           <div className="split" data-tab={mobileTab}>
             <div className="leftpane">
-            {unit && (
-              <PageViewer
-                pdfPages={unit.pdfPages}
-                focusTick={paneFocusTick}
-                onPaneEscape={sc.restoreFocus}
-              />
-            )}
-            {additional && (
-              <PageViewer
-                pdfPages={additional.pdfPages}
-                focusTick={paneFocusTick}
-                onPaneEscape={sc.restoreFocus}
-              />
-            )}
+              {unit && (
+                <PageViewer
+                  pdfPages={unit.pdfPages}
+                  focusTick={paneFocusTick}
+                  onPaneEscape={sc.restoreFocus}
+                />
+              )}
+              {additional && (
+                <PageViewer
+                  pdfPages={additional.pdfPages}
+                  focusTick={paneFocusTick}
+                  onPaneEscape={sc.restoreFocus}
+                />
+              )}
+            </div>
+            <OverlayScrollbarsComponent
+              ref={rightpaneRef}
+              className="rightpane"
+              options={{
+                overflow: { x: "hidden" as const },
+                scrollbars: {
+                  theme: "os-theme-dark",
+                  autoHide: "leave" as const,
+                  autoHideDelay: 500,
+                },
+              }}
+            >
+              {error && <div className="loaderror">{error}</div>}
+              {unit && (
+                <>
+                  <h2 className="unitheading">
+                    Unit {unit.unit} — {unit.title}
+                    {isUnitDone && (
+                      <span className="donetag">
+                        <Check size={13} aria-hidden /> done
+                      </span>
+                    )}
+                  </h2>
+                  {unit.exercises.map((ex) => (
+                    <ExerciseCard
+                      key={ex.id}
+                      exercise={ex}
+                      progress={progress}
+                      setProgress={setProgress}
+                    />
+                  ))}
+                </>
+              )}
+              {additional && (
+                <>
+                  <h2 className="unitheading">
+                    Additional exercise {additional.id} — {additional.topic}
+                    {additional.refs && (
+                      <span className="refs"> ({additional.refs})</span>
+                    )}
+                  </h2>
+                  <ExerciseCard
+                    exercise={additional.exercise}
+                    progress={progress}
+                    setProgress={setProgress}
+                  />
+                </>
+              )}
+              {pager && (pager.prev || pager.next) && (
+                <UnitNav prev={pager.prev} next={pager.next} onGo={goTarget} />
+              )}
+            </OverlayScrollbarsComponent>
           </div>
-          <OverlayScrollbarsComponent
-            ref={rightpaneRef}
-            className="rightpane"
-            options={{
-              overflow: { x: "hidden" as const },
-              scrollbars: {
-                theme: "os-theme-dark",
-                autoHide: "leave" as const,
-                autoHideDelay: 500,
-              },
-            }}
-          >
-            {error && <div className="loaderror">{error}</div>}
-            {unit && (
-              <>
-                <h2 className="unitheading">
-                  Unit {unit.unit} — {unit.title}
-                  {isUnitDone && (
-                    <span className="donetag">
-                      <Check size={13} aria-hidden /> done
-                    </span>
-                  )}
-                </h2>
-                {unit.exercises.map((ex) => (
-                  <ExerciseCard key={ex.id} exercise={ex} progress={progress} setProgress={setProgress} />
-                ))}
-              </>
-            )}
-            {additional && (
-              <>
-                <h2 className="unitheading">
-                  Additional exercise {additional.id} — {additional.topic}
-                  {additional.refs && <span className="refs"> ({additional.refs})</span>}
-                </h2>
-                <ExerciseCard exercise={additional.exercise} progress={progress} setProgress={setProgress} />
-              </>
-            )}
-            {pager && (pager.prev || pager.next) && (
-              <UnitNav prev={pager.prev} next={pager.next} onGo={goTarget} />
-            )}
-          </OverlayScrollbarsComponent>
-        </div>
-      )}
+        )}
       </div>
       <ProgressModal
         open={modalOpen || preview !== null}
@@ -714,7 +828,11 @@ function UnitNav({
         type="button"
         className={`unitnavbtn ${side}`}
         onClick={() => onGo(t)}
-        title={side === "prev" ? "Previous unit — " + SC.prevUnit : "Next unit — " + SC.nextUnit}
+        title={
+          side === "prev"
+            ? "Previous unit — " + SC.prevUnit
+            : "Next unit — " + SC.nextUnit
+        }
       >
         {side === "prev" ? (
           <ArrowLeft size={18} strokeWidth={2} aria-hidden />
