@@ -64,7 +64,7 @@ export const SHORTCUT_HELP: HelpEntry[] = [
   {
     keys: ["Shift", "E"],
     title: "Unit list",
-    desc: "Shows the unit list and focuses the current unit. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
+    desc: "Shows the unit list and focuses the current unit. On the landing, where no unit is open, it focuses Unit 1. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
     sub: [
       { keys: ["\u2190"], alt: ["\u2192"], desc: "move to the next or previous unit; at the end of a group you jump to the next group" },
       { keys: ["\u2191"], alt: ["\u2193"], desc: "move to the next or previous group (first unit)" },
@@ -132,7 +132,7 @@ export interface ShortcutDeps {
   goNextUnit(): void; // App computes prev/next from its pager memo
   goPrevUnit(): void;
   focusPagePane(): void; // App bumps the pane focus tick
-  focusUnitPanel(): void; // App focuses the active unit button
+  focusUnitPanel(): void; // App focuses the route's unit (first one on the landing)
   toggleSidebar(): void; // App: burger toggle (no focus move)
   cycleTheme(): void; // App cycles system/light/dark
 }
@@ -146,11 +146,14 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
   const lastFocus = useRef<HTMLElement | null>(null);
 
   // never anchor on the two panes that have their own scoped keys, so
-  // chaining Shift+S then Shift+E still returns to the exercise side
+  // chaining Shift+S then Shift+E still returns to the exercise side; the
+  // body is not a focus location (focus() on it is a no-op), so leaving it
+  // out lets restoreFocus fall back instead of stranding the focus
   const rememberFocus = () => {
     const el = document.activeElement;
     if (
       el instanceof HTMLElement &&
+      el !== document.body &&
       !el.closest(".pageviewer") &&
       !el.closest("nav.sidebar")
     ) {
@@ -312,14 +315,19 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
   return { restoreFocus };
 }
 
-/** Focus the first interactive element of the first exercise in the pane. */
+/**
+ * Focus the first interactive element of the first exercise in the pane.
+ * The landing has no exercises: its call to action takes that place, so
+ * "Esc = go back" from the unit list there returns to the page's own button.
+ */
 export function focusFirstExercise(): void {
-  const first = document
-    .querySelector(".rightpane")
-    ?.querySelector<HTMLElement>(
-      ".exercise textarea, .exercise input, .exercise select, .exercise button",
-    );
-  first?.focus({ preventScroll: true });
+  const target =
+    document
+      .querySelector(".rightpane")
+      ?.querySelector<HTMLElement>(
+        ".exercise textarea, .exercise input, .exercise select, .exercise button",
+      ) ?? document.querySelector<HTMLElement>(".home .homecta");
+  target?.focus({ preventScroll: true });
 }
 
 // sidebar arrow navigation: from nav.sidebar, groups of .unitlink buttons;

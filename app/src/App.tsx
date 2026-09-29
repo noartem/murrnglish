@@ -281,7 +281,7 @@ export default function App() {
     return () => cancelAnimationFrame(raf);
   }, [unit, additional]);
 
-  // keep the active unit button in the upper third of the panel: plain
+  // keep a unit button in the upper third of the panel: plain
   // scrollIntoView("nearest") pinned it to the very bottom edge, and the
   // panel's scrollbars instance re-initializes on mount (twice under
   // StrictMode) right after the list renders, zeroing the scroll again — so
@@ -289,8 +289,7 @@ export default function App() {
   const activeRef = useRef<HTMLButtonElement>(null);
   const sidebarRef = useRef<OverlayScrollbarsComponentRef<"nav">>(null);
   // false while the panel's overlay-scrollbars viewport is not up yet
-  const revealActiveUnit = useCallback((): boolean => {
-    const el = activeRef.current;
+  const revealUnit = useCallback((el: HTMLButtonElement | null): boolean => {
     const vp = sidebarRef.current?.osInstance()?.elements().viewport;
     if (!el || !vp) return false;
     const vpRect = vp.getBoundingClientRect();
@@ -301,6 +300,22 @@ export default function App() {
     const slack = Math.max(0, vpRect.height - elRect.height);
     vp.scrollTop += elRect.top - vpRect.top - slack / 3;
     return true;
+  }, []);
+  const revealActiveUnit = useCallback(
+    (): boolean => revealUnit(activeRef.current),
+    [revealUnit],
+  );
+  // the route's own unit button; the landing has no active unit, so Shift+E
+  // falls back to the first entry of the list there
+  const unitPanelTarget = useCallback((): HTMLButtonElement | null => {
+    return (
+      activeRef.current ??
+      sidebarRef.current
+        ?.osInstance()
+        ?.elements()
+        .viewport?.querySelector<HTMLButtonElement>(".unitlink") ??
+      null
+    );
   }, []);
   const sidebarEvents = useMemo(
     () => ({
@@ -522,11 +537,11 @@ export default function App() {
     goPrevUnit: () => goTarget(pager?.prev ?? null),
     focusPagePane: () => setPaneFocusTick((t) => t + 1),
     focusUnitPanel: () => {
-      const el = activeRef.current;
+      const el = unitPanelTarget();
       if (!el) return;
       // reveal first — focus() alone would scroll the unit to the bottom edge;
       // preventScroll then keeps it where the reveal put it
-      if (revealActiveUnit()) el.focus({ preventScroll: true });
+      if (revealUnit(el)) el.focus({ preventScroll: true });
       else el.focus();
     },
     toggleSidebar,

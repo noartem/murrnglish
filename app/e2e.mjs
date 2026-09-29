@@ -437,6 +437,49 @@ await sleep(200);
 const zr = await mp.locator(".zoomlabel").textContent();
 ok("F8 pinch zoom changes zoom", z00 !== zr, `${z00} -> ${zr}`);
 
+// ---------- Flow 11: Shift+E on the landing opens the unit list ----------
+// The landing has no active unit, so there is nothing for the shortcut to
+// focus the old way; the key must still reveal the collapsed card and land
+// on the first unit, and Esc must bring the focus back to the landing.
+// A bare hash change keeps the previous document (state and focus), so the
+// landing gets a real reload — with the default collapsed card restored.
+await page.evaluate(() =>
+  localStorage.setItem("egu-course-sidebar-collapsed", "1"),
+);
+await page.goto(BASE + "/#home", { waitUntil: "load" });
+await page.reload({ waitUntil: "load" });
+await page.waitForSelector("nav.sidebar .unitlink", { state: "attached", timeout: 30000 });
+await sleep(400);
+ok(
+  "F11 landing shows the collapsed card",
+  (await page.locator(".sidebar.collapsed").count()) === 1,
+);
+await page.keyboard.press("Shift+KeyE");
+await sleep(500);
+const f11 = await page.evaluate(() => {
+  const el = document.activeElement;
+  const card = document.querySelector("nav.sidebar.collapsed");
+  return {
+    inList: el?.closest("nav.sidebar") !== null,
+    text: el?.textContent?.trim() ?? "",
+    opacity: card ? getComputedStyle(card).opacity : null,
+  };
+});
+ok("F11 Shift+E focuses the first unit", f11.inList && f11.text === "1", JSON.stringify(f11));
+ok("F11 the hidden card is revealed", f11.opacity === "1", String(f11.opacity));
+await page.keyboard.press("Escape");
+await sleep(300);
+ok(
+  "F11 Esc returns to the landing CTA",
+  await page.evaluate(() => document.activeElement?.classList.contains("homecta") === true),
+);
+ok(
+  "F11 the card hides again",
+  await page.evaluate(
+    () => getComputedStyle(document.querySelector("nav.sidebar")).opacity === "0",
+  ),
+);
+
 await mctx.close();
 await ctx.close();
 await browser.close();
