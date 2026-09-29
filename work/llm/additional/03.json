@@ -1,0 +1,70 @@
+{
+ "id": 3,
+ "topic": "present continuous",
+ "refs": "Разделы 4–5",
+ "pdfPages": [
+  253
+ ],
+ "exercise": {
+  "id": "3",
+  "type": "write",
+  "instruction": "Напишите предложения, используя слова в скобках.",
+  "items": [
+   {
+    "num": 1,
+    "prompt": "(they / watch / TV)",
+    "answers": [
+     "They’re watching TV."
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "prompt": "(where / she / go?)",
+    "answers": [
+     "Where’s she going?"
+    ],
+    "example": true
+   },
+   {
+    "num": 3,
+    "prompt": "(he / have / a shower)",
+    "answers": [
+     "He’s having a shower.",
+     "He is having a shower."
+    ]
+   },
+   {
+    "num": 4,
+    "prompt": "(the children / play?)",
+    "answers": [
+     "Are the children playing?"
+    ]
+   },
+   {
+    "num": 5,
+    "prompt": "(it / rain?)",
+    "answers": [
+     "Is it raining?"
+    ]
+   },
+   {
+    "num": 6,
+    "prompt": "(they / come / now)",
+    "answers": [
+     "They’re coming now.",
+     "They are coming now."
+    ]
+   },
+   {
+    "num": 7,
+    "prompt": "A: (why / you / stand / here?) B: (I / wait / for somebody)",
+    "answers": [
+     "Why are you standing here?",
+     "I’m waiting for somebody.",
+     "I am waiting for somebody."
+    ]
+   }
+  ]
+ }
+}

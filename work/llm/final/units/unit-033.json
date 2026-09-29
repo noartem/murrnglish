@@ -1,0 +1,390 @@
+{
+ "unit": 33,
+ "title": "should",
+ "pdfPages": [
+  77,
+  78
+ ],
+ "exercises": [
+  {
+   "id": "33.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя you should + глаголы из рамки:",
+   "wordBank": [
+    "eat",
+    "go",
+    "take",
+    "visit",
+    "watch",
+    "wear"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "When you play tennis, ",
+      " the ball."
+     ],
+     "answers": [
+      [
+       "you should watch"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It’s late and you’re very tired ",
+      " to bed."
+     ],
+     "answers": [
+      [
+       "You should go"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " plenty of fruit and vegetables."
+     ],
+     "answers": [
+      [
+       "You should eat"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "If you have time, ",
+      " the Science Museum. It’s very interesting."
+     ],
+     "answers": [
+      [
+       "you should visit"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "When you’re driving, ",
+      " a seat belt."
+     ],
+     "answers": [
+      [
+       "you should wear"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "It’s too far to walk from here to the station. ",
+      " a taxi."
+     ],
+     "answers": [
+      [
+       "You should take"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33.2",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и напишите об этих людях. Используйте He/She shouldn’t ... so ... .",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "She shouldn’t watch TV so much."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "He ",
+      ""
+     ],
+     "answers": [
+      [
+       "shouldn’t eat so much."
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " hard."
+     ],
+     "answers": [
+      [
+       "She shouldn’t work so"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "He shouldn’t drive so fast."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33.3",
+   "type": "fill-in",
+   "instruction": "Вы не можете принять решение и советуетесь с другом. Напишите вопросы с Do you think I should ... ?",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "You are in a shop. You are trying on a jacket. (buy?) You ask your friend: ",
+      ""
+     ],
+     "answers": [
+      [
+       "Do you think I should buy this jacket?"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "You can’t drive. (learn?) You ask your friend: Do you think ",
+      ""
+     ],
+     "answers": [
+      [
+       "I should learn (to drive)?",
+       "I should learn?"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "You don’t like your job. (get another job?) You ask your friend: ",
+      ""
+     ],
+     "answers": [
+      [
+       "Do you think I should get another job?"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "You are going to have a party. (invite Gary?) You ask your friend: ",
+      ""
+     ],
+     "answers": [
+      [
+       "Do you think I should invite Gary (to the party)?",
+       "Do you think I should invite Gary?"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33.4",
+   "type": "write",
+   "instruction": "Напишите предложения с I think … should … и I don’t think … should … .",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "We have to get up early tomorrow. (go home now)",
+     "answers": [
+      "I think we should go home now."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "That coat is too big for you. (buy it)",
+     "answers": [
+      "I don’t think you should buy it."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "You don’t need your car. (sell it)",
+     "answers": [
+      "I think you should sell it."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Karen needs a rest. (have a holiday)",
+     "answers": [
+      "I think she should have a holiday."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Sarah and Dan are too young. (get married)",
+     "answers": [
+      "I con’t think they should get married."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "You’re not well this morning. (go to work)",
+     "answers": [
+      "I don’t think you should go to work."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "James isn’t well today. (go to the doctor)",
+     "answers": [
+      "I think he should go to the doctor."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "The hotel is too expensive for us. (stay there)",
+     "answers": [
+      "I don’t think we should stay there."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33.5",
+   "type": "self-check",
+   "instruction": "Что думаете вы? Напишите предложения с should.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I think",
+     "modelAnswers": [
+      "I think everybody should learn another language."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "I think everybody",
+     "modelAnswers": [
+      "I think everybody should have enough food."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I think",
+     "modelAnswers": [
+      "I think people should drive more carefully."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I don’t think",
+     "modelAnswers": [
+      "I don’t think the police should carry guns."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I think I should",
+     "modelAnswers": [
+      "I think I should take more exercise."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя should. (попробовать = try; шоколад = chocolate; пойти погулять = go for a walk)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Вам стоит попробовать этот торт.",
+     "answers": [
+      "You should try this cake."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Борису не следует так много работать.",
+     "answers": [
+      "Boris shouldn’t work so much.",
+      "Boris shouldn’t work so hard.",
+      "Boris should not work so much.",
+      "Boris should not work so hard."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Когда, по-твоему, нам следует подарить Тому его подарок?",
+     "answers": [
+      "When do you think we should give Tom his present?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Сейчас поздно и тебе нужно лечь спать.",
+     "answers": [
+      "It’s late and you should go to bed.",
+      "It is late and you should go to bed."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Вы думаете, нам нужно купить новую машину?",
+     "answers": [
+      "Do you think we should buy a new car?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Саше не следует есть так много шоколада.",
+     "answers": [
+      "Sasha shouldn’t eat so much chocolate.",
+      "Sasha should not eat so much chocolate."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Думаю, что мне стоит пойти погулять.",
+     "answers": [
+      "I think I should go for a walk."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я не думаю, что тебе следует плавать в реке.",
+     "answers": [
+      "I don’t think you should swim in the river."
+     ]
+    }
+   ]
+  }
+ ]
+}

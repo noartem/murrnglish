@@ -1,0 +1,425 @@
+{
+ "unit": 96,
+ "title": "still · yet · already",
+ "pdfPages": [
+  203,
+  204
+ ],
+ "exercises": [
+  {
+   "id": "96.1",
+   "type": "fill-in",
+   "instruction": "Вы встречаете Тину. Последний раз вы её видели два года назад. Задайте ей вопросы, используя still.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Do you still play the piano?"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Do you ",
+      ""
+     ],
+     "answers": [
+      [
+       "still live in Clare Street?"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Are ",
+      ""
+     ],
+     "answers": [
+      [
+       "you still a student?"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Have you still got a motorbike?",
+       "Do you still have a motorbike?"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Do you still go to the cinema a lot?"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Do you still want to be a teacher?"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "96.2",
+   "type": "fill-in",
+   "instruction": "Напишите по три предложения о каждой ситуации. Сначала внимательно прочитайте примеры.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "(раньше) ",
+      " (still) ",
+      " (yet) "
+     ],
+     "answers": [
+      [
+       "They were waiting for the bus."
+      ],
+      [
+       "They are still waiting."
+      ],
+      [
+       "The bus hasn’t come yet."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "(раньше) He was ",
+      " (still) He ",
+      " (yet) ",
+      " yet."
+     ],
+     "answers": [
+      [
+       "looking for a job."
+      ],
+      [
+       "’s still looking (for a job).",
+       "’s still looking for a job.",
+       "is still looking (for a job).",
+       "is still looking for a job."
+      ],
+      [
+       "He hasn’t found a job"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "(раньше) She ",
+      " asleep. (still) ",
+      " (yet) "
+     ],
+     "answers": [
+      [
+       "was"
+      ],
+      [
+       "She’s still asleep.",
+       "She is still asleep."
+      ],
+      [
+       "She hasn’t woken up yet.",
+       "She isn’t awake yet.",
+       "She hasn’t got up yet.",
+       "She isn’t up yet."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "(раньше) They ",
+      " (still) ",
+      " (yet) "
+     ],
+     "answers": [
+      [
+       "were having dinner.",
+       "were eating."
+      ],
+      [
+       "They’re still having dinner.",
+       "They are still having dinner.",
+       "They’re still eating.",
+       "They are still eating."
+      ],
+      [
+       "They haven’t finished (dinner) yet.",
+       "They haven’t finished dinner yet.",
+       "They haven’t finished eating yet."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "96.3",
+   "type": "fill-in",
+   "instruction": "Напишите вопросы, используя yet.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "You ask her: ",
+      ""
+     ],
+     "answers": [
+      [
+       "Are you ready yet?"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "You ask somebody: ",
+      " Helen ",
+      ""
+     ],
+     "answers": [
+      [
+       "Is",
+       "Has"
+      ],
+      [
+       "here yet?",
+       "arrived yet?",
+       "come yet?"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "You ask her: ",
+      " you ",
+      ""
+     ],
+     "answers": [
+      [
+       "Have"
+      ],
+      [
+       "got your (exam) results yet?",
+       "got your exam results yet?",
+       "had your exam results yet?",
+       "had your (exam) results yet?",
+       "received your exam results yet?",
+       "received your (exam) results yet?"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "You ask him: ",
+      ""
+     ],
+     "answers": [
+      [
+       "Have you decided where to go yet?",
+       "Do you know where you’re going yet?"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "96.4",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте already.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " here."
+     ],
+     "answers": [
+      [
+       "He’s already"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "No, ",
+      " it."
+     ],
+     "answers": [
+      [
+       "they’ve already seen"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "It’s too late. She ",
+      ""
+     ],
+     "answers": [
+      [
+       "’s already gone.",
+       "’s already left.",
+       "has already gone.",
+       "has already left.",
+       "’s already gone",
+       "’s already left",
+       "has already gone",
+       "has already left"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "No, thanks. I ",
+      " one."
+     ],
+     "answers": [
+      [
+       "’ve already got",
+       "already have"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "No, it’s OK. I ",
+      " ."
+     ],
+     "answers": [
+      [
+       "’ve already paid (it)",
+       "’ve already paid it",
+       "have already paid (it)",
+       "have already paid it",
+       "’ve already paid (it).",
+       "’ve already paid it.",
+       "have already paid (it).",
+       "have already paid it."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "No, he ",
+      " . I told him."
+     ],
+     "answers": [
+      [
+       "already knows",
+       "already knows."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "96.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (Заходите! = Come in!)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Супермаркет всё ещё открыт? Нам нужно молоко.",
+     "answers": [
+      "Is the supermarket still open? We need some milk."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вы уже прочитали её новую книгу?",
+     "answers": [
+      "Have you read her new book yet?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Заходите! Игорь и Вера уже здесь.",
+     "answers": [
+      "Come in! Igor and Vera are already here."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Почему Алина всё ещё на работе?",
+     "answers": [
+      "Why is Alina still at work?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "A: Куда вы поедете летом? B: Мы ещё не решили.",
+     "answers": [
+      "A: Where are you going in summer? B: We haven’t decided yet.",
+      "A: Where are you going in summer? B: We have not decided yet."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Ты всё ещё работаешь в больнице?",
+     "answers": [
+      "Do you still work at the hospital?",
+      "Are you still working at the hospital?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "“Я помою машину?” – “Я уже это сделала”.",
+     "answers": [
+      "‘Shall I wash the car?’ ‘I’ve already done it.’",
+      "‘Shall I wash the car?’ ‘I have already done it.’"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "“Нина нашла новую работу?” – “Ещё нет”.",
+     "answers": [
+      "‘Has Nina found a new job?’ ‘Not yet.’"
+     ]
+    }
+   ]
+  }
+ ]
+}

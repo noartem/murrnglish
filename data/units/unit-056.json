@@ -1,25 +1,25 @@
 {
   "unit": 56,
-  "title": "Verb + -ing or to … 1 (remember, regret etc.)",
+  "title": "go to … · go on … · go for … · go -ing",
   "pdfPages": [
-    124,
-    125
+    123,
+    124
   ],
   "exercises": [
     {
       "id": "56.1",
       "type": "fill-in",
-      "instruction": "Put the verb into the correct form, -ing or to … .",
+      "instruction": "Где необходимо, вставьте to/on/for.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "They denied ",
-            " the money. (steal)"
+            "I’m going ",
+            " China next week."
           ],
           "answers": [
             [
-              "stealing"
+              "to"
             ]
           ],
           "example": true
@@ -27,160 +27,161 @@
         {
           "num": 2,
           "parts": [
-            "I don’t enjoy ",
-            " very much. (drive)"
+            "Richard often goes ",
+            " sailing. (без предлога)"
           ],
           "answers": [
             [
-              "driving"
+              "–"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "I can’t afford ",
-            " away. (go)"
+            "Sue went ",
+            " Mexico last year."
           ],
           "answers": [
             [
-              "to go"
+              "to"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Have you ever considered ",
-            " to live in another country? (go)"
+            "Jack goes ",
+            " jogging every morning."
           ],
           "answers": [
             [
-              "going"
+              "–"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "We were unlucky to lose the game. We played well and deserved ",
-            ". (win)"
+            "I’m going out ",
+            " a walk. Do you want to come?"
           ],
           "answers": [
             [
-              "to win"
+              "for"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Why do you keep ",
-            " me questions? Leave me alone! (ask)"
+            "I’m tired because I went ",
+            " bed very late last night."
           ],
           "answers": [
             [
-              "asking"
+              "to"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Please stop ",
-            " me questions! (ask)"
+            "Mark is going ",
+            " holiday ",
+            " Italy next week."
           ],
           "answers": [
             [
-              "asking"
+              "on"
+            ],
+            [
+              "to"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I refuse ",
-            " any more questions. (answer)"
+            "The weather was warm and the river was clean, so we went ",
+            " a swim."
           ],
           "answers": [
             [
-              "to answer"
+              "for"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "The driver of one of the cars admitted ",
-            " the accident. (cause)"
+            "The taxi drivers went ",
+            " strike when I was in New York."
           ],
           "answers": [
             [
-              "causing"
+              "on"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "Mark needed our help, and we promised ",
-            " what we could. (do)"
+            "Let’s go ",
+            " the cinema this evening?"
           ],
           "answers": [
             [
-              "to do"
+              "to"
             ]
           ]
         },
         {
           "num": 11,
           "parts": [
-            "I don’t mind ",
-            " alone, but I’d rather be with other people. (be)"
+            "It’s late. I have to go ",
+            " home now."
           ],
           "answers": [
             [
-              "being"
+              "–"
             ]
           ]
         },
         {
           "num": 12,
           "parts": [
-            "The wall was quite high, but I managed ",
-            " over it. (climb)"
+            "Would you like to go ",
+            " a tour of the city?"
           ],
           "answers": [
             [
-              "to climb"
+              "on"
             ]
           ]
         },
         {
           "num": 13,
           "parts": [
-            "Sarah doesn’t know about the meeting. I forgot ",
-            " her. (tell)"
+            "Shall we go out ",
+            " dinner this evening?"
           ],
           "answers": [
             [
-              "to tell"
+              "for"
             ]
           ]
         },
         {
           "num": 14,
           "parts": [
-            "I’ve enjoyed ",
-            " to you. I hope ",
-            " you again soon. (talk, see)"
+            "My parents are going ",
+            " a cruise this summer."
           ],
           "answers": [
             [
-              "talking"
-            ],
-            [
-              "to see"
+              "on"
             ]
           ]
         }
@@ -188,50 +189,81 @@
     },
     {
       "id": "56.2",
-      "type": "write",
-      "instruction": "Tom can remember some things about his childhood, but he can’t remember others. Write sentences with He remembers … or He doesn’t remember … .",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и допишите предложения. Используйте go/goes/going/went + -ing.",
       "items": [
         {
           "num": 1,
-          "prompt": "He was in hospital when he was a small child. He can still remember this.",
+          "parts": [
+            "Richard has a boat. He often ",
+            "."
+          ],
           "answers": [
-            "He remembers being in hospital when he was a small child."
-          ]
+            [
+              "goes sailing"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "He cried on his first day at school. He doesn’t remember this.",
+          "parts": [
+            "Last Saturday Emily went ",
+            "."
+          ],
           "answers": [
-            "He doesn’t remember crying on his first day at school."
+            [
+              "fishing",
+              "went fishing"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "Once he fell into the river. He remembers this.",
+          "parts": [
+            "Dan ",
+            " every day."
+          ],
           "answers": [
-            "He remembers falling into the river."
+            [
+              "goes swimming"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "He said he wanted to be a doctor. He doesn’t remember this.",
+          "parts": [
+            "Jessica is going on holiday next month. She is ",
+            "."
+          ],
           "answers": [
-            "He doesn’t remember saying he wanted to be a doctor.",
-            "He doesn’t remember wanting to be a doctor."
+            [
+              "going skiing"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "Once he was bitten by a dog. He doesn’t remember this.",
+          "parts": [
+            "Peter is going out later. He has to ",
+            "."
+          ],
           "answers": [
-            "He doesn’t remember being bitten by a dog."
+            [
+              "go shopping"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "His sister was born when he was four. He remembers this.",
+          "parts": [
+            "Sarah ",
+            " after work yesterday."
+          ],
           "answers": [
-            "He remembers his sister being born (when he was four)."
+            [
+              "went jogging"
+            ]
           ]
         }
       ]
@@ -239,170 +271,218 @@
     {
       "id": "56.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences with a suitable verb in the correct form, -ing or to … .",
+      "instruction": "Заполните пропуски, используя слова из рамки. Где необходимо, вставьте to/on/for.",
+      "wordBank": [
+        "a swim",
+        "holiday",
+        "Portugal",
+        "shopping",
+        "sleep",
+        "a walk",
+        "home",
+        "riding",
+        "skiing",
+        "university"
+      ],
       "items": [
         {
-          "num": "1b",
+          "num": 1,
           "parts": [
-            "He says we’ve met before, but I don’t remember ",
-            " him."
+            "The water looks nice. Let’s go ",
+            "."
           ],
           "answers": [
             [
-              "meeting"
+              "for a swim"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "After leaving school, Tina went ",
+            " where she studied psychology."
+          ],
+          "answers": [
+            [
+              "to university"
             ]
           ]
         },
         {
-          "num": "1c",
+          "num": 3,
           "parts": [
-            "Someone must have taken my bag. I clearly remember ",
-            " it by the window and now it isn’t there."
+            "I’m going ",
+            " now. I have to buy a few things."
           ],
           "answers": [
             [
-              "leaving",
-              "putting"
+              "shopping"
             ]
           ]
         },
         {
-          "num": "1d",
+          "num": 4,
           "parts": [
-            "When you see Steve, remember ",
-            " hello to him from me."
+            "I was very tired last night. I sat down in an armchair and went ",
+            "."
           ],
           "answers": [
             [
-              "to say"
+              "to sleep"
             ]
           ]
         },
         {
-          "num": "1e",
+          "num": 5,
           "parts": [
-            "Did I? Are you sure? I don’t remember ",
-            " you any money."
+            "I wasn’t enjoying the party, so I went ",
+            " early."
           ],
           "answers": [
             [
-              "lending"
+              "home"
             ]
           ]
         },
         {
-          "num": "1f",
+          "num": 6,
           "parts": [
-            "Did you remember ",
-            " your sister?"
+            "We live near the mountains. In winter we go ",
+            " most weekends."
           ],
           "answers": [
             [
-              "to call",
-              "to phone"
+              "skiing"
             ]
           ]
         },
         {
-          "num": "2a",
+          "num": 7,
           "parts": [
-            "The course I did wasn’t very good, but I don’t regret ",
-            " it."
+            "Robert has got a horse. He goes ",
+            " a lot."
           ],
           "answers": [
             [
-              "doing"
+              "riding"
             ]
           ]
         },
         {
-          "num": "2b",
+          "num": 8,
           "parts": [
-            "I knew they were in trouble, but I regret ",
-            " I did nothing to help them."
+            "The weather is nice. Shall we go ",
+            " along the river?"
           ],
           "answers": [
             [
-              "to say"
+              "for a walk"
             ]
           ]
         },
         {
-          "num": "2c",
+          "num": 9,
           "parts": [
-            "It started to get cold, and he regretted not ",
-            " his coat."
+            "A: Are you going ",
+            " soon? B: Yes, next month. We’re going ",
+            ". We’ve never been there before."
           ],
           "answers": [
             [
-              "wearing",
-              "having",
-              "taking",
-              "putting on"
+              "on holiday"
+            ],
+            [
+              "to Portugal"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "56.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя go в нужной форме.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "В четверг я еду в Лондон.",
+          "answers": [
+            "I’m going to London on Thursday.",
+            "On Thursday I’m going to London."
           ]
         },
         {
-          "num": "2d",
-          "parts": [
-            "I now regret ",
-            " my job. It was a big mistake."
-          ],
+          "num": 2,
+          "prompt": "В прошлом году Джесс ездила в отпуск в Америку.",
           "answers": [
-            [
-              "leaving",
-              "giving up"
-            ]
+            "Jess went on holiday to America last year.",
+            "Last year Jess went on holiday to America."
           ]
         },
         {
-          "num": "3a",
-          "parts": [
-            "Ben joined the company nine years ago. He became assistant manager after two years, and a few years later he went on ",
-            " manager of the company."
-          ],
+          "num": 3,
+          "prompt": "Я хотела бы погулять в парке.",
           "answers": [
-            [
-              "to become"
-            ]
+            "I’d like to go for a walk in the park.",
+            "I would like to go for a walk in the park."
           ]
         },
         {
-          "num": "3b",
-          "parts": [
-            "I can’t go on ",
-            " here any more. I want a different job."
-          ],
+          "num": 4,
+          "prompt": "Олег ездит на рыбалку каждые выходные.",
           "answers": [
-            [
-              "working"
-            ]
+            "Oleg goes fishing every weekend.",
+            "Every weekend Oleg goes fishing."
           ]
         },
         {
-          "num": "3c",
-          "parts": [
-            "When I came into the room, Lisa was reading a book. She looked up and said hello, and then went on ",
-            " her book."
-          ],
+          "num": 5,
+          "prompt": "Как часто ты ходишь по магазинам?",
           "answers": [
-            [
-              "reading"
-            ]
+            "How often do you go shopping?"
           ]
         },
         {
-          "num": "3d",
-          "parts": [
-            "Food prices have gone up again. How are we going to manage if prices go on ",
-            "?"
-          ],
+          "num": 6,
+          "prompt": "Бен и Ирина уехали кататься на лыжах в Австрии.",
           "answers": [
-            [
-              "going up",
-              "rising",
-              "increasing"
-            ]
+            "Ben and Irina have gone skiing in Austria."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вчера учителя объявили забастовку.",
+          "answers": [
+            "The teachers went on strike yesterday.",
+            "Yesterday, the teachers went on strike."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "После концерта мы пошли домой.",
+          "answers": [
+            "We went home after the concert.",
+            "After the concert, we went home."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Давайте сходим выпьем кофе.",
+          "answers": [
+            "Let’s go for coffee.",
+            "Let’s go for a coffee."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Завтра я иду к врачу.",
+          "answers": [
+            "I’m going to the doctor’s tomorrow.",
+            "I’m going to the doctor tomorrow.",
+            "Tomorrow I’m going to the doctor’s.",
+            "Tomorrow I’m going to the doctor."
           ]
         }
       ]

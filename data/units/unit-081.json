@@ -1,288 +1,32 @@
 {
   "unit": 81,
-  "title": "-’s (your sister’s name) and of … (the name of the book)",
+  "title": "every и all",
   "pdfPages": [
-    174,
-    175
+    173,
+    174
   ],
   "exercises": [
     {
       "id": "81.1",
-      "type": "write",
-      "instruction": "In some of these sentences, it is more natural to use -’s or -’. Change the underlined parts where necessary.",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "Who is the owner of this restaurant?",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "How old are the children of Chris?",
-          "answers": [
-            "Chris’s children"
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "Is this the umbrella of your friend?",
-          "answers": [
-            "your friend’s umbrella"
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "Write your name at the top of the page.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "I’ve never met the daughter of James.",
-          "answers": [
-            "James’s daughter"
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "How old is the son of Helen and Andy?",
-          "answers": [
-            "Helen and Andy’s son"
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "We don’t know the cause of the problem.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "I don’t know the words of this song.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 9,
-          "prompt": "The friends of your children are here.",
-          "answers": [
-            "Your children’s friends"
-          ]
-        },
-        {
-          "num": 10,
-          "prompt": "What is the cost of a new washing machine?",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 11,
-          "prompt": "The garden of our neighbours is very small.",
-          "answers": [
-            "Our neighbours’ garden"
-          ]
-        },
-        {
-          "num": 12,
-          "prompt": "The hair of David is very long.",
-          "answers": [
-            "David’s hair"
-          ]
-        },
-        {
-          "num": 13,
-          "prompt": "I work on the ground floor of the building.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 14,
-          "prompt": "I couldn’t go to the party of my best friend.",
-          "answers": [
-            "my best friend’s party"
-          ]
-        },
-        {
-          "num": 15,
-          "prompt": "George is the brother of somebody I knew at college.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 16,
-          "prompt": "Have you seen the car of the parents of Ben?",
-          "answers": [
-            "Ben’s parents’ car"
-          ]
-        },
-        {
-          "num": 17,
-          "prompt": "What is the meaning of this expression?",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 18,
-          "prompt": "Do you agree with the policy of the government?",
-          "answers": [
-            "OK"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "81.2",
-      "type": "choice",
-      "instruction": "Which is right?",
-      "items": [
-        {
-          "num": 1,
-          "options": [
-            "cat",
-            "cat’s",
-            "cats’"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 2,
-          "options": [
-            "father",
-            "father’s",
-            "fathers’"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 3,
-          "options": [
-            "apples",
-            "apple’s",
-            "apples’"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 4,
-          "options": [
-            "Children",
-            "Children’s",
-            "Childrens’"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 5,
-          "options": [
-            "Switzerland",
-            "Switzerland’s",
-            "Switzerlands’"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 6,
-          "options": [
-            "parents",
-            "parent’s",
-            "parents’"
-          ],
-          "answer": 2
-        },
-        {
-          "num": 7,
-          "options": [
-            "photos",
-            "photo’s",
-            "photos’"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 8,
-          "options": [
-            "someone else",
-            "someone else’s",
-            "someone elses’"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 9,
-          "options": [
-            "Shakespeare",
-            "Shakespeare’s",
-            "Shakespeares’"
-          ],
-          "answer": 1
-        }
-      ]
-    },
-    {
-      "id": "81.3",
-      "type": "write",
-      "instruction": "Read each sentence and write a new sentence beginning with the underlined words.",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "The meeting tomorrow has been cancelled.",
-          "answers": [
-            "Tomorrow’s meeting has been cancelled."
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "The storm last week caused a lot of damage.",
-          "answers": [
-            "Last week’s storm caused a lot of damage."
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "The only cinema in the town has closed down.",
-          "answers": [
-            "The town’s only cinema has closed down."
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "The weather in Britain is very changeable.",
-          "answers": [
-            "Britain’s weather is very changeable."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "Tourism is the main industry in the region.",
-          "answers": [
-            "The region’s main industry is tourism."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "81.4",
       "type": "fill-in",
-      "instruction": "Use the information given to complete the sentences.",
+      "instruction": "Заполните пропуски. Используйте every + слова из рамки:",
+      "wordBank": [
+        "day",
+        "room",
+        "student",
+        "time",
+        "word"
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "If I leave my house at 9 o’clock and drive to the airport, I arrive at about 11. So it’s about ",
-            " from my house to the airport. (drive)"
+            "",
+            " in the class passed the exam."
           ],
           "answers": [
             [
-              "two hours’ drive"
+              "Every student"
             ]
           ],
           "example": true
@@ -290,40 +34,540 @@
         {
           "num": 2,
           "parts": [
-            "If I leave my house at 8.40 and walk to the centre, I get there at 9 o’clock. So it’s ",
-            " from my house to the centre. (walk)"
+            "My job is very boring. ",
+            " is the same."
           ],
           "answers": [
             [
-              "twenty minutes’ walk"
+              "Every day"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I’m going on holiday on the 12th. I have to be back at work on the 26th. So I’ve got ",
-            ". (holiday)"
+            "Kate is a very good tennis player. When we play, she wins ",
+            "."
           ],
           "answers": [
             [
-              "two weeks’ holiday",
-              "fourteen days’ holiday",
-              "a fortnight’s holiday"
+              "every time"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I went to sleep at 3 o’clock this morning and woke up an hour later. After that I couldn’t sleep. So last night I only had ",
-            ". (sleep)"
+            "",
+            " in the hotel has free wi-fi and a minibar."
           ],
           "answers": [
             [
-              "an hour’s sleep",
-              "one hour’s sleep"
+              "Every room"
             ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "'Did you understand what she said?' 'Most of it, but not ",
+            ".'"
+          ],
+          "answers": [
+            [
+              "every word"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81.2",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте every day или all day.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Yesterday it rained ",
+            "."
+          ],
+          "answers": [
+            [
+              "all day"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I buy a newspaper ",
+            ", but sometimes I don’t read it."
+          ],
+          "answers": [
+            [
+              "every day"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I’m not going out tomorrow. I’ll be at home ",
+            "."
+          ],
+          "answers": [
+            [
+              "all day"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I usually drink about four cups of coffee ",
+            "."
+          ],
+          "answers": [
+            [
+              "every day"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Paula was ill yesterday, so she stayed in bed ",
+            "."
+          ],
+          "answers": [
+            [
+              "all day"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I’m tired now because I’ve been working hard ",
+            "."
+          ],
+          "answers": [
+            [
+              "all day"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Last year we went to the seaside for a week, and it rained ",
+            "."
+          ],
+          "answers": [
+            [
+              "every day"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81.3",
+      "type": "fill-in",
+      "instruction": "Вставьте every или all.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Bill watches TV for about two hours ",
+            " evening."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Julia gets up at 6.30 ",
+            " morning."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The weather was nice yesterday, so we sat outside ",
+            " afternoon."
+          ],
+          "answers": [
+            [
+              "all"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I’m going away on Monday. I’ll be away ",
+            " week."
+          ],
+          "answers": [
+            [
+              "all"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "'How often do you go skiing?' '",
+            " year. Usually in March.'"
+          ],
+          "answers": [
+            [
+              "Every"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "A: Were you at home at 10 o’clock yesterday?\nB: Yes, I was at home ",
+            " morning. I went out after lunch."
+          ],
+          "answers": [
+            [
+              "all"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "My sister loves new cars. She buys one ",
+            " year."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I saw Sam at the party, but he didn’t speak to me ",
+            " evening."
+          ],
+          "answers": [
+            [
+              "all"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "We go away on holiday for two or three weeks ",
+            " summer."
+          ],
+          "answers": [
+            [
+              "every"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81.4",
+      "type": "fill-in",
+      "instruction": "Вставьте everybody/everything/everywhere.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " needs friends."
+          ],
+          "answers": [
+            [
+              "Everybody"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Chris knows ",
+            " about computers."
+          ],
+          "answers": [
+            [
+              "everything"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I like the people here. ",
+            " is very friendly."
+          ],
+          "answers": [
+            [
+              "Everybody",
+              "Everyone"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This is a nice hotel. It’s comfortable and ",
+            " is very clean."
+          ],
+          "answers": [
+            [
+              "everything"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Kevin never uses his car. He goes ",
+            " by motorcycle."
+          ],
+          "answers": [
+            [
+              "everywhere"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Let’s get something to eat. ",
+            " is hungry."
+          ],
+          "answers": [
+            [
+              "Everybody",
+              "Everyone"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Sue’s house is full of books. There are books ",
+            "."
+          ],
+          "answers": [
+            [
+              "everywhere"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "You are right. ",
+            " you say is true."
+          ],
+          "answers": [
+            [
+              "Everything"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81.5",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, вставив только по одному слову.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Everybody ",
+            " problems."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Are you ready yet? Everybody ",
+            " waiting for you."
+          ],
+          "answers": [
+            [
+              "is"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The house is empty. Everyone ",
+            " gone out."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Gary is very popular. Everybody ",
+            " him."
+          ],
+          "answers": [
+            [
+              "likes"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "This town is completely different now. Everything ",
+            " changed."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I got home very late last night. I came in quietly because everyone ",
+            " asleep."
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Everybody ",
+            " mistakes!"
+          ],
+          "answers": [
+            [
+              "makes"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "A: ",
+            " everything clear? ",
+            " everybody know what to do?\nB: Yes, we all understand."
+          ],
+          "answers": [
+            [
+              "Is"
+            ],
+            [
+              "Does"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (деревня = village)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Роберт и Полли ездят в Португалию каждое лето.",
+          "answers": [
+            "Robert and Polly go to Portugal every summer."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "В моём офисе мне все нравятся.",
+          "answers": [
+            "I like everyone in my office.",
+            "I like everybody in my office."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Было солнечно все выходные.",
+          "answers": [
+            "It was sunny all weekend."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Я везде искал свой паспорт.",
+          "answers": [
+            "I looked for my passport everywhere.",
+            "I’ve looked for my passport everywhere.",
+            "I looked everywhere for my passport.",
+            "I’ve looked everywhere for my passport."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Алан всегда всё знает.",
+          "answers": [
+            "Alan always knows everything."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Каждое утро я пью чашку кофе.",
+          "answers": [
+            "I have a cup of coffee every morning.",
+            "Every morning I have a cup of coffee."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Шёл дождь, поэтому мы были дома весь день.",
+          "answers": [
+            "It was raining, so we were at home all day.",
+            "It was raining, so we stayed at home all day."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Все магазины в деревне были закрыты.",
+          "answers": [
+            "All the shops in the village were closed."
           ]
         }
       ]

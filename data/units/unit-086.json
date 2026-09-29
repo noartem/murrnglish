@@ -1,184 +1,50 @@
 {
   "unit": 86,
-  "title": "no/none/any nothing/nobody etc.",
+  "title": "old/nice/interesting и т. д. (прилагательные)",
   "pdfPages": [
-    184,
-    185
+    183,
+    184
   ],
   "exercises": [
     {
       "id": "86.1",
-      "type": "fill-in",
-      "instruction": "Complete these sentences with no, none or any.",
+      "type": "write",
+      "instruction": "Составьте предложения, соблюдая правильный порядок слов.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "It was a public holiday, so there were ",
-            " shops open."
-          ],
+          "prompt": "(new / live in / house / they / a)",
           "answers": [
-            [
-              "no"
-            ]
+            "They live in a new house."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "I don’t have ",
-            " money. Can you lend me some?"
-          ],
+          "prompt": "(like / jacket / I / that / green)",
           "answers": [
-            [
-              "any"
-            ]
-          ],
-          "example": true
+            "I like that green jacket."
+          ]
         },
         {
           "num": 3,
-          "parts": [
-            "We had to walk home. There were ",
-            " taxis."
-          ],
+          "prompt": "(music / like / do / classical / you?)",
           "answers": [
-            [
-              "no"
-            ]
+            "Do you like classical music?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "We had to walk home. There weren’t ",
-            " taxis."
-          ],
+          "prompt": "(had / wonderful / a / I / holiday)",
           "answers": [
-            [
-              "any"
-            ]
+            "I had a wonderful holiday."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "‘How many eggs do we have?’ ‘",
-            ". Shall I get some?’"
-          ],
+          "prompt": "(went to / restaurant / a / Japanese / we)",
           "answers": [
-            [
-              "None"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "There’s nowhere to cross the river. There’s ",
-            " bridge."
-          ],
-          "answers": [
-            [
-              "no"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "We took a few pictures, but ",
-            " of them were very good."
-          ],
-          "answers": [
-            [
-              "none"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "‘Did you take lots of pictures?’ ‘No, I didn’t take ",
-            ".’"
-          ],
-          "answers": [
-            [
-              "any"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I had to do what I did. I had ",
-            " alternative."
-          ],
-          "answers": [
-            [
-              "no"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "I don’t like ",
-            " of this furniture. It’s horrible."
-          ],
-          "answers": [
-            [
-              "any"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "We cancelled the party because ",
-            " of the people we invited were able to come."
-          ],
-          "answers": [
-            [
-              "none"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "Everyone knows they are getting married. It’s ",
-            " secret."
-          ],
-          "answers": [
-            [
-              "no"
-            ]
-          ]
-        },
-        {
-          "num": 13,
-          "parts": [
-            "The two books are exactly the same. There isn’t ",
-            " difference."
-          ],
-          "answers": [
-            [
-              "any"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "‘Do you know where Chris is?’ ‘I’m sorry. I have ",
-            " idea.’"
-          ],
-          "answers": [
-            [
-              "no"
-            ]
+            "We went to a Japanese restaurant."
           ]
         }
       ]
@@ -186,126 +52,130 @@
     {
       "id": "86.2",
       "type": "fill-in",
-      "instruction": "Answer these questions using none/nobody/nothing/nowhere.",
+      "instruction": "Слова в рамке – прилагательные (black/foreign и т. д.) и существительные (air/job и т. д.). Заполните пропуски в предложениях, используя в каждом из них одно прилагательное и одно существительное.",
+      "wordBank": [
+        "air",
+        "clouds",
+        "foreign",
+        "holiday",
+        "job",
+        "languages",
+        "sharp",
+        "black",
+        "dangerous",
+        "fresh",
+        "hot",
+        "knife",
+        "long",
+        "water"
+      ],
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "‘Who are you waiting for?’ ‘",
-            ". I’m just standing here.’"
+            "Do you speak any ",
+            " ?"
           ],
           "answers": [
             [
-              "Nobody",
-              "No-one"
+              "foreign languages"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Look at those ",
+            " ",
+            " . It’s going to rain."
+          ],
+          "answers": [
+            [
+              "black"
+            ],
+            [
+              "clouds"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "‘How much bread did you buy?’ ‘",
-            ". We already have enough.’"
+            "Sue works very hard, and she’s very tired. She needs a ",
+            " ",
+            " ."
           ],
           "answers": [
             [
-              "None"
+              "long"
+            ],
+            [
+              "holiday"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "‘Where are you going?’ ‘",
-            ". I’m staying here.’"
+            "I would like to have a shower, but there’s no ",
+            " ",
+            " ."
           ],
           "answers": [
             [
-              "Nowhere"
+              "hot"
+            ],
+            [
+              "water"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "‘How many books have you read this year?’ ‘",
-            ". I don’t read books.’"
+            "Can you open the window? We need some ",
+            " ",
+            " ."
           ],
           "answers": [
             [
-              "None"
+              "fresh"
+            ],
+            [
+              "air"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "‘How much does it cost to get into the museum?’ ‘",
-            ". It’s free.’"
+            "I need a ",
+            " ",
+            " to cut these onions."
           ],
           "answers": [
             [
-              "Nothing"
+              "sharp"
+            ],
+            [
+              "knife"
             ]
           ]
         },
         {
-          "num": 8,
+          "num": 7,
           "parts": [
-            "I’m ",
-            " waiting for anybody/anyone."
+            "Fire-fighting is a ",
+            " ",
+            " ."
           ],
           "answers": [
             [
-              "not"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I ",
-            " bought any (bread)."
-          ],
-          "answers": [
+              "dangerous"
+            ],
             [
-              "didn’t"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "I’m not going ",
-            "."
-          ],
-          "answers": [
-            [
-              "anywhere"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "I haven’t read ",
-            " (books)."
-          ],
-          "answers": [
-            [
-              "any"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "It doesn’t cost ",
-            "."
-          ],
-          "answers": [
-            [
-              "anything"
+              "job"
             ]
           ]
         }
@@ -314,17 +184,31 @@
     {
       "id": "86.3",
       "type": "fill-in",
-      "instruction": "Complete these sentences with no- or any- + -body/-thing/-where.",
+      "instruction": "Что говорят эти люди? Используйте слова из обеих рамок.",
+      "wordBank": [
+        "feel(s)",
+        "look(s)",
+        "sound(s)",
+        "look(s)",
+        "smell(s)",
+        "taste(s)",
+        "happy",
+        "ill",
+        "nice",
+        "horrible",
+        "new",
+        "surprised"
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I don’t want ",
-            " to drink. I’m not thirsty."
+            "You ",
+            "."
           ],
           "answers": [
             [
-              "anything"
+              "sound happy"
             ]
           ],
           "example": true
@@ -332,107 +216,60 @@
         {
           "num": 2,
           "parts": [
-            "The bus was completely empty. There was ",
-            " on it."
+            "It ",
+            "."
           ],
           "answers": [
             [
-              "nobody",
-              "no-one"
+              "looks new"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "‘Where did you go for your holidays?’ ‘",
-            ". I didn’t go away.’"
+            "I ",
+            "."
           ],
           "answers": [
             [
-              "Nowhere"
+              "feel ill"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "‘Can you smell gas?’ ‘No, I can’t smell ",
-            ".’"
+            "You ",
+            "."
           ],
           "answers": [
             [
-              "anything"
+              "look surprised"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Everybody seemed satisfied. ",
-            " complained."
+            "They ",
+            "."
           ],
           "answers": [
             [
-              "Nobody",
-              "No-one"
+              "smell nice"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Let’s go away. We can go ",
-            " you like."
-          ],
-          "answers": [
-            [
-              "anywhere"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "The town is still the same as it was years ago. ",
-            " has changed."
-          ],
-          "answers": [
-            [
-              "Nothing"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "‘What did you buy?’ ‘",
-            ". I couldn’t find ",
-            " I wanted.’"
-          ],
-          "answers": [
-            [
-              "Nothing"
-            ],
-            [
-              "anything"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "There was complete silence in the room. ",
-            " said ",
+            "It ",
             "."
           ],
           "answers": [
             [
-              "Nobody",
-              "No-one"
-            ],
-            [
-              "anything"
+              "tastes horrible"
             ]
           ]
         }
@@ -440,80 +277,152 @@
     },
     {
       "id": "86.4",
-      "type": "choice",
-      "instruction": "Which is right?",
+      "type": "fill-in",
+      "instruction": "У Анны и Бена разные мнения. Закончите реплики Бена. Используйте feel/look и т. д.",
       "items": [
         {
           "num": 1,
-          "options": [
-            "She didn’t tell nobody",
-            "She didn’t tell anybody"
+          "parts": [
+            "Do I? I ",
+            ". (feel)"
           ],
-          "answer": 1
+          "answers": [
+            [
+              "don’t feel tired"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "options": [
-            "nobody was seriously injured",
-            "anybody was seriously injured"
+          "parts": [
+            "Is it? It doesn’t ",
+            ". (look)"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "look new"
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "I couldn’t see no-one",
-            "I couldn’t see anyone"
+          "parts": [
+            "Are you? You ",
+            ". (sound)"
           ],
-          "answer": 1
+          "answers": [
+            [
+              "don’t sound American"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "Nobody can pass it",
-            "Anybody can pass it"
+          "parts": [
+            "Do I? I ",
+            ". (feel)"
           ],
-          "answer": 1
+          "answers": [
+            [
+              "don’t feel cold"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "Nothing. It’s empty.",
-            "Anything. It’s empty."
+          "parts": [
+            "Are they? They ",
+            ". (look)"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "don’t look heavy"
+            ]
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "Nothing is possible.",
-            "Anything is possible."
+          "parts": [
+            "Maybe, but it ",
+            ". (taste)"
           ],
-          "answer": 1
+          "answers": [
+            [
+              "doesn’t taste good"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "86.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Вчера я смотрела очень интересный фильм.",
+          "answers": [
+            "I watched a very interesting film yesterday.",
+            "Yesterday I watched a very interesting film."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Пожалуйста, тихо. Том спит.",
+          "answers": [
+            "Please be quiet. Tom is asleep.",
+            "Please be quiet. Tom is sleeping."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "В вашем саду много красивых цветов!",
+          "answers": [
+            "There are a lot of beautiful flowers in your garden!",
+            "There are many beautiful flowers in your garden!"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Тебе нравится индийская пища?",
+          "answers": [
+            "Do you like Indian food?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Ужин пахнет замечательно!",
+          "answers": [
+            "Dinner smells great!",
+            "Dinner smells wonderful!",
+            "Dinner smells delicious!"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Не ходи туда. Это опасно.",
+          "answers": [
+            "Don’t go there. It’s dangerous."
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "I don’t know nothing about economics.",
-            "I don’t know anything about economics."
-          ],
-          "answer": 1
+          "prompt": "Моя работа не очень трудная.",
+          "answers": [
+            "My job isn’t very difficult.",
+            "My job is not very difficult."
+          ]
         },
         {
           "num": 8,
-          "options": [
-            "I’ll try and answer no questions you ask me.",
-            "I’ll try and answer any questions you ask me."
-          ],
-          "answer": 1
-        },
-        {
-          "num": 9,
-          "options": [
-            "No-one. I wasn’t talking to no-one.",
-            "No-one. I wasn’t talking to anyone."
-          ],
-          "answer": 1
+          "prompt": "Я рада, что Салли и Том счастливы вместе.",
+          "answers": [
+            "I’m glad that Sally and Tom are happy together.",
+            "I’m glad Sally and Tom are happy together.",
+            "I’m glad (that) Sally and Tom are happy together."
+          ]
         }
       ]
     }

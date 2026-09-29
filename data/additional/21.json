@@ -1,72 +1,88 @@
 {
   "id": 21,
-  "topic": "if (conditional)",
-  "refs": "Units 25, 38–40",
-  "pdfPages": [326],
+  "topic": "present perfect и past simple",
+  "refs": "Разделы 19–21",
+  "pdfPages": [
+    261
+  ],
   "exercise": {
     "id": "21",
-    "type": "self-check",
-    "instruction": "Use your own ideas to complete the sentences.",
+    "type": "fill-in",
+    "instruction": "Present perfect или past simple? Допишите предложения.",
     "items": [
       {
         "num": 1,
-        "prompt": "I'd go out tonight if",
-        "modelAnswers": ["I wasn't feeling so tired"]
+        "parts": [
+          "A: Have you been to France? B: Yes, many times. A: When ",
+          " the last time? B: Two years ago."
+        ],
+        "answers": [
+          [
+            "was",
+            "did you go"
+          ]
+        ]
       },
       {
         "num": 2,
-        "prompt": "I'd have gone out last night if",
-        "modelAnswers": ["I hadn't had so much to do"]
+        "parts": [
+          "A: How long ",
+          " it? B: It’s new. I ",
+          " it yesterday."
+        ],
+        "answers": [
+          [
+            "have you had"
+          ],
+          [
+            "bought",
+            "got"
+          ]
+        ]
       },
       {
         "num": 3,
-        "prompt": "If you hadn't reminded me,",
-        "modelAnswers": ["I would have forgotten Amy's birthday"]
+        "parts": [
+          "A: How long ",
+          " there? B: Five years. Before that ",
+          " in Mill Road. A: How long ",
+          " in Mill Road? B: About three years."
+        ],
+        "answers": [
+          [
+            "have you lived",
+            "have you been",
+            "have you been living"
+          ],
+          [
+            "we lived"
+          ],
+          [
+            "did you live"
+          ]
+        ]
       },
       {
         "num": 4,
-        "prompt": "If I had more free time,",
-        "modelAnswers": ["I'd probably waste it"]
-      },
-      {
-        "num": 5,
-        "prompt": "If you give me the camera,",
-        "modelAnswers": ["I'll take a picture of you"]
-      },
-      {
-        "num": 6,
-        "prompt": "Who would you phone if",
-        "modelAnswers": ["you were in trouble"]
-      },
-      {
-        "num": 7,
-        "prompt": "We wouldn't have been late if",
-        "modelAnswers": ["you hadn't taken so long to get ready"]
-      },
-      {
-        "num": 8,
-        "prompt": "If I'd been able to get a ticket,",
-        "modelAnswers": ["I would have gone to the concert"]
-      },
-      {
-        "num": 9,
-        "prompt": "If I'd done better at the interview,",
-        "modelAnswers": ["I might have got the job"]
-      },
-      {
-        "num": 10,
-        "prompt": "You wouldn't be hungry now if",
-        "modelAnswers": ["you'd eaten lunch"]
-      },
-      {
-        "num": 11,
-        "prompt": "Cities would be nicer places if",
-        "modelAnswers": ["there was less traffic"]
-      },
-      {
-        "num": 12,
-        "prompt": "If there was no internet,",
-        "modelAnswers": ["it would be harder to get information"]
+        "parts": [
+          "A: How long ",
+          " there? B: Nearly two years. A: What ",
+          " before that? B: I ",
+          " a taxi driver."
+        ],
+        "answers": [
+          [
+            "have you worked",
+            "have you been working"
+          ],
+          [
+            "did you do"
+          ],
+          [
+            "was",
+            "worked as"
+          ]
+        ]
       }
     ]
   }

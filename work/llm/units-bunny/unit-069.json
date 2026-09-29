@@ -1,0 +1,393 @@
+{
+ "unit": 69,
+ "title": "a cake / some cake / some cakes (исчисляемые/неисчисляемые существительные 2)",
+ "pdfPages": [
+  149,
+  150
+ ],
+ "exercises": [
+  {
+   "id": "69.1",
+   "type": "write",
+   "instruction": "Что изображено на этих картинках? Используйте a или some.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "some perfume, a hat and some shoes."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "answers": [
+      "I bought a newspaper, some flowers and a pen.",
+      "I bought a newspaper, a bunch of flowers and a pen.",
+      "I bought a paper, some flowers and a pen.",
+      "I bought a paper, a bunch of flowers and a pen."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "I bought some bananas, some eggs and some bread.",
+      "I bought some bananas, some eggs and a loaf of bread."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "I bought some toothpaste, some soap and a comb.",
+      "I bought some toothpaste, a bar of soap and a comb."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "69.2",
+   "type": "write",
+   "instruction": "Напишите предложения, начинающиеся с Would you like a … ? или Would you like some … ?",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "Would you like some cheese?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Would you like … ?",
+     "answers": [
+      "Would you like some coffee?",
+      "Would you like a cup of coffee?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Would … ?",
+     "answers": [
+      "Would you like a biscuit?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "Would you like some bread?",
+      "Would you like a piece of bread?",
+      "Would you like a slice of bread?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "Would you like a chocolate?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "Would you like some cake?",
+      "Would you like a piece of cake?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "69.3",
+   "type": "fill-in",
+   "instruction": "Вставьте a/an или some.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I read ",
+      " book and listened to ",
+      " music."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "some"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I need ",
+      " money. I want to buy ",
+      " food."
+     ],
+     "answers": [
+      [
+       "some"
+      ],
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "We met ",
+      " interesting people at the party."
+     ],
+     "answers": [
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I’m going to open ",
+      " window to get ",
+      " fresh air."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Rachel didn’t eat much for lunch – only ",
+      " apple and ",
+      " bread."
+     ],
+     "answers": [
+      [
+       "an"
+      ],
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "We live in ",
+      " big house. There’s ",
+      " nice garden with ",
+      " beautiful trees."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "a"
+      ],
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I’m going to make a table. First I need ",
+      " wood."
+     ],
+     "answers": [
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Listen to me carefully. I’m going to give you ",
+      " advice."
+     ],
+     "answers": [
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I want to make a list of things to do. I need ",
+      " paper and ",
+      " pen."
+     ],
+     "answers": [
+      [
+       "some"
+      ],
+      [
+       "a"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "69.4",
+   "type": "choice",
+   "instruction": "Выберите правильный вариант.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "I’m going to buy some new shoe.",
+      "I’m going to buy some new shoes."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 2,
+     "options": [
+      "Mark has brown eye.",
+      "Mark has brown eyes."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "Paula has short black hair.",
+      "Paula has short black hairs."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 4,
+     "options": [
+      "The tour guide gave us some information.",
+      "The tour guide gave us some informations."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 5,
+     "options": [
+      "We’re going to buy some new chair.",
+      "We’re going to buy some new chairs."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 6,
+     "options": [
+      "We’re going to buy some new furniture.",
+      "We’re going to buy some new furnitures."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 7,
+     "options": [
+      "It’s hard to find a work.",
+      "It’s hard to find a job."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 8,
+     "options": [
+      "We had wonderful weather when we were on holiday.",
+      "We had a wonderful weather when we were on holiday."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "69.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [спальня = bedroom\nслушать = listen to]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Мне нужен совет об автомобилях.",
+     "answers": [
+      "I need some advice about cars."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Хотите немного торта?",
+     "answers": [
+      "Would you like some cake?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Мы купили новую мебель для нашей спальни.",
+     "answers": [
+      "We bought some new furniture for our bedroom."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я собираюсь купить туфли и платье.",
+     "answers": [
+      "I’m going to buy some shoes and a dress."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "У Нины есть работа?",
+     "answers": [
+      "Does Nina have a job?",
+      "Has Nina got a job?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "У Марины длинные чёрные волосы и красивые глаза.",
+     "answers": [
+      "Marina has long black hair and beautiful eyes.",
+      "Marina has got long black hair and beautiful eyes."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Борису нужна информация об Англии.",
+     "answers": [
+      "Boris needs some information about England."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Салли читает книгу и слушает музыку.",
+     "answers": [
+      "Sally is reading a book and listening to music.",
+      "Sally is reading a book and listening to some music."
+     ]
+    }
+   ]
+  }
+ ]
+}

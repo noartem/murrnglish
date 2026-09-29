@@ -1,0 +1,522 @@
+{
+ "unit": 6,
+ "title": "I do/work/like и т. д. (present simple)",
+ "pdfPages": [
+  23,
+  24
+ ],
+ "exercises": [
+  {
+   "id": "6.1",
+   "type": "fill-in",
+   "instruction": "Напишите эти глаголы с -s или -es.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "(read) she ",
+      ""
+     ],
+     "answers": [
+      [
+       "reads"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "(think) he ",
+      ""
+     ],
+     "answers": [
+      [
+       "thinks"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "(fly) it ",
+      ""
+     ],
+     "answers": [
+      [
+       "flies"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "(dance) he ",
+      ""
+     ],
+     "answers": [
+      [
+       "dances"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "(have) she ",
+      ""
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "(finish) it ",
+      ""
+     ],
+     "answers": [
+      [
+       "finishes"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и допишите предложения. Используйте глаголы из рамки:",
+   "wordBank": [
+    "eat",
+    "go",
+    "live",
+    "play",
+    "play",
+    "sleep"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " the piano."
+     ],
+     "answers": [
+      [
+       "He plays"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "They ",
+      " in a very big house."
+     ],
+     "answers": [
+      [
+       "live"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " a lot of fruit."
+     ],
+     "answers": [
+      [
+       "She eats"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " tennis."
+     ],
+     "answers": [
+      [
+       "He plays"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " to the cinema a lot."
+     ],
+     "answers": [
+      [
+       "They go"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " seven hours a night."
+     ],
+     "answers": [
+      [
+       "He sleeps Caretaker"
+      ]
+     ]
+    },
+    {
+     "id": "6.3",
+     "type": "fill-in",
+     "instruction": "Заполните пропуски. Используйте глаголы из рамки:",
+     "wordBank": [
+      "boil",
+      "close",
+      "cost",
+      "cost",
+      "like",
+      "like",
+      "meet",
+      "open",
+      "speak",
+      "teach",
+      "wash"
+     ],
+     "items": [
+      {
+       "num": 1,
+       "parts": [
+        "Maria ",
+        " four languages."
+       ],
+       "answers": [
+        [
+         "speaks"
+        ]
+       ],
+       "example": true
+      },
+      {
+       "num": 2,
+       "parts": [
+        "The shops in the city centre usually ",
+        " at 9 o’clock in the morning."
+       ],
+       "answers": [
+        [
+         "open"
+        ]
+       ]
+      },
+      {
+       "num": 3,
+       "parts": [
+        "The City Museum ",
+        " at 5 o’clock in the evening."
+       ],
+       "answers": [
+        [
+         "closes"
+        ]
+       ]
+      },
+      {
+       "num": 4,
+       "parts": [
+        "Tina is a teacher. She ",
+        " mathematics to young children."
+       ],
+       "answers": [
+        [
+         "teaches"
+        ]
+       ]
+      },
+      {
+       "num": 5,
+       "parts": [
+        "My job is very interesting. I ",
+        " a lot of people."
+       ],
+       "answers": [
+        [
+         "meet"
+        ]
+       ]
+      },
+      {
+       "num": 6,
+       "parts": [
+        "Peter’s car is always dirty. He never ",
+        " it."
+       ],
+       "answers": [
+        [
+         "washes"
+        ]
+       ]
+      },
+      {
+       "num": 7,
+       "parts": [
+        "Food is expensive. It ",
+        " a lot of money."
+       ],
+       "answers": [
+        [
+         "costs"
+        ]
+       ]
+      },
+      {
+       "num": 8,
+       "parts": [
+        "Shoes are expensive. They ",
+        " a lot of money."
+       ],
+       "answers": [
+        [
+         "cost"
+        ]
+       ]
+      },
+      {
+       "num": 9,
+       "parts": [
+        "Water ",
+        " at 100 degrees Celsius."
+       ],
+       "answers": [
+        [
+         "boils"
+        ]
+       ]
+      },
+      {
+       "num": 10,
+       "parts": [
+        "Laura and I are good friends. I ",
+        " her and she ",
+        " me."
+       ],
+       "answers": [
+        [
+         "like"
+        ],
+        [
+         "likes_chars"
+        ]
+       ]
+      },
+      {
+       "id": "6.4",
+       "type": "write",
+       "instruction": "Составьте предложения из этих слов. Поставьте глаголы в правильную форму (arrive или arrives и т. д.).",
+       "items": [
+        {
+         "num": 1,
+         "prompt": "(always / early / Sue / arrive)",
+         "answers": [
+          "Sue always arrives early."
+         ]
+        },
+        {
+         "num": 2,
+         "prompt": "(to the cinema / never / I / go)",
+         "answers": [
+          "I never go to the cinema."
+         ]
+        },
+        {
+         "num": 3,
+         "prompt": "(work / Martina / hard / always)",
+         "answers": [
+          "Martina always works hard."
+         ]
+        },
+        {
+         "num": 4,
+         "prompt": "(like / chocolate / children / usually)",
+         "answers": [
+          "Children usually like chocolate."
+         ]
+        },
+        {
+         "num": 5,
+         "prompt": "(Jackie / parties / enjoy / always)",
+         "answers": [
+          "Jackie always enjoys parties."
+         ]
+        },
+        {
+         "num": 6,
+         "prompt": "(often / people’s names / I / forget)",
+         "answers": [
+          "I often forget people’s names."
+         ]
+        },
+        {
+         "num": 7,
+         "prompt": "(TV / Sam / watch / never)",
+         "answers": [
+          "Sam never watches TV."
+         ]
+        },
+        {
+         "num": 8,
+         "prompt": "(usually / dinner / we / have / at 7.30)",
+         "answers": [
+          "We usually have dinner at 7.30."
+         ]
+        },
+        {
+         "num": 9,
+         "prompt": "(Kate / always / nice clothes / wear)",
+         "answers": [
+          "Kate always wears nice clothes."
+         ]
+        }
+       ],
+       "example": [
+        1
+       ]
+      },
+      {
+       "id": "6.5",
+       "type": "self-check",
+       "instruction": "Напишите предложения о себе. Используйте наречия always/never/often/usually/sometimes.",
+       "items": [
+        {
+         "num": 1,
+         "prompt": "(watch TV in the evening)",
+         "modelAnswers": [
+          "I usually watch TV in the evening."
+         ]
+        },
+        {
+         "num": 2,
+         "prompt": "(read in bed)",
+         "modelAnswers": [
+          "I sometimes read in bed."
+         ]
+        },
+        {
+         "num": 3,
+         "prompt": "(get up before 7 o’clock)",
+         "modelAnswers": [
+          "I often get up before 7 o’clock."
+         ]
+        },
+        {
+         "num": 4,
+         "prompt": "(go to work/school by bus)",
+         "modelAnswers": [
+          "I never go to work by bus."
+         ]
+        },
+        {
+         "num": 5,
+         "prompt": "(drink coffee in the morning)",
+         "modelAnswers": [
+          "I usually drink two cups of coffee in the morning."
+         ]
+        }
+       ],
+       "example": [
+        1
+       ]
+      },
+      {
+       "id": "6.6",
+       "type": "write",
+       "instruction": "Переведите предложения на английский язык. [в кино = to the cinema\nикра = caviar]",
+       "items": [
+        {
+         "num": 1,
+         "prompt": "Я живу в Москве.",
+         "answers": [
+          "I live in Moscow."
+         ]
+        },
+        {
+         "num": 2,
+         "prompt": "Линда обычно встаёт в 7 часов.",
+         "answers": [
+          "Linda usually gets up at 7 o’clock."
+         ]
+        },
+        {
+         "num": 3,
+         "prompt": "Мы иногда ходим в парк.",
+         "answers": [
+          "We sometimes go to the park."
+         ]
+        },
+        {
+         "num": 4,
+         "prompt": "Моя сестра любит шоколад.",
+         "answers": [
+          "My sister loves chocolate."
+         ]
+        },
+        {
+         "num": 5,
+         "prompt": "Я никогда не смотрю телевизор.",
+         "answers": [
+          "I never watch TV.",
+          "I never watch television."
+         ]
+        },
+        {
+         "num": 6,
+         "prompt": "Мои друзья часто ходят в кино.",
+         "answers": [
+          "My friends often go to the cinema."
+         ]
+        },
+        {
+         "num": 7,
+         "prompt": "Я люблю икру, но она стоит дорого.",
+         "answers": [
+          "I like caviar but it costs a lot of money.",
+          "I love caviar but it costs a lot of money.",
+          "I like caviar but it’s expensive.",
+          "I love caviar but it’s expensive."
+         ]
+        },
+        {
+         "num": 8,
+         "prompt": "Антон говорит по-английски хорошо.",
+         "answers": [
+          "Anton speaks English well."
+         ]
+        },
+        {
+         "num": 9,
+         "prompt": "Я всегда начинаю работать в 9 часов.",
+         "answers": [
+          "I always start work at 9 o’clock."
+         ]
+        },
+        {
+         "num": 10,
+         "prompt": "Кошки едят рыбу.",
+         "answers": [
+          "Cats eat fish."
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

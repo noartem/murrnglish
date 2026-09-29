@@ -1,178 +1,133 @@
 {
   "unit": 31,
-  "title": "have to and must",
+  "title": "can и could",
   "pdfPages": [
-    74,
-    75
+    73,
+    74
   ],
   "exercises": [
     {
       "id": "31.1",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using have/has/had to … . Use the verbs in brackets.",
+      "type": "write",
+      "instruction": "Посмотрите на картинки и спросите Стива, умеет ли он это делать: Что из этого вы умеете делать? Напишите предложения о себе, используя I can или I can’t.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "He ",
-            " late. (he / work)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "has to work"
-            ]
+            "Can you swim?"
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "How long ",
-            " ? (you / wait)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "did you have to wait"
-            ]
-          ],
-          "example": true
+            "Can you ski?"
+          ]
         },
         {
           "num": 3,
-          "parts": [
-            "I don't have much time. ",
-            " in ten minutes. (I / go)"
-          ],
+          "prompt": "chess",
           "answers": [
-            [
-              "I'll have to go"
-            ]
+            "Can you play chess?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "'I'm afraid I can't stay long.' 'What time ",
-            " ?' (you / go)"
-          ],
+          "prompt": "10 kilometres",
           "answers": [
-            [
-              "do you have to go"
-            ]
+            "Can you run ten kilometres?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "Joe starts work at 5 am every day, which means ",
-            " at four. (he / get up)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "he has to get up"
-            ]
+            "Can you drive (a car)?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "We nearly missed the bus this morning. ",
-            " to catch it. (we / run)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "We had to run"
-            ]
+            "Can you ride (a horse)?"
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "Is Lisa usually free on Saturdays or ",
-            " ? (she / work)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "does she have to work"
-            ]
+            "I can swim.",
+            "I can’t swim."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "There was nobody to help me. ",
-            " everything by myself. (I / do)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "I had to do"
-            ]
+            "I can ski.",
+            "I can’t ski."
           ]
         },
         {
           "num": 9,
-          "parts": [
-            "How old ",
-            " to have a driving licence? (you / be)"
-          ],
+          "prompt": "chess",
           "answers": [
-            [
-              "do you have to be"
-            ]
+            "I can play chess.",
+            "I can’t play chess."
           ]
         },
         {
           "num": 10,
-          "parts": [
-            "There was a lot of noise from the street. ",
-            " the window. (we / close)"
-          ],
+          "prompt": "10 kilometres",
           "answers": [
-            [
-              "We had to close"
-            ]
+            "I can run ten kilometres.",
+            "I can’t run ten kilometres."
           ]
         },
         {
           "num": 11,
-          "parts": [
-            "Was the exhibition free, or ",
-            " to go in? (you / pay)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "did you have to pay"
-            ]
+            "I can drive (a car).",
+            "I can’t drive (a car)."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "",
+          "answers": [
+            "I can ride (a horse).",
+            "I can’t ride (a horse)."
           ]
         }
+      ],
+      "example": [
+        1
       ]
     },
     {
       "id": "31.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using have/has/had to + the verbs in the list. Some sentences are negative (I don't have to … etc.):",
+      "instruction": "Заполните пропуски. Используйте can или can’t + глагол из рамки:",
       "wordBank": [
-        "ask",
-        "decide",
-        "drive",
-        "get up",
-        "go",
-        "make",
-        "make",
-        "pay",
-        "show",
-        "stand"
+        "come",
+        "find",
+        "hear",
+        "see",
+        "speak"
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I'm not working tomorrow, so I ",
-            " early."
+            "I’m sorry, but we ",
+            " to your party next Saturday."
           ],
           "answers": [
             [
-              "don't have to get up"
+              "can’t come"
             ]
           ],
           "example": true
@@ -180,109 +135,48 @@
         {
           "num": 2,
           "parts": [
-            "Steve didn't know how to change the settings on his phone. I ",
-            "."
+            "I like this hotel room. You ",
+            " the mountains from the window."
           ],
           "answers": [
             [
-              "had to show him"
+              "can see"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "Excuse me a moment – I ",
-            ". I won't be long."
+            "You are speaking very quietly. I ",
+            " you."
           ],
           "answers": [
             [
-              "have to make"
+              "can’t hear"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "You can let me know later what you want to do. You ",
-            " now."
+            "Have you seen my bag? I ",
+            " it."
           ],
           "answers": [
             [
-              "don't have to decide"
+              "can’t find"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I couldn't find the street I wanted. I ",
-            " somebody for directions."
+            "Catherine got the job because she ",
+            " five languages."
           ],
           "answers": [
             [
-              "had to ask"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "This car park is free. You ",
-            "."
-          ],
-          "answers": [
-            [
-              "don't have to pay"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "A man was slightly injured in the accident, but he ",
-            " to hospital."
-          ],
-          "answers": [
-            [
-              "didn't have to go"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Jane has a senior position in the company. She ",
-            " important decisions."
-          ],
-          "answers": [
-            [
-              "has to make"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "The train was very full and there were no seats free. We ",
-            " all the way."
-          ],
-          "answers": [
-            [
-              "had to stand"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "When Patrick starts his new job next month, he ",
-            " 50 miles to work every day."
-          ],
-          "answers": [
-            [
-              "will have to drive"
+              "can speak"
             ]
           ]
         }
@@ -290,192 +184,232 @@
     },
     {
       "id": "31.3",
-      "type": "write",
-      "instruction": "In some of these sentences, must is wrong or unnatural. Correct the sentences where necessary.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте can’t или couldn’t + глагол из рамки:",
+      "wordBank": [
+        "decide",
+        "eat",
+        "find",
+        "go",
+        "go",
+        "sleep"
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "It's later than I thought. I must go.",
+          "parts": [
+            "I was tired, but I ",
+            "."
+          ],
           "answers": [
-            "OK"
-          ]
+            [
+              "couldn’t sleep"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "I must start work every day at 8.30.",
+          "parts": [
+            "I wasn’t hungry yesterday. I ",
+            " my dinner."
+          ],
           "answers": [
-            "I have to start work every day at 8.30."
+            [
+              "couldn’t eat"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "I must remember to call Sarah tomorrow.",
+          "parts": [
+            "Kate doesn’t know what to do. She ",
+            "."
+          ],
           "answers": [
-            "OK"
+            [
+              "can’t decide"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "I couldn't get a taxi last night. I must walk home.",
+          "parts": [
+            "I wanted to speak to Mark yesterday, but I ",
+            " him."
+          ],
           "answers": [
-            "I had to walk home."
+            [
+              "couldn’t find"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "You must come and see us again soon.",
+          "parts": [
+            "James ",
+            " to the concert next Saturday. He has to work."
+          ],
           "answers": [
-            "OK"
+            [
+              "can’t go"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "Tom isn't going out this evening. He must study for his exam.",
+          "parts": [
+            "Paula ",
+            " to the meeting last week. She was ill."
+          ],
           "answers": [
-            "He has to study for his exam."
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "We can't go the usual way because the road is closed. We must go another way.",
-          "answers": [
-            "We have to go another way."
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "Julia wears glasses. She must wear glasses since she was very young.",
-          "answers": [
-            "She has had to wear glasses since she was very young."
+            [
+              "couldn’t go"
+            ]
           ]
         }
       ]
     },
     {
       "id": "31.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences with mustn't, don't have to or doesn't have to.",
+      "type": "write",
+      "instruction": "Что можно сказать в этих ситуациях? Используйте can или could.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I don't want anyone to know about our plan. You ",
-            " anyone."
-          ],
+          "prompt": "(open/door)",
           "answers": [
-            [
-              "mustn't tell"
-            ]
+            "Could you open the door, please?"
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "Richard ",
-            " a suit to work, but he usually does."
-          ],
+          "prompt": "(pass/salt)",
           "answers": [
-            [
-              "doesn't have to wear"
-            ]
-          ],
-          "example": true
+            "Can you pass the salt?",
+            "Can you pass the salt, please?",
+            "Could you pass the salt?",
+            "Could you pass the salt, please?"
+          ]
         },
         {
           "num": 3,
-          "parts": [
-            "There's a lift in the building, so we ",
-            " the stairs."
-          ],
+          "prompt": "(have/postcards)",
           "answers": [
-            [
-              "don't have to climb"
-            ]
+            "Can I have these postcards?",
+            "Can I have these postcards, please?",
+            "Could I have these postcards?",
+            "Could I have these postcards, please?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I promised Kate I'd call her tomorrow. I ",
-            "."
-          ],
+          "prompt": "(turn off / radio)",
           "answers": [
-            [
-              "mustn't forget"
-            ]
+            "Can you turn off the radio?",
+            "Can you turn off the radio, please?",
+            "Could you turn off the radio?",
+            "Could you turn off the radio, please?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I'm not very busy. I have a few things to do, but I ",
-            " now."
-          ],
+          "prompt": "(borrow/newspaper)",
           "answers": [
-            [
-              "don't have to do them"
-            ]
+            "Can I borrow your newspaper?",
+            "Can I borrow your newspaper, please?",
+            "Could I borrow your newspaper?",
+            "Could I borrow your newspaper, please?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Sophie likes weekends because she ",
-            "."
-          ],
+          "prompt": "(use/pen)",
           "answers": [
-            [
-              "doesn't have to get up early"
-            ]
+            "Can I use your pen?",
+            "Can I use your pen, please?",
+            "Could I use your pen?",
+            "Could I use your pen, please?"
+          ]
+        }
+      ],
+      "example": [
+        1
+      ]
+    },
+    {
+      "id": "31.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя can или could. (ночью = at night; зарядить = charge)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Наташа может говорить по-немецки.",
+          "answers": [
+            "Natasha can speak German."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я не могу спать ночью.",
+          "answers": [
+            "I can’t sleep at night.",
+            "I cannot sleep at night."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Я не могу найти свои ключи. Ты можешь мне помочь?",
+          "answers": [
+            "I can’t find my keys. Can you help me?",
+            "I can’t find my keys. Could you help me?",
+            "I cannot find my keys. Can you help me?",
+            "I cannot find my keys. Could you help me?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Вчера Влад не мог прийти на работу.",
+          "answers": [
+            "Vlad couldn’t come to work yesterday.",
+            "Vlad could not come to work yesterday.",
+            "Yesterday Vlad couldn’t come to work.",
+            "Yesterday Vlad could not come to work."
+          ],
+          "num2": null
+        },
+        {
+          "num": 5,
+          "prompt": "Их дочь очень умная. Она умела читать, когда ей было три года!",
+          "answers": [
+            "Their daughter is very clever. She could read when she was three!",
+            "Their daughter is very clever. She could read when she was three years old!"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Здесь можно зарядить мой телефон?",
+          "answers": [
+            "Can I charge my phone here?"
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "You ",
-            " a good player to enjoy a game of tennis."
-          ],
+          "prompt": "Можно, пожалуйста, поговорить с менеджером?",
           "answers": [
-            [
-              "don't have to be"
-            ]
+            "Could I speak to the manager, please?",
+            "Can I speak to the manager, please?",
+            "Could I please speak to the manager?",
+            "Can I please speak to the manager?"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "You should keep trying to find a job. You ",
-            "."
-          ],
+          "prompt": "Иногда я не понимаю своих детей.",
           "answers": [
-            [
-              "mustn't give up"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I ",
-            " too much. I'm supposed to be on a diet."
-          ],
-          "answers": [
-            [
-              "mustn't eat"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "We have plenty of time before our flight. We ",
-            " yet."
-          ],
-          "answers": [
-            [
-              "don't have to check in"
-            ]
+            "Sometimes I can’t understand my children.",
+            "Sometimes I cannot understand my children."
           ]
         }
       ]

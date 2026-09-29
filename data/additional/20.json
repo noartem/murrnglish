@@ -1,42 +1,83 @@
 {
   "id": 20,
-  "topic": "if (conditional)",
-  "refs": "Units 25, 38–40",
-  "pdfPages": [326],
+  "topic": "present perfect и past simple",
+  "refs": "Разделы 19–21",
+  "pdfPages": [
+    261
+  ],
   "exercise": {
     "id": "20",
-    "type": "fill-in",
-    "instruction": "Complete the sentences.",
+    "type": "write",
+    "instruction": "Напишите предложения, используя present perfect или past simple.",
+    "example": [
+      1,
+      2
+    ],
     "items": [
       {
+        "num": 1,
+        "prompt": "(I / go / there / last year)",
+        "answers": [
+          "I went there last year."
+        ]
+      },
+      {
         "num": 2,
-        "parts": ["I'd be surprised if Sarah ", " now."],
-        "answers": [["called (me)"]]
+        "prompt": "(I / never / there)",
+        "answers": [
+          "I’ve never been there."
+        ]
       },
       {
         "num": 3,
-        "parts": ["If ", " you were busy, I ", " you."],
-        "answers": [["I'd known", "I had known"], ["wouldn't have disturbed"]]
+        "prompt": "(he / already / go)",
+        "answers": [
+          "He’s already gone.",
+          "He has already gone."
+        ]
       },
       {
         "num": 4,
-        "parts": ["There ", " so many accidents if ", " a speed limit."],
-        "answers": [["wouldn't be"], ["there was", "there were"]]
+        "prompt": "(she / leave / at 4 o’clock)",
+        "answers": [
+          "she left at 4 o’clock.",
+          "Yes, she left at 4 o’clock."
+        ]
       },
       {
         "num": 5,
-        "parts": ["If ", " the problem, ", " you."],
-        "answers": [["you'd told me about the problem"], ["I would have tried to help", "I'd have tried to help", "I would have helped", "I'd have helped"]]
+        "prompt": "(how many times / you / there?)",
+        "answers": [
+          "How many times have you been there?"
+        ]
       },
       {
         "num": 6,
-        "parts": ["I ", " very wet if ", " an umbrella."],
-        "answers": [["would have got", "would have gotten"], ["I hadn't had"]]
+        "prompt": "(I / not / decide / yet)",
+        "answers": [
+          "I haven’t decided yet."
+        ]
       },
       {
         "num": 7,
-        "parts": ["If he ", " so nervous, he ", " the test."],
-        "answers": [["hadn't been", "hadn't got", "hadn't gotten"], ["wouldn't have failed", "would have passed"]]
+        "prompt": "(it / on the table / last night)",
+        "answers": [
+          "It was on the table last night."
+        ]
+      },
+      {
+        "num": 8,
+        "prompt": "(I / eat / there a few times)",
+        "answers": [
+          "I’ve eaten there a few times."
+        ]
+      },
+      {
+        "num": 9,
+        "prompt": "(what time / they / arrive?)",
+        "answers": [
+          "What time did they arrive?"
+        ]
       }
     ]
   }

@@ -1,0 +1,468 @@
+{
+ "unit": 105,
+ "title": "before · after · during · while",
+ "pdfPages": [
+  221,
+  222
+ ],
+ "exercises": [
+  {
+   "id": "105.1",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте информацию из обеих рамок.",
+   "wordBank": [
+    "after",
+    "before",
+    "during",
+    "while",
+    "lunch",
+    "the concert",
+    "the course",
+    "the end",
+    "the night",
+    "they went to Australia",
+    "you’re waiting"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Everybody was nervous ",
+      ""
+     ],
+     "answers": [
+      [
+       "before the exam"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I usually work four hours in the morning, and another three hours ",
+      ""
+     ],
+     "answers": [
+      [
+       "after lunch"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The film was really boring. We left ",
+      ""
+     ],
+     "answers": [
+      [
+       "before the end"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Anna went to evening classes to learn German. She learnt a lot ",
+      ""
+     ],
+     "answers": [
+      [
+       "during the course"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "My aunt and uncle lived in London ",
+      ""
+     ],
+     "answers": [
+      [
+       "before they went to Australia"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "A: Somebody broke a window ",
+      ", Did you hear anything?\nB: No, I was asleep all the time."
+     ],
+     "answers": [
+      [
+       "during the night"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Would you like to sit down ",
+      "?"
+     ],
+     "answers": [
+      [
+       "while you are waiting"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "A: Are you going home ",
+      "?\nB: Yes, I have to get up early tomorrow."
+     ],
+     "answers": [
+      [
+       "after the concert"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "105.2",
+   "type": "fill-in",
+   "instruction": "Вставьте during/while/for.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "We didn’t speak ",
+      " we were eating."
+     ],
+     "answers": [
+      [
+       "while"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "We didn’t speak ",
+      " the meal."
+     ],
+     "answers": [
+      [
+       "during"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Gary called ",
+      " you were out."
+     ],
+     "answers": [
+      [
+       "while"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Amy went to Italy and stayed in Rome ",
+      " five days."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I didn’t check my email ",
+      " I was away."
+     ],
+     "answers": [
+      [
+       "while"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The students looked very bored ",
+      " the lesson."
+     ],
+     "answers": [
+      [
+       "during"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I fell out of bed ",
+      " I was asleep."
+     ],
+     "answers": [
+      [
+       "while"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Last night I watched TV ",
+      " three hours."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I don’t usually watch TV ",
+      " the day."
+     ],
+     "answers": [
+      [
+       "during"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Do you ever watch TV ",
+      " you are having dinner?"
+     ],
+     "answers": [
+      [
+       "while"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "105.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя -ing (doing, having и т. д.).",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "After ",
+      " the shopping, they went home."
+     ],
+     "answers": [
+      [
+       "doing"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I felt sick after ",
+      " too much chocolate."
+     ],
+     "answers": [
+      [
+       "eating"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I’m going to ask you a question. Think carefully before ",
+      " it."
+     ],
+     "answers": [
+      [
+       "answering"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I felt awful when I got up this morning. I felt better after ",
+      " a shower."
+     ],
+     "answers": [
+      [
+       "having",
+       "taking"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "After ",
+      " my work, I left the office and went home."
+     ],
+     "answers": [
+      [
+       "finishing",
+       "doing"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Before ",
+      " to a foreign country, it’s good to try and learn a little of the language."
+     ],
+     "answers": [
+      [
+       "going",
+       "travelling"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "105.4",
+   "type": "write",
+   "instruction": "Напишите предложения, используя before + -ing и after + -ing.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "They did the shopping. Then they went home.",
+     "answers": [
+      "After doing the shopping, they went home."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "John left school. Then he worked in a bookshop for two years.",
+     "answers": [
+      "John worked in a bookshop for two years after leaving school."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I read for a few minutes. Then I went to sleep.",
+     "answers": [
+      "Before going to sleep, I read for a few minutes."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "We walked for three hours. We were very tired.",
+     "answers": [
+      "After walking for three hours, we were very tired."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Let’s have a cup of coffee. Then we’ll go out.",
+     "answers": [
+      "Let’s have a cup of coffee before going out."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "105.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (собеседование = interview; покормил = fed; чувствовать себя лучше = feel better)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Мы поужинали перед концертом.",
+     "answers": [
+      "We had dinner before the concert.",
+      "We ate dinner before the concert.",
+      "Before the concert, we had dinner.",
+      "Before the concert, we ate dinner."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я сделал покупки, пока Эмма была на работе.",
+     "answers": [
+      "I did the shopping while Emma was at work.",
+      "While Emma was at work, I did the shopping."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "После матча в центре города было много народу.",
+     "answers": [
+      "There were a lot of people in the city centre after the match.",
+      "After the match, there were a lot of people in the city centre."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Саша очень нервничала перед собеседованием.",
+     "answers": [
+      "Sasha was very nervous before her interview.",
+      "Sasha was very nervous before the interview.",
+      "Before her interview, Sasha was very nervous.",
+      "Before the interview, Sasha was very nervous."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Во время отпуска я прочитала три книги.",
+     "answers": [
+      "I read three books during my holiday.",
+      "I read three books during the holiday.",
+      "During my holiday, I read three books.",
+      "During the holiday, I read three books."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Мы ждали автобуса 40 минут.",
+     "answers": [
+      "We waited for a bus for 40 minutes.",
+      "We waited 40 minutes for a bus."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Перед тем как идти спать, я покормил кошку.",
+     "answers": [
+      "Before going to bed, I fed the cat.",
+      "Before I went to bed, I fed the cat."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я почувствовала себя лучше после чашки чая.",
+     "answers": [
+      "I felt better after a cup of tea."
+     ]
+    }
+   ]
+  }
+ ]
+}

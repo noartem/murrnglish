@@ -1,312 +1,354 @@
 {
- "unit": 75,
- "title": "the 3 (children / the children)",
- "pdfPages": [
-  162,
-  163
- ],
- "exercises": [
-  {
-   "id": "75.1",
-   "type": "self-check",
-   "instruction": "Choose four of these things and write what you think about them: bananas, boxing, cats, crowds, fast food, horror movies, hot weather, maths, opera, snow, supermarkets, zoos. Use: I like … / I don’t like … / I think ... is/are … / I don’t mind … / I love … / I hate … / I’m (not) interested in …",
-   "items": [
+  "unit": 75,
+  "title": "this/that/these/those",
+  "pdfPages": [
+    161,
+    162
+  ],
+  "exercises": [
     {
-     "num": 2,
-     "prompt": "",
-     "modelAnswers": [
-      "I like cats."
-     ]
+      "id": "75.1",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте this/that/these/those + слова из рамки:",
+      "wordBank": [
+        "birds",
+        "house",
+        "plates",
+        "postcards",
+        "seat",
+        "shoes"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Do you like ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "these shoes"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Who lives in ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "that house"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "How much are ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "these postcards"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Look at ",
+            ""
+          ],
+          "answers": [
+            [
+              "those birds"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Excuse me, is ",
+            " free?"
+          ],
+          "answers": [
+            [
+              "this seat"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " are dirty."
+          ],
+          "answers": [
+            [
+              "These plates"
+            ]
+          ]
+        }
+      ]
     },
     {
-     "num": 3,
-     "prompt": "",
-     "modelAnswers": [
-      "I don’t like zoos."
-     ]
+      "id": "75.2",
+      "type": "write",
+      "instruction": "Напишите疑问... Напишите вопросительные предложения: Is this/that your ... ? или Are these/those your ... ?",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "Is this your bag?"
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "",
+          "answers": [
+            "Is that your umbrella?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "answers": [
+            "Is this your book?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "Are those your books?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "Is that your bicycle?",
+            "Is that your bike?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "Are these your keys?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "",
+          "answers": [
+            "Are those your keys?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "",
+          "answers": [
+            "Is this your watch?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "",
+          "answers": [
+            "Are those your glasses?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "",
+          "answers": [
+            "Are these your gloves?"
+          ]
+        }
+      ]
     },
     {
-     "num": 4,
-     "prompt": "",
-     "modelAnswers": [
-      "I don’t mind snow."
-     ]
+      "id": "75.3",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте this is или that’s или that.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "B: ",
+            " all right."
+          ],
+          "answers": [
+            [
+              "That’s"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "B: Oh, ",
+            " a pity. Why not?"
+          ],
+          "answers": [
+            [
+              "that’s"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "SUE: Hello, Jane. ",
+            " Sue."
+          ],
+          "answers": [
+            [
+              "This is"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "B: ",
+            " not true!"
+          ],
+          "answers": [
+            [
+              "That’s"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "B: Does she? I didn’t know ",
+            "."
+          ],
+          "answers": [
+            [
+              "that"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "PAUL: Mark, ",
+            " my sister, Helen."
+          ],
+          "answers": [
+            [
+              "this is"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "B: ",
+            " OK. Forget it!"
+          ],
+          "answers": [
+            [
+              "That’s"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "B: Yes, ",
+            " right."
+          ],
+          "answers": [
+            [
+              "that’s"
+            ]
+          ]
+        }
+      ]
     },
     {
-     "num": 5,
-     "prompt": "",
-     "modelAnswers": [
-      "I’m not interested in boxing."
-     ]
+      "id": "75.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (футболка = T-shirt; не так ли = aren’t you)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Эта книга очень интересная.",
+          "answers": [
+            "This book is very interesting."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Эти цветы прекрасны! Спасибо!",
+          "answers": [
+            "These flowers are beautiful! Thank you!"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Тот мальчик в красной футболке – ваш сын?",
+          "answers": [
+            "Is that boy in the red T-shirt your son?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Кто те люди у окна?",
+          "answers": [
+            "Who are those people by the window?",
+            "Who are those people near the window?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Привет, Том. Это Наташа.",
+          "answers": [
+            "Hi, Tom. This is Natasha.",
+            "Hello, Tom. This is Natasha."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "\"Вы Бен, не так ли?\" – \"Да, это так\".",
+          "answers": [
+            "'You’re Ben, aren’t you?' 'Yes, that’s right.'"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "\"Извините, я опоздал\". – \"Это не проблема\".",
+          "answers": [
+            "'Sorry, I’m late.' 'That’s all right.'",
+            "'Sorry, I’m late.' 'That’s not a problem.'"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(по телефону) Здравствуйте, это Молли. Это Джессика?",
+          "answers": [
+            "Hello, this is Molly. Is that Jessica?",
+            "(on the phone) Hello, this is Molly. Is that Jessica?"
+          ]
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "75.2",
-   "type": "choice",
-   "instruction": "Which is right?",
-   "items": [
-    {
-     "num": 1,
-     "options": [
-      "Apples are good for you.",
-      "The apples are good for you."
-     ],
-     "answer": 0
-    },
-    {
-     "num": 2,
-     "options": [
-      "Who are people in this picture?",
-      "Who are the people in this picture?"
-     ],
-     "answer": 1
-    },
-    {
-     "num": 3,
-     "options": [
-      "I’m not good at remembering names.",
-      "I’m not good at remembering the names."
-     ],
-     "answer": 0
-    },
-    {
-     "num": 4,
-     "options": [
-      "First World War began in 1914 and ended in 1918.",
-      "The First World War began in 1914 and ended in 1918."
-     ],
-     "answer": 1
-    },
-    {
-     "num": 5,
-     "options": [
-      "He doesn’t like hard work.",
-      "He doesn’t like the hard work."
-     ],
-     "answer": 0
-    }
-   ]
-  },
-  {
-   "id": "75.3",
-   "type": "fill-in",
-   "instruction": "Complete the sentences using the following. Use the where necessary.",
-   "wordBank": [
-    "(the) basketball",
-    "(the) grass",
-    "(the) patience",
-    "(the) people",
-    "(the) questions",
-    "(the) meat",
-    "(the) information",
-    "(the) hotels",
-    "(the) biology",
-    "(the) water",
-    "(the) spiders",
-    "(the) lies"
-   ],
-   "items": [
-    {
-     "num": 3,
-     "parts": [
-      "Some people are afraid of ",
-      "."
-     ],
-     "answers": [
-      [
-       "spiders"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "A vegetarian is somebody who doesn’t eat ",
-      "."
-     ],
-     "answers": [
-      [
-       "meat"
-      ]
-     ]
-    },
-    {
-     "num": 5,
-     "parts": [
-      "The test wasn’t hard. I answered ",
-      " without difficulty."
-     ],
-     "answers": [
-      [
-       "the questions"
-      ]
-     ]
-    },
-    {
-     "num": 6,
-     "parts": [
-      "Do you know ",
-      " who live in the flat next to yours?"
-     ],
-     "answers": [
-      [
-       "the people"
-      ]
-     ]
-    },
-    {
-     "num": 7,
-     "parts": [
-      "",
-      " is the study of plants and animals."
-     ],
-     "answers": [
-      [
-       "Biology"
-      ]
-     ]
-    },
-    {
-     "num": 8,
-     "parts": [
-      "It’s better to tell the truth. Telling ",
-      " often causes problems."
-     ],
-     "answers": [
-      [
-       "lies"
-      ]
-     ]
-    },
-    {
-     "num": 9,
-     "parts": [
-      "We couldn’t find anywhere to stay in the town. ",
-      " were all full."
-     ],
-     "answers": [
-      [
-       "The hotels"
-      ]
-     ]
-    },
-    {
-     "num": 10,
-     "parts": [
-      "Don’t swim in this pool. ",
-      " doesn’t look very clean."
-     ],
-     "answers": [
-      [
-       "The water"
-      ]
-     ]
-    },
-    {
-     "num": 11,
-     "parts": [
-      "Don’t sit on ",
-      ". It’s wet after the rain."
-     ],
-     "answers": [
-      [
-       "the grass"
-      ]
-     ]
-    },
-    {
-     "num": 12,
-     "parts": [
-      "You need ",
-      " to teach young children."
-     ],
-     "answers": [
-      [
-       "patience"
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "75.4",
-   "type": "choice",
-   "instruction": "Which is right?",
-   "items": [
-    {
-     "num": 1,
-     "options": [
-      "stories",
-      "the stories"
-     ],
-     "answer": 0
-    },
-    {
-     "num": 2,
-     "options": [
-      "words",
-      "the words"
-     ],
-     "answer": 1
-    },
-    {
-     "num": 3,
-     "options": [
-      "rooms",
-      "the rooms"
-     ],
-     "answer": 1
-    },
-    {
-     "num": 4,
-     "options": [
-      "public transport",
-      "the public transport"
-     ],
-     "answer": 0
-    },
-    {
-     "num": 5,
-     "options": [
-      "All books",
-      "All the books"
-     ],
-     "answer": 1
-    },
-    {
-     "num": 6,
-     "options": [
-      "Life",
-      "The life"
-     ],
-     "answer": 0
-    },
-    {
-     "num": 7,
-     "options": [
-      "Weather",
-      "The weather"
-     ],
-     "answer": 1
-    },
-    {
-     "num": 8,
-     "options": [
-      "water",
-      "the water"
-     ],
-     "answer": 0
-    },
-    {
-     "num": 9,
-     "options": [
-      "films",
-      "the films"
-     ],
-     "answer": 0
-    }
-   ]
-  }
- ]
+  ]
 }

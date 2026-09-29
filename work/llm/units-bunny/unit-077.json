@@ -1,0 +1,632 @@
+{
+ "unit": 77,
+ "title": "some и any",
+ "pdfPages": [
+  165,
+  166
+ ],
+ "exercises": [
+  {
+   "id": "77.1",
+   "type": "fill-in",
+   "instruction": "Вставьте some или any.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I bought ",
+      " cheese, but I didn’t buy ",
+      " bread."
+     ],
+     "answers": [
+      [
+       "some"
+      ],
+      [
+       "any"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "In the middle of the room there was a table and ",
+      " chairs."
+     ],
+     "answers": [
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "There aren’t ",
+      " shops in this part of town."
+     ],
+     "answers": [
+      [
+       "any"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Gary and Alice don’t have ",
+      " children."
+     ],
+     "answers": [
+      [
+       "any"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Do you have ",
+      " brothers or sisters?"
+     ],
+     "answers": [
+      [
+       "any"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "There are ",
+      " beautiful flowers in the garden."
+     ],
+     "answers": [
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Do you know ",
+      " good hotels in London?"
+     ],
+     "answers": [
+      [
+       "any"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "‘Would you like ",
+      " tea?’ ‘Yes, please.’"
+     ],
+     "answers": [
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "When we were on holiday, we visited ",
+      " interesting places."
+     ],
+     "answers": [
+      [
+       "some"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Don’t buy ",
+      " rice. We don’t need ",
+      "."
+     ],
+     "answers": [
+      [
+       "any"
+      ],
+      [
+       "any"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I went out to buy ",
+      " bananas, but they didn’t have ",
+      " in the shop."
+     ],
+     "answers": [
+      [
+       "some"
+      ],
+      [
+       "any"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I’m thirsty. Can I have ",
+      " water, please?"
+     ],
+     "answers": [
+      [
+       "some-ru"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "77.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте some или any + слова из рамки.",
+   "wordBank": [
+    "air",
+    "cheese",
+    "help",
+    "milk",
+    "questions",
+    "batteries",
+    "friends",
+    "languages",
+    "pictures",
+    "shampoo"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I want to wash my hair. Is there ",
+      "?"
+     ],
+     "answers": [
+      [
+       "any shampoo"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "The police want to talk to you. They want to ask you ",
+      "."
+     ],
+     "answers": [
+      [
+       "some questions"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I had my camera, but I didn’t take ",
+      "."
+     ],
+     "answers": [
+      [
+       "any pictures"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Do you speak ",
+      " foreign ",
+      "?"
+     ],
+     "answers": [
+      [
+       "any"
+      ],
+      [
+       "languages"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Yesterday evening I went to a restaurant with ",
+      " of mine."
+     ],
+     "answers": [
+      [
+       "some friends"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Can I have ",
+      " in my coffee, please?"
+     ],
+     "answers": [
+      [
+       "some milk"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "The radio isn’t working. There aren’t ",
+      " in it."
+     ],
+     "answers": [
+      [
+       "any batteries"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "It’s hot in this office. I’m going out for ",
+      " fresh ",
+      "."
+     ],
+     "answers": [
+      [
+       "some"
+      ],
+      [
+       "air"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "A: Would you like ",
+      "?\nB: No, thank you. I’ve had enough to eat."
+     ],
+     "answers": [
+      [
+       "some cheese"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I can do this job alone. I don’t need ",
+      "."
+     ],
+     "answers": [
+      [
+       "any help"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "77.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте some или any.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Kate didn’t take any pictures, but ",
+      ". (I/take)"
+     ],
+     "answers": [
+      [
+       "I took some"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Where’s your luggage?’ ‘",
+      ".’ (I/not/have)"
+     ],
+     "answers": [
+      [
+       "I don’t have any"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "‘Do you need any money?’ ‘No, thank you ",
+      ".’ (I/have)"
+     ],
+     "answers": [
+      [
+       "I have some",
+       "I’ve got some"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘Can you lend me some money?’ ‘I’m sorry, but ",
+      ".’ (I/not/have)"
+     ],
+     "answers": [
+      [
+       "I don’t have any",
+       "I haven’t got any",
+       "I haven’t any"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "The tomatoes in the shop didn’t look very good, so ",
+      ". (I/not/buy)"
+     ],
+     "answers": [
+      [
+       "I didn’t buy any"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "There were some nice oranges in the shop, so ",
+      ". (I/buy)"
+     ],
+     "answers": [
+      [
+       "I bought some"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘How much coffee did you drink yesterday?’ ‘",
+      ".’ (I/not/drink)"
+     ],
+     "answers": [
+      [
+       "I didn’t drink any"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "77.4",
+   "type": "fill-in",
+   "instruction": "Вставьте something/somebody или anything/anybody.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "A woman stopped me and said ",
+      ", but I didn’t understand."
+     ],
+     "answers": [
+      [
+       "something"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘What’s wrong?’ ‘There’s ",
+      " in my eye.’"
+     ],
+     "answers": [
+      [
+       "something"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Do you know ",
+      " about politics?"
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I went to the shop, but I didn’t buy ",
+      "."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " has broken the window. I don’t know who."
+     ],
+     "answers": [
+      [
+       "Somebody",
+       "Someone"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "There isn’t ",
+      " in the bag. It’s empty."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I’m looking for my keys. Has ",
+      " seen them?"
+     ],
+     "answers": [
+      [
+       "anybody",
+       "anyone"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Would you like ",
+      " to drink?"
+     ],
+     "answers": [
+      [
+       "something"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I didn’t eat ",
+      " because I wasn’t hungry."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "This is a secret. Please don’t tell ",
+      "."
+     ],
+     "answers": [
+      [
+       "anybody",
+       "anyoneparatus"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "77.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя some/any. [шкафчик = cupboard\nсказать = tell]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "В шкафчике есть кофе.",
+     "answers": [
+      "There’s some coffee in the cupboard."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "У нас нет яиц.",
+     "answers": [
+      "We don’t have any eggs.",
+      "We haven’t got any eggs."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Можно мне торт?",
+     "answers": [
+      "Can I have some cake?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Послушай! Кто-то поёт твою любимую песню.",
+     "answers": [
+      "Listen! Somebody’s singing your favourite song.",
+      "Listen! Somebody is singing your favourite song.",
+      "Listen! Someone’s singing your favourite song.",
+      "Listen! Someone is singing your favourite song."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Я хочу тебе что-то сказать.",
+     "answers": [
+      "I want to tell you something.",
+      "I’d like to tell you something."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Ты знаешь кого-нибудь, кто живёт в Манчестере?",
+     "answers": [
+      "Do you know anybody who lives in Manchester?",
+      "Do you know anyone who lives in Manchester?",
+      "Do you know anybody living in Manchester?",
+      "Do you know anyone living in Manchester?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Завтра вечером мы ничего не делаем.",
+     "answers": [
+      "We’re not doing anything tomorrow evening.",
+      "Tomorrow evening we’re not doing anything."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я видела красивые картины в том музее.",
+     "answers": [
+      "I saw some beautiful paintings in that museum.",
+      "I saw some beautiful paintings at that museum.",
+      "I saw some beautiful pictures in that museum.",
+      "I saw some beautiful pictures at that museum."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Я заварила чай. Ты хочешь?",
+     "answers": [
+      "I’ve made some tea. Would you like some?",
+      "I’ve made some tea. Do you want some?"
+     ]
+    }
+   ]
+  }
+ ]
+}

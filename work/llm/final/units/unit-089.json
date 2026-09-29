@@ -1,0 +1,481 @@
+{
+ "unit": 89,
+ "title": "older than … · more expensive than …",
+ "pdfPages": [
+  189,
+  190
+ ],
+ "exercises": [
+  {
+   "id": "89.1",
+   "type": "fill-in",
+   "instruction": "Напишите предложения о Кейт и Бене. Используйте than.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Kate ",
+      "."
+     ],
+     "answers": [
+      [
+       "is older than Ben"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Ben ",
+      "."
+     ],
+     "answers": [
+      [
+       "is a better swimmer than Kate"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Kate is ",
+      "."
+     ],
+     "answers": [
+      [
+       "taller than Ben"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Kate starts ",
+      " Ben."
+     ],
+     "answers": [
+      [
+       "work earlier than"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Ben ",
+      "."
+     ],
+     "answers": [
+      [
+       "works harder than Kate"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Ben has ",
+      "."
+     ],
+     "answers": [
+      [
+       "more money than Kate"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Kate is a ",
+      "."
+     ],
+     "answers": [
+      [
+       "better driver than Ben"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Ben ",
+      "."
+     ],
+     "answers": [
+      [
+       "is more patient than Kate"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Ben ",
+      "."
+     ],
+     "answers": [
+      [
+       "is a better dancer than Kate",
+       "dances better than Kate"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Kate ",
+      "."
+     ],
+     "answers": [
+      [
+       "is more intelligent than Ben"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Kate ",
+      "."
+     ],
+     "answers": [
+      [
+       "speaks French better than Ben",
+       "speaks better French than Ben",
+       "’s French is better than Ben’s"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "Ben ",
+      "."
+     ],
+     "answers": [
+      [
+       "goes to the cinema more than Kate",
+       "goes to the cinema more often than Kate"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "89.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте than.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He isn’t very tall. You’re ",
+      " или ",
+      "."
+     ],
+     "answers": [
+      [
+       "taller than him"
+      ],
+      [
+       "taller than he is"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She isn’t very old. You’re ",
+      "."
+     ],
+     "answers": [
+      [
+       "older than her",
+       "older than she is"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I don’t work very hard. You work ",
+      "."
+     ],
+     "answers": [
+      [
+       "harder than me",
+       "harder than I do"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "He doesn’t watch TV very much. You ",
+      "."
+     ],
+     "answers": [
+      [
+       "watch TV more than him",
+       "watch TV more than he does"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I’m not a very good cook. You ",
+      "."
+     ],
+     "answers": [
+      [
+       "’re a better cook than me",
+       "’re a better cook than I am",
+       "cook better than me",
+       "cook better than I do"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "We don’t know many people. You ",
+      "."
+     ],
+     "answers": [
+      [
+       "know more people than us",
+       "know more people than we do"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "They don’t have much money. You ",
+      "."
+     ],
+     "answers": [
+      [
+       "have more money than them",
+       "have more money than they have"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I can’t run very fast. You can ",
+      "."
+     ],
+     "answers": [
+      [
+       "run faster than me",
+       "run faster than I can"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "She hasn’t been here very long. You ",
+      "."
+     ],
+     "answers": [
+      [
+       "’ve been here longer than her",
+       "’ve been here longer than she has"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "They didn’t get up very early. You ",
+      "."
+     ],
+     "answers": [
+      [
+       "got up earlier than them",
+       "got up earlier than they did"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "He wasn’t very surprised. You ",
+      "."
+     ],
+     "answers": [
+      [
+       "were more surprised than him",
+       "were more surprised than he was"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "89.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте a bit или much + сравнительная степень (older/better и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Emma is 25. Joe is 24½. Emma ",
+      "."
+     ],
+     "answers": [
+      [
+       "is a bit older than Joe"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Jack’s mother is 52. His father is 69. Jack’s mother ",
+      "."
+     ],
+     "answers": [
+      [
+       "is much younger than his father"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "My camera cost £120. Yours cost £112. My camera ",
+      "."
+     ],
+     "answers": [
+      [
+       "cost a bit more than yours",
+       "cost a bit more than your camera",
+       "was a bit more expensive than yours",
+       "was a bit more expensive than your camera"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Yesterday I felt terrible. Today I feel OK. I feel ",
+      "."
+     ],
+     "answers": [
+      [
+       "much better today than yesterday",
+       "much better today than I did yesterday",
+       "much better today than I felt yesterday"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Today the temperature is 12 degrees. Yesterday it was 10 degrees. It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "a bit warmer today than yesterday",
+       "a bit warmer today than it was yesterday"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Sarah is an excellent tennis player. I’m not very good. Sarah ",
+      "."
+     ],
+     "answers": [
+      [
+       "is a much better tennis player than me",
+       "is a much better tennis player than I am",
+       "is much better at tennis than me",
+       "is much better at tennis than I am",
+       "plays tennis much better than me",
+       "plays tennis much better than I do"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "89.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (умный = intelligent)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Чёрные туфли дороже коричневых туфель.",
+     "answers": [
+      "The black shoes are more expensive than the brown shoes.",
+      "The black shoes are more expensive than the brown ones."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "У моих родителей дом больше, чем у нас.",
+     "answers": [
+      "My parents have a bigger house than us.",
+      "My parents have a bigger house than we do."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Сегодня значительно теплее, чем вчера.",
+     "answers": [
+      "Today is much warmer than yesterday.",
+      "It is much warmer today than it was yesterday.",
+      "It’s much warmer today than it was yesterday."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Тим немного старше, чем его сестра.",
+     "answers": [
+      "Tim is a bit older than his sister."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Эта книга очень длинная. Она больше 600 страниц.",
+     "answers": [
+      "This book is very long. It’s more than 600 pages."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Собаки умнее кошек.",
+     "answers": [
+      "Dogs are more intelligent than cats."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Кинотеатр менее переполнен, чем обычно.",
+     "answers": [
+      "The cinema is less crowded than usual."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Кембридж мне нравится намного больше Лондона.",
+     "answers": [
+      "I like Cambridge much more than London."
+     ]
+    }
+   ]
+  }
+ ]
+}

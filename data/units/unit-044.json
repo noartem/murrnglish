@@ -1,328 +1,192 @@
 {
   "unit": 44,
-  "title": "Passive 3",
+  "title": "isn’t, haven’t, don’t и т. д. (отрицания)",
   "pdfPages": [
-    100,
-    101
+    99,
+    100
   ],
   "exercises": [
     {
       "id": "44.1",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using the correct form of the verb.",
+      "type": "write",
+      "instruction": "Сделайте эти предложения отрицательными.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I tried to contact Tom. I called his office but I ",
-            " that he was in a meeting. (tell)"
-          ],
+          "prompt": "He’s gone away.",
           "answers": [
-            [
-              "was told"
-            ]
+            "He hasn’t gone away."
           ]
         },
         {
           "num": 2,
-          "parts": [
-            "Amy retired from her job recently. She ",
-            " a present by her colleagues. (give)"
-          ],
+          "prompt": "They’re married.",
           "answers": [
-            [
-              "was given"
-            ]
+            "They aren’t married.",
+            "They’re not married."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "I didn't know there was a meeting yesterday. I ",
-            " about it. (not / tell)"
-          ],
+          "prompt": "I’ve had dinner.",
           "answers": [
-            [
-              "wasn't told",
-              "was not told"
-            ]
+            "I haven’t had dinner."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Sarah's salary is very low. I don't understand why she ",
-            " so little. (pay)"
-          ],
+          "prompt": "It’s cold today.",
           "answers": [
-            [
-              "'s paid",
-              "is paid"
-            ]
+            "It isn’t cold today."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "You will need to use this machine. Have you ",
-            " how it works? (show)"
-          ],
+          "prompt": "We’ll be late.",
           "answers": [
-            [
-              "been shown"
-            ]
+            "We won’t be late."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I had an interview for a job recently. It wasn't easy. I ",
-            " some questions that were very hard for me to answer. (ask)"
-          ],
+          "prompt": "You should go.",
           "answers": [
-            [
-              "was asked"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "They didn't tell us much about the project. We ",
-            " enough information. (not / give)"
-          ],
-          "answers": [
-            [
-              "weren't given",
-              "were not given"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "I was surprised to get the job I applied for. I didn't expect ",
-            ". (offer)"
-          ],
-          "answers": [
-            [
-              "to be offered"
-            ]
+            "You shouldn’t go."
           ]
         }
       ]
     },
     {
       "id": "44.2",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using being + the following verbs (in the correct form):",
-      "wordBank": [
-        "bite",
-        "give",
-        "invite",
-        "keep",
-        "knock down",
-        "stick",
-        "treat"
+      "type": "write",
+      "instruction": "Сделайте эти предложения отрицательными. Используйте don’t/doesn’t/didn’t.",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Steve hates ",
-            " waiting."
-          ],
+          "prompt": "She saw me.",
           "answers": [
-            [
-              "being kept"
-            ]
-          ],
-          "example": true
+            "She didn’t see me."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "We went to the wedding without ",
-            "."
-          ],
+          "prompt": "I like cheese.",
           "answers": [
-            [
-              "being invited"
-            ]
+            "I don’t like cheese."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "I like giving presents and I also like ",
-            " them."
-          ],
+          "prompt": "They understood.",
           "answers": [
-            [
-              "being given"
-            ]
+            "They didn’t understand."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "It's a busy road and I don't like crossing it. I'm afraid of ",
-            "."
-          ],
+          "prompt": "He lives here.",
           "answers": [
-            [
-              "being knocked down"
-            ]
+            "He doesn’t live here."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "How do you avoid ",
-            " by mosquitoes?"
-          ],
+          "prompt": "Go away!",
           "answers": [
-            [
-              "being bitten"
-            ]
+            "Don’t go away!"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I'm an adult. I don't like ",
-            " like a child."
-          ],
+          "prompt": "I did the shopping.",
           "answers": [
-            [
-              "being treated"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "You can't do anything about ",
-            " in a traffic jam."
-          ],
-          "answers": [
-            [
-              "being stuck"
-            ]
+            "I didn’t do the shopping."
           ]
         }
       ]
     },
     {
       "id": "44.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using get or got + the following verbs (in the correct form):",
-      "wordBank": [
-        "ask",
-        "break",
-        "hurt",
-        "pay",
-        "steal",
-        "sting",
-        "stop",
-        "use"
+      "type": "write",
+      "instruction": "Сделайте эти предложения отрицательными.",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "There was a fight, but nobody ",
-            "."
-          ],
+          "prompt": "She can swim.",
           "answers": [
-            [
-              "got hurt"
-            ]
-          ],
-          "example": true
+            "She can’t swim."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "Alex ",
-            " by a bee while he was sitting in the garden."
-          ],
+          "prompt": "They’ve arrived.",
           "answers": [
-            [
-              "got stung"
-            ]
+            "They haven’t arrived."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "These tennis courts don't ",
-            " very often. Not many people want to play here."
-          ],
+          "prompt": "I went to the bank.",
           "answers": [
-            [
-              "get used"
-            ]
+            "I didn’t go to the bank."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I used to have a bike, but it ",
-            " a few months ago."
-          ],
+          "prompt": "He speaks German.",
           "answers": [
-            [
-              "got stolen"
-            ]
+            "He doesn’t speak German."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "Rachel works hard, but she doesn't ",
-            " very much."
-          ],
+          "prompt": "We were angry.",
           "answers": [
-            [
-              "get paid"
-            ]
+            "We weren’t angry."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Please pack these things very carefully. I don't want anything to ",
-            "."
-          ],
+          "prompt": "He’ll be pleased.",
           "answers": [
-            [
-              "get broken"
-            ]
+            "He won’t be pleased."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "People often want to know what my job is. I ",
-            " that question a lot."
-          ],
+          "prompt": "Call me tonight.",
           "answers": [
-            [
-              "get asked"
-            ]
+            "Don’t call me tonight."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "Last night I ",
-            " by the police as I was driving home. One of the lights on my car wasn't working."
-          ],
+          "prompt": "It rained yesterday.",
           "answers": [
-            [
-              "got stopped"
-            ]
+            "It didn’t rain yesterday."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "I could hear them.",
+          "answers": [
+            "I couldn’t hear them."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "I believe you.",
+          "answers": [
+            "I don’t believe you."
           ]
         }
       ]
@@ -330,118 +194,353 @@
     {
       "id": "44.4",
       "type": "fill-in",
-      "instruction": "Complete the sentences.",
+      "instruction": "Заполните пропуски, вставив отрицательную форму (isn’t/haven’t/don’t и т. д.).",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I've been offered the job, but I don't think I'll accept it."
+            "They aren’t rich. They ",
+            " got much money."
           ],
-          "answers": [],
-          "example": true
+          "answers": [
+            [
+              "haven’t"
+            ]
+          ]
         },
         {
           "num": 2,
           "parts": [
-            "I don’t get invited to many parties."
+            "‘Would you like something to eat?’ ‘No, thank you. I ",
+            " hungry.’"
           ],
-          "answers": [],
-          "example": true
+          "answers": [
+            [
+              "’m not",
+              "am not"
+            ]
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "Which year ",
-            " you born in?"
+            "I ",
+            " find my glasses. Have you seen them?"
           ],
           "answers": [
             [
-              "were"
+              "can’t"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I haven't been ",
-            " any information yet."
+            "Steve ",
+            " go to the cinema much. He prefers to watch DVDs at home."
           ],
           "answers": [
             [
-              "given"
+              "doesn’t"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I didn't know the way, so I got ",
-            "."
+            "We can walk to the station from here. It ",
+            " very far."
           ],
           "answers": [
             [
-              "lost"
+              "isn’t",
+              "’s not"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "He doesn't like ",
-            " interrupted when he's speaking."
+            "‘Where’s Jane?’ ‘I ",
+            " know. I ",
+            " seen her today.’"
           ],
           "answers": [
             [
-              "being"
+              "don’t"
+            ],
+            [
+              "haven’t"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "How did the window ",
-            " broken? What happened?"
+            "Be careful! ",
+            " fall!"
           ],
           "answers": [
             [
-              "get"
+              "Don’t"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "She's a voluntary worker. She ",
-            " get paid."
+            "We went to a restaurant last night. I ",
+            " like the food very much."
           ],
           "answers": [
             [
-              "doesn't"
+              "didn’t"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "I ",
-            " born in a small town in the north of the country."
+            "I’ve been to Japan many times, but I ",
+            " been to Korea."
           ],
           "answers": [
             [
-              "was"
+              "haven’t"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "We had to do what we did. We ",
-            " given any choice."
+            "Julia ",
+            " be here tomorrow. She’s going away."
           ],
           "answers": [
             [
-              "weren't"
+              "won’t"
             ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "‘Who broke that window?’ ‘Not me. I ",
+            " do it.’"
+          ],
+          "answers": [
+            [
+              "didn’t"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "We didn’t see what happened. We ",
+            " looking at the time."
+          ],
+          "answers": [
+            [
+              "weren’t"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "Lisa bought a new coat a few days ago, but she ",
+            " worn it yet."
+          ],
+          "answers": [
+            [
+              "hasn’t"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "You ",
+            " drive so fast. It’s dangerous."
+          ],
+          "answers": [
+            [
+              "shouldn’t",
+              "mustn’t"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "44.5",
+      "type": "write",
+      "instruction": "Вы задали Гари вопросы. Он на них ответил ‘Yes’ или ‘No’. Напишите о Гари, используя утвердительные или отрицательные предложения.",
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Are you married? No.",
+          "answers": [
+            "He isn’t married."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Do you live in London? Yes.",
+          "answers": [
+            "He lives in London."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Were you born in London? No.",
+          "answers": [
+            "He wasn’t born in London."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Do you like London? No.",
+          "answers": [
+            "He doesn’t like London."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Would you like to live in the country? Yes.",
+          "answers": [
+            "He’d like to live in the country."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Can you drive? Yes.",
+          "answers": [
+            "He can drive."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Have you got a car? No.",
+          "answers": [
+            "He hasn’t got a car.",
+            "He doesn’t have a car."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Do you read newspapers? No.",
+          "answers": [
+            "He doesn’t read newspapers."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Are you interested in politics? No.",
+          "answers": [
+            "He isn’t interested in politics."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Do you watch TV most evenings? Yes.",
+          "answers": [
+            "He watches TV most evenings."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "Did you watch TV last night? No.",
+          "answers": [
+            "He didn’t watch TV last night."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "Did you go out last night? Yes.",
+          "answers": [
+            "He went out last night."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "44.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (волноваться = worry; поверить = believe; так сильно = so much; опаздывать на встречу = be late for the meeting)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Не волнуйся. Я не забуду о твоём дне рождения.",
+          "answers": [
+            "Don’t worry. I won’t forget about your birthday.",
+            "Don’t worry. I won’t forget your birthday."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Ира не могла поверить новостям.",
+          "answers": [
+            "Ira couldn’t believe the news.",
+            "Ira could not believe the news."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Вам не следует волноваться так сильно.",
+          "answers": [
+            "You shouldn’t worry so much.",
+            "You should not worry so much."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Я не хотел бы быть учителем.",
+          "answers": [
+            "I wouldn’t like to be a teacher.",
+            "I would not like to be a teacher."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Мне нельзя опаздывать на встречу.",
+          "answers": [
+            "I mustn’t be late for the meeting.",
+            "I must not be late for the meeting."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Пожалуйста, не уходите без меня.",
+          "answers": [
+            "Please don’t leave without me.",
+            "Please don’t go without me."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Музеи не были открыты в понедельник.",
+          "answers": [
+            "The museums weren’t open on Monday.",
+            "The museums were not open on Monday.",
+            "On Monday the museums weren’t open.",
+            "On Monday the museums were not open."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я не знал, что делать.",
+          "answers": [
+            "I didn’t know what to do.",
+            "I did not know what to do."
           ]
         }
       ]

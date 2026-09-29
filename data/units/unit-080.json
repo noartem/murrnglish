@@ -1,219 +1,521 @@
 {
   "unit": 80,
-  "title": "Noun + noun (a bus driver / a headache)",
-  "pdfPages": [172, 173],
+  "title": "somebody/anything/nowhere и т. д.",
+  "pdfPages": [
+    171,
+    172
+  ],
   "exercises": [
     {
       "id": "80.1",
       "type": "fill-in",
-      "instruction": "What do we call these things and people?",
+      "instruction": "Вставьте somebody (или someone) / something / somewhere.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "Lucy said ",
+            "."
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’ve lost ",
+            "."
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ]
+        },
+        {
           "num": 3,
-          "parts": ["A ticket to travel by train is a ", "."],
-          "answers": [["train ticket"]]
+          "parts": [
+            "Sue and Tom went ",
+            "."
+          ],
+          "answers": [
+            [
+              "somewhere"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["A machine you use to get a ticket is a ", "."],
-          "answers": [["ticket machine"]]
-        },
-        {
-          "num": 5,
-          "parts": ["The staff at a hotel are the ", "."],
-          "answers": [["hotel staff"]]
-        },
-        {
-          "num": 6,
-          "parts": ["The results of your exams are your ", "."],
-          "answers": [["exam results"]]
-        },
-        {
-          "num": 7,
-          "parts": ["A horse that runs in races is a ", "."],
-          "answers": [["race horse"]]
-        },
-        {
-          "num": 8,
-          "parts": ["A race for horses is a ", "."],
-          "answers": [["horse race"]]
-        },
-        {
-          "num": 9,
-          "parts": ["Shoes for running are ", "."],
-          "answers": [["running shoes"]]
-        },
-        {
-          "num": 10,
-          "parts": ["A shop that sells shoes is a ", "."],
-          "answers": [["shoe shop"]]
-        },
-        {
-          "num": 11,
-          "parts": ["The window of a shop is a ", "."],
-          "answers": [["shop window"]]
-        },
-        {
-          "num": 12,
-          "parts": ["A person who cleans windows is a ", "."],
-          "answers": [["window cleaner"]]
-        },
-        {
-          "num": 13,
-          "parts": ["A scandal involving a construction company is ", "."],
-          "answers": [["a construction company scandal"]]
-        },
-        {
-          "num": 14,
-          "parts": ["Workers at a car factory are ", "."],
-          "answers": [["car factory workers"]]
-        },
-        {
-          "num": 15,
-          "parts": ["A scheme for the improvement of a road is a ", "."],
-          "answers": [["road improvement scheme"]]
-        },
-        {
-          "num": 16,
-          "parts": ["A department store in New York is a ", "."],
-          "answers": [["New York department store"]]
+          "parts": [
+            "I’m going to phone ",
+            "."
+          ],
+          "answers": [
+            [
+              "somebody",
+              "someone"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "80.2",
-      "type": "fill-in",
-      "instruction": "Answer the questions using two of the following words each time:",
-      "wordBank": ["accident", "belt", "birthday", "card", "credit", "driver", "forecast", "machine", "number", "party", "ring", "road", "room", "seat", "truck", "washing", "weather", "wedding"],
+      "type": "write",
+      "instruction": "Ответьте на вопросы, используя только nobody (или no-one) / nothing / nowhere. Теперь ответьте на те же вопросы полными предложениями. Используйте not + anybody/anything/anywhere.",
+      "example": [
+        "1a",
+        "1b"
+      ],
       "items": [
         {
-          "num": 2,
-          "parts": ["You should wear this when you're driving. ", ""],
-          "answers": [["a seat belt"]]
+          "num": "1a",
+          "prompt": "What did you say?",
+          "answers": [
+            "Nothing."
+          ]
         },
         {
-          "num": 3,
-          "parts": ["You can use this to pay for things. ", ""],
-          "answers": [["a credit card"]]
+          "num": "2a",
+          "prompt": "Where are you going?",
+          "answers": [
+            "Nowhere."
+          ]
         },
         {
-          "num": 4,
-          "parts": ["This will tell you if it's going to rain or not. ", ""],
-          "answers": [["the weather forecast"]]
+          "num": "3a",
+          "prompt": "What do you want?",
+          "answers": [
+            "Nothing."
+          ]
         },
         {
-          "num": 5,
-          "parts": ["This is useful if you have a lot of dirty clothes. ", ""],
-          "answers": [["a washing machine"]]
+          "num": "4a",
+          "prompt": "Who are you looking for?",
+          "answers": [
+            "Nobody.",
+            "No-one."
+          ]
         },
         {
-          "num": 6,
-          "parts": ["This is something you might wear if you're married. ", ""],
-          "answers": [["a wedding ring"]]
+          "num": "1b",
+          "prompt": "What did you say?",
+          "answers": [
+            "I didn’t say anything."
+          ]
         },
         {
-          "num": 7,
-          "parts": ["If you're staying at a hotel, you need to remember this. ", ""],
-          "answers": [["your room number"]]
+          "num": "2b",
+          "prompt": "Where are you going?",
+          "answers": [
+            "I’m not going anywhere."
+          ]
         },
         {
-          "num": 8,
-          "parts": ["This is a way to celebrate getting older. ", ""],
-          "answers": [["a birthday party"]]
+          "num": "3b",
+          "prompt": "What do you want?",
+          "answers": [
+            "I don’t want anything."
+          ]
         },
         {
-          "num": 9,
-          "parts": ["This person transports things by road. ", ""],
-          "answers": [["a truck driver"]]
+          "num": "4b",
+          "prompt": "Who are you looking for?",
+          "answers": [
+            "I’m not looking for anybody.",
+            "I’m not looking for anyone."
+          ]
         }
       ]
     },
     {
       "id": "80.3",
       "type": "fill-in",
-      "instruction": "Put the words in the right order.",
+      "instruction": "Вставьте somebody/anything/nowhere и т. д.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "It’s dark. I can’t see ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Jack likes sport. He plays for his ", ". (team / school / football)"],
-          "answers": [["school football team"]]
+          "parts": [
+            "Tom lives ",
+            " near London."
+          ],
+          "answers": [
+            [
+              "somewhere"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["Anna works for a ", ". (company / production / film)"],
-          "answers": [["film production company"]]
+          "parts": [
+            "Do you know ",
+            " about computers?"
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Many people invest in a ", ". (life / policy / insurance)"],
-          "answers": [["life insurance policy"]]
+          "parts": [
+            "'Listen!'  'What? I can’t hear ",
+            " .'"
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["You can get a map at the ", ". (information / office / tourist)"],
-          "answers": [["tourist information office"]]
+          "parts": [
+            "'What are you doing here?'  'I’m waiting for ",
+            " .'"
+          ],
+          "answers": [
+            [
+              "somebody",
+              "someone"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We need to talk. There’s ",
+            " I want to tell you."
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "'Did ",
+            " see the accident?' 'No, ",
+            ".'"
+          ],
+          "answers": [
+            [
+              "anybody",
+              "anyone"
+            ],
+            [
+              "nobody",
+              "no-one"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "We weren’t hungry, so we didn’t eat ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "'What’s going to happen?'  'I don’t know. ",
+            " knows.'"
+          ],
+          "answers": [
+            [
+              "Nobody",
+              "No-one"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "'Do you know ",
+            " in Paris?'  'Yes, a few people.'"
+          ],
+          "answers": [
+            [
+              "anybody",
+              "anyone"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "'What’s in that cupboard?' ",
+            ". It’s empty.'"
+          ],
+          "answers": [
+            [
+              "Nothing"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I’m looking for my glasses. I can’t find them ",
+            "."
+          ],
+          "answers": [
+            [
+              "anywhere"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "I don’t like cold weather. I want to live ",
+            " warm."
+          ],
+          "answers": [
+            [
+              "somewhere"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Is there ",
+            " interesting on TV tonight?"
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "Have you ever met ",
+            " famous?"
+          ],
+          "answers": [
+            [
+              "anybody",
+              "anyone"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "80.4",
-      "type": "choice",
-      "instruction": "Which is correct?",
+      "type": "fill-in",
+      "instruction": "Закончите предложения, используя слова из обеих рамок.",
+      "wordBank": [
+        "something",
+        "anything",
+        "nothing",
+        "something",
+        "anywhere",
+        "nowhere",
+        "somewhere",
+        "nowhere",
+        "do",
+        "eat",
+        "park",
+        "sit",
+        "drink",
+        "go",
+        "read",
+        "stay"
+      ],
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "We don’t go out very much because there’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "nowhere to go"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "options": ["two-hour", "two hours"],
-          "answer": 0
+          "parts": [
+            "There isn’t any food in the house. We don’t have ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything to eat"
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": ["two hour", "two hours"],
-          "answer": 1
+          "parts": [
+            "I’m bored. I’ve got ",
+            "."
+          ],
+          "answers": [
+            [
+              "nothing to do"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": ["twenty-pound", "twenty pounds"],
-          "answer": 0
+          "parts": [
+            "'Why are you standing?'  'Because there isn’t ",
+            ".'"
+          ],
+          "answers": [
+            [
+              "anywhere to sit"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": ["ten-pound", "ten pounds"],
-          "answer": 0
+          "parts": [
+            "'Would you like ",
+            "?'  'Yes, please – a glass of water.'"
+          ],
+          "answers": [
+            [
+              "something to drink"
+            ]
+          ]
         },
         {
           "num": 6,
-          "options": ["15-minute", "15 minutes"],
-          "answer": 0
+          "parts": [
+            "If you’re going to the city centre, take the bus. Don’t drive because there’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "nowhere to park"
+            ]
+          ]
         },
         {
           "num": 7,
-          "options": ["60-minute", "60 minutes"],
-          "answer": 1
+          "parts": [
+            "I want ",
+            ". I’m going to buy a magazine."
+          ],
+          "answers": [
+            [
+              "something to read"
+            ]
+          ]
         },
         {
           "num": 8,
-          "options": ["twelve-storey", "twelve storeys"],
-          "answer": 0
+          "parts": [
+            "I need ",
+            " in London. Can you recommend a hotel?"
+          ],
+          "answers": [
+            [
+              "somewhere to stay"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "80.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (здесь рядом = near here; необычное = unusual)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Вы что-нибудь делаете в субботу?",
+          "answers": [
+            "Are you doing anything on Saturday?"
+          ]
         },
         {
-          "num": 9,
-          "options": ["five-day", "five days"],
-          "answer": 1
+          "num": 2,
+          "prompt": "Ты знаешь кого-нибудь, кто говорит по-испански?",
+          "answers": [
+            "Do you know anyone who speaks Spanish?",
+            "Do you know anybody who speaks Spanish?"
+          ]
         },
         {
-          "num": 10,
-          "options": ["Five-star", "Five stars"],
-          "answer": 0
+          "num": 3,
+          "prompt": "Здесь рядом негде поесть.",
+          "answers": [
+            "There’s nowhere to eat near here.",
+            "There’s nowhere to eat around here."
+          ]
         },
         {
-          "num": 11,
-          "options": ["six-year-old", "six years old"],
-          "answer": 1
+          "num": 4,
+          "prompt": "Вы ездили куда-нибудь прошлым летом?",
+          "answers": [
+            "Did you go anywhere last summer?"
+          ]
         },
         {
-          "num": 12,
-          "options": ["six-year-old", "six-years-old"],
-          "answer": 0
+          "num": 5,
+          "prompt": "Я не видела ничего необычного.",
+          "answers": [
+            "I didn’t see anything unusual.",
+            "I saw nothing unusual."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Вы хотите что-нибудь попить?",
+          "answers": [
+            "Would you like something to drink?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Игорь живёт где-то рядом с Новгородом.",
+          "answers": [
+            "Igor lives somewhere near Novgorod."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Вы делали что-нибудь интересное в Англии?",
+          "answers": [
+            "Did you do anything interesting in England?"
+          ]
         }
       ]
     }

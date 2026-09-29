@@ -1,25 +1,25 @@
 {
   "unit": 85,
-  "title": "some and any",
+  "title": "(a) little · (a) few",
   "pdfPages": [
-    182,
-    183
+    181,
+    182
   ],
   "exercises": [
     {
       "id": "85.1",
       "type": "fill-in",
-      "instruction": "Put in some or any.",
+      "instruction": "Ответьте на вопросы, используя a little или a few.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "We didn’t buy ",
-            " flowers."
+            "'Do you have any money?'  'Yes, ",
+            ".'"
           ],
           "answers": [
             [
-              "any"
+              "a little"
             ]
           ],
           "example": true
@@ -27,128 +27,60 @@
         {
           "num": 2,
           "parts": [
-            "Tonight I’m going out with ",
-            " friends of mine."
+            "'Do you have any envelopes?'  'Yes, ",
+            ".'"
           ],
           "answers": [
             [
-              "some"
+              "a few"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Have you seen ",
-            " good movies recently?"
+            "'Do you want sugar in your coffee?'  'Yes, ",
+            ", please.'"
           ],
           "answers": [
             [
-              "any"
+              "a little"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I’d like ",
-            " information about what there is to see in this town."
+            "'Did you take any photos when you were on holiday?'  'Yes, ",
+            ".'"
           ],
           "answers": [
             [
-              "some"
+              "a few"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I didn’t have ",
-            " money. I had to borrow ",
-            "."
+            "'Does your friend speak English?'  'Yes, ",
+            ".'"
           ],
           "answers": [
             [
-              "any"
-            ],
-            [
-              "some"
+              "a little"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "You can use your card to withdraw money at ",
-            " cash machine."
+            "'Are there any good restaurants in this town?'  'Yes, ",
+            ".'"
           ],
           "answers": [
             [
-              "any"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Those apples look nice. Shall we get ",
-            "?"
-          ],
-          "answers": [
-            [
-              "some"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "With the special tourist train ticket, you can travel on ",
-            " train you like."
-          ],
-          "answers": [
-            [
-              "any"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "‘Can I have ",
-            " more coffee, please?’ ‘Sure. Help yourself.’"
-          ],
-          "answers": [
-            [
-              "some"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "If there are ",
-            " words you don’t understand, look them up in a dictionary."
-          ],
-          "answers": [
-            [
-              "any"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "We wanted to buy ",
-            " grapes, but they didn’t have ",
-            " in the shop."
-          ],
-          "answers": [
-            [
-              "some"
-            ],
-            [
-              "any"
+              "a few"
             ]
           ]
         }
@@ -157,17 +89,27 @@
     {
       "id": "85.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences with some- or any- + -body/-thing/-where.",
+      "instruction": "Используйте a little или a few + слова из рамки:",
+      "wordBank": [
+        "chairs",
+        "days",
+        "fresh air",
+        "friends",
+        "milk",
+        "Russian",
+        "times",
+        "years"
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I was too surprised to say ",
+            "Mark speaks Italian well. He lived in Italy for ",
             "."
           ],
           "answers": [
             [
-              "anything"
+              "a few years"
             ]
           ],
           "example": true
@@ -175,220 +117,84 @@
         {
           "num": 2,
           "parts": [
-            "There’s ",
-            " at the door. Can you go and see who it is?"
+            "Can I have ",
+            " in my coffee, please?"
           ],
           "answers": [
             [
-              "somebody/someone"
+              "a little milk"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Does ",
-            " mind if I open the window?"
+            "'When did Amy go away?'  '",
+            " ago.'"
           ],
           "answers": [
             [
-              "anybody/anyone"
+              "A few days"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I can’t drive and I don’t know ",
-            " about cars."
+            "'Do you speak any foreign languages?'  'I can speak ",
+            ".'"
           ],
           "answers": [
             [
-              "anything"
+              "a little Russian"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "You must be hungry. Why don’t I get you ",
-            " to eat?"
+            "'Are you going out alone?'  'No, I’m going with ",
+            ".'"
           ],
           "answers": [
             [
-              "something"
+              "a few friends"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Emma is very tolerant. She never complains about ",
-            "."
+            "'Have you ever been to Mexico?'  'Yes, ",
+            ".'"
           ],
           "answers": [
             [
-              "anything or anybody/anyone"
+              "a few times"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "There was hardly ",
-            " on the beach. It was almost deserted."
+            "There wasn’t much furniture in the room – just a table and ",
+            "."
           ],
           "answers": [
             [
-              "anybody/anyone"
+              "a few chairs"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "Let’s go away. Let’s go ",
-            " warm and sunny."
-          ],
-          "answers": [
-            [
-              "somewhere"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I’m going out now. If ",
-            " asks where I am, tell them you don’t know."
-          ],
-          "answers": [
-            [
-              "anybody/anyone"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Why are you looking under the bed? Have you lost ",
-            "?"
-          ],
-          "answers": [
-            [
-              "something"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "This is a no-parking area. ",
-            " who parks their car here will have to pay a fine."
-          ],
-          "answers": [
-            [
-              "Anybody/Anyone"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "Quick, let’s go! There’s ",
-            " coming and I don’t want ",
-            " to see us."
-          ],
-          "answers": [
-            [
-              "somebody/someone"
-            ],
-            [
-              "anybody/anyone"
-            ]
-          ]
-        },
-        {
-          "num": 13,
-          "parts": [
-            "They stay at home all the time. They never seem to go ",
+            "I’m going out for a walk. I need ",
             "."
           ],
           "answers": [
             [
-              "anywhere"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "Jonathan stood up and left the room without saying ",
-            "."
-          ],
-          "answers": [
-            [
-              "anything"
-            ]
-          ]
-        },
-        {
-          "num": 15,
-          "parts": [
-            "‘Can I ask you ",
-            "?’ ‘Sure. What do you want to ask?’"
-          ],
-          "answers": [
-            [
-              "something"
-            ]
-          ]
-        },
-        {
-          "num": 16,
-          "parts": [
-            "Sarah was upset about ",
-            " and refused to talk to ",
-            "."
-          ],
-          "answers": [
-            [
-              "something"
-            ],
-            [
-              "anybody/anyone"
-            ]
-          ]
-        },
-        {
-          "num": 17,
-          "parts": [
-            "I need ",
-            " to translate. Is there ",
-            " here who speaks English?"
-          ],
-          "answers": [
-            [
-              "somebody/someone"
-            ],
-            [
-              "anybody/anyone"
-            ]
-          ]
-        },
-        {
-          "num": 18,
-          "parts": [
-            "Sue is very secretive. She never tells ",
-            " ",
-            "."
-          ],
-          "answers": [
-            [
-              "anybody/anyone"
-            ],
-            [
-              "anything"
+              "a little fresh air"
             ]
           ]
         }
@@ -397,17 +203,26 @@
     {
       "id": "85.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use any (+ noun) or anybody/anything/anywhere.",
+      "instruction": "Закончите предложения. Используйте very little или very few + слова из рамки:",
+      "wordBank": [
+        "coffee",
+        "hotels",
+        "mistakes",
+        "people",
+        "rain",
+        "time",
+        "work"
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "Which bus do I have to take? ",
-            ". They all go to the centre."
+            "Your English is very good. You make ",
+            "."
           ],
           "answers": [
             [
-              "Any bus"
+              "very few mistakes"
             ]
           ],
           "example": true
@@ -415,74 +230,324 @@
         {
           "num": 2,
           "parts": [
-            "When shall we meet? Monday? I don’t mind. ",
-            " next week will be OK for me."
+            "I drink ",
+            ". I prefer tea."
           ],
           "answers": [
             [
-              "Any day"
+              "very little coffee"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "What do you want to eat? ",
-            ". I don’t mind."
+            "The weather here is very dry in summer. There is ",
+            "."
           ],
           "answers": [
             [
-              "Anything"
+              "very little rain"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Who shall I invite to the party? It’s your party. You can invite ",
-            " you want."
+            "It’s difficult to find a place to stay in this town. There are ",
+            "."
           ],
           "answers": [
             [
-              "anybody/anyone"
+              "very few hotels"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "What sort of job are you looking for? ",
-            ". It doesn’t matter what it is."
+            "Hurry up. We have ",
+            "."
           ],
           "answers": [
             [
-              "Any job",
-              "Anything"
+              "very little time"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Where shall I sit? It’s up to you. You can sit ",
-            " you like."
+            "The town is very quiet at night. ",
+            " go out."
           ],
           "answers": [
             [
-              "anywhere"
+              "Very few people"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Is this machine difficult to use? No, it’s easy. ",
-            " can learn to use it very quickly."
+            "Some people in the office are very lazy. They do ",
+            "."
           ],
           "answers": [
             [
-              "Anybody/Anyone"
+              "very little work"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "85.4",
+      "type": "fill-in",
+      "instruction": "Вставьте little / a little или few / a few.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "There was ",
+            " food in the fridge. It was nearly empty."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "'When did Sarah go out?'  '",
+            " minutes ago.'"
+          ],
+          "answers": [
+            [
+              "A few"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I can’t decide now. I need ",
+            " time to think about it."
+          ],
+          "answers": [
+            [
+              "a little"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "There was ",
+            " traffic, so we arrived earlier than we expected."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "The bus service isn’t very good at night – there are ",
+            " buses after 9 o’clock."
+          ],
+          "answers": [
+            [
+              "few"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "'Would you like some soup?'  'Yes, ",
+            ", please.'"
+          ],
+          "answers": [
+            [
+              "a little"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I’d like to practise my English more, but I have ",
+            " opportunity."
+          ],
+          "answers": [
+            [
+              "little"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "85.5",
+      "type": "fill-in",
+      "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку. Напротив правильных предложений напишите OK.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "We’re going away ",
+            " next week."
+          ],
+          "answers": [
+            [
+              "for a few days"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Everybody needs ",
+            "."
+          ],
+          "answers": [
+            [
+              "a little luck"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I can’t talk to you now – I have ",
+            " to do."
+          ],
+          "answers": [
+            [
+              "a few things"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I eat very little meat – I don’t like it very much.",
+            ""
+          ],
+          "answers": [
+            [
+              "OK"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Excuse me, can I ask you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "a few questions"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "There were ",
+            " on the bus – it was nearly empty."
+          ],
+          "answers": [
+            [
+              "few people"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Mark is a very private person. Few people know him well.",
+            ""
+          ],
+          "answers": [
+            [
+              "OK"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "85.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Марина несколько лет жила в Лондоне.",
+          "answers": [
+            "Marina lived in London for a few years.",
+            "For a few years Marina lived in London."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Хотите кофе?” – “Немного, пожалуйста”.",
+          "answers": [
+            "‘Would you like some coffee?’ ‘A little, please.’",
+            "‘Do you want some coffee?’ ‘A little, please.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Ночью на дороге совсем мало машин.",
+          "answers": [
+            "There are very few cars on the road at night."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Мне нужно немного времени, чтобы закончить эту работу.",
+          "answers": [
+            "I need a little time to finish this work."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я знаю совсем мало людей в этом городе.",
+          "answers": [
+            "I know very few people in this town.",
+            "I know very few people in this city."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "У меня есть несколько идей. Ты хочешь их услышать?",
+          "answers": [
+            "I have a few ideas. Do you want to hear them?",
+            "I’ve got a few ideas. Do you want to hear them?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Боб знает очень мало о политике.",
+          "answers": [
+            "Bob knows very little about politics."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я ем совсем мало рыбы. Она очень дорогая.",
+          "answers": [
+            "I eat very little fish. It’s very expensive."
           ]
         }
       ]

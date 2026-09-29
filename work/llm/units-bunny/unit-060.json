@@ -1,0 +1,600 @@
+{
+ "unit": 60,
+ "title": "I/me · he/him · they/them и т. д.",
+ "pdfPages": [
+  131,
+  132
+ ],
+ "exercises": [
+  {
+   "id": "60.1",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, используя him/her/them.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I don’t know those girls. Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "them"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I don’t know that man. Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "him"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I don’t know those people. Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "them"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I don’t know David’s wife. Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I don’t know Mr Stevens. Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "him"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I don’t know Sarah’s parents. Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "them"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I don’t know the woman in the black coat. Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "60.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя I/me/you/she/her и т. д.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I want to see ",
+      ", but ",
+      " doesn’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "her"
+      ],
+      [
+       "she"
+      ],
+      [
+       "me"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "They want to see me, but ",
+      " don’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "I"
+      ],
+      [
+       "them"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "She wants to see him, but ",
+      " doesn’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "he"
+      ],
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "We want to see them, but ",
+      " don’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "they"
+      ],
+      [
+       "us"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "He wants to see us, but ",
+      " don’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "we"
+      ],
+      [
+       "him"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "They want to see her, but ",
+      " doesn’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "she"
+      ],
+      [
+       "them"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I want to see them, but ",
+      " don’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "they"
+      ],
+      [
+       "me"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "You want to see her, but ",
+      " doesn’t want to see ",
+      "."
+     ],
+     "answers": [
+      [
+       "she"
+      ],
+      [
+       "you"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "60.3",
+   "type": "write",
+   "instruction": "Напишите предложения, начинающиеся с I like …, I don’t like … или Do you like …?",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I don’t eat tomatoes. …",
+     "answers": [
+      "I don’t like them."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "George is a very nice man. I like …",
+     "answers": [
+      "I like him."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "This jacket isn’t very nice. I don’t …",
+     "answers": [
+      "I don’t like it."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "This is my new car. Do …?",
+     "answers": [
+      "Do you like it?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Mrs Clark is not very friendly. I …",
+     "answers": [
+      "I don’t like her."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "These are my new shoes. …?",
+     "answers": [
+      "Do you like them?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "60.4",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, используя I/me/he/him и т. д.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Who is that woman? Why are you looking at ",
+      "?"
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Do you know that man?’ ‘Yes, I work with ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "him"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Where are the tickets? I can’t find ",
+      "."
+     ],
+     "answers": [
+      [
+       "them"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I can’t find my keys. Where are ",
+      "?"
+     ],
+     "answers": [
+      [
+       "they"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We’re going out. You can come with ",
+      "."
+     ],
+     "answers": [
+      [
+       "us"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I’ve got a new motorbike. Do you want to see ",
+      "?"
+     ],
+     "answers": [
+      [
+       "it"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Maria likes music. ",
+      " plays the piano."
+     ],
+     "answers": [
+      [
+       "She"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I don’t like dogs. I’m afraid of ",
+      "."
+     ],
+     "answers": [
+      [
+       "them"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I’m talking to you. Please listen to ",
+      "."
+     ],
+     "answers": [
+      [
+       "me"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Where is Anna? I want to talk to ",
+      "."
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "You can have these CDs. I don’t want ",
+      "."
+     ],
+     "answers": [
+      [
+       "them"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "My brother has a new job, but ",
+      " doesn’t like ",
+      " very much."
+     ],
+     "answers": [
+      [
+       "he"
+      ],
+      [
+       "it"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "60.5",
+   "type": "fill-in",
+   "instruction": "Закончите предложения.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I need that book. Can you ",
+      "?"
+     ],
+     "answers": [
+      [
+       "give it to me"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "He wants the key. Can you give ",
+      "?"
+     ],
+     "answers": [
+      [
+       "it to him"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "She wants the keys. Can you ",
+      "?"
+     ],
+     "answers": [
+      [
+       "give them to her"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I need my bag. Can you ",
+      "?"
+     ],
+     "answers": [
+      [
+       "give it to me"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "They want the money. Can you ",
+      "?"
+     ],
+     "answers": [
+      [
+       "give it to them"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "We want the pictures. Can you ",
+      "?"
+     ],
+     "answers": [
+      [
+       "give them to us"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "60.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [хорошо = well; неприветлива = unfriendly]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "“Вы знаете Кевина?” – “Да, я знаю его очень хорошо”.",
+     "answers": [
+      "‘Do you know Kevin?’ ‘Yes, I know him very well.’"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я не ем бананы. Я их не люблю.",
+     "answers": [
+      "I don’t eat bananas. I don’t like them.",
+      "I don’t eat bananas. I do not like them.",
+      "I do not eat bananas. I don’t like them.",
+      "I do not eat bananas. I do not like them."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Это хорошая книга. Я хочу её прочитать.",
+     "answers": [
+      "It’s a good book. I want to read it.",
+      "It is a good book. I want to read it."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Тот мужчина смотрит на тебя. Ты его знаешь?",
+     "answers": [
+      "That man is looking at you. Do you know him?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Наташа очень неприветлива. Она мне не нравится.",
+     "answers": [
+      "Natasha is very unfriendly. I don’t like her."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Вечером я иду на вечеринку. Ты хочешь пойти со мной?",
+     "answers": [
+      "I’m going to a party tonight. Do you want to come with me?",
+      "I’m going to the party tonight. Do you want to come with me?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "“У меня есть для тебя подарок”, – “Для меня?”",
+     "answers": [
+      "‘I’ve got a present for you.’ ‘For me?’",
+      "‘I have got a present for you.’ ‘For me?’",
+      "‘I have a present for you.’ ‘For me?’"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Это Танина сумка. Ты можешь ей её отдать?",
+     "answers": [
+      "This is Tanya’s bag. Can you give it to her?"
+     ]
+    }
+   ]
+  }
+ ]
+}

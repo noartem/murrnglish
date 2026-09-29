@@ -89,7 +89,7 @@ export default function App() {
   // first open: collapsed (hover card); a user's explicit choice persists —
   // "0" = left expanded, "1" = collapsed, absent = first-open default (collapsed)
   const [sidebarOpen, setSidebarOpen] = useState(
-    () => localStorage.getItem("egu-course-sidebar-collapsed") === "0",
+    () => localStorage.getItem("red-murphy-sidebar-collapsed") === "0",
   );
   const [totals, setTotals] = useState<TotalsMap | null>(null);
   // incoming progress held for the preview modal; applied only on confirm.
@@ -128,7 +128,7 @@ export default function App() {
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
   const [cardPhase, setCardPhase] = useState(
-    () => localStorage.getItem("egu-course-sidebar-collapsed") !== "0",
+    () => localStorage.getItem("red-murphy-sidebar-collapsed") !== "0",
   );
   const [transient, setTransient] = useState(false);
   const animTimers = useRef<number[]>([]);
@@ -147,7 +147,7 @@ export default function App() {
     const next = !sidebarOpen;
     setSidebarOpen(next);
     try {
-      localStorage.setItem("egu-course-sidebar-collapsed", next ? "0" : "1");
+      localStorage.setItem("red-murphy-sidebar-collapsed", next ? "0" : "1");
     } catch {
       // storage unavailable: choice silently not persisted
     }
@@ -326,7 +326,7 @@ export default function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `egu-course-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `red-murphy-progress-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
     return includeAnswers
@@ -516,7 +516,7 @@ export default function App() {
             }
             disabled={isHome}
           >
-            <h1>English Grammar in Use</h1>
+            <h1>Essential Grammar in Use</h1>
           </button>
           {notice && (
             <span className="progressline" role="status">

@@ -1,0 +1,93 @@
+{
+ "unit": 83,
+ "exercises": [
+  {
+   "id": "83.2",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и допишите предложения. Используйте Both ... или Neither ... .",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " empty."
+     ],
+     "answers": [
+      [
+       "Both cups are"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " are open."
+     ],
+     "answers": [
+      [
+       "Both windows"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " wearing a hat."
+     ],
+     "answers": [
+      [
+       "Neither man is",
+       "Neither of them is"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " beards."
+     ],
+     "answers": [
+      [
+       "Both men have",
+       "Both men have got",
+       "Both of them have",
+       "Both of them have got"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " to the airport."
+     ],
+     "answers": [
+      [
+       "Both buses go",
+       "Both buses are going"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " correct."
+     ],
+     "answers": [
+      [
+       "Neither answer is"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

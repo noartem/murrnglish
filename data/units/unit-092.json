@@ -1,120 +1,68 @@
 {
   "unit": 92,
-  "title": "Relative clauses 1: clauses with who/that/which",
+  "title": "enough",
   "pdfPages": [
-    196,
-    197
+    195,
+    196
   ],
   "exercises": [
     {
       "id": "92.1",
       "type": "fill-in",
-      "instruction": "What do these words mean? Choose from the box and write sentences with who.",
+      "instruction": "Посмотрите на картинки и закончите предложения. Используйте enough + слова из рамки:",
       "wordBank": [
-        "steals from a shop",
-        "buys something from a shop",
-        "designs buildings",
-        "pays rent to live somewhere",
-        "doesn’t tell the truth",
-        "breaks into a house to steal things",
-        "is not brave",
-        "expects the worst to happen"
+        "chairs",
+        "money",
+        "paint",
+        "wind"
       ],
       "items": [
         {
           "num": 1,
+          "example": true,
           "parts": [
-            "An architect is someone who ",
-            ". (an architect)"
+            "She doesn’t have ",
+            "."
           ],
           "answers": [
             [
-              "designs buildings"
+              "enough money"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 2,
           "parts": [
-            "A customer is someone who ",
-            ". (a customer)"
+            "There aren’t ",
+            "."
           ],
           "answers": [
             [
-              "buys something from a shop"
+              "enough chairs"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "A burglar is someone who ",
-            ". (a burglar)"
+            "She doesn’t have ",
+            "."
           ],
           "answers": [
             [
-              "breaks into a house to steal things"
+              "enough paint"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "A coward is someone who ",
-            ". (a coward)"
+            "There isn’t ",
+            "."
           ],
           "answers": [
             [
-              "is not brave"
-            ]
-          ]
-        },
-        {
-          "num": 5,
-          "parts": [
-            "A tenant is someone who ",
-            ". (a tenant)"
-          ],
-          "answers": [
-            [
-              "pays rent to live somewhere"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "A shoplifter is someone who ",
-            ". (a shoplifter)"
-          ],
-          "answers": [
-            [
-              "steals from a shop"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "A liar is someone who ",
-            ". (a liar)"
-          ],
-          "answers": [
-            [
-              "doesn’t tell the truth"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "A pessimist is someone who ",
-            ". (a pessimist)"
-          ],
-          "answers": [
-            [
-              "expects the worst to happen"
+              "enough wind"
             ]
           ]
         }
@@ -122,42 +70,62 @@
     },
     {
       "id": "92.2",
-      "type": "write",
-      "instruction": "Make one sentence from two. Use who/that/which.",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и закончите предложения. Используйте прилагательные из рамки + enough:",
+      "wordBank": [
+        "big",
+        "long",
+        "strong",
+        "tall"
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "A girl was injured in the accident. She is now in hospital.",
+          "example": true,
+          "parts": [
+            "He ",
+            "."
+          ],
           "answers": [
-            "The girl who was injured in the accident is now in hospital."
+            [
+              "isn’t tall enough"
+            ]
           ]
         },
         {
           "num": 2,
-          "prompt": "A waiter served us. He was impolite and impatient.",
+          "parts": [
+            "The car ",
+            "."
+          ],
           "answers": [
-            "The waiter who/that served us was impolite and impatient."
+            [
+              "isn’t big enough"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "A building was destroyed in the fire. It has now been rebuilt.",
+          "parts": [
+            "His legs aren’t ",
+            "."
+          ],
           "answers": [
-            "The building that/which was destroyed in the fire has now been rebuilt."
+            [
+              "long enough"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "Some people were arrested. They have now been released.",
+          "parts": [
+            "He ",
+            "."
+          ],
           "answers": [
-            "The people who/that were arrested have now been released."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "A bus goes to the airport. It runs every half hour.",
-          "answers": [
-            "The bus that/which goes to the airport runs every half hour."
+            [
+              "isn’t strong enough"
+            ]
           ]
         }
       ]
@@ -165,112 +133,126 @@
     {
       "id": "92.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box and use who/that/which.",
+      "instruction": "Закончите предложения. Используйте enough + слова из рамки:",
       "wordBank": [
-        "happened in the past",
-        "makes furniture",
-        "runs away from home",
-        "can support life",
-        "cannot be explained",
-        "has stayed there",
-        "developed the theory of relativity",
-        "were hanging on the wall"
+        "big",
+        "eat",
+        "loud",
+        "milk",
+        "old",
+        "practise",
+        "space",
+        "time",
+        "tired"
       ],
       "items": [
         {
           "num": 1,
+          "example": true,
           "parts": [
-            "Helen works for a company that makes furniture",
-            "."
+            "‘Is there ",
+            " in your coffee?’ ‘Yes, thank you.’"
           ],
           "answers": [
             [
-              "that makes furniture"
+              "enough milk"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 2,
+          "example": true,
           "parts": [
-            "The movie is about a girl ",
-            "."
+            "Can you hear the radio? Is it ",
+            " for you?"
           ],
           "answers": [
             [
-              "who/that runs away from home"
+              "loud enough"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "What happened to the pictures ",
-            "?"
+            "He can leave school if he wants – he’s ",
+            "."
           ],
           "answers": [
             [
-              "that/which were hanging on the wall"
+              "old enough"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "A mystery is something ",
-            "."
+            "When I visited Rome, I didn’t have ",
+            " to see all the things I wanted to see."
           ],
           "answers": [
             [
-              "that/which cannot be explained"
+              "enough time"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I’ve heard it’s a good hotel, but I don’t know anyone ",
-            "."
+            "This house isn’t ",
+            " for a large family."
           ],
           "answers": [
             [
-              "who/that has stayed there"
+              "big enough"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "History is the study of things ",
+            "Tina is very thin. She doesn’t ",
             "."
           ],
           "answers": [
             [
-              "that/which happened in the past"
+              "eat enough"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Albert Einstein was the scientist ",
+            "My office is very small. There isn’t ",
             "."
           ],
           "answers": [
             [
-              "who/that developed the theory of relativity"
+              "enough space"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "It seems that Earth is the only planet ",
+            "It’s late, but I don’t want to go to bed now. I’m not ",
             "."
           ],
           "answers": [
             [
-              "that/which can support life"
+              "tired enough"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Lisa isn’t a very good tennis player because she doesn’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "practise enough"
             ]
           ]
         }
@@ -278,70 +260,149 @@
     },
     {
       "id": "92.4",
-      "type": "write",
-      "instruction": "Are these sentences right or wrong? Correct them where necessary.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте enough + слова в скобках:",
       "items": [
         {
           "num": 1,
-          "prompt": "I don’t like stories who have unhappy endings.",
+          "example": true,
+          "parts": [
+            "We don’t have ",
+            " a new car. (money/buy)"
+          ],
           "answers": [
-            "I don’t like stories that have unhappy endings."
+            [
+              "enough money to buy"
+            ]
           ]
         },
         {
           "num": 2,
-          "prompt": "What was the name of the person who phoned?",
+          "parts": [
+            "This knife isn’t ",
+            " tomatoes. (sharp/cut)"
+          ],
           "answers": [
-            "OK"
+            [
+              "sharp enough to cut"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "Where’s the nearest shop who sells bread?",
+          "parts": [
+            "The water wasn’t ",
+            " swimming. (warm/go)"
+          ],
           "answers": [
-            "Where’s the nearest shop that/which sells bread?"
+            [
+              "warm enough to go"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "Dan said some things about me they were not true.",
+          "parts": [
+            "Do we have ",
+            " sandwiches? (bread/make)"
+          ],
           "answers": [
-            "Dan said some things about me that/which were not true."
+            [
+              "enough bread to make"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "The driver which caused the accident was fined £500.",
+          "parts": [
+            "We played well, but not ",
+            " the game. (well/win)"
+          ],
           "answers": [
-            "The driver who/that caused the accident was fined £500."
+            [
+              "well enough to win"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "Do you know the person that took these pictures?",
+          "parts": [
+            "I don’t have ",
+            " newspapers. (time/read)"
+          ],
           "answers": [
-            "OK"
+            [
+              "enough time to read"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "92.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (упражняться = practise, отчёт = report)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "У Бориса достаточно денег на билет.",
+          "answers": [
+            "Boris has enough money for a ticket.",
+            "Boris has got enough money for a ticket."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Кевин недостаточно взрослый, чтобы водить машину.",
+          "answers": [
+            "Kevin is not old enough to drive a car."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Моё старое пальто было недостаточно тёплым для зимы.",
+          "answers": [
+            "My old coat wasn’t warm enough for winter.",
+            "My old coat was not warm enough for winter."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Мы хотим купить дом. Наша квартира недостаточно большая.",
+          "answers": [
+            "We want to buy a house. Our flat isn’t big enough.",
+            "We want to buy a house. Our apartment isn’t big enough.",
+            "We want to buy a house. Our flat is not big enough.",
+            "We want to buy a house. Our apartment is not big enough."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Саша учит немецкий, но она упражняется недостаточно.",
+          "answers": [
+            "Sasha is learning German, but she doesn’t practise enough."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Этот ресторан достаточно хороший для твоей вечеринки?",
+          "answers": [
+            "Is this restaurant good enough for your party?"
           ]
         },
         {
           "num": 7,
-          "prompt": "We live in a world what is changing all the time.",
+          "prompt": "Я не могу закончить отчёт сегодня. У меня недостаточно времени.",
           "answers": [
-            "We live in a world that/which is changing all the time."
+            "I can’t finish the report today. I don’t have enough time."
           ]
         },
         {
           "num": 8,
-          "prompt": "Gary apologised for what he said.",
+          "prompt": "У нас достаточно кофе, но недостаточно чашек.",
           "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 9,
-          "prompt": "What was the name of the horse what won the race?",
-          "answers": [
-            "What was the name of the horse that/which won the race?"
+            "We have enough coffee, but not enough cups.",
+            "We’ve got enough coffee, but not enough cups."
           ]
         }
       ]

@@ -1,151 +1,123 @@
 {
   "unit": 105,
-  "title": "Comparative 1 (cheaper, more expensive etc.)",
+  "title": "before · after · during · while",
   "pdfPages": [
-    222,
-    223
+    221,
+    222
   ],
   "exercises": [
     {
       "id": "105.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using a comparative form (older / more important etc.).",
+      "instruction": "Закончите предложения. Используйте информацию из обеих рамок.",
+      "wordBank": [
+        "after",
+        "before",
+        "during",
+        "while",
+        "lunch",
+        "the concert",
+        "the course",
+        "the end",
+        "the night",
+        "they went to Australia",
+        "you’re waiting"
+      ],
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "This coffee is very weak. I like it ",
-            "."
+            "Everybody was nervous ",
+            ""
           ],
           "answers": [
             [
-              "stronger"
+              "before the exam"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I usually work four hours in the morning, and another three hours ",
+            ""
+          ],
+          "answers": [
+            [
+              "after lunch"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "The town was surprisingly big. I expected it to be ",
-            "."
+            "The film was really boring. We left ",
+            ""
           ],
           "answers": [
             [
-              "smaller"
+              "before the end"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "The hotel was surprisingly cheap. I expected it to be ",
-            "."
+            "Anna went to evening classes to learn German. She learnt a lot ",
+            ""
           ],
           "answers": [
             [
-              "more expensive"
+              "during the course"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "The weather is too cold here. I’d like to live somewhere ",
-            "."
+            "My aunt and uncle lived in London ",
+            ""
           ],
           "answers": [
             [
-              "warmer",
-              "hotter"
+              "before they went to Australia"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Sometimes my job is a bit boring. I’d like to do something ",
-            "."
+            "A: Somebody broke a window ",
+            ", Did you hear anything?\nB: No, I was asleep all the time."
           ],
           "answers": [
             [
-              "more interesting",
-              "more exciting"
+              "during the night"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "It’s a shame you live so far away. I wish you lived ",
-            "."
+            "Would you like to sit down ",
+            "?"
           ],
           "answers": [
             [
-              "nearer",
-              "closer"
+              "while you are waiting"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "It was quite easy to find a place to live. I thought it would be ",
-            "."
+            "A: Are you going home ",
+            "?\nB: Yes, I have to get up early tomorrow."
           ],
           "answers": [
             [
-              "harder",
-              "more difficult",
-              "more complicated"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "Your work isn’t very good. I’m sure you can do ",
-            "."
-          ],
-          "answers": [
-            [
-              "better"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Don’t worry. The situation isn’t so bad. It could be ",
-            "."
-          ],
-          "answers": [
-            [
-              "worse"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "You hardly ever call me. Why don’t you call me ",
-            "?"
-          ],
-          "answers": [
-            [
-              "more often"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "You’re too near the camera. Can you move a bit ",
-            "?"
-          ],
-          "answers": [
-            [
-              "further",
-              "farther"
+              "after the concert"
             ]
           ]
         }
@@ -154,113 +126,131 @@
     {
       "id": "105.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use the comparative forms of the words in the box. Use than where necessary.",
-      "wordBank": [
-        "big",
-        "early",
-        "high",
-        "important",
-        "interested",
-        "peaceful",
-        "reliable",
-        "serious",
-        "slowly",
-        "thin"
+      "instruction": "Вставьте during/while/for.",
+      "example": [
+        1,
+        2
       ],
       "items": [
         {
-          "num": 3,
+          "num": 1,
           "parts": [
-            "Unfortunately the problem was ",
-            " we thought at first."
+            "We didn’t speak ",
+            " we were eating."
           ],
           "answers": [
             [
-              "more serious than"
+              "while"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "We didn’t speak ",
+            " the meal."
+          ],
+          "answers": [
+            [
+              "during"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Gary called ",
+            " you were out."
+          ],
+          "answers": [
+            [
+              "while"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "You look ",
-            ". Have you lost weight?"
+            "Amy went to Italy and stayed in Rome ",
+            " five days."
           ],
           "answers": [
             [
-              "thinner"
+              "for"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "We don’t have enough space here. We need a ",
-            " apartment."
+            "I didn’t check my email ",
+            " I was away."
           ],
           "answers": [
             [
-              "bigger"
+              "while"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "James doesn’t study very hard. He’s ",
-            " in having a good time."
+            "The students looked very bored ",
+            " the lesson."
           ],
           "answers": [
             [
-              "more interested"
+              "during"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Health and happiness are ",
-            " money."
+            "I fell out of bed ",
+            " I was asleep."
           ],
           "answers": [
             [
-              "more important than"
+              "while"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I like living in the country. It’s ",
-            " living in a town."
+            "Last night I watched TV ",
+            " three hours."
           ],
           "answers": [
             [
-              "more peaceful than"
+              "for"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "I’m sorry I don’t understand. Can you speak more ",
-            ", please?"
+            "I don’t usually watch TV ",
+            " the day."
           ],
           "answers": [
             [
-              "slowly"
+              "during"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "In some parts of the country, prices are ",
-            " in others."
+            "Do you ever watch TV ",
+            " you are having dinner?"
           ],
           "answers": [
             [
-              "higher than"
+              "while"
             ]
           ]
         }
@@ -269,99 +259,84 @@
     {
       "id": "105.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from:",
-      "wordBank": [
-        "than",
-        "more",
-        "worse",
-        "quietly",
-        "longer",
-        "better",
-        "careful",
-        "frequent"
+      "instruction": "Заполните пропуски, используя -ing (doing, having и т. д.).",
+      "example": [
+        1
       ],
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "Sorry about my mistake. I’ll try and be more ",
-            " in future."
+            "After ",
+            " the shopping, they went home."
           ],
           "answers": [
             [
-              "careful"
+              "doing"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I felt sick after ",
+            " too much chocolate."
+          ],
+          "answers": [
+            [
+              "eating"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Your English has improved. It’s ",
-            " than it was."
+            "I’m going to ask you a question. Think carefully before ",
+            " it."
           ],
           "answers": [
             [
-              "better"
+              "answering"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "You can travel by bus or by train. The buses are more ",
-            " than the trains."
+            "I felt awful when I got up this morning. I felt better after ",
+            " a shower."
           ],
           "answers": [
             [
-              "frequent"
+              "having",
+              "taking"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "You can’t always have things immediately. You have to be ",
-            " patient."
+            "After ",
+            " my work, I left the office and went home."
           ],
           "answers": [
             [
-              "more"
+              "finishing",
+              "doing"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I’m a pessimist. I always think things are going to get ",
-            "."
+            "Before ",
+            " to a foreign country, it’s good to try and learn a little of the language."
           ],
           "answers": [
             [
-              "worse"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "We were busier ",
-            " usual in the office today. It’s not usually so busy."
-          ],
-          "answers": [
-            [
-              "than"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "You’re talking very loudly. Can you speak more ",
-            "?"
-          ],
-          "answers": [
-            [
-              "quietly"
+              "going",
+              "travelling"
             ]
           ]
         }
@@ -370,34 +345,121 @@
     {
       "id": "105.4",
       "type": "write",
-      "instruction": "Read the situations and complete the sentences. Use a comparative form (-er or more …).",
+      "instruction": "Напишите предложения, используя before + -ing и after + -ing.",
+      "example": [
+        1
+      ],
       "items": [
         {
-          "num": 2,
-          "prompt": "Dan and I went for a run. I ran ten kilometres. Dan stopped after eight kilometres.",
+          "num": 1,
+          "prompt": "They did the shopping. Then they went home.",
           "answers": [
-            "I ran further/farther than Dan."
+            "After doing the shopping, they went home."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "John left school. Then he worked in a bookshop for two years.",
+          "answers": [
+            "John worked in a bookshop for two years after leaving school."
           ]
         },
         {
           "num": 3,
-          "prompt": "The journey takes four hours by car and five hours by train.",
+          "prompt": "I read for a few minutes. Then I went to sleep.",
           "answers": [
-            "The journey takes longer by train than by car."
+            "Before going to sleep, I read for a few minutes."
           ]
         },
         {
           "num": 4,
-          "prompt": "I expected my friends to arrive at about 4 o’clock. In fact they arrived at 2.30.",
+          "prompt": "We walked for three hours. We were very tired.",
           "answers": [
-            "My friends arrived earlier than I expected."
+            "After walking for three hours, we were very tired."
           ]
         },
         {
           "num": 5,
-          "prompt": "There is always a lot of traffic here, but today the traffic is really bad.",
+          "prompt": "Let’s have a cup of coffee. Then we’ll go out.",
           "answers": [
-            "The traffic today is worse than usual."
+            "Let’s have a cup of coffee before going out."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "105.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (собеседование = interview; покормил = fed; чувствовать себя лучше = feel better)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Мы поужинали перед концертом.",
+          "answers": [
+            "We had dinner before the concert.",
+            "We ate dinner before the concert.",
+            "Before the concert, we had dinner.",
+            "Before the concert, we ate dinner."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я сделал покупки, пока Эмма была на работе.",
+          "answers": [
+            "I did the shopping while Emma was at work.",
+            "While Emma was at work, I did the shopping."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "После матча в центре города было много народу.",
+          "answers": [
+            "There were a lot of people in the city centre after the match.",
+            "After the match, there were a lot of people in the city centre."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Саша очень нервничала перед собеседованием.",
+          "answers": [
+            "Sasha was very nervous before her interview.",
+            "Sasha was very nervous before the interview.",
+            "Before her interview, Sasha was very nervous.",
+            "Before the interview, Sasha was very nervous."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Во время отпуска я прочитала три книги.",
+          "answers": [
+            "I read three books during my holiday.",
+            "I read three books during the holiday.",
+            "During my holiday, I read three books.",
+            "During the holiday, I read three books."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Мы ждали автобуса 40 минут.",
+          "answers": [
+            "We waited for a bus for 40 minutes.",
+            "We waited 40 minutes for a bus."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Перед тем как идти спать, я покормил кошку.",
+          "answers": [
+            "Before going to bed, I fed the cat.",
+            "Before I went to bed, I fed the cat."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я почувствовала себя лучше после чашки чая.",
+          "answers": [
+            "I felt better after a cup of tea."
           ]
         }
       ]

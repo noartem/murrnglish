@@ -1,35 +1,25 @@
 {
   "unit": 6,
-  "title": "Past continuous (I was doing)",
+  "title": "I do/work/like и т. д. (present simple)",
   "pdfPages": [
-    24,
-    25
+    23,
+    24
   ],
   "exercises": [
     {
       "id": "6.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from:",
-      "wordBank": [
-        "was looking",
-        "was wearing",
-        "wasn’t listening",
-        "weren’t looking",
-        "was snowing",
-        "was working",
-        "were sitting",
-        "were you going"
-      ],
+      "instruction": "Напишите эти глаголы с -s или -es.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Today Helen is wearing a skirt. Yesterday she ",
-            " trousers."
+            "(read) she ",
+            ""
           ],
           "answers": [
             [
-              "was wearing"
+              "reads"
             ]
           ],
           "example": true
@@ -37,84 +27,60 @@
         {
           "num": 2,
           "parts": [
-            "‘What did he say?’ ‘I don’t know. I ",
-            ".’"
+            "(think) he ",
+            ""
           ],
           "answers": [
             [
-              "wasn’t listening"
+              "thinks"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "We ",
-            " at the back of the theatre. We couldn’t hear very well."
+            "(fly) it ",
+            ""
           ],
           "answers": [
             [
-              "were sitting"
+              "flies"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "This time last year Steve ",
-            " on a farm."
+            "(dance) he ",
+            ""
           ],
           "answers": [
             [
-              "was working"
+              "dances"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "They didn’t see me. They ",
-            " in my direction."
+            "(have) she ",
+            ""
           ],
           "answers": [
             [
-              "weren’t looking"
+              "has"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "The weather was bad. It was very cold and it ",
-            "."
+            "(finish) it ",
+            ""
           ],
           "answers": [
             [
-              "was snowing"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "I saw you in your car. Where ",
-            "?"
-          ],
-          "answers": [
-            [
-              "were you going"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "I saw Kate a few minutes ago. She ",
-            " for you."
-          ],
-          "answers": [
-            [
-              "was looking"
+              "finishes"
             ]
           ]
         }
@@ -122,130 +88,26 @@
     },
     {
       "id": "6.2",
-      "type": "matching",
-      "instruction": "Which goes with which?",
-      "leftOptions": [
-        "1 When I got to the cafe",
-        "2 We fell asleep",
-        "3 Amy learnt Italian",
-        "4 Tom didn’t come out with us",
-        "5 The car began to make a strange noise",
-        "6 The TV was on",
-        "7 When I first met Jessica"
-      ],
-      "rightOptions": [
-        "a when she was living in Rome.",
-        "b she was working in a clothes shop.",
-        "c when I was driving home.",
-        "d but nobody was watching it.",
-        "e while we were watching a film.",
-        "f my friends were waiting for me.",
-        "g because he wasn’t feeling well."
-      ],
-      "pairs": [
-        [
-          0,
-          5
-        ],
-        [
-          1,
-          4
-        ],
-        [
-          2,
-          0
-        ],
-        [
-          3,
-          6
-        ],
-        [
-          4,
-          2
-        ],
-        [
-          5,
-          3
-        ],
-        [
-          6,
-          1
-        ]
-      ]
-    },
-    {
-      "id": "6.3",
       "type": "fill-in",
-      "instruction": "Put the verb into the correct form, past continuous or past simple.",
+      "instruction": "Посмотрите на картинки и допишите предложения. Используйте глаголы из рамки:",
+      "wordBank": [
+        "eat",
+        "go",
+        "live",
+        "play",
+        "play",
+        "sleep"
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I ",
-            " (see) Sue in town yesterday, but she ",
-            " (not/see) me. She ",
-            " (look) the other way."
+            "",
+            " the piano."
           ],
           "answers": [
             [
-              "saw"
-            ],
-            [
-              "didn’t see"
-            ],
-            [
-              "was looking"
-            ]
-          ]
-        },
-        {
-          "num": 2,
-          "parts": [
-            "I ",
-            " (cycle) home yesterday when a man ",
-            " (step) out into the road in front of me. I ",
-            " (go) quite fast, but luckily I ",
-            " (manage) to stop in time, and I ",
-            " (not/hit) him."
-          ],
-          "answers": [
-            [
-              "was cycling"
-            ],
-            [
-              "stepped"
-            ],
-            [
-              "was going"
-            ],
-            [
-              "managed"
-            ],
-            [
-              "didn’t hit"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "6.4",
-      "type": "fill-in",
-      "instruction": "Put the verb into the correct form, past continuous or past simple.",
-      "items": [
-        {
-          "num": 1,
-          "parts": [
-            "Jenny ",
-            " (wait) for me when I ",
-            " (arrive)."
-          ],
-          "answers": [
-            [
-              "was waiting"
-            ],
-            [
-              "arrived"
+              "He plays"
             ]
           ],
           "example": true
@@ -253,149 +115,405 @@
         {
           "num": 2,
           "parts": [
-            "‘What ",
-            " (you / do) at this time yesterday?’ ‘I was asleep.’"
+            "They ",
+            " in a very big house."
           ],
           "answers": [
             [
-              "were you doing"
+              "live"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "‘",
-            " (you / go) out last night?’ ‘No, I was too tired.’"
+            "",
+            " a lot of fruit."
           ],
           "answers": [
             [
-              "Did you go"
+              "She eats"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "How fast ",
-            " (you / drive) when the accident ",
-            "(happen)?"
+            "",
+            " tennis."
           ],
           "answers": [
             [
-              "were you driving"
-            ],
-            [
-              "happened"
+              "He plays"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Sam ",
-            " (take) a picture of me while I ",
-            " (not / look)."
+            "",
+            " to the cinema a lot."
           ],
           "answers": [
             [
-              "took"
-            ],
-            [
-              "wasn’t looking"
+              "They go"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "We were in a very difficult position. We ",
-            " (not / know) what to do, so we ",
-            " (do) nothing."
+            "",
+            " seven hours a night."
           ],
           "answers": [
             [
-              "didn’t know"
-            ],
+              "He sleeps"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте глаголы из рамки:",
+      "wordBank": [
+        "boil",
+        "close",
+        "cost",
+        "cost",
+        "like",
+        "like",
+        "meet",
+        "open",
+        "speak",
+        "teach",
+        "wash"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Maria ",
+            " four languages."
+          ],
+          "answers": [
             [
-              "did"
+              "speaks"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The shops in the city centre usually ",
+            " at 9 o’clock in the morning."
+          ],
+          "answers": [
+            [
+              "open"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The City Museum ",
+            " at 5 o’clock in the evening."
+          ],
+          "answers": [
+            [
+              "closes"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Tina is a teacher. She ",
+            " mathematics to young children."
+          ],
+          "answers": [
+            [
+              "teaches"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "My job is very interesting. I ",
+            " a lot of people."
+          ],
+          "answers": [
+            [
+              "meet"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Peter’s car is always dirty. He never ",
+            " it."
+          ],
+          "answers": [
+            [
+              "washes"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "I haven’t seen Alan for ages. When I last ",
-            " (see) him, he ",
-            " (try) to find a job."
+            "Food is expensive. It ",
+            " a lot of money."
           ],
           "answers": [
             [
-              "saw"
-            ],
-            [
-              "was trying"
+              "costs"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I ",
-            " (walk) along the street when suddenly I ",
-            " (hear) something behind me. Somebody ",
-            " (follow) me. I was scared and I ",
-            " (start) to run."
+            "Shoes are expensive. They ",
+            " a lot of money."
           ],
           "answers": [
             [
-              "was walking"
-            ],
-            [
-              "heard"
-            ],
-            [
-              "was following"
-            ],
-            [
-              "started"
+              "cost"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "When I was young, I ",
-            " (want) to be a pilot. Later I ",
-            " (change) my mind."
+            "Water ",
+            " at 100 degrees Celsius."
           ],
           "answers": [
             [
-              "wanted"
-            ],
-            [
-              "changed"
+              "boils"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "Last night I ",
-            " (drop) a plate when I ",
-            " (do) the washing up. Fortunately it ",
-            " (not / break)."
+            "Laura and I are good friends. I ",
+            " her and she ",
+            " me."
           ],
           "answers": [
             [
-              "dropped"
+              "like"
             ],
             [
-              "was doing"
-            ],
-            [
-              "didn’t break"
+              "likes"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.4",
+      "type": "write",
+      "instruction": "Составьте предложения из этих слов. Поставьте глаголы в правильную форму (arrive или arrives и т. д.).",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(always / early / Sue / arrive)",
+          "answers": [
+            "Sue always arrives early."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(to the cinema / never / I / go)",
+          "answers": [
+            "I never go to the cinema."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(work / Martina / hard / always)",
+          "answers": [
+            "Martina always works hard."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(like / chocolate / children / usually)",
+          "answers": [
+            "Children usually like chocolate."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(Jackie / parties / enjoy / always)",
+          "answers": [
+            "Jackie always enjoys parties."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(often / people’s names / I / forget)",
+          "answers": [
+            "I often forget people’s names."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(TV / Sam / watch / never)",
+          "answers": [
+            "Sam never watches TV."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(usually / dinner / we / have / at 7.30)",
+          "answers": [
+            "We usually have dinner at 7.30."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(Kate / always / nice clothes / wear)",
+          "answers": [
+            "Kate always wears nice clothes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.5",
+      "type": "self-check",
+      "instruction": "Напишите предложения о себе. Используйте наречия always/never/often/usually/sometimes.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(watch TV in the evening)",
+          "modelAnswers": [
+            "I usually watch TV in the evening."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(read in bed)",
+          "modelAnswers": [
+            "I sometimes read in bed."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(get up before 7 o’clock)",
+          "modelAnswers": [
+            "I often get up before 7 o’clock."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(go to work/school by bus)",
+          "modelAnswers": [
+            "I never go to work by bus."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(drink coffee in the morning)",
+          "modelAnswers": [
+            "I usually drink two cups of coffee in the morning."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (в кино = to the cinema; икра = caviar)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я живу в Москве.",
+          "answers": [
+            "I live in Moscow."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Линда обычно встаёт в 7 часов.",
+          "answers": [
+            "Linda usually gets up at 7 o’clock."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Мы иногда ходим в парк.",
+          "answers": [
+            "We sometimes go to the park."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Моя сестра любит шоколад.",
+          "answers": [
+            "My sister loves chocolate."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я никогда не смотрю телевизор.",
+          "answers": [
+            "I never watch TV.",
+            "I never watch television."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Мои друзья часто ходят в кино.",
+          "answers": [
+            "My friends often go to the cinema."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Я люблю икру, но она стоит дорого.",
+          "answers": [
+            "I like caviar but it costs a lot of money.",
+            "I love caviar but it costs a lot of money.",
+            "I like caviar but it’s expensive.",
+            "I love caviar but it’s expensive."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Антон говорит по-английски хорошо.",
+          "answers": [
+            "Anton speaks English well."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Я всегда начинаю работать в 9 часов.",
+          "answers": [
+            "I always start work at 9 o’clock."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Кошки едят рыбу.",
+          "answers": [
+            "Cats eat fish."
           ]
         }
       ]

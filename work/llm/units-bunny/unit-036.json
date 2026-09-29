@@ -1,0 +1,359 @@
+{
+ "unit": 36,
+ "title": "Do this! · Don’t do that! · Let’s do this!",
+ "pdfPages": [
+  83,
+  84
+ ],
+ "exercises": [
+  {
+   "id": "36.1",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки. Что говорят эти люди? Некоторые предложения должны быть утвердительными (buy/come и т. д.), а некоторые – отрицательными (don’t buy / don’t come и т. д.). Используйте глаголы из рамки:",
+   "wordBank": [
+    "be",
+    "buy",
+    "come",
+    "drink",
+    "drop",
+    "forget",
+    "have",
+    "sit",
+    "sleep",
+    "smile"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " in!"
+     ],
+     "answers": [
+      [
+       "Come"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " the water!"
+     ],
+     "answers": [
+      [
+       "Don’t drink"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "It’s too expensive. ",
+      " it."
+     ],
+     "answers": [
+      [
+       "Don’t buy"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "OK, are you ready? ",
+      "!"
+     ],
+     "answers": [
+      [
+       "Smile"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " on the cat!"
+     ],
+     "answers": [
+      [
+       "Don’t sit"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Bye! ",
+      " a nice time!"
+     ],
+     "answers": [
+      [
+       "Have"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " to phone me.\nDon’t worry. I won’t."
+     ],
+     "answers": [
+      [
+       "Don’t forget"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I’m going to bed now.\nOK, ",
+      " well."
+     ],
+     "answers": [
+      [
+       "Sleep"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "",
+      " careful with that vase. ",
+      " it!"
+     ],
+     "answers": [
+      [
+       "Be"
+      ],
+      [
+       "Don’t drop"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "36.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте let’s и выражения из рамки:",
+   "wordBank": [
+    "go for a swim",
+    "go to a restaurant",
+    "take a taxi",
+    "wait a little",
+    "watch TV"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Would you like to play tennis?\nNo, ",
+      "."
+     ],
+     "answers": [
+      [
+       "let’s go for a swim"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Do you want to walk home?\nNo, ",
+      "."
+     ],
+     "answers": [
+      [
+       "let’s take a taxi"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Shall I put a CD on?\nNo, ",
+      "."
+     ],
+     "answers": [
+      [
+       "let’s watch TV"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Shall we eat at home?\nNo, ",
+      "."
+     ],
+     "answers": [
+      [
+       "let’s go to a restaurant"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Would you like to go now?\nNo, ",
+      "."
+     ],
+     "answers": [
+      [
+       "let’s wait a little"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "36.3",
+   "type": "write",
+   "instruction": "Напишите ответы на вопросы. Используйте No, don’t … или No, let’s not … .",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Shall I wait for you?",
+     "answers": [
+      "No, don’t wait for me."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Shall we go home now?",
+     "answers": [
+      "No, let’s not go home yet."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Shall we go out?",
+     "answers": [
+      "No, let’s not go out."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Do you want me to close the window?",
+     "answers": [
+      "No, don’t close the window."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Shall I phone you tonight?",
+     "answers": [
+      "No, don’t phone me.",
+      "No, don’t phone me tonight."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Do you think we should wait for Andy?",
+     "answers": [
+      "No, let’s not wait for Andy."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Do you want me to turn on the light?",
+     "answers": [
+      "No, don’t turn on the light."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Shall we go by bus?",
+     "answers": [
+      "No, let’s not go by bus."
+     ]
+    }
+   ],
+   "example": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "36.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [трогать = touch\nговорить о = talk about\nготовить = cook\nзаказать = order]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Садитесь, пожалуйста.",
+     "answers": [
+      "Please sit down.",
+      "Sit down, please."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Давай посмотрим фильм в воскресенье.",
+     "answers": [
+      "Let’s watch a film on Sunday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Не трогай тарелку! Она горячая.",
+     "answers": [
+      "Don’t touch the plate! It’s hot.",
+      "Don’t touch the plate! It is hot."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Давай не будем говорить о Гари.",
+     "answers": [
+      "Let’s not talk about Gary."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Идите до конца улицы и поверните налево.",
+     "answers": [
+      "Go to the end of the street and turn left."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Не забудь своё пальто.",
+     "answers": [
+      "Don’t forget your coat."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Расскажи мне о своём дне.",
+     "answers": [
+      "Tell me about your day."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Желаю приятного вечера!",
+     "answers": [
+      "Have a nice evening!",
+      "Have a good evening!"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Давай не будем готовить сегодня вечером. Давай закажем пиццу.",
+     "answers": [
+      "Let’s not cook tonight. Let’s order a pizza."
+     ]
+    }
+   ]
+  }
+ ]
+}

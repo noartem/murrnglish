@@ -1,0 +1,508 @@
+{
+ "unit": 67,
+ "title": "train(s) · bus(es) (единственное и множественное число)",
+ "pdfPages": [
+  145,
+  146
+ ],
+ "exercises": [
+  {
+   "id": "67.1",
+   "type": "fill-in",
+   "instruction": "Напишите форму множественного числа.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "flower ",
+      ""
+     ],
+     "answers": [
+      [
+       "flowers"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "boat ",
+      ""
+     ],
+     "answers": [
+      [
+       "boats"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "woman ",
+      ""
+     ],
+     "answers": [
+      [
+       "women"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "city ",
+      ""
+     ],
+     "answers": [
+      [
+       "cities"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "umbrella ",
+      ""
+     ],
+     "answers": [
+      [
+       "umbrellas"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "address ",
+      ""
+     ],
+     "answers": [
+      [
+       "addresses"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "knife ",
+      ""
+     ],
+     "answers": [
+      [
+       "knives"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "sandwich ",
+      ""
+     ],
+     "answers": [
+      [
+       "sandwiches"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "family ",
+      ""
+     ],
+     "answers": [
+      [
+       "families"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "foot ",
+      ""
+     ],
+     "answers": [
+      [
+       "feet"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "holiday ",
+      ""
+     ],
+     "answers": [
+      [
+       "holidays"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "potato ",
+      ""
+     ],
+     "answers": [
+      [
+       "potatoes"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "67.2",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и заполните пропуски в предложениях.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "There are a lot of ",
+      " in the field."
+     ],
+     "answers": [
+      [
+       "sheep"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Gary is cleaning his ",
+      "."
+     ],
+     "answers": [
+      [
+       "teeth"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "There are three ",
+      " at the bus stop."
+     ],
+     "answers": [
+      [
+       "people"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Lucy has two ",
+      "."
+     ],
+     "answers": [
+      [
+       "children"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "There are a lot of ",
+      " in the river."
+     ],
+     "answers": [
+      [
+       "fish"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The ",
+      " are falling from the tree."
+     ],
+     "answers": [
+      [
+       "leaves"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "67.3",
+   "type": "write",
+   "instruction": "В некоторых предложениях допущены ошибки. Где нужно, исправьте ошибки.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’m going to buy some flowers.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I need a new jeans.",
+     "answers": [
+      "I need a new pair of jeans.",
+      "I need some new jeans."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "It’s a lovely park with a lot of beautiful tree.",
+     "answers": [
+      "It’s a lovely park with a lot of beautiful trees."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "There was a woman in the car with two mens.",
+     "answers": [
+      "There was a woman in the car with two men."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Sheep eat grass.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "David is married and has three childs.",
+     "answers": [
+      "David is married and has three children."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Most of my friend are student.",
+     "answers": [
+      "Most of my friends are students."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "He put on his pyjama and went to bed.",
+     "answers": [
+      "He put on his pyjamas and went to bed."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "We went fishing, but we didn’t catch many fish.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Do you know many persons in this town?",
+     "answers": [
+      "Do you know many people in this town?"
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "I like your trouser. Where did you get it?",
+     "answers": [
+      "I like your trousers. Where did you get them?"
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "The town centre is usually full of tourist.",
+     "answers": [
+      "The town centre is usually full of tourists."
+     ]
+    },
+    {
+     "num": 13,
+     "prompt": "I don’t like mice. I’m scared of them.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 14,
+     "prompt": "This scissor isn’t very sharp.",
+     "answers": [
+      "These scissors aren’t very sharp."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "67.4",
+   "type": "choice",
+   "instruction": "Заполните пропуски, выбрав правильный вариант.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "It’s a nice place. Many people go there on holiday.",
+      "It’s a nice place. Many people goes there on holiday."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 2,
+     "options": [
+      "Some people is always late.",
+      "Some people are always late."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "The new city hall is not a beautiful building. Most people don’t like it.",
+      "The new city hall is not a beautiful building. Most people doesn’t like it."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 4,
+     "options": [
+      "A lot of people watch TV every day.",
+      "A lot of people watches TV every day."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 5,
+     "options": [
+      "Three people was injured in the accident.",
+      "Three people were injured in the accident."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 6,
+     "options": [
+      "How many people live in that house?",
+      "How many people lives in that house?"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 7,
+     "options": [
+      "Do the police know the cause of the explosion?",
+      "Does the police know the cause of the explosion?"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 8,
+     "options": [
+      "The police is looking for the stolen car.",
+      "The police are looking for the stolen car."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 9,
+     "options": [
+      "I need my glasses, but I can’t find it.",
+      "I need my glasses, but I can’t find them."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 10,
+     "options": [
+      "I’m going to buy a new jeans today.",
+      "I’m going to buy some new jeans today."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "67.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (футболка = T-shirt)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Люси всегда носит джинсы и футболки.",
+     "answers": [
+      "Lucy always wears jeans and T-shirts."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Ты любишь помидоры?",
+     "answers": [
+      "Do you like tomatoes?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я не могу найти свою пижаму.",
+     "answers": [
+      "I can’t find my pyjamas."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "У меня есть два английских словаря.",
+     "answers": [
+      "I have two English dictionaries.",
+      "I have got two English dictionaries."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Дети почистили зубы?",
+     "answers": [
+      "Have the children cleaned their teeth?",
+      "Did the children clean their teeth?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Почему полиция хочет поговорить с Томом?",
+     "answers": [
+      "Why do the police want to talk to Tom?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Анна не любит знакомиться с новыми людьми.",
+     "answers": [
+      "Anna doesn’t like meeting new people.",
+      "Anna doesn’t like to meet new people."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "В моём офисе четыре женщины и два мужчины.",
+     "answers": [
+      "There are four women and two men in my office."
+     ]
+    }
+   ]
+  }
+ ]
+}

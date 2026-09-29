@@ -1,136 +1,113 @@
 {
   "id": 9,
-  "topic": "Past continuous and used to",
-  "refs": "Units 6, 18",
+  "topic": "present continuous и present simple",
+  "refs": "Разделы 4–9",
   "pdfPages": [
-    319
+    255
   ],
   "exercise": {
     "id": "9",
-    "type": "fill-in",
-    "instruction": "Complete the sentences using the past continuous (was/were -ing) or used to … . Use the verb in brackets.",
+    "type": "choice",
+    "instruction": "Выберите правильный вариант.",
+    "example": [
+      1
+    ],
     "items": [
       {
         "num": 1,
-        "parts": [
-          "I haven’t been to the cinema for ages now. We ",
-          " a lot. (go)"
+        "options": [
+          "‘Are you speaking English?’ ‘Yes, a little.’",
+          "‘Do you speak English?’ ‘Yes, a little.’"
         ],
-        "answers": [
-          [
-            "used to go"
-          ]
-        ],
-        "example": true
+        "answer": 1
       },
       {
         "num": 2,
-        "parts": [
-          "Ann didn’t see me wave to her. She ",
-          " in the other direction. (look)"
+        "options": [
+          "Sometimes we’re going away at weekends.",
+          "Sometimes we go away at weekends."
         ],
-        "answers": [
-          [
-            "was looking"
-          ]
-        ],
-        "example": true
+        "answer": 1
       },
       {
         "num": 3,
-        "parts": [
-          "I ",
-          " a lot, but I don’t use my car very much these days. (drive)"
+        "options": [
+          "It’s a nice day today. The sun is shining.",
+          "It’s a nice day today. The sun shines."
         ],
-        "answers": [
-          [
-            "used to drive"
-          ]
-        ]
+        "answer": 0
       },
       {
         "num": 4,
-        "parts": [
-          "I asked the taxi driver to slow down. She ",
-          " too fast. (drive)"
+        "options": [
+          "(Вы встречаете Кейт на улице.) Hello, Kate. Where are you going?",
+          "(Вы встречаете Кейт на улице.) Hello, Kate. Where do you go?"
         ],
-        "answers": [
-          [
-            "was driving"
-          ]
-        ]
+        "answer": 0
       },
       {
         "num": 5,
-        "parts": [
-          "Rosemary and Jonathan met for the first time when they ",
-          " in the same bank. (work)"
+        "options": [
+          "How often are you going on holiday?",
+          "How often do you go on holiday?"
         ],
-        "answers": [
-          [
-            "were working"
-          ]
-        ]
+        "answer": 1
       },
       {
         "num": 6,
-        "parts": [
-          "When I was a child, I ",
-          " a lot of bad dreams. (have)"
+        "options": [
+          "Emily is a writer. She’s writing books for children.",
+          "Emily is a writer. She writes books for children."
         ],
-        "answers": [
-          [
-            "used to have"
-          ]
-        ]
+        "answer": 1
       },
       {
         "num": 7,
-        "parts": [
-          "I wonder what Joe is doing these days. He ",
-          " in Spain when I last heard from him. (live)"
+        "options": [
+          "I’m never reading newspapers.",
+          "I never read newspapers."
         ],
-        "answers": [
-          [
-            "was living"
-          ]
-        ]
+        "answer": 1
       },
       {
         "num": 8,
-        "parts": [
-          "‘Where were you yesterday afternoon?’ ‘I ",
-          " volleyball.’ (play)"
+        "options": [
+          "‘Where are Mark and Laura?’ ‘They’re watching TV in the living room.’",
+          "‘Where are Mark and Laura?’ ‘They watch TV in the living room.’"
         ],
-        "answers": [
-          [
-            "was playing"
-          ]
-        ]
+        "answer": 0
       },
       {
         "num": 9,
-        "parts": [
-          "‘Do you do any sports?’ ‘Not these days, but I ",
-          " volleyball.’ (play)"
+        "options": [
+          "Helen is in her office. She’s talking to somebody.",
+          "Helen is in her office. She talks to somebody."
         ],
-        "answers": [
-          [
-            "used to play"
-          ]
-        ]
+        "answer": 0
       },
       {
         "num": 10,
-        "parts": [
-          "George looked very smart at the party. He ",
-          " a very nice suit. (wear)"
+        "options": [
+          "What time are you usually having dinner?",
+          "What time do you usually have dinner?"
         ],
-        "answers": [
-          [
-            "was wearing"
-          ]
-        ]
+        "answer": 1
+      },
+      {
+        "num": 11,
+        "options": [
+          "Joe isn’t at home at the moment. He’s visiting some friends.",
+          "Joe isn’t at home at the moment. He visits some friends."
+        ],
+        "answer": 0
+      },
+      {
+        "num": 12,
+        "options": [
+          "‘Would you like some tea?’ ‘No, thank you. I’m not drinking tea.’",
+          "‘Would you like some tea?’ ‘No, thank you. I don’t drink tea.’"
+        ],
+        "answer": 1
       }
     ]
   }

@@ -1,140 +1,617 @@
 {
   "unit": 61,
-  "title": "be/get used to \u2026 (I\u2019m used to \u2026)",
-  "pdfPages": [134, 135],
+  "title": "my/his/their и т. д.",
+  "pdfPages": [
+    133,
+    134
+  ],
   "exercises": [
     {
       "id": "61.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using used to + a suitable verb.",
+      "instruction": "Закончите предложения, следуя образцу.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "I’m going to wash ",
+            "."
+          ],
+          "answers": [
+            [
+              "my hands"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["I don\u2019t feel good. I stayed up until 3 am. I\u2019m not ", " to bed so late."],
-          "answers": [["used to going"]]
+          "parts": [
+            "She’s going to wash ",
+            " hands."
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Tomorrow I start a new job. I\u2019ll have to get ", " with new people."],
-          "answers": [["used to working", "used to being"]]
+          "parts": [
+            "We’re going to wash ",
+            "."
+          ],
+          "answers": [
+            [
+              "our hands"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["My feet hurt. I can\u2019t go any further. I\u2019m not ", " so far."],
-          "answers": [["used to walking"]]
+          "parts": [
+            "He’s going to wash ",
+            "."
+          ],
+          "answers": [
+            [
+              "his hands"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I like this part of town. I\u2019ve been here a long time, so I\u2019m ", " here."],
-          "answers": [["used to living"]]
+          "parts": [
+            "They’re going to wash ",
+            "."
+          ],
+          "answers": [
+            [
+              "their hands"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Are you going to wash ",
+            "?"
+          ],
+          "answers": [
+            [
+              "your hands"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "61.2",
       "type": "fill-in",
-      "instruction": "Read about Sarah and Jack. Complete the sentences using used to.",
+      "instruction": "Закончите предложения, следуя образцу.",
       "items": [
         {
           "num": 1,
-          "parts": ["Sarah wasn\u2019t used to working nights. It took her a few months to ", " it.\nNow, after a year, it\u2019s normal for her. She ", " nights."],
-          "answers": [["get used to"], ["\u2019s used to working", "is used to working"]]
+          "parts": [
+            "He ",
+            "."
+          ],
+          "answers": [
+            [
+              "lives with his parents"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "parts": ["When Jack started working in this job, he ", " driving two hours to work every morning, but after some time he ", " it. Now it\u2019s no problem for him. He ", " two hours every morning."],
-          "answers": [["wasn\u2019t used to"], ["got used to"], ["\u2019s used to driving", "is used to driving"]]
+          "parts": [
+            "They live with ",
+            " parents."
+          ],
+          "answers": [
+            [
+              "their"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "We ",
+            " parents."
+          ],
+          "answers": [
+            [
+              "live with our"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Martina lives ",
+            "."
+          ],
+          "answers": [
+            [
+              "with her parents"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I ",
+            " parents."
+          ],
+          "answers": [
+            [
+              "live with my"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "John ",
+            "."
+          ],
+          "answers": [
+            [
+              "lives with his parents"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Do you live ",
+            "?"
+          ],
+          "answers": [
+            [
+              "with your parents"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Most children ",
+            "."
+          ],
+          "answers": [
+            [
+              "live with their parents"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "61.3",
-      "type": "write",
-      "instruction": "What do you say in these situations? Use I\u2019m (not) used to \u2026 .",
+      "type": "fill-in",
+      "instruction": "Посмотрите на родословное дерево и заполните пропуски при помощи his/her/their.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "I saw Sarah with ",
+            " husband, Philip."
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "prompt": "You sleep on the floor. It\u2019s OK for you. You have always slept on the floor.\nfriend: Wouldn\u2019t you prefer to sleep in a bed?\nyou: No, I",
-          "answers": ["No, I\u2019m used to sleeping on the floor."]
+          "parts": [
+            "I saw Laura and Steve with ",
+            " children."
+          ],
+          "answers": [
+            [
+              "their"
+            ]
+          ]
         },
         {
           "num": 3,
-          "prompt": "You have to work long hours in your job. This is not a problem. You have always done this.\nfriend: You have to work long hours in your job, don\u2019t you?\nyou: Yes, but I don\u2019t mind that. I",
-          "answers": ["I\u2019m used to working long hours."]
+          "parts": [
+            "I saw Steve with ",
+            " wife, Laura."
+          ],
+          "answers": [
+            [
+              "his"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "You\u2019ve just moved from a village to a big city. It\u2019s busy and you don\u2019t like the crowds of people.\nfriend: How do you like living here now?\nyou: It\u2019s different from living in a village. I",
-          "answers": ["I\u2019m not used to the crowds (of people)."]
+          "parts": [
+            "I saw Ben with ",
+            " brother, Will."
+          ],
+          "answers": [
+            [
+              "his"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I saw Laura with ",
+            " brother, Will."
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I saw Sarah and Philip with ",
+            " son, Will."
+          ],
+          "answers": [
+            [
+              "their"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I saw Laura with ",
+            " parents."
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I saw Beth and Robert with ",
+            " parents."
+          ],
+          "answers": [
+            [
+              "their"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "61.4",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences using get/got used to.",
+      "instruction": "Вставьте my/our/your/his/her/their/its.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "Do you like ",
+            " job?"
+          ],
+          "answers": [
+            [
+              "your"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["The children got a new teacher. She was different from the teacher before her, but this wasn\u2019t a problem for the children. They soon ", " ."],
-          "answers": [["got used to her", "got used to the/their new teacher"]]
+          "parts": [
+            "I know Mr Watson, but I don’t know ",
+            " wife."
+          ],
+          "answers": [
+            [
+              "his"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Kate moved from a big house to a much smaller one. She found it strange at first. She had to ", " in a much smaller house."],
-          "answers": [["get used to living"]]
+          "parts": [
+            "Alice and Tom live in London. ",
+            " son lives in Australia."
+          ],
+          "answers": [
+            [
+              "Their"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Anna has lived in Britain for ten years. She didn\u2019t like the weather when she first came, and she still doesn\u2019t like it. She can\u2019t ", " ."],
-          "answers": [["get used to the weather"]]
+          "parts": [
+            "We’re going to have a party. We’re going to invite all ",
+            " friends."
+          ],
+          "answers": [
+            [
+              "our"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Lee got a new job, but his new salary was much less. So he had less money. He had to ", " ."],
-          "answers": [["get used to having less money"]]
+          "parts": [
+            "Anna is going out with ",
+            " friends this evening."
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I like tennis. It’s ",
+            " favourite sport."
+          ],
+          "answers": [
+            [
+              "my"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "‘Is that ",
+            " car?’ ‘No, I don’t have a car.’"
+          ],
+          "answers": [
+            [
+              "your"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I want to contact Maria. Do you know ",
+            " number?"
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Do you think most people are happy in ",
+            " jobs?"
+          ],
+          "answers": [
+            [
+              "their"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I’m going to wash ",
+            " hair before I go out."
+          ],
+          "answers": [
+            [
+              "my"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "This is a beautiful tree. ",
+            " leaves are a beautiful colour."
+          ],
+          "answers": [
+            [
+              "Its"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "John has a brother and a sister. ",
+            " brother is 25, and ",
+            " sister is 21."
+          ],
+          "answers": [
+            [
+              "His"
+            ],
+            [
+              "his"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "61.5",
       "type": "fill-in",
-      "instruction": "Complete the sentences using only one word each time.",
+      "instruction": "Заполните пропуски. Используйте my/his/their и т. д. + слова из рамки:",
+      "wordBank": [
+        "coat",
+        "homework",
+        "house",
+        "husband",
+        "job",
+        "key",
+        "name"
+      ],
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "James doesn’t enjoy ",
+            ". It’s not very interesting."
+          ],
+          "answers": [
+            [
+              "his job"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Daniel used to ", " a lot of coffee. Now he prefers tea."],
-          "answers": [["drink"]]
+          "parts": [
+            "I can’t get in. I don’t have ",
+            "."
+          ],
+          "answers": [
+            [
+              "my key"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I feel very full after that meal. I\u2019m not used to ", " so much."],
-          "answers": [["eating"]]
+          "parts": [
+            "Sally is married. ",
+            " works in a bank."
+          ],
+          "answers": [
+            [
+              "Her husband"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I wouldn\u2019t like to share a room. I\u2019m used to ", " my own room."],
-          "answers": [["having"]]
+          "parts": [
+            "Please take off ",
+            " and sit down."
+          ],
+          "answers": [
+            [
+              "your coat"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I used to ", " a car, but I sold it a few months ago."],
-          "answers": [["have", "own"]]
+          "parts": [
+            "‘What are the children doing?’ ‘They’re doing ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "their homework"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["When we were children, we used to ", " swimming very often."],
-          "answers": [["go"]]
+          "parts": [
+            "‘Do you know that man?’ ‘Yes, but I don’t know ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "his name"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["There used to ", " a school here, but it was knocked down a few years ago."],
-          "answers": [["be"]]
+          "parts": [
+            "We live in Barton Street. ",
+            " is at the end on the left."
+          ],
+          "answers": [
+            [
+              "Our house"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "61.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (велосипед = bike)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Это моя сестра Анна.",
+          "answers": [
+            "This is my sister, Anna."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вам нравится наша новая машина?",
+          "answers": [
+            "Do you like our new car?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Наши родители в Киеве.",
+          "answers": [
+            "Our parents are in Kiev."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Тим любит баскетбол. Это его любимый спорт.",
+          "answers": [
+            "Tim loves basketball. It’s his favourite sport.",
+            "Tim loves basketball. It is his favourite sport."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Это Ваша дочь?",
+          "answers": [
+            "Is this your daughter?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Где твой велосипед?",
+          "answers": [
+            "Where is your bike?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Париж известен своими музеями.",
+          "answers": [
+            "Paris is famous for its museums."
+          ]
         },
         {
           "num": 8,
-          "parts": ["I\u2019m the boss here! I\u2019m not used to ", " told what to do."],
-          "answers": [["being"]]
+          "prompt": "Сколько лет их сыну?",
+          "answers": [
+            "How old is their son?"
+          ]
         }
       ]
     }

@@ -1,217 +1,617 @@
 {
   "unit": 41,
-  "title": "wish",
-  "pdfPages": [94, 95],
+  "title": "I am, I don’t и т. д.",
+  "pdfPages": [
+    93,
+    94
+  ],
   "exercises": [
     {
       "id": "41.1",
       "type": "fill-in",
-      "instruction": "Put in wish(ed) or hope(d).",
+      "instruction": "Закончите предложения, используя только один из глаголов (is/have/can и т. д.).",
       "items": [
         {
           "num": 1,
-          "parts": ["I wish you a pleasant stay at this hotel."],
-          "answers": [],
+          "parts": [
+            "Kate wasn’t hungry, but we ",
+            "."
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ],
           "example": true
         },
         {
           "num": 2,
-          "parts": ["Enjoy your holiday. I ", " you have a great time."],
-          "answers": [["hope"]]
+          "parts": [
+            "I’m not married, but my brother ",
+            "."
+          ],
+          "answers": [
+            [
+              "is"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Goodbye. I ", " you all the best for the future."],
-          "answers": [["wish"]]
+          "parts": [
+            "Ben can’t help you, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "can"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["We said goodbye to each other and ", " each other luck."],
-          "answers": [["wished"]]
+          "parts": [
+            "I haven’t seen the film, but Tom ",
+            "."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["We're going to have a picnic tomorrow, so I ", " the weather is nice."],
-          "answers": [["hope"]]
+          "parts": [
+            "Karen won’t be here, but Chris ",
+            "."
+          ],
+          "answers": [
+            [
+              "will"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Congratulations on your new job. I ", " you every success."],
-          "answers": [["wish"]]
-        },
-        {
-          "num": 7,
-          "parts": ["Good luck in your new job. I ", " it works out well for you."],
-          "answers": [["hope"]]
+          "parts": [
+            "You weren’t late, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "41.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences.",
+      "instruction": "Закончите предложения, используя только глагол в отрицательной форме (isn’t/haven’t/can’t и т. д.).",
       "items": [
         {
           "num": 1,
-          "parts": ["Jack is going on a trip to Mexico soon. I wish I was going too."],
-          "answers": [],
+          "parts": [
+            "My sister can play the piano, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "can’t"
+            ]
+          ],
           "example": true
         },
         {
           "num": 2,
-          "parts": ["I'm very tired and I have so much to do. I wish I ", " so tired."],
-          "answers": [["wasn't", "weren't"]]
+          "parts": [
+            "Sam is working today, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "’m not",
+              "am not"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["You didn't tell me you were ill. Why not? I wish you ", " me."],
-          "answers": [["'d told", "had told"]]
+          "parts": [
+            "I was working, but my friends ",
+            "."
+          ],
+          "answers": [
+            [
+              "weren’t"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don't have enough free time. I wish I ", " more free time."],
-          "answers": [["had", "could have"]]
+          "parts": [
+            "Mark has been to China, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "haven’t"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I can't make up my mind what to do. I wish I ", " decide."],
-          "answers": [["could"]]
+          "parts": [
+            "I’m ready to go, but Tom ",
+            "."
+          ],
+          "answers": [
+            [
+              "isn’t"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I bought these shoes, but now I don't like them. I wish I ", " them."],
-          "answers": [["hadn't bought"]]
-        },
-        {
-          "num": 7,
-          "parts": ["We have to go out now and I don't want to go. I wish we ", " to go out now."],
-          "answers": [["didn't have"]]
-        },
-        {
-          "num": 8,
-          "parts": ["Unfortunately I couldn't go to the wedding last month. I wish I could ", "."],
-          "answers": [["have gone"]]
+          "parts": [
+            "I’ve got a key, but Sarah ",
+            "."
+          ],
+          "answers": [
+            [
+              "hasn’t"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "41.3",
-      "type": "write",
-      "instruction": "What do you say in these situations? Write sentences with I wish … would … .",
+      "type": "fill-in",
+      "instruction": "Закончите предложения, используя только do/does/did или don’t/doesn’t/didn’t.",
       "items": [
         {
           "num": 1,
-          "prompt": "",
-          "answers": ["I wish it would stop raining."]
+          "parts": [
+            "I don’t like hot weather, but Sue ",
+            "."
+          ],
+          "answers": [
+            [
+              "does"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "You say to yourself: I wish she",
-          "answers": ["I wish she would come.", "I wish she would hurry up."]
+          "parts": [
+            "Sue likes hot weather, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "don’t"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "You say: I wish somebody",
-          "answers": ["I wish somebody would give me a job."]
+          "parts": [
+            "My mother wears glasses, but my father ",
+            "."
+          ],
+          "answers": [
+            [
+              "doesn’t"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "You say:",
-          "answers": ["I wish the/that dog would stop barking."]
+          "parts": [
+            "You don’t know Paul very well, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "You say to her: I wish you",
-          "answers": ["I wish you wouldn't drive so fast."]
+          "parts": [
+            "I didn’t enjoy the party, but my friends ",
+            "."
+          ],
+          "answers": [
+            [
+              "did"
+            ]
+          ]
         },
         {
           "num": 6,
-          "prompt": "You say to Joe:",
-          "answers": ["I wish you wouldn't leave the door open (all the time)."]
+          "parts": [
+            "I don’t watch TV much, but Peter ",
+            "."
+          ],
+          "answers": [
+            [
+              "does"
+            ]
+          ]
         },
         {
           "num": 7,
-          "prompt": "You say: I wish people",
-          "answers": ["I wish people wouldn't drop litter in the street."]
+          "parts": [
+            "Kate lives in London, but her parents ",
+            "."
+          ],
+          "answers": [
+            [
+              "don’t"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "You had breakfast this morning, but I ",
+            "."
+          ],
+          "answers": [
+            [
+              "didn’t"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "41.4",
-      "type": "fill-in",
-      "instruction": "Put the verb into the correct form.",
+      "type": "self-check",
+      "instruction": "Закончите предложения. Напишите о себе и о других людях.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["It was a stupid thing to say. I wish I hadn't said it. (I / not / say)"],
-          "answers": [],
+          "prompt": "I didn’t go out last night, but my friends did.",
+          "modelAnswers": [
+            "I didn’t go out last night, but my friends did."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I like …, but …",
+          "modelAnswers": [
+            "I like sport, but my sister doesn’t."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I don’t …, but …",
+          "modelAnswers": [
+            "I don’t eat meat, but Jessica does."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I’m …, but …",
+          "modelAnswers": [
+            "I’m American, but my husband isn’t."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I haven’t …, but …",
+          "modelAnswers": [
+            "I haven’t been to Japan, but Jessica has."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "41.5",
+      "type": "fill-in",
+      "instruction": "Вставьте глагол в утвердительной или отрицательной форме.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "‘Are you tired?’ ‘I ",
+            " earlier, but I’m not now.’"
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ],
           "example": true
         },
         {
           "num": 2,
-          "parts": ["I'm fed up with this rain. I wish it would stop . (it / stop)"],
-          "answers": [],
-          "example": true
+          "parts": [
+            "Steve is happy today, but he ",
+            " yesterday."
+          ],
+          "answers": [
+            [
+              "wasn’t"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["It's a difficult question. I wish ", " the answer. (I / know)"],
-          "answers": [["I knew"]]
+          "parts": [
+            "The bank isn’t open yet, but the shops ",
+            "."
+          ],
+          "answers": [
+            [
+              "are"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I really didn't enjoy the party. I wish ", ". (we / not / go)"],
-          "answers": [["we hadn't gone"]]
+          "parts": [
+            "I haven’t got a telescope, but I know somebody who ",
+            "."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I wish ", ". We've been waiting for 20 minutes. (the bus / come)"],
-          "answers": [["the bus would come"]]
+          "parts": [
+            "I would like to help you, but I’m afraid I ",
+            "."
+          ],
+          "answers": [
+            [
+              "can’t"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["You're lucky to be going away. I wish ", " with you. (I / can / come)"],
-          "answers": [["I could come"]]
+          "parts": [
+            "I don’t usually go to work by car, but I ",
+            " yesterday."
+          ],
+          "answers": [
+            [
+              "did"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Our flat is rather small. I wish ", " a bit bigger. (it / be)"],
-          "answers": [["it was/were"]]
+          "parts": [
+            "A: Have you ever been to the United States? B: No, but Sandra ",
+            ". She went there on holiday last year."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["I should have listened to you. I wish ", " your advice. (I / take)"],
-          "answers": [["I'd taken", "I had taken"]]
+          "parts": [
+            "‘Do you and Chris watch TV a lot?’ ‘I ",
+            ", but Chris doesn’t.’"
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["You keep interrupting me! I wish ", ". (you / listen)"],
-          "answers": [["you'd listen", "you would listen"]]
+          "parts": [
+            "I’ve been invited to Sam’s wedding, but Kate ",
+            "."
+          ],
+          "answers": [
+            [
+              "hasn’t"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["You're always complaining. I wish ", " all the time. (you / not / complain)"],
-          "answers": [["you wouldn't complain", "you didn't complain"]]
+          "parts": [
+            "‘Do you think Sarah will pass her driving test?’ ‘Yes. I’m sure she ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "will"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["It's freezing today. I wish ", " so cold. I hate cold weather. (it / not / be)"],
-          "answers": [["it wasn't/weren't"]]
+          "parts": [
+            "‘Are you going out tonight?’ ‘I ",
+            ". I don’t know for sure.’"
+          ],
+          "answers": [
+            [
+              "might"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "41.6",
+      "type": "write",
+      "instruction": "Ответьте на вопросы, используя Yes, I have. / No, I’m not. и т. д.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Are you American?",
+          "answers": [
+            "No, I’m not."
+          ]
         },
         {
-          "num": 12,
-          "parts": ["I wish ", ". It's horrible! (the weather / change)"],
-          "answers": [["the weather would change"]]
+          "num": 2,
+          "prompt": "Have you got a car?",
+          "answers": [
+            "Yes, I have.",
+            "No, I haven’t."
+          ]
         },
         {
-          "num": 13,
-          "parts": ["I wish ", " a piano. I'd love to have one. (I / have)"],
-          "answers": [["I had", "I could have"]]
+          "num": 3,
+          "prompt": "Do you feel OK?",
+          "answers": [
+            "Yes, I do.",
+            "No, I don’t."
+          ]
         },
         {
-          "num": 14,
-          "parts": ["When we were in London last year, we didn't have time to see all the things we wanted to see. I wish ", " there longer. (we / can / stay)"],
-          "answers": [["we could have stayed"]]
+          "num": 4,
+          "prompt": "Is it snowing?",
+          "answers": [
+            "Yes, it is.",
+            "No, it isn’t."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Are you hungry?",
+          "answers": [
+            "Yes, I am.",
+            "No, I’m not."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Do you like classical music?",
+          "answers": [
+            "Yes, I do.",
+            "No, I don’t."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Will you be in Paris tomorrow?",
+          "answers": [
+            "Yes, I will.",
+            "No, I won’t."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Have you ever broken your arm?",
+          "answers": [
+            "Yes, I have.",
+            "No, I haven’t."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Did you buy anything yesterday?",
+          "answers": [
+            "Yes, I did.",
+            "No, I didn’t."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Were you asleep at 3 a.m.?",
+          "answers": [
+            "Yes, I was.",
+            "No, I wasn’t."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "41.7",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (занят = busy; ходить в спортзал = go to the gym; когда нибудь = ever)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Ты не занята, а я занят!",
+          "answers": [
+            "You aren’t busy, but I am!",
+            "You are not busy, but I am!"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Джессика умеет водить машину, а я нет.",
+          "answers": [
+            "Jessica can drive, but I can’t.",
+            "Jessica can drive a car, but I can’t."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "“Ты увидишь Лену завтра?” – “Нет, не увижу”.",
+          "answers": [
+            "‘Will you see Lena tomorrow?’ ‘No, I won’t.’"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Мне не понравился концерт, а Тиму понравился.",
+          "answers": [
+            "I didn’t like the concert, but Tim did.",
+            "I did not like the concert, but Tim did."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Лола ходит в спортзал, а я нет.",
+          "answers": [
+            "Lola goes to the gym, but I don’t."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "“Борис когда-нибудь был в Берлине?” – “Да, был”.",
+          "answers": [
+            "‘Has Boris ever been to Berlin?’ ‘Yes, he has.’"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Я люблю кошек, а мой муж не любит.",
+          "answers": [
+            "I love cats, but my husband doesn’t."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я не видел этот фильм, а Алла видела.",
+          "answers": [
+            "I haven’t seen this film, but Alla has.",
+            "I haven’t seen that film, but Alla has.",
+            "I have not seen this film, but Alla has.",
+            "I have not seen that film, but Alla has."
+          ]
         }
       ]
     }

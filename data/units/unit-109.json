@@ -1,59 +1,424 @@
 {
   "unit": 109,
-  "title": "Word order 1: verb + object; place and time",
-  "pdfPages": [230, 231],
+  "title": "under, behind, opposite и т. д.",
+  "pdfPages": [
+    229,
+    230
+  ],
   "exercises": [
     {
       "id": "109.1",
-      "type": "write",
-      "instruction": "Is the word order OK or not? Correct the sentences where necessary.",
+      "type": "fill-in",
+      "instruction": "Где эти люди находятся по отношению друг к другу? Заполните пропуски в предложениях.",
       "items": [
-        {"num": 1, "prompt": "Did you see your friends yesterday?", "answers": ["OK"]},
-        {"num": 2, "prompt": "Ben walks every morning to work.", "answers": ["Ben walks to work every morning."]},
-        {"num": 3, "prompt": "Joe doesn\u2019t like very much football.", "answers": ["Joe doesn\u2019t like football very much."]},
-        {"num": 4, "prompt": "Dan won easily the race.", "answers": ["Dan won the race easily."]},
-        {"num": 5, "prompt": "Tanya speaks German quite well.", "answers": ["OK"]},
-        {"num": 6, "prompt": "Have you seen recently Chris?", "answers": ["Have you seen Chris recently?"]},
-        {"num": 7, "prompt": "I borrowed from a friend some money.", "answers": ["I borrowed some money from a friend."]},
-        {"num": 8, "prompt": "Please don\u2019t ask that question again.", "answers": ["OK"]},
-        {"num": 9, "prompt": "I ate quickly my breakfast and went out.", "answers": ["I ate my breakfast quickly and went out.", "I quickly ate my breakfast and went out."]},
-        {"num": 10, "prompt": "Did you invite to the party a lot of people?", "answers": ["Did you invite a lot of people to the party?"]},
-        {"num": 11, "prompt": "Sam watches all the time TV.", "answers": ["Sam watches TV all the time."]},
-        {"num": 12, "prompt": "Does Kevin play football every weekend?", "answers": ["OK"]}
+        {
+          "num": 1,
+          "parts": [
+            "Carl is standing ",
+            " Frank."
+          ],
+          "answers": [
+            [
+              "behind"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Frank is sitting ",
+            " Emma."
+          ],
+          "answers": [
+            [
+              "next to",
+              "beside",
+              "by"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Emma is sitting ",
+            " Becky."
+          ],
+          "answers": [
+            [
+              "in front of"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Emma is sitting ",
+            " Daniela and Frank."
+          ],
+          "answers": [
+            [
+              "between"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Daniela is sitting ",
+            " Emma."
+          ],
+          "answers": [
+            [
+              "next to",
+              "beside",
+              "by"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Frank is sitting ",
+            " Carl."
+          ],
+          "answers": [
+            [
+              "in front of"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Alan is standing ",
+            " Daniela."
+          ],
+          "answers": [
+            [
+              "behind"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Alan is standing ",
+            " left."
+          ],
+          "answers": [
+            [
+              "on the",
+              "on the left"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Becky is standing ",
+            " middle."
+          ],
+          "answers": [
+            [
+              "in the",
+              "in the middle"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "109.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Put the parts in the correct order.",
+      "instruction": "Посмотрите на картинки и заполните пропуски в предложениях.",
       "items": [
-        {"num": 1, "parts": ["We ", " the children ", " to the zoo ", "."], "answers": [["took"], ["the children"], ["to the zoo"]]},
-        {"num": 2, "parts": ["I ", " a friend of mine ", " on my way home ", "."], "answers": [["met"], ["a friend of mine"], ["on my way home"]]},
-        {"num": 3, "parts": ["I ", " to put ", " on the envelope ", " a stamp ", "."], "answers": [["forgot"], ["to put"], ["on the envelope"], ["a stamp"]]},
-        {"num": 4, "parts": ["We ", " a lot of fruit ", " in the market ", "."], "answers": [["bought"], ["a lot of fruit"], ["in the market"]]},
-        {"num": 5, "parts": ["They ", " opposite the park ", " a new hotel ", "."], "answers": [["built"], ["opposite the park"], ["a new hotel"]]},
-        {"num": 6, "parts": ["Did you ", " at school ", " today ", " a lot of things ", "?"], "answers": [["learn"], ["at school"], ["today"], ["a lot of things"]]},
-        {"num": 7, "parts": ["We ", " some interesting books ", " in the library ", "."], "answers": [["found"], ["some interesting books"], ["in the library"]]},
-        {"num": 8, "parts": ["Please ", " at the top ", " of the page ", " your name ", "."], "answers": [["write"], ["at the top"], ["of the page"], ["your name"]]}
+        {
+          "num": 1,
+          "parts": [
+            "The cat is ",
+            " the table."
+          ],
+          "answers": [
+            [
+              "under"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "There is a big tree ",
+            " the house."
+          ],
+          "answers": [
+            [
+              "behind"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The plane is flying ",
+            " the clouds."
+          ],
+          "answers": [
+            [
+              "above"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "She is standing ",
+            " the piano."
+          ],
+          "answers": [
+            [
+              "in front of"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "The cinema is ",
+            " the right."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "She’s standing ",
+            " the fridge."
+          ],
+          "answers": [
+            [
+              "by",
+              "next to",
+              "beside"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "The switch is ",
+            " the window."
+          ],
+          "answers": [
+            [
+              "below",
+              "under"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The cupboard is ",
+            " the sink."
+          ],
+          "answers": [
+            [
+              "above"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "There are some shoes ",
+            " the bed."
+          ],
+          "answers": [
+            [
+              "under"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "The plant is ",
+            " the piano."
+          ],
+          "answers": [
+            [
+              "by",
+              "next to",
+              "beside"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Paul is sitting ",
+            " Fiona."
+          ],
+          "answers": [
+            [
+              "opposite"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "In Britain people drive ",
+            " the left."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "109.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Put the parts in the correct order.",
+      "type": "write",
+      "instruction": "Напишите предложения по картинке.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 1, "parts": ["They ", " for a long time ", " in the same house ", "."], "answers": [["have lived"], ["for a long time"], ["in the same house"]]},
-        {"num": 2, "parts": ["I ", " to the supermarket ", " every Friday ", "."], "answers": [["go"], ["to the supermarket"], ["every Friday"]]},
-        {"num": 3, "parts": ["Why ", " home ", " so late ", "?"], "answers": [["did you come"], ["home"], ["so late"]]},
-        {"num": 4, "parts": ["Sarah ", " her children ", " every day ", " to school ", "."], "answers": [["takes"], ["her children"], ["every day"], ["to school"]]},
-        {"num": 5, "parts": ["I haven\u2019t ", " recently ", " to the cinema ", "."], "answers": [["been"], ["recently"], ["to the cinema"]]},
-        {"num": 6, "parts": ["I ", " her name ", " after a few minutes ", "."], "answers": [["remembered"], ["her name"], ["after a few minutes"]]},
-        {"num": 7, "parts": ["We ", " around the town ", " all morning ", "."], "answers": [["walked"], ["around the town"], ["all morning"]]},
-        {"num": 8, "parts": ["My brother ", " since April ", " in Canada ", "."], "answers": [["has been"], ["since April"], ["in Canada"]]},
-        {"num": 9, "parts": ["I ", " on Saturday night ", " at the party ", "."], "answers": [["didn\u2019t see you"], ["on Saturday night"], ["at the party"]]},
-        {"num": 10, "parts": ["Lisa ", " her umbrella ", " last night ", " in a restaurant ", "."], "answers": [["left"], ["her umbrella"], ["last night"], ["in a restaurant"]]},
-        {"num": 11, "parts": ["The moon ", " round the earth ", " every 27 days ", "."], "answers": [["goes"], ["round the earth"], ["every 27 days"]]},
-        {"num": 12, "parts": ["Anna ", " Italian ", " for the last three years ", " in London ", "."], "answers": [["has been teaching"], ["Italian"], ["for the last three years"], ["in London"]]}
+        {
+          "num": 1,
+          "prompt": "(next to)",
+          "answers": [
+            "The bank is next to the bookshop."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(in front of)",
+          "answers": [
+            "The fountain is in front of the theatre."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(opposite)",
+          "answers": [
+            "The bank is opposite the theatre.",
+            "The bookshop is opposite the theatre.",
+            "Paul’s office is opposite the theatre."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(next to)",
+          "answers": [
+            "The bank is next to the bookshop.",
+            "The bookshop is next to the bank.",
+            "The bookshop is next to the supermarket.",
+            "The supermarket is next to the bookshop."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(above)",
+          "answers": [
+            "Paul’s office is above the bookshop."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(between)",
+          "answers": [
+            "The bookshop is between the bank and the supermarket."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "109.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (диван = sofa)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Стол находится в середине комнаты.",
+          "answers": [
+            "The desk is in the middle of the room.",
+            "The table is in the middle of the room.",
+            "The desk is in the centre of the room.",
+            "The table is in the centre of the room."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Где моя сумка?” – “Под стулом”.",
+          "answers": [
+            "‘Where’s my bag?’ ‘Under the chair.’",
+            "‘Where is my bag?’ ‘Under the chair.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Наша квартира находится над магазином.",
+          "answers": [
+            "Our flat is above a shop."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Твоя кошка всегда спит за диваном?",
+          "answers": [
+            "Does your cat always sleep behind the sofa?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я хочу сидеть у окна.",
+          "answers": [
+            "I’d like to sit by the window.",
+            "I would like to sit by the window.",
+            "I want to sit by the window.",
+            "I’d like to sit beside the window.",
+            "I would like to sit beside the window.",
+            "I want to sit beside the window.",
+            "I’d like to sit next to the window.",
+            "I would like to sit next to the window.",
+            "I want to sit next to the window."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Хорошее фото! Кто эта девушка справа?",
+          "answers": [
+            "Nice photo! Who is that girl on the right?",
+            "Nice photo! Who is this girl on the right?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Перед музеем есть автобусная остановка.",
+          "answers": [
+            "There’s a bus stop in front of the museum.",
+            "There is a bus stop in front of the museum.",
+            "In front of the museum, there’s a bus stop.",
+            "In front of the museum, there is a bus stop."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Дом Анны находится напротив парка.",
+          "answers": [
+            "Anna’s house is opposite the park."
+          ]
+        }
       ]
     }
   ]

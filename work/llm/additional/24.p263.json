@@ -1,0 +1,92 @@
+{
+ "id": 24,
+ "topic": "пассивные конструкции",
+ "refs": "Разделы 22–23",
+ "pdfPages": [
+  263
+ ],
+ "exercise": {
+  "id": "24",
+  "type": "fill-in",
+  "instruction": "Заполните пропуски.",
+  "items": [
+   {
+    "num": 1,
+    "example": true,
+    "parts": [
+     "These houses ",
+     " (build) 20 years ago. Before that there was a cinema here, but the building ",
+     " (damage) in a fire and had to ",
+     " (knock down)."
+    ],
+    "answers": [
+     [
+      "were built"
+     ],
+     [
+      "was damaged"
+     ],
+     [
+      "be knocked down"
+     ]
+    ]
+   },
+   {
+    "num": 2,
+    "parts": [
+     "This bridge ",
+     " (build) in 1955. It ",
+     " (use) by hundreds of people every day. At the moment the bridge ",
+     " (paint)."
+    ],
+    "answers": [
+     [
+      "was built"
+     ],
+     [
+      "is used"
+     ],
+     [
+      "is being painted"
+     ]
+    ]
+   },
+   {
+    "num": 3,
+    "parts": [
+     "This street ",
+     " (call) Wilton Street. It used to ",
+     " (call) James Street, but the name ",
+     " (change) a few years ago."
+    ],
+    "answers": [
+     [
+      "is called"
+     ],
+     [
+      "be called"
+     ],
+     [
+      "was changed"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "This is a bicycle factory. Bicycles ",
+     " (make) here since 1971. It’s the largest bicycle factory in the country. Thousands of bicycles ",
+     " (produce) here every year."
+    ],
+    "answers": [
+     [
+      "have been made"
+     ],
+     [
+      "are produced"
+     ]
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "id": 11,
+ "topic": "was/were и past simple",
+ "refs": "Разделы 11–13",
+ "pdfPages": [
+  256
+ ],
+ "exercise": {
+  "id": "11",
+  "type": "write",
+  "instruction": "Прочитайте вопросы и ответы, которые дал Джо. Напишите предложения о Джо в детстве.",
+  "example": [
+   1,
+   2
+  ],
+  "items": [
+   {
+    "num": 1,
+    "prompt": "Were you tall? No.",
+    "answers": [
+     "He wasn’t tall."
+    ]
+   },
+   {
+    "num": 2,
+    "prompt": "Did you like school? Yes.",
+    "answers": [
+     "He liked school."
+    ]
+   },
+   {
+    "num": 3,
+    "prompt": "Were you good at sport? Yes.",
+    "answers": [
+     "He was good at sport."
+    ]
+   },
+   {
+    "num": 4,
+    "prompt": "Did you play football? Yes.",
+    "answers": [
+     "He played football."
+    ]
+   },
+   {
+    "num": 5,
+    "prompt": "Did you work hard at school? No.",
+    "answers": [
+     "He didn’t work hard at school."
+    ]
+   },
+   {
+    "num": 6,
+    "prompt": "Did you have a lot of friends? Yes.",
+    "answers": [
+     "He had a lot of friends."
+    ]
+   },
+   {
+    "num": 7,
+    "prompt": "Did you have a bike? No.",
+    "answers": [
+     "He didn’t have a bike."
+    ]
+   },
+   {
+    "num": 8,
+    "prompt": "Were you a quiet child? No.",
+    "answers": [
+     "He wasn’t a quiet child."
+    ]
+   }
+  ]
+ }
+}

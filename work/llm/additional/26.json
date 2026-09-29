@@ -1,0 +1,61 @@
+{
+ "id": 26,
+ "topic": "пассивные конструкции",
+ "refs": "Разделы 22–23",
+ "pdfPages": [
+  263
+ ],
+ "exercise": {
+  "id": "26",
+  "type": "write",
+  "instruction": "Напишите новое предложение с таким же значением.",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "prompt": "Somebody has stolen my keys.",
+    "answers": [
+     "My keys have been stolen."
+    ]
+   },
+   {
+    "num": 2,
+    "prompt": "Somebody stole my car last week.",
+    "answers": [
+     "My car was stolen last week."
+    ]
+   },
+   {
+    "num": 3,
+    "prompt": "Somebody has eaten all the bananas.",
+    "answers": [
+     "All the bananas have been eaten."
+    ]
+   },
+   {
+    "num": 4,
+    "prompt": "Somebody will repair the machine.",
+    "answers": [
+     "The machine will be repaired."
+    ]
+   },
+   {
+    "num": 5,
+    "prompt": "Somebody is watching us.",
+    "answers": [
+     "We’re being watched.",
+     "We are being watched."
+    ]
+   },
+   {
+    "num": 6,
+    "prompt": "Somebody has to do the housework.",
+    "answers": [
+     "The housework has to be done."
+    ]
+   }
+  ]
+ }
+}

@@ -1,49 +1,319 @@
 {
   "unit": 95,
-  "title": "Relative clauses 4: extra information clauses (1)",
-  "pdfPages": [202, 203],
+  "title": "always/usually/often и т. д. (порядок слов 2)",
+  "pdfPages": [
+    201,
+    202
+  ],
   "exercises": [
     {
       "id": "95.1",
       "type": "write",
-      "instruction": "Make one sentence from two. Use the information in brackets to make a relative clause (Type 2). You will need to use who/whom/whose/which/where.",
+      "instruction": "Прочитайте ответы Бена на вопросы. Напишите предложения о Бене, используя often/never и т. д.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 1, "prompt": "Catherine is very friendly. (She lives next door to us.)", "answers": ["Catherine, who lives next door to us, is very friendly."]},
-        {"num": 2, "prompt": "We stayed at the Park Hotel. (A friend of ours recommended this hotel.)", "answers": ["We stayed at the Park Hotel, which a friend of ours recommended."]},
-        {"num": 3, "prompt": "We drove to the airport. (The airport was not far from the city.)", "answers": ["We drove to the airport, which was not far from the city."]},
-        {"num": 4, "prompt": "Kate\u2019s husband is an airline pilot. (I have never met Kate\u2019s husband.)", "answers": ["Kate\u2019s husband, who I\u2019ve never met, is an airline pilot.", "Kate\u2019s husband, whom I\u2019ve never met, is an airline pilot."]},
-        {"num": 5, "prompt": "Lisa is away from home a lot. (Lisa\u2019s job involves a lot of travelling.)", "answers": ["Lisa, whose job involves a lot of travelling, is away from home a lot."]},
-        {"num": 6, "prompt": "Paul and Emily have a daughter, Alice. (Alice has just started school.)", "answers": ["Paul and Emily have a daughter, Alice, who has just started school."]},
-        {"num": 7, "prompt": "The new stadium will hold 90,000 spectators. (The stadium will be finished next month.)", "answers": ["The new stadium, which will be finished next month, will hold 90,000 spectators."]},
-        {"num": 8, "prompt": "My brother lives in Alaska. (Alaska is the largest state in the US.)", "answers": ["My brother lives in Alaska, which is the largest state in the US."]},
-        {"num": 9, "prompt": "Our teacher was very kind. (I have forgotten her name.)", "answers": ["Our teacher, whose name I have forgotten, was very kind."]},
-        {"num": 10, "prompt": "We enjoyed our visit to the museum. (We saw a lot of interesting things in the museum.)", "answers": ["We enjoyed our visit to the museum, where we saw a lot of interesting things."]}
+        {
+          "num": 1,
+          "prompt": "Do you ever play tennis? Yes, often.",
+          "answers": [
+            "Ben often plays tennis."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Do you get up early? Yes, always.",
+          "answers": [
+            "He always gets up early."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Are you ever late for work? No, never.",
+          "answers": [
+            "He’s never late for work.",
+            "He is never late for work."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Do you ever get angry? Sometimes.",
+          "answers": [
+            "He sometimes gets angry."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Do you ever go swimming? Rarely.",
+          "answers": [
+            "He rarely goes swimming."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Are you at home in the evenings? Yes, usually.",
+          "answers": [
+            "He’s usually at home in the evenings.",
+            "He is usually at home in the evenings."
+          ]
+        }
       ]
     },
     {
       "id": "95.2",
       "type": "write",
-      "instruction": "Read the information and complete the sentences. Use a relative clause of Type 1 or Type 2. Use commas where necessary.",
+      "instruction": "Напишите предложения, используя never/always/usually и т. д.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 1, "prompt": "My brother is an architect. (He lives in Hong Kong.)", "answers": ["My brother, who lives in Hong Kong, is an architect."]},
-        {"num": 2, "prompt": "The strike at the factory has now ended. (The strike began ten days ago.)", "answers": ["The strike at the factory, which began ten days ago, has now ended."]},
-        {"num": 3, "prompt": "I was looking for a book this morning. (I\u2019ve found it now.)", "answers": ["I\u2019ve found the book I was looking for this morning.", "I\u2019ve found the book that/which I was looking for this morning."]},
-        {"num": 4, "prompt": "I\u2019ve had my car for 15 years. (This car has never broken down.)", "answers": ["My car, which I\u2019ve had for 15 years, has never broken down."]},
-        {"num": 5, "prompt": "A lot of people applied for the job. (Few of them had the necessary qualifications.)", "answers": ["Few of the people who/that applied for the job had the necessary qualifications."]},
-        {"num": 6, "prompt": "Amy showed me a picture of her son. (Her son is a police officer.)", "answers": ["Amy showed me a picture of her son, who is a police officer."]}
+        {
+          "num": 1,
+          "prompt": "My brother speaks to me. (never)",
+          "answers": [
+            "My brother never speaks to me."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Susan is polite. (always)",
+          "answers": [
+            "Susan is always polite."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I finish work at 5 o’clock. (usually)",
+          "answers": [
+            "I usually finish work at 5 o’clock."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Sarah has started a new job. (just)",
+          "answers": [
+            "Sarah has just started a new job."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I go to bed before midnight. (rarely)",
+          "answers": [
+            "I rarely go to bed before midnight."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "The bus isn’t late. (usually)",
+          "answers": [
+            "The bus isn’t usually late."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "I don’t eat fish. (often)",
+          "answers": [
+            "I don’t often eat fish."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "I will forget what you said. (never)",
+          "answers": [
+            "I will never forget what you said."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Have you lost your passport? (ever)",
+          "answers": [
+            "Have you ever lost your passport?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Do you work in the same place? (still)",
+          "answers": [
+            "Do you still work in the same place?"
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "They stay in the same hotel. (always)",
+          "answers": [
+            "They always stay in the same hotel."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "Jane doesn’t work on Saturdays. (usually)",
+          "answers": [
+            "Jane doesn’t usually work on Saturdays."
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "Is Tina here? (already)",
+          "answers": [
+            "Is Tina already here?"
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "What do you have for breakfast? (usually)",
+          "answers": [
+            "What do you usually have for breakfast?"
+          ]
+        },
+        {
+          "num": 15,
+          "prompt": "I can remember his name. (never)",
+          "answers": [
+            "I can never remember his name."
+          ]
+        }
       ]
     },
     {
       "id": "95.3",
       "type": "write",
-      "instruction": "Are these sentences OK? Correct them (and put in commas) where necessary. If the sentence is correct, write \u2018OK\u2019.",
+      "instruction": "Напишите предложения, используя also.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 1, "prompt": "Anna told me about her new job that she\u2019s enjoying very much.", "answers": ["Anna told me about her new job, which she\u2019s enjoying very much."]},
-        {"num": 2, "prompt": "My office that is on the second floor is very small.", "answers": ["My office, which is on the second floor, is very small."]},
-        {"num": 3, "prompt": "The office that I\u2019m using at the moment is very small.", "answers": ["OK"]},
-        {"num": 4, "prompt": "Sarah\u2019s father that used to be in the army now works for a TV company.", "answers": ["Sarah\u2019s father, who used to be in the army, now works for a TV company."]},
-        {"num": 5, "prompt": "The doctor that examined me couldn\u2019t find anything wrong.", "answers": ["OK"]},
-        {"num": 6, "prompt": "The sun that is one of millions of stars in the universe provides us with heat and light.", "answers": ["The sun, which is one of millions of stars in the universe, provides us with heat and light."]}
+        {
+          "num": 1,
+          "prompt": "Do you play football? (tennis)",
+          "answers": [
+            "Yes, and I also play tennis."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Do you speak Italian? (French)",
+          "answers": [
+            "Yes, and I also speak French."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Are you tired? (hungry)",
+          "answers": [
+            "Yes, and I’m also hungry."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Have you been to England? (Ireland)",
+          "answers": [
+            "Yes, and I’ve also been to Ireland."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Did you buy any clothes? (some books)",
+          "answers": [
+            "Yes, and I also bought some books."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95.4",
+      "type": "write",
+      "instruction": "Напишите предложения, используя both и all.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "I live in London. I play football. I’m a student. I’ve got a car.",
+          "answers": [
+            "They both live in London.",
+            "They both play football.",
+            "They’re both students.",
+            "They are both students.",
+            "They’ve both got cars.",
+            "They both have cars."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I’m married. I was born in England. I live in New York.",
+          "answers": [
+            "They’re all married.",
+            "They are all married.",
+            "They were all born in England.",
+            "They all live in New York."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. [(2) на работу = for work; за границу = abroad; ездить на велосипеде = cycle]",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я редко хожу в театр.",
+          "answers": [
+            "I rarely go to the theatre.",
+            "I seldom go to the theatre."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Бен часто опаздывает на работу.",
+          "answers": [
+            "Ben is often late for work."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Вы когда-нибудь ездили за границу?",
+          "answers": [
+            "Have you ever travelled abroad?",
+            "Have you ever been abroad?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Я никогда не забуду наш отпуск в Берлине.",
+          "answers": [
+            "I will never forget our holiday in Berlin."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Обычно мы не встаём рано.",
+          "answers": [
+            "We don’t usually get up early."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Джесс здесь нет. Она только что ушла в супермаркет.",
+          "answers": [
+            "Jess isn’t here. She’s just gone to the supermarket."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Иногда я езжу на работу на велосипеде.",
+          "answers": [
+            "I sometimes cycle to work.",
+            "Sometimes I cycle to work."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "У меня есть две сестры. Они обе живут в России.",
+          "answers": [
+            "I have two sisters. They both live in Russia.",
+            "I’ve got two sisters. They both live in Russia."
+          ]
+        }
       ]
     }
   ]

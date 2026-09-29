@@ -1,178 +1,476 @@
 {
   "unit": 104,
-  "title": "quite, pretty, rather and fairly",
-  "pdfPages": [220, 221],
+  "title": "from … to · until · since · for",
+  "pdfPages": [
+    219,
+    220
+  ],
   "exercises": [
     {
       "id": "104.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using quite \u2026 . Choose from:",
-      "wordBank": ["famous", "hungry", "late", "noisy", "often", "old", "surprised"],
+      "instruction": "Прочитайте информацию и закончите предложения. Используйте from ... to / until / since. Теперь напишите предложения, используя for.",
       "items": [
         {
+          "num": 1,
+          "prompt": "(Alex / Canada / 2001 → 2009)",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Alex lived in Canada from 2001 to 2009"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["I\u2019m ", ". Is there anything to eat?"],
-          "answers": [["quite hungry"]]
+          "prompt": "(Alex / Canada / → 2009)",
+          "parts": [
+            "Alex lived in Canada ",
+            " 2009."
+          ],
+          "answers": [
+            [
+              "until"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["We go to the cinema ", "\u2013 maybe once a month."],
-          "answers": [["quite often"]]
+          "prompt": "(Alex / England / 2009 →)",
+          "parts": [
+            "Alex has lived in England ",
+            "."
+          ],
+          "answers": [
+            [
+              "since 2009"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["We live near a very busy road, so it\u2019s often ", "."],
-          "answers": [["quite noisy"]]
+          "prompt": "(Karen / France / → 2011)",
+          "parts": [
+            "Karen lived in ",
+            "."
+          ],
+          "answers": [
+            [
+              "France until 2011"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I didn\u2019t expect Lisa to contact me. I was ", " when she phoned."],
-          "answers": [["quite surprised"]]
+          "prompt": "(Karen / Switzerland / 2011 →)",
+          "parts": [
+            "Karen has lived in ",
+            "."
+          ],
+          "answers": [
+            [
+              "Switzerland since 2011"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I went to bed ", " last night, so I\u2019m a bit tired this morning."],
-          "answers": [["quite late"]]
+          "prompt": "(Clare / a restaurant / 2010 → 2012)",
+          "parts": [
+            "Clare worked ",
+            " 2010 ",
+            "."
+          ],
+          "answers": [
+            [
+              "in a restaurant from"
+            ],
+            [
+              "to 2012"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I don\u2019t know exactly when this house was built, but it\u2019s ", "."],
-          "answers": [["quite old"]]
+          "prompt": "(Clare / a hotel / 2012 →)",
+          "parts": [
+            "Clare has worked ",
+            "."
+          ],
+          "answers": [
+            [
+              "in a hotel since 2012"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(Adam / a teacher / 2002 → 2008)",
+          "parts": [
+            "Adam was a ",
+            "."
+          ],
+          "answers": [
+            [
+              "teacher from 2002 to 2008"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(Adam / a journalist / 2008 →)",
+          "parts": [
+            "Adam has been ",
+            "."
+          ],
+          "answers": [
+            [
+              "a journalist since 2008"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(Alex / Canada)",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Alex lived in Canada for eight years"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 11,
+          "prompt": "(Alex / England)",
+          "parts": [
+            "Alex has lived in England ",
+            "."
+          ],
+          "answers": [
+            [
+              "for ... years"
+            ]
+          ],
+          "selfCheck": true
+        },
+        {
+          "num": 12,
+          "prompt": "(Karen / Switzerland)",
+          "parts": [
+            "Karen has ",
+            "."
+          ],
+          "answers": [
+            [
+              "lived in Switzerland for ... years"
+            ]
+          ],
+          "selfCheck": true
+        },
+        {
+          "num": 13,
+          "prompt": "(Clare / a restaurant)",
+          "parts": [
+            "Clare worked ",
+            "."
+          ],
+          "answers": [
+            [
+              "in a restaurant for three years"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "(Clare / hotel)",
+          "parts": [
+            "Clare ",
+            "."
+          ],
+          "answers": [
+            [
+              "has worked in a hotel for ... years"
+            ]
+          ],
+          "selfCheck": true
+        },
+        {
+          "num": 15,
+          "prompt": "(Adam / a teacher)",
+          "parts": [
+            "Adam ",
+            "."
+          ],
+          "answers": [
+            [
+              "was a teacher for six years"
+            ]
+          ]
+        },
+        {
+          "num": 16,
+          "prompt": "(Adam / a journalist)",
+          "parts": [
+            "Adam ",
+            "."
+          ],
+          "answers": [
+            [
+              "has been a journalist for ... years"
+            ]
+          ],
+          "selfCheck": true
         }
       ]
     },
     {
       "id": "104.2",
       "type": "fill-in",
-      "instruction": "Put the words in the right order to complete the sentences.",
+      "instruction": "Вставьте until/since/for.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "Sue and Dave have been married ",
+            " 1998."
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Tom likes to sing. He has ", "(voice / quite / good / a)."],
-          "answers": [["quite a good voice"]]
+          "parts": [
+            "I was tired this morning. I stayed in bed ",
+            " 10 o’clock."
+          ],
+          "answers": [
+            [
+              "until"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["The bus stop wasn\u2019t near the hotel. We had to walk ", "(quite / way / a / long)."],
-          "answers": [["quite a long way"]]
+          "parts": [
+            "We waited for Sue ",
+            " half an hour, but she didn’t come."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["It\u2019s not so warm today. There\u2019s ", "(a / wind / cold / pretty)."],
-          "answers": [["a pretty cold wind"]]
+          "parts": [
+            "'Have you just arrived?' 'No, I’ve been here ",
+            " half past seven.'"
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["The roads were busy. There was ", "(lot / traffic / a / of / quite)."],
-          "answers": [["quite a lot of traffic"]]
+          "parts": [
+            "'How long did you stay at the party last night?' '",
+            " midnight.'"
+          ],
+          "answers": [
+            [
+              "Until"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I\u2019m tired. I\u2019ve had ", "(pretty / day / a / busy)."],
-          "answers": [["a pretty busy day"]]
+          "parts": [
+            "Dan and I are good friends. We have known each other ",
+            " ten years."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Sarah hasn\u2019t been working here long. She ", "(fairly / started / recently)."],
-          "answers": [["started fairly recently"]]
+          "parts": [
+            "I’m tired. I’m going to lie down ",
+            " a few minutes."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Don’t open the door of the train ",
+            " the train stops."
+          ],
+          "answers": [
+            [
+              "until"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "This is my house. I’ve lived here ",
+            " I was seven years old."
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Jack has gone away. He’ll be away ",
+            " Wednesday."
+          ],
+          "answers": [
+            [
+              "until"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Next week I’m going to Paris ",
+            " three days."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I usually finish work at 5.30, but sometimes I work ",
+            " six."
+          ],
+          "answers": [
+            [
+              "until"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "'How long have you known Anna?' '",
+            " we were at school together.'"
+          ],
+          "answers": [
+            [
+              "Since"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Where have you been? I’ve been waiting for you ",
+            " twenty minutes."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "104.3",
-      "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences. Use rather + adjective.",
-      "modelAnswers": ["rather long", "rather strange", "rather impatient", "rather expensive"],
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (переехать = move, получить = get)",
       "items": [
         {
+          "num": 1,
+          "prompt": "Вчера я спала до 11 часов.",
+          "answers": [
+            "I slept till 11 o’clock yesterday.",
+            "I slept until 11 o’clock yesterday.",
+            "Yesterday I slept till 11 o’clock.",
+            "Yesterday I slept until 11 o’clock."
+          ]
+        },
+        {
           "num": 2,
-          "prompt": "I enjoyed the film, but it was",
-          "modelAnswers": ["rather long"]
+          "prompt": "Джеймс болеет со вторника.",
+          "answers": [
+            "James has been ill since Tuesday."
+          ]
         },
         {
           "num": 3,
-          "prompt": "Chris went away without telling anybody, which was",
-          "modelAnswers": ["rather strange"]
+          "prompt": "Я собираюсь путешествовать в течение трёх месяцев.",
+          "answers": [
+            "I’m going to travel for three months."
+          ]
         },
         {
           "num": 4,
-          "prompt": "Lucy doesn\u2019t like having to wait. Sometimes she\u2019s",
-          "modelAnswers": ["rather impatient"]
+          "prompt": "Анна работала в Москве с 2003 по 2007 год.",
+          "answers": [
+            "Anna worked in Moscow from 2003 to 2007.",
+            "Anna worked in Moscow from 2003 until 2007."
+          ]
         },
         {
           "num": 5,
-          "prompt": "They have some lovely things in this shop, but it\u2019s",
-          "modelAnswers": ["rather expensive"]
-        }
-      ]
-    },
-    {
-      "id": "104.4",
-      "type": "choice",
-      "instruction": "What does quite mean in these sentences? Tick (\u2713) the right meaning.",
-      "items": [
-        {
-          "num": 2,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
-          "answer": 1
-        },
-        {
-          "num": 3,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
-          "answer": 0
-        },
-        {
-          "num": 4,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
-          "answer": 0
-        },
-        {
-          "num": 5,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
-          "answer": 0
+          "prompt": "В 2007 году Анна переехала в Англию.",
+          "answers": [
+            "In 2007 Anna moved to England."
+          ]
         },
         {
           "num": 6,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
-          "answer": 0
+          "prompt": "Наша машина у нас с 2011 года.",
+          "answers": [
+            "We’ve had our car since 2011."
+          ]
         },
         {
           "num": 7,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
-          "answer": 1
-        }
-      ]
-    },
-    {
-      "id": "104.5",
-      "type": "fill-in",
-      "instruction": "Complete these sentences using quite \u2026 . Choose from:",
-      "wordBank": ["different", "impossible", "right", "safe", "sure", "true"],
-      "items": [
-        {
-          "num": 2,
-          "parts": ["You won\u2019t fall. The ladder is ", "."],
-          "answers": [["quite safe"]]
+          "prompt": "Я жил в Кембридже до тех пор, пока не получил работу в Лондоне.",
+          "answers": [
+            "I lived in Cambridge until I got a job in London."
+          ]
         },
         {
-          "num": 3,
-          "parts": ["I\u2019m afraid I can\u2019t do what you ask. It\u2019s ", "."],
-          "answers": [["quite impossible"]]
-        },
-        {
-          "num": 4,
-          "parts": ["I completely agree with you. You are ", "."],
-          "answers": [["quite right"]]
-        },
-        {
-          "num": 5,
-          "parts": ["You can\u2019t compare the two things. They are ", "."],
-          "answers": [["quite different"]]
-        },
-        {
-          "num": 6,
-          "parts": ["I think I saw them go out, but I\u2019m not ", "."],
-          "answers": [["quite sure"]]
+          "num": 8,
+          "prompt": "Тим и Лара женаты в течение 20 лет.",
+          "answers": [
+            "Tim and Lara have been married for 20 years."
+          ]
         }
       ]
     }

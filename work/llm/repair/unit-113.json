@@ -1,0 +1,195 @@
+{
+ "unit": 113,
+ "exercises": [
+  {
+   "id": "113.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя to/for/about и т. д. Два предложения не требуют добавления предлога.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Thank you very much ",
+      " your help."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "This isn’t my umbrella. It belongs ",
+      " a friend of mine."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I saw Steve, but I didn’t speak ",
+      " him."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Don’t forget to phone ",
+      " your mother tonight."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Thank you ",
+      " the present. It was lovely."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "What happened ",
+      " Ella last night? Why didn’t she come to the party?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "We’re thinking ",
+      " going to Australia next year."
+     ],
+     "answers": [
+      [
+       "of",
+       "about"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "We asked the waiter ",
+      " coffee, but he brought us tea."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "'Do you like reading books?'  'It depends ",
+      " the book.'"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "John was talking, but nobody was listening ",
+      " what he was saying."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "We waited ",
+      " Karen until 2 o’clock, but she didn’t come."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I texted ",
+      " Lisa to tell her I would be late."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "He’s alone all day. He never talks ",
+      " anybody."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "'How much does it cost to stay at this hotel?'  'It depends ",
+      " the type of room.'"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "Catherine is thinking ",
+      " changing her job."
+     ],
+     "answers": [
+      [
+       "of",
+       "about"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

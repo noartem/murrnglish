@@ -1,200 +1,91 @@
 {
   "id": 1,
-  "topic": "Present and past",
-  "refs": "Units 1–6",
+  "topic": "am/is/are",
+  "refs": "Разделы 1–3",
   "pdfPages": [
-    314
+    252
   ],
   "exercise": {
     "id": "1",
-    "type": "fill-in",
-    "instruction": "Put the verb into the correct form: present simple (I do), present continuous (I am doing), past simple (I did) or past continuous (I was doing).",
+    "type": "write",
+    "instruction": "Напишите предложения по картинкам. Используйте слова из обеих рамок + is/isn’t/are/aren’t.",
+    "wordBank": [
+      "The windows",
+      "Lisa",
+      "Kate",
+      "The children",
+      "Gary",
+      "The books",
+      "The hotel",
+      "The bus",
+      "on the table",
+      "hungry",
+      "asleep",
+      "open",
+      "full",
+      "near the station",
+      "a doctor",
+      "happy"
+    ],
+    "example": [
+      1,
+      2
+    ],
     "items": [
       {
         "num": 1,
-        "parts": [
-          "We can go out now. It ",
-          " (it / not / rain) any more."
-        ],
+        "prompt": "The windows / open",
         "answers": [
-          [
-            "isn't raining"
-          ]
-        ],
-        "example": true
+          "The windows are open."
+        ]
       },
       {
         "num": 2,
-        "parts": [
-          "Katherine ",
-          " (wait) for me when I ",
-          ". (I / arrive)"
-        ],
+        "prompt": "Lisa / happy",
         "answers": [
-          [
-            "was waiting"
-          ],
-          [
-            "arrived"
-          ]
-        ],
-        "example": true
+          "Lisa isn’t happy."
+        ]
       },
       {
         "num": 3,
-        "parts": [
-          "",
-          " (I / get) hungry. Let's go and have something to eat."
-        ],
+        "prompt": "Kate / a doctor",
         "answers": [
-          [
-            "I’m getting",
-            "I am getting"
-          ]
+          "Kate is a doctor."
         ]
       },
       {
         "num": 4,
-        "parts": [
-          "What ",
-          " (you / do) in your spare time? Do you have any hobbies?"
-        ],
+        "prompt": "The children / asleep",
         "answers": [
-          [
-            "do you do"
-          ]
+          "The children are asleep."
         ]
       },
       {
         "num": 5,
-        "parts": [
-          "The weather was horrible when ",
-          " (we / arrive). It was cold and ",
-          " (it / rain) hard."
-        ],
+        "prompt": "Gary / hungry",
         "answers": [
-          [
-            "we arrived"
-          ],
-          [
-            "it was raining"
-          ]
+          "Gary isn’t hungry."
         ]
       },
       {
         "num": 6,
-        "parts": [
-          "Louise usually ",
-          " (phone) me on Fridays, but ",
-          " (she / not / phone) last Friday."
-        ],
+        "prompt": "The books / on the table",
         "answers": [
-          [
-            "phones"
-          ],
-          [
-            "she didn't phone"
-          ]
+          "The books aren’t on the table."
         ]
       },
       {
         "num": 7,
-        "parts": [
-          "a: When I last saw you, ",
-          " (you / think) of moving to a new flat.\n  b: That's right, but in the end ",
-          " (I / decide) to stay where I was."
-        ],
+        "prompt": "The hotel / near the station",
         "answers": [
-          [
-            "you were thinking"
-          ],
-          [
-            "I decided"
-          ]
+          "The hotel is near the station."
         ]
       },
       {
         "num": 8,
-        "parts": [
-          "Why ",
-          " (you / look) at me like that? What's the matter?"
-        ],
+        "prompt": "The bus / full",
         "answers": [
-          [
-            "are you looking"
-          ]
-        ]
-      },
-      {
-        "num": 9,
-        "parts": [
-          "It's usually dry here at this time of the year. ",
-          " (it / not / rain) much."
-        ],
-        "answers": [
-          [
-            "It doesn't rain"
-          ]
-        ]
-      },
-      {
-        "num": 10,
-        "parts": [
-          "I waved to Ben, but he didn't see me. ",
-          " (he / not / look) in my direction."
-        ],
-        "answers": [
-          [
-            "He wasn't looking"
-          ]
-        ]
-      },
-      {
-        "num": 11,
-        "parts": [
-          "Lisa was busy when ",
-          " (we / go) to see her yesterday. She had an exam today and ",
-          " (she / prepare) for it. ",
-          " (we / not / want) to disturb her, so ",
-          " (we / not / stay) very long."
-        ],
-        "answers": [
-          [
-            "we went"
-          ],
-          [
-            "she was preparing"
-          ],
-          [
-            "We didn't want"
-          ],
-          [
-            "we didn't stay"
-          ]
-        ]
-      },
-      {
-        "num": 12,
-        "parts": [
-          "When I first ",
-          " (tell) Tom what happened, ",
-          " (he / not / believe) me. ",
-          " (he / think) that ",
-          " (I / joke)."
-        ],
-        "answers": [
-          [
-            "told"
-          ],
-          [
-            "he didn't believe"
-          ],
-          [
-            "He thought"
-          ],
-          [
-            "I was joking"
-          ]
+          "The bus isn’t full."
         ]
       }
     ]

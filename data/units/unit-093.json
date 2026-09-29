@@ -1,99 +1,36 @@
 {
   "unit": 93,
-  "title": "Relative clauses 2: clauses with and without who/that/which",
+  "title": "too",
   "pdfPages": [
-    198,
-    199
+    197,
+    198
   ],
   "exercises": [
     {
       "id": "93.1",
-      "type": "write",
-      "instruction": "In some of these sentences you need who or that. Correct the sentences where necessary.",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "The woman lives next door is a doctor.",
-          "answers": [
-            "The woman who lives next door is a doctor."
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "Did you find the keys you lost?",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "The people we met last night were very friendly.",
-          "answers": [
-            "OK",
-            "The people who/that we met last night were very friendly."
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "The people work in the office are very friendly.",
-          "answers": [
-            "The people who/that work in the office are very friendly."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "I like the people I work with.",
-          "answers": [
-            "OK",
-            "I like the people who/that I work with."
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "What have you done with the money I gave you?",
-          "answers": [
-            "OK",
-            "What have you done with the money that/which I gave you?"
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "What happened to the money was on the table?",
-          "answers": [
-            "What happened to the money that/which was on the table?"
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "What’s the worst film you’ve ever seen?",
-          "answers": [
-            "OK",
-            "What’s the worst film that/which you’ve ever seen?"
-          ]
-        },
-        {
-          "num": 9,
-          "prompt": "What’s the best thing it has ever happened to you?",
-          "answers": [
-            "What’s the best thing that/which has ever happened to you?"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "93.2",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Complete each sentence with a relative clause.",
+      "instruction": "Посмотрите на картинки и закончите предложения. Используйте too + слова из рамки:",
+      "wordBank": [
+        "big",
+        "crowded",
+        "fast",
+        "heavy",
+        "loud",
+        "low"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "Did you find the keys ",
-            "?"
+            "The music is ",
+            "."
           ],
           "answers": [
             [
-              "you lost"
+              "too loud"
             ]
           ],
           "example": true
@@ -101,78 +38,205 @@
         {
           "num": 2,
           "parts": [
-            "I like the dress ",
+            "The box is ",
             "."
           ],
           "answers": [
             [
-              "you’re wearing",
-              "that/which you’re wearing"
+              "too heavy"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "What’s the name of the film ",
-            "?"
+            "The net is ",
+            "."
           ],
           "answers": [
             [
-              "you’re going to see",
-              "that/which you’re going to see"
+              "too low"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "The museum ",
-            " was shut."
+            "She’s driving ",
+            "."
           ],
           "answers": [
             [
-              "I/we wanted to visit",
-              "that/which I/we wanted to visit"
+              "too fast"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Some of the people ",
-            " couldn’t come."
+            "His jacket is ",
+            "."
           ],
           "answers": [
             [
-              "I/we invited to the party",
-              "who/whom/that we invited to the party"
+              "too big"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Have you finished the work ",
-            "?"
+            "The museum is ",
+            "."
           ],
           "answers": [
             [
-              "you had to do",
-              "that/which you had to do"
+              "too crowded"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "93.2",
+      "type": "fill-in",
+      "instruction": "Вставьте too / too much / too many или enough.",
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "You’re always at home. You don’t go out ",
+            "."
+          ],
+          "answers": [
+            [
+              "enough"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I don’t like the weather here. There’s ",
+            " rain."
+          ],
+          "answers": [
+            [
+              "too much"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I can’t wait for them. I don’t have ",
+            " time."
+          ],
+          "answers": [
+            [
+              "enough"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "There was nowhere to sit on the beach. There were ",
+            " people."
+          ],
+          "answers": [
+            [
+              "too many"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "You’re always tired. I think you work ",
+            " hard."
+          ],
+          "answers": [
+            [
+              "too"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "‘Did you have ",
+            " to eat?’ ‘Yes, thank you.’"
+          ],
+          "answers": [
+            [
+              "enough"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Unfortunately the car ",
-            " broke down after a few miles."
+            "You drink ",
+            " coffee. It’s not good for you."
           ],
           "answers": [
             [
-              "I/we rented",
-              "that/which I/we rented"
+              "too much"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "You don’t eat ",
+            " vegetables. You should eat more."
+          ],
+          "answers": [
+            [
+              "enough"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I don’t like the weather here. It’s ",
+            " cold."
+          ],
+          "answers": [
+            [
+              "too"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Our team didn’t play well. We made ",
+            " mistakes."
+          ],
+          "answers": [
+            [
+              "too many"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "‘Would you like some milk in your tea?’ ‘Yes, but not ",
+            "!’"
+          ],
+          "answers": [
+            [
+              "too much"
             ]
           ]
         }
@@ -181,17 +245,21 @@
     {
       "id": "93.3",
       "type": "fill-in",
-      "instruction": "These sentences all have a relative clause with a preposition. Put the words in the correct order.",
+      "instruction": "Закончите предложения. Используйте too или enough + слова в скобках:",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "Did you find ",
-            "(looking / for / you / the books / were)?"
+            "I couldn’t work. I ",
+            ". (tired)"
           ],
           "answers": [
             [
-              "the books you were looking for"
+              "was too tired"
             ]
           ],
           "example": true
@@ -199,72 +267,100 @@
         {
           "num": 2,
           "parts": [
-            "We couldn’t go to ",
-            "(we / invited / to / were / the wedding)."
+            "Can you turn the radio up, please? It ",
+            ". (loud)"
           ],
           "answers": [
             [
-              "the wedding we were invited to"
+              "isn’t loud enough"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "What’s the name of ",
-            "(the hotel / about / me / told / you)?"
+            "I don’t want to walk home. It’s ",
+            ". (far)"
           ],
           "answers": [
             [
-              "the hotel you told me about"
+              "too far"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Unfortunately I didn’t get ",
-            "(applied / I / the job / for)."
+            "Don’t buy anything in that shop. It ",
+            ". (expensive)"
           ],
           "answers": [
             [
-              "the job I applied for"
+              "too expensive"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Did you enjoy ",
-            "(you / the concert / to / went)?"
+            "You can’t put all your things in this bag. It ",
+            ". (big)"
           ],
           "answers": [
             [
-              "the concert you went to"
+              "isn’t big enough",
+              "’s not big enough"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Gary is a good person to know. He’s ",
-            "(on / rely / can / somebody / you)."
+            "I couldn’t do the exercise. It ",
+            ". (difficult)"
           ],
           "answers": [
             [
-              "somebody you can rely on"
+              "was too difficult"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Who were ",
-            " (the people / with / were / you) in the restaurant yesterday?"
+            "Your work needs to be better. It ",
+            ". (good)"
           ],
           "answers": [
             [
-              "the people you were with"
+              "isn’t good enough",
+              "’s not good enough"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I can’t talk to you now. I ",
+            ". (busy)"
+          ],
+          "answers": [
+            [
+              "’m too busy",
+              "am too busy"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I thought the film was boring. It ",
+            ". (long)"
+          ],
+          "answers": [
+            [
+              "was too long"
             ]
           ]
         }
@@ -273,114 +369,152 @@
     {
       "id": "93.4",
       "type": "fill-in",
-      "instruction": "Put in that or what where necessary. If the sentence is already complete, leave the space empty.",
+      "instruction": "Закончите предложения. Используйте too (+ прилагательное) + to … .",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I gave her all the money – I had.",
-            ""
+            "(I’m not going out / cold) It’s ",
+            "."
           ],
           "answers": [
             [
-              "–"
+              "too cold to go out"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 2,
           "parts": [
-            "Did you hear what they said?",
-            ""
+            "(I’m not going to bed / early) It’s ",
+            "."
           ],
           "answers": [
             [
-              "–"
+              "too early to go to bed"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "She gives her children everything ",
-            " they want."
+            "(they’re not getting married / young) They’re ",
+            "."
           ],
           "answers": [
             [
-              "that"
+              "too young to get married"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Tell me ",
-            " you want and I’ll try to get it for you."
+            "(nobody goes out at night / dangerous) It’s ",
+            "."
           ],
           "answers": [
             [
-              "what"
+              "too dangerous to go out at night"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Why do you blame me for everything ",
-            " goes wrong?"
+            "(don’t phone Sue now / late) It’s ",
+            "."
           ],
           "answers": [
             [
-              "that"
+              "too late to phone Sue",
+              "too late to phone Sue now"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I won’t be able to do much, but I’ll do ",
-            " I can."
+            "(I didn’t say anything / surprised) I was ",
+            "."
           ],
           "answers": [
             [
-              "what"
+              "too surprised to say anything"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "93.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя too. (летом = in summer)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Эти джинсы мне малы.",
+          "answers": [
+            "These jeans are too small for me."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Мне не понравился фильм. Он был слишком длинный.",
+          "answers": [
+            "I didn’t like the film. It was too long."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Вчера я выпил слишком много кофе.",
+          "answers": [
+            "I drank too much coffee yesterday.",
+            "I had too much coffee yesterday.",
+            "Yesterday I drank too much coffee.",
+            "Yesterday I had too much coffee."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Алина всегда устаёт. Она работает слишком много.",
+          "answers": [
+            "Alina is always tired. She works too hard."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Мы хотели купить тот компьютер, но он был слишком дорогой.",
+          "answers": [
+            "We wanted to buy that computer, but it was too expensive."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Летом здесь слишком много туристов.",
+          "answers": [
+            "There are too many tourists here in summer.",
+            "In summer there are too many tourists here."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "I won’t be able to do much, but I’ll do the best ",
-            " I can."
-          ],
+          "prompt": "Вчера было слишком жарко, чтобы идти на пляж.",
           "answers": [
-            [
-              "–"
-            ]
+            "It was too hot to go to the beach yesterday.",
+            "Yesterday it was too hot to go to the beach."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I don’t agree with ",
-            " you said."
-          ],
+          "prompt": "“В твоём чае слишком много молока?” – “Нет, недостаточно!”",
           "answers": [
-            [
-              "what"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I don’t trust him. I don’t believe anything ",
-            " he says."
-          ],
-          "answers": [
-            [
-              "–"
-            ]
+            "‘Is there too much milk in your tea?’ ‘No, there’s not enough!’",
+            "‘Is there too much milk in your tea?’ ‘No, not enough!’"
           ]
         }
       ]

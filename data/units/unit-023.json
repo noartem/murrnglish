@@ -1,25 +1,25 @@
 {
   "unit": 23,
-  "title": "I will and I’m going to",
+  "title": "is being done · has been done (пассивные конструкции 2)",
   "pdfPages": [
-    58,
-    59
+    57,
+    58
   ],
   "exercises": [
     {
       "id": "23.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using will (’ll) or (be) going to.",
+      "instruction": "Посмотрите на картинки и напишите, что сейчас происходит.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "a: Why are you turning on the TV?\n           b: ",
-            ". (I / watch)"
+            "The car ",
+            "."
           ],
           "answers": [
             [
-              "I’m going to watch the news"
+              "is being repaired"
             ]
           ],
           "example": true
@@ -27,125 +27,36 @@
         {
           "num": 2,
           "parts": [
-            "a: I forgot my wallet. I don’t have any money.\n           b: Not to worry. ",
-            " you some. (I / lend)"
+            "A bridge ",
+            "."
           ],
           "answers": [
             [
-              "I’ll lend"
+              "is being built"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "a: Why are you filling that bucket with water?\n           b: ",
-            " the car. (I / wash)"
+            "The windows ",
+            "."
           ],
           "answers": [
             [
-              "I’m going to wash"
+              "are being cleaned"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "a: I don’t know how to use the washing machine.\n           b: It’s easy. ",
-            " you. (I / show)"
+            "The grass ",
+            "."
           ],
           "answers": [
             [
-              "I’ll show"
-            ]
-          ]
-        },
-        {
-          "num": 5,
-          "parts": [
-            "a: I’ve decided to paint this room.\n           b: That’s nice. What colour ",
-            " it? (you / paint)"
-          ],
-          "answers": [
-            [
-              "are you going to paint"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "a: Where are you going? Are you going shopping?\n           b: Yes, ",
-            " some things for dinner tonight. (I / buy)"
-          ],
-          "answers": [
-            [
-              "I’m going to buy"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "a: What would you like to eat?\n           b: ",
-            " a pizza, please. (I / have)"
-          ],
-          "answers": [
-            [
-              "I’ll have"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "a: This food doesn’t taste very good, does it?\n           b: No, it’s horrible. ",
-            " it. (I / not / finish)"
-          ],
-          "answers": [
-            [
-              "I’m not going to finish"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "a: Tom is starting an evening class next month.\n           b: Is he? What ",
-            " ? (he / study)"
-          ],
-          "answers": [
-            [
-              "(What) is he going to study",
-              "(What)’s he going to study"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "a: Did you call Lisa?\n           b: Oh, no. I completely forgot. ",
-            " her now. (I / call)"
-          ],
-          "answers": [
-            [
-              "I’ll call"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "a: Has Dan decided what to do when he leaves school?\n           b: Yes. Everything is planned. First ",
-            " a holiday for a few weeks. (he / have) Then ",
-            " a management training course. (he / do)"
-          ],
-          "answers": [
-            [
-              "he’s going to have"
-            ],
-            [
-              "he’s going to do"
+              "is being cut"
             ]
           ]
         }
@@ -153,18 +64,83 @@
     },
     {
       "id": "23.2",
+      "type": "write",
+      "instruction": "Посмотрите на картинки. Что сейчас происходит или что уже произошло? Используйте present continuous (is/are being …) или present perfect (has/have been …).",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(the office / clean)",
+          "answers": [
+            "The office is being cleaned."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "(the shirts / iron)",
+          "answers": [
+            "The shirts have been ironed."
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "prompt": "(the window / break)",
+          "answers": [
+            "The window has been broken."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(the roof / repair)",
+          "answers": [
+            "The roof is being repaired."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(the car / damage)",
+          "answers": [
+            "The car has been damaged."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(the houses / knock / down)",
+          "answers": [
+            "The houses are being knocked down."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(the trees / cut / down)",
+          "answers": [
+            "The trees have been cut down."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(they / invite / to a party)",
+          "answers": [
+            "They have been invited to a party."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23.3",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences using will (’ll) or (be) going to.",
+      "instruction": "Заполните пропуски в предложениях. (Перед тем как выполнить упражнение, изучите Раздел 22.)",
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            "."
+            "I can’t use my office at the moment. It ",
+            " (paint)."
           ],
           "answers": [
             [
-              "I’m going to make some coffee. Would you like some?"
+              "is being painted"
             ]
           ],
           "example": true
@@ -172,131 +148,190 @@
         {
           "num": 2,
           "parts": [
-            "You say: ",
-            " you at 10.30 in the hotel lobby, OK? (I/see)"
+            "We didn’t go to the party. We ",
+            " (not/invite)."
           ],
           "answers": [
             [
-              "I’ll see"
+              "weren’t invited"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "You say: I don’t need my car any more. ",
-            " it. (I/sell)"
+            "The washing machine was broken, but it’s OK now. It ",
+            " (repair)."
           ],
           "answers": [
             [
-              "I’m going to sell"
+              "has been repaired"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "You say: Don’t worry. I’m sure ",
-            " it. (you/find)"
+            "The washing machine ",
+            " (repair) yesterday afternoon."
           ],
           "answers": [
             [
-              "you’ll find",
-              "you’re going to find"
+              "was repaired"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "You say: This camera is broken. ",
-            " it away. (I/throw)",
-            " it. (I/have)"
+            "A factory is a place where things ",
+            " (make)."
           ],
           "answers": [
             [
-              "I’m going to throw"
-            ],
-            [
-              "I’ll have"
+              "are made"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Amy says: Don’t worry about getting to the airport, Joe. ",
-            " you. (I/take)",
-            " me. (Amy/take)"
+            "How old are these houses? When ",
+            " (they/build)?"
           ],
           "answers": [
             [
-              "I’ll take"
+              "were they built"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A: ",
+            " (the photocopier / use) at the moment?\nB: No, you can go ahead and use it."
+          ],
+          "answers": [
+            [
+              "Is the photocopier being used",
+              "Is anybody using the photocopier"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I’ve never seen these flowers before. What ",
+            " (they/call)?"
+          ],
+          "answers": [
+            [
+              "are they called"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "My sunglasses ",
+            " (steal) at the beach yesterday."
+          ],
+          "answers": [
+            [
+              "were stolen"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "The bridge is closed at the moment. It ",
+            " (damage) last week and it ",
+            " (not/repair) yet."
+          ],
+          "answers": [
+            [
+              "was damaged"
             ],
             [
-              "Amy is going to take"
+              "hasn’t been repaired"
             ]
           ]
         }
       ]
     },
     {
-      "id": "23.3",
-      "type": "matching",
-      "instruction": "Which goes with which?",
-      "leftOptions": [
-        "Why don’t you come to the party with us?",
-        "That ceiling looks dangerous.",
-        "He’s looking very tired.",
-        "This table is too big.",
-        "The weather forecast is good.",
-        "Jack is very determined.",
-        "They are building a new skyscraper here.",
-        "I haven’t seen Ben for ages."
-      ],
-      "rightOptions": [
-        "He’ll get what he wants.",
-        "He probably won’t remember me.",
-        "It’s going to be a nice day.",
-        "It looks as if it’s going to fall down.",
-        "It’s going to be 200 metres high.",
-        "You’ll enjoy it.",
-        "I don’t think it will fit in the room.",
-        "I think he’s going to fall asleep."
-      ],
-      "pairs": [
-        [
-          0,
-          5
-        ],
-        [
-          1,
-          3
-        ],
-        [
-          2,
-          7
-        ],
-        [
-          3,
-          6
-        ],
-        [
-          4,
-          2
-        ],
-        [
-          5,
-          0
-        ],
-        [
-          6,
-          4
-        ],
-        [
-          7,
-          1
-        ]
+      "id": "23.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя пассивные конструкции. (бассейн = swimming pool; гладить = iron; велосипед = bike; птица = bird)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Этот бассейн часто используется нашими студентами.",
+          "answers": [
+            "This swimming pool is often used by our students.",
+            "This swimming pool is used a lot by our students."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Мой дом только что покрасили.",
+          "answers": [
+            "My house has just been painted."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "“Где ваш телевизор?” – “Его ремонтируют”.",
+          "answers": [
+            "Where’s your TV? It’s being repaired.",
+            "Where’s your TV? It is being repaired.",
+            "Where is your TV? It’s being repaired.",
+            "Where is your TV? It is being repaired."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Эти туфли очень грязные. Когда их чистили?",
+          "answers": [
+            "These shoes are very dirty. When were they cleaned?",
+            "These shoes are very dirty. When were they last cleaned?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Саша, моё платье поглажено?",
+          "answers": [
+            "Sasha, has my dress been ironed?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "В моём городе строится новый кинотеатр.",
+          "answers": [
+            "A new cinema is being built in my town.",
+            "In my town a new cinema is being built."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "A: Где твой новый велосипед? В: Его украли.",
+          "answers": [
+            "A: Where is your new bike? B: It’s been stolen.",
+            "A: Where is your new bike? B: It has been stolen."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Посмотрите на эту птицу! Как она называется?",
+          "answers": [
+            "Look at this bird! What’s it called?",
+            "Look at this bird! What is it called?",
+            "Look at that bird! What’s it called?",
+            "Look at that bird! What is it called?"
+          ]
+        }
       ]
     }
   ]

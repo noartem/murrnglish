@@ -1,0 +1,883 @@
+{
+ "unit": 25,
+ "title": "Правильные и неправильные глаголы",
+ "pdfPages": [
+  61,
+  62
+ ],
+ "exercises": [
+  {
+   "id": "25.1",
+   "type": "fill-in",
+   "instruction": "Напишите формы past simple / past participle этих глаголов. (В этом упражнении формы past simple и past participle совпадают.)",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "make ",
+      ""
+     ],
+     "answers": [
+      [
+       "made"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "example": true,
+     "parts": [
+      "cut ",
+      ""
+     ],
+     "answers": [
+      [
+       "cut"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "get ",
+      ""
+     ],
+     "answers": [
+      [
+       "got"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "bring ",
+      ""
+     ],
+     "answers": [
+      [
+       "brought"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "pay ",
+      ""
+     ],
+     "answers": [
+      [
+       "paid"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "enjoy ",
+      ""
+     ],
+     "answers": [
+      [
+       "enjoyed"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "buy ",
+      ""
+     ],
+     "answers": [
+      [
+       "bought"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "sit ",
+      ""
+     ],
+     "answers": [
+      [
+       "sat"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "leave ",
+      ""
+     ],
+     "answers": [
+      [
+       "left"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "happen ",
+      ""
+     ],
+     "answers": [
+      [
+       "happened"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "hear ",
+      ""
+     ],
+     "answers": [
+      [
+       "heard"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "put ",
+      ""
+     ],
+     "answers": [
+      [
+       "put"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "catch ",
+      ""
+     ],
+     "answers": [
+      [
+       "caught"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "watch ",
+      ""
+     ],
+     "answers": [
+      [
+       "watched"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "understand ",
+      ""
+     ],
+     "answers": [
+      [
+       "understood"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "25.2",
+   "type": "fill-in",
+   "instruction": "Напишите формы past simple / past participle этих глаголов.",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "break ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "broke"
+      ],
+      [
+       "broken"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "begin ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "began"
+      ],
+      [
+       "begun"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "eat ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "ate"
+      ],
+      [
+       "eaten"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "drink ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "drank"
+      ],
+      [
+       "drunk"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "drive ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "drove"
+      ],
+      [
+       "driven"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "speak ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "spoke"
+      ],
+      [
+       "spoken"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "write ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "wrote"
+      ],
+      [
+       "written"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "come ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "came"
+      ],
+      [
+       "come"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "know ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "knew"
+      ],
+      [
+       "known"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "take ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "took"
+      ],
+      [
+       "taken"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "go ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "went"
+      ],
+      [
+       "one"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "give ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "gave"
+      ],
+      [
+       "given"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "throw ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "threw"
+      ],
+      [
+       "thrown"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "forget ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "forgot"
+      ],
+      [
+       "forgotten"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "25.3",
+   "type": "fill-in",
+   "instruction": "Поставьте глаголы в правильную форму.",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "I ",
+      " my hands because they were dirty. (wash)"
+     ],
+     "answers": [
+      [
+       "washed"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "example": true,
+     "parts": [
+      "Somebody has ",
+      " this window. (break)"
+     ],
+     "answers": [
+      [
+       "broken"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I feel good. I ",
+      " very well last night. (sleep)"
+     ],
+     "answers": [
+      [
+       "slept"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "We ",
+      " a really good film yesterday. (see)"
+     ],
+     "answers": [
+      [
+       "saw"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It ",
+      " a lot while we were on holiday. (rain)"
+     ],
+     "answers": [
+      [
+       "rained"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I’ve ",
+      " my bag. (lose) Have you ",
+      " it? (see)"
+     ],
+     "answers": [
+      [
+       "lost"
+      ],
+      [
+       "seen"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Rosa’s bike was ",
+      " last week. (steal)"
+     ],
+     "answers": [
+      [
+       "stolen"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I ",
+      " to bed early because I was tired. (go)"
+     ],
+     "answers": [
+      [
+       "went"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Have you ",
+      " your work yet? (finish)"
+     ],
+     "answers": [
+      [
+       "finished"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "The shopping centre was ",
+      " about 20 years ago. (build)"
+     ],
+     "answers": [
+      [
+       "built"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Anna ",
+      " to drive when she was 18. (learn)"
+     ],
+     "answers": [
+      [
+       "learnt",
+       "learned"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I’ve never ",
+      " a horse. (ride)"
+     ],
+     "answers": [
+      [
+       "ridden"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "Jessica is a good friend of mine. I’ve ",
+      " her for a long time. (know)"
+     ],
+     "answers": [
+      [
+       "known"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "Yesterday I ",
+      " and ",
+      " my leg. (fall / hurt)"
+     ],
+     "answers": [
+      [
+       "fell"
+      ],
+      [
+       "hurt"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "My brother ",
+      " in the London Marathon last year. Have you ever ",
+      " in a marathon? (run / run)"
+     ],
+     "answers": [
+      [
+       "ran"
+      ],
+      [
+       "run"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "25.4",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски в предложениях. Выберите глагол из рамки и поставьте его в правильную форму.",
+   "wordBank": [
+    "cost",
+    "drive",
+    "fly",
+    "make",
+    "meet",
+    "sell",
+    "speak",
+    "swim",
+    "tell",
+    "think",
+    "wake up",
+    "win"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "I have ",
+      " some coffee. Would you like some?"
+     ],
+     "answers": [
+      [
+       "made"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Have you ",
+      " John about your new job?"
+     ],
+     "answers": [
+      [
+       "told"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "We played basketball on Sunday. We didn’t play very well, but we ",
+      " the game."
+     ],
+     "answers": [
+      [
+       "won"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I know Gary, but I’ve never ",
+      " his wife."
+     ],
+     "answers": [
+      [
+       "met"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We were ",
+      " by loud music in the middle of the night."
+     ],
+     "answers": [
+      [
+       "woken up"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Stephanie jumped into the river and ",
+      " to the other side."
+     ],
+     "answers": [
+      [
+       "swam"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘Did you like the film?’ ‘Yes, I ",
+      " it was very good.’"
+     ],
+     "answers": [
+      [
+       "thought"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Many different languages are ",
+      " in the Philippines."
+     ],
+     "answers": [
+      [
+       "spoken"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Our holiday ",
+      " a lot of money because we stayed in an expensive hotel."
+     ],
+     "answers": [
+      [
+       "cost"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Have you ever ",
+      " a very fast car?"
+     ],
+     "answers": [
+      [
+       "driven"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "All the tickets for the concert were ",
+      " very quickly."
+     ],
+     "answers": [
+      [
+       "sold"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "A bird ",
+      " in through the open window while we were having our dinner."
+     ],
+     "answers": [
+      [
+       "flew"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "25.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [на ферме = on a farm]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Лара изучала русский язык в университете.",
+     "answers": [
+      "Lara studied Russian at university."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Когда был построен ваш дом?",
+     "answers": [
+      "When was your house built?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Где Джеймс? Я его сегодня не видел.",
+     "answers": [
+      "Where is James? I haven’t seen him today.",
+      "Where is James? I have not seen him today."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Ты голоден? Я сделала тебе бутерброд.",
+     "answers": [
+      "Are you hungry? I’ve made you a sandwich.",
+      "Are you hungry? I have made you a sandwich."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Смотри! Я купил тебе подарок!",
+     "answers": [
+      "Look! I’ve bought you a present!",
+      "Look! I have bought you a present!"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Салли сломала руку, когда она была в отпуске.",
+     "answers": [
+      "Sally broke her arm when she was on holiday.",
+      "Sally broke her arm while she was on holiday."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "В Канаде говорят на английском и на французском.",
+     "answers": [
+      "French and English are spoken in Canada.",
+      "They speak French and English …"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "В субботу мы смотрели футбольный матч. Наша команда победила.",
+     "answers": [
+      "We watched a (football) match on Saturday. Our team won.",
+      "On Saturday …"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Когда мы жили на ферме, у меня была лошадь.",
+     "answers": [
+      "When we lived on a farm, I had a horse."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Вчера я нашла телефон рядом с моим домом.",
+     "answers": [
+      "I found a phone near my house yesterday.",
+      "Yesterday …"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,39 +1,25 @@
 {
   "unit": 43,
-  "title": "Passive 2 (be done / been done / being done)",
+  "title": "too/either · so am I / neither do I и т. д.",
   "pdfPages": [
-    98,
-    99
+    97,
+    98
   ],
   "exercises": [
     {
       "id": "43.1",
       "type": "fill-in",
-      "instruction": "Complete these sentences. Use the following verbs in the passive:",
-      "wordBank": [
-        "arrest",
-        "carry",
-        "cause",
-        "delay",
-        "do",
-        "forget",
-        "keep",
-        "knock",
-        "know",
-        "make",
-        "repair",
-        "send"
-      ],
+      "instruction": "Вставьте too или either.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "The situation is serious. Something must ",
-            " before it's too late."
+            "I’m happy ",
+            "."
           ],
           "answers": [
             [
-              "be done"
+              "too"
             ]
           ],
           "example": true
@@ -41,133 +27,72 @@
         {
           "num": 2,
           "parts": [
-            "I haven't received the letter yet. It might ",
-            " to the wrong address."
+            "I’m not hungry ",
+            "."
           ],
           "answers": [
             [
-              "have been sent"
+              "either"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "A decision will not ",
-            " until the next meeting."
+            "I’m going out ",
+            "."
           ],
           "answers": [
             [
-              "be made"
+              "too"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "These documents are important. They should always ",
-            " in a safe place."
+            "It rained on Sunday ",
+            "."
           ],
           "answers": [
             [
-              "be kept"
+              "too"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "This road is in bad condition. It should ",
-            " a long time ago."
+            "She can’t ride a bike ",
+            "."
           ],
           "answers": [
             [
-              "have been repaired"
+              "either"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "The injured man couldn't walk and had to ",
+            "I don’t like shopping ",
             "."
           ],
           "answers": [
             [
-              "be carried"
+              "either"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "If you hadn't shouted at the policeman, you wouldn't ",
+            "Her father is a teacher ",
             "."
           ],
           "answers": [
             [
-              "have been arrested"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "I'm not sure what time I'll arrive tomorrow. I may ",
-            "."
-          ],
-          "answers": [
-            [
-              "be delayed"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "It's not certain how the fire started. It might ",
-            " by an electrical fault."
-          ],
-          "answers": [
-            [
-              "have been caused"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "A new school is being built. The old one is going to ",
-            " down."
-          ],
-          "answers": [
-            [
-              "be knocked"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "The election is next Sunday. The full results will ",
-            " on Tuesday."
-          ],
-          "answers": [
-            [
-              "be known"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "Last week they weren't speaking to one another. Now they're happy again. The problem seems to ",
-            "."
-          ],
-          "answers": [
-            [
-              "have been forgotten"
+              "too"
             ]
           ]
         }
@@ -176,80 +101,84 @@
     {
       "id": "43.2",
       "type": "write",
-      "instruction": "Make sentences from the words in brackets. Sometimes the verb is active, sometimes passive.",
+      "instruction": "Напишите ответ, используя So ... I (So am I / So do I / So can I и т. д.). Напишите ответ, используя Neither ... I.",
       "items": [
         {
           "num": 1,
-          "prompt": "(We / follow)",
+          "prompt": "I went to bed late last night.",
           "answers": [
-            "We're being followed."
-          ]
+            "So did I."
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(you / paint?)",
+          "prompt": "I’m thirsty.",
           "answers": [
-            "Have you painted it?"
+            "So am I."
           ]
         },
         {
           "num": 3,
-          "prompt": "(It / steal!)",
+          "prompt": "I’ve just eaten.",
           "answers": [
-            "It's been stolen!",
-            "It has been stolen!"
+            "So have I."
           ]
         },
         {
           "num": 4,
-          "prompt": "(Somebody / take)",
+          "prompt": "I need a holiday.",
           "answers": [
-            "Somebody has taken it.",
-            "Somebody has taken my umbrella."
+            "So do I."
           ]
         },
         {
           "num": 5,
-          "prompt": "(He / not / see / since then)",
+          "prompt": "I’ll be late tomorrow.",
           "answers": [
-            "He hasn't been seen since then."
+            "So will I."
           ]
         },
         {
           "num": 6,
-          "prompt": "(I / not / see / for ages)",
+          "prompt": "I was very tired this morning.",
           "answers": [
-            "I haven't seen her for ages."
+            "So was I."
           ]
         },
         {
           "num": 7,
-          "prompt": "(you / ever / sting / bee?)",
+          "prompt": "I can’t go to the party.",
           "answers": [
-            "Have you ever been stung by a bee?"
+            "Neither can I."
           ]
         },
         {
           "num": 8,
-          "prompt": "(It / repair / at the moment)",
+          "prompt": "I didn’t phone Alex last night.",
           "answers": [
-            "It's being repaired at the moment.",
-            "It is being repaired at the moment."
+            "Neither did I."
           ]
         },
         {
           "num": 9,
-          "prompt": "(It / not / find / yet)",
+          "prompt": "I haven’t got any money.",
           "answers": [
-            "It hasn't been found yet.",
-            "It has not been found yet."
+            "Neither have I."
           ]
         },
         {
           "num": 10,
-          "prompt": "(The furniture / move)",
+          "prompt": "I’m not going out tomorrow.",
           "answers": [
-            "The furniture had been moved."
+            "Neither am I."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "I don’t know what to do.",
+          "answers": [
+            "Neither do I."
           ]
         }
       ]
@@ -257,63 +186,189 @@
     {
       "id": "43.3",
       "type": "write",
-      "instruction": "Instead of using 'somebody', 'they' etc., write a passive sentence.",
+      "instruction": "Вы разговариваете с Марией. Напишите предложения о себе. По возможности используйте So ... I или Neither ... I. Внимательно прочитайте примеры:",
       "items": [
         {
           "num": 1,
-          "prompt": "Somebody has cleaned the room.",
+          "prompt": "I’m learning English.",
           "answers": [
-            "The room has been cleaned."
+            "So am I."
           ]
         },
         {
           "num": 2,
-          "prompt": "They are building a new road around the city.",
+          "prompt": "I can ride a bike.",
           "answers": [
-            "A new road is being built around the city."
+            "So can I.",
+            "I can’t."
           ]
         },
         {
           "num": 3,
-          "prompt": "They have built two new hotels near the airport.",
+          "prompt": "I’m not American.",
           "answers": [
-            "Two new hotels have been built near the airport."
+            "Neither am I.",
+            "I am."
           ]
         },
         {
           "num": 4,
-          "prompt": "When I last visited, they were building some new houses here.",
+          "prompt": "I like cooking.",
           "answers": [
-            "When I last visited, some new houses were being built."
+            "So do I.",
+            "I don’t."
           ]
         },
         {
           "num": 5,
-          "prompt": "The meeting is now on 15 April. They have changed the date.",
+          "prompt": "I don’t like cold weather.",
           "answers": [
-            "The date of the meeting has been changed."
+            "Neither do I.",
+            "I do."
           ]
         },
         {
           "num": 6,
-          "prompt": "I didn't know that somebody was recording our conversation.",
+          "prompt": "I slept well last night.",
           "answers": [
-            "I didn't know that our conversation was being recorded."
+            "So did I.",
+            "I didn’t."
           ]
         },
         {
           "num": 7,
-          "prompt": "Is anyone doing anything about the problem?",
+          "prompt": "I’ve never run a marathon.",
           "answers": [
-            "Is anything being done about the problem?"
+            "Neither have I.",
+            "I have."
           ]
         },
         {
           "num": 8,
-          "prompt": "The windows were very dirty. Nobody had cleaned them for ages.",
+          "prompt": "I don’t use my phone much.",
           "answers": [
-            "The windows were very dirty. They hadn't been cleaned for ages.",
-            "The windows were very dirty. They had not been cleaned for ages."
+            "Neither do I.",
+            "I do."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "I’m going out tomorrow evening.",
+          "answers": [
+            "So am I.",
+            "I’m not."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "I haven’t been to Scotland.",
+          "answers": [
+            "Neither have I.",
+            "I have."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "I didn’t watch TV last night.",
+          "answers": [
+            "Neither did I.",
+            "I did."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "I go to the cinema a lot.",
+          "answers": [
+            "So do I.",
+            "I don’t."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (водить = drive)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Ирине понравился концерт, и мне он тоже понравился.",
+          "answers": [
+            "Irina liked the concert, and I liked it too.",
+            "Irina liked the concert, and so did I."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я не была в Лондоне, и Анна тоже не была.",
+          "answers": [
+            "I haven’t been to London, and Anna hasn’t either.",
+            "I haven’t been to London, and Anna has not either.",
+            "I have not been to London, and Anna hasn’t either.",
+            "I have not been to London, and Anna has not either.",
+            "I haven’t been to London, and neither has Anna.",
+            "I have not been to London, and neither has Anna."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "A: Я хотела бы поехать в Испанию. B: Я тоже.",
+          "answers": [
+            "I’d like to go to Spain.\nI would too.",
+            "I’d like to go to Spain.\nSo would I.",
+            "I would like to go to Spain.\nI would too.",
+            "I would like to go to Spain.\nSo would I."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Ваш муж – тоже учитель?",
+          "answers": [
+            "Is your husband a teacher too?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "A: Я не умею водить машину. B: Я тоже.",
+          "answers": [
+            "I can’t drive a car.\nI can’t either.",
+            "I can’t drive a car.\nNeither can I.",
+            "I cannot drive a car.\nI can’t either.",
+            "I cannot drive a car.\nNeither can I.",
+            "I can’t drive.\nI can’t either.",
+            "I can’t drive.\nNeither can I.",
+            "I cannot drive.\nI can’t either.",
+            "I cannot drive.\nNeither can I."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "У Антона нет машины. У Лили тоже нет.",
+          "answers": [
+            "Anton doesn’t have a car. Lily doesn’t either.",
+            "Anton doesn’t have a car. Lily does not either.",
+            "Anton does not have a car. Lily doesn’t either.",
+            "Anton does not have a car. Lily does not either.",
+            "Anton doesn’t have a car. Neither does Lily.",
+            "Anton does not have a car. Neither does Lily."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "A: Нам не понравился ресторан. B: Нам тоже.",
+          "answers": [
+            "We didn’t like the restaurant.\nWe didn’t either.",
+            "We didn’t like the restaurant.\nNeither did we.",
+            "We did not like the restaurant.\nWe didn’t either.",
+            "We did not like the restaurant.\nNeither did we."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "A: Я работаю в Лондоне. B: Я тоже.",
+          "answers": [
+            "I work in London.\nI do too.",
+            "I work in London.\nSo do I."
           ]
         }
       ]

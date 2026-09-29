@@ -1,105 +1,99 @@
 {
   "unit": 107,
-  "title": "Comparative 3 (as … as / than)",
+  "title": "in · at · on (предлоги места 2)",
   "pdfPages": [
-    226,
-    227
+    225,
+    226
   ],
   "exercises": [
     {
       "id": "107.1",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using as … as.",
+      "type": "write",
+      "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте in/at/on.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I'm not ",
-            " you."
-          ],
+          "prompt": "Where is she?",
           "answers": [
-            [
-              "as tall as"
-            ]
+            "In hospital."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "My salary isn't ",
-            "."
-          ],
+          "prompt": "Where are they?",
           "answers": [
-            [
-              "as high as yours"
-            ]
+            "At the airport."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "You don't ",
-            "."
-          ],
+          "prompt": "Where is he?",
           "answers": [
-            [
-              "know as much about cars as me",
-              "know as much about cars as I do",
-              "know as much about cars as I know"
-            ]
+            "In bed."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "We aren't ",
-            "."
-          ],
+          "prompt": "Where are they?",
           "answers": [
-            [
-              "as busy today as we were yesterday",
-              "as busy today as yesterday"
-            ]
+            "On a ship."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I don't ",
-            "."
-          ],
+          "prompt": "Where are the stars?",
           "answers": [
-            [
-              "feel as bad as I did earlier",
-              "feel as bad as I felt earlier"
-            ]
+            "In the sky."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Our neighbours haven't lived here ",
-            "."
-          ],
+          "prompt": "Where are they?",
           "answers": [
-            [
-              "as long as us",
-              "as long as we have"
-            ]
+            "At a party."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "I wasn't ",
-            "."
-          ],
+          "prompt": "Where is Steve?",
           "answers": [
-            [
-              "as nervous (before the interview) as I usually am",
-              "as nervous as usual"
-            ]
+            "At the doctor’s."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Where is the restaurant?",
+          "answers": [
+            "On the second floor."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Where is she?",
+          "answers": [
+            "At work."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Where are they?",
+          "answers": [
+            "On a plane."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "Where are they?",
+          "answers": [
+            "In a taxi."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "Where are they?",
+          "answers": [
+            "At a wedding."
           ]
         }
       ]
@@ -107,106 +101,188 @@
     {
       "id": "107.2",
       "type": "fill-in",
-      "instruction": "Write a new sentence with the same meaning.",
+      "instruction": "Вставьте in/at/on.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "Jack isn't ",
-            "."
+            "Helen is studying law ",
+            " university."
           ],
           "answers": [
             [
-              "as old as he looks"
+              "at"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 2,
           "parts": [
-            "You spent ",
-            "."
+            "There was a big table ",
+            " the middle of the room."
           ],
           "answers": [
             [
-              "more money than me",
-              "more money than I do"
+              "in"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "The station wasn't ",
-            "."
+            "What is the longest river ",
+            " the world?"
           ],
           "answers": [
             [
-              "as far as I thought"
+              "in"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "The meal cost ",
-            "."
+            "Were there many people ",
+            " the concert last night?"
           ],
           "answers": [
             [
-              "less than I expected"
+              "at"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I don't ",
-            "."
+            "Will you be ",
+            " home tomorrow afternoon?"
           ],
           "answers": [
             [
-              "watch TV as much as I used to",
-              "watch TV as often as I used to"
+              "at"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Karen used to ",
-            "."
+            "Who is the man ",
+            " this photo? Do you know him?"
           ],
           "answers": [
             [
-              "have longer hair"
+              "in"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "You don't ",
-            "."
+            "Where are your children? Are they ",
+            " school?"
           ],
           "answers": [
             [
-              "know them as well as me",
-              "know them as I do"
+              "at"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "There aren't ",
-            "."
+            "Gary is coming by train. I’m going to meet him ",
+            " the station."
           ],
           "answers": [
             [
-              "as many students in this class as in the other one"
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Charlie is ",
+            " hospital. He had an operation yesterday."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "How many pages are there ",
+            " this book?"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "‘Are you hungry after your journey?’ ‘No, I had something to eat ",
+            " the train.’"
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I’m sorry I’m late. My car broke down ",
+            " the way here."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "‘Is Tom here?’ ‘No, he’s ",
+            " his friend’s house.’"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Don’t believe everything you see ",
+            " the newspaper!"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "I walked to work, but I came home ",
+            " the bus."
+          ],
+          "answers": [
+            [
+              "on"
             ]
           ]
         }
@@ -214,285 +290,79 @@
     },
     {
       "id": "107.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using as … as. Choose from: fast hard long often quietly soon well",
-      "wordBank": [
-        "fast",
-        "hard",
-        "long",
-        "often",
-        "quietly",
-        "soon",
-        "well"
-      ],
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. [верхний этаж = top floor]",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I got here ",
-            " I could."
-          ],
+          "prompt": "Я сюда приехала на такси.",
           "answers": [
-            [
-              "as fast as"
-            ]
-          ],
-          "example": true
+            "I came here in a taxi.",
+            "I came here by taxi."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "I answered it ",
-            " I could."
-          ],
+          "prompt": "“Джеймс дома?” – “Нет, он на работе”.",
           "answers": [
-            [
-              "as well as"
-            ]
+            "‘Is James at home?’ ‘No, he’s at work.’",
+            "‘Is James at home?’ ‘No, he is at work.’"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "You can stay ",
-            " you like."
-          ],
+          "prompt": "Кто самый богатый человек в мире?",
           "answers": [
-            [
-              "as long as"
-            ]
+            "Who is the richest man in the world?",
+            "Who is the richest person in the world?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Let me know ",
-            " possible."
-          ],
+          "prompt": "Я не жила в гостинице. Я жила у своего брата.",
           "answers": [
-            [
-              "as soon as"
-            ]
+            "I didn’t stay in a hotel. I stayed at my brother’s.",
+            "I didn’t stay at a hotel. I stayed at my brother’s."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I go swimming ",
-            " I can."
-          ],
+          "prompt": "Я думаю, я потеряла свой телефон по дороге в школу.",
           "answers": [
-            [
-              "as often as"
-            ]
+            "I think I lost my phone on the way to school.",
+            "I think I lost my phone on my way to school.",
+            "I think that I lost my phone on the way to school.",
+            "I think that I lost my phone on my way to school."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I came in ",
-            " I could."
-          ],
+          "prompt": "Это твой дедушка на фото?",
           "answers": [
-            [
-              "as quietly as"
-            ]
+            "Is it your grandfather in the photo?",
+            "Is it your grandfather in the photograph?",
+            "Is it your grandfather in the picture?",
+            "Is this your grandfather in the photo?",
+            "Is this your grandfather in the photograph?",
+            "Is this your grandfather in the picture?",
+            "Is that your grandfather in the photo?",
+            "Is that your grandfather in the photograph?",
+            "Is that your grandfather in the picture?"
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "I work just ",
-            " you."
-          ],
+          "prompt": "Наша квартира находится на верхнем этаже.",
           "answers": [
-            [
-              "as hard as"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "107.4",
-      "type": "fill-in",
-      "instruction": "Write sentences using the same as.",
-      "items": [
-        {
-          "num": 1,
-          "parts": [
-            "David is ",
-            " James."
-          ],
-          "answers": [
-            [
-              "the same age as"
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": 2,
-          "parts": [
-            "Your hair is ",
-            " mine."
-          ],
-          "answers": [
-            [
-              "the same colour as"
-            ]
-          ]
-        },
-        {
-          "num": 3,
-          "parts": [
-            "I arrived ",
-            " you."
-          ],
-          "answers": [
-            [
-              "(at) the same time as"
-            ]
-          ]
-        },
-        {
-          "num": 4,
-          "parts": [
-            "My birthday is ",
-            " Tom's."
-          ],
-          "answers": [
-            [
-              "(on) the same day as",
-              "the same as"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "107.5",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from: as him is less me much soon than twice",
-      "wordBank": [
-        "as",
-        "him",
-        "is",
-        "less",
-        "me",
-        "much",
-        "soon",
-        "than",
-        "twice"
-      ],
-      "items": [
-        {
-          "num": 1,
-          "parts": [
-            "I'll let you know ",
-            " I have any more news."
-          ],
-          "answers": [
-            [
-              "as soon as"
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": 2,
-          "parts": [
-            "My friends arrived earlier ",
-            " I expected."
-          ],
-          "answers": [
-            [
-              "than"
-            ]
-          ]
-        },
-        {
-          "num": 3,
-          "parts": [
-            "I live in the same street ",
-            " Katherine."
-          ],
-          "answers": [
-            [
-              "as"
-            ]
-          ]
-        },
-        {
-          "num": 4,
-          "parts": [
-            "I know more than ",
-            "."
-          ],
-          "answers": [
-            [
-              "him"
-            ]
-          ]
-        },
-        {
-          "num": 5,
-          "parts": [
-            "This morning there was ",
-            " traffic than usual."
-          ],
-          "answers": [
-            [
-              "less"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "I don't watch TV as ",
-            " as I used to."
-          ],
-          "answers": [
-            [
-              "much"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Mine is ",
-            " as heavy as yours."
-          ],
-          "answers": [
-            [
-              "twice"
-            ]
+            "Our flat is on the top floor.",
+            "Our apartment is on the top floor."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I'm a little older than she ",
-            "."
-          ],
+          "prompt": "Я видел Бена на вечеринке.",
           "answers": [
-            [
-              "is"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "Nobody was more surprised than ",
-            "."
-          ],
-          "answers": [
-            [
-              "me"
-            ]
+            "I saw Ben at the party."
           ]
         }
       ]

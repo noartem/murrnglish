@@ -1,70 +1,376 @@
 {
   "unit": 14,
-  "title": "Present perfect and past 2 (I have done and I did)",
-  "pdfPages": [40, 41],
+  "title": "I was doing (past continuous)",
+  "pdfPages": [
+    39,
+    40
+  ],
   "exercises": [
     {
       "id": "14.1",
-      "type": "write",
-      "instruction": "Are the underlined parts of these sentences OK? Correct them where necessary.",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки. Где были эти люди вчера в 3 часа дня? Что они делали? Напишите по два предложения к каждой картинке.",
       "items": [
-        {"num": 1, "prompt": "I've lost my key. I can't find it anywhere.", "answers": ["OK"]},
-        {"num": 2, "prompt": "Have you eaten a lot of sweets when you were a child?", "answers": ["Did you eat"]},
-        {"num": 3, "prompt": "I've bought a new car. You must come and see it.", "answers": ["OK"]},
-        {"num": 4, "prompt": "I've bought a new car last week.", "answers": ["I bought"]},
-        {"num": 5, "prompt": "Where have you been yesterday evening?", "answers": ["Where were you"]},
-        {"num": 6, "prompt": "Maria has left school in 1999.", "answers": ["Maria left school"]},
-        {"num": 7, "prompt": "I'm looking for Mike. Have you seen him?", "answers": ["OK"]},
-        {"num": 8, "prompt": "'Have you been to Paris?' 'Yes, many times.'", "answers": ["OK"]},
-        {"num": 9, "prompt": "I'm very hungry. I haven't eaten much today.", "answers": ["OK"]},
-        {"num": 10, "prompt": "When has this bridge been built?", "answers": ["When was this bridge built?"]}
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Rachel was at home. She was watching TV."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Jack and Kate ",
+            " . They ",
+            ""
+          ],
+          "answers": [
+            [
+              "were at the cinema"
+            ],
+            [
+              "were watching a film"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Tom ",
+            ""
+          ],
+          "answers": [
+            [
+              "was in his car. He was driving."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Tracey was at the station. She was waiting for a train."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Mr and Mrs Hall were in the park. They were walking."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "And you? I ",
+            ""
+          ],
+          "answers": [
+            [
+              "was in a cafe. I was having a drink with some friends."
+            ]
+          ],
+          "selfCheck": true
+        }
       ]
     },
     {
       "id": "14.2",
-      "type": "write",
-      "instruction": "Make sentences from the words in brackets. Use the present perfect or past simple.",
+      "type": "fill-in",
+      "instruction": "Вчера утром Сара была очень занята. Посмотрите на картинки и закончите предложения.",
       "items": [
-        {"num": 1, "prompt": "(it / not / rain / this week)", "answers": ["It hasn't rained this week."]},
-        {"num": 2, "prompt": "(the weather / be / cold / recently)", "answers": ["The weather has been cold recently."]},
-        {"num": 3, "prompt": "(it / cold / last week)", "answers": ["It was cold last week."]},
-        {"num": 4, "prompt": "(I / not / eat / any fruit yesterday)", "answers": ["I didn't eat any fruit yesterday."]},
-        {"num": 5, "prompt": "(I / not / eat / any fruit today)", "answers": ["I haven't eaten any fruit today."]},
-        {"num": 6, "prompt": "(Emily / earn / a lot of money / this year)", "answers": ["Emily has earned a lot of money this year."]},
-        {"num": 7, "prompt": "(she / not / earn / so much / last year)", "answers": ["She didn't earn so much last year."]},
-        {"num": 8, "prompt": "(you / have / a holiday recently?)", "answers": ["Have you had a holiday recently?"]}
+        {
+          "num": 1,
+          "parts": [
+            "At 8.45 she ",
+            ""
+          ],
+          "answers": [
+            [
+              "was washing her car."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "At 10.45 she ",
+            ""
+          ],
+          "answers": [
+            [
+              "was playing tennis"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "At 8 o’clock ",
+            ""
+          ],
+          "answers": [
+            [
+              "she was reading a paper",
+              "she was reading the paper",
+              "she was reading a newspaper",
+              "she was reading the newspaper"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "At 12.10 ",
+            ""
+          ],
+          "answers": [
+            [
+              "she was cooking",
+              "she was cooking lunch"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "At 7.15 ",
+            ""
+          ],
+          "answers": [
+            [
+              "she was having breakfast"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "At 9.30 ",
+            ""
+          ],
+          "answers": [
+            [
+              "she was cleaning the kitchen"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "14.3",
       "type": "fill-in",
-      "instruction": "Put the verb into the correct form, present perfect or past simple.",
+      "instruction": "Допишите вопросы, используя was/were -ing. Где необходимо, также используйте what/where/why.",
       "items": [
-        {"num": 1, "parts": ["I ", " (I / not / be) to Canada, but I'd like to go there."], "answers": [["haven't been"]]},
-        {"num": 2, "parts": ["Paul and Lucy ", " (arrive) about ten minutes ago."], "answers": [["arrived"]]},
-        {"num": 3, "parts": ["I'm tired. ", " (I / not / sleep) well last night."], "answers": [["I didn't sleep"]]},
-        {"num": 4, "parts": ["(There / be) ", " a bus drivers' strike last week, so ", " (there / be) no buses."], "answers": [["There was"], ["there were"]]},
-        {"num": 5, "parts": ["Edward ", " (work) in a bank for 15 years. Then ", " (he / give) it up. Now he works as a gardener."], "answers": [["worked"], ["he gave"]]},
-        {"num": 6, "parts": ["Mary lives in Dublin. ", " (She / live) there all her life."], "answers": [["She's lived", "She has lived"]]},
-        {"num": 7, "parts": ["My grandfather ", " (die) before I was born. ", " (I / never / meet) him."], "answers": [["died"], ["I never met"]]},
-        {"num": 8, "parts": ["I don't know Karen's husband. ", " (I / never / meet) him."], "answers": [["I've never met", "I have never met"]]},
-        {"num": 9, "parts": ["It's nearly lunchtime, and ", " (I / not / see) Martin all morning. I wonder where he is."], "answers": [["I haven't seen"]]},
-        {"num": 10, "parts": ["a: ", " (you / go) to the cinema last night? b: Yes, but the movie ", " (be) awful."], "answers": [["Did you go"], ["was"]]},
-        {"num": 11, "parts": ["a: ", " (It / be) very warm here since we arrived. b: Yes, ", " (it / be) 35 degrees yesterday."], "answers": [["It's been", "It has been"], ["it was"]]},
-        {"num": 12, "parts": ["a: How long ", " (you / live) there? b: Five years. a: Where ", " (you / live) before that? b: In Chicago. a: And how long ", " (you / live) in Chicago? b: Two years."], "answers": [["have you lived", "have you been living"], ["did you live"], ["did you live"]]}
+        {
+          "num": 1,
+          "parts": [
+            "(you/live) ",
+            " in 2012?"
+          ],
+          "answers": [
+            [
+              "Where were you living"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "(you/do) ",
+            " at 2 o’clock?"
+          ],
+          "answers": [
+            [
+              "What were you doing"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "(it/rain) ",
+            " when you got up?"
+          ],
+          "answers": [
+            [
+              "Was it raining"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "(Sue/drive) ",
+            " so fast?"
+          ],
+          "answers": [
+            [
+              "Why was Sue driving"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "(Tom/wear) ",
+            " a suit yesterday?"
+          ],
+          "answers": [
+            [
+              "Was Tom wearing"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "14.4",
-      "type": "self-check",
-      "instruction": "Write sentences about yourself using the ideas in brackets.",
+      "type": "write",
+      "instruction": "Посмотрите на картинку. Вчера днём вы встретили Джо. Что он делал? Напишите утвердительные или отрицательные предложения.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 1, "prompt": "(something you haven't done today)", "modelAnswers": ["I haven't eaten any fruit today."]},
-        {"num": 2, "prompt": "(something you haven't done today)", "modelAnswers": ["I haven't bought anything today."]},
-        {"num": 3, "prompt": "(something you didn't do yesterday)", "modelAnswers": ["I didn't watch TV yesterday."]},
-        {"num": 4, "prompt": "(something you did yesterday evening)", "modelAnswers": ["I went out with some friends yesterday evening."]},
-        {"num": 5, "prompt": "(something you haven't done recently)", "modelAnswers": ["I haven't been to the cinema recently."]},
-        {"num": 6, "prompt": "(something you've done a lot recently)", "modelAnswers": ["I've read a lot of books recently."]}
+        {
+          "num": 1,
+          "prompt": "(wear / a jacket)",
+          "answers": [
+            "He wasn’t wearing a jacket."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(carry / a bag)",
+          "answers": [
+            "He was carrying a bag."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(go / to the dentist)",
+          "answers": [
+            "He wasn’t going to the dentist."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(eat / an ice cream)",
+          "answers": [
+            "He was eating an ice cream."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(carry / an umbrella)",
+          "answers": [
+            "He wasn’t carrying an umbrella."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(go / home)",
+          "answers": [
+            "He wasn’t going home."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(wear / a hat)",
+          "answers": [
+            "He was wearing a hat."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(ride / a bike)",
+          "answers": [
+            "He wasn’t riding a bicycle."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. [мыть = wash; полдень = midday; сегодня утром = this morning; в аэропорту = at the airport; костюм = suit]",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Сегодня в 7:30 я мыла свою машину.",
+          "answers": [
+            "Today at 7.30 I was washing my car."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вчера я работал в саду в полдень.",
+          "answers": [
+            "Yesterday I was working in the garden at midday."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Что вы делали в 10:30 сегодня утром? Вы работали?",
+          "answers": [
+            "What were you doing at 10.30 this morning? Were you working?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Сегодня утром было тепло и не шёл дождь.",
+          "answers": [
+            "It was warm and it wasn’t raining this morning.",
+            "It was warm and it was not raining this morning."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Почему ты пел в три часа утра?",
+          "answers": [
+            "Why were you singing at 3 o’clock in the morning?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Прошлым летом Эмма и Том жили в Америке.",
+          "answers": [
+            "Last summer Emma and Tom were living in America."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "А: Что ты делала в аэропорту? В: Я ждала Ирину.",
+          "answers": [
+            "A: What were you doing at the airport? B: I was waiting for Irina."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Сегодня на Антоне надет костюм, а вчера на нём были надеты джинсы.",
+          "answers": [
+            "Today Anton is wearing a suit, but yesterday he was wearing jeans."
+          ]
+        }
       ]
     }
   ]

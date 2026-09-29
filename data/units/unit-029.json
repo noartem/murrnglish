@@ -1,108 +1,94 @@
 {
   "unit": 29,
-  "title": "may and might 1",
+  "title": "will/shall 2",
   "pdfPages": [
-    70,
-    71
+    69,
+    70
   ],
   "exercises": [
     {
       "id": "29.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box.",
+      "instruction": "Заполните пропуски. Используйте I’ll (I will) + глаголы из рамки:",
       "wordBank": [
-        "may be Tom’s",
-        "may not be feeling well",
-        "may not be possible",
-        "might be in her room",
-        "might be Brazilian",
-        "might be driving",
-        "might have one",
-        "might know"
+        "carry",
+        "do",
+        "eat",
+        "show",
+        "sit",
+        "stay"
       ],
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "I'm not sure, but ask Anna. She ",
-            "."
+            "",
+            " it for you."
           ],
           "answers": [
             [
-              "might know"
+              "I’ll carry"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Well, I’m hungry. ",
+            " it."
+          ],
+          "answers": [
+            [
+              "I’ll eat"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I don’t know. They ",
-            "."
+            "No, it’s OK. ",
+            " on the floor."
           ],
           "answers": [
             [
-              "might be Brazilian"
+              "I’ll sit"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 4,
           "parts": [
-            "I’ll try, but it ",
-            "."
+            "Oh no, I forgot. ",
+            " it now."
           ],
           "answers": [
             [
-              "may not be possible"
+              "I’ll do"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "It’s not mine. It ",
-            "."
+            "No, I don’t think so. ",
+            " here."
           ],
           "answers": [
             [
-              "may be Tom’s"
+              "I’ll stay"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "He ",
-            "."
+            "Give it to me and ",
+            " you."
           ],
           "answers": [
             [
-              "might be driving"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Rachel ",
-            ", but I’m not sure."
-          ],
-          "answers": [
-            [
-              "might have one"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Yes, he is. He ",
-            "."
-          ],
-          "answers": [
-            [
-              "may not be feeling well"
+              "I’ll show"
             ]
           ]
         }
@@ -111,125 +97,73 @@
     {
       "id": "29.2",
       "type": "fill-in",
-      "instruction": "Complete each sentence using the verb in brackets.",
+      "instruction": "Заполните пропуски. Используйте I think I’ll ... или I don’t think I’ll ... + глаголы из рамки:",
+      "wordBank": [
+        "buy",
+        "buy",
+        "go",
+        "have",
+        "play"
+      ],
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "It may ",
-            " her brother. (be)"
+            "",
+            " out."
           ],
           "answers": [
             [
-              "have been"
+              "I don’t think I’ll go"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’m hungry. I ",
+            " something to eat."
+          ],
+          "answers": [
+            [
+              "I think I’ll have"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I can’t see her. She may not ",
-            " yet. (arrive)"
+            "I feel very tired. ",
+            " tennis."
           ],
           "answers": [
             [
-              "have arrived"
+              "I don’t think I’ll play"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "He might ",
-            " outside. I’ll go and look. (wait)"
+            "I like this hat. ",
+            " it."
           ],
           "answers": [
             [
-              "be waiting"
+              "I think I’ll buy"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I don’t know. I suppose Sam may ",
-            " him. (tell)"
+            "This camera is too expensive. ",
+            " it."
           ],
           "answers": [
             [
-              "have told"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "He was here earlier, but he might ",
-            " home. (go)"
-          ],
-          "answers": [
-            [
-              "have gone"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "I’m not sure. She might ",
-            " TV. (watch)"
-          ],
-          "answers": [
-            [
-              "be watching"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "I’m not sure. I think he may ",
-            " a younger sister. (have)"
-          ],
-          "answers": [
-            [
-              "have"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "You may ",
-            " it in the restaurant last night. (leave)"
-          ],
-          "answers": [
-            [
-              "have left"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "He might not ",
-            " the doorbell. (hear)"
-          ],
-          "answers": [
-            [
-              "hear"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "She may ",
-            ". She’s always forgetting things. (forget)"
-          ],
-          "answers": [
-            [
-              "have forgotten"
+              "I don’t think I’ll buy"
             ]
           ]
         }
@@ -237,55 +171,256 @@
     },
     {
       "id": "29.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using might not have … or couldn’t have … .",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
+      ],
       "items": [
         {
-          "num": 2,
-          "parts": [
-            "It’s possible. He ",
-            " to come."
+          "num": 1,
+          "options": [
+            "I phone you tomorrow, OK?",
+            "I’ll phone you tomorrow, OK?"
           ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "I do it later.",
+            "I’ll do it later."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "I watch a lot of sport on TV",
+            "I’ll watch a lot of sport on TV"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": [
+            "I go for a walk.",
+            "I’ll go for a walk."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": [
+            "Carl is going to buy a new car.",
+            "Carl will buy a new car."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": [
+            "I give it to her.",
+            "I’ll give it to her.",
+            "I’m going to give it to her."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": [
+            "Will you do anything this evening? Yes, I’ll go out with some friends.",
+            "Are you doing anything this evening? Yes, I’ll go out with some friends.",
+            "Will you do anything this evening? Yes, I’m going out with some friends.",
+            "Are you doing anything this evening? Yes, I’m going out with some friends."
+          ],
+          "answer": 3
+        },
+        {
+          "num": 8,
+          "options": [
+            "I work.",
+            "I’m working.",
+            "I’ll work."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "29.4",
+      "type": "write",
+      "instruction": "Напишите предложения с Shall I ... ? Используйте слова из обеих рамок.",
+      "wordBank": [
+        "make",
+        "turn off",
+        "open",
+        "turn on",
+        "some sandwiches",
+        "the TV",
+        "the light",
+        "the window"
+      ],
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "It’s very warm in this room.",
           "answers": [
-            [
-              "might not have wanted"
-            ]
+            "Shall I open the window?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "This programme isn’t very good.",
+          "answers": [
+            "Shall I turn off the TV?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "No, the police say it ",
-            " an accident. It was deliberate."
-          ],
+          "prompt": "I’m hungry.",
           "answers": [
-            [
-              "couldn’t have been"
-            ]
+            "Shall I make some sandwiches?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Well, he ",
-            " very hard. I was in my office all day."
-          ],
+          "prompt": "It’s dark in this room.",
           "answers": [
-            [
-              "couldn’t have tried"
-            ]
+            "Shall I turn on the light?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29.5",
+      "type": "write",
+      "instruction": "Напишите предложения с Shall we … ? Используйте слова из обеих рамок.",
+      "wordBank": [
+        "what",
+        "where",
+        "what time",
+        "who",
+        "buy",
+        "invite",
+        "go",
+        "meet"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Let’s go out tonight.",
+          "answers": [
+            "what time shall we meet?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Let’s have a holiday.",
+          "answers": [
+            "where shall we go?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Let’s spend some money.",
+          "answers": [
+            "what shall we buy?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Let’s have a party.",
+          "answers": [
+            "who shall we invite?"
+          ]
+        }
+      ],
+      "example": [
+        1
+      ]
+    },
+    {
+      "id": "29.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя will или shall. (приносить = bring, свободен = free)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я принесу Вам стул.",
+          "answers": [
+            "I’ll bring you a chair.",
+            "I will bring you a chair.",
+            "I’ll get you a chair.",
+            "I will get you a chair."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Не думаю, что мы поедем в отпуск в этом году.",
+          "answers": [
+            "I don’t think we’ll go on holiday this year.",
+            "I don’t think we will go on holiday this year."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Я голоден. Думаю, я сделаю бутерброд.",
+          "answers": [
+            "I’m hungry. I think I’ll make a sandwich.",
+            "I’m hungry. I think I will make a sandwich.",
+            "I am hungry. I think I’ll make a sandwich.",
+            "I am hungry. I think I will make a sandwich."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Дождь идёт? Мне взять зонт?",
+          "answers": [
+            "Is it raining? Shall I take an umbrella?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "No, I’m not sure. He ",
-            "."
-          ],
+          "prompt": "Сходим в парк?",
           "answers": [
-            [
-              "might not have been American"
-            ]
+            "Shall we go to the park?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я позвоню Нине вечером.",
+          "answers": [
+            "I’ll phone Nina this evening.",
+            "I’ll phone Nina in the evening.",
+            "I’ll call Nina this evening.",
+            "I’ll call Nina in the evening.",
+            "I’ll ring Nina this evening.",
+            "I’ll ring Nina in the evening.",
+            "I will phone Nina this evening.",
+            "I will phone Nina in the evening.",
+            "I will call Nina this evening.",
+            "I will call Nina in the evening.",
+            "I will ring Nina this evening.",
+            "I will ring Nina in the evening."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Во сколько завтра встретимся?",
+          "answers": [
+            "What time shall we meet tomorrow?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "A: Ты свободна в субботу? B: Нет, я иду на вечеринку.",
+          "answers": [
+            "A: Are you free on Saturday? B: No, I’m going to a party.",
+            "A: Are you free on Saturday? B: No, I am going to a party."
           ]
         }
       ]

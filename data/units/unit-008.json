@@ -1,271 +1,226 @@
 {
   "unit": 8,
-  "title": "Present perfect 2 (I have done)",
+  "title": "Do you … ? (present simple, вопросы)",
   "pdfPages": [
-    28,
-    29
+    27,
+    28
   ],
   "exercises": [
     {
       "id": "8.1",
       "type": "write",
-      "instruction": "You ask people about things they have done. Write questions with ever.",
+      "instruction": "Напишите вопросы, начинающиеся с Do … ? или Does … ?",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "(ride / horse?)",
+          "prompt": "I like chocolate. How about you?",
           "answers": [
-            "Have you ever ridden a horse?"
+            "Do you like chocolate?"
           ]
         },
         {
           "num": 2,
-          "prompt": "(be / California?)",
+          "prompt": "I play tennis. How about you?",
           "answers": [
-            "Have you ever been to California?"
+            "Do you play tennis?"
           ]
         },
         {
           "num": 3,
-          "prompt": "(run / marathon?)",
+          "prompt": "You live near here. How about Lucy?",
           "answers": [
-            "Have you ever run a marathon?"
+            "Does Lucy live near here?"
           ]
         },
         {
           "num": 4,
-          "prompt": "(speak / famous person?)",
+          "prompt": "Tom plays tennis. How about his friends?",
           "answers": [
-            "Have you ever spoken to a famous person?"
+            "Do Tom’s friends play tennis?",
+            "Do his friends play tennis?",
+            "Do they play tennis?"
           ]
         },
         {
           "num": 5,
-          "prompt": "(most beautiful place / visit?)",
+          "prompt": "You speak English. How about your brother?",
           "answers": [
-            "What’s the most beautiful place you’ve ever visited? / What’s the most beautiful place you have ever visited?"
+            "Does your brother speak English?",
+            "Does he speak English?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I do yoga every morning. How about you?",
+          "answers": [
+            "Do you do yoga every morning?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Sue goes on holiday a lot. How about Paul?",
+          "answers": [
+            "Does Paul go on holiday a lot?",
+            "Does he go on holiday a lot?",
+            "Does Paul go on holiday much?",
+            "Does he go on holiday much?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "I want to be famous. How about you?",
+          "answers": [
+            "Do you want to be famous?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "You work hard. How about Anna?",
+          "answers": [
+            "Does Anna work hard?",
+            "Does she work hard?"
           ]
         }
       ]
     },
     {
       "id": "8.2",
-      "type": "fill-in",
-      "instruction": "Complete B’s answers. Some sentences are positive and some negative. Use these verbs:",
-      "wordBank": [
-        "be",
-        "be",
-        "eat",
-        "happen",
-        "have",
-        "have",
-        "meet",
-        "play",
-        "read",
-        "see",
-        "try"
+      "type": "write",
+      "instruction": "Составьте вопросы из этих слов + do/does, соблюдая правильный порядок слов.",
+      "example": [
+        1,
+        2
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "‘What’s Mark’s sister like?’ ‘I’ve never ",
-            " her.’"
-          ],
+          "prompt": "(where / live / your parents)",
           "answers": [
-            [
-              "met"
-            ]
+            "Where do your parents live?"
           ]
         },
         {
           "num": 2,
-          "parts": [
-            "‘Is everything going well?’ ‘Yes, we haven’t ",
-            " any problems so far.’"
-          ],
+          "prompt": "(you / early / always / get up)",
           "answers": [
-            [
-              "had"
-            ]
+            "Do you always get up early?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "‘Are you hungry?’ ‘Yes. I ",
-            " much today.’"
-          ],
+          "prompt": "(how often / TV / you / watch)",
           "answers": [
-            [
-              "haven’t eaten"
-            ]
+            "How often do you watch TV?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "‘Can you play chess?’ ‘Yes, but ",
-            " for ages.’"
-          ],
+          "prompt": "(you / want / what / for dinner)",
           "answers": [
-            [
-              "I haven’t played"
-            ]
+            "What do you want for dinner?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "‘Are you enjoying your holiday?’ ‘Yes, it’s the best holiday ",
-            " for a long time.’"
-          ],
+          "prompt": "(like / you / football)",
           "answers": [
-            [
-              "I’ve had",
-              "I have had"
-            ]
+            "Do you like football?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "‘What’s that book about?’ ‘I don’t know. ",
-            " it.’"
-          ],
+          "prompt": "(your brother / like / football)",
           "answers": [
-            [
-              "I haven’t read"
-            ]
+            "Does your brother like football?"
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "‘Is Brussels an interesting place?’ ‘I’ve no idea. ",
-            " there.’"
-          ],
+          "prompt": "(what / you / do / in your free time)",
           "answers": [
-            [
-              "I’ve never been",
-              "I haven’t been"
-            ]
+            "What do you do in your free time?"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "‘I hear your car broke down again yesterday.’ ‘Yes, it’s the second time ",
-            " this month.’"
-          ],
+          "prompt": "(your sister / work / where)",
           "answers": [
-            [
-              "it’s happened",
-              "it has happened",
-              "that’s happened",
-              "that has happened"
-            ]
+            "Where does your sister work?"
           ]
         },
         {
           "num": 9,
-          "parts": [
-            "‘Do you like caviar?’ ‘I don’t know. ",
-            " it.’"
-          ],
+          "prompt": "(breakfast / always / you / have)",
           "answers": [
-            [
-              "I’ve never tried",
-              "I haven’t tried",
-              "I’ve never eaten",
-              "I haven’t eaten"
-            ]
+            "Do you always have breakfast?"
           ]
         },
         {
           "num": 10,
-          "parts": [
-            "‘Mike was late for work again today.’ ‘Again? He ",
-            " late every day this week.’"
-          ],
+          "prompt": "(what / mean / this word)",
           "answers": [
-            [
-              "’s been",
-              "has been"
-            ]
+            "What does this word mean?"
           ]
         },
         {
           "num": 11,
-          "parts": [
-            "‘Who’s that woman by the door?’ ‘I don’t know. ",
-            " her before.’"
-          ],
+          "prompt": "(in winter / snow / it / here)",
           "answers": [
-            [
-              "I’ve never seen",
-              "I haven’t seen"
-            ]
+            "Does it snow here in winter?"
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "(go / usually / to bed / what time / you)",
+          "answers": [
+            "What time do you usually go to bed?"
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "(how much / to phone New York / it / cost)",
+          "answers": [
+            "How much does it cost to phone New York?"
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "(you / for breakfast / have / usually / what)",
+          "answers": [
+            "What do you usually have for breakfast?"
           ]
         }
       ]
     },
     {
       "id": "8.3",
-      "type": "self-check",
-      "instruction": "Write four sentences about yourself. Use I haven’t and choose from the boxes.",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "I haven’t used a computer today.",
-          "modelAnswers": [
-            "I haven’t used a computer today."
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "",
-          "modelAnswers": [
-            "I haven’t travelled by bus this week."
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "",
-          "modelAnswers": [
-            "I haven’t been to the cinema recently."
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "",
-          "modelAnswers": [
-            "I haven’t read a book for ages."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "",
-          "modelAnswers": [
-            "I haven’t lost anything today."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8.4",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences.",
+      "instruction": "Допишите вопросы, используя глаголы из рамки:",
+      "wordBank": [
+        "do",
+        "enjoy",
+        "go",
+        "like",
+        "start",
+        "teach",
+        "work"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "It’s the first time ",
-            " a car."
+            "What ",
+            "?"
           ],
           "answers": [
             [
-              "he’s driven"
+              "do you do"
             ]
           ],
           "example": true
@@ -273,68 +228,208 @@
         {
           "num": 2,
           "parts": [
-            "It’s the first time ",
-            " a giraffe."
+            "",
+            " it?"
           ],
           "answers": [
             [
-              "they’ve seen",
-              "they have seen"
+              "Do you enjoy",
+              "Do you like"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "She ",
-            " before."
+            "What time ",
+            " in the morning?"
           ],
           "answers": [
             [
-              "She’s never ridden a horse",
-              "She has never ridden a horse"
+              "do you start"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "This is the second time ",
-            "."
+            "",
+            " on Saturdays?"
           ],
           "answers": [
             [
-              "they’ve been to Japan",
-              "they have been to Japan"
+              "Do you work"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "It’s not the first ",
-            " this hotel."
+            "How ",
+            " to work?"
           ],
           "answers": [
             [
-              "time she’s stayed at",
-              "time she has stayed at",
-              "time Emily has stayed at"
+              "do you go"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "",
-            " before."
+            "And your husband. What ",
+            "?"
           ],
           "answers": [
             [
-              "He’s never played tennis",
-              "He has never played tennis",
-              "He/Ben hasn’t played tennis"
+              "does he do"
             ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "What ",
+            "?"
+          ],
+          "answers": [
+            [
+              "does he teach"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            " his job?"
+          ],
+          "answers": [
+            [
+              "Does he enjoy",
+              "Does he like"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.4",
+      "type": "self-check",
+      "instruction": "Напишите краткие ответы (Yes, he does. / No, I don’t. и т. д.).",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Do you watch TV a lot?",
+          "modelAnswers": [
+            "No, I don’t.",
+            "Yes, I do."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Do you live in a big city?",
+          "modelAnswers": [
+            "Yes, I do.",
+            "No, I don’t."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Do you often ride a bike?",
+          "modelAnswers": [
+            "Yes, I do.",
+            "No, I don’t."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Does it rain a lot where you live?",
+          "modelAnswers": [
+            "Yes, it does.",
+            "No, it doesn’t."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Do you play the piano?",
+          "modelAnswers": [
+            "Yes, I do.",
+            "No, I don’t."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (на ужин = for dinner; в отпуск = on holiday; рано = early)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Вы любите кофе?",
+          "answers": [
+            "Do you like coffee?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Бен говорит по-русски?",
+          "answers": [
+            "Does Ben speak Russian?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Где ты живёшь?",
+          "answers": [
+            "Where do you live?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Твои родители живут в Москве?",
+          "answers": [
+            "Do your parents live in Moscow?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Что вы обычно едите на ужин?",
+          "answers": [
+            "What do you usually have for dinner?",
+            "What do you usually eat for dinner?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Где работает твой брат?",
+          "answers": [
+            "Where does your brother work?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Как часто вы смотрите фильмы?",
+          "answers": [
+            "How often do you watch films?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Куда вы обычно ездите в отпуск?",
+          "answers": [
+            "Where do you usually go on holiday?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Вы всегда встаёте рано?",
+          "answers": [
+            "Do you always get up early?"
           ]
         }
       ]

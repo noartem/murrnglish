@@ -1,58 +1,500 @@
 {
   "unit": 38,
-  "title": "if I do … and if I did …",
-  "pdfPages": [88, 89],
+  "title": "there is · there are",
+  "pdfPages": [
+    87,
+    88
+  ],
   "exercises": [
     {
       "id": "38.1",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from:",
-      "wordBank": ["did", "dropped", "found", "happened", "lost", "was", "went"],
+      "type": "write",
+      "instruction": "Брокстон – небольшой город. Прочитайте информацию в рамке и напишите предложения о Брокстоне. Используйте There is/are или There isn’t/aren’t.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
-        {"num": 2, "parts": ["Be careful with that vase. If you ", " it, it would break into small pieces."], "answers": [["dropped"]]},
-        {"num": 3, "parts": ["This notebook is very important to me. I'd be very upset if I ", " it."], "answers": [["lost"]]},
-        {"num": 4, "parts": ["I don't expect to lose my job but if that ", ", I'd have to find another one."], "answers": [["happened"]]},
-        {"num": 5, "parts": ["We're thinking about our holiday for next year. If we ", " to Italy, would you come with us?"], "answers": [["went"]]},
-        {"num": 6, "parts": ["I don't think he'll fail the exam. I'd be very surprised if he ", "."], "answers": [["did"]]},
-        {"num": 7, "parts": ["If there ", " a fire in the building, would you know how to put the fire out?"], "answers": [["was"]]}
+        {
+          "num": 1,
+          "prompt": "a castle? — No",
+          "answers": [
+            "There isn’t a castle."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "any restaurants? — Yes (a lot)",
+          "answers": [
+            "There are a lot of restaurants."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "a hospital? — Yes",
+          "answers": [
+            "There’s a hospital.",
+            "There is a hospital."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "a swimming pool? — No",
+          "answers": [
+            "There isn’t a swimming pool."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "any cinemas? — Yes (two)",
+          "answers": [
+            "There are two cinemas."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "a university? — No",
+          "answers": [
+            "There isn’t a university."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "any big hotels? — No",
+          "answers": [
+            "There aren’t any big hotels."
+          ]
+        }
       ]
     },
     {
       "id": "38.2",
-      "type": "choice",
-      "instruction": "What do you say in these situations?",
+      "type": "self-check",
+      "instruction": "Напишите предложения о вашем городе (или о городе, который вы знаете). Используйте There is/are или There isn’t/aren’t.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
-        {"num": 2, "options": ["If I sell my car, I won't get much money for it.", "If I sold my car, I wouldn't get much money for it."], "answer": 1},
-        {"num": 3, "options": ["If I see Sarah, I'll tell her to call you.", "If I saw Sarah, I'd tell her to call you."], "answer": 0},
-        {"num": 4, "options": ["What will you do if there is a fire in the building?", "What would you do if there was a fire in the building?"], "answer": 1},
-        {"num": 5, "options": ["I don't know what I'll do if I lose my passport.", "I don't know what I'd do if I lost my passport."], "answer": 1},
-        {"num": 6, "options": ["If you go right at the end of this street, you'll see a bank on your left.", "If you went right at the end of this street, you'd see a bank on your left."], "answer": 0},
-        {"num": 7, "options": ["What will happen if somebody presses that button?", "What would happen if somebody pressed that button?"], "answer": 1}
+        {
+          "num": 1,
+          "prompt": "",
+          "modelAnswers": [
+            "There are a few restaurants."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "",
+          "modelAnswers": [
+            "There’s a big park."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "modelAnswers": [
+            "There is a university in ..."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "modelAnswers": [
+            "There are a lot of big shops."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "modelAnswers": [
+            "There isn’t an airport."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "modelAnswers": [
+            "There aren’t many factories."
+          ]
+        }
       ]
     },
     {
       "id": "38.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences.",
+      "instruction": "Вставьте there is / there isn’t / is there или there are / there aren’t / are there.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "parts": ["I can't afford to buy a car. If ", " (I / buy) a car, I'd have to borrow the money."], "answers": [["I bought"]]},
-        {"num": 3, "parts": ["If you had a party, who ", " (you / invite) you ", "?"], "answers": [["would"], ["invite"]]},
-        {"num": 4, "parts": ["Don't lend James your car. If ", " (he / ask) me, I wouldn't lend him mine."], "answers": [["he asked"]]},
-        {"num": 5, "parts": ["I don't think Gary and Emma will get married. ", " (I / be) amazed if they did."], "answers": [["I'd be", "I would be"]]},
-        {"num": 6, "parts": ["If ", " (somebody / give) me $20,000, ", " (I / have) a long holiday."], "answers": [["somebody gave"], ["I'd have", "I would have"]]},
-        {"num": 7, "parts": ["(you / be) ", " nervous if ", " (you / meet) a famous person?"], "answers": [["Would you be"], ["you met"]]},
-        {"num": 8, "parts": ["What ", " (you / do) you ", " if ", " (you / be) in a lift and ", " (it / stop) between floors?"], "answers": [["would"], ["do"], ["you were"], ["it stopped"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Broxton isn’t an old town. ",
+            " any old buildings."
+          ],
+          "answers": [
+            [
+              "There aren’t"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Look! ",
+            " a picture of your brother in the newspaper!"
+          ],
+          "answers": [
+            [
+              "There’s",
+              "There is"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘Excuse me, ",
+            " a bank near here?’  ‘Yes, at the end of the street.’"
+          ],
+          "answers": [
+            [
+              "is there"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            " ",
+            " five people in my family: my parents, my two sisters and me."
+          ],
+          "answers": [
+            [
+              "There are"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "‘How many students ",
+            " in the class?’  ‘Twenty.’"
+          ],
+          "answers": [
+            [
+              "are there"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "The road is usually very quiet. ",
+            " much traffic."
+          ],
+          "answers": [
+            [
+              "There isn’t"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            " ",
+            " a bus from the city centre to the airport?’  ‘Yes, every 20 minutes.’"
+          ],
+          "answers": [
+            [
+              "Is there"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            " ",
+            " any problems?’  ‘No, everything is OK.’"
+          ],
+          "answers": [
+            [
+              "Are there"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            " ",
+            " nowhere to sit down. ",
+            " any chairs."
+          ],
+          "answers": [
+            [
+              "There’s",
+              "There is"
+            ],
+            [
+              "There aren’t"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "38.4",
       "type": "write",
-      "instruction": "Write sentences beginning If … .",
+      "instruction": "Напишите предложения с There are … . Используйте слова из рамок.",
+      "wordBank": [
+        "seven",
+        "twenty-six",
+        "eight",
+        "thirty",
+        "fifteen",
+        "fifty",
+        "letters",
+        "days",
+        "players",
+        "days",
+        "planets",
+        "states",
+        "September",
+        "the solar system",
+        "the USA",
+        "a week",
+        "a rugby team",
+        "the English alphabet"
+      ],
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "prompt": "(it / cost too much)", "answers": ["If we stayed at a hotel, it would cost too much."]},
-        {"num": 3, "prompt": "(you / not / believe)", "answers": ["If I told you what happened, you wouldn't believe me.", "If I told you what happened, you wouldn't believe it."]},
-        {"num": 4, "prompt": "(it / hard to find another one)", "answers": ["If she left her job, it would be hard to find another one."]},
-        {"num": 5, "prompt": "(he / not / get it)", "answers": ["If he applied for the job, he wouldn't get it."]}
+        {
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "There are seven days in a week."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "",
+          "answers": [
+            "There are eight planets in the solar system."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "answers": [
+            "There are fifteen players in a rugby team."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "There are twenty-six letters in the English alphabet."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "There are thirty days in September."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "There are fifty states in the USA."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38.5",
+      "type": "fill-in",
+      "instruction": "Вставьте there’s / is there или it’s / is it.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "‘ ",
+            " a train at 10.30.  ‘ ",
+            " a fast train?’"
+          ],
+          "answers": [
+            [
+              "There’s"
+            ],
+            [
+              "Is it"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’m not going to buy this shirt. ",
+            " too expensive."
+          ],
+          "answers": [
+            [
+              "It’s"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘What’s wrong?’  ‘ ",
+            " something in my eye.’"
+          ],
+          "answers": [
+            [
+              "There’s"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            " ",
+            " a red car outside your house. ",
+            " yours?"
+          ],
+          "answers": [
+            [
+              "There’s"
+            ],
+            [
+              "Is it"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "‘ ",
+            " anything good on TV tonight?’  ‘Yes, ",
+            " a programme I want to see at 8.15.’"
+          ],
+          "answers": [
+            [
+              "Is there"
+            ],
+            [
+              "there’s"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "‘What’s that building?’  ‘ ",
+            " a school.’"
+          ],
+          "answers": [
+            [
+              "It’s"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "‘ ",
+            " a restaurant in this hotel?’  ‘No, I’m afraid not.’"
+          ],
+          "answers": [
+            [
+              "Is there"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (банкомат = cashpoint; холодильник = fridge; яйца = eggs; здание = building; больница = hospital)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "В моей комнате есть телевизор.",
+          "answers": [
+            "There’s a TV in my room.",
+            "There is a TV in my room."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "А: Здесь поблизости есть магазины? В: Да, есть.",
+          "answers": [
+            "A: Are there shops near here? B: Yes, there are.",
+            "A: Are there any shops near here? B: Yes, there are."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "В нашем городе нет театра.",
+          "answers": [
+            "There’s no theatre in our town.",
+            "There is no theatre in our town.",
+            "There isn’t a theatre in our town."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "А: Здесь поблизости есть банкомат? В: Нет, нету.",
+          "answers": [
+            "A: Is there a cashpoint near here? B: No, there isn’t.",
+            "A: Is there a cashpoint near here? B: No, there is not."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Сколько студентов в вашем классе?",
+          "answers": [
+            "How many students are there in your class?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "В нашем доме три комнаты.",
+          "answers": [
+            "There are three rooms in our house."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "В холодильнике нет яиц.",
+          "answers": [
+            "There aren’t any eggs in the fridge."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "А: Что это за здание? В: Это больница.",
+          "answers": [
+            "A: What’s that building? B: It’s a hospital.",
+            "A: What’s that building? B: It is a hospital.",
+            "A: What’s this building? B: It’s a hospital.",
+            "A: What’s this building? B: It is a hospital.",
+            "A: What is that building? B: It’s a hospital.",
+            "A: What is that building? B: It is a hospital.",
+            "A: What is this building? B: It’s a hospital.",
+            "A: What is this building? B: It is a hospital."
+          ]
+        }
       ]
     }
   ]

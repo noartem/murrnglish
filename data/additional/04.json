@@ -1,57 +1,165 @@
 {
   "id": 4,
-  "topic": "Present and past",
-  "refs": "Units 1–14",
-  "pdfPages": [316],
+  "topic": "present simple",
+  "refs": "Разделы 6–8",
+  "pdfPages": [
+    253
+  ],
   "exercise": {
     "id": "4",
-    "type": "self-check",
-    "instruction": "Use your own ideas to complete B's sentences.",
+    "type": "fill-in",
+    "instruction": "Заполните пропуски. Используйте present simple.",
     "items": [
       {
         "num": 1,
-        "prompt": "a: What's Chicago like? Is it a good place to visit?\n  b: I've no idea. I've never been there.",
-        "modelAnswers": ["I've no idea. I've never been there."]
+        "parts": [
+          "",
+          " to work early."
+        ],
+        "answers": [
+          [
+            "Sue always gets"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 2,
-        "prompt": "a: How well do you know Ben?\n  b: Very well. We …",
-        "modelAnswers": ["'ve known each other", "have known each other", "'ve been friends", "have been friends"]
+        "parts": [
+          "",
+          " TV very often."
+        ],
+        "answers": [
+          [
+            "We don’t watch"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 3,
-        "prompt": "a: Did you enjoy your holiday?\n  b: Yes, it was really good. It's the best holiday …",
-        "modelAnswers": ["I've ever had", "I've ever been on", "I've had for ages"]
+        "parts": [
+          "How often ",
+          " your hair?"
+        ],
+        "answers": [
+          [
+            "do you wash"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 4,
-        "prompt": "a: Is David still here?\n  b: No, I'm afraid he isn't. …",
-        "modelAnswers": ["He went", "He went home", "He went out", "He left"]
+        "parts": [
+          "I want to go to the cinema, but ",
+          " to go."
+        ],
+        "answers": [
+          [
+            "Sam doesn’t want"
+          ]
+        ]
       },
       {
         "num": 5,
-        "prompt": "a: I like your suit. I haven't seen it before.\n  b: It's new. It's the first time …",
-        "modelAnswers": ["I've worn it"]
+        "parts": [
+          "",
+          " to go out tonight?"
+        ],
+        "answers": [
+          [
+            "Do you want"
+          ]
+        ]
       },
       {
         "num": 6,
-        "prompt": "a: How did you cut your knee?\n  b: I slipped and fell when …",
-        "modelAnswers": ["I was playing"]
+        "parts": [
+          "",
+          " near here?"
+        ],
+        "answers": [
+          [
+            "Does Helen live"
+          ]
+        ]
       },
       {
         "num": 7,
-        "prompt": "a: Do you ever go swimming?\n  b: Not these days. I haven't …",
-        "modelAnswers": ["been swimming for"]
+        "parts": [
+          "",
+          " a lot of people."
+        ],
+        "answers": [
+          [
+            "Sarah knows"
+          ]
+        ]
       },
       {
         "num": 8,
-        "prompt": "a: How often do you go to the cinema?\n  b: Very rarely. It's nearly a year …",
-        "modelAnswers": ["since I've been", "since I went", "since I last went"]
+        "parts": [
+          "I enjoy travelling, but ",
+          " very much."
+        ],
+        "answers": [
+          [
+            "I don’t travel"
+          ]
+        ]
       },
       {
         "num": 9,
-        "prompt": "a: I bought some new shoes. Do you like them?\n  b: Yes, they're very nice. Where …",
-        "modelAnswers": ["did you buy", "did you get"]
+        "parts": [
+          "What time ",
+          " in the morning?"
+        ],
+        "answers": [
+          [
+            "do you usually get up"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "My parents are usually at home in the evening. ",
+          " very often."
+        ],
+        "answers": [
+          [
+            "They don’t go out"
+          ]
+        ]
+      },
+      {
+        "num": 11,
+        "parts": [
+          "",
+          " work at five o’clock."
+        ],
+        "answers": [
+          [
+            "Tom always finishes"
+          ]
+        ]
+      },
+      {
+        "num": 12,
+        "parts": [
+          "A: What ",
+          "? B: ",
+          " in a hotel."
+        ],
+        "answers": [
+          [
+            "does Jessica do"
+          ],
+          [
+            "She works"
+          ]
+        ]
       }
     ]
   }

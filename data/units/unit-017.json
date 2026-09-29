@@ -1,84 +1,25 @@
 {
   "unit": 17,
-  "title": "have and have got",
+  "title": "I’ve just … · I’ve already … · I haven’t … yet (present perfect 2)",
   "pdfPages": [
-    46,
-    47
+    45,
+    46
   ],
   "exercises": [
     {
       "id": "17.1",
-      "type": "matching",
-      "instruction": "Which goes with which?",
-      "leftOptions": [
-        "I’m not free tomorrow morning.",
-        "Rachel is an only child.",
-        "We’ve got plenty of time.",
-        "You’ve got a really good voice.",
-        "I don’t feel very well this morning.",
-        "Laura studied at university.",
-        "I’ve got a question.",
-        "James has got a lot of experience."
-      ],
-      "rightOptions": [
-        "She’s got a degree in physics.",
-        "I’ve got a sore throat.",
-        "There’s no need to hurry.",
-        "I’ve got a driving lesson.",
-        "Maybe you can answer it.",
-        "I think he should get the job.",
-        "I wish I could sing as well as you.",
-        "She’s got no brothers or sisters."
-      ],
-      "pairs": [
-        [
-          0,
-          3
-        ],
-        [
-          1,
-          7
-        ],
-        [
-          2,
-          2
-        ],
-        [
-          3,
-          6
-        ],
-        [
-          4,
-          1
-        ],
-        [
-          5,
-          0
-        ],
-        [
-          6,
-          4
-        ],
-        [
-          7,
-          5
-        ]
-      ]
-    },
-    {
-      "id": "17.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using have.",
+      "instruction": "Для каждой картинки напишите предложение с just.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "She couldn’t get into the house. She ",
-            " a key."
+            "",
+            ""
           ],
           "answers": [
             [
-              "didn’t have"
+              "They’ve just arrived."
             ]
           ],
           "example": true
@@ -86,131 +27,129 @@
         {
           "num": 2,
           "parts": [
-            "Is there anything you’d like to ask? ",
-            " any questions?"
+            "He ",
+            ""
           ],
           "answers": [
             [
-              "Do you have",
-              "Have you got"
+              "’s just got up.",
+              "has just got up."
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "They can’t pay their bills. They ",
-            " any money."
+            "They ",
+            ""
           ],
           "answers": [
             [
-              "don’t have",
-              "haven’t got"
+              "’ve just bought a car.",
+              "have just bought a car.",
+              "’ve just bought a car",
+              "have just bought a car"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "We got wet in the rain yesterday. We ",
-            " an umbrella."
+            "The race ",
+            ""
           ],
           "answers": [
             [
-              "didn’t have"
+              "has just started."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.2",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте already + present perfect.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "He’s already arrived."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "No, they ",
+            " it."
+          ],
+          "answers": [
+            [
+              "’ve already seen",
+              "have already seen"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I ",
+            ""
+          ],
+          "answers": [
+            [
+              "’ve already phoned him.",
+              "have already phoned him."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "He ",
+            ""
+          ],
+          "answers": [
+            [
+              "’s already gone.",
+              "has already gone.",
+              "’s already gone away.",
+              "has already gone away."
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Jack ",
-            " a car. He can’t afford one and he can’t drive anyway."
+            "I ",
+            ""
           ],
           "answers": [
             [
-              "doesn’t have",
-              "hasn’t got"
+              "’ve already read it.",
+              "have already read it."
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "‘Excuse me, ",
-            " a pen I could borrow?’ ‘Yes, sure. Here you are.’"
+            "She ",
+            ""
           ],
           "answers": [
             [
-              "do you have",
-              "have you got"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "I was very busy yesterday. I ",
-            " time to go shopping."
-          ],
-          "answers": [
-            [
-              "didn’t have"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "‘Tell me about Jack. ",
-            " a job?’ ‘Yes, he works at the hospital.’"
-          ],
-          "answers": [
-            [
-              "Does he have",
-              "Has he got"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "When you worked in your last job, ",
-            " your own office?"
-          ],
-          "answers": [
-            [
-              "did you have"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "‘Where’s the remote control?’ ‘I don’t know. I ",
-            " it.’"
-          ],
-          "answers": [
-            [
-              "don’t have",
-              "haven’t got"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "‘Tom ",
-            " a motorbike, ",
-            " he?’ ‘Yes, that’s right. A long time ago.’"
-          ],
-          "answers": [
-            [
-              "had"
-            ],
-            [
-              "didn’t"
+              "’s already started.",
+              "has already started.",
+              "’s already started it.",
+              "has already started it."
             ]
           ]
         }
@@ -218,225 +157,184 @@
     },
     {
       "id": "17.3",
-      "type": "write",
-      "instruction": "Are the underlined words OK? Change them where necessary.",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "I’m not free tomorrow morning. I’ve got a driving lesson.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "Lisa had got long hair when she was a child.",
-          "answers": [
-            "Lisa had long hair when she was a child."
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "I couldn’t contact you because I hadn’t my phone.",
-          "answers": [
-            "I didn’t have my phone.",
-            "I hadn’t got my phone."
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "‘Are you feeling OK?’ ‘No, I’m having a cold.’",
-          "answers": [
-            "I have a cold.",
-            "I’ve got a cold."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "I’m not working right now. I’m having a break.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "I felt really tired. I hadn’t any energy.",
-          "answers": [
-            "I didn’t have any energy."
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "It’s a small town. It doesn’t have many shops.",
-          "answers": [
-            "OK",
-            "It hasn’t got many shops."
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "Was your trip OK? Had you any problems?",
-          "answers": [
-            "Did you have any problems?"
-          ]
-        },
-        {
-          "num": 9,
-          "prompt": "My friend called me when I was having breakfast.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 10,
-          "prompt": "The last time I saw Steve, he was having a beard.",
-          "answers": [
-            "He had a beard."
-          ]
-        },
-        {
-          "num": 11,
-          "prompt": "We don’t need to hurry. We have plenty of time.",
-          "answers": [
-            "OK",
-            "We’ve got plenty of time."
-          ]
-        },
-        {
-          "num": 12,
-          "prompt": "How often have you a shower?",
-          "answers": [
-            "How often do you have a shower?"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "17.4",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use an expression with have in the correct form. Choose from: have a baby, have a break, have a chat, have trouble, have a shower, have a look, have lunch, have a party, have a nice time, have a holiday",
+      "instruction": "Напишите утвердительное предложение с just (They’ve just … / She’s just … и т. д.) или отрицательное предложение с yet (They haven’t … yet / She hasn’t … yet и т. д.).",
       "items": [
         {
           "num": 1,
+          "prompt": "(she / go / out)",
           "parts": [
-            "I don’t eat much during the day. I never ",
-            "."
+            "",
+            ""
           ],
           "answers": [
             [
-              "have lunch"
+              "She hasn’t gone out yet."
             ]
           ],
           "example": true
         },
         {
           "num": 2,
+          "prompt": "(the bus / go)",
           "parts": [
-            "David starts work at 8 o’clock and ",
-            " at 10.30."
+            "The bus ",
+            ""
           ],
           "answers": [
             [
-              "has a break"
+              "has just gone."
             ]
           ]
         },
         {
           "num": 3,
+          "prompt": "(the train / leave)",
           "parts": [
-            "We ",
-            " last week. We invited lots of people."
+            "",
+            ""
           ],
           "answers": [
             [
-              "had a party"
+              "The train hasn’t left yet."
             ]
           ]
         },
         {
           "num": 4,
+          "prompt": "(he / open / it)",
           "parts": [
-            "There’s something wrong with my bike. Can you ",
-            " at it for me?"
+            "",
+            ""
           ],
           "answers": [
             [
-              "have a look"
+              "He hasn’t opened it yet."
             ]
           ]
         },
         {
           "num": 5,
+          "prompt": "(they / finish / their dinner)",
           "parts": [
-            "Joe is away on holiday at the moment. I hope he ",
-            "."
+            "",
+            ""
           ],
           "answers": [
             [
-              "’s having a nice time",
-              "is having a nice time"
+              "They’ve just finished their dinner.",
+              "They have just finished their dinner."
             ]
           ]
         },
         {
           "num": 6,
+          "prompt": "(it / stop / raining)",
           "parts": [
-            "I met some friends in the supermarket yesterday. We stopped and ",
-            "."
+            "",
+            ""
           ],
           "answers": [
             [
-              "had a chat"
+              "It’s just stopped raining.",
+              "It has just stopped raining.",
+              "It’s just stopped raining",
+              "It has just stopped raining"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.4",
+      "type": "write",
+      "instruction": "Напишите вопросительные предложения с yet.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Your friend has a new job. Perhaps she has started it. You ask her:",
+          "answers": [
+            "Have you started your new job yet?"
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "Your friend has some new neighbours. Perhaps he has met them. You ask him:",
+          "answers": [
+            "Have you met your new neighbours yet?"
           ]
         },
         {
-          "num": 7,
-          "parts": [
-            "‘",
-            " finding the book you wanted?’ ‘No, I found it OK.’"
-          ],
+          "num": 3,
+          "prompt": "Your friend has to pay her electricity bill. Perhaps she has paid it. You ask her:",
           "answers": [
-            [
-              "Did you have trouble"
-            ]
+            "Have you paid your electricity bill yet?"
           ]
         },
         {
-          "num": 8,
-          "parts": [
-            "Suzanne ",
-            " a few weeks ago. It’s her second child."
-          ],
+          "num": 4,
+          "prompt": "Tom was trying to sell his car. Perhaps he has sold it. You ask a friend about Tom:",
           "answers": [
-            [
-              "had a baby"
-            ]
+            "Has Tom sold his car yet?",
+            "Has he sold his car yet?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Антон и Марина только что купили новый дом.",
+          "answers": [
+            "Anton and Marina have just bought a new house."
           ]
         },
         {
-          "num": 9,
-          "parts": [
-            "I ",
-            " when the light went out suddenly."
-          ],
+          "num": 2,
+          "prompt": "Сандра уже позвонила своей матери?",
           "answers": [
-            [
-              "was having a shower"
-            ]
+            "Has Sandra called her mother yet?"
           ]
         },
         {
-          "num": 10,
-          "parts": [
-            "I’d like to go away somewhere. I ",
-            " for a long time."
-          ],
+          "num": 3,
+          "prompt": "А: Джеймс здесь? В: Нет, он уже ушёл.",
           "answers": [
-            [
-              "haven’t had a holiday",
-              "haven’t had a break"
-            ]
+            "‘Is James here?’ ‘No, he’s already gone.’",
+            "‘Is James here?’ ‘No, he’s already left.’",
+            "‘Is James here?’ ‘No, he has already gone.’",
+            "‘Is James here?’ ‘No, he has already left.’"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "А: Тебе нравится эта книга? В: Я не знаю. Я её ещё не читал.",
+          "answers": [
+            "A: Do you like this book? B: I don’t know. I haven’t read it yet.",
+            "A: Do you like this book? B: I don’t know. I have not read it yet.",
+            "A: Do you like this book? B: I do not know. I haven’t read it yet.",
+            "A: Do you like this book? B: I do not know. I have not read it yet."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "А: Не забудь закрыть окна! В: Я их уже закрыл.",
+          "answers": [
+            "‘Don’t forget to close the windows.’ ‘I’ve already closed them.’",
+            "‘Don’t forget to close the windows.’ ‘I have already closed them.’"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я только что закончил ужин.",
+          "answers": [
+            "I’ve just finished dinner.",
+            "I have just finished dinner."
           ]
         }
       ]

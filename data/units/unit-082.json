@@ -1,34 +1,25 @@
 {
   "unit": 82,
-  "title": "myself/yourself/themselves etc.",
+  "title": "all · most · some · any · no/none",
   "pdfPages": [
-    176,
-    177
+    175,
+    176
   ],
   "exercises": [
     {
       "id": "82.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using myself/yourself etc. + these verbs (in the correct form):",
-      "wordBank": [
-        "blame",
-        "burn",
-        "enjoy",
-        "express",
-        "hurt",
-        "introduce",
-        "put"
-      ],
+      "instruction": "Допишите предложения. Используйте слова из скобок (some/most и т. д.). Где необходимо, также вставьте of (some of / most of и т. д.).",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Steve introduced ",
-            " to the other guests at the party."
+            "",
+            " children like playing. (most)"
           ],
           "answers": [
             [
-              "himself"
+              "Most"
             ]
           ],
           "example": true
@@ -36,72 +27,171 @@
         {
           "num": 2,
           "parts": [
-            "Ben fell down some steps, but fortunately he didn’t ",
-            "."
+            "",
+            " this money is yours. (some)"
           ],
           "answers": [
             [
-              "hurt himself"
+              "Some of"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "It isn’t Sue’s fault. She really shouldn’t ",
-            "."
+            "",
+            " people never stop talking. (some)"
           ],
           "answers": [
             [
-              "blame herself"
+              "Some"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Please try and understand how I feel. You have to ",
-            " in my position."
+            "",
+            " the shops in the city centre close at 6.30. (most)"
           ],
           "answers": [
             [
-              "put yourself"
+              "Most of"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "The children had a great time at the beach. They really ",
-            "."
+            "",
+            " people have mobile phones these days. (most)"
           ],
           "answers": [
             [
-              "enjoyed themselves"
+              "Most"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Be careful! That pan is hot. Don’t ",
-            "."
+            "I don’t like ",
+            " the pictures in the living room. (any)"
           ],
           "answers": [
             [
-              "burn yourself"
+              "any of"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Sometimes I can’t say exactly what I mean. I wish I could ",
-            " better."
+            "He’s lost ",
+            " his money. (all)"
           ],
           "answers": [
             [
-              "express myself"
+              "all",
+              "all of"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            " my friends are married. (none)"
+          ],
+          "answers": [
+            [
+              "None of"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Do you know ",
+            " the people in this picture? (any)"
+          ],
+          "answers": [
+            [
+              "any of"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "",
+            " birds can fly. (most)"
+          ],
+          "answers": [
+            [
+              "Most"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I enjoyed ",
+            " the film, but I didn’t like the ending. (most)"
+          ],
+          "answers": [
+            [
+              "most of"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "",
+            " sports are very dangerous. (some)"
+          ],
+          "answers": [
+            [
+              "Some"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "We can’t find anywhere to stay. ",
+            " the hotels are full. (all)"
+          ],
+          "answers": [
+            [
+              "All",
+              "All of"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "You must have ",
+            " this cheese. It’s delicious. (some)"
+          ],
+          "answers": [
+            [
+              "some of"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "The weather was bad when we were on holiday. It rained ",
+            " the time. (most)"
+          ],
+          "answers": [
+            [
+              "most of"
             ]
           ]
         }
@@ -109,438 +199,204 @@
     },
     {
       "id": "82.2",
-      "type": "fill-in",
-      "instruction": "Put in myself/yourself/ourselves etc. or me/you/us etc.",
+      "type": "write",
+      "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте: all/most/some/none + of them / of it",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Amy had a great holiday. She enjoyed ",
-            "."
-          ],
+          "prompt": "How many of the people are women?",
           "answers": [
-            [
-              "herself"
-            ]
-          ],
-          "example": true
+            "Most of them."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "It’s not my fault. You can’t blame ",
-            "."
-          ],
+          "prompt": "How many of the boxes are on the table?",
           "answers": [
-            [
-              "me"
-            ]
+            "All of them."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "What I did was really bad. I’m ashamed of ",
-            "."
-          ],
+          "prompt": "How many of the men are wearing hats?",
           "answers": [
-            [
-              "myself"
-            ]
+            "Some of them."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "We have a problem. I hope you can help ",
-            "."
-          ],
+          "prompt": "How many of the windows are open?",
           "answers": [
-            [
-              "us"
-            ]
+            "None of them."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "‘Can I take another biscuit?’ ‘Of course. Help ",
-            "!’"
-          ],
+          "prompt": "How many of the people are standing?",
           "answers": [
-            [
-              "yourself"
-            ]
+            "Most of them."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I want you to meet Sarah. I’ll introduce ",
-            " to her."
-          ],
+          "prompt": "How much of the money is Ben’s?",
           "answers": [
-            [
-              "you"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Don’t worry about us. We can take care of ",
-            "."
-          ],
-          "answers": [
-            [
-              "ourselves"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Don’t worry about the children. I’ll take care of ",
-            "."
-          ],
-          "answers": [
-            [
-              "them"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I gave them a key to our house so that they could let ",
-            " in."
-          ],
-          "answers": [
-            [
-              "themselves"
-            ]
+            "None of it."
           ]
         }
       ]
     },
     {
       "id": "82.3",
-      "type": "fill-in",
-      "instruction": "Complete these sentences. Use myself/yourself etc. where necessary. Choose from:",
-      "wordBank": [
-        "concentrate",
-        "defend",
-        "dry",
-        "enjoy",
-        "feel",
-        "meet",
-        "relax",
-        "shave"
+      "type": "write",
+      "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+      "example": [
+        1,
+        2
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Neil grew a beard because he was fed up with shaving ",
-            "."
-          ],
+          "prompt": "Most of children like playing.",
           "answers": [
-            [
-              "himself"
-            ]
+            "Most children like playing."
           ]
         },
         {
           "num": 2,
-          "parts": [
-            "Amy had a great holiday. She enjoyed ",
-            "."
-          ],
+          "prompt": "All the students failed the exam.",
           "answers": [
-            [
-              "herself"
-            ]
-          ],
-          "example": true
+            "OK"
+          ]
         },
         {
           "num": 3,
-          "parts": [
-            "I wasn’t very well yesterday, but I ",
-            " much better today."
-          ],
+          "prompt": "Some of people work too hard.",
           "answers": [
-            [
-              "feel"
-            ]
+            "Some people work too hard."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I climbed out of the swimming pool and ",
-            " with a towel."
-          ],
+          "prompt": "Some of questions in the exam were very easy.",
           "answers": [
-            [
-              "dried myself"
-            ]
+            "Some of the questions in the exam were very easy.",
+            "Some questions in the exam were very easy."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I tried to study, but I couldn’t ",
-            "."
-          ],
+          "prompt": "I haven’t seen any of those people before.",
           "answers": [
-            [
-              "concentrate"
-            ]
+            "OK"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "If somebody attacks you, you have the right to ",
-            "."
-          ],
+          "prompt": "All of insects have six legs.",
           "answers": [
-            [
-              "defend yourself"
-            ]
+            "All insects have six legs."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "I’m going out with Chris this evening. We’re ",
-            " at 7.30."
-          ],
+          "prompt": "Have you read all these books?",
           "answers": [
-            [
-              "meeting"
-            ]
+            "OK",
+            "Have you read all of these books?"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "You’re always rushing. Why don’t you sit down and ",
-            "?"
-          ],
+          "prompt": "Most of students in our class are very nice.",
           "answers": [
-            [
-              "relax"
-            ]
+            "Most of the students in our class are very nice.",
+            "Most students in our class are very nice."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Most of my friends are going to the party.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "I’m very tired this morning – I was awake most of night.",
+          "answers": [
+            "I’m very tired this morning – I was awake most of the night."
           ]
         }
       ]
     },
     {
       "id": "82.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences with ourselves/themselves or each other.",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (паук = spider; на экзамене = in the exam)",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "How long have you and Ben known ",
-            "?"
-          ],
+          "prompt": "Большинство людей не любят пауков.",
           "answers": [
-            [
-              "each other"
-            ]
-          ],
-          "example": true
+            "Most people don’t like spiders."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "If people work too hard, they can make ",
-            " ill."
-          ],
+          "prompt": "Я поняла большинство вопросов на экзамене.",
           "answers": [
-            [
-              "themselves"
-            ]
+            "I understood most of the questions in the exam."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "I need you and you need me. We need ",
-            "."
-          ],
+          "prompt": "Некоторые люди не едят мясо.",
           "answers": [
-            [
-              "each other"
-            ]
+            "Some people don’t eat meat."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "In Britain friends often give ",
-            " presents at Christmas."
-          ],
+          "prompt": "Вчера мы познакомились с некоторыми Аниными друзьями.",
           "answers": [
-            [
-              "each other"
-            ]
+            "We met some of Anna’s friends yesterday.",
+            "Yesterday we met some of Anna’s friends."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "Some people are selfish. They only think of ",
-            "."
-          ],
+          "prompt": "Никто из нас не говорит по-итальянски.",
           "answers": [
-            [
-              "themselves"
-            ]
+            "None of us speaks Italian.",
+            "None of us can speak Italian."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Tracy and I don’t see ",
-            " very often these days."
-          ],
+          "prompt": "Я не смотрел ни один из этих фильмов.",
           "answers": [
-            [
-              "each other"
-            ]
+            "I haven’t watched any of these films.",
+            "I haven’t seen any of these films."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "We couldn’t get back into the house. We had locked ",
-            " out."
-          ],
+          "prompt": "“Вы знаете этих людей?” – “Большинство из них”.",
           "answers": [
-            [
-              "ourselves"
-            ]
+            "‘Do you know these people?’ ‘Most of them.’"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "They’ve had an argument. Now they’re not speaking to ",
-            "."
-          ],
+          "prompt": "“Кто ходил на вечеринку?” – “Мы все”.",
           "answers": [
-            [
-              "each other"
-            ]
+            "‘Who went to the party?’ ‘All of us.’",
+            "‘Who went to the party?’ ‘We all did.’"
           ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "We’d never met before, so we introduced ",
-            " to ",
-            "."
-          ],
-          "answers": [
-            [
-              "ourselves"
-            ],
-            [
-              "each other"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "82.5",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using myself/yourself etc. Use the verb in brackets.",
-      "items": [
-        {
-          "num": 1,
-          "parts": [
-            "‘Who repaired the bike for you?’ ‘Nobody. I repaired it ",
-            ".’ (repair)"
-          ],
-          "answers": [
-            [
-              "myself"
-            ]
-          ],
-          "verb": "repair",
-          "example": true
-        },
-        {
-          "num": 2,
-          "parts": [
-            "I didn’t buy this cake from a shop. I ",
-            ". (make)"
-          ],
-          "answers": [
-            [
-              "made it myself"
-            ]
-          ],
-          "verb": "make"
-        },
-        {
-          "num": 3,
-          "parts": [
-            "‘Who told you Laura was going away?’ ‘",
-            ".’ (tell)"
-          ],
-          "answers": [
-            [
-              "Laura told me herself",
-              "Laura herself told me"
-            ]
-          ],
-          "verb": "tell"
-        },
-        {
-          "num": 4,
-          "parts": [
-            "I don’t know what they’re going to do. I don’t think they ",
-            ". (know)"
-          ],
-          "answers": [
-            [
-              "know themselves"
-            ]
-          ],
-          "verb": "know"
-        },
-        {
-          "num": 5,
-          "parts": [
-            "‘Who cuts Paul’s hair for him?’ ‘Nobody. He ",
-            ".’ (cut)"
-          ],
-          "answers": [
-            [
-              "cuts it himself"
-            ]
-          ],
-          "verb": "cut"
-        },
-        {
-          "num": 6,
-          "parts": [
-            "‘Can you phone Sam for me?’ ‘Why can’t you ",
-            "?’ (do)"
-          ],
-          "answers": [
-            [
-              "do it yourself"
-            ]
-          ],
-          "verb": "do"
         }
       ]
     }

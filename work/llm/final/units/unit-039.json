@@ -1,0 +1,455 @@
+{
+ "unit": 39,
+ "title": "there was/were · there has/have been · there will be",
+ "pdfPages": [
+  89,
+  90
+ ],
+ "exercises": [
+  {
+   "id": "39.1",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки. Сейчас в комнате пусто, а что там было на прошлой неделе? Напишите предложения с There was … или There were … . Используйте слова из рамки.",
+   "wordBank": [
+    "an armchair",
+    "a carpet",
+    "some flowers",
+    "a sofa",
+    "some books",
+    "a clock",
+    "three pictures",
+    "a small table"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " on the wall near the window."
+     ],
+     "answers": [
+      [
+       "There was a clock"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " on the floor."
+     ],
+     "answers": [
+      [
+       "There was a carpet"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " on the wall near the door."
+     ],
+     "answers": [
+      [
+       "There were three pictures"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " in the middle of the room."
+     ],
+     "answers": [
+      [
+       "There was a small table"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " on the table."
+     ],
+     "answers": [
+      [
+       "There were some flowers"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " on the shelves."
+     ],
+     "answers": [
+      [
+       "There were some books"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " in the corner near the door."
+     ],
+     "answers": [
+      [
+       "There was an armchair"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      " opposite the armchair."
+     ],
+     "answers": [
+      [
+       "There was a sofa"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "39.2",
+   "type": "fill-in",
+   "instruction": "Вставьте there was / there wasn’t / was there или there were / there weren’t / were there.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I was hungry, but ",
+      " anything to eat."
+     ],
+     "answers": [
+      [
+       "there wasn’t"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Was everything OK yesterday? ",
+      " any problems?"
+     ],
+     "answers": [
+      [
+       "Were there"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I opened the envelope, but it was empty. ",
+      " nothing in it."
+     ],
+     "answers": [
+      [
+       "There was"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘We stayed at a very nice hotel.’ ‘Really? ",
+      " a swimming pool?’"
+     ],
+     "answers": [
+      [
+       "Was there"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Did you buy any bananas?’ ‘No, ",
+      " any in the shop.’"
+     ],
+     "answers": [
+      [
+       "there weren’t"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The wallet was empty. ",
+      " any money in it."
+     ],
+     "answers": [
+      [
+       "There wasn’t"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " many people at the meeting?’ ‘No, very few.’"
+     ],
+     "answers": [
+      [
+       "Were there"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "We didn’t visit the museum. ",
+      " enough time."
+     ],
+     "answers": [
+      [
+       "There wasn’t"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I’m sorry I’m late. ",
+      " a lot of traffic."
+     ],
+     "answers": [
+      [
+       "There was"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Twenty years ago ",
+      " many tourists here. Now there are a lot."
+     ],
+     "answers": [
+      [
+       "there weren’t"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "39.3",
+   "type": "fill-in",
+   "instruction": "Вставьте there + is / are / was / were / has been / have been / will be.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " a good film on TV last night."
+     ],
+     "answers": [
+      [
+       "There was"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " 24 hours in a day."
+     ],
+     "answers": [
+      [
+       "There are"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " a party at the club last Friday, but I didn’t go."
+     ],
+     "answers": [
+      [
+       "There was"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘Where can I get something to eat?’ ‘",
+      " a cafe at the end of the street.’"
+     ],
+     "answers": [
+      [
+       "There’s",
+       "There is"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Why are the police outside the bank?’ ‘",
+      " a robbery.’"
+     ],
+     "answers": [
+      [
+       "There’s been",
+       "There has been",
+       "There was"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "When we arrived at the theatre, ",
+      " a long queue outside."
+     ],
+     "answers": [
+      [
+       "there was"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "When you arrive tomorrow, ",
+      " somebody at the station to meet you."
+     ],
+     "answers": [
+      [
+       "there will be"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Ten years ago ",
+      " 500 children at the school. Now ",
+      " more than a thousand."
+     ],
+     "answers": [
+      [
+       "there were"
+      ],
+      [
+       "there are"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Last week I went back to the town where I was born. It’s very different now. ",
+      " a lot of changes."
+     ],
+     "answers": [
+      [
+       "There have been"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I think everything will be OK. I don’t think ",
+      " any problems."
+     ],
+     "answers": [
+      [
+       "there will be",
+       "there are"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "39.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (на стоянке = in the car park; на конференции = at the conference; с = since; почти = nearly)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "На стоянке было много машин.",
+     "answers": [
+      "There were a lot of cars in the car park.",
+      "There were many cars in the car park."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "В субботу не будет концерта.",
+     "answers": [
+      "There won’t be a concert on Saturday.",
+      "There will be no concert on Saturday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "На конференции будет 200 человек.",
+     "answers": [
+      "There will be 200 people at the conference."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Здесь прозошли три аварии с января.",
+     "answers": [
+      "There have been three accidents since January."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Сколько человек в вашей семье?",
+     "answers": [
+      "How many people are there in your family?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "На твоей вечеринке будет музыка?",
+     "answers": [
+      "Will there be music at your party?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Ресторан был почти пустой. Было только два человека.",
+     "answers": [
+      "The restaurant was nearly empty. There were only two people."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Гостиница была не очень хорошая. В нашей комнате не было телевизора.",
+     "answers": [
+      "The hotel wasn’t very good. There wasn’t a TV in our room.",
+      "The hotel wasn’t very good. There was no TV in our room."
+     ]
+    }
+   ]
+  }
+ ]
+}

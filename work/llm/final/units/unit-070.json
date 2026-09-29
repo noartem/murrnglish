@@ -1,0 +1,425 @@
+{
+ "unit": 70,
+ "title": "a/an и the",
+ "pdfPages": [
+  151,
+  152
+ ],
+ "exercises": [
+  {
+   "id": "70.1",
+   "type": "fill-in",
+   "instruction": "Вставьте a/an или the.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "We enjoyed our trip. ",
+      " hotel was very nice."
+     ],
+     "answers": [
+      [
+       "The"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Can I ask ",
+      " question?’ ‘Sure. What do you want to know?’"
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "You look very tired. You need ",
+      " holiday."
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘Where’s Tom?’ ‘He’s in ",
+      " garden.’"
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Eve is ",
+      " interesting person. You should meet her."
+     ],
+     "answers": [
+      [
+       "an"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "A: Excuse me, can you tell me how to get to ",
+      " city centre? B: Yes, go straight on and then take ",
+      " next turning left."
+     ],
+     "answers": [
+      [
+       "the"
+      ],
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "A: Shall we go out for ",
+      " meal this evening? B: Yes, that’s ",
+      " good idea."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "It’s ",
+      " nice morning. Let’s go for ",
+      " walk."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Amanda is ",
+      " student. When she finishes her studies, she wants to be ",
+      " journalist. She lives with two friends in ",
+      " apartment near ",
+      " college where she is studying. ",
+      " apartment is small, but she likes it."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "a"
+      ],
+      [
+       "an"
+      ],
+      [
+       "the"
+      ],
+      [
+       "The"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Peter and Mary have two children, ",
+      " boy and ",
+      " girl. ",
+      " boy is seven years old, and ",
+      " girl is three. Peter works in ",
+      " factory. Mary doesn’t have ",
+      " job at the moment."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "a"
+      ],
+      [
+       "the"
+      ],
+      [
+       "the"
+      ],
+      [
+       "a"
+      ],
+      [
+       "a"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "70.2",
+   "type": "fill-in",
+   "instruction": "Допишите предложения. Используйте a или the + слова из рамки:",
+   "wordBank": [
+    "airport",
+    "cup",
+    "dictionary",
+    "door",
+    "floor",
+    "picture"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Can you open ",
+      ", please?"
+     ],
+     "answers": [
+      [
+       "the door"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "How far is it to ",
+      "?"
+     ],
+     "answers": [
+      [
+       "the airport"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Can I have ",
+      " of coffee, please?"
+     ],
+     "answers": [
+      [
+       "a cup"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "That’s ",
+      " nice ",
+      " – I like it."
+     ],
+     "answers": [
+      [
+       "a"
+      ],
+      [
+       "picture"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Can you pass me ",
+      ", please?"
+     ],
+     "answers": [
+      [
+       "the dictionary"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Why are you sitting on ",
+      "?"
+     ],
+     "answers": [
+      [
+       "the floor"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "70.3",
+   "type": "write",
+   "instruction": "Исправьте ошибки в предложении. Где необходимо, используйте a/an или the.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Don’t forget to turn off light when you go out.",
+     "answers": [
+      "turn off the light"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Enjoy your trip, and don’t forget to send me postcard.",
+     "answers": [
+      "Enjoy your trip, and don’t forget to send me a postcard."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "What is name of this village?",
+     "answers": [
+      "What is the name of this village?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Canada is very big country.",
+     "answers": [
+      "Canada is a very big country."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "What is largest city in Canada?",
+     "answers": [
+      "What is the largest city in Canada?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I like this room, but I don’t like colour of carpet.",
+     "answers": [
+      "I like this room, but I don’t like the colour of the carpet."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "‘Are you OK?’ ‘No, I’ve got headache.’",
+     "answers": [
+      "‘Are you OK?’ ‘No, I’ve got a headache.’"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "We live in old house near station.",
+     "answers": [
+      "We live in an old house near the station."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "What is name of director of film we saw last night?",
+     "answers": [
+      "What is the name of the director of the film we saw last night?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "70.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (4) в (здесь) = to автор = author",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "У меня есть вопрос.",
+     "answers": [
+      "I have a question.",
+      "I have got a question."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Ташкент — столица Узбекистана.",
+     "answers": [
+      "Tashkent is the capital of Uzbekistan."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Это очень интересный город.",
+     "answers": [
+      "It’s a very interesting city."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Нам нужно такси в аэропорт.",
+     "answers": [
+      "We need a taxi to the airport."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Какой самый старый город в Англии?",
+     "answers": [
+      "What’s the oldest city in England?",
+      "What is the oldest city in England?",
+      "Which is the oldest city in England?",
+      "What’s the oldest town in England?",
+      "What is the oldest town in England?",
+      "Which is the oldest town in England?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Они живут в новой квартире в центре.",
+     "answers": [
+      "They live in a new flat in the centre.",
+      "They live in a new apartment in the centre."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "«Где дети?» – «Они в саду».",
+     "answers": [
+      "‘Where are the children?’ ‘They’re in the garden.’"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Это очень хорошая книга. Я знаю автора.",
+     "answers": [
+      "That is a very good book. I know the author.",
+      "That’s a very good book. I know the author.",
+      "It is a very good book. I know the author.",
+      "It’s a very good book. I know the author."
+     ]
+    }
+   ]
+  }
+ ]
+}

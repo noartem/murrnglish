@@ -1,0 +1,619 @@
+{
+ "unit": 41,
+ "title": "I am, I don’t и т. д.",
+ "pdfPages": [
+  93,
+  94
+ ],
+ "exercises": [
+  {
+   "id": "41.1",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, используя только один из глаголов (is/have/can и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Kate wasn’t hungry, but we ",
+      "."
+     ],
+     "answers": [
+      [
+       "were"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m not married, but my brother ",
+      "."
+     ],
+     "answers": [
+      [
+       "is"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Ben can’t help you, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "can"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I haven’t seen the film, but Tom ",
+      "."
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Karen won’t be here, but Chris ",
+      "."
+     ],
+     "answers": [
+      [
+       "will"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "You weren’t late, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "was"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "41.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, используя только глагол в отрицательной форме (isn’t/haven’t/can’t и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "My sister can play the piano, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "can’t"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Sam is working today, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "’m not",
+       "am not"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I was working, but my friends ",
+      "."
+     ],
+     "answers": [
+      [
+       "weren’t"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Mark has been to China, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "haven’t"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I’m ready to go, but Tom ",
+      "."
+     ],
+     "answers": [
+      [
+       "isn’t"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I’ve got a key, but Sarah ",
+      "."
+     ],
+     "answers": [
+      [
+       "hasn’t"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "41.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, используя только do/does/did или don’t/doesn’t/didn’t.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I don’t like hot weather, but Sue ",
+      "."
+     ],
+     "answers": [
+      [
+       "does"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Sue likes hot weather, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "don’t"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "My mother wears glasses, but my father ",
+      "."
+     ],
+     "answers": [
+      [
+       "doesn’t"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "You don’t know Paul very well, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "do"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I didn’t enjoy the party, but my friends ",
+      "."
+     ],
+     "answers": [
+      [
+       "did"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I don’t watch TV much, but Peter ",
+      "."
+     ],
+     "answers": [
+      [
+       "does"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Kate lives in London, but her parents ",
+      "."
+     ],
+     "answers": [
+      [
+       "don’t"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "You had breakfast this morning, but I ",
+      "."
+     ],
+     "answers": [
+      [
+       "didn’t"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "41.4",
+   "type": "self-check",
+   "instruction": "Закончите предложения. Напишите о себе и о других людях.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I didn’t go out last night, but my friends did.",
+     "modelAnswers": [
+      "I didn’t go out last night, but my friends did."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I like …, but …",
+     "modelAnswers": [
+      "I like sport, but my sister doesn’t."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I don’t …, but …",
+     "modelAnswers": [
+      "I don’t eat meat, but Jessica does."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I’m …, but …",
+     "modelAnswers": [
+      "I’m American, but my husband isn’t."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I haven’t …, but …",
+     "modelAnswers": [
+      "I haven’t been to Japan, but Jessica has."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "41.5",
+   "type": "fill-in",
+   "instruction": "Вставьте глагол в утвердительной или отрицательной форме.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "‘Are you tired?’ ‘I ",
+      " earlier, but I’m not now.’"
+     ],
+     "answers": [
+      [
+       "was"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Steve is happy today, but he ",
+      " yesterday."
+     ],
+     "answers": [
+      [
+       "wasn’t"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The bank isn’t open yet, but the shops ",
+      "."
+     ],
+     "answers": [
+      [
+       "are"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I haven’t got a telescope, but I know somebody who ",
+      "."
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I would like to help you, but I’m afraid I ",
+      "."
+     ],
+     "answers": [
+      [
+       "can’t"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I don’t usually go to work by car, but I ",
+      " yesterday."
+     ],
+     "answers": [
+      [
+       "did"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "A: Have you ever been to the United States? B: No, but Sandra ",
+      ". She went there on holiday last year."
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "‘Do you and Chris watch TV a lot?’ ‘I ",
+      ", but Chris doesn’t.’"
+     ],
+     "answers": [
+      [
+       "do"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I’ve been invited to Sam’s wedding, but Kate ",
+      "."
+     ],
+     "answers": [
+      [
+       "hasn’t"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "‘Do you think Sarah will pass her driving test?’ ‘Yes. I’m sure she ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "will"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "‘Are you going out tonight?’ ‘I ",
+      ". I don’t know for sure.’"
+     ],
+     "answers": [
+      [
+       "might"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "41.6",
+   "type": "write",
+   "instruction": "Ответьте на вопросы, используя Yes, I have. / No, I’m not. и т. д.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Are you American?",
+     "answers": [
+      "No, I’m not."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Have you got a car?",
+     "answers": [
+      "Yes, I have.",
+      "No, I haven’t."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Do you feel OK?",
+     "answers": [
+      "Yes, I do.",
+      "No, I don’t."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Is it snowing?",
+     "answers": [
+      "Yes, it is.",
+      "No, it isn’t."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Are you hungry?",
+     "answers": [
+      "Yes, I am.",
+      "No, I’m not."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Do you like classical music?",
+     "answers": [
+      "Yes, I do.",
+      "No, I don’t."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Will you be in Paris tomorrow?",
+     "answers": [
+      "Yes, I will.",
+      "No, I won’t."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Have you ever broken your arm?",
+     "answers": [
+      "Yes, I have.",
+      "No, I haven’t."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Did you buy anything yesterday?",
+     "answers": [
+      "Yes, I did.",
+      "No, I didn’t."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Were you asleep at 3 a.m.?",
+     "answers": [
+      "Yes, I was.",
+      "No, I wasn’t."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "41.7",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (занят = busy; ходить в спортзал = go to the gym; когда нибудь = ever)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Ты не занята, а я занят!",
+     "answers": [
+      "You aren’t busy, but I am!",
+      "You are not busy, but I am!"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Джессика умеет водить машину, а я нет.",
+     "answers": [
+      "Jessica can drive, but I can’t.",
+      "Jessica can drive a car, but I can’t."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "“Ты увидишь Лену завтра?” – “Нет, не увижу”.",
+     "answers": [
+      "‘Will you see Lena tomorrow?’ ‘No, I won’t.’"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Мне не понравился концерт, а Тиму понравился.",
+     "answers": [
+      "I didn’t like the concert, but Tim did.",
+      "I did not like the concert, but Tim did."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Лола ходит в спортзал, а я нет.",
+     "answers": [
+      "Lola goes to the gym, but I don’t."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "“Борис когда-нибудь был в Берлине?” – “Да, был”.",
+     "answers": [
+      "‘Has Boris ever been to Berlin?’ ‘Yes, he has.’"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Я люблю кошек, а мой муж не любит.",
+     "answers": [
+      "I love cats, but my husband doesn’t."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я не видел этот фильм, а Алла видела.",
+     "answers": [
+      "I haven’t seen this film, but Alla has.",
+      "I haven’t seen that film, but Alla has.",
+      "I have not seen this film, but Alla has.",
+      "I have not seen that film, but Alla has."
+     ]
+    }
+   ]
+  }
+ ]
+}

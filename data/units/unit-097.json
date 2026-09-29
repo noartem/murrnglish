@@ -1,389 +1,304 @@
 {
   "unit": 97,
-  "title": "-ing and -ed clauses (the woman talking to Tom, the boy injured in the accident)",
+  "title": "Give me that book! · Give it to me!",
   "pdfPages": [
-    206,
-    207
+    205,
+    206
   ],
   "exercises": [
     {
       "id": "97.1",
-      "type": "fill-in",
-      "instruction": "Make one sentence from two. Complete the sentence using an -ing clause.",
+      "type": "write",
+      "instruction": "Напишите предложения, начинающиеся с He gave ... .",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I was woken up by a bell ",
-            "."
-          ],
+          "prompt": "What did Mark do with the armchair?",
           "answers": [
-            [
-              "ringing"
-            ]
+            "He gave it to his brother."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "The ",
-            " broke down."
-          ],
+          "prompt": "What did he do with the tennis racket?",
           "answers": [
-            [
-              "taxi taking us to the airport"
-            ]
+            "He gave it to Gary."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "At the end of the street there’s ",
-            "."
-          ],
+          "prompt": "What happened to the books?",
           "answers": [
-            [
-              "a path leading to the river"
-            ]
+            "He gave them to Sarah."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "",
-            " has just opened in the town."
-          ],
+          "prompt": "What about the lamp?",
           "answers": [
-            [
-              "A factory employing 500 people"
-            ]
+            "He gave it to his sister."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "The ",
-            " was asleep most of the time."
-          ],
+          "prompt": "What did he do with the pictures?",
           "answers": [
-            [
-              "man sitting next to me on the plane"
-            ]
+            "He gave them to Robert."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "The company sent me a ",
-            "."
-          ],
+          "prompt": "And the ladder?",
           "answers": [
-            [
-              "brochure containing the information I needed"
-            ]
+            "He gave it to a neighbour."
           ]
         }
       ]
     },
     {
       "id": "97.2",
-      "type": "fill-in",
-      "instruction": "Complete the sentence with an -ed clause. Choose from:",
-      "wordBank": [
-        "damaged in the storm",
-        "made at the meeting",
-        "injured in the accident",
-        "involved in the project",
-        "stolen from the museum",
-        "surrounded by trees"
+      "type": "write",
+      "instruction": "Вы подарили друзьям подарки. Это предметы, изображённые на картинках. Напишите по одному предложению о каждой картинке.",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "The boy ",
-            " was taken to hospital."
-          ],
+          "prompt": "PAUL",
           "answers": [
-            [
-              "injured in the accident"
-            ]
+            "I gave Paul a book."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "The paintings ",
-            " haven’t been found yet."
-          ],
+          "prompt": "JOANNA",
           "answers": [
-            [
-              "stolen from the museum"
-            ]
+            "I gave Joanna a plant."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "We’ve repaired the gate ",
-            "."
-          ],
+          "prompt": "RICHARD",
           "answers": [
-            [
-              "damaged in the storm"
-            ]
+            "I gave Richard a tie."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Most of the suggestions ",
-            " were not practical."
-          ],
+          "prompt": "EMMA",
           "answers": [
-            [
-              "made at the meeting"
-            ]
+            "I gave Emma some chocolates.",
+            "I gave Emma a box of chocolates."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "Our friends live in a beautiful house ",
-            "."
-          ],
+          "prompt": "RACHEL",
           "answers": [
-            [
-              "surrounded by trees"
-            ]
+            "I gave Rachel some flowers.",
+            "I gave Rachel a bunch of flowers."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Everybody ",
-            " worked very well."
-          ],
+          "prompt": "KEVIN",
           "answers": [
-            [
-              "involved in the project"
-            ]
+            "I gave Kevin a wallet."
           ]
         }
       ]
     },
     {
       "id": "97.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Use the following verbs in the correct form:",
-      "wordBank": [
-        "blow",
-        "call",
-        "cause",
-        "invite",
-        "live",
-        "offer",
-        "paint",
-        "read",
-        "ring",
-        "sit",
-        "study",
-        "work"
+      "type": "write",
+      "instruction": "Напишите предложения, начинающиеся с Can you give me ... ? / Can you pass me ... ? и т. д.",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I was woken up by a bell ",
-            "."
-          ],
+          "prompt": "(you want the salt) (pass)",
           "answers": [
-            [
-              "ringing"
-            ]
+            "Can you pass me the salt?"
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "George showed me some pictures ",
-            " by his father."
-          ],
+          "prompt": "(you need an umbrella) (lend)",
           "answers": [
-            [
-              "painted"
-            ]
-          ],
-          "example": true
+            "Can you lend me an umbrella?"
+          ]
         },
         {
           "num": 3,
-          "parts": [
-            "Some of the people ",
-            " to the party can’t come."
-          ],
+          "prompt": "(you want my address) (give)",
           "answers": [
-            [
-              "invited"
-            ]
+            "Can you give me your address?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Somebody ",
-            " Jack phoned while you were out."
-          ],
+          "prompt": "(you need twenty pounds) (lend)",
           "answers": [
-            [
-              "called"
-            ]
+            "Can you lend me twenty pounds?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "Life must be very unpleasant for people ",
-            " near busy airports."
-          ],
+          "prompt": "(you want more information) (send)",
           "answers": [
-            [
-              "living"
-            ]
+            "Can you send me more information?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "A few days after the interview, I received an email ",
-            " me the job."
-          ],
+          "prompt": "(you want to see the letter) (show)",
           "answers": [
-            [
-              "offering"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "The building was badly damaged in a fire ",
-            " by an electrical fault."
-          ],
-          "answers": [
-            [
-              "caused"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Did you see the picture of the trees ",
-            " down in the storm?"
-          ],
-          "answers": [
-            [
-              "blown"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "The waiting room was empty except for an old man ",
-            " in the corner ",
-            " a magazine."
-          ],
-          "answers": [
-            [
-              "sitting"
-            ],
-            [
-              "reading"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Ian has a brother ",
-            " in a bank in London and a sister ",
-            " economics at university in Manchester."
-          ],
-          "answers": [
-            [
-              "working"
-            ],
-            [
-              "studying"
-            ]
+            "Can you show me the letter?"
           ]
         }
       ]
     },
     {
       "id": "97.4",
-      "type": "write",
-      "instruction": "Use the words in brackets to make sentences with There is / There was etc.",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "(nobody / live / in it)",
+          "options": [
+            "I gave to Sarah the keys.",
+            "I gave Sarah the keys."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "I’ll lend to you some money if you want.",
+            "I’ll lend you some money if you want."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "Did you send the bill me?",
+            "Did you send the bill to me?"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": [
+            "I want to buy for you a present.",
+            "I want to buy you a present."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": [
+            "Can you pass to me the sugar, please?",
+            "Can you pass me the sugar, please?"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": [
+            "This is Lisa’s bag. Can you give it to her?",
+            "This is Lisa’s bag. Can you give her it?"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": [
+            "I showed to the policeman my identity card.",
+            "I showed the policeman my identity card."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "97.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (велосипед = bike, одолжить = lend, кошелёк = wallet)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Пожалуйста, покажите мне Ваш паспорт.",
           "answers": [
-            "There’s nobody living in it."
+            "Please show me your passport."
           ]
         },
         {
           "num": 2,
-          "prompt": "(nobody / injure)",
+          "prompt": "Гари подарил Анне цветы.",
           "answers": [
-            "There was nobody injured."
+            "Gary gave Anna some flowers.",
+            "Gary gave some flowers to Anna."
           ]
         },
         {
           "num": 3,
-          "prompt": "(somebody / come)",
+          "prompt": "Когда Вы отправили мне этот имейл?",
           "answers": [
-            "There’s somebody coming."
+            "When did you send me that email?",
+            "When did you send that email to me?"
           ]
         },
         {
           "num": 4,
-          "prompt": "(nothing / leave)",
+          "prompt": "Алану был не нужен его старый велосипед, поэтому он отдал его своему брату.",
           "answers": [
-            "There’s nothing left."
+            "Alan didn’t need his old bike, so he gave it to his brother.",
+            "Alan did not need his old bike, so he gave it to his brother."
           ]
         },
         {
           "num": 5,
-          "prompt": "(a lot of people / travel)",
+          "prompt": "Где моя книга? Я одолжил её тебе вчера.",
           "answers": [
-            "There were a lot of people travelling."
+            "Where’s my book? I lent it to you yesterday.",
+            "Where is my book? I lent it to you yesterday."
           ]
         },
         {
           "num": 6,
-          "prompt": "(nobody else / stay there)",
+          "prompt": "Я купил Марку подарок.",
           "answers": [
-            "There was nobody else staying there."
+            "I’ve bought Mark a present.",
+            "I bought Mark a present.",
+            "I’ve bought a present for Mark.",
+            "I bought a present for Mark."
           ]
         },
         {
           "num": 7,
-          "prompt": "(nothing / write / on it)",
+          "prompt": "Передай мне ту чашку, пожалуйста.",
           "answers": [
-            "There was nothing written on it."
+            "Pass me that cup, please."
           ]
         },
         {
           "num": 8,
-          "prompt": "(a course / begin / next Monday)",
+          "prompt": "А: Я потеряла кошелёк. В: Я могу дать тебе денег.",
           "answers": [
-            "There’s a course beginning next Monday."
+            "A: I’ve lost my wallet. B: I can give you some money."
           ]
         }
       ]

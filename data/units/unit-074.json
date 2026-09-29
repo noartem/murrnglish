@@ -1,170 +1,431 @@
 {
   "unit": 74,
-  "title": "the 2 (school / the school etc.)",
-  "pdfPages": [160, 161],
+  "title": "the … (с географическими названиями)",
+  "pdfPages": [
+    159,
+    160
+  ],
   "exercises": [
     {
       "id": "74.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences with school or the school.",
+      "instruction": "Посмотрите на карту и допишите предложения. Используйте информацию из рамки. Где необходимо, вставьте The.",
+      "wordBank": [
+        "Alps",
+        "Amazon",
+        "Andes",
+        "Asia",
+        "Atlantic",
+        "Bahamas",
+        "Bangkok",
+        "Cairo",
+        "Jamaica",
+        "Kenya",
+        "Pacific",
+        "Red Sea",
+        "Rhine",
+        "Sweden",
+        "United States"
+      ],
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "",
+            " is the capital of Egypt."
+          ],
+          "answers": [
+            [
+              "Cairo"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["When he was younger, Ben hated ", ", but he enjoys it now."],
-          "answers": [["school"]]
+          "parts": [
+            "",
+            " is between Africa and America."
+          ],
+          "answers": [
+            [
+              "The Atlantic"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["There were some parents waiting outside ", " to meet their children."],
-          "answers": [["the school"]]
+          "parts": [
+            "",
+            " is a country in northern Europe."
+          ],
+          "answers": [
+            [
+              "Sweden"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["What time does ", " start in the morning?"],
-          "answers": [["school"]]
+          "parts": [
+            "",
+            " is a river in South America."
+          ],
+          "answers": [
+            [
+              "The Amazon"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["How do your children get to and from ", "? Do you take them?"],
-          "answers": [["school"]]
+          "parts": [
+            "",
+            " is the largest continent in the world."
+          ],
+          "answers": [
+            [
+              "Asia"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["What was the name of ", " you attended?"],
-          "answers": [["the school"]]
+          "parts": [
+            "",
+            " is the largest ocean."
+          ],
+          "answers": [
+            [
+              "The Pacific"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["What does Emily want to do when she leaves ", "?"],
-          "answers": [["school"]]
+          "parts": [
+            "",
+            " is a river in Europe."
+          ],
+          "answers": [
+            [
+              "The Rhine"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["My children walk to ", ". ", " isn\u2019t very far."],
-          "answers": [["school"], ["The school"]]
+          "parts": [
+            "",
+            " is a country in East Africa."
+          ],
+          "answers": [
+            [
+              "Kenya"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "",
+            " is between Canada and Mexico."
+          ],
+          "answers": [
+            [
+              "The United States"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "",
+            " are mountains in South America."
+          ],
+          "answers": [
+            [
+              "The Andes"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "",
+            " is the capital of Thailand."
+          ],
+          "answers": [
+            [
+              "Bangkok"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "",
+            " are mountains in central Europe."
+          ],
+          "answers": [
+            [
+              "The Alps"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "",
+            " is between Saudi Arabia and Africa."
+          ],
+          "answers": [
+            [
+              "The Red Sea"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "",
+            " is an island in the Caribbean."
+          ],
+          "answers": [
+            [
+              "Jamaica"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "",
+            " are a group of islands near Florida."
+          ],
+          "answers": [
+            [
+              "The Bahamas"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "74.2",
-      "type": "choice",
-      "instruction": "Which is right?",
+      "type": "write",
+      "instruction": "Где необходимо, вставьте the. Напротив правильных предложений напишите OK.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
-          "options": ["a Where is university?", "b He didn\u2019t want to go to university.", "c In your country, what proportion of the population study at university?", "d This is a small town, but university is the biggest in the country."],
-          "answer": 3
+          "prompt": "Kevin lives in Newton Street.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 2,
-          "options": ["a My brother has always been healthy. He\u2019s never been in hospital.", "b When my friend was ill, I went to hospital to see her.", "c When I was visiting my friend, I met Lisa, who is a nurse at hospital.", "d I saw an accident. A woman was injured and was taken to hospital."],
-          "answer": 3
+          "prompt": "We went to see an opera at Bolshoi Theatre.",
+          "answers": [
+            "at the Bolshoi Theatre"
+          ]
         },
         {
           "num": 3,
-          "options": ["a Why is she in prison? What crime did she commit?", "b There was a fire at prison. Firefighters were called to put it out.", "c Do you think too many people are sent to prison?"],
-          "answer": 2
+          "prompt": "Have you ever been to China?",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 4,
-          "options": ["a She goes to church every Sunday.", "b John himself doesn\u2019t go to church.", "c The village is very nice. You should visit church. It\u2019s interesting."],
-          "answer": 1
+          "prompt": "Have you ever been to Philippines?",
+          "answers": [
+            "the Philippines"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Have you ever been to south of France?",
+          "answers": [
+            "the south of France"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Can you tell me where Regal Cinema is?",
+          "answers": [
+            "the Regal Cinema"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Can you tell me where Bond Street is?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Can you tell me where Museum of Art is?",
+          "answers": [
+            "the Museum of Art"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Europe is bigger than Australia.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Belgium is smaller than Netherlands.",
+          "answers": [
+            "Belgium is smaller than the Netherlands."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "Which river is longer – Mississippi or Nile?",
+          "answers": [
+            "Which river is longer – the Mississippi or the Nile?"
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "Did you go to Tretyakov Gallery when you were in Moscow?",
+          "answers": [
+            "the National Gallery"
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "We stayed at Park Hotel in Hudson Road.",
+          "answers": [
+            "the Park Hotel in Hudson Road"
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "How far is it from Trafalgar Square to Waterloo Station?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 15,
+          "prompt": "Rocky Mountains are in North America.",
+          "answers": [
+            "The Rocky Mountains are in North America."
+          ]
+        },
+        {
+          "num": 16,
+          "prompt": "Texas is famous for oil and cowboys.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 17,
+          "prompt": "I hope to go to United States next year.",
+          "answers": [
+            "the United States"
+          ]
+        },
+        {
+          "num": 18,
+          "prompt": "Mary comes from west of Ireland.",
+          "answers": [
+            "the west of Ireland"
+          ]
+        },
+        {
+          "num": 19,
+          "prompt": "Alan is a student at Manchester University.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 20,
+          "prompt": "Panama Canal joins Atlantic Ocean and Pacific Ocean.",
+          "answers": [
+            "The Panama Canal joins the Atlantic Ocean and the Pacific Ocean."
+          ]
         }
       ]
     },
     {
       "id": "74.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box.",
-      "wordBank": ["bed", "the bed", "in bed", "home", "at home", "like home", "work", "to work", "after work"],
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (порт = port, курорт = resort)",
       "items": [
         {
+          "num": 1,
+          "prompt": "Роттердам – это большой порт в Нидерландах.",
+          "answers": [
+            "Rotterdam is a big port in the Netherlands."
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["How do you usually go ", " in the morning? By bus?"],
-          "answers": [["to work"]]
+          "prompt": "Я хочу сходить в Большой Театр.",
+          "answers": [
+            "I’d like to go to the Bolshoi Theatre.",
+            "I want to go to the Bolshoi Theatre."
+          ]
         },
         {
           "num": 3,
-          "parts": ["Sam likes to go to ", " early and get up early."],
-          "answers": [["bed"]]
+          "prompt": "Волга – самая длинная река в России?",
+          "answers": [
+            "Is the Volga the longest river in Russia?"
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don\u2019t have my phone. I left it ", "."],
-          "answers": [["at home"]]
+          "prompt": "Сочи – это популярный курорт на Чёрном море.",
+          "answers": [
+            "Sochi is a popular resort on the Black Sea."
+          ]
         },
         {
           "num": 5,
-          "parts": ["\u2018Have you seen my keys?\u2019 \u2018Yes, they\u2019re on ", ".\u2019"],
-          "answers": [["the bed"]]
+          "prompt": "Марк из Ричмонда. Это город на севере Англии.",
+          "answers": [
+            "Mark is from Richmond. It’s a town in the north of England."
+          ]
         },
         {
           "num": 6,
-          "parts": ["Shall we meet ", " tomorrow evening?"],
-          "answers": [["at home"]]
+          "prompt": "Гордон работает в гостинице Гранд в Лондоне.",
+          "answers": [
+            "Gordon works in the Grand Hotel in London.",
+            "Gordon works at the Grand Hotel in London."
+          ]
         },
         {
           "num": 7,
-          "parts": ["I like to read ", " before going to sleep."],
-          "answers": [["in bed"]]
+          "prompt": "Вы хотите увидеть Лондонский Тауэр?",
+          "answers": [
+            "Would you like to see the Tower of London?",
+            "Do you want to see the Tower of London?"
+          ]
         },
         {
           "num": 8,
-          "parts": ["It was a long tiring journey. We arrived ", " very late."],
-          "answers": [["home"]]
-        },
-        {
-          "num": 9,
-          "parts": ["Tom usually finishes ", " at five o\u2019clock."],
-          "answers": [["work"]]
-        },
-        {
-          "num": 10,
-          "parts": ["It\u2019s nice to travel around, but there\u2019s no place ", "."],
-          "answers": [["like home"]]
-        }
-      ]
-    },
-    {
-      "id": "74.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose at/in/to + hospital, school etc.",
-      "wordBank": ["bed", "home", "hospital", "prison", "school", "university", "work"],
-      "items": [
-        {
-          "num": 2,
-          "parts": ["In your country, from what age do children have to go ", "?"],
-          "answers": [["to school"]]
-        },
-        {
-          "num": 3,
-          "parts": ["Mark didn\u2019t go out last night. He stayed ", "."],
-          "answers": [["at home"]]
-        },
-        {
-          "num": 4,
-          "parts": ["There is a lot of traffic in the morning when people are going ", "."],
-          "answers": [["to work"]]
-        },
-        {
-          "num": 5,
-          "parts": ["When Sophie leaves school, she wants to study psychology ", "."],
-          "answers": [["at university"]]
-        },
-        {
-          "num": 6,
-          "parts": ["Ben never gets up before 9 o\u2019clock. It\u2019s 8.30 now, so he is still ", "."],
-          "answers": [["in bed"]]
-        },
-        {
-          "num": 7,
-          "parts": ["The accident wasn\u2019t serious. Nobody had to go ", "."],
-          "answers": [["to hospital"]]
-        },
-        {
-          "num": 8,
-          "parts": ["If people commit crimes, they may end up ", "."],
-          "answers": [["in prison"]]
+          "prompt": "Нина хочет жить в Соединённых Штатах и учиться в Гарварде.",
+          "answers": [
+            "Nina wants to live in the United States and study at Harvard."
+          ]
         }
       ]
     }

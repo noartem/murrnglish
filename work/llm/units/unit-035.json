@@ -1,0 +1,280 @@
+{
+ "unit": 35,
+ "title": "Would you like … ? · I’d like …",
+ "pdfPages": [
+  81,
+  82
+ ],
+ "exercises": [
+  {
+   "id": "35.1",
+   "type": "write",
+   "instruction": "Посмотрите на картинки. Напишите, что говорят эти люди. Используйте Would you like ... ?",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "Would you like a chocolat ?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "answers": [
+      "Would you like an apple?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "Would you like some coffee?",
+      "Would you like a cup of coffee?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "Would you like some cheese?",
+      "Would you like a piece of cheese?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "Would you like a sandwich?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "Would you like some cake?",
+      "Would you like a piece of cake?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "35.2",
+   "type": "write",
+   "instruction": "Что вы скажете Лоре в этих ситуациях? Используйте Would you like to ... ?",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "You want to go to the cinema tonight.  Perhaps Laura will go with you.  (go)",
+     "answers": [
+      "Would you like to go to the cinema tonight?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "You want to play tennis tomorrow.  Perhaps Laura will play too.  (play)",
+     "answers": [
+      "Would you like to play tennis tomorrow?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "You have an extra ticket for a concert next week.  Perhaps Laura will come.  (come)",
+     "answers": [
+      "Would you like to come to a concert next week?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "It’s raining and Laura is going out.  She doesn’t have an umbrella, but you have one.  (borrow)",
+     "answers": [
+      "Would you like to borrow my umbrella?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "35.3",
+   "type": "choice",
+   "instruction": "Выберите правильный вариант.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "'Do you like a chocolate?'",
+      "'Would you like a chocolate?'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 2,
+     "options": [
+      "'Do you like bananas?'",
+      "'Would you like bananas?'"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 3,
+     "options": [
+      "'Do you like an ice cream?'",
+      "'Would you like an ice cream?'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 4,
+     "options": [
+      "'What do you like to drink?'",
+      "'What would you like to drink?'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 5,
+     "options": [
+      "'Do you like to go out for a walk?'",
+      "'Would you like to go out for a walk?'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 6,
+     "options": [
+      "I like tomatoes, but I don’t eat them very often.",
+      "I’d like tomatoes, but I don’t eat them very often."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 7,
+     "options": [
+      "What time do you like to have dinner this evening?",
+      "What time would you like to have dinner this evening?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 8,
+     "options": [
+      "'Do you like something to eat?'",
+      "'Would you like something to eat?'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 9,
+     "options": [
+      "'Do you like your new job?'",
+      "'Would you like your new job?'"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 10,
+     "options": [
+      "I like to go to sleep now.",
+      "I’d like to go to sleep now."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 11,
+     "options": [
+      "'I like a sandwich, please.'",
+      "'I’d like a sandwich, please.'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 12,
+     "options": [
+      "'What kind of music do you like?'",
+      "'What kind of music would you like?'"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "35.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя I’d like, would you like, do you like и т. д. (рассказать историю = tell a story; фото с отпуска = holiday photos; на завтрак = for breakfast)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Хотите стакан воды?",
+     "answers": [
+      "Would you like a glass of water?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(в кафе) Я хочу два кофе, пожалуйста.",
+     "answers": [
+      "I’d like two coffees, please.",
+      "I would like two coffees, please."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я хотела бы рассказать вам историю.",
+     "answers": [
+      "I’d like to tell you a story.",
+      "I would like to tell you a story."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Хочешь увидеть мои фото с отпуска?",
+     "answers": [
+      "Would you like to see my holiday photos?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Марина хочет путешествовать.",
+     "answers": [
+      "Marina would like to travel."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "А: Ты хотела бы посмотреть фильм в воскресенье?  В: Очень хотела бы!",
+     "answers": [
+      "A: Would you like to watch a film on Sunday? B: I’d love to!",
+      "A: Would you like to watch a film on Sunday? B: I would love to!",
+      "A: Would you like to see a film on Sunday? B: I’d love to!",
+      "A: Would you like to see a film on Sunday? B: I would love to!"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Ты любишь конфеты?",
+     "answers": [
+      "Do you like chocolates?",
+      "Do you like sweets?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Что бы Вы хотели на завтрак?",
+     "answers": [
+      "What would you like for breakfast?"
+     ]
+    }
+   ]
+  }
+ ]
+}

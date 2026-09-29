@@ -1,0 +1,345 @@
+{
+ "unit": 94,
+ "title": "He caught a big fish. (порядок слов 1)",
+ "pdfPages": [
+  199,
+  200
+ ],
+ "exercises": [
+  {
+   "id": "94.1",
+   "type": "write",
+   "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Did you watch all evening TV?",
+     "answers": [
+      "Did you watch TV all evening?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "Sue bought some new shoes yesterday.",
+     "answers": [
+      "OK"
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "prompt": "I like very much this picture.",
+     "answers": [
+      "I like this picture very much."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Tom started last week his new job.",
+     "answers": [
+      "Tom started his new job last week."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I want to speak English fluently.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Jessica bought for her friend a present.",
+     "answers": [
+      "Jessica bought a present for her friend.",
+      "Jane bought her friend a present."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "I drink every day three cups of coffee.",
+     "answers": [
+      "I drink three cups of coffee every day."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Don’t eat your dinner too quickly!",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "I borrowed from my brother fifty pounds.",
+     "answers": [
+      "I borrowed fifty pounds from my brother."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "94.2",
+   "type": "write",
+   "instruction": "Составьте предложения, соблюдая правильный порядок слов.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(the door / opened / I / slowly)",
+     "answers": [
+      "I opened the door slowly."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "(a new phone / I / last week / got)",
+     "answers": [
+      "I got a new phone last week."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(finished / Paul / quickly / his work)",
+     "answers": [
+      "Paul finished his work quickly."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(Emily / very well / French / doesn’t speak)",
+     "answers": [
+      "Emily doesn’t speak French very well."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(a lot of shopping / did / I / yesterday)",
+     "answers": [
+      "I did a lot of shopping yesterday."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(London / do you know / well?)",
+     "answers": [
+      "Do you know London well?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(we / enjoyed / very much / the party)",
+     "answers": [
+      "We enjoyed the party very much."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(the problem / carefully / I / explained)",
+     "answers": [
+      "I explained the problem carefully."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(we / at the airport / some friends / met)",
+     "answers": [
+      "We met some friends at the airport."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "(did you buy / in England / that jacket?)",
+     "answers": [
+      "Did you buy that jacket in England?"
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "(every day / do / the same thing / we)",
+     "answers": [
+      "We do the same thing every day."
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "(football / don’t like / very much / I)",
+     "answers": [
+      "I don’t like football very much."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "94.3",
+   "type": "write",
+   "instruction": "Составьте предложения, соблюдая правильный порядок слов.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(to work / every day / walks / Lisa)",
+     "answers": [
+      "Lisa walks to work every day."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "(at the hotel / I / early / arrived)",
+     "answers": [
+      "I arrived at the hotel early."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(goes / every year / to Italy / Julia)",
+     "answers": [
+      "Julia goes to Italy every year."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(we / since 1998 / here / have lived)",
+     "answers": [
+      "We have lived here since 1998."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(in London / Sue / in 1990 / was born)",
+     "answers": [
+      "Sue was born in London in 1990."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(didn’t go / yesterday / Paul / to work)",
+     "answers": [
+      "Paul didn’t go to work yesterday."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(to a wedding / last weekend / went / Helen)",
+     "answers": [
+      "Helen went to a wedding last weekend."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(I / in bed / this morning / my breakfast / had)",
+     "answers": [
+      "I had my breakfast in bed this morning."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(in September / Amy / to university / is going)",
+     "answers": [
+      "Amy is going to university in September."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "(I / a beautiful bird / this morning / in the garden / saw)",
+     "answers": [
+      "I saw a beautiful bird in the garden this morning."
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "(many times / have been / my parents / to the United States)",
+     "answers": [
+      "My parents have been to the United States many times."
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "(my umbrella / I / last night / left / in the restaurant)",
+     "answers": [
+      "I left my umbrella in the restaurant last night."
+     ]
+    },
+    {
+     "num": 13,
+     "prompt": "(to the cinema / tomorrow evening / are you going)",
+     "answers": [
+      "Are you going to the cinema tomorrow evening?"
+     ]
+    },
+    {
+     "num": 14,
+     "prompt": "(the children / I / took / this morning / to school)",
+     "answers": [
+      "I took the children to school this morning."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "94.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (ходить в спортзал = go to the gym; отвести = take)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Мне очень нравится эта книга.",
+     "answers": [
+      "I like this book very much.",
+      "I really like this book."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Роберт ходит в спортзал каждый день.",
+     "answers": [
+      "Robert goes to the gym every day."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Сегодня я обедала в ресторане.",
+     "answers": [
+      "I had lunch in a restaurant today."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Салли десять лет работала в банке.",
+     "answers": [
+      "Sally worked in the bank for ten years."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Ты можешь завтра отвести детей в кино?",
+     "answers": [
+      "Can you take the children to the cinema tomorrow?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Поезд прибыл в Кембридж в семь часов.",
+     "answers": [
+      "The train arrived in Cambridge at seven o’clock."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Я не очень хорошо знаю Марину.",
+     "answers": [
+      "I don’t know Marina very well."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Франк родился в Нью-Йорке в 1994 году.",
+     "answers": [
+      "Frank was born in New York in 1994."
+     ]
+    }
+   ]
+  }
+ ]
+}

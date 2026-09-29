@@ -1,0 +1,384 @@
+{
+ "unit": 73,
+ "title": "I like music · I hate exams",
+ "pdfPages": [
+  157,
+  158
+ ],
+ "exercises": [
+  {
+   "id": "73.1",
+   "type": "self-check",
+   "instruction": "Как вы к этому относитесь?\nВыберите семь слов из рамки и напишите предложения с:\nI like ... I don’t like ... I love ... или I hate ...",
+   "wordBank": [
+    "big cities",
+    "computer games",
+    "exams",
+    "jazz",
+    "parties",
+    "chocolate",
+    "dogs",
+    "housework",
+    "museums",
+    "tennis"
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "modelAnswers": [
+      "I hate exams.",
+      "I like exams."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "modelAnswers": [
+      "I don’t like dogs."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "modelAnswers": [
+      "I hate museums."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "modelAnswers": [
+      "I love big cities."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "modelAnswers": [
+      "I don’t like tennis."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "modelAnswers": [
+      "I love chocolate."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "",
+     "modelAnswers": [
+      "I don’t like computer games."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "",
+     "modelAnswers": [
+      "I hate parties."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "73.2",
+   "type": "self-check",
+   "instruction": "Вы этим интересуетесь? Напишите предложения, используя фразы из рамки:",
+   "wordBank": [
+    "I’m (very) interested in ...",
+    "I know a lot about ...",
+    "I don’t know much about ...",
+    "I’m not interested in ...",
+    "I know a little about ...",
+    "I don’t know anything about ..."
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(history)",
+     "modelAnswers": [
+      "I’m very interested in history."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(politics)",
+     "modelAnswers": [
+      "I’m not interested in politics."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(sport)",
+     "modelAnswers": [
+      "I’m interested in sport."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(art)",
+     "modelAnswers": [
+      "I don’t know much about art."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(astronomy)",
+     "modelAnswers": [
+      "I don’t know anything about astronomy."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(economics)",
+     "modelAnswers": [
+      "I know a little about economics."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "73.3",
+   "type": "choice",
+   "instruction": "Выберите правильный вариант.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "My favourite sport is football.",
+      "My favourite sport is the football."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 2,
+     "options": [
+      "Rooms are very nice.",
+      "The rooms are very nice."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "Everybody needs friends.",
+      "Everybody needs the friends."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 4,
+     "options": [
+      "Jane doesn’t go to parties very often.",
+      "Jane doesn’t go to the parties very often."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 5,
+     "options": [
+      "Shops were very busy.",
+      "The shops were very busy."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 6,
+     "options": [
+      "‘Where’s milk?’",
+      "‘Where’s the milk?’"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 7,
+     "options": [
+      "I don’t like milk.",
+      "I don’t like the milk."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 8,
+     "options": [
+      "‘Yes, I play basketball.’",
+      "‘Yes, I play the basketball.’"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 9,
+     "options": [
+      "An architect is a person who designs buildings.",
+      "An architect is a person who designs the buildings."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 10,
+     "options": [
+      "Water was very cold.",
+      "The water was very cold."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 11,
+     "options": [
+      "I don’t like swimming in cold water.",
+      "I don’t like swimming in the cold water."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 12,
+     "options": [
+      "Excuse me, can you pass salt, please?",
+      "Excuse me, can you pass the salt, please?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 13,
+     "options": [
+      "I like people here.",
+      "I like the people here."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 14,
+     "options": [
+      "Vegetables are good for you.",
+      "The vegetables are good for you."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 15,
+     "options": [
+      "Houses in this street are all the same.",
+      "The houses in this street are all the same."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 16,
+     "options": [
+      "I don’t know words.",
+      "I don’t know the words."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 17,
+     "options": [
+      "I enjoy taking pictures.",
+      "I enjoy taking the pictures."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 18,
+     "options": [
+      "Do you want to see pictures that I took when I was on holiday?",
+      "Do you want to see the pictures that I took when I was on holiday?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 19,
+     "options": [
+      "English is used a lot in international business.",
+      "The English is used a lot in international business."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 20,
+     "options": [
+      "Money doesn’t always bring happiness.",
+      "The money doesn’t always bring the happiness."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "73.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [работа по дому = housework\nпредмет = subject\nвыращивать = grow]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Бен ненавидит работу по дому.",
+     "answers": [
+      "Ben hates housework."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Анна любит фильмы, но она не любит книги.",
+     "answers": [
+      "Anna loves films but she doesn’t like books."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Мой любимый предмет – биология.",
+     "answers": [
+      "My favourite subject is biology."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Вчера мы ходили на концерт. Музыка была замечательная.",
+     "answers": [
+      "We went to a concert yesterday. The music was great.",
+      "Yesterday we went to a concert. The music was great."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Вы выращиваете цветы в своём саду?",
+     "answers": [
+      "Do you grow flowers in your garden?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Мы ездили в Париж. Музеи были очень интересные.",
+     "answers": [
+      "We went to Paris. The museums were very interesting."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Эд интересуется политикой.",
+     "answers": [
+      "Ed is interested in politics."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я говорю по-французски, но я не знаю историю Франции.",
+     "answers": [
+      "I speak French, but I don’t know the history of France."
+     ]
+    }
+   ]
+  }
+ ]
+}

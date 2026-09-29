@@ -1,35 +1,25 @@
 {
   "unit": 96,
-  "title": "Relative clauses 5: extra information clauses (2)",
+  "title": "still · yet · already",
   "pdfPages": [
-    204,
-    205
+    203,
+    204
   ],
   "exercises": [
     {
       "id": "96.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use a preposition + whom or which. Choose a preposition from:",
-      "wordBank": [
-        "after",
-        "for",
-        "in",
-        "of",
-        "of",
-        "to",
-        "with",
-        "without"
-      ],
+      "instruction": "Вы встречаете Тину. Последний раз вы её видели два года назад. Задайте ей вопросы, используя still.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Fortunately we had a good map, ",
-            " we would have got lost."
+            "",
+            ""
           ],
           "answers": [
             [
-              "without which"
+              "Do you still play the piano?"
             ]
           ],
           "example": true
@@ -37,84 +27,61 @@
         {
           "num": 2,
           "parts": [
-            "The accident, ",
-            " two people were injured, happened late last night."
+            "Do you ",
+            ""
           ],
           "answers": [
             [
-              "in which"
+              "still live in Clare Street?"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I share an office with my boss, ",
-            " I get on really well."
+            "Are ",
+            ""
           ],
           "answers": [
             [
-              "with whom"
+              "you still a student?"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "The wedding, ",
-            " only family members were invited, was a lovely occasion."
+            "",
+            ""
           ],
           "answers": [
             [
-              "to which"
+              "Have you still got a motorbike?",
+              "Do you still have a motorbike?"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Ben showed me his new car, ",
-            " he's very proud."
+            "",
+            ""
           ],
           "answers": [
             [
-              "of which"
+              "Do you still go to the cinema a lot?"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Sarah showed us a picture of her son, ",
-            " she's very proud."
+            "",
+            ""
           ],
           "answers": [
             [
-              "of whom"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Laura bought a very nice leather bag, ",
-            " she paid twenty pounds."
-          ],
-          "answers": [
-            [
-              "for which"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "We had lunch, ",
-            " we went for a long walk."
-          ],
-          "answers": [
-            [
-              "after which"
+              "Do you still want to be a teacher?"
             ]
           ]
         }
@@ -123,17 +90,25 @@
     {
       "id": "96.2",
       "type": "fill-in",
-      "instruction": "Use the information in the first sentence to complete the second one. Use all of / most of etc.",
+      "instruction": "Напишите по три предложения о каждой ситуации. Сначала внимательно прочитайте примеры.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Helen has three brothers, ",
-            "."
+            "(раньше) ",
+            " (still) ",
+            " (yet) ",
+            ""
           ],
           "answers": [
             [
-              "all of whom are married"
+              "They were waiting for the bus."
+            ],
+            [
+              "They are still waiting."
+            ],
+            [
+              "The bus hasn’t come yet."
             ]
           ],
           "example": true
@@ -141,121 +116,73 @@
         {
           "num": 2,
           "parts": [
-            "We were given a lot of information, ",
-            "."
+            "(раньше) He was ",
+            " (still) He ",
+            " (yet) ",
+            " yet."
           ],
           "answers": [
             [
-              "most of which was useless"
+              "looking for a job."
+            ],
+            [
+              "’s still looking.",
+              "is still looking.",
+              "’s still looking for a job.",
+              "is still looking for a job."
+            ],
+            [
+              "He hasn’t found a job"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Ten people applied for the job, ",
-            "."
+            "(раньше) She ",
+            " asleep. (still) ",
+            " (yet) ",
+            ""
           ],
           "answers": [
             [
-              "none of whom was suitable"
+              "was"
+            ],
+            [
+              "She’s still asleep.",
+              "She is still asleep."
+            ],
+            [
+              "She hasn’t woken up yet.",
+              "She isn’t awake yet.",
+              "She hasn’t got up yet.",
+              "She isn’t up yet."
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "My neighbours have two cars, ",
-            "."
+            "(раньше) They ",
+            " (still) ",
+            " (yet) ",
+            ""
           ],
           "answers": [
             [
-              "one of which they never use"
-            ]
-          ]
-        },
-        {
-          "num": 5,
-          "parts": [
-            "James won £100,000, ",
-            "."
-          ],
-          "answers": [
+              "were having dinner.",
+              "were eating."
+            ],
             [
-              "half of which he gave to his parents"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "Julia has two sisters, ",
-            "."
-          ],
-          "answers": [
+              "They’re still having dinner.",
+              "They are still having dinner.",
+              "They’re still eating.",
+              "They are still eating."
+            ],
             [
-              "both of whom are lawyers"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "I sent Jane two emails, ",
-            "."
-          ],
-          "answers": [
-            [
-              "neither of whom she replied to"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "There were a lot of people at the party, ",
-            "."
-          ],
-          "answers": [
-            [
-              "only a few of whom I knew"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "We stayed at a very nice hotel, ",
-            "."
-          ],
-          "answers": [
-            [
-              "the name of which I don't remember"
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": 10,
-          "parts": [
-            "We drove along the road, the ",
-            "."
-          ],
-          "answers": [
-            [
-              "sides of which were lined with trees"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "The company has a new business plan, ",
-            "."
-          ],
-          "answers": [
-            [
-              "the aim of which is to save money"
+              "They haven’t finished yet.",
+              "They haven’t finished dinner yet.",
+              "They haven’t finished eating yet."
             ]
           ]
         }
@@ -264,27 +191,17 @@
     {
       "id": "96.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box and use which.",
-      "wordBank": [
-        "This is good news.",
-        "This makes it hard to contact her.",
-        "This was a shame.",
-        "This means we can’t go away tomorrow.",
-        "She apologised for this",
-        "This makes it difficult to sleep sometimes.",
-        "This was very kind of her.",
-        "This meant I had to wait two hours at the airport."
-      ],
+      "instruction": "Напишите вопросы, используя yet.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Laura couldn’t come to the party, ",
-            "."
+            "You ask her: ",
+            ""
           ],
           "answers": [
             [
-              "which was a shame"
+              "Are you ready yet?"
             ]
           ],
           "example": true
@@ -292,86 +209,217 @@
         {
           "num": 2,
           "parts": [
-            "The street I live in is noisy at night, ",
-            "."
+            "You ask somebody: ",
+            " Helen ",
+            ""
           ],
           "answers": [
             [
-              "which makes it difficult to sleep sometimes"
+              "Is",
+              "Has"
+            ],
+            [
+              "here yet?",
+              "arrived yet?",
+              "come yet?"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Kate let me stay at her house, ",
-            "."
+            "You ask her: ",
+            " you ",
+            ""
           ],
           "answers": [
             [
-              "which was very kind of her"
+              "Have"
+            ],
+            [
+              "got your (exam) results yet?",
+              "got your exam results yet?",
+              "had your exam results yet?",
+              "had your (exam) results yet?",
+              "received your exam results yet?",
+              "received your (exam) results yet?"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Jane doesn’t have a phone, ",
-            "."
+            "You ask him: ",
+            ""
           ],
           "answers": [
             [
-              "which makes it hard to contact her"
+              "Have you decided where to go yet?",
+              "Do you know where you’re going yet?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "96.4",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте already.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " here."
+          ],
+          "answers": [
+            [
+              "He’s already"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "No, ",
+            " it."
+          ],
+          "answers": [
+            [
+              "they’ve already seen"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "It’s too late. She ",
+            ""
+          ],
+          "answers": [
+            [
+              "’s already gone.",
+              "’s already left.",
+              "has already gone.",
+              "has already left.",
+              "’s already gone",
+              "’s already left",
+              "has already gone",
+              "has already left"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "No, thanks. I ",
+            " one."
+          ],
+          "answers": [
+            [
+              "’ve already got",
+              "already have"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Alex passed his exams, ",
-            "."
+            "No, it’s OK. I ",
+            " ."
           ],
           "answers": [
             [
-              "which is good news"
+              "’ve already paid (it)",
+              "’ve already paid it",
+              "have already paid (it)",
+              "have already paid it",
+              "’ve already paid (it).",
+              "’ve already paid it.",
+              "have already paid (it).",
+              "have already paid it."
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "My flight was delayed, ",
-            "."
+            "No, he ",
+            " . I told him."
           ],
           "answers": [
             [
-              "which meant I had to wait two hours at the airport"
+              "already knows",
+              "already knows."
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "96.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (Заходите! = Come in!)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Супермаркет всё ещё открыт? Нам нужно молоко.",
+          "answers": [
+            "Is the supermarket still open? We need some milk."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вы уже прочитали её новую книгу?",
+          "answers": [
+            "Have you read her new book yet?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Заходите! Игорь и Вера уже здесь.",
+          "answers": [
+            "Come in! Igor and Vera are already here."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Почему Алина всё ещё на работе?",
+          "answers": [
+            "Why is Alina still at work?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "A: Куда вы поедете летом? B: Мы ещё не решили.",
+          "answers": [
+            "A: Where are you going in summer? B: We haven’t decided yet.",
+            "A: Where are you going in summer? B: We have not decided yet."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Ты всё ещё работаешь в больнице?",
+          "answers": [
+            "Do you still work at the hospital?",
+            "Are you still working at the hospital?"
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "Our car has broken down, ",
-            "."
-          ],
+          "prompt": "“Я помою машину?” – “Я уже это сделала”.",
           "answers": [
-            [
-              "which means we can’t go away tomorrow"
-            ]
+            "‘Shall I wash the car?’ ‘I’ve already done it.’",
+            "‘Shall I wash the car?’ ‘I have already done it.’"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "Amy was twenty minutes late, ",
-            "."
-          ],
+          "prompt": "“Нина нашла новую работу?” – “Ещё нет”.",
           "answers": [
-            [
-              "which she apologised for",
-              "for which she apologised"
-            ]
+            "‘Has Nina found a new job?’ ‘Not yet.’"
           ]
         }
       ]

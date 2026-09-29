@@ -15,11 +15,13 @@ Rules (units):
   [underline] markers (balanced brackets, non-empty content)
 - self-check: every item has a modelAnswers list; empty only when logged
   in work/missing-key.txt
-- coverage (full run): ids printed on the unit's pages (consecutive run
-  N.1, N.2, ...) == ids in JSON
+- coverage (full run): every exercise id of the unit's answer key
+  (work/layout.json keyExercises) is in the JSON; extra JSON ids are allowed
+  only for self-check exercises (open tasks the key may not list); key
+  exercises listed in notInScan (page missing from the scan) are exempt
 
-Full run: all 145 unit files, all additional files, data/index.json groups
-cover 1..145 exactly once, additional list matches files.
+Full run: all 115 unit files, all additional files, data/index.json groups
+cover 1..115 exactly once, additional list matches files.
 """
 import json
 import re
@@ -27,37 +29,13 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
+N_UNITS = 115
 TYPES = {"fill-in", "choice", "matching", "write", "self-check"}
-ID_RE = re.compile(r"(?m)^\s*(\d{1,3})\.(\d{1,2})\s+\S")
 MISSING_KEY = ROOT / "work" / "missing-key.txt"
 
 
 def nonempty_str(x):
     return isinstance(x, str) and x.strip() != ""
-
-
-def consecutive_ids(ids):
-    by_unit = {}
-    for u, m in ids:
-        by_unit.setdefault(u, set()).add(m)
-    keep = set()
-    for u, ms in by_unit.items():
-        k = 1
-        while k in ms:
-            keep.add((u, k))
-            k += 1
-    return keep
-
-
-def page_ids(pages):
-    ids = set()
-    for p in pages:
-        t = ROOT / "work" / "pages" / ("plain/p%03d.txt" % p)
-        if not t.exists():
-            continue
-        for m in ID_RE.finditer(t.read_text(encoding="utf-8", errors="replace")):
-            ids.add((int(m.group(1)), int(m.group(2))))
-    return consecutive_ids(ids)
 
 
 def valid_choice_answer(ans, n_opts):
@@ -201,7 +179,7 @@ def full_run():
     n_ex = 0
     unit_ids = set()
     lay = json.loads((ROOT / "work" / "layout.json").read_text(encoding="utf-8"))
-    for un in range(1, 146):
+    for un in range(1, N_UNITS + 1):
         path = ROOT / "data" / "units" / ("unit-%03d.json" % un)
         if not path.exists():
             errors.append("missing file %s" % path.name)
@@ -211,21 +189,26 @@ def full_run():
         except Exception as e:
             errors.append("%s: JSON parse: %s" % (path.name, e))
             continue
-        seen = validate_unit_file(path, errors)
-        want = {(u, m) for (u, m) in page_ids(lay["units"][str(un)]["pdfPages"]) if u == un}
-        got = {(un, int(e.split(".")[1])) for e in seen}
-        if want != got:
-            miss = sorted(want - got)
-            extra = sorted(got - want)
-            errors.append("unit %d: coverage pages=%s json=%s missing=%s extra=%s"
-                          % (un, sorted(want), sorted(got), miss, extra))
+        validate_unit_file(path, errors)
+        want = set(lay["units"][str(un)]["keyExercises"]) - set(lay["units"][str(un)].get("notInScan", []))
+        types = {e.get("id"): e.get("type") for e in data.get("exercises", [])}
+        miss = sorted(want - set(types))
+        extra = sorted(e for e in set(types) - want if types[e] != "self-check")
+        if miss or extra:
+            errors.append("unit %d: coverage vs key: missing=%s extra non-self-check=%s"
+                          % (un, miss, extra))
         unit_ids.add(un)
         n_ex += len(data.get("exercises", []))
+    stray = sorted(p.name for p in (ROOT / "data" / "units").glob("unit-*.json")
+                   if int(p.name[5:8]) > N_UNITS)
+    if stray:
+        errors.append("unit files beyond %d: %s" % (N_UNITS, stray[:5]))
 
     index = json.loads((ROOT / "data" / "index.json").read_text(encoding="utf-8"))
     idx_units = [u for g in index["groups"] for u in g["units"]]
-    if sorted(idx_units) != list(range(1, 146)):
-        errors.append("index groups do not cover 1..145 exactly: %d entries" % len(idx_units))
+    if sorted(idx_units) != list(range(1, N_UNITS + 1)):
+        errors.append("index groups do not cover 1..%d exactly: %d entries"
+                      % (N_UNITS, len(idx_units)))
     add_files = sorted((ROOT / "data" / "additional").glob("*.json"))
     add_ids = set()
     for p in add_files:
@@ -238,8 +221,8 @@ def full_run():
                       % (len(add_list), len(add_ids), sorted(add_list ^ add_ids)[:10]))
     n_add = len(add_files)
 
-    print("units: %d/145, unit exercises: %d, additional files: %d"
-          % (len(unit_ids), n_ex, n_add))
+    print("units: %d/%d, unit exercises: %d, additional files: %d"
+          % (len(unit_ids), N_UNITS, n_ex, n_add))
     if errors:
         print("VALIDATION ERRORS (%d):" % len(errors))
         for e in errors[:60]:

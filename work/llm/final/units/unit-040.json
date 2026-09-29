@@ -1,0 +1,500 @@
+{
+ "unit": 40,
+ "title": "It …",
+ "pdfPages": [
+  91,
+  92
+ ],
+ "exercises": [
+  {
+   "id": "40.1",
+   "type": "write",
+   "instruction": "Напишите, какая погода изображена на картинках. Используйте It’s ... .",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "It’s raining."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "answers": [
+      "It’s cold."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "It’s windy."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "It’s sunny.",
+      "It’s fine.",
+      "It’s a nice day."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "It’s snowing."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "It’s cloudy."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "40.2",
+   "type": "fill-in",
+   "instruction": "Вставьте it is (it’s) или is it.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "What time ",
+      " ?"
+     ],
+     "answers": [
+      [
+       "is it"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "We have to go now. ",
+      " very late."
+     ],
+     "answers": [
+      [
+       "It’s",
+       "It is"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " true that Ben can fly a helicopter?"
+     ],
+     "answers": [
+      [
+       "Is it"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘What day ",
+      " today? Tuesday?’ ‘No, ",
+      " Wednesday.’"
+     ],
+     "answers": [
+      [
+       "is it"
+      ],
+      [
+       "it’s",
+       "it is"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " ten kilometres from the airport to the city centre."
+     ],
+     "answers": [
+      [
+       "It’s",
+       "It is"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " OK to call you at your office?"
+     ],
+     "answers": [
+      [
+       "Is it"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘Do you want to walk to the hotel?’ ‘I don’t know. How far ",
+      "?’"
+     ],
+     "answers": [
+      [
+       "is it"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      " Lisa’s birthday today. She’s 27."
+     ],
+     "answers": [
+      [
+       "It’s",
+       "It is"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I don’t believe it! ",
+      " impossible."
+     ],
+     "answers": [
+      [
+       "It’s",
+       "It is"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "40.3",
+   "type": "write",
+   "instruction": "Напишите вопросы с How far ... ?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(here / the station)",
+     "answers": [
+      "How far is it from here to the station?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "(the hotel / the beach)",
+     "answers": [
+      "How far is it from the hotel to the beach?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(New York / Washington)",
+     "answers": [
+      "How far is it from New York to Washington?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(your house / the airport)",
+     "answers": [
+      "How far is it from your house to the airport?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "40.4",
+   "type": "fill-in",
+   "instruction": "Вставьте it или there.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "The weather isn’t so nice today. ",
+      "’s cloudy."
+     ],
+     "answers": [
+      [
+       "It"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " was a strong wind yesterday."
+     ],
+     "answers": [
+      [
+       "There"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      "’s hot in this room. Open a window."
+     ],
+     "answers": [
+      [
+       "It"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " was a nice day yesterday. ",
+      " was warm and sunny."
+     ],
+     "answers": [
+      [
+       "It"
+      ],
+      [
+       "It"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " was a storm last night. Did you hear it?"
+     ],
+     "answers": [
+      [
+       "There"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I was afraid because ",
+      " was very dark."
+     ],
+     "answers": [
+      [
+       "it"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      "’s often cold here, but ",
+      " isn’t much rain."
+     ],
+     "answers": [
+      [
+       "It"
+      ],
+      [
+       "there"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      "’s a long way from here to the nearest shop."
+     ],
+     "answers": [
+      [
+       "It"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "40.5",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте слова и выражения из обеих рамок.",
+   "wordBank": [
+    "it’s",
+    "easy",
+    "difficult",
+    "impossible",
+    "dangerous",
+    "nice",
+    "interesting",
+    "to",
+    "work here",
+    "visit different places",
+    "see you again",
+    "get up early",
+    "go out alone",
+    "make friends"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "If you go to bed late, ",
+      " in the morning."
+     ],
+     "answers": [
+      [
+       "it’s difficult to get up early"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Hello, Jane. ",
+      ". How are you?"
+     ],
+     "answers": [
+      [
+       "It’s nice to see you again."
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      ". There is too much noise."
+     ],
+     "answers": [
+      [
+       "It’s impossible to work here."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Everybody is very nice at work. ",
+      "."
+     ],
+     "answers": [
+      [
+       "It’s easy to make friends."
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I like travelling. ",
+      "."
+     ],
+     "answers": [
+      [
+       "It’s interesting to visit different places."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Some cities are not safe. ",
+      " at night."
+     ],
+     "answers": [
+      [
+       "It’s dangerous to go out alone."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "40.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Здесь солнечно в июле.",
+     "answers": [
+      "It’s sunny here in July.",
+      "It is sunny here in July."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Как далеко от Москвы до Волгограда?",
+     "answers": [
+      "How far is it from Moscow to Volgograd?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Сейчас очень рано.",
+     "answers": [
+      "It’s very early now.",
+      "It is very early now."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Это правда, что у тебя новая работа?",
+     "answers": [
+      "Is it true that you have a new job?",
+      "Is it true that you’ve got a new job?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Было очень холодно и было много снега.",
+     "answers": [
+      "It was very cold and there was a lot of snow."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Очень легко найти этот музей.",
+     "answers": [
+      "It’s very easy to find this museum.",
+      "It is very easy to find this museum."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "От моего дома до центра города недалеко.",
+     "answers": [
+      "It’s not far from my house to the town centre.",
+      "It isn’t far from my house to the town centre."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Дорого купить квартиру в Лондоне?",
+     "answers": [
+      "Is it expensive to buy a flat in London?"
+     ]
+    }
+   ]
+  }
+ ]
+}

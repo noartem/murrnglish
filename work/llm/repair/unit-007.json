@@ -1,0 +1,52 @@
+{
+ "unit": 7,
+ "exercises": [
+  {
+   "id": "7.2",
+   "type": "write",
+   "instruction": "Прочитайте информацию и напишите предложения с глаголом like.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "classical music?",
+     "answers": [
+      "Ben and Sophie like classical music."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "Kate / I — classical music?",
+     "answers": [
+      "Kate doesn’t like classical music.",
+      "I like classical music.",
+      "I don’t like classical music."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "boxing?",
+     "answers": [
+      "Ben and Sophie don’t like boxing.",
+      "Kate likes boxing.",
+      "I like boxing.",
+      "I don’t like boxing."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "horror movies?",
+     "answers": [
+      "Ben and Sophie like horror movies.",
+      "Kate doesn’t like horror movies.",
+      "I like horror movies.",
+      "I don’t like horror movies."
+     ]
+    }
+   ]
+  }
+ ]
+}

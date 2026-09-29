@@ -1,113 +1,75 @@
 {
   "unit": 21,
-  "title": "will and shall 1",
+  "title": "I have done (present perfect) и I did (past)",
   "pdfPages": [
-    54,
-    55
+    53,
+    54
   ],
   "exercises": [
     {
       "id": "21.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences with I’ll + a suitable verb.",
+      "instruction": "Допишите ответы на вопросы.",
       "items": [
         {
           "num": 1,
+          "example": true,
           "parts": [
-            "‘How are you going to get home?’ ‘I think ",
-            " a taxi.’"
+            "Yes, ",
+            " five minutes ago."
           ],
           "answers": [
             [
-              "I’ll take"
+              "I saw her"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 2,
           "parts": [
-            "‘It’s cold in this room.’ ‘Is it? ",
-            " on the heating then.’"
+            "Yes, I ",
+            " last week."
           ],
           "answers": [
             [
-              "I’ll turn",
-              "I’ll switch",
-              "I’ll put"
+              "started"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "‘Are you free next Friday?’ ‘Let me see. ",
-            " my diary.’"
+            "Yes, they ",
+            " at 5 o’clock."
           ],
           "answers": [
             [
-              "I’ll check"
+              "arrived"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "‘Shall I do the washing-up?’ ‘No, it’s all right. ",
-            " it later.’"
+            "Yes, ",
+            " on Friday."
           ],
           "answers": [
             [
-              "I’ll do"
+              "she went",
+              "she went away"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "‘I don’t know how to use this phone.’ ‘OK, ",
-            " you.’"
+            "Yes, ",
+            " yesterday."
           ],
           "answers": [
             [
-              "I’ll show"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "‘Would you like tea or coffee?’ ‘",
-            " coffee, please.’"
-          ],
-          "answers": [
-            [
-              "I’ll have"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "‘Are you coming with us?’ ‘No, I think ",
-            " here.’"
-          ],
-          "answers": [
-            [
-              "I’ll stay",
-              "I’ll wait"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "‘Can you finish this report today?’ ‘Well, ",
-            ", but I can’t promise.’"
-          ],
-          "answers": [
-            [
-              "I’ll try"
+              "I wore it"
             ]
           ]
         }
@@ -115,255 +77,375 @@
     },
     {
       "id": "21.2",
-      "type": "fill-in",
-      "instruction": "Read the situations and write sentences with I think I’ll … or I don’t think I’ll … .",
+      "type": "write",
+      "instruction": "В некоторых предложениях допущена ошибка. Исправьте ошибки, поставьте глаголы в правильную форму. Глаголы подчёркнуты.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "It’s cold with the window open. ",
-            "."
-          ],
+          "prompt": "I’ve lost my key. I can’t find it.",
           "answers": [
-            [
-              "I think I’ll close it"
-            ]
-          ],
-          "example": true
+            "OK"
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "I’m tired, so ",
-            ". Goodnight!"
-          ],
+          "prompt": "Have you seen Kate yesterday?",
           "answers": [
-            [
-              "I think I’ll go to bed"
-            ]
+            "Did you see"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "It’s a lovely morning. ",
-            ". Do you want to come too?"
-          ],
+          "prompt": "Ive finished my work at 2 o’clock.",
           "answers": [
-            [
-              "I think I’ll go for a walk"
-            ]
+            "I finished"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I don’t feel hungry any more. ",
-            " lunch."
-          ],
+          "prompt": "I’m ready now. I’ve finished my work.",
           "answers": [
-            [
-              "I don’t think I’ll have (any)"
-            ]
+            "OK"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I’ve got a lot to do, so ",
-            " today."
-          ],
+          "prompt": "What time have you finished your work?",
           "answers": [
-            [
-              "I don’t think I’ll go swimming"
-            ]
+            "did you finish"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Sue isn’t here. She’s gone out.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Steve’s grandmother have died two years ago.",
+          "answers": [
+            "(Steve’s grandmother) died"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Where have you been last night?",
+          "answers": [
+            "Where were you",
+            "Where did you go"
           ]
         }
       ]
     },
     {
       "id": "21.3",
-      "type": "choice",
-      "instruction": "Which is correct?",
+      "type": "fill-in",
+      "instruction": "Поставьте глагол в форму present perfect (I’ve written и т. д.) или past (I wrote и т. д.).",
       "items": [
         {
           "num": 1,
-          "options": [
-            "I call",
-            "I’ll call"
+          "example": true,
+          "parts": [
+            "My friend is a writer. He ",
+            " (write) many books."
           ],
-          "answer": 1
+          "answers": [
+            [
+              "has written"
+            ]
+          ]
         },
         {
           "num": 2,
-          "options": [
-            "I’m playing",
-            "I’ll play"
+          "example": true,
+          "parts": [
+            "We ",
+            " (not/have) a holiday last year."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "I meet",
-            "I’ll meet"
+          "parts": [
+            "I ",
+            " (play) tennis yesterday afternoon."
           ],
-          "answer": 1
+          "answers": [
+            [
+              "played"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "I’m staying",
-            "I’ll stay"
+          "parts": [
+            "What time ",
+            " (you/go) to bed last night?"
           ],
-          "answer": 1
+          "answers": [
+            [
+              "did you go"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "I’m having",
-            "I’ll have"
+          "parts": [
+            "",
+            " (you ever meet) a famous person?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "Have you ever met"
+            ]
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "I don’t forget",
-            "I won’t forget"
+          "parts": [
+            "The weather ",
+            " (not/be) very good yesterday."
           ],
-          "answer": 1
+          "answers": [
+            [
+              "wasn’t",
+              "was not"
+            ]
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "we’re going",
-            "we’ll go"
+          "parts": [
+            "Kathy travels a lot. She ",
+            " (visit) many countries."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "has visited",
+              "'s visited"
+            ]
+          ]
         },
         {
           "num": 8,
-          "options": [
-            "Are you doing",
-            "Will you do"
+          "parts": [
+            "I ",
+            " (switch) off the light before going out this morning."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "switched"
+            ]
+          ]
         },
         {
           "num": 9,
-          "options": [
-            "Do you do",
-            "Will you do"
+          "parts": [
+            "I live in New York now, but I ",
+            " (live) in Mexico for many years."
           ],
-          "answer": 1
+          "answers": [
+            [
+              "lived"
+            ]
+          ]
         },
         {
           "num": 10,
-          "options": [
-            "Do you go",
-            "Will you go"
+          "parts": [
+            "'What’s Canada like? Is it beautiful?' 'I don’t know. I ",
+            " (not/be) there.'"
           ],
-          "answer": 0
-        },
-        {
-          "num": 11,
-          "options": [
-            "doesn’t tell",
-            "won’t tell"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 12,
-          "options": [
-            "I’m doing",
-            "I’ll do"
-          ],
-          "answer": 1
+          "answers": [
+            [
+              "haven’t been",
+              "have not been"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "21.4",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Write sentences with shall I … ? or shall we … ?",
+      "instruction": "Поставьте глагол в форму present perfect (I’ve seen и т. д.) или past (I saw и т. д.).",
       "items": [
         {
           "num": 1,
+          "example": true,
           "parts": [
-            "",
-            ""
+            "A: ",
+            " (you/ever/be) to Florida? B: Yes, we ",
+            " (go) there on holiday two years ago. A: ",
+            " (you have) a good time? B: Yes, it ",
+            " (be) great."
           ],
           "answers": [
             [
-              "What shall we do this evening?"
+              "Have you ever been"
+            ],
+            [
+              "went"
+            ],
+            [
+              "Did you have"
+            ],
+            [
+              "was"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 2,
           "parts": [
-            "You ask your friend: ",
-            "?"
+            "A: Where’s Alan? ",
+            " (you/see) him? B: Yes, he ",
+            " (go) out a few minutes ago. A: And Rachel? B: I don’t know. I ",
+            " (not see) her."
           ],
           "answers": [
             [
-              "Where shall we go (on holiday)"
+              "Have you seen"
+            ],
+            [
+              "went"
+            ],
+            [
+              "haven’t seen"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "You ask a friend for advice: ",
-            "? What do you think?"
+            "Rose works in a factory. She ",
+            " (work) there for six months. Before that she ",
+            " (be) a waitress in a restaurant. She ",
+            " (work) there for two years, but she ",
+            " (not/enjoy) it very much."
           ],
           "answers": [
             [
-              "Shall I buy it"
+              "has worked",
+              "has been working"
+            ],
+            [
+              "was"
+            ],
+            [
+              "worked"
+            ],
+            [
+              "didn’t enjoy"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "You ask your friend: ",
-            " or ",
-            "?"
+            "A: Do you know Mark’s sister? B: I ",
+            " (see) her a few times, but I ",
+            " (never speak) to her. ",
+            " (you ever speak) to her? A: Yes. I ",
+            " (meet) her at a party last week. She’s very nice."
           ],
           "answers": [
             [
-              "Shall we get a taxi"
+              "’ve seen",
+              "have seen"
             ],
             [
-              "shall we walk"
+              "’ve never spoken",
+              "have never spoken"
+            ],
+            [
+              "Have you ever spoken"
+            ],
+            [
+              "met"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "21.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (водить = drive, песня = song)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я люблю этот музей. Я здесь был много раз.",
+          "answers": [
+            "I love this museum. I’ve been here many times.",
+            "I love this museum. I have been here many times."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вчера я ходила в хороший ресторан.",
+          "answers": [
+            "I went to a nice restaurant yesterday.",
+            "I went to a good restaurant yesterday.",
+            "Yesterday I went to a nice restaurant.",
+            "Yesterday I went to a good restaurant."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Я потерял паспорт. Ты его видела?",
+          "answers": [
+            "I’ve lost my passport. Have you seen it?",
+            "I have lost my passport. Have you seen it?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Саши нет дома. Она ушла в кино.",
+          "answers": [
+            "Sasha isn’t at home. She’s gone to the cinema.",
+            "Sasha isn’t at home. She has gone to the cinema.",
+            "Sasha is not at home. She’s gone to the cinema.",
+            "Sasha is not at home. She has gone to the cinema."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "You ask a friend: What ",
-            " Helen (for her birthday)?"
-          ],
+          "prompt": "Карен уехала в супермаркет час назад.",
           "answers": [
-            [
-              "shall I give/buy/get"
-            ]
+            "Karen went to the supermarket an hour ago."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "You say: ",
-            "? Is 10.30 OK for you?"
-          ],
+          "prompt": "Когда вы купили свою машину?",
           "answers": [
-            [
-              "What time shall we meet"
-            ]
+            "When did you buy your car?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вы когда-нибудь водили автобус?",
+          "answers": [
+            "Have you ever driven a bus?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Моя сестра написала много песен. На прошлой неделе она написала новую песню.",
+          "answers": [
+            "My sister has written a lot of songs. Last week she wrote a new song.",
+            "My sister has written many songs. Last week she wrote a new song."
           ]
         }
       ]

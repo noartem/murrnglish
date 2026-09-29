@@ -1,11 +1,11 @@
 // Page color inversion preference, persisted in localStorage under
-// egu-course-page-invert. Exposed as data-page-invert="on|off" on <html>;
+// red-murphy-page-invert. Exposed as data-page-invert="on|off" on <html>;
 // the inline script in index.html applies it before first paint so a dark
 // page never flashes the wrong colors. Default on — pages were inverted in
 // dark theme before the toggle existed, and the pref is independent of the
 // theme choice, so it survives theme switches.
 
-const KEY = "egu-course-page-invert";
+const KEY = "red-murphy-page-invert";
 
 export function loadPageInvert(): boolean {
   try {

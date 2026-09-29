@@ -1,44 +1,349 @@
 {
   "unit": 37,
-  "title": "can/could/would you … ? etc.",
-  "pdfPages": [86, 87],
+  "title": "I used to …",
+  "pdfPages": [
+    85,
+    86
+  ],
   "exercises": [
     {
       "id": "37.1",
-      "type": "matching",
-      "instruction": "Which goes with which?",
-      "leftOptions": ["Could you pass the sugar?", "Would you like to go to the cinema?", "Can I use your toilet?", "Do you mind if I leave work early?", "Can you do me a favour?", "Would you like something to eat?", "Can I give you a hand?", "I'd like some fresh air."],
-      "rightOptions": ["It depends what you want me to do.", "No, that's fine.", "Me too. Let's go out for a walk.", "Sure. It's the door on the left.", "Yes, here you are.", "No, it's all right. I can manage, thanks.", "Maybe. What's on?", "No, thanks. I'm not hungry."],
-      "pairs": [[0, 4], [1, 6], [2, 3], [3, 1], [4, 0], [5, 7], [6, 5], [7, 2]]
+      "type": "fill-in",
+      "instruction": "Посмотри на картинки. Заполните пропуски, используя used to … .",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "She ",
+            " long hair."
+          ],
+          "answers": [
+            [
+              "used to have"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He ",
+            " football."
+          ],
+          "answers": [
+            [
+              "used to play"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " a taxi driver."
+          ],
+          "answers": [
+            [
+              "She used to be"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " in the country."
+          ],
+          "answers": [
+            [
+              "They used to live"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "He used to wear glasses."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "This building ",
+            ""
+          ],
+          "answers": [
+            [
+              "used to be a hotel."
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "37.2",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from:",
-      "wordBank": ["I'd like", "Would you like to try", "Do you mind", "Can I give", "Would you like to come", "Would you like", "I'd like to", "Can I take"],
+      "type": "write",
+      "instruction": "Сейчас Карен много работает, и у неё почти нет свободного времени. Несколько лет назад всё было по-другому. Напишите предложения о Карен, используя used to … .",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "parts": ["", " ice in your drink?"], "answers": [["Would you like"]]},
-        {"num": 3, "parts": ["", " a chicken salad, please."], "answers": [["I'd like"]]},
-        {"num": 4, "parts": ["", " to a concert tomorrow night?"], "answers": [["Would you like to come"]]},
-        {"num": 5, "parts": ["Lisa's not here. ", " a message?"], "answers": [["Can I take"]]},
-        {"num": 6, "parts": ["Hello. ", " make an appointment, please."], "answers": [["I'd like to"]]},
-        {"num": 7, "parts": ["", " them on?"], "answers": [["Would you like to try"]]},
-        {"num": 8, "parts": ["", " if I join you?"], "answers": [["Do you mind"]]}
+        {
+          "num": 1,
+          "prompt": "1 She used to swim every day.",
+          "answers": [
+            "She used to swim every day."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "She",
+          "answers": [
+            "She used to play volleyball."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "answers": [
+            "She used to go out most evenings.",
+            "She used to go out a lot."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "She used to play the guitar."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "She used to read a lot.",
+            "She used to like reading."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "She used to go away two or three times a year.",
+            "She used to travel a lot."
+          ]
+        }
       ]
     },
     {
       "id": "37.3",
-      "type": "write",
-      "instruction": "What would you say in these situations?",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте used to или present simple (I play / he lives и т. д.).",
+      "example": [
+        1,
+        2
+      ],
       "items": [
-        {"num": 2, "prompt": "You've finished your meal in a restaurant and now you want the bill.", "answers": ["Can I have the bill, please?", "Could I have the bill, please?", "Can we have the bill, please?", "Could we have the bill, please?", "Can I get the bill, please?", "Could I get the bill, please?", "Can we get the bill, please?", "Could we get the bill, please?"]},
-        {"num": 3, "prompt": "You've filled in some forms in English. You want your friend to check them for you.", "answers": ["Can you check these forms for me?", "Could you check these forms for me?", "Do you think you could check these forms for me?"]},
-        {"num": 4, "prompt": "The woman in the next room is playing music. It's very loud. You want her to turn it down.", "answers": ["Can you turn the music down, please?", "Could you turn the music down, please?", "Do you think you could turn the music down, please?", "Can you turn it down?", "Could you turn it down?", "Do you think you could turn it down?"]},
-        {"num": 5, "prompt": "You're on a train. The window is open and you're cold. You'd like to close it.", "answers": ["Is it OK if I close the window?", "Is it all right if I close the window?", "Can I close the window?", "Do you mind if I close the window?"]},
-        {"num": 6, "prompt": "You're on a bus. You have a seat, but an elderly man is standing. You offer him your seat.", "answers": ["Would you like to sit down?", "Would you like a seat?", "Can I offer you a seat?"]},
-        {"num": 7, "prompt": "You're a tourist. You want to go to the station, but you don't know how to get there.", "answers": ["Can you tell me how to get to the station?", "Could you tell me how to get to the station?", "Can you tell me the way to the station?", "Could you tell me the way to the station?", "Can you tell me where the station is?", "Could you tell me where the station is?"]},
-        {"num": 8, "prompt": "You are in a clothes shop. You see some trousers you like and you want to try them on.", "answers": ["Can I try on these trousers?", "Could I try on these trousers?", "Can I try these trousers on?", "Could I try these trousers on?", "I'd like to try on these trousers.", "Is it OK if I try these trousers on?"]},
-        {"num": 9, "prompt": "You meet a very famous person. You want to get his/her autograph.", "answers": ["Can I get your autograph?", "Could I get your autograph?", "Can I have your autograph?", "Could I have your autograph?", "Do you think I could get your autograph?", "Do you think I could have your autograph?"]}
+        {
+          "num": 1,
+          "parts": [
+            "I ",
+            " tennis. I stopped playing a few years ago."
+          ],
+          "answers": [
+            [
+              "used to play"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Do you do any sport?’ ‘Yes, I ",
+            " basketball.’"
+          ],
+          "answers": [
+            [
+              "play"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘Do you have a car?’ ‘No, I ",
+            " one, but I sold it.’"
+          ],
+          "answers": [
+            [
+              "used to have"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "George ",
+            " a waiter. Now he’s the manager of a hotel."
+          ],
+          "answers": [
+            [
+              "used to be"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "‘Do you go to work by car?’ ‘Sometimes, but most days I ",
+            " ",
+            " by train.’"
+          ],
+          "answers": [
+            [
+              "go"
+            ],
+            [
+              "travel"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "When I was a child, I never ",
+            " meat, but I eat it now."
+          ],
+          "answers": [
+            [
+              "used to eat"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Mary loves watching TV. She ",
+            " TV every evening."
+          ],
+          "answers": [
+            [
+              "watches"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "We ",
+            " near the airport, but we moved to the city centre a few years ago."
+          ],
+          "answers": [
+            [
+              "used to live"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Normally I start work at 7 o’clock, so I ",
+            " up very early."
+          ],
+          "answers": [
+            [
+              "get"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "What games ",
+            " you ",
+            " when you were a child?"
+          ],
+          "answers": [
+            [
+              "did"
+            ],
+            [
+              "use to play"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "37.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя used to. (стеснительный = shy; играть на гитаре = play the guitar)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Анна раньше была очень стеснительной.",
+          "answers": [
+            "Anna used to be very shy."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вы раньше работали в Туле?",
+          "answers": [
+            "Did you use to work in Tula?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Моя бабушка любила этот фильм.",
+          "answers": [
+            "My grandmother used to love this film.",
+            "My grandma used to love this film."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Раньше у меня была собака. Теперь у меня кошка.",
+          "answers": [
+            "I used to have a dog. Now I have a cat."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Моя дочь раньше играла на гитаре.",
+          "answers": [
+            "My daughter used to play the guitar."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Раньше Борис не ел рыбу. Теперь он её любит.",
+          "answers": [
+            "Boris didn’t use to eat fish. He loves it now."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Где вы работали до того, как стали учителем?",
+          "answers": [
+            "Where did you use to work before you became a teacher?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "У нас не было большого дома, когда мы жили в Лондоне.",
+          "answers": [
+            "We didn’t use to have a big house when we lived in London."
+          ]
+        }
       ]
     }
   ]

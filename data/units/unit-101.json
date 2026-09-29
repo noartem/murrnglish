@@ -1,217 +1,397 @@
 {
   "unit": 101,
-  "title": "Adjectives and adverbs 2 (well, fast, late, hard/hardly)",
-  "pdfPages": [214, 215],
+  "title": "a person who … · a thing that/which … (относительные придаточные предложения 1)",
+  "pdfPages": [
+    213,
+    214
+  ],
   "exercises": [
     {
       "id": "101.1",
-      "type": "fill-in",
-      "instruction": "Put in good or well.",
+      "type": "write",
+      "instruction": "Используя слова и фразы из обеих рамок, напишите предложения по образцу: A … is a person who …. Если необходимо, воспользуйтесь словарём.",
+      "wordBank": [
+        "a thief",
+        "a butcher",
+        "a musician",
+        "a patient",
+        "a dentist",
+        "a fool",
+        "a genius",
+        "a liar",
+        "doesn’t tell the truth",
+        "takes care of your teeth",
+        "is very intelligent",
+        "plays a musical instrument",
+        "is ill in hospital",
+        "steals things",
+        "does stupid things",
+        "sells meat"
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "A thief",
+          "answers": [
+            "A thief is a person who steals things."
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Joe\u2019s exam results were very ", "."],
-          "answers": [["good"]]
+          "prompt": "A butcher is a person",
+          "answers": [
+            "A butcher is a person who sells meat."
+          ]
         },
         {
           "num": 3,
-          "parts": ["Joe did ", " in his exams."],
-          "answers": [["well"]]
+          "prompt": "A musician",
+          "answers": [
+            "A musician is a person who plays a musical instrument."
+          ]
         },
         {
           "num": 4,
-          "parts": ["I didn\u2019t sleep ", " last night."],
-          "answers": [["well"]]
+          "prompt": "",
+          "answers": [
+            "A patient is a person who is ill in hospital."
+          ]
         },
         {
           "num": 5,
-          "parts": ["I like your hat. It looks ", " on you."],
-          "answers": [["good"]]
+          "prompt": "",
+          "answers": [
+            "A dentist is a person who takes care of your teeth."
+          ]
         },
         {
           "num": 6,
-          "parts": ["Can you speak up? I can\u2019t hear you very ", "."],
-          "answers": [["well"]]
+          "prompt": "",
+          "answers": [
+            "A fool is a person who does stupid things."
+          ]
         },
         {
           "num": 7,
-          "parts": ["I\u2019ve met her a few times, but I don\u2019t know her ", "."],
-          "answers": [["well"]]
+          "prompt": "",
+          "answers": [
+            "A genius is a person who is very intelligent."
+          ]
         },
         {
           "num": 8,
-          "parts": ["Lucy speaks German ", ". She\u2019s ", " at languages."],
-          "answers": [["well"], ["good"]]
+          "prompt": "",
+          "answers": [
+            "A liar is a person who doesn’t tell the truth."
+          ]
         }
       ]
     },
     {
       "id": "101.2",
-      "type": "fill-in",
-      "instruction": "Complete these sentences using well + the following words:",
-      "wordBank": ["behaved", "informed", "kept", "known", "paid", "written"],
+      "type": "write",
+      "instruction": "Составьте одно предложение из двух предложений в скобках.",
       "items": [
         {
+          "num": 1,
+          "prompt": "(A man phoned. He didn’t give his name.)",
+          "answers": [
+            "The man who phoned didn’t give his name."
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["I\u2019m surprised you haven\u2019t heard of her. She is quite ", "."],
-          "answers": [["well-known"]]
+          "prompt": "(A woman opened the door. She was wearing a yellow dress.)",
+          "answers": [
+            "The woman who opened the door was wearing a yellow dress."
+          ]
         },
         {
           "num": 3,
-          "parts": ["Our neighbours\u2019 garden is neat and tidy. It is very ", "."],
-          "answers": [["well-kept"]]
+          "prompt": "(Some students took the exam. Most of them passed.)",
+          "answers": [
+            "Most of the students who took the exam passed (it).",
+            "Most of the students who took the exam passed."
+          ]
         },
         {
           "num": 4,
-          "parts": ["I enjoyed the book. It\u2019s a great story and it\u2019s very ", "."],
-          "answers": [["well-written"]]
-        },
-        {
-          "num": 5,
-          "parts": ["Tanya knows about everything. She is very ", "."],
-          "answers": [["well-informed"]]
-        },
-        {
-          "num": 6,
-          "parts": ["Jane works very hard in her job, but she isn\u2019t very ", "."],
-          "answers": [["well-paid"]]
+          "prompt": "(A policeman stopped our car. He wasn’t very friendly.)",
+          "answers": [
+            "The policeman who stopped our car wasn’t very friendly."
+          ]
         }
       ]
     },
     {
       "id": "101.3",
-      "type": "choice",
-      "instruction": "Which is right?",
+      "type": "fill-in",
+      "instruction": "Вставьте who или which.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "I met a woman ",
+            " can speak six languages."
+          ],
+          "answers": [
+            [
+              "who"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "options": ["slow", "slowly"],
-          "answer": 1
+          "parts": [
+            "What’s the name of the man ",
+            " has just started work in your office?"
+          ],
+          "answers": [
+            [
+              "who"
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": ["late", "lately"],
-          "answer": 1
+          "parts": [
+            "What’s the name of the river ",
+            " flows through the town?"
+          ],
+          "answers": [
+            [
+              "which"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": ["fast", "quick"],
-          "answer": 0
+          "parts": [
+            "Where is the picture ",
+            " was hanging on the wall?"
+          ],
+          "answers": [
+            [
+              "which"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": ["hard", "hardly"],
-          "answer": 0
+          "parts": [
+            "Do you know anybody ",
+            " wants to buy a car?"
+          ],
+          "answers": [
+            [
+              "who"
+            ]
+          ]
         },
         {
           "num": 6,
-          "options": ["hard", "hardly"],
-          "answer": 1
+          "parts": [
+            "You always ask questions ",
+            " are difficult to answer."
+          ],
+          "answers": [
+            [
+              "which"
+            ]
+          ]
         },
         {
           "num": 7,
-          "options": ["hard", "hardly"],
-          "answer": 0
+          "parts": [
+            "I have a friend ",
+            " is very good at repairing cars."
+          ],
+          "answers": [
+            [
+              "who"
+            ]
+          ]
         },
         {
           "num": 8,
-          "options": ["hardly see", "see hardly"],
-          "answer": 0
+          "parts": [
+            "I think everybody ",
+            " went to the party enjoyed it very much."
+          ],
+          "answers": [
+            [
+              "who"
+            ]
+          ]
         },
         {
           "num": 9,
-          "options": ["hard", "hardly"],
-          "answer": 0
+          "parts": [
+            "Why does he always wear clothes ",
+            " are too small for him?"
+          ],
+          "answers": [
+            [
+              "which"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "101.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Use hardly + the following verbs (in the correct form):",
-      "wordBank": ["change", "hear", "know", "recognise", "say", "sleep", "speak"],
+      "type": "write",
+      "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "A thief is a person which steals things.",
+          "answers": [
+            "a person who steals"
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["You\u2019re speaking very quietly. I can ", " you."],
-          "answers": [["hardly hear"]]
+          "prompt": "An airplane is a machine that flies.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 3,
-          "parts": ["I don\u2019t feel good this morning. I ", " last night."],
-          "answers": [["hardly slept"]]
+          "prompt": "A coffee maker is a machine who makes coffee.",
+          "answers": [
+            "a machine that makes coffee.",
+            "a machine which makes coffee."
+          ]
         },
         {
           "num": 4,
-          "parts": ["We were so shocked when we heard the news, we could ", "."],
-          "answers": [["hardly speak"]]
+          "prompt": "What’s happened to the money that was on the table?",
+          "answers": [
+            "OK",
+            "What’s happened to the money which was on the table?"
+          ]
         },
         {
           "num": 5,
-          "parts": ["Kate was very quiet this evening. She ", " anything."],
-          "answers": [["hardly said"]]
+          "prompt": "I don’t like people which never stop talking.",
+          "answers": [
+            "people who never stop talking.",
+            "people that never stop talking."
+          ]
         },
         {
           "num": 6,
-          "parts": ["Gary looks just like he looked 15 years ago. He has ", "."],
-          "answers": [["hardly changed"]]
+          "prompt": "I know somebody that can help you.",
+          "answers": [
+            "OK",
+            "I know somebody who can help you."
+          ]
         },
         {
           "num": 7,
-          "parts": ["David looked different without his beard. I ", " him."],
-          "answers": [["hardly recognised"]]
+          "prompt": "I know somebody who works in that shop.",
+          "answers": [
+            "OK",
+            "I know somebody that works in that shop."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Correct the sentences who are wrong.",
+          "answers": [
+            "the sentences that are wrong.",
+            "the sentences which are wrong."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "My neighbour bought a car who cost £40,000.",
+          "answers": [
+            "a car that cost £40,000.",
+            "a car which cost £40,000."
+          ]
         }
       ]
     },
     {
       "id": "101.5",
-      "type": "fill-in",
-      "instruction": "Complete these sentences with hardly + any/anybody/anything/anywhere/ever.",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (по соседству = next door; в течение = for; течь через = flow through; статья = article; (8) на = for)",
       "items": [
         {
+          "num": 1,
+          "prompt": "Люди, которые живут по соседству, очень шумные.",
+          "answers": [
+            "The people who live next door are very noisy.",
+            "The people that live next door are very noisy."
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["It was a very warm day and there was ", " wind."],
-          "answers": [["hardly any"]]
+          "prompt": "У меня есть друг, который жил в Токио в течение 5 лет.",
+          "answers": [
+            "I have a friend who lived in Tokyo for 5 years.",
+            "I have got a friend who lived in Tokyo for 5 years."
+          ]
         },
         {
           "num": 3,
-          "parts": ["\u2018Do you know much about computers?\u2019 \u2018No, ", ".\u2019"],
-          "answers": [["hardly anything"]]
+          "prompt": "Вы знаете кого-нибудь, кто говорит по-итальянски?",
+          "answers": [
+            "Do you know anyone who speaks Italian?",
+            "Do you know anyone that speaks Italian?"
+          ]
         },
         {
           "num": 4,
-          "parts": ["The hotel was almost empty. There was ", " staying there."],
-          "answers": [["hardly anybody", "hardly anyone"]]
+          "prompt": "Нева – это река, которая течёт через Петербург.",
+          "answers": [
+            "The Neva is the river which flows through Petersburg.",
+            "The Neva is the river that flows through Petersburg."
+          ]
         },
         {
           "num": 5,
-          "parts": ["I listen to the radio a lot, but I ", " watch TV."],
-          "answers": [["hardly ever"]]
+          "prompt": "Ты видела книю, которая была на столе?",
+          "answers": [
+            "Have you seen the book which was on the table?",
+            "Have you seen the book that was on the table?",
+            "Did you see the book which was on the table?",
+            "Did you see the book that was on the table?"
+          ]
         },
         {
           "num": 6,
-          "parts": ["It was very crowded in the room. There was ", " to sit."],
-          "answers": [["hardly anywhere"]]
+          "prompt": "Журналист – это человек, который пишет статьи.",
+          "answers": [
+            "A journalist is a person who writes articles.",
+            "A journalist is a person that writes articles."
+          ]
         },
         {
           "num": 7,
-          "parts": ["We used to be good friends, but we ", " see each other now."],
-          "answers": [["hardly", "hardly ever"]]
+          "prompt": "Это та девушка, которая украла твой кошелёк?",
+          "answers": [
+            "Is that the girl who stole your wallet?",
+            "Is that the girl that stole your wallet?"
+          ]
         },
         {
           "num": 8,
-          "parts": ["We invited lots of people to the party, but ", " came."],
-          "answers": [["hardly anybody", "hardly anyone"]]
-        },
-        {
-          "num": 9,
-          "parts": ["It didn\u2019t take us long to drive there. There was ", " traffic."],
-          "answers": [["hardly any"]]
-        },
-        {
-          "num": 10,
-          "parts": ["There isn\u2019t much to do in this town. There\u2019s ", " to go."],
-          "answers": [["hardly anywhere"]]
+          "prompt": "Карен работает на компанию, которая производит компьютеры.",
+          "answers": [
+            "Karen works for a company which makes computers.",
+            "Karen works for a company that makes computers."
+          ]
         }
       ]
     }

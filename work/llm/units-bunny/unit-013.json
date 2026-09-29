@@ -1,0 +1,482 @@
+{
+ "unit": 13,
+ "title": "I didn’t … · Did you … ? (past simple, отрицания и вопросы)",
+ "pdfPages": [
+  37,
+  38
+ ],
+ "exercises": [
+  {
+   "id": "13.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, поставив глаголы в отрицательную форму.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I saw Barbara, but I ",
+      " Jane."
+     ],
+     "answers": [
+      [
+       "didn’t see"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "They worked on Monday, but they ",
+      " on Tuesday."
+     ],
+     "answers": [
+      [
+       "didn’t work"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "We went to the post office, but we ",
+      " to the bank."
+     ],
+     "answers": [
+      [
+       "didn’t go"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "She had a pen, but she ",
+      " any paper."
+     ],
+     "answers": [
+      [
+       "didn’t have"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Jack did French at school, but he ",
+      " German."
+     ],
+     "answers": [
+      [
+       "didn’t do"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "13.2",
+   "type": "write",
+   "instruction": "Напишите вопросы, начинающиеся с Did ... ?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I watched TV last night. How about you?",
+     "answers": [
+      "Did you watch TV last night?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I enjoyed the party. How about you?",
+     "answers": [
+      "Did you enjoy the party?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I had a good holiday. How about you?",
+     "answers": [
+      "Did you have a good holiday?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I finished work early. How about you?",
+     "answers": [
+      "Did you finish work early?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I slept well last night. How about you?",
+     "answers": [
+      "Did you sleep well last night?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "13.3",
+   "type": "write",
+   "instruction": "Что вы делали вчера? Напишите утвердительные или отрицательные предложения.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(watch TV)",
+     "answers": [
+      "I watched TV.",
+      "I didn’t watch TV."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(get up before 7 o’clock)",
+     "answers": [
+      "I got up before 7 o’clock.",
+      "I didn’t get up before 7 o’clock."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(have a shower)",
+     "answers": [
+      "I had a shower.",
+      "I didn’t have a shower."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(buy a magazine)",
+     "answers": [
+      "I bought a magazine.",
+      "I didn’t buy a magazine."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(eat meat)",
+     "answers": [
+      "I ate meat.",
+      "I didn’t eat meat."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(go to bed before 10.30)",
+     "answers": [
+      "I went to bed before 10.30.",
+      "I didn’t go to bed before 10.30."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "13.4",
+   "type": "fill-in",
+   "instruction": "Напишите вопросы второго участника диалога. Используйте слова из рамки:",
+   "wordBank": [
+    "arrive",
+    "cost",
+    "go",
+    "go to bed late",
+    "happen",
+    "have a nice time",
+    "stay",
+    "win"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "A: We went to New York last month.\nB: Where ",
+      "?\nA: With some friends."
+     ],
+     "answers": [
+      [
+       "did you stay"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "A: I was late for the meeting.\nB: What time ",
+      "?\nA: Half past nine."
+     ],
+     "answers": [
+      [
+       "did you arrive"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "A: I played tennis this afternoon.\nB: ",
+      "?\nA: No, I lost."
+     ],
+     "answers": [
+      [
+       "Did you win"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "A: I had a nice holiday.\nB: Good. Where ",
+      "?\nA: To the mountains."
+     ],
+     "answers": [
+      [
+       "did you go"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "A: We came home by taxi.\nB: How much ",
+      "?\nA: Ten pounds."
+     ],
+     "answers": [
+      [
+       "did it cost"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "A: ‘I’m tired this morning.\nB: ",
+      "?\nA: No, but I didn’t sleep very well."
+     ],
+     "answers": [
+      [
+       "Did you go to bed late"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "A: We went to the beach yesterday.\nB: ",
+      "?\nA: Yes, it was great."
+     ],
+     "answers": [
+      [
+       "Did you have a nice time"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "A: The window is broken.\nB: How ",
+      "?\nA: I don’t know."
+     ],
+     "answers": [
+      [
+       "did it happen",
+       "did that happen"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "13.5",
+   "type": "fill-in",
+   "instruction": "Используйте глаголы в правильной форме (утвердительной, отрицательной или вопросительной).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "We went to the cinema, but the film wasn’t very good. We ",
+      " it. (enjoy)"
+     ],
+     "answers": [
+      [
+       "didn’t enjoy"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Tom ",
+      " some new clothes yesterday – two shirts, a jacket and a pullover. (buy)"
+     ],
+     "answers": [
+      [
+       "bought"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "‘",
+      " yesterday?’  ‘No, it was a nice day.’ (rain)"
+     ],
+     "answers": [
+      [
+       "Did it rain"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "We were tired, so we ",
+      " long at the party. (stay)"
+     ],
+     "answers": [
+      [
+       "didn’t stay"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It was very warm in the room, so I ",
+      " a window. (open)"
+     ],
+     "answers": [
+      [
+       "opened"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Did you phone Chris this morning?’  ‘No, I ",
+      " time.’ (have)"
+     ],
+     "answers": [
+      [
+       "didn’t have"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘I cut my hand this morning.’  ‘How ",
+      " that?’ (do)"
+     ],
+     "answers": [
+      [
+       "did you do"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "‘I ",
+      " about it.’ (know)"
+     ],
+     "answers": [
+      [
+       "didn’t know"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "13.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [в школе = at school\nв прошлые выходные = last weekend\nпотерять = lose]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Ты видела Анну вчера?",
+     "answers": [
+      "Did you see Anna yesterday?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вы учили английский в школе?",
+     "answers": [
+      "Did you learn English at school?",
+      "Did you study English at school?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "В воскресенье я не играл в футбол.",
+     "answers": [
+      "I did not play football on Sunday.",
+      "I didn’t play football on Sunday.",
+      "On Sunday I did not play football.",
+      "On Sunday I didn’t play football."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Куда Том и Лиз ездили в отпуск?",
+     "answers": [
+      "Where did Tom and Liz go on holiday?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Что вы делали в прошлые выходные?",
+     "answers": [
+      "What did you do last weekend?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Ты хорошо спала?",
+     "answers": [
+      "Did you sleep well?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Как ты потеряла свой паспорт?",
+     "answers": [
+      "How did you lose your passport?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Мы посмотрели фильм, но он нам не понравился.",
+     "answers": [
+      "We saw a film but we didn’t like it.",
+      "We saw a film but we didn’t enjoy it.",
+      "We saw a film but we did not like it.",
+      "We saw a film but we did not enjoy it.",
+      "We saw the film but we didn’t like it.",
+      "We saw the film but we didn’t enjoy it.",
+      "We saw the film but we did not like it.",
+      "We saw the film but we did not enjoy it.",
+      "We watched a film but we didn’t like it.",
+      "We watched a film but we didn’t enjoy it.",
+      "We watched a film but we did not like it.",
+      "We watched a film but we did not enjoy it.",
+      "We watched the film but we didn’t like it.",
+      "We watched the film but we didn’t enjoy it.",
+      "We watched the film but we did not like it.",
+      "We watched the film but we did not enjoy it."
+     ]
+    }
+   ]
+  }
+ ]
+}

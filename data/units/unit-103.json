@@ -1,37 +1,38 @@
 {
   "unit": 103,
-  "title": "enough and too",
+  "title": "at 8 o’clock · on Monday · in April",
   "pdfPages": [
-    218,
-    219
+    217,
+    218
   ],
   "exercises": [
     {
       "id": "103.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using enough + the following words:",
-      "wordBank": [
-        "buses",
-        "chairs",
-        "cups",
-        "hard",
-        "room",
-        "tall",
-        "time",
-        "vegetables",
-        "warm",
-        "wide"
-      ],
+      "instruction": "Вставьте at/on/in.",
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "Some of us had to sit on the floor. There weren’t ",
-            "."
+            "",
+            " 6 June"
           ],
           "answers": [
             [
-              "enough chairs"
+              "on"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " the evening"
+          ],
+          "answers": [
+            [
+              "in"
             ]
           ],
           "example": true
@@ -39,96 +40,193 @@
         {
           "num": 3,
           "parts": [
-            "Public transport isn’t good here. There aren’t ",
-            "."
+            "",
+            " half past two"
           ],
           "answers": [
             [
-              "enough buses"
+              "at"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I can’t park the car here. The space isn’t ",
-            "."
+            "",
+            " Wednesday"
           ],
           "answers": [
             [
-              "wide enough"
+              "on"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I always have to rush. There’s never ",
-            "."
+            "",
+            " 2007"
           ],
           "answers": [
             [
-              "enough time"
+              "in"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "You need to change your diet. You don’t eat ",
-            "."
+            "",
+            " September"
           ],
           "answers": [
             [
-              "enough vegetables"
+              "in"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "I’m not good at basketball. I’m not ",
-            "."
+            "",
+            " 24 September"
           ],
           "answers": [
             [
-              "tall enough"
+              "on"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "The car is quite small. Do you think there’s ",
-            " for five of us?"
+            "",
+            " Thursday"
           ],
           "answers": [
             [
-              "enough room"
+              "on"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "Are you ",
-            "? Or shall I switch on the heating?"
+            "",
+            " 11.45"
           ],
           "answers": [
             [
-              "warm enough"
+              "at"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "We can’t all have coffee at the same time. We don’t have ",
-            "."
+            "",
+            " Christmas Day"
           ],
           "answers": [
             [
-              "enough cups"
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "",
+            " Christmas"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "",
+            " the morning"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "",
+            " Friday morning"
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "",
+            " Saturday night"
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "",
+            " night"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 16,
+          "parts": [
+            "",
+            " the end of the day"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 17,
+          "parts": [
+            "",
+            " the weekend"
+          ],
+          "answers": [
+            [
+              "at",
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 18,
+          "parts": [
+            "",
+            " winter"
+          ],
+          "answers": [
+            [
+              "in"
             ]
           ]
         }
@@ -137,89 +235,235 @@
     {
       "id": "103.2",
       "type": "fill-in",
-      "instruction": "Complete the answers to the questions. Use too or enough + the word(s) in brackets.",
+      "instruction": "Вставьте at/on/in.",
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "Well, I’m afraid I’m ",
-            " to you now."
+            "Bye! See you ",
+            " Friday."
           ],
           "answers": [
             [
-              "too busy to talk"
+              "on"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Where were you ",
+            " 28 February?"
+          ],
+          "answers": [
+            [
+              "on"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "No, it’s ",
-            " to the cinema."
+            "I got up ",
+            " 8 o’clock this morning."
           ],
           "answers": [
             [
-              "too late to go"
+              "at"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "It’s not ",
-            " outside."
+            "I like getting up early ",
+            " the morning."
           ],
           "answers": [
             [
-              "warm enough to sit"
+              "in"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "No, I’m ",
-            " a politician."
+            "My sister got married ",
+            " May."
           ],
           "answers": [
             [
-              "too shy to be"
+              "in"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "No, I don’t have ",
-            " a teacher."
+            "Jessica and I first met ",
+            " 2006."
           ],
           "answers": [
             [
-              "enough patience to be"
+              "in"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "No, we were ",
-            " what he was saying."
+            "Did you go out ",
+            " Tuesday?"
           ],
           "answers": [
             [
-              "too far away to hear"
+              "on"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "No, he doesn’t know ",
-            " a newspaper."
+            "Did you go out ",
+            " Tuesday evening?"
           ],
           "answers": [
             [
-              "enough English to read"
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Do you often go out ",
+            " the evening?"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Let’s meet ",
+            " 7.30 tomorrow evening."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I often go away ",
+            " the weekend."
+          ],
+          "answers": [
+            [
+              "at",
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I’m starting my new job ",
+            " 3 July."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "We often go to the beach ",
+            " summer."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "George isn’t here ",
+            " the moment."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "Jane’s birthday is ",
+            " December."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 16,
+          "parts": [
+            "Do you work ",
+            " Saturdays?"
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 17,
+          "parts": [
+            "The company started ",
+            " 1999."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 18,
+          "parts": [
+            "I like to look at the stars ",
+            " night."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 19,
+          "parts": [
+            "I’ll send you the money ",
+            " the end of the month."
+          ],
+          "answers": [
+            [
+              "at"
             ]
           ]
         }
@@ -227,59 +471,344 @@
     },
     {
       "id": "103.3",
-      "type": "write",
-      "instruction": "Make one sentence from two. Complete the new sentence using too or enough + to … .",
+      "type": "fill-in",
+      "instruction": "Прочитайте о планах Лизы на следующую неделю и закончите предложения.",
       "items": [
         {
-          "num": 2,
-          "prompt": "I can’t drink this coffee. It’s too hot.",
+          "num": 1,
+          "parts": [
+            "Lisa is going to the cinema ",
+            "."
+          ],
           "answers": [
-            "This coffee is too hot to drink."
+            [
+              "on Wednesday evening"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "She has to phone Chris ",
+            "."
+          ],
+          "answers": [
+            [
+              "on Friday"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "Nobody could move the piano. It was too heavy.",
+          "parts": [
+            "She isn’t doing anything special ",
+            "."
+          ],
           "answers": [
-            "The piano was too heavy to move."
+            [
+              "on Monday"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "Don’t eat these apples. They’re not ripe enough.",
+          "parts": [
+            "She’s got a driving lesson ",
+            "."
+          ],
           "answers": [
-            "These apples aren’t ripe enough to eat.",
-            "These apples are not ripe enough to eat."
+            [
+              "at 4 o’clock on Thursday",
+              "on Thursday at 4 o’clock"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "I can’t explain the situation. It is too complicated.",
+          "parts": [
+            "She’s going to a party ",
+            "."
+          ],
           "answers": [
-            "The situation is too complicated to explain."
+            [
+              "on Saturday evening"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "We couldn’t climb over the wall. It was too high.",
+          "parts": [
+            "She’s meeting Sam ",
+            "."
+          ],
           "answers": [
-            "The wall was too high to climb over."
+            [
+              "at 2.30 on Tuesday",
+              "at 2.30 on Tuesday afternoon",
+              "on Tuesday at 2.30",
+              "on Tuesday afternoon at 2.30"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "103.4",
+      "type": "write",
+      "instruction": "Напишите предложения, используя in … .",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "It’s 8.25 now. The train leaves at 8.30.",
+          "answers": [
+            "The train leaves in five minutes."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "It’s Monday today. I’ll call you on Thursday.",
+          "answers": [
+            "I’ll call you in three days."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Today is 14 June. My exam is on 28 June.",
+          "answers": [
+            "My exam is in two weeks."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "It’s 3 o’clock now. Tom will be here at 3.30.",
+          "answers": [
+            "Tom will be here in half an hour.",
+            "Tom will be here in 30 minutes."
+          ]
+        }
+      ],
+      "example": [
+        1
+      ]
+    },
+    {
+      "id": "103.5",
+      "type": "fill-in",
+      "instruction": "Где необходимо, вставьте at/on/in. Некоторые предложения не требуют добавления предлога.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I’m going ",
+            " Friday."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’m going ",
+            " next Friday. (правильно)"
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I always feel tired ",
+            " the evening."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Will you be at home ",
+            " this evening?"
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We went to France ",
+            " last summer."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Laura was born ",
+            " 1997."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
           ]
         },
         {
           "num": 7,
-          "prompt": "Three people can’t sit on this sofa. It isn’t big enough.",
+          "parts": [
+            "What are you doing ",
+            " the weekend?"
+          ],
           "answers": [
-            "This sofa isn’t big enough for three people to sit on.",
-            "This sofa isn’t big enough for three people (to sit on)."
+            [
+              "at",
+              "on"
+            ]
           ]
         },
         {
           "num": 8,
-          "prompt": "You can’t see some things without a microscope. They are too small.",
+          "parts": [
+            "I phone Robert ",
+            " every Sunday."
+          ],
           "answers": [
-            "Some things are too small to see without a microscope.",
-            "Some things are too small to be seen without a microscope."
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Shall we play tennis ",
+            " next Sunday?"
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I can’t go to the party ",
+            " Sunday."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I’m going out. I’ll be back ",
+            " an hour."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I don’t often go out ",
+            " night."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "103.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (взлетать (здесь) = leave; библиотека = library; матч = match; ужасный = terrible)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я родился в 1997 году.",
+          "answers": [
+            "I was born in 1997."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вы свободны сегодня днём?",
+          "answers": [
+            "Are you free this afternoon?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Наш самолёт взлетает через 30 минут.",
+          "answers": [
+            "Our plane leaves in thirty minutes."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Библиотека открывается в 10 часов?",
+          "answers": [
+            "Does the library open at ten o’clock?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Салли едет в Америку в конце января.",
+          "answers": [
+            "Sally is going to America at the end of January."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Футбольный матч — 14 марта.",
+          "answers": [
+            "The football match is on 14 March.",
+            "The football match is on March 14."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мы встречаемся с нашими друзьями в пятницу вечером.",
+          "answers": [
+            "We’re meeting our friends on Friday evening.",
+            "We’re meeting our friends on Friday night.",
+            "We’re meeting with our friends on Friday evening.",
+            "We’re meeting with our friends on Friday night."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Погода в настоящий момент ужасная.",
+          "answers": [
+            "The weather is terrible at the moment."
           ]
         }
       ]

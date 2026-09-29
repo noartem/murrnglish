@@ -1,0 +1,33 @@
+## unit 7 (4)
+  7.2: key item 4 missing in JSON
+  7.2 #2: answer 'Ben and Sophie don’t like boxing.' has ['and', 'ben', 'sophie'] not in key 'Kate doesn’t like classical music. I like (или I don’t like) classical music.'
+  7.2 #2: answer 'Kate likes boxing.' has ['likes'] not in key 'Kate doesn’t like classical music. I like (или I don’t like) classical music.'
+  7.2 #3: answer 'Kate doesn’t like horror movies.' has ['does'] not in key 'Ben and Sophie don’t like boxing. Kate likes boxing. I like (или I don’t like) boxing.'
+## unit 15 (2)
+  STRUCT unit-015 15.2 item 11: parts/answers length
+  15.2 #11: no key line for a graded item
+## unit 18 (8)
+  STRUCT unit-018 18.2 item 5: write answers empty
+  STRUCT unit-018 18.2 item 6: write answers empty
+  STRUCT unit-018 18.2 item 7: write answers empty
+  STRUCT unit-018 18.2 item 8: write answers empty
+  18.2 #5: per-item type 'self-check' (mixed exercise)
+  18.2 #6: per-item type 'self-check' (mixed exercise)
+  18.2 #7: per-item type 'self-check' (mixed exercise)
+  18.2 #8: per-item type 'self-check' (mixed exercise)
+## unit 19 (1)
+  19.1 #8: answer 'have beeen learning' has ['beeen'] not in key 'have been learning'
+## unit 21 (6)
+  STRUCT unit-021 21.4 item 1 gap 2: empty variants
+  STRUCT unit-021 21.4 item 1 gap 3: empty variants
+  21.2 #4: answer 'OK' has ['ok'] not in key 'I’m ready now.   my work. '
+  21.2 #4: answer 'I’ve finished' has ['finished', 'have'] not in key 'I’m ready now.   my work. '
+  21.2 #6: answer 'OK' has ['ok'] not in key 'Sue isn’t here.   out. '
+  21.2 #6: answer 'She’s gone' has ['gone', 'she'] not in key 'Sue isn’t here.   out. '
+## unit 22 (4)
+  STRUCT unit-022 22.4 item 4: write answers empty
+  STRUCT unit-022 22.4 item 5: write answers empty
+  22.4 #4: per-item type 'self-check' (mixed exercise)
+  22.4 #5: per-item type 'self-check' (mixed exercise)
+## unit 25 (1)
+  25.2 #11: answer 'gone' has ['gone'] not in key 'went one'

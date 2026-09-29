@@ -217,8 +217,8 @@ body {
 }
 
 .homecover {
-  /* actual cover art aspect (1112x1497) */
-  aspect-ratio: 1112 / 1497;
+  /* actual cover art aspect (1112x1653) */
+  aspect-ratio: 1112 / 1653;
   height: min(56vh, 480px);
   width: auto;
   border: 6px solid var(--panel);

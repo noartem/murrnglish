@@ -1,0 +1,263 @@
+{
+ "leading": [
+  "4 I’m eating. или I’m not eating.",
+  "5 I’m wearing shoes. или I’m not wearing shoes.",
+  "6 I’m learning English.",
+  "7 I’m listening to music. или I’m not listening to music.",
+  "9 The sun is shining. или The sun isn’t shining.",
+  "10 It’s raining. или It isn’t raining. / It’s not raining."
+ ],
+ "exercises": [
+  {
+   "id": "4.5",
+   "note": "",
+   "lines": [
+    "1 Look! Ben is dancing with Sandra.",
+    "2 ‘Where are Anna and Lara?’ ‘They’re / They are watching TV/television.’",
+    "3 Hurry up! The train is coming.",
+    "4 Sasha is wearing a green dress.",
+    "5 ‘Where’s Tom?’ ‘He’s / He is cooking (the) dinner.’",
+    "6 Kevin isn’t / is not working today. He’s / He is ill.",
+    "7 We’re / We are having/eating lunch (now). Are you hungry?",
+    "8 The weather is bad. It’s / It is raining."
+   ]
+  },
+  {
+   "id": "5.1",
+   "note": "",
+   "lines": [
+    "2 Are you going now?",
+    "3 Is it raining?",
+    "4 Are you enjoying the film?",
+    "5 Is that clock working?",
+    "6 Are you waiting for a bus?"
+   ]
+  },
+  {
+   "id": "5.2",
+   "note": "",
+   "lines": [
+    "2 Where is she going?",
+    "3 What are you eating?",
+    "4 Why are you crying?",
+    "5 What are they looking at?",
+    "6 Why is he laughing?"
+   ]
+  },
+  {
+   "id": "5.3",
+   "note": "",
+   "lines": [
+    "3 Are you listening to me?",
+    "4 Where are your friends going?",
+    "5 Are your parents watching TV?",
+    "6 What is Jessica cooking?",
+    "7 Why are you looking at me?",
+    "8 Is the bus coming?"
+   ]
+  },
+  {
+   "id": "5.4",
+   "note": "",
+   "lines": [
+    "2 Yes, I am. или No, I’m not.",
+    "3 Yes, I am. или No, I’m not.",
+    "4 Yes, it is. или No, it isn’t. / No, it’s not.",
+    "5 Yes, I am. или No, I’m not.",
+    "6 Yes, I am. или No, I’m not."
+   ]
+  },
+  {
+   "id": "5.5",
+   "note": "",
+   "lines": [
+    "1 What are you watching?",
+    "2 Are you having dinner now?",
+    "3 Is it raining now?",
+    "4 Are your parents working today?",
+    "5 What is Boris reading?",
+    "6 Why is Jessica crying?",
+    "7 Where are you going now?",
+    "8 What is Sandra cooking?",
+    "9 Are you waiting for me?",
+    "10 ‘What are Ben and Tom doing?’ ‘They are / They’re playing in the park.’"
+   ]
+  },
+  {
+   "id": "6.1",
+   "note": "",
+   "lines": [
+    "2 thinks",
+    "3 flies",
+    "4 dances",
+    "5 has",
+    "6 finishes"
+   ]
+  },
+  {
+   "id": "6.2",
+   "note": "",
+   "lines": [
+    "2 live",
+    "3 She eats",
+    "4 He plays",
+    "5 They go",
+    "6 He sleeps"
+   ]
+  },
+  {
+   "id": "6.3",
+   "note": "",
+   "lines": [
+    "2 open",
+    "3 closes",
+    "4 teaches",
+    "5 meet",
+    "6 washes",
+    "7 costs",
+    "8 cost",
+    "9 boils",
+    "10 like … likes"
+   ]
+  },
+  {
+   "id": "6.4",
+   "note": "",
+   "lines": [
+    "2 I never go to the cinema.",
+    "3 Martina always works hard.",
+    "4 Children usually like chocolate.",
+    "5 Jackie always enjoys parties.",
+    "6 I often forget people’s names.",
+    "7 Sam never watches TV.",
+    "8 We usually have dinner at 7.30.",
+    "9 Kate always wears nice clothes."
+   ]
+  },
+  {
+   "id": "6.5",
+   "note": "Возможные ответы:",
+   "lines": [
+    "2 I sometimes read in bed.",
+    "3 I often get up before 7 o’clock.",
+    "4 I never go to work by bus.",
+    "5 I usually drink two cups of coffee in the morning."
+   ]
+  },
+  {
+   "id": "6.6",
+   "note": "",
+   "lines": [
+    "1 I live in Moscow.",
+    "2 Linda usually gets up at 7 o’clock.",
+    "3 We sometimes go to the park.",
+    "4 My sister loves chocolate.",
+    "5 I never watch TV/television.",
+    "6 My friends often go to the cinema.",
+    "7 I like/love caviar but it costs a lot of money. / … it’s expensive.",
+    "8 Anton speaks English well.",
+    "9 I always start work at 9 o’clock.",
+    "10 Cats eat fish."
+   ]
+  },
+  {
+   "id": "7.1",
+   "note": "",
+   "lines": [
+    "2 Anna doesn’t play the piano very well.",
+    "3 They don’t know my phone number.",
+    "4 We don’t work very hard.",
+    "5 He doesn’t have a bath every day.",
+    "6 You don’t do the same thing every day."
+   ]
+  },
+  {
+   "id": "7.2",
+   "note": "",
+   "lines": [
+    "2 Kate doesn’t like classical music. I like (или I don’t like) classical music.",
+    "3 Ben and Sophie don’t like boxing. Kate likes boxing. I like (или I don’t like) boxing.",
+    "4 Ben and Sophie like horror movies. Kate doesn’t like horror movies. I like (или I don’t like) horror movies."
+   ]
+  },
+  {
+   "id": "7.3",
+   "note": "Возможные ответы:",
+   "lines": [
+    "2 I never go to the theatre.",
+    "3 I don’t ride a bike very often.",
+    "4 I never eat in restaurants.",
+    "5 I often travel by train."
+   ]
+  },
+  {
+   "id": "7.4",
+   "note": "",
+   "lines": [
+    "2 doesn’t use",
+    "3 don’t go",
+    "4 doesn’t wear",
+    "5 don’t know",
+    "6 doesn’t cost",
+    "7 don’t see"
+   ]
+  },
+  {
+   "id": "7.5",
+   "note": "",
+   "lines": [
+    "3 don’t know",
+    "4 doesn’t talk",
+    "5 drinks",
+    "6 don’t believe",
+    "7 like",
+    "8 doesn’t eat"
+   ]
+  },
+  {
+   "id": "7.6",
+   "note": "",
+   "lines": [
+    "1 I like/love yoghurt but I don’t / do not like milk.",
+    "2 We don’t / do not watch football very often.",
+    "3 My parents don’t / do not speak English.",
+    "4 Peter doesn’t / does not work in the evenings.",
+    "5 I don’t / do not know this/that man.",
+    "6 Boris eats meat but he doesn’t / does not eat fish.",
+    "7 My brother doesn’t / does not like his job.",
+    "8 Emma and Anna don’t / do not get up early on Sundays. или On Sundays …"
+   ]
+  },
+  {
+   "id": "8.1",
+   "note": "",
+   "lines": [
+    "2 Do you play tennis?",
+    "3 Does Lucy live near here?",
+    "4 Do Tom’s friends play tennis? / Do his friends play tennis? / Do they play tennis?",
+    "5 Does your brother speak English? / Does he speak English?",
+    "6 Do you do yoga every morning?",
+    "7 Does Paul go on holiday a lot? / Does he go on holiday a lot? или Does Paul go on holiday much? / Does he go on holiday much?",
+    "8 Do you want to be famous?",
+    "9 Does Anna work hard? / Does she work hard?"
+   ]
+  },
+  {
+   "id": "8.2",
+   "note": "",
+   "lines": [
+    "3 How often do you watch TV?",
+    "4 What do you want for dinner?",
+    "5 Do you like football?",
+    "6 Does your brother like football?",
+    "7 What do you do in your free time?",
+    "8 Where does your sister work?",
+    "9 Do you always have breakfast?",
+    "10 What does this word mean?",
+    "11 Does it snow here in winter?",
+    "12 What time do you usually go to bed?"
+   ]
+  }
+ ],
+ "page": 283
+}

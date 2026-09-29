@@ -1,144 +1,114 @@
 {
   "id": 17,
-  "topic": "Modal verbs (can/must/would etc.)",
-  "refs": "Units 26–36",
+  "topic": "present perfect",
+  "refs": "Разделы 16–20",
   "pdfPages": [
-    324
+    260
   ],
   "exercise": {
     "id": "17",
     "type": "fill-in",
-    "instruction": "Complete the sentences using the words in brackets.",
+    "instruction": "Заполните пропуски, используя одно, два или три слова.",
     "items": [
       {
-        "num": 2,
+        "num": 1,
         "parts": [
-          "I ",
-          " (shouldn’t / eat) so much."
+          "Mark and Sarah are married. They ",
+          " married for five years."
         ],
         "answers": [
           [
-            "shouldn't have eaten"
+            "have been"
           ]
-        ]
+        ],
+        "example": true
+      },
+      {
+        "num": 2,
+        "parts": [
+          "David has been watching TV ",
+          " 5 o’clock."
+        ],
+        "answers": [
+          [
+            "since"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 3,
         "parts": [
-          "(must / forget) He ",
-          "."
+          "Joe is at work. He ",
+          " at work since 8.30."
         ],
         "answers": [
           [
-            "must have forgotten"
+            "’s been",
+            "has been"
           ]
         ]
       },
       {
         "num": 4,
         "parts": [
-          "You ",
-          " home so early. (needn’t / go)"
+          "‘Have you just arrived in London?’ ‘No, I’ve been here ",
+          " five days.’"
         ],
         "answers": [
           [
-            "needn't have gone"
+            "for"
           ]
         ]
       },
       {
         "num": 5,
         "parts": [
-          "(can’t / change) It ",
-          " now."
+          "I’ve known Helen ",
+          " we were at school together."
         ],
         "answers": [
           [
-            "can't be changed"
+            "since"
           ]
         ]
       },
       {
         "num": 6,
         "parts": [
-          "(may / watch) They ",
-          " TV."
+          "‘My brother lives in Los Angeles.’ ‘Really? How long ",
+          " there?’"
         ],
         "answers": [
           [
-            "may be watching"
+            "has he lived",
+            "has he been",
+            "has he been living"
           ]
         ]
       },
       {
         "num": 7,
         "parts": [
-          "(must / wait) She ",
-          " for somebody."
+          "George has had the same job ",
+          " 20 years."
         ],
         "answers": [
           [
-            "must have been waiting"
+            "for"
           ]
         ]
       },
       {
         "num": 8,
         "parts": [
-          "He ",
-          " it. (couldn’t / do)"
+          "Some friends of ours are staying with us at the moment. They ",
+          " here since Monday."
         ],
         "answers": [
           [
-            "couldn't have done"
-          ]
-        ]
-      },
-      {
-        "num": 9,
-        "parts": [
-          "You ",
-          " (should / be) here an hour ago."
-        ],
-        "answers": [
-          [
-            "should have been"
-          ]
-        ]
-      },
-      {
-        "num": 10,
-        "parts": [
-          "You ",
-          " me. (could / phone)"
-        ],
-        "answers": [
-          [
-            "could have phoned"
-          ]
-        ]
-      },
-      {
-        "num": 11,
-        "parts": [
-          "You ",
-          " (should / warn) about it."
-        ],
-        "answers": [
-          [
-            "should have been warned"
-          ]
-        ]
-      },
-      {
-        "num": 12,
-        "parts": [
-          "(ought / come) You ",
-          " with us."
-        ],
-        "answers": [
-          [
-            "ought to have come"
+            "’ve been",
+            "have been"
           ]
         ]
       }

@@ -1,319 +1,342 @@
 {
   "unit": 94,
-  "title": "Relative clauses 3: whose/whom/where",
+  "title": "He caught a big fish. (порядок слов 1)",
   "pdfPages": [
-    200,
-    201
+    199,
+    200
   ],
   "exercises": [
     {
       "id": "94.1",
-      "type": "fill-in",
-      "instruction": "You met these people at a party. The next day you tell a friend about these people. Complete the sentences using who or whose.",
+      "type": "write",
+      "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I met somebody whose mother writes detective stories",
-            "."
-          ],
+          "prompt": "Did you watch all evening TV?",
           "answers": [
-            [
-              "whose mother writes detective stories"
-            ]
+            "Did you watch TV all evening?"
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "I met a man ",
-            "."
-          ],
+          "prompt": "Sue bought some new shoes yesterday.",
           "answers": [
-            [
-              "whose wife is an English teacher"
-            ]
-          ]
+            "OK"
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": [
-            "I met a woman ",
-            "."
-          ],
+          "prompt": "I like very much this picture.",
           "answers": [
-            [
-              "who owns a restaurant"
-            ]
+            "I like this picture very much."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I met somebody ",
-            "."
-          ],
+          "prompt": "Tom started last week his new job.",
           "answers": [
-            [
-              "whose ambition is to climb Everest"
-            ]
+            "Tom started his new job last week."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I met a couple ",
-            "."
-          ],
+          "prompt": "I want to speak English fluently.",
           "answers": [
-            [
-              "who have just got married"
-            ]
+            "OK"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I met somebody ",
-            "."
-          ],
+          "prompt": "Jessica bought for her friend a present.",
           "answers": [
-            [
-              "whose parents used to work in a circus"
-            ]
+            "Jessica bought a present for her friend.",
+            "Jane bought her friend a present."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "I drink every day three cups of coffee.",
+          "answers": [
+            "I drink three cups of coffee every day."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Don’t eat your dinner too quickly!",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "I borrowed from my brother fifty pounds.",
+          "answers": [
+            "I borrowed fifty pounds from my brother."
           ]
         }
       ]
     },
     {
       "id": "94.2",
-      "type": "fill-in",
-      "instruction": "For each situation write a sentence with whom (more formal) and without whom (less formal).",
+      "type": "write",
+      "instruction": "Составьте предложения, соблюдая правильный порядок слов.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "more formal I met a friend whom I hadn’t seen for years",
-            ". less formal I met a friend I hadn’t seen for years",
-            "."
-          ],
+          "prompt": "(the door / opened / I / slowly)",
           "answers": [
-            [
-              "whom I hadn’t seen for years"
-            ],
-            [
-              "I hadn’t seen for years"
-            ]
+            "I opened the door slowly."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "more formal I went to see a lawyer ",
-            ". less formal I went to see a lawyer ",
-            "."
-          ],
+          "prompt": "(a new phone / I / last week / got)",
           "answers": [
-            [
-              "whom a friend of mine (had) recommended"
-            ],
-            [
-              "a friend of mine (had) recommended"
-            ]
+            "I got a new phone last week."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "more formal The person ",
-            " wasn’t very helpful. less formal The person ",
-            " wasn’t very helpful."
-          ],
+          "prompt": "(finished / Paul / quickly / his work)",
           "answers": [
-            [
-              "to whom I spoke"
-            ],
-            [
-              "I spoke to"
-            ]
+            "Paul finished his work quickly."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "more formal The woman ",
-            " wasn’t in love with him. less formal The woman ",
-            " wasn’t in love with him."
-          ],
+          "prompt": "(Emily / very well / French / doesn’t speak)",
           "answers": [
-            [
-              "with whom Tom was in love"
-            ],
-            [
-              "Tom was in love with"
-            ]
+            "Emily doesn’t speak French very well."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(a lot of shopping / did / I / yesterday)",
+          "answers": [
+            "I did a lot of shopping yesterday."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(London / do you know / well?)",
+          "answers": [
+            "Do you know London well?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(we / enjoyed / very much / the party)",
+          "answers": [
+            "We enjoyed the party very much."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(the problem / carefully / I / explained)",
+          "answers": [
+            "I explained the problem carefully."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(we / at the airport / some friends / met)",
+          "answers": [
+            "We met some friends at the airport."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(did you buy / in England / that jacket?)",
+          "answers": [
+            "Did you buy that jacket in England?"
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "(every day / do / the same thing / we)",
+          "answers": [
+            "We do the same thing every day."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "(football / don’t like / very much / I)",
+          "answers": [
+            "I don’t like football very much."
           ]
         }
       ]
     },
     {
       "id": "94.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using who/whom/whose/where.",
+      "type": "write",
+      "instruction": "Составьте предложения, соблюдая правильный порядок слов.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "We helped some people whose car had broken down",
-            "."
-          ],
+          "prompt": "(to work / every day / walks / Lisa)",
           "answers": [
-            [
-              "whose car had broken down"
-            ]
+            "Lisa walks to work every day."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "A cemetery is a place ",
-            " people are buried."
-          ],
+          "prompt": "(at the hotel / I / early / arrived)",
           "answers": [
-            [
-              "where"
-            ]
+            "I arrived at the hotel early."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "A pacifist is a person ",
-            " believes that all wars are wrong."
-          ],
+          "prompt": "(goes / every year / to Italy / Julia)",
           "answers": [
-            [
-              "who"
-            ]
+            "Julia goes to Italy every year."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "An orphan is a child ",
-            " parents are dead."
-          ],
+          "prompt": "(we / since 1998 / here / have lived)",
           "answers": [
-            [
-              "whose"
-            ]
+            "We have lived here since 1998."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "What’s the name of the hotel ",
-            " your parents are staying?"
-          ],
+          "prompt": "(in London / Sue / in 1990 / was born)",
           "answers": [
-            [
-              "where"
-            ]
+            "Sue was born in London in 1990."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "This school is only for children ",
-            " first language is not English."
-          ],
+          "prompt": "(didn’t go / yesterday / Paul / to work)",
           "answers": [
-            [
-              "whose"
-            ]
+            "Paul didn’t go to work yesterday."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "The person from ",
-            " I bought my car is a friend of my father’s."
-          ],
+          "prompt": "(to a wedding / last weekend / went / Helen)",
           "answers": [
-            [
-              "whom"
-            ]
+            "Helen went to a wedding last weekend."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I live in a friendly village ",
-            " everybody knows everybody else."
-          ],
+          "prompt": "(I / in bed / this morning / my breakfast / had)",
           "answers": [
-            [
-              "where"
-            ]
+            "I had my breakfast in bed this morning."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(in September / Amy / to university / is going)",
+          "answers": [
+            "Amy is going to university in September."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(I / a beautiful bird / this morning / in the garden / saw)",
+          "answers": [
+            "I saw a beautiful bird in the garden this morning."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "(many times / have been / my parents / to the United States)",
+          "answers": [
+            "My parents have been to the United States many times."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "(my umbrella / I / last night / left / in the restaurant)",
+          "answers": [
+            "I left my umbrella in the restaurant last night."
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "(to the cinema / tomorrow evening / are you going)",
+          "answers": [
+            "Are you going to the cinema tomorrow evening?"
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "(the children / I / took / this morning / to school)",
+          "answers": [
+            "I took the children to school this morning."
           ]
         }
       ]
     },
     {
       "id": "94.4",
-      "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences.",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (ходить в спортзал = go to the gym; отвести = take)",
       "items": [
         {
           "num": 1,
-          "prompt": "I can’t meet you on Friday. That’s the day I’m going away.",
-          "modelAnswers": [
-            "That’s the day I’m going away."
+          "prompt": "Мне очень нравится эта книга.",
+          "answers": [
+            "I like this book very much.",
+            "I really like this book."
           ]
         },
         {
           "num": 2,
-          "prompt": "The reason ___________ was that the salary was too low.",
-          "modelAnswers": [
-            "The reason I left my job was that the salary was too low."
+          "prompt": "Роберт ходит в спортзал каждый день.",
+          "answers": [
+            "Robert goes to the gym every day."
           ]
         },
         {
           "num": 3,
-          "prompt": "I’ll never forget the time ___________.",
-          "modelAnswers": [
-            "I’ll never forget the time I got stuck in a lift."
+          "prompt": "Сегодня я обедала в ресторане.",
+          "answers": [
+            "I had lunch in a restaurant today."
           ]
         },
         {
           "num": 4,
-          "prompt": "___________ was the year ___________.",
-          "modelAnswers": [
-            "2009 was the year Amanda got married."
+          "prompt": "Салли десять лет работала в банке.",
+          "answers": [
+            "Sally worked in the bank for ten years."
           ]
         },
         {
           "num": 5,
-          "prompt": "The reason ___________ is that neither of them can drive.",
-          "modelAnswers": [
-            "The reason they don’t have a car is that neither of them can drive."
+          "prompt": "Ты можешь завтра отвести детей в кино?",
+          "answers": [
+            "Can you take the children to the cinema tomorrow?"
           ]
         },
         {
           "num": 6,
-          "prompt": "The last time I ___________ was ___________.",
-          "modelAnswers": [
-            "The last time I saw Sam was about six months ago."
+          "prompt": "Поезд прибыл в Кембридж в семь часов.",
+          "answers": [
+            "The train arrived in Cambridge at seven o’clock."
           ]
         },
         {
           "num": 7,
-          "prompt": "Do you remember the day ___________?",
-          "modelAnswers": [
-            "Do you remember the day we first met?"
+          "prompt": "Я не очень хорошо знаю Марину.",
+          "answers": [
+            "I don’t know Marina very well."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Франк родился в Нью-Йорке в 1994 году.",
+          "answers": [
+            "Frank was born in New York in 1994."
           ]
         }
       ]

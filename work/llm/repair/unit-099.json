@@ -1,0 +1,139 @@
+{
+ "unit": 99,
+ "exercises": [
+  {
+   "id": "99.1",
+   "type": "write",
+   "instruction": "Напишите предложения, начинающиеся с when. Используйте информацию из обеих рамок.",
+   "wordBank": [
+    "I went out",
+    "I’m tired",
+    "I knocked on the door",
+    "I go on holiday",
+    "the programme ended",
+    "I got to the hotel",
+    "I turned off the TV",
+    "I always go to the same place",
+    "there were no rooms",
+    "it was raining",
+    "there was no answer",
+    "I like to watch TV"
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "When I went out, it was raining."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "answers": [
+      "When I’m tired, I like to watch TV."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "When I knocked on the door, there was no answer."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "When I go on holiday, I always go to the same place."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "When the programme ended, I turned off the TV."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "When I got to the hotel, there were no rooms."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "99.3",
+   "type": "write",
+   "instruction": "Напишите предложения, начинающиеся с if. Используйте информацию из обеих рамок.",
+   "wordBank": [
+    "you don’t hurry",
+    "you pass the exam",
+    "you fail the exam",
+    "you don’t want this magazine",
+    "you want those pictures",
+    "you’re busy now",
+    "you can have them",
+    "you’ll get a certificate",
+    "you’ll be late",
+    "I’ll throw it away",
+    "we can talk later",
+    "you can do it again"
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "If you don’t hurry, you’ll be late."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "If you pass",
+     "answers": [
+      "If you pass the exam, you’ll get a certificate."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "If",
+     "answers": [
+      "If you fail the exam, you can do it again."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "If you don’t want this magazine, I’ll throw it away."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "If you want those pictures, you can have them."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "If you’re busy now, we can talk later."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,188 +1,420 @@
 {
   "unit": 19,
-  "title": "Present tenses (I am doing / I do) for the future",
-  "pdfPages": [50, 51],
+  "title": "How long have you … ? (present perfect 4)",
+  "pdfPages": [
+    49,
+    50
+  ],
   "exercises": [
     {
       "id": "19.1",
-      "type": "write",
-      "instruction": "Ask Anna about her holiday plans.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски в предложениях.",
       "items": [
         {
           "num": 1,
-          "prompt": "(where / go?)",
-          "answers": ["Where are you going?"]
+          "parts": [
+            "Helen is in Ireland. She ",
+            " in Ireland since Monday."
+          ],
+          "answers": [
+            [
+              "has been"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(how long / go for?)",
-          "answers": ["How long are you going for?"]
+          "parts": [
+            "I know Lisa. I ",
+            " her for a long time."
+          ],
+          "answers": [
+            [
+              "have known"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "(when / leave?)",
-          "answers": ["When are you leaving?"]
+          "parts": [
+            "Sarah and Andy are married. They ",
+            " married since 2005."
+          ],
+          "answers": [
+            [
+              "have been"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "(go / alone?)",
-          "answers": ["Are you going alone?"]
+          "parts": [
+            "Ben is ill. He ",
+            " ill for the last few days."
+          ],
+          "answers": [
+            [
+              "has been"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "(travel / by car?)",
-          "answers": ["Are you travelling by car?"]
+          "parts": [
+            "We live in Scott Road. We ",
+            " there for a long time."
+          ],
+          "answers": [
+            [
+              "have lived",
+              "have been living"
+            ]
+          ]
         },
         {
           "num": 6,
-          "prompt": "(where / stay?)",
-          "answers": ["Where are you staying?"]
+          "parts": [
+            "Catherine works in a bank. She ",
+            " there for five years."
+          ],
+          "answers": [
+            [
+              "has worked",
+              "has been working"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Alan has a headache. He ",
+            " a headache since he got up this morning."
+          ],
+          "answers": [
+            [
+              "has had"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I’m learning English. I ",
+            " English for six months."
+          ],
+          "answers": [
+            [
+              "have been learning"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "19.2",
-      "type": "fill-in",
-      "instruction": "Complete the sentences.",
+      "type": "write",
+      "instruction": "Напишите вопросы, начинающиеся с How long … ?",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["Steve ", " (not / play) football on Saturday. He\u2019s hurt his leg."],
-          "answers": [["isn\u2019t playing"]]
+          "prompt": "Helen is on holiday.",
+          "answers": [
+            "How long has she been on holiday?"
+          ]
         },
         {
           "num": 2,
-          "parts": ["(We / have) ", " a party next week. We\u2019ve invited all our friends."],
-          "answers": [["We\u2019re having"]]
+          "prompt": "Steve and Nadia are in Brazil.",
+          "answers": [
+            "How long have they been there?",
+            "How long have they been in Brazil?"
+          ]
         },
         {
           "num": 3,
-          "parts": ["(I / not / work) ", " tomorrow. It\u2019s a public holiday."],
-          "answers": [["I\u2019m not working"]]
+          "prompt": "I know Amy.",
+          "answers": [
+            "How long have you known her?",
+            "How long have you known Amy?"
+          ]
         },
         {
           "num": 4,
-          "parts": ["(I / leave) ", " now. I\u2019ve come to say goodbye."],
-          "answers": [["I\u2019m leaving"]]
+          "prompt": "Emily is learning Italian.",
+          "answers": [
+            "How long has she been learning Italian?"
+          ]
         },
         {
           "num": 5,
-          "parts": ["\u2018What time ", " (you / go) out this evening?\u2019 \u2018Seven o\u2019clock.\u2019"],
-          "answers": [["are you going"]]
+          "prompt": "My brother lives in Canada.",
+          "answers": [
+            "How long has he lived in Canada?",
+            "How long has he been living in Canada?"
+          ]
         },
         {
           "num": 6,
-          "parts": ["(Laura / not / come) ", " to the party tomorrow. She isn\u2019t well."],
-          "answers": [["Laura isn\u2019t coming", "Laura\u2019s not coming"]]
+          "prompt": "I’m a teacher.",
+          "answers": [
+            "How long have you been a teacher?"
+          ]
         },
         {
           "num": 7,
-          "parts": ["I love New York. ", " (I / go) there soon."],
-          "answers": [["I\u2019m going"]]
-        },
-        {
-          "num": 8,
-          "parts": ["Ben can\u2019t meet us on Monday. ", " (He / work) late."],
-          "answers": [["He\u2019s working", "He is working"]]
+          "prompt": "It is raining.",
+          "answers": [
+            "How long has it been raining?"
+          ]
         }
       ]
     },
     {
       "id": "19.3",
-      "type": "self-check",
-      "instruction": "Have you arranged to do anything at these times? Write sentences about yourself.",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки. Закончите предложения, используя выражения из рамки:",
+      "wordBank": [
+        "for ten minutes",
+        "all day",
+        "all her life",
+        "for ten years",
+        "since he was 20",
+        "since Sunday"
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "(this evening) I\u2019m not doing anything this evening.",
-          "modelAnswers": ["I\u2019m not doing anything this evening."]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "They have been married for ten years."
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(tomorrow morning)",
-          "modelAnswers": ["I\u2019m working tomorrow morning."]
+          "parts": [
+            "She ",
+            ""
+          ],
+          "answers": [
+            [
+              "has lived in Wales all her life"
+            ]
+          ]
         },
         {
           "num": 3,
-          "prompt": "(tomorrow evening)",
-          "modelAnswers": ["I\u2019m not doing anything tomorrow evening."]
+          "parts": [
+            "They ",
+            ""
+          ],
+          "answers": [
+            [
+              "have been on holiday since Sunday"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "(next Sunday)",
-          "modelAnswers": ["I\u2019m going swimming next Sunday."]
+          "parts": [
+            "The sun ",
+            ""
+          ],
+          "answers": [
+            [
+              "has been shining all day"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "(another day or time)",
-          "modelAnswers": ["I\u2019m going to a party this evening."]
+          "parts": [
+            "She ",
+            ""
+          ],
+          "answers": [
+            [
+              "has been waiting for ten minutes"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "He ",
+            ""
+          ],
+          "answers": [
+            [
+              "has had a beard since he was 20"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "19.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Use the present continuous or present simple.",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": ["\u2018Tina, are you ready yet?\u2019 \u2018Yes, ", ".\u2019 (I / come)"],
-          "answers": [["I\u2019m coming"]]
+          "options": [
+            "Mark lives in Canada since April.",
+            "Mark has lived in Canada since April."
+          ],
+          "answer": 1
         },
         {
           "num": 2,
-          "parts": ["\u2018", " to Sam\u2019s party on Saturday?\u2019 \u2018No, I haven\u2019t been invited.\u2019 (you / go)"],
-          "answers": [["Are you going"]]
+          "options": [
+            "Jane and I are friends. I know her very well.",
+            "Jane and I are friends. I’ve known her very well."
+          ],
+          "answer": 0
         },
         {
           "num": 3,
-          "parts": ["\u2018Not yet, but ", " soon \u2013 probably at the end of the month.\u2019 (he / move)"],
-          "answers": [["he\u2019s moving", "he is moving"]]
+          "options": [
+            "Jane and I are friends. I know her for a long time.",
+            "Jane and I are friends. I’ve known her for a long time."
+          ],
+          "answer": 1
         },
         {
           "num": 4,
-          "parts": ["\u2018", " (I / go) to a concert tonight.\u2019 \u2018That\u2019s nice. What time ", "?\u2019 (it / start)"],
-          "answers": [["I\u2019m going", "I am going"], ["does it start"]]
+          "options": [
+            "A: Sorry I’m late. How long are you waiting? B: Not long. Only five minutes.",
+            "A: Sorry I’m late. How long have you been waiting? B: Not long. Only five minutes."
+          ],
+          "answer": 1
         },
         {
           "num": 5,
-          "parts": ["\u2018No, but ", " for lunch next week.\u2019 (we / meet)"],
-          "answers": [["we\u2019re meeting", "we are meeting"]]
+          "options": [
+            "Luke works in a hotel now. He likes his job a lot.",
+            "Luke has worked in a hotel now. He likes his job a lot."
+          ],
+          "answer": 0
         },
         {
           "num": 6,
-          "parts": ["\u2018", " anything tomorrow morning?\u2019 \u2018No, I\u2019m free. Why?\u2019 (you / do)"],
-          "answers": [["Are you doing"]]
+          "options": [
+            "Ruth is reading a newspaper. She is reading it for two hours.",
+            "Ruth is reading a newspaper. She has been reading it for two hours."
+          ],
+          "answer": 1
         },
         {
           "num": 7,
-          "parts": ["\u2018When ", "(this term / end)?\u2019 \u2018Next Friday. And next term ", " four weeks after that.\u2019 (start)"],
-          "answers": [["does this term end"], ["starts"]]
+          "options": [
+            "'How long do you live in this house?' 'About ten years.'",
+            "'How long have you lived in this house?' 'About ten years.'"
+          ],
+          "answer": 1
         },
         {
           "num": 8,
-          "parts": ["\u2018", " (We / go) to a wedding at the weekend.\u2019 \u2018Really? ", " married?\u2019 (Who / get)"],
-          "answers": [["We\u2019re going", "We are going"], ["Who\u2019s getting", "Who is getting"]]
+          "options": [
+            "'Is that a new coat?' 'No, I have this coat for a long time.'",
+            "'Is that a new coat?' 'No, I’ve had this coat for a long time.'"
+          ],
+          "answer": 1
         },
         {
           "num": 9,
-          "parts": ["\u2018There\u2019s football on TV later tonight. ", " it?\u2019 \u2018No, I\u2019m not interested.\u2019 (you / watch)"],
-          "answers": [["Are you watching"]]
+          "options": [
+            "Tom is in Spain at the moment. He is there for the last three days.",
+            "Tom is in Spain at the moment. He has been there for the last three days.",
+            "Tom has been in Spain at the moment. He is there for the last three days.",
+            "Tom has been in Spain at the moment. He has been there for the last three days."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "19.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (с 2008 года = since 2008; проводить = spend)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Мы живём в этом доме с 2008 года.",
+          "answers": [
+            "We’ve lived in this house since 2008.",
+            "We have lived in this house since 2008.",
+            "We’ve been living in this house since 2008.",
+            "We have been living in this house since 2008."
+          ]
         },
         {
-          "num": 10,
-          "parts": ["\u2018It ", " (leave) at 9.35 and ", " at 12.47.\u2019 (arrive)"],
-          "answers": [["leaves"], ["arrives"]]
+          "num": 2,
+          "prompt": "Как давно вы друзья с Ларой?",
+          "answers": [
+            "How long have you been friends with Lara?"
+          ]
         },
         {
-          "num": 11,
-          "parts": ["\u2018", " next week.\u2019 (It / finish)"],
-          "answers": [["It finishes"]]
+          "num": 3,
+          "prompt": "Дети смотрят телевизор с шести часов.",
+          "answers": [
+            "The children have been watching TV since six o’clock."
+          ]
         },
         {
-          "num": 12,
-          "parts": ["\u2018No, you can have it. ", " it.\u2019 (I / not / use)"],
-          "answers": [["I\u2019m not using", "I am not using"]]
+          "num": 4,
+          "prompt": "Салли давно знает Бена.",
+          "answers": [
+            "Sally has known Ben for a long time."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Снег идёт всё утро.",
+          "answers": [
+            "It’s been snowing all morning.",
+            "It has been snowing all morning."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Саша давно изучает испанский?",
+          "answers": [
+            "Has Sasha been studying Spanish for a long time?",
+            "Has Sasha been learning Spanish for a long time?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Я болен. Я провёл весь день в кровати.",
+          "answers": [
+            "I’m ill. I’ve spent all day in bed.",
+            "I’m ill. I have spent all day in bed.",
+            "I am ill. I’ve spent all day in bed.",
+            "I am ill. I have spent all day in bed."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Как давно женаты Кевин и Алла?",
+          "answers": [
+            "How long have Kevin and Alla been married?"
+          ]
         }
       ]
     }

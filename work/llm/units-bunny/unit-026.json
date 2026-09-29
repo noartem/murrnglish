@@ -1,0 +1,399 @@
+{
+ "unit": 26,
+ "title": "What are you doing tomorrow?",
+ "pdfPages": [
+  63,
+  64
+ ],
+ "exercises": [
+  {
+   "id": "26.1",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки. Что эти люди делают в следующую пятницу?",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Andrew is playing tennis on Friday."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Richard ",
+      " to the cinema."
+     ],
+     "answers": [
+      [
+       "is going"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Rachel ",
+      "."
+     ],
+     "answers": [
+      [
+       "is meeting Dave"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " lunch with Will."
+     ],
+     "answers": [
+      [
+       "Karen is having"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Tom and Sue are going to a party."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "26.2",
+   "type": "write",
+   "instruction": "Напишите вопросы. Во всех этих предложениях говорится о действии в будущем.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(you / go / out / tonight?)",
+     "answers": [
+      "Are you going out tonight?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(you / work / next week?)",
+     "answers": [
+      "Are you working next week?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(what / you / do / tomorrow evening?)",
+     "answers": [
+      "What are you doing tomorrow evening?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(what time / your friends / come?)",
+     "answers": [
+      "What time are your friends coming?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(when / Lisa / go / on holiday?)",
+     "answers": [
+      "When is Lisa going on holiday?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "26.3",
+   "type": "self-check",
+   "instruction": "Напишите предложения о себе. Что вы делаете в ближайшие несколько дней?",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m staying at home tonight."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m going to the theatre on Monday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m going away at the weekend."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m playing basketball tomorrow."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m meeting a friend this evening."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m going to the cinema on Thursday evening."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "26.4",
+   "type": "fill-in",
+   "instruction": "Поставьте глаголы в форму present continuous (he is leaving и т. д.) или present simple (the train leaves и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "‘",
+      " (you/go) out tonight?’ ‘No, I’m too tired.’"
+     ],
+     "answers": [
+      [
+       "Are you going"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘",
+      " (we/go) to a concert tonight.’ ‘",
+      " (it/start) at 7.30.’"
+     ],
+     "answers": [
+      [
+       "We’re going"
+      ],
+      [
+       "It starts"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Do you know about Sarah? ",
+      " (she/get) married next month!"
+     ],
+     "answers": [
+      [
+       "She’s getting"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "A: My parents ",
+      " (go) on holiday next week.\nB: Oh, that’s nice. Where ",
+      " (they/go)?"
+     ],
+     "answers": [
+      [
+       "are going"
+      ],
+      [
+       "are they going"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Silvia is doing an English course at the moment. The course ",
+      " (finish) on Friday."
+     ],
+     "answers": [
+      [
+       "finishes"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "There’s a party tomorrow night, but ",
+      " (I/not/go)."
+     ],
+     "answers": [
+      [
+       "I’m not going"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " (I/go) out with some friends tonight. Why don’t you come too?\n",
+      " (we/meet) at the Royal Hotel at 8 o’clock."
+     ],
+     "answers": [
+      [
+       "I’m going"
+      ],
+      [
+       "We’re meeting"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "A: How ",
+      " (you/get) home after the party tomorrow? By taxi?\nB: No, I can go by bus. The last bus ",
+      " (leave) at midnight."
+     ],
+     "answers": [
+      [
+       "are you getting"
+      ],
+      [
+       "leaves"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "A: ",
+      " (you/come) with us to the cinema tonight?\nB: Yes, what time ",
+      " (the film / begin)?"
+     ],
+     "answers": [
+      [
+       "Are you coming"
+      ],
+      [
+       "does the film begin"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "A: What ",
+      " (you/do) tomorrow afternoon?\nB: ",
+      " (I/work)."
+     ],
+     "answers": [
+      [
+       "are you doing"
+      ],
+      [
+       "I’m working"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "26.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [летать = fly\nвстречаться с = meet]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "В понедельник мы летим в Париж.",
+     "answers": [
+      "We are flying to Paris on Monday.",
+      "On Monday we are flying to Paris."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Ты едешь в отпуск в августе?",
+     "answers": [
+      "Are you going on holiday in August?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Завтра я не работаю.",
+     "answers": [
+      "I’m not working tomorrow.",
+      "I am not working tomorrow."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Ты сегодня вечером идёшь на вечеринку?",
+     "answers": [
+      "Are you going to the party tonight?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Когда приезжает твой автобус?",
+     "answers": [
+      "What time does your bus arrive?",
+      "When does your bus arrive?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Фильм начинается в 5:00 и заканчивается в 7:00.",
+     "answers": [
+      "The film starts at 5 o’clock and finishes at 7 o’clock.",
+      "The film starts at 5 and finishes at 7.",
+      "The film starts at 5 o’clock and finishes at 7.",
+      "The film starts at 5 and finishes at 7 o’clock."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Во вторник Нина встречается с Анной.",
+     "answers": [
+      "Nina is meeting Anna on Tuesday.",
+      "On Tuesday Nina is meeting Anna."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Борис приедёт в воскресенье?",
+     "answers": [
+      "Is Boris coming on Sunday?"
+     ]
+    }
+   ]
+  }
+ ]
+}

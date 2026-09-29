@@ -1,0 +1,112 @@
+{
+ "unit": 19,
+ "exercises": [
+  {
+   "id": "19.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски в предложениях.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Helen is in Ireland. She ",
+      " in Ireland since Monday."
+     ],
+     "answers": [
+      [
+       "has been"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I know Lisa. I ",
+      " her for a long time."
+     ],
+     "answers": [
+      [
+       "have known"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Sarah and Andy are married. They ",
+      " married since 2005."
+     ],
+     "answers": [
+      [
+       "have been"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Ben is ill. He ",
+      " ill for the last few days."
+     ],
+     "answers": [
+      [
+       "has been"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We live in Scott Road. We ",
+      " there for a long time."
+     ],
+     "answers": [
+      [
+       "have lived",
+       "have been living"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Catherine works in a bank. She ",
+      " there for five years."
+     ],
+     "answers": [
+      [
+       "has worked",
+       "has been working"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Alan has a headache. He ",
+      " a headache since he got up this morning."
+     ],
+     "answers": [
+      [
+       "has had"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I’m learning English. I ",
+      " English for six months."
+     ],
+     "answers": [
+      [
+       "have been learning"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

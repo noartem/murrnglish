@@ -1,72 +1,270 @@
 {
   "id": 35,
-  "topic": "Noun/adjective + preposition",
-  "refs": "Units 129–131",
-  "pdfPages": [334, 335],
+  "topic": "предлоги",
+  "refs": "Разделы 103–108, 111",
+  "pdfPages": [
+    270
+  ],
   "exercise": {
     "id": "35",
     "type": "fill-in",
-    "instruction": "Put in the missing preposition.",
+    "instruction": "Write a preposition (in/for/by etc.).",
+    "example": [
+      1
+    ],
     "items": [
       {
         "num": 1,
-        "parts": ["The plan has been changed, but nobody seems to know the reason ", " this."],
-        "answers": [["for"]]
+        "parts": [
+          "Helen is studying law ",
+          " university."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 2,
-        "parts": ["Don't ask me to decide. I'm not very good ", " making decisions."],
-        "answers": [["at"]]
+        "parts": [
+          "What is the longest river ",
+          " Europe?"
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
       },
       {
         "num": 3,
-        "parts": ["Some people say that Sue is unfriendly, but she's always very nice ", " me."],
-        "answers": [["to"]]
+        "parts": [
+          "Is there anything ",
+          " TV this evening?"
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 4,
-        "parts": ["What do you think is the best solution ", " the problem?"],
-        "answers": [["to"]]
+        "parts": [
+          "We arrived ",
+          " the hotel after midnight."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
       },
       {
         "num": 5,
-        "parts": ["Recently there has been a big increase ", " the number of tourists visiting the city."],
-        "answers": [["in"]]
+        "parts": [
+          "‘Where’s Mark?’ ‘He’s ",
+          " holiday.’"
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 6,
-        "parts": ["He lives a rather lonely life. He doesn't have much contact ", " other people."],
-        "answers": [["with"]]
+        "parts": [
+          "Tom hasn’t got up yet. He’s still ",
+          " bed."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
       },
       {
         "num": 7,
-        "parts": ["Paul is a keen photographer. He likes taking pictures ", " people."],
-        "answers": [["of"]]
+        "parts": [
+          "Lisa is away. She’s been away ",
+          " Monday."
+        ],
+        "answers": [
+          [
+            "since"
+          ]
+        ]
       },
       {
         "num": 8,
-        "parts": ["Michael got married ", " a woman he met when he was studying at college."],
-        "answers": [["to"]]
+        "parts": [
+          "The next meeting is ",
+          " 15 April."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
       },
       {
         "num": 9,
-        "parts": ["He's very brave. He's not scared ", " anything."],
-        "answers": [["of"]]
+        "parts": [
+          "I usually go to work ",
+          " car."
+        ],
+        "answers": [
+          [
+            "by"
+          ]
+        ]
       },
       {
         "num": 10,
-        "parts": ["I'm surprised ", " the traffic today. I didn't think it would be so busy."],
-        "answers": [["at"]]
+        "parts": [
+          "There’s too much sugar ",
+          " my coffee."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
       },
       {
         "num": 11,
-        "parts": ["Thank you for lending me the guidebook. It was full ", " useful information."],
-        "answers": [["of"]]
+        "parts": [
+          "Joe lived in London ",
+          " six months. He didn’t like it very much."
+        ],
+        "answers": [
+          [
+            "for"
+          ]
+        ]
       },
       {
         "num": 12,
-        "parts": ["I'm afraid I've had to change my plans, so I can't meet you tomorrow. I'm sorry ", " that."],
-        "answers": [["about"]]
+        "parts": [
+          "Were there a lot of people ",
+          " the party?"
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
+      },
+      {
+        "num": 13,
+        "parts": [
+          "What are you doing ",
+          " the moment? Are you working?"
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
+      },
+      {
+        "num": 14,
+        "parts": [
+          "I don’t know any of the people ",
+          " this photo."
+        ],
+        "answers": [
+          [
+            "in"
+          ]
+        ]
+      },
+      {
+        "num": 15,
+        "parts": [
+          "The train was very slow. It stopped ",
+          " every station."
+        ],
+        "answers": [
+          [
+            "at"
+          ]
+        ]
+      },
+      {
+        "num": 16,
+        "parts": [
+          "I like this room. I like the pictures ",
+          " the walls."
+        ],
+        "answers": [
+          [
+            "on"
+          ]
+        ]
+      },
+      {
+        "num": 17,
+        "parts": [
+          "‘Did you buy that picture?’ ‘No, it was given to me ",
+          " a friend of mine.’"
+        ],
+        "answers": [
+          [
+            "by"
+          ]
+        ]
+      },
+      {
+        "num": 18,
+        "parts": [
+          "I’m going away ",
+          " a few days. I’ll be back ",
+          " Thursday."
+        ],
+        "answers": [
+          [
+            "for"
+          ],
+          [
+            "on"
+          ]
+        ]
+      },
+      {
+        "num": 19,
+        "parts": [
+          "Silvia has gone ",
+          " Italy. She’s ",
+          " Milan at the moment."
+        ],
+        "answers": [
+          [
+            "to"
+          ],
+          [
+            "in"
+          ]
+        ]
+      },
+      {
+        "num": 20,
+        "parts": [
+          "Emma left school ",
+          " sixteen and got a job ",
+          " a shop."
+        ],
+        "answers": [
+          [
+            "at"
+          ],
+          [
+            "in"
+          ]
+        ]
       }
     ]
   }

@@ -1,213 +1,140 @@
 {
   "id": 13,
-  "topic": "Past, present and future",
-  "refs": "Units 1–25",
+  "topic": "was/were и past simple",
+  "refs": "Разделы 11–13",
   "pdfPages": [
-    322
+    256
   ],
   "exercise": {
     "id": "13",
     "type": "fill-in",
-    "instruction": "Put the verb into the correct form. Choose from the following: present continuous (I am doing), will ('ll) / won't, present simple (I do), will be doing, going to (I'm going to do), shall",
+    "instruction": "Поставьте глагол в правильную форму (утвердительную, отрицательную или вопросительную).",
     "items": [
       {
         "num": 1,
         "parts": [
-          "I feel a bit hungry. I think ",
-          " (I / have) something to eat."
+          "It was a good party. ",
+          " it. (I / enjoy)"
         ],
         "answers": [
           [
-            "I'll have"
+            "enjoyed"
           ]
-        ]
+        ],
+        "example": true
       },
       {
         "num": 2,
         "parts": [
-          "Why are you putting on your coat? ",
-          " (you / go) somewhere?"
+          "'",
+          " the shopping?' (you / do) 'No, I ",
+          " time.' (I / have)"
         ],
         "answers": [
           [
-            "Are you going"
+            "Did you do"
+          ],
+          [
+            "didn’t have"
           ]
-        ]
+        ],
+        "example": true
       },
       {
         "num": 3,
         "parts": [
-          "What time ",
-          " (I / phone) you tomorrow? About 10.30?"
+          "'Did you phone Adam?' 'No, I’m afraid ",
+          " :' (I / forget)"
         ],
         "answers": [
           [
-            "shall I phone"
+            "I forgot"
           ]
         ]
       },
       {
         "num": 4,
         "parts": [
-          "Look! That plane is flying towards the airport. ",
-          "(it / land)."
+          "I like your new watch. Where ",
+          " it? (you / get)"
         ],
         "answers": [
           [
-            "It's going to land"
+            "did you get"
           ]
         ]
       },
       {
         "num": 5,
         "parts": [
-          "We must do something soon, before ",
-          " (it / be) too late."
+          "I saw Lucy at the party, but ",
+          " to her. (I / speak)"
         ],
         "answers": [
           [
-            "it's",
-            "it is"
+            "I didn’t speak"
           ]
         ]
       },
       {
         "num": 6,
         "parts": [
-          "I'm sorry you've decided to leave the company. ",
-          " (I / miss) you when ",
-          "(you / go)."
+          "A: ",
+          " a nice weekend? (you / have) B: Yes, I went to stay with some friends of mine."
         ],
         "answers": [
           [
-            "I'll miss",
-            "I'm going to miss"
-          ],
-          [
-            "you go",
-            "you've gone"
+            "Did you have"
           ]
         ]
       },
       {
         "num": 7,
         "parts": [
-          "(I / give) ",
-          " you my phone number? If ",
-          " (I / give) you my number, ",
-          " (you / call) me?"
+          "Paul wasn’t well yesterday, so ",
+          " to work. (he / go)"
         ],
         "answers": [
           [
-            "Shall I give"
-          ],
-          [
-            "I give"
-          ],
-          [
-            "will you call"
+            "he didn’t go"
           ]
         ]
       },
       {
         "num": 8,
         "parts": [
-          "Are you still watching that programme? What time ",
-          "(it / finish)?"
+          "'Is Mary here?' 'Yes, ",
+          " five minutes ago.' (she / arrive)"
         ],
         "answers": [
           [
-            "does it finish"
+            "she arrived"
           ]
         ]
       },
       {
         "num": 9,
         "parts": [
-          "(I / go) ",
-          " to a wedding next weekend. My cousin ",
-          " (get) married."
+          "Where ",
+          " before he moved here? (Robert / live)"
         ],
         "answers": [
           [
-            "I'm going"
-          ],
-          [
-            "is getting"
+            "did Robert live"
           ]
         ]
       },
       {
         "num": 10,
         "parts": [
-          "I'm not ready yet. ",
-          " (I / tell) you when ",
-          " (I / be) ready. I promise ",
-          " (I / not / be) very long."
+          "The restaurant wasn’t expensive. ",
+          " very much. (the meal / cost)"
         ],
         "answers": [
           [
-            "I'll tell"
-          ],
-          [
-            "I'm"
-          ],
-          [
-            "I won't be"
+            "The meal didn’t cost"
           ]
         ]
-      },
-      {
-        "num": 11,
-        "parts": [
-          "(I / have) ",
-          " my hair cut tomorrow. I've just made an appointment."
-        ],
-        "answers": [
-          [
-            "I'm going to have",
-            "I'm having"
-          ]
-        ]
-      },
-      {
-        "num": 12,
-        "parts": [
-          "She was very rude to me. I won't speak to her again until ",
-          "(she / apologise)."
-        ],
-        "answers": [
-          [
-            "she apologises"
-          ]
-        ]
-      },
-      {
-        "num": 13,
-        "parts": [
-          "I wonder where ",
-          " (we / live) ten years from now."
-        ],
-        "answers": [
-          [
-            "we'll be living",
-            "we'll live"
-          ]
-        ]
-      },
-      {
-        "num": 14,
-        "parts": [
-          "What are you planning to do when ",
-          " (you / finish) your course at college?"
-        ],
-        "answers": [
-          [
-            "you finish",
-            "you've finished"
-          ]
-        ],
-        "example": true
       }
     ]
   }

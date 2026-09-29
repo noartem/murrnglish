@@ -1,423 +1,266 @@
 {
   "unit": 49,
-  "title": "Questions 1",
+  "title": "How long does it take … ?",
   "pdfPages": [
-    110,
-    111
+    109,
+    110
   ],
   "exercises": [
     {
       "id": "49.1",
       "type": "write",
-      "instruction": "Ask Joe questions.",
+      "instruction": "Посмотрите на картинки и напишите вопросы с How long … ?",
+      "example": [
+        1
+      ],
       "items": [
         {
-          "num": 2,
-          "prompt": "(born there?)",
+          "num": 1,
+          "prompt": "",
           "answers": [
-            "Were you born there?"
+            "How long does it take by plane from London to Amsterdam?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "",
+          "answers": [
+            "How long does it take by car from Milan to Rome?"
           ]
         },
         {
           "num": 3,
-          "prompt": "(married?)",
+          "prompt": "",
           "answers": [
-            "Are you married?"
+            "How long does it take by train from Paris to Geneva?"
           ]
         },
         {
           "num": 4,
-          "prompt": "(how long?)",
+          "prompt": "",
           "answers": [
-            "How long have you been married?"
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "(what / do?)",
-          "answers": [
-            "What do you do?"
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "(what wife / do?)",
-          "answers": [
-            "What does your wife do?"
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "(children?)",
-          "answers": [
-            "Do you have (any) children?",
-            "Have you got (any) children?"
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "(how old?)",
-          "answers": [
-            "How old are they?"
+            "How long does it take by bus from the city centre to the airport?"
           ]
         }
       ]
     },
     {
       "id": "49.2",
-      "type": "fill-in",
-      "instruction": "Make questions with who or what.",
+      "type": "self-check",
+      "instruction": "Сколько времени это занимает? Напишите полные предложения.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "",
-            " hit you?"
-          ],
-          "answers": [
-            [
-              "Who"
-            ]
+          "prompt": "fly from your city/country to London",
+          "modelAnswers": [
+            "It takes two hours to fly from Stuttgart to London."
           ]
         },
         {
           "num": 2,
-          "parts": [
-            "",
-            " did you hit?"
-          ],
-          "answers": [
-            [
-              "Who"
-            ]
-          ],
-          "example": true
+          "prompt": "fly from your city/country to New York",
+          "modelAnswers": [
+            "It takes ... hours to fly from ... to New York."
+          ]
         },
         {
           "num": 3,
-          "parts": [
-            "",
-            " paid the bill?"
-          ],
-          "answers": [
-            [
-              "Who"
-            ]
+          "prompt": "study to be a doctor in your country",
+          "modelAnswers": [
+            "It takes ... years to study to be a doctor in ...."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "",
-            " are you worried about?"
-          ],
-          "answers": [
-            [
-              "What"
-            ]
+          "prompt": "walk from your home to the nearest shop",
+          "modelAnswers": [
+            "It takes ... to walk from my home to the nearest shop."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "",
-            " happened?"
-          ],
-          "answers": [
-            [
-              "What"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "",
-            " did she/Diane say?"
-          ],
-          "answers": [
-            [
-              "What"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "",
-            " does it/this book belong to?"
-          ],
-          "answers": [
-            [
-              "Who"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "",
-            " lives in that house?"
-          ],
-          "answers": [
-            [
-              "Who"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "",
-            " did you fall over?"
-          ],
-          "answers": [
-            [
-              "What"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "",
-            " fell off the shelf?"
-          ],
-          "answers": [
-            [
-              "What"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "",
-            " does it/this word mean?"
-          ],
-          "answers": [
-            [
-              "What"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "",
-            " was she/Sarah with?"
-          ],
-          "answers": [
-            [
-              "Who"
-            ]
-          ]
-        },
-        {
-          "num": 13,
-          "parts": [
-            "",
-            " are you looking for?"
-          ],
-          "answers": [
-            [
-              "What"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "",
-            " does she/Emma remind you of?"
-          ],
-          "answers": [
-            [
-              "Who"
-            ]
+          "prompt": "get from your home to the nearest airport",
+          "modelAnswers": [
+            "It takes ... to get from my home to the nearest airport."
           ]
         }
       ]
     },
     {
       "id": "49.3",
-      "type": "fill-in",
-      "instruction": "Put the words in brackets in the correct order.",
+      "type": "write",
+      "instruction": "Напишите вопросы с How long did it take … ?",
+      "example": [
+        1
+      ],
       "items": [
         {
-          "num": 2,
-          "parts": [
-            "",
-            "(how / cheese / is / made?)"
-          ],
+          "num": 1,
+          "prompt": "(Jane found a job.)",
           "answers": [
-            [
-              "How is cheese made?"
-            ]
+            "How long did it take her to find a job?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(I walked to the station.)",
+          "answers": [
+            "How long did it take you to walk to the station?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "",
-            "(why / Sue / working / isn’t / today?)"
-          ],
+          "prompt": "(Tom painted the bathroom.)",
           "answers": [
-            [
-              "Why isn’t Sue working today?"
-            ]
+            "How long did it take him to paint the bathroom?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "",
-            "(what time / arriving / your friends / are?)"
-          ],
+          "prompt": "(I learnt to ski.)",
           "answers": [
-            [
-              "What time are your friends arriving?"
-            ]
+            "How long did it take you to learn to ski?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "",
-            "(why / was / cancelled / the meeting?)"
-          ],
+          "prompt": "(They repaired the car.)",
           "answers": [
-            [
-              "Why was the meeting cancelled?"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "",
-            "(when / invented / paper / was?)"
-          ],
-          "answers": [
-            [
-              "When was paper invented?"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "",
-            "(where / your parents / were / born?)"
-          ],
-          "answers": [
-            [
-              "Where were your parents born?"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "",
-            "(why / you / to the party / didn’t / come?)"
-          ],
-          "answers": [
-            [
-              "Why didn’t you come to the party?"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "",
-            "(how / the accident / did / happen?)"
-          ],
-          "answers": [
-            [
-              "How did the accident happen?"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "",
-            "(why / happy / you / aren’t?)"
-          ],
-          "answers": [
-            [
-              "Why aren’t you happy?"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "",
-            "(how many / speak / can / languages / you?)"
-          ],
-          "answers": [
-            [
-              "How many languages can you speak?"
-            ]
+            "How long did it take them to repair the car?"
           ]
         }
       ]
     },
     {
       "id": "49.4",
-      "type": "fill-in",
-      "instruction": "Write negative questions from the words in brackets. In each situation you are surprised.",
+      "type": "write",
+      "instruction": "Прочитайте описания ситуаций и напишите предложения с It took … .",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "(she / not / come / out with us?) Isn’t ",
-            " coming out with us?"
-          ],
+          "prompt": "I read a book last week. I started reading it on Monday. I finished it three days later.",
           "answers": [
-            [
-              "she"
-            ]
-          ],
-          "example": true
+            "It took me three days to read the book."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "Don’t you like ",
-            "? (you / not / like / him?)"
-          ],
+          "prompt": "We walked home last night. We left at 10 o’clock and we arrived home at 10.20.",
           "answers": [
-            [
-              "him"
-            ]
+            "It took us 20 minutes to walk home.",
+            "It took us 20 minutes to get home."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "Isn’t it ",
-            "? (it / not / good?)"
-          ],
+          "prompt": "I learnt to drive last year. I had my first driving lesson in January. I passed my driving test six months later.",
           "answers": [
-            [
-              "good"
-            ]
+            "It took me six months to learn to drive."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Don’t you have ",
-            "? (you / not / have / any?)"
-          ],
+          "prompt": "Mark drove to London yesterday. He left home at 7 o’clock and got to London at 10.",
           "answers": [
-            [
-              "any"
-            ]
+            "It took Mark three hours to drive to London.",
+            "It took him three hours to drive to London.",
+            "It took Mark three hours to get to London.",
+            "It took him three hours to get to London."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Lisa began looking for a job a long time ago. She got a job last week.",
+          "answers": [
+            "It took Lisa a long time to find a job.",
+            "It took her a long time to find a job.",
+            "It took Lisa a long time to get a job.",
+            "It took her a long time to get a job."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Напишите предложение о себе.",
+          "answers": [
+            "It took me ... to ..."
+          ],
+          "selfCheck": true
+        }
+      ]
+    },
+    {
+      "id": "49.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (обучение (здесь) = study, сделать ремонт (здесь) = decorate, стоянка машин = car park)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Сколько времени занимает перелёт из Москвы до Лондона?",
+          "answers": [
+            "How long does it take to fly from Moscow to London?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Саше потребовалось два месяца, чтобы найти новую работу.",
+          "answers": [
+            "It took Sasha two months to find a new job."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Обучение в университете занимает три года.",
+          "answers": [
+            "It takes three years to study at university."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Поездка на машине от моей квартиры до офиса занимает один час.",
+          "answers": [
+            "It takes an hour by car from my flat to the office.",
+            "It takes an hour by car from my flat to my office."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Нам потребуется три недели, чтобы сделать ремонт гостиной.",
+          "answers": [
+            "It will take us three weeks to decorate the living room."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Приготовление обеда не займёт много времени.",
+          "answers": [
+            "It won’t take long to make lunch.",
+            "It won’t take long to cook lunch.",
+            "It won’t take long to prepare lunch.",
+            "It won’t take a long time to make lunch.",
+            "It won’t take a long time to cook lunch.",
+            "It won’t take a long time to prepare lunch."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вы долго искали стоянку машин?",
+          "answers": [
+            "Did it take you a long time to find the car park?",
+            "Did it take you long to find the car park?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Сколько времени вам потребовалось, чтобы написать книгу?",
+          "answers": [
+            "How long did it take you to write the book?",
+            "How long did it take you to write your book?"
           ]
         }
       ]

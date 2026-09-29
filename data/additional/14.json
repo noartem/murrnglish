@@ -1,70 +1,171 @@
 {
   "id": 14,
-  "topic": "Past, present and future",
-  "refs": "Units 1–25",
+  "topic": "past simple и past continuous",
+  "refs": "Разделы 12–15",
   "pdfPages": [
-    322
+    257
   ],
   "exercise": {
     "id": "14",
-    "type": "self-check",
-    "instruction": "Use your own ideas to complete B's sentences.",
+    "type": "fill-in",
+    "instruction": "Заполните пропуски, используя past simple или past continuous.",
     "items": [
       {
+        "num": 1,
+        "example": true,
+        "parts": [
+          "It ",
+          " (rain) when we ",
+          " (go) out."
+        ],
+        "answers": [
+          [
+            "was raining"
+          ],
+          [
+            "went"
+          ]
+        ]
+      },
+      {
         "num": 2,
-        "prompt": "a: Is that a new coat?\nb: No, I _____ it a long time.",
-        "modelAnswers": [
-          "I've had",
-          "I have had"
+        "parts": [
+          "When I arrived at the office, Lisa and Paul ",
+          " (work) at their desks."
+        ],
+        "answers": [
+          [
+            "were working"
+          ]
         ]
       },
       {
         "num": 3,
-        "prompt": "a: Is that a new phone?\nb: Yes, I _____ it a few weeks ago.",
-        "modelAnswers": [
-          "I bought",
-          "I got"
+        "parts": [
+          "I ",
+          " (open) the window because it was hot."
+        ],
+        "answers": [
+          [
+            "opened"
+          ]
         ]
       },
       {
         "num": 4,
-        "prompt": "a: I can't talk to you right now. You can see I'm very busy.\nb: OK. I _____ back in about half an hour.",
-        "modelAnswers": ["I'll come", "I will come", "I'll be", "I will be"]
+        "parts": [
+          "The doorbell ",
+          " (ring) when Sue ",
+          " (cook)."
+        ],
+        "answers": [
+          [
+            "rang"
+          ],
+          [
+            "was cooking"
+          ]
+        ]
       },
       {
         "num": 5,
-        "prompt": "a: This is a nice restaurant. Do you come here often?\nb: No, it's the first time I _____ here.",
-        "modelAnswers": ["I've been", "I have been", "I've eaten", "I have eaten"]
+        "parts": [
+          "I ",
+          " (hear) a noise outside, so I ",
+          " (look) out of the window."
+        ],
+        "answers": [
+          [
+            "heard"
+          ],
+          [
+            "looked"
+          ]
+        ]
       },
       {
         "num": 6,
-        "prompt": "a: Do you do any sport?\nb: No, I _____ football, but I gave it up.",
-        "modelAnswers": ["I used to play"]
+        "parts": [
+          "Tom ",
+          " (look) out of the window when the accident ",
+          " (happen)."
+        ],
+        "answers": [
+          [
+            "was looking"
+          ],
+          [
+            "happened"
+          ]
+        ]
       },
       {
         "num": 7,
-        "prompt": "a: I'm sorry I'm late.\nb: That's OK. I _____ long.",
-        "modelAnswers": ["I haven't been waiting", "I haven't been here"]
+        "parts": [
+          "Richard had a book in his hand, but he ",
+          " (not/read) it. He ",
+          " (watch) TV."
+        ],
+        "answers": [
+          [
+            "wasn’t reading"
+          ],
+          [
+            "was watching"
+          ]
+        ]
       },
       {
         "num": 8,
-        "prompt": "a: When you went to the US last year, was it your first visit?\nb: No, I _____ there twice before.",
-        "modelAnswers": ["I'd been", "I had been", "I was"]
+        "parts": [
+          "Catherine bought a magazine, but she ",
+          " (not/read) it. She didn’t have time."
+        ],
+        "answers": [
+          [
+            "didn’t read"
+          ]
+        ]
       },
       {
         "num": 9,
-        "prompt": "a: Do you have any plans for the weekend?\nb: Yes, I _____ to a party on Saturday night.",
-        "modelAnswers": ["I'm going", "I am going"]
+        "parts": [
+          "I ",
+          " (finish) my meal, ",
+          " (pay) the bill and ",
+          " (leave) the restaurant."
+        ],
+        "answers": [
+          [
+            "finished"
+          ],
+          [
+            "paid"
+          ],
+          [
+            "left"
+          ]
+        ]
       },
       {
         "num": 10,
-        "prompt": "a: Do you know what Steve's doing these days?\nb: No, I _____ him for ages.",
-        "modelAnswers": ["I haven't seen", "I haven't heard from"]
-      },
-      {
-        "num": 11,
-        "prompt": "a: Will you still be here by the time I get back?\nb: No, I _____ by then.",
-        "modelAnswers": ["I'll have gone", "I will have gone", "I'll have left", "I will have left"]
+        "parts": [
+          "I ",
+          " (see) Kate this morning. I ",
+          " (walk) along the street and she ",
+          " (wait) for the bus."
+        ],
+        "answers": [
+          [
+            "saw"
+          ],
+          [
+            "was walking"
+          ],
+          [
+            "was waiting"
+          ]
+        ]
       }
     ]
   }

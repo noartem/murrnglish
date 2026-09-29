@@ -1,0 +1,104 @@
+{
+ "id": 12,
+ "topic": "was/were и past simple",
+ "refs": "Разделы 11–13",
+ "pdfPages": [
+  256
+ ],
+ "exercise": {
+  "id": "12",
+  "type": "fill-in",
+  "instruction": "Допишите вопросы.",
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "",
+     " a nice holiday?"
+    ],
+    "answers": [
+     [
+      "Did you have"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "",
+     "?"
+    ],
+    "answers": [
+     [
+      "Where did you go"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 3,
+    "parts": [
+     "",
+     " there?"
+    ],
+    "answers": [
+     [
+      "How long were you",
+      "How long did you stay"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "",
+     " Amsterdam?"
+    ],
+    "answers": [
+     [
+      "Did you like",
+      "Did you enjoy"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "",
+     "?"
+    ],
+    "answers": [
+     [
+      "Where did you stay"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "",
+     " good?"
+    ],
+    "answers": [
+     [
+      "Was the weather"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "",
+     " back?"
+    ],
+    "answers": [
+     [
+      "When did you get",
+      "When did you come"
+     ]
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,386 @@
+{
+ "unit": 16,
+ "title": "I have done (present perfect 1)",
+ "pdfPages": [
+  43,
+  44
+ ],
+ "exercises": [
+  {
+   "id": "16.1",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки. Что произошло? Используйте сочетания слов из рамки.",
+   "wordBank": [
+    "go to bed",
+    "clean his shoes",
+    "stop raining",
+    "close the door",
+    "fall down",
+    "have a shower"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He ",
+      ""
+     ],
+     "answers": [
+      [
+       "has cleaned his shoes."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She ",
+      ""
+     ],
+     "answers": [
+      [
+       "has closed the door.",
+       "’s closed the door."
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "They ",
+      ""
+     ],
+     "answers": [
+      [
+       "have gone to bed.",
+       "’ve gone to bed."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "It ",
+      ""
+     ],
+     "answers": [
+      [
+       "has stopped raining.",
+       "’s stopped raining."
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "He ",
+      ""
+     ],
+     "answers": [
+      [
+       "has had a shower.",
+       "’s had a shower."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The ",
+      ""
+     ],
+     "answers": [
+      [
+       "picture has fallen down."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "16.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя глаголы из рамки.",
+   "wordBank": [
+    "break",
+    "buy",
+    "decide",
+    "finish",
+    "forget",
+    "go",
+    "go",
+    "invite",
+    "lose",
+    "see",
+    "not/see",
+    "take",
+    "tell",
+    "not/tell"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I ",
+      " my keys. I don’t know where they are."
+     ],
+     "answers": [
+      [
+       "’ve lost"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I ",
+      " some new shoes. Do you want to see them?"
+     ],
+     "answers": [
+      [
+       "’ve bought",
+       "have bought"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "'Where is Helen?' 'She’s not here. She ",
+      " out.'"
+     ],
+     "answers": [
+      [
+       "’s gone",
+       "has gone"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I’m looking for Paula. ",
+      " you ",
+      " her?"
+     ],
+     "answers": [
+      [
+       "Have"
+      ],
+      [
+       "seen"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Look! Somebody ",
+      " that window."
+     ],
+     "answers": [
+      [
+       "has broken"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "'Does Lisa know that you’re going away?' 'Yes, I ",
+      " her.'"
+     ],
+     "answers": [
+      [
+       "’ve told",
+       "have told"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I can’t find my umbrella. Somebody ",
+      " it."
+     ],
+     "answers": [
+      [
+       "has taken"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "'Where are my glasses?' 'I don’t know. I ",
+      " them.'"
+     ],
+     "answers": [
+      [
+       "haven’t seen"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I’m looking for Sarah. Where ",
+      " she ",
+      "?"
+     ],
+     "answers": [
+      [
+       "has"
+      ],
+      [
+       "gone"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I know that woman, but I ",
+      " her name."
+     ],
+     "answers": [
+      [
+       "’ve forgotten",
+       "has forgotten"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Sue is having a party tonight. She ",
+      " a lot of people."
+     ],
+     "answers": [
+      [
+       "’s invited",
+       "has invited"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "What are you going to do? ",
+      " you ",
+      "?"
+     ],
+     "answers": [
+      [
+       "Have"
+      ],
+      [
+       "decided"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "A: Does Ben know about the meeting tomorrow?\nB: I don’t think so. I ",
+      " him."
+     ],
+     "answers": [
+      [
+       "haven’t told"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "I ",
+      " with this magazine. Do you want it?"
+     ],
+     "answers": [
+      [
+       "’ve finished",
+       "have finished"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "16.3",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя has/have/hasn’t/haven’t. (кредитная карточка = credit card; диван = sofa; занят = busy; раньше = before; разбивать = break)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Анна легла спать.",
+     "answers": [
+      "Anna has gone to bed."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Ким не на работе. Она уехала в отпуск.",
+     "answers": [
+      "Kim isn’t at work. She’s gone on holiday.",
+      "Kim isn’t at work. She has gone on holiday.",
+      "Kim is not at work. She’s gone on holiday.",
+      "Kim is not at work. She has gone on holiday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я потерял свою кредитную карточку.",
+     "answers": [
+      "I’ve lost my credit card.",
+      "I have lost my credit card."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Мы купили новый диван.",
+     "answers": [
+      "We’ve bought a new sofa.",
+      "We have bought a new sofa."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Где Гари? Вы его видели?",
+     "answers": [
+      "Where is Gary? Have you seen him?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я занята. Я не закончила свою работу.",
+     "answers": [
+      "I’m busy. I haven’t finished my work.",
+      "I’m busy. I have not finished my work.",
+      "I am busy. I haven’t finished my work.",
+      "I am busy. I have not finished my work."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Я встречала этого мужчину раньше, но я забыла его имя.",
+     "answers": [
+      "I’ve met this man before, but I’ve forgotten his name.",
+      "I’ve met this man before, but I have forgotten his name.",
+      "I have met this man before, but I’ve forgotten his name.",
+      "I have met this man before, but I have forgotten his name."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Посмотри! Кто-то разбил окно!",
+     "answers": [
+      "Look! Someone has broken the window!"
+     ]
+    }
+   ]
+  }
+ ]
+}

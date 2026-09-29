@@ -1,123 +1,33 @@
 {
   "unit": 34,
-  "title": "should 2",
+  "title": "I have to …",
   "pdfPages": [
-    80,
-    81
+    79,
+    80
   ],
   "exercises": [
     {
       "id": "34.1",
       "type": "fill-in",
-      "instruction": "Complete the second sentence so that it means the same as the first.",
-      "items": [
-        {
-          "num": 1,
-          "parts": [
-            "'It would be a good idea to eat more fruit,' the doctor said to me.\nThe doctor recommended that I ",
-            "."
-          ],
-          "answers": [
-            [
-              "should eat more fruit"
-            ]
-          ]
-        },
-        {
-          "num": 2,
-          "parts": [
-            "'You really must stay a little longer,' she said to me.\nShe insisted that I ",
-            "."
-          ],
-          "answers": [
-            [
-              "should stay a little longer",
-              "stay a little longer",
-              "stayed a little longer"
-            ]
-          ]
-        },
-        {
-          "num": 3,
-          "parts": [
-            "'Why don't you visit the museum after lunch?' I said to them.\nI suggested that ",
-            "."
-          ],
-          "answers": [
-            [
-              "they should visit the museum after lunch",
-              "they visit the museum after lunch",
-              "they visited the museum after lunch"
-            ]
-          ]
-        },
-        {
-          "num": 4,
-          "parts": [
-            "'You must pay the rent by Friday,' the landlord said to us.\nThe landlord demanded that ",
-            "."
-          ],
-          "answers": [
-            [
-              "we should pay the rent by Friday",
-              "we pay the rent by Friday",
-              "we paid the rent by Friday"
-            ]
-          ]
-        },
-        {
-          "num": 5,
-          "parts": [
-            "'Let's go to the cinema,' Chris said to me.\nChris suggested that ",
-            "."
-          ],
-          "answers": [
-            [
-              "we should go to the cinema",
-              "we go to the cinema",
-              "we went to the cinema"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "id": "34.2",
-      "type": "choice",
-      "instruction": "Two of these sentences are not correct. Change the two that are not correct.",
-      "options": [
-        "Tom suggested that I look for another job.",
-        "I called Tina and suggested that we meet for coffee.",
-        "What do you suggest me to do?",
-        "What sort of car do you suggest I should buy?",
-        "I suggest you to read this book.",
-        "I suggested that Anna learn to drive."
-      ],
-      "answer": 2
-    },
-    {
-      "id": "34.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using should + verb. Choose from:",
+      "instruction": "Заполните пропуски. Используйте have to или has to + глаголы из рамки:",
       "wordBank": [
-        "ask",
-        "be",
-        "be done",
-        "leave",
-        "say",
-        "vote",
-        "worry"
+        "do",
+        "hit",
+        "read",
+        "speak",
+        "travel",
+        "wear"
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "It's strange that he ",
-            ". He's usually on time."
+            "My eyes are not very good. I ",
+            " glasses."
           ],
           "answers": [
             [
-              "should be late"
+              "have to wear"
             ]
           ],
           "example": true
@@ -125,72 +35,203 @@
         {
           "num": 2,
           "parts": [
-            "It's funny that you ",
-            " that. I was thinking the same thing."
+            "At the end of the course all the students ",
+            " a test."
           ],
           "answers": [
             [
-              "should say"
+              "have to do"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "It's only natural that parents ",
-            " about their children."
+            "Sarah is studying literature. She ",
+            " a lot of books."
           ],
           "answers": [
             [
-              "should worry"
+              "has to read"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Isn't it typical of Joe that he ",
-            " without saying goodbye to anybody?"
+            "Albert doesn’t understand much English. You ",
+            " very slowly to him."
           ],
           "answers": [
             [
-              "should leave"
+              "have to speak"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I was surprised that they ",
-            " me for advice. What advice could I give them?"
+            "Kate is often away from home. She ",
+            " a lot in her job."
           ],
           "answers": [
             [
-              "should ask"
+              "has to travel"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "This is a democratic election, and it's important that you ",
-            "."
+            "In tennis you ",
+            " the ball over the net."
           ],
           "answers": [
             [
-              "should vote"
+              "have to hit"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "34.2",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте have to или had to + глаголы из рамки:",
+      "wordBank": [
+        "answer",
+        "buy",
+        "change",
+        "go",
+        "walk"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "We ",
+            " home last night. There were no buses."
+          ],
+          "answers": [
+            [
+              "had to walk"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "It’s late. I ",
+            " now. I’ll see you tomorrow."
+          ],
+          "answers": [
+            [
+              "have to go"
             ]
           ]
         },
         {
-          "num": 7,
+          "num": 3,
           "parts": [
-            "The bridge needs to be repaired. It's essential that the work ",
-            " as soon as possible."
+            "I went to the supermarket after work yesterday. I ",
+            " some food."
           ],
           "answers": [
             [
-              "should be done"
+              "had to buy"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This train doesn’t go all the way to London. You ",
+            " at Bristol."
+          ],
+          "answers": [
+            [
+              "have to change"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We did an exam yesterday. We ",
+            " six questions out of ten."
+          ],
+          "answers": [
+            [
+              "had to answer"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "34.3",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Некоторые из них должны быть в настоящем времени, некоторые – в прошедшем.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I have to get up early tomorrow.  What time ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "do you have to get up"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "George had to wait a long time.  How long ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "did he have to wait"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Lisa has to go somewhere.  Where ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "does she have to go"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We had to pay a lot of money.  How much ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "did you have to pay"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I have to do some work.  What exactly ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "do you have to do"
             ]
           ]
         }
@@ -199,23 +240,17 @@
     {
       "id": "34.4",
       "type": "fill-in",
-      "instruction": "Complete the sentences using If … should … . Choose from:",
-      "wordBank": [
-        "anyone / ask",
-        "the situation / change",
-        "it / rain",
-        "there / any problems"
-      ],
+      "instruction": "Напишите предложения с don’t/doesn’t/didn’t have to … .",
       "items": [
         {
           "num": 1,
           "parts": [
-            "We have no jobs at present. If ",
-            " , we'll let you know."
+            "Why are you going out? You",
+            ""
           ],
           "answers": [
             [
-              "the situation should change"
+              "don’t have to go out."
             ]
           ],
           "example": true
@@ -223,85 +258,49 @@
         {
           "num": 2,
           "parts": [
-            "I've hung out the washing to dry on the balcony. If ",
-            " , can you bring it inside?"
+            "Why is Sue waiting? She ",
+            ""
           ],
           "answers": [
             [
-              "it should rain"
+              "doesn’t have to wait."
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I think everything will be OK. ",
-            " , I'm sure we'll be able to solve them."
+            "Why did you get up early? You ",
+            ""
           ],
           "answers": [
             [
-              "If there should be any problems"
+              "didn’t have to get up early."
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I don't want anyone to know where I'm going. ",
-            " , say you don't know."
+            "Why is Paul working so hard? He ",
+            ""
           ],
           "answers": [
             [
-              "If anyone should ask"
+              "doesn’t have to work hard.",
+              "doesn’t have to work so hard."
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "",
-            " , we'll let you know."
+            "Why do you want to leave now? We ",
+            ""
           ],
           "answers": [
             [
-              "Should the situation change"
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": 6,
-          "parts": [
-            "",
-            " , can you bring the washing inside?"
-          ],
-          "answers": [
-            [
-              "Should it rain"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "",
-            " , I'm sure we'll be able to solve them."
-          ],
-          "answers": [
-            [
-              "Should there be any problems"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "",
-            " , say you don't know."
-          ],
-          "answers": [
-            [
-              "Should anyone ask"
+              "don’t have to leave now."
             ]
           ]
         }
@@ -309,61 +308,181 @@
     },
     {
       "id": "34.5",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using I should. Choose from:",
-      "wordBank": [
-        "call",
-        "get",
-        "keep",
-        "wait"
+      "type": "choice",
+      "instruction": "Выберите правильный вариант. В некоторых предложениях возможны оба варианта (must или have to). В других предложениях правилен только один из них.",
+      "example": [
+        1,
+        2
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "'Shall I leave now?' 'No, I ",
-            " a bit.'"
+          "options": [
+            "It’s a fantastic film. You must see it.",
+            "It’s a fantastic film. You have to see it."
           ],
-          "answers": [
-            [
-              "should wait"
-            ]
+          "answer": [
+            0,
+            1
           ]
         },
         {
           "num": 2,
-          "parts": [
-            "'Shall I throw these things away?' 'No, ",
-            ". You may need them.'"
+          "options": [
+            "Jessica won’t be at work this afternoon. She must go to the doctor.",
+            "Jessica won’t be at work this afternoon. She has to go to the doctor."
           ],
-          "answers": [
-            [
-              "I should keep"
-            ]
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "You can’t park your car here for nothing. You must pay.",
+            "You can’t park your car here for nothing. You have to pay."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": [
+            "I didn’t have any money with me last night, so I must borrow some.",
+            "I didn’t have any money with me last night, so I had to borrow some."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 5,
+          "options": [
+            "I eat too much chocolate. I really must stop.",
+            "I eat too much chocolate. I really have to stop."
+          ],
+          "answer": [
+            0,
+            1
+          ]
+        },
+        {
+          "num": 6,
+          "options": [
+            "Paul is in a hurry. He must meet somebody in five minutes.",
+            "Paul is in a hurry. He has to meet somebody in five minutes."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": [
+            "What’s wrong? You must tell me. I want to help you.",
+            "What’s wrong? You have to tell me. I want to help you."
+          ],
+          "answer": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "34.6",
+      "type": "self-check",
+      "instruction": "Напишите несколько предложений о том, что вам (вашим друзьям или членам семьи) приходится, придётся или пришлось (с)делать.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(every day)",
+          "modelAnswers": [
+            "I have to travel ten miles every day."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(every day)",
+          "modelAnswers": [
+            "I have to go to work every day."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "'Shall I go and see Paul?' 'Yes, but ",
-            " him first.'"
-          ],
-          "answers": [
-            [
-              "I should call"
-            ]
+          "prompt": "(yesterday)",
+          "modelAnswers": [
+            "I had to go to the dentist yesterday."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "'Is it worth getting this computer repaired?' 'No, ",
-            " a new one.'"
-          ],
+          "prompt": "(tomorrow)",
+          "modelAnswers": [
+            "I have to go shopping tomorrow."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "34.7",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя have to / doesn’t have to ... . [Во сколько = What time; взять такси = take a taxi; зонттик = umbrella]",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Завтра мне необходимо встать очень рано.",
           "answers": [
-            [
-              "I should get"
-            ]
+            "I have to get up very early tomorrow."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вам пришлось работать вчера?",
+          "answers": [
+            "Did you have to work yesterday?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Почему Вере пришлось уйти так рано?",
+          "answers": [
+            "Why did Vera have to leave so early?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Моя бабушка вынуждена принимать это лекарство каждый день.",
+          "answers": [
+            "My grandmother has to take this medicine every day.",
+            "My grandma has to take this medicine every day."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Во сколько ты должна быть в офисе?",
+          "answers": [
+            "What time do you have to be at the office?",
+            "What time do you have to be in the office?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Автобус не пришёл, поэтому нам пришлось взять такси.",
+          "answers": [
+            "The bus didn’t come, so we had to take a taxi.",
+            "The bus did not come, so we had to take a taxi."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мне нужно покупать билет в этот музей?",
+          "answers": [
+            "Do I have to buy a ticket for this museum?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Было солнечно, поэтому мне не пришлось брать зонттик.",
+          "answers": [
+            "It was sunny, so I didn’t have to take an umbrella.",
+            "It was sunny, so I did not have to take an umbrella."
           ]
         }
       ]

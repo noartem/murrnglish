@@ -1,0 +1,436 @@
+{
+ "unit": 8,
+ "title": "Do you … ? (present simple, вопросы)",
+ "pdfPages": [
+  27,
+  28
+ ],
+ "exercises": [
+  {
+   "id": "8.1",
+   "type": "write",
+   "instruction": "Напишите вопросы, начинающиеся с Do ...? или Does ...?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I like chocolate. How about you?",
+     "answers": [
+      "Do you like chocolate?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I play tennis. How about you?",
+     "answers": [
+      "Do you play tennis?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "You live near here. How about Lucy?",
+     "answers": [
+      "Does Lucy live near here?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Tom plays tennis. How about his friends?",
+     "answers": [
+      "Do Tom’s friends play tennis?",
+      "Do his friends play tennis?",
+      "Do they play tennis?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "You speak English. How about your brother?",
+     "answers": [
+      "Does your brother speak English?",
+      "Does he speak English?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I do yoga every morning. How about you?",
+     "answers": [
+      "Do you do yoga every morning?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Sue goes on holiday a lot. How about Paul?",
+     "answers": [
+      "Does Paul go on holiday a lot?",
+      "Does he go on holiday a lot?",
+      "Does Paul go on holiday much?",
+      "Does he go on holiday much?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "I want to be famous. How about you?",
+     "answers": [
+      "Do you want to be famous?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "You work hard. How about Anna?",
+     "answers": [
+      "Does Anna work hard?",
+      "Does she work hard?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "write",
+   "instruction": "Составьте вопросы из этих слов + do/does, соблюдая правильный порядок слов.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(where / live / your parents)",
+     "answers": [
+      "Where do your parents live?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(you / early / always / get up)",
+     "answers": [
+      "Do you always get up early?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(how often / TV / you / watch)",
+     "answers": [
+      "How often do you watch TV?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(you / want / what / for dinner)",
+     "answers": [
+      "What do you want for dinner?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(like / you / football)",
+     "answers": [
+      "Do you like football?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(your brother / like / football)",
+     "answers": [
+      "Does your brother like football?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(what / you / do / in your free time)",
+     "answers": [
+      "What do you do in your free time?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(your sister / work / where)",
+     "answers": [
+      "Where does your sister work?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(breakfast / always / you / have)",
+     "answers": [
+      "Do you always have breakfast?"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "(what / mean / this word)",
+     "answers": [
+      "What does this word mean?"
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "(in winter / snow / it / here)",
+     "answers": [
+      "Does it snow here in winter?"
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "(go / usually / to bed / what time / you)",
+     "answers": [
+      "What time do you usually go to bed?"
+     ]
+    },
+    {
+     "num": 13,
+     "prompt": "(how much / to phone New York / it / cost)",
+     "answers": [
+      "How much does it cost to phone New York?"
+     ]
+    },
+    {
+     "num": 14,
+     "prompt": "(you / for breakfast / have / usually / what)",
+     "answers": [
+      "What do you usually have for breakfast?"
+     ]
+    }
+   ],
+   "example": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "fill-in",
+   "instruction": "Допишите вопросы, используя глаголы из рамки:",
+   "wordBank": [
+    "-do-",
+    "do",
+    "enjoy",
+    "go",
+    "like",
+    "start",
+    "teach",
+    "work"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "What ",
+      " you do?"
+     ],
+     "answers": [
+      [
+       "do"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " it?"
+     ],
+     "answers": [
+      [
+       "Do you enjoy",
+       "Do you like"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "What time ",
+      " in the morning?"
+     ],
+     "answers": [
+      [
+       "do you start"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " on Saturdays?"
+     ],
+     "answers": [
+      [
+       "Do you work"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "How ",
+      " to work?"
+     ],
+     "answers": [
+      [
+       "do you go"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "And your husband. What ",
+      "?"
+     ],
+     "answers": [
+      [
+       "does he do"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "What ",
+      "?"
+     ],
+     "answers": [
+      [
+       "does he teach"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      " his job?"
+     ],
+     "answers": [
+      [
+       "Does he enjoy",
+       "Does he like"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "write",
+   "instruction": "Напишите краткие ответы (Yes, he does. / No, I don’t. и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Do you watch TV a lot?",
+     "answers": [
+      "No, I don’t.",
+      "Yes, I do."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Do you live in a big city?",
+     "answers": [
+      "Yes, I do.",
+      "No, I don’t."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Do you often ride a bike?",
+     "answers": [
+      "Yes, I do.",
+      "No, I don’t."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Does it rain a lot where you live?",
+     "answers": [
+      "Yes, it does.",
+      "No, it doesn’t."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Do you play the piano?",
+     "answers": [
+      "Yes, I do.",
+      "No, I don’t."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [на ужин = for dinner\nв отпуск = on holiday\nрано = early]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Вы любите кофе?",
+     "answers": [
+      "Do you like coffee?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Бен говорит по-русски?",
+     "answers": [
+      "Does Ben speak Russian?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Где ты живёшь?",
+     "answers": [
+      "Where do you live?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Твои родители живут в Москве?",
+     "answers": [
+      "Do your parents live in Moscow?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Что вы обычно едите на ужин?",
+     "answers": [
+      "What do you usually have for dinner?",
+      "What do you usually eat for dinner?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Где работает твой брат?",
+     "answers": [
+      "Where does your brother work?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Как часто вы смотрите фильмы?",
+     "answers": [
+      "How often do you watch films?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Куда вы обычно едете в отпуск?",
+     "answers": [
+      "Where do you usually go on holiday?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Вы всегда встаёте рано?",
+     "answers": [
+      "Do you always get up early?"
+     ]
+    }
+   ]
+  }
+ ]
+}

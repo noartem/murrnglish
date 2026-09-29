@@ -1,0 +1,109 @@
+{
+ "unit": 96,
+ "exercises": [
+  {
+   "id": "96.2",
+   "type": "fill-in",
+   "instruction": "Напишите по три предложения о каждой ситуации. Сначала внимательно прочитайте примеры.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "(раньше) ",
+      "",
+      " (still) ",
+      "",
+      " (yet) ",
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "They were waiting for the bus."
+      ],
+      [
+       "They are still waiting."
+      ],
+      [
+       "The bus hasn’t come yet."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "(раньше) He was ",
+      " (still) He ",
+      " (yet) ",
+      " yet."
+     ],
+     "answers": [
+      [
+       "looking for a job."
+      ],
+      [
+       "’s still looking (for a job).",
+       "’s still looking for a job.",
+       "is still looking (for a job).",
+       "is still looking for a job."
+      ],
+      [
+       "He hasn’t found a job"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "(раньше) She ",
+      " asleep. (still) ",
+      " (yet) ",
+      ""
+     ],
+     "answers": [
+      [
+       "was"
+      ],
+      [
+       "She’s still asleep.",
+       "She is still asleep."
+      ],
+      [
+       "She hasn’t woken up yet.",
+       "She isn’t awake yet.",
+       "She hasn’t got up yet.",
+       "She isn’t up yet."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "(раньше) They ",
+      " (still) ",
+      " (yet) ",
+      ""
+     ],
+     "answers": [
+      [
+       "were having dinner.",
+       "were eating."
+      ],
+      [
+       "They’re still having dinner.",
+       "They are still having dinner.",
+       "They’re still eating.",
+       "They are still eating."
+      ],
+      [
+       "They haven’t finished (dinner) yet.",
+       "They haven’t finished dinner yet.",
+       "They haven’t finished eating yet."
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,617 @@
+{
+ "unit": 52,
+ "title": "work/working · go/going · do/doing",
+ "pdfPages": [
+  115,
+  116
+ ],
+ "exercises": [
+  {
+   "id": "52.1",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Вставьте ... phone Paul или ... to phone Paul.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’ll ",
+      "."
+     ],
+     "answers": [
+      [
+       "phone Paul"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m going ",
+      "."
+     ],
+     "answers": [
+      [
+       "to phone Paul"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Can you ",
+      " Paul?"
+     ],
+     "answers": [
+      [
+       "phone"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Shall I ",
+      "?"
+     ],
+     "answers": [
+      [
+       "phone Paul"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I’d like ",
+      "."
+     ],
+     "answers": [
+      [
+       "to phone Paul"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Do you have ",
+      "?"
+     ],
+     "answers": [
+      [
+       "to phone Paul"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "You should ",
+      "."
+     ],
+     "answers": [
+      [
+       "phone Paul"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I want ",
+      "."
+     ],
+     "answers": [
+      [
+       "to phone Paul"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I might ",
+      "."
+     ],
+     "answers": [
+      [
+       "phone Paul"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "You must ",
+      "."
+     ],
+     "answers": [
+      [
+       "phone Paul"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "52.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя глаголы из рамки. В некоторых предложениях необходимо использовать инфинитив (work/go и т. д.), а в других предложениях – форму глагола на -ing (working/going и т. д.).",
+   "wordBank": [
+    "do/doing",
+    "eat/eating",
+    "fly/flying",
+    "get/getting",
+    "go/going",
+    "listen/listening",
+    "sleep/sleeping",
+    "stay/staying",
+    "wait/waiting",
+    "watch/watching",
+    "wear/wearing",
+    "work/working"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Please be quiet. I’m ",
+      "."
+     ],
+     "answers": [
+      [
+       "working"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I feel tired today. I didn’t ",
+      " very well last night."
+     ],
+     "answers": [
+      [
+       "sleep"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "What time do you usually ",
+      " up in the morning?"
+     ],
+     "answers": [
+      [
+       "get"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "'Where are you ",
+      "?' 'To the office.'"
+     ],
+     "answers": [
+      [
+       "going"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Did you ",
+      " TV last night?"
+     ],
+     "answers": [
+      [
+       "watch"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Look at that plane! It’s ",
+      " very low."
+     ],
+     "answers": [
+      [
+       "flying"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "You can turn off the radio. I’m not ",
+      " to it."
+     ],
+     "answers": [
+      [
+       "listening"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "They didn’t ",
+      " anything because they weren’t hungry."
+     ],
+     "answers": [
+      [
+       "eat"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "My friends were ",
+      " for me when I arrived."
+     ],
+     "answers": [
+      [
+       "waiting"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "'Does Susan always ",
+      " glasses?' 'No, only for reading.'"
+     ],
+     "answers": [
+      [
+       "wear"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "'What are you ",
+      " tonight?' 'I’m ",
+      " at home.'"
+     ],
+     "answers": [
+      [
+       "doing"
+      ],
+      [
+       "staying"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "52.3",
+   "type": "fill-in",
+   "instruction": "Поставьте глагол в правильную форму: инфинитив (work/go и т. д.) или to ... (to work / to go и т. д.) или -ing (working/going и т. д.)",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Shall I ",
+      " the window? (open)"
+     ],
+     "answers": [
+      [
+       "open"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It’s late. I have ",
+      " now. (go)"
+     ],
+     "answers": [
+      [
+       "to go"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Amanda isn’t ",
+      " this week. She’s on holiday. (work)"
+     ],
+     "answers": [
+      [
+       "working"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I’m tired. I don’t want ",
+      " out. (go)"
+     ],
+     "answers": [
+      [
+       "to go"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It might ",
+      ", so take an umbrella with you. (rain)"
+     ],
+     "answers": [
+      [
+       "rain"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "What time do you have ",
+      " tomorrow morning? (leave)"
+     ],
+     "answers": [
+      [
+       "to leave"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I’m sorry I can’t ",
+      " you. (help)"
+     ],
+     "answers": [
+      [
+       "help"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "My brother is a student. He’s ",
+      " physics. (study)"
+     ],
+     "answers": [
+      [
+       "studying"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Would you like ",
+      " on a trip round the world? (go)"
+     ],
+     "answers": [
+      [
+       "to go"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "When you saw Maria, what was she ",
+      "? (wear)"
+     ],
+     "answers": [
+      [
+       "wearing"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "When you go to London, where are you going ",
+      "? (stay)"
+     ],
+     "answers": [
+      [
+       "to stay"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I’m hungry. I must ",
+      " something to eat. (have)"
+     ],
+     "answers": [
+      [
+       "have"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "'Where’s Gary?' 'He’s ",
+      " a bath.' (have)"
+     ],
+     "answers": [
+      [
+       "having"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "I used ",
+      " a car, but I sold it last year. (have)"
+     ],
+     "answers": [
+      [
+       "to have"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "He spoke very quietly. I couldn’t ",
+      " him. (hear)"
+     ],
+     "answers": [
+      [
+       "hear"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "You don’t look well. I don’t think you should ",
+      " to work today. (go)"
+     ],
+     "answers": [
+      [
+       "go"
+      ]
+     ]
+    },
+    {
+     "num": 17,
+     "parts": [
+      "I don’t know what he said. I wasn’t ",
+      " to him. (listen)"
+     ],
+     "answers": [
+      [
+       "listening"
+      ]
+     ]
+    },
+    {
+     "num": 18,
+     "parts": [
+      "I missed the bus and had ",
+      " home. (walk)"
+     ],
+     "answers": [
+      [
+       "to walk"
+      ]
+     ]
+    },
+    {
+     "num": 19,
+     "parts": [
+      "I want ",
+      " what happened. (know) You must ",
+      " me. (tell)"
+     ],
+     "answers": [
+      [
+       "to know"
+      ],
+      [
+       "tell"
+      ]
+     ]
+    },
+    {
+     "num": 20,
+     "parts": [
+      "May I ",
+      " this book? (borrow)"
+     ],
+     "answers": [
+      [
+       "borrow"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "52.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (прибывать = arrive)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Мне закрыть дверь?",
+     "answers": [
+      "Shall I close the door?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Бренда раньше работала в банке.",
+     "answers": [
+      "Brenda used to work in a bank."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Когда прибыл ваш поезд?",
+     "answers": [
+      "When did your train arrive?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "В субботу я, возможно, пойду в кино.",
+     "answers": [
+      "I might go to the cinema on Saturday.",
+      "I may go to the cinema on Saturday."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(в ресторане) Что вы хотите пить?",
+     "answers": [
+      "What would you like to drink?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Куда бы вы хотели пойти завтра?",
+     "answers": [
+      "Where would you like to go tomorrow?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Мы собираемся купить новую машину.",
+     "answers": [
+      "We’re going to buy a new car.",
+      "We are going to buy a new car."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(по телефону) Я не могу говорить. Я ужинаю.",
+     "answers": [
+      "I can’t talk. I’m having dinner."
+     ]
+    }
+   ]
+  }
+ ]
+}

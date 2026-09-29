@@ -1,150 +1,99 @@
 {
   "unit": 4,
-  "title": "Present continuous and present simple 2 (I am doing and I do)",
+  "title": "I am doing (present continuous)",
   "pdfPages": [
-    20,
-    21
+    19,
+    20
   ],
   "exercises": [
     {
       "id": "4.1",
       "type": "fill-in",
-      "instruction": "Put the verb into the correct form, present continuous or present simple.",
+      "instruction": "Что делают эти люди? Заполните пропуски, используя глаголы из рамки:",
+      "wordBank": [
+        "eat",
+        "have",
+        "lie",
+        "play",
+        "sit",
+        "wait"
+      ],
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "Alan says he’s 90 years old, but nobody ",
-            " (believe) him."
+            "",
+            " an apple."
           ],
           "answers": [
             [
-              "believes"
+              "She’s eating"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He ",
+            " for a bus."
+          ],
+          "answers": [
+            [
+              "’s waiting",
+              "is waiting"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "She told me her name, but ",
-            " (I / not / remember) it now."
+            "They ",
+            " football."
           ],
           "answers": [
             [
-              "I don’t remember",
-              "I do not remember",
-              "I can’t remember"
+              "’re playing",
+              "are playing"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Don’t put the dictionary away. ",
-            " (I / use) it."
+            "",
+            " on the floor."
           ],
           "answers": [
             [
-              "I’m using",
-              "I am using"
+              "He’s lying",
+              "He is lying"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Don’t put the dictionary away. ",
-            " (I / need) it."
+            "",
+            " breakfast."
           ],
           "answers": [
             [
-              "I need"
+              "They’re having",
+              "They are having"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 6,
           "parts": [
-            "Air ",
-            " (consist) mainly of nitrogen and oxygen."
+            "",
+            " on the table."
           ],
           "answers": [
             [
-              "consists"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Who is that man? What ",
-            "(he / want)?"
-          ],
-          "answers": [
-            [
-              "does he want"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Who is that man? Why ",
-            " (he / look) at us?"
-          ],
-          "answers": [
-            [
-              "is he looking"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "Who is that man? ",
-            "(you / recognise)?"
-          ],
-          "answers": [
-            [
-              "Do you recognise"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "(I / think) ",
-            " of selling my car. Would you be interested in buying it?"
-          ],
-          "answers": [
-            [
-              "I’m thinking",
-              "I am thinking"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "I can’t make up my mind. What ",
-            " (you / think) I should do?"
-          ],
-          "answers": [
-            [
-              "do you think"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "Gary wasn’t well earlier, but ",
-            " (he / seem) OK now."
-          ],
-          "answers": [
-            [
-              "he seems"
+              "She’s sitting",
+              "She is sitting"
             ]
           ]
         }
@@ -152,49 +101,121 @@
     },
     {
       "id": "4.2",
-      "type": "write",
-      "instruction": "Use the words in brackets to make sentences.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя глаголы из рамки:",
+      "wordBank": [
+        "build",
+        "cook",
+        "go",
+        "have",
+        "stand",
+        "stay",
+        "swim",
+        "work"
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "(you / not / seem / very happy today)",
+          "parts": [
+            "Please be quiet. I ",
+            "."
+          ],
           "answers": [
-            "You don’t seem very happy today."
-          ]
+            [
+              "’m working"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(I / think)",
+          "parts": [
+            "‘Where’s John?’ ‘He’s in the kitchen. He ",
+            " .’"
+          ],
           "answers": [
-            "I’m thinking."
+            [
+              "’s cooking",
+              "is cooking"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "(who / this umbrella / belong to?)",
+          "parts": [
+            "‘You ",
+            " on my foot.’ ‘Oh, I’m sorry.’"
+          ],
           "answers": [
-            "Who does this umbrella belong to?"
+            [
+              "’re standing",
+              "are standing"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "(this / smell / good)",
+          "parts": [
+            "Look! Somebody ",
+            " in the river."
+          ],
           "answers": [
-            "This smells good."
+            [
+              "’s swimming",
+              "is swimming"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "(anybody / sit / there?)",
+          "parts": [
+            "We’re here on holiday. We ",
+            " at the Central Hotel."
+          ],
           "answers": [
-            "Is anybody sitting there?"
+            [
+              "’re staying",
+              "are staying"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "(these gloves / not / fit / me)",
+          "parts": [
+            "‘Where’s Sue?’ ‘She ",
+            " a shower.’"
+          ],
           "answers": [
-            "These gloves don’t fit me."
+            [
+              "’s having",
+              "is having"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "They ",
+            " a new hotel in the city centre at the moment."
+          ],
+          "answers": [
+            [
+              "’re building",
+              "are building"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I ",
+            " now. Goodbye."
+          ],
+          "answers": [
+            [
+              "’m going",
+              "am going"
+            ]
           ]
         }
       ]
@@ -202,126 +223,242 @@
     {
       "id": "4.3",
       "type": "write",
-      "instruction": "Are the underlined verbs OK? Correct them where necessary.",
+      "instruction": "Посмотрите на картинку и напишите предложения о Джейн. Используйте She’s -ing или She isn’t -ing.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "Nicky [is thinking] of giving up her job.",
+          "prompt": "(have dinner)",
           "answers": [
-            "OK"
+            "Jane isn’t having dinner."
           ]
         },
         {
           "num": 2,
-          "prompt": "It’s not true. I’m [not believing] it.",
+          "prompt": "(watch TV)",
           "answers": [
-            "I don’t believe it"
+            "She’s watching TV."
           ]
         },
         {
           "num": 3,
-          "prompt": "I’m [feeling] hungry. Is there anything to eat?",
+          "prompt": "(sit on the floor) She",
           "answers": [
-            "OK"
+            "She’s sitting on the floor.",
+            "She is sitting on the floor."
           ]
         },
         {
           "num": 4,
-          "prompt": "I’ve never eaten that fruit. What [is it tasting] like?",
+          "prompt": "(read a book)",
           "answers": [
-            "does it taste"
+            "She isn’t reading a book.",
+            "She’s not reading a book."
           ]
         },
         {
           "num": 5,
-          "prompt": "I’m not sure what she does. I think she [works] in a shop.",
+          "prompt": "(play the piano)",
           "answers": [
-            "OK"
+            "She isn’t playing the piano.",
+            "She’s not playing the piano."
           ]
         },
         {
           "num": 6,
-          "prompt": "Look over there. What [are you seeing]?",
+          "prompt": "(laugh)",
           "answers": [
-            "do you see"
+            "She’s laughing.",
+            "She is laughing."
           ]
         },
         {
           "num": 7,
-          "prompt": "You’re very quiet. What [are you thinking] about?",
+          "prompt": "(wear a hat)",
           "answers": [
-            "OK"
+            "She’s wearing a hat.",
+            "She is wearing a hat."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(drinking coffee)",
+          "answers": [
+            "She isn’t drinking coffee.",
+            "She’s not drinking coffee."
           ]
         }
-      ],
-      "example": [
-        1,
-        2
       ]
     },
     {
       "id": "4.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Use is/are being (continuous) or is/are (simple).",
+      "type": "self-check",
+      "instruction": "Что вы сейчас делаете? Напишите правдивые предложения о себе. Какая сейчас погода? Напишите правдивые предложения.",
+      "example": [
+        1,
+        8
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "(I / wash / my hair)",
+          "modelAnswers": [
+            "I’m not washing my hair."
+          ]
+        },
+        {
           "num": 2,
-          "parts": [
-            "You’ll like Sophie when you meet her. She ",
-            " very nice."
-          ],
-          "answers": [
-            [
-              "is"
-            ]
+          "prompt": "(I / read / a newspaper)",
+          "modelAnswers": [
+            "I’m reading a newspaper.",
+            "I’m not reading a newspaper."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "Sarah ",
-            " very nice to me at the moment. I wonder why."
-          ],
-          "answers": [
-            [
-              "is being"
-            ]
+          "prompt": "(I / sit / on a chair)",
+          "modelAnswers": [
+            "I’m sitting on a chair.",
+            "I’m not sitting on a chair."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "They ",
-            " very happy. They’ve just got married."
-          ],
-          "answers": [
-            [
-              "are"
-            ]
+          "prompt": "(I / eat)",
+          "modelAnswers": [
+            "I’m eating.",
+            "I’m not eating."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "You’re normally very patient, so why ",
-            " so unreasonable about waiting ten more minutes?"
-          ],
-          "answers": [
-            [
-              "are you being"
-            ]
+          "prompt": "(I / wear / shoes)",
+          "modelAnswers": [
+            "I’m wearing shoes.",
+            "I’m not wearing shoes."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Would you like something to eat? ",
-            "?"
-          ],
+          "prompt": "(I / learn / English)",
+          "modelAnswers": [
+            "I’m learning English."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(I / listen / to music)",
+          "modelAnswers": [
+            "I’m listening to music.",
+            "I’m not listening to music."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(it / snow)",
+          "modelAnswers": [
+            "It’s snowing.",
+            "It isn’t snowing."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(the sun / shine)",
+          "modelAnswers": [
+            "The sun is shining.",
+            "The sun isn’t shining."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(it / rain)",
+          "modelAnswers": [
+            "It’s raining.",
+            "It isn’t raining.",
+            "It’s not raining."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (Смотри! = Look! Поторопись! = Hurry up! готовить = cook обедать = have lunch погода = the weather)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Смотри! Бен танцует с Сандрой.",
           "answers": [
-            [
-              "Are you"
-            ]
+            "Look! Ben is dancing with Sandra."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Где Анна и Лара?” – “Они смотрят телевизор”.",
+          "answers": [
+            "‘Where are Anna and Lara?’ ‘They’re watching TV.’",
+            "‘Where are Anna and Lara?’ ‘They are watching TV.’",
+            "‘Where are Anna and Lara?’ ‘They’re watching television.’",
+            "‘Where are Anna and Lara?’ ‘They are watching television.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Поторопись! Поезд подъезжает.",
+          "answers": [
+            "Hurry up! The train is coming."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "На Саше надето зелёное платье.",
+          "answers": [
+            "Sasha is wearing a green dress."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "“Где Том?” – “Он готовит ужин”.",
+          "answers": [
+            "‘Where’s Tom?’ ‘He’s cooking dinner.’",
+            "‘Where’s Tom?’ ‘He is cooking dinner.’",
+            "‘Where’s Tom?’ ‘He’s cooking the dinner.’",
+            "‘Where’s Tom?’ ‘He is cooking the dinner.’"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Кевин не работает сегодня. Он болен.",
+          "answers": [
+            "Kevin isn’t working today. He’s ill.",
+            "Kevin isn’t working today. He is ill.",
+            "Kevin is not working today. He’s ill.",
+            "Kevin is not working today. He is ill."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мы сейчас обедаем. Ты голоден?",
+          "answers": [
+            "We’re having lunch now. Are you hungry?",
+            "We’re having lunch. Are you hungry?",
+            "We are having lunch now. Are you hungry?",
+            "We are having lunch. Are you hungry?",
+            "We’re eating lunch now. Are you hungry?",
+            "We’re eating lunch. Are you hungry?",
+            "We are eating lunch now. Are you hungry?",
+            "We are eating lunch. Are you hungry?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Погода плохая. Идёт дождь.",
+          "answers": [
+            "The weather is bad. It’s raining.",
+            "The weather is bad. It is raining."
           ]
         }
       ]

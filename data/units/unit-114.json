@@ -1,25 +1,38 @@
 {
   "unit": 114,
-  "title": "in case",
+  "title": "go in, fall off, run away и т. д. (phrasal verbs 1)",
   "pdfPages": [
-    240,
-    241
+    239,
+    240
   ],
   "exercises": [
     {
       "id": "114.1",
       "type": "fill-in",
-      "instruction": "Sophie is going for a long walk in the country. You're worried about her. You advise her to take some things with her. Complete the sentences using in case.",
+      "instruction": "Посмотрите на картинки и закончите предложения. Используйте глаголы из рамки + in/out/up и т. д.",
+      "wordBank": [
+        "got",
+        "got",
+        "looked",
+        "looked",
+        "rode",
+        "sat",
+        "turned",
+        "went"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "Take a map ",
-            " you get lost."
+            "I went to the window and ",
+            "."
           ],
           "answers": [
             [
-              "in case"
+              "looked out"
             ]
           ],
           "example": true
@@ -27,63 +40,86 @@
         {
           "num": 2,
           "parts": [
-            "You should take some chocolate ",
+            "The door was open, so we ",
             "."
           ],
           "answers": [
             [
-              "in case you get hungry",
-              "in case you are hungry"
+              "went in"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "You'll need an anorak ",
+            "He heard a plane, so he ",
             "."
           ],
           "answers": [
             [
-              "in case it rains"
+              "looked up"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Take plenty of water ",
+            "She got on her bike and ",
             "."
           ],
           "answers": [
             [
-              "in case you get thirsty",
-              "in case you are thirsty"
+              "rode off",
+              "rode away"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Don't forget your phone ",
+            "I said hello, and he ",
             "."
           ],
           "answers": [
             [
-              "in case you need to call somebody"
+              "turned round",
+              "turned around"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Shall I come with you ",
-            "?"
+            "The bus stopped, and she ",
+            "."
           ],
           "answers": [
             [
-              "in case you get lonely",
-              "in case you are lonely"
+              "got off"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "There was a free seat, so she ",
+            "."
+          ],
+          "answers": [
+            [
+              "sat down"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "A car stopped, and two men ",
+            "."
+          ],
+          "answers": [
+            [
+              "got out"
             ]
           ]
         }
@@ -92,17 +128,20 @@
     {
       "id": "114.2",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Use in case.",
+      "instruction": "Вставьте out/away/back и т. д.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            ""
+            "‘What happened to the picture on the wall?’ ‘It fell ",
+            ".’"
           ],
           "answers": [
             [
-              "I'll give you my phone number in case you need to contact me."
+              "down"
             ]
           ],
           "example": true
@@ -110,37 +149,117 @@
         {
           "num": 2,
           "parts": [
-            "",
-            ""
+            "Wait a minute. Don’t go ",
+            ". I want to ask you something."
           ],
           "answers": [
             [
-              "I'll say goodbye now in case I don't see you again (before you go)."
+              "away"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "",
-            ""
+            "Lisa heard a noise behind her, so she looked ",
+            " to see what it was."
           ],
           "answers": [
             [
-              "Can you check the list in case we've forgotten something?",
-              "Can you check the list in case we forgot something?"
+              "round",
+              "around"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "",
-            ""
+            "I’m going ",
+            " now to do some shopping. I’ll be ",
+            " at 5 o’clock."
           ],
           "answers": [
             [
-              "Keep the receipt in case they don't fit you (and you have to take them back to the shop)."
+              "out"
+            ],
+            [
+              "back"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I’m feeling very tired. I’m going to lie ",
+            " on the sofa."
+          ],
+          "answers": [
+            [
+              "down"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "When you have read this page, turn ",
+            " and read the other side."
+          ],
+          "answers": [
+            [
+              "over"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Mark is from Canada. He lives in London now, but he wants to go ",
+            " to Canada."
+          ],
+          "answers": [
+            [
+              "back"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "We don’t have a key to the house, so we can’t get ",
+            "."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I was very tired this morning. I couldn’t get ",
+            "."
+          ],
+          "answers": [
+            [
+              "up"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "A: When are you going ",
+            "? B: On the 5th. And I’m coming ",
+            " on the 24th."
+          ],
+          "answers": [
+            [
+              "away"
+            ],
+            [
+              "back"
             ]
           ]
         }
@@ -149,17 +268,33 @@
     {
       "id": "114.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using in case.",
+      "instruction": "Перед тем как выполнить упражнение, изучите глаголы в Приложении 6 (страница 250). Заполните пропуски, используя глаголы из рамки + on/off/up и т. д. Где необходимо, поставьте глагол в правильную форму.",
+      "wordBank": [
+        "break",
+        "fall",
+        "give",
+        "hold",
+        "speak",
+        "wake",
+        "carry",
+        "get",
+        "go",
+        "slow",
+        "take"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            ""
+            "I went to sleep at 10 o’clock and ",
+            " at 8 o’clock the next morning."
           ],
           "answers": [
             [
-              "I took an umbrella in case it rained."
+              "woke up"
             ]
           ],
           "example": true
@@ -167,50 +302,121 @@
         {
           "num": 2,
           "parts": [
-            "",
-            ""
+            "‘It’s time to go.’ ‘",
+            " a minute. I’m not ready yet.’"
           ],
           "answers": [
             [
-              "I wrote down the name of the book in case I forgot it."
+              "Hold on"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "",
-            ""
+            "The train ",
+            " and finally stopped."
           ],
           "answers": [
             [
-              "I phoned my parents in case they were worried (about me)."
+              "slowed down"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "",
-            ""
+            "I like flying, but I’m always nervous when the plane ",
+            "."
           ],
           "answers": [
             [
-              "I sent her another email in case she didn't get the first one.",
-              "I sent her another email in case she hadn't got the first one."
+              "takes off"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "",
-            ""
+            "How are your children? How are they ",
+            " at school?"
           ],
           "answers": [
             [
-              "I gave them my phone number in case they came to London (one day).",
-              "I gave them my phone number in case they come to London (one day)."
+              "getting on"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "It’s difficult to hear you. Can you ",
+            " a little?"
+          ],
+          "answers": [
+            [
+              "speak up"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "This car isn’t very good. It has ",
+            " many times."
+          ],
+          "answers": [
+            [
+              "broken down"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "When babies try to walk, they sometimes ",
+            "."
+          ],
+          "answers": [
+            [
+              "fall over",
+              "fall down"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "The hotel isn’t far from here. If you ",
+            " along this road, you’ll see it on the left."
+          ],
+          "answers": [
+            [
+              "carry on"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I tried to find a job, but I ",
+            ". It was impossible."
+          ],
+          "answers": [
+            [
+              "gave up"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "The fire alarm ",
+            " and everyone had to leave the building."
+          ],
+          "answers": [
+            [
+              "went off"
             ]
           ]
         }
@@ -218,88 +424,88 @@
     },
     {
       "id": "114.4",
-      "type": "choice",
-      "instruction": "Put in in case or if.",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя выражения на странице слева и в Приложении 6. (поздно = late; присмотреть за = look after)",
       "items": [
         {
           "num": 1,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 1
+          "prompt": "Сейчас я ухожу, но я вернусь в три часа.",
+          "answers": [
+            "I’m going out now but I’ll be back at three o’clock.",
+            "I’m going out now but I’ll come back at three o’clock.",
+            "I’m going out now but I will be back at three o’clock.",
+            "I’m going out now but I will come back at three o’clock.",
+            "I’m going now but I’ll be back at three o’clock.",
+            "I’m going now but I’ll come back at three o’clock.",
+            "I’m going now but I will be back at three o’clock.",
+            "I’m going now but I will come back at three o’clock.",
+            "I am going out now but I’ll be back at three o’clock.",
+            "I am going out now but I’ll come back at three o’clock.",
+            "I am going out now but I will be back at three o’clock.",
+            "I am going out now but I will come back at three o’clock.",
+            "I am going now but I’ll be back at three o’clock.",
+            "I am going now but I’ll come back at three o’clock.",
+            "I am going now but I will be back at three o’clock.",
+            "I am going now but I will come back at three o’clock."
+          ]
         },
         {
           "num": 2,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 0
+          "prompt": "Пожалуйста, проходите и садитесь.",
+          "answers": [
+            "Please come in and sit down."
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 0
+          "prompt": "В воскресенье я встала очень поздно.",
+          "answers": [
+            "I got up very late on Sunday.",
+            "On Sunday I got up very late."
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 1
+          "prompt": "Ты можешь присмотреть за моей кошкой? Я уезжаю на следующей неделе.",
+          "answers": [
+            "Could you look after my cat? I’m going away next week.",
+            "Could you look after my cat? I am going away next week.",
+            "Can you look after my cat? I’m going away next week.",
+            "Can you look after my cat? I am going away next week."
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 0
+          "prompt": "Пожалуйста, помедленнее. Ты говоришь очень быстро.",
+          "answers": [
+            "Please slow down. You’re talking very fast.",
+            "Please slow down. You are talking very fast."
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 1
+          "prompt": "Такси остановилось, и Том вышел.",
+          "answers": [
+            "The taxi stopped and Tom got out."
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 0
+          "prompt": "Поторопись! Фильм начинается через пять минут.",
+          "answers": [
+            "Hurry up! The film starts in five minutes.",
+            "Hurry up! The film is starting in five minutes."
+          ]
         },
         {
           "num": 8,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 9,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 10,
-          "options": [
-            "if",
-            "in case"
-          ],
-          "answer": 1
+          "prompt": "Мы вас не слышим. Вы можете говорить громче?",
+          "answers": [
+            "We can’t hear you. Could you speak up?",
+            "We can’t hear you. Can you speak up?",
+            "We cannot hear you. Could you speak up?",
+            "We cannot hear you. Can you speak up?"
+          ]
         }
       ]
     }

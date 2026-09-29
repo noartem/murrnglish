@@ -1,70 +1,480 @@
 {
   "unit": 89,
-  "title": "both / both of neither / neither of either / either of",
-  "pdfPages": [190, 191],
+  "title": "older than … · more expensive than …",
+  "pdfPages": [
+    189,
+    190
+  ],
   "exercises": [
     {
       "id": "89.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences with both/neither/either.",
+      "instruction": "Напишите предложения о Кейт и Бене. Используйте than.",
       "items": [
-        {"num": 2, "parts": ["\u2018What day is it today \u2013 the 18th or the 19th?\u2019 \u2018", ". It\u2019s the 20th.\u2019"], "answers": [["Neither"]]},
-        {"num": 3, "parts": ["We went to ", ". A week in Korea and a week in Japan."], "answers": [["both"]]},
-        {"num": 4, "parts": ["\u2018Shall we sit in the corner or by the window?\u2019 \u2018", ". I don\u2019t mind.\u2019"], "answers": [["Either"]]},
-        {"num": 5, "parts": ["\u2018Where\u2019s Lisa? Is she at work or at home?\u2019 \u2018", ". She\u2019s away on holiday.\u2019"], "answers": [["Neither"]]},
-        {"num": 6, "parts": ["\u2018Is it true that Kate speaks Spanish and Arabic?\u2019 \u2018Yes, she speaks ", " fluently.\u2019"], "answers": [["both"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Kate ",
+            "."
+          ],
+          "answers": [
+            [
+              "is older than Ben"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Ben ",
+            "."
+          ],
+          "answers": [
+            [
+              "is a better swimmer than Kate"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Kate is ",
+            "."
+          ],
+          "answers": [
+            [
+              "taller than Ben"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Kate starts ",
+            " Ben."
+          ],
+          "answers": [
+            [
+              "work earlier than"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Ben ",
+            "."
+          ],
+          "answers": [
+            [
+              "works harder than Kate"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Ben has ",
+            "."
+          ],
+          "answers": [
+            [
+              "more money than Kate"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Kate is a ",
+            "."
+          ],
+          "answers": [
+            [
+              "better driver than Ben"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Ben ",
+            "."
+          ],
+          "answers": [
+            [
+              "is more patient than Kate"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Ben ",
+            "."
+          ],
+          "answers": [
+            [
+              "is a better dancer than Kate",
+              "dances better than Kate"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Kate ",
+            "."
+          ],
+          "answers": [
+            [
+              "is more intelligent than Ben"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Kate ",
+            "."
+          ],
+          "answers": [
+            [
+              "speaks French better than Ben",
+              "speaks better French than Ben",
+              "’s French is better than Ben’s"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Ben ",
+            "."
+          ],
+          "answers": [
+            [
+              "goes to the cinema more than Kate",
+              "goes to the cinema more often than Kate"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "89.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences with both/neither/either. Use of where necessary.",
+      "instruction": "Закончите предложения. Используйте than.",
       "items": [
-        {"num": 2, "parts": ["To get to the town centre, you can walk along the river or you can go along the road. You can go ", " way."], "answers": [["either"]]},
-        {"num": 3, "parts": ["I went to Carl\u2019s house twice, but ", " times he wasn\u2019t at home."], "answers": [["both"]]},
-        {"num": 4, "parts": ["", " Tom\u2019s parents is English. His father is Polish and his mother is Italian."], "answers": [["Neither of"]]},
-        {"num": 5, "parts": ["Fortunately ", " driver was injured, but ", " cars were badly damaged."], "answers": [["neither"], ["both"]]},
-        {"num": 6, "parts": ["I have two sisters and a brother. My brother is working, but ", " my sisters are still at school."], "answers": [["both"]]}
+        {
+          "num": 1,
+          "parts": [
+            "He isn’t very tall. You’re ",
+            " или ",
+            "."
+          ],
+          "answers": [
+            [
+              "taller than him"
+            ],
+            [
+              "taller than he is"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "She isn’t very old. You’re ",
+            "."
+          ],
+          "answers": [
+            [
+              "older than her",
+              "older than she is"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I don’t work very hard. You work ",
+            "."
+          ],
+          "answers": [
+            [
+              "harder than me",
+              "harder than I do"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "He doesn’t watch TV very much. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "watch TV more than him",
+              "watch TV more than he does"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I’m not a very good cook. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "’re a better cook than me",
+              "’re a better cook than I am",
+              "cook better than me",
+              "cook better than I do"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We don’t know many people. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "know more people than us",
+              "know more people than we do"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "They don’t have much money. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "have more money than them",
+              "have more money than they have"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I can’t run very fast. You can ",
+            "."
+          ],
+          "answers": [
+            [
+              "run faster than me",
+              "run faster than I can"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "She hasn’t been here very long. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "’ve been here longer than her",
+              "’ve been here longer than she has"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "They didn’t get up very early. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "got up earlier than them",
+              "got up earlier than they did"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "He wasn’t very surprised. You ",
+            "."
+          ],
+          "answers": [
+            [
+              "were more surprised than him",
+              "were more surprised than he was"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "89.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences with both/neither/either + of us / of them.",
+      "instruction": "Закончите предложения. Используйте a bit или much + сравнительная степень (older/better и т. д.).",
       "items": [
-        {"num": 2, "parts": ["I was invited to two parties last week, but I couldn\u2019t go to ", "."], "answers": [["either of them"]]},
-        {"num": 3, "parts": ["There were two windows in the room. It was very warm, so I opened ", "."], "answers": [["both of them"]]},
-        {"num": 4, "parts": ["Sam and I often play tennis, but we\u2019re not very good. ", " can play well."], "answers": [["Neither of us"]]},
-        {"num": 5, "parts": ["I tried two bookshops for the book I wanted to buy, but ", " had it."], "answers": [["neither of them"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Emma is 25. Joe is 24½. Emma ",
+            "."
+          ],
+          "answers": [
+            [
+              "is a bit older than Joe"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Jack’s mother is 52. His father is 69. Jack’s mother ",
+            "."
+          ],
+          "answers": [
+            [
+              "is much younger than his father"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "My camera cost £120. Yours cost £112. My camera ",
+            "."
+          ],
+          "answers": [
+            [
+              "cost a bit more than yours",
+              "cost a bit more than your camera",
+              "was a bit more expensive than yours",
+              "was a bit more expensive than your camera"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Yesterday I felt terrible. Today I feel OK. I feel ",
+            "."
+          ],
+          "answers": [
+            [
+              "much better today than yesterday",
+              "much better today than I did yesterday",
+              "much better today than I felt yesterday"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Today the temperature is 12 degrees. Yesterday it was 10 degrees. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "a bit warmer today than yesterday",
+              "a bit warmer today than it was yesterday"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Sarah is an excellent tennis player. I’m not very good. Sarah ",
+            "."
+          ],
+          "answers": [
+            [
+              "is a much better tennis player than me",
+              "is a much better tennis player than I am",
+              "is much better at tennis than me",
+              "is much better at tennis than I am",
+              "plays tennis much better than me",
+              "plays tennis much better than I do"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "89.4",
       "type": "write",
-      "instruction": "Write sentences with both \u2026 and \u2026 / neither \u2026 nor \u2026 / either \u2026 or \u2026 .",
+      "instruction": "Переведите предложения на английский язык. (умный = intelligent)",
       "items": [
-        {"num": 1, "prompt": "(Chris / Pat / late)", "answers": ["Both Chris and Pat were late."]},
-        {"num": 2, "prompt": "(he / not say hello / not smile)", "answers": ["He neither said hello nor smiled."]},
-        {"num": 3, "prompt": "(boring movie / long)", "answers": ["The movie was both boring and long."]},
-        {"num": 4, "prompt": "(Joe / not have a car / Sam / not have one either)", "answers": ["Neither Joe nor Sam has a car.", "Neither Joe nor Sam has got a car."]},
-        {"num": 5, "prompt": "(Emily / speak German / speak Russian)", "answers": ["Emily speaks both German and Russian."]},
-        {"num": 6, "prompt": "(Ben / not watch TV / not read newspapers)", "answers": ["Ben neither watches TV nor reads newspapers."]},
-        {"num": 7, "prompt": "(that man\u2019s name / Richard / Robert)", "answers": ["That man\u2019s name is either Richard or Robert."]},
-        {"num": 8, "prompt": "(I / not have time / not have money)", "answers": ["I have neither the time nor the money to go on holiday."]},
-        {"num": 9, "prompt": "(we / leave today / leave tomorrow)", "answers": ["We can leave either today or tomorrow."]}
-      ]
-    },
-    {
-      "id": "89.5",
-      "type": "fill-in",
-      "instruction": "Complete the sentences with neither/either/none/any.",
-      "items": [
-        {"num": 2, "parts": ["Sam has two sisters, but I haven\u2019t met ", " of them."], "answers": [["either"]]},
-        {"num": 3, "parts": ["Emily has four brothers, but I haven\u2019t met ", " of them."], "answers": [["any"]]},
-        {"num": 4, "parts": ["There were a few shops in the street, but ", " of them was open."], "answers": [["none"]]},
-        {"num": 5, "parts": ["Spain, Italy, Greece, Turkey \u2013 have you been to ", " of these countries?"], "answers": [["any"]]},
-        {"num": 6, "parts": ["I could meet you next Monday or Thursday. Would ", " of those days suit you?"], "answers": [["either"]]},
-        {"num": 7, "parts": ["Mark and I couldn\u2019t get into the house because ", " of us had a key."], "answers": [["neither"]]}
+        {
+          "num": 1,
+          "prompt": "Чёрные туфли дороже коричневых туфель.",
+          "answers": [
+            "The black shoes are more expensive than the brown shoes.",
+            "The black shoes are more expensive than the brown ones."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "У моих родителей дом больше, чем у нас.",
+          "answers": [
+            "My parents have a bigger house than us.",
+            "My parents have a bigger house than we do."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Сегодня значительно теплее, чем вчера.",
+          "answers": [
+            "Today is much warmer than yesterday.",
+            "It is much warmer today than it was yesterday.",
+            "It’s much warmer today than it was yesterday."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Тим немного старше, чем его сестра.",
+          "answers": [
+            "Tim is a bit older than his sister."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Эта книга очень длинная. Она больше 600 страниц.",
+          "answers": [
+            "This book is very long. It’s more than 600 pages."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Собаки умнее кошек.",
+          "answers": [
+            "Dogs are more intelligent than cats."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Кинотеатр менее переполнен, чем обычно.",
+          "answers": [
+            "The cinema is less crowded than usual."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Кембридж мне нравится намного больше Лондона.",
+          "answers": [
+            "I like Cambridge much more than London."
+          ]
+        }
       ]
     }
   ]

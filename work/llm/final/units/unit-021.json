@@ -1,0 +1,454 @@
+{
+ "unit": 21,
+ "title": "I have done (present perfect) и I did (past)",
+ "pdfPages": [
+  53,
+  54
+ ],
+ "exercises": [
+  {
+   "id": "21.1",
+   "type": "fill-in",
+   "instruction": "Допишите ответы на вопросы.",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "Yes, ",
+      " five minutes ago."
+     ],
+     "answers": [
+      [
+       "I saw her"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Yes, I ",
+      " last week."
+     ],
+     "answers": [
+      [
+       "started"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Yes, they ",
+      " at 5 o’clock."
+     ],
+     "answers": [
+      [
+       "arrived"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Yes, ",
+      " on Friday."
+     ],
+     "answers": [
+      [
+       "she went",
+       "she went away"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Yes, ",
+      " yesterday."
+     ],
+     "answers": [
+      [
+       "I wore it"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "21.2",
+   "type": "write",
+   "instruction": "В некоторых предложениях допущена ошибка. Исправьте ошибки, поставьте глаголы в правильную форму. Глаголы подчёркнуты.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’ve lost my key. I can’t find it.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Have you seen Kate yesterday?",
+     "answers": [
+      "Did you see"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Ive finished my work at 2 o’clock.",
+     "answers": [
+      "I finished"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I’m ready now. I’ve finished my work.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "What time have you finished your work?",
+     "answers": [
+      "did you finish"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Sue isn’t here. She’s gone out.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Steve’s grandmother have died two years ago.",
+     "answers": [
+      "(Steve’s grandmother) died"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Where have you been last night?",
+     "answers": [
+      "Where were you",
+      "Where did you go"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "21.3",
+   "type": "fill-in",
+   "instruction": "Поставьте глагол в форму present perfect (I’ve written и т. д.) или past (I wrote и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "My friend is a writer. He ",
+      " (write) many books."
+     ],
+     "answers": [
+      [
+       "has written"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "example": true,
+     "parts": [
+      "We ",
+      " (not/have) a holiday last year."
+     ],
+     "answers": [
+      [
+       "didn’t have"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I ",
+      " (play) tennis yesterday afternoon."
+     ],
+     "answers": [
+      [
+       "played"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "What time ",
+      " (you/go) to bed last night?"
+     ],
+     "answers": [
+      [
+       "did you go"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " (you ever meet) a famous person?"
+     ],
+     "answers": [
+      [
+       "Have you ever met"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The weather ",
+      " (not/be) very good yesterday."
+     ],
+     "answers": [
+      [
+       "wasn’t",
+       "was not"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Kathy travels a lot. She ",
+      " (visit) many countries."
+     ],
+     "answers": [
+      [
+       "has visited",
+       "'s visited"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I ",
+      " (switch) off the light before going out this morning."
+     ],
+     "answers": [
+      [
+       "switched"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I live in New York now, but I ",
+      " (live) in Mexico for many years."
+     ],
+     "answers": [
+      [
+       "lived"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "'What’s Canada like? Is it beautiful?' 'I don’t know. I ",
+      " (not/be) there.'"
+     ],
+     "answers": [
+      [
+       "haven’t been",
+       "have not been"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "21.4",
+   "type": "fill-in",
+   "instruction": "Поставьте глагол в форму present perfect (I’ve seen и т. д.) или past (I saw и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "A: ",
+      " (you/ever/be) to Florida? B: Yes, we ",
+      " (go) there on holiday two years ago. A: ",
+      " (you have) a good time? B: Yes, it ",
+      " (be) great."
+     ],
+     "answers": [
+      [
+       "Have you ever been"
+      ],
+      [
+       "went"
+      ],
+      [
+       "Did you have"
+      ],
+      [
+       "was"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "A: Where’s Alan? ",
+      " (you/see) him? B: Yes, he ",
+      " (go) out a few minutes ago. A: And Rachel? B: I don’t know. I ",
+      " (not see) her."
+     ],
+     "answers": [
+      [
+       "Have you seen"
+      ],
+      [
+       "went"
+      ],
+      [
+       "haven’t seen"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Rose works in a factory. She ",
+      " (work) there for six months. Before that she ",
+      " (be) a waitress in a restaurant. She ",
+      " (work) there for two years, but she ",
+      " (not/enjoy) it very much."
+     ],
+     "answers": [
+      [
+       "has worked",
+       "has been working"
+      ],
+      [
+       "was"
+      ],
+      [
+       "worked"
+      ],
+      [
+       "didn’t enjoy"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "A: Do you know Mark’s sister? B: I ",
+      " (see) her a few times, but I ",
+      " (never speak) to her. ",
+      " (you ever speak) to her? A: Yes. I ",
+      " (meet) her at a party last week. She’s very nice."
+     ],
+     "answers": [
+      [
+       "’ve seen",
+       "have seen"
+      ],
+      [
+       "’ve never spoken",
+       "have never spoken"
+      ],
+      [
+       "Have you ever spoken"
+      ],
+      [
+       "met"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "21.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (водить = drive, песня = song)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Я люблю этот музей. Я здесь был много раз.",
+     "answers": [
+      "I love this museum. I’ve been here many times.",
+      "I love this museum. I have been here many times."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вчера я ходила в хороший ресторан.",
+     "answers": [
+      "I went to a nice restaurant yesterday.",
+      "I went to a good restaurant yesterday.",
+      "Yesterday I went to a nice restaurant.",
+      "Yesterday I went to a good restaurant."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я потерял паспорт. Ты его видела?",
+     "answers": [
+      "I’ve lost my passport. Have you seen it?",
+      "I have lost my passport. Have you seen it?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Саши нет дома. Она ушла в кино.",
+     "answers": [
+      "Sasha isn’t at home. She’s gone to the cinema.",
+      "Sasha isn’t at home. She has gone to the cinema.",
+      "Sasha is not at home. She’s gone to the cinema.",
+      "Sasha is not at home. She has gone to the cinema."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Карен уехала в супермаркет час назад.",
+     "answers": [
+      "Karen went to the supermarket an hour ago."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Когда вы купили свою машину?",
+     "answers": [
+      "When did you buy your car?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Вы когда-нибудь водили автобус?",
+     "answers": [
+      "Have you ever driven a bus?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Моя сестра написала много песен. На прошлой неделе она написала новую песню.",
+     "answers": [
+      "My sister has written a lot of songs. Last week she wrote a new song.",
+      "My sister has written many songs. Last week she wrote a new song."
+     ]
+    }
+   ]
+  }
+ ]
+}

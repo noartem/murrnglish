@@ -1,0 +1,185 @@
+{
+ "id": 30,
+ "topic": "прошедшее, настоящее и будущее время",
+ "refs": "Разделы 4–23, 26–29, 53, 55, 99, 105",
+ "pdfPages": [
+  266
+ ],
+ "exercise": {
+  "id": "30",
+  "type": "fill-in",
+  "instruction": "Рейчел рассказывает о своей лучшей подруге, Кэролин. Поставьте глаголы в правильную форму.",
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "Carolyn is my best friend. I remember very well the first time ",
+     " (we/meet)."
+    ],
+    "answers": [
+     [
+      "we met"
+     ]
+    ]
+   },
+   {
+    "num": 2,
+    "parts": [
+     "It was our first day at secondary school, and ",
+     " (we/sit) next to each other for the first lesson."
+    ],
+    "answers": [
+     [
+      "we sat",
+      "we were sitting"
+     ]
+    ]
+   },
+   {
+    "num": 3,
+    "parts": [
+     "",
+     " (we/not/know) any other students in our class, "
+    ],
+    "answers": [
+     [
+      "We didn’t know"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "and so ",
+     " (we/become) friends."
+    ],
+    "answers": [
+     [
+      "we became"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "We found that ",
+     " (we/like) the same things, "
+    ],
+    "answers": [
+     [
+      "we liked"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "especially music and sport, and so ",
+     " (we/spend) a lot of time together."
+    ],
+    "answers": [
+     [
+      "we spent"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "",
+     " (we/leave) school five years ago, "
+    ],
+    "answers": [
+     [
+      "We left"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "but ",
+     " (we/meet) as often as we can."
+    ],
+    "answers": [
+     [
+      "we meet"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "For the last six months Carolyn ",
+     " (be) in Mexico – "
+    ],
+    "answers": [
+     [
+      "has been"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "at the moment ",
+     " (she/work) in a school as a teaching assistant."
+    ],
+    "answers": [
+     [
+      "she’s working"
+     ]
+    ]
+   },
+   {
+    "num": 11,
+    "parts": [
+     "",
+     " (she/come) back to England next month, "
+    ],
+    "answers": [
+     [
+      "She’s coming"
+     ]
+    ]
+   },
+   {
+    "num": 12,
+    "parts": [
+     "and when ",
+     " (she/comer) back, "
+    ],
+    "answers": [
+     [
+      "she comes"
+     ]
+    ]
+   },
+   {
+    "num": 13,
+    "parts": [
+     "",
+     " (we/have) lots of things to talk about."
+    ],
+    "answers": [
+     [
+      "we’ll have",
+      "we’re going to have"
+     ]
+    ]
+   },
+   {
+    "num": 14,
+    "parts": [
+     "",
+     " (it/be) really nice to see her again."
+    ],
+    "answers": [
+     [
+      "It will be"
+     ]
+    ]
+   }
+  ]
+ }
+}

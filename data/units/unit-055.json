@@ -1,62 +1,468 @@
 {
   "unit": 55,
-  "title": "Verb (+ object) + to \u2026 (I want you to \u2026)",
-  "pdfPages": [122, 123],
+  "title": "I went to the shop to …",
+  "pdfPages": [
+    121,
+    122
+  ],
   "exercises": [
     {
       "id": "55.1",
-      "type": "fill-in",
-      "instruction": "Complete the questions. Use do you want me to \u2026 ? or would you like me to \u2026 ? with these verbs (and any other necessary words):",
-      "wordBank": ["come", "lend", "repeat", "show", "shut", "wait"],
+      "type": "write",
+      "instruction": "Напишите предложения с I went to … . Используйте слова и фразы из обеих рамок.",
+      "wordBank": [
+        "a coffee shop",
+        "the station",
+        "the chemist",
+        "the market",
+        "buy some vegetables",
+        "get some medicine",
+        "meet a friend",
+        "get a train ticket"
+      ],
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "parts": ["Do you have enough money, or do you want ", "?"], "answers": [["or do you want me to lend you some"]]},
-        {"num": 3, "parts": ["Shall I leave the window open, or would you ", "?"], "answers": [["or would you like me to shut it"]]},
-        {"num": 4, "parts": ["Do you know how to use the printer, or would ", "?"], "answers": [["or would you like me to show you"]]},
-        {"num": 5, "parts": ["Did you hear what I said, or do ", "?"], "answers": [["or do you want me to repeat it"]]},
-        {"num": 6, "parts": ["Can I go now, or do ", "?"], "answers": [["or do you want me to wait"]]}
+        {
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "I went to the station to get a train ticket."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I went",
+          "answers": [
+            "I went to a coffee shop to meet a friend."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "answers": [
+            "I went to the chemist to get some medicine."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "I went to the market to buy some vegetables."
+          ]
+        }
       ]
     },
     {
       "id": "55.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences for these situations.",
+      "instruction": "Закончите предложения. Используйте фразы из рамки.",
+      "wordBank": [
+        "to get some fresh air",
+        "to read the newspaper",
+        "to wake him up",
+        "to open this door",
+        "to see who it was",
+        "to watch the news"
+      ],
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "parts": ["They invited him ", "."], "answers": [["to stay with them"]]},
-        {"num": 3, "parts": ["He reminded her ", "."], "answers": [["to call Joe"]]},
-        {"num": 4, "parts": ["She warned ", "."], "answers": [["him to be careful"]]},
-        {"num": 5, "parts": ["He asked ", "."], "answers": [["her to give him a hand"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I turned on the TV ",
+            "."
+          ],
+          "answers": [
+            [
+              "to watch the news"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Alice sat down in an armchair ",
+            "."
+          ],
+          "answers": [
+            [
+              "to read the newspaper"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Do I need a key ",
+            "?"
+          ],
+          "answers": [
+            [
+              "to open this door"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I went for a walk by the river ",
+            "."
+          ],
+          "answers": [
+            [
+              "to get some fresh air"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I knocked on the door of David’s room ",
+            "."
+          ],
+          "answers": [
+            [
+              "to wake him up"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "The doorbell rang, so I looked out of the window ",
+            "."
+          ],
+          "answers": [
+            [
+              "to see who it was"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "55.3",
-      "type": "fill-in",
-      "instruction": "Complete the second sentence so that the meaning is similar to the first sentence.",
+      "type": "self-check",
+      "instruction": "Закончите предложения (to …). Используйте свои собственные идеи.",
       "items": [
-        {"num": 2, "parts": ["I didn\u2019t expect ", "."], "answers": [["it to rain"]]},
-        {"num": 3, "parts": ["Let ", "."], "answers": [["him do what he wants"]]},
-        {"num": 4, "parts": ["Tom\u2019s glasses make ", "."], "answers": [["him look older"]]},
-        {"num": 5, "parts": ["I want ", "."], "answers": [["you to know the truth"]]},
-        {"num": 6, "parts": ["Sarah persuaded ", "."], "answers": [["me to apply for the job"]]},
-        {"num": 7, "parts": ["My lawyer advised ", "."], "answers": [["me not to say anything to the police"]]},
-        {"num": 8, "parts": ["I was warned ", "."], "answers": [["not to believe everything he says"]]},
-        {"num": 9, "parts": ["Having a car enables ", "."], "answers": [["you to get around more easily"]]}
+        {
+          "num": 1,
+          "prompt": "I went to the shop",
+          "modelAnswers": [
+            "to get a newspaper"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I’m very busy. I don’t have time",
+          "modelAnswers": [
+            "to talk to you now"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I called Amy",
+          "modelAnswers": [
+            "to tell her about the party"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I’m going out",
+          "modelAnswers": [
+            "to do some shopping"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I borrowed some money",
+          "modelAnswers": [
+            "to buy a motorbike"
+          ]
+        }
       ]
     },
     {
       "id": "55.4",
-      "type": "choice",
-      "instruction": "Which is right?",
+      "type": "fill-in",
+      "instruction": "Вставьте to или for.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 1, "options": ["You aren\u2019t allowed take pictures here.", "You aren\u2019t allowed to take pictures here."], "answer": 1},
-        {"num": 2, "options": ["What do you advise me do?", "What do you advise me to do?"], "answer": 1},
-        {"num": 3, "options": ["It made me cry.", "It made me to cry."], "answer": 0},
-        {"num": 4, "options": ["Lisa\u2019s parents always encouraged her study hard at school.", "Lisa\u2019s parents always encouraged her to study hard at school."], "answer": 1},
-        {"num": 5, "options": ["Let me finish.", "Let me to finish."], "answer": 0},
-        {"num": 6, "options": ["You can\u2019t make people do things they don\u2019t want to do.", "You can\u2019t make people to do things they don\u2019t want to do."], "answer": 0},
-        {"num": 7, "options": ["You can\u2019t force people do things they don\u2019t want to do.", "You can\u2019t force people to do things they don\u2019t want to do."], "answer": 1},
-        {"num": 8, "options": ["Sarah won\u2019t let me drive her car.", "Sarah won\u2019t let me to drive her car."], "answer": 0},
-        {"num": 9, "options": ["What made you change your mind?", "What made you to change your mind?"], "answer": 0},
-        {"num": 10, "options": ["You are not allowed work there.", "You are not allowed to work there."], "answer": 1}
+        {
+          "num": 1,
+          "parts": [
+            "I went out ",
+            " get some bread."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "We went to a restaurant ",
+            " have dinner."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Robert wants to go to university ",
+            " study economics."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I’m going to London ",
+            " an interview next week."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I’m going to London ",
+            " visit some friends of mine."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Do you have time ",
+            " a cup of coffee?"
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I got up late this morning. I didn’t have time ",
+            " wash."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Everybody needs money ",
+            " live."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "We didn’t have any money ",
+            " a taxi, so we walked home."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "The office is very small. There’s space only ",
+            " a desk and chair."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "A: Excuse me, are you waiting ",
+            " be served? B: No, I’m already being served, thanks."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "55.5",
+      "type": "fill-in",
+      "instruction": "Закончите предложения, используя слова из рамки:",
+      "wordBank": [
+        "it / to arrive",
+        "you / tell me",
+        "them / change",
+        "the film / begin"
+      ],
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "We stopped at the lights and waited ",
+            "."
+          ],
+          "answers": [
+            [
+              "for them to change"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I sat down in the cinema and waited ",
+            "."
+          ],
+          "answers": [
+            [
+              "for the film to begin"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "We called an ambulance and waited ",
+            "."
+          ],
+          "answers": [
+            [
+              "for it to arrive"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "'Do you know what to do?' 'No, I’m waiting ",
+            "'."
+          ],
+          "answers": [
+            [
+              "for you to tell me"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "55.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (Швейцария = Switzerland; поступать в университет = go to university)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Вера едет в Швейцарию, чтобы гулять в горах.",
+          "answers": [
+            "Vera is going to Switzerland to walk in the mountains."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я ходила в магазин, чтобы купить бананы.",
+          "answers": [
+            "I went to the shop to buy bananas.",
+            "I went to the shop to buy some bananas."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Тим ездил в Манчестер, чтобы навестить родителей.",
+          "answers": [
+            "Tim went to Manchester to visit his parents."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "У нас нет денег на отпуск в этом году.",
+          "answers": [
+            "We don’t have money for a holiday this year.",
+            "We don’t have any money for a holiday this year.",
+            "We do not have money for a holiday this year.",
+            "We do not have any money for a holiday this year.",
+            "We haven’t got money for a holiday this year.",
+            "We haven’t got any money for a holiday this year."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Вы ждёте, чтобы поговорить с менеджером?",
+          "answers": [
+            "Are you waiting to speak to the manager?",
+            "Are you waiting to talk to the manager?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "В следующем году Ким поступает в университет, чтобы изучать испанский язык.",
+          "answers": [
+            "Next year, Kim is going to university to study Spanish."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Я жду, когда закончится дождь.",
+          "answers": [
+            "I’m waiting for the rain to stop.",
+            "I am waiting for the rain to stop."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "У меня нет времени, чтобы смотреть телевизор.",
+          "answers": [
+            "I don’t have time to watch TV.",
+            "I do not have time to watch TV.",
+            "I haven’t got time to watch TV."
+          ]
+        }
       ]
     }
   ]

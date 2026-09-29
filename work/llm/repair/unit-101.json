@@ -1,0 +1,275 @@
+{
+ "unit": 101,
+ "exercises": [
+  {
+   "id": "101.3",
+   "type": "fill-in",
+   "instruction": "Вставьте who или which.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I met a woman ",
+      " can speak six languages."
+     ],
+     "answers": [
+      [
+       "who"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "What’s the name of the man ",
+      " has just started work in your office?"
+     ],
+     "answers": [
+      [
+       "who"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "What’s the name of the river ",
+      " flows through the town?"
+     ],
+     "answers": [
+      [
+       "which"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Where is the picture ",
+      " was hanging on the wall?"
+     ],
+     "answers": [
+      [
+       "which"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Do you know anybody ",
+      " wants to buy a car?"
+     ],
+     "answers": [
+      [
+       "who"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "You always ask questions ",
+      " are difficult to answer."
+     ],
+     "answers": [
+      [
+       "which"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I have a friend ",
+      " is very good at repairing cars."
+     ],
+     "answers": [
+      [
+       "who"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I think everybody ",
+      " went to the party enjoyed it very much."
+     ],
+     "answers": [
+      [
+       "who"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Why does he always wear clothes ",
+      " are too small for him?"
+     ],
+     "answers": [
+      [
+       "which"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "101.4",
+   "type": "write",
+   "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "A thief is a person which steals things.",
+     "answers": [
+      "a person who steals"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "An airplane is a machine that flies.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "A coffee maker is a machine who makes coffee.",
+     "answers": [
+      "a machine that makes coffee.",
+      "a machine which makes coffee."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "What’s happened to the money that was on the table?",
+     "answers": [
+      "OK",
+      "What’s happened to the money which was on the table?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I don’t like people which never stop talking.",
+     "answers": [
+      "people who never stop talking.",
+      "people that never stop talking."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I know somebody that can help you.",
+     "answers": [
+      "OK",
+      "I know somebody who can help you."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "I know somebody who works in that shop.",
+     "answers": [
+      "OK",
+      "I know somebody that works in that shop."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Correct the sentences who are wrong.",
+     "answers": [
+      "the sentences that are wrong.",
+      "the sentences which are wrong."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "My neighbour bought a car who cost £40,000.",
+     "answers": [
+      "a car that cost £40,000.",
+      "a car which cost £40,000."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "101.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (по соседству = next door; в течение = for; течь через = flow through; статья = article; (8) на = for)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Люди, которые живут по соседству, очень шумные.",
+     "answers": [
+      "The people who live next door are very noisy.",
+      "The people that live next door are very noisy."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "У меня есть друг, который жил в Токио в течение 5 лет.",
+     "answers": [
+      "I have a friend who lived in Tokyo for 5 years.",
+      "I have got a friend who lived in Tokyo for 5 years."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Вы знаете кого-нибудь, кто говорит по-итальянски?",
+     "answers": [
+      "Do you know anyone who speaks Italian?",
+      "Do you know anyone that speaks Italian?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Нева – это река, которая течёт через Петербург.",
+     "answers": [
+      "The Neva is the river which flows through Petersburg.",
+      "The Neva is the river that flows through Petersburg."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Ты видела книю, которая была на столе?",
+     "answers": [
+      "Have you seen the book which was on the table?",
+      "Have you seen the book that was on the table?",
+      "Did you see the book which was on the table?",
+      "Did you see the book that was on the table?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Журналист – это человек, который пишет статьи.",
+     "answers": [
+      "A journalist is a person who writes articles.",
+      "A journalist is a person that writes articles."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Это та девушка, которая украла твой кошелёк?",
+     "answers": [
+      "Is that the girl who stole your wallet?",
+      "Is that the girl that stole your wallet?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Карен работает на компанию, которая производит компьютеры.",
+     "answers": [
+      "Karen works for a company which makes computers.",
+      "Karen works for a company that makes computers."
+     ]
+    }
+   ]
+  }
+ ]
+}

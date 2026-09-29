@@ -1,0 +1,478 @@
+{
+ "unit": 104,
+ "title": "from … to · until · since · for",
+ "pdfPages": [
+  219,
+  220
+ ],
+ "exercises": [
+  {
+   "id": "104.1",
+   "type": "fill-in",
+   "instruction": "Прочитайте информацию и закончите предложения. Используйте from ... to / until / since. Теперь напишите предложения, используя for.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(Alex / Canada / 2001 → 2009)",
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Alex lived in Canada from 2001 to 2009"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "(Alex / Canada / → 2009)",
+     "parts": [
+      "Alex lived in Canada ",
+      " 2009."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(Alex / England / 2009 →)",
+     "parts": [
+      "Alex has lived in England ",
+      "."
+     ],
+     "answers": [
+      [
+       "since 2009"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(Karen / France / → 2011)",
+     "parts": [
+      "Karen lived in ",
+      "."
+     ],
+     "answers": [
+      [
+       "France until 2011"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(Karen / Switzerland / 2011 →)",
+     "parts": [
+      "Karen has lived in ",
+      "."
+     ],
+     "answers": [
+      [
+       "Switzerland since 2011"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(Clare / a restaurant / 2010 → 2012)",
+     "parts": [
+      "Clare worked ",
+      " 2010 ",
+      "."
+     ],
+     "answers": [
+      [
+       "in a restaurant from"
+      ],
+      [
+       "to 2012"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(Clare / a hotel / 2012 →)",
+     "parts": [
+      "Clare has worked ",
+      "."
+     ],
+     "answers": [
+      [
+       "in a hotel since 2012"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(Adam / a teacher / 2002 → 2008)",
+     "parts": [
+      "Adam was a ",
+      "."
+     ],
+     "answers": [
+      [
+       "teacher from 2002 to 2008"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(Adam / a journalist / 2008 →)",
+     "parts": [
+      "Adam has been ",
+      "."
+     ],
+     "answers": [
+      [
+       "a journalist since 2008"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "(Alex / Canada)",
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Alex lived in Canada for eight years"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 11,
+     "prompt": "(Alex / England)",
+     "parts": [
+      "Alex has lived in England ",
+      "."
+     ],
+     "answers": [
+      [
+       "for ... years"
+      ]
+     ],
+     "selfCheck": true
+    },
+    {
+     "num": 12,
+     "prompt": "(Karen / Switzerland)",
+     "parts": [
+      "Karen has ",
+      "."
+     ],
+     "answers": [
+      [
+       "lived in Switzerland for ... years"
+      ]
+     ],
+     "selfCheck": true
+    },
+    {
+     "num": 13,
+     "prompt": "(Clare / a restaurant)",
+     "parts": [
+      "Clare worked ",
+      "."
+     ],
+     "answers": [
+      [
+       "in a restaurant for three years"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "prompt": "(Clare / hotel)",
+     "parts": [
+      "Clare ",
+      "."
+     ],
+     "answers": [
+      [
+       "has worked in a hotel for ... years"
+      ]
+     ],
+     "selfCheck": true
+    },
+    {
+     "num": 15,
+     "prompt": "(Adam / a teacher)",
+     "parts": [
+      "Adam ",
+      "."
+     ],
+     "answers": [
+      [
+       "was a teacher for six years"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "prompt": "(Adam / a journalist)",
+     "parts": [
+      "Adam ",
+      "."
+     ],
+     "answers": [
+      [
+       "has been a journalist for ... years"
+      ]
+     ],
+     "selfCheck": true
+    }
+   ]
+  },
+  {
+   "id": "104.2",
+   "type": "fill-in",
+   "instruction": "Вставьте until/since/for.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Sue and Dave have been married ",
+      " 1998."
+     ],
+     "answers": [
+      [
+       "since"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I was tired this morning. I stayed in bed ",
+      " 10 o’clock."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "We waited for Sue ",
+      " half an hour, but she didn’t come."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "'Have you just arrived?' 'No, I’ve been here ",
+      " half past seven.'"
+     ],
+     "answers": [
+      [
+       "since"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "'How long did you stay at the party last night?' '",
+      " midnight.'"
+     ],
+     "answers": [
+      [
+       "Until"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Dan and I are good friends. We have known each other ",
+      " ten years."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I’m tired. I’m going to lie down ",
+      " a few minutes."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Don’t open the door of the train ",
+      " the train stops."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "This is my house. I’ve lived here ",
+      " I was seven years old."
+     ],
+     "answers": [
+      [
+       "since"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Jack has gone away. He’ll be away ",
+      " Wednesday."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Next week I’m going to Paris ",
+      " three days."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I usually finish work at 5.30, but sometimes I work ",
+      " six."
+     ],
+     "answers": [
+      [
+       "until"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "'How long have you known Anna?' '",
+      " we were at school together.'"
+     ],
+     "answers": [
+      [
+       "Since"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "Where have you been? I’ve been waiting for you ",
+      " twenty minutes."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "104.3",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (переехать = move, получить = get)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Вчера я спала до 11 часов.",
+     "answers": [
+      "I slept till 11 o’clock yesterday.",
+      "I slept until 11 o’clock yesterday.",
+      "Yesterday I slept till 11 o’clock.",
+      "Yesterday I slept until 11 o’clock."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Джеймс болеет со вторника.",
+     "answers": [
+      "James has been ill since Tuesday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я собираюсь путешествовать в течение трёх месяцев.",
+     "answers": [
+      "I’m going to travel for three months."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Анна работала в Москве с 2003 по 2007 год.",
+     "answers": [
+      "Anna worked in Moscow from 2003 to 2007.",
+      "Anna worked in Moscow from 2003 until 2007."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "В 2007 году Анна переехала в Англию.",
+     "answers": [
+      "In 2007 Anna moved to England."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Наша машина у нас с 2011 года.",
+     "answers": [
+      "We’ve had our car since 2011."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Я жил в Кембридже до тех пор, пока не получил работу в Лондоне.",
+     "answers": [
+      "I lived in Cambridge until I got a job in London."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Тим и Лара женаты в течение 20 лет.",
+     "answers": [
+      "Tim and Lara have been married for 20 years."
+     ]
+    }
+   ]
+  }
+ ]
+}

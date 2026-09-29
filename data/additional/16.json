@@ -1,170 +1,212 @@
 {
   "id": 16,
-  "topic": "Modal verbs (can/must/would etc.)",
-  "refs": "Units 26–36",
+  "topic": "present perfect",
+  "refs": "Разделы 16–20",
   "pdfPages": [
-    323
+    258,
+    259
   ],
   "exercise": {
     "id": "16",
-    "type": "choice",
-    "instruction": "Which alternatives are correct? Sometimes only one alternative is correct, and sometimes two of the alternatives are possible.",
+    "type": "fill-in",
+    "instruction": "Посмотрите на картинки и допишите предложения. Используйте present perfect.",
+    "example": [
+      1,
+      2
+    ],
     "items": [
       {
         "num": 1,
-        "options": [
-          "may be",
-          "might be",
-          "can be"
+        "parts": [
+          "No, ",
+          ""
         ],
-        "answer": [
-          0,
-          1
+        "answers": [
+          [
+            "he’s just gone out"
+          ]
         ]
       },
       {
         "num": 2,
-        "options": [
-          "must have fallen",
-          "should have fallen",
-          "had to fall"
+        "parts": [
+          "I don’t know. I ",
+          " him before."
         ],
-        "answer": 0
+        "answers": [
+          [
+            "’ve never seen",
+            "have never seen"
+          ]
+        ]
       },
       {
         "num": 3,
-        "options": [
-          "could stop",
-          "could have stopped",
-          "managed to stop"
+        "parts": [
+          "No, it ",
+          " just ",
+          "."
         ],
-        "answer": 2
+        "answers": [
+          [
+            "’s",
+            "has"
+          ],
+          [
+            "finished",
+            "ended"
+          ]
+        ]
       },
       {
         "num": 4,
-        "options": [
-          "mustn't go",
-          "don't have to go",
-          "don't need to go"
+        "parts": [
+          "Here they are! I ",
+          " them!"
         ],
-        "answer": [
-          1,
-          2
+        "answers": [
+          [
+            "’ve found",
+            "have found",
+            "’ve got",
+            "have got"
+          ]
         ]
       },
       {
         "num": 5,
-        "options": [
-          "could go",
-          "could have gone",
-          "must have gone"
+        "parts": [
+          "I don’t know. I ",
+          " it."
         ],
-        "answer": 1
+        "answers": [
+          [
+            "haven’t read"
+          ]
+        ]
       },
       {
         "num": 6,
-        "options": [
-          "couldn't find",
-          "couldn't have found",
-          "wasn't able to find"
+        "parts": [
+          "I’m looking for Jessica. ",
+          " her?"
         ],
-        "answer": [
-          0,
-          2
+        "answers": [
+          [
+            "Have you seen"
+          ]
         ]
       },
       {
         "num": 7,
-        "options": [
-          "could be",
-          "must be",
-          "might be"
+        "parts": [
+          "No, thanks. I ",
+          " enough."
         ],
-        "answer": 0
+        "answers": [
+          [
+            "’ve had",
+            "have had"
+          ]
+        ]
       },
       {
         "num": 8,
-        "options": [
-          "must wait",
-          "must have waited",
-          "had to wait"
+        "parts": [
+          "",
+          " to Sweden?"
         ],
-        "answer": 2
+        "answers": [
+          [
+            "Have you been",
+            "Have you ever been"
+          ]
+        ]
       },
       {
         "num": 9,
-        "options": [
-          "must have to work",
-          "may have to work",
-          "might have to work"
+        "parts": [
+          "Hi. We ",
+          " to the cinema."
         ],
-        "answer": [
-          1,
-          2
+        "answers": [
+          [
+            "’ve been",
+            "have been",
+            "’ve just been",
+            "have just been"
+          ]
         ]
       },
       {
         "num": 10,
-        "options": [
-          "was able to convince",
-          "managed to convince",
-          "could convince"
+        "parts": [
+          "",
+          " to a party."
         ],
-        "answer": [
-          0,
-          1
+        "answers": [
+          [
+            "They’ve gone",
+            "They have gone"
+          ]
         ]
       },
       {
         "num": 11,
-        "options": [
-          "mustn't forget",
-          "needn't forget",
-          "don't have to forget"
+        "parts": [
+          "He ",
+          " up."
         ],
-        "answer": 0
+        "answers": [
+          [
+            "’s woken",
+            "has woken",
+            "’s just woken",
+            "has just woken"
+          ]
+        ]
       },
       {
         "num": 12,
-        "options": [
-          "must have waited",
-          "had to wait",
-          "should have waited"
+        "parts": [
+          "How long ",
+          " here?"
         ],
-        "answer": 2
+        "answers": [
+          [
+            "have you lived",
+            "have you been living"
+          ]
+        ]
       },
       {
         "num": 13,
-        "options": [
-          "we have",
-          "we should have",
-          "to have"
+        "parts": [
+          "Yes, we ",
+          " each other for a long time."
         ],
-        "answer": [
-          0,
-          1
+        "answers": [
+          [
+            "’ve known",
+            "have known"
+          ]
         ]
       },
       {
         "num": 14,
-        "options": [
-          "You'd better wear",
-          "You should wear",
-          "You ought to wear"
+        "parts": [
+          "The weather is horrible here. It ",
+          " all day."
         ],
-        "answer": [
-          1,
-          2
+        "answers": [
+          [
+            "’s been raining",
+            "has been raining",
+            "has rained",
+            "has been horrible",
+            "has been bad"
+          ]
         ]
-      },
-      {
-        "num": 15,
-        "options": [
-          "will you do",
-          "would you do",
-          "should you do"
-        ],
-        "answer": 1
       }
     ]
   }

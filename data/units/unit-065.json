@@ -1,161 +1,390 @@
 {
   "unit": 65,
-  "title": "Adjective + to \u2026",
-  "pdfPages": [142, 143],
+  "title": "-’s (Kate’s camera / my brother’s car и т. д.)",
+  "pdfPages": [
+    141,
+    142
+  ],
   "exercises": [
     {
       "id": "65.1",
-      "type": "write",
-      "instruction": "Write these sentences in another way, beginning as shown.",
+      "type": "fill-in",
+      "instruction": "Посмотрите на родословное дерево и закончите предложения о членах этой семьи.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "Brian is ",
+            " husband."
+          ],
+          "answers": [
+            [
+              "Helen’s"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "prompt": "It was difficult to open the window. \u2192 The window",
-          "answers": ["The window was difficult to open."]
+          "parts": [
+            "Sarah is Daniel’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "mother"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "It\u2019s impossible to translate some words. \u2192 Some words",
-          "answers": ["Some words are impossible to translate."]
+          "parts": [
+            "Helen is ",
+            " wife."
+          ],
+          "answers": [
+            [
+              "Brian’s"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "It\u2019s expensive to maintain a car. \u2192 A",
-          "answers": ["A car is expensive to maintain."]
+          "parts": [
+            "James is Sarah’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "brother"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "It\u2019s not safe to eat this meat. \u2192 This",
-          "answers": ["This meat isn\u2019t safe to eat."]
+          "parts": [
+            "James is ",
+            " uncle."
+          ],
+          "answers": [
+            [
+              "Daniel’s"
+            ]
+          ]
         },
         {
           "num": 6,
-          "prompt": "It\u2019s easy to get to my house from here. \u2192 My",
-          "answers": ["My house is easy to get to from here."]
+          "parts": [
+            "Sarah is ",
+            " wife."
+          ],
+          "answers": [
+            [
+              "Paul’s"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Helen is Daniel’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "grandmother"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Sarah is James’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "sister"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Paul is ",
+            " husband."
+          ],
+          "answers": [
+            [
+              "Sarah’s"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Paul is Daniel’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "father"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Daniel is ",
+            " nephew."
+          ],
+          "answers": [
+            [
+              "James’s"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "65.2",
       "type": "write",
-      "instruction": "Make sentences from the words in brackets.",
+      "instruction": "Посмотрите на картинки и ответьте на вопросы. В вашем ответе должно быть только одно слово.",
+      "example": [
+        1
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "Whose is this?",
+          "answers": [
+            "Alice’s"
+          ]
+        },
+        {
           "num": 2,
-          "prompt": "It\u2019s a very common mistake. (easy mistake / make)",
-          "answers": ["It\u2019s an easy mistake to make."]
+          "prompt": "Whose is this?",
+          "answers": [
+            "Andy’s"
+          ]
         },
         {
           "num": 3,
-          "prompt": "I like living in this town. (great place / live)",
-          "answers": ["It\u2019s a great place to live."]
+          "prompt": "And this?",
+          "answers": [
+            "Dave’s"
+          ]
         },
         {
           "num": 4,
-          "prompt": "I wonder why she said that. (strange thing / say)",
-          "answers": ["It was a strange thing to say."]
+          "prompt": "And these?",
+          "answers": [
+            "Jane’s"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "And this?",
+          "answers": [
+            "Rachel’s"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "And these?",
+          "answers": [
+            "Alice’s"
+          ]
         }
       ]
     },
     {
       "id": "65.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box.",
-      "wordBank": ["to hear", "to help", "to invite", "to make", "not", "of you", "silly", "amazed", "glad"],
+      "type": "write",
+      "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "I stayed at the house of my sister.",
+          "answers": [
+            "my sister’s house"
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["I\u2019ve been travelling a long time. Now I\u2019m ", " to be back home."],
-          "answers": [["glad"]]
+          "prompt": "What is the name of this village?",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 3,
-          "parts": ["I heard about Tom\u2019s accident. I was relieved ", " that he\u2019s OK."],
-          "answers": [["to hear"]]
+          "prompt": "Do you like the colour of this coat?",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 4,
-          "parts": ["It was nice ", " to remember my birthday."],
-          "answers": [["of you"]]
+          "prompt": "Do you have the phone number of Simon?",
+          "answers": [
+            "Simon’s phone number"
+          ]
         },
         {
           "num": 5,
-          "parts": ["Let me know if you need any assistance. I\u2019d be very pleased ", " you."],
-          "answers": [["to help"]]
+          "prompt": "The job of my brother is very interesting.",
+          "answers": [
+            "My brother’s job"
+          ]
         },
         {
           "num": 6,
-          "parts": ["I thought James was about 25. I was ", " to discover he was 40."],
-          "answers": [["amazed"]]
+          "prompt": "Write your name at the top of the page.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 7,
-          "parts": ["It was inconsiderate of our neighbours ", " so much noise."],
-          "answers": [["to make"]]
+          "prompt": "For me, the morning is the best part of the day.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 8,
-          "parts": ["My interview went well. I was disappointed ", " to be offered the job."],
-          "answers": [["not"]]
+          "prompt": "The favourite colour of Paula is blue.",
+          "answers": [
+            "Paula’s favourite colour"
+          ]
         },
         {
           "num": 9,
-          "parts": ["It\u2019s ", " of me to worry so much about things that are not important."],
-          "answers": [["silly"]]
+          "prompt": "When is the birthday of your mother?",
+          "answers": [
+            "your mother’s birthday"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "The house of my parents isn’t very big.",
+          "answers": [
+            "My parents’ house"
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "The walls of this house are very thin.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "The car stopped at the end of the street.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "Are you going to the party of Silvia next week?",
+          "answers": [
+            "Silvia’s party"
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "The manager of the hotel is not here at the moment",
+          "answers": [
+            "OK"
+          ]
         }
       ]
     },
     {
       "id": "65.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Use: the first the second the last the only",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (умный = clever)",
       "items": [
         {
+          "num": 1,
+          "prompt": "Сашина кошка очень умная.",
+          "answers": [
+            "Sasha’s cat is very clever."
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["Everybody else arrived before Paul.\nPaul was ", "."],
-          "answers": [["the last (person) to arrive"]]
+          "prompt": "Ты идёшь на вечеринку Бена?",
+          "answers": [
+            "Are you going to Ben’s party?"
+          ]
         },
         {
           "num": 3,
-          "parts": ["Emily passed the exam. All the other students failed.\nEmily ", "."],
-          "answers": [["was the only student to pass (the exam)", "was the only one to pass (the exam)"]]
+          "prompt": "Это не моя машина. Это машина моей сестры.",
+          "answers": [
+            "That’s not my car. It’s my sister’s.",
+            "That’s not my car. It’s my sister’s car.",
+            "That’s not my car. It is my sister’s.",
+            "That’s not my car. It is my sister’s car.",
+            "That is not my car. It’s my sister’s.",
+            "That is not my car. It’s my sister’s car.",
+            "That is not my car. It is my sister’s.",
+            "That is not my car. It is my sister’s car.",
+            "It’s not my car. It’s my sister’s.",
+            "It’s not my car. It’s my sister’s car.",
+            "It’s not my car. It is my sister’s.",
+            "It’s not my car. It is my sister’s car.",
+            "It is not my car. It’s my sister’s.",
+            "It is not my car. It’s my sister’s car.",
+            "It is not my car. It is my sister’s.",
+            "It is not my car. It is my sister’s car."
+          ]
         },
         {
           "num": 4,
-          "parts": ["I complained to the manager. Another customer had already complained.\nI ", "."],
-          "answers": [["was the second customer to complain", "was the second person to complain"]]
+          "prompt": "“Чьи это книги?” – “Они Наташины”.",
+          "answers": [
+            "‘Whose books are these?’ ‘They’re Natasha’s.’"
+          ]
         },
         {
           "num": 5,
-          "parts": ["Neil Armstrong walked on the moon in 1969. Nobody had done this before him.\nNeil Armstrong ", "."],
-          "answers": [["was the first person to walk on the moon", "was the first man to walk on the moon"]]
-        }
-      ]
-    },
-    {
-      "id": "65.5",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using the words in brackets and a suitable verb.",
-      "items": [
-        {
-          "num": 2,
-          "parts": ["I\u2019m not surprised you\u2019re tired after your trip.\n(you / bound / tired) You\u2019re ", " after such a long journey."],
-          "answers": [["bound to be tired"]]
+          "prompt": "Сколько лет дочери Тома?",
+          "answers": [
+            "How old is Tom’s daughter?"
+          ]
         },
         {
-          "num": 3,
-          "parts": ["Andy has a very bad memory.\n(he / sure / forget) He\u2019s ", " anything you tell him."],
-          "answers": [["sure to forget"]]
+          "num": 6,
+          "prompt": "Вам нужно сходить в офис начальника.",
+          "answers": [
+            "You need to go to the manager’s office.",
+            "You have to go to the manager’s office.",
+            "You should go to the manager’s office."
+          ]
         },
         {
-          "num": 4,
-          "parts": ["I don\u2019t think you\u2019ll need an umbrella.\n(it / not / likely / rain) It\u2019s ", "."],
-          "answers": [["not likely to rain", "isn\u2019t likely to rain"]]
+          "num": 7,
+          "prompt": "Вы знаете название этой улицы?",
+          "answers": [
+            "Do you know the name of this street?"
+          ]
         },
         {
-          "num": 5,
-          "parts": ["The holidays begin this weekend.\n(there / sure / be) There\u2019s ", " a lot of traffic on the roads."],
-          "answers": [["sure to be"]]
+          "num": 8,
+          "prompt": "Лима – столица Перу.",
+          "answers": [
+            "Lima is the capital of Peru."
+          ]
         }
       ]
     }

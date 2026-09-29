@@ -39,20 +39,20 @@ export function Home({
         <button type="button" className="homecoverbtn" onClick={onStart}>
           <img
             className="homecover"
-            src={`${import.meta.env.BASE_URL}cover.png`}
-            alt="Cover of English Grammar in Use, Fifth Edition, by Raymond Murphy"
+            src={`${import.meta.env.BASE_URL}cover.jpg`}
+            alt="Cover of Essential Grammar in Use, Russian edition, by Raymond Murphy with Olga Sands"
             width={1112}
-            height={1497}
+            height={1653}
             decoding="async"
             draggable={false}
           />
         </button>
         <div className="hometext">
           <p className="homedesc">
-            Raymond Murphy’s <em>English Grammar in Use</em> (Fifth edition) as
-            an interactive web course: the book’s pages with exercises beside
-            them, answers checked as you go, progress saved in this browser. 145
-            units and 41 additional exercises.
+            Raymond Murphy’s <em>Essential Grammar in Use</em> (Russian edition)
+            as an interactive web course: the book’s pages with exercises beside
+            them, answers checked as you go, progress saved in this browser. 115
+            units and 35 additional exercises.
           </p>
           <button type="button" className="homecta" onClick={onStart}>
             {continueTo ? (
@@ -69,7 +69,8 @@ export function Home({
               Artem Noskov
             </a>
             <br />
-            From the book by Raymond Murphy (Cambridge University Press)
+            From the book by Raymond Murphy with Olga Sands (Cambridge
+            University Press)
           </footer>
         </div>
       </div>

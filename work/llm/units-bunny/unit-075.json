@@ -1,0 +1,349 @@
+{
+ "unit": 75,
+ "title": "this/that/these/those",
+ "pdfPages": [
+  161,
+  162
+ ],
+ "exercises": [
+  {
+   "id": "75.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте this/that/these/those + слова из рамки:",
+   "wordBank": [
+    "birds",
+    "house",
+    "plates",
+    "postcards",
+    "seat",
+    "shoes"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Do you like ",
+      "?"
+     ],
+     "answers": [
+      [
+       "these shoes"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Who lives in ",
+      "?"
+     ],
+     "answers": [
+      [
+       "that house"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "How much are ",
+      "?"
+     ],
+     "answers": [
+      [
+       "these postcards"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Look at ",
+      ""
+     ],
+     "answers": [
+      [
+       "those birds"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Excuse me, is ",
+      " free?"
+     ],
+     "answers": [
+      [
+       "this seat"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " are dirty."
+     ],
+     "answers": [
+      [
+       "These plates"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "75.2",
+   "type": "write",
+   "instruction": "Напишите вопросительные предложения: Is this/that your … ? или Are these/those your … ?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "Is this your bag?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "answers": [
+      "Is that your umbrella?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "Is this your book?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "Are those your books?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "Is that your bicycle?",
+      "Is that your bike?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "Are these your keys?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "",
+     "answers": [
+      "Are those your keys?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "",
+     "answers": [
+      "Is this your watch?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "",
+     "answers": [
+      "Are those your glasses?"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "",
+     "answers": [
+      "Are these your gloves?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "75.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте this is или that’s или that.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "A: I’m sorry I’m late.\nB: ",
+      " all right."
+     ],
+     "answers": [
+      [
+       "That’s"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "A: I can’t come to the party tomorrow.\nB: Oh, ",
+      " a pity. Why not?"
+     ],
+     "answers": [
+      [
+       "that’s"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "on the phone\nSUE: Hello, Jane. ",
+      " Sue.\nJANE: Oh, hi Sue. How are you?"
+     ],
+     "answers": [
+      [
+       "This is"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "A: You’re lazy.\nB: ",
+      " not true!"
+     ],
+     "answers": [
+      [
+       "That’s"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "A: Beth plays the piano very well.\nB: Does she? I didn’t know ",
+      "."
+     ],
+     "answers": [
+      [
+       "that"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Mark meets Paul’s sister, Helen.\nPAUL: Mark, ",
+      " my sister, Helen.\nMARK: Hi, Helen."
+     ],
+     "answers": [
+      [
+       "this is"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "A: I’m sorry I was angry yesterday.\nB: ",
+      " OK. Forget it!"
+     ],
+     "answers": [
+      [
+       "That’s"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "A: You’re a friend of Tom’s, aren’t you?\nB: Yes, ",
+      " right."
+     ],
+     "answers": [
+      [
+       "that’s"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "75.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [футболка = T-shirt\nне так ли = aren’t you]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Эта книга очень интересная.",
+     "answers": [
+      "This book is very interesting."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Эти цветы прекрасны! Спасибо!",
+     "answers": [
+      "These flowers are beautiful! Thank you!"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Тот мальчик в красной футболке — ваш сын?",
+     "answers": [
+      "Is that boy in the red T-shirt your son?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Кто те люди у окна?",
+     "answers": [
+      "Who are those people by the window?",
+      "Who are those people near the window?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Привет, Том. Это Наташа.",
+     "answers": [
+      "Hi, Tom. This is Natasha.",
+      "Hello, Tom. This is Natasha."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "“Вы Бен, не так ли?” – “Да, это так”.",
+     "answers": [
+      "'You’re Ben, aren’t you?' 'Yes, that’s right.'"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "“Извините, я опоздан” – “Это не проблема”.",
+     "answers": [
+      "'Sorry, I’m late.' 'That’s all right.'",
+      "'Sorry, I’m late.' 'That’s not a problem.'"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(on the phone) Здравствуйте, это Молли. Это Джессика?",
+     "answers": [
+      "Hello, this is Molly. Is that Jessica?"
+     ]
+    }
+   ]
+  }
+ ]
+}

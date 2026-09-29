@@ -1,346 +1,336 @@
 {
   "id": 34,
-  "topic": "Prepositions (position and other uses)",
-  "refs": "Units 123–128",
+  "topic": "a и the",
+  "refs": "Разделы 66, 70–74",
   "pdfPages": [
-    334
+    270
   ],
   "exercise": {
     "id": "34",
     "type": "fill-in",
-    "instruction": "Put in the missing preposition.",
+    "instruction": "Write a/an or the if necessary. If a/an/the are not necessary, leave an empty space (–).",
+    "example": [
+      1,
+      2,
+      3
+    ],
     "items": [
       {
         "num": 1,
         "parts": [
-          "I'd love to be able to visit every country ",
-          " the world."
+          "Who is ",
+          " best player in your team?"
         ],
         "answers": [
           [
-            "in"
+            "the"
           ]
-        ]
+        ],
+        "example": true
       },
       {
         "num": 2,
         "parts": [
-          "Jessica White is my favourite author. Have you read anything ",
-          " her?"
+          "I don’t watch ",
+          " TV very often."
         ],
         "answers": [
           [
-            "by"
+            "–"
           ]
-        ]
+        ],
+        "example": true
       },
       {
         "num": 3,
         "parts": [
-          "There's a small shop ",
-          " the end of this road."
+          "‘Is there ",
+          " bank near here?’ ‘Yes, at ",
+          " end of this street.’"
         ],
         "answers": [
           [
-            "at"
+            "a"
+          ],
+          [
+            "the"
           ]
-        ]
+        ],
+        "example": true
       },
       {
         "num": 4,
         "parts": [
-          "Tom is away at the moment. He's ",
-          " holiday."
+          "I can’t ride ",
+          " horse."
         ],
         "answers": [
           [
-            "on"
+            "a"
           ]
         ]
       },
       {
         "num": 5,
         "parts": [
-          "We live ",
-          " the country, a long way from the nearest town."
+          "",
+          " sky is very clear tonight."
         ],
         "answers": [
           [
-            "in"
+            "The"
           ]
         ]
       },
       {
         "num": 6,
         "parts": [
-          "I've got a stain ",
-          " my jacket. I'll have to have it cleaned."
+          "Do you live here, or are you ",
+          " tourist?"
         ],
         "answers": [
           [
-            "on"
+            "a"
           ]
         ]
       },
       {
         "num": 7,
         "parts": [
-          "We went ",
-          " a party ",
-          " Lisa's house on Saturday."
+          "What did you have for ",
+          " lunch?"
         ],
         "answers": [
           [
-            "to"
-          ],
-          [
-            "at"
+            "–"
           ]
         ]
       },
       {
         "num": 8,
         "parts": [
-          "Boston is ",
-          " the east coast of the United States."
+          "Who was ",
+          " first President of ",
+          " United States?"
         ],
         "answers": [
           [
-            "on"
+            "the"
+          ],
+          [
+            "the"
           ]
         ]
       },
       {
         "num": 9,
         "parts": [
-          "Look at the leaves ",
-          " that tree. They're a beautiful colour."
+          "I’m not feeling very good. I’ve got ",
+          " headache."
         ],
         "answers": [
           [
-            "on"
+            "a"
           ]
         ]
       },
       {
         "num": 10,
         "parts": [
-          "I've never been ",
-          " Japan, but I'd like to go very much."
+          "I’m sorry, but I’ve forgotten your name. I can never remember ",
+          " names."
         ],
         "answers": [
           [
-            "to"
+            "–"
           ]
         ]
       },
       {
         "num": 11,
         "parts": [
-          "Mozart died ",
-          " Vienna in 1791 ",
-          " the age of 35."
+          "What time is ",
+          " next train to London?"
         ],
         "answers": [
           [
-            "in"
-          ],
-          [
-            "at"
+            "the"
           ]
         ]
       },
       {
         "num": 12,
         "parts": [
-          "'Are you ",
-          " this photo?' 'Yes, that's me, ",
-          " the left.'"
+          "Kate doesn’t often send ",
+          " emails. She prefers to call people."
         ],
         "answers": [
           [
-            "in"
-          ],
-          [
-            "on"
+            "–"
           ]
         ]
       },
       {
         "num": 13,
         "parts": [
-          "We went ",
-          " the theatre last night. We had seats ",
-          " the front row."
+          "‘Where’s Sue?’ ‘She’s in ",
+          " garden.’"
         ],
         "answers": [
           [
-            "to"
-          ],
-          [
-            "in"
+            "the"
           ]
         ]
       },
       {
         "num": 14,
         "parts": [
-          "If you want to turn the light on, the switch is ",
-          " the wall ",
-          " the door."
+          "Excuse me, I’m looking for ",
+          " Majestic Hotel. Is it near here?"
         ],
         "answers": [
           [
-            "on"
-          ],
-          [
-            "by",
-            "next to",
-            "beside"
+            "the"
           ]
         ]
       },
       {
         "num": 15,
         "parts": [
-          "It was late when we arrived ",
-          " the hotel."
+          "Gary was ill ",
+          " last week, so he didn’t go to ",
+          " work."
         ],
         "answers": [
           [
-            "at"
+            "–"
+          ],
+          [
+            "–"
           ]
         ]
       },
       {
         "num": 16,
         "parts": [
-          "I couldn't decide what to eat. There was nothing ",
-          " the menu that I liked."
+          "Everest is ",
+          " highest mountain in ",
+          " world."
         ],
         "answers": [
           [
-            "on"
+            "the"
+          ],
+          [
+            "the"
           ]
         ]
       },
       {
         "num": 17,
         "parts": [
-          "We live ",
-          " a tower block. Our apartment is ",
-          " the fifteenth floor."
+          "I usually listen to ",
+          " radio while I’m having ",
+          " breakfast."
         ],
         "answers": [
           [
-            "in"
+            "the"
           ],
           [
-            "on"
+            "–"
           ]
         ]
       },
       {
         "num": 18,
         "parts": [
-          "Some parts of the film were a bit stupid, but ",
-          " the whole I enjoyed it."
+          "I like ",
+          " sport. My favourite sport is ",
+          " basketball."
         ],
         "answers": [
           [
-            "on"
+            "–"
+          ],
+          [
+            "–"
           ]
         ]
       },
       {
         "num": 19,
         "parts": [
-          "'When you paid the restaurant bill, did you pay cash?' 'No, I paid ",
-          " credit card.'"
+          "Emily is ",
+          " doctor. Her husband is ",
+          " art teacher."
         ],
         "answers": [
           [
-            "by"
+            "a"
+          ],
+          [
+            "an"
           ]
         ]
       },
       {
         "num": 20,
         "parts": [
-          "'How did you get here? Did you come ",
-          " the bus?' 'No, ",
-          " car.'"
+          "My apartment is on ",
+          " second floor. Turn left at ",
+          " top of ",
+          " stairs, and it’s on ",
+          " right."
         ],
         "answers": [
           [
-            "on"
+            "the"
           ],
           [
-            "by"
+            "the"
+          ],
+          [
+            "the"
+          ],
+          [
+            "the"
           ]
         ]
       },
       {
         "num": 21,
         "parts": [
-          "I watched a really interesting programme ",
-          " TV last night."
+          "After ",
+          " dinner, we watched ",
+          " TV."
         ],
         "answers": [
           [
-            "on"
+            "–"
+          ],
+          [
+            "–"
           ]
         ]
       },
       {
         "num": 22,
         "parts": [
-          "Helen works for a large company. She works ",
-          " the customer services department."
+          "Last year we had ",
+          " wonderful holiday in ",
+          " south of ",
+          " France."
         ],
         "answers": [
           [
-            "in"
-          ]
-        ]
-      },
-      {
-        "num": 23,
-        "parts": [
-          "Anna spent two years working ",
-          " London before returning ",
-          " Italy."
-        ],
-        "answers": [
-          [
-            "in"
+            "a"
           ],
           [
-            "to"
-          ]
-        ]
-      },
-      {
-        "num": 24,
-        "parts": [
-          "How was your trip ",
-          " the beach? Did you have a good day?"
-        ],
-        "answers": [
+            "the"
+          ],
           [
-            "to"
-          ]
-        ]
-      },
-      {
-        "num": 25,
-        "parts": [
-          "On our first day in Paris, we went ",
-          " a trip round the city."
-        ],
-        "answers": [
-          [
-            "on"
+            "–"
           ]
         ]
       }

@@ -1,77 +1,123 @@
 {
   "unit": 66,
-  "title": "to … (afraid to do) and preposition + -ing (afraid of -ing)",
+  "title": "a/an …",
   "pdfPages": [
-    144,
-    145
+    143,
+    144
   ],
   "exercises": [
     {
       "id": "66.1",
-      "type": "write",
-      "instruction": "Write sentences using afraid to … or afraid of -ing.",
+      "type": "fill-in",
+      "instruction": "Вставьте a или an.",
       "items": [
         {
           "num": 1,
-          "prompt": "The streets here are not safe at night. (a lot of people / afraid / go / out)",
+          "parts": [
+            "",
+            " old book"
+          ],
           "answers": [
-            "A lot of people are afraid to go out."
-          ]
+            [
+              "an"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "We walked very carefully along the icy path. (we / afraid / fall)",
+          "parts": [
+            "",
+            " window"
+          ],
           "answers": [
-            "We were afraid of falling."
+            [
+              "a"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "I don’t usually carry my passport with me. (I / afraid / lose / it)",
+          "parts": [
+            "",
+            " horse"
+          ],
           "answers": [
-            "I’m afraid of losing it."
+            [
+              "a"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "I thought she would be angry if I told her what had happened. (I / afraid / tell / her)",
+          "parts": [
+            "",
+            " airport"
+          ],
           "answers": [
-            "I was afraid to tell her."
+            [
+              "an"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "We ran to the station. (we / afraid / miss / our train)",
+          "parts": [
+            "",
+            " new airport"
+          ],
           "answers": [
-            "We were afraid of missing our train."
+            [
+              "a"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "In the middle of the film there was a very horrifying scene. (we / afraid / look)",
+          "parts": [
+            "",
+            " organisation"
+          ],
           "answers": [
-            "We were afraid to look."
+            [
+              "an"
+            ]
           ]
         },
         {
           "num": 7,
-          "prompt": "The vase was very valuable, so I held it carefully. (I / afraid / drop / it)",
+          "parts": [
+            "",
+            " university"
+          ],
           "answers": [
-            "I was afraid of dropping it."
+            [
+              "a"
+            ]
           ]
         },
         {
           "num": 8,
-          "prompt": "If there’s anything you want to know, you can ask me. (don’t / afraid / ask)",
+          "parts": [
+            "",
+            " hour"
+          ],
           "answers": [
-            "Don’t be afraid to ask."
+            [
+              "an"
+            ]
           ]
         },
         {
           "num": 9,
-          "prompt": "I was worried because we didn’t have much petrol. (I / afraid / run out of petrol)",
+          "parts": [
+            "",
+            " economic problem"
+          ],
           "answers": [
-            "I was afraid of running out of petrol."
+            [
+              "an"
+            ]
           ]
         }
       ]
@@ -79,25 +125,29 @@
     {
       "id": "66.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using interested in … or interested to …. Choose from these verbs:",
+      "instruction": "Чем являются эти предметы? Используйте слова из рамки.",
       "wordBank": [
-        "buy",
-        "hear",
-        "know",
-        "look",
-        "start",
-        "study"
+        "bird",
+        "fruit",
+        "mountain",
+        "river",
+        "musical instrument",
+        "flower",
+        "game",
+        "planet",
+        "tool",
+        "vegetable"
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I’m trying to sell my car, but nobody is interested in ",
+            "A duck is ",
             "."
           ],
           "answers": [
             [
-              "buying"
+              "a bird"
             ]
           ],
           "example": true
@@ -105,62 +155,108 @@
         {
           "num": 2,
           "parts": [
-            "Nicola is interested in ",
-            " her own business."
+            "A carrot is ",
+            "."
           ],
           "answers": [
             [
-              "starting"
+              "a vegetable"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I saw Joe recently. You’ll be interested ",
-            " that he’s getting married soon."
+            "Tennis is ",
+            "."
           ],
           "answers": [
             [
-              "to know",
-              "to hear"
+              "a game"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I didn’t enjoy school. I wasn’t interested in ",
+            "A hammer is ",
             "."
           ],
           "answers": [
             [
-              "studying"
+              "a tool"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I went to a public meeting to discuss the plans for a new road. I was interested ",
-            " how people felt about the project."
+            "Everest is ",
+            "."
           ],
           "answers": [
             [
-              "to hear",
-              "to know"
+              "a mountain"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Paul doesn’t enjoy sightseeing. He’s not interested in ",
-            " at old buildings."
+            "Saturn is ",
+            "."
           ],
           "answers": [
             [
-              "looking"
+              "a planet"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A banana is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a fruit"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The Amazon is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a river"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "A rose is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a flower"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "A trumpet is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a musical instrument"
             ]
           ]
         }
@@ -168,248 +264,227 @@
     },
     {
       "id": "66.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using sorry for … or sorry to …. Use the verb in brackets.",
+      "type": "write",
+      "instruction": "Кто они по профессии? Закончите предложения, используя слова из рамки.",
+      "wordBank": [
+        "architect",
+        "dentist",
+        "shop assistant",
+        "photographer",
+        "electrician",
+        "nurse",
+        "taxi driver"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "I’m ",
-            " you, but I need to ask you something. (bother)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "sorry to bother"
-            ]
-          ],
-          "example": true
+            "She’s a dentist."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "We were ",
-            " that you can’t come to the wedding. (hear)"
-          ],
+          "prompt": "He’s",
           "answers": [
-            [
-              "sorry to hear"
-            ]
+            "He’s a shop assistant."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "I’m ",
-            " bad things about you. I didn’t mean what I said. (say)"
-          ],
+          "prompt": "She",
           "answers": [
-            [
-              "sorry for saying",
-              "sorry I said"
-            ]
+            "She’s an architect."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "It’s a shame Alan is leaving the company. I’ll be ",
-            " him go. (see)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "sorry to see"
-            ]
+            "He’s a taxi driver."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I’m ",
-            " so much noise last night. (make)"
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "sorry for making",
-              "sorry I made"
-            ]
+            "He’s an electrician."
           ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "She’s a photographer."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "",
+          "answers": [
+            "She’s a nurse."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "And you? I’m",
+          "answers": [
+            "I’m a/an ..."
+          ],
+          "selfCheck": true
         }
       ]
     },
     {
       "id": "66.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences in each group using the verb in brackets.",
+      "type": "write",
+      "instruction": "Напишите предложения, используя слова и фразы из обеих рамок. Где необходимо, также используйте a/an.",
+      "wordBank": [
+        "I want to ask you",
+        "Rebecca works in",
+        "Tom never wears",
+        "Jane wants to learn",
+        "I can’t ride",
+        "Mike lives in",
+        "My brother is",
+        "This evening I’m going to",
+        "old house",
+        "artist",
+        "party",
+        "question",
+        "bookshop",
+        "foreign language",
+        "hat",
+        "bike"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
-          "num": "1a",
-          "parts": [
-            "We wanted ",
-            " the building. (leave)"
-          ],
+          "num": 1,
+          "prompt": "",
           "answers": [
-            [
-              "to leave"
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": "1b",
-          "parts": [
-            "We weren’t allowed ",
-            " the building. (leave)"
-          ],
-          "answers": [
-            [
-              "to leave"
-            ]
+            "I want to ask you a question."
           ]
         },
         {
-          "num": "1c",
-          "parts": [
-            "We were prevented ",
-            " the building. (leave)"
-          ],
+          "num": 2,
+          "prompt": "",
           "answers": [
-            [
-              "from leaving"
-            ]
+            "Tom never wears a hat."
           ]
         },
         {
-          "num": "2a",
-          "parts": [
-            "Sam and Chris hoped ",
-            " the problem. (solve)"
-          ],
+          "num": 3,
+          "prompt": "",
           "answers": [
-            [
-              "to solve"
-            ]
+            "I can’t ride a bike."
           ]
         },
         {
-          "num": "2b",
-          "parts": [
-            "Sam failed ",
-            " the problem. (solve)"
-          ],
+          "num": 4,
+          "prompt": "",
           "answers": [
-            [
-              "to solve"
-            ]
+            "My brother is an artist."
           ]
         },
         {
-          "num": "2c",
-          "parts": [
-            "Chris succeeded ",
-            " the problem. (solve)"
-          ],
+          "num": 5,
+          "prompt": "",
           "answers": [
-            [
-              "in solving"
-            ]
+            "Rebecca works in a bookshop."
           ]
         },
         {
-          "num": "3a",
-          "parts": [
-            "I’m thinking ",
-            " away next week. (go)"
-          ],
+          "num": 6,
+          "prompt": "",
           "answers": [
-            [
-              "of going",
-              "about going"
-            ]
+            "Jane wants to learn a foreign language."
           ]
         },
         {
-          "num": "3b",
-          "parts": [
-            "I’m planning ",
-            " away next week. (go)"
-          ],
+          "num": 7,
+          "prompt": "",
           "answers": [
-            [
-              "to go",
-              "on going"
-            ]
+            "Mike lives in an old house."
           ]
         },
         {
-          "num": "3c",
-          "parts": [
-            "I’d like ",
-            " away next week. (go)"
-          ],
+          "num": 8,
+          "prompt": "",
           "answers": [
-            [
-              "to go"
-            ]
+            "This evening I’m going to a party."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (приветливый = friendly)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Хелен работает в магазине.",
+          "answers": [
+            "Helen works in a shop."
           ]
         },
         {
-          "num": "3d",
-          "parts": [
-            "I’m looking forward ",
-            " away next week. (go)"
-          ],
+          "num": 2,
+          "prompt": "У Антона нет машины.",
           "answers": [
-            [
-              "to going"
-            ]
+            "Anton doesn’t have a car.",
+            "Anton hasn’t got a car."
           ]
         },
         {
-          "num": "4a",
-          "parts": [
-            "Helen wanted ",
-            " me lunch. (buy)"
-          ],
+          "num": 3,
+          "prompt": "Наташа – очень приветливый человек.",
           "answers": [
-            [
-              "to buy"
-            ]
+            "Natasha is a very friendly person."
           ]
         },
         {
-          "num": "4b",
-          "parts": [
-            "Helen insisted ",
-            " me lunch. (buy)"
-          ],
+          "num": 4,
+          "prompt": "Моя сестра хочет быть врачом.",
           "answers": [
-            [
-              "on buying"
-            ]
+            "My sister wants to be a doctor."
           ]
         },
         {
-          "num": "4c",
-          "parts": [
-            "Helen promised ",
-            " me lunch. (buy)"
-          ],
+          "num": 5,
+          "prompt": "Хотите ещё одну чашку чая?",
           "answers": [
-            [
-              "to buy"
-            ]
+            "Would you like another cup of tea?",
+            "Do you want another cup of tea?"
           ]
         },
         {
-          "num": "4d",
-          "parts": [
-            "Helen wouldn’t dream ",
-            " me lunch. (buy)"
-          ],
+          "num": 6,
+          "prompt": "Новгород – это город в России.",
           "answers": [
-            [
-              "of buying"
-            ]
+            "Novgorod is a town in Russia.",
+            "Novgorod is a city in Russia."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мне нужно купить пальто.",
+          "answers": [
+            "I need to buy a coat.",
+            "I have to buy a coat."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Булгаков был знаменитым русским писателем.",
+          "answers": [
+            "Bulgakov was a famous Russian writer."
           ]
         }
       ]

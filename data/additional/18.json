@@ -1,52 +1,74 @@
 {
   "id": 18,
-  "topic": "Modal verbs (can/must/would etc.)",
-  "refs": "Units 26–36",
-  "pdfPages": [325],
+  "topic": "present perfect",
+  "refs": "Разделы 16–20",
+  "pdfPages": [
+    260
+  ],
   "exercise": {
     "id": "18",
-    "type": "fill-in",
-    "instruction": "Complete B's sentences using can/could/might/must/should/would + the verb in brackets. In some sentences you need to use have: must have … / should have … etc. In some sentences you need the negative (can't/couldn't etc.).",
+    "type": "self-check",
+    "instruction": "Закончите предложения. Напишите о себе.",
+    "example": [
+      1,
+      2
+    ],
     "items": [
       {
+        "num": 1,
+        "prompt": "I’ve never …",
+        "modelAnswers": [
+          "ridden a horse."
+        ]
+      },
+      {
+        "num": 2,
+        "prompt": "I’ve … many times.",
+        "modelAnswers": [
+          "been to London"
+        ]
+      },
+      {
         "num": 3,
-        "parts": ["Not at the moment, but it ", " later. (rain)"],
-        "answers": [["could rain", "might rain"]]
+        "prompt": "I’ve just …",
+        "modelAnswers": [
+          "I’ve just started this exercise."
+        ]
       },
       {
         "num": 4,
-        "parts": ["I'm not sure. She ", " out. (go)"],
-        "answers": [["might have gone", "could have gone"]]
+        "prompt": "I’ve … (once / twice / a few times / many times)",
+        "modelAnswers": [
+          "I’ve met Sarah a few times."
+        ]
       },
       {
         "num": 5,
-        "parts": ["No, I had to work that night, so I ", ". (go)"],
-        "answers": [["couldn't go"]]
+        "prompt": "I haven’t … yet.",
+        "modelAnswers": [
+          "I haven’t had lunch yet."
+        ]
       },
       {
         "num": 6,
-        "parts": ["No, you ", " him this morning. He's away on holiday. (see)"],
-        "answers": [["couldn't have seen", "can't have seen"]]
+        "prompt": "I’ve never …",
+        "modelAnswers": [
+          "I’ve never been to Australia."
+        ]
       },
       {
         "num": 7,
-        "parts": ["Well, it takes about one and a half hours, so if we leave at 3 o'clock, we ", " there by 4.30. (get)"],
-        "answers": [["should get"]]
+        "prompt": "I’ve … since …",
+        "modelAnswers": [
+          "I’ve lived here since I was born."
+        ]
       },
       {
         "num": 8,
-        "parts": ["Years ago. I ", " him if I saw him now. (recognise)"],
-        "answers": [["wouldn't recognise", "might not recognise"]]
-      },
-      {
-        "num": 9,
-        "parts": ["There was a loud explosion about an hour ago. You ", " it. (hear)"],
-        "answers": [["must have heard"]]
-      },
-      {
-        "num": 10,
-        "parts": ["You went the wrong way. You ", " left. (turn) (conditional)"],
-        "answers": [["should have turned"]]
+        "prompt": "I’ve … for …",
+        "modelAnswers": [
+          "I’ve lived here for three years."
+        ]
       }
     ]
   }

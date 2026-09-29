@@ -1,308 +1,175 @@
 {
   "id": 15,
-  "topic": "Past, present and future",
-  "refs": "Units 1–25",
+  "topic": "настоящее и прошедшее время",
+  "refs": "Разделы 4–15",
   "pdfPages": [
-    323
+    258
   ],
   "exercise": {
     "id": "15",
     "type": "fill-in",
-    "instruction": "Robert is travelling in North America. He sends an email to a friend in Winnipeg (Canada). Put the verb into the most suitable form.",
+    "instruction": "Заполните пропуски, используя одну из этих форм:",
+    "wordBank": [
+      "present simple (I work/drive и т. д.)",
+      "present continuous (I am working/driving и т. д.)",
+      "past simple (I worked/drove и т. д.)",
+      "past continuous (I was working/driving и т. д.)"
+    ],
+    "example": [
+      1,
+      2
+    ],
     "items": [
       {
         "num": 1,
         "parts": [
-          "Hi\n(1) ",
-          " (I / just / arrive) in Minneapolis. (2)\n(I / travel) for more than a month now, and (3)\n(I / begin) to think about coming home. Everything (4)\n(I / see) so far (5)\n(be) really interesting, and (6)\n(I / meet) some really kind people.\n(7)\n(I / leave) Kansas City a week ago. (8)\n(I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "You can turn off the television. I ",
+          " (not/watch) it."
         ],
         "answers": [
           [
-            "I've just arrived"
+            "’m not watching"
           ]
-        ],
-        "example": true
+        ]
       },
       {
         "num": 2,
         "parts": [
-          "Hi\n(1) I've just arrived (I / just / arrive) in Minneapolis. (2)\n",
-          " (I / travel) for more than a month now, and (3)\n(I / begin) to think about coming home. Everything (4)\n(I / see) so far (5)\n(be) really interesting, and (6)\n(I / meet) some really kind people.\n(7)\n(I / leave) Kansas City a week ago. (8)\n(I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "Last night Jenny ",
+          " (fall) asleep while she ",
+          " (read)."
         ],
         "answers": [
           [
-            "I've been travelling"
+            "fell"
+          ],
+          [
+            "was reading"
           ]
         ]
       },
       {
         "num": 3,
         "parts": [
-          "Hi\n(1) I've just arrived (I / just / arrive) in Minneapolis. (2)\nI've been travelling (I / travel) for more than a month now, and (3)\n",
-          " (I / begin) to\nthink about coming home. Everything (4)\n(I / see) so far (5)\n(be) really interesting, and (6)\n(I / meet) some really kind people.\n(7)\n(I / leave) Kansas City a week ago. (8)\n(I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "Listen! Somebody ",
+          " (play) the piano."
         ],
         "answers": [
           [
-            "I'm beginning"
+            "is playing"
           ]
         ]
       },
       {
         "num": 4,
         "parts": [
-          "think about coming home. Everything (4)\n",
-          " (I / see) so far\n(5)\n(be) really interesting, and (6)\n(I / meet) some really kind people.\n(7)\n(I / leave) Kansas City a week ago. (8)\n(I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "‘Have you got my key?’ ‘No, I ",
+          " (give) it back to you.’"
         ],
         "answers": [
           [
-            "I've seen"
+            "gave"
           ]
         ]
       },
       {
         "num": 5,
         "parts": [
-          "I've seen (I / see) so far\n(5)\n",
-          " (be) really interesting, and (6)\n(I / meet) some really kind people.\n(7)\n(I / leave) Kansas City a week ago. (8)\n(I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "David is very lazy. He ",
+          " (not/like) hard work."
         ],
         "answers": [
           [
-            "has been"
+            "doesn’t like"
           ]
         ]
       },
       {
         "num": 6,
         "parts": [
-          "really interesting, and (6)\n",
-          " (I / meet)\nsome really kind people.\n(7)\n(I / leave) Kansas City a week ago. (8)\n(I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "Where ",
+          " (your parents / go) for their holidays last year?"
         ],
         "answers": [
           [
-            "I've met"
+            "did your parents go"
           ]
         ]
       },
       {
         "num": 7,
         "parts": [
-          "some really kind people.\n(7)\n",
-          " (I / leave) Kansas City a week ago. (8)\n(I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "I ",
+          " (see) Laura yesterday. She ",
+          " (drive) her new car."
         ],
         "answers": [
           [
-            "I left"
+            "saw"
+          ],
+          [
+            "was driving"
           ]
         ]
       },
       {
         "num": 8,
         "parts": [
-          "Kansas City a week ago. (8)\n",
-          " (I / stay) there with Emily, the aunt of a friend from college. She was really helpful and\nhospitable and although (9)\n(I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "A: ",
+          " (you/watch) TV much? B: No, I haven’t got a TV."
         ],
         "answers": [
           [
-            "I stayed",
-            "I was staying"
+            "Do you watch"
           ]
         ]
       },
       {
         "num": 9,
         "parts": [
-          "hospitable and although (9)\n",
-          " (I / plan) to stay only a couple of\ndays, (10)\n(I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "A: What ",
+          " (you/do) at 6 o’clock last Sunday morning? B: I was in bed asleep."
         ],
         "answers": [
           [
-            "I'd planned",
-            "I was planning"
+            "were you doing"
           ]
         ]
       },
       {
         "num": 10,
         "parts": [
-          "only a couple of\ndays, (10)\n",
-          " (I / end up) staying more than a week.\n(11)\n(I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "Andy isn’t at home very much. He ",
+          " (go) away a lot."
         ],
         "answers": [
           [
-            "I ended up"
+            "goes"
           ]
         ]
       },
       {
         "num": 11,
         "parts": [
-          "staying more than a week.\n(11)\n",
-          " (I / enjoy) the journey from Kansas City to here. (12)\n(I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "I ",
+          " (try) to find a job at the moment. It’s not easy."
         ],
         "answers": [
           [
-            "I enjoyed"
+            "’m trying",
+            "am trying"
           ]
         ]
       },
       {
         "num": 12,
         "parts": [
-          "the journey from Kansas City to here. (12)\n",
-          " (I / take) the Greyhound bus and (13)\n(meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
+          "I’m tired this morning. I ",
+          " (not/sleep) very well last night."
         ],
         "answers": [
           [
-            "I took"
-          ]
-        ]
-      },
-      {
-        "num": 13,
-        "parts": [
-          "the Greyhound bus and (13)\n",
-          " (meet)\nsome really interesting people – everybody was really friendly.\nSo now I'm here, and (14)\n(I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "met"
-          ]
-        ]
-      },
-      {
-        "num": 14,
-        "parts": [
-          "So now I'm here, and (14)\n",
-          " (I / stay) here for a few days before\n(15)\n(I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I'm staying",
-            "I'm going to stay",
-            "I'll be staying",
-            "I'll stay"
-          ]
-        ]
-      },
-      {
-        "num": 15,
-        "parts": [
-          "here for a few days before\n(15)\n",
-          " (I / continue) up to Canada. I'm not sure exactly when\n(16)\n(I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I continue"
-          ]
-        ]
-      },
-      {
-        "num": 16,
-        "parts": [
-          "up to Canada. I'm not sure exactly when\n(16)\n",
-          " (I / get) to Winnipeg – it depends what happens while\n(17)\n(I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I'll get"
-          ]
-        ]
-      },
-      {
-        "num": 17,
-        "parts": [
-          "to Winnipeg – it depends what happens while\n(17)\n",
-          " (I / be) here. But (18)\n(I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I'm"
-          ]
-        ]
-      },
-      {
-        "num": 18,
-        "parts": [
-          "here. But (18)\n",
-          " (I / let) you\nknow as soon as (19)\n(I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I'll let"
-          ]
-        ]
-      },
-      {
-        "num": 19,
-        "parts": [
-          "you\nknow as soon as (19)\n",
-          " (I / know) myself.\n(20)\n(I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I know"
-          ]
-        ]
-      },
-      {
-        "num": 20,
-        "parts": [
-          "myself.\n(20)\n",
-          " (I / stay) with a family here – they're friends of some\npeople I know at home. Tomorrow (21)\n(we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I'm staying"
-          ]
-        ]
-      },
-      {
-        "num": 21,
-        "parts": [
-          "people I know at home. Tomorrow (21)\n",
-          " (we / visit) some people\nthey know who (22)\n(build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "we're going to visit",
-            "we're visiting"
-          ]
-        ]
-      },
-      {
-        "num": 22,
-        "parts": [
-          "some people\nthey know who (22)\n",
-          " (build) a house by a lake. It isn't\nfinished yet, but (23)\n(it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "are building",
-            "have been building"
-          ]
-        ]
-      },
-      {
-        "num": 23,
-        "parts": [
-          "It isn't\nfinished yet, but (23)\n",
-          " (it / be) interesting to see what it's like.\nAnyway, that's all for now. (24)\n(I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "it will be"
-          ]
-        ]
-      },
-      {
-        "num": 24,
-        "parts": [
-          "that's all for now. (24)\n",
-          " (I / be) in touch again soon.\nRobert"
-        ],
-        "answers": [
-          [
-            "I'll be"
+            "didn’t sleep"
           ]
         ]
       }

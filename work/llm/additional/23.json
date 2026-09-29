@@ -1,0 +1,168 @@
+{
+ "id": 23,
+ "topic": "настоящее время, прошедшее время и present perfect",
+ "refs": "Разделы 4–21",
+ "pdfPages": [
+  262
+ ],
+ "exercise": {
+  "id": "23",
+  "type": "choice",
+  "instruction": "Выберите правильный вариант.",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "options": [
+     "Does Sue work?",
+     "Is working Sue?",
+     "Is Sue working?",
+     "Does work Sue?"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 2,
+    "options": [
+     "Where lives your uncle?",
+     "Where does your uncle live?",
+     "Where your uncle lives?",
+     "Where does live your uncle?"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 3,
+    "options": [
+     "I speak Italian, but I speak not French.",
+     "I speak Italian, but I’m not speaking French.",
+     "I speak Italian, but I doesn’t speak French.",
+     "I speak Italian, but I don’t speak French."
+    ],
+    "answer": 3
+   },
+   {
+    "num": 4,
+    "options": [
+     "He’s having a shower at the moment.",
+     "He have a shower at the moment.",
+     "He has a shower at the moment.",
+     "He has had a shower at the moment."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 5,
+    "options": [
+     "Why were you angry with me yesterday?",
+     "Why was you angry with me yesterday?",
+     "Why you were angry with me yesterday?",
+     "Why have you been angry with me yesterday?"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 6,
+    "options": [
+     "My favourite film is Cleo’s Dream. I’m seeing it four times.",
+     "My favourite film is Cleo’s Dream. I see it four times.",
+     "My favourite film is Cleo’s Dream. I was seeing it four times.",
+     "My favourite film is Cleo’s Dream. I’ve seen it four times."
+    ],
+    "answer": 3
+   },
+   {
+    "num": 7,
+    "options": [
+     "I don’t go out last night. I was too tired.",
+     "I didn’t went out last night. I was too tired.",
+     "I didn’t go out last night. I was too tired.",
+     "I haven’t gone out last night. I was too tired."
+    ],
+    "answer": 2
+   },
+   {
+    "num": 8,
+    "options": [
+     "Tina is from Chicago. She is living there all her life.",
+     "Tina is from Chicago. She has lived there all her life.",
+     "Tina is from Chicago. She lives there all her life.",
+     "Tina is from Chicago. She lived there all her life."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 9,
+    "options": [
+     "My friend waited for me when I arrived.",
+     "My friend has waited for me when I arrived.",
+     "My friend was waiting for me when I arrived.",
+     "My friend has been waiting for me when I arrived."
+    ],
+    "answer": 2
+   },
+   {
+    "num": 10,
+    "options": [
+     "‘How long do you learn English?’ ‘Six months.’",
+     "‘How long are you learning English?’ ‘Six months.’",
+     "‘How long you are learning English?’ ‘Six months.’",
+     "‘How long have you been learning English?’ ‘Six months.’"
+    ],
+    "answer": 3
+   },
+   {
+    "num": 11,
+    "options": [
+     "Paul is Canadian, but he lives in France. He has been there for three years.",
+     "Paul is Canadian, but he lives in France. He has been there since three years.",
+     "Paul is Canadian, but he lives in France. He has been there three years ago.",
+     "Paul is Canadian, but he lives in France. He has been there during three years."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 12,
+    "options": [
+     "‘What time has Lisa phoned?’ ‘About an hour ago.’",
+     "‘What time Lisa has phoned?’ ‘About an hour ago.’",
+     "‘What time did Lisa phone?’ ‘About an hour ago.’",
+     "‘What time is Lisa phoning?’ ‘About an hour ago.’"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 13,
+    "options": [
+     "What did Sue wear when you saw her?",
+     "What was Sue wearing when you saw her?",
+     "What has Sue worn when you saw her?",
+     "What was wearing Sue when you saw her?"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 14,
+    "options": [
+     "‘Can you drive?’ ‘No, I never drive a car, but I want to learn.’",
+     "‘Can you drive?’ ‘No, I’m never driving a car, but I want to learn.’",
+     "‘Can you drive?’ ‘No, I’ve never driven a car, but I want to learn.’",
+     "‘Can you drive?’ ‘No, I was never driving a car, but I want to learn.’"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 15,
+    "options": [
+     "I saw Helen at the station when I was going to work this morning, but she didn’t see me.",
+     "I saw Helen at the station when I was going to work this morning, but she don’t see me.",
+     "I saw Helen at the station when I was going to work this morning, but she hasn’t seen me.",
+     "I saw Helen at the station when I was going to work this morning, but she didn’t saw me."
+    ],
+    "answer": 0
+   }
+  ]
+ }
+}

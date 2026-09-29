@@ -1,155 +1,137 @@
 {
   "unit": 45,
-  "title": "it is said that … he is said to … he is supposed to …",
+  "title": "is it … ? · have you … ? · do they … ? и т. д. (вопросы 1)",
   "pdfPages": [
-    102,
-    103
+    101,
+    102
   ],
   "exercises": [
     {
       "id": "45.1",
       "type": "write",
-      "instruction": "Write these sentences in another way, beginning as shown. Use the underlined word each time.",
+      "instruction": "Напишите вопросы.",
       "items": [
         {
           "num": 1,
-          "prompt": "It is expected that the strike will end soon.",
+          "prompt": "I can swim. (and you?)",
           "answers": [
-            "The strike is expected to end soon."
-          ]
+            "Can you swim?"
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "It is reported that many people are homeless after the floods.",
+          "prompt": "I work hard. (and Jack?)",
           "answers": [
-            "Many people are reported to be homeless after the floods."
-          ]
+            "Does Jack work hard?"
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "It is thought that the thieves got in through a window in the roof.",
+          "prompt": "I was late this morning. (and you?)",
           "answers": [
-            "The thieves are thought to have got in through a window in the roof."
+            "Were you late this morning?"
           ]
         },
         {
           "num": 4,
-          "prompt": "It is alleged that the driver of the car was driving at 110 miles an hour.",
+          "prompt": "I’ve got a key. (and Kate?)",
           "answers": [
-            "The driver (of the car) is alleged to have been driving at 110 miles an hour.",
-            "The driver (of the car) is alleged to have driven at 110 miles an hour."
+            "Has Kate got a key?",
+            "Does Kate have a key?"
           ]
         },
         {
           "num": 5,
-          "prompt": "It is reported that the building has been badly damaged by the fire.",
+          "prompt": "I’ll be here tomorrow. (and you?)",
           "answers": [
-            "The building is reported to have been badly damaged by the fire."
+            "Will you be here tomorrow?"
           ]
         },
         {
           "num": 6,
-          "prompt": "It is said that the company is losing a lot of money.",
+          "prompt": "I’m going out this evening. (and Paul?)",
           "answers": [
-            "The company is said to be losing a lot of money."
+            "Is Paul going out this evening?"
           ]
         },
         {
           "num": 7,
-          "prompt": "It is believed that the company lost a lot of money last year.",
+          "prompt": "I like my job. (and you?)",
           "answers": [
-            "The company is believed to have lost a lot of money last year."
+            "Do you like your job?"
           ]
         },
         {
           "num": 8,
-          "prompt": "It is expected that the company will make a loss this year.",
+          "prompt": "I live near here. (and Nicola?)",
           "answers": [
-            "The company is expected to make a loss this year."
+            "Does Nicola live near here?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "I enjoyed the film. (and you?)",
+          "answers": [
+            "Did you enjoy the film?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "I had a good holiday. (and you?)",
+          "answers": [
+            "Did you have a good holiday?"
           ]
         }
       ]
     },
     {
       "id": "45.2",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Use the words in brackets and any other necessary words.",
+      "type": "write",
+      "instruction": "Вы разговариваете о вождении машины. Напишите полные вопросительные предложения.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "a: What's the City Hotel like? Can you recommend it? b: I've never stayed there, but it's ",
-            " (it / supposed) very good."
-          ],
+          "prompt": "(have / a car?)",
           "answers": [
-            [
-              "supposed to be"
-            ]
+            "Have you got a car?"
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "a: How much are these paintings worth? b: I'm not sure, but ",
-            " (they / supposed) very valuable."
-          ],
+          "prompt": "(use / a lot?)",
           "answers": [
-            [
-              "they're supposed to be",
-              "they are supposed to be"
-            ]
+            "Do you use it a lot?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "a: This looks an interesting building. b: Yes, ",
-            " (it / supposed) a prison a long time ago."
-          ],
+          "prompt": "(use / yesterday?)",
           "answers": [
-            [
-              "it's supposed to have been",
-              "it is supposed to have been"
-            ]
+            "Did you use it yesterday?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "a: Is it true that your neighbours were lucky in the lottery? b: Yes, ",
-            " (they / supposed / win) a lot of money."
-          ],
+          "prompt": "(enjoy driving?)",
           "answers": [
-            [
-              "they're supposed to have won",
-              "they are supposed to have won"
-            ]
+            "Do you enjoy driving?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "a: Is it possible to climb to the top of the tower? b: Yes, ",
-            " (the view / supposed) very nice."
-          ],
+          "prompt": "(a good driver?)",
           "answers": [
-            [
-              "the view is supposed to be"
-            ]
+            "Are you a good driver?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "a: I heard that Laura has gone away. b: Yes, ",
-            " (she / supposed / living) in London now."
-          ],
+          "prompt": "(ever / have / an accident?)",
           "answers": [
-            [
-              "she's supposed to be living",
-              "she is supposed to be living"
-            ]
+            "Have you ever had an accident?"
           ]
         }
       ]
@@ -157,114 +139,301 @@
     {
       "id": "45.3",
       "type": "write",
-      "instruction": "Write sentences using supposed to be + the following:",
+      "instruction": "Составьте вопросы, соблюдая правильный порядок слов.",
       "items": [
         {
           "num": 1,
-          "prompt": "How is it that everybody knows about the plan?",
+          "prompt": "(has / gone / where / David?)",
           "answers": [
-            "It's supposed to be a secret."
-          ]
+            "Where has David gone?"
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "You shouldn't criticise me all the time.",
+          "prompt": "(working / Rachel / is / today?)",
           "answers": [
-            "You're supposed to be my friend.",
-            "You are supposed to be my friend."
-          ]
+            "Is Rachel working today?"
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "I shouldn't be eating this cake really.",
+          "prompt": "(the children / what / are / doing?) What",
           "answers": [
-            "I'm supposed to be on a diet.",
-            "I am supposed to be on a diet."
+            "What are the children doing?"
           ]
         },
         {
           "num": 4,
-          "prompt": "I'm sorry for what I said. I was trying to be funny.",
+          "prompt": "(made / is / how / cheese?)",
           "answers": [
-            "It was supposed to be a joke."
+            "How is cheese made?"
           ]
         },
         {
           "num": 5,
-          "prompt": "What's this drawing? Is it a tree? Or maybe",
+          "prompt": "(to the party / coming / is / your sister?)",
           "answers": [
-            "Or maybe it's supposed to be a flower.",
-            "Or maybe it is supposed to be a flower."
+            "Is your sister coming to the party?"
           ]
         },
         {
           "num": 6,
-          "prompt": "You shouldn't be playing a game now.",
+          "prompt": "(you / the truth / tell / don’t / why?)",
           "answers": [
-            "You're supposed to be working.",
-            "You are supposed to be working."
+            "Why don’t you tell the truth?"
           ]
         },
         {
           "num": 7,
-          "prompt": "That's strange. The museum seems to be closed.",
+          "prompt": "(your guests / have / yet / arrived?)",
           "answers": [
-            "It's supposed to be open every day."
+            "Have your guests arrived yet?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(leave / what time / your train / does?)",
+          "answers": [
+            "What time does your train leave?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(to work / Emily / why / go / didn’t?)",
+          "answers": [
+            "Why didn’t Emily go to work?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(your car / in the accident / was / damaged?)",
+          "answers": [
+            "Was your car damaged in the accident?"
           ]
         }
       ]
     },
     {
       "id": "45.4",
-      "type": "write",
-      "instruction": "Write sentences with supposed to … or not supposed to … . Choose from the following verbs:",
+      "type": "fill-in",
+      "instruction": "Закончите вопросительные предложения.",
       "items": [
         {
           "num": 1,
-          "prompt": "(park)",
+          "parts": [
+            "I want to go out. Where ",
+            ""
+          ],
           "answers": [
-            "You're not supposed to park your car here.",
-            "You are not supposed to park your car here."
-          ]
+            [
+              "do you want to go?"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(start)",
+          "parts": [
+            "Kate and Paul aren’t going to the party. Why ",
+            ""
+          ],
           "answers": [
-            "We're supposed to start work at 8.15, but we rarely do anything before 8.30.",
-            "We are supposed to start work at 8.15, but we rarely do anything before 8.30."
-          ]
+            [
+              "aren’t they going?"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "(phone)",
+          "parts": [
+            "I’m reading. What ",
+            ""
+          ],
           "answers": [
-            "I was supposed to phone Helen last night, but I completely forgot."
+            [
+              "are you reading?"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "(put)",
+          "parts": [
+            "Sue went to bed early. What time ",
+            ""
+          ],
           "answers": [
-            "This door is a fire exit. We aren't supposed to put anything in front of it.",
-            "This door is a fire exit. We're not supposed to put anything in front of it.",
-            "This door is a fire exit. We are not supposed to put anything in front of it."
+            [
+              "did she go",
+              "did she go to bed"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "(depart)",
+          "parts": [
+            "My parents are going on holiday. When ",
+            ""
+          ],
           "answers": [
-            "My flight was supposed to depart at 10.15, but it didn't leave until 11.30."
+            [
+              "are they going",
+              "are they going on holiday"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "(lift)",
+          "parts": [
+            "I saw Tom a few days ago. Where ",
+            ""
+          ],
           "answers": [
-            "Jonathan has a problem with his back. He isn't supposed to lift anything heavy.",
-            "Jonathan has a problem with his back. He's not supposed to lift anything heavy.",
-            "Jonathan has a problem with his back. He is not supposed to lift anything heavy."
+            [
+              "did you see him?"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I can’t come to the party. Why ",
+            ""
+          ],
+          "answers": [
+            [
+              "can’t you come",
+              "can’t you come to the party"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Tina has gone away. Where ",
+            ""
+          ],
+          "answers": [
+            [
+              "has she gone?"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I need some money. How much ",
+            ""
+          ],
+          "answers": [
+            [
+              "do you need",
+              "money do you need"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Angela doesn’t like me. Why ",
+            ""
+          ],
+          "answers": [
+            [
+              "doesn’t she like you?"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "It rains sometimes. How often ",
+            ""
+          ],
+          "answers": [
+            [
+              "does it rain?"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I did the shopping. When ",
+            ""
+          ],
+          "answers": [
+            [
+              "did you do it",
+              "did you do the shopping"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "45.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (вчера вечером = last night)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Что сейчас делает Марк?",
+          "answers": [
+            "What is Mark doing now?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вы голодны?",
+          "answers": [
+            "Are you hungry?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Лара знает Кевина?",
+          "answers": [
+            "Does Lara know Kevin?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Когда ты вчера легла спать?",
+          "answers": [
+            "When did you go to bed yesterday?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Ты ходила на футбольный матч в субботу?",
+          "answers": [
+            "Did you go to the match on Saturday?",
+            "Did you go to the football match on Saturday?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Когда Том придёт сюда?",
+          "answers": [
+            "When will Tom come?",
+            "When will Tom come here?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Почему вы мне не сказали о вечеринке?",
+          "answers": [
+            "Why didn’t you tell me about the party?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Куда вы ходили вчера вечером?",
+          "answers": [
+            "Where did you go last night?"
           ]
         }
       ]

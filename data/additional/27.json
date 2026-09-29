@@ -1,101 +1,163 @@
 {
   "id": 27,
-  "topic": "-ing and to …",
-  "refs": "Units 53–66",
+  "topic": "пассивные конструкции",
+  "refs": "Разделы 22–23",
   "pdfPages": [
-    330
+    264
   ],
   "exercise": {
     "id": "27",
-    "type": "write",
-    "instruction": "Make sentences from the words in brackets.",
+    "type": "fill-in",
+    "instruction": "Активная или пассивная конструкция? Заполните пропуски.",
     "items": [
       {
-        "num": 3,
-        "prompt": "(I / not / fancy / go / out)",
+        "num": 1,
+        "parts": [
+          "They ",
+          " (build) a new airport at the moment."
+        ],
         "answers": [
-          "I don't fancy going out."
+          [
+            "are building"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 2,
+        "parts": [
+          "I can’t find my bag. I think it ",
+          " (steal)."
+        ],
+        "answers": [
+          [
+            "has been stolen"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 3,
+        "parts": [
+          "I can’t find my bag. Somebody ",
+          " (take) it!"
+        ],
+        "answers": [
+          [
+            "has taken"
+          ]
         ]
       },
       {
         "num": 4,
-        "prompt": "(he / tend / forget / things)",
+        "parts": [
+          "'How did you fall?' 'Somebody ",
+          " (push) me.'"
+        ],
         "answers": [
-          "He tends to forget things."
+          [
+            "pushed"
+          ]
         ]
       },
       {
         "num": 5,
-        "prompt": "(you / mind / help / me?)",
+        "parts": [
+          "'How did you fall?' 'I ",
+          " (push).'"
+        ],
         "answers": [
-          "Would you mind helping me?",
-          "Do you mind helping me?"
+          [
+            "was pushed"
+          ]
         ]
       },
       {
         "num": 6,
-        "prompt": "(everybody / seem / go out)",
+        "parts": [
+          "My watch is broken. It ",
+          " (repair) at the moment."
+        ],
         "answers": [
-          "Everybody seems to have gone out."
+          [
+            "is being repaired"
+          ]
         ]
       },
       {
         "num": 7,
-        "prompt": "(we / think / move)",
+        "parts": [
+          "Who ",
+          " (invent) the camera?"
+        ],
         "answers": [
-          "We're thinking of moving.",
-          "We are thinking of moving."
+          [
+            "invented"
+          ]
         ]
       },
       {
         "num": 8,
-        "prompt": "(I / afraid / touch / it)",
+        "parts": [
+          "When ",
+          " (the camera/invent)?"
+        ],
         "answers": [
-          "I was afraid to touch it."
+          [
+            "was the camera invented"
+          ]
         ]
       },
       {
         "num": 9,
-        "prompt": "(I / afraid / miss / my train)",
+        "parts": [
+          "These shirts are clean now. They ",
+          " (wash)."
+        ],
         "answers": [
-          "I was afraid of missing my train."
+          [
+            "have been washed",
+            "were washed"
+          ]
         ]
       },
       {
         "num": 10,
-        "prompt": "(it / not / worth / see)",
+        "parts": [
+          "These shirts are clean now. I ",
+          " (wash) them."
+        ],
         "answers": [
-          "It's not worth seeing.",
-          "It is not worth seeing."
+          [
+            "’ve washed them",
+            "have washed them",
+            "washed them"
+          ]
         ]
       },
       {
         "num": 11,
-        "prompt": "(I / not / used / walk / so far)",
+        "parts": [
+          "The letter was for me, so why ",
+          " (they/send) it to you?"
+        ],
         "answers": [
-          "I'm not used to walking so far."
+          [
+            "did they send",
+            "have they sent"
+          ]
         ]
       },
       {
         "num": 12,
-        "prompt": "(she / seem / enjoy / herself)",
+        "parts": [
+          "The information will ",
+          " (send) to you as soon as possible."
+        ],
         "answers": [
-          "She seems to be enjoying herself.",
-          "She seemed to be enjoying herself."
-        ]
-      },
-      {
-        "num": 13,
-        "prompt": "(he / insist / show / them to me)",
-        "answers": [
-          "He insisted on showing them to me."
-        ]
-      },
-      {
-        "num": 14,
-        "prompt": "(I'd rather / somebody else / do / it)",
-        "answers": [
-          "I'd rather somebody else did it."
+          [
+            "be sent"
+          ]
         ]
       }
     ]

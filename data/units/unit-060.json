@@ -1,65 +1,623 @@
 {
   "unit": 60,
-  "title": "Preposition (in/for/about etc.) + -ing",
-  "pdfPages": [132, 133],
+  "title": "I/me · he/him · they/them и т. д.",
+  "pdfPages": [
+    131,
+    132
+  ],
   "exercises": [
     {
       "id": "60.1",
       "type": "fill-in",
-      "instruction": "Complete the second sentence so that it means the same as the first.",
+      "instruction": "Закончите предложения, используя him/her/them.",
       "items": [
-        {"num": 1, "parts": ["Why is it useful to have a car? What are the advantages of having a car?"], "answers": [], "example": true},
-        {"num": 2, "parts": ["I don\u2019t intend to apply for the job. I have no intention of ", "."], "answers": [["applying for the job"]]},
-        {"num": 3, "parts": ["Helen has a good memory for names. Helen is good at ", "."], "answers": [["remembering names"]]},
-        {"num": 4, "parts": ["You probably won\u2019t win the lottery. You have little chance. You have little chance of ", "."], "answers": [["winning the lottery"]]},
-        {"num": 5, "parts": ["Did you get into trouble because you were late? Did you get into trouble for ", "?"], "answers": [["being late"]]},
-        {"num": 6, "parts": ["We didn\u2019t eat at home. We went to a restaurant instead. We went to a restaurant instead of ", "."], "answers": [["eating at home"]]},
-        {"num": 7, "parts": ["We got into the exhibition. We didn\u2019t have to queue. We got into the exhibition without ", "."], "answers": [["having to queue", "queuing"]]},
-        {"num": 8, "parts": ["Amy is 90 years old, but she\u2019s fit and healthy. Amy is fit and healthy despite ", "."], "answers": [["being 90 years old"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I don’t know those girls. Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I don’t know that man. Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I don’t know those people. Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I don’t know David’s wife. Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I don’t know Mr Stevens. Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I don’t know Sarah’s parents. Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I don’t know the woman in the black coat. Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "60.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using by -ing. Choose from these verbs: borrow, break, drive, press, put, stand",
+      "instruction": "Заполните пропуски, используя I/me/you/she/her и т. д.",
       "items": [
-        {"num": 1, "parts": ["The burglars got into the house by breaking a window."], "answers": [], "example": true},
-        {"num": 2, "parts": ["I was able to reach the top shelf ", " on a chair."], "answers": [["by standing"]]},
-        {"num": 3, "parts": ["You turn on the computer ", " the button at the back."], "answers": [["by pressing"]]},
-        {"num": 4, "parts": ["Kevin got himself into financial trouble ", " too much money."], "answers": [["by borrowing"]]},
-        {"num": 5, "parts": ["You can put people\u2019s lives in danger ", " too fast."], "answers": [["by driving"]]},
-        {"num": 6, "parts": ["We made the room look nicer ", " some pictures on the walls."], "answers": [["by putting"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I want to see her, but ",
+            " doesn’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "she"
+            ],
+            [
+              "me"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "They want to see me, but ",
+            " don’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "I"
+            ],
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She wants to see him, but ",
+            " doesn’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "he"
+            ],
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We want to see them, but ",
+            " don’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "they"
+            ],
+            [
+              "us"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "He wants to see us, but ",
+            " don’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "we"
+            ],
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "They want to see her, but ",
+            " doesn’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "she"
+            ],
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I want to see them, but ",
+            " don’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "they"
+            ],
+            [
+              "me"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "You want to see her, but ",
+            " doesn’t want to see ",
+            "."
+          ],
+          "answers": [
+            [
+              "she"
+            ],
+            [
+              "you"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "60.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences with a suitable word. Use only one word each time.",
+      "instruction": "Напишите предложения, начинающиеся с I like … , I don’t like … или Do you like … ?",
       "items": [
-        {"num": 1, "parts": ["We ran ten kilometres without stopping."], "answers": [], "example": true},
-        {"num": 2, "parts": ["Dan left the hotel without ", " his bill."], "answers": [["paying", "settling"]]},
-        {"num": 3, "parts": ["It\u2019s a nice morning. How about ", " for a walk?"], "answers": [["going"]]},
-        {"num": 4, "parts": ["You need to think carefully before ", " an important decision."], "answers": [["making"]]},
-        {"num": 5, "parts": ["It was a long trip. We were tired after ", " on a train for 36 hours."], "answers": [["being", "travelling", "sitting"]]},
-        {"num": 6, "parts": ["I\u2019m not looking forward to ", " away. I\u2019d prefer to stay here."], "answers": [["going"]]},
-        {"num": 7, "parts": ["I was annoyed because the decision was made without anybody ", " me."], "answers": [["asking", "telling", "consulting", "informing"]]},
-        {"num": 8, "parts": ["After ", " the same job for ten years, Ellie felt she needed a change."], "answers": [["doing", "having"]]},
-        {"num": 9, "parts": ["We got lost because we went straight on instead of ", " left."], "answers": [["turning", "going"]]},
-        {"num": 10, "parts": ["I like these pictures you took. You\u2019re good at ", " pictures."], "answers": [["taking"]]},
-        {"num": 11, "parts": ["Can you touch your toes without ", " your knees?"], "answers": [["bending"]]},
-        {"num": 12, "parts": ["We\u2019ve decided to sell our car. Are you interested in ", " it?"], "answers": [["buying"]]}
+        {
+          "num": 1,
+          "parts": [
+            "I don’t eat tomatoes. ",
+            "."
+          ],
+          "answers": [
+            [
+              "I don’t like them"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "George is a very nice man. I like ",
+            "."
+          ],
+          "answers": [
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "This jacket isn’t very nice. I don’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "like it"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This is my new car. Do ",
+            "?"
+          ],
+          "answers": [
+            [
+              "you like it"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Mrs Clark is not very friendly. I ",
+            "."
+          ],
+          "answers": [
+            [
+              "don’t like her"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "These are my new shoes. ",
+            "?"
+          ],
+          "answers": [
+            [
+              "Do you like them"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "60.4",
-      "type": "write",
-      "instruction": "For each situation, write a sentence with I\u2019m (not) looking forward to.",
+      "type": "fill-in",
+      "instruction": "Закончите предложения, используя I/me/he/him и т. д.",
       "items": [
-        {"num": 1, "prompt": "You are going on holiday next week. How do you feel?", "answers": ["I\u2019m looking forward to going on holiday."]},
-        {"num": 2, "prompt": "A good friend of yours is coming to visit you soon. It will be good to see her again. How do you feel?", "answers": ["I\u2019m looking forward to seeing her (again)."]},
-        {"num": 3, "prompt": "You\u2019re going to the dentist tomorrow. You don\u2019t enjoy visits to the dentist. How do you feel?", "answers": ["I\u2019m not looking forward to going to the dentist (tomorrow)."]},
-        {"num": 4, "prompt": "Rachel doesn\u2019t like school, but she\u2019s leaving next summer. How does she feel?", "answers": ["She\u2019s looking forward to leaving school (next summer)."]},
-        {"num": 5, "prompt": "Joe and Helen are moving to a new apartment soon. It\u2019s much nicer than where they live now. How do they feel?", "answers": ["They\u2019re looking forward to moving (to their new apartment)."]}
+        {
+          "num": 1,
+          "parts": [
+            "Who is that woman? Why are you looking at ",
+            "?"
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Do you know that man?’ ‘Yes, I work with ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Where are the tickets? I can’t find ",
+            "."
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I can’t find my keys. Where are ",
+            "?"
+          ],
+          "answers": [
+            [
+              "they"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We’re going out. You can come with ",
+            "."
+          ],
+          "answers": [
+            [
+              "us"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I’ve got a new motorbike. Do you want to see ",
+            "?"
+          ],
+          "answers": [
+            [
+              "it"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Maria likes music. ",
+            " plays the piano."
+          ],
+          "answers": [
+            [
+              "She"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I don’t like dogs. I’m afraid of ",
+            "."
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I’m talking to you. Please listen to ",
+            "."
+          ],
+          "answers": [
+            [
+              "me"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Where is Anna? I want to talk to ",
+            "."
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "You can have these CDs. I don’t want ",
+            "."
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "My brother has a new job, but ",
+            " doesn’t like ",
+            " very much."
+          ],
+          "answers": [
+            [
+              "he"
+            ],
+            [
+              "it"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60.5",
+      "type": "fill-in",
+      "instruction": "Закончите предложения.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I need that book. Can you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "give it to me"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He wants the key. Can you give ",
+            "?"
+          ],
+          "answers": [
+            [
+              "it to him"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She wants the keys. Can you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "give them to her"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I need my bag. Can you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "give it to me"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "They want the money. Can you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "give it to them"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We want the pictures. Can you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "give them to us"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (хорошо = well, неприветлива = unfriendly)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "“Вы знаете Кевина?” – “Да, я знаю его очень хорошо”.",
+          "answers": [
+            "‘Do you know Kevin?’ ‘Yes, I know him very well.’"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я не ем бананы. Я их не люблю.",
+          "answers": [
+            "I don’t eat bananas. I don’t like them.",
+            "I don’t eat bananas. I do not like them.",
+            "I do not eat bananas. I don’t like them.",
+            "I do not eat bananas. I do not like them."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Это хорошая книга. Я хочу её прочитать.",
+          "answers": [
+            "It’s a good book. I want to read it.",
+            "It is a good book. I want to read it."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Тот мужчина смотрит на тебя. Ты его знаешь?",
+          "answers": [
+            "That man is looking at you. Do you know him?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Наташа очень неприветлива. Она мне не нравится.",
+          "answers": [
+            "Natasha is very unfriendly. I don’t like her."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Вечером я иду на вечеринку. Ты хочешь пойти со мной?",
+          "answers": [
+            "I’m going to a party tonight. Do you want to come with me?",
+            "I’m going to the party tonight. Do you want to come with me?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "“У меня есть для тебя подарок”. – “Для меня?”",
+          "answers": [
+            "‘I’ve got a present for you.’ ‘For me?’",
+            "‘I have got a present for you.’ ‘For me?’",
+            "‘I have a present for you.’ ‘For me?’"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Это Танина сумка. Ты можешь ей её отдать?",
+          "answers": [
+            "This is Tanya’s bag. Can you give it to her?"
+          ]
+        }
       ]
     }
   ]

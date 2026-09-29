@@ -1,25 +1,25 @@
 {
   "unit": 83,
-  "title": "a friend of mine  my own house  on my own / by myself",
+  "title": "both · either · neither",
   "pdfPages": [
-    178,
-    179
+    177,
+    178
   ],
   "exercises": [
     {
       "id": "83.1",
       "type": "fill-in",
-      "instruction": "Change the underlined words and use the structure … of mine/yours etc.",
+      "instruction": "Вставьте both/either/neither. Где необходимо, также используйте of.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "I’m meeting one of my friends tonight. I’m meeting ",
-            " tonight."
+            "Last year I went to Paris and Rome. I liked ",
+            " cities very much."
           ],
           "answers": [
             [
-              "a friend of mine"
+              "both"
             ]
           ],
           "example": true
@@ -27,84 +27,157 @@
         {
           "num": 2,
           "parts": [
-            "We met one of your relatives. We met ",
-            "."
+            "There were two pictures on the wall. I didn’t like ",
+            " them."
           ],
           "answers": [
             [
-              "a relative of yours"
+              "either of"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "Jason borrowed one of my books. Jason borrowed ",
-            "."
+            "It was a good football match. ",
+            " teams played well."
           ],
           "answers": [
             [
-              "a book of mine"
+              "Both"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I met Lisa and some of her friends. I met Lisa and ",
-            "."
+            "It wasn’t a good football match. ",
+            " team played well."
           ],
           "answers": [
             [
-              "some friends of hers"
+              "Neither"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "We had dinner with one of our neighbours. We had dinner with ",
-            "."
+            "‘Is your friend English or American?’ ‘",
+            ". She’s Australian.’"
           ],
           "answers": [
             [
-              "a neighbour of ours"
+              "Neither"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I went on holiday with two of my friends. I went on holiday with ",
-            "."
+            "We went away for two days, but the weather wasn’t good. It rained ",
+            " days."
           ],
           "answers": [
             [
-              "two friends of mine"
+              "both"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "I met one of Amy’s friends at the party. I met ",
-            " at the party."
+            "A: I bought two newspapers. Which one do you want?\nB: ",
+            ". It doesn’t matter which one."
           ],
           "answers": [
             [
-              "a friend of Amy’s"
+              "Either"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "It’s always been one of my ambitions to travel round the world. It’s always been ",
-            " to travel round the world."
+            "I invited Sam and Chris to the party, but ",
+            " them came."
           ],
           "answers": [
             [
-              "an ambition of mine"
+              "neither of"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "‘Do you go to work by car or by bus?’ ‘",
+            ". I always walk.’"
+          ],
+          "answers": [
+            [
+              "Neither"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "‘Which jacket do you prefer, this one or that one?’ ‘I don’t like ",
+            " them.’"
+          ],
+          "answers": [
+            [
+              "either of"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "‘Do you work or are you a student?’ ‘",
+            ". I work and I’m a student too.’"
+          ],
+          "answers": [
+            [
+              "Both"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "My friend and I went to the cinema, but ",
+            " us liked the film. It was really bad."
+          ],
+          "answers": [
+            [
+              "neither of"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "Helen has two sisters and a brother. ",
+            " sisters are married."
+          ],
+          "answers": [
+            [
+              "Both"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Helen has two sisters and a brother. I’ve met her brother, but I haven’t met ",
+            " her sisters."
+          ],
+          "answers": [
+            [
+              "either of"
             ]
           ]
         }
@@ -113,24 +186,20 @@
     {
       "id": "83.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using my own / our own etc. + the following:",
-      "wordBank": [
-        "bathroom",
-        "business",
-        "opinions",
-        "private beach",
-        "words"
+      "instruction": "Посмотрите на картинки и допишите предложения. Используйте Both ... или Neither ... .",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I share a kitchen, but I have ",
-            "."
+            "",
+            " empty."
           ],
           "answers": [
             [
-              "my own bathroom"
+              "Both cups are"
             ]
           ],
           "example": true
@@ -138,48 +207,65 @@
         {
           "num": 2,
           "parts": [
-            "Gary doesn’t think like me. He has ",
-            "."
+            "",
+            " are open."
           ],
           "answers": [
             [
-              "his own opinions"
+              "Both windows"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Julia doesn’t want to work for other people. She wants to start ",
-            "."
+            "",
+            " wearing a hat."
           ],
           "answers": [
             [
-              "her own business"
+              "Neither man is",
+              "Neither of them is"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "In the test we had to read a story, and then write it in ",
-            "."
+            "",
+            " beards."
           ],
           "answers": [
             [
-              "our own words"
+              "Both men have",
+              "Both men have got",
+              "Both of them have",
+              "Both of them have got"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "We stayed at a luxury hotel by the sea. The hotel had ",
-            "."
+            "",
+            " to the airport."
           ],
           "answers": [
             [
-              "its own private beach"
+              "Both buses go",
+              "Both buses are going"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " correct."
+          ],
+          "answers": [
+            [
+              "Neither answer is"
             ]
           ]
         }
@@ -188,281 +274,144 @@
     {
       "id": "83.3",
       "type": "write",
-      "instruction": "Complete the sentences using my own / your own etc.",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "Why do you need to borrow my car? Why don’t you use [your car]?",
-          "answers": [
-            "use your own car"
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "How can you blame me? It’s not my fault. It’s [your fault].",
-          "answers": [
-            "your own fault"
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "She’s always using my ideas. Why can’t she use [my ideas]?",
-          "answers": [
-            "use her own ideas"
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "Please don’t worry about my problems. I’m sure you have [my problems].",
-          "answers": [
-            "you have your own problems"
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "I can’t make his decisions for him. He has to make [my decisions].",
-          "answers": [
-            "his own decisions"
-          ]
-        }
-      ],
+      "instruction": "Парень и девушка одинаково ответили на вопросы. Напишите предложения, используя Both/Neither of them ... .",
       "example": [
-        1
-      ]
-    },
-    {
-      "id": "83.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using my own / your own etc. Use the verbs in brackets.",
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Paul never goes to a barber. He cuts ",
-            ". (cut)"
-          ],
+          "prompt": "Are you married?  No  No",
           "answers": [
-            [
-              "his own hair"
-            ]
-          ],
-          "verb": "cut",
-          "example": true
-        },
-        {
-          "num": 2,
-          "parts": [
-            "Helen doesn’t often buy clothes. She likes to ",
-            ". (make)"
-          ],
-          "answers": [
-            [
-              "make her own clothes",
-              "make her own"
-            ]
-          ],
-          "verb": "make"
-        },
-        {
-          "num": 3,
-          "parts": [
-            "I’m not going to clean your shoes. You can ",
-            ". (clean)"
-          ],
-          "answers": [
-            [
-              "clean your own shoes",
-              "clean your own"
-            ]
-          ],
-          "verb": "clean"
-        },
-        {
-          "num": 4,
-          "parts": [
-            "We don’t often buy bread. We usually ",
-            ". (bake)"
-          ],
-          "answers": [
-            [
-              "bake our own bread",
-              "bake our own"
-            ]
-          ],
-          "verb": "bake"
-        },
-        {
-          "num": 5,
-          "parts": [
-            "Jack and Joe are singers. They sing songs written by other people, but they also ",
-            ". (write)"
-          ],
-          "answers": [
-            [
-              "write their own songs",
-              "write their own"
-            ]
-          ],
-          "verb": "write"
-        }
-      ]
-    },
-    {
-      "id": "83.5",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using my own / your own etc. or myself/yourself etc.",
-      "items": [
-        {
-          "num": 1,
-          "parts": [
-            "Did you go on holiday ",
-            "?"
-          ],
-          "answers": [
-            [
-              "on your own"
-            ]
+            "Neither of them is married."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "The box was too heavy for me to lift by ",
-            "."
-          ],
+          "prompt": "How old are you?  21  21",
           "answers": [
-            [
-              "myself"
-            ]
-          ]
+            "Both of them are 21."
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": [
-            "We had no help decorating the apartment. We did it completely on ",
-            "."
-          ],
+          "prompt": "Are you a student?  Yes  Yes",
           "answers": [
-            [
-              "our own"
-            ]
+            "Both of them are students."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Very young children should not go swimming by ",
-            "."
-          ],
+          "prompt": "Do you have a car?  No  No",
           "answers": [
-            [
-              "themselves"
-            ]
+            "Neither of them has a car.",
+            "Neither of them has got a car."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "‘Who was Tom with when you saw him?’ ‘Nobody. He was by ",
-            ".’"
-          ],
+          "prompt": "Where do you live?  London  London",
           "answers": [
-            [
-              "himself"
-            ]
+            "Both of them live in London."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I don’t like strawberries with cream. I like them on ",
-            "."
-          ],
+          "prompt": "Do you like cooking?  Yes  Yes",
           "answers": [
-            [
-              "their own"
-            ]
+            "Both of them like cooking."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "Do you like working with other people or do you prefer working by ",
-            "?"
-          ],
+          "prompt": "Can you play the piano?  No  No",
           "answers": [
-            [
-              "yourself"
-            ]
+            "Neither of them can play the piano."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I went out with Sally because she didn’t want to go out on ",
-            "."
-          ],
+          "prompt": "Do you eat seafood?  Yes  Yes",
           "answers": [
-            [
-              "her own"
-            ]
+            "Both of them eat seafood."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Are you interested in sport?  No  No",
+          "answers": [
+            "Neither of them is interested in sport."
           ]
         }
       ]
     },
     {
-      "id": "83.6",
+      "id": "83.4",
       "type": "write",
-      "instruction": "Are these sentences OK? Correct them where necessary.",
+      "instruction": "Переведите предложения на английский язык.",
       "items": [
         {
           "num": 1,
-          "prompt": "Katherine would like to have the own house.",
+          "prompt": "У меня двое детей. Оба ходят в школу.",
           "answers": [
-            "Katherine would like to have her own house."
+            "I have two children. Both go to school.",
+            "I have two children. Both of them go to school.",
+            "I have got two children. Both go to school.",
+            "I have got two children. Both of them go to school."
           ]
         },
         {
           "num": 2,
-          "prompt": "Sam and Chris are colleagues of me.",
+          "prompt": "У меня есть две сестры. Ни одна из них не живёт в России.",
           "answers": [
-            "Sam and Chris are colleagues of mine."
+            "I have two sisters. Neither of them lives in Russia."
           ]
         },
         {
           "num": 3,
-          "prompt": "I was scared. I didn’t want to go out by my own.",
+          "prompt": "A: Вы предпочитаете Лондон или Нью-Йорк?\nB: Мне нравятся оба города.",
           "answers": [
-            "I was scared. I didn’t want to go out on my own."
+            "A: Do you prefer London or New York? B: I like both cities."
           ]
         },
         {
           "num": 4,
-          "prompt": "In my last job I had own office.",
+          "prompt": "A: Вы хотите сока или воды?\nB: Или то или другое. Мне всё равно.",
           "answers": [
-            "In my last job I had my own office."
+            "A: Would you like juice or water? B: Either. I don’t mind."
           ]
         },
         {
           "num": 5,
-          "prompt": "He must be lonely. He’s always with himself.",
+          "prompt": "A: Ты знаешь Джеймса и Сашу?\nB: Да, они оба очень приятные.",
           "answers": [
-            "He must be lonely. He’s always by himself."
+            "A: Do you know James and Sasha? B: Yes, both are very nice.",
+            "A: Do you know James and Sasha? B: Yes, both of them are very nice."
           ]
         },
         {
           "num": 6,
-          "prompt": "My parents have gone away with some friends of them.",
+          "prompt": "A: Где Анна и Тина?\nB: Я не знаю. Я не видела ни одну из них.",
           "answers": [
-            "My parents have gone away with some friends of theirs."
+            "A: Where are Anna and Tina? B: I don’t know. I haven’t seen either of them."
           ]
         },
         {
           "num": 7,
-          "prompt": "Are there any countries that produce all own food?",
+          "prompt": "Ни один из моих родителей не говорит по-английски.",
           "answers": [
-            "Are there any countries that produce all their own food?"
+            "Neither of my parents speaks English."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Они оба говорят по-немецки.",
+          "answers": [
+            "Both of them speak German.",
+            "They both speak German."
           ]
         }
       ]

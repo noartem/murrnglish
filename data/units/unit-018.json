@@ -1,143 +1,239 @@
 {
   "unit": 18,
-  "title": "used to (do)",
+  "title": "Have you ever … ? (present perfect 3)",
   "pdfPages": [
-    48,
-    49
+    47,
+    48
   ],
   "exercises": [
     {
       "id": "18.1",
-      "type": "fill-in",
-      "instruction": "Complete the sentences with used to + a suitable verb.",
+      "type": "write",
+      "instruction": "Задайте Хелен вопросы, начинающиеся с Have you ever … ?",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Nicola ",
-            " a lot, but she doesn’t go away much these days."
-          ],
+          "prompt": "(be / London?)",
           "answers": [
-            [
-              "used to travel"
-            ]
+            "Have you ever been to London?"
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "Sophie ",
-            " a motorbike, but last year she sold it and bought a car."
-          ],
+          "prompt": "(play / golf?)",
           "answers": [
-            [
-              "used to have",
-              "used to ride"
-            ]
-          ]
+            "Have you ever played golf?"
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": [
-            "Our friends moved to Spain a few years ago. They ",
-            " in Paris."
-          ],
+          "prompt": "(be / Australia?)",
           "answers": [
-            [
-              "used to live"
-            ]
+            "Have you ever been to Australia?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Jackie ",
-            " my best friend, but we aren’t friends any more."
-          ],
+          "prompt": "(lose / your passport?)",
           "answers": [
-            [
-              "used to be"
-            ]
+            "Have you ever lost your passport?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I rarely eat ice cream now, but I ",
-            " it when I was a child."
-          ],
+          "prompt": "(fly / in a helicopter?)",
           "answers": [
-            [
-              "used to eat",
-              "used to like",
-              "used to love"
-            ]
+            "Have you ever flown in a helicopter?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "It only takes me about 40 minutes to get to work now that the new road is open. It ",
-            " more than an hour."
-          ],
+          "prompt": "(win / a race?)",
           "answers": [
-            [
-              "used to take"
-            ]
+            "Have you ever won a race?"
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "There ",
-            " a hotel near the airport, but it closed a long time ago."
-          ],
+          "prompt": "(be / New York?)",
           "answers": [
-            [
-              "used to be"
-            ]
+            "Have you ever been to New York?"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I ",
-            " in a factory. It wasn’t my favourite job."
-          ],
+          "prompt": "(drive / a bus?)",
           "answers": [
-            [
-              "used to work"
-            ]
+            "Have you ever driven a bus?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(break / your leg?)",
+          "answers": [
+            "Have you ever broken your leg?"
           ]
         }
       ]
     },
     {
       "id": "18.2",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box.",
+      "type": "write",
+      "instruction": "Напишите предложения о Хелен. Используйте информацию из упражнения 18.1.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(be / New York)",
+          "answers": [
+            "She’s been to New York twice."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "(be / Australia)",
+          "answers": [
+            "She’s been to Australia once.",
+            "She has been to Australia once."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(win / a race)",
+          "answers": [
+            "She’s never won a race.",
+            "She has never won a race."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(fly / in a helicopter)",
+          "answers": [
+            "She’s flown in a helicopter a few times.",
+            "She has flown in a helicopter a few times."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(be / New York)",
+          "answers": [
+            "I’ve / I have never been to New York."
+          ],
+          "selfCheck": true
+        },
+        {
+          "num": 6,
+          "prompt": "(play / tennis)",
+          "answers": [
+            "I’ve / I have played tennis many times."
+          ],
+          "selfCheck": true
+        },
+        {
+          "num": 7,
+          "prompt": "(drive / a lorry)",
+          "answers": [
+            "I’ve / I have never driven a lorry."
+          ],
+          "selfCheck": true
+        },
+        {
+          "num": 8,
+          "prompt": "(be / late for work or school)",
+          "answers": [
+            "I’ve / I have been late for work a few times."
+          ],
+          "selfCheck": true
+        }
+      ]
+    },
+    {
+      "id": "18.3",
+      "type": "write",
+      "instruction": "Мэри 65 лет. Она прожила интересную жизнь. Напишите, что она сделала.",
       "wordBank": [
-        "did",
-        "didn’t",
-        "to",
-        "use",
-        "used",
-        "used to",
-        "used to be",
-        "used to have",
-        "be able"
+        "have",
+        "be",
+        "do",
+        "write",
+        "travel",
+        "meet",
+        "all over the world",
+        "many different jobs",
+        "ten books",
+        "a lot of interesting things",
+        "a lot of interesting people",
+        "married three times"
       ],
       "items": [
         {
           "num": 1,
+          "prompt": "",
+          "answers": [
+            "She has had many different jobs."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "She",
+          "answers": [
+            "She’s done a lot of interesting things.",
+            "She has done a lot of interesting things."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "answers": [
+            "She’s travelled all over the world.",
+            "She has travelled all over the world.",
+            "She’s been all over the world.",
+            "She has been all over the world."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "She’s been married three times.",
+            "She has been married three times."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "She’s written ten books.",
+            "She has written ten books."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "She’s met a lot of interesting people.",
+            "She has met a lot of interesting people."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18.4",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя gone или been.",
+      "items": [
+        {
+          "num": 1,
           "parts": [
-            "Lisa ",
-            " very long hair when she was a child."
+            "Ben is on holiday at the moment. He’s ",
+            " to Spain."
           ],
           "answers": [
             [
-              "used to have"
+              "gone"
             ]
           ],
           "example": true
@@ -145,212 +241,151 @@
         {
           "num": 2,
           "parts": [
-            "We ",
-            " to watch TV a lot, but we don’t have a TV any more."
+            "‘Have you ever ",
+            " to Mexico?’ ‘No, never.’"
           ],
           "answers": [
             [
-              "used"
+              "been"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Lisa works in a shop now. She ",
-            " a receptionist in a hotel."
+            "My parents aren’t at home at the moment. They’ve ",
+            " out."
           ],
           "answers": [
             [
-              "used to be"
+              "gone"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "What games ",
-            " you use to play when you were a child?"
+            "There’s a new restaurant in town. Have you ",
+            " to it?"
           ],
           "answers": [
             [
-              "did"
+              "been"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I ",
-            " like big cities, but now I prefer the countryside."
+            "Rebecca loves Paris. She’s ",
+            " there many times."
           ],
           "answers": [
             [
-              "used to"
+              "been"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "In your last job, how many hours a day did you ",
-            " to work?"
+            "Helen was here earlier, but I think she’s ",
+            " now."
           ],
           "answers": [
             [
-              "use"
+              "gone"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "I don’t travel very much these days, but I used ",
-            "."
+            "‘Where’s Jessica?’ ‘She’s not in the office. I think she’s ",
+            " home.’"
           ],
           "answers": [
             [
-              "to"
+              "gone"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I used to ",
-            " to run ten kilometres, but I can’t run that far now."
+            "Hello, Sue. I was looking for you. Where have you ",
+            " ?"
           ],
           "answers": [
             [
-              "be able"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "These days I eat more than before. I ",
-            " use to eat as much."
-          ],
-          "answers": [
-            [
-              "didn’t"
+              "been"
             ]
           ]
         }
       ]
     },
     {
-      "id": "18.3",
+      "id": "18.5",
       "type": "write",
-      "instruction": "Compare what Karen said ten years ago and what she says today. Write about how Karen has changed. Use used to / didn’t use to / never used to in the first part of your sentence.",
+      "instruction": "Переведите предложения на английский язык, используя has/haven’t и т. д. (слон = elephant, женат = married, пища = food)",
       "items": [
         {
           "num": 1,
-          "prompt": "She used to travel a lot, but she doesn’t go away much these days.",
+          "prompt": "Вы когда-нибудь были в Бразилии?",
           "answers": [
-            "She used to travel a lot, but she doesn’t go away much these days."
+            "Have you ever been to Brazil?"
           ]
         },
         {
           "num": 2,
-          "prompt": "I’m very lazy. / I work very hard these days.",
+          "prompt": "Я никогда не видела слона.",
           "answers": [
-            "She used to be very lazy, but she works very hard these days."
+            "I’ve never seen an elephant.",
+            "I have never seen an elephant."
           ]
         },
         {
           "num": 3,
-          "prompt": "I don’t like cheese. / I eat lots of cheese now.",
+          "prompt": "Марк никогда не был женат.",
           "answers": [
-            "She didn’t use to like cheese, but she eats lots of cheese now.",
-            "She used not to like cheese, but she eats lots of cheese now."
+            "Mark has never been married."
           ]
         },
         {
           "num": 4,
-          "prompt": "I play the piano. / I haven’t played the piano for a long time.",
+          "prompt": "Мои родители были в Италии четыре раза.",
           "answers": [
-            "She used to play the piano, but she hasn’t played the piano for a long time.",
-            "She used to play the piano, but she hasn’t played it for a long time."
+            "My parents have been to Italy four times."
           ]
         },
         {
           "num": 5,
-          "prompt": "I never drink tea. / Tea’s great! I like it now.",
+          "prompt": "Ты когда-нибудь ела индийскую пищу?",
           "answers": [
-            "She didn’t use to drink tea, but she likes it now.",
-            "She used not to drink tea, but she likes it now."
+            "Have you ever eaten Indian food?"
           ]
         },
         {
           "num": 6,
-          "prompt": "I have a dog. / My dog died two years ago.",
+          "prompt": "Виктор написал шесть книг.",
           "answers": [
-            "She used to have a dog, but it died two years ago."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "18.4",
-      "type": "self-check",
-      "instruction": "Write sentences about yourself. Begin I used to … (I used to be/work/like/play etc.) Then begin with I didn’t use to …",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "I used to live in a small village, but now I live in a city.",
-          "modelAnswers": [
-            "I used to live in a small village, but now I live in a city."
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "I used to play tennis a lot, but I don’t play any more.",
-          "modelAnswers": [
-            "I used to play tennis a lot, but I don’t play any more."
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "I used to …, but …",
-          "modelAnswers": [
-            "I used to be a vegetarian, but now I eat meat sometimes."
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "I used to …, but …",
-          "modelAnswers": [
-            "I used to watch TV a lot, but I don’t watch it much now."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "I used to …, but …",
-          "modelAnswers": [
-            "I used to hate getting up early, but now it’s no problem."
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "I didn’t use to read a lot, but I do now.",
-          "modelAnswers": [
-            "I didn’t use to read a lot, but I do now."
+            "Victor has written six books."
           ]
         },
         {
           "num": 7,
-          "prompt": "I didn’t use to …, but …",
-          "modelAnswers": [
-            "I didn’t use to drink coffee, but I drink it every day now."
+          "prompt": "Куда ушла Салли? Я не могу её найти.",
+          "answers": [
+            "Where has Sally gone? I can’t find her.",
+            "Where has Sally gone? I cannot find her."
           ]
         },
         {
           "num": 8,
-          "prompt": "I didn’t use to …, but …",
-          "modelAnswers": [
-            "I didn’t use to like hot weather, but now I love it."
+          "prompt": "Сколько раз ты смотрел этот фильм?",
+          "answers": [
+            "How many times have you seen this film?",
+            "How many times have you watched this film?"
           ]
         }
       ]

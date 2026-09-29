@@ -1,161 +1,106 @@
 {
   "unit": 90,
-  "title": "all every whole",
+  "title": "not as … as",
   "pdfPages": [
-    192,
-    193
+    191,
+    192
   ],
   "exercises": [
     {
       "id": "90.1",
       "type": "fill-in",
-      "instruction": "Complete these sentences with all, everything or everybody/everyone.",
+      "instruction": "Посмотрите на картинки и напишите предложения об А, В и С.",
       "items": [
         {
-          "num": 3,
+          "num": 1,
           "parts": [
-            "",
-            " has their faults. Nobody is perfect."
+            "A is ",
+            ""
           ],
           "answers": [
             [
-              "Everybody",
-              "Everyone"
+              "bigger than C but not as big as B"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A is ",
+            " B, but not ",
+            " C."
+          ],
+          "answers": [
+            [
+              "longer than"
+            ],
+            [
+              "as long as"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "C is ",
+            " A, but ",
+            ""
+          ],
+          "answers": [
+            [
+              "heavier than"
+            ],
+            [
+              "not as heavy as B",
+              "not as heavy as B."
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Nothing has changed. ",
-            " is the same as it was."
+            "A is ",
+            ", but ",
+            ""
           ],
           "answers": [
             [
-              "Everything"
+              "older than"
+            ],
+            [
+              "not as old as B",
+              "not as old as B."
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Kate told me ",
-            " about her new job. It sounds interesting."
+            "B has got ",
+            ""
           ],
           "answers": [
             [
-              "all"
+              "more money than C, but not as much as A",
+              "more money than C, but not as much as A.",
+              "more money than C, but less than A",
+              "more money than C, but less than A.",
+              "more money than C, but less money than A",
+              "more money than C, but less money than A."
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Can ",
-            " write their names on a piece of paper, please?"
+            "C works ",
+            ""
           ],
           "answers": [
             [
-              "everybody",
-              "everyone"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Why are you always thinking about money? Money isn’t ",
-            "."
-          ],
-          "answers": [
-            [
-              "everything"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "I’m really exhausted. ",
-            " I want to do is sleep."
-          ],
-          "answers": [
-            [
-              "All"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "When the fire alarm rang, ",
-            " left the building immediately."
-          ],
-          "answers": [
-            [
-              "everybody",
-              "everyone"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Amy didn’t say where she was going. ",
-            " she said was that she was going away."
-          ],
-          "answers": [
-            [
-              "All"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "We have completely different opinions. I disagree with ",
-            " she says."
-          ],
-          "answers": [
-            [
-              "everything"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "We all did well in the exam. ",
-            " in our class passed."
-          ],
-          "answers": [
-            [
-              "Everybody",
-              "Everyone"
-            ]
-          ]
-        },
-        {
-          "num": 13,
-          "parts": [
-            "We all did well in the exam. ",
-            " of us passed."
-          ],
-          "answers": [
-            [
-              "All"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "Why are you so lazy? Why do you expect me to do ",
-            " for you?"
-          ],
-          "answers": [
-            [
-              "everything"
+              "harder than A, but not as hard as B",
+              "harder than A, but not as hard as B."
             ]
           ]
         }
@@ -164,102 +109,93 @@
     {
       "id": "90.2",
       "type": "fill-in",
-      "instruction": "Write sentences with whole.",
+      "instruction": "Напишите предложения, используя as ... as ... .",
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "Everyone in the team played well. The ",
-            "."
+            "Athens is older than Rome.    Rome ",
+            ""
           ],
           "answers": [
             [
-              "whole team played well"
+              "isn’t as old as Athens"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My room is bigger than yours.    Your room isn’t ",
+            ""
+          ],
+          "answers": [
+            [
+              "as big as mine",
+              "as big as mine.",
+              "as big as my room",
+              "as big as my room."
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Paul opened a box of chocolates. He started eating. When he finished, there were no chocolates left in the box. He ate ",
-            "."
+            "You got up earlier than me.    I didn’t ",
+            ""
           ],
           "answers": [
             [
-              "the whole box (of chocolates)"
+              "get up as early as you",
+              "get up as early as you.",
+              "get up as early as you did",
+              "get up as early as you did."
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "The police came to the house. They were looking for something. They searched everywhere, every room. They ",
-            "."
+            "We played better than them.    They ",
+            ""
           ],
           "answers": [
             [
-              "searched the whole house"
+              "didn’t play as well as us",
+              "didn’t play as well as us.",
+              "didn’t play as well as we did",
+              "didn’t play as well as we did."
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Everyone in Ed and Jane’s family plays tennis. Ed and Jane play, and so do all their children. The ",
-            "."
+            "I’ve been here longer than you.    You ",
+            ""
           ],
           "answers": [
             [
-              "whole family plays tennis",
-              "whole family play tennis"
+              "haven’t been here as long as me",
+              "haven’t been here as long as me.",
+              "haven’t been here as long as I have",
+              "haven’t been here as long as I have."
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Sarah worked from early in the morning until late in the evening. ",
-            "."
+            "She’s more nervous than him.    He ",
+            ""
           ],
           "answers": [
             [
-              "She worked the whole day"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Jack and Lisa had a week’s holiday by the sea. It rained from the beginning of the week to the end of the week. It ",
-            "."
-          ],
-          "answers": [
-            [
-              "rained the whole week"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Sarah ",
-            "."
-          ],
-          "answers": [
-            [
-              "worked all day"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "It ",
-            "."
-          ],
-          "answers": [
-            [
-              "rained all week"
+              "isn’t as nervous as her",
+              "isn’t as nervous as her.",
+              "isn’t as nervous as she is",
+              "isn’t as nervous as she is."
             ]
           ]
         }
@@ -268,24 +204,17 @@
     {
       "id": "90.3",
       "type": "fill-in",
-      "instruction": "Complete these sentences using every with the following:",
-      "wordBank": [
-        "five minutes",
-        "ten minutes",
-        "four hours",
-        "six months",
-        "four years"
-      ],
+      "instruction": "Вставьте в пропуски as или than.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "The bus service is very good. There’s a bus every ",
-            "."
+            "Athens is older ",
+            " Rome."
           ],
           "answers": [
             [
-              "ten minutes"
+              "than"
             ]
           ],
           "example": true
@@ -293,48 +222,84 @@
         {
           "num": 2,
           "parts": [
-            "Tom is ill. He has some medicine. He has to take it every ",
-            "."
+            "I don’t watch TV as much ",
+            " you."
           ],
           "answers": [
             [
-              "four hours"
+              "as"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "The Olympic Games take place every ",
-            "."
+            "You eat more ",
+            " me."
           ],
           "answers": [
             [
-              "four years"
+              "than"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "We live near a busy airport. A plane flies over our house every ",
-            "."
+            "I’m more tired today ",
+            " I was yesterday."
           ],
           "answers": [
             [
-              "five minutes"
+              "than"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Martin goes to the dentist for a check-up every ",
-            "."
+            "Joe isn’t as intelligent ",
+            " he thinks."
           ],
           "answers": [
             [
-              "six months"
+              "as"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Belgium is smaller ",
+            " Switzerland."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Brazil isn’t as big ",
+            " Canada."
+          ],
+          "answers": [
+            [
+              "as"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I can’t wait longer ",
+            " an hour."
+          ],
+          "answers": [
+            [
+              "than"
             ]
           ]
         }
@@ -342,64 +307,133 @@
     },
     {
       "id": "90.4",
-      "type": "choice",
-      "instruction": "Which is right?",
+      "type": "fill-in",
+      "instruction": "Закончите предложения о Джулии, Энди и Лоре. Используйте the same age / the same street и т. д.",
       "items": [
         {
           "num": 1,
-          "options": [
-            "the whole money",
-            "all the money"
+          "parts": [
+            "(age) Andy is the same age as Laura",
+            ""
           ],
-          "answer": 1
+          "answers": [
+            [
+              "Andy is the same age as Laura"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "options": [
-            "every day",
-            "all days"
+          "parts": [
+            "(street) Julia lives ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "in the same street as Laura",
+              "in the same street as Laura."
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "all the day",
-            "all day"
+          "parts": [
+            "(time) Julia got up ",
+            ""
           ],
-          "answer": 1
+          "answers": [
+            [
+              "at the same time as Andy",
+              "at the same time as Andy."
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "Whole building",
-            "The whole building"
+          "parts": [
+            "(colour) Andy’s ",
+            ""
           ],
-          "answer": 1
+          "answers": [
+            [
+              "car is the same colour as Laura’s",
+              "car is the same colour as Laura’s."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (вставать = get up; ожидать = expect; конфета = sweet)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Антон высокий, но он не такой высокий, как его брат.",
+          "answers": [
+            "Anton is tall, but he isn’t as tall as his brother.",
+            "Anton is tall, but he’s not as tall as his brother.",
+            "Anton is tall, but he is not as tall as his brother."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я встал в то же время, что и ты.",
+          "answers": [
+            "I got up at the same time as you.",
+            "I got up at the same time as you did."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Вы ходили в ту же школу, что и я?",
+          "answers": [
+            "Did you go to the same school as me?",
+            "Did you go to the same school as I did?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Ужин не был таким дорогим, как я ожидал.",
+          "answers": [
+            "Dinner wasn’t as expensive as I expected.",
+            "Dinner was not as expensive as I expected."
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "Every time",
-            "All the time"
-          ],
-          "answer": 0
+          "prompt": "Дерево в нашем саду выше нашего дома.",
+          "answers": [
+            "The tree in our garden is taller than our house."
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "every time",
-            "all the time"
-          ],
-          "answer": 1
+          "prompt": "Я не ем так много конфет, как ты.",
+          "answers": [
+            "I don’t eat as many sweets as you.",
+            "I don’t eat as many sweets as you do."
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "all my luggage",
-            "my whole luggage"
-          ],
-          "answer": 0
+          "prompt": "У Линды не так много кошек, как у её тёти.",
+          "answers": [
+            "Linda doesn’t have as many cats as her aunt does.",
+            "Linda hasn’t got as many cats as her aunt has."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Его новые фильмы не такие хорошие, как его старые фильмы.",
+          "answers": [
+            "His new films aren’t as good as his old films.",
+            "His new films aren’t as good as his old ones.",
+            "His new films are not as good as his old films.",
+            "His new films are not as good as his old ones."
+          ]
         }
       ]
     }

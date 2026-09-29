@@ -1,0 +1,320 @@
+{
+ "unit": 91,
+ "title": "the oldest · the most expensive",
+ "pdfPages": [
+  193,
+  194
+ ],
+ "exercises": [
+  {
+   "id": "91.1",
+   "type": "write",
+   "instruction": "Напишите предложения, используя прилагательные в сравнительной (older и т. д.) и превосходной степени (the oldest и т. д.).",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "big/small\n(A/D)\n(A)\n(B)",
+     "answers": [
+      "A is bigger than D.",
+      "A is the biggest.",
+      "B is the smallest."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "long/short\n(C/A)\n(D)\n(B)",
+     "answers": [
+      "C is longer than A.",
+      "D is the longest.",
+      "B is the shortest."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "young/old\n(D/C)\n(B)\n(C)",
+     "answers": [
+      "D is younger than C.",
+      "B is the youngest.",
+      "C is the oldest."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "expensive/cheap\n(D/A)\n(C)\n(A)",
+     "answers": [
+      "D is more expensive than A.",
+      "C is the most expensive.",
+      "A is the cheapest."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "good/bad\n(A/C)\n(A)\n(D)",
+     "answers": [
+      "A is better than C.",
+      "A is the best.",
+      "D is the worst."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "91.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте прилагательные в превосходной степени (the oldest и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "This building is very old. It’s ",
+      " in the town."
+     ],
+     "answers": [
+      [
+       "the oldest building"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It was a very happy day. It was ",
+      " of my life."
+     ],
+     "answers": [
+      [
+       "the happiest day"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "It’s a very good film. It’s ",
+      " I’ve ever seen."
+     ],
+     "answers": [
+      [
+       "the best film"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "She’s a very popular singer. She’s ",
+      " in the country."
+     ],
+     "answers": [
+      [
+       "the most popular singer"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It was a very bad mistake. It was ",
+      " I’ve ever made."
+     ],
+     "answers": [
+      [
+       "the worst mistake"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "It’s a very pretty village. It’s ",
+      " I’ve ever seen."
+     ],
+     "answers": [
+      [
+       "the prettiest village"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "It was a very cold day. It was ",
+      " of the year."
+     ],
+     "answers": [
+      [
+       "the coldest day"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "He’s a very boring person. He’s ",
+      " I’ve ever met."
+     ],
+     "answers": [
+      [
+       "the most boring person underpinning."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "91.3",
+   "type": "write",
+   "instruction": "Напишите предложения с прилагательными в превосходной степени (the longest и т. д.). Используйте слова из всех рамок.",
+   "wordBank": [
+    "Sydney",
+    "Alaska",
+    "Everest",
+    "the Nile",
+    "Brazil",
+    "Jupiter",
+    "high",
+    "large",
+    "long",
+    "country",
+    "river",
+    "city",
+    "state",
+    "mountain",
+    "planet",
+    "Africa",
+    "South America",
+    "Australia",
+    "the world",
+    "the USA",
+    "the solar system"
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "Sydney is the largest city in Australia."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Everest",
+     "answers": [
+      "Everest is the highest mountain in the world."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "Brazil is the largest country in South America."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "Alaska is the largest state in the USA."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "The Nile is the longest river in Africa.",
+      "The Nile is the longest river in the world."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "Jupiter is the largest planet in the solar system."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "91.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [Какая (здесь) = Which\nзаказать = order\nблюдо = dish\nна экзамене = in the exam]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Футбол – самый популярный спорт в мире.",
+     "answers": [
+      "Football is the most popular sport in the world."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Это худшая книга, которую я когда-либо читал.",
+     "answers": [
+      "It’s the worst book that I’ve ever read.",
+      "It’s the worst book I’ve ever read.",
+      "It’s the worst book that I have ever read.",
+      "It’s the worst book I have ever read.",
+      "It is the worst book that I’ve ever read.",
+      "It is the worst book I’ve ever read.",
+      "It is the worst book that I have ever read.",
+      "It is the worst book I have ever read."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Давай зайдём в ближайший супермаркет.",
+     "answers": [
+      "Let’s go to the nearest supermarket."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Гари заказал самое дорогое блюдо в ресторане.",
+     "answers": [
+      "Gary ordered the most expensive dish in the restaurant."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Какая страна самая жаркая: Франция, Испания или Италия?",
+     "answers": [
+      "Which country is the hottest: France, Spain or Italy?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я думаю, что это лучший итальянский ресторан в Лондоне.",
+     "answers": [
+      "I think that it’s the best Italian restaurant in London.",
+      "I think it’s the best Italian restaurant in London.",
+      "I think that it is the best Italian restaurant in London.",
+      "I think it is the best Italian restaurant in London."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Люси – самый интересный человек, которого я знаю.",
+     "answers": [
+      "Lucy is the most interesting person that I know.",
+      "Lucy is the most interesting person I know."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Вопрос 2 был самым простым на экзамене.",
+     "answers": [
+      "Question 2 was the easiest one in the exam.",
+      "Question 2 was the easiest in the exam."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,74 +1,460 @@
 {
   "unit": 2,
-  "title": "Present simple (I do)",
-  "pdfPages": [16, 17],
+  "title": "am/is/are (вопросы)",
+  "pdfPages": [
+    15,
+    16
+  ],
   "exercises": [
     {
       "id": "2.1",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using the following verbs:",
-      "wordBank": ["cause(s)", "close(s)", "connect(s)", "go(es)", "live(s)", "speak(s)", "take(s)"],
-      "items": [
-        {"num": 2, "parts": ["Ben and Jack ", " to the same school."], "answers": [["go"]]},
-        {"num": 3, "parts": ["Bad driving ", " many accidents."], "answers": [["causes"]]},
-        {"num": 4, "parts": ["The museum ", " at 4 o\u2019clock on Sundays."], "answers": [["closes"]]},
-        {"num": 5, "parts": ["My parents ", " in a very small flat."], "answers": [["live"]]},
-        {"num": 6, "parts": ["The Olympic Games ", " place every four years."], "answers": [["take"]]},
-        {"num": 7, "parts": ["The Panama Canal ", " the Atlantic and Pacific oceans."], "answers": [["connects"]]}
+      "type": "matching",
+      "instruction": "Найдите правильные ответы на вопросы.",
+      "leftOptions": [
+        "Where’s the camera?",
+        "Is your car blue?",
+        "Is Kate from London?",
+        "Am I right?",
+        "Where’s Amy from?",
+        "What colour is your bag?",
+        "Are you hungry?",
+        "How is George?",
+        "Who’s that woman?"
+      ],
+      "rightOptions": [
+        "London.",
+        "No, I’m not.",
+        "Yes, you are.",
+        "My sister.",
+        "Black.",
+        "No, it’s black.",
+        "In your bag.",
+        "No, she’s American.",
+        "Very well."
+      ],
+      "pairs": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          3
+        ]
       ]
     },
     {
       "id": "2.2",
-      "type": "fill-in",
-      "instruction": "Put the verb into the correct form.",
+      "type": "write",
+      "instruction": "Составьте вопросы с этими словами.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
-        {"num": 2, "parts": ["What time ", " (the banks / close) here?"], "answers": [["do the banks close"]]},
-        {"num": 3, "parts": ["I have a car, but I ", " (not / use) it much."], "answers": [["don\u2019t use"]]},
-        {"num": 4, "parts": ["Where ", " (Maria / come) from? Is she Spanish?"], "answers": [["does Maria come"]]},
-        {"num": 5, "parts": ["\u2018What ", "(you / do)?\u2019 \u2018I\u2019m an electrician.\u2019"], "answers": [["do you do"]]},
-        {"num": 6, "parts": ["Look at this sentence. What ", "(this word / mean)?"], "answers": [["does this word mean"]]},
-        {"num": 7, "parts": ["David isn\u2019t very fit. He ", " (not / do) any sport."], "answers": [["doesn\u2019t do"]]},
-        {"num": 8, "parts": ["It ", " (take) me an hour to get to work in the morning. How long ", " (it / take) you?"], "answers": [["takes"], ["does it take"]]}
+        {
+          "num": 1,
+          "prompt": "(are / at home / your parents)",
+          "answers": [
+            "Are your parents at home?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(your mother / is / how)",
+          "answers": [
+            "How is your mother?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(interesting / is / your job)",
+          "answers": [
+            "Is your job interesting?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(these seats / are / free)",
+          "answers": [
+            "Are these seats free?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(from / where / you / are)",
+          "answers": [
+            "Where are you from?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(a student / you / are)",
+          "answers": [
+            "Are you a student?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(is / near here / the station)",
+          "answers": [
+            "Is the station near here?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(at school / are / your children)",
+          "answers": [
+            "Are your children at school?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(you / are / sad / why)",
+          "answers": [
+            "Why are you sad?"
+          ]
+        }
       ]
     },
     {
       "id": "2.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using these verbs. Sometimes you need the negative.",
-      "wordBank": ["believe", "eat", "flow", "go", "grow", "make", "rise", "tell", "translate"],
+      "instruction": "Допишите вопросы. Используйте What … / Who … / Where … / How … .",
       "items": [
-        {"num": 3, "parts": ["The sun ", " in the east."], "answers": [["rises"]]},
-        {"num": 4, "parts": ["Bees ", " honey."], "answers": [["make"]]},
-        {"num": 5, "parts": ["Vegetarians ", " meat."], "answers": [["don\u2019t eat"]]},
-        {"num": 6, "parts": ["An atheist ", " in God."], "answers": [["doesn\u2019t believe"]]},
-        {"num": 7, "parts": ["An interpreter ", " from one language into another."], "answers": [["translates"]]},
-        {"num": 8, "parts": ["Liars are people who ", " the truth."], "answers": [["don\u2019t tell"]]},
-        {"num": 9, "parts": ["The River Amazon ", " into the Atlantic Ocean."], "answers": [["flows"]]}
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " your parents?"
+          ],
+          "answers": [
+            [
+              "How are"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " the bus stop?"
+          ],
+          "answers": [
+            [
+              "Where’s",
+              "Where is"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " your children?"
+          ],
+          "answers": [
+            [
+              "How old are"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " the time?"
+          ],
+          "answers": [
+            [
+              "How much are"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " your favourite sport?"
+          ],
+          "answers": [
+            [
+              "What’s",
+              "What is"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " the man in this photo?"
+          ],
+          "answers": [
+            [
+              "Who’s",
+              "Who is"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "",
+            " your new shoes?"
+          ],
+          "answers": [
+            [
+              "What colour are"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "2.4",
       "type": "write",
-      "instruction": "You ask Lisa questions about herself and her family. Write the questions.",
+      "instruction": "Напишите вопросы.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "prompt": "Perhaps Lisa\u2019s sister plays tennis too. You want to know. Ask Lisa.", "answers": ["Does your sister play tennis?"]},
-        {"num": 3, "prompt": "You know that Lisa goes to the cinema a lot. You want to know how often. Ask her.", "answers": ["How often do you go to the cinema?"]},
-        {"num": 4, "prompt": "You know that Lisa\u2019s brother works. You want to know what he does. Ask Lisa.", "answers": ["What does your brother do?"]},
-        {"num": 5, "prompt": "You\u2019re not sure whether Lisa speaks Spanish. You want to know. Ask her.", "answers": ["Do you speak Spanish?"]},
-        {"num": 6, "prompt": "You don\u2019t know where Lisa\u2019s grandparents live. You want to know. Ask Lisa.", "answers": ["Where do your grandparents live?"]}
+        {
+          "num": 1,
+          "prompt": "(name?)",
+          "answers": [
+            "What’s your name?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(American?)",
+          "answers": [
+            "Are you American?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(how old?)",
+          "answers": [
+            "How old are you?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(a teacher?)",
+          "answers": [
+            "Are you a teacher?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(favourite sport?)",
+          "answers": [
+            "What’s your favourite sport?",
+            "What is your favourite sport?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(wife a lawyer?)",
+          "answers": [
+            "Is your wife a lawyer?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(from?)",
+          "answers": [
+            "Where’s she from?",
+            "Where is she from?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(her name?)",
+          "answers": [
+            "What’s her name?",
+            "What is her name?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(how old?)",
+          "answers": [
+            "How old is she?"
+          ]
+        }
       ]
     },
     {
       "id": "2.5",
-      "type": "fill-in",
-      "instruction": "Complete using the following:",
-      "wordBank": ["I agree", "I apologise", "I insist", "I promise", "I recommend", "I suggest"],
+      "type": "write",
+      "instruction": "Напишите краткие ответы (Yes, I am. / No, he isn’t. и т. д.).",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "parts": ["I won\u2019t tell anybody what you said. ", "."], "answers": [["I promise"]]},
-        {"num": 3, "parts": ["(in a restaurant) You must let me pay for the meal. ", "."], "answers": [["I insist"]]},
-        {"num": 4, "parts": [" ", " for what I said. I shouldn\u2019t have said it."], "answers": [["I apologise"]]},
-        {"num": 5, "parts": ["The new restaurant in Baker Street is very good. ", " it."], "answers": [["I recommend"]]},
-        {"num": 6, "parts": ["I think you\u2019re absolutely right. ", " with you."], "answers": [["I agree"]]}
+        {
+          "num": 1,
+          "prompt": "Are you American?",
+          "answers": [
+            "No, I’m not."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Are you thirsty?",
+          "answers": [
+            "Yes, I am.",
+            "No, I’m not."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Is your father at work?",
+          "answers": [
+            "Yes, he is.",
+            "No, he isn’t.",
+            "No, he’s not."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Are your hands cold?",
+          "answers": [
+            "Yes, they are.",
+            "No, they aren’t.",
+            "No, they’re not."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Is it Monday today?",
+          "answers": [
+            "Yes, it is.",
+            "No, it isn’t.",
+            "No, it’s not."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Are you a teacher?",
+          "answers": [
+            "Yes, I am.",
+            "No, I’m not."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (глаза = eyes; тот = that; здесь = here)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Вы англичанка?",
+          "answers": [
+            "Are you English?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Ваш брат дома?",
+          "answers": [
+            "Is your brother at home?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Где Марина и Том?",
+          "answers": [
+            "Where are Marina and Tom?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Сколько тебе лет?",
+          "answers": [
+            "How old are you?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Как тебя зовут?",
+          "answers": [
+            "What’s your name?",
+            "What is your name?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Откуда Бен?",
+          "answers": [
+            "Where’s Ben from?",
+            "Where is Ben from?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Где мой телефон?",
+          "answers": [
+            "Where’s my phone?",
+            "Where is my phone?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Какого цвета твои глаза?",
+          "answers": [
+            "What colour are your eyes?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Кто тот мальчик?",
+          "answers": [
+            "Who’s that boy?",
+            "Who is that boy?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Почему ты здесь?",
+          "answers": [
+            "Why are you here?"
+          ]
+        }
       ]
     }
   ]

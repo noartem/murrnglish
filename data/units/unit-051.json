@@ -1,63 +1,365 @@
 {
   "unit": 51,
-  "title": "Auxiliary verbs (have/do/can etc.) I think so / I hope so etc.",
-  "pdfPages": [114, 115],
+  "title": "She said that … · He told me that …",
+  "pdfPages": [
+    113,
+    114
+  ],
   "exercises": [
     {
       "id": "51.1",
-      "type": "fill-in",
-      "instruction": "Complete each sentence with an auxiliary verb (do/was/could/might etc.). Sometimes the verb must be negative (don't/wasn't etc.).",
+      "type": "write",
+      "instruction": "Read what these people say and write sentences with He/She/They said (that) … .",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 1, "parts": ["I wasn't tired, but my friends ", "."], "answers": [["was"]]},
-        {"num": 2, "parts": ["I like hot weather, but Ann ", "."], "answers": [["doesn't"]]},
-        {"num": 3, "parts": ["'Is Andy here?' 'He ", " five minutes ago, but I think he's gone home now.'"], "answers": [["was"]]},
-        {"num": 4, "parts": ["I haven't travelled much, but Gary ", "."], "answers": [["has"]]},
-        {"num": 5, "parts": ["Lisa said she might come and see us tomorrow, but I don't think she ", "."], "answers": [["will"]]},
-        {"num": 6, "parts": ["I don't know whether to apply for the job or not. Do you think I ", "?"], "answers": [["should"]]},
-        {"num": 7, "parts": ["'Please don't tell anybody what happened.' 'Don't worry. I ", ".'"], "answers": [["won't"]]},
-        {"num": 8, "parts": ["'You never listen to me.' 'Yes, I ", "!'"], "answers": [["do"]]},
-        {"num": 9, "parts": ["I usually work on Saturdays, but last Saturday I ", "."], "answers": [["didn't"]]},
-        {"num": 10, "parts": ["'Do you think it's going to rain?' 'It ", ". Take an umbrella in case.'"], "answers": [["might"]]},
-        {"num": 11, "parts": ["'Are you and Chris going to the party?' 'I ", ", but Chris ", ".'"], "answers": [["am", "'m not", "can't"], ["isn't", "is", "can"]]},
-        {"num": 12, "parts": ["'Please help me.' 'I'm sorry. I ", " if I ", ", but I ", ".'"], "answers": [["would"], ["could"], ["can't"]]}
+        {
+          "num": 1,
+          "prompt": "I’ve lost my watch.",
+          "answers": [
+            "He said he had lost his watch."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I’m very busy.",
+          "answers": [
+            "She said she was very busy.",
+            "She said that she was very busy."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I can’t go to the party.",
+          "answers": [
+            "She said she couldn’t go to the party.",
+            "She said that she couldn’t go to the party."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I have to go out.",
+          "answers": [
+            "He said he had to go out.",
+            "He said that he had to go out."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I’m learning Russian.",
+          "answers": [
+            "He said he was learning Russian.",
+            "He said that he was learning Russian."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I don’t feel very well.",
+          "answers": [
+            "She said she didn’t feel very well.",
+            "She said that she didn’t feel very well."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "We’ll be home late.",
+          "answers": [
+            "They said they would be home late.",
+            "They said that they would be home late.",
+            "They said they’d be home late.",
+            "They said that they’d be home late."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "I’ve just come back from holiday.",
+          "answers": [
+            "She said she had just come back from holiday.",
+            "She said that she had just come back from holiday.",
+            "She said she’d just come back from holiday.",
+            "She said that she’d just come back from holiday."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "I’m going to buy a guitar.",
+          "answers": [
+            "She said she was going to buy a guitar.",
+            "She said that she was going to buy a guitar."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "We haven’t got a key.",
+          "answers": [
+            "They said they hadn’t got a key.",
+            "They said that they hadn’t got a key.",
+            "They said they didn’t have a key.",
+            "They said that they didn’t have a key."
+          ]
+        }
       ]
     },
     {
       "id": "51.2",
-      "type": "matching",
-      "instruction": "You never agree with Amy. Answer in the way shown.",
-      "leftOptions": ["I like football.", "I didn't enjoy the film.", "I'm not tired.", "I thought the exam was easy."],
-      "rightOptions": ["Do you? I don't.", "Didn't you? I did.", "Aren't you? I am.", "Did you? I didn't."],
-      "pairs": [[0, 0], [1, 1], [2, 2], [3, 3]]
-    },
-    {
-      "id": "51.3",
-      "type": "write",
-      "instruction": "Tina tells you something. If the same is true for you, answer with So … or Neither … (as in the first example). Otherwise, ask Tina questions (as in the second example).",
+      "type": "fill-in",
+      "instruction": "Use the pictures to complete the sentences.",
       "items": [
-        {"num": 1, "prompt": "I'm not tired.", "answers": ["Neither am I."]},
-        {"num": 2, "prompt": "I work hard.", "answers": ["Do you? What do you do?"]},
-        {"num": 3, "prompt": "I watched TV last night.", "answers": ["So did I.", "Did you? What did you watch?"]},
-        {"num": 4, "prompt": "I won't be at home tomorrow.", "answers": ["Neither will I.", "Won't you? Where will you be?"]},
-        {"num": 5, "prompt": "I like reading.", "answers": ["So do I.", "Do you? What sort of books do you like?"]},
-        {"num": 6, "prompt": "I'd like to live somewhere else.", "answers": ["So would I.", "Would you? Where would you like to live?"]},
-        {"num": 7, "prompt": "I can't go out tonight.", "answers": ["Neither can I.", "Can't you? Why not?"]},
-        {"num": 8, "prompt": "I'm looking forward to the weekend.", "answers": ["So am I.", "Are you? Are you doing something nice?"]}
+        {
+          "num": 1,
+          "parts": [
+            "I met Clare last week. She said ",
+            "."
+          ],
+          "answers": [
+            [
+              "she was enjoying her new job"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Emma didn’t want anything to eat. She said ",
+            "."
+          ],
+          "answers": [
+            [
+              "she wasn’t hungry",
+              "that she wasn’t hungry",
+              "she was not hungry",
+              "that she was not hungry"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I wanted to borrow Mike’s ladder, but he said ",
+            "."
+          ],
+          "answers": [
+            [
+              "he needed it",
+              "that he needed it"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Hannah was invited to the party, but she said ",
+            "."
+          ],
+          "answers": [
+            [
+              "she didn’t want to go",
+              "that she didn’t want to go",
+              "she did not want to go",
+              "that she did not want to go"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Susan told me she didn’t want the picture. She said ",
+            "."
+          ],
+          "answers": [
+            [
+              "I could have it",
+              "that I could have it"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Martin has just gone away on holiday. He said ",
+            "."
+          ],
+          "answers": [
+            [
+              "he would send me a postcard",
+              "that he would send me a postcard",
+              "he’d send me a postcard",
+              "that he’d send me a postcard"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I was looking for Robert. Nicola said ",
+            "."
+          ],
+          "answers": [
+            [
+              "he had gone home",
+              "that he had gone home",
+              "he’d gone home",
+              "that he’d gone home"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "'Why did David stay at home?' 'He said ",
+            ".'"
+          ],
+          "answers": [
+            [
+              "he wanted to watch TV",
+              "that he wanted to watch TV"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "'Has Mary gone out?' 'I think so. She said ",
+            ".'"
+          ],
+          "answers": [
+            [
+              "she was going to the cinema",
+              "that she was going to the cinema"
+            ]
+          ]
+        }
       ]
     },
     {
-      "id": "51.4",
-      "type": "write",
-      "instruction": "What do you say to Sam? Use I think so, I hope not etc.",
+      "id": "51.3",
+      "type": "fill-in",
+      "instruction": "Write say/said or tell/told.",
       "items": [
-        {"num": 1, "prompt": "(You don't like rain.) SaM: Is it going to rain? (hope)", "answers": ["I hope not."]},
-        {"num": 2, "prompt": "(You need more money.) SaM: Do you think you'll get a pay rise? (hope)", "answers": ["I hope so."]},
-        {"num": 3, "prompt": "(You're going to a party. You can't stand John.) SaM: Will John be at the party? (hope)", "answers": ["I hope not."]},
-        {"num": 4, "prompt": "(You're not sure whether Amy is married, but she probably isn't.) SaM: Is Amy married? (think)", "answers": ["I don't think so."]},
-        {"num": 5, "prompt": "(Jane has lived in Italy for many years.) SaM: Does Jane speak Italian? (suppose)", "answers": ["I suppose so."]},
-        {"num": 6, "prompt": "(You have to leave Sam's party early.) SaM: Do you have to leave already? (afraid)", "answers": ["I'm afraid so."]},
-        {"num": 7, "prompt": "(You're not sure what time the film begins, but it's probably 7.30.) SaM: What time is the film? 7.30? (think)", "answers": ["I think so."]},
-        {"num": 8, "prompt": "(You are the receptionist at a hotel. The hotel is full.) SaM: Do you have a room for tonight? (afraid)", "answers": ["I'm afraid not."]}
+        {
+          "num": 1,
+          "parts": [
+            "He ",
+            " he was tired."
+          ],
+          "answers": [
+            [
+              "said"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "What didshe ",
+            " you?"
+          ],
+          "answers": [
+            [
+              "tell"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Anna ",
+            " she didn’t like Peter."
+          ],
+          "answers": [
+            [
+              "said"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Jack ",
+            " me that you were ill."
+          ],
+          "answers": [
+            [
+              "told"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Please don’t ",
+            " Dan what happened."
+          ],
+          "answers": [
+            [
+              "tell"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Did Lucy ",
+            " she would be late?"
+          ],
+          "answers": [
+            [
+              "say"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "The woman ",
+            " she was a reporter."
+          ],
+          "answers": [
+            [
+              "said"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The woman ",
+            " us she was a reporter."
+          ],
+          "answers": [
+            [
+              "told"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "They asked me a lot of questions, but I didn’t ",
+            " them anything."
+          ],
+          "answers": [
+            [
+              "tell"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "They asked me a lot of questions, but I didn’t ",
+            " anything."
+          ],
+          "answers": [
+            [
+              "say"
+            ]
+          ]
+        }
       ]
     }
   ]

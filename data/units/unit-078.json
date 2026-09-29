@@ -1,142 +1,486 @@
 {
   "unit": 78,
-  "title": "Names with and without the 2",
-  "pdfPages": [168, 169],
+  "title": "not + any · no · none",
+  "pdfPages": [
+    167,
+    168
+  ],
   "exercises": [
     {
       "id": "78.1",
-      "type": "fill-in",
-      "instruction": "Use the map to answer the questions. Write the name of the place and the street it is in. Use the if necessary. (Remember that on maps we do not normally use the.)",
+      "type": "write",
+      "instruction": "Перепишите эти предложения, используя no.\nПерепишите эти предложения, используя any.",
+      "example": [
+        1,
+        5
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "We don’t have any money.",
+          "answers": [
+            "We have no money."
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Turner's in ", ""],
-          "answers": [["Carter Road"]]
+          "prompt": "There aren’t any shops near here.",
+          "answers": [
+            "There are no shops near here."
+          ]
         },
         {
           "num": 3,
-          "parts": ["", " in Park Road"],
-          "answers": [["the Crown (Hotel)"]]
+          "prompt": "Carla doesn’t have any free time.",
+          "answers": [
+            "Carla has no free time.",
+            "Carla has got no free time."
+          ]
         },
         {
           "num": 4,
-          "parts": ["", " in Market Street"],
-          "answers": [["St Peter's"]]
+          "prompt": "There isn’t a light in this room.",
+          "answers": [
+            "There is no light in this room."
+          ]
         },
         {
           "num": 5,
-          "parts": ["", " in George Street"],
-          "answers": [["the City Museum"]]
+          "prompt": "We have no money.",
+          "answers": [
+            "We don’t have any money."
+          ],
+          "example": true
         },
         {
           "num": 6,
-          "parts": ["", " in Forest Avenue"],
-          "answers": [["Blackstone's"]]
+          "prompt": "There’s no milk in the fridge.",
+          "answers": [
+            "There isn’t any milk in the fridge."
+          ]
         },
         {
           "num": 7,
-          "parts": ["", " in George Street"],
-          "answers": [["Mario's"]]
+          "prompt": "There are no buses today.",
+          "answers": [
+            "There aren’t any buses today."
+          ]
         },
         {
           "num": 8,
-          "parts": ["", " at the end of Market Street"],
-          "answers": [["Victoria Park"]]
+          "prompt": "Tom has no brothers or sisters.",
+          "answers": [
+            "Tom doesn’t have any brothers or sisters.",
+            "Tom hasn’t got any brothers or sisters."
+          ]
         }
       ]
     },
     {
       "id": "78.2",
-      "type": "matching",
-      "instruction": "Where are the following? Use the where necessary.",
-      "leftOptions": ["1 Times Square", "2 The Eiffel Tower", "3 Buckingham Palace", "4 The White House", "5 The Kremlin", "6 Broadway", "7 The Acropolis", "8 Gatwick Airport"],
-      "rightOptions": ["a New York", "b Paris", "c London", "d Washington", "e Moscow", "f Athens", "g near London"],
-      "pairs": [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 0], [6, 5], [7, 6]]
-    },
-    {
-      "id": "78.3",
-      "type": "write",
-      "instruction": "Which is right?",
+      "type": "fill-in",
+      "instruction": "Вставьте no или any.\nВставьте no, any или none.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "Have you ever been to Science Museum / the Science Museum?",
-          "answers": ["the Science Museum"]
+          "parts": [
+            "There’s ",
+            " sugar in your coffee."
+          ],
+          "answers": [
+            [
+              "no"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "Many tourists in London visit St Paul's Cathedral / the St Paul's Cathedral.",
-          "answers": ["St Paul's Cathedral"]
+          "parts": [
+            "My brother is married, but he doesn’t have ",
+            " children."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
         },
         {
           "num": 3,
-          "prompt": "The biggest park in New York is Central Park / The Central Park.",
-          "answers": ["Central Park"]
+          "parts": [
+            "Sue doesn’t speak ",
+            " foreign languages."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "I'd like to go to China and see Great Wall / the Great Wall.",
-          "answers": ["the Great Wall"]
+          "parts": [
+            "I’m afraid there’s ",
+            " coffee. Would you like some tea?"
+          ],
+          "answers": [
+            [
+              "no"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "Dublin Airport / The Dublin Airport is situated about 12 kilometres from the city centre.",
-          "answers": ["Dublin Airport"]
+          "parts": [
+            "‘Look at those birds!’ ‘Birds? Where? I can’t see ",
+            " birds.’"
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
         },
         {
           "num": 6,
-          "prompt": "'Which cinema are we going to this evening?' 'Classic / The Classic.'",
-          "answers": ["The Classic"]
+          "parts": [
+            "‘Do you know where Jessica is?’ ‘No, I have ",
+            " idea.’"
+          ],
+          "answers": [
+            [
+              "no"
+            ]
+          ]
         },
         {
           "num": 7,
-          "prompt": "Jack is a student at Liverpool University / the Liverpool University.",
-          "answers": ["Liverpool University"]
+          "parts": [
+            "There aren’t ",
+            " pictures on the wall."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
         },
         {
           "num": 8,
-          "prompt": "You should go to National Museum / the National Museum. It's very interesting.",
-          "answers": ["the National Museum"]
+          "parts": [
+            "The weather was cold, but there was ",
+            " wind."
+          ],
+          "answers": [
+            [
+              "no"
+            ]
+          ]
         },
         {
           "num": 9,
-          "prompt": "If you're looking for a department store, I would recommend Harrison's / the Harrison's.",
-          "answers": ["Harrison's"]
+          "parts": [
+            "I wanted to buy some oranges, but they didn’t have ",
+            " in the shop."
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
         },
         {
           "num": 10,
-          "prompt": "Andy is a flight attendant. He works for Cathay Pacific / the Cathay Pacific.",
-          "answers": ["Cathay Pacific"]
+          "parts": [
+            "Everything was correct. There were ",
+            " mistakes."
+          ],
+          "answers": [
+            [
+              "no"
+            ]
+          ]
         },
         {
           "num": 11,
-          "prompt": "'Which newspaper do you want?' 'Morning News / The Morning News.'",
-          "answers": ["The Morning News"]
+          "parts": [
+            "‘How much luggage do you have?’ ‘",
+            ".’"
+          ],
+          "answers": [
+            [
+              "None"
+            ]
+          ]
         },
         {
           "num": 12,
-          "prompt": "We went to Italy and saw Leaning Tower / the Leaning Tower of Pisa.",
-          "answers": ["the Leaning Tower"]
+          "parts": [
+            "‘How much luggage do you have?’ ‘I don’t have ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "any"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "78.3",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте any или no + слова из рамки.",
+      "wordBank": [
+        "difference",
+        "friends",
+        "furniture",
+        "heating",
+        "idea",
+        "money",
+        "problems",
+        "questions",
+        "queue"
+      ],
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Everything was OK. There were ",
+            "."
+          ],
+          "answers": [
+            [
+              "no problems"
+            ]
+          ],
+          "example": true
         },
         {
-          "num": 13,
-          "prompt": "This book is published by Cambridge University Press / the Cambridge University Press.",
-          "answers": ["Cambridge University Press"]
+          "num": 2,
+          "parts": [
+            "Jack and Emily would like to go on holiday, but they have ",
+            "."
+          ],
+          "answers": [
+            [
+              "no money"
+            ]
+          ]
         },
         {
-          "num": 14,
-          "prompt": "The building across the street is College of Art / the College of Art.",
-          "answers": ["the College of Art"]
+          "num": 3,
+          "parts": [
+            "I’m not going to answer ",
+            "."
+          ],
+          "answers": [
+            [
+              "any questions"
+            ]
+          ]
         },
         {
-          "num": 15,
-          "prompt": "Imperial Hotel / The Imperial Hotel is in Baker Street / the Baker Street.",
-          "answers": ["The Imperial Hotel", "Baker Street"]
+          "num": 4,
+          "parts": [
+            "He’s always alone. He has ",
+            "."
+          ],
+          "answers": [
+            [
+              "no friends"
+            ]
+          ]
         },
         {
-          "num": 16,
-          "prompt": "Statue of Liberty / The Statue of Liberty is at the entrance to New York Harbor / the New York Harbor.",
-          "answers": ["The Statue of Liberty", "New York Harbor"]
+          "num": 5,
+          "parts": [
+            "There is ",
+            " between these two machines. They’re exactly the same."
+          ],
+          "answers": [
+            [
+              "no difference"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "There wasn’t ",
+            " in the room. It was completely empty."
+          ],
+          "answers": [
+            [
+              "any furniture"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "‘Do you know how the accident happened?’ ‘No, I have ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "no idea"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The house is cold because there isn’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "any heating"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "We didn’t have to wait to get our train tickets. There was ",
+            "."
+          ],
+          "answers": [
+            [
+              "no queue"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "78.4",
+      "type": "self-check",
+      "instruction": "Дайте краткие ответы (одно или два слова) на эти вопросы. Где необходимо, используйте none.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "How many letters did you write yesterday?",
+          "modelAnswers": [
+            "Two.",
+            "A lot.",
+            "None."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "How many sisters do you have?",
+          "modelAnswers": [
+            "Three."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "How much coffee did you drink yesterday?",
+          "modelAnswers": [
+            "Two cups."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "How many photos have you taken today?",
+          "modelAnswers": [
+            "None."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "How many legs does a snake have?",
+          "modelAnswers": [
+            "None."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "78.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (багаж = luggage)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "У Меган нет детей.",
+          "answers": [
+            "Megan has no children.",
+            "Megan has got no children.",
+            "Megan doesn’t have any children.",
+            "Megan hasn’t got any children."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Кто встретил тебя в аэропорту?” – “Никто”.",
+          "answers": [
+            "‘Who met you at the airport?’ ‘No-one.’",
+            "‘Who met you at the airport?’ ‘Nobody.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "“Сколько сахара в моём чае?” – “Нисколько”.",
+          "answers": [
+            "‘How much sugar is in my tea?’ ‘None.’"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "В холодильнике нет апельсинового сока.",
+          "answers": [
+            "There’s no orange juice in the fridge.",
+            "There isn’t any orange juice in the fridge."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Извините, сегодня у меня нет свободного времени.",
+          "answers": [
+            "Sorry, I have no free time today.",
+            "Sorry, I’ve got no free time today.",
+            "Sorry, I don’t have any free time today.",
+            "Sorry, I haven’t got any free time today."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "У нас не было багажа.",
+          "answers": [
+            "We had no luggage.",
+            "We didn’t have any luggage."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Студенты не задали никаких вопросов.",
+          "answers": [
+            "The students asked no questions.",
+            "The students didn’t ask any questions."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Вчера мы не потратили денег.",
+          "answers": [
+            "We spent no money yesterday.",
+            "We didn’t spend any money yesterday."
+          ]
         }
       ]
     }

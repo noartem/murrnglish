@@ -1,0 +1,681 @@
+{"tag": "key-p282", "model": "deepseek/deepseek-v4.1-flash", "secs": 34.9, "prompt_tokens": 1623, "completion_tokens": 3361, "finish": "stop", "cost": 0.17}
+{"tag": "key-p282", "model": "xiaomi/mimo-v2.6-flash", "secs": 106.0, "prompt_tokens": 4348, "completion_tokens": 2906, "finish": "stop", "cost": 0.1327}
+{"tag": "key-p282", "model": "xiaomi/mimo-v2.6-pro", "secs": 114.4, "prompt_tokens": 4348, "completion_tokens": 3537, "finish": "stop", "cost": 0.5428}
+{"tag": "key-p282", "model": "z-ai/glm-5.3-flash", "secs": 102.2, "prompt_tokens": 5563, "completion_tokens": 8648, "finish": "stop", "cost": 0.1764}
+{"tag": "key-p282", "model": "qwen/qwen3.8-omni-flash", "secs": 118.5, "prompt_tokens": 1951, "completion_tokens": 9552, "finish": "stop", "cost": 0.5247}
+{"tag": "key-p282", "model": "z-ai/glm-5.3-flashx", "secs": 119.3, "prompt_tokens": 5563, "completion_tokens": 17301, "finish": "stop", "cost": 2.8588}
+{"tag": "key-p285", "model": "xiaomi/mimo-v2.6-flash", "secs": 52.1, "prompt_tokens": 4348, "completion_tokens": 3678, "finish": "stop", "cost": 0.1528}
+{"tag": "key-p283", "model": "xiaomi/mimo-v2.6-flash", "secs": 53.7, "prompt_tokens": 4348, "completion_tokens": 3007, "finish": "stop", "cost": 0.1353}
+{"tag": "key-p288", "model": "z-ai/glm-5.3-flash", "secs": 64.8, "prompt_tokens": 5563, "completion_tokens": 7793, "finish": "stop", "cost": 0.1619}
+{"tag": "key-p290", "model": "xiaomi/mimo-v2.6-flash", "secs": 20.4, "prompt_tokens": 4348, "completion_tokens": 1933, "finish": "stop", "cost": 0.1073}
+{"tag": "key-p284", "model": "z-ai/glm-5.3-flash", "secs": 76.1, "prompt_tokens": 5563, "completion_tokens": 5729, "finish": "stop", "cost": 0.127}
+{"tag": "key-p286", "model": "xiaomi/mimo-v2.6-flash", "secs": 84.0, "prompt_tokens": 4348, "completion_tokens": 4787, "finish": "stop", "cost": 0.1818}
+{"tag": "key-p288", "model": "xiaomi/mimo-v2.6-flash", "secs": 84.9, "prompt_tokens": 4348, "completion_tokens": 3248, "finish": "stop", "cost": 0.1416}
+{"tag": "key-p289", "model": "xiaomi/mimo-v2.6-flash", "secs": 89.9, "prompt_tokens": 4348, "completion_tokens": 3773, "finish": "stop", "cost": 0.1553}
+{"tag": "key-p287", "model": "z-ai/glm-5.3-flash", "secs": 98.6, "prompt_tokens": 5563, "completion_tokens": 6935, "finish": "stop", "cost": 0.1474}
+{"tag": "key-p282", "model": "xiaomi/mimo-v2.6-flash", "secs": 101.6, "prompt_tokens": 4348, "completion_tokens": 3580, "finish": "stop", "cost": 0.1503}
+{"tag": "key-p283", "model": "z-ai/glm-5.3-flash", "secs": 105.9, "prompt_tokens": 5563, "completion_tokens": 6470, "finish": "stop", "cost": 0.1395}
+{"tag": "key-p292", "model": "xiaomi/mimo-v2.6-flash", "secs": 43.3, "prompt_tokens": 4348, "completion_tokens": 4416, "finish": "stop", "cost": 0.1721}
+{"tag": "key-p291", "model": "xiaomi/mimo-v2.6-flash", "secs": 64.9, "prompt_tokens": 4348, "completion_tokens": 2944, "finish": "stop", "cost": 0.1337}
+{"tag": "key-p290", "model": "z-ai/glm-5.3-flash", "secs": 58.0, "prompt_tokens": 5562, "completion_tokens": 4798, "finish": "stop", "cost": 0.1113}
+{"tag": "key-p294", "model": "xiaomi/mimo-v2.6-flash", "secs": 42.3, "prompt_tokens": 4348, "completion_tokens": 4158, "finish": "stop", "cost": 0.1654}
+{"tag": "key-p285", "model": "z-ai/glm-5.3-flash", "secs": 138.9, "prompt_tokens": 5563, "completion_tokens": 8090, "finish": "stop", "cost": 0.1669}
+{"tag": "key-p293", "model": "xiaomi/mimo-v2.6-flash", "secs": 56.8, "prompt_tokens": 4398, "completion_tokens": 4452, "finish": "stop", "cost": 0.1737}
+{"tag": "key-p295", "model": "xiaomi/mimo-v2.6-flash", "secs": 29.8, "prompt_tokens": 4348, "completion_tokens": 3111, "finish": "stop", "cost": 0.138}
+{"tag": "key-p293", "model": "z-ai/glm-5.3-flash", "secs": 60.9, "prompt_tokens": 5621, "completion_tokens": 4909, "finish": "stop", "cost": 0.1135}
+{"tag": "key-p298", "model": "xiaomi/mimo-v2.6-flash", "secs": 74.2, "prompt_tokens": 4348, "completion_tokens": 3761, "finish": "stop", "cost": 0.155}
+{"tag": "key-p284", "model": "xiaomi/mimo-v2.6-flash", "secs": 72.8, "prompt_tokens": 4348, "completion_tokens": 4068, "finish": "stop", "cost": 0.163}
+{"tag": "key-p299", "model": "xiaomi/mimo-v2.6-flash", "secs": 82.2, "prompt_tokens": 4348, "completion_tokens": 3085, "finish": "stop", "cost": 0.1373}
+{"tag": "key-p297", "model": "xiaomi/mimo-v2.6-flash", "secs": 85.3, "prompt_tokens": 4348, "completion_tokens": 3444, "finish": "stop", "cost": 0.1467}
+{"tag": "key-p301", "model": "xiaomi/mimo-v2.6-flash", "secs": 93.6, "prompt_tokens": 4348, "completion_tokens": 4111, "finish": "stop", "cost": 0.1641}
+{"tag": "key-p300", "model": "xiaomi/mimo-v2.6-flash", "secs": 91.4, "prompt_tokens": 4348, "completion_tokens": 4752, "finish": "stop", "cost": 0.1809}
+{"tag": "key-p302", "model": "xiaomi/mimo-v2.6-flash", "secs": 26.6, "prompt_tokens": 4348, "completion_tokens": 2646, "finish": "stop", "cost": 0.1259}
+{"tag": "key-p296", "model": "xiaomi/mimo-v2.6-flash", "secs": 97.7, "prompt_tokens": 4348, "completion_tokens": 6578, "finish": "stop", "cost": 0.2286}
+{"tag": "key-p296", "model": "z-ai/glm-5.3-flash", "secs": 42.1, "prompt_tokens": 5563, "completion_tokens": 3664, "finish": "stop", "cost": 0.0921}
+{"tag": "key-p305", "model": "xiaomi/mimo-v2.6-flash", "secs": 40.0, "prompt_tokens": 4348, "completion_tokens": 3955, "finish": "stop", "cost": 0.1601}
+{"tag": "key-p287", "model": "xiaomi/mimo-v2.6-flash", "secs": 131.7, "prompt_tokens": 4348, "completion_tokens": 7088, "finish": "stop", "cost": 0.2419}
+{"tag": "key-p309", "model": "xiaomi/mimo-v2.6-flash", "secs": 34.1, "prompt_tokens": 4348, "completion_tokens": 3346, "finish": "stop", "cost": 0.1442}
+{"tag": "key-p291", "model": "z-ai/glm-5.3-flash", "secs": 91.5, "prompt_tokens": 5563, "completion_tokens": 5548, "finish": "stop", "cost": 0.124}
+{"tag": "key-p308", "model": "xiaomi/mimo-v2.6-flash", "secs": 31.5, "prompt_tokens": 4348, "completion_tokens": 3153, "finish": "stop", "cost": 0.1391}
+{"tag": "key-p310", "model": "xiaomi/mimo-v2.6-flash", "secs": 32.6, "prompt_tokens": 4348, "completion_tokens": 3795, "finish": "stop", "cost": 0.1559}
+{"tag": "key-p307", "model": "xiaomi/mimo-v2.6-flash", "secs": 35.7, "prompt_tokens": 4348, "completion_tokens": 3477, "finish": "stop", "cost": 0.1476}
+{"tag": "key-p299", "model": "z-ai/glm-5.3-flash", "secs": 67.4, "prompt_tokens": 5563, "completion_tokens": 5659, "finish": "stop", "cost": 0.1258}
+{"tag": "key-p303", "model": "z-ai/glm-5.3-flash", "secs": 49.8, "prompt_tokens": 5562, "completion_tokens": 6317, "finish": "stop", "cost": 0.137}
+{"tag": "key-p302", "model": "z-ai/glm-5.3-flash", "secs": 59.7, "prompt_tokens": 5563, "completion_tokens": 3834, "finish": "stop", "cost": 0.095}
+{"tag": "key-p304", "model": "xiaomi/mimo-v2.6-flash", "secs": 38.5, "prompt_tokens": 4348, "completion_tokens": 4283, "finish": "stop", "cost": 0.1686}
+{"tag": "key-p306", "model": "xiaomi/mimo-v2.6-flash", "secs": 49.7, "prompt_tokens": 4348, "completion_tokens": 5466, "finish": "stop", "cost": 0.1995}
+{"tag": "key-p303", "model": "xiaomi/mimo-v2.6-flash", "secs": 50.1, "prompt_tokens": 4348, "completion_tokens": 4674, "finish": "stop", "cost": 0.1788}
+{"tag": "key-p311", "model": "xiaomi/mimo-v2.6-flash", "secs": 52.0, "prompt_tokens": 4348, "completion_tokens": 3835, "finish": "stop", "cost": 0.1569}
+{"tag": "key-p297", "model": "z-ai/glm-5.3-flash", "secs": 56.8, "prompt_tokens": 5563, "completion_tokens": 3594, "finish": "stop", "cost": 0.0909}
+{"tag": "key-p300", "model": "z-ai/glm-5.3-flash", "secs": 102.0, "prompt_tokens": 5562, "completion_tokens": 6189, "finish": "stop", "cost": 0.1348}
+{"tag": "key-p305", "model": "z-ai/glm-5.3-flash", "secs": 55.2, "prompt_tokens": 5562, "completion_tokens": 6807, "finish": "stop", "cost": 0.1452}
+{"tag": "key-p301", "model": "z-ai/glm-5.3-flash", "secs": 119.7, "prompt_tokens": 5562, "completion_tokens": 7238, "finish": "stop", "cost": 0.1525}
+{"tag": "key-p304", "model": "z-ai/glm-5.3-flash", "secs": 127.3, "prompt_tokens": 5562, "completion_tokens": 7032, "finish": "stop", "cost": 0.149}
+{"tag": "key-p308", "model": "z-ai/glm-5.3-flash", "secs": 66.1, "prompt_tokens": 5562, "completion_tokens": 8383, "finish": "stop", "cost": 0.1719}
+{"tag": "unit-081", "model": "xiaomi/mimo-v2.6-pro", "error": "Request timed out.", "secs": 21.6, "cost": 0}
+{"tag": "unit-014", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "secs": 21.7, "cost": 0}
+{"tag": "unit-014", "model": "xiaomi/mimo-v2.6-pro", "error": "Request timed out.", "secs": 21.6, "cost": 0}
+{"tag": "unit-045", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "secs": 21.7, "cost": 0}
+{"tag": "unit-045", "model": "xiaomi/mimo-v2.6-pro", "error": "Request timed out.", "secs": 21.6, "cost": 0}
+{"tag": "unit-081", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "secs": 21.7, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-pro", "error": "Request timed out.", "secs": 21.6, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "secs": 21.7, "cost": 0}
+{"tag": "unit-002", "model": "z-ai/glm-5.3-flash", "error": "Request timed out.", "secs": 21.5, "cost": 0}
+{"tag": "unit-081", "model": "z-ai/glm-5.3-flash", "error": "Request timed out.", "secs": 21.5, "cost": 0}
+{"tag": "unit-014", "model": "z-ai/glm-5.3-flash", "error": "Request timed out.", "secs": 21.5, "cost": 0}
+{"tag": "unit-045", "model": "z-ai/glm-5.3-flash", "error": "Request timed out.", "secs": 21.5, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-flash", "secs": 63.8, "prompt_tokens": 6643, "completion_tokens": 3899, "finish": "stop", "cost": 0.1886}
+{"tag": "unit-081", "model": "xiaomi/mimo-v2.6-pro", "secs": 67.3, "prompt_tokens": 5644, "completion_tokens": 3919, "finish": "stop", "cost": 0.6404}
+{"tag": "unit-045", "model": "xiaomi/mimo-v2.6-pro", "secs": 69.3, "prompt_tokens": 5752, "completion_tokens": 3760, "finish": "stop", "cost": 0.6303}
+{"tag": "unit-081", "model": "xiaomi/mimo-v2.6-flash", "secs": 74.6, "prompt_tokens": 5644, "completion_tokens": 5223, "finish": "stop", "cost": 0.2101}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-pro", "secs": 95.0, "prompt_tokens": 6643, "completion_tokens": 5292, "finish": "stop", "cost": 0.8186}
+{"tag": "unit-014", "model": "xiaomi/mimo-v2.6-pro", "secs": 121.9, "prompt_tokens": 5722, "completion_tokens": 6767, "finish": "stop", "cost": 0.916}
+{"tag": "unit-045", "model": "xiaomi/mimo-v2.6-flash", "secs": 124.8, "prompt_tokens": 5752, "completion_tokens": 6559, "finish": "stop", "cost": 0.2464}
+{"tag": "unit-014", "model": "xiaomi/mimo-v2.6-flash", "secs": 162.8, "prompt_tokens": 5722, "completion_tokens": 6166, "finish": "stop", "cost": 0.2357}
+{"tag": "unit-081", "model": "z-ai/glm-5.3-flash", "secs": 167.4, "prompt_tokens": 6846, "completion_tokens": 9770, "finish": "stop", "cost": 0.2023}
+{"tag": "unit-045", "model": "z-ai/glm-5.3-flash", "error": "Connection error.", "secs": 187.3, "cost": 0}
+{"tag": "unit-002", "model": "z-ai/glm-5.3-flash", "error": "Connection error.", "secs": 188.3, "cost": 0}
+{"tag": "unit-014", "model": "z-ai/glm-5.3-flash", "error": "Connection error.", "secs": 188.3, "cost": 0}
+{"tag": "unit-002", "model": "openrouter:stealth/space-bunny-alpha", "secs": 169.7, "prompt_tokens": 6655, "completion_tokens": 16000, "finish": "length", "cost": 0.0}
+{"tag": "unit-045", "model": "openrouter:stealth/space-bunny-alpha", "secs": 195.2, "prompt_tokens": 5612, "completion_tokens": 16000, "finish": "length", "cost": 0.0}
+{"tag": "unit-014", "model": "openrouter:stealth/space-bunny-alpha", "secs": 215.0, "prompt_tokens": 5724, "completion_tokens": 16000, "finish": "length", "cost": 0.0}
+{"tag": "key-p282", "model": "openrouter:stealth/space-bunny-alpha", "error": "Connection error.", "secs": 250.2, "cost": 0}
+{"tag": "unit-081", "model": "openrouter:stealth/space-bunny-alpha", "error": "Connection error.", "secs": 250.3, "cost": 0}
+{"tag": "unit-045", "model": "openrouter:stealth/space-bunny-alpha", "error": "Connection error.", "secs": 56.4, "cost": 0}
+{"tag": "unit-081", "model": "openrouter:stealth/space-bunny-alpha", "secs": 103.7, "prompt_tokens": 5650, "completion_tokens": 8959, "finish": "stop", "cost": 0.0}
+{"tag": "key-p282", "model": "openrouter:stealth/space-bunny-alpha", "secs": 138.6, "prompt_tokens": 4371, "completion_tokens": 13391, "finish": "stop", "cost": 0.0}
+{"tag": "unit-014", "model": "openrouter:stealth/space-bunny-alpha", "secs": 220.1, "prompt_tokens": 5724, "completion_tokens": 16000, "finish": "length", "cost": 0.0}
+{"tag": "test", "model": "xiaomi/mimo-v2.6-flash", "secs": 4.8, "prompt_tokens": 16, "completion_tokens": 15, "finish": "stop", "cost": 0.0007}
+{"tag": "test", "model": "openrouter:stealth/space-bunny-alpha", "secs": 1.0, "prompt_tokens": 155, "completion_tokens": 5, "finish": "stop", "cost": 0.0}
+{"tag": "key-p282", "model": "openrouter:stealth/space-bunny-alpha", "error": "Provider returned an empty response", "secs": 3.6, "cost": 0}
+{"tag": "key-p284", "model": "openrouter:stealth/space-bunny-alpha", "error": "Provider returned an empty response", "secs": 4.7, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.0, "cost": 0}
+{"tag": "unit-006", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.0, "cost": 0}
+{"tag": "unit-003", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.0, "cost": 0}
+{"tag": "unit-005", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.1, "cost": 0}
+{"tag": "unit-001", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.0, "cost": 0}
+{"tag": "unit-004", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.0, "cost": 0}
+{"tag": "key-p283", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 34.8, "cost": 0}
+{"tag": "key-p282", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 29.4, "cost": 0}
+{"tag": "unit-006", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.2, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 34.8, "cost": 0}
+{"tag": "unit-001", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 34.8, "cost": 0}
+{"tag": "unit-003", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 34.8, "cost": 0}
+{"tag": "toc", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-006", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 65.6, "cost": 0}
+{"tag": "key-p283", "model": "openrouter:stealth/space-bunny-alpha", "secs": 90.1, "prompt_tokens": 4376, "completion_tokens": 11095, "finish": "stop", "cost": 0.0}
+{"tag": "toc", "model": "xiaomi/mimo-v2.6-flash", "secs": 67.2, "prompt_tokens": 15068, "completion_tokens": 6032, "finish": "stop", "cost": 0.4168}
+{"tag": "unit-006", "model": "xiaomi/mimo-v2.6-flash", "secs": 51.8, "prompt_tokens": 5701, "completion_tokens": 3280, "finish": "stop", "cost": 0.1026}
+{"tag": "unit-007", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.6, "cost": 0}
+{"tag": "key-p284", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 184.0, "cost": 0}
+{"tag": "unit-005", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 195.6, "cost": 0}
+{"tag": "unit-004", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 195.6, "cost": 0}
+{"tag": "key-p285", "model": "openrouter:stealth/space-bunny-alpha", "secs": 255.6, "prompt_tokens": 4376, "completion_tokens": 13417, "finish": "stop", "cost": 0.0}
+{"tag": "unit-001", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 204.8, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 204.8, "cost": 0}
+{"tag": "unit-003", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 204.8, "cost": 0}
+{"tag": "unit-005", "model": "xiaomi/mimo-v2.6-flash", "secs": 51.5, "prompt_tokens": 5665, "completion_tokens": 3422, "finish": "stop", "cost": 0.1074}
+{"tag": "unit-007", "model": "xiaomi/mimo-v2.6-flash", "secs": 80.4, "prompt_tokens": 6701, "completion_tokens": 5611, "finish": "stop", "cost": 0.2753}
+{"tag": "key-p313", "model": "xiaomi/mimo-v2.6-flash", "secs": 89.4, "prompt_tokens": 4353, "completion_tokens": 5195, "finish": "stop", "cost": 0.2265}
+{"tag": "key-p312", "model": "xiaomi/mimo-v2.6-flash", "secs": 127.2, "prompt_tokens": 4353, "completion_tokens": 7604, "finish": "stop", "cost": 0.3005}
+{"tag": "unit-004", "model": "xiaomi/mimo-v2.6-flash", "secs": 119.7, "prompt_tokens": 5784, "completion_tokens": 6287, "finish": "stop", "cost": 0.1953}
+{"tag": "unit-011", "model": "xiaomi/mimo-v2.6-flash", "secs": 73.2, "prompt_tokens": 5687, "completion_tokens": 3518, "finish": "stop", "cost": 0.1955}
+{"tag": "unit-013", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.3, "cost": 0}
+{"tag": "unit-014", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 27.6, "cost": 0}
+{"tag": "key-p288", "model": "openrouter:stealth/space-bunny-alpha", "secs": 210.5, "prompt_tokens": 4376, "completion_tokens": 12070, "finish": "stop", "cost": 0.0}
+{"tag": "add-p257", "model": "xiaomi/mimo-v2.6-flash", "secs": 27.8, "prompt_tokens": 12387, "completion_tokens": 895, "finish": "stop", "cost": 0.2178}
+{"tag": "key-p287", "model": "openrouter:stealth/space-bunny-alpha", "secs": 306.2, "prompt_tokens": 4376, "completion_tokens": 27244, "finish": "stop", "cost": 0.0}
+{"tag": "add-p258", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "key-p286", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 400.5, "cost": 0}
+{"tag": "key-p289", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 198.1, "cost": 0}
+{"tag": "add-p258", "model": "xiaomi/mimo-v2.6-flash", "secs": 80.9, "prompt_tokens": 12387, "completion_tokens": 4685, "finish": "stop", "cost": 0.3342}
+{"tag": "key-p290", "model": "openrouter:stealth/space-bunny-alpha", "secs": 115.3, "prompt_tokens": 4376, "completion_tokens": 6043, "finish": "stop", "cost": 0.0}
+{"tag": "unit-012", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 261.4, "cost": 0}
+{"tag": "unit-008", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 264.0, "cost": 0}
+{"tag": "unit-009", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 263.6, "cost": 0}
+{"tag": "unit-010", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 261.6, "cost": 0}
+{"tag": "add-p259", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p292", "model": "openrouter:stealth/space-bunny-alpha", "error": "Request timed out.", "early": false, "secs": 40.5, "cost": 0}
+{"tag": "unit-012", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-009", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p289", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 125.5, "cost": 0}
+{"tag": "key-p286", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 125.9, "cost": 0}
+{"tag": "unit-008", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 34.6, "cost": 0}
+{"tag": "unit-012", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-009", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "add-p252", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 223.9, "cost": 0}
+{"tag": "add-p256", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 223.9, "cost": 0}
+{"tag": "add-p254", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 223.9, "cost": 0}
+{"tag": "unit-014", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 222.5, "cost": 0}
+{"tag": "add-p253", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 223.9, "cost": 0}
+{"tag": "unit-013", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 244.5, "cost": 0}
+{"tag": "unit-015", "model": "xiaomi/mimo-v2.6-flash", "secs": 39.1, "prompt_tokens": 5625, "completion_tokens": 3810, "finish": "stop", "cost": 0.2035}
+{"tag": "add-p252", "model": "xiaomi/mimo-v2.6-flash", "secs": 17.2, "prompt_tokens": 12387, "completion_tokens": 1223, "finish": "stop", "cost": 0.0419}
+{"tag": "key-p293", "model": "openrouter:stealth/space-bunny-alpha", "secs": 46.4, "prompt_tokens": 4304, "completion_tokens": 6610, "finish": "stop", "cost": 0.0}
+{"tag": "add-p256", "model": "xiaomi/mimo-v2.6-flash", "secs": 30.0, "prompt_tokens": 12387, "completion_tokens": 3255, "finish": "stop", "cost": 0.1043}
+{"tag": "unit-012", "model": "xiaomi/mimo-v2.6-flash", "secs": 59.9, "prompt_tokens": 5753, "completion_tokens": 6669, "finish": "stop", "cost": 0.2075}
+{"tag": "add-p255", "model": "xiaomi/mimo-v2.6-flash", "secs": 46.6, "prompt_tokens": 12387, "completion_tokens": 3193, "finish": "stop", "cost": 0.1024}
+{"tag": "unit-013", "model": "xiaomi/mimo-v2.6-flash", "secs": 49.3, "prompt_tokens": 5734, "completion_tokens": 5387, "finish": "stop", "cost": 0.1678}
+{"tag": "unit-016", "model": "xiaomi/mimo-v2.6-flash", "secs": 55.5, "prompt_tokens": 5635, "completion_tokens": 3753, "finish": "stop", "cost": 0.2019}
+{"tag": "key-p292", "model": "openrouter:stealth/space-bunny-alpha", "secs": 113.6, "prompt_tokens": 4376, "completion_tokens": 14319, "finish": "stop", "cost": 0.0}
+{"tag": "add-p262", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.6, "cost": 0}
+{"tag": "unit-019", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-020", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 26.1, "cost": 0}
+{"tag": "unit-020", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p295", "model": "openrouter:stealth/space-bunny-alpha", "secs": 96.2, "prompt_tokens": 4376, "completion_tokens": 10547, "finish": "stop", "cost": 0.0}
+{"tag": "key-p291", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 309.5, "cost": 0}
+{"tag": "unit-010", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 195.4, "cost": 0}
+{"tag": "add-p259", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 202.4, "cost": 0}
+{"tag": "unit-019", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 53.6, "cost": 0}
+{"tag": "unit-020", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p294", "model": "openrouter:stealth/space-bunny-alpha", "secs": 169.2, "prompt_tokens": 4376, "completion_tokens": 18842, "finish": "stop", "cost": 0.0}
+{"tag": "key-p297", "model": "openrouter:stealth/space-bunny-alpha", "secs": 72.7, "prompt_tokens": 4376, "completion_tokens": 10281, "finish": "stop", "cost": 0.0}
+{"tag": "key-p298", "model": "openrouter:stealth/space-bunny-alpha", "secs": 59.2, "prompt_tokens": 4376, "completion_tokens": 7399, "finish": "stop", "cost": 0.0}
+{"tag": "unit-021", "model": "xiaomi/mimo-v2.6-flash", "secs": 107.0, "prompt_tokens": 5663, "completion_tokens": 8026, "finish": "stop", "cost": 0.3336}
+{"tag": "add-p253", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 242.7, "cost": 0}
+{"tag": "unit-017", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 230.9, "cost": 0}
+{"tag": "unit-018", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 205.7, "cost": 0}
+{"tag": "add-p254", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 242.8, "cost": 0}
+{"tag": "add-p261", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 212.9, "cost": 0}
+{"tag": "unit-009", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 265.8, "cost": 0}
+{"tag": "add-p260", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 225.9, "cost": 0}
+{"tag": "unit-020", "model": "xiaomi/mimo-v2.6-flash", "secs": 130.3, "prompt_tokens": 6774, "completion_tokens": 7886, "finish": "stop", "cost": 0.2452}
+{"tag": "key-p296", "model": "openrouter:stealth/space-bunny-alpha", "secs": 205.0, "prompt_tokens": 4302, "completion_tokens": 11378, "finish": "stop", "cost": 0.0}
+{"tag": "unit-019", "model": "xiaomi/mimo-v2.6-flash", "secs": 145.9, "prompt_tokens": 5735, "completion_tokens": 7430, "finish": "stop", "cost": 0.2306}
+{"tag": "key-p291", "model": "openrouter:stealth/space-bunny-alpha", "secs": 153.0, "prompt_tokens": 4376, "completion_tokens": 16183, "finish": "stop", "cost": 0.0}
+{"tag": "add-p262", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 217.0, "cost": 0}
+{"tag": "add-p263", "model": "xiaomi/mimo-v2.6-flash", "secs": 34.8, "prompt_tokens": 12387, "completion_tokens": 2080, "finish": "stop", "cost": 0.2542}
+{"tag": "unit-024", "model": "xiaomi/mimo-v2.6-flash", "secs": 43.3, "prompt_tokens": 5734, "completion_tokens": 5118, "finish": "stop", "cost": 0.2453}
+{"tag": "unit-018", "model": "xiaomi/mimo-v2.6-flash", "secs": 65.6, "prompt_tokens": 6731, "completion_tokens": 4104, "finish": "stop", "cost": 0.1283}
+{"tag": "add-p265", "model": "xiaomi/mimo-v2.6-flash", "secs": 33.3, "prompt_tokens": 12387, "completion_tokens": 3187, "finish": "stop", "cost": 0.2882}
+{"tag": "unit-022", "model": "xiaomi/mimo-v2.6-flash", "secs": 82.6, "prompt_tokens": 5736, "completion_tokens": 4907, "finish": "stop", "cost": 0.2389}
+{"tag": "add-p260", "model": "xiaomi/mimo-v2.6-flash", "secs": 72.3, "prompt_tokens": 12387, "completion_tokens": 3709, "finish": "stop", "cost": 0.1183}
+{"tag": "add-p262", "model": "xiaomi/mimo-v2.6-flash", "secs": 35.9, "prompt_tokens": 12387, "completion_tokens": 2444, "finish": "stop", "cost": 0.0794}
+{"tag": "add-p261", "model": "xiaomi/mimo-v2.6-flash", "secs": 80.9, "prompt_tokens": 12387, "completion_tokens": 3799, "finish": "stop", "cost": 0.1211}
+{"tag": "unit-027", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p299", "model": "openrouter:stealth/space-bunny-alpha", "secs": 152.1, "prompt_tokens": 4376, "completion_tokens": 16036, "finish": "stop", "cost": 0.0}
+{"tag": "unit-028", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.6, "cost": 0}
+{"tag": "add-p267", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 27.7, "cost": 0}
+{"tag": "add-p266", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 32.7, "cost": 0}
+{"tag": "add-p268", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "add-p269", "model": "xiaomi/mimo-v2.6-flash", "secs": 24.2, "prompt_tokens": 12437, "completion_tokens": 787, "finish": "stop", "cost": 0.2152}
+{"tag": "unit-028", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p301", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 102.3, "cost": 0}
+{"tag": "add-p268", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 24.7, "cost": 0}
+{"tag": "add-p270", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 23.6, "cost": 0}
+{"tag": "add-p268", "model": "xiaomi/mimo-v2.6-flash", "secs": 24.2, "prompt_tokens": 12387, "completion_tokens": 1968, "finish": "stop", "cost": 0.0648}
+{"tag": "unit-001", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.4, "cost": 0}
+{"tag": "unit-003", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.4, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.4, "cost": 0}
+{"tag": "unit-002", "model": "xiaomi/mimo-v2.6-flash", "secs": 58.3, "prompt_tokens": 6648, "completion_tokens": 4298, "finish": "stop", "cost": 0.1349}
+{"tag": "unit-003", "model": "xiaomi/mimo-v2.6-flash", "secs": 61.7, "prompt_tokens": 5703, "completion_tokens": 4301, "finish": "stop", "cost": 0.134}
+{"tag": "key-p282", "model": "openrouter:stealth/space-bunny-alpha", "secs": 112.1, "prompt_tokens": 4376, "completion_tokens": 14464, "finish": "stop", "cost": 0.0}
+{"tag": "unit-001", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 106.1, "cost": 0}
+{"tag": "unit-009", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 44.3, "cost": 0}
+{"tag": "unit-001", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 146.2, "cost": 0}
+{"tag": "unit-008", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 47.7, "cost": 0}
+{"tag": "unit-004", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 146.2, "cost": 0}
+{"tag": "unit-002", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 146.2, "cost": 0}
+{"tag": "key-p286", "model": "openrouter:stealth/space-bunny-alpha", "error": "Error code: 403 - {'success': False, 'error': 'Access denied by security policy.'}", "secs": 18.1, "cost": 0}
+{"tag": "unit-008", "model": "xiaomi/mimo-v2.6-flash", "secs": 76.9, "prompt_tokens": 5804, "completion_tokens": 4066, "finish": "stop", "cost": 0.1274}
+{"tag": "unit-009", "model": "xiaomi/mimo-v2.6-flash", "secs": 91.7, "prompt_tokens": 5687, "completion_tokens": 5142, "finish": "stop", "cost": 0.1606}
+{"tag": "unit-001", "model": "openrouter:stealth/space-bunny-alpha", "secs": 128.0, "prompt_tokens": 5861, "completion_tokens": 13933, "finish": "stop", "cost": 0.0}
+{"tag": "unit-010", "model": "xiaomi/mimo-v2.6-flash", "secs": 54.4, "prompt_tokens": 5820, "completion_tokens": 4749, "finish": "stop", "cost": 0.1486}
+{"tag": "unit-002", "model": "openrouter:stealth/space-bunny-alpha", "secs": 134.3, "prompt_tokens": 6660, "completion_tokens": 13187, "finish": "stop", "cost": 0.0}
+{"tag": "unit-014", "model": "xiaomi/mimo-v2.6-flash", "secs": 63.6, "prompt_tokens": 5727, "completion_tokens": 5178, "finish": "stop", "cost": 0.1613}
+{"tag": "unit-001", "model": "xiaomi/mimo-v2.6-flash", "secs": 161.4, "prompt_tokens": 5854, "completion_tokens": 9819, "finish": "stop", "cost": 0.3039}
+{"tag": "unit-006", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 28.1, "cost": 0}
+{"tag": "unit-025", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-017", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 64.9, "cost": 0}
+{"tag": "key-p286", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 203.1, "cost": 0}
+{"tag": "key-p284", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 204.0, "cost": 0}
+{"tag": "unit-023", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 81.6, "cost": 0}
+{"tag": "unit-025", "model": "xiaomi/mimo-v2.6-flash", "secs": 54.6, "prompt_tokens": 5805, "completion_tokens": 4445, "finish": "stop", "cost": 0.139}
+{"tag": "key-p300", "model": "openrouter:stealth/space-bunny-alpha", "secs": 70.5, "prompt_tokens": 4376, "completion_tokens": 10182, "finish": "stop", "cost": 0.0}
+{"tag": "unit-006", "model": "openrouter:stealth/space-bunny-alpha", "secs": 113.2, "prompt_tokens": 5709, "completion_tokens": 13403, "finish": "stop", "cost": 0.0}
+{"tag": "unit-026", "model": "xiaomi/mimo-v2.6-flash", "secs": 65.1, "prompt_tokens": 5668, "completion_tokens": 4122, "finish": "stop", "cost": 0.1289}
+{"tag": "unit-023", "model": "xiaomi/mimo-v2.6-flash", "secs": 65.8, "prompt_tokens": 6868, "completion_tokens": 4328, "finish": "stop", "cost": 0.1354}
+{"tag": "unit-004", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 323.5, "cost": 0}
+{"tag": "unit-003", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 323.6, "cost": 0}
+{"tag": "unit-027", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-017", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-028", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 34.7, "cost": 0}
+{"tag": "unit-003", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 55.6, "cost": 0}
+{"tag": "add-p254", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 96.6, "cost": 0}
+{"tag": "add-p259", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 96.9, "cost": 0}
+{"tag": "unit-004", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 97.0, "cost": 0}
+{"tag": "add-p253", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 97.2, "cost": 0}
+{"tag": "unit-017", "model": "xiaomi/mimo-v2.6-flash", "secs": 75.8, "prompt_tokens": 5649, "completion_tokens": 4752, "finish": "stop", "cost": 0.148}
+{"tag": "unit-029", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-004", "model": "openrouter:stealth/space-bunny-alpha", "secs": 70.1, "prompt_tokens": 5794, "completion_tokens": 8789, "finish": "stop", "cost": 0.0}
+{"tag": "key-p284", "model": "openrouter:stealth/space-bunny-alpha", "secs": 158.8, "prompt_tokens": 4376, "completion_tokens": 18413, "finish": "stop", "cost": 0.0}
+{"tag": "key-p286", "model": "openrouter:stealth/space-bunny-alpha", "secs": 163.6, "prompt_tokens": 4376, "completion_tokens": 18155, "finish": "stop", "cost": 0.0}
+{"tag": "repair-019", "model": "xiaomi/mimo-v2.6-flash", "secs": 12.0, "prompt_tokens": 6231, "completion_tokens": 342, "finish": "stop", "cost": 0.0205}
+{"tag": "add-p259", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 89.3, "cost": 0}
+{"tag": "add-p254", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 89.5, "cost": 0}
+{"tag": "add-p253", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 89.0, "cost": 0}
+{"tag": "repair-015", "model": "xiaomi/mimo-v2.6-flash", "secs": 15.9, "prompt_tokens": 6433, "completion_tokens": 734, "finish": "stop", "cost": 0.0376}
+{"tag": "repair-021", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "repair-025", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "add-p264", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "add-p267", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "add-p266", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "repair-025", "model": "xiaomi/mimo-v2.6-flash", "secs": 11.0, "prompt_tokens": 6404, "completion_tokens": 585, "finish": "stop", "cost": 0.0296}
+{"tag": "unit-029", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 89.7, "cost": 0}
+{"tag": "repair-007", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 52.6, "cost": 0}
+{"tag": "key-p289", "model": "openrouter:stealth/space-bunny-alpha", "secs": 88.7, "prompt_tokens": 4376, "completion_tokens": 12202, "finish": "stop", "cost": 0.0}
+{"tag": "add-p264", "model": "xiaomi/mimo-v2.6-flash", "secs": 44.6, "prompt_tokens": 12387, "completion_tokens": 3599, "finish": "stop", "cost": 0.1149}
+{"tag": "unit-003", "model": "openrouter:stealth/space-bunny-alpha", "secs": 220.4, "prompt_tokens": 5718, "completion_tokens": 23879, "finish": "stop", "cost": 0.0}
+{"tag": "unit-005", "model": "openrouter:stealth/space-bunny-alpha", "secs": 122.7, "prompt_tokens": 5681, "completion_tokens": 9878, "finish": "stop", "cost": 0.0}
+{"tag": "add-p270", "model": "xiaomi/mimo-v2.6-flash", "secs": 29.3, "prompt_tokens": 8721, "completion_tokens": 2564, "finish": "stop", "cost": 0.0817}
+{"tag": "add-p267", "model": "xiaomi/mimo-v2.6-flash", "secs": 82.7, "prompt_tokens": 12387, "completion_tokens": 4751, "finish": "stop", "cost": 0.1503}
+{"tag": "key-p302", "model": "openrouter:stealth/space-bunny-alpha", "secs": 57.4, "prompt_tokens": 4376, "completion_tokens": 8518, "finish": "stop", "cost": 0.0}
+{"tag": "key-p301", "model": "openrouter:stealth/space-bunny-alpha", "secs": 155.5, "prompt_tokens": 4376, "completion_tokens": 21566, "finish": "stop", "cost": 0.0}
+{"tag": "unit-029", "model": "xiaomi/mimo-v2.6-flash", "secs": 99.1, "prompt_tokens": 5676, "completion_tokens": 4992, "finish": "stop", "cost": 0.1558}
+{"tag": "unit-007", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 74.0, "cost": 0}
+{"tag": "unit-008", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 101.4, "cost": 0}
+{"tag": "unit-030", "model": "xiaomi/mimo-v2.6-flash", "secs": 74.9, "prompt_tokens": 5681, "completion_tokens": 4402, "finish": "stop", "cost": 0.2225}
+{"tag": "unit-028", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 370.7, "cost": 0}
+{"tag": "unit-027", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 391.9, "cost": 0}
+{"tag": "unit-031", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "repair-007", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 212.7, "cost": 0}
+{"tag": "unit-031", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-027", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-032", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p303", "model": "openrouter:stealth/space-bunny-alpha", "secs": 148.3, "prompt_tokens": 4376, "completion_tokens": 17452, "finish": "stop", "cost": 0.0}
+{"tag": "add-p266", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 264.0, "cost": 0}
+{"tag": "unit-032", "model": "xiaomi/mimo-v2.6-flash", "secs": 69.8, "prompt_tokens": 5691, "completion_tokens": 4328, "finish": "stop", "cost": 0.2204}
+{"tag": "unit-031", "model": "xiaomi/mimo-v2.6-flash", "secs": 89.6, "prompt_tokens": 6909, "completion_tokens": 3864, "finish": "stop", "cost": 0.2249}
+{"tag": "unit-008", "model": "openrouter:stealth/space-bunny-alpha", "secs": 149.7, "prompt_tokens": 5816, "completion_tokens": 17660, "finish": "stop", "cost": 0.0}
+{"tag": "unit-027", "model": "xiaomi/mimo-v2.6-flash", "secs": 90.3, "prompt_tokens": 5653, "completion_tokens": 4978, "finish": "stop", "cost": 0.155}
+{"tag": "add-p266", "model": "xiaomi/mimo-v2.6-flash", "secs": 59.8, "prompt_tokens": 12387, "completion_tokens": 5719, "finish": "stop", "cost": 0.18}
+{"tag": "key-p305", "model": "openrouter:stealth/space-bunny-alpha", "secs": 113.2, "prompt_tokens": 4376, "completion_tokens": 14862, "finish": "stop", "cost": 0.0}
+{"tag": "unit-035", "model": "xiaomi/mimo-v2.6-flash", "secs": 29.4, "prompt_tokens": 5646, "completion_tokens": 2841, "finish": "stop", "cost": 0.174}
+{"tag": "unit-007", "model": "openrouter:stealth/space-bunny-alpha", "secs": 256.6, "prompt_tokens": 6710, "completion_tokens": 24940, "finish": "stop", "cost": 0.0}
+{"tag": "key-p304", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 303.8, "cost": 0}
+{"tag": "unit-036", "model": "xiaomi/mimo-v2.6-flash", "secs": 66.0, "prompt_tokens": 5609, "completion_tokens": 3421, "finish": "stop", "cost": 0.1913}
+{"tag": "unit-033", "model": "xiaomi/mimo-v2.6-flash", "secs": 126.9, "prompt_tokens": 6673, "completion_tokens": 5690, "finish": "stop", "cost": 0.2773}
+{"tag": "unit-034", "model": "xiaomi/mimo-v2.6-flash", "secs": 124.9, "prompt_tokens": 5719, "completion_tokens": 5841, "finish": "content_filter", "cost": 0.2673}
+{"tag": "unit-039", "model": "xiaomi/mimo-v2.6-flash", "secs": 45.1, "prompt_tokens": 5660, "completion_tokens": 3375, "finish": "stop", "cost": 0.1906}
+{"tag": "unit-009", "model": "openrouter:stealth/space-bunny-alpha", "secs": 169.9, "prompt_tokens": 5697, "completion_tokens": 19254, "finish": "stop", "cost": 0.0}
+{"tag": "repair-021", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 517.6, "cost": 0}
+{"tag": "key-p304", "model": "openrouter:stealth/space-bunny-alpha", "secs": 84.7, "prompt_tokens": 4376, "completion_tokens": 13829, "finish": "stop", "cost": 0.0}
+{"tag": "unit-038", "model": "xiaomi/mimo-v2.6-flash", "secs": 76.6, "prompt_tokens": 5751, "completion_tokens": 5306, "finish": "stop", "cost": 0.2514}
+{"tag": "unit-041", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "repair-021", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p306", "model": "openrouter:stealth/space-bunny-alpha", "secs": 186.6, "prompt_tokens": 4376, "completion_tokens": 19736, "finish": "stop", "cost": 0.0}
+{"tag": "unit-010", "model": "openrouter:stealth/space-bunny-alpha", "secs": 188.6, "prompt_tokens": 5824, "completion_tokens": 22180, "finish": "stop", "cost": 0.0}
+{"tag": "key-p307", "model": "openrouter:stealth/space-bunny-alpha", "secs": 96.5, "prompt_tokens": 4376, "completion_tokens": 13211, "finish": "stop", "cost": 0.0}
+{"tag": "unit-041", "model": "xiaomi/mimo-v2.6-flash", "secs": 85.6, "prompt_tokens": 5833, "completion_tokens": 5933, "finish": "stop", "cost": 0.2719}
+{"tag": "unit-042", "model": "xiaomi/mimo-v2.6-flash", "secs": 61.8, "prompt_tokens": 5692, "completion_tokens": 4018, "finish": "stop", "cost": 0.2109}
+{"tag": "key-p308", "model": "openrouter:stealth/space-bunny-alpha", "secs": 142.7, "prompt_tokens": 4376, "completion_tokens": 14204, "finish": "stop", "cost": 0.0}
+{"tag": "key-p309", "model": "openrouter:stealth/space-bunny-alpha", "secs": 136.0, "prompt_tokens": 4376, "completion_tokens": 17212, "finish": "stop", "cost": 0.0}
+{"tag": "unit-011", "model": "openrouter:stealth/space-bunny-alpha", "secs": 273.2, "prompt_tokens": 5690, "completion_tokens": 16154, "finish": "stop", "cost": 0.0}
+{"tag": "unit-043", "model": "xiaomi/mimo-v2.6-flash", "secs": 115.6, "prompt_tokens": 6864, "completion_tokens": 6839, "finish": "stop", "cost": 0.3156}
+{"tag": "repair-021", "model": "xiaomi/mimo-v2.6-flash", "secs": 265.3, "prompt_tokens": 6699, "completion_tokens": 16000, "finish": "length", "cost": 0.4943}
+{"tag": "unit-037", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 400.2, "cost": 0}
+{"tag": "unit-040", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 331.6, "cost": 0}
+{"tag": "unit-044", "model": "xiaomi/mimo-v2.6-flash", "secs": 49.6, "prompt_tokens": 6748, "completion_tokens": 4048, "finish": "stop", "cost": 0.228}
+{"tag": "unit-012", "model": "openrouter:stealth/space-bunny-alpha", "secs": 272.9, "prompt_tokens": 5749, "completion_tokens": 30233, "finish": "stop", "cost": 0.0}
+{"tag": "unit-037", "model": "xiaomi/mimo-v2.6-flash", "secs": 71.1, "prompt_tokens": 6686, "completion_tokens": 4254, "finish": "stop", "cost": 0.1332}
+{"tag": "unit-045", "model": "xiaomi/mimo-v2.6-flash", "secs": 70.8, "prompt_tokens": 5757, "completion_tokens": 4588, "finish": "stop", "cost": 0.2294}
+{"tag": "unit-040", "model": "xiaomi/mimo-v2.6-flash", "secs": 82.5, "prompt_tokens": 7035, "completion_tokens": 3594, "finish": "stop", "cost": 0.1135}
+{"tag": "unit-046", "model": "xiaomi/mimo-v2.6-flash", "secs": 43.9, "prompt_tokens": 5685, "completion_tokens": 3098, "finish": "stop", "cost": 0.1825}
+{"tag": "unit-048", "model": "xiaomi/mimo-v2.6-flash", "secs": 51.2, "prompt_tokens": 5644, "completion_tokens": 3923, "finish": "stop", "cost": 0.2072}
+{"tag": "key-p310", "model": "openrouter:stealth/space-bunny-alpha", "secs": 292.1, "prompt_tokens": 4376, "completion_tokens": 14881, "finish": "stop", "cost": 0.0}
+{"tag": "unit-050", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "key-p311", "model": "openrouter:stealth/space-bunny-alpha", "secs": 274.2, "prompt_tokens": 4376, "completion_tokens": 24555, "finish": "stop", "cost": 0.0}
+{"tag": "unit-013", "model": "openrouter:stealth/space-bunny-alpha", "secs": 290.7, "prompt_tokens": 5737, "completion_tokens": 19431, "finish": "stop", "cost": 0.0}
+{"tag": "unit-047", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 368.3, "cost": 0}
+{"tag": "unit-049", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 334.3, "cost": 0}
+{"tag": "unit-014", "model": "openrouter:stealth/space-bunny-alpha", "secs": 292.5, "prompt_tokens": 5729, "completion_tokens": 20068, "finish": "stop", "cost": 0.0}
+{"tag": "unit-049", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-047", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.6, "cost": 0}
+{"tag": "unit-050", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 351.9, "cost": 0}
+{"tag": "unit-049", "model": "xiaomi/mimo-v2.6-flash", "secs": 50.3, "prompt_tokens": 6758, "completion_tokens": 4089, "finish": "stop", "cost": 0.1283}
+{"tag": "unit-050", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-014", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 527.5, "cost": 0}
+{"tag": "unit-051", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-051", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-015", "model": "openrouter:stealth/space-bunny-alpha", "secs": 423.7, "prompt_tokens": 5633, "completion_tokens": 20586, "finish": "stop", "cost": 0.0}
+{"tag": "unit-015", "model": "openrouter:stealth/space-bunny-alpha", "secs": 202.9, "prompt_tokens": 5633, "completion_tokens": 20478, "finish": "stop", "cost": 0.0}
+{"tag": "unit-051", "model": "xiaomi/mimo-v2.6-flash", "secs": 95.8, "prompt_tokens": 7030, "completion_tokens": 7150, "finish": "stop", "cost": 0.3277}
+{"tag": "unit-014", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 193.1, "cost": 0}
+{"tag": "unit-052", "model": "xiaomi/mimo-v2.6-flash", "secs": 82.9, "prompt_tokens": 6881, "completion_tokens": 5715, "finish": "stop", "cost": 0.2813}
+{"tag": "unit-013", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 608.4, "cost": 0}
+{"tag": "unit-047", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 351.9, "cost": 0}
+{"tag": "unit-050", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 326.6, "cost": 0}
+{"tag": "unit-054", "model": "xiaomi/mimo-v2.6-flash", "secs": 51.7, "prompt_tokens": 5684, "completion_tokens": 3891, "finish": "stop", "cost": 0.2069}
+{"tag": "unit-055", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-016", "model": "openrouter:stealth/space-bunny-alpha", "secs": 265.6, "prompt_tokens": 5642, "completion_tokens": 26651, "finish": "stop", "cost": 0.0}
+{"tag": "unit-056", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 20.7, "cost": 0}
+{"tag": "unit-055", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-016", "model": "openrouter:stealth/space-bunny-alpha", "secs": 305.3, "prompt_tokens": 5642, "completion_tokens": 13910, "finish": "stop", "cost": 0.0}
+{"tag": "unit-055", "model": "xiaomi/mimo-v2.6-flash", "secs": 63.3, "prompt_tokens": 5704, "completion_tokens": 3841, "finish": "stop", "cost": 0.2056}
+{"tag": "unit-013", "model": "openrouter:stealth/space-bunny-alpha", "secs": 216.0, "prompt_tokens": 5737, "completion_tokens": 15944, "finish": "stop", "cost": 0.0}
+{"tag": "unit-017", "model": "openrouter:stealth/space-bunny-alpha", "secs": 271.3, "prompt_tokens": 5657, "completion_tokens": 13440, "finish": "stop", "cost": 0.0}
+{"tag": "unit-057", "model": "xiaomi/mimo-v2.6-flash", "secs": 57.5, "prompt_tokens": 5686, "completion_tokens": 5991, "finish": "stop", "cost": 0.2714}
+{"tag": "unit-019", "model": "openrouter:stealth/space-bunny-alpha", "secs": 30.1, "prompt_tokens": 5596, "completion_tokens": 1120, "finish": "stop", "cost": 0.0}
+{"tag": "unit-058", "model": "xiaomi/mimo-v2.6-flash", "secs": 30.4, "prompt_tokens": 5722, "completion_tokens": 3401, "finish": "stop", "cost": 0.1924}
+{"tag": "unit-018", "model": "openrouter:stealth/space-bunny-alpha", "secs": 173.1, "prompt_tokens": 6570, "completion_tokens": 20514, "finish": "stop", "cost": 0.0}
+{"tag": "unit-053", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 330.1, "cost": 0}
+{"tag": "unit-059", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-053", "model": "xiaomi/mimo-v2.6-flash", "secs": 41.8, "prompt_tokens": 5732, "completion_tokens": 4947, "finish": "stop", "cost": 0.1543}
+{"tag": "unit-060", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-060", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-018", "model": "openrouter:stealth/space-bunny-alpha", "secs": 292.0, "prompt_tokens": 6714, "completion_tokens": 20002, "finish": "stop", "cost": 0.0}
+{"tag": "unit-020", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 277.9, "cost": 0}
+{"tag": "unit-060", "model": "xiaomi/mimo-v2.6-flash", "secs": 161.7, "prompt_tokens": 6860, "completion_tokens": 13720, "finish": "stop", "cost": 0.5269}
+{"tag": "unit-021", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 291.8, "cost": 0}
+{"tag": "unit-056", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 471.6, "cost": 0}
+{"tag": "unit-061", "model": "xiaomi/mimo-v2.6-flash", "secs": 54.7, "prompt_tokens": 6376, "completion_tokens": 4191, "finish": "stop", "cost": 0.2267}
+{"tag": "unit-059", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 352.1, "cost": 0}
+{"tag": "unit-063", "model": "xiaomi/mimo-v2.6-flash", "secs": 72.8, "prompt_tokens": 5728, "completion_tokens": 3495, "finish": "stop", "cost": 0.1954}
+{"tag": "unit-020", "model": "openrouter:stealth/space-bunny-alpha", "secs": 200.3, "prompt_tokens": 6757, "completion_tokens": 20474, "finish": "stop", "cost": 0.0}
+{"tag": "unit-019", "model": "openrouter:stealth/space-bunny-alpha", "secs": 300.7, "prompt_tokens": 5740, "completion_tokens": 20139, "finish": "stop", "cost": 0.0}
+{"tag": "unit-017", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 641.4, "cost": 0}
+{"tag": "unit-021", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 234.8, "cost": 0}
+{"tag": "unit-059", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 340.7, "cost": 0}
+{"tag": "unit-062", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 400.8, "cost": 0}
+{"tag": "unit-064", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 327.4, "cost": 0}
+{"tag": "unit-022", "model": "openrouter:stealth/space-bunny-alpha", "error": "Network connection lost.", "secs": 269.5, "cost": 0}
+{"tag": "unit-023", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 228.4, "cost": 0}
+{"tag": "unit-021", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 258.1, "cost": 0}
+{"tag": "unit-064", "model": "xiaomi/mimo-v2.6-flash", "secs": 45.3, "prompt_tokens": 5635, "completion_tokens": 3385, "finish": "stop", "cost": 0.1906}
+{"tag": "unit-066", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-066", "model": "xiaomi/mimo-v2.6-flash", "secs": 117.9, "prompt_tokens": 6508, "completion_tokens": 4544, "finish": "stop", "cost": 0.2396}
+{"tag": "unit-022", "model": "openrouter:stealth/space-bunny-alpha", "secs": 199.2, "prompt_tokens": 5734, "completion_tokens": 17038, "finish": "stop", "cost": 0.0}
+{"tag": "unit-067", "model": "xiaomi/mimo-v2.6-flash", "secs": 30.0, "prompt_tokens": 5696, "completion_tokens": 3453, "finish": "stop", "cost": 0.1936}
+{"tag": "unit-023", "model": "openrouter:stealth/space-bunny-alpha", "secs": 181.2, "prompt_tokens": 6848, "completion_tokens": 20336, "finish": "stop", "cost": 0.0}
+{"tag": "unit-017", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 514.4, "cost": 0}
+{"tag": "unit-065", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 350.4, "cost": 0}
+{"tag": "unit-062", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 350.5, "cost": 0}
+{"tag": "unit-024", "model": "openrouter:stealth/space-bunny-alpha", "secs": 161.9, "prompt_tokens": 5736, "completion_tokens": 17213, "finish": "stop", "cost": 0.0}
+{"tag": "unit-065", "model": "xiaomi/mimo-v2.6-flash", "secs": 29.3, "prompt_tokens": 5664, "completion_tokens": 3384, "finish": "stop", "cost": 0.1062}
+{"tag": "unit-069", "model": "xiaomi/mimo-v2.6-flash", "secs": 33.3, "prompt_tokens": 5694, "completion_tokens": 3651, "finish": "stop", "cost": 0.1996}
+{"tag": "unit-025", "model": "openrouter:stealth/space-bunny-alpha", "secs": 172.9, "prompt_tokens": 5714, "completion_tokens": 9948, "finish": "stop", "cost": 0.0}
+{"tag": "unit-070", "model": "xiaomi/mimo-v2.6-flash", "secs": 39.0, "prompt_tokens": 5673, "completion_tokens": 4604, "finish": "stop", "cost": 0.2286}
+{"tag": "unit-024", "model": "openrouter:stealth/space-bunny-alpha", "secs": 133.2, "prompt_tokens": 5736, "completion_tokens": 12166, "finish": "stop", "cost": 0.0}
+{"tag": "unit-068", "model": "xiaomi/mimo-v2.6-flash", "secs": 258.0, "prompt_tokens": 5734, "completion_tokens": 16000, "finish": "length", "cost": 0.5797}
+{"tag": "unit-073", "model": "xiaomi/mimo-v2.6-flash", "secs": 30.4, "prompt_tokens": 5688, "completion_tokens": 3499, "finish": "stop", "cost": 0.1949}
+{"tag": "unit-071", "model": "xiaomi/mimo-v2.6-flash", "secs": 115.4, "prompt_tokens": 5670, "completion_tokens": 9102, "finish": "stop", "cost": 0.3668}
+{"tag": "unit-072", "model": "xiaomi/mimo-v2.6-flash", "secs": 80.5, "prompt_tokens": 5707, "completion_tokens": 6864, "finish": "stop", "cost": 0.2986}
+{"tag": "unit-075", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 41.6, "cost": 0}
+{"tag": "unit-021", "model": "openrouter:stealth/space-bunny-alpha", "secs": 503.2, "prompt_tokens": 5671, "completion_tokens": 32078, "finish": "stop", "cost": 0.0}
+{"tag": "unit-026", "model": "openrouter:stealth/space-bunny-alpha", "secs": 186.6, "prompt_tokens": 5673, "completion_tokens": 13714, "finish": "stop", "cost": 0.0}
+{"tag": "unit-075", "model": "xiaomi/mimo-v2.6-flash", "secs": 77.2, "prompt_tokens": 6582, "completion_tokens": 3669, "finish": "stop", "cost": 0.1156}
+{"tag": "unit-027", "model": "openrouter:stealth/space-bunny-alpha", "secs": 257.5, "prompt_tokens": 5587, "completion_tokens": 14505, "finish": "stop", "cost": 0.0}
+{"tag": "unit-028", "model": "openrouter:stealth/space-bunny-alpha", "secs": 144.9, "prompt_tokens": 6710, "completion_tokens": 18602, "finish": "stop", "cost": 0.0}
+{"tag": "unit-026", "model": "openrouter:stealth/space-bunny-alpha", "secs": 280.2, "prompt_tokens": 5673, "completion_tokens": 18504, "finish": "stop", "cost": 0.0}
+{"tag": "unit-077", "model": "xiaomi/mimo-v2.6-flash", "secs": 178.5, "prompt_tokens": 5732, "completion_tokens": 6781, "finish": "stop", "cost": 0.2964}
+{"tag": "unit-074", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 327.3, "cost": 0}
+{"tag": "unit-076", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 323.0, "cost": 0}
+{"tag": "unit-078", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-030", "model": "openrouter:stealth/space-bunny-alpha", "secs": 143.9, "prompt_tokens": 5691, "completion_tokens": 16558, "finish": "stop", "cost": 0.0}
+{"tag": "unit-074", "model": "xiaomi/mimo-v2.6-flash", "error": "Error code: 503", "secs": 10.2, "cost": 0}
+{"tag": "unit-076", "model": "xiaomi/mimo-v2.6-flash", "error": "Error code: 503", "secs": 10.2, "cost": 0}
+{"tag": "unit-078", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-027", "model": "openrouter:stealth/space-bunny-alpha", "secs": 356.5, "prompt_tokens": 5661, "completion_tokens": 23792, "finish": "stop", "cost": 0.0}
+{"tag": "unit-079", "model": "xiaomi/mimo-v2.6-flash", "secs": 101.0, "prompt_tokens": 6844, "completion_tokens": 5858, "finish": "stop", "cost": 0.2851}
+{"tag": "unit-081", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-029", "model": "openrouter:stealth/space-bunny-alpha", "secs": 392.8, "prompt_tokens": 5685, "completion_tokens": 19153, "finish": "stop", "cost": 0.0}
+{"tag": "unit-029", "model": "openrouter:stealth/space-bunny-alpha", "secs": 319.5, "prompt_tokens": 5685, "completion_tokens": 30728, "finish": "stop", "cost": 0.0}
+{"tag": "unit-031", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 189.0, "cost": 0}
+{"tag": "unit-081", "model": "xiaomi/mimo-v2.6-flash", "secs": 117.6, "prompt_tokens": 5649, "completion_tokens": 3466, "finish": "stop", "cost": 0.1933}
+{"tag": "unit-032", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 85.8, "cost": 0}
+{"tag": "unit-082", "model": "xiaomi/mimo-v2.6-flash", "secs": 44.8, "prompt_tokens": 5657, "completion_tokens": 3625, "finish": "stop", "cost": 0.1983}
+{"tag": "unit-083", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-032", "model": "openrouter:stealth/space-bunny-alpha", "secs": 126.3, "prompt_tokens": 5699, "completion_tokens": 13386, "finish": "stop", "cost": 0.0}
+{"tag": "unit-033", "model": "openrouter:stealth/space-bunny-alpha", "error": "Request timed out.", "early": false, "secs": 40.5, "cost": 0}
+{"tag": "unit-031", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 136.7, "cost": 0}
+{"tag": "unit-032", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 116.5, "cost": 0}
+{"tag": "unit-080", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 416.8, "cost": 0}
+{"tag": "unit-078", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 413.1, "cost": 0}
+{"tag": "unit-031", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 444.3, "cost": 0}
+{"tag": "unit-083", "model": "xiaomi/mimo-v2.6-flash", "secs": 134.4, "prompt_tokens": 6743, "completion_tokens": 7316, "finish": "stop", "cost": 0.3284}
+{"tag": "unit-078", "model": "xiaomi/mimo-v2.6-flash", "secs": 67.1, "prompt_tokens": 6804, "completion_tokens": 4606, "finish": "stop", "cost": 0.246}
+{"tag": "unit-084", "model": "xiaomi/mimo-v2.6-flash", "secs": 94.8, "prompt_tokens": 6908, "completion_tokens": 4702, "finish": "stop", "cost": 0.2506}
+{"tag": "unit-085", "model": "xiaomi/mimo-v2.6-flash", "secs": 53.6, "prompt_tokens": 5682, "completion_tokens": 5664, "finish": "stop", "cost": 0.2613}
+{"tag": "unit-087", "model": "xiaomi/mimo-v2.6-flash", "secs": 68.4, "prompt_tokens": 6302, "completion_tokens": 4836, "finish": "stop", "cost": 0.2454}
+{"tag": "unit-088", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.2, "cost": 0}
+{"tag": "unit-033", "model": "openrouter:stealth/space-bunny-alpha", "secs": 233.7, "prompt_tokens": 6653, "completion_tokens": 21560, "finish": "stop", "cost": 0.0}
+{"tag": "unit-034", "model": "openrouter:stealth/space-bunny-alpha", "secs": 266.5, "prompt_tokens": 5717, "completion_tokens": 22661, "finish": "stop", "cost": 0.0}
+{"tag": "unit-088", "model": "xiaomi/mimo-v2.6-flash", "secs": 47.1, "prompt_tokens": 5666, "completion_tokens": 3057, "finish": "stop", "cost": 0.181}
+{"tag": "unit-089", "model": "xiaomi/mimo-v2.6-flash", "secs": 42.5, "prompt_tokens": 5923, "completion_tokens": 5362, "finish": "stop", "cost": 0.2557}
+{"tag": "unit-031", "model": "openrouter:stealth/space-bunny-alpha", "secs": 321.4, "prompt_tokens": 6890, "completion_tokens": 23263, "finish": "stop", "cost": 0.0}
+{"tag": "unit-035", "model": "openrouter:stealth/space-bunny-alpha", "secs": 130.7, "prompt_tokens": 5504, "completion_tokens": 9398, "finish": "stop", "cost": 0.0}
+{"tag": "unit-090", "model": "xiaomi/mimo-v2.6-flash", "secs": 172.3, "prompt_tokens": 5764, "completion_tokens": 11058, "finish": "stop", "cost": 0.4283}
+{"tag": "unit-091", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-080", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 504.9, "cost": 0}
+{"tag": "unit-086", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 392.5, "cost": 0}
+{"tag": "unit-034", "model": "openrouter:stealth/space-bunny-alpha", "secs": 299.9, "prompt_tokens": 5717, "completion_tokens": 25477, "finish": "stop", "cost": 0.0}
+{"tag": "unit-035", "model": "openrouter:stealth/space-bunny-alpha", "secs": 290.0, "prompt_tokens": 5648, "completion_tokens": 19320, "finish": "stop", "cost": 0.0}
+{"tag": "unit-086", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.4, "cost": 0}
+{"tag": "unit-092", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-033", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 590.1, "cost": 0}
+{"tag": "unit-035", "model": "openrouter:stealth/space-bunny-alpha", "secs": 83.9, "prompt_tokens": 5648, "completion_tokens": 10840, "finish": "stop", "cost": 0.0}
+{"tag": "unit-091", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 52.6, "cost": 0}
+{"tag": "unit-036", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 36.3, "cost": 0}
+{"tag": "unit-092", "model": "xiaomi/mimo-v2.6-flash", "secs": 79.3, "prompt_tokens": 5617, "completion_tokens": 4477, "finish": "stop", "cost": 0.2238}
+{"tag": "unit-086", "model": "xiaomi/mimo-v2.6-flash", "secs": 81.7, "prompt_tokens": 6569, "completion_tokens": 5363, "finish": "stop", "cost": 0.2657}
+{"tag": "unit-091", "model": "xiaomi/mimo-v2.6-flash", "secs": 136.7, "prompt_tokens": 5681, "completion_tokens": 8517, "finish": "stop", "cost": 0.349}
+{"tag": "unit-093", "model": "xiaomi/mimo-v2.6-flash", "secs": 81.1, "prompt_tokens": 5676, "completion_tokens": 6072, "finish": "stop", "cost": 0.2738}
+{"tag": "unit-094", "model": "xiaomi/mimo-v2.6-flash", "secs": 128.4, "prompt_tokens": 5810, "completion_tokens": 2945, "finish": "stop", "cost": 0.1797}
+{"tag": "unit-037", "model": "openrouter:stealth/space-bunny-alpha", "secs": 207.3, "prompt_tokens": 6653, "completion_tokens": 16170, "finish": "stop", "cost": 0.0}
+{"tag": "unit-036", "model": "openrouter:stealth/space-bunny-alpha", "secs": 189.6, "prompt_tokens": 5599, "completion_tokens": 13844, "finish": "stop", "cost": 0.0}
+{"tag": "unit-097", "model": "xiaomi/mimo-v2.6-flash", "secs": 26.2, "prompt_tokens": 5700, "completion_tokens": 3326, "finish": "stop", "cost": 0.1898}
+{"tag": "unit-095", "model": "xiaomi/mimo-v2.6-flash", "secs": 91.1, "prompt_tokens": 5774, "completion_tokens": 5509, "finish": "stop", "cost": 0.258}
+{"tag": "unit-039", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 28.0, "cost": 0}
+{"tag": "unit-037", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 238.3, "cost": 0}
+{"tag": "unit-036", "model": "openrouter:stealth/space-bunny-alpha", "secs": 264.2, "prompt_tokens": 5599, "completion_tokens": 16440, "finish": "stop", "cost": 0.0}
+{"tag": "unit-098", "model": "xiaomi/mimo-v2.6-flash", "secs": 88.1, "prompt_tokens": 6727, "completion_tokens": 6381, "finish": "stop", "cost": 0.2994}
+{"tag": "unit-096", "model": "xiaomi/mimo-v2.6-flash", "secs": 174.2, "prompt_tokens": 5782, "completion_tokens": 16000, "finish": "length", "cost": 0.5804}
+{"tag": "unit-099", "model": "xiaomi/mimo-v2.6-flash", "secs": 104.1, "prompt_tokens": 6858, "completion_tokens": 5136, "finish": "stop", "cost": 0.2632}
+{"tag": "unit-037", "model": "openrouter:stealth/space-bunny-alpha", "secs": 97.6, "prompt_tokens": 6653, "completion_tokens": 16806, "finish": "stop", "cost": 0.0}
+{"tag": "unit-102", "model": "xiaomi/mimo-v2.6-flash", "secs": 20.9, "prompt_tokens": 5725, "completion_tokens": 3178, "finish": "stop", "cost": 0.1856}
+{"tag": "unit-039", "model": "openrouter:stealth/space-bunny-alpha", "secs": 25.2, "prompt_tokens": 5522, "completion_tokens": 1624, "finish": "stop", "cost": 0.0}
+{"tag": "unit-100", "model": "xiaomi/mimo-v2.6-flash", "secs": 82.8, "prompt_tokens": 7109, "completion_tokens": 5666, "finish": "stop", "cost": 0.2833}
+{"tag": "unit-104", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-039", "model": "openrouter:stealth/space-bunny-alpha", "secs": 227.9, "prompt_tokens": 5522, "completion_tokens": 11414, "finish": "stop", "cost": 0.0}
+{"tag": "unit-104", "model": "xiaomi/mimo-v2.6-flash", "secs": 70.6, "prompt_tokens": 5751, "completion_tokens": 7589, "finish": "stop", "cost": 0.3215}
+{"tag": "unit-038", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 348.1, "cost": 0}
+{"tag": "unit-105", "model": "xiaomi/mimo-v2.6-flash", "secs": 70.9, "prompt_tokens": 5705, "completion_tokens": 4686, "finish": "stop", "cost": 0.2316}
+{"tag": "unit-038", "model": "openrouter:stealth/space-bunny-alpha", "secs": 328.7, "prompt_tokens": 5760, "completion_tokens": 25934, "finish": "stop", "cost": 0.0}
+{"tag": "unit-106", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-106", "model": "xiaomi/mimo-v2.6-flash", "secs": 61.7, "prompt_tokens": 5647, "completion_tokens": 5045, "finish": "stop", "cost": 0.2418}
+{"tag": "unit-107", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-107", "model": "xiaomi/mimo-v2.6-flash", "secs": 39.8, "prompt_tokens": 5641, "completion_tokens": 2473, "finish": "stop", "cost": 0.1626}
+{"tag": "unit-103", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 347.8, "cost": 0}
+{"tag": "unit-101", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 388.7, "cost": 0}
+{"tag": "unit-040", "model": "openrouter:stealth/space-bunny-alpha", "secs": 279.4, "prompt_tokens": 7004, "completion_tokens": 24653, "finish": "stop", "cost": 0.0}
+{"tag": "unit-041", "model": "openrouter:stealth/space-bunny-alpha", "secs": 213.5, "prompt_tokens": 5836, "completion_tokens": 21481, "finish": "stop", "cost": 0.0}
+{"tag": "unit-038", "model": "openrouter:stealth/space-bunny-alpha", "secs": 296.4, "prompt_tokens": 5760, "completion_tokens": 23540, "finish": "stop", "cost": 0.0}
+{"tag": "unit-042", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 110.7, "cost": 0}
+{"tag": "unit-041", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 178.7, "cost": 0}
+{"tag": "unit-042", "model": "openrouter:stealth/space-bunny-alpha", "secs": 87.5, "prompt_tokens": 5696, "completion_tokens": 9030, "finish": "stop", "cost": 0.0}
+{"tag": "unit-108", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 321.5, "cost": 0}
+{"tag": "unit-101", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 309.1, "cost": 0}
+{"tag": "unit-103", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 309.9, "cost": 0}
+{"tag": "unit-108", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-110", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-109", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.4, "cost": 0}
+{"tag": "unit-042", "model": "openrouter:stealth/space-bunny-alpha", "secs": 180.2, "prompt_tokens": 5696, "completion_tokens": 19637, "finish": "stop", "cost": 0.0}
+{"tag": "unit-040", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 803.1, "cost": 0}
+{"tag": "unit-041", "model": "openrouter:stealth/space-bunny-alpha", "secs": 232.6, "prompt_tokens": 5836, "completion_tokens": 21405, "finish": "stop", "cost": 0.0}
+{"tag": "unit-108", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 168.4, "cost": 0}
+{"tag": "unit-109", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 168.4, "cost": 0}
+{"tag": "unit-110", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 168.5, "cost": 0}
+{"tag": "unit-044", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 83.2, "cost": 0}
+{"tag": "unit-111", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-109", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-110", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-043", "model": "openrouter:stealth/space-bunny-alpha", "secs": 395.3, "prompt_tokens": 6843, "completion_tokens": 17971, "finish": "stop", "cost": 0.0}
+{"tag": "unit-044", "model": "openrouter:stealth/space-bunny-alpha", "secs": 104.9, "prompt_tokens": 6736, "completion_tokens": 12995, "finish": "stop", "cost": 0.0}
+{"tag": "unit-045", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 68.0, "cost": 0}
+{"tag": "unit-111", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 204.7, "cost": 0}
+{"tag": "unit-109", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 201.7, "cost": 0}
+{"tag": "unit-110", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 201.7, "cost": 0}
+{"tag": "unit-040", "model": "openrouter:stealth/space-bunny-alpha", "secs": 289.9, "prompt_tokens": 7004, "completion_tokens": 27389, "finish": "stop", "cost": 0.0}
+{"tag": "unit-046", "model": "openrouter:stealth/space-bunny-alpha", "secs": 125.1, "prompt_tokens": 5692, "completion_tokens": 10703, "finish": "stop", "cost": 0.0}
+{"tag": "unit-043", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 416.8, "cost": 0}
+{"tag": "unit-045", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 89.2, "cost": 0}
+{"tag": "unit-048", "model": "openrouter:stealth/space-bunny-alpha", "secs": 100.6, "prompt_tokens": 5651, "completion_tokens": 11687, "finish": "stop", "cost": 0.0}
+{"tag": "unit-049", "model": "openrouter:stealth/space-bunny-alpha", "secs": 97.2, "prompt_tokens": 6760, "completion_tokens": 12045, "finish": "stop", "cost": 0.0}
+{"tag": "unit-045", "model": "openrouter:stealth/space-bunny-alpha", "secs": 252.4, "prompt_tokens": 5761, "completion_tokens": 22957, "finish": "stop", "cost": 0.0}
+{"tag": "unit-047", "model": "openrouter:stealth/space-bunny-alpha", "secs": 234.3, "prompt_tokens": 5650, "completion_tokens": 16333, "finish": "stop", "cost": 0.0}
+{"tag": "unit-050", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 52.2, "cost": 0}
+{"tag": "unit-111", "model": "xiaomi/mimo-v2.6-flash", "secs": 319.6, "prompt_tokens": 5668, "completion_tokens": 2785, "finish": "stop", "cost": 0.4409}
+{"tag": "unit-112", "model": "xiaomi/mimo-v2.6-flash", "secs": 321.6, "prompt_tokens": 5714, "completion_tokens": 2890, "finish": "stop", "cost": 0.4561}
+{"tag": "unit-043", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 305.2, "cost": 0}
+{"tag": "unit-115", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-114", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 36.6, "cost": 0}
+{"tag": "unit-115", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-114", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-051", "model": "openrouter:stealth/space-bunny-alpha", "secs": 133.4, "prompt_tokens": 6874, "completion_tokens": 13225, "finish": "stop", "cost": 0.0}
+{"tag": "unit-115", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 30.1, "cost": 0}
+{"tag": "unit-114", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-114", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.0, "cost": 0}
+{"tag": "unit-115", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 39.0, "cost": 0}
+{"tag": "unit-050", "model": "openrouter:stealth/space-bunny-alpha", "secs": 190.8, "prompt_tokens": 5782, "completion_tokens": 18276, "finish": "stop", "cost": 0.0}
+{"tag": "unit-047", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 323.0, "cost": 0}
+{"tag": "unit-113", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 637.2, "cost": 0}
+{"tag": "unit-053", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 166.2, "cost": 0}
+{"tag": "unit-050", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 357.8, "cost": 0}
+{"tag": "unit-113", "model": "xiaomi/mimo-v2.6-flash", "secs": 65.3, "prompt_tokens": 5707, "completion_tokens": 3512, "finish": "stop", "cost": 0.1956}
+{"tag": "unit-053", "model": "openrouter:stealth/space-bunny-alpha", "secs": 153.4, "prompt_tokens": 5734, "completion_tokens": 17777, "finish": "stop", "cost": 0.0}
+{"tag": "unit-047", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 274.2, "cost": 0}
+{"tag": "unit-052", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 507.2, "cost": 0}
+{"tag": "unit-050", "model": "openrouter:stealth/space-bunny-alpha", "secs": 190.5, "prompt_tokens": 5782, "completion_tokens": 19756, "finish": "stop", "cost": 0.0}
+{"tag": "unit-114", "model": "xiaomi/mimo-v2.6-flash", "secs": 492.5, "prompt_tokens": 5662, "completion_tokens": 6554, "finish": "stop", "cost": 0.3604}
+{"tag": "add-p259", "model": "xiaomi/mimo-v2.6-flash", "secs": 55.1, "prompt_tokens": 12387, "completion_tokens": 3698, "finish": "stop", "cost": 0.3039}
+{"tag": "unit-052", "model": "openrouter:stealth/space-bunny-alpha", "secs": 171.1, "prompt_tokens": 6829, "completion_tokens": 17027, "finish": "stop", "cost": 0.0}
+{"tag": "add-p253", "model": "xiaomi/mimo-v2.6-flash", "secs": 120.9, "prompt_tokens": 12387, "completion_tokens": 7002, "finish": "stop", "cost": 0.4054}
+{"tag": "unit-052", "model": "openrouter:stealth/space-bunny-alpha", "secs": 158.3, "prompt_tokens": 6829, "completion_tokens": 16945, "finish": "stop", "cost": 0.0}
+{"tag": "unit-053", "model": "openrouter:stealth/space-bunny-alpha", "secs": 164.1, "prompt_tokens": 5734, "completion_tokens": 17791, "finish": "stop", "cost": 0.0}
+{"tag": "add-p254", "model": "xiaomi/mimo-v2.6-flash", "secs": 137.0, "prompt_tokens": 12387, "completion_tokens": 8564, "finish": "stop", "cost": 0.4534}
+{"tag": "unit-054", "model": "openrouter:stealth/space-bunny-alpha", "secs": 107.7, "prompt_tokens": 5691, "completion_tokens": 11668, "finish": "stop", "cost": 0.0}
+{"tag": "unit-034", "model": "xiaomi/mimo-v2.6-flash", "secs": 43.5, "prompt_tokens": 5719, "completion_tokens": 4329, "finish": "stop", "cost": 0.2209}
+{"tag": "unit-050", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-055", "model": "openrouter:stealth/space-bunny-alpha", "secs": 108.1, "prompt_tokens": 5708, "completion_tokens": 12454, "finish": "stop", "cost": 0.0}
+{"tag": "add-p266", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.0, "cost": 0}
+{"tag": "add-p258", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 21.0, "cost": 0}
+{"tag": "add-p258", "model": "xiaomi/mimo-v2.6-flash", "secs": 59.5, "prompt_tokens": 12387, "completion_tokens": 5035, "finish": "stop", "cost": 0.345}
+{"tag": "unit-057", "model": "openrouter:stealth/space-bunny-alpha", "secs": 143.9, "prompt_tokens": 5683, "completion_tokens": 14556, "finish": "stop", "cost": 0.0}
+{"tag": "unit-055", "model": "openrouter:stealth/space-bunny-alpha", "secs": 267.8, "prompt_tokens": 5708, "completion_tokens": 27183, "finish": "stop", "cost": 0.0}
+{"tag": "add-p266", "model": "xiaomi/mimo-v2.6-flash", "secs": 109.4, "prompt_tokens": 12387, "completion_tokens": 7835, "finish": "stop", "cost": 0.431}
+{"tag": "unit-058", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 45.8, "cost": 0}
+{"tag": "unit-056", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 222.9, "cost": 0}
+{"tag": "unit-054", "model": "openrouter:stealth/space-bunny-alpha", "secs": 594.3, "prompt_tokens": 5691, "completion_tokens": 22888, "finish": "stop", "cost": 0.0}
+{"tag": "unit-058", "model": "openrouter:stealth/space-bunny-alpha", "secs": 63.6, "prompt_tokens": 5727, "completion_tokens": 8509, "finish": "stop", "cost": 0.0}
+{"tag": "unit-056", "model": "openrouter:stealth/space-bunny-alpha", "secs": 126.7, "prompt_tokens": 5518, "completion_tokens": 21670, "finish": "stop", "cost": 0.0}
+{"tag": "unit-028", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 360.1, "cost": 0}
+{"tag": "unit-047", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 360.0, "cost": 0}
+{"tag": "unit-047", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.5, "cost": 0}
+{"tag": "unit-028", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.6, "cost": 0}
+{"tag": "unit-050", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 332.6, "cost": 0}
+{"tag": "unit-028", "model": "xiaomi/mimo-v2.6-flash", "secs": 69.0, "prompt_tokens": 6725, "completion_tokens": 4775, "finish": "stop", "cost": 0.1489}
+{"tag": "unit-050", "model": "xiaomi/mimo-v2.6-flash", "secs": 58.5, "prompt_tokens": 5897, "completion_tokens": 5699, "finish": "stop", "cost": 0.177}
+{"tag": "unit-047", "model": "xiaomi/mimo-v2.6-flash", "secs": 85.5, "prompt_tokens": 5642, "completion_tokens": 7154, "finish": "stop", "cost": 0.2217}
+{"tag": "unit-059", "model": "xiaomi/mimo-v2.6-flash", "secs": 66.1, "prompt_tokens": 6907, "completion_tokens": 4030, "finish": "stop", "cost": 0.2299}
+{"tag": "unit-056", "model": "xiaomi/mimo-v2.6-flash", "secs": 73.1, "prompt_tokens": 5660, "completion_tokens": 6453, "finish": "stop", "cost": 0.2852}
+{"tag": "unit-062", "model": "xiaomi/mimo-v2.6-flash", "secs": 77.8, "prompt_tokens": 5634, "completion_tokens": 5657, "finish": "stop", "cost": 0.2604}
+{"tag": "unit-064", "model": "xiaomi/mimo-v2.6-flash", "secs": 39.9, "prompt_tokens": 5635, "completion_tokens": 3901, "finish": "stop", "cost": 0.2064}
+{"tag": "unit-058", "model": "openrouter:stealth/space-bunny-alpha", "secs": 264.8, "prompt_tokens": 5653, "completion_tokens": 14615, "finish": "stop", "cost": 0.0}
+{"tag": "unit-059", "model": "openrouter:stealth/space-bunny-alpha", "secs": 250.9, "prompt_tokens": 6889, "completion_tokens": 21387, "finish": "stop", "cost": 0.0}
+{"tag": "unit-068", "model": "xiaomi/mimo-v2.6-flash", "secs": 106.0, "prompt_tokens": 5734, "completion_tokens": 9156, "finish": "stop", "cost": 0.3694}
+{"tag": "unit-056", "model": "openrouter:stealth/space-bunny-alpha", "secs": 288.3, "prompt_tokens": 5662, "completion_tokens": 21178, "finish": "stop", "cost": 0.0}
+{"tag": "unit-074", "model": "xiaomi/mimo-v2.6-flash", "secs": 103.5, "prompt_tokens": 5701, "completion_tokens": 4847, "finish": "stop", "cost": 0.2365}
+{"tag": "unit-080", "model": "xiaomi/mimo-v2.6-flash", "secs": 66.2, "prompt_tokens": 5667, "completion_tokens": 7056, "finish": "stop", "cost": 0.3038}
+{"tag": "unit-060", "model": "openrouter:stealth/space-bunny-alpha", "secs": 125.6, "prompt_tokens": 6815, "completion_tokens": 14356, "finish": "stop", "cost": 0.0}
+{"tag": "unit-096", "model": "xiaomi/mimo-v2.6-flash", "secs": 76.5, "prompt_tokens": 5782, "completion_tokens": 7711, "finish": "stop", "cost": 0.3257}
+{"tag": "unit-076", "model": "xiaomi/mimo-v2.6-flash", "secs": 167.5, "prompt_tokens": 7000, "completion_tokens": 8844, "finish": "stop", "cost": 0.3793}
+{"tag": "unit-061", "model": "openrouter:stealth/space-bunny-alpha", "secs": 31.1, "prompt_tokens": 6356, "completion_tokens": 4191, "finish": "stop", "cost": 0.0}
+{"tag": "unit-056", "model": "openrouter:stealth/space-bunny-alpha", "secs": 536.6, "prompt_tokens": 5662, "completion_tokens": 60000, "finish": "length", "cost": 0.0}
+{"tag": "unit-101", "model": "xiaomi/mimo-v2.6-flash", "secs": 113.1, "prompt_tokens": 5762, "completion_tokens": 9918, "finish": "stop", "cost": 0.3932}
+{"tag": "unit-060", "model": "openrouter:stealth/space-bunny-alpha", "secs": 198.9, "prompt_tokens": 6815, "completion_tokens": 21387, "finish": "stop", "cost": 0.0}
+{"tag": "unit-103", "model": "xiaomi/mimo-v2.6-flash", "secs": 107.6, "prompt_tokens": 5895, "completion_tokens": 8536, "finish": "stop", "cost": 0.3528}
+{"tag": "unit-110", "model": "xiaomi/mimo-v2.6-flash", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 21.2, "cost": 0}
+{"tag": "unit-063", "model": "openrouter:stealth/space-bunny-alpha", "secs": 58.8, "prompt_tokens": 5737, "completion_tokens": 6894, "finish": "stop", "cost": 0.0}
+{"tag": "unit-059", "model": "openrouter:stealth/space-bunny-alpha", "secs": 307.2, "prompt_tokens": 6889, "completion_tokens": 24734, "finish": "stop", "cost": 0.0}
+{"tag": "unit-062", "model": "openrouter:stealth/space-bunny-alpha", "secs": 178.0, "prompt_tokens": 5633, "completion_tokens": 18049, "finish": "stop", "cost": 0.0}
+{"tag": "unit-110", "model": "xiaomi/mimo-v2.6-flash", "secs": 114.2, "prompt_tokens": 5651, "completion_tokens": 9185, "finish": "stop", "cost": 0.2842}
+{"tag": "unit-064", "model": "openrouter:stealth/space-bunny-alpha", "secs": 143.0, "prompt_tokens": 5641, "completion_tokens": 13090, "finish": "stop", "cost": 0.0}
+{"tag": "unit-065", "model": "openrouter:stealth/space-bunny-alpha", "secs": 113.8, "prompt_tokens": 5665, "completion_tokens": 11949, "finish": "stop", "cost": 0.0}
+{"tag": "unit-062", "model": "openrouter:stealth/space-bunny-alpha", "secs": 230.8, "prompt_tokens": 5633, "completion_tokens": 23378, "finish": "stop", "cost": 0.0}
+{"tag": "unit-065", "model": "openrouter:stealth/space-bunny-alpha", "secs": 103.7, "prompt_tokens": 5665, "completion_tokens": 7479, "finish": "stop", "cost": 0.0}
+{"tag": "unit-109", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 326.1, "cost": 0}
+{"tag": "unit-108", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 405.4, "cost": 0}
+{"tag": "unit-115", "model": "xiaomi/mimo-v2.6-flash", "secs": 159.8, "prompt_tokens": 6648, "completion_tokens": 12779, "finish": "stop", "cost": 0.3955}
+{"tag": "unit-067", "model": "openrouter:stealth/space-bunny-alpha", "secs": 78.7, "prompt_tokens": 5697, "completion_tokens": 9147, "finish": "stop", "cost": 0.0}
+{"tag": "unit-068", "model": "openrouter:stealth/space-bunny-alpha", "secs": 23.9, "prompt_tokens": 5584, "completion_tokens": 1946, "finish": "stop", "cost": 0.0}
+{"tag": "unit-064", "model": "openrouter:stealth/space-bunny-alpha", "secs": 367.9, "prompt_tokens": 5641, "completion_tokens": 26291, "finish": "stop", "cost": 0.0}
+{"tag": "unit-066", "model": "openrouter:stealth/space-bunny-alpha", "secs": 221.1, "prompt_tokens": 6492, "completion_tokens": 23742, "finish": "stop", "cost": 0.0}
+{"tag": "unit-066", "model": "openrouter:stealth/space-bunny-alpha", "secs": 262.9, "prompt_tokens": 6492, "completion_tokens": 26233, "finish": "stop", "cost": 0.0}
+{"tag": "unit-068", "model": "openrouter:stealth/space-bunny-alpha", "secs": 167.4, "prompt_tokens": 5728, "completion_tokens": 19843, "finish": "stop", "cost": 0.0}
+{"tag": "unit-069", "model": "openrouter:stealth/space-bunny-alpha", "secs": 122.8, "prompt_tokens": 5701, "completion_tokens": 7409, "finish": "stop", "cost": 0.0}
+{"tag": "unit-068", "model": "openrouter:stealth/space-bunny-alpha", "secs": 197.8, "prompt_tokens": 5728, "completion_tokens": 21316, "finish": "stop", "cost": 0.0}
+{"tag": "unit-069", "model": "openrouter:stealth/space-bunny-alpha", "secs": 197.5, "prompt_tokens": 5627, "completion_tokens": 11417, "finish": "stop", "cost": 0.0}
+{"tag": "unit-109", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 350.0, "cost": 0}
+{"tag": "unit-108", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 350.1, "cost": 0}
+{"tag": "unit-070", "model": "openrouter:stealth/space-bunny-alpha", "secs": 139.7, "prompt_tokens": 5678, "completion_tokens": 14314, "finish": "stop", "cost": 0.0}
+{"tag": "repair-071", "model": "xiaomi/mimo-v2.6-flash", "secs": 23.3, "prompt_tokens": 6424, "completion_tokens": 1233, "finish": "stop", "cost": 0.1366}
+{"tag": "repair-083", "model": "xiaomi/mimo-v2.6-flash", "secs": 16.3, "prompt_tokens": 6197, "completion_tokens": 302, "finish": "stop", "cost": 0.1045}
+{"tag": "repair-021", "model": "xiaomi/mimo-v2.6-flash", "secs": 57.9, "prompt_tokens": 6257, "completion_tokens": 2587, "finish": "stop", "cost": 0.1756}
+{"tag": "repair-099", "model": "xiaomi/mimo-v2.6-flash", "error": "Request timed out.", "early": true, "secs": 20.6, "cost": 0}
+{"tag": "repair-099", "model": "xiaomi/mimo-v2.6-flash", "secs": 14.9, "prompt_tokens": 6635, "completion_tokens": 650, "finish": "stop", "cost": 0.1219}
+{"tag": "unit-071", "model": "openrouter:stealth/space-bunny-alpha", "secs": 172.2, "prompt_tokens": 5673, "completion_tokens": 17676, "finish": "stop", "cost": 0.0}
+{"tag": "unit-071", "model": "openrouter:stealth/space-bunny-alpha", "secs": 239.8, "prompt_tokens": 5673, "completion_tokens": 24264, "finish": "stop", "cost": 0.0}
+{"tag": "unit-072", "model": "openrouter:stealth/space-bunny-alpha", "secs": 136.0, "prompt_tokens": 5704, "completion_tokens": 16965, "finish": "stop", "cost": 0.0}
+{"tag": "unit-070", "model": "openrouter:stealth/space-bunny-alpha", "secs": 258.3, "prompt_tokens": 5678, "completion_tokens": 28779, "finish": "stop", "cost": 0.0}
+{"tag": "repair-101", "model": "xiaomi/mimo-v2.6-flash", "secs": 31.4, "prompt_tokens": 7423, "completion_tokens": 2358, "finish": "stop", "cost": 0.1248}
+{"tag": "repair-102", "model": "xiaomi/mimo-v2.6-flash", "secs": 28.6, "prompt_tokens": 6116, "completion_tokens": 196, "finish": "stop", "cost": 0.1}
+{"tag": "repair-113", "model": "xiaomi/mimo-v2.6-flash", "secs": 38.0, "prompt_tokens": 6446, "completion_tokens": 841, "finish": "stop", "cost": 0.0391}
+{"tag": "unit-074", "model": "openrouter:stealth/space-bunny-alpha", "secs": 130.2, "prompt_tokens": 5689, "completion_tokens": 13826, "finish": "stop", "cost": 0.0}
+{"tag": "unit-073", "model": "openrouter:stealth/space-bunny-alpha", "secs": 152.7, "prompt_tokens": 5677, "completion_tokens": 16319, "finish": "stop", "cost": 0.0}
+{"tag": "unit-073", "model": "openrouter:stealth/space-bunny-alpha", "secs": 147.9, "prompt_tokens": 5677, "completion_tokens": 15667, "finish": "stop", "cost": 0.0}
+{"tag": "unit-072", "model": "openrouter:stealth/space-bunny-alpha", "secs": 166.0, "prompt_tokens": 5704, "completion_tokens": 17156, "finish": "stop", "cost": 0.0}
+{"tag": "repair-007", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 374.1, "cost": 0}
+{"tag": "repair-096", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 334.5, "cost": 0}
+{"tag": "unit-075", "model": "openrouter:stealth/space-bunny-alpha", "secs": 137.8, "prompt_tokens": 6562, "completion_tokens": 15783, "finish": "stop", "cost": 0.0}
+{"tag": "repair-096", "model": "xiaomi/mimo-v2.6-flash", "secs": 26.5, "prompt_tokens": 6360, "completion_tokens": 1255, "finish": "stop", "cost": 0.0409}
+{"tag": "unit-076", "model": "openrouter:stealth/space-bunny-alpha", "secs": 194.6, "prompt_tokens": 6847, "completion_tokens": 19087, "finish": "stop", "cost": 0.0}
+{"tag": "unit-076", "model": "openrouter:stealth/space-bunny-alpha", "secs": 247.0, "prompt_tokens": 6847, "completion_tokens": 19144, "finish": "stop", "cost": 0.0}
+{"tag": "unit-077", "model": "openrouter:stealth/space-bunny-alpha", "secs": 157.3, "prompt_tokens": 5732, "completion_tokens": 21767, "finish": "stop", "cost": 0.0}
+{"tag": "unit-075", "model": "openrouter:stealth/space-bunny-alpha", "secs": 277.3, "prompt_tokens": 6562, "completion_tokens": 15672, "finish": "stop", "cost": 0.0}
+{"tag": "unit-077", "model": "openrouter:stealth/space-bunny-alpha", "secs": 79.1, "prompt_tokens": 5732, "completion_tokens": 9660, "finish": "stop", "cost": 0.0}
+{"tag": "unit-079", "model": "openrouter:stealth/space-bunny-alpha", "secs": 151.0, "prompt_tokens": 6804, "completion_tokens": 17472, "finish": "stop", "cost": 0.0}
+{"tag": "repair-007", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 407.0, "cost": 0}
+{"tag": "unit-080", "model": "openrouter:stealth/space-bunny-alpha", "secs": 161.7, "prompt_tokens": 5664, "completion_tokens": 21090, "finish": "stop", "cost": 0.0}
+{"tag": "unit-078", "model": "openrouter:stealth/space-bunny-alpha", "secs": 402.9, "prompt_tokens": 6694, "completion_tokens": 21836, "finish": "stop", "cost": 0.0}
+{"tag": "unit-079", "model": "openrouter:stealth/space-bunny-alpha", "secs": 449.1, "prompt_tokens": 6804, "completion_tokens": 21782, "finish": "stop", "cost": 0.0}
+{"tag": "unit-081", "model": "openrouter:stealth/space-bunny-alpha", "secs": 155.8, "prompt_tokens": 5655, "completion_tokens": 16193, "finish": "stop", "cost": 0.0}
+{"tag": "unit-082", "model": "openrouter:stealth/space-bunny-alpha", "secs": 107.6, "prompt_tokens": 5654, "completion_tokens": 12435, "finish": "stop", "cost": 0.0}
+{"tag": "unit-084", "model": "openrouter:stealth/space-bunny-alpha", "secs": 117.7, "prompt_tokens": 6879, "completion_tokens": 12169, "finish": "stop", "cost": 0.0}
+{"tag": "unit-081", "model": "openrouter:stealth/space-bunny-alpha", "secs": 402.9, "prompt_tokens": 5581, "completion_tokens": 20040, "finish": "stop", "cost": 0.0}
+{"tag": "unit-109", "model": "xiaomi/mimo-v2.6-flash", "secs": 78.3, "prompt_tokens": 5712, "completion_tokens": 6782, "finish": "stop", "cost": 0.2104}
+{"tag": "unit-083", "model": "openrouter:stealth/space-bunny-alpha", "secs": 143.0, "prompt_tokens": 6577, "completion_tokens": 13616, "finish": "stop", "cost": 0.0}
+{"tag": "unit-108", "model": "xiaomi/mimo-v2.6-flash", "secs": 193.9, "prompt_tokens": 7016, "completion_tokens": 8822, "finish": "stop", "cost": 0.2738}
+{"tag": "unit-085", "model": "openrouter:stealth/space-bunny-alpha", "secs": 141.3, "prompt_tokens": 5689, "completion_tokens": 16980, "finish": "stop", "cost": 0.0}
+{"tag": "unit-083", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 468.1, "cost": 0}
+{"tag": "unit-085", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 344.2, "cost": 0}
+{"tag": "unit-078", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 1113.4, "cost": 0}
+{"tag": "unit-085", "model": "openrouter:stealth/space-bunny-alpha", "error": "peer closed connection without sending complete message body (incomplete chunked read)", "secs": 34.7, "cost": 0}
+{"tag": "unit-086", "model": "openrouter:stealth/space-bunny-alpha", "error": "The read operation timed out", "secs": 117.5, "cost": 0}
+{"tag": "repair-007", "model": "xiaomi/mimo-v2.6-flash", "error": "The read operation timed out", "secs": 318.1, "cost": 0}
+{"tag": "unit-086", "model": "openrouter:stealth/space-bunny-alpha", "secs": 129.2, "prompt_tokens": 6550, "completion_tokens": 14575, "finish": "stop", "cost": 0.0}
+{"tag": "unit-087", "model": "openrouter:stealth/space-bunny-alpha", "secs": 138.6, "prompt_tokens": 6276, "completion_tokens": 14456, "finish": "stop", "cost": 0.0}
+{"tag": "unit-078", "model": "openrouter:stealth/space-bunny-alpha", "secs": 276.8, "prompt_tokens": 6768, "completion_tokens": 20589, "finish": "stop", "cost": 0.0}
+{"tag": "unit-083", "model": "openrouter:stealth/space-bunny-alpha", "secs": 353.3, "prompt_tokens": 4309, "completion_tokens": 35223, "finish": null, "cost": 0.0}
+{"tag": "unit-088", "model": "openrouter:stealth/space-bunny-alpha", "secs": 59.6, "prompt_tokens": 5666, "completion_tokens": 7502, "finish": "stop", "cost": 0.0}
+{"tag": "unit-088", "model": "openrouter:stealth/space-bunny-alpha", "secs": 74.2, "prompt_tokens": 5666, "completion_tokens": 8474, "finish": "stop", "cost": 0.0}
+{"tag": "repair-007", "model": "xiaomi/mimo-v2.6-flash", "secs": 219.4, "prompt_tokens": 6217, "completion_tokens": 15272, "finish": "stop", "cost": 0.4713}
+{"tag": "repair-108", "model": "xiaomi/mimo-v2.6-flash", "secs": 75.7, "prompt_tokens": 7145, "completion_tokens": 4679, "finish": "stop", "cost": 0.1919}
+{"tag": "unit-090", "model": "openrouter:stealth/space-bunny-alpha", "secs": 130.1, "prompt_tokens": 5773, "completion_tokens": 15131, "finish": "stop", "cost": 0.0}
+{"tag": "unit-089", "model": "openrouter:stealth/space-bunny-alpha", "secs": 256.3, "prompt_tokens": 5852, "completion_tokens": 13245, "finish": "stop", "cost": 0.0}
+{"tag": "unit-086", "model": "openrouter:stealth/space-bunny-alpha", "secs": 569.1, "prompt_tokens": 6550, "completion_tokens": 32928, "finish": "stop", "cost": 0.0}
+{"tag": "unit-089", "model": "openrouter:stealth/space-bunny-alpha", "secs": 306.5, "prompt_tokens": 5926, "completion_tokens": 21298, "finish": "stop", "cost": 0.0}
+{"tag": "unit-091", "model": "openrouter:stealth/space-bunny-alpha", "secs": 221.1, "prompt_tokens": 5689, "completion_tokens": 24311, "finish": "stop", "cost": 0.0}
+{"tag": "unit-092", "model": "openrouter:stealth/space-bunny-alpha", "secs": 128.4, "prompt_tokens": 5626, "completion_tokens": 14446, "finish": "stop", "cost": 0.0}
+{"tag": "unit-091", "model": "openrouter:stealth/space-bunny-alpha", "secs": 195.7, "prompt_tokens": 5689, "completion_tokens": 21686, "finish": "stop", "cost": 0.0}
+{"tag": "unit-092", "model": "openrouter:stealth/space-bunny-alpha", "secs": 179.3, "prompt_tokens": 5626, "completion_tokens": 14986, "finish": "stop", "cost": 0.0}
+{"tag": "unit-094", "model": "openrouter:stealth/space-bunny-alpha", "secs": 99.8, "prompt_tokens": 5805, "completion_tokens": 10117, "finish": "stop", "cost": 0.0}

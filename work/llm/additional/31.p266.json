@@ -1,0 +1,470 @@
+{
+ "id": 31,
+ "topic": "прошедшее, настоящее и будущее время",
+ "refs": "Разделы 4–23, 26–29, 53, 55, 99, 105",
+ "pdfPages": [
+  266,
+  267
+ ],
+ "exercise": {
+  "id": "31",
+  "type": "fill-in",
+  "instruction": "Ник и его друг Джон совершают кругосветное путешествие. Прочитайте имейлы Ника и его родителей и поставьте глаголы в правильную форму.",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "We’re in Los Angeles, the first stop on our round-the-world trip! ",
+     " (we/arrive) here yesterday, "
+    ],
+    "answers": [
+     [
+      "We arrived"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "and now ",
+     " (we/stay) at a hotel near the airport."
+    ],
+    "answers": [
+     [
+      "we’re staying"
+     ]
+    ]
+   },
+   {
+    "num": 3,
+    "parts": [
+     "The flight was twelve hours, but ",
+     " (we/enjoy) it."
+    ],
+    "answers": [
+     [
+      "we enjoyed"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "",
+     " (we/watch) some films and "
+    ],
+    "answers": [
+     [
+      "We watched"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "",
+     " (sleep) a few hours, which is unusual for me – "
+    ],
+    "answers": [
+     [
+      "slept"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "usually ",
+     " (I/not/sleep) well on planes."
+    ],
+    "answers": [
+     [
+      "I don’t sleep"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "Today is a rest day for us and ",
+     " (we/not/do) anything special, "
+    ],
+    "answers": [
+     [
+      "we’re not doing",
+      "we’re not going to do"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "but tomorrow ",
+     " (we/go) to Hollywood "
+    ],
+    "answers": [
+     [
+      "we’re going"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "",
+     " (see) the film studios."
+    ],
+    "answers": [
+     [
+      "to see"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "",
+     " (we/not/decide) yet what to do after Los Angeles."
+    ],
+    "answers": [
+     [
+      "We haven’t decided"
+     ]
+    ]
+   },
+   {
+    "num": 11,
+    "parts": [
+     "Jon ",
+     " (want) to drive up the coast to San Francisco, but I’d prefer "
+    ],
+    "answers": [
+     [
+      "wants"
+     ]
+    ]
+   },
+   {
+    "num": 12,
+    "parts": [
+     "",
+     " (go) south to San Diego."
+    ],
+    "answers": [
+     [
+      "to go"
+     ]
+    ]
+   },
+   {
+    "num": 13,
+    "parts": [
+     "I hope all is well with you – ",
+     " (I/send) you another email next week."
+    ],
+    "answers": [
+     [
+      "I’ll send"
+     ]
+    ]
+   },
+   {
+    "num": 14,
+    "parts": [
+     "Thanks for your mail. It’s good to hear that ",
+     " (you/have) a good time."
+    ],
+    "answers": [
+     [
+      "you’re having"
+     ]
+    ]
+   },
+   {
+    "num": 15,
+    "parts": [
+     "We’re fine – Ellie and Jo ",
+     " (work) hard for their exams next month."
+    ],
+    "answers": [
+     [
+      "are working",
+      "have been working"
+     ]
+    ]
+   },
+   {
+    "num": 16,
+    "parts": [
+     "Dad has been busy at work and last week ",
+     " (he/have) a lot of important meetings."
+    ],
+    "answers": [
+     [
+      "he had"
+     ]
+    ]
+   },
+   {
+    "num": 17,
+    "parts": [
+     "He’s a little tired – I think ",
+     " (he/need) a good holiday."
+    ],
+    "answers": [
+     [
+      "he needs"
+     ]
+    ]
+   },
+   {
+    "num": 18,
+    "parts": [
+     "",
+     " (we/be) in California for a month now."
+    ],
+    "answers": [
+     [
+      "We’ve been"
+     ]
+    ]
+   },
+   {
+    "num": 19,
+    "parts": [
+     "",
+     " (we/get) back to Los Angeles yesterday after "
+    ],
+    "answers": [
+     [
+      "We got"
+     ]
+    ]
+   },
+   {
+    "num": 20,
+    "parts": [
+     "",
+     " (see) many wonderful places."
+    ],
+    "answers": [
+     [
+      "seeing"
+     ]
+    ]
+   },
+   {
+    "num": 21,
+    "parts": [
+     "I think the place ",
+     " (I/like) most was Yosemite National Park – "
+    ],
+    "answers": [
+     [
+      "I liked"
+     ]
+    ]
+   },
+   {
+    "num": 22,
+    "parts": [
+     "it’s beautiful there and ",
+     " (we/go) cycling a lot."
+    ],
+    "answers": [
+     [
+      "we went"
+     ]
+    ]
+   },
+   {
+    "num": 23,
+    "parts": [
+     "The day before ",
+     " (we/leave), "
+    ],
+    "answers": [
+     [
+      "we left"
+     ]
+    ]
+   },
+   {
+    "num": 24,
+    "parts": [
+     "Jon ",
+     " (have) an accident on his bike. Luckily "
+    ],
+    "answers": [
+     [
+      "had"
+     ]
+    ]
+   },
+   {
+    "num": 25,
+    "parts": [
+     "",
+     " (he/not/injure), but the bike "
+    ],
+    "answers": [
+     [
+      "he wasn’t injured"
+     ]
+    ]
+   },
+   {
+    "num": 26,
+    "parts": [
+     "",
+     " (damage)."
+    ],
+    "answers": [
+     [
+      "was damaged"
+     ]
+    ]
+   },
+   {
+    "num": 27,
+    "parts": [
+     "",
+     " (we/change) our travel plans since my last message: now "
+    ],
+    "answers": [
+     [
+      "We’ve changed",
+      "We changed"
+     ]
+    ]
+   },
+   {
+    "num": 28,
+    "parts": [
+     "",
+     " (we/leave) for Hawaii on Monday (not Tuesday)."
+    ],
+    "answers": [
+     [
+      "we’re leaving"
+     ]
+    ]
+   },
+   {
+    "num": 29,
+    "parts": [
+     "",
+     " (we/stay) there for a week before "
+    ],
+    "answers": [
+     [
+      "We’re staying",
+      "We’re going to stay",
+      "We’ll stay"
+     ]
+    ]
+   },
+   {
+    "num": 30,
+    "parts": [
+     "",
+     " (fly) to New Zealand."
+    ],
+    "answers": [
+     [
+      "flying"
+     ]
+    ]
+   },
+   {
+    "num": 31,
+    "parts": [
+     "",
+     " (that/be) different, I’m sure!"
+    ],
+    "answers": [
+     [
+      "That will be",
+      "That’s going to be"
+     ]
+    ]
+   },
+   {
+    "num": 32,
+    "parts": [
+     "Have a good time in Hawaii! Ellie and Jo ",
+     " (finish) their exams yesterday – "
+    ],
+    "answers": [
+     [
+      "finished"
+     ]
+    ]
+   },
+   {
+    "num": 33,
+    "parts": [
+     "",
+     " (I/let) you know when "
+    ],
+    "answers": [
+     [
+      "I’ll let"
+     ]
+    ]
+   },
+   {
+    "num": 34,
+    "parts": [
+     "",
+     " (we/get) the results."
+    ],
+    "answers": [
+     [
+      "we get"
+     ]
+    ]
+   },
+   {
+    "num": 35,
+    "parts": [
+     "We’re all OK. Dad and I ",
+     " (look) forward to our holiday next month."
+    ],
+    "answers": [
+     [
+      "are looking"
+     ]
+    ]
+   },
+   {
+    "num": 36,
+    "parts": [
+     "",
+     " (we/go) to Italy for two weeks – "
+    ],
+    "answers": [
+     [
+      "We’re going"
+     ]
+    ]
+   },
+   {
+    "num": 37,
+    "parts": [
+     "",
+     " (we/send) you an email from there."
+    ],
+    "answers": [
+     [
+      "we’ll send"
+     ]
+    ]
+   }
+  ]
+ }
+}

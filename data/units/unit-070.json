@@ -1,219 +1,25 @@
 {
   "unit": 70,
-  "title": "Countable and uncountable 2",
+  "title": "a/an и the",
   "pdfPages": [
-    152,
-    153
+    151,
+    152
   ],
   "exercises": [
     {
       "id": "70.1",
-      "type": "choice",
-      "instruction": "Which is correct?",
-      "items": [
-        {
-          "num": "1a",
-          "options": [
-            "strange noise",
-            "a strange noise"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "1b",
-          "options": [
-            "there's a lot of noise",
-            "there are a lot of noises"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "2a",
-          "options": [
-            "Light",
-            "A light"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "2b",
-          "options": [
-            "light",
-            "a light"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "3a",
-          "options": [
-            "time",
-            "a time"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "3b",
-          "options": [
-            "great time",
-            "a great time"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "4a",
-          "options": [
-            "glass of water",
-            "a glass of water"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "4b",
-          "options": [
-            "broken glass",
-            "a broken glass"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "5a",
-          "options": [
-            "very nice room",
-            "a very nice room"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "5b",
-          "options": [
-            "room",
-            "a room"
-          ],
-          "answer": 0
-        }
-      ]
-    },
-    {
-      "id": "70.2",
-      "type": "choice",
-      "instruction": "Which is correct?",
-      "items": [
-        {
-          "num": 1,
-          "options": [
-            "nice weather",
-            "a nice weather"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 2,
-          "options": [
-            "bad luck",
-            "a bad luck"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 3,
-          "options": [
-            "travel",
-            "journey"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 4,
-          "options": [
-            "complete chaos",
-            "a complete chaos"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 5,
-          "options": [
-            "don't",
-            "doesn't"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 6,
-          "options": [
-            "some lovely scenery",
-            "a lovely scenery"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 7,
-          "options": [
-            "very hard work",
-            "a very hard work"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 8,
-          "options": [
-            "paper",
-            "papers"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 9,
-          "options": [
-            "heavy traffic",
-            "a heavy traffic"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "10a",
-          "options": [
-            "Your hair is",
-            "Your hairs are"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "10b",
-          "options": [
-            "it",
-            "them"
-          ],
-          "answer": 0
-        }
-      ]
-    },
-    {
-      "id": "70.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using the following words. Use the plural (-s) where necessary.",
-      "wordBank": [
-        "advice",
-        "chair",
-        "damage",
-        "experience",
-        "experience",
-        "furniture",
-        "hair",
-        "luggage",
-        "permission",
-        "progress"
-      ],
+      "instruction": "Вставьте a/an или the.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "We didn't have much ",
-            " – just two small bags."
+            "We enjoyed our trip. ",
+            " hotel was very nice."
           ],
           "answers": [
             [
-              "luggage"
+              "The"
             ]
           ],
           "example": true
@@ -221,109 +27,323 @@
         {
           "num": 2,
           "parts": [
-            "We have no ",
-            ", not even a bed or a table."
+            "‘Can I ask ",
+            " question?’ ‘Sure. What do you want to know?’"
           ],
           "answers": [
             [
-              "furniture"
+              "a"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "There is room for everybody to sit down. There are plenty of ",
-            "."
+            "You look very tired. You need ",
+            " holiday."
           ],
           "answers": [
             [
-              "chairs"
+              "a"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Who is that woman with short ",
-            "? Do you know her?"
+            "‘Where’s Tom?’ ‘He’s in ",
+            " garden.’"
           ],
           "answers": [
             [
-              "hair"
+              "the"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Carla's English is better than it was. She's made good ",
-            "."
+            "Eve is ",
+            " interesting person. You should meet her."
           ],
           "answers": [
             [
-              "progress"
+              "an"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "If you want to take pictures here, you need to ask for ",
-            "."
+            "A: Excuse me, can you tell me how to get to ",
+            " city centre? B: Yes, go straight on and then take ",
+            " next turning left."
           ],
           "answers": [
             [
-              "permission"
+              "the"
+            ],
+            [
+              "the"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "I didn't know what I should do, so I asked Chris for ",
-            "."
+            "A: Shall we go out for ",
+            " meal this evening? B: Yes, that’s ",
+            " good idea."
           ],
           "answers": [
             [
-              "advice"
+              "a"
+            ],
+            [
+              "a"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I don't think Dan should get the job. He doesn't have enough ",
-            "."
+            "It’s ",
+            " nice morning. Let’s go for ",
+            " walk."
           ],
           "answers": [
             [
-              "experience"
+              "a"
+            ],
+            [
+              "a"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "Kate has done many interesting things. She could write a book about her ",
-            "."
+            "Amanda is ",
+            " student. When she finishes her studies, she wants to be ",
+            " journalist. She lives with two friends in ",
+            " apartment near ",
+            " college where she is studying. ",
+            " apartment is small, but she likes it."
           ],
           "answers": [
             [
-              "experiences"
+              "a"
+            ],
+            [
+              "a"
+            ],
+            [
+              "an"
+            ],
+            [
+              "the"
+            ],
+            [
+              "The"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "The ",
-            " caused by the storm will cost a lot to repair."
+            "Peter and Mary have two children, ",
+            " boy and ",
+            " girl. ",
+            " boy is seven years old, and ",
+            " girl is three. Peter works in ",
+            " factory. Mary doesn’t have ",
+            " job at the moment."
           ],
           "answers": [
             [
-              "damage"
+              "a"
+            ],
+            [
+              "a"
+            ],
+            [
+              "the"
+            ],
+            [
+              "the"
+            ],
+            [
+              "a"
+            ],
+            [
+              "a"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70.2",
+      "type": "fill-in",
+      "instruction": "Допишите предложения. Используйте a или the + слова из рамки:",
+      "wordBank": [
+        "airport",
+        "cup",
+        "dictionary",
+        "door",
+        "floor",
+        "picture"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Can you open ",
+            ", please?"
+          ],
+          "answers": [
+            [
+              "the door"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "How far is it to ",
+            "?"
+          ],
+          "answers": [
+            [
+              "the airport"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Can I have ",
+            " of coffee, please?"
+          ],
+          "answers": [
+            [
+              "a cup"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "That’s ",
+            " nice ",
+            " – I like it."
+          ],
+          "answers": [
+            [
+              "a"
+            ],
+            [
+              "picture"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Can you pass me ",
+            ", please?"
+          ],
+          "answers": [
+            [
+              "the dictionary"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Why are you sitting on ",
+            "?"
+          ],
+          "answers": [
+            [
+              "the floor"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70.3",
+      "type": "write",
+      "instruction": "Исправьте ошибки в предложении. Где необходимо, используйте a/an или the.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Don’t forget to turn off light when you go out.",
+          "answers": [
+            "turn off the light"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Enjoy your trip, and don’t forget to send me postcard.",
+          "answers": [
+            "Enjoy your trip, and don’t forget to send me a postcard."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "What is name of this village?",
+          "answers": [
+            "What is the name of this village?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Canada is very big country.",
+          "answers": [
+            "Canada is a very big country."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "What is largest city in Canada?",
+          "answers": [
+            "What is the largest city in Canada?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I like this room, but I don’t like colour of carpet.",
+          "answers": [
+            "I like this room, but I don’t like the colour of the carpet."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "‘Are you OK?’ ‘No, I’ve got headache.’",
+          "answers": [
+            "‘Are you OK?’ ‘No, I’ve got a headache.’"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "We live in old house near station.",
+          "answers": [
+            "We live in an old house near the station."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "What is name of director of film we saw last night?",
+          "answers": [
+            "What is the name of the director of the film we saw last night?"
           ]
         }
       ]
@@ -331,57 +351,72 @@
     {
       "id": "70.4",
       "type": "write",
-      "instruction": "What do you say in these situations? Use the word in brackets in your sentence.",
+      "instruction": "Переведите предложения на английский язык. (4) в (здесь) = to автор = author",
       "items": [
         {
           "num": 1,
-          "prompt": "(luggage)",
+          "prompt": "У меня есть вопрос.",
           "answers": [
-            "Do you have any luggage?"
+            "I have a question.",
+            "I have got a question."
           ]
         },
         {
           "num": 2,
-          "prompt": "(information) I'd like",
+          "prompt": "Ташкент — столица Узбекистана.",
           "answers": [
-            "I'd like some information about places to visit.",
-            "I'd like some information about places to visit in the town."
+            "Tashkent is the capital of Uzbekistan."
           ]
         },
         {
           "num": 3,
-          "prompt": "(advice) Can you give",
+          "prompt": "Это очень интересный город.",
           "answers": [
-            "Can you give me some advice about which courses to do?",
-            "Can you give me some advice about which courses I can do?"
+            "It’s a very interesting city."
           ]
         },
         {
           "num": 4,
-          "prompt": "(good news) Hi, Tom. I",
+          "prompt": "Нам нужно такси в аэропорт.",
           "answers": [
-            "I've just got some good news.",
-            "I've got some good news.",
-            "I've just had some good news.",
-            "I've had some good news.",
-            "I just got some good news.",
-            "I got some good news."
+            "We need a taxi to the airport."
           ]
         },
         {
           "num": 5,
-          "prompt": "(view) It",
+          "prompt": "Какой самый старый город в Англии?",
           "answers": [
-            "It's a beautiful view, isn't it?",
-            "It's a beautiful view from here, isn't it?"
+            "What’s the oldest city in England?",
+            "What is the oldest city in England?",
+            "Which is the oldest city in England?",
+            "What’s the oldest town in England?",
+            "What is the oldest town in England?",
+            "Which is the oldest town in England?"
           ]
         },
         {
           "num": 6,
-          "prompt": "(weather) What",
+          "prompt": "Они живут в новой квартире в центре.",
           "answers": [
-            "What horrible weather!",
-            "What awful weather!"
+            "They live in a new flat in the centre.",
+            "They live in a new apartment in the centre."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "«Где дети?» – «Они в саду».",
+          "answers": [
+            "‘Where are the children?’ ‘They’re in the garden.’"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Это очень хорошая книга. Я знаю автора.",
+          "answers": [
+            "That is a very good book. I know the author.",
+            "That’s a very good book. I know the author.",
+            "It is a very good book. I know the author.",
+            "It’s a very good book. I know the author."
           ]
         }
       ]

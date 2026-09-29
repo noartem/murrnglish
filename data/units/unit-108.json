@@ -1,34 +1,25 @@
 {
   "unit": 108,
-  "title": "Superlative (the longest / the most enjoyable etc.)",
+  "title": "to · in · at (предлоги места 3)",
   "pdfPages": [
-    228,
-    229
+    227,
+    228
   ],
   "exercises": [
     {
       "id": "108.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use the superlative forms (-est or most …) of the words in the box.",
-      "wordBank": [
-        "bad",
-        "cheap",
-        "good",
-        "honest",
-        "popular",
-        "short",
-        "tall"
-      ],
+      "instruction": "Вставьте to или in.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "We didn’t have much money, so we stayed at the ",
-            " hotel in the town."
+            "I like reading ",
+            " bed."
           ],
           "answers": [
             [
-              "cheapest"
+              "in"
             ]
           ],
           "example": true
@@ -36,72 +27,84 @@
         {
           "num": 2,
           "parts": [
-            "This building is 250 metres high, but it’s not ",
-            " in the city."
+            "We’re going ",
+            " Italy next month."
           ],
           "answers": [
             [
-              "the tallest"
+              "to"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "It was an awful day. It was ",
-            " day of my life."
+            "Sue is on holiday ",
+            " Italy at the moment."
           ],
           "answers": [
             [
-              "the worst"
+              "in"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "What is ",
-            " sport in your country?"
+            "I have to go ",
+            " the hospital tomorrow."
           ],
           "answers": [
             [
-              "the most popular"
+              "to"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I like the morning. For me it’s ",
-            " part of the day."
+            "I was tired, so I stayed ",
+            " bed late."
           ],
           "answers": [
             [
-              "the best"
+              "in"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Sarah always tells the truth. She’s one of ",
-            " people I know."
+            "What time do you usually go ",
+            " bed?"
           ],
           "answers": [
             [
-              "the most honest"
+              "to"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "A straight line is ",
-            " distance between two points."
+            "Does this bus go ",
+            " the centre?"
           ],
           "answers": [
             [
-              "the shortest"
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Would you like to live ",
+            " another country?"
+          ],
+          "answers": [
+            [
+              "in"
             ]
           ]
         }
@@ -110,150 +113,138 @@
     {
       "id": "108.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use a superlative (-est or most …) or a comparative (-er or more …).",
+      "instruction": "Где необходимо, вставьте to или at. Одно из предложений не требует добавления предлога.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "We stayed at the cheapest hotel in the town."
+            "Paula didn’t go ",
+            " work yesterday."
           ],
-          "answers": [],
+          "answers": [
+            [
+              "to"
+            ]
+          ],
           "example": true
         },
         {
           "num": 2,
           "parts": [
-            "Our hotel was cheaper than all the others in the town."
+            "I’m tired. I’m going ",
+            " home. (правильно)"
           ],
-          "answers": [],
+          "answers": [
+            [
+              "–"
+            ]
+          ],
           "example": true
         },
         {
           "num": 3,
           "parts": [
-            "I wasn’t feeling well yesterday, but I feel a bit ",
-            " today. (good)"
+            "Tina is not very well. She has gone ",
+            " the doctor."
           ],
           "answers": [
             [
-              "better"
+              "to"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "What’s ",
-            " thing you’ve ever bought? (expensive)"
+            "Would you like to come ",
+            " a party on Saturday?"
           ],
           "answers": [
             [
-              "the most expensive"
+              "to"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I prefer this chair to the other one. It’s ",
-            ". (comfortable)"
+            "‘Is Lisa ",
+            " home?’ ‘No, she’s gone ",
+            " work.’"
           ],
           "answers": [
             [
-              "more comfortable"
+              "at"
+            ],
+            [
+              "to"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Amy and Ben have three daughters. ",
-            " is 14 years old. (old)"
+            "There were 20,000 people ",
+            " the football match."
           ],
           "answers": [
             [
-              "The eldest",
-              "The oldest"
+              "at"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Who is the ",
-            " person you know? (old)"
+            "Why did you go ",
+            " home early last night?"
           ],
           "answers": [
             [
-              "oldest"
+              "–"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "What’s ",
-            " way to get to the station? (quick)"
+            "A boy jumped into the river and swam ",
+            " the other side."
           ],
           "answers": [
             [
-              "the quickest"
+              "to"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "Which is ",
-            " – the bus or the train? (quick)"
+            "There were a lot of people waiting ",
+            " the bus stop."
           ],
           "answers": [
             [
-              "quicker"
+              "at"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "I can remember when I was three years old. It’s ",
-            " memory. (early)"
+            "We had a good meal ",
+            " a restaurant, and then we went back ",
+            " the hotel."
           ],
           "answers": [
             [
-              "my earliest"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "Everest is ",
-            " mountain in the world. It is ",
-            " than any other mountain. (high)"
-          ],
-          "answers": [
-            [
-              "the highest"
+              "at"
             ],
             [
-              "higher"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "A: This knife isn’t very sharp. Do you have a ",
-            " one?\nB: No, it’s ",
-            " one I have. (sharp)"
-          ],
-          "answers": [
-            [
-              "sharper"
-            ],
-            [
-              "the sharpest"
+              "to"
             ]
           ]
         }
@@ -262,17 +253,20 @@
     {
       "id": "108.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use a superlative (-est or most …) + a preposition (of or in).",
+      "instruction": "Где необходимо, вставьте to, at или in. Одно из предложений не требует добавления предлога.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "It’s a very good room. It’s the best room in ",
-            "."
+            "I’m not going out this afternoon. I’m staying ",
+            " home."
           ],
           "answers": [
             [
-              "the hotel"
+              "at"
             ]
           ],
           "example": true
@@ -280,109 +274,164 @@
         {
           "num": 2,
           "parts": [
-            "Brazil is a very large country. It’s ",
-            " South America."
+            "We’re going ",
+            " a concert tomorrow evening."
           ],
           "answers": [
             [
-              "the largest country in"
+              "to"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "It was a very happy day. It was ",
-            " my life."
+            "I went ",
+            " New York last year."
           ],
           "answers": [
             [
-              "the happiest day of"
+              "to"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "This is a very valuable painting. It’s ",
-            " the museum."
+            "How long did you stay ",
+            " New York?"
           ],
           "answers": [
             [
-              "the most valuable painting in"
+              "in"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Spring is a very busy time for me. It’s ",
-            " the year."
+            "Next year we hope to go ",
+            " Canada to visit some friends."
           ],
           "answers": [
             [
-              "the busiest time of"
+              "to"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "It’s a very good room. It’s one of the best rooms in ",
-            "."
+            "Do you want to go ",
+            " the cinema this evening?"
           ],
           "answers": [
             [
-              "the hotel"
+              "to"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 7,
           "parts": [
-            "He’s a very rich man. He’s one ",
-            " the country."
+            "Did you park your car ",
+            " the station?"
           ],
           "answers": [
             [
-              "of the richest men in"
+              "at"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "She’s a very good student. She’s ",
-            " the class."
+            "After the accident three people were taken ",
+            " hospital."
           ],
           "answers": [
             [
-              "one of the best students in"
+              "to"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "It was a very bad experience. It was ",
-            " my life."
+            "How often do you go ",
+            " the dentist?"
           ],
           "answers": [
             [
-              "one of the worst experiences of"
+              "to"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "It’s a very famous university. It’s ",
-            " the world."
+            "‘Is Sarah here?’ ‘No, she’s ",
+            " Helen’s.’"
           ],
           "answers": [
             [
-              "one of the most famous universities in"
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "My house is ",
+            " the end of the street on the left."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I went ",
+            " Maria’s house, but she wasn’t ",
+            " home."
+          ],
+          "answers": [
+            [
+              "to"
+            ],
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "There were no taxis, so we had to walk ",
+            " home."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "‘Who did you meet ",
+            " the party?’ ‘I didn’t go ",
+            " the party.’"
+          ],
+          "answers": [
+            [
+              "at"
+            ],
+            [
+              "to"
             ]
           ]
         }
@@ -390,51 +439,199 @@
     },
     {
       "id": "108.4",
-      "type": "write",
-      "instruction": "What do you say in these situations? Use a superlative + ever.",
+      "type": "fill-in",
+      "instruction": "Где необходимо, вставьте to, at или in. Некоторые предложения не требуют добавления предлога.",
       "items": [
         {
           "num": 1,
-          "prompt": "(boring / movie / ever / see)",
+          "parts": [
+            "What time do you usually get ",
+            " work?"
+          ],
           "answers": [
-            "That’s the most boring movie I’ve ever seen."
+            [
+              "to"
+            ]
           ]
         },
         {
           "num": 2,
-          "prompt": "(funny / joke / ever / hear)",
+          "parts": [
+            "What time do you usually get ",
+            " home?"
+          ],
           "answers": [
-            "That’s the funniest joke I’ve ever heard."
+            [
+              "–"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "(good / coffee / ever / taste)",
+          "parts": [
+            "What time did you arrive ",
+            " the party?"
+          ],
           "answers": [
-            "This is the best coffee I’ve ever tasted."
+            [
+              "at"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "(far / ever / run)",
+          "parts": [
+            "When did you arrive ",
+            " London?"
+          ],
           "answers": [
-            "That’s the furthest I’ve ever run.",
-            "That’s the farthest I’ve ever run."
+            [
+              "in"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "(bad / mistake / ever / make)",
+          "parts": [
+            "What time does the train get ",
+            " Paris?"
+          ],
           "answers": [
-            "It’s the worst mistake I’ve ever made.",
-            "It was the worst mistake I’ve ever made."
+            [
+              "to"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "(famous / person / ever / meet?)",
+          "parts": [
+            "We arrived ",
+            " home very late."
+          ],
           "answers": [
-            "Who’s the most famous person you’ve ever met?"
+            [
+              "–"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "108.5",
+      "type": "self-check",
+      "instruction": "Закончите предложения о себе. Используйте to/in/at.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "At 3 o’clock this morning I was",
+          "modelAnswers": [
+            "in bed"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Yesterday I went",
+          "modelAnswers": [
+            "to work"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "At 11 o’clock yesterday morning I was",
+          "modelAnswers": [
+            "at work"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "One day I’d like to go",
+          "modelAnswers": [
+            "to Canada"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I don’t like going",
+          "modelAnswers": [
+            "to parties"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "At 9 o’clock yesterday evening I was",
+          "modelAnswers": [
+            "at a friend’s house"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "108.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Этот автобус идёт в Кембридж?",
+          "answers": [
+            "Does this bus go to Cambridge?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Когда я езжу в Лондон, я останавливаюсь у своей сестры.",
+          "answers": [
+            "When I go to London, I stay at my sister’s."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Давай сходим в кафе. Я голоден.",
+          "answers": [
+            "Let’s go to a cafe. I’m hungry."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Завтра я не иду в школу.",
+          "answers": [
+            "I’m not going to school tomorrow.",
+            "I am not going to school tomorrow."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Анна приехала в ресторан в 7 часов.",
+          "answers": [
+            "Anna got to the restaurant at 7 (o’clock)."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я люблю смотреть телевизор в кровати.",
+          "answers": [
+            "I like watching TV in bed.",
+            "I like to watch TV in bed."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Пока. Сейчас я иду домой.",
+          "answers": [
+            "Bye. I’m going home now.",
+            "Bye. I am going home now."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Где вы предпочитаете работать – в офисе или дома?",
+          "answers": [
+            "Where do you prefer to work – in an/the office or at home?",
+            "Where do you prefer to work – in an office or at home?",
+            "Where do you prefer to work – in the office or at home?"
           ]
         }
       ]

@@ -1,0 +1,523 @@
+{
+ "unit": 85,
+ "title": "(a) little · (a) few",
+ "pdfPages": [
+  181,
+  182
+ ],
+ "exercises": [
+  {
+   "id": "85.1",
+   "type": "fill-in",
+   "instruction": "Ответьте на вопросы, используя a little или a few.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "‘Do you have any money?’ ‘Yes, ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a little"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Do you have any envelopes?’ ‘Yes, ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a few"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "‘Do you want sugar in your coffee?’ ‘Yes, ",
+      ", please.’"
+     ],
+     "answers": [
+      [
+       "a little"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘Did you take any photos when you were on holiday?’ ‘Yes, ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a few"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Does your friend speak English?’ ‘Yes, ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a little"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Are there any good restaurants in this town?’ ‘Yes, ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a few"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "85.2",
+   "type": "fill-in",
+   "instruction": "Используйте a little или a few + слова из рамки:",
+   "wordBank": [
+    "chairs",
+    "days",
+    "fresh air",
+    "friends",
+    "milk",
+    "Russian",
+    "times",
+    "years"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Mark speaks Italian well. He lived in Italy for ",
+      "."
+     ],
+     "answers": [
+      [
+       "a few years"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Can I have ",
+      " in my coffee, please?"
+     ],
+     "answers": [
+      [
+       "a little milk"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "‘When did Amy go away?’ ‘",
+      " ago.’"
+     ],
+     "answers": [
+      [
+       "A few days"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘Do you speak any foreign languages?’ ‘I can speak ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a little Russian"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Are you going out alone?’ ‘No. I’m going with ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a few friends"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Have you ever been to Mexico?’ ‘Yes, ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "a few times"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "There wasn’t much furniture in the room – just a table and ",
+      "."
+     ],
+     "answers": [
+      [
+       "a few chairs"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I’m going out for a walk. I need ",
+      "."
+     ],
+     "answers": [
+      [
+       "a little fresh air"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "85.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте very little или very few + слова из рамки:",
+   "wordBank": [
+    "coffee",
+    "hotels",
+    "mistakes",
+    "people",
+    "rain",
+    "time",
+    "work"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Your English is very good. You make ",
+      "."
+     ],
+     "answers": [
+      [
+       "very few mistakes"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I drink ",
+      ". I prefer tea."
+     ],
+     "answers": [
+      [
+       "very little coffee"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The weather here is very dry in summer. There is ",
+      "."
+     ],
+     "answers": [
+      [
+       "very little rain"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "It’s difficult to find a place to stay in this town. There are ",
+      "."
+     ],
+     "answers": [
+      [
+       "very few hotels"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Hurry up. We have ",
+      "."
+     ],
+     "answers": [
+      [
+       "very little time"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The town is very quiet at night. ",
+      "go out."
+     ],
+     "answers": [
+      [
+       "Very few people"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Some people in the office are very lazy. They do ",
+      "."
+     ],
+     "answers": [
+      [
+       "very little work"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "85.4",
+   "type": "fill-in",
+   "instruction": "Вставьте little / a little или few / a few.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "There was ",
+      " food in the fridge. It was nearly empty."
+     ],
+     "answers": [
+      [
+       "little"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘When did Sarah go out?’ ‘",
+      " minutes ago.’"
+     ],
+     "answers": [
+      [
+       "A few"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I can’t decide now. I need ",
+      " time to think about it."
+     ],
+     "answers": [
+      [
+       "a little"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "There was ",
+      " traffic, so we arrived earlier than we expected."
+     ],
+     "answers": [
+      [
+       "little"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "The bus service isn’t very good at night – there are ",
+      " buses after 9 o’clock."
+     ],
+     "answers": [
+      [
+       "few"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Would you like some soup?’ ‘Yes, ",
+      ", please.’"
+     ],
+     "answers": [
+      [
+       "a little"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I’d like to practise my English more, but I have ",
+      " opportunity."
+     ],
+     "answers": [
+      [
+       "little concentrator"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "85.5",
+   "type": "write",
+   "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку. Напротив правильных предложений напишите OK.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "We’re going away for few days next week.",
+     "answers": [
+      "We’re going away for a few days next week."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Everybody needs little luck.",
+     "answers": [
+      "Everybody needs a little luck."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I can’t talk to you now – I have few things to do.",
+     "answers": [
+      "I can’t talk to you now – I have a few things to do."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I eat very little meat – I don’t like it very much.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Excuse me, can I ask you few questions?",
+     "answers": [
+      "Excuse me, can I ask you a few questions?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "There were little people on the bus – it was nearly empty.",
+     "answers": [
+      "There were few people on the bus – it was nearly empty."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Mark is a very private person. Few people know him well.",
+     "answers": [
+      "OK"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "85.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Марина несколько лет жила в Лондоне.",
+     "answers": [
+      "Marina lived in London for a few years.",
+      "For a few years Marina lived in London."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "‘Хотите кофе?’ – ‘Немного, пожалуйста’.",
+     "answers": [
+      "‘Would you like some coffee?’ ‘A little, please.’",
+      "‘Do you want some coffee?’ ‘A little, please.’"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Ночью на дороге совсем мало машин.",
+     "answers": [
+      "There are very few cars on the road at night."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Мне нужно немного времени, чтобы закончить эту работу.",
+     "answers": [
+      "I need a little time to finish this work"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Я знаю совсем мало людей в этом городе.",
+     "answers": [
+      "I know very few people in this town.",
+      "I know very few people in this city."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "У меня есть несколько идей. Ты хочешь их услышать?",
+     "answers": [
+      "I have a few ideas. Do you want to hear them?",
+      "I’ve got a few ideas. Do you want to hear them?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Боб знает очень мало о политике.",
+     "answers": [
+      "Bob knows very little about politics."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я ем совсем мало рыбы. Она очень дорогая.",
+     "answers": [
+      "I eat very little fish. It’s very expensive."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,39 +1,29 @@
 {
   "unit": 42,
-  "title": "Passive 1 (is done / was done)",
+  "title": "Have you? · Are you? · Don’t you? и т. д.",
   "pdfPages": [
-    96,
-    97
+    95,
+    96
   ],
   "exercises": [
     {
       "id": "42.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use these verbs in the correct form, present or past:",
-      "wordBank": [
-        "cause",
-        "damage",
-        "find",
-        "hold",
-        "injure",
-        "invite",
-        "make",
-        "overtake",
-        "own",
-        "send",
-        "show",
-        "surround"
+      "instruction": "Ответьте фразой Do you? / Doesn’t she? / Did they? и т. д.",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "Many accidents ",
-            " by careless driving."
+            "",
+            "? Which ones?"
           ],
           "answers": [
             [
-              "are caused"
+              "Do you",
+              "Do you?"
             ]
           ],
           "example": true
@@ -41,132 +31,65 @@
         {
           "num": 2,
           "parts": [
-            "Cheese ",
-            " from milk."
+            "",
+            "? I work in a bank too."
           ],
           "answers": [
             [
-              "is made"
+              "Do you?",
+              "Do you"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "The roof of the building ",
-            " in a storm a few days ago."
+            "",
+            "? Were you ill?"
           ],
           "answers": [
             [
-              "was damaged"
+              "Didn’t you?",
+              "Didn’t you"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "A cinema is a place where films ",
-            "."
+            "",
+            "? Why not?"
           ],
           "answers": [
             [
-              "are shown"
+              "Doesn’t she?",
+              "Doesn’t she"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "You ",
-            " to the party. Why didn't you go?"
+            "",
+            "? I feel fine."
           ],
           "answers": [
             [
-              "were invited"
+              "Do I?",
+              "Do I"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "This plant is very rare. It ",
-            " in very few places."
+            "",
+            "? What did she say?"
           ],
           "answers": [
             [
-              "'s/is found"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Although we were driving fast, we ",
-            " by a lot of other cars."
-          ],
-          "answers": [
-            [
-              "were overtaken"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "In the US, elections for president ",
-            " every four years."
-          ],
-          "answers": [
-            [
-              "are held"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "There was an accident last night, but fortunately nobody ",
-            "."
-          ],
-          "answers": [
-            [
-              "was injured"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "You can't see the house from the road. It ",
-            " by trees."
-          ],
-          "answers": [
-            [
-              "is surrounded"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "I never received the letter. It ",
-            " to the wrong address."
-          ],
-          "answers": [
-            [
-              "was sent"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "The company I work for ",
-            " by a much larger company."
-          ],
-          "answers": [
-            [
-              "is owned"
+              "Did she?",
+              "Did she"
             ]
           ]
         }
@@ -174,184 +97,451 @@
     },
     {
       "id": "42.2",
-      "type": "write",
-      "instruction": "Write questions using the passive. Some are present and some are past.",
+      "type": "fill-in",
+      "instruction": "Ответьте фразой Have you? / Haven’t you? / Did she? / Didn’t she? и т. д.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "(how / make?)",
+          "parts": [
+            "",
+            "? What make is it?"
+          ],
           "answers": [
-            "How is glass made?"
-          ]
+            [
+              "Have you",
+              "Have you?"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(when / invent?)",
+          "parts": [
+            "",
+            "? Does he eat fish?"
+          ],
           "answers": [
-            "When was television invented?"
-          ]
+            [
+              "Doesn’t he",
+              "Doesn’t he?"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "(how / form?)",
+          "parts": [
+            "",
+            "? When did you last have it?"
+          ],
           "answers": [
-            "How are mountains formed?"
+            [
+              "Have you?",
+              "Have you"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "(when / discover?)",
+          "parts": [
+            "",
+            "? She should learn."
+          ],
           "answers": [
-            "When was DNA discovered?"
+            [
+              "Can’t she?",
+              "Can’t she"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "(what / use for?)",
+          "parts": [
+            "",
+            "? I didn’t know that."
+          ],
           "answers": [
-            "What is silver used for?"
+            [
+              "Were you?",
+              "Were you"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            "? Was the bed uncomfortable?"
+          ],
+          "answers": [
+            [
+              "Didn’t you?",
+              "Didn’t you"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "",
+            "? Are you going to watch it?"
+          ],
+          "answers": [
+            [
+              "Is there?",
+              "Is there"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            "? Why not?"
+          ],
+          "answers": [
+            [
+              "Aren’t you?",
+              "Aren’t you"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "",
+            "? How is she?"
+          ],
+          "answers": [
+            [
+              "Did you?",
+              "Did you"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "",
+            "? What kind of factory?"
+          ],
+          "answers": [
+            [
+              "Does she?",
+              "Does she"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "",
+            "? Where will you be?"
+          ],
+          "answers": [
+            [
+              "Won’t you?",
+              "Won’t you"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "",
+            "? It was working yesterday."
+          ],
+          "answers": [
+            [
+              "Isn’t it?",
+              "Isn’t it"
+            ]
           ]
         }
       ]
     },
     {
       "id": "42.3",
-      "type": "choice",
-      "instruction": "Put the verb into the correct form, present or past, active or passive.",
+      "type": "fill-in",
+      "instruction": "Закончите разделительные вопросы, добавив isn’t it? / haven’t you? и т. д.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "options": [
-            "a Two hundred people are employed by the company.",
-            "b The company employs 200 people."
+          "parts": [
+            "It’s a beautiful day, ",
+            "?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "isn’t it"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "options": [
-            "a covers",
-            "b is covered"
+          "parts": [
+            "These flowers are nice, ",
+            "?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "aren’t they"
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "a was stolen",
-            "b disappeared"
+          "parts": [
+            "Jane was at the party, ",
+            "?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "wasn’t she"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "a died",
-            "b were brought up"
+          "parts": [
+            "You’ve been to Paris, ",
+            "?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "haven’t you"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "a sank",
-            "b was rescued"
+          "parts": [
+            "You speak German, ",
+            "?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "don’t you"
+            ]
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "a was fired",
-            "b resigned"
+          "parts": [
+            "Martin looks tired, ",
+            "?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "doesn’t he"
+            ]
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "a doesn't bother",
-            "b 'm/am not bothered"
+          "parts": [
+            "You’ll help me, ",
+            "?"
           ],
-          "answer": 0
-        },
-        {
-          "num": 8,
-          "options": [
-            "a was knocked",
-            "b fell"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 9,
-          "options": [
-            "a are they called",
-            "b do you call"
-          ],
-          "answer": 0
+          "answers": [
+            [
+              "won’t you"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "42.4",
-      "type": "write",
-      "instruction": "Instead of using somebody, they, people etc., write a passive sentence.",
+      "type": "fill-in",
+      "instruction": "Закончите разделительные вопросы, добавив is it? / do you? и т. д. или isn’t it? / don’t you? и т. д.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "Somebody cleans the room every day.",
+          "parts": [
+            "You haven’t got a car, ",
+            "?"
+          ],
           "answers": [
-            "The room is cleaned every day."
-          ]
+            [
+              "have you"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "They cancelled all flights because of fog.",
+          "parts": [
+            "You aren’t tired, ",
+            "?"
+          ],
           "answers": [
-            "All flights were cancelled because of fog."
+            [
+              "are you"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "Somebody accused me of stealing money.",
+          "parts": [
+            "Lisa is a very nice person, ",
+            "?"
+          ],
           "answers": [
-            "I was accused of stealing money."
+            [
+              "isn’t she"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "How do you use this word?",
+          "parts": [
+            "You can play the piano, ",
+            "?"
+          ],
           "answers": [
-            "How is this word used?"
+            [
+              "can’t you"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "The price includes all taxes.",
+          "parts": [
+            "You don’t know Mike’s sister, ",
+            "?"
+          ],
           "answers": [
-            "All taxes are included in the price."
+            [
+              "do you"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "People warned us not to go out alone.",
+          "parts": [
+            "Sarah went to university, ",
+            "?"
+          ],
           "answers": [
-            "We were warned not to go out alone."
+            [
+              "didn’t she"
+            ]
           ]
         },
         {
           "num": 7,
-          "prompt": "We don't use this office any more.",
+          "parts": [
+            "The film wasn’t very good, ",
+            "?"
+          ],
           "answers": [
-            "This office isn't / is not used any more."
+            [
+              "was it"
+            ]
           ]
         },
         {
           "num": 8,
-          "prompt": "They invited five hundred people to the wedding.",
+          "parts": [
+            "Anna lives near you, ",
+            "?"
+          ],
           "answers": [
-            "Five hundred people were invited to the wedding."
+            [
+              "doesn’t she"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "You won’t tell anybody what I said, ",
+            "?"
+          ],
+          "answers": [
+            [
+              "will you"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "42.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя does he? / will they? и т. д. (в отпуске = on holiday; ломаться = break down; пирожное = cake)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Марина работает в больнице, не так ли?",
+          "answers": [
+            "Marina works in a hospital, doesn’t she?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Фильм был классный, правда?",
+          "answers": [
+            "It was a great film, wasn’t it?",
+            "The film was great, wasn’t it?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Эти пирожные отличные, не правда ли?",
+          "answers": [
+            "These cakes are lovely, aren’t they?",
+            "These cakes are excellent, aren’t they?",
+            "These cakes are great, aren’t they?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "«Дэвид болел в отпуске». – «Неужели?»",
+          "answers": [
+            "‘David was ill on holiday.’ ‘Was he?’"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "«Анна говорит на французском, немецком и итальянском». – «Правда?»",
+          "answers": [
+            "‘Anna speaks French, German and Italian.’ ‘Does she?’"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "«На этой улице есть очень приятное кафе». – «Действительно?»",
+          "answers": [
+            "‘There’s a very nice café in this street.’ ‘Is there?’",
+            "‘There is a very nice café in this street.’ ‘Is there?’"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Инна будет на вечеринке, правда?",
+          "answers": [
+            "Inna will be at the party, won’t she?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "«Моя машина сломалась». – «Неужели?»",
+          "answers": [
+            "‘My car has broken down.’ ‘Has it?’",
+            "‘My car broke down.’ ‘Did it?’"
           ]
         }
       ]

@@ -1,123 +1,168 @@
 {
   "id": 19,
-  "topic": "if (conditional)",
-  "refs": "Units 25, 38–40",
+  "topic": "present perfect и past simple",
+  "refs": "Разделы 19–21",
   "pdfPages": [
-    325
+    260
   ],
   "exercise": {
     "id": "19",
     "type": "fill-in",
-    "instruction": "Put the verb into the correct form.",
+    "instruction": "Present perfect или past simple? Допишите предложения (утвердительные или отрицательные).",
     "items": [
       {
-        "num": 4,
+        "num": 1,
         "parts": [
-          "If the doorbell ",
-          ", don't answer it. (ring)"
+          "A: Do you like London? B: I don’t know. I ",
+          " there."
         ],
         "answers": [
           [
-            "rings"
+            "haven’t been"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 2,
+        "parts": [
+          "A: Have you seen Kate? B: Yes, I ",
+          " her five minutes ago."
+        ],
+        "answers": [
+          [
+            "saw"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 3,
+        "parts": [
+          "A: That’s a nice sweater. Is it new? B: Yes, I ",
+          " it last week."
+        ],
+        "answers": [
+          [
+            "bought",
+            "got"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "A: Are you tired this morning? B: Yes, I ",
+          " to bed late last night."
+        ],
+        "answers": [
+          [
+            "went"
           ]
         ]
       },
       {
         "num": 5,
         "parts": [
-          "I can't decide what to do. What would you do if ",
-          " me? (you / be)"
+          "A: Do you want this newspaper, or can I have it? B: You can have it. I ",
+          " it."
         ],
         "answers": [
           [
-            "you were"
+            "’ve read",
+            "have read",
+            "read",
+            "’ve finished with",
+            "have finished with"
           ]
         ]
       },
       {
         "num": 6,
         "parts": [
-          "Well, if ",
-          " a nice day, we can go to the beach. (it / be)"
+          "A: Are you enjoying your new job? B: I ",
+          " yet. My first day is next Monday."
         ],
         "answers": [
           [
-            "it's",
-            "it is"
+            "haven’t started",
+            "haven’t started it",
+            "haven’t begun",
+            "haven’t begun it"
           ]
         ]
       },
       {
         "num": 7,
         "parts": [
-          "No, it's not warm enough. If ",
-          " warmer, I'd go. (it / be)"
+          "A: The weather isn’t very nice today, is it? B: No, but it ",
+          " nice yesterday."
         ],
         "answers": [
           [
-            "it was",
-            "it were"
+            "was"
           ]
         ]
       },
       {
         "num": 8,
         "parts": [
-          "No, it was too cold. If ",
-          " warmer, we might have gone. (it / be)"
+          "A: Was Helen at the party on Saturday? B: I don’t think so. I ",
+          " her there."
         ],
         "answers": [
           [
-            "it had been"
+            "didn’t see"
           ]
         ]
       },
       {
         "num": 9,
         "parts": [
-          "If ",
-          " enough money to go anywhere in the world, where would you go? (you / have)"
+          "A: Is your son still at school? B: No, he ",
+          " school two years ago."
         ],
         "answers": [
           [
-            "you had"
+            "left"
           ]
         ]
       },
       {
         "num": 10,
         "parts": [
-          "I didn't have my phone with me, so I couldn't call you. I would have called you if ",
-          " my phone. (I / have)"
+          "A: Is Silvia married? B: Yes, she ",
+          " married for five years."
         ],
         "answers": [
           [
-            "I'd had",
-            "I had had"
+            "’s been",
+            "has been"
           ]
         ]
       },
       {
         "num": 11,
         "parts": [
-          "The accident was your fault. If you'd been driving more carefully, ",
-          ". (it / not / happen)"
+          "A: Have you heard of George Washington? B: Of course. He ",
+          " the first President of the United States."
         ],
         "answers": [
           [
-            "it wouldn't have happened"
+            "was"
           ]
         ]
       },
       {
         "num": 12,
         "parts": [
-          "Well, if ",
-          " it, I wouldn't know what was happening in the world. (I / not / watch)"
+          "A: How long does it take to make a pizza? B: I don’t know. I ",
+          " a pizza."
         ],
         "answers": [
           [
-            "I didn't watch"
+            "’ve never made",
+            "have never made"
           ]
         ]
       }

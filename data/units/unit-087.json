@@ -1,135 +1,94 @@
 {
   "unit": 87,
-  "title": "much, many, little, few, a lot, plenty",
+  "title": "quickly/badly/suddenly и т. д. (наречия)",
   "pdfPages": [
-    186,
-    187
+    185,
+    186
   ],
   "exercises": [
     {
       "id": "87.1",
       "type": "fill-in",
-      "instruction": "In some of these sentences much is incorrect or unnatural. Change much to many or a lot (of) where necessary. Write ‘OK’ if the sentence is correct.",
+      "instruction": "Посмотрите на картинки и закончите предложения. Вставьте наречия из рамки:",
+      "wordBank": [
+        "angrily",
+        "badly",
+        "dangerously",
+        "fast",
+        "heavily",
+        "quietly"
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "We didn’t eat ",
+            "It’s raining ",
             "."
           ],
           "answers": [
             [
-              "OK"
-            ]
-          ]
-        },
-        {
-          "num": 2,
-          "parts": [
-            "My mother drinks ",
-            " tea."
-          ],
-          "answers": [
-            [
-              "a lot of"
+              "heavily"
             ]
           ],
           "example": true
         },
         {
-          "num": 3,
+          "num": 2,
           "parts": [
-            "Be quick. We don’t have ",
-            " time."
+            "He sings very ",
+            "."
           ],
           "answers": [
             [
-              "OK"
+              "badly"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "They came in ",
+            "."
+          ],
+          "answers": [
+            [
+              "quietly"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "It cost ",
-            " to repair the car."
+            "She shouted at me ",
+            "."
           ],
           "answers": [
             [
-              "a lot"
+              "angrily"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Did it cost ",
-            " to repair the car?"
+            "She can run very ",
+            "."
           ],
           "answers": [
             [
-              "OK"
+              "fast"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "You have ",
-            " luggage. Let me help you."
-          ],
-          "answers": [
-            [
-              "a lot of"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "There wasn’t ",
-            " traffic this morning."
-          ],
-          "answers": [
-            [
-              "OK"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "I don’t know ",
-            " people in this town."
-          ],
-          "answers": [
-            [
-              "many",
-              "a lot of"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "Do you eat ",
-            " fruit?"
-          ],
-          "answers": [
-            [
-              "OK"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Mike likes travelling. He travels ",
+            "He was driving ",
             "."
           ],
           "answers": [
             [
-              "a lot"
+              "dangerously"
             ]
           ]
         }
@@ -138,25 +97,35 @@
     {
       "id": "87.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using plenty of … or plenty to …. Choose from:",
+      "instruction": "Закончите предложения. Используйте слова из обеих рамок.",
       "wordBank": [
-        "hotels",
-        "learn",
-        "money",
-        "room",
-        "see",
-        "time"
+        "come",
+        "know",
+        "sleep",
+        "win",
+        "explain",
+        "listen",
+        "think",
+        "work",
+        "carefully",
+        "clearly",
+        "hard",
+        "well",
+        "carefully",
+        "easily",
+        "quickly",
+        "well"
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "There’s no need to hurry. There’s plenty of ",
+            "I’m going to tell you something very important, so please ",
             "."
           ],
           "answers": [
             [
-              "time"
+              "listen carefully"
             ]
           ],
           "example": true
@@ -164,60 +133,93 @@
         {
           "num": 2,
           "parts": [
-            "He has no financial problems. He has ",
-            "."
+            "They ",
+            ". At the end of the day they’re always tired."
           ],
           "answers": [
             [
-              "plenty of money"
+              "work hard"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Come and sit with us. There’s ",
-            "."
+            "I’m tired this morning. I didn’t ",
+            " last night."
           ],
           "answers": [
             [
-              "plenty of room"
+              "sleep well"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "She knows a lot, but she still has ",
+            "You play tennis much better than me. When we play, you always ",
             "."
           ],
           "answers": [
             [
-              "plenty to learn"
+              "win easily"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "It’s an interesting town to visit. There ",
-            "."
+            "",
+            " before you answer the question."
           ],
           "answers": [
             [
-              "is plenty to see"
+              "Think carefully"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I’m sure we’ll find somewhere to stay. There are ",
+            "I’ve met Alice a few times, but I don’t ",
+            " her very ",
             "."
           ],
           "answers": [
             [
-              "plenty of hotels"
+              "know"
+            ],
+            [
+              "well"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Our teacher doesn’t ",
+            " things very ",
+            ". We never understand him."
+          ],
+          "answers": [
+            [
+              "explain"
+            ],
+            [
+              "clearly",
+              "well"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Helen! I need your help. ",
+            "!"
+          ],
+          "answers": [
+            [
+              "Come quickly"
             ]
           ]
         }
@@ -225,197 +227,120 @@
     },
     {
       "id": "87.3",
-      "type": "fill-in",
-      "instruction": "Put in much/many/little/few (one word only).",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "She isn’t popular. She has ",
-            " friends."
+          "options": [
+            "Don’t eat so quick. It’s not good for you.",
+            "Don’t eat so quickly. It’s not good for you."
           ],
-          "answers": [
-            [
-              "few"
-            ]
-          ],
-          "example": true
+          "answer": 1
         },
         {
           "num": 2,
-          "parts": [
-            "Anna is very busy these days. She has ",
-            " free time."
+          "options": [
+            "Why are you angry? I haven’t done anything.",
+            "Why are you angrily? I haven’t done anything."
           ],
-          "answers": [
-            [
-              "little"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 3,
-          "parts": [
-            "Did you take ",
-            " pictures at the wedding?"
+          "options": [
+            "Can you speak slow, please?",
+            "Can you speak slowly, please?"
           ],
-          "answers": [
-            [
-              "many"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 4,
-          "parts": [
-            "This is a modern city. There are ",
-            " old buildings."
+          "options": [
+            "Come on, Dave! Why are you always so slow?",
+            "Come on, Dave! Why are you always so slowly?"
           ],
-          "answers": [
-            [
-              "few"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 5,
-          "parts": [
-            "The weather has been very dry recently. We’ve had ",
-            " rain."
+          "options": [
+            "Sam is a very careful driver.",
+            "Sam is a very carefully driver."
           ],
-          "answers": [
-            [
-              "little"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 6,
-          "parts": [
-            "I don’t know London well. I haven’t been there for ",
-            " years."
+          "options": [
+            "Amy is studying hard for her examinations.",
+            "Amy is studying hardly for her examinations."
           ],
-          "answers": [
-            [
-              "many"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 7,
-          "parts": [
-            "The two cars are similar. There is ",
-            " difference between them."
+          "options": [
+            "'Where’s Anna?' 'She was here, but she left sudden.'",
+            "'Where’s Anna?' 'She was here, but she left suddenly.'"
           ],
-          "answers": [
-            [
-              "little"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 8,
-          "parts": [
-            "I’m not very busy today. I don’t have ",
-            " to do."
+          "options": [
+            "Please be quiet. I’m studying.",
+            "Please be quietly. I’m studying."
           ],
-          "answers": [
-            [
-              "much"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 9,
-          "parts": [
-            "It’s a wonderful place to live. There are ",
-            " better places to be."
+          "options": [
+            "Some companies pay their workers very bad.",
+            "Some companies pay their workers very badly."
           ],
-          "answers": [
-            [
-              "few"
-            ]
-          ]
+          "answer": 1
+        },
+        {
+          "num": 10,
+          "options": [
+            "Those oranges look nice. Can I have one?",
+            "Those oranges look nicely. Can I have one?"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 11,
+          "options": [
+            "I don’t remember much about the accident. Everything happened quick.",
+            "I don’t remember much about the accident. Everything happened quickly."
+          ],
+          "answer": 1
         }
       ]
     },
     {
       "id": "87.4",
-      "type": "choice",
-      "instruction": "Which is right?",
-      "items": [
-        {
-          "num": 1,
-          "options": [
-            "few problems",
-            "a few problems"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 2,
-          "options": [
-            "few dollars",
-            "a few dollars"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 3,
-          "options": [
-            "little traffic",
-            "a little traffic"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 4,
-          "options": [
-            "few years ago",
-            "a few years ago"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 5,
-          "options": [
-            "little time",
-            "a little time"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 6,
-          "options": [
-            "only few words",
-            "only a few words"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 7,
-          "options": [
-            "Few people",
-            "A few people"
-          ],
-          "answer": 0
-        }
-      ]
-    },
-    {
-      "id": "87.5",
       "type": "fill-in",
-      "instruction": "Put in little / a little / few / a few.",
+      "instruction": "Вставьте good или well.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Gary is very busy with his job. He has ",
-            " time for other things."
+            "Your English is very ",
+            ". You speak it very ",
+            "."
           ],
           "answers": [
             [
-              "little"
+              "good"
+            ],
+            [
+              "well"
             ]
           ],
           "example": true
@@ -423,109 +348,132 @@
         {
           "num": 2,
           "parts": [
-            "Listen carefully. I’m going to give you ",
-            " advice."
+            "Jackie did very ",
+            " in her exams."
           ],
           "answers": [
             [
-              "a little"
+              "well"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Do you mind if I ask you ",
-            " questions?"
+            "The party was very ",
+            ". I enjoyed it very much."
           ],
           "answers": [
             [
-              "a few"
+              "good"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "It’s not a very interesting place, so ",
-            " tourists visit."
+            "Mark has a difficult job, but he does it ",
+            "."
           ],
           "answers": [
             [
-              "few"
+              "well"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I don’t think Amy would be a good teacher. She has ",
-            " patience."
+            "How are your parents? Are they ",
+            "?"
           ],
           "answers": [
             [
-              "little"
+              "well"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "‘Would you like milk in your coffee?’ ‘Yes, ",
-            ", please.’"
+            "Did you have a ",
+            " holiday? Was the weather ",
+            "?"
           ],
           "answers": [
             [
-              "a little"
+              "good"
+            ],
+            [
+              "good"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (веди машину = drive)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Завтра мне нужно рано вставать.",
+          "answers": [
+            "I need to get up early tomorrow.",
+            "I have to get up early tomorrow.",
+            "Tomorrow I need to get up early.",
+            "Tomorrow I have to get up early."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Идёт дождь. Пожалуйста, веди машину медленно и осторожно.",
+          "answers": [
+            "It’s raining. Please drive slowly and carefully."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Тарелка горячая. Будь осторожна.",
+          "answers": [
+            "The plate is hot. Be careful."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Джеймс говорит по-английски очень быстро.",
+          "answers": [
+            "James speaks English very fast.",
+            "James speaks English very quickly."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Моя дочь ложится спать очень поздно.",
+          "answers": [
+            "My daughter goes to bed very late."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Анна очень хорошо поёт.",
+          "answers": [
+            "Anna sings very well."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "This is a boring place to live. There’s ",
-            " to do."
-          ],
+          "prompt": "Почему ты неожиданно остановилась?",
           "answers": [
-            [
-              "little"
-            ]
+            "Why did you stop suddenly?"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I know Hong Kong quite well. I’ve been there ",
-            " times."
-          ],
+          "prompt": "Вы хорошо знаете Марину?",
           "answers": [
-            [
-              "a few"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "There were only ",
-            " people at the meeting."
-          ],
-          "answers": [
-            [
-              "a few"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "‘Did you do all this work on your own?’ ‘No, I had ",
-            " help from my friends.’"
-          ],
-          "answers": [
-            [
-              "a little"
-            ]
+            "Do you know Marina well?"
           ]
         }
       ]

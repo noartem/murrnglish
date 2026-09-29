@@ -1,130 +1,81 @@
 {
   "unit": 48,
-  "title": "Reported speech 2",
+  "title": "What … ? · Which … ? · How … ? (вопросы 4)",
   "pdfPages": [
-    108,
-    109
+    107,
+    108
   ],
   "exercises": [
     {
       "id": "48.1",
-      "type": "fill-in",
-      "instruction": "Here are some things that Sarah said to you earlier. But later Sarah says something different to you. What do you say?",
+      "type": "write",
+      "instruction": "Напишите вопросы, начинающиеся с What.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Dave works very hard. But you said ",
-            "."
-          ],
+          "prompt": "I’ve got a new TV. (make?)",
           "answers": [
-            [
-              "he was lazy"
-            ]
+            "What make is it?"
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "Let's have fish for dinner. But you said ",
-            "."
-          ],
+          "prompt": "I want a job. (kind?)",
           "answers": [
-            [
-              "you didn't like fish"
-            ]
-          ]
+            "What kind of job do you want?"
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": [
-            "I'm going to buy a car. But you said ",
-            "."
-          ],
+          "prompt": "I bought a new sweater. (colour?)",
           "answers": [
-            [
-              "you couldn't drive"
-            ]
+            "What colour is it?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Jane is always short of money. But you said ",
-            "."
-          ],
+          "prompt": "I got up early this morning. (time?)",
           "answers": [
-            [
-              "she had a very well-paid job"
-            ]
+            "What time did you get up?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "My sister lives in Paris. But you said ",
-            "."
-          ],
+          "prompt": "I like music. (type?)",
           "answers": [
-            [
-              "you didn't have any brothers or sisters"
-            ]
+            "What type of music do you like?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I think New York is a great place. But you said ",
-            "."
-          ],
+          "prompt": "I want to buy a car. (kind?)",
           "answers": [
-            [
-              "you'd never been to the United States",
-              "you had never been to the United States"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Let's go out tomorrow evening. But you said ",
-            "."
-          ],
-          "answers": [
-            [
-              "you were working tomorrow evening"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "I've never spoken to Jane. But you said ",
-            "."
-          ],
-          "answers": [
-            [
-              "she was a friend of yours"
-            ]
+            "What kind of car do you want?",
+            "What kind of car do you want to buy?"
           ]
         }
+      ],
+      "example": [
+        1,
+        2
       ]
     },
     {
       "id": "48.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences with say or tell (in the correct form). Use only one word each time.",
+      "instruction": "Допишите вопросы. Используйте Which … ?",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Anna ",
-            " goodbye to me and left."
+            "",
+            " shall we go?"
           ],
           "answers": [
             [
-              "said"
+              "Which way"
             ]
           ],
           "example": true
@@ -133,115 +84,36 @@
           "num": 2,
           "parts": [
             "",
-            " us about your holiday. Did you have a nice time?"
+            " is yours?"
           ],
           "answers": [
             [
-              "Tell"
+              "Which coat"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Don't just stand there! ",
-            " something!"
+            "",
+            " do you want to see?"
           ],
           "answers": [
             [
-              "Say"
+              "Which film",
+              "Which movie"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I wonder where Sue is. She ",
-            " she would be here at 8 o'clock."
+            "",
+            " goes to the centre?"
           ],
           "answers": [
             [
-              "said"
-            ]
-          ]
-        },
-        {
-          "num": 5,
-          "parts": [
-            "Dan ",
-            " me that he was bored with his job."
-          ],
-          "answers": [
-            [
-              "told"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "The doctor ",
-            " that I should rest for at least a week."
-          ],
-          "answers": [
-            [
-              "said"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Gary couldn't help me. He ",
-            " me to ask Chris."
-          ],
-          "answers": [
-            [
-              "told"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Gary couldn't help me. He ",
-            " to ask Chris."
-          ],
-          "answers": [
-            [
-              "said"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "Don't ",
-            " anybody what I ",
-            ". It's a secret just between us."
-          ],
-          "answers": [
-            [
-              "tell"
-            ],
-            [
-              "said"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "'Did Kate ",
-            " you what happened?' 'No, she didn't ",
-            " anything to me.'"
-          ],
-          "answers": [
-            [
-              "tell"
-            ],
-            [
-              "say"
+              "Which bus"
             ]
           ]
         }
@@ -250,17 +122,17 @@
     {
       "id": "48.3",
       "type": "fill-in",
-      "instruction": "The following sentences are direct speech. Now choose one of these to complete each of the sentences below. Use reported speech.",
+      "instruction": "Вставьте what/which/who.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Will was taking a long time to get ready, so I told him to ",
-            "."
+            "",
+            " is that man’s name?"
           ],
           "answers": [
             [
-              "hurry up"
+              "What"
             ]
           ],
           "example": true
@@ -268,86 +140,320 @@
         {
           "num": 2,
           "parts": [
-            "Sarah was driving too fast, so I asked ",
-            "."
+            "",
+            " way shall we go? Left or right?"
           ],
           "answers": [
             [
-              "her to slow down"
+              "Which"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "Sue was nervous about the situation. I told ",
-            "."
+            "You can have tea or coffee. ",
+            " do you prefer?"
           ],
           "answers": [
             [
-              "her not to worry"
+              "Which"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I couldn't move the piano alone, so I ",
-            "."
+            "",
+            " day is it today?' 'Friday.'"
           ],
           "answers": [
             [
-              "asked Tom to give me a hand",
-              "asked Tom to help me"
+              "What"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "The security guard looked at me suspiciously and ",
-            "."
+            "This is a nice office. ",
+            " desk is yours?"
           ],
           "answers": [
             [
-              "asked me to open my bag"
+              "Which"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "The man started asking me personal questions, so I ",
-            "."
+            "",
+            " is your favourite sport?"
           ],
           "answers": [
             [
-              "told him to mind his own business"
+              "What"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Carl was in love with Maria, so he ",
-            "."
+            "",
+            " is more expensive, meat or fish?"
           ],
           "answers": [
             [
-              "asked her to marry him"
+              "Which"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I didn't want to delay Helen, so I ",
-            "."
+            "",
+            " is older, Liz or Steve?"
           ],
           "answers": [
             [
-              "told her not to wait (for me) if I was late"
+              "Who"
             ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "",
+            " kind of camera do you have?"
+          ],
+          "answers": [
+            [
+              "What"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "A: I have three cameras. B: ",
+            " camera do you use most?"
+          ],
+          "answers": [
+            [
+              "Which"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "",
+            " nationality are you?"
+          ],
+          "answers": [
+            [
+              "What"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "48.4",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя How + прилагательное или наречие (high/long и т. д.).",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " is Mount Everest?"
+          ],
+          "answers": [
+            [
+              "How high"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " is it to the station?"
+          ],
+          "answers": [
+            [
+              "How far"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " is Helen?"
+          ],
+          "answers": [
+            [
+              "How old"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " do the buses run?"
+          ],
+          "answers": [
+            [
+              "How often"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " is the water in the pool?"
+          ],
+          "answers": [
+            [
+              "How deep"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " have you lived here?"
+          ],
+          "answers": [
+            [
+              "How long"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "48.5",
+      "type": "write",
+      "instruction": "Напишите вопросы, начинающиеся с How … ?",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Are you 1 metre 70? 1.75? 1.80?",
+          "answers": [
+            "How tall are you?"
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "Is this box one kilogram? Two? Three?",
+          "answers": [
+            "How heavy is this box?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Are you 20 years old? 22? 25?",
+          "answers": [
+            "How old are you?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Did you spend £20? £30? £50?",
+          "answers": [
+            "How much did you spend?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Do you watch TV every day? Once a week? Never?",
+          "answers": [
+            "How often do you watch TV?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Is it 1000 miles from Paris to Moscow? 1500? 2000?",
+          "answers": [
+            "How far is it from Paris to Moscow?"
+          ]
+        }
+      ],
+      "example": [
+        1
+      ]
+    },
+    {
+      "id": "48.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (самый большой = the biggest; спортзал = gym; домашнее животное = pet)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Какой марки ваша машина?",
+          "answers": [
+            "What make is your car?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Какой самый большой город в Бразилии?",
+          "answers": [
+            "What’s the biggest city in Brazil?",
+            "What is the biggest city in Brazil?",
+            "Which is the biggest city in Brazil?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Как часто вы ходите в спортзал?",
+          "answers": [
+            "How often do you go to the gym?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Какое домашнее животное ты предпочитаешь – кошку или собаку?",
+          "answers": [
+            "Which pet do you prefer – a cat or a dog?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Какого цвета твой новый диван?",
+          "answers": [
+            "What colour is your new sofa?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Сколько лет вашему брату?",
+          "answers": [
+            "How old is your brother?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Как давно Мария работает на эту компанию?",
+          "answers": [
+            "How long has Maria worked for this company?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Какой город старше – Москва или Петербург?",
+          "answers": [
+            "Which city is older – Moscow or Petersburg?"
           ]
         }
       ]

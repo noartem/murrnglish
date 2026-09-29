@@ -1,59 +1,63 @@
 {
   "unit": 35,
-  "title": "I'd better … it's time …",
+  "title": "Would you like … ? · I’d like …",
   "pdfPages": [
-    82,
-    83
+    81,
+    82
   ],
   "exercises": [
     {
       "id": "35.1",
       "type": "write",
-      "instruction": "Read the situations and write sentences with 'd better or 'd better not. Choose a verb from:\ncheck · disturb · go · put · reserve · take",
+      "instruction": "Посмотрите на картинки. Напишите, что говорят эти люди. Используйте Would you like ... ?",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "You're going out for a walk with a friend. It looks as if it might rain.",
+          "prompt": "",
           "answers": [
-            "We'd better take an umbrella."
-          ]
+            "Would you like a chocolat ?"
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "You and Kate plan to go to a restaurant tonight. It will be busy.",
+          "prompt": "",
           "answers": [
-            "We'd better reserve a table.",
-            "We'd better check what time the film starts."
+            "Would you like an apple?"
           ]
         },
         {
           "num": 3,
-          "prompt": "Oliver has just cut himself. It's bleeding and he'll need a plaster on it.",
+          "prompt": "",
           "answers": [
-            "You'd better put a plaster on it."
+            "Would you like some coffee?",
+            "Would you like a cup of coffee?"
           ]
         },
         {
           "num": 4,
-          "prompt": "Rebecca doesn't look well this morning – not well enough to go to work.",
+          "prompt": "",
           "answers": [
-            "You'd better not go to work this morning."
+            "Would you like some cheese?",
+            "Would you like a piece of cheese?"
           ]
         },
         {
           "num": 5,
-          "prompt": "You're going to the cinema, but you're not sure what time the film starts.",
+          "prompt": "",
           "answers": [
-            "I'd better check what time the film starts.",
-            "We'd better check what time the film starts."
+            "Would you like a sandwich?"
           ]
         },
         {
           "num": 6,
-          "prompt": "You need to talk to your boss, but she's very busy right now.",
+          "prompt": "",
           "answers": [
-            "I'd better not disturb her right now.",
-            "We'd better not disturb her right now."
+            "Would you like some cake?",
+            "Would you like a piece of cake?"
           ]
         }
       ]
@@ -61,272 +65,213 @@
     {
       "id": "35.2",
       "type": "write",
-      "instruction": "Is had better OK in these sentences? Change to should where necessary.",
+      "instruction": "Что вы скажете Лоре в этих ситуациях? Используйте Would you like to ... ?",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "I have an appointment in ten minutes. I'd better go now or I'll be late.",
+          "prompt": "You want to go to the cinema tonight.  Perhaps Laura will go with you.  (go)",
           "answers": [
-            "OK"
-          ]
+            "Would you like to go to the cinema tonight?"
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "You'd better set your alarm. You have to get up early tomorrow.",
+          "prompt": "You want to play tennis tomorrow.  Perhaps Laura will play too.  (play)",
           "answers": [
-            "OK"
+            "Would you like to play tennis tomorrow?"
           ]
         },
         {
           "num": 3,
-          "prompt": "I'm glad you came to see us. You'd better come more often.",
+          "prompt": "You have an extra ticket for a concert next week.  Perhaps Laura will come.  (come)",
           "answers": [
-            "You should come more often."
+            "Would you like to come to a concert next week?"
           ]
         },
         {
           "num": 4,
-          "prompt": "She'll be sad if we don't invite her to the party, so we'd better invite her.",
+          "prompt": "It’s raining and Laura is going out.  She doesn’t have an umbrella, but you have one.  (borrow)",
           "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "It's nearly time to go out. I'd better get ready.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "I think everybody had better learn a foreign language.",
-          "answers": [
-            "Everybody should learn a foreign language."
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "We've just missed the last bus. We'd better get a taxi.",
-          "answers": [
-            "OK"
+            "Would you like to borrow my umbrella?"
           ]
         }
       ]
     },
     {
       "id": "35.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box.",
-      "wordBank": [
-        "better",
-        "do",
-        "did",
-        "had",
-        "hadn't",
-        "I'd",
-        "not",
-        "to",
-        "take",
-        "should",
-        "was",
-        "were"
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "It might rain. We'd ",
-            " take an umbrella."
+          "options": [
+            "'Do you like a chocolate?'",
+            "'Would you like a chocolate?'"
           ],
-          "answers": [
-            [
-              "better"
-            ]
-          ],
-          "example": true
+          "answer": 1
         },
         {
           "num": 2,
-          "parts": [
-            "Ben needs to know what happened. Somebody ",
-            " better tell him."
+          "options": [
+            "'Do you like bananas?'",
+            "'Would you like bananas?'"
           ],
-          "answers": [
-            [
-              "had"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 3,
-          "parts": [
-            "We'd better ",
-            " park the car here. The road is too narrow."
+          "options": [
+            "'Do you like an ice cream?'",
+            "'Would you like an ice cream?'"
           ],
-          "answers": [
-            [
-              "not"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 4,
-          "parts": [
-            "You ",
-            " brush your teeth at least twice a day."
+          "options": [
+            "'What do you like to drink?'",
+            "'What would you like to drink?'"
           ],
-          "answers": [
-            [
-              "should"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 5,
-          "parts": [
-            "What are we going to do? It's time ",
-            " decide."
+          "options": [
+            "'Do you like to go out for a walk?'",
+            "'Would you like to go out for a walk?'"
           ],
-          "answers": [
-            [
-              "to"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 6,
-          "parts": [
-            "",
-            " better not be late. It's an important meeting."
+          "options": [
+            "I like tomatoes, but I don’t eat them very often.",
+            "I’d like tomatoes, but I don’t eat them very often."
           ],
-          "answers": [
-            [
-              "I'd"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 7,
-          "parts": [
-            "It's time they ",
-            " here. They promised they wouldn't be late."
+          "options": [
+            "What time do you like to have dinner this evening?",
+            "What time would you like to have dinner this evening?"
           ],
-          "answers": [
-            [
-              "were"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 8,
-          "parts": [
-            "The window is open. You'd ",
-            " close it before you go out."
+          "options": [
+            "'Do you like something to eat?'",
+            "'Would you like something to eat?'"
           ],
-          "answers": [
-            [
-              "better"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 9,
-          "parts": [
-            "We'd better leave as soon as possible, ",
-            " we?"
+          "options": [
+            "'Do you like your new job?'",
+            "'Would you like your new job?'"
           ],
-          "answers": [
-            [
-              "hadn't"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 10,
-          "parts": [
-            "The government should ",
-            " something about the problem."
+          "options": [
+            "I like to go to sleep now.",
+            "I’d like to go to sleep now."
           ],
-          "answers": [
-            [
-              "do"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 11,
-          "parts": [
-            "It's time the government ",
-            " something about the problem."
+          "options": [
+            "'I like a sandwich, please.'",
+            "'I’d like a sandwich, please.'"
           ],
-          "answers": [
-            [
-              "did"
-            ]
-          ]
+          "answer": 1
         },
         {
           "num": 12,
-          "parts": [
-            "It's time something ",
-            " done about the problem."
+          "options": [
+            "'What kind of music do you like?'",
+            "'What kind of music would you like?'"
           ],
-          "answers": [
-            [
-              "was"
-            ]
-          ]
+          "answer": 0
         }
       ]
     },
     {
       "id": "35.4",
       "type": "write",
-      "instruction": "Read the situations and write sentences with It's time (somebody did something).",
+      "instruction": "Переведите предложения на английский язык, используя I’d like, would you like, do you like и т. д. (рассказать историю = tell a story; фото с отпуска = holiday photos; на завтрак = for breakfast)",
       "items": [
         {
           "num": 1,
-          "prompt": "You're at a friend's house. You planned to go home at 11 o'clock. It's already 11 o'clock now. (I / go)",
+          "prompt": "Хотите стакан воды?",
           "answers": [
-            "It's time I went home."
+            "Would you like a glass of water?"
           ]
         },
         {
           "num": 2,
-          "prompt": "You haven't had a holiday for a very long time. You need one now. (I / holiday)",
+          "prompt": "(в кафе) Я хочу два кофе, пожалуйста.",
           "answers": [
-            "It's time I had a holiday."
+            "I’d like two coffees, please.",
+            "I would like two coffees, please."
           ]
         },
         {
           "num": 3,
-          "prompt": "It's 10 o'clock. It's after the children's bedtime. You think they should be in bed. (children / bed)",
+          "prompt": "Я хотела бы рассказать вам историю.",
           "answers": [
-            "It's time the children were in bed.",
-            "It's time the children went to bed."
+            "I’d like to tell you a story.",
+            "I would like to tell you a story."
           ]
         },
         {
           "num": 4,
-          "prompt": "You didn't realise it was so late. You need to start cooking dinner. (start / cook)",
+          "prompt": "Хочешь увидеть мои фото с отпуска?",
           "answers": [
-            "It's time I started cooking dinner."
+            "Would you like to see my holiday photos?"
           ]
         },
         {
           "num": 5,
-          "prompt": "Kate is always complaining about everything. You think she complains too much. (stop / complaining)",
+          "prompt": "Марина хочет путешествовать.",
           "answers": [
-            "It's time she stopped complaining about everything.",
-            "It's time Kate stopped complaining about everything."
+            "Marina would like to travel."
           ]
         },
         {
           "num": 6,
-          "prompt": "The company you work for has been badly managed for a long time. You think some changes should be made. (changes / make)",
+          "prompt": "А: Ты хотела бы посмотреть фильм в воскресенье?  В: Очень хотела бы!",
           "answers": [
-            "It's time some changes were made in the way the company is run."
+            "A: Would you like to watch a film on Sunday? B: I’d love to!",
+            "A: Would you like to watch a film on Sunday? B: I would love to!",
+            "A: Would you like to see a film on Sunday? B: I’d love to!",
+            "A: Would you like to see a film on Sunday? B: I would love to!"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Ты любишь конфеты?",
+          "answers": [
+            "Do you like chocolates?",
+            "Do you like sweets?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Что бы Вы хотели на завтрак?",
+          "answers": [
+            "What would you like for breakfast?"
           ]
         }
       ]

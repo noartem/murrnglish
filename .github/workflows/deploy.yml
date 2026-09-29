@@ -3,7 +3,7 @@
 # Requires repo secret DEPLOY_SSH_KEY — the private ed25519 deploy key whose
 # public part is installed for bm-deploy on the VPS (84.54.30.169).
 #
-# Note: GitHub Pages deploy was replaced by the VPS (blue-murphy.noartem.ru,
+# Note: GitHub Pages deploy was replaced by the VPS (red-murphy.noartem.ru,
 # Caddy). Settings -> Pages can be switched back to "Disabled" at any time.
 
 name: CI & VPS deploy

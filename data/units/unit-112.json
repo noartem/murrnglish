@@ -1,25 +1,25 @@
 {
   "unit": 112,
-  "title": "even",
+  "title": "full of …, good at … и т. д. · of/at/for и т. д. (предлоги) + -ing",
   "pdfPages": [
-    236,
-    237
+    235,
+    236
   ],
   "exercises": [
     {
       "id": "112.1",
       "type": "fill-in",
-      "instruction": "Amy, Kate and Lisa are three friends who went on holiday together. Use the information given about them to complete the sentences using even or not even.",
+      "instruction": "Посмотрите на картинки и заполните пропуски. Используйте of/with/in и т. д.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "They stayed at a hotel. Everybody liked it, ",
-            "."
+            "He’s scared ",
+            " dogs."
           ],
           "answers": [
             [
-              "even Kate"
+              "of"
             ]
           ],
           "example": true
@@ -27,60 +27,60 @@
         {
           "num": 2,
           "parts": [
-            "They arranged to meet. They all arrived on time, ",
-            "."
+            "She’s interested ",
+            " science."
           ],
           "answers": [
             [
-              "even Lisa"
+              "in"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "They went to an art gallery. Nobody enjoyed it, ",
-            "."
+            "She’s married ",
+            " a footballer."
           ],
           "answers": [
             [
-              "not even Amy"
+              "to"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Yesterday they had to get up early. They all managed to do this, ",
-            "."
+            "She’s very good ",
+            " languages."
           ],
           "answers": [
             [
-              "even Lisa"
+              "at"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "They were together yesterday. They were all in a good mood, ",
-            "."
+            "He’s fed up ",
+            " the weather."
           ],
           "answers": [
             [
-              "even Kate"
+              "with"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "None of them took any pictures, ",
-            "."
+            "A: Can I help you? B: Thanks, that’s very kind ",
+            " you."
           ],
           "answers": [
             [
-              "not even Lisa"
+              "of"
             ]
           ]
         }
@@ -89,17 +89,17 @@
     {
       "id": "112.2",
       "type": "fill-in",
-      "instruction": "Make sentences with even. Use the words in brackets.",
+      "instruction": "Вставьте in/of/with и т. д.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            "(the Antarctic)"
+            "I’m not interested ",
+            " sport."
           ],
           "answers": [
             [
-              "She has even been to the Antarctic."
+              "in"
             ]
           ],
           "example": true
@@ -107,100 +107,138 @@
         {
           "num": 2,
           "parts": [
-            "We ",
-            ". (the floor)"
+            "I’m not very good ",
+            " sport."
           ],
           "answers": [
             [
-              "even painted the floor"
+              "at"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "(the prime minister) She ",
-            "."
+            "I like Sarah. She’s always very kind ",
+            " me."
           ],
           "answers": [
             [
-              "even met the prime minister",
-              "even met the Prime Minister"
+              "to"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "You ",
-            ". (from the next street)"
+            "I’m sorry ",
+            " your broken window. It was an accident."
           ],
           "answers": [
             [
-              "could even hear it from the next street",
-              "could even hear the noise from the next street",
-              "could hear it / the noise even from the next street"
+              "about"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "",
-            "(hello)"
+            "He’s very brave. He isn’t scared ",
+            " anything."
           ],
           "answers": [
             [
-              "They didn't even say hello."
+              "of"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 6,
           "parts": [
-            "I ",
-            ". (her name)"
+            "It was very nice ",
+            " Jane to let us stay in her apartment."
           ],
           "answers": [
             [
-              "can't even remember her name"
+              "of"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "There ",
-            ". (a cinema)"
+            "Life today is very different ",
+            " life 50 years ago."
           ],
           "answers": [
             [
-              "isn't even a cinema"
+              "from",
+              "to"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "He ",
-            ". (his wife)"
+            "Are you interested ",
+            " politics?"
           ],
           "answers": [
             [
-              "didn't even tell his wife (where he was going)"
+              "in"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "I ",
-            ". (my neighbours)"
+            "I feel sorry ",
+            " her, but I can’t help her."
           ],
           "answers": [
             [
-              "don't even know my neighbours"
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Chris was angry ",
+            " what happened."
+          ],
+          "answers": [
+            [
+              "about"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "These boxes are very heavy. They are full ",
+            " books."
+          ],
+          "answers": [
+            [
+              "of"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I’m sorry ",
+            " getting angry ",
+            " you yesterday."
+          ],
+          "answers": [
+            [
+              "for",
+              "about"
+            ],
+            [
+              "with"
             ]
           ]
         }
@@ -209,17 +247,17 @@
     {
       "id": "112.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using even + comparative.",
+      "instruction": "Закончите предложения, следуя образцу.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "It was very hot yesterday, but today it's ",
-            "."
+            "I’m not very ",
+            " stories. (good/tell)"
           ],
           "answers": [
             [
-              "even hotter"
+              "good at telling"
             ]
           ],
           "example": true
@@ -227,60 +265,61 @@
         {
           "num": 2,
           "parts": [
-            "The church is 700 years old, but the house next to it is ",
-            "."
+            "I wanted to go to the cinema, but Paula wasn’t ",
+            " . (interested/go)"
           ],
           "answers": [
             [
-              "even older"
+              "interested in going"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "That's a very good idea, but I've got an ",
-            " one."
+            "Sue isn’t very ",
+            " up in the morning. (good/get)"
           ],
           "answers": [
             [
-              "even better"
+              "good at getting"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "The first question was very difficult to answer. The second one was ",
-            "."
+            "Let’s go! I’m ",
+            " . (fed up / wait)"
           ],
           "answers": [
             [
-              "even more difficult"
+              "fed up with waiting"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I did very badly in the exam, but most of my friends did ",
-            "."
+            "I’m ",
+            " you up in the middle of the night. (sorry/wake)"
           ],
           "answers": [
             [
-              "even worse"
+              "sorry for waking",
+              "sorry about waking"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Neither of us was hungry. I ate very little and my friend ate ",
-            "."
+            "Sorry I’m late! ",
+            " . (thank you / wait)"
           ],
           "answers": [
             [
-              "even less"
+              "Thank you for waiting."
             ]
           ]
         }
@@ -288,92 +327,158 @@
     },
     {
       "id": "112.4",
-      "type": "choice",
-      "instruction": "Complete the sentences. Choose from: if, even, even if, even though.",
+      "type": "write",
+      "instruction": "Закончите предложения, используя without -ing.",
       "items": [
         {
           "num": 1,
-          "options": [
-            "even though",
-            "if"
+          "prompt": "(Tom left / he didn’t say goodbye)",
+          "answers": [
+            "Tom left without saying goodbye."
           ],
-          "answer": 0
+          "example": true
         },
         {
           "num": 2,
-          "options": [
-            "if",
-            "even if",
-            "even though"
-          ],
-          "answer": 1
+          "prompt": "(Sue walked past me / she didn’t speak)",
+          "answers": [
+            "Sue walked past me without speaking."
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "if",
-            "even if",
-            "even though"
-          ],
-          "answer": 1
+          "prompt": "(Don’t do anything / ask me first)",
+          "answers": [
+            "Don’t do anything without asking me first."
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "if",
-            "even",
-            "even if",
-            "even though"
+          "prompt": "(I went out / I didn’t lock the door)",
+          "answers": [
+            "I went out without locking the door."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "112.5",
+      "type": "self-check",
+      "instruction": "Напишите предложения о себе.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(interested)",
+          "modelAnswers": [
+            "I’m interested in sport."
           ],
-          "answer": 1
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "(scared)",
+          "modelAnswers": [
+            "I’m scared of the dark."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(not very good)",
+          "modelAnswers": [
+            "I’m not very good at drawing."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(not interested)",
+          "modelAnswers": [
+            "I’m not interested in cars."
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "if",
-            "even",
-            "even if",
-            "even though"
-          ],
-          "answer": 3
+          "prompt": "(fed up)",
+          "modelAnswers": [
+            "I’m fed up with living here."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "112.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя выражения на странице слева. (паук = spider, покинуть = leave, потерять = lose, шум = noise)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я не боюсь пауков.",
+          "answers": [
+            "I’m not afraid of spiders.",
+            "I am not afraid of spiders.",
+            "I’m scared of spiders.",
+            "I am scared of spiders."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Сандра интересуется российской историей.",
+          "answers": [
+            "Sandra is interested in Russian history."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Мы думаем о том, чтобы покинуть Лондон.",
+          "answers": [
+            "We’re thinking of leaving London.",
+            "We are thinking of leaving London."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Анжела очень хорошо играет на гитаре.",
+          "answers": [
+            "Angela is very good at playing the guitar."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Москва отличается от Петербурга.",
+          "answers": [
+            "Moscow is different from Petersburg.",
+            "Moscow is different to Petersburg."
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "even",
-            "even if",
-            "even though"
-          ],
-          "answer": 0
+          "prompt": "Салли очень сердилась на свою сестру.",
+          "answers": [
+            "Sally was very angry with her sister."
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "if",
-            "even",
-            "even if",
-            "even though"
-          ],
-          "answer": 3
+          "prompt": "Мне нравится, когда в нашем доме полно друзей!",
+          "answers": [
+            "I like it when our house is full of friends!",
+            "I like when our house is full of friends!"
+          ]
         },
         {
           "num": 8,
-          "options": [
-            "if",
-            "even",
-            "even if",
-            "even though"
-          ],
-          "answer": 2
+          "prompt": "Мне было жаль Бориса, потому что он потерял свою работу.",
+          "answers": [
+            "I felt sorry for Boris because he lost his job.",
+            "I felt sorry for Boris because he had lost his job."
+          ]
         },
         {
           "num": 9,
-          "options": [
-            "even",
-            "even if",
-            "even though"
-          ],
-          "answer": 2
+          "prompt": "Мне надоел этот шум!",
+          "answers": [
+            "I’m fed up with this noise!",
+            "I am fed up with this noise!"
+          ]
         }
       ]
     }

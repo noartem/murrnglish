@@ -1,234 +1,190 @@
 {
   "unit": 22,
-  "title": "will and shall 2",
+  "title": "is done · was done (пассивные конструкции 1)",
   "pdfPages": [
-    56,
-    57
+    55,
+    56
   ],
   "exercises": [
     {
       "id": "22.1",
-      "type": "fill-in",
-      "instruction": "Put in will (’ll) or won’t.",
+      "type": "write",
+      "instruction": "Составьте предложения из этих слов. Некоторые предложения вопросительные. Предложения 1–7 должны быть в настоящем времени. Предложения 8–15 должны быть в прошедшем времени.",
+      "example": [
+        1,
+        2,
+        8
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Can you wait for me? I ",
-            " be long."
-          ],
+          "prompt": "(the office / clean / every day)",
           "answers": [
-            [
-              "won’t"
-            ]
-          ],
-          "example": true
+            "The office is cleaned every day."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "There’s no point in asking Amanda for advice. She ",
-            " know what to do."
-          ],
+          "prompt": "(how often / these rooms / clean?)",
           "answers": [
-            [
-              "won’t"
-            ]
+            "Are these rooms cleaned every day?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "I’m glad I’m meeting Emma tomorrow. It ",
-            " be good to see her again."
-          ],
+          "prompt": "(glass / make / from sand)",
           "answers": [
-            [
-              "’ll",
-              "will"
-            ]
+            "Glass is made from sand."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I’m sorry about what happened yesterday. It ",
-            " happen again."
-          ],
+          "prompt": "(the windows / clean / every two weeks)",
           "answers": [
-            [
-              "won’t"
-            ]
+            "The windows are cleaned every two weeks."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "You don’t need to take an umbrella with you. I don’t think it ",
-            " rain."
-          ],
+          "prompt": "(this room / not / use / very much)",
           "answers": [
-            [
-              "won’t"
-            ]
+            "This room isn’t used very much."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I’ve got some incredible news! You ",
-            " believe it."
-          ],
+          "prompt": "(we / allow / to park here?)",
           "answers": [
-            [
-              "won’t"
-            ]
+            "Are we allowed to park here?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(how / this word / pronounce?)",
+          "answers": [
+            "How is this word pronounced?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(the office / clean / yesterday)",
+          "answers": [
+            "The office was cleaned yesterday."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(the house / paint / last month)",
+          "answers": [
+            "The house was painted last month."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(my phone / steal / a few days ago)",
+          "answers": [
+            "My phone was stolen a few days ago."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "(three people / injure / in the accident)",
+          "answers": [
+            "Three people were injured in the accident."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "(when / this bridge / build?)",
+          "answers": [
+            "When was this bridge built?"
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "(I / not / wake up / by the noise)",
+          "answers": [
+            "I wasn’t woken up by the noise."
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "(how / these windows / break?)",
+          "answers": [
+            "How were these windows broken?"
+          ]
+        },
+        {
+          "num": 15,
+          "prompt": "(you / invite / to Jon’s party last week?)",
+          "answers": [
+            "Were you invited to Jon’s party last week?"
           ]
         }
       ]
     },
     {
       "id": "22.2",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using will (’ll).",
-      "wordBank": [
-        "it/be",
-        "she/come",
-        "you/get",
-        "you/like",
-        "you/enjoy",
-        "people/live",
-        "it/look",
-        "we/meet",
-        "you/pass",
-        "she/mind"
+      "type": "write",
+      "instruction": "В каждом из этих предложений допущена ошибка. Напишите правильные предложения.",
+      "example": [
+        1
       ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Don’t worry about your exam. I’m sure ",
-            "."
-          ],
+          "prompt": "This house built 100 years ago.",
           "answers": [
-            [
-              "you’ll pass"
-            ]
-          ],
-          "example": true
+            "This house was built 100 years ago."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "Why don’t you try on this jacket? ",
-            " nice on you."
-          ],
+          "prompt": "Football plays in most countries of the world.",
           "answers": [
-            [
-              "it’ll look",
-              "it will look"
-            ]
+            "Football is played in most countries of the world."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "You must meet Max sometime. I think ",
-            "."
-          ],
+          "prompt": "Why did the letter send to the wrong address?",
           "answers": [
-            [
-              "you’ll like",
-              "you will like"
-            ]
+            "Why was the letter sent to the wrong address?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "It’s a very nice hotel. ",
-            " your stay there."
-          ],
+          "prompt": "A film studio is a place where films make.",
           "answers": [
-            [
-              "You’ll enjoy",
-              "You will enjoy"
-            ]
+            "A film studio is a place where films are made."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "It’s raining hard. Don’t go out. ",
-            " very wet."
-          ],
+          "prompt": "Where are you born?",
           "answers": [
-            [
-              "You’ll get",
-              "You will get"
-            ]
+            "Where were you born?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Do you think ",
-            " longer in the future?"
-          ],
+          "prompt": "How many languages are speaking in Switzerland?",
           "answers": [
-            [
-              "people will live"
-            ]
+            "How many languages are spoken in Switzerland?"
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "Goodbye! I’m sure ",
-            " again before long."
-          ],
+          "prompt": "Somebody broke into our house, but nothing stolen.",
           "answers": [
-            [
-              "we’ll meet",
-              "we will meet"
-            ]
+            "Somebody broke into our house, but nothing was stolen."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I’ve invited Anna to the party, but I don’t think ",
-            "."
-          ],
+          "prompt": "When was invented the bicycle?",
           "answers": [
-            [
-              "she’ll come",
-              "she will come"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "You can borrow Amy’s umbrella. I don’t think ",
-            "."
-          ],
-          "answers": [
-            [
-              "she’ll mind"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "It takes me an hour to get to work at the moment. When the new road is finished, ",
-            " much quicker."
-          ],
-          "answers": [
-            [
-              "it will be"
-            ]
+            "When was the bicycle invented?"
           ]
         }
       ]
@@ -236,92 +192,133 @@
     {
       "id": "22.3",
       "type": "fill-in",
-      "instruction": "Write questions using do you think … will … ? + the following:",
+      "instruction": "Заполните пропуски. Используйте глаголы из рамки в пассивной конструкции (настоящего или прошедшего времени):",
+      "wordBank": [
+        "clean",
+        "damage",
+        "find",
+        "give",
+        "invite",
+        "make",
+        "make",
+        "show",
+        "steal",
+        "take"
+      ],
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "I’ve bought this picture for Karen. ",
-            "?"
+            "The room ",
+            " every day."
           ],
           "answers": [
             [
-              "Do you think she’ll like it"
+              "is cleaned"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 2,
           "parts": [
-            "The weather doesn’t look very good. Do you ",
-            "?"
+            "I saw an accident yesterday. Two people ",
+            " to hospital."
           ],
           "answers": [
             [
-              "think it will rain"
+              "were taken"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "The meeting is still going on. When do you ",
-            "?"
+            "Paper ",
+            " from wood."
           ],
           "answers": [
             [
-              "think it will end"
+              "is made"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "My car needs to be repaired. How much ",
-            "?"
+            "There was a fire at the hotel last week. Two of the rooms ",
+            "."
           ],
           "answers": [
             [
-              "do you think it will cost"
+              "were damaged"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Sally and David are in love. Do ",
-            "?"
+            "'Where did you get this picture?' 'It ",
+            " to me by a friend of mine.'"
           ],
           "answers": [
             [
-              "you think they’ll get married",
-              "you think they will get married"
+              "was given"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "‘I’m going out now.’ ‘OK. What time ",
-            "?’"
+            "Many American programmes ",
+            " on British TV."
           ],
           "answers": [
             [
-              "do you think you’ll be back",
-              "do you think you will be back"
+              "are shown"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "The future situation is uncertain. What ",
-            "?"
+            "'Did James and Sue go to the wedding?' 'No. They ",
+            ", but they didn’t go.'"
           ],
           "answers": [
             [
-              "do you think will happen"
+              "were invited"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "'How old is this film?' 'It ",
+            " in 1985.'"
+          ],
+          "answers": [
+            [
+              "was made"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "My car ",
+            " last week, but the next day it ",
+            " by the police."
+          ],
+          "answers": [
+            [
+              "was stolen"
+            ],
+            [
+              "was found"
             ]
           ]
         }
@@ -329,122 +326,113 @@
     },
     {
       "id": "22.4",
-      "type": "self-check",
-      "instruction": "Where do you think you will be at these times? Write sentences about yourself. Use: I’ll be … or I’ll probably be … or I don’t know where …",
+      "type": "write",
+      "instruction": "Напишите, где родились эти люди.",
       "items": [
         {
           "num": 1,
-          "prompt": "(next Monday evening at 7.45)",
-          "modelAnswers": [
-            "I’ll probably be at home."
+          "prompt": "(Ian / Edinburgh)",
+          "answers": [
+            "Ian was born in Edinburgh."
           ]
         },
         {
           "num": 2,
-          "prompt": "(at 3 am tomorrow)",
-          "modelAnswers": [
-            "I’ll be in bed."
+          "prompt": "(Sarah / Manchester)",
+          "answers": [
+            "Sarah was born in Manchester."
           ]
         },
         {
           "num": 3,
-          "prompt": "(at 10.30 tomorrow morning)",
-          "modelAnswers": [
-            "I’ll be at work."
+          "prompt": "(her parents / Ireland)",
+          "answers": [
+            "Her parents were born in Ireland."
           ]
         },
         {
           "num": 4,
-          "prompt": "(next Friday afternoon at 4.15)",
-          "modelAnswers": [
-            "I’ll probably be at home."
-          ]
+          "prompt": "(you / ???)",
+          "answers": [
+            "I was born in …"
+          ],
+          "selfCheck": true
         },
         {
           "num": 5,
-          "prompt": "(this time next year)",
-          "modelAnswers": [
-            "I don’t know where I’ll be."
-          ]
+          "prompt": "(your mother / ???)",
+          "answers": [
+            "My mother was born in …"
+          ],
+          "selfCheck": true
         }
+      ],
+      "example": [
+        1
       ]
     },
     {
       "id": "22.5",
-      "type": "choice",
-      "instruction": "Which is better in these sentences?",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя пассивные конструкции. (технология = technology; мука = flour; производить = make)",
       "items": [
         {
           "num": 1,
-          "options": [
-            "She’ll work",
-            "She’s working"
-          ],
-          "answer": 1
+          "prompt": "Мои родители родились в Америке.",
+          "answers": [
+            "My parents were born in America."
+          ]
         },
         {
           "num": 2,
-          "options": [
-            "I never forget it",
-            "I’ll never forget it"
-          ],
-          "answer": 1
+          "prompt": "Новые технологии изобретают каждый день.",
+          "answers": [
+            "New technologies are invented every day."
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "You’re laughing",
-            "You’ll laugh"
-          ],
-          "answer": 1
+          "prompt": "Хлеб делается из муки.",
+          "answers": [
+            "Bread is made from flour."
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "I’ll go",
-            "I’m going"
-          ],
-          "answer": 1
+          "prompt": "Сколько автомашин производят в Германии каждый год?",
+          "answers": [
+            "How many cars are made in Germany every year?"
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "will win",
-            "is winning"
-          ],
-          "answer": 0
+          "prompt": "Этот аэропорт был построен в 1970 году.",
+          "answers": [
+            "This airport was built in 1970."
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "will come",
-            "is coming"
-          ],
-          "answer": 1
+          "prompt": "Где родилась Марина?",
+          "answers": [
+            "Where was Marina born?"
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "won’t hurt",
-            "isn’t hurting"
-          ],
-          "answer": 0
+          "prompt": "Мой телефон не был украден. Я его потеряла.",
+          "answers": [
+            "My phone wasn’t stolen. I lost it.",
+            "My phone was not stolen. I lost it."
+          ]
         },
         {
           "num": 8,
-          "options": [
-            "What’s happening",
-            "What will happen"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 9,
-          "options": [
-            "we’ll go",
-            "we’re going"
-          ],
-          "answer": 1
+          "prompt": "Эта книга была написана моим другом.",
+          "answers": [
+            "This book was written by my friend.",
+            "This book was written by a friend of mine."
+          ]
         }
       ]
     }

@@ -1,74 +1,86 @@
 {
   "unit": 88,
-  "title": "all / all of most / most of no / none of etc.",
+  "title": "old/older · expensive / more expensive",
   "pdfPages": [
-    188,
-    189
+    187,
+    188
   ],
   "exercises": [
     {
       "id": "88.1",
       "type": "fill-in",
-      "instruction": "Put in of where necessary. Leave the space empty if the sentence is already complete.",
+      "instruction": "Посмотрите на картинки и напишите форму сравнительной степени (older / more interesting и т. д.).",
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "None ",
-            " this money is mine."
+            "heavy ",
+            ""
           ],
           "answers": [
             [
-              "of"
+              "heavier"
             ]
           ],
           "example": true
         },
         {
+          "num": 2,
+          "parts": [
+            "big ",
+            ""
+          ],
+          "answers": [
+            [
+              "bigger"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "slow ",
+            ""
+          ],
+          "answers": [
+            [
+              "slower"
+            ]
+          ]
+        },
+        {
           "num": 4,
           "parts": [
-            "Some ",
-            " the films I’ve seen recently have been very violent."
+            "expensive ",
+            ""
           ],
           "answers": [
             [
-              "of"
+              "more expensive"
             ]
           ]
         },
         {
-          "num": 7,
+          "num": 5,
           "parts": [
-            "Do you want any ",
-            " these magazines or can I throw them away?"
+            "high ",
+            ""
           ],
           "answers": [
             [
-              "of"
+              "higher"
             ]
           ]
         },
         {
-          "num": 8,
+          "num": 6,
           "parts": [
-            "Kate has lived in London most ",
-            " her life."
+            "dangerous ",
+            ""
           ],
           "answers": [
             [
-              "of"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "They won the lottery a few years ago, but they’ve spent most ",
-            " the money."
-          ],
-          "answers": [
-            [
-              "of"
+              "more dangerous"
             ]
           ]
         }
@@ -77,31 +89,17 @@
     {
       "id": "88.2",
       "type": "fill-in",
-      "instruction": "Choose from the list and complete the sentences. Use of (some of / most of etc.) where necessary.",
-      "wordBank": [
-        "accidents",
-        "European countries",
-        "my dinner",
-        "the players",
-        "birds",
-        "her friends",
-        "my spare time",
-        "the population",
-        "cars",
-        "her opinions",
-        "the buildings",
-        "these books"
-      ],
+      "instruction": "Напишите форму сравнительной степени.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "I haven’t read many of ",
-            "."
+            "old ",
+            ""
           ],
           "answers": [
             [
-              "these books"
+              "older"
             ]
           ],
           "example": true
@@ -109,133 +107,108 @@
         {
           "num": 2,
           "parts": [
-            "All ",
-            " have wheels."
+            "strong ",
+            ""
           ],
           "answers": [
             [
-              "cars"
+              "stronger"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "I spend much ",
-            " gardening."
+            "happy ",
+            ""
           ],
           "answers": [
             [
-              "of my spare time"
+              "happier"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Many ",
-            " are caused by bad driving."
+            "modern ",
+            ""
           ],
           "answers": [
             [
-              "accidents"
+              "more modern"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "It’s a historic town. Many ",
-            " are over 400 years old."
+            "important ",
+            ""
           ],
           "answers": [
             [
-              "the buildings"
+              "more important"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "When Emily got married, she kept it a secret. She didn’t tell any ",
-            "."
+            "good ",
+            ""
           ],
           "answers": [
             [
-              "of her friends"
+              "better"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Not many people live in the north of the country. Most ",
-            " live in the south."
+            "large ",
+            ""
           ],
           "answers": [
             [
-              "of the population"
+              "larger"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "Not all ",
-            " can fly. For example, the penguin can’t fly."
+            "serious ",
+            ""
           ],
           "answers": [
             [
-              "birds"
+              "more serious"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "Our team played badly and lost the game. None ",
-            " played well."
+            "pretty ",
+            ""
           ],
           "answers": [
             [
-              "of the players"
+              "prettier"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "Emma and I have different ideas. I don’t agree with many ",
-            "."
+            "crowded ",
+            ""
           ],
           "answers": [
             [
-              "of her opinions"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "Sarah travels a lot in Europe. She has been to most ",
-            "."
-          ],
-          "answers": [
-            [
-              "European countries"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "I had no appetite. I could only eat half ",
-            "."
-          ],
-          "answers": [
-            [
-              "of my dinner"
+              "more crowded"
             ]
           ]
         }
@@ -243,44 +216,82 @@
     },
     {
       "id": "88.3",
-      "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences.",
+      "type": "fill-in",
+      "instruction": "Напишите противоположное по значению слово.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "younger ",
+            ""
+          ],
+          "answers": [
+            [
+              "older"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "prompt": "We argue sometimes, but get on well most of ___ .",
-          "modelAnswers": [
-            "the time"
+          "parts": [
+            "colder ",
+            ""
+          ],
+          "answers": [
+            [
+              "hotter",
+              "warmer"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "I went to the cinema by myself. None of ___ wanted to come.",
-          "modelAnswers": [
-            "my friends"
+          "parts": [
+            "cheaper ",
+            ""
+          ],
+          "answers": [
+            [
+              "more expensive"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "The test was hard. I could only answer half ___ .",
-          "modelAnswers": [
-            "of the questions"
+          "parts": [
+            "better ",
+            ""
+          ],
+          "answers": [
+            [
+              "worse"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "Some of ___ you took at the wedding were really good.",
-          "modelAnswers": [
-            "the pictures",
-            "the photos",
-            "the photographs"
+          "parts": [
+            "nearer ",
+            ""
+          ],
+          "answers": [
+            [
+              "further"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "‘Did you spend all ___ I gave you?’ ‘No, there’s some left.’",
-          "modelAnswers": [
-            "of the money"
+          "parts": [
+            "easier ",
+            ""
+          ],
+          "answers": [
+            [
+              "more difficult",
+              "harder"
+            ]
           ]
         }
       ]
@@ -288,90 +299,267 @@
     {
       "id": "88.4",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use: all of / some of / none of + it/them/us (all of it / some of them etc.)",
+      "instruction": "Закончите предложения. Используйте прилагательное в сравнительной степени.",
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "‘How many of these books have you read?’ ‘",
-            ". Every one.’"
+            "Helen’s car isn’t very big. She wants a ",
+            " one."
           ],
           "answers": [
             [
-              "All of them"
+              "bigger"
             ]
-          ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My job isn’t very interesting. I want to do something ",
+            "."
+          ],
+          "answers": [
+            [
+              "more interesting"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "We all got wet in the rain because ",
-            " had an umbrella."
+            "You’re not very tall. Your brother is ",
+            "."
           ],
           "answers": [
             [
-              "none of us"
+              "taller"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Some of this money is yours and ",
-            " is mine."
+            "David doesn’t work very hard. I work ",
+            "."
           ],
           "answers": [
             [
-              "some of it"
+              "harder"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Many of my friends have travelled a lot, but ",
-            " has ever been to Africa."
+            "My chair isn’t very comfortable. Yours is ",
+            "."
           ],
           "answers": [
             [
-              "none of them"
+              "more comfortable"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Not all the tourists in the group were Spanish. ",
-            " were French."
+            "Your idea isn’t very good. My idea is ",
+            "."
           ],
           "answers": [
             [
-              "Some of them"
+              "better"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "I watched most of the film, but not ",
+            "These flowers aren’t very nice. The blue ones are ",
             "."
           ],
           "answers": [
             [
-              "all of it"
+              "nicer"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "He told us his life story, but ",
-            " was true. It was all invented."
+            "My bag isn’t very heavy. Your bag is ",
+            "."
           ],
           "answers": [
             [
-              "none of it"
+              "heavier"
             ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I’m not very interested in art. I’m ",
+            " in history."
+          ],
+          "answers": [
+            [
+              "more interested"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "It isn’t very warm today. It was ",
+            " yesterday."
+          ],
+          "answers": [
+            [
+              "warmer"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "These tomatoes don’t taste very good. The other ones tasted ",
+            "."
+          ],
+          "answers": [
+            [
+              "better"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Britain isn’t very big. France is ",
+            "."
+          ],
+          "answers": [
+            [
+              "bigger"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "London isn’t very beautiful. Paris is ",
+            "."
+          ],
+          "answers": [
+            [
+              "more beautiful"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "This knife isn’t very sharp. Do you have a ",
+            " one?"
+          ],
+          "answers": [
+            [
+              "sharper"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "People today aren’t very polite. In the past they were ",
+            "."
+          ],
+          "answers": [
+            [
+              "more polite"
+            ]
+          ]
+        },
+        {
+          "num": 16,
+          "parts": [
+            "The weather isn’t too bad today. Often it is much ",
+            "."
+          ],
+          "answers": [
+            [
+              "worse"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "88.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (ещё = even; Что (здесь) = Which; полезный = healthy)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я не люблю футбол. Баскетбол интереснее.",
+          "answers": [
+            "I don’t like football. Basketball is more interesting."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Кто старше — ты или твой брат?",
+          "answers": [
+            "Who is older – you or your brother?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Книга плохая, но фильм ещё хуже.",
+          "answers": [
+            "The book is bad, but the film is even worse."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Наша квартира маленькая. Нам нужна квартира побольше.",
+          "answers": [
+            "Our flat is small. We need a bigger one.",
+            "Our apartment is small. We need a bigger one.",
+            "Our flat is small. We need a bigger flat.",
+            "Our apartment is small. We need a bigger apartment."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Мой отец высокий, но я выше.",
+          "answers": [
+            "My father is tall, but I’m taller."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Москва не очень красивая. Петербург красивее.",
+          "answers": [
+            "Moscow isn’t very beautiful. Petersburg is more beautiful.",
+            "Moscow is not very beautiful. Petersburg is more beautiful."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Что дешевле — мясо или рыба?",
+          "answers": [
+            "Which is cheaper – meat or fish?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Пицца не очень полезна. Салат полезнее.",
+          "answers": [
+            "Pizza isn’t very healthy. Salad is healthier."
           ]
         }
       ]

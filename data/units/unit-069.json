@@ -1,126 +1,48 @@
 {
   "unit": 69,
-  "title": "Countable and uncountable 1",
+  "title": "a cake / some cake / some cakes (исчисляемые/неисчисляемые существительные 2)",
   "pdfPages": [
-    150,
-    151
+    149,
+    150
   ],
   "exercises": [
     {
       "id": "69.1",
       "type": "write",
-      "instruction": "Some of these sentences need a/an. Correct the sentences where necessary.",
+      "instruction": "Что изображено на этих картинках? Используйте a или some.",
       "items": [
         {
           "num": 1,
-          "prompt": "Joe goes everywhere by bike. He doesn't have car.",
+          "prompt": "",
           "answers": [
-            "He doesn't have a car."
-          ]
+            "some perfume, a hat and some shoes"
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "Helen was listening to music when I arrived.",
+          "prompt": "",
           "answers": [
-            "OK"
+            "I bought a newspaper, some flowers and a pen.",
+            "I bought a newspaper, a bunch of flowers and a pen.",
+            "I bought a paper, some flowers and a pen.",
+            "I bought a paper, a bunch of flowers and a pen."
           ]
         },
         {
           "num": 3,
-          "prompt": "We went to very nice restaurant last weekend.",
+          "prompt": "",
           "answers": [
-            "We went to a very nice restaurant last weekend."
+            "I bought some bananas, some eggs and some bread.",
+            "I bought some bananas, some eggs and a loaf of bread."
           ]
         },
         {
           "num": 4,
-          "prompt": "I brush my teeth with toothpaste.",
+          "prompt": "",
           "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "I use toothbrush to brush my teeth.",
-          "answers": [
-            "I use a toothbrush to brush my teeth."
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "Can you tell me if there's bank near here?",
-          "answers": [
-            "Can you tell me if there's a bank near here?"
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "My brother works for insurance company.",
-          "answers": [
-            "My brother works for an insurance company."
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "I don't like violence.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 9,
-          "prompt": "When we were in Rome, we stayed in big hotel.",
-          "answers": [
-            "When we were in Rome, we stayed in a big hotel."
-          ]
-        },
-        {
-          "num": 10,
-          "prompt": "If you have problem, I'll try and help you.",
-          "answers": [
-            "If you have a problem, I'll try and help you."
-          ]
-        },
-        {
-          "num": 11,
-          "prompt": "I like your suggestion. It's interesting idea.",
-          "answers": [
-            "I like your suggestion. It's an interesting idea."
-          ]
-        },
-        {
-          "num": 12,
-          "prompt": "Can you smell paint?",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 13,
-          "prompt": "I like volleyball. It's good game.",
-          "answers": [
-            "I like volleyball. It's a good game."
-          ]
-        },
-        {
-          "num": 14,
-          "prompt": "Lisa doesn't usually wear jewellery.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 15,
-          "prompt": "Jane was wearing beautiful necklace.",
-          "answers": [
-            "Jane was wearing a beautiful necklace."
-          ]
-        },
-        {
-          "num": 16,
-          "prompt": "Does this city have airport?",
-          "answers": [
-            "Does this city have an airport?"
+            "I bought some toothpaste, some soap and a comb.",
+            "I bought some toothpaste, a bar of soap and a comb."
           ]
         }
       ]
@@ -128,31 +50,17 @@
     {
       "id": "69.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using the following words. Use a/an where necessary.",
-      "wordBank": [
-        "accident",
-        "biscuit",
-        "blood",
-        "coat",
-        "decision",
-        "electricity",
-        "ice",
-        "interview",
-        "key",
-        "moment",
-        "music",
-        "question"
-      ],
+      "instruction": "Напишите предложения, начинающиеся с Would you like a ... ? или Would you like some ... ?",
       "items": [
         {
           "num": 1,
           "parts": [
-            "The road is closed. There's been ",
-            "."
+            "Would you like ",
+            " ?"
           ],
           "answers": [
             [
-              "an accident"
+              "some cheese"
             ]
           ],
           "example": true
@@ -160,133 +68,64 @@
         {
           "num": 2,
           "parts": [
-            "Listen! Can you hear ",
-            "?"
+            "Would you like ",
+            " ?"
           ],
           "answers": [
             [
-              "music"
+              "some coffee",
+              "a cup of coffee"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "I couldn't get into the house. I didn't have ",
-            "."
+            "Would ",
+            " ?"
           ],
           "answers": [
             [
-              "a key"
+              "you like a biscuit"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "It's very warm today. Why are you wearing ",
-            "?"
+            "",
+            " ?"
           ],
           "answers": [
             [
-              "a coat"
+              "Would you like some bread",
+              "Would you like a piece of bread",
+              "Would you like a slice of bread"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Would you like ",
-            " in your drink?"
+            "",
+            " ?"
           ],
           "answers": [
             [
-              "ice"
+              "Would you like a chocolate"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Are you hungry? Have ",
-            "!"
+            "",
+            " ?"
           ],
           "answers": [
             [
-              "a biscuit"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "Our lives would be very difficult without ",
-            "."
-          ],
-          "answers": [
-            [
-              "electricity"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Excuse me, can I ask you ",
-            "?"
-          ],
-          "answers": [
-            [
-              "a question"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I'm not ready yet. Can you wait ",
-            ", please?"
-          ],
-          "answers": [
-            [
-              "a moment"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "The heart pumps ",
-            " through the body."
-          ],
-          "answers": [
-            [
-              "blood"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "We can't delay much longer. We have to make ",
-            " soon."
-          ],
-          "answers": [
-            [
-              "a decision"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "I had ",
-            " for a job yesterday. It went quite well."
-          ],
-          "answers": [
-            [
-              "an interview"
+              "Would you like some cake",
+              "Would you like a piece of cake"
             ]
           ]
         }
@@ -295,31 +134,21 @@
     {
       "id": "69.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using the following words. Sometimes the word needs to be plural (-s), and sometimes you need to use a/an.",
-      "wordBank": [
-        "air",
-        "day",
-        "friend",
-        "joke",
-        "language",
-        "meat",
-        "patience",
-        "people",
-        "picture",
-        "queue",
-        "space",
-        "umbrella"
-      ],
+      "instruction": "Вставьте a/an или some.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "I had a camera with me, but I didn't take any ",
-            "."
+            "I read ",
+            " book and listened to ",
+            " music."
           ],
           "answers": [
             [
-              "pictures"
+              "a"
+            ],
+            [
+              "some"
             ]
           ],
           "example": true
@@ -327,133 +156,261 @@
         {
           "num": 2,
           "parts": [
-            "There are seven ",
-            " in a week."
+            "I need ",
+            " money. I want to buy ",
+            " food."
           ],
           "answers": [
             [
-              "days"
+              "some"
+            ],
+            [
+              "some"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "A vegetarian is a person who doesn't eat ",
-            "."
+            "We met ",
+            " interesting people at the party."
           ],
           "answers": [
             [
-              "meat"
+              "some"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Outside the cinema there was ",
-            " of people waiting to see the film."
+            "I’m going to open ",
+            " window to get ",
+            " fresh air."
           ],
           "answers": [
             [
-              "a queue"
+              "a"
+            ],
+            [
+              "some"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I'm not good at telling ",
-            "."
+            "Rachel didn’t eat much for lunch – only ",
+            " apple and ",
+            " bread."
           ],
           "answers": [
             [
-              "jokes"
+              "an"
+            ],
+            [
+              "some"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Last night I went out with some ",
-            " of mine."
+            "We live in ",
+            " big house. There’s ",
+            " nice garden with ",
+            " beautiful trees."
           ],
           "answers": [
             [
-              "friends"
+              "a"
+            ],
+            [
+              "a"
+            ],
+            [
+              "some"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "There were very few ",
-            " in town today. The streets were almost empty."
+            "I’m going to make a table. First I need ",
+            " wood."
           ],
           "answers": [
             [
-              "people"
+              "some"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I'm going out for a walk. I need some fresh ",
-            "."
+            "Listen to me carefully. I’m going to give you ",
+            " advice."
           ],
           "answers": [
             [
-              "air"
+              "some"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "Paul always wants things quickly. He doesn't have much ",
-            "."
+            "I want to make a list of things to do. I need ",
+            " paper and ",
+            " pen."
           ],
           "answers": [
             [
-              "patience"
+              "some"
+            ],
+            [
+              "a"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "69.4",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "options": [
+            "I’m going to buy some new shoe.",
+            "I’m going to buy some new shoes."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "Mark has brown eye.",
+            "Mark has brown eyes."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "Paula has short black hair.",
+            "Paula has short black hairs."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 4,
+          "options": [
+            "The tour guide gave us some information about the city.",
+            "The tour guide gave us some informations about the city."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": [
+            "We’re going to buy some new chair.",
+            "We’re going to buy some new chairs."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": [
+            "We’re going to buy some new furniture.",
+            "We’re going to buy some new furnitures."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": [
+            "It’s hard to find a work at the moment.",
+            "It’s hard to find a job at the moment."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": [
+            "We had wonderful weather when we were on holiday.",
+            "We had a wonderful weather when we were on holiday."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "69.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (спальня = bedroom, слушать = listen to)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Мне нужен совет об автомобилях.",
+          "answers": [
+            "I need some advice about cars."
           ]
         },
         {
-          "num": 10,
-          "parts": [
-            "I think it's going to rain. Do you have ",
-            " I could borrow?"
-          ],
+          "num": 2,
+          "prompt": "Хотите немного торта?",
           "answers": [
-            [
-              "an umbrella"
-            ]
+            "Would you like some cake?"
           ]
         },
         {
-          "num": 11,
-          "parts": [
-            "How many ",
-            " can you speak?"
-          ],
+          "num": 3,
+          "prompt": "Мы купили новую мебель для нашей спальни.",
           "answers": [
-            [
-              "languages"
-            ]
+            "We bought some new furniture for our bedroom."
           ]
         },
         {
-          "num": 12,
-          "parts": [
-            "Our flat is very small. We don't have much ",
-            "."
-          ],
+          "num": 4,
+          "prompt": "Я собираюсь купить туфли и платье.",
           "answers": [
-            [
-              "space"
-            ]
+            "I’m going to buy some shoes and a dress."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "У Нины есть работа?",
+          "answers": [
+            "Does Nina have a job?",
+            "Has Nina got a job?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "У Марины длинные чёрные волосы и красивые глаза.",
+          "answers": [
+            "Marina has long black hair and beautiful eyes.",
+            "Marina has got long black hair and beautiful eyes."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Борису нужна информация об Англии.",
+          "answers": [
+            "Boris needs some information about England."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Салли читает книгу и слушает музыку.",
+          "answers": [
+            "Sally is reading a book and listening to music.",
+            "Sally is reading a book and listening to some music."
           ]
         }
       ]

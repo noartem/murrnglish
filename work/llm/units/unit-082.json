@@ -1,0 +1,404 @@
+{
+ "unit": 82,
+ "title": "all · most · some · any · no/none",
+ "pdfPages": [
+  175,
+  176
+ ],
+ "exercises": [
+  {
+   "id": "82.1",
+   "type": "fill-in",
+   "instruction": "Допишите предложения. Используйте слова из скобок (some/most и т. д.). Где необходимо, также вставьте of (some of / most of и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " children like playing. (most)"
+     ],
+     "answers": [
+      [
+       "Most"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " this money is yours. (some)"
+     ],
+     "answers": [
+      [
+       "Some of"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " people never stop talking. (some)"
+     ],
+     "answers": [
+      [
+       "Some"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " the shops in the city centre close at 6.30. (most)"
+     ],
+     "answers": [
+      [
+       "Most of"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " people have mobile phones these days. (most)"
+     ],
+     "answers": [
+      [
+       "Most"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I don’t like ",
+      " the pictures in the living room. (any)"
+     ],
+     "answers": [
+      [
+       "any of"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "He’s lost ",
+      " his money. (all)"
+     ],
+     "answers": [
+      [
+       "all",
+       "all of"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      " my friends are married. (none)"
+     ],
+     "answers": [
+      [
+       "None of"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Do you know ",
+      " the people in this picture? (any)"
+     ],
+     "answers": [
+      [
+       "any of"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "",
+      " birds can fly. (most)"
+     ],
+     "answers": [
+      [
+       "Most"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I enjoyed ",
+      " the film, but I didn’t like the ending. (most)"
+     ],
+     "answers": [
+      [
+       "most of"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "",
+      " sports are very dangerous. (some)"
+     ],
+     "answers": [
+      [
+       "Some"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "We can’t find anywhere to stay. ",
+      " the hotels are full. (all)"
+     ],
+     "answers": [
+      [
+       "All",
+       "All of"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "You must have ",
+      " this cheese. It’s delicious. (some)"
+     ],
+     "answers": [
+      [
+       "some of"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "The weather was bad when we were on holiday. It rained ",
+      " the time. (most)"
+     ],
+     "answers": [
+      [
+       "most of"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "82.2",
+   "type": "write",
+   "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте: all/most/some/none + of them / of it",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "How many of the people are women?",
+     "answers": [
+      "Most of them."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "How many of the boxes are on the table?",
+     "answers": [
+      "All of them."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "How many of the men are wearing hats?",
+     "answers": [
+      "Some of them."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "How many of the windows are open?",
+     "answers": [
+      "None of them."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "How many of the people are standing?",
+     "answers": [
+      "Most of them."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "How much of the money is Ben’s?",
+     "answers": [
+      "None of it."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "82.3",
+   "type": "write",
+   "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Most of children like playing.",
+     "answers": [
+      "Most children like playing."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "All the students failed the exam.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Some of people work too hard.",
+     "answers": [
+      "Some people work too hard."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Some of questions in the exam were very easy.",
+     "answers": [
+      "Some of the questions in the exam were very easy.",
+      "Some questions in the exam were very easy."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I haven’t seen any of those people before.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "All of insects have six legs.",
+     "answers": [
+      "All insects have six legs."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Have you read all these books?",
+     "answers": [
+      "OK",
+      "Have you read all of these books?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Most of students in our class are very nice.",
+     "answers": [
+      "Most of the students in our class are very nice.",
+      "Most students in our class are very nice."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Most of my friends are going to the party.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "I’m very tired this morning – I was awake most of night.",
+     "answers": [
+      "I’m very tired this morning – I was awake most of the night."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "82.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (паук = spider; на экзамене = in the exam)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Большинство людей не любят пауков.",
+     "answers": [
+      "Most people don’t like spiders."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я поняла большинство вопросов на экзамене.",
+     "answers": [
+      "I understood most of the questions in the exam."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Некоторые люди не едят мясо.",
+     "answers": [
+      "Some people don’t eat meat."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Вчера мы познакомились с некоторыми Аниными друзьями.",
+     "answers": [
+      "We met some of Anna’s friends yesterday.",
+      "Yesterday we met some of Anna’s friends."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Никто из нас не говорит по-итальянски.",
+     "answers": [
+      "None of us speaks Italian.",
+      "None of us can speak Italian."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я не смотрел ни один из этих фильмов.",
+     "answers": [
+      "I haven’t watched any of these films.",
+      "I haven’t seen any of these films."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "“Вы знаете этих людей?” – “Большинство из них”.",
+     "answers": [
+      "‘Do you know these people?’ ‘Most of them.’"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "“Кто ходил на вечеринку?” – “Мы все”.",
+     "answers": [
+      "‘Who went to the party?’ ‘All of us.’",
+      "‘Who went to the party?’ ‘We all did.’"
+     ]
+    }
+   ]
+  }
+ ]
+}

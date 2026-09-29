@@ -1,183 +1,420 @@
 {
   "unit": 64,
-  "title": "to \u2026 , for \u2026 and so that \u2026",
-  "pdfPages": [140, 141],
+  "title": "myself/yourself/themselves и т. д.",
+  "pdfPages": [
+    139,
+    140
+  ],
   "exercises": [
     {
       "id": "64.1",
-      "type": "write",
-      "instruction": "Choose from Box A and Box B to make sentences with to \u2026 .",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя myself/yourself и т. д.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "He looked at ",
+            " in the mirror."
+          ],
+          "answers": [
+            [
+              "himself"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "prompt": "I opened the box",
-          "answers": ["I opened the box to see what was in it."]
+          "parts": [
+            "I’m not angry with you. I’m angry with ",
+            "."
+          ],
+          "answers": [
+            [
+              "myself"
+            ]
+          ]
         },
         {
           "num": 3,
-          "prompt": "I",
-          "answers": ["I moved to a new apartment to be nearer my friends."]
+          "parts": [
+            "Karen had a good time in Australia. She enjoyed ",
+            "."
+          ],
+          "answers": [
+            [
+              "herself"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "",
-          "answers": ["I couldn\u2019t find a knife to chop the onions.", "I couldn\u2019t find a knife to chop the onions with."]
+          "parts": [
+            "My friends had a good time in Australia. They enjoyed ",
+            "."
+          ],
+          "answers": [
+            [
+              "themselves"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "",
-          "answers": ["I called the police to report the accident."]
+          "parts": [
+            "I picked up a very hot plate and burnt ",
+            "."
+          ],
+          "answers": [
+            [
+              "myself"
+            ]
+          ]
         },
         {
           "num": 6,
-          "prompt": "",
-          "answers": ["I called the hotel to find out if they had any rooms free."]
+          "parts": [
+            "He never thinks about other people. He only thinks about ",
+            "."
+          ],
+          "answers": [
+            [
+              "himself"
+            ]
+          ]
         },
         {
           "num": 7,
-          "prompt": "",
-          "answers": ["I employed an assistant to help me with my work."]
+          "parts": [
+            "I want to know more about you. Tell me about ",
+            ". (одному человеку)"
+          ],
+          "answers": [
+            [
+              "yourself"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Goodbye! Have a good trip and take care of ",
+            "! (двум людям)"
+          ],
+          "answers": [
+            [
+              "yourselves"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "64.2",
-      "type": "fill-in",
-      "instruction": "Complete these sentences using to + a suitable verb.",
+      "type": "write",
+      "instruction": "Напишите предложения, используя by myself / by yourself и т. д.",
+      "example": [
+        1
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "I went on holiday alone.",
+          "answers": [
+            "I went on holiday by myself."
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["I don\u2019t have enough time ", " all the things I have to do."],
-          "answers": [["to do"]]
+          "prompt": "When I saw him, he was alone.",
+          "answers": [
+            "When I saw him, he was by himself."
+          ]
         },
         {
           "num": 3,
-          "parts": ["I came home by taxi. I didn\u2019t have the energy ", "."],
-          "answers": [["to walk"]]
+          "prompt": "Don’t go out alone.",
+          "answers": [
+            "Don’t go out by yourself."
+          ]
         },
         {
           "num": 4,
-          "parts": ["Would you like something ", "? Coffee? Tea?"],
-          "answers": [["to drink"]]
+          "prompt": "I went to the cinema alone.",
+          "answers": [
+            "I went to the cinema by myself."
+          ]
         },
         {
           "num": 5,
-          "parts": ["Can you give me a bag ", " these things in?"],
-          "answers": [["to put", "to carry"]]
+          "prompt": "My sister lives alone.",
+          "answers": [
+            "My sister lives by herself."
+          ]
         },
         {
           "num": 6,
-          "parts": ["There will be a meeting next week ", " the problem."],
-          "answers": [["to discuss", "to consider", "to talk about"]]
-        },
-        {
-          "num": 7,
-          "parts": ["Do you need a visa ", " to the United States?"],
-          "answers": [["to go", "to travel"]]
-        },
-        {
-          "num": 8,
-          "parts": ["I saw Helen at the party, but I didn\u2019t have a chance ", " to her."],
-          "answers": [["to talk", "to speak"]]
-        },
-        {
-          "num": 9,
-          "parts": ["I need some new clothes. I don\u2019t have anything nice ", "."],
-          "answers": [["to wear", "to put on"]]
-        },
-        {
-          "num": 10,
-          "parts": ["They\u2019ve passed their exams. They\u2019re going to have a party ", "."],
-          "answers": [["to celebrate"]]
-        },
-        {
-          "num": 11,
-          "parts": ["I can\u2019t do all this work alone. I need somebody ", " me."],
-          "answers": [["to help", "to assist"]]
-        },
-        {
-          "num": 12,
-          "parts": ["Why are you so scared? There\u2019s nothing ", " afraid of."],
-          "answers": [["to be"]]
+          "prompt": "Many people live alone.",
+          "answers": [
+            "Many people live by themselves."
+          ]
         }
       ]
     },
     {
       "id": "64.3",
-      "type": "fill-in",
-      "instruction": "Put in to or for.",
+      "type": "write",
+      "instruction": "Напишите предложения, используя each other.",
+      "example": [
+        1
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "I like her. / I like him.",
+          "answers": [
+            "They like each other."
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["We\u2019ll need time ", " make a decision."],
-          "answers": [["to"]]
+          "prompt": "I can’t see her. / I can’t see him.",
+          "answers": [
+            "They can’t see each other."
+          ]
         },
         {
           "num": 3,
-          "parts": ["I went to the dentist ", " a check-up."],
-          "answers": [["for"]]
+          "prompt": "I call her a lot. / I call him a lot.",
+          "answers": [
+            "They call each other a lot."
+          ]
         },
         {
           "num": 4,
-          "parts": ["He\u2019s very old. He needs somebody ", " take care of him."],
-          "answers": [["to"]]
+          "prompt": "I don’t know him. / I don’t know him.",
+          "answers": [
+            "They don’t know each other."
+          ]
         },
         {
           "num": 5,
-          "parts": ["Can you lend me money ", " a taxi?"],
-          "answers": [["for"]]
+          "prompt": "I’m sitting next to him. / I’m sitting next to her.",
+          "answers": [
+            "They’re sitting next to each other.",
+            "They are sitting next to each other."
+          ]
         },
         {
           "num": 6,
-          "parts": ["Do you wear glasses ", " reading?"],
-          "answers": [["for"]]
-        },
-        {
-          "num": 7,
-          "parts": ["I put on my glasses ", " read the letter."],
-          "answers": [["to"]]
-        },
-        {
-          "num": 8,
-          "parts": ["I wish we had a garden ", " the children ", " play in."],
-          "answers": [["for"], ["to"]]
+          "prompt": "I gave her a present. / I gave her a present.",
+          "answers": [
+            "They gave each other presents.",
+            "They gave each other a present."
+          ]
         }
       ]
     },
     {
       "id": "64.4",
-      "type": "write",
-      "instruction": "Make one sentence from two, using so that.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте: each other или ourselves/yourselves/themselves или us/you/them.",
+      "wordBank": [
+        "each other",
+        "ourselves/yourselves/themselves",
+        "us/you/them"
+      ],
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "Paul and I live near ",
+            "."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "prompt": "I wore warm clothes. I didn\u2019t want to get cold.",
-          "answers": ["I wore warm clothes so that I wouldn\u2019t get cold.", "I wore warm clothes so that I wouldn\u2019t be cold."]
+          "parts": [
+            "Who are those people? Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "I gave Mark my phone number. I wanted him to be able to contact me.",
-          "answers": ["I gave Mark my phone number so that he could contact me.", "I gave Mark my phone number so that he would be able to contact me."]
+          "parts": [
+            "You can help Tom, and Tom can help you. So you and Tom can help ",
+            "."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "We spoke very quietly. We didn\u2019t want anybody else to hear us.",
-          "answers": ["We spoke very quietly so that nobody else would hear us.", "We spoke very quietly so that nobody else could hear us.", "We spoke very quietly so that nobody else would be able to hear us."]
+          "parts": [
+            "There’s food in the kitchen. If you and Chris are hungry, you can help ",
+            "."
+          ],
+          "answers": [
+            [
+              "yourselves"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "Please arrive early. We want to be able to start the meeting on time.",
-          "answers": ["Please arrive early so that we can start the meeting on time.", "Please arrive early so that we\u2019ll be able to start the meeting on time."]
+          "parts": [
+            "We didn’t go to Emily’s party. She didn’t invite ",
+            "."
+          ],
+          "answers": [
+            [
+              "us"
+            ]
+          ]
         },
         {
           "num": 6,
-          "prompt": "We made a list of things to do. We didn\u2019t want to forget anything.",
-          "answers": ["We made a list of things to do so that we wouldn\u2019t forget anything."]
+          "parts": [
+            "When we go on holiday, we always enjoy ",
+            "."
+          ],
+          "answers": [
+            [
+              "ourselves"
+            ]
+          ]
         },
         {
           "num": 7,
-          "prompt": "I slowed down. I wanted the car behind me to be able to overtake.",
-          "answers": ["I slowed down so that the car behind me could overtake.", "I slowed down so that the car behind me would be able to overtake."]
+          "parts": [
+            "Helen and Jane were at school together, but they never see ",
+            " now."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Karen and I are very good friends. We’ve known ",
+            " for a long time."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "‘Did you see Sam and Laura at the party?’ ‘Yes, but I didn’t speak to ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Many people talk to ",
+            " when they’re alone."
+          ],
+          "answers": [
+            [
+              "themselves"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "64.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (эгоистичен = selfish, упасть = fall down)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "“Можно взять яблоко?” – “Угощайся”.",
+          "answers": [
+            "‘Can I have an apple?’ ‘Help yourself.’",
+            "‘Can I take an apple?’ ‘Help yourself.’"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Эмма посмотрела на себя в зеркало.",
+          "answers": [
+            "Emma looked at herself in the mirror."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Моя бабушка живёт одна.",
+          "answers": [
+            "My grandmother lives by herself."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Ты очень эгоистична. Ты думаешь только о себе!",
+          "answers": [
+            "You are very selfish. You only think about yourself!"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Вы знаете друг друга?",
+          "answers": [
+            "Do you know each other?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Олег упал и ударился.",
+          "answers": [
+            "Oleg fell down and hurt himself."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вечеринка была классная. Мы хорошо провели время.",
+          "answers": [
+            "The party was great. We enjoyed ourselves."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Как ты себя чувствуешь сегодня?",
+          "answers": [
+            "How do you feel today?"
+          ]
         }
       ]
     }

@@ -1,175 +1,271 @@
 {
   "unit": 3,
-  "title": "Present continuous and present simple 1 (I am doing and I do)",
+  "title": "I’m scared / I’m late / I’m tired и т. д.",
   "pdfPages": [
-    18,
-    19
+    17,
+    18
   ],
   "exercises": [
     {
       "id": "3.1",
-      "type": "write",
-      "instruction": "Are the underlined verbs OK? Correct them where necessary.",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и закончите предложения, используя эти слова:",
+      "wordBank": [
+        "asleep",
+        "cold",
+        "closed",
+        "hot",
+        "in a hurry",
+        "late",
+        "scared",
+        "tired"
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "Water [boils] at 100 degrees Celsius.",
+          "parts": [
+            "He’s",
+            ""
+          ],
           "answers": [
-            "OK"
-          ]
+            [
+              "hot."
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "How often [are you going] to the cinema?",
+          "parts": [
+            "They",
+            ""
+          ],
           "answers": [
-            "do you go"
+            [
+              "’re tired.",
+              "are tired."
+            ]
           ]
         },
         {
           "num": 3,
-          "answers": [
-            "is trying"
+          "parts": [
+            "He",
+            ""
           ],
-          "prompt": "Ben [tries] to find a job, but he hasn’t had any luck yet."
+          "answers": [
+            [
+              "’s scared.",
+              "is scared."
+            ]
+          ]
         },
         {
           "num": 4,
-          "answers": [
-            "phones"
+          "parts": [
+            "The shop",
+            ""
           ],
-          "prompt": "Martina [is phoning] her mother every day."
+          "answers": [
+            [
+              "is closed."
+            ]
+          ]
         },
         {
           "num": 5,
-          "answers": [
-            "OK"
+          "parts": [
+            "They",
+            ""
           ],
-          "prompt": "The moon [goes] round the earth in about 27 days."
+          "answers": [
+            [
+              "’re asleep.",
+              "are asleep."
+            ]
+          ]
         },
         {
           "num": 6,
-          "answers": [
-            "are they talking"
+          "parts": [
+            "The bus",
+            ""
           ],
-          "prompt": "Can you hear those people? What [do they talk] about?"
+          "answers": [
+            [
+              "is late."
+            ]
+          ]
         },
         {
           "num": 7,
-          "answers": [
-            "OK"
+          "parts": [
+            "She",
+            ""
           ],
-          "prompt": "What [do you do] in your spare time?"
+          "answers": [
+            [
+              "’s in a hurry.",
+              "is in a hurry."
+            ]
+          ]
         },
         {
           "num": 8,
-          "answers": [
-            "OK"
+          "parts": [
+            "They",
+            ""
           ],
-          "prompt": "Sarah is a vegetarian. She [doesn’t eat] meat."
-        },
-        {
-          "num": 9,
           "answers": [
-            "It’s getting",
-            "It is getting"
-          ],
-          "prompt": "I must go now. It [gets] late."
-        },
-        {
-          "num": 10,
-          "answers": [
-            "I’m coming",
-            "I am coming"
-          ],
-          "prompt": "‘Come on! It’s time to leave.’ ‘OK, [I come].’"
-        },
-        {
-          "num": 11,
-          "answers": [
-            "He always starts"
-          ],
-          "prompt": "Paul is never late. He’s [always starting] work on time."
-        },
-        {
-          "num": 12,
-          "answers": [
-            "OK"
-          ],
-          "prompt": "They don’t get on well. They’re [always arguing]."
+            [
+              "’re cold.",
+              "are cold."
+            ]
+          ]
         }
-      ],
-      "example": [
-        1,
-        2
       ]
     },
     {
       "id": "3.2",
       "type": "fill-in",
-      "instruction": "Put the verb into the correct form, present continuous or present simple.",
+      "instruction": "Заполните пропуски.",
       "items": [
         {
-          "num": 2,
+          "num": 1,
           "parts": [
-            "2a ‘",
-            " (you / listen) to the radio?’ ‘No, you can turn it off.’ 2b ‘",
-            " to the radio a lot?’ ‘No, not very often.’ (you / listen)"
+            "'",
+            " cold?' 'No, I’m OK.'"
           ],
           "answers": [
             [
-              "Are you listening"
-            ],
-            [
-              "Do you listen"
+              "Are you"
             ]
-          ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "'How is your grandfather?' '",
+            " very well.'"
+          ],
+          "answers": [
+            [
+              "He’s"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "3a The River Nile ",
-            " (flow) into the Mediterranean. 3b The river ",
-            " very fast today – much faster than usual. (flow)"
+            "'Are the children in bed?' 'Yes, ",
+            " asleep.'"
           ],
           "answers": [
             [
-              "flows"
-            ],
-            [
-              "is flowing"
+              "They’re",
+              "They are"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "4a I’m not very active. ",
-            " (I / not / do) any sport. 4b What ",
-            " at weekends? (you / usually / do)"
+            "The weather is nice today. ",
+            " hot and sunny."
           ],
           "answers": [
             [
-              "I don’t do"
-            ],
-            [
-              "do you usually do"
+              "It’s",
+              "It is"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "5a Rachel is in New York right now. ",
-            " (She / stay) at the Park Hotel. 5b ",
-            " there when she’s in New York. (She / always / stay)"
+            "Andy’s favourite sport is tennis. ",
+            " very interested in it."
           ],
           "answers": [
             [
-              "She’s staying",
-              "She is staying"
-            ],
+              "He’s",
+              "He is"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "These flowers are nice. How much ",
+            "?"
+          ],
+          "answers": [
             [
-              "She always stays"
+              "are they"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "'Sorry ",
+            " late.' 'That’s OK.'"
+          ],
+          "answers": [
+            [
+              "I’m",
+              "I am"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "How is Lisa? ",
+            " well?"
+          ],
+          "answers": [
+            [
+              "Is she"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "'",
+            " interested in art?' 'Yes, I am. Very much.'"
+          ],
+          "answers": [
+            [
+              "Are you"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "This coat is expensive. ",
+            " three hundred pounds."
+          ],
+          "answers": [
+            [
+              "It’s",
+              "It is"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "It’s 9.00 and John isn’t here! Why ",
+            " always late?"
+          ],
+          "answers": [
+            [
+              "is he"
             ]
           ]
         }
@@ -177,173 +273,135 @@
     },
     {
       "id": "3.3",
-      "type": "fill-in",
-      "instruction": "Put the verb into the correct form, present continuous or present simple.",
+      "type": "self-check",
+      "instruction": "Напишите правдивые (утвердительные или отрицательные) предложения о себе.",
+      "example": [
+        1
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "(scared of snakes)",
+          "modelAnswers": [
+            "I’m scared of snakes.",
+            "I’m not scared of snakes."
+          ]
+        },
+        {
           "num": 2,
-          "parts": [
-            "Julia is good at languages. ",
-            " (She / speak) four languages very well."
-          ],
-          "answers": [
-            [
-              "She speaks"
-            ]
+          "prompt": "(tired)",
+          "modelAnswers": [
+            "I’m tired.",
+            "I’m not tired."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "Are you ready yet? ",
-            " (Everybody / wait) for you."
-          ],
-          "answers": [
-            [
-              "Everybody’s waiting",
-              "Everybody is waiting"
-            ]
+          "prompt": "(in a hurry)",
+          "modelAnswers": [
+            "I’m in a hurry.",
+            "I’m not in a hurry."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I’ve never heard this word. How ",
-            "(you / pronounce)?"
-          ],
-          "answers": [
-            [
-              "do you pronounce"
-            ]
+          "prompt": "(scared of dogs)",
+          "modelAnswers": [
+            "I’m scared of dogs.",
+            "I’m not scared of dogs."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "Kate ",
-            " (not / work) this week. She’s on holiday."
-          ],
-          "answers": [
-            [
-              "isn’t working",
-              "is not working",
-              "’s not working"
-            ]
+          "prompt": "(well)",
+          "modelAnswers": [
+            "I’m well.",
+            "I’m not well."
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "I think my English ",
-            " (improve) slowly. It’s better than it was."
-          ],
-          "answers": [
-            [
-              "is improving"
-            ]
+          "prompt": "(interested in history)",
+          "modelAnswers": [
+            "I’m interested in history.",
+            "I’m not interested in history."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "Nicola ",
-            " (live) in Manchester. She has never lived anywhere else."
-          ],
-          "answers": [
-            [
-              "lives"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Can we stop walking soon? ",
-            " (I / start) to get tired."
-          ],
-          "answers": [
-            [
-              "I’m starting",
-              "I am starting"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "Sam and Tina are in Madrid right now. ",
-            " (They / visit) a friend of theirs."
-          ],
-          "answers": [
-            [
-              "They’re visiting",
-              "They are visiting"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "‘What ",
-            "(your father / do)?’ ‘He’s an architect.’"
-          ],
-          "answers": [
-            [
-              "does your father do"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "It took me an hour to get to work this morning. Most days ",
-            " (it / not / take) so long."
-          ],
-          "answers": [
-            [
-              "it doesn’t take"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "I ",
-            " (I / learn) to drive. My driving test is next month. My father ",
-            "(teach)."
-          ],
-          "answers": [
-            [
-              "I’m learning",
-              "I am learning"
-            ],
-            [
-              "is teaching",
-              "’s teaching"
-            ]
+          "prompt": "(married)",
+          "modelAnswers": [
+            "I’m married.",
+            "I’m not married."
           ]
         }
       ]
     },
     {
       "id": "3.4",
-      "type": "fill-in",
-      "instruction": "Finish B’s sentences. Use always -ing.",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (сын = son, шапка = hat)",
       "items": [
         {
+          "num": 1,
+          "prompt": "В моей комнате темно.",
+          "answers": [
+            "It’s dark in my room.",
+            "It is dark in my room."
+          ]
+        },
+        {
           "num": 2,
-          "parts": ["a: The car has broken down again. — b: That car is useless. It ", "."],
-          "answers": [["’s always breaking down", "is always breaking down"]]
+          "prompt": "Анна не замужем.",
+          "answers": [
+            "Anna isn’t married.",
+            "Anna is not married."
+          ]
         },
         {
           "num": 3,
-          "parts": ["a: Look! You’ve made the same mistake again. — b: Oh no, not again! I ", "."],
-          "answers": [["’m always making the same mistake", "am always making the same mistake", "’m always making that mistake", "am always making that mistake"]]
+          "prompt": "Я не интересуюсь музыкой.",
+          "answers": [
+            "I’m not interested in music.",
+            "I am not interested in music."
+          ]
         },
         {
           "num": 4,
-          "parts": ["a: Oh, I’ve left my phone at home again. — b: Typical! You ", "."],
-          "answers": [["’re always leaving your phone at home", "are always leaving your phone at home"]]
+          "prompt": "Мой сын боится кошек.",
+          "answers": [
+            "My son is scared of cats."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Сегодня очень холодно.",
+          "answers": [
+            "It’s very cold today.",
+            "It is very cold today."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Сколько стоит эта шапка?",
+          "answers": [
+            "How much is this hat?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Я плохо себя чувствую.",
+          "answers": [
+            "I’m not well.",
+            "I am not well."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Вы устали?",
+          "answers": [
+            "Are you tired?"
+          ]
         }
       ]
     }

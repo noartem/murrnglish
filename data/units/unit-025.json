@@ -1,232 +1,431 @@
 {
   "unit": 25,
-  "title": "when I do and when I’ve done",
+  "title": "Правильные и неправильные глаголы",
   "pdfPages": [
-    62,
-    63
+    61,
+    62
   ],
   "exercises": [
     {
       "id": "25.1",
-      "type": "choice",
-      "instruction": "Which is correct?",
+      "type": "fill-in",
+      "instruction": "Напишите формы past simple / past participle этих глаголов. (В этом упражнении формы past simple и past participle совпадают.)",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
-          "options": [
-            "you go out",
-            "you’ll go out"
+          "parts": [
+            "make ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "made"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "options": [
-            "we let",
-            "we’ll let"
+          "parts": [
+            "cut ",
+            ""
           ],
-          "answer": 1
+          "answers": [
+            [
+              "cut"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "options": [
-            "the film starts",
-            "will start"
+          "parts": [
+            "get ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "got"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "it changes",
-            "it will change"
+          "parts": [
+            "bring ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "brought"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "I make",
-            "I’ll make"
+          "parts": [
+            "pay ",
+            ""
           ],
-          "answer": 1
+          "answers": [
+            [
+              "paid"
+            ]
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "I’m 40",
-            "I’ll be 40"
+          "parts": [
+            "enjoy ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "enjoyed"
+            ]
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "I wait",
-            "I’ll wait"
+          "parts": [
+            "buy ",
+            ""
           ],
-          "answer": 1
+          "answers": [
+            [
+              "bought"
+            ]
+          ]
         },
         {
           "num": 8,
-          "options": [
-            "he grows up",
-            "he’ll grow up"
+          "parts": [
+            "sit ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "sat"
+            ]
+          ]
         },
         {
           "num": 9,
-          "options": [
-            "you’re",
-            "you will be"
+          "parts": [
+            "leave ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "left"
+            ]
+          ]
         },
         {
           "num": 10,
-          "options": [
-            "the weather is",
-            "will be"
+          "parts": [
+            "happen ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "happened"
+            ]
+          ]
         },
         {
           "num": 11,
-          "options": [
-            "Vicky is",
-            "will be"
+          "parts": [
+            "hear ",
+            ""
           ],
-          "answer": 1
+          "answers": [
+            [
+              "heard"
+            ]
+          ]
         },
         {
           "num": 12,
-          "options": [
-            "you’ve had",
-            "you’ll have"
+          "parts": [
+            "put ",
+            ""
           ],
-          "answer": 0
+          "answers": [
+            [
+              "put"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "catch ",
+            ""
+          ],
+          "answers": [
+            [
+              "caught"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "watch ",
+            ""
+          ],
+          "answers": [
+            [
+              "watched"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "understand ",
+            ""
+          ],
+          "answers": [
+            [
+              "understood"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "25.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using the verbs in brackets. Use will/won’t or the present (see/plays/are etc.).",
+      "instruction": "Напишите формы past simple / past participle этих глаголов.",
       "items": [
         {
           "num": 1,
+          "example": true,
           "parts": [
-            "When ",
-            " here again, you must come and see us. (you / be)"
+            "break ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "you are"
+              "broke"
+            ],
+            [
+              "broken"
             ]
           ]
         },
         {
           "num": 2,
           "parts": [
-            "I want to see Sophie before ",
-            " away next week. (she / go)"
+            "begin ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "she goes"
+              "began"
+            ],
+            [
+              "begun"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Call me when ",
-            " what time you’re going to get here. (you / know)"
+            "eat ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "you know"
+              "ate"
+            ],
+            [
+              "eaten"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "There’s no need to hurry. ",
-            " for you until ",
-            " ready. (I / wait) (you / be)"
+            "drink ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "I’ll wait"
+              "drank"
             ],
             [
-              "you’re"
+              "drunk"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I’m going out for about an hour. ",
-            " here when ",
-            " back? (you / still / be) (I / get)"
+            "drive ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "Will you still be"
+              "drove"
             ],
             [
-              "I get"
+              "driven"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I think everything will be fine, but if ",
-            " any problems, ",
-            " you know, OK? (there / be) (I / let)"
+            "speak ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "there are"
+              "spoke"
             ],
             [
-              "I’ll let"
+              "spoken"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Kate looks completely different now. ",
-            " her when ",
-            " her again. (you / not / recognise) (you / see)"
+            "write ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "You won’t recognise"
+              "wrote"
             ],
             [
-              "you see"
+              "written"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I’m going to be away for a few days. If ",
-            " to contact me while ",
-            " away, you can call me. (you / need) (I / be)"
+            "come ",
+            " ",
+            ""
           ],
           "answers": [
             [
-              "you need"
+              "came"
             ],
             [
-              "I’m"
+              "come"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "know ",
+            " ",
+            ""
+          ],
+          "answers": [
+            [
+              "knew"
+            ],
+            [
+              "known"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "take ",
+            " ",
+            ""
+          ],
+          "answers": [
+            [
+              "took"
+            ],
+            [
+              "taken"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "go ",
+            " ",
+            ""
+          ],
+          "answers": [
+            [
+              "went"
+            ],
+            [
+              "one"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "give ",
+            " ",
+            ""
+          ],
+          "answers": [
+            [
+              "gave"
+            ],
+            [
+              "given"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "throw ",
+            " ",
+            ""
+          ],
+          "answers": [
+            [
+              "threw"
+            ],
+            [
+              "thrown"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "forget ",
+            " ",
+            ""
+          ],
+          "answers": [
+            [
+              "forgot"
+            ],
+            [
+              "forgotten"
             ]
           ]
         }
@@ -235,17 +434,21 @@
     {
       "id": "25.3",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences.",
+      "instruction": "Поставьте глаголы в правильную форму.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "Let’s wait until ",
-            "."
+            "I ",
+            " my hands because they were dirty. (wash)"
           ],
           "answers": [
             [
-              "it stops raining"
+              "washed"
             ]
           ],
           "example": true
@@ -253,67 +456,182 @@
         {
           "num": 2,
           "parts": [
-            "I’d better go now before ",
-            "."
+            "Somebody has ",
+            " this window. (break)"
           ],
           "answers": [
             [
-              "it gets dark"
+              "broken"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "Let me know as soon as ",
-            "."
+            "I feel good. I ",
+            " very well last night. (sleep)"
           ],
           "answers": [
             [
-              "you decide",
-              "you’ve decided",
-              "you have decided"
+              "slept"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Where are you going to stay when ",
-            "?"
+            "We ",
+            " a really good film yesterday. (see)"
           ],
           "answers": [
             [
-              "you’re in Hong Kong",
-              "you go to Hong Kong"
+              "saw"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I think things will be better when they ",
-            "."
+            "It ",
+            " a lot while we were on holiday. (rain)"
           ],
           "answers": [
             [
-              "build the new road",
-              "’ve built the new road",
-              "have built the new road"
+              "rained"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I won’t speak to her until ",
-            "."
+            "I’ve ",
+            " my bag. (lose) Have you ",
+            " it? (see)"
           ],
           "answers": [
             [
-              "she apologises",
-              "she’s apologised",
-              "she has apologised"
+              "lost"
+            ],
+            [
+              "seen"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Rosa’s bike was ",
+            " last week. (steal)"
+          ],
+          "answers": [
+            [
+              "stolen"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I ",
+            " to bed early because I was tired. (go)"
+          ],
+          "answers": [
+            [
+              "went"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Have you ",
+            " your work yet? (finish)"
+          ],
+          "answers": [
+            [
+              "finished"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "The shopping centre was ",
+            " about 20 years ago. (build)"
+          ],
+          "answers": [
+            [
+              "built"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Anna ",
+            " to drive when she was 18. (learn)"
+          ],
+          "answers": [
+            [
+              "learnt",
+              "learned"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I’ve never ",
+            " a horse. (ride)"
+          ],
+          "answers": [
+            [
+              "ridden"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "Jessica is a good friend of mine. I’ve ",
+            " her for a long time. (know)"
+          ],
+          "answers": [
+            [
+              "known"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Yesterday I ",
+            " and ",
+            " my leg. (fall / hurt)"
+          ],
+          "answers": [
+            [
+              "fell"
+            ],
+            [
+              "hurt"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "My brother ",
+            " in the London Marathon last year. Have you ever ",
+            " in a marathon? (run / run)"
+          ],
+          "answers": [
+            [
+              "ran"
+            ],
+            [
+              "run"
             ]
           ]
         }
@@ -322,17 +640,34 @@
     {
       "id": "25.4",
       "type": "fill-in",
-      "instruction": "Put in when or if.",
+      "instruction": "Заполните пропуски в предложениях. Выберите глагол из рамки и поставьте его в правильную форму.",
+      "wordBank": [
+        "cost",
+        "drive",
+        "fly",
+        "make",
+        "meet",
+        "sell",
+        "speak",
+        "swim",
+        "tell",
+        "think",
+        "wake up",
+        "win"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            " I’m late tonight."
+            "I have ",
+            " some coffee. Would you like some?"
           ],
           "answers": [
             [
-              "If"
+              "made"
             ]
           ],
           "example": true
@@ -340,85 +675,217 @@
         {
           "num": 2,
           "parts": [
-            "Be careful. You’ll hurt yourself ",
-            " you fall."
+            "Have you ",
+            " John about your new job?"
           ],
           "answers": [
             [
-              "if"
+              "told"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I’m going shopping. ",
-            " you want anything, I can get it for you."
+            "We played basketball on Sunday. We didn’t play very well, but we ",
+            " the game."
           ],
           "answers": [
             [
-              "If"
+              "won"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I’m going away for a few days. I’ll call you ",
-            " I get back."
+            "I know Gary, but I’ve never ",
+            " his wife."
           ],
           "answers": [
             [
-              "when"
+              "met"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "",
-            " I don’t see you tomorrow, when will I see you again?"
+            "We were ",
+            " by loud music in the middle of the night."
           ],
           "answers": [
             [
-              "If"
+              "woken up"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I’m watching a programme on TV right now. ",
-            " it finishes, I’m going to bed."
+            "Stephanie jumped into the river and ",
+            " to the other side."
           ],
           "answers": [
             [
-              "When"
+              "swam"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "We can eat at home or, ",
-            " you prefer, we can go to a restaurant."
+            "‘Did you like the film?’ ‘Yes, I ",
+            " it was very good.’"
           ],
           "answers": [
             [
-              "if"
+              "thought"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I hope Sarah can come to the party. It will be a shame ",
-            " she can’t come."
+            "Many different languages are ",
+            " in the Philippines."
           ],
           "answers": [
             [
-              "if"
+              "spoken"
             ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Our holiday ",
+            " a lot of money because we stayed in an expensive hotel."
+          ],
+          "answers": [
+            [
+              "cost"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Have you ever ",
+            " a very fast car?"
+          ],
+          "answers": [
+            [
+              "driven"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "All the tickets for the concert were ",
+            " very quickly."
+          ],
+          "answers": [
+            [
+              "sold"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "A bird ",
+            " in through the open window while we were having our dinner."
+          ],
+          "answers": [
+            [
+              "flew"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (на ферме = on a farm)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Лара изучала русский язык в университете.",
+          "answers": [
+            "Lara studied Russian at university."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Когда был построен ваш дом?",
+          "answers": [
+            "When was your house built?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Где Джеймс? Я его сегодня не видел.",
+          "answers": [
+            "Where is James? I haven’t seen him today.",
+            "Where is James? I have not seen him today."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Ты голоден? Я сделала тебе бутерброд.",
+          "answers": [
+            "Are you hungry? I’ve made you a sandwich.",
+            "Are you hungry? I have made you a sandwich."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Смотри! Я купил тебе подарок!",
+          "answers": [
+            "Look! I’ve bought you a present!",
+            "Look! I have bought you a present!"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Салли сломала руку, когда она была в отпуске.",
+          "answers": [
+            "Sally broke her arm when she was on holiday.",
+            "Sally broke her arm while she was on holiday."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "В Канаде говорят на английском и на французском.",
+          "answers": [
+            "French and English are spoken in Canada.",
+            "They speak French and English in Canada."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "В субботу мы смотрели футбольный матч. Наша команда победила.",
+          "answers": [
+            "We watched a (football) match on Saturday. Our team won.",
+            "On Saturday we watched a football match. Our team won."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Когда мы жили на ферме, у меня была лошадь.",
+          "answers": [
+            "When we lived on a farm, I had a horse."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Вчера я нашла телефон рядом с моим домом.",
+          "answers": [
+            "I found a phone near my house yesterday.",
+            "Yesterday I found a phone near my house."
           ]
         }
       ]

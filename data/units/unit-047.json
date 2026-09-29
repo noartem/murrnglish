@@ -1,37 +1,347 @@
 {
   "unit": 47,
-  "title": "Reported speech 1 (he said that …)",
-  "pdfPages": [106, 107],
+  "title": "Who is she talking to? · What is it like? (вопросы 3)",
+  "pdfPages": [
+    105,
+    106
+  ],
   "exercises": [
     {
       "id": "47.1",
-      "type": "fill-in",
-      "instruction": "You talked to some friends of yours (Paul, Tom, Anna etc.). Read what they said on the left (direct speech). Later (the same day) you tell another friend what they said (reported speech). Complete the sentences.",
+      "type": "write",
+      "instruction": "Вы хотите узнать недостающую информацию (XXXXX). Напишите вопросы с who или what.",
+      "example": [
+        1
+      ],
       "items": [
-        { "num": 2, "parts": ["I wanted to walk to the station, but Tom said ", " far."], "answers": [["(that) it was too far"]] },
-        { "num": 3, "parts": ["Anna has been invited to the party but she told me ", " to go."], "answers": [["(that) she didn't want"]] },
-        { "num": 4, "parts": ["I asked Dan about his travel plans. He said ", " next week."], "answers": [["(that) he would let me know"]] },
-        { "num": 5, "parts": ["I asked Ben about Rachel, but he told me ", " for a while."], "answers": [["(that) he hadn't seen her"]] },
-        { "num": 6, "parts": ["I needed to borrow a guitar and Kate said ", "."], "answers": [["(that) I could borrow hers"]] },
-        { "num": 7, "parts": ["I asked Sue about her job. She said ", " very much."], "answers": [["(that) she wasn't enjoying it"]] },
-        { "num": 8, "parts": ["I asked James about his car. He told me ", " a few months ago."], "answers": [["(that) he sold it", "(that) he'd sold it", "(that) he had sold it"]] },
-        { "num": 9, "parts": ["I asked Sarah the name of the cafe we went to but she said ", "."], "answers": [["(that) she didn't know"]] },
-        { "num": 10, "parts": ["I asked Amy about her school and she told me ", " class."], "answers": [["(that) there were twenty students in her"]] }
+        {
+          "num": 1,
+          "prompt": "The letter is from XXXXX.",
+          "answers": [
+            "Who is the letter from?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I’m looking for a XXXXX.",
+          "answers": [
+            "What are you looking for?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I went to the cinema with XXXXX.",
+          "answers": [
+            "Who did you go to the cinema with?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "The film was about XXXXX.",
+          "answers": [
+            "What was the film about?",
+            "Who was the film about?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I gave the money to XXXXX.",
+          "answers": [
+            "Who did you give the money to?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "The book was written by XXXXX.",
+          "answers": [
+            "Who was the book written by?"
+          ]
+        }
       ]
     },
     {
       "id": "47.2",
-      "type": "self-check",
-      "instruction": "Somebody says something to you which is not what you expected. Use your own ideas to complete your answers.",
+      "type": "fill-in",
+      "instruction": "Напишите вопросы о людях, изображённых на картинках. Используйте глагол из рамки + предлог:",
+      "wordBank": [
+        "go",
+        "listen",
+        "look",
+        "talk",
+        "talk",
+        "wait"
+      ],
       "items": [
-        { "num": 1, "prompt": "a: It's quite a long way from the hotel to the city centre.\nb: Is it? The man on the reception desk said it was only five minutes' walk.", "modelAnswers": [""] },
-        { "num": 2, "prompt": "a: Sue is coming to the party tonight.\nb: Is she? I saw her a few days ago and she said she …", "modelAnswers": ["wasn't coming / was going somewhere else / couldn't come"] },
-        { "num": 3, "prompt": "a: Sarah gets on fine with Paul.\nb: Does she? Last week you said … each other.", "modelAnswers": ["they didn't like each other / they didn't get on with each other / they couldn't stand each other"] },
-        { "num": 4, "prompt": "a: Joe knows lots of people.\nb: That's not what he told me. He said … anyone.", "modelAnswers": ["he didn't know"] },
-        { "num": 5, "prompt": "a: Jane will be here next week.\nb: Oh, really? When I spoke to her, she said … away.", "modelAnswers": ["she would be away / she was going away"] },
-        { "num": 6, "prompt": "a: I'm going out tonight.\nb: Are you? I thought you said … at home.", "modelAnswers": ["you were staying"] },
-        { "num": 7, "prompt": "a: I speak French quite well.\nb: Do you? But earlier you said … any other languages.", "modelAnswers": ["you couldn't speak / you didn't speak"] },
-        { "num": 8, "prompt": "a: I haven't seen Ben recently.\nb: That's strange. He told me … last weekend.", "modelAnswers": ["he'd seen you / he saw you"] }
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Who is she talking to?"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "What ",
+            " they ",
+            ""
+          ],
+          "answers": [
+            [
+              "are"
+            ],
+            [
+              "looking at"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Which restaurant ",
+            " ",
+            ""
+          ],
+          "answers": [
+            [
+              "is"
+            ],
+            [
+              "he going to"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "What ",
+            ""
+          ],
+          "answers": [
+            [
+              "are they talking about"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "What ",
+            ""
+          ],
+          "answers": [
+            [
+              "is she listening to"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Which bus ",
+            ""
+          ],
+          "answers": [
+            [
+              "are they waiting for"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "47.3",
+      "type": "write",
+      "instruction": "Напишите вопросы, начинающиеся с Which ... ?",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Tom’s father is in hospital.",
+          "answers": [
+            "Which hospital is he in?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "We stayed at a hotel.",
+          "answers": [
+            "Which hotel did you stay at?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Jack plays for a football team.",
+          "answers": [
+            "Which team does he play for?",
+            "Which football team does he play for?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I went to school in this town.",
+          "answers": [
+            "Which school did you go to?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "47.4",
+      "type": "write",
+      "instruction": "Вы хотите узнать о другой стране. Задайте вопросы знакомому, который там побывал. Используйте What is/are ... like?",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(the roads)",
+          "answers": [
+            "What are the roads like?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(the food)",
+          "answers": [
+            "What is the food like?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(the people)",
+          "answers": [
+            "What are the people like?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(the weather)",
+          "answers": [
+            "What is the weather like?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "47.5",
+      "type": "write",
+      "instruction": "Задайте вопросы, используя What was/were ... like?",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Your friend has just come back from holiday. Ask about the weather.",
+          "answers": [
+            "What was the weather like?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Your friend has just come back from the cinema. Ask about the film.",
+          "answers": [
+            "What was the film like?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Your friend has just finished an English course. Ask about the lessons.",
+          "answers": [
+            "What were the lessons like?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Your friend has just come back from holiday. Ask about the hotel.",
+          "answers": [
+            "What was the hotel like?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "47.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (говорить о = talk about; начальник = manager)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "О ком вы говорите?",
+          "answers": [
+            "Who are you talking about?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "На какой улице твой дом?",
+          "answers": [
+            "What street is your house in?",
+            "What street is your house on?",
+            "Which street is your house in?",
+            "Which street is your house on?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "С кем Том идёт на вечеринку?",
+          "answers": [
+            "Who is Tom going to the party with?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "О чём эта книга?",
+          "answers": [
+            "What is this book about?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Какой поезд вы ждёте?",
+          "answers": [
+            "What train are you waiting for?",
+            "Which train are you waiting for?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Что представляет собой его начальник?",
+          "answers": [
+            "What is his manager like?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Какая была погода в Риме?",
+          "answers": [
+            "What was the weather like in Rome?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Откуда Саша?",
+          "answers": [
+            "Where is Sasha from?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Какую музыку ты обычно слушаешь?",
+          "answers": [
+            "What music do you usually listen to?"
+          ]
+        }
       ]
     }
   ]

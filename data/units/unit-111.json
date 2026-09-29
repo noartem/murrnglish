@@ -1,25 +1,33 @@
 {
   "unit": 111,
-  "title": "still any more yet already",
+  "title": "on · at · by · with · about",
   "pdfPages": [
-    234,
-    235
+    233,
+    234
   ],
   "exercises": [
     {
       "id": "111.1",
       "type": "fill-in",
-      "instruction": "Compare what Paul said a few years ago with what he says now. Some things are the same as before and some things have changed. Write sentences with still and any more.",
+      "instruction": "Закончите предложения, используя on + слова из рамки:",
+      "wordBank": [
+        "holiday",
+        "the",
+        "phone",
+        "the radio",
+        "TV",
+        "time"
+      ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            ""
+            "We heard the news ",
+            "."
           ],
           "answers": [
             [
-              "He still travels a lot."
+              "on the radio"
             ]
           ],
           "example": true
@@ -27,138 +35,52 @@
         {
           "num": 2,
           "parts": [
-            "",
-            ""
+            "Please don’t be late. Try to be here ",
+            "."
           ],
           "answers": [
             [
-              "He doesn't work in a shop any more."
+              "on time"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "He ",
-            " poems."
+            "I won’t be here next week. I’m going ",
+            "."
           ],
           "answers": [
             [
-              "doesn't write",
-              "has stopped writing"
+              "on holiday"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "He ",
-            " a teacher."
+            "'Did you see Linda?' 'No, but I talked to her ",
+            ".'"
           ],
           "answers": [
             [
-              "still wants to be"
+              "on the phone"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "He ",
-            " in politics."
+            "'What’s ",
+            " ",
+            " this evening?' 'Nothing that I want to watch.'"
           ],
           "answers": [
             [
-              "isn't interested",
-              "is no longer interested"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "He ",
-            "."
-          ],
-          "answers": [
+              "on"
+            ],
             [
-              "is still single"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "He ",
-            " any more."
-          ],
-          "answers": [
-            [
-              "doesn't go fishing",
-              "hasn't been fishing"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "He ",
-            " any more."
-          ],
-          "answers": [
-            [
-              "doesn't have a beard",
-              "hasn't got a beard"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "",
-            ""
-          ],
-          "answers": [
-            [
-              "He no longer works in a shop."
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": 10,
-          "parts": [
-            "",
-            ""
-          ],
-          "answers": [
-            [
-              "He no longer writes poems."
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "",
-            ""
-          ],
-          "answers": [
-            [
-              "He is / He's no longer interested in politics."
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "",
-            ""
-          ],
-          "answers": [
-            [
-              "He no longer goes fishing."
+              "TV"
             ]
           ]
         }
@@ -167,26 +89,17 @@
     {
       "id": "111.2",
       "type": "fill-in",
-      "instruction": "For each sentence (with still) write a sentence with a similar meaning using not … yet. Choose from these verbs:",
-      "wordBank": [
-        "decide",
-        "find",
-        "finish",
-        "go",
-        "stop",
-        "take off",
-        "wake up"
-      ],
+      "instruction": "Посмотрите на картинки. Заполните пропуски, используя at/by/with и т. д.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            ""
+            "I cut the paper ",
+            " a pair of scissors."
           ],
           "answers": [
             [
-              "It hasn't stopped raining yet."
+              "with"
             ]
           ],
           "example": true
@@ -194,74 +107,112 @@
         {
           "num": 2,
           "parts": [
-            "He ",
-            " yet."
+            "She usually goes to work ",
+            " car."
           ],
           "answers": [
             [
-              "hasn't gone"
+              "by"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "They ",
-            " yet."
+            "Who is the woman ",
+            " short hair?"
           ],
           "answers": [
             [
-              "haven't finished (it)",
-              "haven't finished repairing the road"
+              "with"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "They ",
-            " yet."
+            "They are talking ",
+            " the weather."
           ],
           "answers": [
             [
-              "haven't woken up"
+              "about"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "She ",
-            " yet."
+            "The car is ",
+            " fire."
           ],
           "answers": [
             [
-              "hasn't found one",
-              "hasn't found a job"
+              "on"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I ",
-            " yet."
+            "She’s listening to some music ",
+            " Mozart."
           ],
           "answers": [
             [
-              "haven't decided (what to do)"
+              "by"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "It ",
-            " yet."
+            "The plane is flying ",
+            " 600 miles an hour."
           ],
           "answers": [
             [
-              "hasn't taken off"
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "They’re ",
+            " holiday."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Do you know the man ",
+            " sunglasses?"
+          ],
+          "answers": [
+            [
+              "with"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "He’s reading a book ",
+            " grammar ",
+            " Vera P. Bull."
+          ],
+          "answers": [
+            [
+              "about"
+            ],
+            [
+              "by"
             ]
           ]
         }
@@ -270,200 +221,271 @@
     {
       "id": "111.3",
       "type": "fill-in",
-      "instruction": "Put in still, yet, already or any more.",
+      "instruction": "Заполните пропуски, используя at/by/with и т. д.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Mike lost his job a year ago and he is ",
-            " unemployed."
+            "In tennis, you hit the ball ",
+            " a racket."
           ],
           "answers": [
             [
-              "still"
+              "with"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 2,
           "parts": [
-            "Shall I tell Joe what happened or does he ",
-            " know?"
+            "It’s cold today. Don’t go out ",
+            " a coat."
           ],
           "answers": [
             [
-              "already"
+              "without"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "Do you ",
-            " live in the same place or have you moved?"
+            "Hamlet, Othello and Macbeth are plays ",
+            " William Shakespeare."
           ],
           "answers": [
             [
-              "still"
+              "by"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I'm hungry. Is dinner ready ",
-            "?"
+            "Do you know anything ",
+            " computers?"
           ],
           "answers": [
             [
-              "yet"
+              "about"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I was hungry earlier, but I don't feel hungry ",
-            "."
+            "My grandmother died ",
+            " the age of 98."
           ],
           "answers": [
             [
-              "any more"
+              "at"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Can we wait a few minutes? I don't want to go out ",
-            "."
+            "How long does it take from New York to Los Angeles ",
+            " plane?"
           ],
           "answers": [
             [
-              "yet"
+              "by"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "Amy used to work at the airport, but she doesn't work there ",
-            "."
+            "I didn’t go to the football match, but I watched it ",
+            " TV."
           ],
           "answers": [
             [
-              "any more"
+              "on"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I used to live in Amsterdam. I ",
-            " have a lot of friends there."
+            "My house is the one ",
+            " the red door on the right."
           ],
           "answers": [
             [
-              "still"
+              "with"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "There's no need to introduce me to Joe. We've ",
-            " met."
+            "These trains are very fast. They can travel ",
+            " very high speeds."
           ],
           "answers": [
             [
-              "already"
+              "at"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "John is 80 years old, but he's ",
-            " very fit and healthy."
+            "I don’t use my car very often. I prefer to go ",
+            " bike."
           ],
           "answers": [
             [
-              "still"
+              "by"
             ]
           ]
         },
         {
           "num": 11,
           "parts": [
-            "Would you like something to eat, or have you ",
-            " eaten?"
+            "Can you give me some information ",
+            " hotels in this town?"
           ],
           "answers": [
             [
-              "already"
+              "about"
             ]
           ]
         },
         {
           "num": 12,
           "parts": [
-            "'Where's Helen?' 'She's not here ",
-            ". She'll be here soon.'"
+            "I was arrested ",
+            " two policemen and taken to the police station."
           ],
           "answers": [
             [
-              "yet"
+              "by"
             ]
           ]
         },
         {
           "num": 13,
           "parts": [
-            "Mark said he'd be here at 8.30. It's 9 o'clock now and he ",
-            " isn't here."
+            "The buses here are very good. They’re nearly always ",
+            " time."
           ],
           "answers": [
             [
-              "still"
+              "on"
             ]
           ]
         },
         {
           "num": 14,
           "parts": [
-            "Do you want to join the club or are you ",
-            " a member?"
+            "What would you like to drink ",
+            " your meal?"
           ],
           "answers": [
             [
-              "already"
+              "with"
             ]
           ]
         },
         {
           "num": 15,
           "parts": [
-            "It happened a long time ago, but I ",
-            " remember it very clearly."
+            "We travelled from Paris to Moscow ",
+            " train."
           ],
           "answers": [
             [
-              "still"
+              "by"
             ]
           ]
         },
         {
           "num": 16,
           "parts": [
-            "I've put on weight. These trousers don't fit me ",
-            "."
+            "The museum has some paintings ",
+            " Rembrandt."
           ],
           "answers": [
             [
-              "any more"
+              "by"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "111.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (НОВОСТИ = the news)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я никогда не смотрю новости по телевизору.",
+          "answers": [
+            "I never watch the news on TV.",
+            "I never watch the news on television."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Это важная встреча. Мне нужно там быть вовремя.",
+          "answers": [
+            "It’s an important meeting. I need to be there on time.",
+            "It’s an important meeting. I have to be there on time.",
+            "It is an important meeting. I need to be there on time.",
+            "It is an important meeting. I have to be there on time."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "“Как ты сюда добиралась?” – “Пешком”.",
+          "answers": [
+            "'How did you get here?' 'On foot.'",
+            "'How did you come here?' 'On foot.'"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Вы слышали о Бене и Эмме? Они собираются пожениться.",
+          "answers": [
+            "Have you heard about Ben and Emma? They are going to get married."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Кто эта женщина с длинными волосами и в очках?",
+          "answers": [
+            "Who is this woman with long hair and glasses?",
+            "Who is that woman with long hair and glasses?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Ты можешь водить машину в возрасте 18 лет.",
+          "answers": [
+            "You can drive a car at the age of 18.",
+            "You can drive a car at 18."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мне не нравятся книги этого писателя.",
+          "answers": [
+            "I don’t like books by this writer.",
+            "I don’t like books by that writer.",
+            "I do not like books by this writer.",
+            "I do not like books by that writer."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я болею, поэтому Борис идёт на вечеринку без меня.",
+          "answers": [
+            "I’m ill, so Boris is going to the party without me."
           ]
         }
       ]

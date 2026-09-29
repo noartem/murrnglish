@@ -1,85 +1,72 @@
 {
   "unit": 10,
-  "title": "Present perfect continuous and simple (I have been doing and I have done)",
+  "title": "I have … и I’ve got …",
   "pdfPages": [
-    32,
-    33
+    31,
+    32
   ],
   "exercises": [
     {
       "id": "10.1",
-      "type": "fill-in",
-      "instruction": "Read the situation and complete the sentences. Use the verbs in brackets.",
+      "type": "write",
+      "instruction": "Перепишите эти предложения, используя got. Значение должно остаться таким же.",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "He ",
-            " for two hours. (read)\nHe ",
-            " 53 pages so far. (read)"
-          ],
+          "prompt": "They have two children.",
           "answers": [
-            [
-              "has been reading"
-            ],
-            [
-              "has read"
-            ]
+            "They’ve got two children."
           ],
           "example": true
         },
         {
           "num": 2,
-          "parts": [
-            "She ",
-            " for three months. (travel)\n",
-            " six countries so far. (visit)"
-          ],
+          "prompt": "She doesn’t have a key.",
           "answers": [
-            [
-              "She’s been travelling",
-              "She has been travelling"
-            ],
-            [
-              "She’s visited",
-              "She has visited"
-            ]
-          ]
+            "She hasn’t got a key."
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": [
-            "",
-            " the national championship four times. (win)\n",
-            " since he was ten. (play)"
-          ],
+          "prompt": "He has a new job.",
           "answers": [
-            [
-              "He’s won",
-              "He has won"
-            ],
-            [
-              "He’s been playing tennis",
-              "He has been playing tennis"
-            ]
+            "He’s got a new job."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "They ",
-            " films since they left college. (make)\n",
-            " five films since they left college. (make)"
-          ],
+          "prompt": "Do you have an umbrella?",
           "answers": [
-            [
-              "They’ve been making",
-              "They have been making"
-            ],
-            [
-              "They’ve made",
-              "They have made"
-            ]
+            "Have you got an umbrella?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "We have a lot of work to do.",
+          "answers": [
+            "We’ve got a lot of work to do."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I don’t have your phone number.",
+          "answers": [
+            "I haven’t got your phone number."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Does your father have a car?",
+          "answers": [
+            "Has your father got a car?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "How much money do we have?",
+          "answers": [
+            "How much money have we got?"
           ]
         }
       ]
@@ -87,87 +74,146 @@
     {
       "id": "10.2",
       "type": "write",
-      "instruction": "Ask questions using the words in brackets. Use the present perfect simple (have/has done) or continuous (have/has been doing).",
+      "instruction": "Перепишите эти предложения, используя do/does/don’t/doesn’t. Значение должно остаться таким же.",
       "items": [
         {
           "num": 1,
-          "prompt": "(how long / learn / Arabic?)",
+          "prompt": "Have you got any money?",
           "answers": [
-            "How long have you been learning Arabic?"
-          ]
+            "Do you have any money?"
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(wait / long?)",
+          "prompt": "I haven’t got many clothes.",
           "answers": [
-            "Have you been waiting long?"
+            "I don’t have many clothes."
           ]
         },
         {
           "num": 3,
-          "prompt": "(catch / any fish?)",
+          "prompt": "Has Tom got a brother?",
           "answers": [
-            "Have you caught any fish?"
+            "Does Tom have a brother?"
           ]
         },
         {
           "num": 4,
-          "prompt": "(how many people / invite?)",
+          "prompt": "How many children have they got?",
           "answers": [
-            "How many people have you invited?"
+            "How many children do they have?"
           ]
         },
         {
           "num": 5,
-          "prompt": "(how long / teach?)",
+          "prompt": "Have you got any questions?",
           "answers": [
-            "How long have you been teaching?"
+            "Do you have any questions?"
           ]
         },
         {
           "num": 6,
-          "prompt": "(how many books / write?)",
+          "prompt": "Sam hasn’t got a job.",
           "answers": [
-            "How many books have you written?"
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "(how long / write / books?)",
-          "answers": [
-            "How long have you been writing books?"
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "(how long / save?)",
-          "answers": [
-            "How long have you been saving (money)?"
-          ]
-        },
-        {
-          "num": 9,
-          "prompt": "(how much money / save?)",
-          "answers": [
-            "How much money have you saved?"
+            "Sam doesn’t have a job."
           ]
         }
       ]
     },
     {
       "id": "10.3",
+      "type": "write",
+      "instruction": "Прочитайте вопросы и ответы. Затем напишите предложения о Марке. Напишите о себе. Используйте I’ve got или I haven’t got.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Have you got a car? No.",
+          "answers": [
+            "He hasn’t got a car."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "Have you got a bike? Yes.",
+          "answers": [
+            "He’s got a bike.",
+            "He has a bike."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Have you got a dog? No.",
+          "answers": [
+            "He hasn’t got a dog.",
+            "He doesn’t have a dog."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Have you got a mobile phone? Yes.",
+          "answers": [
+            "He’s got a mobile phone.",
+            "He has a mobile phone."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Have you got a watch? No.",
+          "answers": [
+            "He hasn’t got a watch.",
+            "He doesn’t have a watch."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Have you got any brothers or sisters? Yes, two brothers and a sister.",
+          "answers": [
+            "He’s got two brothers and a sister.",
+            "He has two brothers and a sister."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(a dog)",
+          "answers": [
+            "I’ve got a dog.",
+            "I haven’t got a dog."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(a bike)",
+          "answers": [
+            "I’ve got a bike.",
+            "I haven’t got a bike."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(brothers/sisters)",
+          "answers": [
+            "I’ve got a brother and a sister."
+          ],
+          "selfCheck": true
+        }
+      ]
+    },
+    {
+      "id": "10.4",
       "type": "fill-in",
-      "instruction": "Put the verb into the present perfect simple or continuous.",
+      "instruction": "Заполните пропуски. Используйте have, has, don’t have или doesn’t have.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Where have you been? ",
-            " (you / play) tennis?"
+            "Sarah ",
+            " a car. She goes everywhere by bike."
           ],
           "answers": [
             [
-              "Have you been playing"
+              "doesn’t have"
             ]
           ],
           "example": true
@@ -175,187 +221,236 @@
         {
           "num": 2,
           "parts": [
-            "Look! ",
-            " (somebody / break) that window."
+            "They like animals. They ",
+            " three dogs and two cats."
           ],
           "answers": [
             [
-              "Somebody’s broken",
-              "Somebody has broken"
+              "have"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "You look tired. ",
-            " (you / work) hard?"
+            "Charles isn’t happy. He ",
+            " a lot of problems."
           ],
           "answers": [
             [
-              "Have you been working"
+              "has"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "‘",
-            " (you / ever / work) in a factory?’ ‘No, never.’"
+            "They are always busy. They ",
+            " much free time."
           ],
           "answers": [
             [
-              "Have you ever worked"
+              "don’t have"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Where’s Lisa? Where ",
-            " (she / go)?"
+            "‘What’s wrong?’ ‘I ",
+            " something in my eye.’"
           ],
           "answers": [
             [
-              "has she gone"
+              "have"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "This is a very old book. ",
-            " (I / have) it since I was a child."
+            "‘Where’s my pen?’ ‘I don’t know. I ",
+            " it.’"
           ],
           "answers": [
             [
-              "I’ve had",
-              "I have had"
+              "don’t have"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "‘Have you been busy?’ ‘No, ",
-            " (I / watch) TV.’"
+            "Amy wants to go to the concert, but she ",
+            " a ticket."
           ],
           "answers": [
             [
-              "I’ve been watching",
-              "I have been watching"
+              "doesn’t have"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.5",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте have/has got или haven’t/hasn’t got, и слова из рамки:",
+      "wordBank": [
+        "six legs",
+        "a key",
+        "a headache",
+        "a lot of friends",
+        "a job",
+        "much time"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I’m not feeling very well. I ",
+            "."
+          ],
+          "answers": [
+            [
+              "’ve got a headache"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Everybody likes Tom. He ",
+            "."
+          ],
+          "answers": [
+            [
+              "’s got a lot of friends",
+              "has got a lot of friends"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She can’t open the door. She ",
+            "."
+          ],
+          "answers": [
+            [
+              "hasn’t got a key"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Quick! We ",
+            "."
+          ],
+          "answers": [
+            [
+              "haven’t got much time"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "An insect ",
+            "."
+          ],
+          "answers": [
+            [
+              "has got six legs"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I’m unemployed. I ",
+            "."
+          ],
+          "answers": [
+            [
+              "haven’t got a job"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "У меня большая семья.",
+          "answers": [
+            "I have a big family.",
+            "I have a large family.",
+            "I’ve got a big family.",
+            "I’ve got a large family."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "У тебя болит голова?",
+          "answers": [
+            "Do you have a headache?",
+            "Have you got a headache?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "У меня нет телефона.",
+          "answers": [
+            "I don’t have a phone.",
+            "I haven’t got a phone."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "У Анны есть кошка и собака.",
+          "answers": [
+            "Anna has a cat and a dog.",
+            "Anna has got a cat and a dog."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "У Тома зелёные глаза.",
+          "answers": [
+            "Tom has green eyes.",
+            "Tom has got green eyes."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "У тебя есть велосипед?",
+          "answers": [
+            "Do you have a bike?",
+            "Have you got a bike?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "У Вас есть дом или квартира?",
+          "answers": [
+            "Do you have a house or a flat?",
+            "Have you got a house or a flat?"
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "My brother is an actor. ",
-            " (he / appear) in several films."
-          ],
+          "prompt": "У моих друзей есть новая машина.",
           "answers": [
-            [
-              "He’s appeared",
-              "He has appeared"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "‘Sorry I’m late.’ ‘That’s all right. ",
-            " (I / not / wait) long.’"
-          ],
-          "answers": [
-            [
-              "I haven’t been waiting"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Are you OK? You look as if ",
-            " (you / cry)."
-          ],
-          "answers": [
-            [
-              "you’ve been crying",
-              "you have been crying"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "‘Is it still raining?’ ‘No, ",
-            " (it / stop).’"
-          ],
-          "answers": [
-            [
-              "it’s stopped",
-              "it has stopped"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "The children are tired now. ",
-            " (they / play) in the garden."
-          ],
-          "answers": [
-            [
-              "They’ve been playing",
-              "They have been playing"
-            ]
-          ]
-        },
-        {
-          "num": 13,
-          "parts": [
-            "",
-            " (I / lose) my phone. ",
-            " (you / see) it?"
-          ],
-          "answers": [
-            [
-              "I’ve lost",
-              "I have lost"
-            ],
-            [
-              "Have you seen"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "",
-            " (I / read) the book you lent me, but ",
-            " (I / not / finish) it yet."
-          ],
-          "answers": [
-            [
-              "I’ve been reading",
-              "I have been reading"
-            ],
-            [
-              "I haven’t finished"
-            ]
-          ]
-        },
-        {
-          "num": 15,
-          "parts": [
-            "",
-            " (I / read) the book you lent me, so you can have it back now."
-          ],
-          "answers": [
-            [
-              "I’ve read",
-              "I have read"
-            ]
+            "My friends have a new car.",
+            "My friends have got a new car."
           ]
         }
       ]

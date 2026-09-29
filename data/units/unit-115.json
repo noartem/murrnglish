@@ -1,25 +1,25 @@
 {
   "unit": 115,
-  "title": "unless as long as provided",
+  "title": "put on your shoes · put your shoes on (phrasal verbs 2)",
   "pdfPages": [
-    242,
-    243
+    241,
+    242
   ],
   "exercises": [
     {
       "id": "115.1",
       "type": "fill-in",
-      "instruction": "Write a new sentence with the same meaning. Use unless in your sentence.",
+      "instruction": "Посмотрите на картинки. Что сделали эти люди?",
       "items": [
         {
           "num": 1,
           "parts": [
-            "",
-            ""
+            "He ",
+            "."
           ],
           "answers": [
             [
-              "You won't pass the exam unless you try a bit harder."
+              "turned on the light"
             ]
           ],
           "example": true
@@ -27,64 +27,65 @@
         {
           "num": 2,
           "parts": [
-            "",
-            ""
+            "She ",
+            "."
           ],
           "answers": [
             [
-              "You won't know what to do unless you listen carefully."
+              "took off her hat",
+              "took her hat off"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "",
-            ""
+            "He ",
+            "."
           ],
           "answers": [
             [
-              "I'll never speak to her again unless she apologises (to me).",
-              "Unless she apologises (to me), I'll never speak to her again."
+              "put down his bag",
+              "put his bag down"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "",
-            ""
+            "She ",
+            "."
           ],
           "answers": [
             [
-              "He won't understand you unless you speak very slowly.",
-              "Unless you speak very slowly, he won't understand you."
+              "picked up the magazine",
+              "picked the magazine up"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "",
-            ""
+            "He ",
+            "."
           ],
           "answers": [
             [
-              "The company will have to close unless business improves soon.",
-              "Unless business improves soon, the company will have to close."
+              "put on his sunglasses",
+              "put his sunglasses on"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "",
-            ""
+            "She ",
+            "."
           ],
           "answers": [
             [
-              "The problem will get worse unless we do something soon.",
-              "Unless we do something soon, the problem will get worse."
+              "turned off the tap",
+              "turned the tap off"
             ]
           ]
         }
@@ -93,17 +94,21 @@
     {
       "id": "115.2",
       "type": "fill-in",
-      "instruction": "Write sentences with unless.",
+      "instruction": "Эти предложения можно составить тремя различными способами. Заполните таблицу.",
       "items": [
         {
           "num": 1,
           "parts": [
+            "I turned on the radio. ",
             "",
             ""
           ],
           "answers": [
             [
-              "You aren't allowed in the club unless you're a member."
+              "I turned the radio on."
+            ],
+            [
+              "I turned it on."
             ]
           ],
           "example": true
@@ -111,50 +116,90 @@
         {
           "num": 2,
           "parts": [
-            "",
+            "He put on his jacket. He ",
+            " He ",
             ""
           ],
           "answers": [
             [
-              "I'm not going (to the party) unless you go too.",
-              "I'm not going (to the party) unless you're going too."
+              "put his jacket on.",
+              "put his jacket on"
+            ],
+            [
+              "put it on.",
+              "put it on"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "",
+            "She ",
+            " She took her glasses off. ",
             ""
           ],
           "answers": [
             [
-              "The dog won't chase you unless you move suddenly."
+              "took off her glasses.",
+              "took off her glasses"
+            ],
+            [
+              "She took them off.",
+              "She took them off"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
+            "I picked up the phone. ",
             "",
             ""
           ],
           "answers": [
             [
-              "Ben won't speak to you unless you ask him something."
+              "I picked the phone up.",
+              "I picked the phone up"
+            ],
+            [
+              "I picked it up.",
+              "I picked it up"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
+            "They gave back the key. ",
             "",
             ""
           ],
           "answers": [
             [
-              "The doctor won't see you unless it's an emergency.",
-              "The doctor won't see you unless it's an emergency."
+              "They gave the key back.",
+              "They gave the key back"
+            ],
+            [
+              "They gave it back.",
+              "They gave it back"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " We turned the lights off. ",
+            ""
+          ],
+          "answers": [
+            [
+              "We turned off the lights.",
+              "We turned off the lights"
+            ],
+            [
+              "We turned them off.",
+              "We turned them off"
             ]
           ]
         }
@@ -162,158 +207,301 @@
     },
     {
       "id": "115.3",
-      "type": "choice",
-      "instruction": "Which is correct?",
-      "example": [1],
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя глаголы из рамки + it / them.",
+      "wordBank": [
+        "bring back",
+        "pick up",
+        "switch off",
+        "take back",
+        "turn on"
+      ],
       "items": [
         {
           "num": 1,
-          "options": [
-            "unless",
-            "as long as"
+          "parts": [
+            "I wanted to watch something on TV, so I ",
+            "."
           ],
-          "answer": 1
+          "answers": [
+            [
+              "turned it on"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "options": [
-            "unless",
-            "providing"
+          "parts": [
+            "My new lamp doesn’t work. I’m going to ",
+            " to the shop."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "take it back"
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "unless",
-            "providing"
+          "parts": [
+            "There were some gloves on the floor, so I ",
+            " and put them on the table."
           ],
-          "answer": 1
+          "answers": [
+            [
+              "picked them up"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "unless",
-            "as long as"
+          "parts": [
+            "The heating was on but it was too warm, so I ",
+            "."
           ],
-          "answer": 1
+          "answers": [
+            [
+              "switched it off"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "unless",
-            "provided"
+          "parts": [
+            "Thank you for lending me these books. I won’t forget to ",
+            "."
           ],
-          "answer": 0
-        },
-        {
-          "num": 6,
-          "options": [
-            "unless",
-            "as long as"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 7,
-          "options": [
-            "unless",
-            "provided"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 8,
-          "options": [
-            "Unless",
-            "Provided"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 9,
-          "options": [
-            "unless",
-            "as long as"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 10,
-          "options": [
-            "unless",
-            "as long as"
-          ],
-          "answer": 1
+          "answers": [
+            [
+              "bring them back"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "115.4",
-      "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences.",
+      "type": "fill-in",
+      "instruction": "Перед тем как выполнить упражнение, изучите глаголы в Приложении 7 (страница 251). Заполните пропуски, используя глаголы из рамки. Где необходимо, также используйте it/them/me.",
+      "wordBank": [
+        "fill in",
+        "knock down",
+        "look up",
+        "show round",
+        "turn down",
+        "give up",
+        "knock over",
+        "put out",
+        "throw away",
+        "try on"
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "We'll be late unless",
-          "modelAnswers": [
-            "We'll be late unless we take a taxi."
-          ]
+          "parts": [
+            "They ",
+            " a lot of houses ",
+            " when they built the new road."
+          ],
+          "answers": [
+            [
+              "knocked"
+            ],
+            [
+              "down"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "I like hot weather as long as",
-          "modelAnswers": [
-            "it's not too hot."
-          ]
+          "parts": [
+            "That music is very loud. Can you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "turn it down"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "It takes 20 minutes to drive to the airport provided",
-          "modelAnswers": [
-            "there isn't too much traffic."
+          "parts": [
+            "I ",
+            " a glass and broke it."
+          ],
+          "answers": [
+            [
+              "knocked over"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "I don't mind walking home as long as",
-          "modelAnswers": [
-            "it isn't raining."
+          "parts": [
+            "‘What does this word mean?’ ‘Why don’t you ",
+            " ?’"
+          ],
+          "answers": [
+            [
+              "look it up"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "I like to walk to work in the morning unless",
-          "modelAnswers": [
-            "I'm in a hurry."
+          "parts": [
+            "I want to keep these magazines. Please don’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "throw them away"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "We can meet tomorrow unless",
-          "modelAnswers": [
-            "you have something else to do."
+          "parts": [
+            "I ",
+            " a pair of shoes in the shop, but I didn’t buy them."
+          ],
+          "answers": [
+            [
+              "tried on"
+            ]
           ]
         },
         {
           "num": 7,
-          "prompt": "I'll lend you the money providing",
-          "modelAnswers": [
-            "you pay it back next week."
+          "parts": [
+            "I visited a school last week. One of the teachers ",
+            "."
+          ],
+          "answers": [
+            [
+              "showed me round"
+            ]
           ]
         },
         {
           "num": 8,
-          "prompt": "I'll tell you a secret as long as",
-          "modelAnswers": [
-            "you don't tell anyone else."
+          "parts": [
+            "‘Do you play the piano?’ ‘No, I started to learn, but I ",
+            " after a month.’"
+          ],
+          "answers": [
+            [
+              "gave it up",
+              "gave up"
+            ]
           ]
         },
         {
           "num": 9,
-          "prompt": "You won't achieve anything unless",
-          "modelAnswers": [
-            "you take risks."
+          "parts": [
+            "Somebody gave me a form and told me to ",
+            "."
+          ],
+          "answers": [
+            [
+              "fill it in"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Smoking isn’t allowed here. Please ",
+            " your cigarette ",
+            "."
+          ],
+          "answers": [
+            [
+              "put"
+            ],
+            [
+              "out"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "115.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя выражения на странице слева. (обувь = shoes, уронить = drop, фотоаппарат = camera)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Снимайте обувь и заходите.",
+          "answers": [
+            "Take your shoes off and come in.",
+            "Take off your shoes and come in."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я уронил свою ручку. Ты можешь её поднять?",
+          "answers": [
+            "I dropped my pen. Can you pick it up?",
+            "I dropped my pen. Can you pick it up for me?",
+            "I have dropped my pen. Can you pick it up?",
+            "I have dropped my pen. Can you pick it up for me?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Извините. Где я могу примерить это платье?",
+          "answers": [
+            "Excuse me. Where can I try on this dress?",
+            "Excuse me. Where can I try this dress on?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Я могу дать тебе свой фотоаппарат, но, пожалуйста, отдай его мне обратно завтра.",
+          "answers": [
+            "I can give you my camera, but please give it back to me tomorrow.",
+            "I can give you my camera, but please bring it back to me tomorrow."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Мне нужно отнести эти книги обратно в библиотеку.",
+          "answers": [
+            "I need to take these books back to the library.",
+            "I have to take these books back to the library."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Было тёмно, когда я пришёл домой, поэтому я включил свет.",
+          "answers": [
+            "It was dark when I came home, so I turned the light on.",
+            "It was dark when I came home, so I switched the light on.",
+            "It was dark when I came home, so I turned on the light.",
+            "It was dark when I came home, so I switched on the light."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Ваша сумка тяжёлая? Вы можете поставить её сюда.",
+          "answers": [
+            "Is your bag heavy? You can put it down here."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Ты можешь выкинуть этот зонт. Он сломан.",
+          "answers": [
+            "You can throw away this umbrella. It’s broken.",
+            "You can throw away this umbrella. It is broken.",
+            "You can throw this umbrella away. It’s broken.",
+            "You can throw this umbrella away. It is broken."
           ]
         }
       ]

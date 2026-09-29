@@ -1,69 +1,131 @@
 {
   "unit": 53,
-  "title": "Verb + -ing (enjoy doing / stop doing etc.)",
+  "title": "to … (I want to do) и -ing (I enjoy doing)",
   "pdfPages": [
-    118,
-    119
+    117,
+    118
   ],
   "exercises": [
     {
       "id": "53.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences for each situation. Use -ing.",
+      "instruction": "Поставьте глагол в правильную форму (to … или -ing).",
       "items": [
         {
           "num": 1,
           "parts": [
-            "She suggested ",
-            " to the zoo."
+            "I enjoy ",
+            ". (dance)"
           ],
           "answers": [
             [
-              "going"
+              "dancing"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 2,
           "parts": [
-            "He didn't fancy ",
-            "."
+            "What do you want ",
+            " tonight? (do)"
           ],
           "answers": [
             [
-              "playing tennis"
+              "to do"
             ]
-          ]
+          ],
+          "example": true
         },
         {
           "num": 3,
           "parts": [
-            "She suggested ",
-            " for a walk."
+            "Bye! I hope ",
+            " you again soon. (see)"
           ],
           "answers": [
             [
-              "going"
+              "to see"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "He denied ",
-            " the accident."
+            "I learnt ",
+            " when I was five years old. (swim)"
           ],
           "answers": [
             [
-              "causing"
+              "to swim"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "They didn't mind ",
-            " a few minutes."
+            "Have you finished ",
+            " the kitchen? (clean)"
+          ],
+          "answers": [
+            [
+              "cleaning"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Where’s Anna? I need ",
+            " her something. (ask)"
+          ],
+          "answers": [
+            [
+              "to ask"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Do you enjoy ",
+            " other countries? (visit)"
+          ],
+          "answers": [
+            [
+              "visiting"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The weather was nice, so I suggested ",
+            " for a walk by the river. (go)"
+          ],
+          "answers": [
+            [
+              "going"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Where’s Ben? He promised ",
+            " here on time. (be)"
+          ],
+          "answers": [
+            [
+              "to be"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I’m not in a hurry. I don’t mind ",
+            ". (wait)"
           ],
           "answers": [
             [
@@ -72,15 +134,67 @@
           ]
         },
         {
-          "num": 6,
+          "num": 11,
           "parts": [
-            "She admitted ",
-            " the truth."
+            "What have you decided ",
+            "? (do)"
           ],
           "answers": [
             [
-              "not telling",
-              "lying"
+              "to do"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "Dan was angry and refused ",
+            " to me. (speak)"
+          ],
+          "answers": [
+            [
+              "to speak"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "I’m tired. I want ",
+            " to bed. (go)"
+          ],
+          "answers": [
+            [
+              "to go"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "I was very upset and started ",
+            ". (cry)"
+          ],
+          "answers": [
+            [
+              "crying",
+              "to cry"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "I’m trying ",
+            ". (work) Please stop ",
+            ". (talk)"
+          ],
+          "answers": [
+            [
+              "to work"
+            ],
+            [
+              "talking"
             ]
           ]
         }
@@ -89,31 +203,29 @@
     {
       "id": "53.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from these verbs (in the correct form):",
+      "instruction": "Заполните пропуски, поставив глаголы из рамки в правильную форму (to … или -ing).",
       "wordBank": [
-        "answer",
-        "apply",
-        "forget",
-        "interrupt",
-        "listen",
-        "live",
+        "go",
+        "go",
+        "help",
         "lose",
-        "make",
-        "pay",
+        "rain",
         "read",
-        "travel",
-        "try"
+        "see",
+        "send",
+        "wait",
+        "watch"
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "He tried to avoid ",
-            " my question."
+            "‘Have you ever been to Australia?’ ‘No, but I’d love ",
+            ".’"
           ],
           "answers": [
             [
-              "answering"
+              "to go"
             ]
           ],
           "example": true
@@ -121,44 +233,32 @@
         {
           "num": 2,
           "parts": [
-            "I'm trying to concentrate. Please stop ",
-            " so much noise!"
+            "Amy had a lot to do, so I offered ",
+            " her."
           ],
           "answers": [
             [
-              "making"
+              "to help"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I enjoy ",
-            " to music."
+            "I’m surprised that you’re here. I didn’t expect ",
+            " you."
           ],
           "answers": [
             [
-              "listening"
+              "to see"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I considered ",
-            " for the job, but in the end I decided against it."
-          ],
-          "answers": [
-            [
-              "applying"
-            ]
-          ]
-        },
-        {
-          "num": 5,
-          "parts": [
-            "Have you finished ",
-            " the newspaper yet?"
+            "Kate has a lot of books. She enjoys ",
+            "."
           ],
           "answers": [
             [
@@ -167,86 +267,75 @@
           ]
         },
         {
-          "num": 6,
+          "num": 5,
           "parts": [
-            "We need to change our routine. We can't go on ",
-            " like this."
+            "This ring was my grandmother’s. I’d hate ",
+            " it."
           ],
           "answers": [
             [
-              "living"
+              "to lose"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Don’t forget ",
+            " us a postcard when you’re on holiday."
+          ],
+          "answers": [
+            [
+              "to send"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "It's better to avoid ",
-            " during the rush hour."
+            "I’m not going out until it stops ",
+            "."
           ],
           "answers": [
             [
-              "travelling"
+              "raining"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "My memory is getting worse. I keep ",
-            " things."
+            "What shall we do this afternoon? Would you like ",
+            " to the beach?"
           ],
           "answers": [
             [
-              "forgetting"
+              "to go"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "I've put off ",
-            " this bill so many times. I really must do it today."
+            "When I’m tired in the evenings, I like ",
+            " TV."
           ],
           "answers": [
             [
-              "paying"
+              "watching",
+              "to watch"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "I've given up ",
-            " to learn Japanese. I was making no progress."
+            "‘Shall we go now?’ ‘No, I’d prefer ",
+            " a few minutes.’"
           ],
           "answers": [
             [
-              "trying"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "If you gamble, you risk ",
-            " your money."
-          ],
-          "answers": [
-            [
-              "losing"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "Would you mind not ",
-            " me all the time? Let me speak!"
-          ],
-          "answers": [
-            [
-              "interrupting"
+              "to wait"
             ]
           ]
         }
@@ -254,42 +343,94 @@
     },
     {
       "id": "53.3",
-      "type": "write",
-      "instruction": "Put the words in the right order.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски в ответах на вопросы.",
       "items": [
         {
           "num": 1,
-          "prompt": "(that / remember / her / saying / don't)",
+          "parts": [
+            "Do you usually get up early? Yes, I like ",
+            "."
+          ],
           "answers": [
-            "I don't remember her saying that."
-          ]
+            [
+              "to get up early"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(driving / don't / it / you / mind)",
+          "parts": [
+            "Do you ever go to museums? Yes, I enjoy ",
+            "."
+          ],
           "answers": [
-            "I don't mind you driving it."
+            [
+              "going to museums"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "(imagine / so stupid / being / you / anybody)",
+          "parts": [
+            "Would you like to go to a museum now? No, I’m hungry. I’d prefer ",
+            " to a restaurant."
+          ],
           "answers": [
-            "Can you imagine anybody being so stupid?"
+            [
+              "to go"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "(raining / stop / it / can't)",
+          "parts": [
+            "Do you drive a lot? No, I don’t like ",
+            "."
+          ],
           "answers": [
-            "We can't stop it raining."
+            [
+              "driving",
+              "to drive"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "(waiting / want / keep / you / don't / to)",
+          "parts": [
+            "Have you ever been to New York? No, but I’d love ",
+            " one day."
+          ],
           "answers": [
-            "I don't want to keep you waiting."
+            [
+              "to go",
+              "to go there"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Do you often travel by train? Yes, I enjoy ",
+            "."
+          ],
+          "answers": [
+            [
+              "travelling by train"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Shall we walk home or take a taxi? I don’t mind ",
+            ", but a taxi would be quicker."
+          ],
+          "answers": [
+            [
+              "walking"
+            ]
           ]
         }
       ]
@@ -297,48 +438,115 @@
     {
       "id": "53.4",
       "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences. Use -ing.",
+      "instruction": "Закончите предложения, используя to … или -ing. Напишите о себе.",
       "items": [
         {
           "num": 1,
-          "prompt": "She's a very interesting person. I always enjoy talking to her",
+          "prompt": "I enjoy",
           "modelAnswers": [
-            "talking to her"
+            "I enjoy cooking."
           ]
         },
         {
           "num": 2,
-          "prompt": "I'm not feeling very well. I don't fancy",
+          "prompt": "I don’t like",
           "modelAnswers": [
-            "going out"
+            "I don’t like studying."
           ]
         },
         {
           "num": 3,
-          "prompt": "I'm afraid there aren't any chairs. I hope you don't mind",
+          "prompt": "If it’s a nice day tomorrow, I’d like",
           "modelAnswers": [
-            "sitting on the floor"
+            "If it’s a nice day tomorrow, I’d like to have a picnic by the lake."
           ]
         },
         {
           "num": 4,
-          "prompt": "It was a beautiful day, so I suggested",
+          "prompt": "When I’m on holiday, I like",
           "modelAnswers": [
-            "having a picnic"
+            "When I’m on holiday, I like to do very little."
           ]
         },
         {
           "num": 5,
-          "prompt": "The movie was very funny. I couldn't stop",
+          "prompt": "I don’t mind …, but …",
           "modelAnswers": [
-            "laughing"
+            "I don’t mind travelling alone, but I prefer to travel with somebody."
           ]
         },
         {
           "num": 6,
-          "prompt": "My car is unreliable. It keeps",
+          "prompt": "I wouldn’t like",
           "modelAnswers": [
-            "breaking down"
+            "I wouldn’t like to live in a big city."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "53.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (рядом с морем = near the sea)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Том и Анна решили продать свой дом.",
+          "answers": [
+            "Tom and Anna decided to sell their house.",
+            "Tom and Anna have decided to sell their house."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Нина не против того, чтобы работать по субботам.",
+          "answers": [
+            "Nina doesn’t mind working on Saturdays.",
+            "Nina does not mind working on Saturdays."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Мы бы очень хотели жить рядом с морем.",
+          "answers": [
+            "We’d love to live near the sea.",
+            "We would love to live near the sea."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Дождь закончился два часа назад.",
+          "answers": [
+            "It stopped raining two hours ago."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я предлагаю пойти в кафе.",
+          "answers": [
+            "I suggest going to a cafe."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я не ожидал увидеть Эмму на встрече.",
+          "answers": [
+            "I didn’t expect to see Emma at the meeting."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Питер пытался найти нас в парке.",
+          "answers": [
+            "Peter tried to find us in the park."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Было поздно, но Дэвид продолжал работать.",
+          "answers": [
+            "It was late but David continued working.",
+            "It was late but David continued to work."
           ]
         }
       ]

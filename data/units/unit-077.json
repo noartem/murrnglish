@@ -1,203 +1,29 @@
 {
   "unit": 77,
-  "title": "Names with and without the 1",
+  "title": "some и any",
   "pdfPages": [
-    166,
-    167
+    165,
+    166
   ],
   "exercises": [
     {
       "id": "77.1",
-      "type": "choice",
-      "instruction": "Which is right?",
-      "items": [
-        {
-          "num": 1,
-          "options": [
-            "Doctor Johnson",
-            "the Doctor Johnson"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 2,
-          "options": [
-            "Doctor",
-            "The doctor"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 3,
-          "options": [
-            "Doctor Thomas",
-            "The Doctor Thomas"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 4,
-          "options": [
-            "Professor Brown",
-            "the Professor Brown"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 5,
-          "options": [
-            "President",
-            "the President"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 6,
-          "options": [
-            "President Kennedy",
-            "The President Kennedy"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 7,
-          "options": [
-            "Inspector Roberts",
-            "the Inspector Roberts"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 8,
-          "options": [
-            "Wilsons",
-            "the Wilsons"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 9,
-          "options": [
-            "United States",
-            "the United States"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 10,
-          "options": [
-            "France",
-            "The France"
-          ],
-          "answer": 0
-        }
-      ]
-    },
-    {
-      "id": "77.2",
-      "type": "write",
-      "instruction": "Some of these sentences are OK, but some need the (sometimes more than once). Correct the sentences where necessary.",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "Everest was first climbed in 1953.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "Milan and Turin are cities in north of Italy.",
-          "answers": [
-            "Milan and Turin are cities in the north of Italy."
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "Africa is much larger than Europe.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "Last year I visited Mexico and United States.",
-          "answers": [
-            "Last year I visited Mexico and the United States."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "Southern England is warmer than north.",
-          "answers": [
-            "Southern England is warmer than the north."
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "Thailand and Cambodia are in southeast Asia.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 7,
-          "prompt": "Chicago is on Lake Michigan.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 8,
-          "prompt": "Next year we're going skiing in Swiss Alps.",
-          "answers": [
-            "Next year we're going skiing in the Swiss Alps."
-          ]
-        },
-        {
-          "num": 9,
-          "prompt": "UK consists of Great Britain and Northern Ireland.",
-          "answers": [
-            "The UK consists of Great Britain and Northern Ireland."
-          ]
-        },
-        {
-          "num": 10,
-          "prompt": "Seychelles are a group of islands in Indian Ocean.",
-          "answers": [
-            "The Seychelles are a group of islands in the Indian Ocean."
-          ]
-        },
-        {
-          "num": 11,
-          "prompt": "I've never been to South Africa.",
-          "answers": [
-            "OK"
-          ]
-        },
-        {
-          "num": 12,
-          "prompt": "River Volga flows into Caspian Sea.",
-          "answers": [
-            "The River Volga flows into the Caspian Sea."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "77.3",
       "type": "fill-in",
-      "instruction": "Here are some geography questions. Choose the right answer from one of the boxes and use the if necessary. You do not need all the names in the boxes.",
+      "instruction": "Вставьте some или any.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "What do you have to cross to travel from Europe to America? ",
-            ""
+            "I bought ",
+            " cheese, but I didn’t buy ",
+            " bread."
           ],
           "answers": [
             [
-              "the Atlantic"
+              "some"
+            ],
+            [
+              "any"
             ]
           ],
           "example": true
@@ -205,169 +31,604 @@
         {
           "num": 2,
           "parts": [
-            "Where is Argentina? ",
-            ""
+            "In the middle of the room there was a table and ",
+            " chairs."
           ],
           "answers": [
             [
-              "(in) South America"
+              "some"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "Which is the longest river in Africa? ",
-            ""
+            "There aren’t ",
+            " shops in this part of town."
           ],
           "answers": [
             [
-              "the Nile"
+              "any"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Of which country is Stockholm the capital? ",
-            ""
+            "Gary and Alice don’t have ",
+            " children."
           ],
           "answers": [
             [
-              "Sweden"
+              "any"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Of which country is Washington the capital? ",
-            ""
+            "Do you have ",
+            " brothers or sisters?"
           ],
           "answers": [
             [
-              "the United States"
+              "any"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "What is the name of the mountain range in the west of North America? ",
-            ""
+            "There are ",
+            " beautiful flowers in the garden."
           ],
           "answers": [
             [
-              "the Rockies"
+              "some"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "What is the name of the sea between Africa and Europe? ",
-            ""
+            "Do you know ",
+            " good hotels in London?"
           ],
           "answers": [
             [
-              "the Mediterranean"
+              "any"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "Which is the smallest continent in the world? ",
-            ""
+            "‘Would you like ",
+            " tea?’ ‘Yes, please.’"
           ],
           "answers": [
             [
-              "Australia"
+              "some"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "What is the name of the ocean between North America and Asia? ",
-            ""
+            "When we were on holiday, we visited ",
+            " interesting places."
           ],
           "answers": [
             [
-              "the Pacific"
+              "some"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "What is the name of the ocean between Africa and Australia? ",
-            ""
+            "Don’t buy ",
+            " rice. We don’t need ",
+            "."
           ],
           "answers": [
             [
-              "the Indian Ocean"
+              "any"
+            ],
+            [
+              "any"
             ]
           ]
         },
         {
           "num": 11,
           "parts": [
-            "Which river flows through London? ",
-            ""
+            "I went out to buy ",
+            " bananas, but they didn’t have ",
+            " in the shop."
           ],
           "answers": [
             [
-              "the Thames"
+              "some"
+            ],
+            [
+              "any"
             ]
           ]
         },
         {
           "num": 12,
           "parts": [
-            "Which river flows through Vienna, Budapest and Belgrade? ",
-            ""
+            "I’m thirsty. Can I have ",
+            " water, please?"
           ],
           "answers": [
             [
-              "the Danube"
+              "some"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "77.2",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте some или any + слова из рамки.",
+      "wordBank": [
+        "air",
+        "cheese",
+        "help",
+        "milk",
+        "questions",
+        "batteries",
+        "friends",
+        "languages",
+        "pictures",
+        "shampoo"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I want to wash my hair. Is there ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "any shampoo"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The police want to talk to you. They want to ask you ",
+            "."
+          ],
+          "answers": [
+            [
+              "some questions"
             ]
           ]
         },
         {
-          "num": 13,
+          "num": 3,
           "parts": [
-            "Of which country is Bangkok the capital? ",
-            ""
+            "I had my camera, but I didn’t take ",
+            "."
           ],
           "answers": [
             [
-              "Thailand"
+              "any pictures"
             ]
           ]
         },
         {
-          "num": 14,
+          "num": 4,
           "parts": [
-            "What joins the Atlantic and Pacific Oceans? ",
-            ""
+            "Do you speak ",
+            " foreign ",
+            " ?"
           ],
           "answers": [
             [
-              "the Panama Canal"
+              "any"
+            ],
+            [
+              "languages"
             ]
           ]
         },
         {
-          "num": 15,
+          "num": 5,
           "parts": [
-            "Which is the longest river in South America? ",
-            ""
+            "Yesterday evening I went to a restaurant with ",
+            " of mine."
           ],
           "answers": [
             [
-              "the Amazon"
+              "some friends"
             ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Can I have ",
+            " in my coffee, please?"
+          ],
+          "answers": [
+            [
+              "some milk"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "The radio isn’t working. There aren’t ",
+            " in it."
+          ],
+          "answers": [
+            [
+              "any batteries"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "It’s hot in this office. I’m going out for ",
+            " fresh ",
+            "."
+          ],
+          "answers": [
+            [
+              "some"
+            ],
+            [
+              "air"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "A: Would you like ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "some cheese"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I can do this job alone. I don’t need ",
+            "."
+          ],
+          "answers": [
+            [
+              "any help"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "77.3",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте some или any.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Kate didn’t take any pictures, but ",
+            " . (I/take)"
+          ],
+          "answers": [
+            [
+              "I took some"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Where’s your luggage?’ ‘",
+            " .’ (I/not/have)"
+          ],
+          "answers": [
+            [
+              "I don’t have any"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘Do you need any money?’ ‘No, thank you ",
+            " .’ (I/have)"
+          ],
+          "answers": [
+            [
+              "I have some",
+              "I’ve got some"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "‘Can you lend me some money?’ ‘I’m sorry, but ",
+            " .’ (I/not/have)"
+          ],
+          "answers": [
+            [
+              "I don’t have any",
+              "I haven’t got any",
+              "I haven’t any"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "The tomatoes in the shop didn’t look very good, so ",
+            " . (I/not/buy)"
+          ],
+          "answers": [
+            [
+              "I didn’t buy any"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "There were some nice oranges in the shop, so ",
+            " . (I/buy)"
+          ],
+          "answers": [
+            [
+              "I bought some"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "‘How much coffee did you drink yesterday?’ ‘",
+            "’ (I/not/drink)"
+          ],
+          "answers": [
+            [
+              "I didn’t drink any"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "77.4",
+      "type": "fill-in",
+      "instruction": "Вставьте something/somebody или anything/anybody.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "A woman stopped me and said ",
+            ", but I didn’t understand."
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘What’s wrong?’ ‘There’s ",
+            " in my eye.’"
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Do you know ",
+            " about politics?"
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I went to the shop, but I didn’t buy ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " has broken the window. I don’t know who."
+          ],
+          "answers": [
+            [
+              "Somebody",
+              "Someone"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "There isn’t ",
+            " in the bag. It’s empty."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I’m looking for my keys. Has ",
+            " seen them?"
+          ],
+          "answers": [
+            [
+              "anybody",
+              "anyone"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Would you like ",
+            " to drink?"
+          ],
+          "answers": [
+            [
+              "something"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I didn’t eat ",
+            " because I wasn’t hungry."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "This is a secret. Please don’t tell ",
+            "."
+          ],
+          "answers": [
+            [
+              "anybody",
+              "anyone"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "77.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя some/any. (шкафчик = cupboard, сказать = tell)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "В шкафчике есть кофе.",
+          "answers": [
+            "There’s some coffee in the cupboard.",
+            "There is some coffee in the cupboard."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "У нас нет яиц.",
+          "answers": [
+            "We don’t have any eggs.",
+            "We haven’t got any eggs."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Можно мне торта?",
+          "answers": [
+            "Can I have some cake?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Послушай! Кто-то поёт твою любимую песню.",
+          "answers": [
+            "Listen! Somebody’s singing your favourite song.",
+            "Listen! Somebody is singing your favourite song.",
+            "Listen! Someone’s singing your favourite song.",
+            "Listen! Someone is singing your favourite song."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я хочу тебе что-то сказать.",
+          "answers": [
+            "I want to tell you something.",
+            "I’d like to tell you something."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Ты знаешь кого-нибудь, кто живёт в Манчестере?",
+          "answers": [
+            "Do you know anybody who lives in Manchester?",
+            "Do you know anyone who lives in Manchester?",
+            "Do you know anybody living in Manchester?",
+            "Do you know anyone living in Manchester?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Завтра вечером мы ничего не делаем.",
+          "answers": [
+            "We’re not doing anything tomorrow evening.",
+            "We are not doing anything tomorrow evening.",
+            "Tomorrow evening we’re not doing anything.",
+            "Tomorrow evening we are not doing anything."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я видела красивые картины в том музее.",
+          "answers": [
+            "I saw some beautiful paintings in that museum.",
+            "I saw some beautiful paintings at that museum.",
+            "I saw some beautiful pictures in that museum.",
+            "I saw some beautiful pictures at that museum."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Я заварила чай. Ты хочешь?",
+          "answers": [
+            "I’ve made some tea. Would you like some?",
+            "I’ve made some tea. Do you want some?",
+            "I have made some tea. Would you like some?",
+            "I have made some tea. Do you want some?"
           ]
         }
       ]

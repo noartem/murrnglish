@@ -1,466 +1,383 @@
 {
   "unit": 99,
-  "title": "Adjectives: a nice new house, you look tired",
+  "title": "When … · If …",
   "pdfPages": [
-    210,
-    211
+    209,
+    210
   ],
   "exercises": [
     {
       "id": "99.1",
-      "type": "fill-in",
-      "instruction": "Put the adjectives in brackets in the correct position.",
+      "type": "write",
+      "instruction": "Напишите предложения, начинающиеся с when. Используйте информацию из обеих рамок.",
+      "wordBank": [
+        "I went out",
+        "I’m tired",
+        "I knocked on the door",
+        "I go on holiday",
+        "the programme ended",
+        "I got to the hotel",
+        "I turned off the TV",
+        "I always go to the same place",
+        "there were no rooms",
+        "it was raining",
+        "there was no answer",
+        "I like to watch TV"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "a beautiful ",
-            " table."
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "round",
-              "wooden"
-            ]
-          ]
-        },
-        {
-          "num": 2,
-          "parts": [
-            "an ",
-            " ring."
-          ],
-          "answers": [
-            [
-              "unusual",
-              "gold"
-            ]
+            "When I went out, it was raining."
           ],
           "example": true
         },
         {
-          "num": 3,
-          "parts": [
-            "a ",
-            " house."
-          ],
+          "num": 2,
+          "prompt": "",
           "answers": [
-            [
-              "beautiful",
-              "old"
-            ]
+            "When I’m tired, I like to watch TV."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "answers": [
+            "When I knocked on the door, there was no answer."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "",
-            " gloves."
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "red",
-              "leather"
-            ]
+            "When I go on holiday, I always go to the same place."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "an ",
-            " film."
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "old",
-              "American"
-            ]
-          ],
-          "example": true
+            "When the programme ended, I turned off the TV."
+          ]
         },
         {
           "num": 6,
-          "parts": [
-            "",
-            " flowers."
-          ],
+          "prompt": "",
           "answers": [
-            [
-              "tiny",
-              "pink"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "a long ",
-            " face."
-          ],
-          "answers": [
-            [
-              "thin"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "",
-            " clouds."
-          ],
-          "answers": [
-            [
-              "big",
-              "black"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "a ",
-            " day."
-          ],
-          "answers": [
-            [
-              "lovely",
-              "sunny"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "an ",
-            " dress."
-          ],
-          "answers": [
-            [
-              "ugly",
-              "yellow"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "a ",
-            " avenue."
-          ],
-          "answers": [
-            [
-              "long",
-              "wide"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "",
-            " ideas."
-          ],
-          "answers": [
-            [
-              "important",
-              "new"
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": 13,
-          "parts": [
-            "a ",
-            " sweater."
-          ],
-          "answers": [
-            [
-              "nice",
-              "new",
-              "green"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "a ",
-            " box."
-          ],
-          "answers": [
-            [
-              "small",
-              "black",
-              "metal"
-            ]
-          ]
-        },
-        {
-          "num": 15,
-          "parts": [
-            "",
-            " hair."
-          ],
-          "answers": [
-            [
-              "beautiful",
-              "long",
-              "black"
-            ]
-          ]
-        },
-        {
-          "num": 16,
-          "parts": [
-            "an ",
-            " painting."
-          ],
-          "answers": [
-            [
-              "interesting",
-              "old",
-              "French"
-            ]
-          ],
-          "example": true
-        },
-        {
-          "num": 17,
-          "parts": [
-            "a large ",
-            " umbrella."
-          ],
-          "answers": [
-            [
-              "red",
-              "and",
-              "yellow"
-            ]
-          ]
-        },
-        {
-          "num": 18,
-          "parts": [
-            "a big ",
-            " cat."
-          ],
-          "answers": [
-            [
-              "fat",
-              "black",
-              "and",
-              "white"
-            ]
+            "When I got to the hotel, there were no rooms."
           ]
         }
       ]
     },
     {
       "id": "99.2",
-      "type": "fill-in",
-      "instruction": "Complete each sentence with a verb (in the correct form) and an adjective from the boxes.",
-      "wordBank": [
-        "feel",
-        "look",
-        "seem",
-        "awful",
-        "nervous",
-        "interesting",
-        "smell",
-        "sound",
-        "taste",
-        "nice",
-        "upset",
-        "wet"
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
       ],
       "items": [
         {
-          "num": 2,
-          "parts": [
-            "I can't eat this. I've just tried it and it ",
-            "."
+          "num": 1,
+          "options": [
+            "I stay here until you come back.",
+            "I stay here until you’ll come back.",
+            "I’ll stay here until you come back.",
+            "I’ll stay here until you’ll come back."
           ],
-          "answers": [
-            [
-              "tastes",
-              "tasted",
-              "awful"
-            ]
-          ]
+          "answer": 2
+        },
+        {
+          "num": 2,
+          "options": [
+            "I’m going to bed when I finish my work.",
+            "I’m going to bed when I’ll finish my work."
+          ],
+          "answer": 0
         },
         {
           "num": 3,
-          "parts": [
-            "It's normal to ",
-            " before an exam or an interview."
+          "options": [
+            "We must do something before it’s too late.",
+            "We must do something before it will be too late."
           ],
-          "answers": [
-            [
-              "feel",
-              "nervous"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 4,
-          "parts": [
-            "What beautiful flowers! They ",
-            " too."
+          "options": [
+            "Helen is going away soon. I’m very sad when she leaves.",
+            "Helen is going away soon. I’m very sad when she’ll leave.",
+            "Helen is going away soon. I’ll be very sad when she leaves.",
+            "Helen is going away soon. I’ll be very sad when she’ll leave."
           ],
-          "answers": [
-            [
-              "smell",
-              "nice"
-            ]
-          ]
+          "answer": 2
         },
         {
           "num": 5,
-          "parts": [
-            "You ",
-            ". Have you been out in the rain?"
+          "options": [
+            "Don’t go out yet. Wait until the rain stops.",
+            "Don’t go out yet. Wait until the rain will stop."
           ],
-          "answers": [
-            [
-              "look",
-              "wet"
-            ]
-          ]
+          "answer": 0
         },
         {
           "num": 6,
-          "parts": [
-            "James told me about his new job. It ",
-            " – much better than his old job."
+          "options": [
+            "We come and visit you when we’re in England again.",
+            "We come and visit you when we’ll be in England again.",
+            "We’ll come and visit you when we’re in England again.",
+            "We’ll come and visit you when we’ll be in England again."
           ],
-          "answers": [
-            [
-              "sounds",
-              "sounded",
-              "interesting"
-            ]
-          ]
+          "answer": 2
+        },
+        {
+          "num": 7,
+          "options": [
+            "When I come to see you tomorrow, I bring our holiday photos.",
+            "When I come to see you tomorrow, I’ll bring our holiday photos."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": [
+            "I’m going to Paris next week. I hope to see some friends of mine while I’m there.",
+            "I’m going to Paris next week. I hope to see some friends of mine while I’ll be there."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": [
+            "Let’s go out for a walk before it gets dark.",
+            "Let’s go out for a walk before it will get dark."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 10,
+          "options": [
+            "I’m not ready yet. I tell you when I’m ready.",
+            "I’m not ready yet. I tell you when I’ll be ready.",
+            "I’m not ready yet. I’ll tell you when I’m ready.",
+            "I’m not ready yet. I’ll tell you when I’ll be ready."
+          ],
+          "answer": 2
         }
       ]
     },
     {
       "id": "99.3",
-      "type": "choice",
-      "instruction": "Put in the correct word.",
+      "type": "write",
+      "instruction": "Напишите предложения, начинающиеся с if. Используйте информацию из обеих рамок.",
+      "wordBank": [
+        "you don’t hurry",
+        "you pass the exam",
+        "you fail the exam",
+        "you don’t want this magazine",
+        "you want those pictures",
+        "you’re busy now",
+        "you can have them",
+        "you’ll get a certificate",
+        "you’ll be late",
+        "I’ll throw it away",
+        "we can talk later",
+        "you can do it again"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
-          "num": 2,
-          "options": [
-            "happy",
-            "happily"
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "If you don’t hurry, you’ll be late."
           ],
-          "answer": 0
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "If you pass",
+          "answers": [
+            "If you pass the exam, you’ll get a certificate."
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "happy",
-            "happily"
-          ],
-          "answer": 1
+          "prompt": "If",
+          "answers": [
+            "If you fail the exam, you can do it again."
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "terrible",
-            "terribly"
-          ],
-          "answer": 0
+          "prompt": "",
+          "answers": [
+            "If you don’t want this magazine, I’ll throw it away."
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "proper",
-            "properly"
-          ],
-          "answer": 1
+          "prompt": "",
+          "answers": [
+            "If you want those pictures, you can have them."
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "good",
-            "well"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 7,
-          "options": [
-            "slow",
-            "slowly"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 8,
-          "options": [
-            "bad",
-            "badly"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 9,
-          "options": [
-            "violent",
-            "violently"
-          ],
-          "answer": 0
+          "prompt": "",
+          "answers": [
+            "If you’re busy now, we can talk later."
+          ]
         }
       ]
     },
     {
       "id": "99.4",
-      "type": "write",
-      "instruction": "Write the following in another way using the first … / the next … / the last … .",
+      "type": "self-check",
+      "instruction": "Закончите предложения, используя свои собственные идеи.",
+      "example": [
+        1
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "Can you close the window before … ?",
+          "modelAnswers": [
+            "you go out"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "What are you going to do when … ?",
+          "modelAnswers": [
+            "… you finish your work?"
+          ]
+        },
+        {
           "num": 3,
-          "prompt": "yesterday and the day before yesterday",
-          "answers": [
-            "the last two days"
+          "prompt": "I’ll wait for you while … .",
+          "modelAnswers": [
+            "… you get ready."
           ]
         },
         {
           "num": 4,
-          "prompt": "the first week and the second week of May",
-          "answers": [
-            "the first two weeks of May"
+          "prompt": "We can go to the beach tomorrow if … .",
+          "modelAnswers": [
+            "… the weather is good."
           ]
         },
         {
           "num": 5,
-          "prompt": "tomorrow and a few days after that",
-          "answers": [
-            "the next few days"
+          "prompt": "When I start my new job, … .",
+          "modelAnswers": [
+            "… I won’t have much free time."
           ]
         },
         {
           "num": 6,
-          "prompt": "questions 1, 2 and 3 in the exam",
-          "answers": [
-            "the first three questions (in the exam)"
+          "prompt": "If I have time tomorrow, … .",
+          "modelAnswers": [
+            "… I’ll go and see Chris."
           ]
         },
         {
           "num": 7,
-          "prompt": "next year and the year after",
-          "answers": [
-            "the next two years"
+          "prompt": "Will you be here when … ?",
+          "modelAnswers": [
+            "… I come back?"
           ]
         },
         {
           "num": 8,
-          "prompt": "the last day of our holiday and the two days before that",
+          "prompt": "Tina won’t pass her exams if … .",
+          "modelAnswers": [
+            "… she doesn’t study."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "99.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (присматривать за = look after, добраться = get, получить визу = get a visa, сдать = pass)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Ты можешь закрыть окно, если тебе холодно.",
           "answers": [
-            "the last three days of our holiday"
+            "You can close the window if you are cold."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Когда будешь говорить с Ричардом, спроси его о его новой работе.",
+          "answers": [
+            "When you speak to Richard, ask him about his new job.",
+            "When you talk to Richard, ask him about his new job."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Если мы поедем в Мадрид, мы навестим наших друзей.",
+          "answers": [
+            "If we go to Madrid, we’ll visit our friends."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Мы присмотрим за вашей кошкой, пока вы будете во Франции.",
+          "answers": [
+            "We’ll look after your cat while you’re in France.",
+            "We’ll look after your cat while you are in France.",
+            "We will look after your cat while you’re in France.",
+            "We will look after your cat while you are in France."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Не забудь позвонить мне, когда доберёшься домой.",
+          "answers": [
+            "Don’t forget to call me when you get home.",
+            "Don’t forget to phone me when you get home.",
+            "Don’t forget to ring me when you get home."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я могу поговорить с Тимом завтра, если он занят сегодня.",
+          "answers": [
+            "I can speak to Tim tomorrow if he’s busy today.",
+            "I can speak to Tim tomorrow if he is busy today.",
+            "I can talk to Tim tomorrow if he’s busy today.",
+            "I can talk to Tim tomorrow if he is busy today."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Бену нужно было получить визу, перед тем как он поехал в Китай.",
+          "answers": [
+            "Ben had to get a visa before he went to China.",
+            "Ben had to get a visa before he travelled to China.",
+            "Ben needed to get a visa before he went to China.",
+            "Ben needed to get a visa before he travelled to China."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Если ты не будешь учиться, ты не сдашь экзамен.",
+          "answers": [
+            "If you don’t study, you won’t pass the exam.",
+            "If you don’t study, you will not pass the exam.",
+            "If you do not study, you won’t pass the exam.",
+            "If you do not study, you will not pass the exam."
           ]
         }
       ]

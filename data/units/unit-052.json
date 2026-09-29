@@ -1,25 +1,25 @@
 {
   "unit": 52,
-  "title": "Question tags (do you? isn't it? etc.)",
+  "title": "work/working · go/going · do/doing",
   "pdfPages": [
-    116,
-    117
+    115,
+    116
   ],
   "exercises": [
     {
       "id": "52.1",
       "type": "fill-in",
-      "instruction": "Complete these sentences with a question tag.",
+      "instruction": "Закончите предложения. Вставьте ... phone Paul или ... to phone Paul.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "Kate won't be late, ",
-            "?"
+            "I’ll ",
+            "."
           ],
           "answers": [
             [
-              "will she"
+              "phone Paul"
             ]
           ],
           "example": true
@@ -27,12 +27,12 @@
         {
           "num": 2,
           "parts": [
-            "You're tired, ",
-            "?"
+            "I’m going ",
+            "."
           ],
           "answers": [
             [
-              "aren't you"
+              "to phone Paul"
             ]
           ],
           "example": true
@@ -40,192 +40,96 @@
         {
           "num": 3,
           "parts": [
-            "You travel a lot, ",
-            "?"
+            "Can you ",
+            " Paul?"
           ],
           "answers": [
             [
-              "don't you"
+              "phone"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "You weren't listening, ",
+            "Shall I ",
             "?"
           ],
           "answers": [
             [
-              "were you"
+              "phone Paul"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Sarah doesn't know Ann, ",
-            "?"
+            "I’d like ",
+            "."
           ],
           "answers": [
             [
-              "does she"
+              "to phone Paul"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "Jack's on holiday, ",
+            "Do you have ",
             "?"
           ],
           "answers": [
             [
-              "isn't he"
+              "to phone Paul"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "It didn't take long to get here, ",
-            "?"
+            "You should ",
+            "."
           ],
           "answers": [
             [
-              "did it"
+              "phone Paul"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "You can speak German, ",
-            "?"
+            "I want ",
+            "."
           ],
           "answers": [
             [
-              "can't you"
+              "to phone Paul"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            "They won't mind if I take a picture, ",
-            "?"
+            "I might ",
+            "."
           ],
           "answers": [
             [
-              "will they"
+              "phone Paul"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            "There are a lot of people here, ",
-            "?"
+            "You must ",
+            "."
           ],
           "answers": [
             [
-              "aren't there"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "Let's go and have coffee, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "shall we"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "This isn't very interesting, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "is it"
-            ]
-          ]
-        },
-        {
-          "num": 13,
-          "parts": [
-            "I'm too impatient, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "aren't I"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "You wouldn't tell anyone, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "would you"
-            ]
-          ]
-        },
-        {
-          "num": 15,
-          "parts": [
-            "Helen has lived here a long time, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "hasn't she"
-            ]
-          ]
-        },
-        {
-          "num": 16,
-          "parts": [
-            "I shouldn't have lost my temper, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "should I"
-            ]
-          ]
-        },
-        {
-          "num": 17,
-          "parts": [
-            "He'd never met her before, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "had he"
-            ]
-          ]
-        },
-        {
-          "num": 18,
-          "parts": [
-            "Don't forget to call me, ",
-            "?"
-          ],
-          "answers": [
-            [
-              "will you"
+              "phone Paul"
             ]
           ]
         }
@@ -233,113 +137,478 @@
     },
     {
       "id": "52.2",
-      "type": "write",
-      "instruction": "In these situations you expect your friend to agree with you. Use a question tag in your sentences.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя глаголы из рамки. В некоторых предложениях необходимо использовать инфинитив (work/go и т. д.), а в других предложениях – форму глагола на -ing (working/going и т. д.).",
+      "wordBank": [
+        "do/doing",
+        "eat/eating",
+        "fly/flying",
+        "get/getting",
+        "go/going",
+        "listen/listening",
+        "sleep/sleeping",
+        "stay/staying",
+        "wait/waiting",
+        "watch/watching",
+        "wear/wearing",
+        "work/working"
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "(beautiful day)",
+          "parts": [
+            "Please be quiet. I’m ",
+            "."
+          ],
           "answers": [
-            "It's a beautiful day, isn't it?"
-          ]
+            [
+              "working"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "(expensive)",
+          "parts": [
+            "I feel tired today. I didn’t ",
+            " very well last night."
+          ],
           "answers": [
-            "It's (very) expensive, isn't it?"
-          ]
+            [
+              "sleep"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "(great)",
+          "parts": [
+            "What time do you usually ",
+            " up in the morning?"
+          ],
           "answers": [
-            "The course was great, wasn't it?"
+            [
+              "get"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "(have / your hair / cut)",
+          "parts": [
+            "'Where are you ",
+            "?' 'To the office.'"
+          ],
           "answers": [
-            "You've had your hair cut, haven't you?",
-            "You had your hair cut, didn't you?"
+            [
+              "going"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "(a good voice)",
+          "parts": [
+            "Did you ",
+            " TV last night?"
+          ],
           "answers": [
-            "She has a good voice, doesn't she?",
-            "She has a good voice, hasn't she?",
-            "She's got a good voice, hasn't she?",
-            "She has got a good voice, hasn't she?"
+            [
+              "watch"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "(not / look / right)",
+          "parts": [
+            "Look at that plane! It’s ",
+            " very low."
+          ],
           "answers": [
-            "It doesn't look right, does it?"
+            [
+              "flying"
+            ]
           ]
         },
         {
           "num": 7,
-          "prompt": "(not / very safe)",
+          "parts": [
+            "You can turn off the radio. I’m not ",
+            " to it."
+          ],
           "answers": [
-            "This bridge isn't very safe, is it?",
-            "This bridge doesn't look very safe, does it?"
+            [
+              "listening"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "They didn’t ",
+            " anything because they weren’t hungry."
+          ],
+          "answers": [
+            [
+              "eat"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "My friends were ",
+            " for me when I arrived."
+          ],
+          "answers": [
+            [
+              "waiting"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "'Does Susan always ",
+            " glasses?' 'No, only for reading.'"
+          ],
+          "answers": [
+            [
+              "wear"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "'What are you ",
+            " tonight?' 'I’m ",
+            " at home.'"
+          ],
+          "answers": [
+            [
+              "doing"
+            ],
+            [
+              "staying"
+            ]
           ]
         }
       ]
     },
     {
       "id": "52.3",
-      "type": "write",
-      "instruction": "In these situations you are asking for information, asking people to do things etc.",
+      "type": "fill-in",
+      "instruction": "Поставьте глагол в правильную форму: инфинитив (work/go и т. д.) или to ... (to work / to go и т. д.) или -ing (working/going и т. д.)",
       "items": [
         {
           "num": 1,
-          "prompt": "You need a pen. Perhaps Jane has one. Ask her.",
+          "parts": [
+            "Shall I ",
+            " the window? (open)"
+          ],
           "answers": [
-            "Jane, you don't have a pen I could borrow, do you?"
-          ]
+            [
+              "open"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "You have to move a heavy table. You want Joe to help you with it. Ask him.",
+          "parts": [
+            "It’s late. I have ",
+            " now. (go)"
+          ],
           "answers": [
-            "Joe, you couldn't help me (with this table), could you?"
-          ]
+            [
+              "to go"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "You're looking for Sarah. Perhaps Lisa knows where she is. Ask her.",
+          "parts": [
+            "Amanda isn’t ",
+            " this week. She’s on holiday. (work)"
+          ],
           "answers": [
-            "Lisa, you don't know where Sarah is, do you?",
-            "Lisa, you haven't seen Sarah, have you?"
-          ]
+            [
+              "working"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 4,
-          "prompt": "You want to borrow a tennis racket. Perhaps Helen has one. Ask her.",
+          "parts": [
+            "I’m tired. I don’t want ",
+            " out. (go)"
+          ],
           "answers": [
-            "Helen, you don't have a tennis racket, do you?",
-            "Helen, you haven't got a tennis racket, have you?"
+            [
+              "to go"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "Anna has a car and you need a lift to the station. Perhaps she'll take you. Ask her.",
+          "parts": [
+            "It might ",
+            ", so take an umbrella with you. (rain)"
+          ],
           "answers": [
-            "Anna, you couldn't take me to the station, could you?",
-            "Anna, you couldn't give me a lift to the station, could you?"
+            [
+              "rain"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "You're looking for your keys. Perhaps Robert has seen them. Ask him.",
+          "parts": [
+            "What time do you have ",
+            " tomorrow morning? (leave)"
+          ],
           "answers": [
-            "Robert, you haven't seen my keys, have you?"
+            [
+              "to leave"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I’m sorry I can’t ",
+            " you. (help)"
+          ],
+          "answers": [
+            [
+              "help"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "My brother is a student. He’s ",
+            " physics. (study)"
+          ],
+          "answers": [
+            [
+              "studying"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Would you like ",
+            " on a trip round the world? (go)"
+          ],
+          "answers": [
+            [
+              "to go"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "When you saw Maria, what was she ",
+            "? (wear)"
+          ],
+          "answers": [
+            [
+              "wearing"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "When you go to London, where are you going ",
+            "? (stay)"
+          ],
+          "answers": [
+            [
+              "to stay"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I’m hungry. I must ",
+            " something to eat. (have)"
+          ],
+          "answers": [
+            [
+              "have"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "'Where’s Gary?' 'He’s ",
+            " a bath.' (have)"
+          ],
+          "answers": [
+            [
+              "having"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "I used ",
+            " a car, but I sold it last year. (have)"
+          ],
+          "answers": [
+            [
+              "to have"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "He spoke very quietly. I couldn’t ",
+            " him. (hear)"
+          ],
+          "answers": [
+            [
+              "hear"
+            ]
+          ]
+        },
+        {
+          "num": 16,
+          "parts": [
+            "You don’t look well. I don’t think you should ",
+            " to work today. (go)"
+          ],
+          "answers": [
+            [
+              "go"
+            ]
+          ]
+        },
+        {
+          "num": 17,
+          "parts": [
+            "I don’t know what he said. I wasn’t ",
+            " to him. (listen)"
+          ],
+          "answers": [
+            [
+              "listening"
+            ]
+          ]
+        },
+        {
+          "num": 18,
+          "parts": [
+            "I missed the bus and had ",
+            " home. (walk)"
+          ],
+          "answers": [
+            [
+              "to walk"
+            ]
+          ]
+        },
+        {
+          "num": 19,
+          "parts": [
+            "I want ",
+            " what happened. (know) You must ",
+            " me. (tell)"
+          ],
+          "answers": [
+            [
+              "to know"
+            ],
+            [
+              "tell"
+            ]
+          ]
+        },
+        {
+          "num": 20,
+          "parts": [
+            "May I ",
+            " this book? (borrow)"
+          ],
+          "answers": [
+            [
+              "borrow"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "52.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (прибывать = arrive)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Мне закрыть дверь?",
+          "answers": [
+            "Shall I close the door?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Бренда раньше работала в банке.",
+          "answers": [
+            "Brenda used to work in a bank."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Когда прибыл ваш поезд?",
+          "answers": [
+            "When did your train arrive?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "В субботу я, возможно, пойду в кино.",
+          "answers": [
+            "I might go to the cinema on Saturday.",
+            "I may go to the cinema on Saturday."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(в ресторане) Что вы хотите пить?",
+          "answers": [
+            "What would you like to drink?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Куда бы вы хотели пойти завтра?",
+          "answers": [
+            "Where would you like to go tomorrow?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мы собираемся купить новую машину.",
+          "answers": [
+            "We’re going to buy a new car.",
+            "We are going to buy a new car."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(по телефону) Я не могу говорить. Я ужинаю.",
+          "answers": [
+            "I can’t talk. I’m having dinner."
           ]
         }
       ]

@@ -1,4 +1,4 @@
-// Progress persistence in localStorage, key egu-course-progress-v1.
+// Progress persistence in localStorage, key red-murphy-progress-v1.
 // Shape (per work/PARSING-SPEC.md / plan):
 //   answers[id] per type:
 //     fill-in    -> { items: { [num]: string[] } }
@@ -10,7 +10,7 @@
 //   selfMarks[id] -> { [num]: boolean }
 import type { TotalsMap } from "./data";
 
-const KEY = "egu-course-progress-v1";
+const KEY = "red-murphy-progress-v1";
 
 export interface ResultEntry {
   correct: number;
@@ -75,7 +75,7 @@ export function countCorrect(progress: Progress): ProgressCounts {
 }
 
 // Last opened content page ("u13"/"a41"), used by the "/" entry redirect.
-const LAST_KEY = "egu-course-last-route-v1";
+const LAST_KEY = "red-murphy-last-route-v1";
 
 export function loadLastRoute(): string | null {
   try {

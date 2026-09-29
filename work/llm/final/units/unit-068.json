@@ -1,0 +1,590 @@
+{
+ "unit": 68,
+ "title": "a bottle / some water (исчисляемые/неисчисляемые существительные 1)",
+ "pdfPages": [
+  147,
+  148
+ ],
+ "exercises": [
+  {
+   "id": "68.1",
+   "type": "fill-in",
+   "instruction": "Что изображено на картинках? Некоторые существительные исчисляемые, а некоторые – неисчисляемые. Где необходимо, вставьте a/an. Используйте слова из рамки.",
+   "wordBank": [
+    "bucket",
+    "envelope",
+    "money",
+    "sand",
+    "toothbrush",
+    "wallet",
+    "egg",
+    "jug",
+    "salt",
+    "spoon",
+    "toothpaste",
+    "water"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "salt"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "a spoon"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "a jug"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "water"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "toothpaste"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "a toothbrush"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "an egg"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "money"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "a wallet"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "sand"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "a bucket"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "an envelope"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "68.2",
+   "type": "fill-in",
+   "instruction": "В некоторых предложениях пропущено a/an. Где необходимо, вставьте a/an.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I don’t have ",
+      "."
+     ],
+     "answers": [
+      [
+       "a watch"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Do you like cheese? ",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I never wear ",
+      " hat."
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Are you looking for ",
+      " job?"
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Kate doesn’t eat meat.",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Kate eats ",
+      " every day."
+     ],
+     "answers": [
+      [
+       "an"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I’m going to ",
+      " party tonight."
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Music is ",
+      " wonderful thing."
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Jamaica is ",
+      " island."
+     ],
+     "answers": [
+      [
+       "an"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I don’t need ",
+      " key."
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Everybody needs food.",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I’ve got ",
+      " good idea."
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "Can you drive ",
+      " car?"
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "Do you want ",
+      " cup of coffee?"
+     ],
+     "answers": [
+      [
+       "a"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "I don’t like coffee without milk.",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "Don’t go out without ",
+      " umbrella."
+     ],
+     "answers": [
+      [
+       "an"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "68.3",
+   "type": "fill-in",
+   "instruction": "Что изображено на картинках? В каждом предложении используйте a ... of ... + слова из обеих рамок.",
+   "wordBank": [
+    "bar",
+    "cup",
+    "loaf",
+    "bread",
+    "milk",
+    "tea",
+    "bowl",
+    "glass",
+    "piece",
+    "chocolate",
+    "paper",
+    "water",
+    "carton",
+    "jar",
+    "piece",
+    "honey",
+    "soup",
+    "wood"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a carton of milk"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a piece of wood"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a glass of water"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a bar of chocolate"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a cup of tea"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a piece of paper"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a bowl of soup"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a loaf of bread"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "a jar of honey"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "68.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (духи = perfume; прибыть = arrive)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "В холодильнике у нас есть молоко и шесть яиц.",
+     "answers": [
+      "We have some milk and six eggs in the fridge.",
+      "We’ve got some milk and six eggs in the fridge."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "\"Хотите чашку чая?\" – \"Нет. Я не люблю чай\".",
+     "answers": [
+      "'Do you want a cup of tea?' 'No. I don’t like tea.'"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Пожалуйста, купи бутылку воды и плитку шоколада.",
+     "answers": [
+      "Please buy a bottle of water and a bar of chocolate.",
+      "Please get a bottle of water and a bar of chocolate."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "На день рождения я получила духи и книги.",
+     "answers": [
+      "I got some perfume and some books for my birthday.",
+      "I received some perfume and some books for my birthday.",
+      "For my birthday I got some perfume and some books.",
+      "For my birthday I received some perfume and some books."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Президент прибыл в большом чёрном автомобиле.",
+     "answers": [
+      "The President arrived in a big black car."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Это моё любимое музыкальное произведение.",
+     "answers": [
+      "This is my favourite piece of music.",
+      "That is my favourite piece of music.",
+      "That’s my favourite piece of music.",
+      "It is my favourite piece of music.",
+      "It’s my favourite piece of music."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "\"Где мои деньги?\" – \"Они на столе\".",
+     "answers": [
+      "Where is my money? It’s on the table.",
+      "Where is my money? It is on the table.",
+      "Where’s my money? It’s on the table.",
+      "Where’s my money? It is on the table."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "На обед я съела миску супа и немного хлеба.",
+     "answers": [
+      "I had a bowl of soup and some bread for lunch.",
+      "For lunch I had a bowl of soup and some bread."
+     ]
+    }
+   ]
+  }
+ ]
+}

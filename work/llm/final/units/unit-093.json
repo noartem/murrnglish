@@ -1,0 +1,523 @@
+{
+ "unit": 93,
+ "title": "too",
+ "pdfPages": [
+  197,
+  198
+ ],
+ "exercises": [
+  {
+   "id": "93.1",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и закончите предложения. Используйте too + слова из рамки:",
+   "wordBank": [
+    "big",
+    "crowded",
+    "fast",
+    "heavy",
+    "loud",
+    "low"
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "The music is ",
+      "."
+     ],
+     "answers": [
+      [
+       "too loud"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "The box is ",
+      "."
+     ],
+     "answers": [
+      [
+       "too heavy"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The net is ",
+      "."
+     ],
+     "answers": [
+      [
+       "too low"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "She’s driving ",
+      "."
+     ],
+     "answers": [
+      [
+       "too fast"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "His jacket is ",
+      "."
+     ],
+     "answers": [
+      [
+       "too big"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The museum is ",
+      "."
+     ],
+     "answers": [
+      [
+       "too crowded"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "93.2",
+   "type": "fill-in",
+   "instruction": "Вставьте too / too much / too many или enough.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "You’re always at home. You don’t go out ",
+      "."
+     ],
+     "answers": [
+      [
+       "enough"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I don’t like the weather here. There’s ",
+      " rain."
+     ],
+     "answers": [
+      [
+       "too much"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I can’t wait for them. I don’t have ",
+      " time."
+     ],
+     "answers": [
+      [
+       "enough"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "There was nowhere to sit on the beach. There were ",
+      " people."
+     ],
+     "answers": [
+      [
+       "too many"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "You’re always tired. I think you work ",
+      " hard."
+     ],
+     "answers": [
+      [
+       "too"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Did you have ",
+      " to eat?’ ‘Yes, thank you.’"
+     ],
+     "answers": [
+      [
+       "enough"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "You drink ",
+      " coffee. It’s not good for you."
+     ],
+     "answers": [
+      [
+       "too much"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "You don’t eat ",
+      " vegetables. You should eat more."
+     ],
+     "answers": [
+      [
+       "enough"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I don’t like the weather here. It’s ",
+      " cold."
+     ],
+     "answers": [
+      [
+       "too"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Our team didn’t play well. We made ",
+      " mistakes."
+     ],
+     "answers": [
+      [
+       "too many"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "‘Would you like some milk in your tea?’ ‘Yes, but not ",
+      "!’"
+     ],
+     "answers": [
+      [
+       "too much"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "93.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте too или enough + слова в скобках:",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I couldn’t work. I ",
+      ". (tired)"
+     ],
+     "answers": [
+      [
+       "was too tired"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Can you turn the radio up, please? It ",
+      ". (loud)"
+     ],
+     "answers": [
+      [
+       "isn’t loud enough"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I don’t want to walk home. It’s ",
+      ". (far)"
+     ],
+     "answers": [
+      [
+       "too far"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Don’t buy anything in that shop. It ",
+      ". (expensive)"
+     ],
+     "answers": [
+      [
+       "too expensive"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "You can’t put all your things in this bag. It ",
+      ". (big)"
+     ],
+     "answers": [
+      [
+       "isn’t big enough",
+       "’s not big enough"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I couldn’t do the exercise. It ",
+      ". (difficult)"
+     ],
+     "answers": [
+      [
+       "was too difficult"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Your work needs to be better. It ",
+      ". (good)"
+     ],
+     "answers": [
+      [
+       "isn’t good enough",
+       "’s not good enough"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I can’t talk to you now. I ",
+      ". (busy)"
+     ],
+     "answers": [
+      [
+       "’m too busy",
+       "am too busy"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I thought the film was boring. It ",
+      ". (long)"
+     ],
+     "answers": [
+      [
+       "was too long"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "93.4",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте too (+ прилагательное) + to … .",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "(I’m not going out / cold) It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "too cold to go out"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "(I’m not going to bed / early) It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "too early to go to bed"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "(they’re not getting married / young) They’re ",
+      "."
+     ],
+     "answers": [
+      [
+       "too young to get married"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "(nobody goes out at night / dangerous) It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "too dangerous to go out at night"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "(don’t phone Sue now / late) It’s ",
+      "."
+     ],
+     "answers": [
+      [
+       "too late to phone Sue",
+       "too late to phone Sue now"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "(I didn’t say anything / surprised) I was ",
+      "."
+     ],
+     "answers": [
+      [
+       "too surprised to say anything"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "93.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя too. (летом = in summer)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Эти джинсы мне малы.",
+     "answers": [
+      "These jeans are too small for me."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Мне не понравился фильм. Он был слишком длинный.",
+     "answers": [
+      "I didn’t like the film. It was too long."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Вчера я выпил слишком много кофе.",
+     "answers": [
+      "I drank too much coffee yesterday.",
+      "I had too much coffee yesterday.",
+      "Yesterday I drank too much coffee.",
+      "Yesterday I had too much coffee."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Алина всегда устаёт. Она работает слишком много.",
+     "answers": [
+      "Alina is always tired. She works too hard."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Мы хотели купить тот компьютер, но он был слишком дорогой.",
+     "answers": [
+      "We wanted to buy that computer, but it was too expensive."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Летом здесь слишком много туристов.",
+     "answers": [
+      "There are too many tourists here in summer.",
+      "In summer there are too many tourists here."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Вчера было слишком жарко, чтобы идти на пляж.",
+     "answers": [
+      "It was too hot to go to the beach yesterday.",
+      "Yesterday it was too hot to go to the beach."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "“В твоём чае слишком много молока?” – “Нет, недостаточно!”",
+     "answers": [
+      "‘Is there too much milk in your tea?’ ‘No, there’s not enough!’",
+      "‘Is there too much milk in your tea?’ ‘No, not enough!’"
+     ]
+    }
+   ]
+  }
+ ]
+}

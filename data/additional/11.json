@@ -1,94 +1,74 @@
 {
   "id": 11,
-  "topic": "The future",
-  "refs": "Units 19–25, Appendix 3",
+  "topic": "was/were и past simple",
+  "refs": "Разделы 11–13",
   "pdfPages": [
-    320
+    256
   ],
   "exercise": {
     "id": "11",
-    "type": "choice",
-    "instruction": "Choose the best alternative.",
+    "type": "write",
+    "instruction": "Прочитайте вопросы и ответы, которые дал Джо. Напишите предложения о Джо в детстве.",
+    "example": [
+      1,
+      2
+    ],
     "items": [
       {
         "num": 1,
-        "prompt": "'Are you doing anything tomorrow evening?' 'No, why?'",
-        "options": [
-          "Do you do",
-          "Are you doing",
-          "Will you do"
-        ],
-        "answer": 1
+        "prompt": "Were you tall? No.",
+        "answers": [
+          "He wasn’t tall."
+        ]
       },
       {
         "num": 2,
-        "prompt": "'I can't open this bottle.' 'Give it to me. ___ it.'",
-        "options": [
-          "I open",
-          "I'll open",
-          "I'm going to open"
-        ],
-        "answer": 1
+        "prompt": "Did you like school? Yes.",
+        "answers": [
+          "He liked school."
+        ]
       },
       {
         "num": 3,
-        "prompt": "'Is Emily here yet?' 'Not yet. I'll let you know as soon as ___.'",
-        "options": [
-          "she arrives",
-          "she's arriving",
-          "she'll arrive"
-        ],
-        "answer": 0
+        "prompt": "Were you good at sport? Yes.",
+        "answers": [
+          "He was good at sport."
+        ]
       },
       {
         "num": 4,
-        "prompt": "'Are you free tomorrow afternoon?' 'No, ___.'",
-        "options": [
-          "I work",
-          "I'm working",
-          "I'll work"
-        ],
-        "answer": 1
+        "prompt": "Did you play football? Yes.",
+        "answers": [
+          "He played football."
+        ]
       },
       {
         "num": 5,
-        "prompt": "'What time is the film tonight?' '___ at 8.40.'",
-        "options": [
-          "It starts",
-          "It's going to start",
-          "It will start"
-        ],
-        "answer": 0
+        "prompt": "Did you work hard at school? No.",
+        "answers": [
+          "He didn’t work hard at school."
+        ]
       },
       {
         "num": 6,
-        "prompt": "'Are you going to the beach tomorrow?' 'Yes, if the weather ___ good.'",
-        "options": [
-          "is going to be",
-          "will be",
-          "is"
-        ],
-        "answer": 2
+        "prompt": "Did you have a lot of friends? Yes.",
+        "answers": [
+          "He had a lot of friends."
+        ]
       },
       {
         "num": 7,
-        "prompt": "'What time ___ tomorrow?' 'How about 8.30?'",
-        "options": [
-          "do we meet",
-          "are we meeting",
-          "shall we meet"
-        ],
-        "answer": 2
+        "prompt": "Did you have a bike? No.",
+        "answers": [
+          "He didn’t have a bike."
+        ]
       },
       {
         "num": 8,
-        "prompt": "'When ___?' 'Tomorrow.'",
-        "options": [
-          "does the festival finish",
-          "is the festival finished",
-          "is the festival finishing"
-        ],
-        "answer": 2
+        "prompt": "Were you a quiet child? No.",
+        "answers": [
+          "He wasn’t a quiet child."
+        ]
       }
     ]
   }

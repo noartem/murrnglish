@@ -1,92 +1,60 @@
 {
   "id": 26,
-  "topic": "-ing and to …",
-  "refs": "Units 53–66",
-  "pdfPages": [329, 330],
+  "topic": "пассивные конструкции",
+  "refs": "Разделы 22–23",
+  "pdfPages": [
+    263
+  ],
   "exercise": {
     "id": "26",
-    "type": "fill-in",
-    "instruction": "Put the verbs into the correct form.",
+    "type": "write",
+    "instruction": "Напишите новое предложение с таким же значением.",
+    "example": [
+      1
+    ],
     "items": [
       {
+        "num": 1,
+        "prompt": "Somebody has stolen my keys.",
+        "answers": [
+          "My keys have been stolen."
+        ]
+      },
+      {
+        "num": 2,
+        "prompt": "Somebody stole my car last week.",
+        "answers": [
+          "My car was stolen last week."
+        ]
+      },
+      {
         "num": 3,
-        "parts": ["I can't make a decision. I keep ", " my mind. (change)"],
-        "answers": [["changing"]]
+        "prompt": "Somebody has eaten all the bananas.",
+        "answers": [
+          "All the bananas have been eaten."
+        ]
       },
       {
         "num": 4,
-        "parts": ["He had made his decision and refused ", " his mind. (change)"],
-        "answers": [["to change"]]
+        "prompt": "Somebody will repair the machine.",
+        "answers": [
+          "The machine will be repaired."
+        ]
       },
       {
         "num": 5,
-        "parts": ["Why did you change your decision? What made you ", " your mind? (change)"],
-        "answers": [["change"]]
+        "prompt": "Somebody is watching us.",
+        "answers": [
+          "We’re being watched.",
+          "We are being watched."
+        ]
       },
       {
         "num": 6,
-        "parts": ["It was a really good holiday. I really enjoyed ", " by the sea again. (be)"],
-        "answers": [["being"]]
-      },
-      {
-        "num": 7,
-        "parts": ["Did I really tell you I was unhappy? I don't remember ", " that. (say)"],
-        "answers": [["saying"]]
-      },
-      {
-        "num": 8,
-        "parts": ["'Remember ", " Tom tomorrow.' 'OK. I won't forget.' (call)"],
-        "answers": [["to call"]]
-      },
-      {
-        "num": 9,
-        "parts": ["The water here is not very good. I'd avoid ", " it if I were you. (drink)"],
-        "answers": [["drinking"]]
-      },
-      {
-        "num": 10,
-        "parts": ["I pretended ", " interested in the conversation, but really it was very boring. (be)"],
-        "answers": [["to be"]]
-      },
-      {
-        "num": 11,
-        "parts": ["I got up and looked out of the window ", " what the weather was like. (see)"],
-        "answers": [["to see"]]
-      },
-      {
-        "num": 12,
-        "parts": ["I don't have far to go. It's not worth ", " a taxi. (take)"],
-        "answers": [["taking"]]
-      },
-      {
-        "num": 13,
-        "parts": ["I have a friend who claims ", " able to speak five languages. (be)"],
-        "answers": [["to be"]]
-      },
-      {
-        "num": 14,
-        "parts": ["I like ", " carefully about things before ", " a decision. (think, make)"],
-        "answers": [["to think"], ["making"]]
-      },
-      {
-        "num": 15,
-        "parts": ["I had a flat in the centre of town but I didn't like ", " there, so I decided ", ". (live, move)"],
-        "answers": [["living"], ["to move"]]
-      },
-      {
-        "num": 16,
-        "parts": ["Steve used ", " a footballer. He had to stop ", " because of an injury. (be, play)"],
-        "answers": [["to be"], ["playing"]]
-      },
-      {
-        "num": 17,
-        "parts": ["After ", " by the police, the man admitted ", " the car but denied ", " at 100 miles an hour. (stop, steal, drive)"],
-        "answers": [["being stopped"], ["stealing"], ["driving"]]
-      },
-      {
-        "num": 18,
-        "parts": ["a: How do you make this machine ", "(work)?\nb: I'm not sure. Try ", " that button and see what happens. (press)"],
-        "answers": [["work"], ["pressing"]]
+        "prompt": "Somebody has to do the housework.",
+        "answers": [
+          "The housework has to be done."
+        ]
       }
     ]
   }

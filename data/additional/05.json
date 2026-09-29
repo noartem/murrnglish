@@ -1,37 +1,86 @@
 {
   "id": 5,
-  "topic": "Present and past",
-  "refs": "Units 1\u201317",
-  "pdfPages": [316, 317],
+  "topic": "present simple, am/is/are и have (got)",
+  "refs": "Разделы 1–3, 6–8, 10",
+  "pdfPages": [
+    254
+  ],
   "exercise": {
     "id": "5",
-    "type": "fill-in",
-    "instruction": "Put the verb into the correct form: past simple (I did), past continuous (I was doing), past perfect (I had done) or past perfect continuous (I had been doing).",
+    "type": "write",
+    "instruction": "Прочитайте вопросы и ответы, которые дала Клэр. Затем напишите предложения о Клэр.",
+    "example": [
+      1,
+      2
+    ],
     "items": [
       {
         "num": 1,
-        "parts": ["Yesterday afternoon Sarah went (go) to the station to meet Paul. When she ", " (get) there, Paul ", " (already / wait) for her. His train ", " (arrive) early."],
-        "answers": [["got"], ["was already waiting"], ["had arrived"]]
+        "prompt": "Are you married? — No.",
+        "answers": [
+          "She isn’t married."
+        ]
       },
       {
         "num": 2,
-        "parts": ["When I got home, Ben ", " (lie) on the sofa. The TV was on, but he ", " (not / watch) it. He ", " (fall) asleep and ", " (snore) loudly. I ", " (turn) the TV off and just then he ", " (wake) up."],
-        "answers": [["was lying"], ["wasn\u2019t watching"], ["\u2019d fallen", "had fallen"], ["was snoring"], ["turned"], ["woke"]]
+        "prompt": "Do you live in London? — Yes.",
+        "answers": [
+          "She lives in London."
+        ]
       },
       {
         "num": 3,
-        "parts": ["Last night I ", " (just / go) to bed and ", " (read) a book when suddenly I ", " (hear) a noise. I ", " (get) up to see what it was, but I ", " (not / see) anything, so I ", " (go) back to bed."],
-        "answers": [["\u2019d just gone", "had just gone"], ["was reading"], ["heard"], ["got"], ["didn\u2019t see"], ["went"]]
+        "prompt": "Are you a student? — Yes.",
+        "answers": [
+          "She’s a student.",
+          "She is a student."
+        ]
       },
       {
         "num": 4,
-        "parts": ["Lisa had to go to New York last week, but she almost ", " (miss) the plane. She ", " (stand) in the queue at the check-in desk when she suddenly ", " (realise) that she ", " (leave) her passport at home. Fortunately she lives near the airport, so she ", " (have) time to take a taxi home to get it. She ", " (get) back to the airport just in time for her flight."],
-        "answers": [["missed"], ["was standing"], ["realised"], ["\u2019d left", "had left"], ["had"], ["got"]]
+        "prompt": "Have you got a car? — No.",
+        "answers": [
+          "She hasn’t got a car.",
+          "She doesn’t have a car."
+        ]
       },
       {
         "num": 5,
-        "parts": ["I ", " (meet) Peter and Lucy yesterday as I ", " (walk) through the park. They ", " (be) to the Sports Centre where they ", " (play) tennis. They ", " (go) to a cafe and ", " (invite) me to join them, but I ", " (arrange) to meet another friend and ", " (not / have) time."],
-        "answers": [["met"], ["was walking"], ["\u2019d been", "had been"], ["\u2019d been playing", "had been playing"], ["were going"], ["invited"], ["\u2019d arranged", "had arranged"], ["didn\u2019t have"]]
+        "prompt": "Do you go out a lot? — Yes.",
+        "answers": [
+          "She goes out a lot."
+        ]
+      },
+      {
+        "num": 6,
+        "prompt": "Have you got a lot of friends? — Yes.",
+        "answers": [
+          "She’s got a lot of friends.",
+          "She has got a lot of friends.",
+          "She has a lot of friends."
+        ]
+      },
+      {
+        "num": 7,
+        "prompt": "Do you like London? — No.",
+        "answers": [
+          "She doesn’t like London."
+        ]
+      },
+      {
+        "num": 8,
+        "prompt": "Do you like dancing? — Yes.",
+        "answers": [
+          "She likes dancing."
+        ]
+      },
+      {
+        "num": 9,
+        "prompt": "Are you interested in sport? — No.",
+        "answers": [
+          "She isn’t interested in sport.",
+          "She’s not interested in sport."
+        ]
       }
     ]
   }

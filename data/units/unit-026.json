@@ -1,166 +1,408 @@
 {
   "unit": 26,
-  "title": "can, could and (be) able to",
-  "pdfPages": [64, 65],
+  "title": "What are you doing tomorrow?",
+  "pdfPages": [
+    63,
+    64
+  ],
   "exercises": [
     {
       "id": "26.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences using can or (be) able to. If can is not possible, use (be) able to.",
+      "instruction": "Посмотрите на картинки. Что эти люди делают в следующую пятницу?",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "",
+            "."
+          ],
+          "answers": [
+            [
+              "Andrew is playing tennis on Friday"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Richard ",
+            " to the cinema."
+          ],
+          "answers": [
+            [
+              "is going"
+            ]
+          ]
+        },
+        {
           "num": 3,
-          "parts": ["Nicole ", " drive, but she doesn't have a car."],
-          "answers": [["can"]]
+          "parts": [
+            "Rachel ",
+            "."
+          ],
+          "answers": [
+            [
+              "is meeting Dave"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I used to ", " stand on my head, but I can't do it any more."],
-          "answers": [["be able to"]]
+          "parts": [
+            "",
+            " lunch with Will."
+          ],
+          "answers": [
+            [
+              "Karen is having"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I can't understand Mark. I've never ", " understand him."],
-          "answers": [["been able to"]]
-        },
-        {
-          "num": 6,
-          "parts": ["I can't see you on Friday, but I ", " meet you on Saturday morning."],
-          "answers": [["can", "will be able to"]]
-        },
-        {
-          "num": 7,
-          "parts": ["Ask Katherine about your problem. She might ", " help you."],
-          "answers": [["be able to"]]
-        },
-        {
-          "num": 8,
-          "parts": ["You have to be careful in this part of the city. It ", " be dangerous."],
-          "answers": [["can"]]
-        },
-        {
-          "num": 9,
-          "parts": ["Michael has lived in Italy a long time, so he should ", " speak Italian."],
-          "answers": [["be able to"]]
+          "parts": [
+            "",
+            "."
+          ],
+          "answers": [
+            [
+              "Tom and Sue are going to a party"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "26.2",
-      "type": "self-check",
-      "instruction": "Write sentences about yourself using the ideas in brackets.",
+      "type": "write",
+      "instruction": "Напишите вопросы. Во всех этих предложениях говорится о действии в будущем.",
+      "example": [
+        1
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "(you / go / out / tonight?)",
+          "answers": [
+            "Are you going out tonight?"
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "prompt": "(something you used to be able to do)",
-          "modelAnswers": ["I used to be able to run fast."]
+          "prompt": "(you / work / next week?)",
+          "answers": [
+            "Are you working next week?"
+          ]
         },
         {
           "num": 3,
-          "prompt": "(something you would like to be able to do)",
-          "modelAnswers": ["I'd like to be able to play the piano."]
+          "prompt": "(what / you / do / tomorrow evening?)",
+          "answers": [
+            "What are you doing tomorrow evening?"
+          ]
         },
         {
           "num": 4,
-          "prompt": "(something you have never been able to do)",
-          "modelAnswers": ["I've never been able to get up early."]
+          "prompt": "(what time / your friends / come?)",
+          "answers": [
+            "What time are your friends coming?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(when / Lisa / go / on holiday?)",
+          "answers": [
+            "When is Lisa going on holiday?"
+          ]
         }
       ]
     },
     {
       "id": "26.3",
-      "type": "fill-in",
-      "instruction": "Complete the sentences with can/can't/could/couldn't + the following:",
-      "wordBank": ["believe", "come", "hear", "run", "sleep", "wait"],
+      "type": "self-check",
+      "instruction": "Напишите предложения о себе. Что вы делаете в ближайшие несколько дней?",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
+          "num": 1,
+          "prompt": "",
+          "modelAnswers": [
+            "I’m staying at home tonight."
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["When Dan was 16, he ", " 100 metres in 11 seconds."],
-          "answers": [["could run"]]
+          "prompt": "",
+          "modelAnswers": [
+            "I’m going to the theatre on Monday."
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["'Are you in a hurry?' 'No, I've got plenty of time. I ", ".'"],
-          "answers": [["can wait"]]
+          "prompt": "",
+          "modelAnswers": [
+            "I’m going away at the weekend."
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don't feel good this morning. I ", " last night."],
-          "answers": [["couldn't sleep"]]
+          "prompt": "",
+          "modelAnswers": [
+            "I’m playing basketball tomorrow."
+          ]
         },
         {
           "num": 5,
-          "parts": ["Can you speak a little louder? I ", " you very well."],
-          "answers": [["can't hear"]]
+          "prompt": "",
+          "modelAnswers": [
+            "I’m meeting a friend this evening."
+          ]
         },
         {
           "num": 6,
-          "parts": ["I was amazed when I heard the news. I ", " it."],
-          "answers": [["couldn't believe"]]
+          "prompt": "",
+          "modelAnswers": [
+            "I’m going to the cinema on Thursday evening."
+          ]
         }
       ]
     },
     {
       "id": "26.4",
       "type": "fill-in",
-      "instruction": "Complete the answers to the questions with was/were able to … .",
+      "instruction": "Поставьте глаголы в форму present continuous (he is leaving и т. д.) или present simple (the train leaves и т. д.).",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "’ ",
+            " (you/go) out tonight?’ ’No, I’m too tired.’"
+          ],
+          "answers": [
+            [
+              "Are you going"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Yes, there was nobody to disturb me, so I ", "."],
-          "answers": [["was able to finish it"]]
+          "parts": [
+            "",
+            " (we/go) to a concert tonight. ",
+            " (it/start) at 7.30."
+          ],
+          "answers": [
+            [
+              "We’re going"
+            ],
+            [
+              "It starts"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["Yes, we did. It wasn't easy, but we ", "."],
-          "answers": [["were able to solve it"]]
+          "parts": [
+            "Do you know about Sarah? ",
+            " (she/get) married next month!"
+          ],
+          "answers": [
+            [
+              "She’s getting",
+              "She is getting"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Yes. No-one realised what was happening and the thief ", "."],
-          "answers": [["was able to get away"]]
+          "parts": [
+            "A: My parents ",
+            " (go) on holiday next week. B: Oh, that’s nice. Where ",
+            " (they/go)?"
+          ],
+          "answers": [
+            [
+              "are going"
+            ],
+            [
+              "are they going"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Silvia is doing an English course at the moment. The course ",
+            " (finish) on Friday."
+          ],
+          "answers": [
+            [
+              "finishes"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "There’s a party tomorrow night, but ",
+            " (I/not/go)."
+          ],
+          "answers": [
+            [
+              "I’m not going",
+              "I am not going"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "",
+            " (I/go) out with some friends tonight. Why don’t you come too? ",
+            " (we/meet) at the Royal Hotel at 8 o’clock."
+          ],
+          "answers": [
+            [
+              "I’m going",
+              "I am going"
+            ],
+            [
+              "We’re meeting",
+              "We are meeting"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "A: How ",
+            " (you/get) home after the party tomorrow? By taxi? B: No, I can go by bus. The last bus ",
+            " (leave) at midnight."
+          ],
+          "answers": [
+            [
+              "are you getting"
+            ],
+            [
+              "leaves"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "A: ",
+            " (you/come) with us to the cinema tonight? B: Yes, what time ",
+            " (the film / begin)?"
+          ],
+          "answers": [
+            [
+              "Are you coming"
+            ],
+            [
+              "does the film begin"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "A: What ",
+            " (you/do) tomorrow afternoon? B: ",
+            " (I/work)."
+          ],
+          "answers": [
+            [
+              "are you doing"
+            ],
+            [
+              "I’m working",
+              "I am working"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "26.5",
-      "type": "fill-in",
-      "instruction": "Complete the sentences using could, couldn't or managed to.",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (лететь = fly; встречаться с = meet)",
       "items": [
         {
+          "num": 1,
+          "prompt": "В понедельник мы летим в Париж.",
+          "answers": [
+            "We are flying to Paris on Monday.",
+            "On Monday we are flying to Paris."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Ты едешь в отпуск в августе?",
+          "answers": [
+            "Are you going on holiday in August?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Завтра я не работаю.",
+          "answers": [
+            "I’m not working tomorrow.",
+            "I am not working tomorrow."
+          ]
+        },
+        {
           "num": 4,
-          "parts": ["Jessica had hurt her foot and ", " walk very well."],
-          "answers": [["couldn't"]]
+          "prompt": "Ты сегодня вечером идёшь на вечеринку?",
+          "answers": [
+            "Are you going to the party tonight?"
+          ]
         },
         {
           "num": 5,
-          "parts": ["There was a small fire in the kitchen, but fortunately I ", " put it out."],
-          "answers": [["managed to"]]
+          "prompt": "Когда приезжает твой автобус?",
+          "answers": [
+            "What time does your bus arrive?",
+            "When does your bus arrive?"
+          ]
         },
         {
           "num": 6,
-          "parts": ["The walls were thin and I ", " hear people talking in the next room."],
-          "answers": [["could"]]
+          "prompt": "Фильм начинается в 5:00 и заканчивается в 7:00.",
+          "answers": [
+            "The film starts at 5 o’clock and finishes at 7 o’clock.",
+            "The film starts at 5 and finishes at 7.",
+            "The film starts at 5:00 and finishes at 7:00."
+          ]
         },
         {
           "num": 7,
-          "parts": ["I ran my first marathon recently. It was very hard, but I ", " finish."],
-          "answers": [["managed to"]]
+          "prompt": "Во вторник Нина встречается с Анной.",
+          "answers": [
+            "Nina is meeting Anna on Tuesday.",
+            "On Tuesday Nina is meeting Anna."
+          ]
         },
         {
           "num": 8,
-          "parts": ["My grandmother loved music. She ", " play the piano very well."],
-          "answers": [["could"]]
-        },
-        {
-          "num": 9,
-          "parts": ["We wanted to go to the concert, but we ", " get tickets."],
-          "answers": [["couldn't"]]
-        },
-        {
-          "num": 10,
-          "parts": ["A girl fell into the river, but some people ", " pull her out. She's all right now."],
-          "answers": [["managed to"]]
+          "prompt": "Борис придёт в воскресенье?",
+          "answers": [
+            "Is Boris coming on Sunday?"
+          ]
         }
       ]
     }

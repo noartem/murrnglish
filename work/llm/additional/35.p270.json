@@ -1,0 +1,271 @@
+{
+ "id": 35,
+ "topic": "предлоги",
+ "refs": "Разделы 103–108, 111",
+ "pdfPages": [
+  270
+ ],
+ "exercise": {
+  "id": "35",
+  "type": "fill-in",
+  "instruction": "Write a preposition (in/for/by etc.).",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "Helen is studying law ",
+     " university."
+    ],
+    "answers": [
+     [
+      "at"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "What is the longest river ",
+     " Europe?"
+    ],
+    "answers": [
+     [
+      "in"
+     ]
+    ]
+   },
+   {
+    "num": 3,
+    "parts": [
+     "Is there anything ",
+     " TV this evening?"
+    ],
+    "answers": [
+     [
+      "on"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "We arrived ",
+     " the hotel after midnight."
+    ],
+    "answers": [
+     [
+      "at"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "‘Where’s Mark?’ ‘He’s ",
+     " holiday.’"
+    ],
+    "answers": [
+     [
+      "on"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "Tom hasn’t got up yet. He’s still ",
+     " bed."
+    ],
+    "answers": [
+     [
+      "in"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "Lisa is away. She’s been away ",
+     " Monday."
+    ],
+    "answers": [
+     [
+      "since"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "The next meeting is ",
+     " 15 April."
+    ],
+    "answers": [
+     [
+      "on"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "I usually go to work ",
+     " car."
+    ],
+    "answers": [
+     [
+      "by"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "There’s too much sugar ",
+     " my coffee."
+    ],
+    "answers": [
+     [
+      "in"
+     ]
+    ]
+   },
+   {
+    "num": 11,
+    "parts": [
+     "Joe lived in London ",
+     " six months. He didn’t like it very much."
+    ],
+    "answers": [
+     [
+      "for"
+     ]
+    ]
+   },
+   {
+    "num": 12,
+    "parts": [
+     "Were there a lot of people ",
+     " the party?"
+    ],
+    "answers": [
+     [
+      "at"
+     ]
+    ]
+   },
+   {
+    "num": 13,
+    "parts": [
+     "What are you doing ",
+     " the moment? Are you working?"
+    ],
+    "answers": [
+     [
+      "at"
+     ]
+    ]
+   },
+   {
+    "num": 14,
+    "parts": [
+     "I don’t know any of the people ",
+     " this photo."
+    ],
+    "answers": [
+     [
+      "in"
+     ]
+    ]
+   },
+   {
+    "num": 15,
+    "parts": [
+     "The train was very slow. It stopped ",
+     " every station."
+    ],
+    "answers": [
+     [
+      "at"
+     ]
+    ]
+   },
+   {
+    "num": 16,
+    "parts": [
+     "I like this room. I like the pictures ",
+     " the walls."
+    ],
+    "answers": [
+     [
+      "on"
+     ]
+    ]
+   },
+   {
+    "num": 17,
+    "parts": [
+     "‘Did you buy that picture?’ ‘No, it was given to me ",
+     " a friend of mine.’"
+    ],
+    "answers": [
+     [
+      "by"
+     ]
+    ]
+   },
+   {
+    "num": 18,
+    "parts": [
+     "I’m going away ",
+     " a few days. I’ll be back ",
+     " Thursday."
+    ],
+    "answers": [
+     [
+      "for"
+     ],
+     [
+      "on"
+     ]
+    ]
+   },
+   {
+    "num": 19,
+    "parts": [
+     "Silvia has gone ",
+     " Italy. She’s ",
+     " Milan at the moment."
+    ],
+    "answers": [
+     [
+      "to"
+     ],
+     [
+      "in"
+     ]
+    ]
+   },
+   {
+    "num": 20,
+    "parts": [
+     "Emma left school ",
+     " sixteen and got a job ",
+     " a shop."
+    ],
+    "answers": [
+     [
+      "at"
+     ],
+     [
+      "in"
+     ]
+    ]
+   }
+  ]
+ }
+}

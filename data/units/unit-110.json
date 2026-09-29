@@ -1,153 +1,269 @@
 {
   "unit": 110,
-  "title": "Word order 2: adverbs with the verb",
+  "title": "up, over, through и т. д.",
   "pdfPages": [
-    232,
-    233
+    231,
+    232
   ],
   "exercises": [
     {
       "id": "110.1",
-      "type": "write",
-      "instruction": "Is the word order OK or not? Correct the sentences where necessary.",
+      "type": "fill-in",
+      "instruction": "У вас спросили дорогу, и вы объясняете, как добраться до места назначения. Посмотрите на картинки и напишите предложения, начинающиеся с Go … .",
       "items": [
         {
           "num": 1,
-          "prompt": "Helen drives always to work.",
+          "parts": [
+            "",
+            ""
+          ],
           "answers": [
-            "Helen always drives to work."
-          ]
+            [
+              "Go past the church."
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "I cleaned the house and also cooked the dinner.",
+          "parts": [
+            "Go ",
+            " the bridge."
+          ],
           "answers": [
-            "OK"
+            [
+              "under"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "I have usually a shower in the morning.",
+          "parts": [
+            "Go ",
+            " the hill."
+          ],
           "answers": [
-            "I usually have a shower in the morning."
+            [
+              "up"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "I’m usually hungry when I get home from work.",
+          "parts": [
+            "Go ",
+            " the steps."
+          ],
           "answers": [
-            "OK"
+            [
+              "down"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "Steve gets hardly ever angry.",
+          "parts": [
+            "Go ",
+            " this street."
+          ],
           "answers": [
-            "Steve hardly ever gets angry."
+            [
+              "along"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "I called him and I sent also an email.",
+          "parts": [
+            "",
+            ""
+          ],
           "answers": [
-            "I called him and I also sent an email."
+            [
+              "Go into the hotel."
+            ]
           ]
         },
         {
           "num": 7,
-          "prompt": "You don’t listen! I have always to repeat things.",
+          "parts": [
+            "",
+            ""
+          ],
           "answers": [
-            "You don’t listen! I always have to repeat things."
+            [
+              "Go past the hotel."
+            ]
           ]
         },
         {
           "num": 8,
-          "prompt": "I never have worked in a factory.",
+          "parts": [
+            "",
+            ""
+          ],
           "answers": [
-            "I’ve never worked in a factory.",
-            "I have never worked in a factory."
+            [
+              "Go out of the hotel."
+            ]
           ]
         },
         {
           "num": 9,
-          "prompt": "I never have enough time. I’m always busy.",
+          "parts": [
+            "",
+            ""
+          ],
           "answers": [
-            "OK"
+            [
+              "Go over the bridge."
+            ]
           ]
         },
         {
           "num": 10,
-          "prompt": "When I arrived, my friends already were there.",
+          "parts": [
+            "",
+            ""
+          ],
           "answers": [
-            "When I arrived, my friends were already there.",
-            "When I arrived, my friends were there already."
+            [
+              "Go through the park."
+            ]
           ]
         }
       ]
     },
     {
       "id": "110.2",
-      "type": "write",
-      "instruction": "Rewrite the sentences to include the word in brackets.",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и заполните пропуски в предложениях.",
       "items": [
         {
           "num": 1,
-          "prompt": "Clare doesn’t drive to work. (usually)",
+          "parts": [
+            "The dog swam ",
+            " the river."
+          ],
           "answers": [
-            "Clare doesn’t usually drive to work."
-          ]
+            [
+              "across"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "Katherine is very generous. (always)",
+          "parts": [
+            "A book fell ",
+            " the shelf."
+          ],
           "answers": [
-            "Katherine is always very generous."
+            [
+              "off"
+            ]
           ]
         },
         {
           "num": 3,
-          "prompt": "I don’t have to work on Sundays. (usually)",
+          "parts": [
+            "A plane flew ",
+            " the village."
+          ],
           "answers": [
-            "I don’t usually have to work on Sundays."
+            [
+              "over"
+            ]
           ]
         },
         {
           "num": 4,
-          "prompt": "Do you watch TV in the evenings? (always)",
+          "parts": [
+            "A woman got ",
+            " the car."
+          ],
           "answers": [
-            "Do you always watch TV in the evenings?"
+            [
+              "out of"
+            ]
           ]
         },
         {
           "num": 5,
-          "prompt": "Martin is learning Spanish, and he is learning Japanese. (also)",
+          "parts": [
+            "A girl ran ",
+            " the road."
+          ],
           "answers": [
-            "Martin is learning Spanish and he is also learning Japanese."
+            [
+              "across"
+            ]
           ]
         },
         {
           "num": 6,
-          "prompt": "a We were on holiday in Spain. (all)\nb We were staying at the same hotel. (all)\nc We had a great time. (all)",
+          "parts": [
+            "Suddenly a car came ",
+            " the corner."
+          ],
           "answers": [
-            "a We were all on holiday in Spain.",
-            "b We were all staying at the same hotel.",
-            "c We all had a great time."
+            [
+              "round",
+              "around"
+            ]
           ]
         },
         {
           "num": 7,
-          "prompt": "a The new hotel is expensive. (probably)\nb It costs a lot to stay there. (probably)",
+          "parts": [
+            "They drove ",
+            " the village."
+          ],
           "answers": [
-            "a The new hotel is probably expensive.",
-            "b It probably costs a lot to stay there."
+            [
+              "through"
+            ]
           ]
         },
         {
           "num": 8,
-          "prompt": "a I can help you. (probably)\nb I can’t help you. (probably)",
+          "parts": [
+            "They got ",
+            " the train."
+          ],
           "answers": [
-            "a I can probably help you.",
-            "b I probably can’t help you."
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "The moon travels ",
+            " the earth."
+          ],
+          "answers": [
+            [
+              "round",
+              "around"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "They got ",
+            " the house ",
+            " a window."
+          ],
+          "answers": [
+            [
+              "into"
+            ],
+            [
+              "through"
+            ]
           ]
         }
       ]
@@ -155,219 +271,181 @@
     {
       "id": "110.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use the words in brackets in the correct order.",
+      "instruction": "Заполните пропуски в предложениях. Используйте over/from/into и т. д.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "What’s her name again? I ",
-            " it. (remember / I / never / can)"
+            "I looked ",
+            " the window and watched the people in the street."
           ],
           "answers": [
             [
-              "can never remember"
+              "out of"
             ]
           ]
         },
         {
           "num": 2,
           "parts": [
-            "Our cat ",
-            " (usually / sleeps) under the bed."
+            "My house is very near here. It’s just ",
+            " the corner."
           ],
           "answers": [
             [
-              "usually sleeps"
+              "round",
+              "around"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "There are plenty of hotels here. ",
-            " (usually / it / easy / is) to find a place to stay."
+            "‘Where’s my phone?’ ‘You put it ",
+            " your bag.’"
           ],
           "answers": [
             [
-              "It is usually easy"
+              "in"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Mark and Amy ",
-            " (both / were / born) in Manchester."
+            "How far is it ",
+            " here ",
+            " the airport?"
           ],
           "answers": [
             [
-              "were both born"
+              "from"
+            ],
+            [
+              "to"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Lisa is a good pianist. ",
-            " (sing / she / also / can) very well."
+            "We walked ",
+            " the museum for an hour and saw a lot of interesting things."
           ],
           "answers": [
             [
-              "She can also sing"
+              "round",
+              "around"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "How do you go to work? ",
-            " (usually / you / do / go) by bus?"
+            "You can put your coat ",
+            " the back of the chair."
           ],
           "answers": [
             [
-              "Do you usually go"
+              "on",
+              "over"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "I see them every day, but ",
-            " (never / I / have / spoken) to them."
+            "In tennis, you have to hit the ball ",
+            " the net."
           ],
           "answers": [
             [
-              "I have never spoken"
+              "over"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "We haven’t moved. ",
-            " (we / still / are / living) in the same place."
+            "Silvia took a key ",
+            " her bag and opened the door."
           ],
           "answers": [
             [
-              "We are still living"
+              "out of",
+              "from"
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (туннель = tunnel)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "За углом есть магазин.",
+          "answers": [
+            "There’s a shop round the corner.",
+            "There’s a shop around the corner.",
+            "There is a shop round the corner.",
+            "There is a shop around the corner."
           ]
         },
         {
-          "num": 9,
-          "parts": [
-            "This shop is always busy. ",
-            " (have / you / always / to wait) a long time to be served."
-          ],
+          "num": 2,
+          "prompt": "Вечером они гуляли по пляжу.",
           "answers": [
-            [
-              "You always have to wait"
-            ]
+            "They walked along the beach in the evening.",
+            "In the evening, they walked along the beach."
           ]
         },
         {
-          "num": 10,
-          "parts": [
-            "This could be the last time I see you. ",
-            " (meet / never / we / might) again."
-          ],
+          "num": 3,
+          "prompt": "Мы сбежали с холма.",
           "answers": [
-            [
-              "We might never meet"
-            ]
+            "We ran down the hill."
           ]
         },
         {
-          "num": 11,
-          "parts": [
-            "Thanks for the invitation, but ",
-            " (probably / I / be / won’t) able to come to the party."
-          ],
+          "num": 4,
+          "prompt": "Джеймс вышел из своей машины и зашёл в банк.",
           "answers": [
-            [
-              "I probably won’t be"
-            ]
+            "James got out of his car and went into a bank.",
+            "James got out of his car and went into the bank."
           ]
         },
         {
-          "num": 12,
-          "parts": [
-            "I’m going out for an hour. ",
-            " (still / be / you / will) here when I get back?"
-          ],
+          "num": 5,
+          "prompt": "Дорога в аэропорт идёт через туннель.",
           "answers": [
-            [
-              "Will you still be"
-            ]
+            "The road to the airport goes through a tunnel.",
+            "The road to the airport goes through the tunnel."
           ]
         },
         {
-          "num": 13,
-          "parts": [
-            "Helen goes away a lot. ",
-            " (is / hardly ever / she) at home."
-          ],
+          "num": 6,
+          "prompt": "Идите мимо музея и поверните налево.",
           "answers": [
-            [
-              "She is hardly ever"
-            ]
+            "Go past the museum and turn left.",
+            "Walk past the museum and turn left."
           ]
         },
         {
-          "num": 14,
-          "parts": [
-            "If we hadn’t taken the same train, ",
-            " (never / met / we / would / have) each other."
-          ],
+          "num": 7,
+          "prompt": "Вчера я упал с лестницы.",
           "answers": [
-            [
-              "we would never have met"
-            ]
+            "I fell down the stairs yesterday.",
+            "Yesterday I fell down the stairs."
           ]
         },
         {
-          "num": 15,
-          "parts": [
-            "The journey took a long time today. ",
-            " (doesn’t / take / it / always) so long."
-          ],
+          "num": 8,
+          "prompt": "Чёрная кошка перебежала через дорогу.",
           "answers": [
-            [
-              "It doesn’t always take"
-            ]
-          ]
-        },
-        {
-          "num": 16,
-          "parts": [
-            "(all / were / we) ",
-            " tired, so ",
-            " (all / we / fell) asleep."
-          ],
-          "answers": [
-            [
-              "We were all"
-            ],
-            [
-              "we all fell"
-            ]
-          ]
-        },
-        {
-          "num": 17,
-          "parts": [
-            "Tanya ",
-            " (says / always) that she’ll phone me, but ",
-            "(does / she / never)."
-          ],
-          "answers": [
-            [
-              "always says"
-            ],
-            [
-              "she never does"
-            ]
+            "A black cat ran across the road."
           ]
         }
       ]

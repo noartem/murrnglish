@@ -1,266 +1,103 @@
 {
   "unit": 98,
-  "title": "Adjectives ending in -ing and -ed (boring/bored etc.)",
+  "title": "and · but · or · so · because",
   "pdfPages": [
-    208,
-    209
+    207,
+    208
   ],
   "exercises": [
     {
       "id": "98.1",
-      "type": "fill-in",
-      "instruction": "Complete the sentences for each situation. Use the word in brackets + -ing or -ed.",
+      "type": "write",
+      "instruction": "Напишите предложения. Используйте информацию из рамок + and/but/or.",
+      "wordBank": [
+        "I stayed at home.",
+        "I bought a sandwich.",
+        "I went to the window.",
+        "I wanted to phone you.",
+        "I jumped into the river.",
+        "I usually drive to work.",
+        "Do you want me to come with you?",
+        "I didn’t have your number.",
+        "Shall I wait here?",
+        "I didn’t eat it.",
+        "I went by bus this morning.",
+        "I watched TV.",
+        "I swam to the other side.",
+        "I looked out."
+      ],
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
-          "num": "2a",
-          "parts": [
-            "She enjoys her job, but it’s often ",
-            ". (exhaust…)"
-          ],
+          "num": 1,
+          "prompt": "",
           "answers": [
-            [
-              "exhausting"
-            ]
+            "I stayed at home and watched TV."
           ]
         },
         {
-          "num": "2b",
-          "parts": [
-            "At the end of a day’s work, she is often ",
-            ". (exhaust…)"
-          ],
+          "num": 2,
+          "prompt": "",
           "answers": [
-            [
-              "exhausted"
-            ]
+            "I bought a sandwich, but I didn’t eat it."
           ]
         },
         {
-          "num": "3a",
-          "parts": [
-            "This weather is ",
-            ". (depress…)"
-          ],
+          "num": 3,
+          "prompt": "I",
           "answers": [
-            [
-              "depressing"
-            ]
+            "I went to the window and looked out.",
+            "I went to the window and I looked out."
           ]
         },
         {
-          "num": "3b",
-          "parts": [
-            "This weather makes me ",
-            ". (depress…)"
-          ],
+          "num": 4,
+          "prompt": "",
           "answers": [
-            [
-              "depressed"
-            ]
+            "I wanted to phone you, but I didn’t have your number."
           ]
         },
         {
-          "num": "3c",
-          "parts": [
-            "It’s silly to get ",
-            " because of the weather. (depress…)"
-          ],
+          "num": 5,
+          "prompt": "",
           "answers": [
-            [
-              "depressed"
-            ]
+            "I jumped into the river and swam to the other side.",
+            "I jumped into the river and I swam to the other side."
           ]
         },
         {
-          "num": "4a",
-          "parts": [
-            "It will be an ",
-            " experience for her. (excit…)"
-          ],
+          "num": 6,
+          "prompt": "",
           "answers": [
-            [
-              "exciting"
-            ]
+            "I usually drive to work, but I went by bus this morning."
           ]
         },
         {
-          "num": "4b",
-          "parts": [
-            "Going to new places is always ",
-            ". (excit…)"
-          ],
+          "num": 7,
+          "prompt": "",
           "answers": [
-            [
-              "exciting"
-            ]
-          ]
-        },
-        {
-          "num": "4c",
-          "parts": [
-            "She is really ",
-            " about going to Mexico. (excit…)"
-          ],
-          "answers": [
-            [
-              "excited"
-            ]
+            "Do you want me to come with you, or shall I wait here?"
           ]
         }
       ]
     },
     {
       "id": "98.2",
-      "type": "choice",
-      "instruction": "Choose the correct word.",
-      "items": [
-        {
-          "num": 1,
-          "options": [
-            "disappointing",
-            "disappointed"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 2,
-          "options": [
-            "interesting",
-            "interested"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 3,
-          "options": [
-            "exciting",
-            "excited"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 4,
-          "options": [
-            "embarrassing",
-            "embarrassed"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 5,
-          "options": [
-            "embarrassing",
-            "embarrassed"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 6,
-          "options": [
-            "amazing",
-            "amazed"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 7,
-          "options": [
-            "amazing",
-            "amazed"
-          ],
-          "answer": 0
-        },
-        {
-          "num": 8,
-          "options": [
-            "amusing",
-            "amused"
-          ],
-          "answer": 1
-        },
-        {
-          "num": 9,
-          "options": [
-            "interesting",
-            "interested"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "10a",
-          "options": [
-            "terrifying",
-            "terrified"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "10b",
-          "options": [
-            "shocking",
-            "shocked"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "11a",
-          "options": [
-            "boring",
-            "bored"
-          ],
-          "answer": 1
-        },
-        {
-          "num": "11b",
-          "options": [
-            "boring",
-            "bored"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "12a",
-          "options": [
-            "boring",
-            "bored"
-          ],
-          "answer": 0
-        },
-        {
-          "num": "12b",
-          "options": [
-            "interesting",
-            "interested"
-          ],
-          "answer": 0
-        }
-      ]
-    },
-    {
-      "id": "98.3",
       "type": "fill-in",
-      "instruction": "Complete each sentence using a word from the box.",
-      "wordBank": [
-        "amusing/amused",
-        "annoying/annoyed",
-        "boring/bored",
-        "confusing/confused",
-        "disgusting/disgusted",
-        "exciting/excited",
-        "exhausting/exhausted",
-        "interesting/interested",
-        "surprising/surprised"
-      ],
+      "instruction": "Посмотрите на картинки и закончьте предложения. Используйте and/but/so/because.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "You work very hard. It’s not ",
-            " that you’re always tired."
+            "It was very hot ",
+            ""
           ],
           "answers": [
             [
-              "surprising"
+              "so he opened the window."
             ]
           ],
           "example": true
@@ -268,121 +105,192 @@
         {
           "num": 2,
           "parts": [
-            "Some people get ",
-            " very easily. They always need something new."
+            "They couldn’t play tennis ",
+            ""
           ],
           "answers": [
             [
-              "bored"
+              "because it was raining.",
+              "because the weather was bad."
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "The teacher’s explanation was ",
-            ". Nobody understood it."
+            "They went to the museum, ",
+            ""
           ],
           "answers": [
             [
-              "confusing"
+              "but it was closed."
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "The kitchen hadn’t been cleaned for ages. It was really ",
-            "."
+            "Ben wasn’t hungry, ",
+            ""
           ],
           "answers": [
             [
-              "disgusting"
+              "so he didn’t eat anything.",
+              "so he didn’t want anything to eat."
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "I don’t go to art galleries very often. I’m not very ",
-            " in art."
+            "Helen was late ",
+            ""
           ],
           "answers": [
             [
-              "interested"
+              "because there was a lot of traffic.",
+              "because the traffic was bad."
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "There’s no need to get ",
-            " just because I’m a few minutes late."
+            "Sue said ",
+            ""
           ],
           "answers": [
             [
-              "annoyed"
+              "goodbye, got into her car and drove off.",
+              "goodbye, got into her car and drove away."
             ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98.3",
+      "type": "self-check",
+      "instruction": "Напишите предложения о том, что вы делали вчера. Используйте and/but и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(and)",
+          "modelAnswers": [
+            "In the evening I stayed at home and studied."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(because)",
+          "modelAnswers": [
+            "I went to bed very early because I was tired."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(but)",
+          "modelAnswers": [
+            "I went to the cinema, but the film wasn’t very good."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(and)",
+          "modelAnswers": [
+            "I went to a café and met some friends of mine."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(so)",
+          "modelAnswers": [
+            "There was a film on television, so I watched it."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(because)",
+          "modelAnswers": [
+            "I got up in the middle of the night because I couldn’t sleep."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (устроить пикник = have a picnic; пропустить = miss; выглядеть = look; сыро = wet)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Вчера мы ходили в парк и устроили там пикник.",
+          "answers": [
+            "Yesterday we went to the park and had a picnic there.",
+            "Yesterday we went to the park and we had a picnic there."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я хотела посмотреть этот фильм, но у меня не было времени.",
+          "answers": [
+            "I wanted to see this film, but I didn’t have time.",
+            "I wanted to see that film, but I didn’t have time.",
+            "I wanted to watch this film, but I didn’t have time.",
+            "I wanted to watch that film, but I didn’t have time.",
+            "I wanted to see this film, but I had no time.",
+            "I wanted to see that film, but I had no time.",
+            "I wanted to watch this film, but I had no time.",
+            "I wanted to watch that film, but I had no time."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Вы хотите поиграть в теннис сегодня вечером или вы заняты?",
+          "answers": [
+            "Do you want to play tennis tonight, or are you busy?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Лара была больна, и поэтому она пропустила концерт.",
+          "answers": [
+            "Lara was ill, and so she missed the concert."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я иду спать, потому что я очень устала.",
+          "answers": [
+            "I’m going to bed because I’m very tired.",
+            "I’m going to bed because I am very tired.",
+            "I’m going to sleep because I’m very tired.",
+            "I’m going to sleep because I am very tired.",
+            "I am going to bed because I’m very tired.",
+            "I am going to bed because I am very tired.",
+            "I am going to sleep because I’m very tired.",
+            "I am going to sleep because I am very tired."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Джеймс выглядит недовольным, но я не знаю почему.",
+          "answers": [
+            "James looks unhappy, but I don’t know why."
           ]
         },
         {
           "num": 7,
-          "parts": [
-            "The lecture was ",
-            ". I fell asleep."
-          ],
+          "prompt": "Было холодно и сыро, поэтому мы остались дома.",
           "answers": [
-            [
-              "boring"
-            ]
+            "It was cold and wet, so we stayed at home."
           ]
         },
         {
           "num": 8,
-          "parts": [
-            "I’ve been working very hard all day and now I’m ",
-            "."
-          ],
+          "prompt": "Я попросила Сашу перевести письмо, потому что она говорит по-немецки.",
           "answers": [
-            [
-              "exhausted"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I’m starting a new job next week. I’m very ",
-            " about it."
-          ],
-          "answers": [
-            [
-              "excited"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Steve is good at telling funny stories. He can be very ",
-            "."
-          ],
-          "answers": [
-            [
-              "amusing"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "Helen is a very ",
-            " person. She knows a lot, she’s travelled a lot and she’s done lots of different things."
-          ],
-          "answers": [
-            [
-              "interesting"
-            ]
+            "I asked Sasha to translate the letter because she speaks German."
           ]
         }
       ]

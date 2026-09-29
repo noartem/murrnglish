@@ -1,0 +1,437 @@
+{
+ "unit": 7,
+ "title": "I don’t … (present simple, отрицания)",
+ "pdfPages": [
+  25,
+  26
+ ],
+ "exercises": [
+  {
+   "id": "7.1",
+   "type": "write",
+   "instruction": "Напишите отрицательные предложения.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I play the piano very well.",
+     "answers": [
+      "I don’t play the piano very well."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Anna plays the piano very well.",
+     "answers": [
+      "Anna doesn’t play the piano very well."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "They know my phone number.",
+     "answers": [
+      "They don’t know my phone number."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "We work very hard.",
+     "answers": [
+      "We don’t work very hard."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "He has a bath every day.",
+     "answers": [
+      "He doesn’t have a bath every day."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "You do the same thing every day.",
+     "answers": [
+      "You don’t do the same thing every day."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "write",
+   "instruction": "Прочитайте информацию и напишите предложения с глаголом like.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "classical music?",
+     "answers": [
+      "Ben and Sophie like classical music.",
+      "Kate doesn’t like classical music.",
+      "I like classical music.",
+      "I don’t like classical music."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "boxing?",
+     "answers": [
+      "Ben and Sophie don’t like boxing.",
+      "Kate likes boxing.",
+      "I like boxing.",
+      "I don’t like boxing."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "horror movies?",
+     "answers": [
+      "Ben and Sophie like horror movies.",
+      "Kate doesn’t like horror movies.",
+      "I like horror movies.",
+      "I don’t like horror movies."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "self-check",
+   "instruction": "Напишите о себе, используя эти сочетания слов:",
+   "wordBank": [
+    "I never …",
+    "I often …",
+    "I don’t … very often."
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(watch TV)",
+     "modelAnswers": [
+      "I don’t watch TV very often.",
+      "I never watch TV.",
+      "I often watch TV."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(go to the theatre)",
+     "modelAnswers": [
+      "I never go to the theatre."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(ride a bike)",
+     "modelAnswers": [
+      "I don’t ride a bike very often."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(eat in restaurants)",
+     "modelAnswers": [
+      "I never eat in restaurants."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(travel by train)",
+     "modelAnswers": [
+      "I often travel by train."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "fill-in",
+   "instruction": "Допишите отрицательные предложения. Используйте don’t/doesn’t + глаголы из рамки:",
+   "wordBank": [
+    "cost",
+    "go",
+    "know",
+    "rain",
+    "see",
+    "use",
+    "wear"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "The weather here is usually nice. It ",
+      " much."
+     ],
+     "answers": [
+      [
+       "doesn’t rain"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Paul has a car, but he ",
+      " it very often."
+     ],
+     "answers": [
+      [
+       "doesn’t use"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Paul and his friends like films, but they ",
+      " to the cinema very often."
+     ],
+     "answers": [
+      [
+       "don’t go"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Amanda is married, but she ",
+      " a ring."
+     ],
+     "answers": [
+      [
+       "doesn’t wear"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I ",
+      " much about politics. I’m not interested in it."
+     ],
+     "answers": [
+      [
+       "don’t know"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The Regent Hotel isn’t expensive. It ",
+      " much to stay there."
+     ],
+     "answers": [
+      [
+       "doesn’t cost"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Ed lives very near us, but we ",
+      " him very often."
+     ],
+     "answers": [
+      [
+       "don’t see"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "type": "fill-in",
+   "instruction": "Поставьте глагол в правильную форму (утвердительную или отрицательную).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Margaret ",
+      " four languages – English, French, German and Spanish. (speak)"
+     ],
+     "answers": [
+      [
+       "speaks"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I ",
+      " my job. It’s very boring. (like)"
+     ],
+     "answers": [
+      [
+       "don’t like"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "‘Where’s Steve?’ ‘I’m sorry. I ",
+      ".’ (know)"
+     ],
+     "answers": [
+      [
+       "don’t know"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Sue is a very quiet person. She ",
+      " very much. (talk)"
+     ],
+     "answers": [
+      [
+       "doesn’t talk"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Andy ",
+      " a lot of tea. It’s his favourite drink. (drink)"
+     ],
+     "answers": [
+      [
+       "drinks"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "It’s not true! I ",
+      " it! (believe)"
+     ],
+     "answers": [
+      [
+       "don’t believe"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "That’s a very beautiful picture. I ",
+      " it very much. (like)"
+     ],
+     "answers": [
+      [
+       "like"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Mark is a vegetarian. He ",
+      " meat. (eat)"
+     ],
+     "answers": [
+      [
+       "doesn’t eat"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [йогурт = yoghurt; по вечерам = in the evenings]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Я люблю йогурт, но я не люблю молоко.",
+     "answers": [
+      "I like yoghurt but I don’t like milk.",
+      "I like yoghurt but I do not like milk.",
+      "I love yoghurt but I don’t like milk.",
+      "I love yoghurt but I do not like milk."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Мы смотрим футбол нечасто.",
+     "answers": [
+      "We don’t watch football very often.",
+      "We do not watch football very often."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Мои родители не говорят по-английски.",
+     "answers": [
+      "My parents don’t speak English.",
+      "My parents do not speak English."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Питер не работает по вечерам.",
+     "answers": [
+      "Peter doesn’t work in the evenings.",
+      "Peter does not work in the evenings."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Я не знаю этого мужчину.",
+     "answers": [
+      "I don’t know this man.",
+      "I don’t know that man.",
+      "I do not know this man.",
+      "I do not know that man."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Борис ест мясо, но он не ест рыбу.",
+     "answers": [
+      "Boris eats meat but he doesn’t eat fish.",
+      "Boris eats meat but he does not eat fish."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Мой брат не любит свою работу.",
+     "answers": [
+      "My brother doesn’t like his job.",
+      "My brother does not like his job."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "По воскресеньям Эмма и Анна не встают рано.",
+     "answers": [
+      "Emma and Anna don’t get up early on Sundays.",
+      "Emma and Anna do not get up early on Sundays.",
+      "On Sundays Emma and Anna don’t get up early.",
+      "On Sundays Emma and Anna do not get up early."
+     ]
+    }
+   ]
+  }
+ ]
+}

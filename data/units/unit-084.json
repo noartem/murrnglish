@@ -1,25 +1,25 @@
 {
   "unit": 84,
-  "title": "there … and it …",
+  "title": "a lot · much · many",
   "pdfPages": [
-    180,
-    181
+    179,
+    180
   ],
   "exercises": [
     {
       "id": "84.1",
       "type": "fill-in",
-      "instruction": "Put in there is/was or it is/was. Some sentences are questions (is there … ? / was it … ? etc.) and some are negative (there isn’t / it wasn’t etc.).",
+      "instruction": "Вставьте much или many. Вставьте How much или How many.",
       "items": [
         {
           "num": 1,
           "parts": [
-            "The journey took a long time. ",
-            " a lot of traffic."
+            "Did you buy ",
+            " food?"
           ],
           "answers": [
             [
-              "There was"
+              "much"
             ]
           ],
           "example": true
@@ -27,179 +27,132 @@
         {
           "num": 2,
           "parts": [
-            "What’s the new restaurant like? ",
-            " good?"
+            "There aren’t ",
+            " hotels in this town."
           ],
           "answers": [
             [
-              "Is it"
+              "many"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            " ",
-            " something wrong with the washing machine. It’s not working properly."
+            "We don’t have ",
+            " petrol. We need to stop and get some."
           ],
           "answers": [
             [
-              "There’s",
-              "There is"
+              "much"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "I wanted to visit the museum yesterday, but ",
-            " enough time."
+            "Were there ",
+            " people on the train?"
           ],
           "answers": [
             [
-              "there wasn’t"
+              "many"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "What’s that new building over there? ",
-            " a hotel?"
+            "Did ",
+            " students fail the exam?"
           ],
           "answers": [
             [
-              "Is it"
+              "many"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "How can we get across the river? ",
-            " a bridge?"
+            "Paula doesn’t have ",
+            " money."
           ],
           "answers": [
             [
-              "Is there"
+              "much"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "A few days ago ",
-            " a big storm, which caused a lot of damage."
+            "I wasn’t hungry, so I didn’t eat ",
+            "."
           ],
           "answers": [
             [
-              "there was"
+              "much"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I can’t find my phone. ",
-            " in my bag – I just looked."
+            "I don’t know where Gary lives these days. I haven’t seen him for ",
+            " years."
           ],
           "answers": [
             [
-              "It isn’t",
-              "It’s not"
+              "many"
             ]
           ]
         },
         {
           "num": 9,
           "parts": [
-            " ",
-            " anything interesting on TV, so I turned it off."
+            "",
+            " people are coming to the party?"
           ],
           "answers": [
             [
-              "There wasn’t"
+              "How many"
             ]
           ]
         },
         {
           "num": 10,
           "parts": [
-            " ",
-            " often very cold here, but ",
-            " much snow."
+            "",
+            " milk do you want in your coffee?"
           ],
           "answers": [
             [
-              "It’s",
-              "It is"
-            ],
-            [
-              "there isn’t"
+              "How much"
             ]
           ]
         },
         {
           "num": 11,
           "parts": [
-            "I couldn’t see anything. ",
-            " completely dark."
+            "",
+            " bread did you buy?"
           ],
           "answers": [
             [
-              "It was"
+              "How much"
             ]
           ]
         },
         {
           "num": 12,
           "parts": [
-            "‘ ",
-            " a bookshop near here?’ ‘Yes, ",
-            " one in Hudson Street.’"
+            "",
+            " players are there in a football team?"
           ],
           "answers": [
             [
-              "Is there"
-            ],
-            [
-              "there’s",
-              "there is"
-            ]
-          ]
-        },
-        {
-          "num": 13,
-          "parts": [
-            " ",
-            " difficult to get a job right now. ",
-            " a lot of unemployment."
-          ],
-          "answers": [
-            [
-              "It’s",
-              "It is"
-            ],
-            [
-              "There’s",
-              "There is"
-            ]
-          ]
-        },
-        {
-          "num": 14,
-          "parts": [
-            "When we got to the cinema, ",
-            " a queue outside. ",
-            " a very long queue, so we decided not to wait."
-          ],
-          "answers": [
-            [
-              "there was"
-            ],
-            [
-              "It was"
+              "How many"
             ]
           ]
         }
@@ -207,83 +160,26 @@
     },
     {
       "id": "84.2",
-      "type": "write",
-      "instruction": "Read the first sentence and then write a sentence beginning There … .",
-      "items": [
-        {
-          "num": 1,
-          "prompt": "The roads were busy yesterday.",
-          "answers": [
-            "There was a lot of traffic."
-          ]
-        },
-        {
-          "num": 2,
-          "prompt": "This soup is very salty.",
-          "answers": [
-            "There’s a lot of salt in the soup.",
-            "There is a lot of salt in the soup.",
-            "There’s too much salt in the soup.",
-            "There is too much salt in the soup."
-          ]
-        },
-        {
-          "num": 3,
-          "prompt": "The box was empty.",
-          "answers": [
-            "There was nothing in the box."
-          ]
-        },
-        {
-          "num": 4,
-          "prompt": "About 50 people came to the meeting.",
-          "answers": [
-            "There were about 50 people at the meeting."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "The film is very violent.",
-          "answers": [
-            "There’s a lot of violence in the film.",
-            "There is a lot of violence in the film."
-          ]
-        },
-        {
-          "num": 6,
-          "prompt": "I like this town – it’s lively.",
-          "answers": [
-            "There is a lot to do in this town.",
-            "There is plenty to do in this town.",
-            "There is a lot happening in this town.",
-            "There are a lot of places to go in this town."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "84.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use there would be, there used to be etc. Choose from:",
+      "instruction": "Закончите предложения. Используйте much или many + слова из рамки:",
       "wordBank": [
-        "won’t",
-        "may",
-        "would",
-        "wouldn’t",
-        "should",
-        "used to",
-        "is going to"
+        "books",
+        "countries",
+        "luggage",
+        "people",
+        "time",
+        "times"
       ],
       "items": [
         {
           "num": 1,
           "parts": [
-            "If people drove more carefully, there ",
-            " fewer accidents."
+            "I don’t read very much. I don’t have ",
+            "."
           ],
           "answers": [
             [
-              "would be"
+              "many books"
             ]
           ],
           "example": true
@@ -291,73 +187,135 @@
         {
           "num": 2,
           "parts": [
-            "‘Do we have any eggs?’ ‘I’m not sure. ",
-            " some in the fridge.’"
+            "Hurry up! We don’t have ",
+            "."
           ],
           "answers": [
             [
-              "There may be"
+              "much time"
             ]
           ]
         },
         {
           "num": 3,
           "parts": [
-            "I think everything will be OK. ",
-            " any problems."
+            "Do you travel a lot? Have you been to ",
+            "?"
           ],
           "answers": [
             [
-              "There won’t be"
+              "many countries"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "Look at those clouds. ",
-            " a storm. I’m sure of it."
+            "Tina hasn’t lived here very long, so she doesn’t know ",
+            "."
           ],
           "answers": [
             [
-              "There’s going to be",
-              "There is going to be"
+              "many people"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "There isn’t a school in the village. ",
-            " one, but it closed a few years ago."
+            "’Do you have ",
+            "?’ ’No, only this bag.’"
           ],
           "answers": [
             [
-              "There used to be"
+              "much luggage"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "People drive too fast on this road. I think ",
-            " a speed limit."
+            "I know Tokyo well. I’ve been there ",
+            "."
           ],
           "answers": [
             [
-              "there should be"
+              "many times"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "84.3",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте a lot of + слова из рамки:",
+      "wordBank": [
+        "accidents",
+        "books",
+        "fun",
+        "interesting things",
+        "traffic"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I like reading. I have ",
+            "."
+          ],
+          "answers": [
+            [
+              "a lot of books"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "We enjoyed our visit to the museum. We saw ",
+            "."
+          ],
+          "answers": [
+            [
+              "a lot of interesting things"
             ]
           ]
         },
         {
-          "num": 7,
+          "num": 3,
           "parts": [
-            "If people weren’t so aggressive, ",
-            " any wars."
+            "This road is very dangerous. There are ",
+            "."
           ],
           "answers": [
             [
-              "there wouldn’t be"
+              "a lot of accidents"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We enjoyed our holiday. We had ",
+            "."
+          ],
+          "answers": [
+            [
+              "a lot of fun"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "It took me a long time to drive here. There was ",
+            "."
+          ],
+          "answers": [
+            [
+              "a lot of traffic"
             ]
           ]
         }
@@ -366,90 +324,193 @@
     {
       "id": "84.4",
       "type": "write",
-      "instruction": "Are these sentences OK? Change it to there where necessary.",
+      "instruction": "В некоторых из этих предложений much использовано не совсем верно. Измените предложения или напишите OK.",
       "items": [
         {
           "num": 1,
-          "prompt": "They live on a busy road. It must be a lot of noise.",
+          "prompt": "Do you drink much coffee?",
           "answers": [
-            "There must be a lot of noise."
-          ]
+            "OK"
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "prompt": "It’s a long way from my house to the nearest shop.",
+          "prompt": "I drink much tea.",
           "answers": [
-            "OK"
-          ]
+            "a lot of tea"
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "prompt": "After the lecture it will be an opportunity to ask questions.",
+          "prompt": "It was a cold winter. We had much snow.",
           "answers": [
-            "there will be an opportunity to ask questions."
+            "a lot of snow"
           ]
         },
         {
           "num": 4,
-          "prompt": "Why was she so unfriendly? It must have been a reason.",
-          "answers": [
-            "There must have been a reason."
-          ]
-        },
-        {
-          "num": 5,
-          "prompt": "I like where I live, but it would be nicer to live by the sea.",
+          "prompt": "There wasn’t much snow last winter.",
           "answers": [
             "OK"
           ]
         },
         {
+          "num": 5,
+          "prompt": "It costs much money to travel around the world.",
+          "answers": [
+            "a lot of money"
+          ]
+        },
+        {
           "num": 6,
-          "prompt": "How long is it since you last went to the theatre?",
+          "prompt": "We had a cheap holiday. It didn’t cost much.",
           "answers": [
             "OK"
           ]
         },
         {
           "num": 7,
-          "prompt": "It used to be a lot of tourists here, but not many come now.",
+          "prompt": "Do you know much about computers?",
           "answers": [
-            "There used to be a lot of tourists here, but not many come now."
+            "OK"
           ]
         },
         {
           "num": 8,
-          "prompt": "My phone won’t work here. It’s no signal.",
+          "prompt": "’Do you have any luggage?’ ’Yes, much.’",
           "answers": [
-            "There’s no signal."
+            "a lot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "84.5",
+      "type": "write",
+      "instruction": "Напишите предложения об этих людях. Используйте much и a lot.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "James loves films. (go to the cinema)",
+          "answers": [
+            "He goes to the cinema a lot."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "Nicola thinks TV is boring. (watch TV)",
+          "answers": [
+            "She doesn’t watch TV much."
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "prompt": "Tina is a good tennis player. (play tennis)",
+          "answers": [
+            "She plays tennis a lot."
           ]
         },
         {
-          "num": 9,
-          "prompt": "It was Ken’s birthday yesterday. We had a party.",
+          "num": 4,
+          "prompt": "Mark doesn’t like driving. (use his car)",
           "answers": [
-            "OK"
+            "He doesn’t use his car much.",
+            "He doesn’t use his car a lot."
           ]
         },
         {
-          "num": 10,
-          "prompt": "We won’t have any problem parking the car. It’s sure to be a car park somewhere.",
+          "num": 5,
+          "prompt": "Paul spends most of the time at home. (go out)",
           "answers": [
-            "There’s sure to be a car park somewhere."
+            "He doesn’t go out much.",
+            "He doesn’t go out a lot."
           ]
         },
         {
-          "num": 11,
-          "prompt": "I’m sorry about what happened. It was my fault.",
+          "num": 6,
+          "prompt": "Sue has been all over the world. (travel)",
           "answers": [
-            "OK"
+            "She travels a lot."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "84.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (DVD-диски = DVDs, на конференции = at the conference)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "У нас есть много DVD-дисков.",
+          "answers": [
+            "We have a lot of DVDs.",
+            "We have many DVDs.",
+            "We’ve got a lot of DVDs.",
+            "We’ve got many DVDs."
           ]
         },
         {
-          "num": 12,
-          "prompt": "I was told that it would be somebody to meet me at the station, but it wasn’t anybody.",
+          "num": 2,
+          "prompt": "На конференции было много человек?",
           "answers": [
-            "there would be somebody to meet me at the station, but there wasn’t anybody."
+            "Were there a lot of people at the conference?",
+            "Were there many people at the conference?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Ирина много читает. У неё есть много книг.",
+          "answers": [
+            "Irina reads a lot. She has a lot of books.",
+            "Irina reads a lot. She has many books.",
+            "Irina reads a lot. She’s got a lot of books.",
+            "Irina reads a lot. She’s got many books."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Сколько еды нам нужно для вечеринки?",
+          "answers": [
+            "How much food do we need for the party?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Сколько студентов в вашем классе?",
+          "answers": [
+            "How many students are there in your class?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "A: Ты ешь много шоколада? В: Нет, немного.",
+          "answers": [
+            "A: Do you eat a lot of chocolate? B: No, not a lot.",
+            "A: Do you eat a lot of chocolate? B: No, not much.",
+            "A: Do you eat much chocolate? B: No, not a lot.",
+            "A: Do you eat much chocolate? B: No, not much."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Сандра любит Испанию. Она много туда ездит.",
+          "answers": [
+            "Sandra loves Spain. She goes there a lot."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Извините, сегодня у меня мало времени.",
+          "answers": [
+            "Sorry, I don’t have much time today.",
+            "Sorry, I don’t have a lot of time today.",
+            "Sorry, I haven’t got much time today.",
+            "Sorry, I haven’t got a lot of time today."
           ]
         }
       ]

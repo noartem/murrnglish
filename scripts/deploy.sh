@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Publish app/dist to blue-murphy.noartem.ru (VPS, Caddy static root).
+# Publish app/dist to red-murphy.noartem.ru (VPS, Caddy static root).
 #
 # Env: DEPLOY_KEY — path to the bm-deploy ed25519 private key.
-# bm-deploy owns /srv/blue-murphy, so sudo is needed only for the Caddy reload
+# bm-deploy owns /srv/red-murphy, so sudo is needed only for the Caddy reload
 # (sudoers: /usr/bin/systemctl reload caddy). Swap is two renames on the same
 # filesystem: stage -> .old, mv in, rm .old.
 set -euo pipefail
@@ -10,7 +10,7 @@ set -euo pipefail
 : "${DEPLOY_KEY:?set DEPLOY_KEY to the path of the bm-deploy private key}"
 
 HOST="bm-deploy@84.54.30.169"
-ROOT="/srv/blue-murphy"
+ROOT="/srv/red-murphy"
 SSH_OPTS=(-i "$DEPLOY_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new)
 
 # 1. Stage the new tree on the same filesystem.
@@ -29,4 +29,4 @@ ssh "${SSH_OPTS[@]}" "$HOST" "
   sudo /usr/bin/systemctl reload caddy
 "
 
-echo "deployed: https://blue-murphy.noartem.ru/"
+echo "deployed: https://red-murphy.noartem.ru/"

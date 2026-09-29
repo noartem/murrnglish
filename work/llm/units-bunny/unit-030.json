@@ -1,0 +1,303 @@
+{
+ "unit": 30,
+ "title": "might",
+ "pdfPages": [
+  71,
+  72
+ ],
+ "exercises": [
+  {
+   "id": "30.1",
+   "type": "write",
+   "instruction": "Напишите предложения с might.\nНапишите предложения с might not.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(it’s possible that I’ll go to the cinema)",
+     "answers": [
+      "I might go to the cinema."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(it’s possible that I’ll see you tomorrow)",
+     "answers": [
+      "I might see you tomorrow."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(it’s possible that Sarah will forget to phone)",
+     "answers": [
+      "Sarah might forget to phone."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(it’s possible that it will snow today)",
+     "answers": [
+      "It might snow today."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(it’s possible that I’ll be late tonight)",
+     "answers": [
+      "I might be late tonight."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(it’s possible that Mark will not be here next week)",
+     "answers": [
+      "Mark might not be here next week."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(it’s possible that I won’t have time to go out)",
+     "answers": [
+      "I might not have time to go out."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "30.2",
+   "type": "write",
+   "instruction": "Вас спрашивают о планах. У вас есть некоторые идеи, но вы не уверены.\nВыберите слова из рамки и напишите предложения с I might.",
+   "wordBank": [
+    "fish",
+    "go away",
+    "Italy",
+    "Monday",
+    "a new car",
+    "taxi"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Where are you going for your holidays?\nI’m not sure.",
+     "answers": [
+      "I might go to Italy."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "What are you doing at the weekend?\nI don’t know.",
+     "answers": [
+      "I might go away."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "When will you see Kate again?\nI’m not sure.",
+     "answers": [
+      "I might see her on Monday."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "What are you going to have for dinner?\nI don’t know.",
+     "answers": [
+      "I might have fish."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "How are you going to get home tonight?\nI’m not sure.",
+     "answers": [
+      "I might get a taxi.",
+      "I might take a taxi.",
+      "I might go by taxi."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I hear you won some money. What are you going to do with it?\nI haven’t decided yet.",
+     "answers": [
+      "I might buy a new car.",
+      "I might get a new car."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "30.3",
+   "type": "write",
+   "instruction": "Вы задали Бену вопросы о его планах на завтра. В некоторых планах он уверен, но в большинстве случаев он сомневается.\nТеперь напишите, что Бен будет делать завтра. Где необходимо, также используйте might.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Are you playing tennis tomorrow?\nYes, in the afternoon.",
+     "answers": [
+      "He’s playing tennis tomorrow afternoon."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Are you going out tomorrow evening?\nPossibly.",
+     "answers": [
+      "He might go out tomorrow evening."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Are you going to get up early?\nPerhaps.",
+     "answers": [
+      "He might get up early."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Are you working tomorrow?\nNo, I’m not.",
+     "answers": [
+      "He isn’t working tomorrow.",
+      "He’s not working tomorrow."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Will you be at home tomorrow morning?\nMaybe.",
+     "answers": [
+      "He might be at home tomorrow morning."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Are you going to watch TV?\nI might.",
+     "answers": [
+      "He might watch TV."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Are you going out in the afternoon?\nYes, I am.",
+     "answers": [
+      "He’s going out in the afternoon."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Are you going shopping?\nPerhaps.",
+     "answers": [
+      "He might go shopping."
+     ]
+    }
+   ],
+   "example": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "30.4",
+   "type": "self-check",
+   "instruction": "Напишите три предложения о том, что вы, возможно, будете делать завтра.\nИспользуйте might.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "modelAnswers": [
+      "I might buy some new clothes."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "modelAnswers": [
+      "I might go out with some friends."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "modelAnswers": [
+      "I might have an egg for breakfast."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "30.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя might или may.\n[спортзал = gym\nна Новый год = at New Year]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Возможно, завтра мы тебя увидим.",
+     "answers": [
+      "We might see you tomorrow.",
+      "We may see you tomorrow."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Марина больна. Может быть, она останется дома.",
+     "answers": [
+      "Marina is ill. She might stay at home.",
+      "Marina is ill. She may stay at home."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "A: Вы идёте на вечеринку?\nB: Возможно, я пойду.",
+     "answers": [
+      "A: Are you going to the party?\nB: I might go.",
+      "A: Are you going to the party?\nB: I may go.",
+      "A: Are you going to the party?\nB: I might.",
+      "A: Are you going to the party?\nB: I may."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я устал. Возможно, я не пойду в спортзал.",
+     "answers": [
+      "I’m tired. I might not go to the gym.",
+      "I’m tired. I may not go to the gym.",
+      "I am tired. I might not go to the gym.",
+      "I am tired. I may not go to the gym."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Я могу Вам помочь?",
+     "answers": [
+      "May I help you?",
+      "Can I help you?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "В субботу, возможно, пойдёт снег.",
+     "answers": [
+      "It might snow on Saturday.",
+      "It may snow on Saturday."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Возможно, я поеду в Финляндию на Новый год.",
+     "answers": [
+      "I might go to Finland at New Year.",
+      "I may go to Finland at New Year."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Может быть, завтра меня не будет на работе.",
+     "answers": [
+      "I might not be at work tomorrow.",
+      "I may not be at work tomorrow."
+     ]
+    }
+   ]
+  }
+ ]
+}

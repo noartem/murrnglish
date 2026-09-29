@@ -1,0 +1,363 @@
+{
+ "unit": 5,
+ "title": "are you doing? (present continuous, вопросы)",
+ "pdfPages": [
+  21,
+  22
+ ],
+ "exercises": [
+  {
+   "id": "5.1",
+   "type": "write",
+   "instruction": "Посмотрите на картинки и напишите вопросы.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(you / watch / it?)",
+     "answers": [
+      "Are you watching it?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(you / go / now?)",
+     "answers": [
+      "Are you going now?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(it / rain?)",
+     "answers": [
+      "Is it raining?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(you / enjoy / the film?)",
+     "answers": [
+      "Are you enjoying the film?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(that clock / work?)",
+     "answers": [
+      "Is that clock working?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(you / wait / for a bus?)",
+     "answers": [
+      "Are you waiting for a bus?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и закончите вопросы. Используйте глаголы из рамки:",
+   "wordBank": [
+    "cry",
+    "eat",
+    "go",
+    "laugh",
+    "look at",
+    "read"
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "What ",
+      " ",
+      "?"
+     ],
+     "answers": [
+      [
+       "are you"
+      ],
+      [
+       "reading"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Where ",
+      " she ",
+      "?"
+     ],
+     "answers": [
+      [
+       "is"
+      ],
+      [
+       "going"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "What ",
+      "?"
+     ],
+     "answers": [
+      [
+       "are you eating"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Why ",
+      "?"
+     ],
+     "answers": [
+      [
+       "are you crying"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "What ",
+      "?"
+     ],
+     "answers": [
+      [
+       "are they looking at"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Why ",
+      "?"
+     ],
+     "answers": [
+      [
+       "is he laughing"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "write",
+   "instruction": "Составьте вопросы, соблюдая правильный порядок слов.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(is / working / Ben / today)",
+     "answers": [
+      "Is Ben working today?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(what / the children / are / doing)",
+     "answers": [
+      "What are the children doing?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(you / are / listening / to me)",
+     "answers": [
+      "Are you listening to me?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(where / your friends / are / going)",
+     "answers": [
+      "Where are your friends going?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(are / watching / your parents / TV)",
+     "answers": [
+      "Are your parents watching TV?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(what / Jessica / is / cooking)",
+     "answers": [
+      "What is Jessica cooking?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(why / you / are / looking / at me)",
+     "answers": [
+      "Why are you looking at me?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(is / coming / the bus)",
+     "answers": [
+      "Is the bus coming?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "write",
+   "instruction": "Напишите краткие ответы (Yes, I am. / No, he isn’t. и т. д.).",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Are you watching TV?",
+     "answers": [
+      "No, I’m not."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Are you wearing a watch?",
+     "answers": [
+      "Yes, I am.",
+      "No, I’m not."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Are you eating something?",
+     "answers": [
+      "Yes, I am.",
+      "No, I’m not."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Is it raining?",
+     "answers": [
+      "Yes, it is.",
+      "No, it isn’t.",
+      "No, it’s not."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Are you sitting on the floor?",
+     "answers": [
+      "Yes, I am.",
+      "No, I’m not."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Are you feeling well?",
+     "answers": [
+      "Yes, I am.",
+      "No, I’m not."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (ужинать = have dinner, готовить = cook)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Что ты смотришь?",
+     "answers": [
+      "What are you watching?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вы сейчас ужинаете?",
+     "answers": [
+      "Are you having dinner now?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Сейчас идёт дождь?",
+     "answers": [
+      "Is it raining now?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Твои родители сегодня работают?",
+     "answers": [
+      "Are your parents working today?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Что Борис читает?",
+     "answers": [
+      "What is Boris reading?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Почему Джессика плачет?",
+     "answers": [
+      "Why is Jessica crying?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Куда вы сейчас идёте?",
+     "answers": [
+      "Where are you going now?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Что Сандра готовит?",
+     "answers": [
+      "What is Sandra cooking?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Вы ждёте меня?",
+     "answers": [
+      "Are you waiting for me?"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "“Что делают Бен и Том?” — “Они играют в парке”.",
+     "answers": [
+      "What are Ben and Tom doing? They are playing in the park.",
+      "What are Ben and Tom doing? They’re playing in the park."
+     ]
+    }
+   ]
+  }
+ ]
+}

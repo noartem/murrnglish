@@ -1,85 +1,114 @@
 {
   "unit": 91,
-  "title": "each and every",
+  "title": "the oldest · the most expensive",
   "pdfPages": [
-    194,
-    195
+    193,
+    194
   ],
   "exercises": [
     {
       "id": "91.1",
       "type": "fill-in",
-      "instruction": "Look at the pictures and complete the sentences with each or every.",
+      "instruction": "Напишите предложения, используя прилагательные в сравнительной (older и т. д.) и превосходной степени (the oldest и т. д.).",
       "items": [
         {
-          "num": 3,
+          "num": 1,
           "parts": [
-            "",
-            " side of a square is the same length."
+            "big/small\n(A/D) A is ",
+            " than D.\n(A) A is the ",
+            ".\n(B) B is the ",
+            "."
           ],
           "answers": [
             [
-              "Each"
+              "bigger"
+            ],
+            [
+              "biggest"
+            ],
+            [
+              "smallest"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "long/short\n(C/A) C is ",
+            " A.\n(D) D is ",
+            ".\n(B) B",
+            "."
+          ],
+          "answers": [
+            [
+              "longer than"
+            ],
+            [
+              "the longest"
+            ],
+            [
+              " is the shortest"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "young/old\n(D/C) D",
+            ".\n(B) ",
+            ".\n(C) ",
+            "."
+          ],
+          "answers": [
+            [
+              " is younger than C"
+            ],
+            [
+              "B is the youngest"
+            ],
+            [
+              "C is the oldest"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "",
-            " seat in the theatre was taken."
+            "expensive/cheap\n(D/A) ",
+            ".\n(C) ",
+            ".\n(A) ",
+            "."
           ],
           "answers": [
             [
-              "Every"
+              "D is more expensive than A"
+            ],
+            [
+              "C is the most expensive"
+            ],
+            [
+              "A is the cheapest"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "There are six apartments in the building. ",
-            " one has a balcony."
+            "good/bad\n(A/C) ",
+            ".\n(A) ",
+            ".\n(D) ",
+            "."
           ],
           "answers": [
             [
-              "Each"
-            ]
-          ]
-        },
-        {
-          "num": 6,
-          "parts": [
-            "There’s a train to London ",
-            " hour."
-          ],
-          "answers": [
+              "A is better than C"
+            ],
             [
-              "every"
-            ]
-          ]
-        },
-        {
-          "num": 7,
-          "parts": [
-            "She was wearing four rings – one on ",
-            " finger."
-          ],
-          "answers": [
+              "A is the best"
+            ],
             [
-              "each"
-            ]
-          ]
-        },
-        {
-          "num": 8,
-          "parts": [
-            "Our football team is playing well. We’ve won ",
-            " game this season."
-          ],
-          "answers": [
-            [
-              "every"
+              "D is the worst"
             ]
           ]
         }
@@ -88,17 +117,17 @@
     {
       "id": "91.2",
       "type": "fill-in",
-      "instruction": "Put in each, each of or every.",
+      "instruction": "Заполните пропуски. Используйте прилагательные в превосходной степени (the oldest и т. д.).",
       "items": [
         {
           "num": 1,
           "parts": [
-            "There were four books on the table. ",
-            " book was a different colour."
+            "This building is very old. It’s ",
+            " in the town."
           ],
           "answers": [
             [
-              "Each"
+              "the oldest building"
             ]
           ],
           "example": true
@@ -106,133 +135,84 @@
         {
           "num": 2,
           "parts": [
-            "The Olympic Games are held ",
-            " four years."
+            "It was a very happy day. It was ",
+            " of my life."
           ],
           "answers": [
             [
-              "every"
+              "the happiest day"
             ]
-          ],
-          "example": true
+          ]
         },
         {
           "num": 3,
           "parts": [
-            "",
-            " parent worries about their children."
+            "It’s a very good film. It’s ",
+            " I’ve ever seen."
           ],
           "answers": [
             [
-              "Every"
+              "the best film"
             ]
           ]
         },
         {
           "num": 4,
           "parts": [
-            "In a game of tennis there are two or four players. ",
-            " player has a racket."
+            "She’s a very popular singer. She’s ",
+            " in the country."
           ],
           "answers": [
             [
-              "Each"
+              "the most popular singer"
             ]
           ]
         },
         {
           "num": 5,
           "parts": [
-            "Nicola plays volleyball ",
-            " Thursday evening."
+            "It was a very bad mistake. It was ",
+            " I’ve ever made."
           ],
           "answers": [
             [
-              "every"
+              "the worst mistake"
             ]
           ]
         },
         {
           "num": 6,
           "parts": [
-            "I understood most of what they said but not ",
-            " word."
+            "It’s a very pretty village. It’s ",
+            " I’ve ever seen."
           ],
           "answers": [
             [
-              "every"
+              "the prettiest village"
             ]
           ]
         },
         {
           "num": 7,
           "parts": [
-            "The book is divided into five parts and ",
-            " these has three sections."
+            "It was a very cold day. It was ",
+            " of the year."
           ],
           "answers": [
             [
-              "each of"
+              "the coldest day"
             ]
           ]
         },
         {
           "num": 8,
           "parts": [
-            "I get paid ",
-            " four weeks."
+            "He’s a very boring person. He’s ",
+            " I’ve ever met."
           ],
           "answers": [
             [
-              "every"
-            ]
-          ]
-        },
-        {
-          "num": 9,
-          "parts": [
-            "I called the office two or three times, but ",
-            " time it was closed."
-          ],
-          "answers": [
-            [
-              "each"
-            ]
-          ]
-        },
-        {
-          "num": 10,
-          "parts": [
-            "Car seat belts save lives. ",
-            " driver should wear one."
-          ],
-          "answers": [
-            [
-              "Every"
-            ]
-          ]
-        },
-        {
-          "num": 11,
-          "parts": [
-            "A friend of mine has three children. I always give ",
-            " them a present at Christmas."
-          ],
-          "answers": [
-            [
-              "each of"
-            ]
-          ]
-        },
-        {
-          "num": 12,
-          "parts": [
-            "(from an exam) Answer all five questions. Write your answer to ",
-            " question on a separate sheet of paper."
-          ],
-          "answers": [
-            [
-              "each"
+              "the most boring person"
             ]
           ]
         }
@@ -241,105 +221,150 @@
     {
       "id": "91.3",
       "type": "write",
-      "instruction": "Complete the sentences using each.",
+      "instruction": "Напишите предложения с прилагательными в превосходной степени (the longest и т. д.). Используйте слова из всех рамок.",
+      "wordBank": [
+        "Sydney",
+        "Alaska",
+        "Everest",
+        "the Nile",
+        "Brazil",
+        "Jupiter",
+        "high",
+        "large",
+        "long",
+        "country",
+        "river",
+        "city",
+        "state",
+        "mountain",
+        "planet",
+        "Africa",
+        "South America",
+        "Australia",
+        "the world",
+        "the USA",
+        "the solar system"
+      ],
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "prompt": "The price of one of those oranges is 40 pence. Those oranges are 40 pence each.",
+          "prompt": "Sydney",
           "answers": [
-            "Those oranges are 40 pence each."
+            "Sydney is the largest city in Australia."
           ]
         },
         {
           "num": 2,
-          "prompt": "I had ten pounds and so did Sonia. Sonia and I ___________.",
+          "prompt": "Everest",
           "answers": [
-            "Sonia and I each had ten pounds.",
-            "Sonia and I had ten pounds each."
+            "Everest is the highest mountain in the world."
           ]
         },
         {
           "num": 3,
-          "prompt": "One of those postcards costs a pound. Those ___________.",
+          "prompt": "",
           "answers": [
-            "Those postcards cost a pound each.",
-            "Those postcards are a pound each."
+            "Brazil is the largest country in South America."
           ]
         },
         {
           "num": 4,
-          "prompt": "The hotel was expensive. I paid 200 dollars and so did you. We ___________.",
+          "prompt": "",
           "answers": [
-            "We each paid 200 dollars.",
-            "We paid 200 dollars each."
+            "Alaska is the largest state in the USA."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "The Nile is the longest river in Africa.",
+            "The Nile is the longest river in the world."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "Jupiter is the largest planet in the solar system."
           ]
         }
       ]
     },
     {
       "id": "91.4",
-      "type": "fill-in",
-      "instruction": "Put in everyone (1 word) or every one (2 words).",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (Какая (здесь) = Which; заказать = order; блюдо = dish; на экзамене = in the exam)",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Sarah is invited to a lot of parties and she goes to ",
-            "."
-          ],
+          "prompt": "Футбол – самый популярный спорт в мире.",
           "answers": [
-            [
-              "every one"
-            ]
-          ],
-          "example": true
+            "Football is the most popular sport in the world."
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "I remember school very clearly. I remember ",
-            " in my class."
-          ],
+          "prompt": "Это худшая книга, которую я когда-либо читал.",
           "answers": [
-            [
-              "everyone"
-            ]
+            "It’s the worst book I’ve ever read.",
+            "It’s the worst book I have ever read.",
+            "It’s the worst book that I’ve ever read.",
+            "It’s the worst book that I have ever read.",
+            "It is the worst book I’ve ever read.",
+            "It is the worst book I have ever read.",
+            "It is the worst book that I’ve ever read.",
+            "It is the worst book that I have ever read."
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "I asked her lots of questions and she answered ",
-            " correctly."
-          ],
+          "prompt": "Давай зайдём в ближайший супермаркет.",
           "answers": [
-            [
-              "every one"
-            ]
+            "Let’s go to the nearest supermarket."
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "",
-            " likes her."
-          ],
+          "prompt": "Гари заказал самое дорогое блюдо в ресторане.",
           "answers": [
-            [
-              "Everyone"
-            ]
+            "Gary ordered the most expensive dish in the restaurant."
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I dropped a tray of glasses. Unfortunately ",
-            " broke."
-          ],
+          "prompt": "Какая страна самая жаркая: Франция, Испания или Италия?",
           "answers": [
-            [
-              "every one"
-            ]
+            "Which country is the hottest: France, Spain or Italy?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я думаю, что это лучший итальянский ресторан в Лондоне.",
+          "answers": [
+            "I think it’s the best Italian restaurant in London.",
+            "I think it is the best Italian restaurant in London.",
+            "I think that it’s the best Italian restaurant in London.",
+            "I think that it is the best Italian restaurant in London."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Люси – самый интересный человек, которого я знаю.",
+          "answers": [
+            "Lucy is the most interesting person I know.",
+            "Lucy is the most interesting person that I know."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Вопрос 2 был самым простым на экзамене.",
+          "answers": [
+            "Question 2 was the easiest in the exam.",
+            "Question 2 was the easiest one in the exam."
           ]
         }
       ]

@@ -1,0 +1,60 @@
+{
+ "id": 22,
+ "topic": "present perfect и past simple",
+ "refs": "Разделы 19–21",
+ "pdfPages": [
+  262
+ ],
+ "exercise": {
+  "id": "22",
+  "type": "write",
+  "instruction": "Напишите предложения о себе.",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "prompt": "(yesterday morning)",
+    "answers": [
+     "I was late for work yesterday morning."
+    ]
+   },
+   {
+    "num": 2,
+    "prompt": "(last night)",
+    "answers": [
+     "I didn’t go out last night."
+    ]
+   },
+   {
+    "num": 3,
+    "prompt": "(yesterday afternoon)",
+    "answers": [
+     "I was at work yesterday afternoon."
+    ]
+   },
+   {
+    "num": 4,
+    "prompt": "(… days ago)",
+    "answers": [
+     "I went to a party a few days ago."
+    ]
+   },
+   {
+    "num": 5,
+    "prompt": "(last week)",
+    "answers": [
+     "It was my birthday last week."
+    ]
+   },
+   {
+    "num": 6,
+    "prompt": "(last year)",
+    "answers": [
+     "I went to America last year."
+    ]
+   }
+  ]
+ }
+}

@@ -1,233 +1,641 @@
 {
   "unit": 79,
-  "title": "Singular and plural",
-  "pdfPages": [170, 171],
+  "title": "not + anybody/anyone/anything · nobody/no-one/nothing",
+  "pdfPages": [
+    169,
+    170
+  ],
   "exercises": [
     {
       "id": "79.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Choose from the box.",
-      "wordBank": ["a", "are", "them", "doesn't", "pair", "it", "glasses", "some", "don't"],
+      "instruction": "Перепишите эти предложения, используя nobody/no-one или nothing.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "There’s nothing in the bag."
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["The trousers you bought for me ", " fit me."],
-          "answers": [["don't"]]
+          "parts": [
+            "There’s ",
+            ""
+          ],
+          "answers": [
+            [
+              "nobody in the office."
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["The jacket you bought for me ", " fit me."],
-          "answers": [["doesn't"]]
+          "parts": [
+            "I ",
+            ""
+          ],
+          "answers": [
+            [
+              "have nothing to do.",
+              "’ve got nothing to do."
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I need ", " scissors to cut this piece of material."],
-          "answers": [["some"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "There’s nothing on TV."
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I can't find my binoculars. Have you seen ", "?"],
-          "answers": [["them"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "There was no-one at home."
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I went shopping and bought a ", " of jeans."],
-          "answers": [["pair"]]
-        },
-        {
-          "num": 7,
-          "parts": ["Where ", " my sunglasses?"],
-          "answers": [["are"]]
-        },
-        {
-          "num": 8,
-          "parts": ["I went shopping and bought ", " pair of pyjamas."],
-          "answers": [["a"]]
-        },
-        {
-          "num": 9,
-          "parts": ["I don't know much about politics. I'm not interested in ", "."],
-          "answers": [["it"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "We found nothing."
+            ]
+          ]
         }
       ]
     },
     {
       "id": "79.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use a word from section B (news, series etc.).",
-      "wordBank": ["means", "series", "species", "news", "means", "series", "species"],
+      "instruction": "Перепишите эти предложения, используя anybody/anyone или anything.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "There isn’t anything in the bag."
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["The bicycle is a ", " of transport."],
-          "answers": [["means"]]
+          "parts": [
+            "There wasn’t ",
+            ""
+          ],
+          "answers": [
+            [
+              "anybody on the bus."
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["A lot of American TV ", " are shown in other countries."],
-          "answers": [["series"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "I don’t have anything to read.",
+              "I haven’t got anything to read."
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["The tiger is an endangered ", "."],
-          "answers": [["species"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "I don’t have anyone to help me.",
+              "I haven’t got anyone to help me."
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["There will be a ", " of meetings to discuss the problem."],
-          "answers": [["series"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "She didn’t hear anything."
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Fortunately the ", " wasn't as bad as we expected."],
-          "answers": [["news"]]
-        },
-        {
-          "num": 7,
-          "parts": ["How many ", " of bird are there in the world?"],
-          "answers": [["species"]]
-        },
-        {
-          "num": 8,
-          "parts": ["I didn't have my phone, so I had no ", " of contacting you."],
-          "answers": [["means"]]
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "We don’t have anything for dinner.",
+              "We haven’t got anything for dinner."
+            ]
+          ]
         }
       ]
     },
     {
       "id": "79.3",
-      "type": "choice",
-      "instruction": "Choose the correct form of the verb, singular or plural. In three sentences either the singular or plural verb is possible.",
+      "type": "fill-in",
+      "instruction": "Ответьте на вопросы, используя только nobody/no-one или nothing. Теперь ответьте на те же вопросы полными предложениями. Используйте nobody/no-one/nothing или anybody/anyone/anything:",
       "items": [
         {
-          "num": 1,
-          "options": ["is", "are"],
-          "answer": 0
+          "num": "1a",
+          "parts": [
+            "What did you say? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nothing."
+            ]
+          ],
+          "example": true
         },
         {
-          "num": 2,
-          "options": ["doesn't", "don't"],
-          "answer": 1
+          "num": "2a",
+          "parts": [
+            "Who saw you? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nobody."
+            ]
+          ],
+          "example": true
         },
         {
-          "num": 3,
-          "options": ["want", "wants"],
-          "answer": 0
+          "num": "3a",
+          "parts": [
+            "What do you want? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nothing."
+            ]
+          ]
         },
         {
-          "num": 4,
-          "options": ["was", "were"],
-          "answer": 0
+          "num": "4a",
+          "parts": [
+            "Who did you meet? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nobody.",
+              "No-one."
+            ]
+          ]
         },
         {
-          "num": 5,
-          "options": ["is", "are"],
-          "answer": 1
+          "num": "5a",
+          "parts": [
+            "Who knows the answer? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nobody.",
+              "No-one."
+            ]
+          ]
         },
         {
-          "num": 6,
-          "options": ["is", "are"],
-          "answer": 1
+          "num": "6a",
+          "parts": [
+            "What did you buy? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nothing."
+            ]
+          ]
         },
         {
-          "num": 7,
-          "options": ["Does", "Do"],
-          "answer": 1
+          "num": "7a",
+          "parts": [
+            "What happened? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nothing."
+            ]
+          ]
         },
         {
-          "num": 8,
-          "options": ["do", "does"],
-          "answer": 1
+          "num": "8a",
+          "parts": [
+            "Who was late? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Nobody.",
+              "No-one."
+            ]
+          ]
         },
         {
-          "num": 9,
-          "options": ["enjoy", "enjoys"],
-          "answer": 0
+          "num": "1b",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "I didn’t say anything."
+            ]
+          ],
+          "example": true
         },
         {
-          "num": 10,
-          "options": ["is", "are"],
-          "answer": 1
+          "num": "2b",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Nobody saw me."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": "3b",
+          "parts": [
+            "I don’t ",
+            ""
+          ],
+          "answers": [
+            [
+              "want anything."
+            ]
+          ]
+        },
+        {
+          "num": "4b",
+          "parts": [
+            "I ",
+            ""
+          ],
+          "answers": [
+            [
+              "didn’t meet anybody.",
+              "didn’t meet anyone."
+            ]
+          ]
+        },
+        {
+          "num": "5b",
+          "parts": [
+            "",
+            " the answer."
+          ],
+          "answers": [
+            [
+              "Nobody knows",
+              "No-one knows"
+            ]
+          ]
+        },
+        {
+          "num": "6b",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "I didn’t buy anything."
+            ]
+          ]
+        },
+        {
+          "num": "7b",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Nothing happened."
+            ]
+          ]
+        },
+        {
+          "num": "8b",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Nobody was late.",
+              "No-one was late."
+            ]
+          ]
         }
       ]
     },
     {
       "id": "79.4",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use is or isn't, and choose from the box.",
-      "wordBank": ["a lot to carry", "enough money", "too hot", "long enough", "a long time"],
+      "instruction": "Заполните пропуски. Используйте nobody/no-one/nothing или anybody/anyone/anything:",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "That house is empty. ",
+            " lives there."
+          ],
+          "answers": [
+            [
+              "Nobody"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Thirty degrees ", " for Tom. He doesn't like hot weather."],
-          "answers": [["isn't"]]
+          "parts": [
+            "Jack has a bad memory. He can’t remember ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 3,
-          "parts": ["Ten dollars ", ". We need more than that."],
-          "answers": [["isn't"]]
+          "parts": [
+            "Be quiet! Don’t say ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Four days ", " for a holiday. You need at least a week."],
-          "answers": [["isn't"]]
+          "parts": [
+            "I didn’t know about the meeting. ",
+            " told me."
+          ],
+          "answers": [
+            [
+              "Nobody",
+              "No-one"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Twenty kilos ", ". Are you sure you can manage?"],
-          "answers": [["is"]]
+          "parts": [
+            "'What did you have to eat?' '",
+            ". I wasn’t hungry.'"
+          ],
+          "answers": [
+            [
+              "Nothing"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I didn’t eat ",
+            ". I wasn’t hungry."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Helen was sitting alone. She wasn’t with ",
+            "."
+          ],
+          "answers": [
+            [
+              "anybody",
+              "anyone"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I’m afraid I can’t help you. There’s ",
+            " I can do."
+          ],
+          "answers": [
+            [
+              "nothing"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I don’t know ",
+            " about car engines."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "The museum is free. It doesn’t cost ",
+            " to go in."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I heard a knock on the door, but when I opened it, there was ",
+            " there."
+          ],
+          "answers": [
+            [
+              "nobody",
+              "no-one"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "The hotel receptionist spoke very fast. I didn’t understand ",
+            "."
+          ],
+          "answers": [
+            [
+              "anything"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "'What are you doing tonight?' '",
+            ". Why?'"
+          ],
+          "answers": [
+            [
+              "Nothing"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Sophie has gone away. ",
+            " knows where she is. She didn’t tell ",
+            " where she was going."
+          ],
+          "answers": [
+            [
+              "Nobody",
+              "No-one"
+            ],
+            [
+              "anybody",
+              "anyone"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "79.5",
       "type": "write",
-      "instruction": "Are these sentences OK? Correct them where necessary.",
+      "instruction": "Переведите предложения на английский язык. (рассказать = say)",
       "items": [
         {
+          "num": 1,
+          "prompt": "Дома никого нет.",
+          "answers": [
+            "There’s nobody at home.",
+            "There’s no-one at home.",
+            "There isn’t anybody at home.",
+            "There isn’t anyone at home."
+          ]
+        },
+        {
           "num": 2,
-          "prompt": "The committee want to change the rules of the club.",
-          "answers": ["OK"]
+          "prompt": "Сейчас мы ничего не можем сделать.",
+          "answers": [
+            "We can’t do anything now."
+          ]
         },
         {
           "num": 3,
-          "prompt": "Susan was wearing a black jeans.",
-          "answers": ["Susan was wearing black jeans."]
+          "prompt": "Я ничего не рассказала о Гари.",
+          "answers": [
+            "I said nothing about Gary.",
+            "I didn’t say anything about Gary."
+          ]
         },
         {
           "num": 4,
-          "prompt": "I like Martin and Jane. They're very nice persons.",
-          "answers": ["I like Martin and Jane. They're very nice people."]
+          "prompt": "Никто не знает, кто живёт в том доме.",
+          "answers": [
+            "Nobody knows who lives in that house.",
+            "No-one knows who lives in that house."
+          ]
         },
         {
           "num": 5,
-          "prompt": "I'm going to buy some new pyjamas.",
-          "answers": ["OK"]
+          "prompt": "В холодильнике ничего нет.",
+          "answers": [
+            "There’s nothing in the fridge.",
+            "There isn’t anything in the fridge."
+          ]
         },
         {
           "num": 6,
-          "prompt": "There was a police directing traffic in the street.",
-          "answers": ["There was a police officer / a policeman / a policewoman directing traffic in the street."]
+          "prompt": "Я ничего не знаю о компьютерах.",
+          "answers": [
+            "I know nothing about computers.",
+            "I don’t know anything about computers."
+          ]
         },
         {
           "num": 7,
-          "prompt": "This scissors isn't very sharp.",
-          "answers": ["These scissors aren't very sharp."]
+          "prompt": "“Ты видела кого-нибудь в парке?” – “Нет, никого”.",
+          "answers": [
+            "‘Did you see anybody in the park?’ ‘No, nobody.’",
+            "‘Did you see anybody in the park?’ ‘No, no-one.’",
+            "‘Did you see anyone in the park?’ ‘No, nobody.’",
+            "‘Did you see anyone in the park?’ ‘No, no-one.’"
+          ]
         },
         {
           "num": 8,
-          "prompt": "The company have decided to open a new factory.",
-          "answers": ["OK", "The company has decided to open a new factory."]
-        },
-        {
-          "num": 9,
-          "prompt": "This plant is very rare species.",
-          "answers": ["This plant is a very rare species."]
-        },
-        {
-          "num": 10,
-          "prompt": "Twelve hours are a long time to be on a plane.",
-          "answers": ["Twelve hours is a long time to be on a plane."]
+          "prompt": "Никто не сказал мне о вечеринке.",
+          "answers": [
+            "Nobody told me about the party.",
+            "No-one told me about the party."
+          ]
         }
       ]
     }

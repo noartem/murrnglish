@@ -1,0 +1,422 @@
+{
+ "unit": 19,
+ "title": "How long have you … ? (present perfect 4)",
+ "pdfPages": [
+  49,
+  50
+ ],
+ "exercises": [
+  {
+   "id": "19.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски в предложениях.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Helen is in Ireland. She ",
+      " in Ireland since Monday."
+     ],
+     "answers": [
+      [
+       "has been"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I know Lisa. I ",
+      " her for a long time."
+     ],
+     "answers": [
+      [
+       "have known"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Sarah and Andy are married. They ",
+      " married since 2005."
+     ],
+     "answers": [
+      [
+       "have been"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Ben is ill. He ",
+      " ill for the last few days."
+     ],
+     "answers": [
+      [
+       "has been"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We live in Scott Road. We ",
+      " there for a long time."
+     ],
+     "answers": [
+      [
+       "have lived",
+       "have been living"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Catherine works in a bank. She ",
+      " there for five years."
+     ],
+     "answers": [
+      [
+       "has worked",
+       "has been working"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Alan has a headache. He ",
+      " a headache since he got up this morning."
+     ],
+     "answers": [
+      [
+       "has had"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I’m learning English. I ",
+      " English for six months."
+     ],
+     "answers": [
+      [
+       "have beeen learning"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "19.2",
+   "type": "write",
+   "instruction": "Напишите вопросы, начинающиеся с How long … ?",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Helen is on holiday.",
+     "answers": [
+      "How long has she been on holiday?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Steve and Nadia are in Brazil.",
+     "answers": [
+      "How long have they been there?",
+      "How long have they been in Brazil?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I know Amy.",
+     "answers": [
+      "How long have you known her?",
+      "How long have you known Amy?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Emily is learning Italian.",
+     "answers": [
+      "How long has she been learning Italian?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "My brother lives in Canada.",
+     "answers": [
+      "How long has he lived in Canada?",
+      "How long has he been living in Canada?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I’m a teacher.",
+     "answers": [
+      "How long have you been a teacher?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "It is raining.",
+     "answers": [
+      "How long has it been raining?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "19.3",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки. Закончите предложения, используя выражения из рамки:",
+   "wordBank": [
+    "for ten minutes",
+    "all day",
+    "all her life",
+    "for ten years",
+    "since he was 20",
+    "since Sunday"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "They have been married for ten years."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She ",
+      ""
+     ],
+     "answers": [
+      [
+       "has lived in Wales all her life"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "They ",
+      ""
+     ],
+     "answers": [
+      [
+       "have been on holiday since Sunday"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "The sun ",
+      ""
+     ],
+     "answers": [
+      [
+       "has been shining all day"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "She ",
+      ""
+     ],
+     "answers": [
+      [
+       "has been waiting for ten minutes"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "He ",
+      ""
+     ],
+     "answers": [
+      [
+       "has had a beard since he was 20"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "19.4",
+   "type": "choice",
+   "instruction": "Выберите правильный вариант.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "Mark lives in Canada since April.",
+      "Mark has lived in Canada since April."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 2,
+     "options": [
+      "Jane and I are friends. I know her very well.",
+      "Jane and I are friends. I’ve known her very well."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 3,
+     "options": [
+      "Jane and I are friends. I know her for a long time.",
+      "Jane and I are friends. I’ve known her for a long time."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 4,
+     "options": [
+      "A: Sorry I’m late. How long are you waiting? B: Not long. Only five minutes.",
+      "A: Sorry I’m late. How long have you been waiting? B: Not long. Only five minutes."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 5,
+     "options": [
+      "Luke works in a hotel now. He likes his job a lot.",
+      "Luke has worked in a hotel now. He likes his job a lot."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 6,
+     "options": [
+      "Ruth is reading a newspaper. She is reading it for two hours.",
+      "Ruth is reading a newspaper. She has been reading it for two hours."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 7,
+     "options": [
+      "'How long do you live in this house?' 'About ten years.'",
+      "'How long have you lived in this house?' 'About ten years.'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 8,
+     "options": [
+      "'Is that a new coat?' 'No, I have this coat for a long time.'",
+      "'Is that a new coat?' 'No, I’ve had this coat for a long time.'"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 9,
+     "options": [
+      "Tom is in Spain at the moment. He is there for the last three days.",
+      "Tom is in Spain at the moment. He has been there for the last three days.",
+      "Tom has been in Spain at the moment. He is there for the last three days.",
+      "Tom has been in Spain at the moment. He has been there for the last three days."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "19.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (с 2008 года = since 2008; проводить = spend)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Мы живём в этом доме с 2008 года.",
+     "answers": [
+      "We’ve lived in this house since 2008.",
+      "We have lived in this house since 2008.",
+      "We’ve been living in this house since 2008.",
+      "We have been living in this house since 2008."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Как давно вы друзья с Ларой?",
+     "answers": [
+      "How long have you been friends with Lara?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Дети смотрят телевизор с шести часов.",
+     "answers": [
+      "The children have been watching TV since six o’clock."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Салли давно знает Бена.",
+     "answers": [
+      "Sally has known Ben for a long time."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Снег идёт всё утро.",
+     "answers": [
+      "It’s been snowing all morning.",
+      "It has been snowing all morning."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Саша давно изучает испанский?",
+     "answers": [
+      "Has Sasha been studying Spanish for a long time?",
+      "Has Sasha been learning Spanish for a long time?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Я болен. Я провёл весь день в кровати.",
+     "answers": [
+      "I’m ill. I’ve spent all day in bed.",
+      "I’m ill. I have spent all day in bed.",
+      "I am ill. I’ve spent all day in bed.",
+      "I am ill. I have spent all day in bed."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Как давно женаты Кевин и Алла?",
+     "answers": [
+      "How long have Kevin and Alla been married?"
+     ]
+    }
+   ]
+  }
+ ]
+}

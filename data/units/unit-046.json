@@ -1,308 +1,293 @@
 {
   "unit": 46,
-  "title": "have something done",
+  "title": "Who saw you? · Who did you see? (вопросы 2)",
   "pdfPages": [
-    104,
-    105
+    103,
+    104
   ],
   "exercises": [
     {
       "id": "46.1",
-      "type": "choice",
-      "instruction": "Tick (✓) the correct sentence, (a) or (b), for each picture.",
+      "type": "write",
+      "instruction": "Составьте вопросы с who или what. Здесь who/what – подлежащее.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "options": [
-            "Sarah is cutting her hair.",
-            "Sarah is having her hair cut."
-          ],
-          "answer": 1
+          "prompt": "Somebody broke the window.",
+          "answers": [
+            "Who broke the window?"
+          ]
         },
         {
           "num": 2,
-          "options": [
-            "Dan is cutting his hair.",
-            "Dan is having his hair cut."
-          ],
-          "answer": 0
+          "prompt": "Something fell off the shelf.",
+          "answers": [
+            "What fell off the shelf?"
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "Kate is painting the gate.",
-            "Kate is having the gate painted."
-          ],
-          "answer": 0
+          "prompt": "Somebody wants to see you.",
+          "answers": [
+            "Who wants to see me?"
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "Sue is taking a picture.",
-            "Sue is having her picture taken."
-          ],
-          "answer": 1
+          "prompt": "Somebody took my umbrella.",
+          "answers": [
+            "Who took your umbrella?",
+            "Who took it?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Something made me ill.",
+          "answers": [
+            "What made you ill?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Somebody is coming.",
+          "answers": [
+            "Who is coming?",
+            "Who’s coming?"
+          ]
         }
       ]
     },
     {
       "id": "46.2",
-      "type": "fill-in",
-      "instruction": "Put the words in the correct order.",
+      "type": "write",
+      "instruction": "Составьте вопросы с who/what (подлежащее или дополнение).",
+      "example": [
+        1,
+        2
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "We had ",
-            " the house painted a few weeks ago."
-          ],
+          "prompt": "I bought something.",
           "answers": [
-            [
-              "the house"
-            ]
-          ],
-          "example": true
+            "What did you buy?"
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "Sarah has her car ",
-            " once a year."
-          ],
+          "prompt": "Somebody lives in this house.",
           "answers": [
-            [
-              "serviced"
-            ]
+            "Who lives in this house?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "Have you had your eyes ",
-            " recently?"
-          ],
+          "prompt": "I phoned somebody.",
           "answers": [
-            [
-              "tested"
-            ]
+            "Who did you phone?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "I don't like ",
-            " my hair cut."
-          ],
+          "prompt": "Something happened last night.",
           "answers": [
-            [
-              "having"
-            ]
+            "What happened last night?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "It cost fifteen pounds to have my suit ",
-            "."
-          ],
+          "prompt": "Somebody knows the answer.",
           "answers": [
-            [
-              "cleaned"
-            ]
+            "Who knows the answer?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "You need to get this document ",
-            " as soon as possible."
-          ],
+          "prompt": "Somebody did the washing-up.",
           "answers": [
-            [
-              "translated"
-            ]
+            "Who did the washing-up?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Jane did something.",
+          "answers": [
+            "What did Jane do?",
+            "What did she do?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Something woke me up.",
+          "answers": [
+            "What woke you up?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Somebody saw the accident.",
+          "answers": [
+            "Who saw the accident?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "I saw somebody.",
+          "answers": [
+            "Who did you see?"
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "Somebody has got my pen.",
+          "answers": [
+            "Who has got your pen?",
+            "Who’s got your pen?",
+            "Who has got it?",
+            "Who’s got it?"
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "This word means something.",
+          "answers": [
+            "What does this word mean?",
+            "What does it mean?"
           ]
         }
       ]
     },
     {
       "id": "46.3",
-      "type": "fill-in",
-      "instruction": "Write sentences in the way shown.",
+      "type": "write",
+      "instruction": "Вы хотите узнать недостающую информацию (XXXXX). Напишите вопросы с who или what.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Lisa didn't repair the roof herself. She had it ",
-            "."
-          ],
+          "prompt": "I lost XXXXX yesterday, but fortunately XXXXX found it and gave it back to me.",
           "answers": [
-            [
-              "repaired"
-            ]
-          ],
-          "example": true
+            "What did you lose?",
+            "Who found it?"
+          ]
         },
         {
           "num": 2,
-          "parts": [
-            "I didn't cut my hair myself. I had it ",
-            "."
-          ],
+          "prompt": "XXXXX phoned me last night. She wanted XXXXX.",
           "answers": [
-            [
-              "cut"
-            ]
+            "Who phoned you?",
+            "What did she want?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "We didn't clean the carpets ourselves. We had them ",
-            "."
-          ],
+          "prompt": "I needed some advice, so I asked XXXXX. He said XXXXX.",
           "answers": [
-            [
-              "cleaned"
-            ]
+            "Who did you ask?",
+            "What did he say?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Ben didn't build that wall himself. He had it ",
-            "."
-          ],
+          "prompt": "I hear that XXXXX got married last week. XXXXX told me.",
           "answers": [
-            [
-              "built"
-            ]
+            "Who got married?",
+            "Who told you?"
           ]
         },
         {
           "num": 5,
-          "parts": [
-            "I didn't deliver the flowers myself. I had them ",
-            "."
-          ],
+          "prompt": "I met XXXXX on my way home this evening. She told me XXXXX.",
           "answers": [
-            [
-              "delivered"
-            ]
+            "Who did you meet?",
+            "What did she tell you?"
           ]
         },
         {
           "num": 6,
-          "parts": [
-            "Sarah didn't repair her shoes herself. She had them ",
-            "."
-          ],
+          "prompt": "Steve and I played tennis yesterday. XXXXX won. After the game we XXXXX.",
           "answers": [
-            [
-              "repaired"
-            ]
+            "Who won?",
+            "What did you do?",
+            "What did you do after the game?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "It was my birthday last week and I had some presents. XXXXX gave me a book and Catherine gave me XXXXX.",
+          "answers": [
+            "Who gave you a book?",
+            "Who gave you the book?",
+            "What did Catherine give you?"
           ]
         }
       ]
     },
     {
       "id": "46.4",
-      "type": "matching",
-      "instruction": "Which goes with which?",
-      "leftOptions": [
-        "My hair is getting long.",
-        "I really like this picture.",
-        "The washing machine is broken.",
-        "I want to wear earrings.",
-        "Can you recommend a dentist?",
-        "I've lost my key."
-      ],
-      "rightOptions": [
-        "I need to get it fixed.",
-        "I'll have to get a new one made.",
-        "I need to get my teeth checked.",
-        "I should get it cut.",
-        "I'm going to get my ears pierced.",
-        "I'm going to get it framed."
-      ],
-      "pairs": [
-        [
-          0,
-          3
-        ],
-        [
-          1,
-          5
-        ],
-        [
-          2,
-          0
-        ],
-        [
-          3,
-          4
-        ],
-        [
-          4,
-          2
-        ],
-        [
-          5,
-          1
-        ]
-      ]
-    },
-    {
-      "id": "46.5",
-      "type": "fill-in",
-      "instruction": "Use the words in brackets to complete the sentences.",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (встреча = meeting, матч = match)",
       "items": [
         {
           "num": 1,
-          "parts": [
-            "Did I tell you about Paul and Karen? They had their bags ",
-            "."
-          ],
+          "prompt": "Что вы делали вчера вечером?",
           "answers": [
-            [
-              "stolen"
-            ]
+            "What did you do last night?",
+            "What were you doing last night?"
           ]
         },
         {
           "num": 2,
-          "parts": [
-            "Security at the airport was strict. We had our bags ",
-            "."
-          ],
+          "prompt": "Кто может мне помочь?",
           "answers": [
-            [
-              "searched"
-            ]
+            "Who can help me?"
           ]
         },
         {
           "num": 3,
-          "parts": [
-            "I've had some good news! I've had my salary ",
-            "."
-          ],
+          "prompt": "Что тебе дал Гари?",
           "answers": [
-            [
-              "increased"
-            ]
+            "What did Gary give you?"
           ]
         },
         {
           "num": 4,
-          "parts": [
-            "Joe can't get a visa. He's had his application ",
-            "."
-          ],
+          "prompt": "Кто работает в том офисе?",
           "answers": [
-            [
-              "refused"
-            ]
+            "Who works in that office?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Кому ты сказала о встрече?",
+          "answers": [
+            "Who did you tell about the meeting?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Кто тебе сказал о встрече?",
+          "answers": [
+            "Who told you about the meeting?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Кто выиграл матч вчера?",
+          "answers": [
+            "Who won the match yesterday?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Где вы купили свою машину?",
+          "answers": [
+            "Where did you buy your car?"
           ]
         }
       ]

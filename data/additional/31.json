@@ -1,119 +1,468 @@
 {
   "id": 31,
-  "topic": "Adjectives and adverbs",
-  "refs": "Units 98–108",
+  "topic": "прошедшее, настоящее и будущее время",
+  "refs": "Разделы 4–23, 26–29, 53, 55, 99, 105",
   "pdfPages": [
-    332
+    266,
+    267
   ],
   "exercise": {
     "id": "31",
-    "type": "write",
-    "instruction": "There are mistakes in some of these sentences. Correct the sentences where necessary. Write 'OK' if the sentence is already correct.",
+    "type": "fill-in",
+    "instruction": "Ник и его друг Джон совершают кругосветное путешествие. Прочитайте имейлы Ника и его родителей и поставьте глаголы в правильную форму.",
+    "example": [
+      1
+    ],
     "items": [
       {
         "num": 1,
-        "prompt": "The building was total destroyed in the fire.",
+        "parts": [
+          "We’re in Los Angeles, the first stop on our round-the-world trip! ",
+          " (we/arrive) here yesterday, "
+        ],
         "answers": [
-          "totally destroyed"
-        ]
+          [
+            "We arrived"
+          ]
+        ],
+        "example": true
       },
       {
         "num": 2,
-        "prompt": "I didn't like the book. It was such a stupid story.",
+        "parts": [
+          "and now ",
+          " (we/stay) at a hotel near the airport."
+        ],
         "answers": [
-          "OK"
+          [
+            "we’re staying"
+          ]
         ]
       },
       {
         "num": 3,
-        "prompt": "The city is very polluted. It's the more polluted place I've ever been to.",
+        "parts": [
+          "The flight was twelve hours, but ",
+          " (we/enjoy) it."
+        ],
         "answers": [
-          "It's the most polluted place I've ever been to."
+          [
+            "we enjoyed"
+          ]
         ]
       },
       {
         "num": 4,
-        "prompt": "I was disappointing that I didn't get the job. I was well-qualified and the interview went well.",
+        "parts": [
+          "",
+          " (we/watch) some films and "
+        ],
         "answers": [
-          "I was disappointed that I didn't get the job."
+          [
+            "We watched"
+          ]
         ]
       },
       {
         "num": 5,
-        "prompt": "It's warm today, but there's quite a strong wind.",
+        "parts": [
+          "",
+          " (sleep) a few hours, which is unusual for me – "
+        ],
         "answers": [
-          "OK"
+          [
+            "slept"
+          ]
         ]
       },
       {
         "num": 6,
-        "prompt": "Joe works hardly, but he doesn't get paid very much.",
+        "parts": [
+          "usually ",
+          " (I/not/sleep) well on planes."
+        ],
         "answers": [
-          "Joe works hard, but he doesn't get paid very much."
+          [
+            "I don’t sleep"
+          ]
         ]
       },
       {
         "num": 7,
-        "prompt": "The company's offices are in a modern large building.",
+        "parts": [
+          "Today is a rest day for us and ",
+          " (we/not/do) anything special, "
+        ],
         "answers": [
-          "The company's offices are in a large modern building."
+          [
+            "we’re not doing",
+            "we’re not going to do"
+          ]
         ]
       },
       {
         "num": 8,
-        "prompt": "Dan is a very fast runner. I wish I could run as fast as him.",
+        "parts": [
+          "but tomorrow ",
+          " (we/go) to Hollywood "
+        ],
         "answers": [
-          "OK"
+          [
+            "we’re going"
+          ]
         ]
       },
       {
         "num": 9,
-        "prompt": "I missed the three last days of the course because I was ill.",
+        "parts": [
+          "",
+          " (see) the film studios."
+        ],
         "answers": [
-          "I missed the last three days of the course because I was ill."
+          [
+            "to see"
+          ]
         ]
       },
       {
         "num": 10,
-        "prompt": "You don't look happy. What's the matter?",
+        "parts": [
+          "",
+          " (we/not/decide) yet what to do after Los Angeles."
+        ],
         "answers": [
-          "OK"
+          [
+            "We haven’t decided"
+          ]
         ]
       },
       {
         "num": 11,
-        "prompt": "The weather has been unusual cold for the time of the year.",
+        "parts": [
+          "Jon ",
+          " (want) to drive up the coast to San Francisco, but I’d prefer "
+        ],
         "answers": [
-          "The weather has been unusually cold for the time of the year."
+          [
+            "wants"
+          ]
         ]
       },
       {
         "num": 12,
-        "prompt": "The water in the pool was too dirty to swim in it.",
+        "parts": [
+          "",
+          " (go) south to San Diego."
+        ],
         "answers": [
-          "The water in the pool was too dirty to swim in."
+          [
+            "to go"
+          ]
         ]
       },
       {
         "num": 13,
-        "prompt": "I got impatient because we had to wait so long time.",
+        "parts": [
+          "I hope all is well with you – ",
+          " (I/send) you another email next week."
+        ],
         "answers": [
-          "I got impatient because we had to wait such a long time.",
-          "I got impatient because we had to wait so long."
+          [
+            "I’ll send"
+          ]
         ]
       },
       {
         "num": 14,
-        "prompt": "Is this box big enough or do you need a bigger one?",
+        "parts": [
+          "Thanks for your mail. It’s good to hear that ",
+          " (you/have) a good time."
+        ],
         "answers": [
-          "OK"
+          [
+            "you’re having"
+          ]
         ]
       },
       {
         "num": 15,
-        "prompt": "This morning I got up more early than usual.",
+        "parts": [
+          "We’re fine – Ellie and Jo ",
+          " (work) hard for their exams next month."
+        ],
         "answers": [
-          "This morning I got up earlier than usual."
+          [
+            "are working",
+            "have been working"
+          ]
+        ]
+      },
+      {
+        "num": 16,
+        "parts": [
+          "Dad has been busy at work and last week ",
+          " (he/have) a lot of important meetings."
+        ],
+        "answers": [
+          [
+            "he had"
+          ]
+        ]
+      },
+      {
+        "num": 17,
+        "parts": [
+          "He’s a little tired – I think ",
+          " (he/need) a good holiday."
+        ],
+        "answers": [
+          [
+            "he needs"
+          ]
+        ]
+      },
+      {
+        "num": 18,
+        "parts": [
+          "",
+          " (we/be) in California for a month now."
+        ],
+        "answers": [
+          [
+            "We’ve been"
+          ]
+        ]
+      },
+      {
+        "num": 19,
+        "parts": [
+          "",
+          " (we/get) back to Los Angeles yesterday after "
+        ],
+        "answers": [
+          [
+            "We got"
+          ]
+        ]
+      },
+      {
+        "num": 20,
+        "parts": [
+          "",
+          " (see) many wonderful places."
+        ],
+        "answers": [
+          [
+            "seeing"
+          ]
+        ]
+      },
+      {
+        "num": 21,
+        "parts": [
+          "I think the place ",
+          " (I/like) most was Yosemite National Park – "
+        ],
+        "answers": [
+          [
+            "I liked"
+          ]
+        ]
+      },
+      {
+        "num": 22,
+        "parts": [
+          "it’s beautiful there and ",
+          " (we/go) cycling a lot."
+        ],
+        "answers": [
+          [
+            "we went"
+          ]
+        ]
+      },
+      {
+        "num": 23,
+        "parts": [
+          "The day before ",
+          " (we/leave), "
+        ],
+        "answers": [
+          [
+            "we left"
+          ]
+        ]
+      },
+      {
+        "num": 24,
+        "parts": [
+          "Jon ",
+          " (have) an accident on his bike. Luckily "
+        ],
+        "answers": [
+          [
+            "had"
+          ]
+        ]
+      },
+      {
+        "num": 25,
+        "parts": [
+          "",
+          " (he/not/injure), but the bike "
+        ],
+        "answers": [
+          [
+            "he wasn’t injured"
+          ]
+        ]
+      },
+      {
+        "num": 26,
+        "parts": [
+          "",
+          " (damage)."
+        ],
+        "answers": [
+          [
+            "was damaged"
+          ]
+        ]
+      },
+      {
+        "num": 27,
+        "parts": [
+          "",
+          " (we/change) our travel plans since my last message: now "
+        ],
+        "answers": [
+          [
+            "We’ve changed",
+            "We changed"
+          ]
+        ]
+      },
+      {
+        "num": 28,
+        "parts": [
+          "",
+          " (we/leave) for Hawaii on Monday (not Tuesday)."
+        ],
+        "answers": [
+          [
+            "we’re leaving"
+          ]
+        ]
+      },
+      {
+        "num": 29,
+        "parts": [
+          "",
+          " (we/stay) there for a week before "
+        ],
+        "answers": [
+          [
+            "We’re staying",
+            "We’re going to stay",
+            "We’ll stay"
+          ]
+        ]
+      },
+      {
+        "num": 30,
+        "parts": [
+          "",
+          " (fly) to New Zealand."
+        ],
+        "answers": [
+          [
+            "flying"
+          ]
+        ]
+      },
+      {
+        "num": 31,
+        "parts": [
+          "",
+          " (that/be) different, I’m sure!"
+        ],
+        "answers": [
+          [
+            "That will be",
+            "That’s going to be"
+          ]
+        ]
+      },
+      {
+        "num": 32,
+        "parts": [
+          "Have a good time in Hawaii! Ellie and Jo ",
+          " (finish) their exams yesterday – "
+        ],
+        "answers": [
+          [
+            "finished"
+          ]
+        ]
+      },
+      {
+        "num": 33,
+        "parts": [
+          "",
+          " (I/let) you know when "
+        ],
+        "answers": [
+          [
+            "I’ll let"
+          ]
+        ]
+      },
+      {
+        "num": 34,
+        "parts": [
+          "",
+          " (we/get) the results."
+        ],
+        "answers": [
+          [
+            "we get"
+          ]
+        ]
+      },
+      {
+        "num": 35,
+        "parts": [
+          "We’re all OK. Dad and I ",
+          " (look) forward to our holiday next month."
+        ],
+        "answers": [
+          [
+            "are looking"
+          ]
+        ]
+      },
+      {
+        "num": 36,
+        "parts": [
+          "",
+          " (we/go) to Italy for two weeks – "
+        ],
+        "answers": [
+          [
+            "We’re going"
+          ]
+        ]
+      },
+      {
+        "num": 37,
+        "parts": [
+          "",
+          " (we/send) you an email from there."
+        ],
+        "answers": [
+          [
+            "we’ll send"
+          ]
         ]
       }
     ]

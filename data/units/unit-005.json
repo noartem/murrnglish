@@ -1,64 +1,362 @@
 {
   "unit": 5,
-  "title": "Past simple (I did)",
-  "pdfPages": [22, 23],
+  "title": "are you doing? (present continuous, вопросы)",
+  "pdfPages": [
+    21,
+    22
+  ],
   "exercises": [
     {
       "id": "5.1",
-      "type": "fill-in",
-      "instruction": "Read what Laura says about a typical working day: Yesterday was a typical working day for Laura. Write what she did or didn\u2019t do yesterday.",
+      "type": "write",
+      "instruction": "Посмотрите на картинки и напишите вопросы.",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "parts": ["She ", " a big breakfast."], "answers": [["had"]]},
-        {"num": 3, "parts": ["She ", "."], "answers": [["walked to work"]]},
-        {"num": 4, "parts": ["It ", " to get to work."], "answers": [["took her (about) half an hour"]]},
-        {"num": 5, "parts": [" ", " at 8.45."], "answers": [["She started work"]]},
-        {"num": 6, "parts": [" ", " lunch."], "answers": [["She didn\u2019t have (any) lunch", "She didn\u2019t eat (any) lunch"]]},
-        {"num": 7, "parts": [" ", " at 5 o\u2019clock."], "answers": [["She finished work"]]},
-        {"num": 8, "parts": [" ", " tired when ", " home."], "answers": [["She was"], ["she got"]]},
-        {"num": 9, "parts": [" ", " a meal yesterday evening."], "answers": [["She cooked", "She made"]]},
-        {"num": 10, "parts": [" ", " out yesterday evening."], "answers": [["She didn\u2019t go"]]},
-        {"num": 11, "parts": [" ", " at 11 o\u2019clock."], "answers": [["She went to bed"]]},
-        {"num": 12, "parts": [" ", " well last night."], "answers": [["She slept"]]}
+        {
+          "num": 1,
+          "prompt": "(you / watch / it?)",
+          "answers": [
+            "Are you watching it?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(you / go / now?)",
+          "answers": [
+            "Are you going now?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(it / rain?)",
+          "answers": [
+            "Is it raining?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(you / enjoy / the film?)",
+          "answers": [
+            "Are you enjoying the film?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(that clock / work?)",
+          "answers": [
+            "Is that clock working?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(you / wait / for a bus?)",
+          "answers": [
+            "Are you waiting for a bus?"
+          ]
+        }
       ]
     },
     {
       "id": "5.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences using the following verbs in the correct form:",
-      "wordBank": ["buy", "catch", "cost", "fall", "hurt", "sell", "spend", "teach", "throw", "write"],
+      "instruction": "Посмотрите на картинки и закончите вопросы. Используйте глаголы из рамки:",
+      "wordBank": [
+        "cry",
+        "eat",
+        "go",
+        "laugh",
+        "look at",
+        "read"
+      ],
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 2, "parts": ["\u2018How did you learn to drive?\u2019 \u2018My father ", " me.\u2019"], "answers": [["taught"]]},
-        {"num": 3, "parts": ["We couldn\u2019t afford to keep our car, so we ", " it."], "answers": [["sold"]]},
-        {"num": 4, "parts": ["Dave ", " down the stairs this morning and ", " his leg."], "answers": [["fell"], ["hurt"]]},
-        {"num": 5, "parts": ["Joe ", " the ball to Sue, who ", " it."], "answers": [["threw"], ["caught"]]},
-        {"num": 6, "parts": ["Kate ", " a lot of money yesterday. She ", " a dress which ", " \u00a3100."], "answers": [["spent"], ["bought"], ["cost"]]}
+        {
+          "num": 1,
+          "parts": [
+            "What ",
+            " ",
+            "?"
+          ],
+          "answers": [
+            [
+              "are you"
+            ],
+            [
+              "reading"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Where ",
+            " she ",
+            "?"
+          ],
+          "answers": [
+            [
+              "is"
+            ],
+            [
+              "going"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What ",
+            "?"
+          ],
+          "answers": [
+            [
+              "are you eating"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Why ",
+            "?"
+          ],
+          "answers": [
+            [
+              "are you crying"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "What ",
+            "?"
+          ],
+          "answers": [
+            [
+              "are they looking at"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Why ",
+            "?"
+          ],
+          "answers": [
+            [
+              "is he laughing"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "5.3",
       "type": "write",
-      "instruction": "You ask James about his holiday in the US. Write your questions.",
+      "instruction": "Составьте вопросы, соблюдая правильный порядок слов.",
+      "example": [
+        1,
+        2
+      ],
       "items": [
-        {"num": 2, "prompt": "James: Yes, we hired a car in San Francisco.", "answers": ["How did you travel?", "How did you go?"]},
-        {"num": 3, "prompt": "James: Two weeks. We stopped at a lot of places along the way.", "answers": ["How long did it take you?", "How long was your trip?", "How long were you there?"]},
-        {"num": 4, "prompt": "James: Yes, small hotels or motels.", "answers": ["Where did you stay?"]},
-        {"num": 5, "prompt": "James: Yes, but it was very hot \u2013 sometimes too hot.", "answers": ["Was the weather good?"]},
-        {"num": 6, "prompt": "James: Of course. It was wonderful.", "answers": ["Did you go to the Grand Canyon?", "Did you see the Grand Canyon?", "Did you visit the Grand Canyon?"]}
+        {
+          "num": 1,
+          "prompt": "(is / working / Ben / today)",
+          "answers": [
+            "Is Ben working today?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(what / the children / are / doing)",
+          "answers": [
+            "What are the children doing?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(you / are / listening / to me)",
+          "answers": [
+            "Are you listening to me?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(where / your friends / are / going)",
+          "answers": [
+            "Where are your friends going?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(are / watching / your parents / TV)",
+          "answers": [
+            "Are your parents watching TV?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(what / Jessica / is / cooking)",
+          "answers": [
+            "What is Jessica cooking?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(why / you / are / looking / at me)",
+          "answers": [
+            "Why are you looking at me?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(is / coming / the bus)",
+          "answers": [
+            "Is the bus coming?"
+          ]
+        }
       ]
     },
     {
       "id": "5.4",
-      "type": "fill-in",
-      "instruction": "Complete the sentences. Put the verb into the correct form, positive or negative.",
+      "type": "write",
+      "instruction": "Напишите краткие ответы (Yes, I am. / No, he isn’t. и т. д.).",
+      "example": [
+        1
+      ],
       "items": [
-        {"num": 3, "parts": ["I knew Sarah was busy, so I ", " her. (disturb)"], "answers": [["didn\u2019t disturb"]]},
-        {"num": 4, "parts": ["We were very tired, so we ", " the party early. (leave)"], "answers": [["left"]]},
-        {"num": 5, "parts": ["It was hard carrying the bags. They ", " really heavy. (be)"], "answers": [["were"]]},
-        {"num": 6, "parts": ["The bed was very uncomfortable. I ", " well. (sleep)"], "answers": [["didn\u2019t sleep"]]},
-        {"num": 7, "parts": ["This watch wasn\u2019t expensive. It ", " much. (cost)"], "answers": [["didn\u2019t cost"]]},
-        {"num": 8, "parts": ["The window was open and a bird ", " into the room. (fly)"], "answers": [["flew"]]},
-        {"num": 9, "parts": ["I was in a hurry, so I ", " time to call you. (have)"], "answers": [["didn\u2019t have"]]},
-        {"num": 10, "parts": ["I didn\u2019t like the hotel. The room ", " very clean. (be)"], "answers": [["wasn\u2019t"]]}
+        {
+          "num": 1,
+          "prompt": "Are you watching TV?",
+          "answers": [
+            "No, I’m not."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Are you wearing a watch?",
+          "answers": [
+            "Yes, I am.",
+            "No, I’m not."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Are you eating something?",
+          "answers": [
+            "Yes, I am.",
+            "No, I’m not."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Is it raining?",
+          "answers": [
+            "Yes, it is.",
+            "No, it isn’t.",
+            "No, it’s not."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Are you sitting on the floor?",
+          "answers": [
+            "Yes, I am.",
+            "No, I’m not."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Are you feeling well?",
+          "answers": [
+            "Yes, I am.",
+            "No, I’m not."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (ужинать = have dinner, готовить = cook)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Что ты смотришь?",
+          "answers": [
+            "What are you watching?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вы сейчас ужинаете?",
+          "answers": [
+            "Are you having dinner now?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Сейчас идёт дождь?",
+          "answers": [
+            "Is it raining now?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Твои родители сегодня работают?",
+          "answers": [
+            "Are your parents working today?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Что Борис читает?",
+          "answers": [
+            "What is Boris reading?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Почему Джессика плачет?",
+          "answers": [
+            "Why is Jessica crying?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Куда вы сейчас идёте?",
+          "answers": [
+            "Where are you going now?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Что Сандра готовит?",
+          "answers": [
+            "What is Sandra cooking?"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Вы ждёте меня?",
+          "answers": [
+            "Are you waiting for me?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "“Что делают Бен и Том?” — “Они играют в парке”.",
+          "answers": [
+            "What are Ben and Tom doing? They are playing in the park.",
+            "What are Ben and Tom doing? They’re playing in the park."
+          ]
+        }
       ]
     }
   ]

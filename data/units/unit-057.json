@@ -1,64 +1,488 @@
 {
   "unit": 57,
-  "title": "Verb + -ing or to \u2026 2 (try, need, help)",
-  "pdfPages": [126, 127],
+  "title": "get",
+  "pdfPages": [
+    125,
+    126
+  ],
   "exercises": [
     {
       "id": "57.1",
       "type": "fill-in",
-      "instruction": "Put the verb into the correct form.",
+      "instruction": "Закончите предложения. Используйте get/gets и слова из рамки.",
+      "wordBank": [
+        "a doctor",
+        "a lot of rain",
+        "a taxi",
+        "my email",
+        "the job",
+        "a good salary",
+        "a new laptop",
+        "a ticket",
+        "some milk",
+        "your boots"
+      ],
       "items": [
-        {"num": 1, "parts": ["I was very tired. I tried to keep my eyes open, but I couldn\u2019t."], "answers": [], "example": true},
-        {"num": 2, "parts": ["I tried ", " (keep) the shelf, but I wasn\u2019t tall enough. (reach)"], "answers": [["to reach"]]},
-        {"num": 3, "parts": ["I rang the doorbell, but there was no answer. Then I tried ", " on the window, but there was still no answer. (knock)"], "answers": [["knocking"]]},
-        {"num": 4, "parts": ["We tried ", " the fire out, but without success. We had to call the fire brigade. (put)"], "answers": [["to put"]]},
-        {"num": 5, "parts": ["Please leave me alone. I\u2019m trying ", ". (concentrate)"], "answers": [["to concentrate"]]},
-        {"num": 6, "parts": ["Sue needed to borrow some money. She tried ", " Carl, but he didn\u2019t have any. (ask)"], "answers": [["asking"]]},
-        {"num": 7, "parts": ["Mr Bennett isn\u2019t here right now. Please try ", " later. (call)"], "answers": [["calling"]]},
-        {"num": 8, "parts": ["The woman\u2019s face was familiar. I tried ", " where I\u2019d seen her before. (remember)"], "answers": [["to remember"]]},
-        {"num": 9, "parts": ["If you have a problem with the computer, try ", " it. (restart)"], "answers": [["restarting"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Did you ",
+            " ? I sent it a week ago."
+          ],
+          "answers": [
+            [
+              "get my email"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Where did you ",
+            "? They’re very nice."
+          ],
+          "answers": [
+            [
+              "get your boots"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Quick! This man is ill. We need to ",
+            "."
+          ],
+          "answers": [
+            [
+              "get a doctor"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I don’t want to walk home. Let’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "get a taxi"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Tom has an interview tomorrow. I hope he ",
+            "."
+          ],
+          "answers": [
+            [
+              "gets the job"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "When you go to the shop, can you ",
+            "?"
+          ],
+          "answers": [
+            [
+              "get some milk"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "‘Are you going to the concert?’ ‘Yes, if I can ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "get a ticket"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Helen has a well-paid job. She ",
+            "."
+          ],
+          "answers": [
+            [
+              "gets a good salary"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "The weather is horrible here in winter. We ",
+            "."
+          ],
+          "answers": [
+            [
+              "get a lot of rain"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I’m going to ",
+            ". The one I have is too slow."
+          ],
+          "answers": [
+            [
+              "get a new laptop"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "57.2",
-      "type": "write",
-      "instruction": "For each picture, write a sentence with need(s) + one of the following verbs: clean, cut, empty, paint, tighten",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте getting и слова из рамки:",
+      "wordBank": [
+        "cold",
+        "dark",
+        "late",
+        "married",
+        "ready"
+      ],
       "items": [
-        {"num": 1, "prompt": "This room isn\u2019t very nice. It needs painting.", "answers": ["This room isn\u2019t very nice. It needs painting."]},
-        {"num": 2, "prompt": "The grass is very long.", "answers": ["It needs cutting."]},
-        {"num": 3, "prompt": "The windows are dirty.", "answers": ["They need cleaning."]},
-        {"num": 4, "prompt": "The screws are loose.", "answers": ["They need tightening."]},
-        {"num": 5, "prompt": "The bin is full.", "answers": ["It needs emptying."]}
+        {
+          "num": 1,
+          "parts": [
+            "Drink your coffee. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "getting cold"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Turn on the light. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "getting dark"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘I’m ",
+            " next week.’ ‘Really? Congratulations!’"
+          ],
+          "answers": [
+            [
+              "getting married"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "‘Where’s Karen?’ ‘She’s ",
+            " to go out.’"
+          ],
+          "answers": [
+            [
+              "getting ready"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "It’s ",
+            ". It’s time to go home."
+          ],
+          "answers": [
+            [
+              "getting late"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "57.3",
-      "type": "choice",
-      "instruction": "Which is right?",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте get/gets/got и слова из рамки:",
+      "wordBank": [
+        "angry",
+        "better",
+        "hungry",
+        "lost",
+        "married",
+        "old",
+        "wet"
+      ],
       "items": [
-        {"num": 1, "options": ["getting", "to get"], "answer": 1},
-        {"num": 2, "options": ["washing", "to wash"], "answer": 0},
-        {"num": 3, "options": ["looking", "to look"], "answer": 0},
-        {"num": 4, "options": ["thinking", "to think"], "answer": 1},
-        {"num": 5, "options": ["cutting", "to cut"], "answer": 0},
-        {"num": 6, "options": ["going", "to go"], "answer": 1},
-        {"num": 7, "options": ["ironing", "to iron"], "answer": 1},
-        {"num": 8, "options": ["ironing", "to iron"], "answer": 0}
+        {
+          "num": 1,
+          "parts": [
+            "If you don’t eat, you ",
+            "."
+          ],
+          "answers": [
+            [
+              "get hungry"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Don’t go out in the rain. You’ll ",
+            "."
+          ],
+          "answers": [
+            [
+              "get wet"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "My brother ",
+            " last year. His wife’s name is Sarah."
+          ],
+          "answers": [
+            [
+              "got married"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Mark is always very calm. He never ",
+            "."
+          ],
+          "answers": [
+            [
+              "gets angry"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We tried to find the hotel, but we ",
+            "."
+          ],
+          "answers": [
+            [
+              "got lost"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Everybody wants to stay young, but we all ",
+            "."
+          ],
+          "answers": [
+            [
+              "get old"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Yesterday the weather wasn’t so good at first, but it ",
+            " during the day."
+          ],
+          "answers": [
+            [
+              "got better"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "57.4",
-      "type": "fill-in",
-      "instruction": "Put the verb into the correct form.",
+      "type": "write",
+      "instruction": "Напишите предложения, используя I left … и got to … .",
       "items": [
-        {"num": 1, "parts": ["I don\u2019t like him, but I can\u2019t help feeling sorry for him."], "answers": [], "example": true},
-        {"num": 2, "parts": ["I\u2019ve lost my phone. Can you help me ", " for it? (look)"], "answers": [["look", "to look"]]},
-        {"num": 3, "parts": ["They were talking very loudly. We couldn\u2019t help ", " what they said. (overhear)"], "answers": [["overhearing"]]},
-        {"num": 4, "parts": ["He looks so funny. Whenever I see him, I can\u2019t help ", ". (smile)"], "answers": [["smiling"]]},
-        {"num": 5, "parts": ["The fine weather helped ", " it a really nice holiday. (make)"], "answers": [["make", "to make"]]},
-        {"num": 6, "parts": ["Did you help ", " the meeting? (organise)"], "answers": [["organise", "to organise"]]},
-        {"num": 7, "parts": ["I think about what happened all the time. I can\u2019t help ", " about it. (think)"], "answers": [["thinking"]]},
-        {"num": 8, "parts": ["I can\u2019t help you ", " a job. You have to find one yourself. (get)"], "answers": [["get", "to get"]]}
+        {
+          "num": 1,
+          "prompt": "home / 7.30 → work / 8.15",
+          "answers": [
+            "I left home at 7.30 and got to work at 8.15."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "London / 10.15 → Bristol / 11.45\nI left London at 10.15 and",
+          "answers": [
+            "I left London at 10.15 and got to Bristol at 11.45."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "the party / 11.15 → home / midnight",
+          "answers": [
+            "I left the party at 11.15 and got home at midnight."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Напишите предложение о себе.\nI left",
+          "answers": [
+            "I left home at 8.30 and got to the airport at 10 o’clock."
+          ],
+          "selfCheck": true
+        }
+      ],
+      "example": [
+        1
+      ]
+    },
+    {
+      "id": "57.5",
+      "type": "fill-in",
+      "instruction": "Вставьте got in / got out of / got on / got off.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Kate ",
+            " the car and drove away."
+          ],
+          "answers": [
+            [
+              "got in"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I ",
+            " the bus and walked to my house from the bus stop."
+          ],
+          "answers": [
+            [
+              "got off"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Isabel ",
+            " the car, shut the door and went into a shop."
+          ],
+          "answers": [
+            [
+              "got out of"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I made a stupid mistake. I ",
+            " the wrong train."
+          ],
+          "answers": [
+            [
+              "got on"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "57.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя get/got/getting.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Твой ужин остывает.",
+          "answers": [
+            "Your dinner is getting cold."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Сегодня утром Нина добралась на работу в 11 часов.",
+          "answers": [
+            "This morning Nina got to work at 11.",
+            "This morning Nina got to work at 11 o’clock."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Вы получили мой имейл?",
+          "answers": [
+            "Did you get my email?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Мы с Салли заблудились в центре города.",
+          "answers": [
+            "Sally and I got lost in the city centre."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Вчера я пришла домой очень поздно.",
+          "answers": [
+            "I got home very late last night.",
+            "Last night I got home very late."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Где ты купила эту куртку?",
+          "answers": [
+            "Where did you get this jacket?",
+            "Where did you get that jacket?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Где мне нужно выходить из автобуса?",
+          "answers": [
+            "Where do I need to get off the bus?",
+            "Where do I have to get off the bus?",
+            "Where should I get off the bus?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Антон завтра женится.",
+          "answers": [
+            "Anton is getting married tomorrow."
+          ]
+        }
       ]
     }
   ]

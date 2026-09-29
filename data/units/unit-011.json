@@ -1,172 +1,421 @@
 {
   "unit": 11,
-  "title": "how long have you (been) … ?",
-  "pdfPages": [34, 35],
+  "title": "was/were",
+  "pdfPages": [
+    33,
+    34
+  ],
   "exercises": [
     {
       "id": "11.1",
-      "type": "choice",
-      "instruction": "Which is right?",
-      "example": [1],
+      "type": "write",
+      "instruction": "Посмотрите на картинки. Напишите, где эти люди были вчера в 3 часа дня.",
+      "example": [
+        1
+      ],
       "items": [
         {
           "num": 1,
-          "options": ["I know him very well.", "I've known him very well."],
-          "answer": 0
+          "prompt": "Joe",
+          "answers": [
+            "Joe was in bed."
+          ]
         },
         {
           "num": 2,
-          "options": ["How long do you live here?", "How long have you lived here?"],
-          "answer": 1
+          "prompt": "Jack and Kate",
+          "answers": [
+            "Jack and Kate were at the cinema.",
+            "Jack and Kate were in the cinema."
+          ]
         },
         {
           "num": 3,
-          "options": ["It's raining.", "It's been raining."],
-          "answer": 0
+          "prompt": "Sue",
+          "answers": [
+            "Sue was at the station."
+          ]
         },
         {
           "num": 4,
-          "options": ["The weather is awful since I arrived here.", "The weather has been awful since I arrived here."],
-          "answer": 1
+          "prompt": "Mr and Mrs Hall",
+          "answers": [
+            "Mr and Mrs Hall were at a restaurant.",
+            "Mr and Mrs Hall were in a restaurant."
+          ]
         },
         {
           "num": 5,
-          "options": ["Are you waiting long?", "Have you been waiting long?"],
-          "answer": 1
+          "prompt": "Ben",
+          "answers": [
+            "Ben was on the beach.",
+            "Ben was on a beach.",
+            "Ben was at the beach.",
+            "Ben was at the seaside."
+          ]
         },
         {
           "num": 6,
-          "options": ["We're living in New Street now.", "We've been living in New Street now."],
-          "answer": 0
-        },
-        {
-          "num": 7,
-          "options": ["I don't know her very long.", "I haven't known her very long."],
-          "answer": 1
-        },
-        {
-          "num": 8,
-          "options": ["She's there on a business trip.", "She's been there on a business trip."],
-          "answer": 0
-        },
-        {
-          "num": 9,
-          "options": ["How long do you have it?", "How long have you had it?"],
-          "answer": 1
-        },
-        {
-          "num": 10,
-          "options": ["I'm feeling ill all day.", "I've been feeling ill all day."],
-          "answer": 1
+          "prompt": "And you? I",
+          "answers": [
+            "I was at work."
+          ],
+          "selfCheck": true
         }
       ]
     },
     {
       "id": "11.2",
-      "type": "write",
-      "instruction": "Read the situations and write questions using the words in brackets.",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя am/is/are (настоящее время) или was/were (прошедшее время).",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "Last year she ",
+            " 22, so she ",
+            " 23 now."
+          ],
+          "answers": [
+            [
+              "was"
+            ],
+            [
+              "is"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "prompt": "(how long / you / know / Katherine?)",
-          "answers": ["How long have you known Katherine?"]
+          "parts": [
+            "Today the weather ",
+            " nice, but yesterday it ",
+            " very cold."
+          ],
+          "answers": [
+            [
+              "is"
+            ],
+            [
+              "was"
+            ]
+          ]
         },
         {
           "num": 3,
-          "prompt": "(how long / sister / in Australia?)",
-          "answers": ["How long has your sister been in Australia?"]
+          "parts": [
+            "I ",
+            " hungry. Can I have something to eat?"
+          ],
+          "answers": [
+            [
+              "’m",
+              "am"
+            ]
+          ]
         },
         {
           "num": 4,
-          "prompt": "(how long / you / teach / English?)",
-          "answers": ["How long have you been teaching English?", "How long have you taught English?"]
+          "parts": [
+            "I feel fine this morning, but I ",
+            " very tired last night."
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
         },
         {
           "num": 5,
-          "prompt": "(how long / you / have / that jacket?)",
-          "answers": ["How long have you had that jacket?"]
+          "parts": [
+            "Where ",
+            " you at 11 o’clock last Friday morning?"
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ]
         },
         {
           "num": 6,
-          "prompt": "(how long / Joe / work / airport?)",
-          "answers": ["How long has Joe been working at the airport?", "How long has Joe worked at the airport?"]
+          "parts": [
+            "Don’t buy those shoes. They ",
+            " very expensive."
+          ],
+          "answers": [
+            [
+              "’re",
+              "are"
+            ]
+          ]
         },
         {
           "num": 7,
-          "prompt": "(you / always / live / in Chicago?)",
-          "answers": ["Have you always lived in Chicago?"]
+          "parts": [
+            "I like your new jacket. ",
+            " it expensive?"
+          ],
+          "answers": [
+            [
+              "Was"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "This time last year I ",
+            " in Paris."
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "‘Where ",
+            " Sam and Joe?’ ‘I don’t know. They ",
+            " here a few minutes ago.’"
+          ],
+          "answers": [
+            [
+              "are"
+            ],
+            [
+              "were"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "11.3",
       "type": "fill-in",
-      "instruction": "Complete B's answers to A's questions.",
+      "instruction": "Заполните пропуски, используя was/were или wasn’t/weren’t.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "We weren’t happy with the hotel. Our room ",
+            " very small and it ",
+            " clean."
+          ],
+          "answers": [
+            [
+              "was"
+            ],
+            [
+              "wasn’t"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Mark ",
+            " at work last week because he ",
+            " ill. He’s better now."
+          ],
+          "answers": [
+            [
+              "wasn’t"
+            ],
+            [
+              "was"
+            ]
+          ]
+        },
+        {
           "num": 3,
-          "parts": ["Yes, he ", " married for ten years."],
-          "answers": [["'s been", "has been"]]
+          "parts": [
+            "Yesterday ",
+            " a public holiday, so the banks ",
+            " closed. They’re open today."
+          ],
+          "answers": [
+            [
+              "was"
+            ],
+            [
+              "were"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Yes, she ", " married to a German guy."],
-          "answers": [["'s", "is"]]
+          "parts": [
+            "‘",
+            " Kate and Ben at the party?’ ‘Kate ",
+            " there, but Ben ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "Were"
+            ],
+            [
+              "was",
+              "wasn’t"
+            ],
+            [
+              "wasn’t",
+              "was"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["No, I ", " tennis for years."],
-          "answers": [["haven't played"]]
+          "parts": [
+            "Where are my keys? They ",
+            " on the table, but they’re not there now."
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Yes, I ", " for about 20 minutes."],
-          "answers": [["'ve been waiting", "have been waiting"]]
+          "parts": [
+            "You ",
+            " at home last night. Where ",
+            " you?"
+          ],
+          "answers": [
+            [
+              "weren’t"
+            ],
+            [
+              "were"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11.4",
+      "type": "write",
+      "instruction": "Составьте вопросы из этих слов + was/were, соблюдая правильный порядок слов.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(late / you / this morning / why?)",
+          "answers": [
+            "Why were you late this morning?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(difficult / your exam?)",
+          "answers": [
+            "Was your exam difficult?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(last week / where / Sue and Chris?)",
+          "answers": [
+            "Where were Sue and Chris last week?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(your new camera / how much?)",
+          "answers": [
+            "How much was your new camera?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(angry / you / yesterday / why?)",
+          "answers": [
+            "Why were you angry yesterday?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(nice / the weather / last week?)",
+          "answers": [
+            "Was the weather nice last week?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (сегодня утро = this morning, сложный = difficult, солнечный = sunny, за границей = abroad)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "На прошлой неделе я была в Кембридже.",
+          "answers": [
+            "I was in Cambridge last week.",
+            "Last week I was in Cambridge."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Ирина была в офисе сегодня утром?",
+          "answers": [
+            "Was Irina in the office this morning?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Анна и Лиз были на вечеринке?",
+          "answers": [
+            "Were Anna and Liz at the party?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Экзамен не был сложным.",
+          "answers": [
+            "The exam wasn’t difficult.",
+            "The exam was not difficult."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Сколько стоила твоя новая сумка?",
+          "answers": [
+            "How much was your new bag?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Погода была холодная, но солнечная.",
+          "answers": [
+            "The weather was cold but sunny."
+          ]
         },
         {
           "num": 7,
-          "parts": ["Yes, we ", " each other a long time."],
-          "answers": [["'ve known", "have known"]]
+          "prompt": "Прошлым летом мои родители были за границей.",
+          "answers": [
+            "My parents were abroad last summer.",
+            "Last summer my parents were abroad."
+          ]
         },
         {
           "num": 8,
-          "parts": ["No, he ", " ill since I've known him."],
-          "answers": [["hasn't been"]]
-        },
-        {
-          "num": 9,
-          "parts": ["Yes, he ", " in Milan."],
-          "answers": [["'s lived", "has lived"]]
-        },
-        {
-          "num": 10,
-          "parts": ["Yes, she ", " in Berlin for many years."],
-          "answers": [["'s lived", "has lived", "'s been living", "has been living"]]
-        },
-        {
-          "num": 11,
-          "parts": ["Yes, he ", " TV all evening."],
-          "answers": [["'s been watching", "has been watching"]]
-        },
-        {
-          "num": 12,
-          "parts": ["No, I ", " TV since last weekend."],
-          "answers": [["haven't watched"]]
-        },
-        {
-          "num": 13,
-          "parts": ["Yes, I ", " a headache all morning."],
-          "answers": [["'ve had", "have had"]]
-        },
-        {
-          "num": 14,
-          "parts": ["No, I ", " to the cinema for ages."],
-          "answers": [["haven't been"]]
-        },
-        {
-          "num": 15,
-          "parts": ["Yes, I ", " to go to New York. (use always / want)"],
-          "answers": [["'ve always wanted", "have always wanted"]]
+          "prompt": "Где вы были вчера вечером?",
+          "answers": [
+            "Where were you last night?",
+            "Where were you yesterday evening?"
+          ]
         }
       ]
     }

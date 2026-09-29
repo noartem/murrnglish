@@ -1,0 +1,539 @@
+{
+ "unit": 32,
+ "title": "must · mustn’t · don’t need to",
+ "pdfPages": [
+  75,
+  76
+ ],
+ "exercises": [
+  {
+   "id": "32.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте must + глаголы из рамки:",
+   "wordBank": [
+    "be",
+    "eat",
+    "go",
+    "learn",
+    "meet",
+    "wash",
+    "win"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’m very hungry. I ",
+      " something."
+     ],
+     "answers": [
+      [
+       "must eat"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Marilyn is a very interesting person. You ",
+      " her."
+     ],
+     "answers": [
+      [
+       "must meet"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "My hands are dirty. I ",
+      " them."
+     ],
+     "answers": [
+      [
+       "must wash"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "You ",
+      " to drive. It will be very useful."
+     ],
+     "answers": [
+      [
+       "must learn"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I ",
+      " shopping. I need to buy some food."
+     ],
+     "answers": [
+      [
+       "must go"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The game tomorrow is very important for us. We ",
+      "."
+     ],
+     "answers": [
+      [
+       "must win"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "You can’t always have things immediately. You ",
+      " patient."
+     ],
+     "answers": [
+      [
+       "must be"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "32.2",
+   "type": "fill-in",
+   "instruction": "Вставьте I must или I had to.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " walk home last night. There were no buses."
+     ],
+     "answers": [
+      [
+       "I had to"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It’s late. ",
+      " go now."
+     ],
+     "answers": [
+      [
+       "I must"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I don’t usually work on Saturdays, but last Saturday ",
+      " work."
+     ],
+     "answers": [
+      [
+       "I had to"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " get up early tomorrow. I have a lot to do."
+     ],
+     "answers": [
+      [
+       "I must"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I came here by train. The train was full and ",
+      " stand all the way."
+     ],
+     "answers": [
+      [
+       "I had to"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I was nearly late for my appointment this morning. ",
+      " run to get there on time."
+     ],
+     "answers": [
+      [
+       "I had to"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I forgot to phone David yesterday. ",
+      " phone him later today."
+     ],
+     "answers": [
+      [
+       "I must"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "32.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте mustn’t или don’t need to + глаголы из рамки:",
+   "wordBank": [
+    "forget",
+    "go",
+    "lose",
+    "phone",
+    "rush",
+    "wait"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I ",
+      " home yet. I can stay a little longer."
+     ],
+     "answers": [
+      [
+       "don’t need to go"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "We have a lot of time. We ",
+      "."
+     ],
+     "answers": [
+      [
+       "don’t need to rush"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Keep these papers in a safe place. You ",
+      " them."
+     ],
+     "answers": [
+      [
+       "mustn’t lose"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I’m not ready yet, but you ",
+      " for me. You can go now and I’ll come later."
+     ],
+     "answers": [
+      [
+       "don’t need to wait"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We ",
+      " to turn off the lights before we leave."
+     ],
+     "answers": [
+      [
+       "mustn’t forget"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I must contact David, but I ",
+      " him – I can send him an email."
+     ],
+     "answers": [
+      [
+       "don’t need to phone"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "32.4",
+   "type": "matching",
+   "instruction": "Найдите предложения с одинаковым значением.",
+   "leftOptions": [
+    "We can leave the meeting early.",
+    "We must leave the meeting early.",
+    "We mustn’t leave the meeting early.",
+    "We had to leave the meeting early.",
+    "We don’t need to leave the meeting early."
+   ],
+   "rightOptions": [
+    "We must stay until the end.",
+    "We couldn’t stay until the end.",
+    "We can’t stay until the end.",
+    "We can stay until the end.",
+    "We don’t need to stay until the end."
+   ],
+   "pairs": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     3
+    ]
+   ]
+  },
+  {
+   "id": "32.5",
+   "type": "fill-in",
+   "instruction": "Вставьте must / mustn’t / had to / don’t need to.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "You ",
+      " go. You can stay here if you want."
+     ],
+     "answers": [
+      [
+       "don’t need to"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It’s a fantastic film. You ",
+      " see it."
+     ],
+     "answers": [
+      [
+       "must"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The restaurant won’t be busy tonight. We ",
+      " reserve a table."
+     ],
+     "answers": [
+      [
+       "don’t need to"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I was very busy last week. I ",
+      " work every evening."
+     ],
+     "answers": [
+      [
+       "had to"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I want to know what happened. You ",
+      " tell me."
+     ],
+     "answers": [
+      [
+       "must"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I don’t want Sue to know what happened. You ",
+      " tell her."
+     ],
+     "answers": [
+      [
+       "mustn’t"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I ",
+      " go now or I’ll be late for my appointment."
+     ],
+     "answers": [
+      [
+       "must"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "‘Why were you so late?’ ‘I ",
+      " wait half an hour for a bus.’"
+     ],
+     "answers": [
+      [
+       "had to"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "We ",
+      " decide now. We can decide later."
+     ],
+     "answers": [
+      [
+       "don’t need to"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "It’s Lisa’s birthday next week. I ",
+      " forget to buy her a present."
+     ],
+     "answers": [
+      [
+       "mustn’t"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "32.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя must, mustn’t, had to и don’t need to. (день рождения = birthday; вести себя тихо = be quiet)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Я должна позвонить матери. Сегодня её день рождения.",
+     "answers": [
+      "I must phone my mother. It’s her birthday today.",
+      "I must phone my mother. It is her birthday today.",
+      "I must call my mother. It’s her birthday today.",
+      "I must call my mother. It is her birthday today.",
+      "I must ring my mother. It’s her birthday today.",
+      "I must ring my mother. It is her birthday today."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Это важная встреча. Ты не должен опаздывать!",
+     "answers": [
+      "It’s an important meeting. You mustn’t be late!",
+      "It’s an important meeting. You must not be late!",
+      "It is an important meeting. You mustn’t be late!",
+      "It is an important meeting. You must not be late!"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Ты должен прочитать её новую книгу!",
+     "answers": [
+      "You must read her new book!"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Нам не нужно покупать Тому подарок.",
+     "answers": [
+      "We don’t need to buy Tom a present.",
+      "We don’t need to buy Tom a gift.",
+      "We don’t have to buy Tom a present.",
+      "We don’t have to buy Tom a gift."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Сегодня я должна была встать очень рано.",
+     "answers": [
+      "I had to get up very early today.",
+      "Today I had to get up very early."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Вы должны вести себя тихо в библиотеке.",
+     "answers": [
+      "You must be quiet in the library."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Нам нельзя говорить Нине о вечеринке. Это сюрприз!",
+     "answers": [
+      "We mustn’t tell Nina about the party. It’s a surprise!",
+      "We mustn’t tell Nina about the party. It is a surprise!",
+      "We must not tell Nina about the party. It’s a surprise!",
+      "We must not tell Nina about the party. It is a surprise!"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Мне обязательно нужно почистить свои туфли. Они грязные.",
+     "answers": [
+      "I must clean my shoes. They’re dirty.",
+      "I must clean my shoes. They are dirty."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,165 +1,155 @@
 {
   "id": 29,
-  "topic": "a/an and the",
-  "refs": "Units 69–78",
+  "topic": "прошедшее, настоящее и будущее время",
+  "refs": "Разделы 4–21, 26–29",
   "pdfPages": [
-    331
+    265
   ],
   "exercise": {
     "id": "29",
     "type": "fill-in",
-    "instruction": "Put in a/an or the where necessary. Leave the space empty if the sentence is already complete.",
+    "instruction": "Допишите предложения.",
     "items": [
       {
         "num": 1,
+        "example": true,
         "parts": [
-          "I don't usually like staying at – hotels, but last summer we spent two weeks at ",
-          " very nice hotel by the sea."
+          "A: ",
+          " (you/go) out last night? B: No, ",
+          " (I/stay) at home. A: What ",
+          " (you/do)? B: ",
+          " (I/watch) TV. A: ",
+          " (you/go) out tomorrow night? B: Yes, ",
+          " (I/go) to the cinema. A: Which film ",
+          " (you/see)? B: ",
+          " (I/not/know). ",
+          " (I/not/decide) yet."
         ],
         "answers": [
           [
-            "a"
+            "Did you go"
+          ],
+          [
+            "I stayed"
+          ],
+          [
+            "did you do"
+          ],
+          [
+            "I watched"
+          ],
+          [
+            "Are you going"
+          ],
+          [
+            "I’m going"
+          ],
+          [
+            "are you going to see"
+          ],
+          [
+            "I don’t know"
+          ],
+          [
+            "I haven’t decided"
           ]
-        ],
-        "example": true
+        ]
       },
       {
         "num": 2,
         "parts": [
-          "If you go to live in ",
-          " foreign country, you should try and learn ",
-          " language."
+          "A: Are you on holiday here? B: Yes, we are. A: How long ",
+          " (you/be) here? B: ",
+          " (we/arrive) yesterday. A: And how long ",
+          " (you/stay)? B: Until the end of next week. A: And ",
+          " (you/like) it here? B: Yes, ",
+          " (we/have) a wonderful time."
         ],
         "answers": [
           [
-            "a"
+            "have you been"
           ],
           [
-            "the"
+            "We arrived"
+          ],
+          [
+            "are you staying",
+            "are you going to stay"
+          ],
+          [
+            "do you like"
+          ],
+          [
+            "we’re having"
           ]
         ]
       },
       {
         "num": 3,
         "parts": [
-          "Helen is ",
-          " economist. She lives in ",
-          " United States and works for ",
-          " investment company."
+          "A: ",
+          " (I/go) out with Chris and Steve this evening. ",
+          " (you/want) to come with us? B: Yes, where ",
+          " (you/go)? A: To the Italian restaurant in North Street. ",
+          " (you/ever/eat) there? B: Yes, ",
+          " (I/be) there two or three times. In fact I ",
+          " (go) there last night, but I’d love to go again!"
         ],
         "answers": [
           [
-            "an"
+            "I’m going"
           ],
           [
-            "the"
+            "Do you want"
           ],
           [
-            "an"
+            "are you going"
+          ],
+          [
+            "Have you ever eaten"
+          ],
+          [
+            "I’ve been"
+          ],
+          [
+            "I went"
           ]
         ]
       },
       {
         "num": 4,
         "parts": [
-          "I love sport, especially tennis. I play two or three times ",
-          " week if I can, but I'm not ",
-          " very good player."
+          "A: ",
+          " (I/lose) my glasses again. ",
+          " (you/see) them? B: ",
+          " (you/wear) them when ",
+          " (I/come) in. A: Well, ",
+          " (I/not/wear) them now, so where are they? B: ",
+          " (you/look) in the kitchen? A: No, ",
+          " (I/go) and look now."
         ],
         "answers": [
           [
-            "a"
+            "I’ve lost"
           ],
           [
-            "a"
-          ]
-        ]
-      },
-      {
-        "num": 5,
-        "parts": [
-          "I won't be home for dinner this evening. I'm meeting some friends after work and we're going to ",
-          " cinema."
-        ],
-        "answers": [
-          [
-            "the"
-          ]
-        ]
-      },
-      {
-        "num": 6,
-        "parts": [
-          "When unemployment is high, it's difficult for people to find work. It's ",
-          " big problem."
-        ],
-        "answers": [
-          [
-            "a"
-          ]
-        ]
-      },
-      {
-        "num": 7,
-        "parts": [
-          "There was ",
-          " accident as I was going home last night. Two people were taken to ",
-          " hospital. I think most accidents are caused by people driving too fast."
-        ],
-        "answers": [
-          [
-            "an"
+            "Have you seen"
           ],
           [
-            "the"
-          ]
-        ]
-      },
-      {
-        "num": 8,
-        "parts": [
-          "A: What's ",
-          " name of ",
-          " hotel where you're staying?\n      B: ",
-          " Ambassador. It's in Queen Street in ",
-          " city centre. It's near ",
-          " station."
-        ],
-        "answers": [
-          [
-            "the"
+            "You were wearing"
           ],
           [
-            "the"
+            "I came"
           ],
           [
-            "The"
+            "I’m not wearing"
           ],
           [
-            "the"
+            "Have you looked",
+            "Did you look"
           ],
           [
-            "the"
-          ]
-        ]
-      },
-      {
-        "num": 9,
-        "parts": [
-          "I have two brothers. ",
-          " older one is training to be ",
-          " pilot. ",
-          " younger one is still at school. When he leaves school, he wants to go to university to study law."
-        ],
-        "answers": [
-          [
-            "The"
-          ],
-          [
-            "a"
-          ],
-          [
-            "The"
+            "I’ll go"
           ]
         ]
       }

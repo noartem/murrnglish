@@ -1,0 +1,547 @@
+{
+ "unit": 44,
+ "title": "isn’t, haven’t, don’t и т. д. (отрицания)",
+ "pdfPages": [
+  99,
+  100
+ ],
+ "exercises": [
+  {
+   "id": "44.1",
+   "type": "write",
+   "instruction": "Сделайте эти предложения отрицательными.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "He’s gone away.",
+     "answers": [
+      "He hasn’t gone away."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "They’re married.",
+     "answers": [
+      "They aren’t married.",
+      "They’re not married."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I’ve had dinner.",
+     "answers": [
+      "I haven’t had dinner."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "It’s cold today.",
+     "answers": [
+      "It isn’t cold today."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "We’ll be late.",
+     "answers": [
+      "We won’t be late."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "You should go.",
+     "answers": [
+      "You shouldn’t go."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "44.2",
+   "type": "write",
+   "instruction": "Сделайте эти предложения отрицательными. Используйте don’t/doesn’t/didn’t.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "She saw me.",
+     "answers": [
+      "She didn’t see me."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I like cheese.",
+     "answers": [
+      "I don’t like cheese."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "They understood.",
+     "answers": [
+      "They didn’t understand."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "He lives here.",
+     "answers": [
+      "He doesn’t live here."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Go away!",
+     "answers": [
+      "Don’t go away!"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I did the shopping.",
+     "answers": [
+      "I didn’t do the shopping."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "44.3",
+   "type": "write",
+   "instruction": "Сделайте эти предложения отрицательными.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "She can swim.",
+     "answers": [
+      "She can’t swim."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "They’ve arrived.",
+     "answers": [
+      "They haven’t arrived."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I went to the bank.",
+     "answers": [
+      "I didn’t go to the bank."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "He speaks German.",
+     "answers": [
+      "He doesn’t speak German."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "We were angry.",
+     "answers": [
+      "We weren’t angry."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "He’ll be pleased.",
+     "answers": [
+      "He won’t be pleased."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Call me tonight.",
+     "answers": [
+      "Don’t call me tonight."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "It rained yesterday.",
+     "answers": [
+      "It didn’t rain yesterday."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "I could hear them.",
+     "answers": [
+      "I couldn’t hear them."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "I believe you.",
+     "answers": [
+      "I don’t believe you."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "44.4",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, вставив отрицательную форму (isn’t/haven’t/don’t и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "They aren’t rich. They ",
+      " got much money."
+     ],
+     "answers": [
+      [
+       "haven’t"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Would you like something to eat?’ ‘No, thank you. I ",
+      " hungry.’"
+     ],
+     "answers": [
+      [
+       "‘m not",
+       "am not"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I ",
+      " find my glasses. Have you seen them?"
+     ],
+     "answers": [
+      [
+       "can’t"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Steve ",
+      " go to the cinema much. He prefers to watch DVDs at home."
+     ],
+     "answers": [
+      [
+       "doesn’t"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We can walk to the station from here. It ",
+      " very far."
+     ],
+     "answers": [
+      [
+       "isn’t",
+       "’s not"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Where’s Jane?’ ‘I ",
+      " know. I ",
+      " seen her today.’"
+     ],
+     "answers": [
+      [
+       "don’t"
+      ],
+      [
+       "haven’t"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Be careful! ",
+      " fall!"
+     ],
+     "answers": [
+      [
+       "Don’t"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "We went to a restaurant last night. I ",
+      " like the food very much."
+     ],
+     "answers": [
+      [
+       "didn’t"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I’ve been to Japan many times, but I ",
+      " been to Korea."
+     ],
+     "answers": [
+      [
+       "haven’t"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Julia ",
+      " be here tomorrow. She’s going away."
+     ],
+     "answers": [
+      [
+       "won’t"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "‘Who broke that window?’ ‘Not me. I ",
+      " do it.’"
+     ],
+     "answers": [
+      [
+       "didn’t"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "We didn’t see what happened. We ",
+      " looking at the time."
+     ],
+     "answers": [
+      [
+       "weren’t"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "Lisa bought a new coat a few days ago, but she ",
+      " worn it yet."
+     ],
+     "answers": [
+      [
+       "hasn’t"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "You ",
+      " drive so fast. It’s dangerous."
+     ],
+     "answers": [
+      [
+       "shouldn’t",
+       "mustn’t"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "44.5",
+   "type": "write",
+   "instruction": "Вы задали Гари вопросы. Он на них ответил ‘Yes’ или ‘No’. Напишите о Гари, используя утвердительные или отрицательные предложения.",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Are you married? No.",
+     "answers": [
+      "He isn’t married."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Do you live in London? Yes.",
+     "answers": [
+      "He lives in London."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Were you born in London? No.",
+     "answers": [
+      "He wasn’t born in London."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Do you like London? No.",
+     "answers": [
+      "He doesn’t like London."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Would you like to live in the country? Yes.",
+     "answers": [
+      "He’d like to live in the country."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Can you drive? Yes.",
+     "answers": [
+      "He can drive."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Have you got a car? No.",
+     "answers": [
+      "He hasn’t got a car.",
+      "He doesn’t have a car."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Do you read newspapers? No.",
+     "answers": [
+      "He doesn’t read newspapers."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Are you interested in politics? No.",
+     "answers": [
+      "He isn’t interested in politics."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Do you watch TV most evenings? Yes.",
+     "answers": [
+      "He watches TV most evenings."
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "Did you watch TV last night? No.",
+     "answers": [
+      "He didn’t watch TV last night."
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "Did you go out last night? Yes.",
+     "answers": [
+      "He went out last night."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "44.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [волноваться = worry\nповерить = believe\nтак сильно = so much\nопаздывать на встречу = be late for the meeting]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Не волнуйся. Я не забуду о твоём дне рождения.",
+     "answers": [
+      "Don’t worry. I won’t forget about your birthday.",
+      "Don’t worry. I won’t forget your birthday."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Ира не могла поверить новостям.",
+     "answers": [
+      "Ira couldn’t believe the news.",
+      "Ira could not believe the news."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Вам не следует волноваться так сильно.",
+     "answers": [
+      "You shouldn’t worry so much.",
+      "You should not worry so much."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я не хотел бы быть учителем.",
+     "answers": [
+      "I wouldn’t like to be a teacher.",
+      "I would not like to be a teacher."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Мне нельзя опаздывать на встречу.",
+     "answers": [
+      "I mustn’t be late for the meeting.",
+      "I must not be late for the meeting."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Пожалуйста, не уходите без меня.",
+     "answers": [
+      "Please don’t leave without me.",
+      "Please don’t go without me."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Музеи не были открыты в понедельник.",
+     "answers": [
+      "The museums weren’t open on Monday.",
+      "The museums were not open on Monday.",
+      "On Monday the museums weren’t open.",
+      "On Monday the museums were not open."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я не знал, что делать.",
+     "answers": [
+      "I didn’t know what to do.",
+      "I did not know what to do."
+     ]
+    }
+   ]
+  }
+ ]
+}
