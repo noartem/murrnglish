@@ -1,0 +1,13 @@
+{
+  "name": "English Grammar in Use — Web Course",
+  "short_name": "Grammar in Use",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fcf7ec",
+  "theme_color": "#2f6fed",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/cover.png", "sizes": "1112x1497", "type": "image/png", "purpose": "any" }
+  ]
+}

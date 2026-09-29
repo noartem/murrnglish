@@ -480,6 +480,87 @@ ok(
   ),
 );
 
+// ---------- Flow 12: download the course, go offline, keep learning ----------
+// The service worker registers in a real build only (import.meta.env.PROD), so
+// this flow runs against `vite preview` and is skipped on the dev server.
+if (BASE.includes("4173")) {
+  // a browser tab is not an installed app: there is no download button at all
+  ok(
+    "F12 offline button hidden in a browser tab",
+    (await page.locator('[aria-label="Offline: download the course"]').count()) === 0,
+  );
+
+  // standalone is emulated — installing for real is a browser-chrome action.
+  // Only display-mode matchMedia is stubbed: App also listens to
+  // (max-width: 768px) through addEventListener, and Object.create keeps the
+  // original MediaQueryList prototype chain on the stub while .matches is
+  // overridden. The stub is only ever read, never subscribed to.
+  const ctx2 = await browser.newContext({ viewport: { width: 1400, height: 900 } });
+  await ctx2.addInitScript(() => {
+    const orig = window.matchMedia.bind(window);
+    window.matchMedia = (q) =>
+      /display-mode/.test(q) ? Object.create(orig(q), { matches: { value: true } }) : orig(q);
+  });
+  const p2 = await ctx2.newPage();
+  p2.on("pageerror", (e) => results.push(["FAIL", "F12 pageerror", String(e).slice(0, 140)]));
+  await p2.goto(BASE + "/", { waitUntil: "load" });
+  // the download fills Cache Storage from the page, but the offline reload
+  // afterwards needs the page to be under this worker's control
+  await p2.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+    if (navigator.serviceWorker.controller) return;
+    await new Promise((r) =>
+      navigator.serviceWorker.addEventListener("controllerchange", r, { once: true }),
+    );
+  });
+  ok(
+    "F12 installed app shows the offline button",
+    await p2.locator('[aria-label="Offline: download the course"]').isVisible(),
+  );
+  await p2.locator('[aria-label="Offline: download the course"]').click();
+  await p2.getByRole("button", { name: "Download course", exact: true }).click();
+  ok("F12 progress bar appears", await p2.locator(".dlbar").isVisible());
+  await p2.locator("text=Downloaded for offline use").waitFor({ timeout: 180000 });
+  ok(
+    "F12 download finishes and offers a remove action",
+    await p2.getByRole("button", { name: "Remove downloaded files", exact: true }).isVisible(),
+  );
+
+  // offline now. The hash step is same-document, so the only request left is
+  // the reload — a real navigation the service worker has to answer from the
+  // cache, followed by the unit JSON, the book and the pdf.js chunks.
+  await ctx2.setOffline(true);
+  await p2.evaluate(() => {
+    location.hash = "#u5";
+  });
+  await p2.reload({ waitUntil: "load" });
+  await p2.waitForSelector(".pagecanvas", { timeout: 60000 });
+  ok("F12 offline unit renders the book", (await p2.locator(".pagecanvas").count()) >= 1);
+  await p2.waitForSelector(".rightpane .exercise", { timeout: 60000 });
+  ok("F12 offline exercises render", await p2.locator(".rightpane .exercise").first().isVisible());
+  ok("F12 no errors while offline", !results.some((r) => r[1] === "F12 pageerror"));
+
+  // the way back out: removing drops the cache and the flag, and the panel
+  // offers the download again
+  await p2.locator('[aria-label="Offline: download the course"]').click();
+  await p2.getByRole("button", { name: "Remove downloaded files", exact: true }).click();
+  await p2.getByRole("button", { name: "Download course", exact: true }).waitFor({ timeout: 30000 });
+  const removed = await p2.evaluate(async () => {
+    const c = await caches.open("egu-course-offline-v1");
+    return {
+      book: (await c.match("/book.pdf", { ignoreVary: true })) !== undefined,
+      flag: localStorage.getItem("egu-course-offline-v1"),
+    };
+  });
+  ok(
+    "F12 removing the download clears the cache and the flag",
+    !removed.book && removed.flag === null,
+    JSON.stringify(removed),
+  );
+  await ctx2.setOffline(false);
+  await ctx2.close();
+}
+
 await mctx.close();
 await ctx.close();
 await browser.close();

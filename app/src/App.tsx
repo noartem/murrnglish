@@ -12,7 +12,7 @@ import {
   ShortcutsModal,
 } from "./components/ShortcutsHelp";
 import { SC, useCourseShortcuts } from "./shortcuts";
-import { ArrowLeft, ArrowRight, Check, Menu, Share2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Download, Menu, Share2 } from "lucide-react";
 import {
   OverlayScrollbarsComponent,
   type OverlayScrollbarsComponentRef,
@@ -32,6 +32,8 @@ import {
 } from "./progress";
 import type { Progress } from "./progress";
 import { ProgressModal } from "./components/ProgressModal";
+import { OfflinePanel } from "./components/OfflinePanel";
+import { isStandalone } from "./offline";
 import { Home, type HomeContinue } from "./components/Home";
 import { SHARE_HASH_RE, decodeShare, encodeShare } from "./share";
 // content routes (what a hash can deep-link to); Route adds the landing
@@ -104,6 +106,11 @@ export default function App() {
   const [paneFocusTick, setPaneFocusTick] = useState(0);
   const preHelpFocus = useRef<HTMLElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
+  // the offline download window: its button exists only in the installed app
+  const [offlineOpen, setOfflineOpen] = useState(false);
+  // computed once — an install relaunches the app in standalone, so this
+  // cannot change under a live session
+  const [standalone] = useState(isStandalone);
   // Shift+I open: the modal underlines each control's trigger letter
   const [modalHints, setModalHints] = useState(false);
   const [notice, setNotice] = useState("");
@@ -626,6 +633,16 @@ export default function App() {
           >
             <Share2 size={15} aria-hidden />
           </button>
+          {standalone && (
+            <button
+              className="themebtn"
+              onClick={() => setOfflineOpen(true)}
+              title="Offline — download the course"
+              aria-label="Offline: download the course"
+            >
+              <Download size={15} aria-hidden />
+            </button>
+          )}
           <ThemeToggle />
         </div>
       </header>
@@ -893,6 +910,7 @@ export default function App() {
         onShare={handleShare}
         hintKeys={modalHints}
       />
+      <OfflinePanel open={offlineOpen} onClose={() => setOfflineOpen(false)} />
       {helpOpen && <ShortcutsModal onClose={closeHelp} />}
     </div>
   );

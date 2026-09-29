@@ -1634,6 +1634,23 @@ textarea.winline {
   background: var(--ok-solid);
 }
 
+/* "Download course" progress: the same track/fill language as the battery,
+   stretched to the modal width */
+.dlbar {
+  height: 8px;
+  margin-top: 10px;
+  border-radius: 99px;
+  background: var(--track);
+  overflow: hidden;
+}
+
+.dlbar-fill {
+  height: 100%;
+  background: var(--ok-solid);
+  border-radius: 99px;
+  transition: width 0.15s ease;
+}
+
 .modal-opt {
   display: flex;
   align-items: center;
