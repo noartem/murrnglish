@@ -139,6 +139,7 @@ body {
 .themebtn,
 .helpbtn,
 .helpclose,
+.draweraction,
 .cardactions button,
 .mark,
 .unitlink,
@@ -156,6 +157,7 @@ body {
 .themebtn:active,
 .helpbtn:active,
 .helpclose:active,
+.draweraction:active,
 .cardactions button:active,
 .mark:active,
 .unitlink:active {
@@ -497,8 +499,10 @@ body {
   color: var(--accent);
 }
 
-/* modal buttons that carry a label, not just an icon */
-.modal-actions .themebtn {
+/* buttons that carry a label next to their icon, not just the icon: the
+   modal actions and the labelled theme row in the phone drawer */
+.modal-actions .themebtn,
+.themebtn.labelled {
   width: auto;
   height: auto;
   padding: 7px 18px;
@@ -510,7 +514,8 @@ body {
   color: var(--text);
 }
 
-.modal-actions .themebtn:hover {
+.modal-actions .themebtn:hover,
+.themebtn.labelled:hover {
   border-color: var(--accent);
   --press-edge: var(--accent-deep);
 }
@@ -1918,9 +1923,6 @@ kbd {
     margin-top: 2px;
     gap: 8px;
   }
-  .topbar-actions {
-    gap: 6px;
-  }
   .topbar-home {
     min-width: 0;
     overflow: hidden;
@@ -1994,6 +1996,36 @@ kbd {
   }
   .sidebar-inner {
     width: auto;
+  }
+  /* topbar controls that don't fit a phone topbar — progress, the offline
+     download (installed app only) and the theme cycle — as labelled rows at
+     the top of the drawer, ruled off from the progress bars below */
+  .draweractions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 2px 14px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid var(--border);
+  }
+  .draweraction,
+  .draweractions .themebtn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: 14px;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text);
+    cursor: pointer;
+  }
+  .draweraction:hover {
+    color: var(--accent);
   }
   /* the topbar batteries, moved to the top of the drawer: one per row,
      label left and cell right, ruled off from the unit list */
@@ -2180,13 +2212,6 @@ kbd {
   }
   .selfcheck-controls .mark {
     justify-content: center;
-  }
-
-
-  /* keyboard shortcuts don't exist on touch: no help button, no modal entry
-     (Shift-key hints in titles are inert without a keyboard) */
-  .helpbtn {
-    display: none;
   }
 
   .homecol {
