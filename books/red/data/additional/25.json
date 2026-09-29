@@ -1,0 +1,136 @@
+{
+  "id": 25,
+  "topic": "пассивные конструкции",
+  "refs": "Разделы 22–23",
+  "pdfPages": [
+    263
+  ],
+  "exercise": {
+    "id": "25",
+    "type": "fill-in",
+    "instruction": "Заполните пропуски.",
+    "items": [
+      {
+        "num": 1,
+        "example": true,
+        "parts": [
+          "We ",
+          " (invite) to the party, but we didn’t go."
+        ],
+        "answers": [
+          [
+            "were invited"
+          ]
+        ]
+      },
+      {
+        "num": 2,
+        "parts": [
+          "The museum is very popular. Every year it ",
+          " (visit) by thousands of people."
+        ],
+        "answers": [
+          [
+            "is visited"
+          ]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "Many buildings ",
+          " (damage) in the storm last week."
+        ],
+        "answers": [
+          [
+            "were damaged"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "A new road is going to ",
+          " (build) next year."
+        ],
+        "answers": [
+          [
+            "be built"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "‘Where’s your jacket?’ ‘It ",
+          " (clean). It will be ready tomorrow.’"
+        ],
+        "answers": [
+          [
+            "is being cleaned"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "She’s famous now, but in a few years her name will ",
+          " (forget)."
+        ],
+        "answers": [
+          [
+            "be forgotten"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "‘Shall I do the washing-up?’ ‘No, it ",
+          " (already/do).’"
+        ],
+        "answers": [
+          [
+            "has already been done"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "Milk should ",
+          " (keep) in a fridge."
+        ],
+        "answers": [
+          [
+            "be kept"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "",
+          " (you/ever/bite) by a snake?"
+        ],
+        "answers": [
+          [
+            "Have you ever been bitten"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "My bag ",
+          " (steal) from my car yesterday afternoon."
+        ],
+        "answers": [
+          [
+            "was stolen"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+ "unit": 102,
+ "exercises": [
+  {
+   "id": "102.1",
+   "type": "fill-in",
+   "instruction": "Составьте одно предложение из двух.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Have you seen the pictures Helen took?"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’ve lost the ",
+      ""
+     ],
+     "answers": [
+      [
+       "pen you gave me."
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I like the ",
+      ""
+     ],
+     "answers": [
+      [
+       "jacket Sue is wearing."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Where are the ",
+      " ?"
+     ],
+     "answers": [
+      [
+       "flowers I gave you"
+      ]
+     ],
+     "answersNote": ""
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I ",
+      ""
+     ],
+     "answers": [
+      [
+       "didn’t believe the story he told us."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "How ",
+      " ?"
+     ],
+     "answers": [
+      [
+       "much were the oranges you bought"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

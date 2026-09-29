@@ -1,0 +1,371 @@
+{
+  "unit": 107,
+  "title": "in · at · on (предлоги места 2)",
+  "pdfPages": [
+    225,
+    226
+  ],
+  "exercises": [
+    {
+      "id": "107.1",
+      "type": "write",
+      "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте in/at/on.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Where is she?",
+          "answers": [
+            "In hospital."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "Where are they?",
+          "answers": [
+            "At the airport."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Where is he?",
+          "answers": [
+            "In bed."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Where are they?",
+          "answers": [
+            "On a ship."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Where are the stars?",
+          "answers": [
+            "In the sky."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Where are they?",
+          "answers": [
+            "At a party."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Where is Steve?",
+          "answers": [
+            "At the doctor’s."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Where is the restaurant?",
+          "answers": [
+            "On the second floor."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Where is she?",
+          "answers": [
+            "At work."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Where are they?",
+          "answers": [
+            "On a plane."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "Where are they?",
+          "answers": [
+            "In a taxi."
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "Where are they?",
+          "answers": [
+            "At a wedding."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "107.2",
+      "type": "fill-in",
+      "instruction": "Вставьте in/at/on.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Helen is studying law ",
+            " university."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "There was a big table ",
+            " the middle of the room."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What is the longest river ",
+            " the world?"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Were there many people ",
+            " the concert last night?"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Will you be ",
+            " home tomorrow afternoon?"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Who is the man ",
+            " this photo? Do you know him?"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Where are your children? Are they ",
+            " school?"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Gary is coming by train. I’m going to meet him ",
+            " the station."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Charlie is ",
+            " hospital. He had an operation yesterday."
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "How many pages are there ",
+            " this book?"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "‘Are you hungry after your journey?’ ‘No, I had something to eat ",
+            " the train.’"
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I’m sorry I’m late. My car broke down ",
+            " the way here."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "‘Is Tom here?’ ‘No, he’s ",
+            " his friend’s house.’"
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "Don’t believe everything you see ",
+            " the newspaper!"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "I walked to work, but I came home ",
+            " the bus."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "107.3",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. [верхний этаж = top floor]",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я сюда приехала на такси.",
+          "answers": [
+            "I came here in a taxi.",
+            "I came here by taxi."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Джеймс дома?” – “Нет, он на работе”.",
+          "answers": [
+            "‘Is James at home?’ ‘No, he’s at work.’",
+            "‘Is James at home?’ ‘No, he is at work.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Кто самый богатый человек в мире?",
+          "answers": [
+            "Who is the richest man in the world?",
+            "Who is the richest person in the world?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Я не жила в гостинице. Я жила у своего брата.",
+          "answers": [
+            "I didn’t stay in a hotel. I stayed at my brother’s.",
+            "I didn’t stay at a hotel. I stayed at my brother’s."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я думаю, я потеряла свой телефон по дороге в школу.",
+          "answers": [
+            "I think I lost my phone on the way to school.",
+            "I think I lost my phone on my way to school.",
+            "I think that I lost my phone on the way to school.",
+            "I think that I lost my phone on my way to school."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Это твой дедушка на фото?",
+          "answers": [
+            "Is it your grandfather in the photo?",
+            "Is it your grandfather in the photograph?",
+            "Is it your grandfather in the picture?",
+            "Is this your grandfather in the photo?",
+            "Is this your grandfather in the photograph?",
+            "Is this your grandfather in the picture?",
+            "Is that your grandfather in the photo?",
+            "Is that your grandfather in the photograph?",
+            "Is that your grandfather in the picture?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Наша квартира находится на верхнем этаже.",
+          "answers": [
+            "Our flat is on the top floor.",
+            "Our apartment is on the top floor."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я видел Бена на вечеринке.",
+          "answers": [
+            "I saw Ben at the party."
+          ]
+        }
+      ]
+    }
+  ]
+}

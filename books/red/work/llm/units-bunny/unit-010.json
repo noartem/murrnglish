@@ -1,0 +1,464 @@
+{
+ "unit": 10,
+ "title": "I have … и I’ve got …",
+ "pdfPages": [
+  31,
+  32
+ ],
+ "exercises": [
+  {
+   "id": "10.1",
+   "type": "write",
+   "instruction": "Перепишите эти предложения, используя got. Значение должно остаться таким же.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "They have two children.",
+     "answers": [
+      "They’ve got two children."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "She doesn’t have a key.",
+     "answers": [
+      "She hasn’t got a key."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "He has a new job.",
+     "answers": [
+      "He’s got a new job."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Do you have an umbrella?",
+     "answers": [
+      "Have you got an umbrella?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "We have a lot of work to do.",
+     "answers": [
+      "We’ve got a lot of work to do."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I don’t have your phone number.",
+     "answers": [
+      "I haven’t got your phone number."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Does your father have a car?",
+     "answers": [
+      "Has your father got a car?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "How much money do we have?",
+     "answers": [
+      "How much money have we got?"
+     ]
+    }
+   ],
+   "example": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "10.2",
+   "type": "write",
+   "instruction": "Перепишите эти предложения, используя do/does/don’t/doesn’t. Значение должно остаться таким же.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Have you got any money?",
+     "answers": [
+      "Do you have any money?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I haven’t got many clothes.",
+     "answers": [
+      "I don’t have many clothes."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Has Tom got a brother?",
+     "answers": [
+      "Does Tom have a brother?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "How many children have they got?",
+     "answers": [
+      "How many children do they have?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Have you got any questions?",
+     "answers": [
+      "Do you have any questions?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Sam hasn’t got a job.",
+     "answers": [
+      "Sam doesn’t have a job."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "10.3",
+   "type": "write",
+   "instruction": "Прочитайте вопросы и ответы. Затем напишите предложения о Марке. Напишите о себе. Используйте I’ve got или I haven’t got.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Have you got a car? No.",
+     "answers": [
+      "He hasn’t got a car."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Have you got a bike? Yes.",
+     "answers": [
+      "He’s got a bike.",
+      "He has a bike."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Have you got a dog? No.",
+     "answers": [
+      "He hasn’t got a dog.",
+      "He doesn’t have a dog."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Have you got a mobile phone? Yes.",
+     "answers": [
+      "He’s got a mobile phone.",
+      "He has a mobile phone."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Have you got a watch? No.",
+     "answers": [
+      "He hasn’t got a watch.",
+      "He doesn’t have a watch."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Have you got any brothers or sisters? Yes, two brothers and a sister.",
+     "answers": [
+      "He’s got two brothers and a sister.",
+      "He has two brothers and a sister."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(a dog)",
+     "answers": [
+      "I’ve got a dog.",
+      "I haven’t got a dog."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(a bike)",
+     "answers": [
+      "I’ve got a bike.",
+      "I haven’t got a bike."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(brothers/sisters)",
+     "answers": [
+      "I’ve got a brother and a sister."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "10.4",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте have, has, don’t have или doesn’t have.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Sarah ",
+      " a car. She goes everywhere by bike."
+     ],
+     "answers": [
+      [
+       "doesn’t have"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "They like animals. They ",
+      " three dogs and two cats."
+     ],
+     "answers": [
+      [
+       "have"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Charles isn’t happy. He ",
+      " a lot of problems."
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "They are always busy. They ",
+      " much free time."
+     ],
+     "answers": [
+      [
+       "don’t have"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘What’s wrong?’ ‘I ",
+      " something in my eye.’"
+     ],
+     "answers": [
+      [
+       "have"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Where’s my pen?’ ‘I don’t know, I ",
+      " it.’"
+     ],
+     "answers": [
+      [
+       "don’t have"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Amy wants to go to the concert, but she ",
+      " a ticket."
+     ],
+     "answers": [
+      [
+       "doesn’t have"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "10.5",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте have/has got или haven’t/hasn’t got, и слова из рамки:",
+   "wordBank": [
+    "six legs",
+    "a key",
+    "a headache",
+    "a lot of friends",
+    "a job",
+    "much time"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’m not feeling very well. I",
+      ""
+     ],
+     "answers": [
+      [
+       "’ve got a headache."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Everybody likes Tom. He ",
+      ""
+     ],
+     "answers": [
+      [
+       "’s got a lot of friends",
+       "has got a lot of friends"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "She can’t open the door. She ",
+      ""
+     ],
+     "answers": [
+      [
+       "hasn’t got a key"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Quick! We ",
+      ""
+     ],
+     "answers": [
+      [
+       "haven’t got much time"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "An insect ",
+      ""
+     ],
+     "answers": [
+      [
+       "has got six legs"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I’m unemployed. I ",
+      ""
+     ],
+     "answers": [
+      [
+       "haven’t got a job"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "10.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "У меня большая семья.",
+     "answers": [
+      "I have a big family.",
+      "I have a large family.",
+      "I’ve got a big family.",
+      "I’ve got a large family."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "У тебя болит голова?",
+     "answers": [
+      "Do you have a headache?",
+      "Have you got a headache?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "У меня нет телефона.",
+     "answers": [
+      "I don’t have a phone.",
+      "I haven’t got a phone."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "У Анны есть кошка и собака.",
+     "answers": [
+      "Anna has a cat and a dog.",
+      "Anna has got a cat and a dog."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "У Тома зелёные глаза.",
+     "answers": [
+      "Tom has green eyes.",
+      "Tom has got green eyes."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "У тебя есть велосипед?",
+     "answers": [
+      "Do you have a bike?",
+      "Have you got a bike?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "У Вас есть дом или квартира?",
+     "answers": [
+      "Do you have a house or a flat?",
+      "Have you got a house or a flat?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "У моих друзей есть новая машина.",
+     "answers": [
+      "My friends have a new car.",
+      "My friends have got a new car."
+     ]
+    }
+   ]
+  }
+ ]
+}

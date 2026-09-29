@@ -1,0 +1,446 @@
+{
+ "unit": 50,
+ "title": "Do you know where … ? · I don’t know what … и т. д.",
+ "pdfPages": [
+  111,
+  112
+ ],
+ "exercises": [
+  {
+   "id": "50.1",
+   "type": "write",
+   "instruction": "Ответьте на вопросы, используя I don’t know where/when/why … и т. д.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Have your friends gone home? (where)",
+     "answers": [
+      "I don’t know where they’ve gone."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Is Kate in her office? (where)",
+     "answers": [
+      "I don’t know where she is."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Is the castle very old? (how old)",
+     "answers": [
+      "I don’t know how old it is."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Will Paul be here soon? (when)",
+     "answers": [
+      "I don’t know when he’ll be here."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Was he angry because I was late? (why)",
+     "answers": [
+      "I don’t know why he was angry."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Has Emily lived here a long time? (how long)",
+     "answers": [
+      "I don’t know how long she has lived here."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "50.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "how airplanes fly"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I don’t know ",
+      "."
+     ],
+     "answers": [
+      [
+       "where Susan works"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Do you remember ",
+      "?"
+     ],
+     "answers": [
+      [
+       "what Peter said"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I don’t know ",
+      "."
+     ],
+     "answers": [
+      [
+       "why he went home early"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Do you know ",
+      "?"
+     ],
+     "answers": [
+      [
+       "what time the meeting begins"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I don’t remember ",
+      "."
+     ],
+     "answers": [
+      [
+       "how the accident happened"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "50.3",
+   "type": "choice",
+   "instruction": "Выберите правильный вариант.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "Do you know what time is it?",
+      "Do you know what time it is?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 2,
+     "options": [
+      "Why are you going away?",
+      "Why you are going away?"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 3,
+     "options": [
+      "I don’t know where are they going.",
+      "I don’t know where they are going."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 4,
+     "options": [
+      "Can you tell me where is the museum?",
+      "Can you tell me where the museum is?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 5,
+     "options": [
+      "Where do you want to go for your holidays?",
+      "Where you want to go for your holidays?"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 6,
+     "options": [
+      "Do you know what do elephants eat?",
+      "Do you know what elephants eat?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 7,
+     "options": [
+      "I don’t know how far is it from the hotel to the station.",
+      "I don’t know how far it is from the hotel to the station."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "50.4",
+   "type": "write",
+   "instruction": "Напишите вопросы, начинающиеся с Do you know if … ?",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(Have they got a car?)",
+     "answers": [
+      "Do you know if they’ve got a car?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(Are they married?)",
+     "answers": [
+      "Do you know if they are married?",
+      "Do you know whether they are married?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(Does Sue know Bill?)",
+     "answers": [
+      "Do you know if Sue knows Bill?",
+      "Do you know whether Sue knows Bill?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(Will Gary be here tomorrow?)",
+     "answers": [
+      "Do you know if Gary will be here tomorrow?",
+      "Do you know whether Gary will be here tomorrow?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(Did he pass his exam?)",
+     "answers": [
+      "Do you know if he passed his exam?",
+      "Do you know whether he passed his exam?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "50.5",
+   "type": "write",
+   "instruction": "Напишите вопросы, начинающиеся с Do you know … ?",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(What does Laura want?)",
+     "answers": [
+      "Do you know what Laura wants?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(Where is Paula?)",
+     "answers": [
+      "Do you know where Paula is?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(Is she working today?)",
+     "answers": [
+      "Do you know if she is working today?",
+      "Do you know whether she is working today?",
+      "Do you know if she’s working today?",
+      "Do you know whether she’s working today?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(What time does she start work?)",
+     "answers": [
+      "Do you know what time she starts work?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(Are the shops open tomorrow?)",
+     "answers": [
+      "Do you know if the shops are open tomorrow?",
+      "Do you know whether the shops are open tomorrow?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(Where do Sarah and Jack live?)",
+     "answers": [
+      "Do you know where Sarah and Jack live?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(Did they go to Jane’s party?)",
+     "answers": [
+      "Do you know if they went to Jane’s party?",
+      "Do you know whether they went to Jane’s party?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "50.6",
+   "type": "self-check",
+   "instruction": "Закончите вопросы, используя свои собственные идеи.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Do you know why",
+     "modelAnswers": [
+      "Do you know why the bus was late?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Do you know what time",
+     "modelAnswers": [
+      "Do you know what time the bus leaves?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Excuse me, can you tell me where",
+     "modelAnswers": [
+      "Excuse me, can you tell me where the station is?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I don’t know what",
+     "modelAnswers": [
+      "I don’t know what I’m going to do this evening."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Do you know if",
+     "modelAnswers": [
+      "Do you know if there’s a restaurant near here?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Do you know how much",
+     "modelAnswers": [
+      "Do you know how much it costs to rent a car?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "50.7",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [пирожное = cake]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Вы знаете, какая это улица?",
+     "answers": [
+      "Do you know what street this is?",
+      "Do you know which street this is?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я не знаю, кто сделал эти пирожные.",
+     "answers": [
+      "I don’t know who made these cakes.",
+      "I don’t know who baked these cakes.",
+      "I do not know who made these cakes.",
+      "I do not know who baked these cakes."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Вы можете сказать, сколько стоят эти брюки?",
+     "answers": [
+      "Can you tell me how much these trousers are?",
+      "Can you tell me how much these trousers cost?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я не помню, сколько лет Молли.",
+     "answers": [
+      "I don’t remember how old Molly is.",
+      "I do not remember how old Molly is."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Вы можете мне сказать, во сколько открывается музей?",
+     "answers": [
+      "Can you tell me what time the museum opens?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Ты знаешь, был ли Том в Индии?",
+     "answers": [
+      "Do you know if Tom has been to India?",
+      "Do you know whether Tom has been to India?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Я знаю, где живут Кевин и Наташа.",
+     "answers": [
+      "I know where Kevin and Natasha live."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Мы не знаем, хочет ли Анна поехать в отпуск с нами.",
+     "answers": [
+      "We don’t know if Anna wants to go on holiday with us.",
+      "We don’t know whether Anna wants to go on holiday with us.",
+      "We do not know if Anna wants to go on holiday with us.",
+      "We do not know whether Anna wants to go on holiday with us."
+     ]
+    }
+   ]
+  }
+ ]
+}

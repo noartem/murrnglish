@@ -1,0 +1,307 @@
+{
+ "unit": 97,
+ "title": "Give me that book! · Give it to me!",
+ "pdfPages": [
+  205,
+  206
+ ],
+ "exercises": [
+  {
+   "id": "97.1",
+   "type": "write",
+   "instruction": "Напишите предложения, начинающиеся с He gave ... .",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "What did Mark do with the armchair?",
+     "answers": [
+      "He gave it to his brother."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "What did he do with the tennis racket?",
+     "answers": [
+      "He gave it to Gary."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "What happened to the books?",
+     "answers": [
+      "He gave them to Sarah."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "What about the lamp?",
+     "answers": [
+      "He gave it to his sister."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "What did he do with the pictures?",
+     "answers": [
+      "He gave them to Robert."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "And the ladder?",
+     "answers": [
+      "He gave it to a neighbour."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "97.2",
+   "type": "write",
+   "instruction": "Вы подарили друзьям подарки. Это предметы, изображённые на картинках. Напишите по одному предложению о каждой картинке.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "PAUL",
+     "answers": [
+      "I gave Paul a book."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "JOANNA",
+     "answers": [
+      "I gave Joanna a plant."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "RICHARD",
+     "answers": [
+      "I gave Richard a tie."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "EMMA",
+     "answers": [
+      "I gave Emma some chocolates.",
+      "I gave Emma a box of chocolates."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "RACHEL",
+     "answers": [
+      "I gave Rachel some flowers.",
+      "I gave Rachel a bunch of flowers."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "KEVIN",
+     "answers": [
+      "I gave Kevin a wallet."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "97.3",
+   "type": "write",
+   "instruction": "Напишите предложения, начинающиеся с Can you give me ... ? / Can you pass me ... ? и т. д.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(you want the salt) (pass)",
+     "answers": [
+      "Can you pass me the salt?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "(you need an umbrella) (lend)",
+     "answers": [
+      "Can you lend me an umbrella?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(you want my address) (give)",
+     "answers": [
+      "Can you give me your address?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(you need twenty pounds) (lend)",
+     "answers": [
+      "Can you lend me twenty pounds?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(you want more information) (send)",
+     "answers": [
+      "Can you send me more information?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(you want to see the letter) (show)",
+     "answers": [
+      "Can you show me the letter?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "97.4",
+   "type": "choice",
+   "instruction": "Выберите правильный вариант.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "I gave to Sarah the keys.",
+      "I gave Sarah the keys."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 2,
+     "options": [
+      "I’ll lend to you some money if you want.",
+      "I’ll lend you some money if you want."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "Did you send the bill me?",
+      "Did you send the bill to me?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 4,
+     "options": [
+      "I want to buy for you a present.",
+      "I want to buy you a present."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 5,
+     "options": [
+      "Can you pass to me the sugar, please?",
+      "Can you pass me the sugar, please?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 6,
+     "options": [
+      "This is Lisa’s bag. Can you give it to her?",
+      "This is Lisa’s bag. Can you give her it?"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 7,
+     "options": [
+      "I showed to the policeman my identity card.",
+      "I showed the policeman my identity card."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "97.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (велосипед = bike, одолжить = lend, кошелёк = wallet)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Пожалуйста, покажите мне Ваш паспорт.",
+     "answers": [
+      "Please show me your passport."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Гари подарил Анне цветы.",
+     "answers": [
+      "Gary gave Anna some flowers.",
+      "Gary gave some flowers to Anna."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Когда Вы отправили мне этот имейл?",
+     "answers": [
+      "When did you send me that email?",
+      "When did you send that email to me?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Алану был не нужен его старый велосипед, поэтому он отдал его своему брату.",
+     "answers": [
+      "Alan didn’t need his old bike, so he gave it to his brother.",
+      "Alan did not need his old bike, so he gave it to his brother."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Где моя книга? Я одолжил её тебе вчера.",
+     "answers": [
+      "Where’s my book? I lent it to you yesterday.",
+      "Where is my book? I lent it to you yesterday."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я купил Марку подарок.",
+     "answers": [
+      "I’ve bought Mark a present.",
+      "I bought Mark a present.",
+      "I’ve bought a present for Mark.",
+      "I bought a present for Mark."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Передай мне ту чашку, пожалуйста.",
+     "answers": [
+      "Pass me that cup, please."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "А: Я потеряла кошелёк. В: Я могу дать тебе денег.",
+     "answers": [
+      "A: I’ve lost my wallet. B: I can give you some money."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,441 @@
+{
+  "unit": 90,
+  "title": "not as … as",
+  "pdfPages": [
+    191,
+    192
+  ],
+  "exercises": [
+    {
+      "id": "90.1",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и напишите предложения об А, В и С.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "A is ",
+            ""
+          ],
+          "answers": [
+            [
+              "bigger than C but not as big as B"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A is ",
+            " B, but not ",
+            " C."
+          ],
+          "answers": [
+            [
+              "longer than"
+            ],
+            [
+              "as long as"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "C is ",
+            " A, but ",
+            ""
+          ],
+          "answers": [
+            [
+              "heavier than"
+            ],
+            [
+              "not as heavy as B",
+              "not as heavy as B."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A is ",
+            ", but ",
+            ""
+          ],
+          "answers": [
+            [
+              "older than"
+            ],
+            [
+              "not as old as B",
+              "not as old as B."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "B has got ",
+            ""
+          ],
+          "answers": [
+            [
+              "more money than C, but not as much as A",
+              "more money than C, but not as much as A.",
+              "more money than C, but less than A",
+              "more money than C, but less than A.",
+              "more money than C, but less money than A",
+              "more money than C, but less money than A."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "C works ",
+            ""
+          ],
+          "answers": [
+            [
+              "harder than A, but not as hard as B",
+              "harder than A, but not as hard as B."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90.2",
+      "type": "fill-in",
+      "instruction": "Напишите предложения, используя as ... as ... .",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Athens is older than Rome.    Rome ",
+            ""
+          ],
+          "answers": [
+            [
+              "isn’t as old as Athens"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My room is bigger than yours.    Your room isn’t ",
+            ""
+          ],
+          "answers": [
+            [
+              "as big as mine",
+              "as big as mine.",
+              "as big as my room",
+              "as big as my room."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "You got up earlier than me.    I didn’t ",
+            ""
+          ],
+          "answers": [
+            [
+              "get up as early as you",
+              "get up as early as you.",
+              "get up as early as you did",
+              "get up as early as you did."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We played better than them.    They ",
+            ""
+          ],
+          "answers": [
+            [
+              "didn’t play as well as us",
+              "didn’t play as well as us.",
+              "didn’t play as well as we did",
+              "didn’t play as well as we did."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I’ve been here longer than you.    You ",
+            ""
+          ],
+          "answers": [
+            [
+              "haven’t been here as long as me",
+              "haven’t been here as long as me.",
+              "haven’t been here as long as I have",
+              "haven’t been here as long as I have."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "She’s more nervous than him.    He ",
+            ""
+          ],
+          "answers": [
+            [
+              "isn’t as nervous as her",
+              "isn’t as nervous as her.",
+              "isn’t as nervous as she is",
+              "isn’t as nervous as she is."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90.3",
+      "type": "fill-in",
+      "instruction": "Вставьте в пропуски as или than.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Athens is older ",
+            " Rome."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I don’t watch TV as much ",
+            " you."
+          ],
+          "answers": [
+            [
+              "as"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "You eat more ",
+            " me."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I’m more tired today ",
+            " I was yesterday."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Joe isn’t as intelligent ",
+            " he thinks."
+          ],
+          "answers": [
+            [
+              "as"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Belgium is smaller ",
+            " Switzerland."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Brazil isn’t as big ",
+            " Canada."
+          ],
+          "answers": [
+            [
+              "as"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I can’t wait longer ",
+            " an hour."
+          ],
+          "answers": [
+            [
+              "than"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90.4",
+      "type": "fill-in",
+      "instruction": "Закончите предложения о Джулии, Энди и Лоре. Используйте the same age / the same street и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "(age) Andy is the same age as Laura",
+            ""
+          ],
+          "answers": [
+            [
+              "Andy is the same age as Laura"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "(street) Julia lives ",
+            ""
+          ],
+          "answers": [
+            [
+              "in the same street as Laura",
+              "in the same street as Laura."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "(time) Julia got up ",
+            ""
+          ],
+          "answers": [
+            [
+              "at the same time as Andy",
+              "at the same time as Andy."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "(colour) Andy’s ",
+            ""
+          ],
+          "answers": [
+            [
+              "car is the same colour as Laura’s",
+              "car is the same colour as Laura’s."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (вставать = get up; ожидать = expect; конфета = sweet)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Антон высокий, но он не такой высокий, как его брат.",
+          "answers": [
+            "Anton is tall, but he isn’t as tall as his brother.",
+            "Anton is tall, but he’s not as tall as his brother.",
+            "Anton is tall, but he is not as tall as his brother."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я встал в то же время, что и ты.",
+          "answers": [
+            "I got up at the same time as you.",
+            "I got up at the same time as you did."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Вы ходили в ту же школу, что и я?",
+          "answers": [
+            "Did you go to the same school as me?",
+            "Did you go to the same school as I did?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Ужин не был таким дорогим, как я ожидал.",
+          "answers": [
+            "Dinner wasn’t as expensive as I expected.",
+            "Dinner was not as expensive as I expected."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Дерево в нашем саду выше нашего дома.",
+          "answers": [
+            "The tree in our garden is taller than our house."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я не ем так много конфет, как ты.",
+          "answers": [
+            "I don’t eat as many sweets as you.",
+            "I don’t eat as many sweets as you do."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "У Линды не так много кошек, как у её тёти.",
+          "answers": [
+            "Linda doesn’t have as many cats as her aunt does.",
+            "Linda hasn’t got as many cats as her aunt has."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Его новые фильмы не такие хорошие, как его старые фильмы.",
+          "answers": [
+            "His new films aren’t as good as his old films.",
+            "His new films aren’t as good as his old ones.",
+            "His new films are not as good as his old films.",
+            "His new films are not as good as his old ones."
+          ]
+        }
+      ]
+    }
+  ]
+}

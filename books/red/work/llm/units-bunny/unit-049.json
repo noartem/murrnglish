@@ -1,0 +1,268 @@
+{
+ "unit": 49,
+ "title": "How long does it take … ?",
+ "pdfPages": [
+  109,
+  110
+ ],
+ "exercises": [
+  {
+   "id": "49.1",
+   "type": "write",
+   "instruction": "Посмотрите на картинки и напишите вопросы с How long ...?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "How long does it take by plane from London to Amsterdam?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "answers": [
+      "How long does it take by car from Milan to Rome?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "How long does it take by train from Paris to Geneva?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "How long does it take by bus from the city centre to the airport?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "49.2",
+   "type": "self-check",
+   "instruction": "Сколько времени это занимает? Напишите полные предложения.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "fly from your city/country to London",
+     "modelAnswers": [
+      "It takes two hours to fly from Stuttgart to London."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "fly from your city/country to New York",
+     "modelAnswers": [
+      "It takes ... hours to fly from ... to New York."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "study to be a doctor in your country",
+     "modelAnswers": [
+      "It takes ... years to study to be a doctor in ...."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "walk from your home to the nearest shop",
+     "modelAnswers": [
+      "It takes ... to walk from my home to the nearest shop."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "get from your home to the nearest airport",
+     "modelAnswers": [
+      "It takes ... to get from my home to the nearest airport."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "49.3",
+   "type": "write",
+   "instruction": "Напишите вопросы с How long did it take ...?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(Jane found a job.)",
+     "answers": [
+      "How long did it take her to find a job?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(I walked to the station.)",
+     "answers": [
+      "How long did it take you to walk to the station?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(Tom painted the bathroom.)",
+     "answers": [
+      "How long did it take him to paint the bathroom?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(I learnt to ski.)",
+     "answers": [
+      "How long did it take you to learn to ski?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(They repaired the car.)",
+     "answers": [
+      "How long did it take them to repair the car?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "49.4",
+   "type": "write",
+   "instruction": "Прочитайте описания ситуаций и напишите предложения с It took ... .",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I read a book last week. I started reading it on Monday. I finished it three days later.",
+     "answers": [
+      "It took me three days to read the book."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "We walked home last night. We left at 10 o’clock and we arrived home at 10.20.",
+     "answers": [
+      "It took us 20 minutes to walk home.",
+      "It took us 20 minutes to get home."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I learnt to drive last year. I had my first driving lesson in January. I passed my driving test six months later.",
+     "answers": [
+      "It took me six months to learn to drive."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Mark drove to London yesterday. He left home at 7 o’clock and got to London at 10.",
+     "answers": [
+      "It took Mark three hours to drive to London.",
+      "It took him three hours to drive to London.",
+      "It took Mark three hours to get to London.",
+      "It took him three hours to get to London."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Lisa began looking for a job a long time ago. She got a job last week.",
+     "answers": [
+      "It took Lisa a long time to find a job.",
+      "It took her a long time to find a job.",
+      "It took Lisa a long time to get a job.",
+      "It took her a long time to get a job."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Напишите предложение о себе.",
+     "modelAnswers": [
+      "It took me ... to ..."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "49.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [обучение (здесь) = study\nсделать ремонт (здесь) = decorate\nстоянка машин = car park]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Сколько времени занимает перелёт из Москвы до Лондона?",
+     "answers": [
+      "How long does it take to fly from Moscow to London?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Саша потребилось два месяца, чтобы найти новую работу.",
+     "answers": [
+      "It took Sasha two months to find a new job."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Обучение в университете занимает три года.",
+     "answers": [
+      "It takes three years to study at university."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Поездка на машине от моей квартиры до офиса занимает один час.",
+     "answers": [
+      "It takes an hour by car from my flat to the office.",
+      "It takes an hour by car from my flat to my office."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Нам потребуется три недели, чтобы сделать ремонт гостиной.",
+     "answers": [
+      "It will take us three weeks to decorate the living room."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Приготовление обеда не займёт много времени.",
+     "answers": [
+      "It won’t take long to make lunch.",
+      "It won’t take long to cook lunch.",
+      "It won’t take long to prepare lunch.",
+      "It won’t take a long time to make lunch.",
+      "It won’t take a long time to cook lunch.",
+      "It won’t take a long time to prepare lunch."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Вы долго искали стоянку машин?",
+     "answers": [
+      "Did it take you a long time to find the car park?",
+      "Did it take you long to find the car park?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Сколько времени вам потребовалось, чтобы написать книгу?",
+     "answers": [
+      "How long did it take you to write the book?",
+      "How long did it take you to write your book?"
+     ]
+    }
+   ]
+  }
+ ]
+}

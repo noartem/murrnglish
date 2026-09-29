@@ -1,0 +1,409 @@
+{
+ "unit": 3,
+ "title": "I’m scared / I’m late / I’m tired и т. д.",
+ "pdfPages": [
+  17,
+  18
+ ],
+ "exercises": [
+  {
+   "id": "3.1",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и закончите предложения, используя эти слова:",
+   "wordBank": [
+    "asleep",
+    "cold",
+    "closed",
+    "hot",
+    "in a hurry",
+    "late",
+    "scared",
+    "tired"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He’s",
+      ""
+     ],
+     "answers": [
+      [
+       "hot."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "They",
+      ""
+     ],
+     "answers": [
+      [
+       "’re tired.",
+       "are tired."
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "He",
+      ""
+     ],
+     "answers": [
+      [
+       "’s scared.",
+       "is scared."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "The shop",
+      ""
+     ],
+     "answers": [
+      [
+       "is closed."
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "They",
+      ""
+     ],
+     "answers": [
+      [
+       "’re asleep.",
+       "are asleep."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The bus",
+      ""
+     ],
+     "answers": [
+      [
+       "is late."
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "She",
+      ""
+     ],
+     "answers": [
+      [
+       "’s in a hurry.",
+       "is in a hurry."
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "They",
+      ""
+     ],
+     "answers": [
+      [
+       "’re cold.",
+       "are cold."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "'",
+      " cold?' 'No, I’m OK.'"
+     ],
+     "answers": [
+      [
+       "Are you"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "'How is your grandfather?' '",
+      " very well.'"
+     ],
+     "answers": [
+      [
+       "He’s"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "'Are the children in bed?' 'Yes, ",
+      " asleep.'"
+     ],
+     "answers": [
+      [
+       "They’re",
+       "They are"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "The weather is nice today. ",
+      " hot and sunny."
+     ],
+     "answers": [
+      [
+       "It’s",
+       "It is"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Andy’s favourite sport is tennis. ",
+      " very interested in it."
+     ],
+     "answers": [
+      [
+       "He’s",
+       "He is"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "These flowers are nice. How much ",
+      "?"
+     ],
+     "answers": [
+      [
+       "are they"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "'Sorry ",
+      " late.' 'That’s OK.'"
+     ],
+     "answers": [
+      [
+       "I’m",
+       "I am"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "How is Lisa? ",
+      " well?"
+     ],
+     "answers": [
+      [
+       "Is she"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "'",
+      " interested in art?' 'Yes, I am. Very much.'"
+     ],
+     "answers": [
+      [
+       "Are you"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "This coat is expensive. ",
+      " three hundred pounds."
+     ],
+     "answers": [
+      [
+       "It’s",
+       "It is"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "It’s 9.00 and John isn’t here! Why ",
+      " always late?"
+     ],
+     "answers": [
+      [
+       "is he"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "self-check",
+   "instruction": "Напишите правдивые (утвердительные или отрицательные) предложения о себе.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(scared of snakes)",
+     "modelAnswers": [
+      "I’m scared of snakes.",
+      "I’m not scared of snakes."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(tired)",
+     "modelAnswers": [
+      "I’m tired.",
+      "I’m not tired."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(in a hurry)",
+     "modelAnswers": [
+      "I’m in a hurry.",
+      "I’m not in a hurry."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(scared of dogs)",
+     "modelAnswers": [
+      "I’m scared of dogs.",
+      "I’m not scared of dogs."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(well)",
+     "modelAnswers": [
+      "I’m well.",
+      "I’m not well."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(interested in history)",
+     "modelAnswers": [
+      "I’m interested in history.",
+      "I’m not interested in history."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(married)",
+     "modelAnswers": [
+      "I’m married.",
+      "I’m not married."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (сын = son, шапка = hat)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "В моей комнате темно.",
+     "answers": [
+      "It’s dark in my room.",
+      "It is dark in my room."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Анна не замужем.",
+     "answers": [
+      "Anna isn’t married.",
+      "Anna is not married."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я не интересуюсь музыкой.",
+     "answers": [
+      "I’m not interested in music.",
+      "I am not interested in music."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Мой сын боится кошек.",
+     "answers": [
+      "My son is scared of cats."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Сегодня очень холодно.",
+     "answers": [
+      "It’s very cold today.",
+      "It is very cold today."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Сколько стоит эта шапка?",
+     "answers": [
+      "How much is this hat?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Я плохо себя чувствую.",
+     "answers": [
+      "I’m not well.",
+      "I am not well."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Вы устали?",
+     "answers": [
+      "Are you tired?"
+     ]
+    }
+   ]
+  }
+ ]
+}

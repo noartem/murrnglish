@@ -1,0 +1,1726 @@
+{
+  "units": {
+    "1": {
+      "pdfPages": [
+        13,
+        14
+      ],
+      "title": "am/is/are",
+      "keyExercises": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7"
+      ],
+      "notInScan": []
+    },
+    "2": {
+      "pdfPages": [
+        15,
+        16
+      ],
+      "title": "am/is/are (вопросы)",
+      "keyExercises": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ],
+      "notInScan": []
+    },
+    "3": {
+      "pdfPages": [
+        17,
+        18
+      ],
+      "title": "I’m scared / I’m late / I’m tired и т. д.",
+      "keyExercises": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ],
+      "notInScan": []
+    },
+    "4": {
+      "pdfPages": [
+        19,
+        20
+      ],
+      "title": "I am doing (present continuous)",
+      "keyExercises": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "notInScan": []
+    },
+    "5": {
+      "pdfPages": [
+        21,
+        22
+      ],
+      "title": "are you doing? (present continuous, вопросы)",
+      "keyExercises": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5"
+      ],
+      "notInScan": []
+    },
+    "6": {
+      "pdfPages": [
+        23,
+        24
+      ],
+      "title": "I do/work/like и т. д. (present simple)",
+      "keyExercises": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6"
+      ],
+      "notInScan": []
+    },
+    "7": {
+      "pdfPages": [
+        25,
+        26
+      ],
+      "title": "I don’t … (present simple, отрицания)",
+      "keyExercises": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6"
+      ],
+      "notInScan": []
+    },
+    "8": {
+      "pdfPages": [
+        27,
+        28
+      ],
+      "title": "Do you … ? (present simple, вопросы)",
+      "keyExercises": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5"
+      ],
+      "notInScan": []
+    },
+    "9": {
+      "pdfPages": [
+        29,
+        30
+      ],
+      "title": "I am doing (present continuous) и I do (present simple)",
+      "keyExercises": [
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4"
+      ],
+      "notInScan": []
+    },
+    "10": {
+      "pdfPages": [
+        31,
+        32
+      ],
+      "title": "I have … и I’ve got …",
+      "keyExercises": [
+        "10.1",
+        "10.2",
+        "10.3",
+        "10.4",
+        "10.5",
+        "10.6"
+      ],
+      "notInScan": []
+    },
+    "11": {
+      "pdfPages": [
+        33,
+        34
+      ],
+      "title": "was/were",
+      "keyExercises": [
+        "11.1",
+        "11.2",
+        "11.3",
+        "11.4",
+        "11.5"
+      ],
+      "notInScan": []
+    },
+    "12": {
+      "pdfPages": [
+        35,
+        36
+      ],
+      "title": "worked/got/went и т. д. (past simple)",
+      "keyExercises": [
+        "12.1",
+        "12.2",
+        "12.3",
+        "12.4",
+        "12.5",
+        "12.6"
+      ],
+      "notInScan": []
+    },
+    "13": {
+      "pdfPages": [
+        37,
+        38
+      ],
+      "title": "I didn’t … · Did you … ? (past simple, отрицания и вопросы)",
+      "keyExercises": [
+        "13.1",
+        "13.2",
+        "13.3",
+        "13.4",
+        "13.5",
+        "13.6"
+      ],
+      "notInScan": []
+    },
+    "14": {
+      "pdfPages": [
+        39,
+        40
+      ],
+      "title": "I was doing (past continuous)",
+      "keyExercises": [
+        "14.1",
+        "14.2",
+        "14.3",
+        "14.4",
+        "14.5"
+      ],
+      "notInScan": []
+    },
+    "15": {
+      "pdfPages": [
+        41,
+        42
+      ],
+      "title": "I was doing (past continuous) и I did (past simple)",
+      "keyExercises": [
+        "15.1",
+        "15.2",
+        "15.3"
+      ],
+      "notInScan": []
+    },
+    "16": {
+      "pdfPages": [
+        43,
+        44
+      ],
+      "title": "I have done (present perfect 1)",
+      "keyExercises": [
+        "16.1",
+        "16.2",
+        "16.3"
+      ],
+      "notInScan": []
+    },
+    "17": {
+      "pdfPages": [
+        45,
+        46
+      ],
+      "title": "I’ve just … · I’ve already … · I haven’t … yet (present perfect 2)",
+      "keyExercises": [
+        "17.1",
+        "17.2",
+        "17.3",
+        "17.4",
+        "17.5"
+      ],
+      "notInScan": []
+    },
+    "18": {
+      "pdfPages": [
+        47,
+        48
+      ],
+      "title": "Have you ever … ? (present perfect 3)",
+      "keyExercises": [
+        "18.1",
+        "18.2",
+        "18.3",
+        "18.4",
+        "18.5"
+      ],
+      "notInScan": []
+    },
+    "19": {
+      "pdfPages": [
+        49,
+        50
+      ],
+      "title": "How long have you … ? (present perfect 4)",
+      "keyExercises": [
+        "19.1",
+        "19.2",
+        "19.3",
+        "19.4",
+        "19.5"
+      ],
+      "notInScan": []
+    },
+    "20": {
+      "pdfPages": [
+        51,
+        52
+      ],
+      "title": "for · since · ago",
+      "keyExercises": [
+        "20.1",
+        "20.2",
+        "20.3",
+        "20.4",
+        "20.5",
+        "20.6"
+      ],
+      "notInScan": []
+    },
+    "21": {
+      "pdfPages": [
+        53,
+        54
+      ],
+      "title": "I have done (present perfect) и I did (past)",
+      "keyExercises": [
+        "21.1",
+        "21.2",
+        "21.3",
+        "21.4",
+        "21.5"
+      ],
+      "notInScan": []
+    },
+    "22": {
+      "pdfPages": [
+        55,
+        56
+      ],
+      "title": "is done · was done (пассивные конструкции 1)",
+      "keyExercises": [
+        "22.1",
+        "22.2",
+        "22.3",
+        "22.4",
+        "22.5"
+      ],
+      "notInScan": []
+    },
+    "23": {
+      "pdfPages": [
+        57,
+        58
+      ],
+      "title": "is being done · has been done (пассивные конструкции 2)",
+      "keyExercises": [
+        "23.1",
+        "23.2",
+        "23.3",
+        "23.4"
+      ],
+      "notInScan": []
+    },
+    "24": {
+      "pdfPages": [
+        59,
+        60
+      ],
+      "title": "be/have/do в настоящем и прошедшем времени",
+      "keyExercises": [
+        "24.1",
+        "24.2",
+        "24.3",
+        "24.4",
+        "24.5",
+        "24.6"
+      ],
+      "notInScan": []
+    },
+    "25": {
+      "pdfPages": [
+        61,
+        62
+      ],
+      "title": "Правильные и неправильные глаголы",
+      "keyExercises": [
+        "25.1",
+        "25.2",
+        "25.3",
+        "25.4",
+        "25.5"
+      ],
+      "notInScan": []
+    },
+    "26": {
+      "pdfPages": [
+        63,
+        64
+      ],
+      "title": "What are you doing tomorrow?",
+      "keyExercises": [
+        "26.1",
+        "26.2",
+        "26.3",
+        "26.4",
+        "26.5"
+      ],
+      "notInScan": []
+    },
+    "27": {
+      "pdfPages": [
+        65,
+        66
+      ],
+      "title": "I’m going to …",
+      "keyExercises": [
+        "27.1",
+        "27.2",
+        "27.3",
+        "27.4",
+        "27.5"
+      ],
+      "notInScan": []
+    },
+    "28": {
+      "pdfPages": [
+        67,
+        68
+      ],
+      "title": "will/shall 1",
+      "keyExercises": [
+        "28.1",
+        "28.2",
+        "28.3",
+        "28.4",
+        "28.5",
+        "28.6"
+      ],
+      "notInScan": []
+    },
+    "29": {
+      "pdfPages": [
+        69,
+        70
+      ],
+      "title": "will/shall 2",
+      "keyExercises": [
+        "29.1",
+        "29.2",
+        "29.3",
+        "29.4",
+        "29.5",
+        "29.6"
+      ],
+      "notInScan": []
+    },
+    "30": {
+      "pdfPages": [
+        71,
+        72
+      ],
+      "title": "might",
+      "keyExercises": [
+        "30.1",
+        "30.2",
+        "30.3",
+        "30.4",
+        "30.5"
+      ],
+      "notInScan": []
+    },
+    "31": {
+      "pdfPages": [
+        73,
+        74
+      ],
+      "title": "can и could",
+      "keyExercises": [
+        "31.1",
+        "31.2",
+        "31.3",
+        "31.4",
+        "31.5"
+      ],
+      "notInScan": []
+    },
+    "32": {
+      "pdfPages": [
+        75,
+        76
+      ],
+      "title": "must · mustn’t · don’t need to",
+      "keyExercises": [
+        "32.1",
+        "32.2",
+        "32.3",
+        "32.4",
+        "32.5",
+        "32.6"
+      ],
+      "notInScan": []
+    },
+    "33": {
+      "pdfPages": [
+        77,
+        78
+      ],
+      "title": "should",
+      "keyExercises": [
+        "33.1",
+        "33.2",
+        "33.3",
+        "33.4",
+        "33.5",
+        "33.6"
+      ],
+      "notInScan": []
+    },
+    "34": {
+      "pdfPages": [
+        79,
+        80
+      ],
+      "title": "I have to …",
+      "keyExercises": [
+        "34.1",
+        "34.2",
+        "34.3",
+        "34.4",
+        "34.5",
+        "34.6",
+        "34.7"
+      ],
+      "notInScan": []
+    },
+    "35": {
+      "pdfPages": [
+        81,
+        82
+      ],
+      "title": "Would you like … ? · I’d like …",
+      "keyExercises": [
+        "35.1",
+        "35.2",
+        "35.3",
+        "35.4"
+      ],
+      "notInScan": []
+    },
+    "36": {
+      "pdfPages": [
+        83,
+        84
+      ],
+      "title": "Do this! · Don’t do that! · Let’s do this!",
+      "keyExercises": [
+        "36.1",
+        "36.2",
+        "36.3",
+        "36.4"
+      ],
+      "notInScan": []
+    },
+    "37": {
+      "pdfPages": [
+        85,
+        86
+      ],
+      "title": "I used to …",
+      "keyExercises": [
+        "37.1",
+        "37.2",
+        "37.3",
+        "37.4"
+      ],
+      "notInScan": []
+    },
+    "38": {
+      "pdfPages": [
+        87,
+        88
+      ],
+      "title": "there is · there are",
+      "keyExercises": [
+        "38.1",
+        "38.2",
+        "38.3",
+        "38.4",
+        "38.5",
+        "38.6"
+      ],
+      "notInScan": []
+    },
+    "39": {
+      "pdfPages": [
+        89,
+        90
+      ],
+      "title": "there was/were · there has/have been · there will be",
+      "keyExercises": [
+        "39.1",
+        "39.2",
+        "39.3",
+        "39.4"
+      ],
+      "notInScan": []
+    },
+    "40": {
+      "pdfPages": [
+        91,
+        92
+      ],
+      "title": "It …",
+      "keyExercises": [
+        "40.1",
+        "40.2",
+        "40.3",
+        "40.4",
+        "40.5",
+        "40.6"
+      ],
+      "notInScan": []
+    },
+    "41": {
+      "pdfPages": [
+        93,
+        94
+      ],
+      "title": "I am, I don’t и т. д.",
+      "keyExercises": [
+        "41.1",
+        "41.2",
+        "41.3",
+        "41.4",
+        "41.5",
+        "41.6",
+        "41.7"
+      ],
+      "notInScan": []
+    },
+    "42": {
+      "pdfPages": [
+        95,
+        96
+      ],
+      "title": "Have you? · Are you? · Don’t you? и т. д.",
+      "keyExercises": [
+        "42.1",
+        "42.2",
+        "42.3",
+        "42.4",
+        "42.5"
+      ],
+      "notInScan": []
+    },
+    "43": {
+      "pdfPages": [
+        97,
+        98
+      ],
+      "title": "too/either · so am I / neither do I и т. д.",
+      "keyExercises": [
+        "43.1",
+        "43.2",
+        "43.3",
+        "43.4"
+      ],
+      "notInScan": []
+    },
+    "44": {
+      "pdfPages": [
+        99,
+        100
+      ],
+      "title": "isn’t, haven’t, don’t и т. д. (отрицания)",
+      "keyExercises": [
+        "44.1",
+        "44.2",
+        "44.3",
+        "44.4",
+        "44.5",
+        "44.6"
+      ],
+      "notInScan": []
+    },
+    "45": {
+      "pdfPages": [
+        101,
+        102
+      ],
+      "title": "is it … ? · have you … ? · do they … ? и т. д. (вопросы 1)",
+      "keyExercises": [
+        "45.1",
+        "45.2",
+        "45.3",
+        "45.4",
+        "45.5"
+      ],
+      "notInScan": []
+    },
+    "46": {
+      "pdfPages": [
+        103,
+        104
+      ],
+      "title": "Who saw you? · Who did you see? (вопросы 2)",
+      "keyExercises": [
+        "46.1",
+        "46.2",
+        "46.3",
+        "46.4"
+      ],
+      "notInScan": []
+    },
+    "47": {
+      "pdfPages": [
+        105,
+        106
+      ],
+      "title": "Who is she talking to? · What is it like? (вопросы 3)",
+      "keyExercises": [
+        "47.1",
+        "47.2",
+        "47.3",
+        "47.4",
+        "47.5",
+        "47.6"
+      ],
+      "notInScan": []
+    },
+    "48": {
+      "pdfPages": [
+        107,
+        108
+      ],
+      "title": "What … ? · Which … ? · How … ? (вопросы 4)",
+      "keyExercises": [
+        "48.1",
+        "48.2",
+        "48.3",
+        "48.4",
+        "48.5",
+        "48.6"
+      ],
+      "notInScan": []
+    },
+    "49": {
+      "pdfPages": [
+        109,
+        110
+      ],
+      "title": "How long does it take … ?",
+      "keyExercises": [
+        "49.1",
+        "49.2",
+        "49.3",
+        "49.4",
+        "49.5"
+      ],
+      "notInScan": []
+    },
+    "50": {
+      "pdfPages": [
+        111,
+        112
+      ],
+      "title": "Do you know where … ? · I don’t know what … и т. д.",
+      "keyExercises": [
+        "50.1",
+        "50.2",
+        "50.3",
+        "50.4",
+        "50.5",
+        "50.6",
+        "50.7"
+      ],
+      "notInScan": []
+    },
+    "51": {
+      "pdfPages": [
+        113,
+        114
+      ],
+      "title": "She said that … · He told me that …",
+      "keyExercises": [
+        "51.1",
+        "51.2",
+        "51.3",
+        "51.4"
+      ],
+      "notInScan": [
+        "51.4"
+      ]
+    },
+    "52": {
+      "pdfPages": [
+        115,
+        116
+      ],
+      "title": "work/working · go/going · do/doing",
+      "keyExercises": [
+        "52.1",
+        "52.2",
+        "52.3",
+        "52.4"
+      ],
+      "notInScan": []
+    },
+    "53": {
+      "pdfPages": [
+        117,
+        118
+      ],
+      "title": "to … (I want to do) и -ing (I enjoy doing)",
+      "keyExercises": [
+        "53.1",
+        "53.2",
+        "53.3",
+        "53.4",
+        "53.5"
+      ],
+      "notInScan": []
+    },
+    "54": {
+      "pdfPages": [
+        119,
+        120
+      ],
+      "title": "I want you to … · I told you to …",
+      "keyExercises": [
+        "54.1",
+        "54.2",
+        "54.3",
+        "54.4"
+      ],
+      "notInScan": []
+    },
+    "55": {
+      "pdfPages": [
+        121,
+        122
+      ],
+      "title": "I went to the shop to …",
+      "keyExercises": [
+        "55.1",
+        "55.2",
+        "55.3",
+        "55.4",
+        "55.5",
+        "55.6"
+      ],
+      "notInScan": []
+    },
+    "56": {
+      "pdfPages": [
+        123,
+        124
+      ],
+      "title": "go to … · go on … · go for … · go -ing",
+      "keyExercises": [
+        "56.1",
+        "56.2",
+        "56.3",
+        "56.4"
+      ],
+      "notInScan": []
+    },
+    "57": {
+      "pdfPages": [
+        125,
+        126
+      ],
+      "title": "get",
+      "keyExercises": [
+        "57.1",
+        "57.2",
+        "57.3",
+        "57.4",
+        "57.5",
+        "57.6"
+      ],
+      "notInScan": []
+    },
+    "58": {
+      "pdfPages": [
+        127,
+        128
+      ],
+      "title": "do и make",
+      "keyExercises": [
+        "58.1",
+        "58.2",
+        "58.3",
+        "58.4"
+      ],
+      "notInScan": []
+    },
+    "59": {
+      "pdfPages": [
+        129,
+        130
+      ],
+      "title": "have",
+      "keyExercises": [
+        "59.1",
+        "59.2",
+        "59.3",
+        "59.4",
+        "59.5"
+      ],
+      "notInScan": []
+    },
+    "60": {
+      "pdfPages": [
+        131,
+        132
+      ],
+      "title": "I/me · he/him · they/them и т. д.",
+      "keyExercises": [
+        "60.1",
+        "60.2",
+        "60.3",
+        "60.4",
+        "60.5",
+        "60.6"
+      ],
+      "notInScan": []
+    },
+    "61": {
+      "pdfPages": [
+        133,
+        134
+      ],
+      "title": "my/his/their и т. д.",
+      "keyExercises": [
+        "61.1",
+        "61.2",
+        "61.3",
+        "61.4",
+        "61.5",
+        "61.6"
+      ],
+      "notInScan": []
+    },
+    "62": {
+      "pdfPages": [
+        135,
+        136
+      ],
+      "title": "Whose is this? · It’s mine/yours/hers и т. д.",
+      "keyExercises": [
+        "62.1",
+        "62.2",
+        "62.3",
+        "62.4",
+        "62.5"
+      ],
+      "notInScan": []
+    },
+    "63": {
+      "pdfPages": [
+        137,
+        138
+      ],
+      "title": "I/me/my/mine",
+      "keyExercises": [
+        "63.1",
+        "63.2",
+        "63.3",
+        "63.4",
+        "63.5"
+      ],
+      "notInScan": []
+    },
+    "64": {
+      "pdfPages": [
+        139,
+        140
+      ],
+      "title": "myself/yourself/themselves и т. д.",
+      "keyExercises": [
+        "64.1",
+        "64.2",
+        "64.3",
+        "64.4",
+        "64.5"
+      ],
+      "notInScan": []
+    },
+    "65": {
+      "pdfPages": [
+        141,
+        142
+      ],
+      "title": "-’s (Kate’s camera / my brother’s car и т. д.)",
+      "keyExercises": [
+        "65.1",
+        "65.2",
+        "65.3",
+        "65.4"
+      ],
+      "notInScan": []
+    },
+    "66": {
+      "pdfPages": [
+        143,
+        144
+      ],
+      "title": "a/an …",
+      "keyExercises": [
+        "66.1",
+        "66.2",
+        "66.3",
+        "66.4",
+        "66.5"
+      ],
+      "notInScan": []
+    },
+    "67": {
+      "pdfPages": [
+        145,
+        146
+      ],
+      "title": "train(s) · bus(es) (единственное и множественное число)",
+      "keyExercises": [
+        "67.1",
+        "67.2",
+        "67.3",
+        "67.4",
+        "67.5"
+      ],
+      "notInScan": []
+    },
+    "68": {
+      "pdfPages": [
+        147,
+        148
+      ],
+      "title": "a bottle / some water (исчисляемые/неисчисляемые существительные 1)",
+      "keyExercises": [
+        "68.1",
+        "68.2",
+        "68.3",
+        "68.4"
+      ],
+      "notInScan": []
+    },
+    "69": {
+      "pdfPages": [
+        149,
+        150
+      ],
+      "title": "a cake / some cake / some cakes (исчисляемые/неисчисляемые существительные 2)",
+      "keyExercises": [
+        "69.1",
+        "69.2",
+        "69.3",
+        "69.4",
+        "69.5"
+      ],
+      "notInScan": []
+    },
+    "70": {
+      "pdfPages": [
+        151,
+        152
+      ],
+      "title": "a/an и the",
+      "keyExercises": [
+        "70.1",
+        "70.2",
+        "70.3",
+        "70.4"
+      ],
+      "notInScan": []
+    },
+    "71": {
+      "pdfPages": [
+        153,
+        154
+      ],
+      "title": "the …",
+      "keyExercises": [
+        "71.1",
+        "71.2",
+        "71.3",
+        "71.4",
+        "71.5"
+      ],
+      "notInScan": []
+    },
+    "72": {
+      "pdfPages": [
+        155,
+        156
+      ],
+      "title": "go to work · go home · go to the cinema",
+      "keyExercises": [
+        "72.1",
+        "72.2",
+        "72.3",
+        "72.4",
+        "72.5"
+      ],
+      "notInScan": []
+    },
+    "73": {
+      "pdfPages": [
+        157,
+        158
+      ],
+      "title": "I like music · I hate exams",
+      "keyExercises": [
+        "73.1",
+        "73.2",
+        "73.3",
+        "73.4"
+      ],
+      "notInScan": []
+    },
+    "74": {
+      "pdfPages": [
+        159,
+        160
+      ],
+      "title": "the … (с географическими названиями)",
+      "keyExercises": [
+        "74.1",
+        "74.2",
+        "74.3"
+      ],
+      "notInScan": []
+    },
+    "75": {
+      "pdfPages": [
+        161,
+        162
+      ],
+      "title": "this/that/these/those",
+      "keyExercises": [
+        "75.1",
+        "75.2",
+        "75.3",
+        "75.4"
+      ],
+      "notInScan": []
+    },
+    "76": {
+      "pdfPages": [
+        163,
+        164
+      ],
+      "title": "one/ones",
+      "keyExercises": [
+        "76.1",
+        "76.2",
+        "76.3",
+        "76.4"
+      ],
+      "notInScan": [
+        "76.4"
+      ]
+    },
+    "77": {
+      "pdfPages": [
+        165,
+        166
+      ],
+      "title": "some и any",
+      "keyExercises": [
+        "77.1",
+        "77.2",
+        "77.3",
+        "77.4",
+        "77.5"
+      ],
+      "notInScan": []
+    },
+    "78": {
+      "pdfPages": [
+        167,
+        168
+      ],
+      "title": "not + any · no · none",
+      "keyExercises": [
+        "78.1",
+        "78.2",
+        "78.3",
+        "78.4",
+        "78.5"
+      ],
+      "notInScan": []
+    },
+    "79": {
+      "pdfPages": [
+        169,
+        170
+      ],
+      "title": "not + anybody/anyone/anything · nobody/no-one/nothing",
+      "keyExercises": [
+        "79.1",
+        "79.2",
+        "79.3",
+        "79.4",
+        "79.5"
+      ],
+      "notInScan": []
+    },
+    "80": {
+      "pdfPages": [
+        171,
+        172
+      ],
+      "title": "somebody/anything/nowhere и т. д.",
+      "keyExercises": [
+        "80.1",
+        "80.2",
+        "80.3",
+        "80.4",
+        "80.5"
+      ],
+      "notInScan": []
+    },
+    "81": {
+      "pdfPages": [
+        173,
+        174
+      ],
+      "title": "every и all",
+      "keyExercises": [
+        "81.1",
+        "81.2",
+        "81.3",
+        "81.4",
+        "81.5",
+        "81.6"
+      ],
+      "notInScan": []
+    },
+    "82": {
+      "pdfPages": [
+        175,
+        176
+      ],
+      "title": "all · most · some · any · no/none",
+      "keyExercises": [
+        "82.1",
+        "82.2",
+        "82.3",
+        "82.4"
+      ],
+      "notInScan": []
+    },
+    "83": {
+      "pdfPages": [
+        177,
+        178
+      ],
+      "title": "both · either · neither",
+      "keyExercises": [
+        "83.1",
+        "83.2",
+        "83.3",
+        "83.4"
+      ],
+      "notInScan": []
+    },
+    "84": {
+      "pdfPages": [
+        179,
+        180
+      ],
+      "title": "a lot · much · many",
+      "keyExercises": [
+        "84.1",
+        "84.2",
+        "84.3",
+        "84.4",
+        "84.5",
+        "84.6"
+      ],
+      "notInScan": []
+    },
+    "85": {
+      "pdfPages": [
+        181,
+        182
+      ],
+      "title": "(a) little · (a) few",
+      "keyExercises": [
+        "85.1",
+        "85.2",
+        "85.3",
+        "85.4",
+        "85.5",
+        "85.6"
+      ],
+      "notInScan": []
+    },
+    "86": {
+      "pdfPages": [
+        183,
+        184
+      ],
+      "title": "old/nice/interesting и т. д. (прилагательные)",
+      "keyExercises": [
+        "86.1",
+        "86.2",
+        "86.3",
+        "86.4",
+        "86.5"
+      ],
+      "notInScan": []
+    },
+    "87": {
+      "pdfPages": [
+        185,
+        186
+      ],
+      "title": "quickly/badly/suddenly и т. д. (наречия)",
+      "keyExercises": [
+        "87.1",
+        "87.2",
+        "87.3",
+        "87.4",
+        "87.5"
+      ],
+      "notInScan": []
+    },
+    "88": {
+      "pdfPages": [
+        187,
+        188
+      ],
+      "title": "old/older · expensive / more expensive",
+      "keyExercises": [
+        "88.1",
+        "88.2",
+        "88.3",
+        "88.4",
+        "88.5"
+      ],
+      "notInScan": []
+    },
+    "89": {
+      "pdfPages": [
+        189,
+        190
+      ],
+      "title": "older than … · more expensive than …",
+      "keyExercises": [
+        "89.1",
+        "89.2",
+        "89.3",
+        "89.4"
+      ],
+      "notInScan": []
+    },
+    "90": {
+      "pdfPages": [
+        191,
+        192
+      ],
+      "title": "not as … as",
+      "keyExercises": [
+        "90.1",
+        "90.2",
+        "90.3",
+        "90.4",
+        "90.5"
+      ],
+      "notInScan": []
+    },
+    "91": {
+      "pdfPages": [
+        193,
+        194
+      ],
+      "title": "the oldest · the most expensive",
+      "keyExercises": [
+        "91.1",
+        "91.2",
+        "91.3",
+        "91.4"
+      ],
+      "notInScan": []
+    },
+    "92": {
+      "pdfPages": [
+        195,
+        196
+      ],
+      "title": "enough",
+      "keyExercises": [
+        "92.1",
+        "92.2",
+        "92.3",
+        "92.4",
+        "92.5"
+      ],
+      "notInScan": []
+    },
+    "93": {
+      "pdfPages": [
+        197,
+        198
+      ],
+      "title": "too",
+      "keyExercises": [
+        "93.1",
+        "93.2",
+        "93.3",
+        "93.4",
+        "93.5"
+      ],
+      "notInScan": []
+    },
+    "94": {
+      "pdfPages": [
+        199,
+        200
+      ],
+      "title": "He caught a big fish. (порядок слов 1)",
+      "keyExercises": [
+        "94.1",
+        "94.2",
+        "94.3",
+        "94.4"
+      ],
+      "notInScan": []
+    },
+    "95": {
+      "pdfPages": [
+        201,
+        202
+      ],
+      "title": "always/usually/often и т. д. (порядок слов 2)",
+      "keyExercises": [
+        "95.1",
+        "95.2",
+        "95.3",
+        "95.4",
+        "95.5"
+      ],
+      "notInScan": []
+    },
+    "96": {
+      "pdfPages": [
+        203,
+        204
+      ],
+      "title": "still · yet · already",
+      "keyExercises": [
+        "96.1",
+        "96.2",
+        "96.3",
+        "96.4",
+        "96.5"
+      ],
+      "notInScan": []
+    },
+    "97": {
+      "pdfPages": [
+        205,
+        206
+      ],
+      "title": "Give me that book! · Give it to me!",
+      "keyExercises": [
+        "97.1",
+        "97.2",
+        "97.3",
+        "97.4",
+        "97.5"
+      ],
+      "notInScan": []
+    },
+    "98": {
+      "pdfPages": [
+        207,
+        208
+      ],
+      "title": "and · but · or · so · because",
+      "keyExercises": [
+        "98.1",
+        "98.2",
+        "98.3",
+        "98.4"
+      ],
+      "notInScan": []
+    },
+    "99": {
+      "pdfPages": [
+        209,
+        210
+      ],
+      "title": "When … · If …",
+      "keyExercises": [
+        "99.1",
+        "99.2",
+        "99.3",
+        "99.4",
+        "99.5"
+      ],
+      "notInScan": []
+    },
+    "100": {
+      "pdfPages": [
+        211,
+        212
+      ],
+      "title": "If I had … · If we went … и т. д.",
+      "keyExercises": [
+        "100.1",
+        "100.2",
+        "100.3",
+        "100.4",
+        "100.5"
+      ],
+      "notInScan": []
+    },
+    "101": {
+      "pdfPages": [
+        213,
+        214
+      ],
+      "title": "a person who … · a thing that/which … (относительные придаточные предложения 1)",
+      "keyExercises": [
+        "101.1",
+        "101.2",
+        "101.3",
+        "101.4",
+        "101.5"
+      ],
+      "notInScan": []
+    },
+    "102": {
+      "pdfPages": [
+        215,
+        216
+      ],
+      "title": "the people we met · the hotel you stayed at (относительные придаточные предложения 2)",
+      "keyExercises": [
+        "102.1",
+        "102.2",
+        "102.3",
+        "102.4",
+        "102.5"
+      ],
+      "notInScan": []
+    },
+    "103": {
+      "pdfPages": [
+        217,
+        218
+      ],
+      "title": "at 8 o’clock · on Monday · in April",
+      "keyExercises": [
+        "103.1",
+        "103.2",
+        "103.3",
+        "103.4",
+        "103.5",
+        "103.6"
+      ],
+      "notInScan": []
+    },
+    "104": {
+      "pdfPages": [
+        219,
+        220
+      ],
+      "title": "from … to · until · since · for",
+      "keyExercises": [
+        "104.1",
+        "104.2",
+        "104.3"
+      ],
+      "notInScan": []
+    },
+    "105": {
+      "pdfPages": [
+        221,
+        222
+      ],
+      "title": "before · after · during · while",
+      "keyExercises": [
+        "105.1",
+        "105.2",
+        "105.3",
+        "105.4",
+        "105.5"
+      ],
+      "notInScan": []
+    },
+    "106": {
+      "pdfPages": [
+        223,
+        224
+      ],
+      "title": "in · at · on (предлоги места 1)",
+      "keyExercises": [
+        "106.1",
+        "106.2",
+        "106.3"
+      ],
+      "notInScan": []
+    },
+    "107": {
+      "pdfPages": [
+        225,
+        226
+      ],
+      "title": "in · at · on (предлоги места 2)",
+      "keyExercises": [
+        "107.1",
+        "107.2",
+        "107.3"
+      ],
+      "notInScan": []
+    },
+    "108": {
+      "pdfPages": [
+        227,
+        228
+      ],
+      "title": "to · in · at (предлоги места 3)",
+      "keyExercises": [
+        "108.1",
+        "108.2",
+        "108.3",
+        "108.4",
+        "108.5",
+        "108.6"
+      ],
+      "notInScan": []
+    },
+    "109": {
+      "pdfPages": [
+        229,
+        230
+      ],
+      "title": "under, behind, opposite и т. д.",
+      "keyExercises": [
+        "109.1",
+        "109.2",
+        "109.3",
+        "109.4"
+      ],
+      "notInScan": []
+    },
+    "110": {
+      "pdfPages": [
+        231,
+        232
+      ],
+      "title": "up, over, through и т. д.",
+      "keyExercises": [
+        "110.1",
+        "110.2",
+        "110.3",
+        "110.4"
+      ],
+      "notInScan": []
+    },
+    "111": {
+      "pdfPages": [
+        233,
+        234
+      ],
+      "title": "on · at · by · with · about",
+      "keyExercises": [
+        "111.1",
+        "111.2",
+        "111.3",
+        "111.4"
+      ],
+      "notInScan": []
+    },
+    "112": {
+      "pdfPages": [
+        235,
+        236
+      ],
+      "title": "full of …, good at … и т. д. · of/at/for и т. д. (предлоги) + -ing",
+      "keyExercises": [
+        "112.1",
+        "112.2",
+        "112.3",
+        "112.4",
+        "112.5",
+        "112.6"
+      ],
+      "notInScan": []
+    },
+    "113": {
+      "pdfPages": [
+        237,
+        238
+      ],
+      "title": "listen to …, look at … и т. д. (глагол + предлог)",
+      "keyExercises": [
+        "113.1",
+        "113.2",
+        "113.3",
+        "113.4",
+        "113.5"
+      ],
+      "notInScan": []
+    },
+    "114": {
+      "pdfPages": [
+        239,
+        240
+      ],
+      "title": "go in, fall off, run away и т. д. (phrasal verbs 1)",
+      "keyExercises": [
+        "114.1",
+        "114.2",
+        "114.3",
+        "114.4"
+      ],
+      "notInScan": []
+    },
+    "115": {
+      "pdfPages": [
+        241,
+        242
+      ],
+      "title": "put on your shoes · put your shoes on (phrasal verbs 2)",
+      "keyExercises": [
+        "115.1",
+        "115.2",
+        "115.3",
+        "115.4",
+        "115.5"
+      ],
+      "notInScan": []
+    }
+  }
+}

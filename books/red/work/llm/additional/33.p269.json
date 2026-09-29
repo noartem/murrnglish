@@ -1,0 +1,139 @@
+{
+ "id": 33,
+ "topic": "a и the",
+ "refs": "Разделы 66, 70–74",
+ "pdfPages": [
+  269
+ ],
+ "exercise": {
+  "id": "33",
+  "type": "fill-in",
+  "instruction": "Закончите предложения.",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "Can you pass ",
+     ", please?"
+    ],
+    "answers": [
+     [
+      "the sugar"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "Do you have ",
+     " ?"
+    ],
+    "answers": [
+     [
+      "a car"
+     ]
+    ]
+   },
+   {
+    "num": 3,
+    "parts": [
+     "Yes, there’s some in ",
+     "."
+    ],
+    "answers": [
+     [
+      "the fridge"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "I’m ",
+     "."
+    ],
+    "answers": [
+     [
+      "a teacher"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "I don’t feel very well. I don’t want to go to ",
+     "."
+    ],
+    "answers": [
+     [
+      "school"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "I went to ",
+     "."
+    ],
+    "answers": [
+     [
+      "the cinema"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "No, let’s get ",
+     "."
+    ],
+    "answers": [
+     [
+      "a taxi"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "Can you play ",
+     " ?"
+    ],
+    "answers": [
+     [
+      "the piano"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "I’m interested in ",
+     "."
+    ],
+    "answers": [
+     [
+      "cars"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "Nothing, they’re ",
+     "."
+    ],
+    "answers": [
+     [
+      "the same"
+     ]
+    ]
+   }
+  ]
+ }
+}

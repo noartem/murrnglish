@@ -1,0 +1,475 @@
+{
+  "unit": 28,
+  "title": "will/shall 1",
+  "pdfPages": [
+    67,
+    68
+  ],
+  "exercises": [
+    {
+      "id": "28.1",
+      "type": "fill-in",
+      "instruction": "Хелен путешествует по Европе. Заполните пропуски, используя she was, she’s или she’ll be.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Yesterday ",
+            " in Paris."
+          ],
+          "answers": [
+            [
+              "she was"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Tomorrow ",
+            " in Amsterdam."
+          ],
+          "answers": [
+            [
+              "she’ll be"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Last week ",
+            " in Barcelona."
+          ],
+          "answers": [
+            [
+              "she was"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Next week ",
+            " in London."
+          ],
+          "answers": [
+            [
+              "she’ll be"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "At the moment ",
+            " in Brussels."
+          ],
+          "answers": [
+            [
+              "she’s"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Three days ago ",
+            " in Munich."
+          ],
+          "answers": [
+            [
+              "she was"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "At the end of her trip ",
+            " very tired."
+          ],
+          "answers": [
+            [
+              "she’ll be"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28.2",
+      "type": "self-check",
+      "instruction": "Где вы будете в это время? Напишите предложения о себе. Используйте:",
+      "wordBank": [
+        "I’ll be …",
+        "I’ll probably be …",
+        "I don’t know where I’ll be."
+      ],
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(at 10 o’clock tomorrow)",
+          "modelAnswers": [
+            "I’ll probably be on the beach."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(one hour from now)",
+          "modelAnswers": [
+            "I’ll be at home."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(at midnight tonight)",
+          "modelAnswers": [
+            "I’ll probably be in bed."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(at 3 o’clock tomorrow afternoon)",
+          "modelAnswers": [
+            "I’ll be at work."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(two years from now)",
+          "modelAnswers": [
+            "I don’t know where I’ll be."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28.3",
+      "type": "fill-in",
+      "instruction": "Вставьте will (’ll) или won’t.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Don’t drink coffee before you go to bed. You ",
+            " sleep."
+          ],
+          "answers": [
+            [
+              "won’t"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Are you ready yet?’ ‘Not yet. I ",
+            " be ready in five minutes.’"
+          ],
+          "answers": [
+            [
+              "’ll",
+              "will"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I’m going away for a few days. I’m leaving tonight, so I ",
+            " be at home tomorrow."
+          ],
+          "answers": [
+            [
+              "won’t"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "It ",
+            " rain, so you don’t need to take an umbrella."
+          ],
+          "answers": [
+            [
+              "won’t"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "A: I don’t feel very well this evening. B: Well, go to bed early and you ",
+            " feel better in the morning."
+          ],
+          "answers": [
+            [
+              "’ll",
+              "will"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "It’s Ben’s birthday next Monday. He ",
+            " be 25."
+          ],
+          "answers": [
+            [
+              "’ll",
+              "will"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I’m sorry I was late this morning. It ",
+            " happen again."
+          ],
+          "answers": [
+            [
+              "won’t"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28.4",
+      "type": "write",
+      "instruction": "Напишите предложения с I think … или I don’t think … .",
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(Kelly will pass the exam)",
+          "answers": [
+            "I think Kelly will pass the exam."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(Kelly won’t pass the exam)",
+          "answers": [
+            "I don’t think Kelly will pass the exam."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(we’ll win the game)",
+          "answers": [
+            "I think we’ll win the game."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(I won’t be here tomorrow)",
+          "answers": [
+            "I don’t think I’ll be here tomorrow."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(Sue will like her present)",
+          "answers": [
+            "I think Sue will like her present."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(they won’t get married)",
+          "answers": [
+            "I don’t think they’ll get married."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(you won’t enjoy the film)",
+          "answers": [
+            "I don’t think you’ll enjoy the film."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28.5",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант. (Перед тем как выполнить упражнение, изучите Раздел 26.)",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "options": [
+            "We’ll go to the theatre tonight. We’ve got tickets.",
+            "We’re going to the theatre tonight. We’ve got tickets."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "‘What will you do tomorrow evening?’ ‘Nothing. I’m free.’",
+            "‘What are you doing tomorrow evening?’ ‘Nothing. I’m free.’"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "They’ll go away tomorrow morning. Their train is at 8.40.",
+            "They’re going away tomorrow morning. Their train is at 8.40."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": [
+            "I’m sure your aunt will lend us some money. She’s very rich.",
+            "I’m sure your aunt is lending us some money. She’s very rich."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": [
+            "‘Why are you putting on your coat?’ ‘I’ll go out.’",
+            "‘Why are you putting on your coat?’ ‘I’m going out.’"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 6,
+          "options": [
+            "Do you think Clare will phone us tonight?",
+            "Do you think Clare is phoning us tonight?"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": [
+            "Steve can’t meet us on Saturday. He’ll work.",
+            "Steve can’t meet us on Saturday. He’s working."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": [
+            "Will you be at home tomorrow evening?",
+            "Shall you be at home tomorrow evening?"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": [
+            "A: What are your plans for the weekend? B: Some friends will come to stay with us.",
+            "A: What are your plans for the weekend? B: Some friends are coming to stay with us."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "28.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (хорошо проводить время = have a good time)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Завтра в 5 часов я буду в Москве.",
+          "answers": [
+            "I’ll be in Moscow tomorrow at 5 o’clock.",
+            "I will be in Moscow tomorrow at 5 o’clock.",
+            "I’ll be in Moscow tomorrow at 5.",
+            "I will be in Moscow tomorrow at 5.",
+            "Tomorrow at 5 o’clock I’ll be in Moscow.",
+            "Tomorrow at 5 o’clock I will be in Moscow.",
+            "Tomorrow at 5 I’ll be in Moscow.",
+            "Tomorrow at 5 I will be in Moscow."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я думаю, тебе понравится подарок.",
+          "answers": [
+            "I think you’ll like the present.",
+            "I think you’ll like the gift.",
+            "I think you’ll like your present.",
+            "I think you’ll like your gift.",
+            "I think you will like the present.",
+            "I think you will like the gift.",
+            "I think you will like your present.",
+            "I think you will like your gift."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Диана, вероятно, скоро придёт домой.",
+          "answers": [
+            "Diana will probably come home soon.",
+            "Diana will probably be home soon."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Я уверен, что ты хорошо проведёшь время.",
+          "answers": [
+            "I’m sure you’ll have a good time.",
+            "I’m sure you will have a good time.",
+            "I am sure you’ll have a good time.",
+            "I am sure you will have a good time."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я не думаю, что Джессика опоздает.",
+          "answers": [
+            "I don’t think Jessica will be late.",
+            "I don’t think that Jessica will be late."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Что вы делаете в субботу?",
+          "answers": [
+            "What are you doing on Saturday?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "В пятницу Олега не будет на работе.",
+          "answers": [
+            "Oleg won’t be at work on Friday.",
+            "Oleg will not be at work on Friday.",
+            "On Friday Oleg won’t be at work.",
+            "On Friday Oleg will not be at work."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Завтра Виктор идёт на футбольный матч. У него уже есть билет.",
+          "answers": [
+            "Victor is going to a football match tomorrow. He’s already got a ticket.",
+            "Tomorrow Victor is going to a football match. He’s already got a ticket."
+          ]
+        }
+      ]
+    }
+  ]
+}

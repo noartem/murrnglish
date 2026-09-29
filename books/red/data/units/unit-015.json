@@ -1,0 +1,343 @@
+{
+  "unit": 15,
+  "title": "I was doing (past continuous) и I did (past simple)",
+  "pdfPages": [
+    41,
+    42
+  ],
+  "exercises": [
+    {
+      "id": "15.1",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки. Поставьте глаголы в правильную форму – past continuous или past simple.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Lucy ",
+            " (break) her arm last week.\nIt ",
+            " (happen) when she ",
+            " (paint) her room.\nShe ",
+            " (fall) off the ladder."
+          ],
+          "answers": [
+            [
+              "broke"
+            ],
+            [
+              "happened"
+            ],
+            [
+              "was painting"
+            ],
+            [
+              "fell"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The train ",
+            " (arrive) at the station and Paula ",
+            " (get) off.\nTwo friends of hers, Jon and Rachel, ",
+            " (wait) to meet her."
+          ],
+          "answers": [
+            [
+              "arrived"
+            ],
+            [
+              "got"
+            ],
+            [
+              "were waiting"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Yesterday Sue ",
+            " (walk) along the road when she ",
+            " (meet) James.\nHe ",
+            " (go) to the station to catch a train and he ",
+            " (carry) a bag.\nThey ",
+            " (stop) to talk for a few minutes."
+          ],
+          "answers": [
+            [
+              "was walking"
+            ],
+            [
+              "met"
+            ],
+            [
+              "was going"
+            ],
+            [
+              "was carrying"
+            ],
+            [
+              "stopped"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15.2",
+      "type": "fill-in",
+      "instruction": "Поставьте глаголы в past continuous или past simple.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "A: What was the weather like when you ",
+            " (get) up this morning?\nB: It ",
+            " (rain)."
+          ],
+          "answers": [
+            [
+              "got"
+            ],
+            [
+              "was raining"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A: Was Jane busy when you went to see her?\nB: Yes, she ",
+            " (study)."
+          ],
+          "answers": [
+            [
+              "was studying"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "A: ",
+            " (Paul/call) you this morning?\nB: Yes, he ",
+            " (call) while I ",
+            " (have) breakfast."
+          ],
+          "answers": [
+            [
+              "Did Paul call"
+            ],
+            [
+              "called"
+            ],
+            [
+              "was having"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A: Was Tracey at work today?\nB: No, she ",
+            " (not/go) to work. She was ill."
+          ],
+          "answers": [
+            [
+              "didn’t go"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "A: How fast ",
+            " (you/drive) when the police ",
+            " (stop) you?\nB: I’m not sure, but I ",
+            " (not/drive) very fast."
+          ],
+          "answers": [
+            [
+              "were you driving"
+            ],
+            [
+              "stopped"
+            ],
+            [
+              "wasn’t driving"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "A: ",
+            " (your team / win) the football match yesterday?\nB: The weather was very bad, so we ",
+            " (not/play)."
+          ],
+          "answers": [
+            [
+              "Did your team win"
+            ],
+            [
+              "didn’t play"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A: How ",
+            " (you/break) the window?\nB: We ",
+            " (play) football. I ",
+            " (kick) the ball and it ",
+            " (hit) the window."
+          ],
+          "answers": [
+            [
+              "did you break"
+            ],
+            [
+              "were playing"
+            ],
+            [
+              "kicked"
+            ],
+            [
+              "hit"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "A: ",
+            " (you/see) Jessica last night?\nB: Yes, she ",
+            " (wear) a very nice jacket."
+          ],
+          "answers": [
+            [
+              "Did you see"
+            ],
+            [
+              "was wearing"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "A: What ",
+            " (you/do) at 2 o’clock this morning?\nB: I was asleep."
+          ],
+          "answers": [
+            [
+              "were you doing"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "A: I ",
+            " (lose) my key last night.\nB: How ",
+            " (you/get) into your room?\nA: I ",
+            " (climb) in through a window."
+          ],
+          "answers": [
+            [
+              "lost"
+            ],
+            [
+              "did you get"
+            ],
+            [
+              "climbed"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15.3",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (разговаривать = chat; сад = garden; войти в = enter; комната = room)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Сандра готовила ужин, когда мы пришли домой.",
+          "answers": [
+            "Sandra was cooking dinner, when we got home.",
+            "Sandra was cooking dinner, when we came home."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я шёл на работу, когда я встретил Наташу.",
+          "answers": [
+            "I was walking to work when I met Natasha.",
+            "I was going to work when I met Natasha."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Они не работали. Они разговаривали.",
+          "answers": [
+            "They weren’t working. They were chatting.",
+            "They were not working. They were chatting."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Вчера в три часа дня я работал.",
+          "answers": [
+            "I was working at three o’clock yesterday afternoon.",
+            "At three o’clock yesterday afternoon I was working."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Дождь не шёл, поэтому мы пообедали в саду.",
+          "answers": [
+            "It wasn’t raining, so we had lunch in the garden.",
+            "It was not raining, so we had lunch in the garden."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Когда я вошла в комнату, Анна и Родриго говорили по-испански.",
+          "answers": [
+            "When I entered the room, Anna and Rodrigo were speaking Spanish."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Я очень устал вчера, поэтому я лёг спать в 9 часов.",
+          "answers": [
+            "I was very tired yesterday, so I went to bed at 9.",
+            "I was very tired yesterday, so I went to bed at 9 o’clock.",
+            "I felt very tired yesterday, so I went to bed at 9.",
+            "I felt very tired yesterday, so I went to bed at 9 o’clock.",
+            "Yesterday I was very tired, so I went to bed at 9.",
+            "Yesterday I was very tired, so I went to bed at 9 o’clock.",
+            "Yesterday I felt very tired, so I went to bed at 9.",
+            "Yesterday I felt very tired, so I went to bed at 9 o’clock."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Когда позвонила Саша, Анна смотрела телевизор.",
+          "answers": [
+            "When Sasha called, Anna was watching TV.",
+            "When Sasha phoned, Anna was watching TV.",
+            "When Sasha rang, Anna was watching TV."
+          ]
+        }
+      ]
+    }
+  ]
+}

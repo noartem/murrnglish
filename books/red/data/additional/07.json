@@ -1,0 +1,92 @@
+{
+  "id": 7,
+  "topic": "present simple, am/is/are и have (got)",
+  "refs": "Разделы 1–3, 6–8, 10",
+  "pdfPages": [
+    254
+  ],
+  "exercise": {
+    "id": "7",
+    "type": "write",
+    "instruction": "Составьте предложения из этих слов. Все предложения в настоящем времени.",
+    "example": [
+      1,
+      2,
+      3
+    ],
+    "items": [
+      {
+        "num": 1,
+        "prompt": "Sarah often / tennis",
+        "answers": [
+          "Sarah often plays tennis."
+        ]
+      },
+      {
+        "num": 2,
+        "prompt": "my parents / a new car",
+        "answers": [
+          "My parents have got a new car."
+        ]
+      },
+      {
+        "num": 3,
+        "prompt": "my shoes / dirty",
+        "answers": [
+          "My shoes are dirty."
+        ]
+      },
+      {
+        "num": 4,
+        "prompt": "Sonia / 32 years old",
+        "answers": [
+          "Sonia is 32 years old."
+        ]
+      },
+      {
+        "num": 5,
+        "prompt": "I / two sisters",
+        "answers": [
+          "I’ve got two sisters.",
+          "I have two sisters."
+        ]
+      },
+      {
+        "num": 6,
+        "prompt": "we often / TV in the evening",
+        "answers": [
+          "We often watch TV in the evening."
+        ]
+      },
+      {
+        "num": 7,
+        "prompt": "Amy never / a hat",
+        "answers": [
+          "Amy never wears a hat."
+        ]
+      },
+      {
+        "num": 8,
+        "prompt": "a bicycle / two wheels",
+        "answers": [
+          "A bicycle has got two wheels.",
+          "A bicycle has two wheels."
+        ]
+      },
+      {
+        "num": 9,
+        "prompt": "these flowers / beautiful",
+        "answers": [
+          "These flowers are beautiful."
+        ]
+      },
+      {
+        "num": 10,
+        "prompt": "Emma / German very well",
+        "answers": [
+          "Emma speaks German very well."
+        ]
+      }
+    ]
+  }
+}

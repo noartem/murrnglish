@@ -1,0 +1,482 @@
+{
+  "unit": 87,
+  "title": "quickly/badly/suddenly и т. д. (наречия)",
+  "pdfPages": [
+    185,
+    186
+  ],
+  "exercises": [
+    {
+      "id": "87.1",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и закончите предложения. Вставьте наречия из рамки:",
+      "wordBank": [
+        "angrily",
+        "badly",
+        "dangerously",
+        "fast",
+        "heavily",
+        "quietly"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "It’s raining ",
+            "."
+          ],
+          "answers": [
+            [
+              "heavily"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He sings very ",
+            "."
+          ],
+          "answers": [
+            [
+              "badly"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "They came in ",
+            "."
+          ],
+          "answers": [
+            [
+              "quietly"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "She shouted at me ",
+            "."
+          ],
+          "answers": [
+            [
+              "angrily"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "She can run very ",
+            "."
+          ],
+          "answers": [
+            [
+              "fast"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "He was driving ",
+            "."
+          ],
+          "answers": [
+            [
+              "dangerously"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87.2",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте слова из обеих рамок.",
+      "wordBank": [
+        "come",
+        "know",
+        "sleep",
+        "win",
+        "explain",
+        "listen",
+        "think",
+        "work",
+        "carefully",
+        "clearly",
+        "hard",
+        "well",
+        "carefully",
+        "easily",
+        "quickly",
+        "well"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I’m going to tell you something very important, so please ",
+            "."
+          ],
+          "answers": [
+            [
+              "listen carefully"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "They ",
+            ". At the end of the day they’re always tired."
+          ],
+          "answers": [
+            [
+              "work hard"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I’m tired this morning. I didn’t ",
+            " last night."
+          ],
+          "answers": [
+            [
+              "sleep well"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "You play tennis much better than me. When we play, you always ",
+            "."
+          ],
+          "answers": [
+            [
+              "win easily"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " before you answer the question."
+          ],
+          "answers": [
+            [
+              "Think carefully"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I’ve met Alice a few times, but I don’t ",
+            " her very ",
+            "."
+          ],
+          "answers": [
+            [
+              "know"
+            ],
+            [
+              "well"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Our teacher doesn’t ",
+            " things very ",
+            ". We never understand him."
+          ],
+          "answers": [
+            [
+              "explain"
+            ],
+            [
+              "clearly",
+              "well"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Helen! I need your help. ",
+            "!"
+          ],
+          "answers": [
+            [
+              "Come quickly"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87.3",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "options": [
+            "Don’t eat so quick. It’s not good for you.",
+            "Don’t eat so quickly. It’s not good for you."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "Why are you angry? I haven’t done anything.",
+            "Why are you angrily? I haven’t done anything."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 3,
+          "options": [
+            "Can you speak slow, please?",
+            "Can you speak slowly, please?"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": [
+            "Come on, Dave! Why are you always so slow?",
+            "Come on, Dave! Why are you always so slowly?"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 5,
+          "options": [
+            "Sam is a very careful driver.",
+            "Sam is a very carefully driver."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": [
+            "Amy is studying hard for her examinations.",
+            "Amy is studying hardly for her examinations."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 7,
+          "options": [
+            "'Where’s Anna?' 'She was here, but she left sudden.'",
+            "'Where’s Anna?' 'She was here, but she left suddenly.'"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 8,
+          "options": [
+            "Please be quiet. I’m studying.",
+            "Please be quietly. I’m studying."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 9,
+          "options": [
+            "Some companies pay their workers very bad.",
+            "Some companies pay their workers very badly."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 10,
+          "options": [
+            "Those oranges look nice. Can I have one?",
+            "Those oranges look nicely. Can I have one?"
+          ],
+          "answer": 0
+        },
+        {
+          "num": 11,
+          "options": [
+            "I don’t remember much about the accident. Everything happened quick.",
+            "I don’t remember much about the accident. Everything happened quickly."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "87.4",
+      "type": "fill-in",
+      "instruction": "Вставьте good или well.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Your English is very ",
+            ". You speak it very ",
+            "."
+          ],
+          "answers": [
+            [
+              "good"
+            ],
+            [
+              "well"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Jackie did very ",
+            " in her exams."
+          ],
+          "answers": [
+            [
+              "well"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The party was very ",
+            ". I enjoyed it very much."
+          ],
+          "answers": [
+            [
+              "good"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Mark has a difficult job, but he does it ",
+            "."
+          ],
+          "answers": [
+            [
+              "well"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "How are your parents? Are they ",
+            "?"
+          ],
+          "answers": [
+            [
+              "well"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Did you have a ",
+            " holiday? Was the weather ",
+            "?"
+          ],
+          "answers": [
+            [
+              "good"
+            ],
+            [
+              "good"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (веди машину = drive)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Завтра мне нужно рано вставать.",
+          "answers": [
+            "I need to get up early tomorrow.",
+            "I have to get up early tomorrow.",
+            "Tomorrow I need to get up early.",
+            "Tomorrow I have to get up early."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Идёт дождь. Пожалуйста, веди машину медленно и осторожно.",
+          "answers": [
+            "It’s raining. Please drive slowly and carefully."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Тарелка горячая. Будь осторожна.",
+          "answers": [
+            "The plate is hot. Be careful."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Джеймс говорит по-английски очень быстро.",
+          "answers": [
+            "James speaks English very fast.",
+            "James speaks English very quickly."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Моя дочь ложится спать очень поздно.",
+          "answers": [
+            "My daughter goes to bed very late."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Анна очень хорошо поёт.",
+          "answers": [
+            "Anna sings very well."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Почему ты неожиданно остановилась?",
+          "answers": [
+            "Why did you stop suddenly?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Вы хорошо знаете Марину?",
+          "answers": [
+            "Do you know Marina well?"
+          ]
+        }
+      ]
+    }
+  ]
+}

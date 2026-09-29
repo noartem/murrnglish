@@ -1,0 +1,730 @@
+{
+  "unit": 24,
+  "title": "be/have/do в настоящем и прошедшем времени",
+  "pdfPages": [
+    59,
+    60
+  ],
+  "exercises": [
+    {
+      "id": "24.1",
+      "type": "fill-in",
+      "instruction": "Вставьте is/are или do/does.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " you work in the evenings?"
+          ],
+          "answers": [
+            [
+              "Do"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Where ",
+            " they going?"
+          ],
+          "answers": [
+            [
+              "are"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Why ",
+            " you looking at me?"
+          ],
+          "answers": [
+            [
+              "are"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " Ben live near you?"
+          ],
+          "answers": [
+            [
+              "Does"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " you like cooking?"
+          ],
+          "answers": [
+            [
+              "Do"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " the sun shining?"
+          ],
+          "answers": [
+            [
+              "Is"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "What time ",
+            " the shops close?"
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            " Maria working today?"
+          ],
+          "answers": [
+            [
+              "Is"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "What ",
+            " this word mean?"
+          ],
+          "answers": [
+            [
+              "does"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "",
+            " you feeling all right?"
+          ],
+          "answers": [
+            [
+              "Are"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24.2",
+      "type": "fill-in",
+      "instruction": "Вставьте am not/isn’t/aren’t или don’t/doesn’t. Все эти предложения отрицательные.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Tom ",
+            " work at weekends."
+          ],
+          "answers": [
+            [
+              "doesn’t"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’m very tired. I ",
+            " want to go out this evening."
+          ],
+          "answers": [
+            [
+              "don’t"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I’m very tired. I ",
+            " going out this evening."
+          ],
+          "answers": [
+            [
+              "’m not",
+              "am not"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Gary ",
+            " working this week. He’s on holiday."
+          ],
+          "answers": [
+            [
+              "isn’t"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "My parents are usually at home. They ",
+            " go out very often."
+          ],
+          "answers": [
+            [
+              "don’t"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Nicola has travelled a lot, but she ",
+            " speak any foreign languages."
+          ],
+          "answers": [
+            [
+              "doesn’t"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "You can turn off the television. I ",
+            " watching it."
+          ],
+          "answers": [
+            [
+              "’m not",
+              "am not"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Lisa has invited us to her party next week, but we ",
+            " going."
+          ],
+          "answers": [
+            [
+              "aren’t",
+              "’re not"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24.3",
+      "type": "fill-in",
+      "instruction": "Вставьте was/were/did/have/has.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Where ",
+            " your shoes made?"
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " you go out last night?"
+          ],
+          "answers": [
+            [
+              "Did"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "What ",
+            " you doing at 10.30?"
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Where ",
+            " your mother born?"
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " Laura gone home?"
+          ],
+          "answers": [
+            [
+              "Has"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "What time ",
+            " she go?"
+          ],
+          "answers": [
+            [
+              "did"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "When ",
+            " these houses built?"
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            " Steve arrived yet?"
+          ],
+          "answers": [
+            [
+              "Has"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Why ",
+            " you go home early?"
+          ],
+          "answers": [
+            [
+              "did"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "How long ",
+            " they been married?"
+          ],
+          "answers": [
+            [
+              "have"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24.4",
+      "type": "fill-in",
+      "instruction": "Вставьте is/are/was/were/have/has.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Joe ",
+            " lost his passport."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "This bridge ",
+            " built ten years ago."
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " you finished your work yet?"
+          ],
+          "answers": [
+            [
+              "Have"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This town is always clean. The streets ",
+            " cleaned every day."
+          ],
+          "answers": [
+            [
+              "are"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Where ",
+            " you born?"
+          ],
+          "answers": [
+            [
+              "were"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I ",
+            " just made some coffee. Would you like some?"
+          ],
+          "answers": [
+            [
+              "’ve",
+              "have"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Glass ",
+            " made from sand."
+          ],
+          "answers": [
+            [
+              "is"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "This is a very old photograph. It ",
+            " taken a long time ago."
+          ],
+          "answers": [
+            [
+              "was"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "David ",
+            " bought a new car."
+          ],
+          "answers": [
+            [
+              "has"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24.5",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски в предложениях. Выберите подходящий глагол из рамки и поставьте его в правильную форму.",
+      "wordBank": [
+        "damage",
+        "rain",
+        "enjoy",
+        "go",
+        "pronounce",
+        "eat",
+        "listen",
+        "use",
+        "open",
+        "go",
+        "understand"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I’m going to take an umbrella with me. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "raining"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Why are you so tired? Did you ",
+            " to bed late last night?"
+          ],
+          "answers": [
+            [
+              "go"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Where are the chocolates? Have you ",
+            " them all?"
+          ],
+          "answers": [
+            [
+              "eaten"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "How is your new job? Are you ",
+            " it?"
+          ],
+          "answers": [
+            [
+              "enjoying"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "My car was badly ",
+            " in the accident, but I was OK."
+          ],
+          "answers": [
+            [
+              "damaged"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Kate has got a car, but she doesn’t ",
+            " it very often."
+          ],
+          "answers": [
+            [
+              "use"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Lisa isn’t at home. She has ",
+            " away for a few days."
+          ],
+          "answers": [
+            [
+              "gone"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I don’t ",
+            " the problem. Can you explain it again?"
+          ],
+          "answers": [
+            [
+              "understand"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Mark is in his room. He’s ",
+            " to music."
+          ],
+          "answers": [
+            [
+              "listening"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I don’t know how to say this word. How is it ",
+            "?"
+          ],
+          "answers": [
+            [
+              "pronounced"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "How do you ",
+            " this window? Can you show me?"
+          ],
+          "answers": [
+            [
+              "open"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24.6",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (вегетарианец = vegetarian)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "«Что ты делаешь?» – «Я пишу имейл».",
+          "answers": [
+            "‘What are you doing?’ ‘I’m writing an email.’"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Что делал Бен, когда Вы пришли домой?",
+          "answers": [
+            "What was Ben doing when you came home?",
+            "What was Ben doing when you arrived home?",
+            "What was Ben doing when you got home?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Ты видела мою новую сумку?",
+          "answers": [
+            "Have you seen my new bag?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "«Где живёт Эмма?» – «Я не знаю».",
+          "answers": [
+            "‘Where does Emma live?’ ‘I don’t know.’",
+            "‘Where does Emma live?’ ‘I do not know.’"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Тебе понравились твои подарки?",
+          "answers": [
+            "Did you like your presents?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Как это окно было разбито?",
+          "answers": [
+            "How was this window broken?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Тим был в Америке, но он не был в Канаде.",
+          "answers": [
+            "Tim has been to America but he hasn’t been to Canada.",
+            "Tim has been to America but he has not been to Canada."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Эти телевизоры делаются в Китае.",
+          "answers": [
+            "These TVs are made in China."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Гари не ест мясо. Он вегетарианец.",
+          "answers": [
+            "Gary doesn’t eat meat. He’s a vegetarian.",
+            "Gary doesn’t eat meat. He is a vegetarian."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Я закончил работу и теперь я читаю.",
+          "answers": [
+            "I’ve finished work and now I’m reading.",
+            "I’ve finished work and now I am reading.",
+            "I have finished work and now I’m reading.",
+            "I have finished work and now I am reading."
+          ]
+        }
+      ]
+    }
+  ]
+}

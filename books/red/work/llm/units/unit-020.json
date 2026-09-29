@@ -1,0 +1,498 @@
+{
+ "unit": 20,
+ "title": "for · since · ago",
+ "pdfPages": [
+  51,
+  52
+ ],
+ "exercises": [
+  {
+   "id": "20.1",
+   "type": "fill-in",
+   "instruction": "Вставьте for или since.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Helen has been in Ireland ",
+      " Monday."
+     ],
+     "answers": [
+      [
+       "since"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Helen has been in Ireland ",
+      " three days."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "My aunt has lived in Australia ",
+      " 15 years."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Tina is in her office. She has been there ",
+      " 7 o’clock."
+     ],
+     "answers": [
+      [
+       "since"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "India has been an independent country ",
+      " 1947."
+     ],
+     "answers": [
+      [
+       "since"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The bus is late. We’ve been waiting ",
+      " 20 minutes."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Nobody lives in those houses. They have been empty ",
+      " many years."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Michael has been ill ",
+      " a long time. He has been in hospital ",
+      " October."
+     ],
+     "answers": [
+      [
+       "for"
+      ],
+      [
+       "since"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "20.2",
+   "type": "self-check",
+   "instruction": "Напишите ответы на вопросы, используя ago.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "When was your last meal?",
+     "modelAnswers": [
+      "Three hours ago."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "When was the last time you were ill?",
+     "modelAnswers": [
+      "A year ago."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "When did you last go to the cinema?",
+     "modelAnswers": [
+      "A few weeks ago."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "When was the last time you were in a car?",
+     "modelAnswers": [
+      "Two hours ago."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "When was the last time you went on holiday?",
+     "modelAnswers": [
+      "Six months ago."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "20.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте for или ago, а также слова из скобок.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Helen arrived in Ireland ",
+      " (three days)"
+     ],
+     "answers": [
+      [
+       "three days ago"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Helen has been in Ireland ",
+      " (three days)"
+     ],
+     "answers": [
+      [
+       "for three days"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Lynn and Mark have been married ",
+      " (20 years)"
+     ],
+     "answers": [
+      [
+       "for 20 years"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Lynn and Mark got married ",
+      " (20 years)"
+     ],
+     "answers": [
+      [
+       "20 years ago"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Dan arrived ",
+      " (an hour)"
+     ],
+     "answers": [
+      [
+       "an hour ago"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I bought these shoes ",
+      " (a few days)"
+     ],
+     "answers": [
+      [
+       "a few days ago"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Silvia has been learning English ",
+      " (six months)"
+     ],
+     "answers": [
+      [
+       "for six months"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Have you known Lisa ",
+      " ? (a long time)"
+     ],
+     "answers": [
+      [
+       "for a long time"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "20.4",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, используя for или since.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "(Helen is in Ireland – she arrived there three days ago) Helen has",
+      ""
+     ],
+     "answers": [
+      [
+       "been in Ireland for three days.",
+       "been in Ireland for three days"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "(Jack is here – he arrived on Tuesday) Jack has",
+      ""
+     ],
+     "answers": [
+      [
+       "been here since Tuesday.",
+       "been here since Tuesday"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "(It’s raining – it started an hour ago) It’s been",
+      ""
+     ],
+     "answers": [
+      [
+       "raining for an hour.",
+       "raining for an hour"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "(I know Sue – I first met her in 2008) I’ve",
+      ""
+     ],
+     "answers": [
+      [
+       "known Sue since 2008.",
+       "known Sue since 2008"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "(Claire and Matt are married – they got married six months ago) Claire and Matt have",
+      ""
+     ],
+     "answers": [
+      [
+       "been married for six months.",
+       "been married for six months"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "(Laura is studying medicine at university – she started three years ago) Laura has",
+      ""
+     ],
+     "answers": [
+      [
+       "been studying medicine for three years.",
+       "been studying medicine for three years",
+       "been studying medicine (at university) for three years."
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "(David plays the piano – he started when he was seven years old) David has",
+      ""
+     ],
+     "answers": [
+      [
+       "played the piano since he was seven years old.",
+       "played the piano since he was seven years old",
+       "been playing the piano since he was seven years old.",
+       "been playing the piano since he was seven years old"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "20.5",
+   "type": "self-check",
+   "instruction": "Напишите о себе. Начните каждое предложение со слов из рамки.",
+   "wordBank": [
+    "I’ve lived ...",
+    "I’ve been ...",
+    "I’ve been learning ...",
+    "I’ve known ...",
+    "I’ve had ..."
+   ],
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’ve lived ...",
+     "modelAnswers": [
+      "I’ve lived in this town for three years."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I’ve been ...",
+     "modelAnswers": [
+      "I’ve been in the same job for ten years."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I’ve been learning ...",
+     "modelAnswers": [
+      "I’ve been learning English for six months."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I’ve known ...",
+     "modelAnswers": [
+      "I’ve known Chris for a long time."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I’ve had ...",
+     "modelAnswers": [
+      "I’ve had a headache since I got up this morning."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "20.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (последний раз = last)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Том работает в этом офисе с 2011 года.",
+     "answers": [
+      "Tom has worked in this office since 2011.",
+      "Tom has been working in this office since 2011."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я приехала в Лондон три дня тому назад.",
+     "answers": [
+      "I arrived in London three days ago.",
+      "I came to London three days ago."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "А: Как давно ты знаешь Иру? В: 10 лет.",
+     "answers": [
+      "A: How long have you known Ira? B: 10 years.",
+      "How long have you known Ira? 10 years."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я здесь жду уже долгое время.",
+     "answers": [
+      "I’ve been waiting here for a long time.",
+      "I have been waiting here for a long time.",
+      "I’ve waited here for a long time.",
+      "I have waited here for a long time."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Мы живём в Кембридже пять лет.",
+     "answers": [
+      "We’ve lived in Cambridge for five years.",
+      "We have lived in Cambridge for five years.",
+      "We’ve been living in Cambridge for five years.",
+      "We have been living in Cambridge for five years."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Тим играет на гитаре с десяти лет.",
+     "answers": [
+      "Tim has played the guitar since he was ten.",
+      "Tim has been playing the guitar since he was ten."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "А: Когда вы последний раз ходили на концерт? В: Шесть месяцев назад.",
+     "answers": [
+      "A: When did you last go to a concert? B: Six months ago.",
+      "When did you last go to a concert? Six months ago."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "У меня есть машина с прошлого октября.",
+     "answers": [
+      "I’ve had a car since last October.",
+      "I have had a car since last October."
+     ]
+    }
+   ]
+  }
+ ]
+}

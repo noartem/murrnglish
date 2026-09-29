@@ -1,0 +1,475 @@
+{
+ "unit": 72,
+ "title": "go to work · go home · go to the cinema",
+ "pdfPages": [
+  155,
+  156
+ ],
+ "exercises": [
+  {
+   "id": "72.1",
+   "type": "fill-in",
+   "instruction": "Где находятся эти люди? Закончите предложения. Где необходимо, используйте the.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He’s in ",
+      "."
+     ],
+     "answers": [
+      [
+       "bed"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "They’re at ",
+      "."
+     ],
+     "answers": [
+      [
+       "the cinema"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "She’s in ",
+      "."
+     ],
+     "answers": [
+      [
+       "hospital"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "She’s at ",
+      "."
+     ],
+     "answers": [
+      [
+       "the airport"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "They’re at ",
+      "."
+     ],
+     "answers": [
+      [
+       "home"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "He’s in ",
+      "."
+     ],
+     "answers": [
+      [
+       "prison"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "72.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя слова из рамки. Где необходимо, также вставьте the.",
+   "wordBank": [
+    "bank",
+    "bed",
+    "church",
+    "home",
+    "post office",
+    "school",
+    "station"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I need to change some money. I have to go to ",
+      "."
+     ],
+     "answers": [
+      [
+       "the bank"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "David usually goes to ",
+      " on Sundays."
+     ],
+     "answers": [
+      [
+       "church"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "In Britain, children go to ",
+      " from the age of five."
+     ],
+     "answers": [
+      [
+       "school"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "There were a lot of people at ",
+      " waiting for the train."
+     ],
+     "answers": [
+      [
+       "the station"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We went to their house, but they weren’t at ",
+      "."
+     ],
+     "answers": [
+      [
+       "home"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I’m going to ",
+      " now. Goodnight!"
+     ],
+     "answers": [
+      [
+       "bed"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I’m going to ",
+      " to get some stamps."
+     ],
+     "answers": [
+      [
+       "the post office"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "72.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Где необходимо, используйте the.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "If you want to catch a plane, you ",
+      "."
+     ],
+     "answers": [
+      [
+       "go to the airport"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "If you want to see a film, you go to ",
+      "."
+     ],
+     "answers": [
+      [
+       "the cinema"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "If you are tired and you want to sleep, you ",
+      "."
+     ],
+     "answers": [
+      [
+       "go to bed"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "If you rob a bank and the police catch you, you ",
+      "."
+     ],
+     "answers": [
+      [
+       "go to prison"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "If you have a problem with your teeth, you ",
+      "."
+     ],
+     "answers": [
+      [
+       "go to the dentist"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "If you want to study after you leave school, you ",
+      "."
+     ],
+     "answers": [
+      [
+       "go to university",
+       "go to college"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "If you are badly injured in an accident, you ",
+      "."
+     ],
+     "answers": [
+      [
+       "go to hospital",
+       "are taken to hospital",
+       "go to the hospital",
+       "are taken to the hospital"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "72.4",
+   "type": "self-check",
+   "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "We went to cinema last night.",
+     "modelAnswers": [
+      "to the cinema"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I finish work at 5 o’clock every day.",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Lisa wasn’t feeling well yesterday, so she went to doctor.",
+     "modelAnswers": [
+      "the doctor"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I wasn’t feeling well this morning, so I stayed in bed.",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Why is Angela always late for work?",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "‘Where are your children?’ ‘They’re at school.’",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "We have no money in bank.",
+     "modelAnswers": [
+      "the bank"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "When I was younger, I went to church every Sunday.",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "What time do you usually get home from work?",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Do you live far from city centre?",
+     "modelAnswers": [
+      "the city centre"
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "‘Where shall we meet?’ ‘At station.’",
+     "modelAnswers": [
+      "the station"
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "James is ill. He’s in hospital.",
+     "modelAnswers": [
+      "OK",
+      "in the hospital"
+     ]
+    },
+    {
+     "num": 13,
+     "prompt": "Kate takes her children to school every day.",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 14,
+     "prompt": "Would you like to go to university?",
+     "modelAnswers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 15,
+     "prompt": "Would you like to go to theatre this evening?",
+     "modelAnswers": [
+      "the theatre"
+     ]
+    }
+   ],
+   "example": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "72.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [от … до = from … to; по пятницам = on Fridays]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "\"Где дети?\" – \"Они в кровати\".",
+     "answers": [
+      "Where are the children? They are in bed.",
+      "Where are the children? They’re in bed."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Мы идём в кино завтра вечером.",
+     "answers": [
+      "We’re going to the cinema tomorrow evening.",
+      "Tomorrow evening we’re going to the cinema."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Вчера моя дочь не ходила в школу.",
+     "answers": [
+      "My daughter didn’t go to school yesterday.",
+      "Yesterday my daughter didn’t go to school."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "До свидания. Сейчас я иду домой.",
+     "answers": [
+      "Goodbye. I’m going home now.",
+      "Goodbye. I am going home now."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Почему ты хочешь поступить в университет?",
+     "answers": [
+      "Why do you want to go to university?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Мой отец болен. Он должен ехать в больницу.",
+     "answers": [
+      "My father is ill. He has to go to hospital.",
+      "My father is ill. He needs to go to hospital.",
+      "My father is ill. He must go to hospital."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Какой автобус идёт от центра города до аэропорта?",
+     "answers": [
+      "Which bus goes from the city centre to the airport?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "По пятницам Борис не ходит на работу.",
+     "answers": [
+      "Boris doesn’t go to work on Fridays.",
+      "On Fridays Boris doesn’t go to work."
+     ]
+    }
+   ]
+  }
+ ]
+}

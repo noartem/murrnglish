@@ -1,0 +1,87 @@
+{
+ "id": 5,
+ "topic": "present simple, am/is/are и have (got)",
+ "refs": "Разделы 1–3, 6–8, 10",
+ "pdfPages": [
+  254
+ ],
+ "exercise": {
+  "id": "5",
+  "type": "write",
+  "instruction": "Прочитайте вопросы и ответы, которые дала Клэр. Затем напишите предложения о Клэр.",
+  "example": [
+   1,
+   2
+  ],
+  "items": [
+   {
+    "num": 1,
+    "prompt": "Are you married? — No.",
+    "answers": [
+     "She isn’t married."
+    ]
+   },
+   {
+    "num": 2,
+    "prompt": "Do you live in London? — Yes.",
+    "answers": [
+     "She lives in London."
+    ]
+   },
+   {
+    "num": 3,
+    "prompt": "Are you a student? — Yes.",
+    "answers": [
+     "She’s a student.",
+     "She is a student."
+    ]
+   },
+   {
+    "num": 4,
+    "prompt": "Have you got a car? — No.",
+    "answers": [
+     "She hasn’t got a car.",
+     "She doesn’t have a car."
+    ]
+   },
+   {
+    "num": 5,
+    "prompt": "Do you go out a lot? — Yes.",
+    "answers": [
+     "She goes out a lot."
+    ]
+   },
+   {
+    "num": 6,
+    "prompt": "Have you got a lot of friends? — Yes.",
+    "answers": [
+     "She’s got a lot of friends.",
+     "She has got a lot of friends.",
+     "She has a lot of friends."
+    ]
+   },
+   {
+    "num": 7,
+    "prompt": "Do you like London? — No.",
+    "answers": [
+     "She doesn’t like London."
+    ]
+   },
+   {
+    "num": 8,
+    "prompt": "Do you like dancing? — Yes.",
+    "answers": [
+     "She likes dancing."
+    ]
+   },
+   {
+    "num": 9,
+    "prompt": "Are you interested in sport? — No.",
+    "answers": [
+     "She isn’t interested in sport.",
+     "She’s not interested in sport."
+    ]
+   }
+  ]
+ }
+}

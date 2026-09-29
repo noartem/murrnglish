@@ -1,0 +1,392 @@
+{
+  "unit": 65,
+  "title": "-’s (Kate’s camera / my brother’s car и т. д.)",
+  "pdfPages": [
+    141,
+    142
+  ],
+  "exercises": [
+    {
+      "id": "65.1",
+      "type": "fill-in",
+      "instruction": "Посмотрите на родословное дерево и закончите предложения о членах этой семьи.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Brian is ",
+            " husband."
+          ],
+          "answers": [
+            [
+              "Helen’s"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Sarah is Daniel’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "mother"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Helen is ",
+            " wife."
+          ],
+          "answers": [
+            [
+              "Brian’s"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "James is Sarah’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "brother"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "James is ",
+            " uncle."
+          ],
+          "answers": [
+            [
+              "Daniel’s"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Sarah is ",
+            " wife."
+          ],
+          "answers": [
+            [
+              "Paul’s"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Helen is Daniel’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "grandmother"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Sarah is James’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "sister"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Paul is ",
+            " husband."
+          ],
+          "answers": [
+            [
+              "Sarah’s"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Paul is Daniel’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "father"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Daniel is ",
+            " nephew."
+          ],
+          "answers": [
+            [
+              "James’s"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "65.2",
+      "type": "write",
+      "instruction": "Посмотрите на картинки и ответьте на вопросы. В вашем ответе должно быть только одно слово.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Whose is this?",
+          "answers": [
+            "Alice’s"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Whose is this?",
+          "answers": [
+            "Andy’s"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "And this?",
+          "answers": [
+            "Dave’s"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "And these?",
+          "answers": [
+            "Jane’s"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "And this?",
+          "answers": [
+            "Rachel’s"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "And these?",
+          "answers": [
+            "Alice’s"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "65.3",
+      "type": "write",
+      "instruction": "В некоторых предложениях допущена ошибка. Где нужно, исправьте ошибку.",
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "I stayed at the house of my sister.",
+          "answers": [
+            "my sister’s house"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "What is the name of this village?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Do you like the colour of this coat?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Do you have the phone number of Simon?",
+          "answers": [
+            "Simon’s phone number"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "The job of my brother is very interesting.",
+          "answers": [
+            "My brother’s job"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Write your name at the top of the page.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "For me, the morning is the best part of the day.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "The favourite colour of Paula is blue.",
+          "answers": [
+            "Paula’s favourite colour"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "When is the birthday of your mother?",
+          "answers": [
+            "your mother’s birthday"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "The house of my parents isn’t very big.",
+          "answers": [
+            "My parents’ house"
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "The walls of this house are very thin.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "The car stopped at the end of the street.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "Are you going to the party of Silvia next week?",
+          "answers": [
+            "Silvia’s party"
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "The manager of the hotel is not here at the moment",
+          "answers": [
+            "OK"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "65.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (умный = clever)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Сашина кошка очень умная.",
+          "answers": [
+            "Sasha’s cat is very clever."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Ты идёшь на вечеринку Бена?",
+          "answers": [
+            "Are you going to Ben’s party?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Это не моя машина. Это машина моей сестры.",
+          "answers": [
+            "That’s not my car. It’s my sister’s.",
+            "That’s not my car. It’s my sister’s car.",
+            "That’s not my car. It is my sister’s.",
+            "That’s not my car. It is my sister’s car.",
+            "That is not my car. It’s my sister’s.",
+            "That is not my car. It’s my sister’s car.",
+            "That is not my car. It is my sister’s.",
+            "That is not my car. It is my sister’s car.",
+            "It’s not my car. It’s my sister’s.",
+            "It’s not my car. It’s my sister’s car.",
+            "It’s not my car. It is my sister’s.",
+            "It’s not my car. It is my sister’s car.",
+            "It is not my car. It’s my sister’s.",
+            "It is not my car. It’s my sister’s car.",
+            "It is not my car. It is my sister’s.",
+            "It is not my car. It is my sister’s car."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "“Чьи это книги?” – “Они Наташины”.",
+          "answers": [
+            "‘Whose books are these?’ ‘They’re Natasha’s.’"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Сколько лет дочери Тома?",
+          "answers": [
+            "How old is Tom’s daughter?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Вам нужно сходить в офис начальника.",
+          "answers": [
+            "You need to go to the manager’s office.",
+            "You have to go to the manager’s office.",
+            "You should go to the manager’s office."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вы знаете название этой улицы?",
+          "answers": [
+            "Do you know the name of this street?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Лима – столица Перу.",
+          "answers": [
+            "Lima is the capital of Peru."
+          ]
+        }
+      ]
+    }
+  ]
+}

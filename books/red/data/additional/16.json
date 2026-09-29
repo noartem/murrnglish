@@ -1,0 +1,213 @@
+{
+  "id": 16,
+  "topic": "present perfect",
+  "refs": "Разделы 16–20",
+  "pdfPages": [
+    258,
+    259
+  ],
+  "exercise": {
+    "id": "16",
+    "type": "fill-in",
+    "instruction": "Посмотрите на картинки и допишите предложения. Используйте present perfect.",
+    "example": [
+      1,
+      2
+    ],
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "No, ",
+          ""
+        ],
+        "answers": [
+          [
+            "he’s just gone out"
+          ]
+        ]
+      },
+      {
+        "num": 2,
+        "parts": [
+          "I don’t know. I ",
+          " him before."
+        ],
+        "answers": [
+          [
+            "’ve never seen",
+            "have never seen"
+          ]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "No, it ",
+          " just ",
+          "."
+        ],
+        "answers": [
+          [
+            "’s",
+            "has"
+          ],
+          [
+            "finished",
+            "ended"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "Here they are! I ",
+          " them!"
+        ],
+        "answers": [
+          [
+            "’ve found",
+            "have found",
+            "’ve got",
+            "have got"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "I don’t know. I ",
+          " it."
+        ],
+        "answers": [
+          [
+            "haven’t read"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "I’m looking for Jessica. ",
+          " her?"
+        ],
+        "answers": [
+          [
+            "Have you seen"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "No, thanks. I ",
+          " enough."
+        ],
+        "answers": [
+          [
+            "’ve had",
+            "have had"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "",
+          " to Sweden?"
+        ],
+        "answers": [
+          [
+            "Have you been",
+            "Have you ever been"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "Hi. We ",
+          " to the cinema."
+        ],
+        "answers": [
+          [
+            "’ve been",
+            "have been",
+            "’ve just been",
+            "have just been"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "",
+          " to a party."
+        ],
+        "answers": [
+          [
+            "They’ve gone",
+            "They have gone"
+          ]
+        ]
+      },
+      {
+        "num": 11,
+        "parts": [
+          "He ",
+          " up."
+        ],
+        "answers": [
+          [
+            "’s woken",
+            "has woken",
+            "’s just woken",
+            "has just woken"
+          ]
+        ]
+      },
+      {
+        "num": 12,
+        "parts": [
+          "How long ",
+          " here?"
+        ],
+        "answers": [
+          [
+            "have you lived",
+            "have you been living"
+          ]
+        ]
+      },
+      {
+        "num": 13,
+        "parts": [
+          "Yes, we ",
+          " each other for a long time."
+        ],
+        "answers": [
+          [
+            "’ve known",
+            "have known"
+          ]
+        ]
+      },
+      {
+        "num": 14,
+        "parts": [
+          "The weather is horrible here. It ",
+          " all day."
+        ],
+        "answers": [
+          [
+            "’s been raining",
+            "has been raining",
+            "has rained",
+            "has been horrible",
+            "has been bad"
+          ]
+        ]
+      }
+    ]
+  }
+}

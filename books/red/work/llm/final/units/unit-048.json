@@ -1,0 +1,462 @@
+{
+ "unit": 48,
+ "title": "What … ? · Which … ? · How … ? (вопросы 4)",
+ "pdfPages": [
+  107,
+  108
+ ],
+ "exercises": [
+  {
+   "id": "48.1",
+   "type": "write",
+   "instruction": "Напишите вопросы, начинающиеся с What.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’ve got a new TV. (make?)",
+     "answers": [
+      "What make is it?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "I want a job. (kind?)",
+     "answers": [
+      "What kind of job do you want?"
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "prompt": "I bought a new sweater. (colour?)",
+     "answers": [
+      "What colour is it?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I got up early this morning. (time?)",
+     "answers": [
+      "What time did you get up?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I like music. (type?)",
+     "answers": [
+      "What type of music do you like?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I want to buy a car. (kind?)",
+     "answers": [
+      "What kind of car do you want?",
+      "What kind of car do you want to buy?"
+     ]
+    }
+   ],
+   "example": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "48.2",
+   "type": "fill-in",
+   "instruction": "Допишите вопросы. Используйте Which … ?",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " shall we go?"
+     ],
+     "answers": [
+      [
+       "Which way"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " is yours?"
+     ],
+     "answers": [
+      [
+       "Which coat"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " do you want to see?"
+     ],
+     "answers": [
+      [
+       "Which film",
+       "Which movie"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " goes to the centre?"
+     ],
+     "answers": [
+      [
+       "Which bus"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "48.3",
+   "type": "fill-in",
+   "instruction": "Вставьте what/which/who.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " is that man’s name?"
+     ],
+     "answers": [
+      [
+       "What"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " way shall we go? Left or right?"
+     ],
+     "answers": [
+      [
+       "Which"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "You can have tea or coffee. ",
+      " do you prefer?"
+     ],
+     "answers": [
+      [
+       "Which"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " day is it today?' 'Friday.'"
+     ],
+     "answers": [
+      [
+       "What"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "This is a nice office. ",
+      " desk is yours?"
+     ],
+     "answers": [
+      [
+       "Which"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " is your favourite sport?"
+     ],
+     "answers": [
+      [
+       "What"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " is more expensive, meat or fish?"
+     ],
+     "answers": [
+      [
+       "Which"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      " is older, Liz or Steve?"
+     ],
+     "answers": [
+      [
+       "Who"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "",
+      " kind of camera do you have?"
+     ],
+     "answers": [
+      [
+       "What"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "A: I have three cameras. B: ",
+      " camera do you use most?"
+     ],
+     "answers": [
+      [
+       "Which"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "",
+      " nationality are you?"
+     ],
+     "answers": [
+      [
+       "What"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "48.4",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя How + прилагательное или наречие (high/long и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " is Mount Everest?"
+     ],
+     "answers": [
+      [
+       "How high"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " is it to the station?"
+     ],
+     "answers": [
+      [
+       "How far"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " is Helen?"
+     ],
+     "answers": [
+      [
+       "How old"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " do the buses run?"
+     ],
+     "answers": [
+      [
+       "How often"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " is the water in the pool?"
+     ],
+     "answers": [
+      [
+       "How deep"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " have you lived here?"
+     ],
+     "answers": [
+      [
+       "How long"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "48.5",
+   "type": "write",
+   "instruction": "Напишите вопросы, начинающиеся с How … ?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Are you 1 metre 70? 1.75? 1.80?",
+     "answers": [
+      "How tall are you?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "Is this box one kilogram? Two? Three?",
+     "answers": [
+      "How heavy is this box?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Are you 20 years old? 22? 25?",
+     "answers": [
+      "How old are you?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Did you spend £20? £30? £50?",
+     "answers": [
+      "How much did you spend?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Do you watch TV every day? Once a week? Never?",
+     "answers": [
+      "How often do you watch TV?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Is it 1000 miles from Paris to Moscow? 1500? 2000?",
+     "answers": [
+      "How far is it from Paris to Moscow?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "48.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (самый большой = the biggest; спортзал = gym; домашнее животное = pet)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Какой марки ваша машина?",
+     "answers": [
+      "What make is your car?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Какой самый большой город в Бразилии?",
+     "answers": [
+      "What’s the biggest city in Brazil?",
+      "What is the biggest city in Brazil?",
+      "Which is the biggest city in Brazil?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Как часто вы ходите в спортзал?",
+     "answers": [
+      "How often do you go to the gym?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Какое домашнее животное ты предпочитаешь – кошку или собаку?",
+     "answers": [
+      "Which pet do you prefer – a cat or a dog?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Какого цвета твой новый диван?",
+     "answers": [
+      "What colour is your new sofa?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Сколько лет вашему брату?",
+     "answers": [
+      "How old is your brother?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Как давно Мария работает на эту компанию?",
+     "answers": [
+      "How long has Maria worked for this company?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Какой город старше – Москва или Петербург?",
+     "answers": [
+      "Which city is older – Moscow or Petersburg?"
+     ]
+    }
+   ]
+  }
+ ]
+}

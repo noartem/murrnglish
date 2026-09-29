@@ -1,0 +1,141 @@
+{
+ "id": 13,
+ "topic": "was/were и past simple",
+ "refs": "Разделы 11–13",
+ "pdfPages": [
+  256
+ ],
+ "exercise": {
+  "id": "13",
+  "type": "fill-in",
+  "instruction": "Поставьте глагол в правильную форму (утвердительную, отрицательную или вопросительную).",
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "It was a good party. ",
+     " it. (I / enjoy)"
+    ],
+    "answers": [
+     [
+      "enjoyed"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "'",
+     " the shopping?' (you / do) 'No, I ",
+     " time.' (I / have)"
+    ],
+    "answers": [
+     [
+      "Did you do"
+     ],
+     [
+      "didn’t have"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 3,
+    "parts": [
+     "'Did you phone Adam?' 'No, I’m afraid ",
+     " :' (I / forget)"
+    ],
+    "answers": [
+     [
+      "I forgot"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "I like your new watch. Where ",
+     " it? (you / get)"
+    ],
+    "answers": [
+     [
+      "did you get"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "I saw Lucy at the party, but ",
+     " to her. (I / speak)"
+    ],
+    "answers": [
+     [
+      "I didn’t speak"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "A: ",
+     " a nice weekend? (you / have) B: Yes, I went to stay with some friends of mine."
+    ],
+    "answers": [
+     [
+      "Did you have"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "Paul wasn’t well yesterday, so ",
+     " to work. (he / go)"
+    ],
+    "answers": [
+     [
+      "he didn’t go"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "'Is Mary here?' 'Yes, ",
+     " five minutes ago.' (she / arrive)"
+    ],
+    "answers": [
+     [
+      "she arrived"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "Where ",
+     " before he moved here? (Robert / live)"
+    ],
+    "answers": [
+     [
+      "did Robert live"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "The restaurant wasn’t expensive. ",
+     " very much. (the meal / cost)"
+    ],
+    "answers": [
+     [
+      "The meal didn’t cost"
+     ]
+    ]
+   }
+  ]
+ }
+}

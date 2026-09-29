@@ -1,0 +1,366 @@
+{
+ "unit": 51,
+ "title": "She said that … · He told me that …",
+ "pdfPages": [
+  113,
+  114
+ ],
+ "exercises": [
+  {
+   "id": "51.1",
+   "type": "write",
+   "instruction": "Read what these people say and write sentences with He/She/They said (that) … .",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’ve lost my watch.",
+     "answers": [
+      "He said he had lost his watch."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I’m very busy.",
+     "answers": [
+      "She said she was very busy.",
+      "She said that she was very busy."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I can’t go to the party.",
+     "answers": [
+      "She said she couldn’t go to the party.",
+      "She said that she couldn’t go to the party."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I have to go out.",
+     "answers": [
+      "He said he had to go out.",
+      "He said that he had to go out."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I’m learning Russian.",
+     "answers": [
+      "He said he was learning Russian.",
+      "He said that he was learning Russian."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I don’t feel very well.",
+     "answers": [
+      "She said she didn’t feel very well.",
+      "She said that she didn’t feel very well."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "We’ll be home late.",
+     "answers": [
+      "They said they would be home late.",
+      "They said that they would be home late.",
+      "They said they’d be home late.",
+      "They said that they’d be home late."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "I’ve just come back from holiday.",
+     "answers": [
+      "She said she had just come back from holiday.",
+      "She said that she had just come back from holiday.",
+      "She said she’d just come back from holiday.",
+      "She said that she’d just come back from holiday."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "I’m going to buy a guitar.",
+     "answers": [
+      "She said she was going to buy a guitar.",
+      "She said that she was going to buy a guitar."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "We haven’t got a key.",
+     "answers": [
+      "They said they hadn’t got a key.",
+      "They said that they hadn’t got a key.",
+      "They said they didn’t have a key.",
+      "They said that they didn’t have a key."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "51.2",
+   "type": "fill-in",
+   "instruction": "Use the pictures to complete the sentences.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I met Clare last week. She said ",
+      "."
+     ],
+     "answers": [
+      [
+       "she was enjoying her new job"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Emma didn’t want anything to eat. She said ",
+      "."
+     ],
+     "answers": [
+      [
+       "she wasn’t hungry",
+       "that she wasn’t hungry",
+       "she was not hungry",
+       "that she was not hungry"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I wanted to borrow Mike’s ladder, but he said ",
+      "."
+     ],
+     "answers": [
+      [
+       "he needed it",
+       "that he needed it"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Hannah was invited to the party, but she said ",
+      "."
+     ],
+     "answers": [
+      [
+       "she didn’t want to go",
+       "that she didn’t want to go",
+       "she did not want to go",
+       "that she did not want to go"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Susan told me she didn’t want the picture. She said ",
+      "."
+     ],
+     "answers": [
+      [
+       "I could have it",
+       "that I could have it"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Martin has just gone away on holiday. He said ",
+      "."
+     ],
+     "answers": [
+      [
+       "he would send me a postcard",
+       "that he would send me a postcard",
+       "he’d send me a postcard",
+       "that he’d send me a postcard"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I was looking for Robert. Nicola said ",
+      "."
+     ],
+     "answers": [
+      [
+       "he had gone home",
+       "that he had gone home",
+       "he’d gone home",
+       "that he’d gone home"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "'Why did David stay at home?' 'He said ",
+      ".'"
+     ],
+     "answers": [
+      [
+       "he wanted to watch TV",
+       "that he wanted to watch TV"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "'Has Mary gone out?' 'I think so. She said ",
+      ".'"
+     ],
+     "answers": [
+      [
+       "she was going to the cinema",
+       "that she was going to the cinema"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "51.3",
+   "type": "fill-in",
+   "instruction": "Write say/said or tell/told.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He ",
+      " he was tired."
+     ],
+     "answers": [
+      [
+       "said"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "What didshe ",
+      " you?"
+     ],
+     "answers": [
+      [
+       "tell"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Anna ",
+      " she didn’t like Peter."
+     ],
+     "answers": [
+      [
+       "said"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Jack ",
+      " me that you were ill."
+     ],
+     "answers": [
+      [
+       "told"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Please don’t ",
+      " Dan what happened."
+     ],
+     "answers": [
+      [
+       "tell"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Did Lucy ",
+      " she would be late?"
+     ],
+     "answers": [
+      [
+       "say"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "The woman ",
+      " she was a reporter."
+     ],
+     "answers": [
+      [
+       "said"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "The woman ",
+      " us she was a reporter."
+     ],
+     "answers": [
+      [
+       "told"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "They asked me a lot of questions, but I didn’t ",
+      " them anything."
+     ],
+     "answers": [
+      [
+       "tell"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "They asked me a lot of questions, but I didn’t ",
+      " anything."
+     ],
+     "answers": [
+      [
+       "say"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

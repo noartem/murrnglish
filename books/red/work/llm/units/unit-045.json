@@ -1,0 +1,442 @@
+{
+ "unit": 45,
+ "title": "is it … ? · have you … ? · do they … ? и т. д. (вопросы 1)",
+ "pdfPages": [
+  101,
+  102
+ ],
+ "exercises": [
+  {
+   "id": "45.1",
+   "type": "write",
+   "instruction": "Напишите вопросы.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I can swim. (and you?)",
+     "answers": [
+      "Can you swim?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "I work hard. (and Jack?)",
+     "answers": [
+      "Does Jack work hard?"
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "prompt": "I was late this morning. (and you?)",
+     "answers": [
+      "Were you late this morning?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I’ve got a key. (and Kate?)",
+     "answers": [
+      "Has Kate got a key?",
+      "Does Kate have a key?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I’ll be here tomorrow. (and you?)",
+     "answers": [
+      "Will you be here tomorrow?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I’m going out this evening. (and Paul?)",
+     "answers": [
+      "Is Paul going out this evening?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "I like my job. (and you?)",
+     "answers": [
+      "Do you like your job?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "I live near here. (and Nicola?)",
+     "answers": [
+      "Does Nicola live near here?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "I enjoyed the film. (and you?)",
+     "answers": [
+      "Did you enjoy the film?"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "I had a good holiday. (and you?)",
+     "answers": [
+      "Did you have a good holiday?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "45.2",
+   "type": "write",
+   "instruction": "Вы разговариваете о вождении машины. Напишите полные вопросительные предложения.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(have / a car?)",
+     "answers": [
+      "Have you got a car?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "(use / a lot?)",
+     "answers": [
+      "Do you use it a lot?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(use / yesterday?)",
+     "answers": [
+      "Did you use it yesterday?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(enjoy driving?)",
+     "answers": [
+      "Do you enjoy driving?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(a good driver?)",
+     "answers": [
+      "Are you a good driver?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(ever / have / an accident?)",
+     "answers": [
+      "Have you ever had an accident?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "45.3",
+   "type": "write",
+   "instruction": "Составьте вопросы, соблюдая правильный порядок слов.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(has / gone / where / David?)",
+     "answers": [
+      "Where has David gone?"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "(working / Rachel / is / today?)",
+     "answers": [
+      "Is Rachel working today?"
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "prompt": "(the children / what / are / doing?) What",
+     "answers": [
+      "What are the children doing?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(made / is / how / cheese?)",
+     "answers": [
+      "How is cheese made?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(to the party / coming / is / your sister?)",
+     "answers": [
+      "Is your sister coming to the party?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(you / the truth / tell / don’t / why?)",
+     "answers": [
+      "Why don’t you tell the truth?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(your guests / have / yet / arrived?)",
+     "answers": [
+      "Have your guests arrived yet?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(leave / what time / your train / does?)",
+     "answers": [
+      "What time does your train leave?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(to work / Emily / why / go / didn’t?)",
+     "answers": [
+      "Why didn’t Emily go to work?"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "(your car / in the accident / was / damaged?)",
+     "answers": [
+      "Was your car damaged in the accident?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "45.4",
+   "type": "fill-in",
+   "instruction": "Закончите вопросительные предложения.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I want to go out. Where ",
+      ""
+     ],
+     "answers": [
+      [
+       "do you want to go?"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Kate and Paul aren’t going to the party. Why ",
+      ""
+     ],
+     "answers": [
+      [
+       "aren’t they going?"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I’m reading. What ",
+      ""
+     ],
+     "answers": [
+      [
+       "are you reading?"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Sue went to bed early. What time ",
+      ""
+     ],
+     "answers": [
+      [
+       "did she go",
+       "did she go to bed"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "My parents are going on holiday. When ",
+      ""
+     ],
+     "answers": [
+      [
+       "are they going",
+       "are they going on holiday"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I saw Tom a few days ago. Where ",
+      ""
+     ],
+     "answers": [
+      [
+       "did you see him?"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I can’t come to the party. Why ",
+      ""
+     ],
+     "answers": [
+      [
+       "can’t you come",
+       "can’t you come to the party"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Tina has gone away. Where ",
+      ""
+     ],
+     "answers": [
+      [
+       "has she gone?"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I need some money. How much ",
+      ""
+     ],
+     "answers": [
+      [
+       "do you need",
+       "money do you need"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Angela doesn’t like me. Why ",
+      ""
+     ],
+     "answers": [
+      [
+       "doesn’t she like you?"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "It rains sometimes. How often ",
+      ""
+     ],
+     "answers": [
+      [
+       "does it rain?"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I did the shopping. When ",
+      ""
+     ],
+     "answers": [
+      [
+       "did you do it",
+       "did you do the shopping"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "45.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (вчера вечером = last night)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Что сейчас делает Марк?",
+     "answers": [
+      "What is Mark doing now?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вы голодны?",
+     "answers": [
+      "Are you hungry?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Лара знает Кевина?",
+     "answers": [
+      "Does Lara know Kevin?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Когда ты вчера легла спать?",
+     "answers": [
+      "When did you go to bed yesterday?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Ты ходила на футбольный матч в субботу?",
+     "answers": [
+      "Did you go to the match on Saturday?",
+      "Did you go to the football match on Saturday?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Когда Том придёт сюда?",
+     "answers": [
+      "When will Tom come?",
+      "When will Tom come here?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Почему вы мне не сказали о вечеринке?",
+     "answers": [
+      "Why didn’t you tell me about the party?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Куда вы ходили вчера вечером?",
+     "answers": [
+      "Where did you go last night?"
+     ]
+    }
+   ]
+  }
+ ]
+}

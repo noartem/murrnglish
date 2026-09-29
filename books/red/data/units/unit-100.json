@@ -1,0 +1,530 @@
+{
+  "unit": 100,
+  "title": "If I had … · If we went … и т. д.",
+  "pdfPages": [
+    211,
+    212
+  ],
+  "exercises": [
+    {
+      "id": "100.1",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски в предложениях.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I don’t know the answer. If I ",
+            " the answer, I’d tell you."
+          ],
+          "answers": [
+            [
+              "knew"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I have a car. I couldn’t travel very much if I ",
+            " a car."
+          ],
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I don’t want to go out. If I ",
+            " to go out, I’d go."
+          ],
+          "answers": [
+            [
+              "wanted"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We don’t have a key. If we ",
+            " a key, we could get into the house."
+          ],
+          "answers": [
+            [
+              "had"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I’m not hungry. I would have something to eat if I ",
+            " hungry."
+          ],
+          "answers": [
+            [
+              "were",
+              "was"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Sue enjoys her work. She wouldn’t do it if she ",
+            " it."
+          ],
+          "answers": [
+            [
+              "didn’t enjoy"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "He can’t speak any foreign languages. If he ",
+            " speak a foreign language, perhaps he would get a better job."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "You don’t try hard enough. If you ",
+            " harder, you would have more success."
+          ],
+          "answers": [
+            [
+              "tried"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "I have a lot to do today. If I ",
+            " so much to do, we could go out."
+          ],
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100.2",
+      "type": "fill-in",
+      "instruction": "Поставьте глаголы в правильную форму.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "If ",
+            " the money, he would buy a fast car. (he/have)"
+          ],
+          "answers": [
+            [
+              "he had"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Jane likes living in a city. ",
+            " happy if she lived in the country. (she/not/be)"
+          ],
+          "answers": [
+            [
+              "She wouldn’t be"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "If I wanted to learn Italian, ",
+            " to Italy. (I/go)"
+          ],
+          "answers": [
+            [
+              "I’d go",
+              "I would go"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I haven’t told Helen what happened. She’d be angry if ",
+            " . (she/know)"
+          ],
+          "answers": [
+            [
+              "she knew"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "If ",
+            " a map, I could show you where I live. (we/have)"
+          ],
+          "answers": [
+            [
+              "we had"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "What would you do if ",
+            " a lot of money? (you/win)"
+          ],
+          "answers": [
+            [
+              "you won"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "It’s not a very good hotel. ",
+            " there if I were you. (I/not/stay)"
+          ],
+          "answers": [
+            [
+              "I wouldn’t stay"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "If ",
+            " nearer London, we would go there more often. (we/live)"
+          ],
+          "answers": [
+            [
+              "we lived"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "It’s a shame you have to go now. ",
+            " nice if you had more time. (it/be)"
+          ],
+          "answers": [
+            [
+              "It would be"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "I’m not going to take the job. I’d take it if ",
+            " better. (the salary/be)"
+          ],
+          "answers": [
+            [
+              "the salary was",
+              "the salary were"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I don’t know anything about cars. If the car broke down, ",
+            " what to do. (I/not/know)"
+          ],
+          "answers": [
+            [
+              "I wouldn’t know"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "If you could change one thing in the world, what ",
+            " ? (you/change)"
+          ],
+          "answers": [
+            [
+              "would you change"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100.3",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте информацию из рамки + глагол в правильной форме.",
+      "wordBank": [
+        "we (have) a bigger house",
+        "it (be) a bit cheaper",
+        "we (buy) a bigger house",
+        "the air (be) cleaner",
+        "we (have) some pictures on the wall",
+        "I (watch) it",
+        "every day (be) the same",
+        "I (be) bored"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I’d buy that jacket if ",
+            "."
+          ],
+          "answers": [
+            [
+              "it was a bit cheaper"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "If there was a good film on TV tonight, ",
+            "."
+          ],
+          "answers": [
+            [
+              "I’d watch it",
+              "I would watch it"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "This room would be nicer if ",
+            "."
+          ],
+          "answers": [
+            [
+              "we had some pictures on the wall"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "If there wasn’t so much traffic, ",
+            "."
+          ],
+          "answers": [
+            [
+              "the air would be cleaner"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Life would be boring if ",
+            "."
+          ],
+          "answers": [
+            [
+              "every day was the same",
+              "every day were the same"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "If I had nothing to do, ",
+            "."
+          ],
+          "answers": [
+            [
+              "I’d be bored",
+              "I would be bored"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "We could invite all our friends to stay if ",
+            "."
+          ],
+          "answers": [
+            [
+              "we had a bigger house",
+              "we bought a bigger house"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "If we had more money, ",
+            "."
+          ],
+          "answers": [
+            [
+              "we would buy a bigger house",
+              "we could buy a bigger house",
+              "we would have a bigger house",
+              "we could have a bigger house"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100.4",
+      "type": "self-check",
+      "instruction": "Закончите предложения, используя свои собственные идеи.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "I’d be happier if …",
+          "modelAnswers": [
+            "I could get a better job"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "If I could go anywhere in the world, …",
+          "modelAnswers": [
+            "I’d go to Antarctica"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I wouldn’t be very happy if …",
+          "modelAnswers": [
+            "I didn’t have any friends"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I’d buy … if …",
+          "modelAnswers": [
+            "I’d buy a house if I had enough money."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "If I saw an accident in the street, …",
+          "modelAnswers": [
+            "I’d try and help"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "The world would be a better place if …",
+          "modelAnswers": [
+            "there were no guns"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (выиграть = win)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Анна была бы счастливее, если бы ей нравилась её работа.",
+          "answers": [
+            "Anna would be happier if she liked her job.",
+            "Anna would be happier if she enjoyed her job."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Мы пошли бы на концерт, если бы у нас были билеты.",
+          "answers": [
+            "We’d go to the concert if we had tickets.",
+            "We would go to the concert if we had tickets."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Если бы я знал его имя, я бы тебе сказал.",
+          "answers": [
+            "If I knew his name, I’d tell you.",
+            "If I knew his name, I would tell you."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Бен бы много путешествовал, если бы у него были деньги.",
+          "answers": [
+            "Ben would travel a lot if he had the money."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "На твоём месте я бы остановился в гостинице “Гранд”.",
+          "answers": [
+            "If I were you, I’d stay in the Grand Hotel.",
+            "If I were you, I would stay in the Grand Hotel.",
+            "If I were you, I’d stay at the Grand Hotel.",
+            "If I were you, I would stay at the Grand Hotel.",
+            "If I was you, I’d stay in the Grand Hotel.",
+            "If I was you, I would stay in the Grand Hotel.",
+            "If I was you, I’d stay at the Grand Hotel.",
+            "If I was you, I would stay at the Grand Hotel."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Наша жизнь была бы более интересной, если бы мы жили в Лондоне.",
+          "answers": [
+            "Our life would be more interesting if we lived in London."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Если ты голодна, мы можем пообедать сейчас.",
+          "answers": [
+            "If you’re hungry, we can have lunch now.",
+            "If you are hungry, we can have lunch now."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Что бы вы сделали, если бы вы выиграли много денег?",
+          "answers": [
+            "What would you do if you won a lot of money?"
+          ]
+        }
+      ]
+    }
+  ]
+}

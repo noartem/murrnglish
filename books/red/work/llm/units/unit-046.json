@@ -1,0 +1,296 @@
+{
+ "unit": 46,
+ "title": "Who saw you? · Who did you see? (вопросы 2)",
+ "pdfPages": [
+  103,
+  104
+ ],
+ "exercises": [
+  {
+   "id": "46.1",
+   "type": "write",
+   "instruction": "Составьте вопросы с who или what. Здесь who/what – подлежащее.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Somebody broke the window.",
+     "answers": [
+      "Who broke the window?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Something fell off the shelf.",
+     "answers": [
+      "What fell off the shelf?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Somebody wants to see you.",
+     "answers": [
+      "Who wants to see me?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Somebody took my umbrella.",
+     "answers": [
+      "Who took your umbrella?",
+      "Who took it?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Something made me ill.",
+     "answers": [
+      "What made you ill?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Somebody is coming.",
+     "answers": [
+      "Who is coming?",
+      "Who’s coming?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "46.2",
+   "type": "write",
+   "instruction": "Составьте вопросы с who/what (подлежащее или дополнение).",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I bought something.",
+     "answers": [
+      "What did you buy?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Somebody lives in this house.",
+     "answers": [
+      "Who lives in this house?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I phoned somebody.",
+     "answers": [
+      "Who did you phone?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Something happened last night.",
+     "answers": [
+      "What happened last night?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Somebody knows the answer.",
+     "answers": [
+      "Who knows the answer?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Somebody did the washing-up.",
+     "answers": [
+      "Who did the washing-up?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Jane did something.",
+     "answers": [
+      "What did Jane do?",
+      "What did she do?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Something woke me up.",
+     "answers": [
+      "What woke you up?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Somebody saw the accident.",
+     "answers": [
+      "Who saw the accident?"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "I saw somebody.",
+     "answers": [
+      "Who did you see?"
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "Somebody has got my pen.",
+     "answers": [
+      "Who has got your pen?",
+      "Who’s got your pen?",
+      "Who has got it?",
+      "Who’s got it?"
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "This word means something.",
+     "answers": [
+      "What does this word mean?",
+      "What does it mean?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "46.3",
+   "type": "write",
+   "instruction": "Вы хотите узнать недостающую информацию (XXXXX). Напишите вопросы с who или what.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I lost XXXXX yesterday, but fortunately XXXXX found it and gave it back to me.",
+     "answers": [
+      "What did you lose?",
+      "Who found it?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "XXXXX phoned me last night. She wanted XXXXX.",
+     "answers": [
+      "Who phoned you?",
+      "What did she want?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I needed some advice, so I asked XXXXX. He said XXXXX.",
+     "answers": [
+      "Who did you ask?",
+      "What did he say?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I hear that XXXXX got married last week. XXXXX told me.",
+     "answers": [
+      "Who got married?",
+      "Who told you?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I met XXXXX on my way home this evening. She told me XXXXX.",
+     "answers": [
+      "Who did you meet?",
+      "What did she tell you?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Steve and I played tennis yesterday. XXXXX won. After the game we XXXXX.",
+     "answers": [
+      "Who won?",
+      "What did you do?",
+      "What did you do after the game?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "It was my birthday last week and I had some presents. XXXXX gave me a book and Catherine gave me XXXXX.",
+     "answers": [
+      "Who gave you a book?",
+      "Who gave you the book?",
+      "What did Catherine give you?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "46.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (встреча = meeting, матч = match)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Что вы делали вчера вечером?",
+     "answers": [
+      "What did you do last night?",
+      "What were you doing last night?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Кто может мне помочь?",
+     "answers": [
+      "Who can help me?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Что тебе дал Гари?",
+     "answers": [
+      "What did Gary give you?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Кто работает в том офисе?",
+     "answers": [
+      "Who works in that office?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Кому ты сказала о встрече?",
+     "answers": [
+      "Who did you tell about the meeting?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Кто тебе сказал о встрече?",
+     "answers": [
+      "Who told you about the meeting?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Кто выиграл матч вчера?",
+     "answers": [
+      "Who won the match yesterday?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Где вы купили свою машину?",
+     "answers": [
+      "Where did you buy your car?"
+     ]
+    }
+   ]
+  }
+ ]
+}

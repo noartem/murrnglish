@@ -1,0 +1,343 @@
+{
+  "unit": 17,
+  "title": "I’ve just … · I’ve already … · I haven’t … yet (present perfect 2)",
+  "pdfPages": [
+    45,
+    46
+  ],
+  "exercises": [
+    {
+      "id": "17.1",
+      "type": "fill-in",
+      "instruction": "Для каждой картинки напишите предложение с just.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "They’ve just arrived."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He ",
+            ""
+          ],
+          "answers": [
+            [
+              "’s just got up.",
+              "has just got up."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "They ",
+            ""
+          ],
+          "answers": [
+            [
+              "’ve just bought a car.",
+              "have just bought a car.",
+              "’ve just bought a car",
+              "have just bought a car"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "The race ",
+            ""
+          ],
+          "answers": [
+            [
+              "has just started."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.2",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте already + present perfect.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "He’s already arrived."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "No, they ",
+            " it."
+          ],
+          "answers": [
+            [
+              "’ve already seen",
+              "have already seen"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I ",
+            ""
+          ],
+          "answers": [
+            [
+              "’ve already phoned him.",
+              "have already phoned him."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "He ",
+            ""
+          ],
+          "answers": [
+            [
+              "’s already gone.",
+              "has already gone.",
+              "’s already gone away.",
+              "has already gone away."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I ",
+            ""
+          ],
+          "answers": [
+            [
+              "’ve already read it.",
+              "have already read it."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "She ",
+            ""
+          ],
+          "answers": [
+            [
+              "’s already started.",
+              "has already started.",
+              "’s already started it.",
+              "has already started it."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.3",
+      "type": "fill-in",
+      "instruction": "Напишите утвердительное предложение с just (They’ve just … / She’s just … и т. д.) или отрицательное предложение с yet (They haven’t … yet / She hasn’t … yet и т. д.).",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(she / go / out)",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "She hasn’t gone out yet."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "(the bus / go)",
+          "parts": [
+            "The bus ",
+            ""
+          ],
+          "answers": [
+            [
+              "has just gone."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(the train / leave)",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "The train hasn’t left yet."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(he / open / it)",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "He hasn’t opened it yet."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(they / finish / their dinner)",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "They’ve just finished their dinner.",
+              "They have just finished their dinner."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(it / stop / raining)",
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "It’s just stopped raining.",
+              "It has just stopped raining.",
+              "It’s just stopped raining",
+              "It has just stopped raining"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.4",
+      "type": "write",
+      "instruction": "Напишите вопросительные предложения с yet.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Your friend has a new job. Perhaps she has started it. You ask her:",
+          "answers": [
+            "Have you started your new job yet?"
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "Your friend has some new neighbours. Perhaps he has met them. You ask him:",
+          "answers": [
+            "Have you met your new neighbours yet?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Your friend has to pay her electricity bill. Perhaps she has paid it. You ask her:",
+          "answers": [
+            "Have you paid your electricity bill yet?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Tom was trying to sell his car. Perhaps he has sold it. You ask a friend about Tom:",
+          "answers": [
+            "Has Tom sold his car yet?",
+            "Has he sold his car yet?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Антон и Марина только что купили новый дом.",
+          "answers": [
+            "Anton and Marina have just bought a new house."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Сандра уже позвонила своей матери?",
+          "answers": [
+            "Has Sandra called her mother yet?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "А: Джеймс здесь? В: Нет, он уже ушёл.",
+          "answers": [
+            "‘Is James here?’ ‘No, he’s already gone.’",
+            "‘Is James here?’ ‘No, he’s already left.’",
+            "‘Is James here?’ ‘No, he has already gone.’",
+            "‘Is James here?’ ‘No, he has already left.’"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "А: Тебе нравится эта книга? В: Я не знаю. Я её ещё не читал.",
+          "answers": [
+            "A: Do you like this book? B: I don’t know. I haven’t read it yet.",
+            "A: Do you like this book? B: I don’t know. I have not read it yet.",
+            "A: Do you like this book? B: I do not know. I haven’t read it yet.",
+            "A: Do you like this book? B: I do not know. I have not read it yet."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "А: Не забудь закрыть окна! В: Я их уже закрыл.",
+          "answers": [
+            "‘Don’t forget to close the windows.’ ‘I’ve already closed them.’",
+            "‘Don’t forget to close the windows.’ ‘I have already closed them.’"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я только что закончил ужин.",
+          "answers": [
+            "I’ve just finished dinner.",
+            "I have just finished dinner."
+          ]
+        }
+      ]
+    }
+  ]
+}

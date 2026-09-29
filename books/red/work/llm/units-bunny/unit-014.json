@@ -1,0 +1,328 @@
+{
+ "unit": 14,
+ "title": "I was doing (past continuous)",
+ "pdfPages": [
+  39,
+  40
+ ],
+ "exercises": [
+  {
+   "id": "14.1",
+   "type": "write",
+   "instruction": "Посмотрите на картинки. Где были эти люди вчера в 3 часа дня? Что они делали? Напишите по два предложения к каждой картинке.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "RACHEL\nat home\nwatch TV",
+     "answers": [
+      "Rachel was at home. She was watching TV."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Jack and Kate … . They …",
+     "answers": [
+      "Jack and Kate were at the cinema. They were watching a film."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Tom …",
+     "answers": [
+      "Tom was in his car. He was driving."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "TRACEY\nat the station\nwait for a train",
+     "answers": [
+      "Tracey was at the station. She was waiting for a train."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "MR AND MRS HALL\nin the park\nwalk",
+     "answers": [
+      "Mr and Mrs Hall were in the park. They were walking."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "And you? I …",
+     "modelAnswers": [
+      "I was in a cafe. I was having a drink with some friends."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "14.2",
+   "type": "fill-in",
+   "instruction": "Вчера утром Сара была очень занята. Посмотрите на картинки и закончите предложения.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "At 8.45 she ",
+      ""
+     ],
+     "answers": [
+      [
+       "was washing her car."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "At 10.45 she ",
+      ""
+     ],
+     "answers": [
+      [
+       "was playing tennis"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "At 8 o’clock ",
+      ""
+     ],
+     "answers": [
+      [
+       "she was reading a paper",
+       "she was reading the paper",
+       "she was reading a newspaper",
+       "she was reading the newspaper"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "At 12.10 ",
+      ""
+     ],
+     "answers": [
+      [
+       "she was cooking",
+       "she was cooking lunch"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "At 7.15 ",
+      ""
+     ],
+     "answers": [
+      [
+       "she was having breakfast"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "At 9.30 ",
+      ""
+     ],
+     "answers": [
+      [
+       "she was cleaning the kitchen"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "14.3",
+   "type": "write",
+   "instruction": "Допишите вопросы, используя was/were -ing. Где необходимо, также используйте what/where/why.",
+   "wordBank": [
+    "In London.",
+    "I was asleep.",
+    "No, it was sunny.",
+    "Because she was late.",
+    "No, a T-shirt and jeans."
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(you/live) … in 2012?",
+     "answers": [
+      "Where were you living in 2012?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(you/do) … at 2 o’clock?",
+     "answers": [
+      "What were you doing at 2 o’clock?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(it/rain) … when you got up?",
+     "answers": [
+      "Was it raining when you got up?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(Sue/drive) … so fast?",
+     "answers": [
+      "Why was Sue driving so fast?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(Tom/wear) … a suit yesterday?",
+     "answers": [
+      "Was Tom wearing a suit yesterday?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "14.4",
+   "type": "write",
+   "instruction": "Посмотрите на картинку. Вчера днём вы встретили Джо. Что он делал? Напишите утвердительные или отрицательные предложения.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(wear / a jacket)",
+     "answers": [
+      "He wasn’t wearing a jacket."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(carry / a bag)",
+     "answers": [
+      "He was carrying a bag."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(go / to the dentist)",
+     "answers": [
+      "He wasn’t going to the dentist."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(eat / an ice cream)",
+     "answers": [
+      "He was eating an ice cream."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(carry / an umbrella)",
+     "answers": [
+      "He wasn’t carrying an umbrella."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(go / home)",
+     "answers": [
+      "He wasn’t going home."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(wear / a hat)",
+     "answers": [
+      "He was wearing a hat."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(ride / a bike)",
+     "answers": [
+      "He wasn’t riding a bicycle."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "14.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [мыть = wash\nполдень = midday\nсегодня утром = this morning\nв аэропорту = at the airport\nкостюм = suit]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Сегодня в 7.30 я мыла свою машину.",
+     "answers": [
+      "Today at 7.30 I was washing my car."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вчера я работал в саду в полдень.",
+     "answers": [
+      "Yesterday I was working in the garden at midday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Что вы делали в 10.30 сегодня утром?\nВы работали?",
+     "answers": [
+      "What were you doing at 10.30 this morning? Were you working?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Сегодня утром было тепло и не шёл дождь.",
+     "answers": [
+      "It was warm and it wasn’t raining this morning.",
+      "It was warm and it was not raining this morning."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Почему ты пел в три часа утра?",
+     "answers": [
+      "Why were you singing at 3 o’clock in the morning?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Прошлым летом Эмма и Том жили в Америке.",
+     "answers": [
+      "Last summer Emma and Tom were living in America."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "А: Что ты делала в аэропорту?\nВ: Я ждала Ирину.",
+     "answers": [
+      "A: What were you doing at the airport?\nB: I was waiting for Irina."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Сегодня на Антоне надет костюм,\nа вчера на нём были надеты джинсы.",
+     "answers": [
+      "Today Anton is wearing a suit, but yesterday he was wearing jeans."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,456 @@
+{
+  "unit": 63,
+  "title": "I/me/my/mine",
+  "pdfPages": [
+    137,
+    138
+  ],
+  "exercises": [
+    {
+      "id": "63.1",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, следуя образцу.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Yes, I ",
+            ", but ",
+            "."
+          ],
+          "answers": [
+            [
+              "know him"
+            ],
+            [
+              "can’t remember his name"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Yes, I know ",
+            " but I can’t remember ",
+            "."
+          ],
+          "answers": [
+            [
+              "her"
+            ],
+            [
+              "her name"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Yes, I ",
+            ", ",
+            " names."
+          ],
+          "answers": [
+            [
+              "know them"
+            ],
+            [
+              "can’t remember their"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Yes, I ",
+            ", but ",
+            "."
+          ],
+          "answers": [
+            [
+              "know you"
+            ],
+            [
+              "can’t remember your name"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "63.2",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, следуя образцу.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "We invited her ",
+            "."
+          ],
+          "answers": [
+            [
+              "to stay with us at our house"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He invited us to stay with ",
+            " at his house."
+          ],
+          "answers": [
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "They invited me to stay with ",
+            " house."
+          ],
+          "answers": [
+            [
+              "them at their"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I invited them to stay ",
+            " house."
+          ],
+          "answers": [
+            [
+              "with me at my"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "She invited us to stay ",
+            " house."
+          ],
+          "answers": [
+            [
+              "with her at her"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Did you invite him ",
+            " house?"
+          ],
+          "answers": [
+            [
+              "to stay with you at your"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "63.3",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, следуя образцам.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I gave him ",
+            " phone number, and ",
+            "."
+          ],
+          "answers": [
+            [
+              "my"
+            ],
+            [
+              "he gave me his"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I gave her my phone number, and she gave me ",
+            "."
+          ],
+          "answers": [
+            [
+              "hers"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "He gave me his phone number, and I gave ",
+            "."
+          ],
+          "answers": [
+            [
+              "him mine"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We gave them ",
+            " phone number, and they gave ",
+            "."
+          ],
+          "answers": [
+            [
+              "our"
+            ],
+            [
+              "us theirs"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "She gave him ",
+            " phone number, and he gave ",
+            "."
+          ],
+          "answers": [
+            [
+              "her"
+            ],
+            [
+              "her his"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "You gave us ",
+            " phone number, and we gave ",
+            "."
+          ],
+          "answers": [
+            [
+              "your"
+            ],
+            [
+              "you ours"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "They gave you ",
+            " phone number, and you gave ",
+            "."
+          ],
+          "answers": [
+            [
+              "their"
+            ],
+            [
+              "them yours"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "63.4",
+      "type": "fill-in",
+      "instruction": "Вставьте him/her/yours и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Where’s Amanda? Have you seen ",
+            "?"
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Where are my keys? Where did I put ",
+            "?"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "This book belongs to Ben. Can you give it to ",
+            "?"
+          ],
+          "answers": [
+            [
+              "him"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We don’t see ",
+            " neighbours much. They’re not at home very often."
+          ],
+          "answers": [
+            [
+              "our"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "'I can’t find my phone. Can I use ",
+            "?' 'Yes, of course.'"
+          ],
+          "answers": [
+            [
+              "yours"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We’re going to the cinema. Why don’t you come with ",
+            "?"
+          ],
+          "answers": [
+            [
+              "us"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Did your sister pass ",
+            " exams?"
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Some people talk about ",
+            " work all the time."
+          ],
+          "answers": [
+            [
+              "their"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Last night I went out for a meal with a friend of ",
+            "."
+          ],
+          "answers": [
+            [
+              "mine"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "63.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Я знаю твою сестру, но я не помню её имени.",
+          "answers": [
+            "I know your sister, but I can’t remember her name.",
+            "I know your sister, but I don’t remember her name."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вы можете дать эту сумку мне?",
+          "answers": [
+            "Can you give that bag to me?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Мои родители собираются навестить нас в субботу.",
+          "answers": [
+            "My parents are going to visit us on Saturday."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Он скучный. Он постоянно говорит о своей работе.",
+          "answers": [
+            "He’s boring. He always talks about his job.",
+            "He’s boring. He always talks about his work."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Ваш сын играет с моими детьми в их комнате.",
+          "answers": [
+            "Your son is playing with my children in their room."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Где Джеймс? Я думаю, это пальто его.",
+          "answers": [
+            "Where is James? I think this coat is his."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Иван сдал все свои экзамены.",
+          "answers": [
+            "Ivan passed all his exams."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Завтра она едет в Лондон. Ты хочешь поехать с ней?",
+          "answers": [
+            "She’s going to London tomorrow. Do you want to come with her?",
+            "She’s going to London tomorrow. Do you want to go with her?"
+          ]
+        }
+      ]
+    }
+  ]
+}

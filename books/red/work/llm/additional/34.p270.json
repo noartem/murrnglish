@@ -1,0 +1,339 @@
+{
+ "id": 34,
+ "topic": "a и the",
+ "refs": "Разделы 66, 70–74",
+ "pdfPages": [
+  270
+ ],
+ "exercise": {
+  "id": "34",
+  "type": "fill-in",
+  "instruction": "Write a/an or the if necessary. If a/an/the are not necessary, leave an empty space (–).",
+  "example": [
+   1,
+   2,
+   3
+  ],
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "Who is ",
+     " best player in your team?"
+    ],
+    "answers": [
+     [
+      "the"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "I don’t watch ",
+     " TV very often."
+    ],
+    "answers": [
+     [
+      "–"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 3,
+    "parts": [
+     "‘Is there ",
+     " bank near here?’ ‘Yes, at ",
+     " end of this street.’"
+    ],
+    "answers": [
+     [
+      "a"
+     ],
+     [
+      "the"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 4,
+    "parts": [
+     "I can’t ride ",
+     " horse."
+    ],
+    "answers": [
+     [
+      "a"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "",
+     " sky is very clear tonight."
+    ],
+    "answers": [
+     [
+      "The"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "Do you live here, or are you ",
+     " tourist?"
+    ],
+    "answers": [
+     [
+      "a"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "What did you have for ",
+     " lunch?"
+    ],
+    "answers": [
+     [
+      "–"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "Who was ",
+     " first President of ",
+     " United States?"
+    ],
+    "answers": [
+     [
+      "the"
+     ],
+     [
+      "the"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "I’m not feeling very good. I’ve got ",
+     " headache."
+    ],
+    "answers": [
+     [
+      "a"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "I’m sorry, but I’ve forgotten your name. I can never remember ",
+     " names."
+    ],
+    "answers": [
+     [
+      "–"
+     ]
+    ]
+   },
+   {
+    "num": 11,
+    "parts": [
+     "What time is ",
+     " next train to London?"
+    ],
+    "answers": [
+     [
+      "the"
+     ]
+    ]
+   },
+   {
+    "num": 12,
+    "parts": [
+     "Kate doesn’t often send ",
+     " emails. She prefers to call people."
+    ],
+    "answers": [
+     [
+      "–"
+     ]
+    ]
+   },
+   {
+    "num": 13,
+    "parts": [
+     "‘Where’s Sue?’ ‘She’s in ",
+     " garden.’"
+    ],
+    "answers": [
+     [
+      "the"
+     ]
+    ]
+   },
+   {
+    "num": 14,
+    "parts": [
+     "Excuse me, I’m looking for ",
+     " Majestic Hotel. Is it near here?"
+    ],
+    "answers": [
+     [
+      "the"
+     ]
+    ]
+   },
+   {
+    "num": 15,
+    "parts": [
+     "Gary was ill ",
+     " last week, so he didn’t go to ",
+     " work."
+    ],
+    "answers": [
+     [
+      "–"
+     ],
+     [
+      "–"
+     ]
+    ]
+   },
+   {
+    "num": 16,
+    "parts": [
+     "Everest is ",
+     " highest mountain in ",
+     " world."
+    ],
+    "answers": [
+     [
+      "the"
+     ],
+     [
+      "the"
+     ]
+    ]
+   },
+   {
+    "num": 17,
+    "parts": [
+     "I usually listen to ",
+     " radio while I’m having ",
+     " breakfast."
+    ],
+    "answers": [
+     [
+      "the"
+     ],
+     [
+      "–"
+     ]
+    ]
+   },
+   {
+    "num": 18,
+    "parts": [
+     "I like ",
+     " sport. My favourite sport is ",
+     " basketball."
+    ],
+    "answers": [
+     [
+      "–"
+     ],
+     [
+      "–"
+     ]
+    ]
+   },
+   {
+    "num": 19,
+    "parts": [
+     "Emily is ",
+     " doctor. Her husband is ",
+     " art teacher."
+    ],
+    "answers": [
+     [
+      "a"
+     ],
+     [
+      "an"
+     ]
+    ]
+   },
+   {
+    "num": 20,
+    "parts": [
+     "My apartment is on ",
+     " second floor. Turn left at ",
+     " top of ",
+     " stairs, and it’s on ",
+     " right."
+    ],
+    "answers": [
+     [
+      "the"
+     ],
+     [
+      "the"
+     ],
+     [
+      "the"
+     ],
+     [
+      "the"
+     ]
+    ]
+   },
+   {
+    "num": 21,
+    "parts": [
+     "After ",
+     " dinner, we watched ",
+     " TV."
+    ],
+    "answers": [
+     [
+      "–"
+     ],
+     [
+      "–"
+     ]
+    ]
+   },
+   {
+    "num": 22,
+    "parts": [
+     "Last year we had ",
+     " wonderful holiday in ",
+     " south of ",
+     " France."
+    ],
+    "answers": [
+     [
+      "a"
+     ],
+     [
+      "the"
+     ],
+     [
+      "–"
+     ]
+    ]
+   }
+  ]
+ }
+}

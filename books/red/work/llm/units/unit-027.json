@@ -1,0 +1,327 @@
+{
+ "unit": 27,
+ "title": "I’m going to …",
+ "pdfPages": [
+  65,
+  66
+ ],
+ "exercises": [
+  {
+   "id": "27.1",
+   "type": "write",
+   "instruction": "Что говорят эти люди?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’m going to watch TV.",
+     "answers": [
+      "I’m going to watch TV."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I",
+     "answers": [
+      "I’m going to have a bath."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I",
+     "answers": [
+      "I’m going to buy a car."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "We",
+     "answers": [
+      "We’re going to play football."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "27.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте going to + глаголы из рамки:",
+   "wordBank": [
+    "do",
+    "eat",
+    "give",
+    "lie down",
+    "stay",
+    "walk",
+    "wash",
+    "watch",
+    "wear"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "My hands are dirty. ",
+      " them."
+     ],
+     "answers": [
+      [
+       "I’m going to wash"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "What ",
+      " to the party tonight?"
+     ],
+     "answers": [
+      [
+       "are you going to wear"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "It’s a nice day. I don’t want to take the bus. I ",
+      ""
+     ],
+     "answers": [
+      [
+       "’m going to walk",
+       "am going to walk"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Steve is going to London next week. He ",
+      " with some friends."
+     ],
+     "answers": [
+      [
+       "’s going to stay",
+       "is going to stay"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I’m hungry. I ",
+      " this sandwich."
+     ],
+     "answers": [
+      [
+       "’m going to eat",
+       "am going to eat"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "It’s Sarah’s birthday next week. We ",
+      " her a present."
+     ],
+     "answers": [
+      [
+       "’re going to give",
+       "are going to give"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Sue says she’s feeling very tired. She ",
+      " for an hour."
+     ],
+     "answers": [
+      [
+       "’s going to lie down",
+       "is going to lie down"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Your favourite programme is on TV tonight. ",
+      " you ",
+      " it?"
+     ],
+     "answers": [
+      [
+       "Are"
+      ],
+      [
+       "going to watch"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "What ",
+      " Rachel ",
+      " when she leaves school?"
+     ],
+     "answers": [
+      [
+       "is"
+      ],
+      [
+       "going to do"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "27.3",
+   "type": "write",
+   "instruction": "Посмотрите на картинки. Что сейчас произойдёт?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "It’s going to rain."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "The shelf",
+     "answers": [
+      "The shelf is going to fall (down).",
+      "The shelf is going to fall down."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "The car",
+     "answers": [
+      "The car is going to turn (right).",
+      "The car is going to turn right."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "He",
+     "answers": [
+      "He’s going to kick the ball.",
+      "He is going to kick the ball."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "27.4",
+   "type": "self-check",
+   "instruction": "Что вы собираетесь делать сегодня или завтра? Напишите три предложения.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’m",
+     "modelAnswers": [
+      "I’m going to phone Maria this evening."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m going to get up early tomorrow."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "modelAnswers": [
+      "I’m going to buy some shoes tomorrow."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "27.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (Поторопись! = Hurry up! / на выходных = at the weekend)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Мы собираемся поужинать.",
+     "answers": [
+      "We’re going to have dinner.",
+      "We are going to have dinner."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я не собираюсь покупать новый телефон.",
+     "answers": [
+      "I’m not going to buy a new phone.",
+      "I am not going to buy a new phone."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Что ты наденешь сегодня вечером?",
+     "answers": [
+      "What are you going to wear tonight?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Что Анжела собирается делать после университета?",
+     "answers": [
+      "What is Angela going to do after university?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Поторопись! Мы опоздаем.",
+     "answers": [
+      "Hurry up! We’re going to be late.",
+      "Hurry up! We are going to be late."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Очень холодно. Пойдёт снег.",
+     "answers": [
+      "It’s very cold. It’s going to snow.",
+      "It’s very cold. It is going to snow.",
+      "It is very cold. It’s going to snow.",
+      "It is very cold. It is going to snow."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Влад и Ирина собираются продать свой дом.",
+     "answers": [
+      "Vlad and Irina are going to sell their house."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Что ты собираешься делать на выходных?",
+     "answers": [
+      "What are you going to do at the weekend?"
+     ]
+    }
+   ]
+  }
+ ]
+}

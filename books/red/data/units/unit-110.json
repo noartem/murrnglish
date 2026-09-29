@@ -1,0 +1,454 @@
+{
+  "unit": 110,
+  "title": "up, over, through и т. д.",
+  "pdfPages": [
+    231,
+    232
+  ],
+  "exercises": [
+    {
+      "id": "110.1",
+      "type": "fill-in",
+      "instruction": "У вас спросили дорогу, и вы объясняете, как добраться до места назначения. Посмотрите на картинки и напишите предложения, начинающиеся с Go … .",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Go past the church."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Go ",
+            " the bridge."
+          ],
+          "answers": [
+            [
+              "under"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Go ",
+            " the hill."
+          ],
+          "answers": [
+            [
+              "up"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Go ",
+            " the steps."
+          ],
+          "answers": [
+            [
+              "down"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Go ",
+            " this street."
+          ],
+          "answers": [
+            [
+              "along"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Go into the hotel."
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Go past the hotel."
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Go out of the hotel."
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Go over the bridge."
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Go through the park."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110.2",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и заполните пропуски в предложениях.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "The dog swam ",
+            " the river."
+          ],
+          "answers": [
+            [
+              "across"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A book fell ",
+            " the shelf."
+          ],
+          "answers": [
+            [
+              "off"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "A plane flew ",
+            " the village."
+          ],
+          "answers": [
+            [
+              "over"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A woman got ",
+            " the car."
+          ],
+          "answers": [
+            [
+              "out of"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "A girl ran ",
+            " the road."
+          ],
+          "answers": [
+            [
+              "across"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Suddenly a car came ",
+            " the corner."
+          ],
+          "answers": [
+            [
+              "round",
+              "around"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "They drove ",
+            " the village."
+          ],
+          "answers": [
+            [
+              "through"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "They got ",
+            " the train."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "The moon travels ",
+            " the earth."
+          ],
+          "answers": [
+            [
+              "round",
+              "around"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "They got ",
+            " the house ",
+            " a window."
+          ],
+          "answers": [
+            [
+              "into"
+            ],
+            [
+              "through"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110.3",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски в предложениях. Используйте over/from/into и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I looked ",
+            " the window and watched the people in the street."
+          ],
+          "answers": [
+            [
+              "out of"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "My house is very near here. It’s just ",
+            " the corner."
+          ],
+          "answers": [
+            [
+              "round",
+              "around"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘Where’s my phone?’ ‘You put it ",
+            " your bag.’"
+          ],
+          "answers": [
+            [
+              "in"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "How far is it ",
+            " here ",
+            " the airport?"
+          ],
+          "answers": [
+            [
+              "from"
+            ],
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We walked ",
+            " the museum for an hour and saw a lot of interesting things."
+          ],
+          "answers": [
+            [
+              "round",
+              "around"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "You can put your coat ",
+            " the back of the chair."
+          ],
+          "answers": [
+            [
+              "on",
+              "over"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "In tennis, you have to hit the ball ",
+            " the net."
+          ],
+          "answers": [
+            [
+              "over"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Silvia took a key ",
+            " her bag and opened the door."
+          ],
+          "answers": [
+            [
+              "out of",
+              "from"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (туннель = tunnel)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "За углом есть магазин.",
+          "answers": [
+            "There’s a shop round the corner.",
+            "There’s a shop around the corner.",
+            "There is a shop round the corner.",
+            "There is a shop around the corner."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Вечером они гуляли по пляжу.",
+          "answers": [
+            "They walked along the beach in the evening.",
+            "In the evening, they walked along the beach."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Мы сбежали с холма.",
+          "answers": [
+            "We ran down the hill."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Джеймс вышел из своей машины и зашёл в банк.",
+          "answers": [
+            "James got out of his car and went into a bank.",
+            "James got out of his car and went into the bank."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Дорога в аэропорт идёт через туннель.",
+          "answers": [
+            "The road to the airport goes through a tunnel.",
+            "The road to the airport goes through the tunnel."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Идите мимо музея и поверните налево.",
+          "answers": [
+            "Go past the museum and turn left.",
+            "Walk past the museum and turn left."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вчера я упал с лестницы.",
+          "answers": [
+            "I fell down the stairs yesterday.",
+            "Yesterday I fell down the stairs."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Чёрная кошка перебежала через дорогу.",
+          "answers": [
+            "A black cat ran across the road."
+          ]
+        }
+      ]
+    }
+  ]
+}

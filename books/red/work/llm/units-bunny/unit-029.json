@@ -1,0 +1,432 @@
+{
+ "unit": 29,
+ "title": "will/shall 2",
+ "pdfPages": [
+  69,
+  70
+ ],
+ "exercises": [
+  {
+   "id": "29.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте I’ll (I will) + глаголы из рамки:",
+   "wordBank": [
+    "carry",
+    "do",
+    "eat",
+    "show",
+    "sit",
+    "stay"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "My bag is very heavy. ",
+      " it for you."
+     ],
+     "answers": [
+      [
+       "carry"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I don’t want this banana. ",
+      " it."
+     ],
+     "answers": [
+      [
+       "I’ll eat"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Do you want a chair? ",
+      " on the floor."
+     ],
+     "answers": [
+      [
+       "I’ll sit"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Oh no, I forgot. ",
+      " it now."
+     ],
+     "answers": [
+      [
+       "I’ll do"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "No, I don’t think so. ",
+      " here."
+     ],
+     "answers": [
+      [
+       "I’ll stay"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Give it to me and ",
+      " you."
+     ],
+     "answers": [
+      [
+       "I’ll show"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "29.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте I think I’ll … или I don’t think I’ll … + глаголы из рамки:",
+   "wordBank": [
+    "buy",
+    "buy",
+    "go",
+    "have",
+    "play"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "It’s cold today. ",
+      " out."
+     ],
+     "answers": [
+      [
+       "I don’t think I’ll go"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m hungry. ",
+      " something to eat."
+     ],
+     "answers": [
+      [
+       "I think I’ll have"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I feel very tired. ",
+      " tennis."
+     ],
+     "answers": [
+      [
+       "I don’t think I’ll play"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I like this hat. ",
+      " it."
+     ],
+     "answers": [
+      [
+       "I think I’ll buy"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "This camera is too expensive. ",
+      " it."
+     ],
+     "answers": [
+      [
+       "I don’t think I’ll buy"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "29.3",
+   "type": "choice",
+   "instruction": "Выберите правильный вариант.",
+   "items": [
+    {
+     "num": 1,
+     "options": [
+      "I phone you tomorrow, OK?",
+      "I’ll phone you tomorrow, OK?"
+     ],
+     "answer": 1
+    },
+    {
+     "num": 2,
+     "options": [
+      "I do it later.",
+      "I’ll do it later."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 3,
+     "options": [
+      "I watch a lot of sport on TV",
+      "I’ll watch a lot of sport on TV"
+     ],
+     "answer": 0
+    },
+    {
+     "num": 4,
+     "options": [
+      "I think I go for a walk.",
+      "I think I’ll go for a walk."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 5,
+     "options": [
+      "Carl is going to buy a new car.",
+      "Carl will buy a new car."
+     ],
+     "answer": 0
+    },
+    {
+     "num": 6,
+     "options": [
+      "I give it to her.",
+      "I’ll give it to her.",
+      "I’m going to give it to her."
+     ],
+     "answer": 1
+    },
+    {
+     "num": 7,
+     "options": [
+      "Are you doing anything this evening? Yes, I’m going out with some friends.",
+      "Are you doing anything this evening? Yes, I’ll go out with some friends.",
+      "Will you do anything this evening? Yes, I’m going out with some friends.",
+      "Will you do anything this evening? Yes, I’ll go out with some friends."
+     ],
+     "answer": [
+      0,
+      2
+     ]
+    },
+    {
+     "num": 8,
+     "options": [
+      "I work.",
+      "I’m working.",
+      "I’ll work."
+     ],
+     "answer": 1
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "29.4",
+   "type": "write",
+   "instruction": "Напишите предложения с Shall I … ? Используйте слова из обеих рамок.",
+   "wordBank": [
+    "make",
+    "turn off",
+    "open",
+    "turn on",
+    "some sandwiches",
+    "the TV",
+    "the light",
+    "the window"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "It’s very warm in this room.",
+     "answers": [
+      "Shall I open the window?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "This programme isn’t very good",
+     "answers": [
+      "Shall I turn off the TV?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I’m hungry.",
+     "answers": [
+      "Shall I make some sandwiches?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "It’s dark in this room.",
+     "answers": [
+      "Shall I turn on the light?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "29.5",
+   "type": "write",
+   "instruction": "Напишите предложения с Shall we … ? Используйте слова из обеих рамок.",
+   "wordBank": [
+    "what",
+    "where",
+    "what time",
+    "who",
+    "buy",
+    "invite",
+    "go",
+    "meet"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Let’s go out tonight.",
+     "answers": [
+      "what time shall we meet?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Let’s have a holiday.",
+     "answers": [
+      "where shall we go?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Let’s spend some money.",
+     "answers": [
+      "what shall we buy?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Let’s have a party.",
+     "answers": [
+      "who shall we invite?"
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "29.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя will или shall. [приносить = bring; свободен = free]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Я принесу Вам стул.",
+     "answers": [
+      "I’ll bring you a chair.",
+      "I’ll get you a chair.",
+      "I will bring you a chair.",
+      "I will get you a chair."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Не думаю, что мы поедем в отпуск в этом году.",
+     "answers": [
+      "I don’t think we’ll go on holiday this year.",
+      "I don’t think we will go on holiday this year."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я голоден. Думаю, я сделаю бутерброд.",
+     "answers": [
+      "I’m hungry. I think I’ll make a sandwich.",
+      "I’m hungry. I think I will make a sandwich.",
+      "I am hungry. I think I’ll make a sandwich.",
+      "I am hungry. I think I will make a sandwich."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Дождь идёт? Мне взять зонтик?",
+     "answers": [
+      "Is it raining? Shall I take an umbrella?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Сходим в парк?",
+     "answers": [
+      "Shall we go to the park?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я позвоню Нине вечером.",
+     "answers": [
+      "I’ll phone Nina this evening.",
+      "I’ll phone Nina in the evening.",
+      "I’ll call Nina this evening.",
+      "I’ll call Nina in the evening.",
+      "I’ll ring Nina this evening.",
+      "I’ll ring Nina in the evening.",
+      "I will phone Nina this evening.",
+      "I will phone Nina in the evening.",
+      "I will call Nina this evening.",
+      "I will call Nina in the evening.",
+      "I will ring Nina this evening.",
+      "I will ring Nina in the evening."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Во сколько завтра встретимся?",
+     "answers": [
+      "What time shall we meet tomorrow?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "А: Ты свободна в субботу? В: Нет, я иду на вечеринку.",
+     "answers": [
+      "Are you free on Saturday? No, I’m going to a party.",
+      "Are you free on Saturday? No, I am going to a party."
+     ]
+    }
+   ]
+  }
+ ]
+}

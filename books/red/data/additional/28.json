@@ -1,0 +1,126 @@
+{
+  "id": 28,
+  "topic": "будущее время",
+  "refs": "Разделы 26–29",
+  "pdfPages": [
+    264
+  ],
+  "exercise": {
+    "id": "28",
+    "type": "choice",
+    "instruction": "Выберите наиболее подходящий вариант.",
+    "example": [
+      1
+    ],
+    "items": [
+      {
+        "num": 1,
+        "options": [
+          "We have a party next Sunday. I hope you can come.",
+          "We’re having a party next Sunday. I hope you can come.",
+          "We’ll have a party next Sunday. I hope you can come."
+        ],
+        "answer": 1
+      },
+      {
+        "num": 2,
+        "options": [
+          "Do you know about Karen? She leaves her job. She told me last week.",
+          "Do you know about Karen? She’s going to leave her job. She told me last week.",
+          "Do you know about Karen? She’ll leave her job. She told me last week."
+        ],
+        "answer": 1
+      },
+      {
+        "num": 3,
+        "options": [
+          "There’s a programme on TV that I want to watch. It starts in five minutes.",
+          "There’s a programme on TV that I want to watch. It’s starting in five minutes.",
+          "There’s a programme on TV that I want to watch. It will start in five minutes."
+        ],
+        "answer": 0
+      },
+      {
+        "num": 4,
+        "options": [
+          "The weather is nice now, but I think it rains later.",
+          "The weather is nice now, but I think it’s raining later.",
+          "The weather is nice now, but I think it will rain later."
+        ],
+        "answer": 2
+      },
+      {
+        "num": 5,
+        "options": [
+          "'What do you do next weekend?' 'Nothing. I’ve got no plans.'",
+          "'What are you doing next weekend?' 'Nothing. I’ve got no plans.'",
+          "'What will you do next weekend?' 'Nothing. I’ve got no plans.'"
+        ],
+        "answer": 1
+      },
+      {
+        "num": 6,
+        "options": [
+          "'When you see Tina, can you ask her to phone me?' 'OK, I ask her.'",
+          "'When you see Tina, can you ask her to phone me?' 'OK, I’m going to ask her.'",
+          "'When you see Tina, can you ask her to phone me?' 'OK, I’ll ask her.'"
+        ],
+        "answer": 2
+      },
+      {
+        "num": 7,
+        "options": [
+          "'What would you like to drink, tea or coffee?' 'I have tea, please.'",
+          "'What would you like to drink, tea or coffee?' 'I’m going to have tea, please.'",
+          "'What would you like to drink, tea or coffee?' 'I’ll have tea, please.'"
+        ],
+        "answer": 2
+      },
+      {
+        "num": 8,
+        "options": [
+          "Don’t take that magazine away. I read it.",
+          "Don’t take that magazine away. I’m going to read it.",
+          "Don’t take that magazine away. I’ll read it."
+        ],
+        "answer": 1
+      },
+      {
+        "num": 9,
+        "options": [
+          "Rachel is ill, so she doesn’t come to the party tomorrow night.",
+          "Rachel is ill, so she isn’t coming to the party tomorrow night.",
+          "Rachel is ill, so she won’t come to the party tomorrow night."
+        ],
+        "answer": 1
+      },
+      {
+        "num": 10,
+        "options": [
+          "I want to meet Sarah at the station. What time does her train arrive?",
+          "I want to meet Sarah at the station. What time is her train going to arrive?",
+          "I want to meet Sarah at the station. What time is her train arriving?"
+        ],
+        "answer": 0
+      },
+      {
+        "num": 11,
+        "options": [
+          "'Will you be at home tomorrow evening?' 'No. I go out.'",
+          "'Will you be at home tomorrow evening?' 'No. I’m going out.'",
+          "'Will you be at home tomorrow evening?' 'No. I’ll go out.'"
+        ],
+        "answer": 1
+      },
+      {
+        "num": 12,
+        "options": [
+          "'Do I phone you tomorrow?' 'Yes, OK.'",
+          "'Am I going to phone you tomorrow?' 'Yes, OK.'",
+          "'Shall I phone you tomorrow?' 'Yes, OK.'"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "unit": 76,
+  "title": "one/ones",
+  "pdfPages": [
+    163,
+    164
+  ],
+  "exercises": [
+    {
+      "id": "76.1",
+      "type": "fill-in",
+      "instruction": "A asks B some questions. Use the information in the box to write B’s answers. Use one (not a/an …) in the answers.",
+      "wordBank": [
+        "B doesn’t need a car",
+        "B has just had a cup of coffee",
+        "there’s a chemist in Mill Road",
+        "B is going to get a bike",
+        "B doesn’t have a pen",
+        "B doesn’t have an umbrella"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "A: Can you lend me a pen?  B: I’m sorry, ",
+            " ."
+          ],
+          "answers": [
+            [
+              "I don’t have one"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A: Would you like to have a car?  B: No, I don’t ",
+            " ."
+          ],
+          "answers": [
+            [
+              "need one",
+              "I don’t need one"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "A: Do you have a bike?  B: No, but ",
+            " ."
+          ],
+          "answers": [
+            [
+              "I’m going to get one"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A: Can you lend me an umbrella?  B: I’m sorry, but ",
+            " ."
+          ],
+          "answers": [
+            [
+              "I don’t have one",
+              "I haven’t got one"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "A: Would you like a cup of coffee?  B: No, thank you. ",
+            " ."
+          ],
+          "answers": [
+            [
+              "I’ve just had one"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "A: Is there a chemist near here?  B: Yes, ",
+            " ."
+          ],
+          "answers": [
+            [
+              "there’s one in Mill Road",
+              "There’s one in Mill Road"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "76.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use a/an … one. Use the words in the list.",
+      "wordBank": [
+        "better",
+        "big",
+        "clean",
+        "different",
+        "new",
+        "old"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "This cup is dirty. Can I have ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "a clean one"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’m going to sell my car and buy ",
+            " ."
+          ],
+          "answers": [
+            [
+              "a new one"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "That’s not a very good photo, but this is ",
+            " ."
+          ],
+          "answers": [
+            [
+              "a better one"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I want today’s newspaper. This is ",
+            " ."
+          ],
+          "answers": [
+            [
+              "an old one"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "This box is too small. I need ",
+            " ."
+          ],
+          "answers": [
+            [
+              "a big one"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Why do we always go to the same restaurant? Let’s go to ",
+            " ."
+          ],
+          "answers": [
+            [
+              "a different one"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "76.3",
+      "type": "fill-in",
+      "instruction": "A is talking to B. Use the information to complete the conversations. Use one/ones.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "A stayed at a hotel. It was opposite the station.  A: We stayed at a hotel.  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which one"
+            ],
+            [
+              "The one opposite the station",
+              "The one opposite the station."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A sees some shoes in a shop window. They’re green.  A: I like those shoes.  B: Which ",
+            " ?  A: The ",
+            ""
+          ],
+          "answers": [
+            [
+              "ones"
+            ],
+            [
+              "green ones"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "A is looking at a house. It has a red door.  A: That’s a nice house.  B: ",
+            " ?  A: ",
+            " with ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which one"
+            ],
+            [
+              "The one"
+            ],
+            [
+              "a red door",
+              "the red door"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A is looking at some CDs. They’re on the top shelf.  A: Are those your CDs?  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which ones"
+            ],
+            [
+              "The ones on the top shelf"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "A is looking at a jacket in a shop. It’s black.  A: Do you like that jacket?  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which one"
+            ],
+            [
+              "The black one"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "A is looking at a picture. It’s on the wall.  A: That’s an interesting picture.  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which one"
+            ],
+            [
+              "The one on the wall"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A sees a girl in a group of people. She’s tall with long hair.  A: Do you know that girl?  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which one"
+            ],
+            [
+              "The tall one with long hair"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "A is looking at some flowers in the garden. They’re yellow.  A: Those flowers are beautiful.  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which ones"
+            ],
+            [
+              "The yellow ones"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "A is looking at a man in a restaurant. He has a moustache and glasses.  A: Who’s that man?  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which one"
+            ],
+            [
+              "The one with a moustache and glasses",
+              "The one with the moustache and glasses"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "A took some photos at the party last week.  A: Did I show you my photos?  B: ",
+            " ?  A: ",
+            ""
+          ],
+          "answers": [
+            [
+              "Which ones"
+            ],
+            [
+              "The ones I took at the party last week"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

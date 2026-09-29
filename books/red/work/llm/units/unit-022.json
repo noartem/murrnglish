@@ -1,0 +1,440 @@
+{
+ "unit": 22,
+ "title": "is done · was done (пассивные конструкции 1)",
+ "pdfPages": [
+  55,
+  56
+ ],
+ "exercises": [
+  {
+   "id": "22.1",
+   "type": "write",
+   "instruction": "Составьте предложения из этих слов. Некоторые предложения вопросительные. Предложения 1–7 должны быть в настоящем времени. Предложения 8–15 должны быть в прошедшем времени.",
+   "example": [
+    1,
+    2,
+    8
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(the office / clean / every day)",
+     "answers": [
+      "The office is cleaned every day."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(how often / these rooms / clean?)",
+     "answers": [
+      "Are these rooms cleaned every day?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(glass / make / from sand)",
+     "answers": [
+      "Glass is made from sand."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(the windows / clean / every two weeks)",
+     "answers": [
+      "The windows are cleaned every two weeks."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(this room / not / use / very much)",
+     "answers": [
+      "This room isn’t used very much."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(we / allow / to park here?)",
+     "answers": [
+      "Are we allowed to park here?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(how / this word / pronounce?)",
+     "answers": [
+      "How is this word pronounced?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(the office / clean / yesterday)",
+     "answers": [
+      "The office was cleaned yesterday."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(the house / paint / last month)",
+     "answers": [
+      "The house was painted last month."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "(my phone / steal / a few days ago)",
+     "answers": [
+      "My phone was stolen a few days ago."
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "(three people / injure / in the accident)",
+     "answers": [
+      "Three people were injured in the accident."
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "(when / this bridge / build?)",
+     "answers": [
+      "When was this bridge built?"
+     ]
+    },
+    {
+     "num": 13,
+     "prompt": "(I / not / wake up / by the noise)",
+     "answers": [
+      "I wasn’t woken up by the noise."
+     ]
+    },
+    {
+     "num": 14,
+     "prompt": "(how / these windows / break?)",
+     "answers": [
+      "How were these windows broken?"
+     ]
+    },
+    {
+     "num": 15,
+     "prompt": "(you / invite / to Jon’s party last week?)",
+     "answers": [
+      "Were you invited to Jon’s party last week?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "22.2",
+   "type": "write",
+   "instruction": "В каждом из этих предложений допущена ошибка. Напишите правильные предложения.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "This house built 100 years ago.",
+     "answers": [
+      "This house was built 100 years ago."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Football plays in most countries of the world.",
+     "answers": [
+      "Football is played in most countries of the world."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Why did the letter send to the wrong address?",
+     "answers": [
+      "Why was the letter sent to the wrong address?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "A film studio is a place where films make.",
+     "answers": [
+      "A film studio is a place where films are made."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Where are you born?",
+     "answers": [
+      "Where were you born?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "How many languages are speaking in Switzerland?",
+     "answers": [
+      "How many languages are spoken in Switzerland?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Somebody broke into our house, but nothing stolen.",
+     "answers": [
+      "Somebody broke into our house, but nothing was stolen."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "When was invented the bicycle?",
+     "answers": [
+      "When was the bicycle invented?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "22.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте глаголы из рамки в пассивной конструкции (настоящего или прошедшего времени):",
+   "wordBank": [
+    "clean",
+    "damage",
+    "find",
+    "give",
+    "invite",
+    "make",
+    "make",
+    "show",
+    "steal",
+    "take"
+   ],
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "The room ",
+      " every day."
+     ],
+     "answers": [
+      [
+       "is cleaned"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I saw an accident yesterday. Two people ",
+      " to hospital."
+     ],
+     "answers": [
+      [
+       "were taken"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Paper ",
+      " from wood."
+     ],
+     "answers": [
+      [
+       "is made"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "There was a fire at the hotel last week. Two of the rooms ",
+      "."
+     ],
+     "answers": [
+      [
+       "were damaged"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "'Where did you get this picture?' 'It ",
+      " to me by a friend of mine.'"
+     ],
+     "answers": [
+      [
+       "was given"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Many American programmes ",
+      " on British TV."
+     ],
+     "answers": [
+      [
+       "are shown"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "'Did James and Sue go to the wedding?' 'No. They ",
+      ", but they didn’t go.'"
+     ],
+     "answers": [
+      [
+       "were invited"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "'How old is this film?' 'It ",
+      " in 1985.'"
+     ],
+     "answers": [
+      [
+       "was made"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "My car ",
+      " last week, but the next day it ",
+      " by the police."
+     ],
+     "answers": [
+      [
+       "was stolen"
+      ],
+      [
+       "was found"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "22.4",
+   "type": "write",
+   "instruction": "Напишите, где родились эти люди.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(Ian / Edinburgh)",
+     "answers": [
+      "Ian was born in Edinburgh."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(Sarah / Manchester)",
+     "answers": [
+      "Sarah was born in Manchester."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(her parents / Ireland)",
+     "answers": [
+      "Her parents were born in Ireland."
+     ]
+    },
+    {
+     "num": 4,
+     "type": "self-check",
+     "prompt": "(you / ???)",
+     "modelAnswers": [
+      "I was born in …"
+     ]
+    },
+    {
+     "num": 5,
+     "type": "self-check",
+     "prompt": "(your mother / ???)",
+     "modelAnswers": [
+      "My mother was born in …"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "22.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя пассивные конструкции. (технология = technology; мука = flour; производить = make)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Мои родители родились в Америке.",
+     "answers": [
+      "My parents were born in America."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Новые технологии изобретают каждый день.",
+     "answers": [
+      "New technologies are invented every day."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Хлеб делается из муки.",
+     "answers": [
+      "Bread is made from flour."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Сколько автомашин производят в Германии каждый год?",
+     "answers": [
+      "How many cars are made in Germany every year?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Этот аэропорт был построен в 1970 году.",
+     "answers": [
+      "This airport was built in 1970."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Где родилась Марина?",
+     "answers": [
+      "Where was Marina born?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Мой телефон не был украден. Я его потеряла.",
+     "answers": [
+      "My phone wasn’t stolen. I lost it.",
+      "My phone was not stolen. I lost it."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Эта книга была написана моим другом.",
+     "answers": [
+      "This book was written by my friend.",
+      "This book was written by a friend of mine."
+     ]
+    }
+   ]
+  }
+ ]
+}

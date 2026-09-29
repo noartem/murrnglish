@@ -1,0 +1,467 @@
+{
+  "unit": 4,
+  "title": "I am doing (present continuous)",
+  "pdfPages": [
+    19,
+    20
+  ],
+  "exercises": [
+    {
+      "id": "4.1",
+      "type": "fill-in",
+      "instruction": "Что делают эти люди? Заполните пропуски, используя глаголы из рамки:",
+      "wordBank": [
+        "eat",
+        "have",
+        "lie",
+        "play",
+        "sit",
+        "wait"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " an apple."
+          ],
+          "answers": [
+            [
+              "She’s eating"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He ",
+            " for a bus."
+          ],
+          "answers": [
+            [
+              "’s waiting",
+              "is waiting"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "They ",
+            " football."
+          ],
+          "answers": [
+            [
+              "’re playing",
+              "are playing"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " on the floor."
+          ],
+          "answers": [
+            [
+              "He’s lying",
+              "He is lying"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " breakfast."
+          ],
+          "answers": [
+            [
+              "They’re having",
+              "They are having"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " on the table."
+          ],
+          "answers": [
+            [
+              "She’s sitting",
+              "She is sitting"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя глаголы из рамки:",
+      "wordBank": [
+        "build",
+        "cook",
+        "go",
+        "have",
+        "stand",
+        "stay",
+        "swim",
+        "work"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Please be quiet. I ",
+            "."
+          ],
+          "answers": [
+            [
+              "’m working"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "‘Where’s John?’ ‘He’s in the kitchen. He ",
+            " .’"
+          ],
+          "answers": [
+            [
+              "’s cooking",
+              "is cooking"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "‘You ",
+            " on my foot.’ ‘Oh, I’m sorry.’"
+          ],
+          "answers": [
+            [
+              "’re standing",
+              "are standing"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Look! Somebody ",
+            " in the river."
+          ],
+          "answers": [
+            [
+              "’s swimming",
+              "is swimming"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We’re here on holiday. We ",
+            " at the Central Hotel."
+          ],
+          "answers": [
+            [
+              "’re staying",
+              "are staying"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "‘Where’s Sue?’ ‘She ",
+            " a shower.’"
+          ],
+          "answers": [
+            [
+              "’s having",
+              "is having"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "They ",
+            " a new hotel in the city centre at the moment."
+          ],
+          "answers": [
+            [
+              "’re building",
+              "are building"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I ",
+            " now. Goodbye."
+          ],
+          "answers": [
+            [
+              "’m going",
+              "am going"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "type": "write",
+      "instruction": "Посмотрите на картинку и напишите предложения о Джейн. Используйте She’s -ing или She isn’t -ing.",
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(have dinner)",
+          "answers": [
+            "Jane isn’t having dinner."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(watch TV)",
+          "answers": [
+            "She’s watching TV."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(sit on the floor) She",
+          "answers": [
+            "She’s sitting on the floor.",
+            "She is sitting on the floor."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(read a book)",
+          "answers": [
+            "She isn’t reading a book.",
+            "She’s not reading a book."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(play the piano)",
+          "answers": [
+            "She isn’t playing the piano.",
+            "She’s not playing the piano."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(laugh)",
+          "answers": [
+            "She’s laughing.",
+            "She is laughing."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(wear a hat)",
+          "answers": [
+            "She’s wearing a hat.",
+            "She is wearing a hat."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(drinking coffee)",
+          "answers": [
+            "She isn’t drinking coffee.",
+            "She’s not drinking coffee."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.4",
+      "type": "self-check",
+      "instruction": "Что вы сейчас делаете? Напишите правдивые предложения о себе. Какая сейчас погода? Напишите правдивые предложения.",
+      "example": [
+        1,
+        8
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(I / wash / my hair)",
+          "modelAnswers": [
+            "I’m not washing my hair."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(I / read / a newspaper)",
+          "modelAnswers": [
+            "I’m reading a newspaper.",
+            "I’m not reading a newspaper."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(I / sit / on a chair)",
+          "modelAnswers": [
+            "I’m sitting on a chair.",
+            "I’m not sitting on a chair."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(I / eat)",
+          "modelAnswers": [
+            "I’m eating.",
+            "I’m not eating."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(I / wear / shoes)",
+          "modelAnswers": [
+            "I’m wearing shoes.",
+            "I’m not wearing shoes."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(I / learn / English)",
+          "modelAnswers": [
+            "I’m learning English."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "(I / listen / to music)",
+          "modelAnswers": [
+            "I’m listening to music.",
+            "I’m not listening to music."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "(it / snow)",
+          "modelAnswers": [
+            "It’s snowing.",
+            "It isn’t snowing."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "(the sun / shine)",
+          "modelAnswers": [
+            "The sun is shining.",
+            "The sun isn’t shining."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "(it / rain)",
+          "modelAnswers": [
+            "It’s raining.",
+            "It isn’t raining.",
+            "It’s not raining."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (Смотри! = Look! Поторопись! = Hurry up! готовить = cook обедать = have lunch погода = the weather)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Смотри! Бен танцует с Сандрой.",
+          "answers": [
+            "Look! Ben is dancing with Sandra."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Где Анна и Лара?” – “Они смотрят телевизор”.",
+          "answers": [
+            "‘Where are Anna and Lara?’ ‘They’re watching TV.’",
+            "‘Where are Anna and Lara?’ ‘They are watching TV.’",
+            "‘Where are Anna and Lara?’ ‘They’re watching television.’",
+            "‘Where are Anna and Lara?’ ‘They are watching television.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Поторопись! Поезд подъезжает.",
+          "answers": [
+            "Hurry up! The train is coming."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "На Саше надето зелёное платье.",
+          "answers": [
+            "Sasha is wearing a green dress."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "“Где Том?” – “Он готовит ужин”.",
+          "answers": [
+            "‘Where’s Tom?’ ‘He’s cooking dinner.’",
+            "‘Where’s Tom?’ ‘He is cooking dinner.’",
+            "‘Where’s Tom?’ ‘He’s cooking the dinner.’",
+            "‘Where’s Tom?’ ‘He is cooking the dinner.’"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Кевин не работает сегодня. Он болен.",
+          "answers": [
+            "Kevin isn’t working today. He’s ill.",
+            "Kevin isn’t working today. He is ill.",
+            "Kevin is not working today. He’s ill.",
+            "Kevin is not working today. He is ill."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мы сейчас обедаем. Ты голоден?",
+          "answers": [
+            "We’re having lunch now. Are you hungry?",
+            "We’re having lunch. Are you hungry?",
+            "We are having lunch now. Are you hungry?",
+            "We are having lunch. Are you hungry?",
+            "We’re eating lunch now. Are you hungry?",
+            "We’re eating lunch. Are you hungry?",
+            "We are eating lunch now. Are you hungry?",
+            "We are eating lunch. Are you hungry?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Погода плохая. Идёт дождь.",
+          "answers": [
+            "The weather is bad. It’s raining.",
+            "The weather is bad. It is raining."
+          ]
+        }
+      ]
+    }
+  ]
+}

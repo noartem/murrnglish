@@ -1,0 +1,425 @@
+{
+  "unit": 109,
+  "title": "under, behind, opposite и т. д.",
+  "pdfPages": [
+    229,
+    230
+  ],
+  "exercises": [
+    {
+      "id": "109.1",
+      "type": "fill-in",
+      "instruction": "Где эти люди находятся по отношению друг к другу? Заполните пропуски в предложениях.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Carl is standing ",
+            " Frank."
+          ],
+          "answers": [
+            [
+              "behind"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Frank is sitting ",
+            " Emma."
+          ],
+          "answers": [
+            [
+              "next to",
+              "beside",
+              "by"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Emma is sitting ",
+            " Becky."
+          ],
+          "answers": [
+            [
+              "in front of"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Emma is sitting ",
+            " Daniela and Frank."
+          ],
+          "answers": [
+            [
+              "between"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Daniela is sitting ",
+            " Emma."
+          ],
+          "answers": [
+            [
+              "next to",
+              "beside",
+              "by"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Frank is sitting ",
+            " Carl."
+          ],
+          "answers": [
+            [
+              "in front of"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Alan is standing ",
+            " Daniela."
+          ],
+          "answers": [
+            [
+              "behind"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Alan is standing ",
+            " left."
+          ],
+          "answers": [
+            [
+              "on the",
+              "on the left"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Becky is standing ",
+            " middle."
+          ],
+          "answers": [
+            [
+              "in the",
+              "in the middle"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "109.2",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и заполните пропуски в предложениях.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "The cat is ",
+            " the table."
+          ],
+          "answers": [
+            [
+              "under"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "There is a big tree ",
+            " the house."
+          ],
+          "answers": [
+            [
+              "behind"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The plane is flying ",
+            " the clouds."
+          ],
+          "answers": [
+            [
+              "above"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "She is standing ",
+            " the piano."
+          ],
+          "answers": [
+            [
+              "in front of"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "The cinema is ",
+            " the right."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "She’s standing ",
+            " the fridge."
+          ],
+          "answers": [
+            [
+              "by",
+              "next to",
+              "beside"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "The switch is ",
+            " the window."
+          ],
+          "answers": [
+            [
+              "below",
+              "under"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The cupboard is ",
+            " the sink."
+          ],
+          "answers": [
+            [
+              "above"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "There are some shoes ",
+            " the bed."
+          ],
+          "answers": [
+            [
+              "under"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "The plant is ",
+            " the piano."
+          ],
+          "answers": [
+            [
+              "by",
+              "next to",
+              "beside"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "Paul is sitting ",
+            " Fiona."
+          ],
+          "answers": [
+            [
+              "opposite"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "In Britain people drive ",
+            " the left."
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "109.3",
+      "type": "write",
+      "instruction": "Напишите предложения по картинке.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(next to)",
+          "answers": [
+            "The bank is next to the bookshop."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(in front of)",
+          "answers": [
+            "The fountain is in front of the theatre."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(opposite)",
+          "answers": [
+            "The bank is opposite the theatre.",
+            "The bookshop is opposite the theatre.",
+            "Paul’s office is opposite the theatre."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(next to)",
+          "answers": [
+            "The bank is next to the bookshop.",
+            "The bookshop is next to the bank.",
+            "The bookshop is next to the supermarket.",
+            "The supermarket is next to the bookshop."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(above)",
+          "answers": [
+            "Paul’s office is above the bookshop."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "(between)",
+          "answers": [
+            "The bookshop is between the bank and the supermarket."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "109.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (диван = sofa)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Стол находится в середине комнаты.",
+          "answers": [
+            "The desk is in the middle of the room.",
+            "The table is in the middle of the room.",
+            "The desk is in the centre of the room.",
+            "The table is in the centre of the room."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Где моя сумка?” – “Под стулом”.",
+          "answers": [
+            "‘Where’s my bag?’ ‘Under the chair.’",
+            "‘Where is my bag?’ ‘Under the chair.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Наша квартира находится над магазином.",
+          "answers": [
+            "Our flat is above a shop."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Твоя кошка всегда спит за диваном?",
+          "answers": [
+            "Does your cat always sleep behind the sofa?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Я хочу сидеть у окна.",
+          "answers": [
+            "I’d like to sit by the window.",
+            "I would like to sit by the window.",
+            "I want to sit by the window.",
+            "I’d like to sit beside the window.",
+            "I would like to sit beside the window.",
+            "I want to sit beside the window.",
+            "I’d like to sit next to the window.",
+            "I would like to sit next to the window.",
+            "I want to sit next to the window."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Хорошее фото! Кто эта девушка справа?",
+          "answers": [
+            "Nice photo! Who is that girl on the right?",
+            "Nice photo! Who is this girl on the right?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Перед музеем есть автобусная остановка.",
+          "answers": [
+            "There’s a bus stop in front of the museum.",
+            "There is a bus stop in front of the museum.",
+            "In front of the museum, there’s a bus stop.",
+            "In front of the museum, there is a bus stop."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Дом Анны находится напротив парка.",
+          "answers": [
+            "Anna’s house is opposite the park."
+          ]
+        }
+      ]
+    }
+  ]
+}

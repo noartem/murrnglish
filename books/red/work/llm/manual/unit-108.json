@@ -1,0 +1,145 @@
+{
+ "unit": 108,
+ "exercises": [
+  {
+   "id": "108.2",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте to или at. Одно из предложений не требует добавления предлога.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Paula didn’t go ",
+      " work yesterday."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m tired. I’m going ",
+      " home. (правильно)"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Tina is not very well. She has gone ",
+      " the doctor."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Would you like to come ",
+      " a party on Saturday?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Is Lisa ",
+      " home?’ ‘No, she’s gone ",
+      " work.’"
+     ],
+     "answers": [
+      [
+       "at"
+      ],
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "There were 20,000 people ",
+      " the football match."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Why did you go ",
+      " home early last night?"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "A boy jumped into the river and swam ",
+      " the other side."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "There were a lot of people waiting ",
+      " the bus stop."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "We had a good meal ",
+      " a restaurant, and then we went back ",
+      " the hotel."
+     ],
+     "answers": [
+      [
+       "at"
+      ],
+      [
+       "to"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

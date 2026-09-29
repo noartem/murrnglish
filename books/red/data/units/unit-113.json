@@ -1,0 +1,499 @@
+{
+  "unit": 113,
+  "title": "listen to …, look at … и т. д. (глагол + предлог)",
+  "pdfPages": [
+    237,
+    238
+  ],
+  "exercises": [
+    {
+      "id": "113.1",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и заполните пропуски. Используйте to/for/at и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "She’s looking ",
+            " her watch."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "He’s listening ",
+            " the radio."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "They’re waiting ",
+            " a taxi."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Paul is talking ",
+            " Jane."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "They’re looking ",
+            " a picture."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Sue is looking ",
+            " Tom."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "113.2",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя to/for/about и т. д. Два предложения не требуют добавления предлога.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Thank you very much ",
+            " your help."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "This isn’t my umbrella. It belongs ",
+            " a friend of mine."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I saw Steve, but I didn’t speak ",
+            " him."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Don’t forget to phone ",
+            " your mother tonight."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Thank you ",
+            " the present. It was lovely."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "What happened ",
+            " Ella last night? Why didn’t she come to the party?"
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "We’re thinking ",
+            " going to Australia next year."
+          ],
+          "answers": [
+            [
+              "of",
+              "about"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "We asked the waiter ",
+            " coffee, but he brought us tea."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "'Do you like reading books?'  'It depends ",
+            " the book.'"
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "John was talking, but nobody was listening ",
+            " what he was saying."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "We waited ",
+            " Karen until 2 o’clock, but she didn’t come."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "I texted ",
+            " Lisa to tell her I would be late."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "He’s alone all day. He never talks ",
+            " anybody."
+          ],
+          "answers": [
+            [
+              "to"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "'How much does it cost to stay at this hotel?'  'It depends ",
+            " the type of room.'"
+          ],
+          "answers": [
+            [
+              "on"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "Catherine is thinking ",
+            " changing her job."
+          ],
+          "answers": [
+            [
+              "of",
+              "about"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "113.3",
+      "type": "fill-in",
+      "instruction": "Вставьте at/for/after.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I looked ",
+            " the letter, but I didn’t read it carefully."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "When you are ill, you need somebody to look ",
+            " you."
+          ],
+          "answers": [
+            [
+              "after"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Excuse me, I’m looking ",
+            " Hill Street. Is it near here?"
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Bye! Have a great holiday and look ",
+            " yourself."
+          ],
+          "answers": [
+            [
+              "after"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I want to take a picture of you. Please look ",
+            " the camera and smile."
+          ],
+          "answers": [
+            [
+              "at"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Ben is looking ",
+            " a job. He wants to work in a hotel."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "113.4",
+      "type": "write",
+      "instruction": "Ответьте на вопросы. Начните предложения с It depends ....",
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Do you want to go out with us?",
+          "answers": [
+            "It depends where you’re going."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Do you like eating in restaurants?",
+          "answers": [
+            "It depends on the restaurant."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Do you enjoy watching TV?",
+          "answers": [
+            "It depends on the programme."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Can you do something for me?",
+          "answers": [
+            "It depends (on) what it is.",
+            "It depends what it is."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Are you going away this weekend?",
+          "answers": [
+            "It depends on the weather."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Can you lend me some money?",
+          "answers": [
+            "It depends (on) how much you want.",
+            "It depends how much you want."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "113.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя выражения на странице слева. (замечательный = lovely; парень = boyfriend; выход = exit)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Посмотри на Анну! Что она делает?",
+          "answers": [
+            "Look at Anna! What’s she doing?",
+            "Look at Anna! What is she doing?"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я позвоню тебе завтра.",
+          "answers": [
+            "I’ll phone you tomorrow.",
+            "I’ll call you tomorrow.",
+            "I will phone you tomorrow.",
+            "I will call you tomorrow."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Я подожду тебя здесь.",
+          "answers": [
+            "I’ll wait for you here.",
+            "I will wait for you here."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "А: Ты любишь ходить в кино? В: Иногда. Это зависит от фильма.",
+          "answers": [
+            "A: Do you like going to the cinema? B: Sometimes. It depends on the film.",
+            "A: Do you like going to the cinema? B: Sometimes. It depends on the film."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Когда мы ездили в отпуск, наш сосед присматривал за нашей кошкой.",
+          "answers": [
+            "When we went on holiday, our neighbour looked after our cat."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Пожалуйста, поблагодари Нину за её замечательный торт.",
+          "answers": [
+            "Please thank Nina for her lovely cake."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Что ты думаешь о моём парне?",
+          "answers": [
+            "What do you think about my boyfriend?",
+            "What do you think of my boyfriend?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Извините. Я ищу выход.",
+          "answers": [
+            "Excuse me. I’m looking for the exit."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Эта сумка принадлежит Лене?",
+          "answers": [
+            "Does this bag belong to Lena?"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "А: Вы любите рыбу? В: Это зависит от того, как вы её приготовите.",
+          "answers": [
+            "A: Do you like fish? B: It depends on how you cook it.",
+            "A: Do you like fish? B: It depends how you cook it."
+          ]
+        }
+      ]
+    }
+  ]
+}

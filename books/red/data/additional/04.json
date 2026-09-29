@@ -1,0 +1,166 @@
+{
+  "id": 4,
+  "topic": "present simple",
+  "refs": "Разделы 6–8",
+  "pdfPages": [
+    253
+  ],
+  "exercise": {
+    "id": "4",
+    "type": "fill-in",
+    "instruction": "Заполните пропуски. Используйте present simple.",
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "",
+          " to work early."
+        ],
+        "answers": [
+          [
+            "Sue always gets"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 2,
+        "parts": [
+          "",
+          " TV very often."
+        ],
+        "answers": [
+          [
+            "We don’t watch"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 3,
+        "parts": [
+          "How often ",
+          " your hair?"
+        ],
+        "answers": [
+          [
+            "do you wash"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 4,
+        "parts": [
+          "I want to go to the cinema, but ",
+          " to go."
+        ],
+        "answers": [
+          [
+            "Sam doesn’t want"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "",
+          " to go out tonight?"
+        ],
+        "answers": [
+          [
+            "Do you want"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "",
+          " near here?"
+        ],
+        "answers": [
+          [
+            "Does Helen live"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "",
+          " a lot of people."
+        ],
+        "answers": [
+          [
+            "Sarah knows"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "I enjoy travelling, but ",
+          " very much."
+        ],
+        "answers": [
+          [
+            "I don’t travel"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "What time ",
+          " in the morning?"
+        ],
+        "answers": [
+          [
+            "do you usually get up"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "My parents are usually at home in the evening. ",
+          " very often."
+        ],
+        "answers": [
+          [
+            "They don’t go out"
+          ]
+        ]
+      },
+      {
+        "num": 11,
+        "parts": [
+          "",
+          " work at five o’clock."
+        ],
+        "answers": [
+          [
+            "Tom always finishes"
+          ]
+        ]
+      },
+      {
+        "num": 12,
+        "parts": [
+          "A: What ",
+          "? B: ",
+          " in a hotel."
+        ],
+        "answers": [
+          [
+            "does Jessica do"
+          ],
+          [
+            "She works"
+          ]
+        ]
+      }
+    ]
+  }
+}

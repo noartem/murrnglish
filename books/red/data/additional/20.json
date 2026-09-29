@@ -1,0 +1,84 @@
+{
+  "id": 20,
+  "topic": "present perfect и past simple",
+  "refs": "Разделы 19–21",
+  "pdfPages": [
+    261
+  ],
+  "exercise": {
+    "id": "20",
+    "type": "write",
+    "instruction": "Напишите предложения, используя present perfect или past simple.",
+    "example": [
+      1,
+      2
+    ],
+    "items": [
+      {
+        "num": 1,
+        "prompt": "(I / go / there / last year)",
+        "answers": [
+          "I went there last year."
+        ]
+      },
+      {
+        "num": 2,
+        "prompt": "(I / never / there)",
+        "answers": [
+          "I’ve never been there."
+        ]
+      },
+      {
+        "num": 3,
+        "prompt": "(he / already / go)",
+        "answers": [
+          "He’s already gone.",
+          "He has already gone."
+        ]
+      },
+      {
+        "num": 4,
+        "prompt": "(she / leave / at 4 o’clock)",
+        "answers": [
+          "she left at 4 o’clock.",
+          "Yes, she left at 4 o’clock."
+        ]
+      },
+      {
+        "num": 5,
+        "prompt": "(how many times / you / there?)",
+        "answers": [
+          "How many times have you been there?"
+        ]
+      },
+      {
+        "num": 6,
+        "prompt": "(I / not / decide / yet)",
+        "answers": [
+          "I haven’t decided yet."
+        ]
+      },
+      {
+        "num": 7,
+        "prompt": "(it / on the table / last night)",
+        "answers": [
+          "It was on the table last night."
+        ]
+      },
+      {
+        "num": 8,
+        "prompt": "(I / eat / there a few times)",
+        "answers": [
+          "I’ve eaten there a few times."
+        ]
+      },
+      {
+        "num": 9,
+        "prompt": "(what time / they / arrive?)",
+        "answers": [
+          "What time did they arrive?"
+        ]
+      }
+    ]
+  }
+}

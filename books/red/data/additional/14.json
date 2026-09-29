@@ -1,0 +1,172 @@
+{
+  "id": 14,
+  "topic": "past simple и past continuous",
+  "refs": "Разделы 12–15",
+  "pdfPages": [
+    257
+  ],
+  "exercise": {
+    "id": "14",
+    "type": "fill-in",
+    "instruction": "Заполните пропуски, используя past simple или past continuous.",
+    "items": [
+      {
+        "num": 1,
+        "example": true,
+        "parts": [
+          "It ",
+          " (rain) when we ",
+          " (go) out."
+        ],
+        "answers": [
+          [
+            "was raining"
+          ],
+          [
+            "went"
+          ]
+        ]
+      },
+      {
+        "num": 2,
+        "parts": [
+          "When I arrived at the office, Lisa and Paul ",
+          " (work) at their desks."
+        ],
+        "answers": [
+          [
+            "were working"
+          ]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "I ",
+          " (open) the window because it was hot."
+        ],
+        "answers": [
+          [
+            "opened"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "The doorbell ",
+          " (ring) when Sue ",
+          " (cook)."
+        ],
+        "answers": [
+          [
+            "rang"
+          ],
+          [
+            "was cooking"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "I ",
+          " (hear) a noise outside, so I ",
+          " (look) out of the window."
+        ],
+        "answers": [
+          [
+            "heard"
+          ],
+          [
+            "looked"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "Tom ",
+          " (look) out of the window when the accident ",
+          " (happen)."
+        ],
+        "answers": [
+          [
+            "was looking"
+          ],
+          [
+            "happened"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "Richard had a book in his hand, but he ",
+          " (not/read) it. He ",
+          " (watch) TV."
+        ],
+        "answers": [
+          [
+            "wasn’t reading"
+          ],
+          [
+            "was watching"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "Catherine bought a magazine, but she ",
+          " (not/read) it. She didn’t have time."
+        ],
+        "answers": [
+          [
+            "didn’t read"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "I ",
+          " (finish) my meal, ",
+          " (pay) the bill and ",
+          " (leave) the restaurant."
+        ],
+        "answers": [
+          [
+            "finished"
+          ],
+          [
+            "paid"
+          ],
+          [
+            "left"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "I ",
+          " (see) Kate this morning. I ",
+          " (walk) along the street and she ",
+          " (wait) for the bus."
+        ],
+        "answers": [
+          [
+            "saw"
+          ],
+          [
+            "was walking"
+          ],
+          [
+            "was waiting"
+          ]
+        ]
+      }
+    ]
+  }
+}

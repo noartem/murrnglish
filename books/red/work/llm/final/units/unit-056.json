@@ -1,0 +1,491 @@
+{
+ "unit": 56,
+ "title": "go to … · go on … · go for … · go -ing",
+ "pdfPages": [
+  123,
+  124
+ ],
+ "exercises": [
+  {
+   "id": "56.1",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте to/on/for.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’m going ",
+      " China next week."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Richard often goes ",
+      " sailing. (без предлога)"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Sue went ",
+      " Mexico last year."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Jack goes ",
+      " jogging every morning."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I’m going out ",
+      " a walk. Do you want to come?"
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I’m tired because I went ",
+      " bed very late last night."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Mark is going ",
+      " holiday ",
+      " Italy next week."
+     ],
+     "answers": [
+      [
+       "on"
+      ],
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "The weather was warm and the river was clean, so we went ",
+      " a swim."
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "The taxi drivers went ",
+      " strike when I was in New York."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Let’s go ",
+      " the cinema this evening?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "It’s late. I have to go ",
+      " home now."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "Would you like to go ",
+      " a tour of the city?"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "Shall we go out ",
+      " dinner this evening?"
+     ],
+     "answers": [
+      [
+       "for"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "My parents are going ",
+      " a cruise this summer."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "56.2",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и допишите предложения. Используйте go/goes/going/went + -ing.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Richard has a boat. He often ",
+      "."
+     ],
+     "answers": [
+      [
+       "goes sailing"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Last Saturday Emily went ",
+      "."
+     ],
+     "answers": [
+      [
+       "fishing",
+       "went fishing"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Dan ",
+      " every day."
+     ],
+     "answers": [
+      [
+       "goes swimming"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Jessica is going on holiday next month. She is ",
+      "."
+     ],
+     "answers": [
+      [
+       "going skiing"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Peter is going out later. He has to ",
+      "."
+     ],
+     "answers": [
+      [
+       "go shopping"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Sarah ",
+      " after work yesterday."
+     ],
+     "answers": [
+      [
+       "went jogging"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "56.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя слова из рамки. Где необходимо, вставьте to/on/for.",
+   "wordBank": [
+    "a swim",
+    "holiday",
+    "Portugal",
+    "shopping",
+    "sleep",
+    "a walk",
+    "home",
+    "riding",
+    "skiing",
+    "university"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "The water looks nice. Let’s go ",
+      "."
+     ],
+     "answers": [
+      [
+       "for a swim"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "After leaving school, Tina went ",
+      " where she studied psychology."
+     ],
+     "answers": [
+      [
+       "to university"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I’m going ",
+      " now. I have to buy a few things."
+     ],
+     "answers": [
+      [
+       "shopping"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I was very tired last night. I sat down in an armchair and went ",
+      "."
+     ],
+     "answers": [
+      [
+       "to sleep"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I wasn’t enjoying the party, so I went ",
+      " early."
+     ],
+     "answers": [
+      [
+       "home"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "We live near the mountains. In winter we go ",
+      " most weekends."
+     ],
+     "answers": [
+      [
+       "skiing"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Robert has got a horse. He goes ",
+      " a lot."
+     ],
+     "answers": [
+      [
+       "riding"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "The weather is nice. Shall we go ",
+      " along the river?"
+     ],
+     "answers": [
+      [
+       "for a walk"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "A: Are you going ",
+      " soon? B: Yes, next month. We’re going ",
+      ". We’ve never been there before."
+     ],
+     "answers": [
+      [
+       "on holiday"
+      ],
+      [
+       "to Portugal"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "56.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя go в нужной форме.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "В четверг я еду в Лондон.",
+     "answers": [
+      "I’m going to London on Thursday.",
+      "On Thursday I’m going to London."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "В прошлом году Джесс ездила в отпуск в Америку.",
+     "answers": [
+      "Jess went on holiday to America last year.",
+      "Last year Jess went on holiday to America."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я хотела бы погулять в парке.",
+     "answers": [
+      "I’d like to go for a walk in the park.",
+      "I would like to go for a walk in the park."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Олег ездит на рыбалку каждые выходные.",
+     "answers": [
+      "Oleg goes fishing every weekend.",
+      "Every weekend Oleg goes fishing."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Как часто ты ходишь по магазинам?",
+     "answers": [
+      "How often do you go shopping?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Бен и Ирина уехали кататься на лыжах в Австрии.",
+     "answers": [
+      "Ben and Irina have gone skiing in Austria."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Вчера учителя объявили забастовку.",
+     "answers": [
+      "The teachers went on strike yesterday.",
+      "Yesterday, the teachers went on strike."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "После концерта мы пошли домой.",
+     "answers": [
+      "We went home after the concert.",
+      "After the concert, we went home."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Давайте сходим выпьем кофе.",
+     "answers": [
+      "Let’s go for coffee.",
+      "Let’s go for a coffee."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Завтра я иду к врачу.",
+     "answers": [
+      "I’m going to the doctor’s tomorrow.",
+      "I’m going to the doctor tomorrow.",
+      "Tomorrow I’m going to the doctor’s.",
+      "Tomorrow I’m going to the doctor."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "id": 16,
+ "topic": "present perfect",
+ "refs": "Разделы 16–20",
+ "pdfPages": [
+  259
+ ],
+ "exercise": {
+  "id": "16",
+  "type": "fill-in",
+  "instruction": "",
+  "items": [
+   {
+    "num": 5,
+    "parts": [
+     "I don’t know. I ",
+     " it."
+    ],
+    "answers": [
+     [
+      "haven’t read"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "I’m looking for Jessica. ",
+     " her?"
+    ],
+    "answers": [
+     [
+      "Have you seen"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "No, thanks. I ",
+     " enough."
+    ],
+    "answers": [
+     [
+      "’ve had",
+      "have had"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "",
+     " to Sweden?"
+    ],
+    "answers": [
+     [
+      "Have you ever been",
+      "Have you been"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "Hi. We ",
+     " to the cinema."
+    ],
+    "answers": [
+     [
+      "’ve just been",
+      "have just been",
+      "’ve been",
+      "have been"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "",
+     " to a party."
+    ],
+    "answers": [
+     [
+      "’ve gone",
+      "have gone"
+     ]
+    ]
+   },
+   {
+    "num": 11,
+    "parts": [
+     "Paul was asleep in the armchair. He ",
+     " up."
+    ],
+    "answers": [
+     [
+      "’s just woken",
+      "has just woken",
+      "’s woken",
+      "has woken"
+     ]
+    ]
+   },
+   {
+    "num": 12,
+    "parts": [
+     "How long ",
+     " here?"
+    ],
+    "answers": [
+     [
+      "have you lived",
+      "have you been living"
+     ]
+    ]
+   },
+   {
+    "num": 13,
+    "parts": [
+     "Yes, we ",
+     " each other for a long time."
+    ],
+    "answers": [
+     [
+      "’ve known",
+      "have known"
+     ]
+    ]
+   },
+   {
+    "num": 14,
+    "parts": [
+     "The weather is horrible here. It ",
+     " all day."
+    ],
+    "answers": [
+     [
+      "’s been raining",
+      "has been raining",
+      "has rained",
+      "has been horrible",
+      "has been bad"
+     ]
+    ]
+   }
+  ]
+ }
+}

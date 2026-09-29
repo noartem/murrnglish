@@ -1,0 +1,137 @@
+{
+  "id": 10,
+  "topic": "was/were и past simple",
+  "refs": "Разделы 11–13",
+  "pdfPages": [
+    256
+  ],
+  "exercise": {
+    "id": "10",
+    "type": "fill-in",
+    "instruction": "Заполните пропуски, используя только по одному слову.",
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "I got up early and ",
+          " a shower."
+        ],
+        "answers": [
+          [
+            "had"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 2,
+        "parts": [
+          "Tom was tired last night, so he ",
+          " to bed early."
+        ],
+        "answers": [
+          [
+            "went"
+          ]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "I ",
+          " this key on the floor. Is it yours?"
+        ],
+        "answers": [
+          [
+            "found"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "Kate got married when she ",
+          " 23."
+        ],
+        "answers": [
+          [
+            "was"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "Helen is learning to drive. She ",
+          " her first lesson yesterday."
+        ],
+        "answers": [
+          [
+            "had"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "'I’ve got a new job.' 'Yes, I know. David ",
+          " me.'"
+        ],
+        "answers": [
+          [
+            "told"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "'Where did you buy that book?' 'It was a present. Amy ",
+          " it to me.'"
+        ],
+        "answers": [
+          [
+            "gave"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "We ",
+          " hungry, so we had something to eat."
+        ],
+        "answers": [
+          [
+            "were"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "'Did you enjoy the film?' 'Yes, I ",
+          " it was very good.'"
+        ],
+        "answers": [
+          [
+            "thought"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "'Did Andy come to your party?' 'No, we ",
+          " him, but he didn’t come.'"
+        ],
+        "answers": [
+          [
+            "invited",
+            "asked"
+          ]
+        ]
+      }
+    ]
+  }
+}

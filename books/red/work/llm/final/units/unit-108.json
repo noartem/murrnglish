@@ -1,0 +1,640 @@
+{
+ "unit": 108,
+ "title": "to · in · at (предлоги места 3)",
+ "pdfPages": [
+  227,
+  228
+ ],
+ "exercises": [
+  {
+   "id": "108.1",
+   "type": "fill-in",
+   "instruction": "Вставьте to или in.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I like reading ",
+      " bed."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "We’re going ",
+      " Italy next month."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Sue is on holiday ",
+      " Italy at the moment."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I have to go ",
+      " the hospital tomorrow."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I was tired, so I stayed ",
+      " bed late."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "What time do you usually go ",
+      " bed?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Does this bus go ",
+      " the centre?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Would you like to live ",
+      " another country?"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108.2",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте to или at. Одно из предложений не требует добавления предлога.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Paula didn’t go ",
+      " work yesterday."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m tired. I’m going ",
+      " home. (правильно)"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Tina is not very well. She has gone ",
+      " the doctor."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Would you like to come ",
+      " a party on Saturday?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Is Lisa ",
+      " home?’ ‘No, she’s gone ",
+      " work.’"
+     ],
+     "answers": [
+      [
+       "at"
+      ],
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "There were 20,000 people ",
+      " the football match."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Why did you go ",
+      " home early last night?"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "A boy jumped into the river and swam ",
+      " the other side."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "There were a lot of people waiting ",
+      " the bus stop."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "We had a good meal ",
+      " a restaurant, and then we went back ",
+      " the hotel."
+     ],
+     "answers": [
+      [
+       "at"
+      ],
+      [
+       "to"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108.3",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте to, at или in. Одно из предложений не требует добавления предлога.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’m not going out this afternoon. I’m staying ",
+      " home."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "We’re going ",
+      " a concert tomorrow evening."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I went ",
+      " New York last year."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "How long did you stay ",
+      " New York?"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Next year we hope to go ",
+      " Canada to visit some friends."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Do you want to go ",
+      " the cinema this evening?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Did you park your car ",
+      " the station?"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "After the accident three people were taken ",
+      " hospital."
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "How often do you go ",
+      " the dentist?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "‘Is Sarah here?’ ‘No, she’s ",
+      " Helen’s.’"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "My house is ",
+      " the end of the street on the left."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I went ",
+      " Maria’s house, but she wasn’t ",
+      " home."
+     ],
+     "answers": [
+      [
+       "to"
+      ],
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "There were no taxis, so we had to walk ",
+      " home."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "‘Who did you meet ",
+      " the party?’ ‘I didn’t go ",
+      " the party.’"
+     ],
+     "answers": [
+      [
+       "at"
+      ],
+      [
+       "to"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108.4",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте to, at или in. Некоторые предложения не требуют добавления предлога.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "What time do you usually get ",
+      " work?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "What time do you usually get ",
+      " home?"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "What time did you arrive ",
+      " the party?"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "When did you arrive ",
+      " London?"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "What time does the train get ",
+      " Paris?"
+     ],
+     "answers": [
+      [
+       "to"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "We arrived ",
+      " home very late."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108.5",
+   "type": "self-check",
+   "instruction": "Закончите предложения о себе. Используйте to/in/at.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "At 3 o’clock this morning I was",
+     "modelAnswers": [
+      "in bed"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Yesterday I went",
+     "modelAnswers": [
+      "to work"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "At 11 o’clock yesterday morning I was",
+     "modelAnswers": [
+      "at work"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "One day I’d like to go",
+     "modelAnswers": [
+      "to Canada"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I don’t like going",
+     "modelAnswers": [
+      "to parties"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "At 9 o’clock yesterday evening I was",
+     "modelAnswers": [
+      "at a friend’s house"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "108.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Этот автобус идёт в Кембридж?",
+     "answers": [
+      "Does this bus go to Cambridge?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Когда я езжу в Лондон, я останавливаюсь у своей сестры.",
+     "answers": [
+      "When I go to London, I stay at my sister’s."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Давай сходим в кафе. Я голоден.",
+     "answers": [
+      "Let’s go to a cafe. I’m hungry."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Завтра я не иду в школу.",
+     "answers": [
+      "I’m not going to school tomorrow.",
+      "I am not going to school tomorrow."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Анна приехала в ресторан в 7 часов.",
+     "answers": [
+      "Anna got to the restaurant at 7 (o’clock)."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я люблю смотреть телевизор в кровати.",
+     "answers": [
+      "I like watching TV in bed.",
+      "I like to watch TV in bed."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Пока. Сейчас я иду домой.",
+     "answers": [
+      "Bye. I’m going home now.",
+      "Bye. I am going home now."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Где вы предпочитаете работать – в офисе или дома?",
+     "answers": [
+      "Where do you prefer to work – in an/the office or at home?",
+      "Where do you prefer to work – in an office or at home?",
+      "Where do you prefer to work – in the office or at home?"
+     ]
+    }
+   ]
+  }
+ ]
+}

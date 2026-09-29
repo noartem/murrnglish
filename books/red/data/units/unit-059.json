@@ -1,0 +1,412 @@
+{
+  "unit": 59,
+  "title": "have",
+  "pdfPages": [
+    129,
+    130
+  ],
+  "exercises": [
+    {
+      "id": "59.1",
+      "type": "fill-in",
+      "instruction": "Вставьте have или have got в правильной форме.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " time to do the shopping yesterday."
+          ],
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " a car?' 'No, she can’t drive.'"
+          ],
+          "answers": [
+            [
+              "Has Lisa got",
+              "Does Lisa have"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "He can’t open the door ",
+            " a key."
+          ],
+          "answers": [
+            [
+              "doesn’t have",
+              "hasn’t got"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " a cold last week. He’s better now."
+          ],
+          "answers": [
+            [
+              "Gary had"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "What’s wrong? ",
+            " a headache?"
+          ],
+          "answers": [
+            [
+              "Do you have",
+              "Have you got"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We wanted to go by taxi, but ",
+            " enough money."
+          ],
+          "answers": [
+            [
+              "didn’t have"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Laura is very busy. ",
+            " much free time."
+          ],
+          "answers": [
+            [
+              "doesn’t have",
+              "hasn’t got"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            " any problems when you were on holiday?"
+          ],
+          "answers": [
+            [
+              "Did you have"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59.2",
+      "type": "write",
+      "instruction": "Что делают эти люди? Напишите предложения, используя слова из рамки:",
+      "wordBank": [
+        "a bath",
+        "breakfast",
+        "a cup of tea",
+        "dinner",
+        "a good time",
+        "a rest"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "They’re having breakfast."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "She",
+          "answers": [
+            "She’s having a cup of tea.",
+            "She is having a cup of tea."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "He",
+          "answers": [
+            "He’s having a rest.",
+            "He is having a rest."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "They",
+          "answers": [
+            "They’re having a good time.",
+            "They are having a good time."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "They’re having dinner.",
+            "They are having dinner."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "He’s having a bath.",
+            "He is having a bath."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59.3",
+      "type": "write",
+      "instruction": "Что можно сказать в каждой из этих ситуаций? Используйте have.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Emily is going on holiday. What do you say to her before she goes?",
+          "answers": [
+            "Have a nice holiday!"
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "You meet Clare at the airport. She has just got off her plane. Ask her about the flight.",
+          "answers": [
+            "Did you have a good flight?"
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "prompt": "Tom is going on a long trip. What do you say to him before he leaves?",
+          "answers": [
+            "Have a nice trip!",
+            "Have a good trip!"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "It’s Monday morning. You are at work. Ask Paula about her weekend.",
+          "answers": [
+            "Did you have a nice weekend?",
+            "Did you have a good weekend?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Paul has just come home after playing tennis with a friend. Ask him about the game.",
+          "answers": [
+            "Did you have a nice game?",
+            "Did you have a good game?",
+            "Did you have a nice game of tennis?",
+            "Did you have a good game of tennis?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Rachel is going out this evening. What do you say to her before she goes?",
+          "answers": [
+            "Have a nice time!",
+            "Have a good time!",
+            "Have a nice evening!",
+            "Have a good evening!",
+            "Have fun!"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Mark has just returned from holiday. Ask him about his holiday.",
+          "answers": [
+            "Did you have a nice holiday?",
+            "Did you have a good holiday?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59.4",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте have/had и слова из рамки.",
+      "wordBank": [
+        "an accident",
+        "a glass of water",
+        "a look",
+        "a walk",
+        "a party",
+        "something to eat"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "We ",
+            " a few weeks ago. We invited 50 people."
+          ],
+          "answers": [
+            [
+              "had a party"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "'Shall we ",
+            "?' 'No, I’m not hungry.'"
+          ],
+          "answers": [
+            [
+              "have something to eat"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I was thirsty, so I ",
+            "."
+          ],
+          "answers": [
+            [
+              "had a glass of water"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I like to get up early and ",
+            " before breakfast."
+          ],
+          "answers": [
+            [
+              "have a walk"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Tina is a very good driver. She has never ",
+            "."
+          ],
+          "answers": [
+            [
+              "had an accident"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "There’s something wrong with the engine of my car. Can you ",
+            " at it?"
+          ],
+          "answers": [
+            [
+              "have a look"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя have или have got. (мотоцикл = motorbike; уже = yet; в университете = at university)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "У Гари есть новый мотоцикл.",
+          "answers": [
+            "Gary has a new motorbike.",
+            "Gary has got a new motorbike."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Каждое утро я моюсь под душем.",
+          "answers": [
+            "I have a shower every morning.",
+            "Every morning I have a shower."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Что ты вчера ел на ужин?",
+          "answers": [
+            "What did you have for dinner last night?",
+            "What did you have for dinner yesterday?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "У моего дедушки было много денег.",
+          "answers": [
+            "My grandfather had a lot of money.",
+            "My grandfather used to have a lot of money."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Мой брат в Испании. Он хорошо проводит время.",
+          "answers": [
+            "My brother’s in Spain. He’s having a good time.",
+            "My brother’s in Spain. He is having a good time.",
+            "My brother is in Spain. He’s having a good time.",
+            "My brother is in Spain. He is having a good time."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Нина уже родила ребёнка?",
+          "answers": [
+            "Has Nina had her baby yet?",
+            "Has Nina had the baby yet?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "У меня были длинные волосы, когда я был в университете.",
+          "answers": [
+            "I had long hair when I was at university."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я нездорова. У меня простуда.",
+          "answers": [
+            "I’m unwell. I’ve got a cold.",
+            "I’m unwell. I have a cold.",
+            "I’m not well. I’ve got a cold.",
+            "I’m not well. I have a cold."
+          ]
+        }
+      ]
+    }
+  ]
+}

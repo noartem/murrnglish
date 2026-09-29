@@ -1,0 +1,411 @@
+{
+  "unit": 92,
+  "title": "enough",
+  "pdfPages": [
+    195,
+    196
+  ],
+  "exercises": [
+    {
+      "id": "92.1",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и закончите предложения. Используйте enough + слова из рамки:",
+      "wordBank": [
+        "chairs",
+        "money",
+        "paint",
+        "wind"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "example": true,
+          "parts": [
+            "She doesn’t have ",
+            "."
+          ],
+          "answers": [
+            [
+              "enough money"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "There aren’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "enough chairs"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She doesn’t have ",
+            "."
+          ],
+          "answers": [
+            [
+              "enough paint"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "There isn’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "enough wind"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "92.2",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки и закончите предложения. Используйте прилагательные из рамки + enough:",
+      "wordBank": [
+        "big",
+        "long",
+        "strong",
+        "tall"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "example": true,
+          "parts": [
+            "He ",
+            "."
+          ],
+          "answers": [
+            [
+              "isn’t tall enough"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The car ",
+            "."
+          ],
+          "answers": [
+            [
+              "isn’t big enough"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "His legs aren’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "long enough"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "He ",
+            "."
+          ],
+          "answers": [
+            [
+              "isn’t strong enough"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "92.3",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Используйте enough + слова из рамки:",
+      "wordBank": [
+        "big",
+        "eat",
+        "loud",
+        "milk",
+        "old",
+        "practise",
+        "space",
+        "time",
+        "tired"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "example": true,
+          "parts": [
+            "‘Is there ",
+            " in your coffee?’ ‘Yes, thank you.’"
+          ],
+          "answers": [
+            [
+              "enough milk"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "example": true,
+          "parts": [
+            "Can you hear the radio? Is it ",
+            " for you?"
+          ],
+          "answers": [
+            [
+              "loud enough"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "He can leave school if he wants – he’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "old enough"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "When I visited Rome, I didn’t have ",
+            " to see all the things I wanted to see."
+          ],
+          "answers": [
+            [
+              "enough time"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "This house isn’t ",
+            " for a large family."
+          ],
+          "answers": [
+            [
+              "big enough"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Tina is very thin. She doesn’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "eat enough"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "My office is very small. There isn’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "enough space"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "It’s late, but I don’t want to go to bed now. I’m not ",
+            "."
+          ],
+          "answers": [
+            [
+              "tired enough"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Lisa isn’t a very good tennis player because she doesn’t ",
+            "."
+          ],
+          "answers": [
+            [
+              "practise enough"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "92.4",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте enough + слова в скобках:",
+      "items": [
+        {
+          "num": 1,
+          "example": true,
+          "parts": [
+            "We don’t have ",
+            " a new car. (money/buy)"
+          ],
+          "answers": [
+            [
+              "enough money to buy"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "This knife isn’t ",
+            " tomatoes. (sharp/cut)"
+          ],
+          "answers": [
+            [
+              "sharp enough to cut"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The water wasn’t ",
+            " swimming. (warm/go)"
+          ],
+          "answers": [
+            [
+              "warm enough to go"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Do we have ",
+            " sandwiches? (bread/make)"
+          ],
+          "answers": [
+            [
+              "enough bread to make"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We played well, but not ",
+            " the game. (well/win)"
+          ],
+          "answers": [
+            [
+              "well enough to win"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I don’t have ",
+            " newspapers. (time/read)"
+          ],
+          "answers": [
+            [
+              "enough time to read"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "92.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (упражняться = practise, отчёт = report)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "У Бориса достаточно денег на билет.",
+          "answers": [
+            "Boris has enough money for a ticket.",
+            "Boris has got enough money for a ticket."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Кевин недостаточно взрослый, чтобы водить машину.",
+          "answers": [
+            "Kevin is not old enough to drive a car."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Моё старое пальто было недостаточно тёплым для зимы.",
+          "answers": [
+            "My old coat wasn’t warm enough for winter.",
+            "My old coat was not warm enough for winter."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Мы хотим купить дом. Наша квартира недостаточно большая.",
+          "answers": [
+            "We want to buy a house. Our flat isn’t big enough.",
+            "We want to buy a house. Our apartment isn’t big enough.",
+            "We want to buy a house. Our flat is not big enough.",
+            "We want to buy a house. Our apartment is not big enough."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Саша учит немецкий, но она упражняется недостаточно.",
+          "answers": [
+            "Sasha is learning German, but she doesn’t practise enough."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Этот ресторан достаточно хороший для твоей вечеринки?",
+          "answers": [
+            "Is this restaurant good enough for your party?"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Я не могу закончить отчёт сегодня. У меня недостаточно времени.",
+          "answers": [
+            "I can’t finish the report today. I don’t have enough time."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "У нас достаточно кофе, но недостаточно чашек.",
+          "answers": [
+            "We have enough coffee, but not enough cups.",
+            "We’ve got enough coffee, but not enough cups."
+          ]
+        }
+      ]
+    }
+  ]
+}

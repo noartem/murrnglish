@@ -1,0 +1,727 @@
+{
+ "unit": 61,
+ "title": "my/his/their и т. д.",
+ "pdfPages": [
+  133,
+  134
+ ],
+ "exercises": [
+  {
+   "id": "61.1",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, следуя образцу.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’m going to wash ",
+      " ."
+     ],
+     "answers": [
+      [
+       "my hands"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She’s going to wash ",
+      " hands."
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "We’re going to wash ",
+      "."
+     ],
+     "answers": [
+      [
+       "our hands"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "He’s going to wash ",
+      "."
+     ],
+     "answers": [
+      [
+       "his hands"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "They’re going to wash ",
+      "."
+     ],
+     "answers": [
+      [
+       "their hands"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Are you going to wash ",
+      "?"
+     ],
+     "answers": [
+      [
+       "your hands"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, следуя образцу.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He ",
+      "."
+     ],
+     "answers": [
+      [
+       "lives with his parents"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "They live with ",
+      " parents."
+     ],
+     "answers": [
+      [
+       "their"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "We ",
+      " parents."
+     ],
+     "answers": [
+      [
+       "live with our"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Martina lives ",
+      "."
+     ],
+     "answers": [
+      [
+       "with her parents"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I ",
+      " parents."
+     ],
+     "answers": [
+      [
+       "live with my"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "John ",
+      "."
+     ],
+     "answers": [
+      [
+       "lives with his"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Do you live ",
+      "?"
+     ],
+     "answers": [
+      [
+       "with your parents"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Most children ",
+      "."
+     ],
+     "answers": [
+      [
+       "live with their parents"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61.3",
+   "type": "fill-in",
+   "instruction": "Посмотрите на родословное дерево и заполните пропуски при помощи his/her/their.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I saw Sarah with ",
+      " husband, Philip."
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I saw Laura and Steve with ",
+      " children."
+     ],
+     "answers": [
+      [
+       "their"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I saw Steve with ",
+      " wife, Laura."
+     ],
+     "answers": [
+      [
+       "his"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I saw Ben with ",
+      " brother, Will."
+     ],
+     "answers": [
+      [
+       "his"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I saw Laura with ",
+      " brother, Will."
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I saw Sarah and Philip with ",
+      " son, Will."
+     ],
+     "answers": [
+      [
+       "their"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I saw Laura with ",
+      " parents."
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I saw Beth and Robert with ",
+      " parents."
+     ],
+     "answers": [
+      [
+       "their crashing"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Sarah is a ",
+      " woman."
+     ],
+     "answers": [
+      [
+       "student"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Will is a ",
+      " boy."
+     ],
+     "answers": [
+      [
+       "student"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Ben is a ",
+      " boy."
+     ],
+     "answers": [
+      [
+       "student"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "Laura is a ",
+      " woman."
+     ],
+     "answers": [
+      [
+       "teacher"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "Steve is a ",
+      " man."
+     ],
+     "answers": [
+      [
+       "student"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "Beth is a ",
+      " girl."
+     ],
+     "answers": [
+      [
+       "student"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "Robert is a ",
+      " boy."
+     ],
+     "answers": [
+      [
+       "student"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "Philip is a ",
+      " man."
+     ],
+     "answers": [
+      [
+       "student κατά?"
+      ]
+     ]
+    },
+    {
+     "num": 17,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61.4",
+   "type": "fill-in",
+   "instruction": "Вставьте my/our/your/his/her/their/its.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Do you like ",
+      " job?"
+     ],
+     "answers": [
+      [
+       "your"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I know Mr Watson, but I don’t know ",
+      " wife."
+     ],
+     "answers": [
+      [
+       "his"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Alice and Tom live in London. ",
+      " son lives in Australia."
+     ],
+     "answers": [
+      [
+       "Their"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "We’re going to have a party. We’re going to invite all ",
+      " friends."
+     ],
+     "answers": [
+      [
+       "our"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Anna is going out with ",
+      " friends this evening."
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I like tennis. It’s ",
+      " favourite sport."
+     ],
+     "answers": [
+      [
+       "my"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘Is that ",
+      " car?’ ‘No, I don’t have a car’"
+     ],
+     "answers": [
+      [
+       "your"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I want to contact Maria. ‘Do you know ",
+      " number?’"
+     ],
+     "answers": [
+      [
+       "her"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Do you think most people are happy in ",
+      " jobs?"
+     ],
+     "answers": [
+      [
+       "their"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I’m going to wash ",
+      " hair before I go out."
+     ],
+     "answers": [
+      [
+       "my"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "This is a beautiful tree. ",
+      " leaves are a beautiful colour."
+     ],
+     "answers": [
+      [
+       "Its"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "John has a brother and a sister. ",
+      " brother is 25, and ",
+      " sister is 21."
+     ],
+     "answers": [
+      [
+       "His"
+      ],
+      [
+       "his forecaster?"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61.5",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте my/his/their и т. д. + слова из рамки:",
+   "wordBank": [
+    "coat",
+    "homework",
+    "house",
+    "husband",
+    "job",
+    "key",
+    "name"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "James doesn’t enjoy ",
+      ". It’s not very interesting."
+     ],
+     "answers": [
+      [
+       "his job"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I can’t get in. I don’t have ",
+      "."
+     ],
+     "answers": [
+      [
+       "my key"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Sally is married. ",
+      " works in a bank."
+     ],
+     "answers": [
+      [
+       "Her husband"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Please take off ",
+      " and sit down."
+     ],
+     "answers": [
+      [
+       "your coat"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘What are the children doing?’ ‘They’re doing ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "their homework"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Do you know that man?’ ‘Yes, but I don’t know ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "his name"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "We live in Barton Street. ",
+      " is at the end on the left."
+     ],
+     "answers": [
+      [
+       "Our house"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "61.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [велосипед = bike]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Это моя сестра Анна.",
+     "answers": [
+      "This is my sister, Anna."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вам нравится наша новая машина?",
+     "answers": [
+      "Do you like our new car?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Наши родители в Киеве.",
+     "answers": [
+      "Our parents are in Kiev."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Тим любит баскетбол. Это его любимый спорт.",
+     "answers": [
+      "Tim loves basketball. It’s his favourite sport.",
+      "Tim loves basketball. It is his favourite sport."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Это Ваша дочь?",
+     "answers": [
+      "Is this your daughter?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Где твой велосипед?",
+     "answers": [
+      "Where is your bike?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Париж известен своими музеями.",
+     "answers": [
+      "Paris is famous for its museums."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Сколько лет их сыну?",
+     "answers": [
+      "How old is their son?"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "id": 9,
+ "topic": "present continuous и present simple",
+ "refs": "Разделы 4–9",
+ "pdfPages": [
+  255
+ ],
+ "exercise": {
+  "id": "9",
+  "type": "choice",
+  "instruction": "Выберите правильный вариант.",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "options": [
+     "‘Are you speaking English?’ ‘Yes, a little.’",
+     "‘Do you speak English?’ ‘Yes, a little.’"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 2,
+    "options": [
+     "Sometimes we’re going away at weekends.",
+     "Sometimes we go away at weekends."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 3,
+    "options": [
+     "It’s a nice day today. The sun is shining.",
+     "It’s a nice day today. The sun shines."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 4,
+    "options": [
+     "(Вы встречаете Кейт на улице.) Hello, Kate. Where are you going?",
+     "(Вы встречаете Кейт на улице.) Hello, Kate. Where do you go?"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 5,
+    "options": [
+     "How often are you going on holiday?",
+     "How often do you go on holiday?"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 6,
+    "options": [
+     "Emily is a writer. She’s writing books for children.",
+     "Emily is a writer. She writes books for children."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 7,
+    "options": [
+     "I’m never reading newspapers.",
+     "I never read newspapers."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 8,
+    "options": [
+     "‘Where are Mark and Laura?’ ‘They’re watching TV in the living room.’",
+     "‘Where are Mark and Laura?’ ‘They watch TV in the living room.’"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 9,
+    "options": [
+     "Helen is in her office. She’s talking to somebody.",
+     "Helen is in her office. She talks to somebody."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 10,
+    "options": [
+     "What time are you usually having dinner?",
+     "What time do you usually have dinner?"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 11,
+    "options": [
+     "Joe isn’t at home at the moment. He’s visiting some friends.",
+     "Joe isn’t at home at the moment. He visits some friends."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 12,
+    "options": [
+     "‘Would you like some tea?’ ‘No, thank you. I’m not drinking tea.’",
+     "‘Would you like some tea?’ ‘No, thank you. I don’t drink tea.’"
+    ],
+    "answer": 1
+   }
+  ]
+ }
+}

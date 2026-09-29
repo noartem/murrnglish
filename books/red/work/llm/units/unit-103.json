@@ -1,0 +1,817 @@
+{
+ "unit": 103,
+ "title": "at 8 o’clock · on Monday · in April",
+ "pdfPages": [
+  217,
+  218
+ ],
+ "exercises": [
+  {
+   "id": "103.1",
+   "type": "fill-in",
+   "instruction": "Вставьте at/on/in.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " 6 June"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " the evening"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " half past two"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " Wednesday"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " 2007"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " September"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " 24 September"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      " Thursday"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "",
+      " 11.45"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "",
+      " Christmas Day"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "",
+      " Christmas"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "",
+      " the morning"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "",
+      " Friday morning"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "",
+      " Saturday night"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "",
+      " night"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "",
+      " the end of the day"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 17,
+     "parts": [
+      "",
+      " the weekend"
+     ],
+     "answers": [
+      [
+       "at",
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 18,
+     "parts": [
+      "",
+      " winter"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "103.2",
+   "type": "fill-in",
+   "instruction": "Вставьте at/on/in.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Bye! See you ",
+      " Friday."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Where were you ",
+      " 28 February?"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I got up ",
+      " 8 o’clock this morning."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I like getting up early ",
+      " the morning."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "My sister got married ",
+      " May."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Jessica and I first met ",
+      " 2006."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Did you go out ",
+      " Tuesday?"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Did you go out ",
+      " Tuesday evening?"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Do you often go out ",
+      " the evening?"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Let’s meet ",
+      " 7.30 tomorrow evening."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I often go away ",
+      " the weekend."
+     ],
+     "answers": [
+      [
+       "at",
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I’m starting my new job ",
+      " 3 July."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "We often go to the beach ",
+      " summer."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "George isn’t here ",
+      " the moment."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "Jane’s birthday is ",
+      " December."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "Do you work ",
+      " Saturdays?"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 17,
+     "parts": [
+      "The company started ",
+      " 1999."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 18,
+     "parts": [
+      "I like to look at the stars ",
+      " night."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 19,
+     "parts": [
+      "I’ll send you the money ",
+      " the end of the month."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "103.3",
+   "type": "fill-in",
+   "instruction": "Прочитайте о планах Лизы на следующую неделю и закончите предложения.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Lisa is going to the cinema ",
+      "."
+     ],
+     "answers": [
+      [
+       "on Wednesday evening"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She has to phone Chris ",
+      "."
+     ],
+     "answers": [
+      [
+       "on Friday"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "She isn’t doing anything special ",
+      "."
+     ],
+     "answers": [
+      [
+       "on Monday"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "She’s got a driving lesson ",
+      "."
+     ],
+     "answers": [
+      [
+       "at 4 o’clock on Thursday",
+       "on Thursday at 4 o’clock"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "She’s going to a party ",
+      "."
+     ],
+     "answers": [
+      [
+       "on Saturday evening"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "She’s meeting Sam ",
+      "."
+     ],
+     "answers": [
+      [
+       "at 2.30 on Tuesday",
+       "at 2.30 on Tuesday afternoon",
+       "on Tuesday at 2.30",
+       "on Tuesday afternoon at 2.30"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "103.4",
+   "type": "write",
+   "instruction": "Напишите предложения, используя in … .",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "It’s 8.25 now. The train leaves at 8.30.",
+     "answers": [
+      "The train leaves in five minutes."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "It’s Monday today. I’ll call you on Thursday.",
+     "answers": [
+      "I’ll call you in three days."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Today is 14 June. My exam is on 28 June.",
+     "answers": [
+      "My exam is in two weeks."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "It’s 3 o’clock now. Tom will be here at 3.30.",
+     "answers": [
+      "Tom will be here in half an hour.",
+      "Tom will be here in 30 minutes."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "103.5",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте at/on/in. Некоторые предложения не требуют добавления предлога.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’m going ",
+      " Friday."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m going ",
+      " next Friday. (правильно)"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I always feel tired ",
+      " the evening."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Will you be at home ",
+      " this evening?"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We went to France ",
+      " last summer."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Laura was born ",
+      " 1997."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "What are you doing ",
+      " the weekend?"
+     ],
+     "answers": [
+      [
+       "at",
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I phone Robert ",
+      " every Sunday."
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Shall we play tennis ",
+      " next Sunday?"
+     ],
+     "answers": [
+      [
+       "–"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I can’t go to the party ",
+      " Sunday."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I’m going out. I’ll be back ",
+      " an hour."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I don’t often go out ",
+      " night."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "103.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (взлетать (здесь) = leave; библиотека = library; матч = match; ужасный = terrible)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Я родился в 1997 году.",
+     "answers": [
+      "I was born in 1997."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вы свободны сегодня днём?",
+     "answers": [
+      "Are you free this afternoon?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Наш самолёт взлетает через 30 минут.",
+     "answers": [
+      "Our plane leaves in thirty minutes."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Библиотека открывается в 10 часов?",
+     "answers": [
+      "Does the library open at ten o’clock?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Салли едет в Америку в конце января.",
+     "answers": [
+      "Sally is going to America at the end of January."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Футбольный матч — 14 марта.",
+     "answers": [
+      "The football match is on 14 March.",
+      "The football match is on March 14."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Мы встречаемся с нашими друзьями в пятницу вечером.",
+     "answers": [
+      "We’re meeting our friends on Friday evening.",
+      "We’re meeting our friends on Friday night.",
+      "We’re meeting with our friends on Friday evening.",
+      "We’re meeting with our friends on Friday night."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Погода в настоящий момент ужасная.",
+     "answers": [
+      "The weather is terrible at the moment."
+     ]
+    }
+   ]
+  }
+ ]
+}

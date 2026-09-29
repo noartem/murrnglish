@@ -1,0 +1,379 @@
+{
+ "unit": 43,
+ "title": "too/either · so am I / neither do I и т. д.",
+ "pdfPages": [
+  97,
+  98
+ ],
+ "exercises": [
+  {
+   "id": "43.1",
+   "type": "fill-in",
+   "instruction": "Вставьте too или either.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I’m happy ",
+      "."
+     ],
+     "answers": [
+      [
+       "too"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m not hungry ",
+      "."
+     ],
+     "answers": [
+      [
+       "either"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I’m going out ",
+      "."
+     ],
+     "answers": [
+      [
+       "too"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "It rained on Sunday ",
+      "."
+     ],
+     "answers": [
+      [
+       "too"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "She can’t ride a bike ",
+      "."
+     ],
+     "answers": [
+      [
+       "either"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I don’t like shopping ",
+      "."
+     ],
+     "answers": [
+      [
+       "either"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Her father is a teacher ",
+      "."
+     ],
+     "answers": [
+      [
+       "too"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43.2",
+   "type": "write",
+   "instruction": "Напишите ответ, используя So … I (So am I / So do I / So can I и т. д.).\nНапишите ответ, используя Neither … I.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I went to bed late last night.",
+     "answers": [
+      "So did I."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I’m thirsty.",
+     "answers": [
+      "So am I."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I’ve just eaten.",
+     "answers": [
+      "So have I."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I need a holiday.",
+     "answers": [
+      "So do I."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I’ll be late tomorrow.",
+     "answers": [
+      "So will I."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I was very tired this morning.",
+     "answers": [
+      "So was I."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "I can’t go to the party.",
+     "answers": [
+      "Neither can I."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "I didn’t phone Alex last night.",
+     "answers": [
+      "Neither did I."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "I haven’t got any money.",
+     "answers": [
+      "Neither have I."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "I’m not going out tomorrow.",
+     "answers": [
+      "Neither am I."
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "I don’t know what to do.",
+     "answers": [
+      "Neither do I."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43.3",
+   "type": "self-check",
+   "instruction": "Вы разговариваете с Марией. Напишите предложения о себе. По возможности используйте So … I или Neither … I. Внимательно прочитайте примеры:",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’m learning English.",
+     "modelAnswers": [
+      "So am I."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I can ride a bike.",
+     "modelAnswers": [
+      "So can I.",
+      "I can’t."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I’m not American.",
+     "modelAnswers": [
+      "Neither am I.",
+      "I am."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "I like cooking.",
+     "modelAnswers": [
+      "So do I.",
+      "I don’t."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "I don’t like cold weather.",
+     "modelAnswers": [
+      "Neither do I.",
+      "I do."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "I slept well last night.",
+     "modelAnswers": [
+      "So did I.",
+      "I didn’t."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "I’ve never run a marathon.",
+     "modelAnswers": [
+      "Neither have I.",
+      "I have."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "I don’t use my phone much.",
+     "modelAnswers": [
+      "Neither do I.",
+      "I do."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "I’m going out tomorrow evening.",
+     "modelAnswers": [
+      "So am I.",
+      "I’m not."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "I haven’t been to Scotland.",
+     "modelAnswers": [
+      "Neither have I.",
+      "I have."
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "I didn’t watch TV last night.",
+     "modelAnswers": [
+      "Neither did I.",
+      "I did."
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "I go to the cinema a lot.",
+     "modelAnswers": [
+      "So do I.",
+      "I don’t."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "43.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [ВОДИТЬ = drive]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Ирина понравился концерт, и мне он тоже понравился.",
+     "answers": [
+      "Irina liked the concert, and I liked it too.",
+      "Irina liked the concert, and so did I."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я не была в Лондоне, и Анна тоже не была.",
+     "answers": [
+      "I haven’t been to London, and Anna hasn’t either.",
+      "I haven’t been to London, and Anna has not either.",
+      "I have not been to London, and Anna hasn’t either.",
+      "I have not been to London, and Anna has not either.",
+      "I haven’t been to London, and neither has Anna.",
+      "I have not been to London, and neither has Anna."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "A: Я хотела бы поехать в Испанию.\nB: Я тоже.",
+     "answers": [
+      "A: I’d like to go to Spain.\nB: I would too.",
+      "A: I’d like to go to Spain.\nB: So would I.",
+      "A: I would like to go to Spain.\nB: I would too.",
+      "A: I would like to go to Spain.\nB: So would I."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Ваш муж – тоже учитель?",
+     "answers": [
+      "Is your husband a teacher too?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "A: Я не умею водить машину.\nB: Я тоже.",
+     "answers": [
+      "A: I can’t drive.\nB: I can’t either.",
+      "A: I can’t drive a car.\nB: I can’t either.",
+      "A: I can’t drive.\nB: Neither can I.",
+      "A: I can’t drive a car.\nB: Neither can I.",
+      "A: I cannot drive.\nB: I can’t either.",
+      "A: I cannot drive a car.\nB: I can’t either.",
+      "A: I cannot drive.\nB: Neither can I.",
+      "A: I cannot drive a car.\nB: Neither can I."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "У Антона нет машины. У Лили тоже нет.",
+     "answers": [
+      "Anton doesn’t have a car. Lily doesn’t either.",
+      "Anton doesn’t have a car. Lily does not either.",
+      "Anton doesn’t have a car. Neither does Lily.",
+      "Anton does not have a car. Lily doesn’t either.",
+      "Anton does not have a car. Lily does not either.",
+      "Anton does not have a car. Neither does Lily."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "A: Нам не понравился ресторан.\nB: Нам тоже.",
+     "answers": [
+      "A: We didn’t like the restaurant.\nB: We didn’t either.",
+      "A: We didn’t like the restaurant.\nB: Neither did we.",
+      "A: We did not like the restaurant.\nB: We didn’t either.",
+      "A: We did not like the restaurant.\nB: Neither did we."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "A: Я работаю в Лондоне.\nB: Я тоже.",
+     "answers": [
+      "A: I work in London.\nB: I do too.",
+      "A: I work in London.\nB: So do I."
+     ]
+    }
+   ]
+  }
+ ]
+}

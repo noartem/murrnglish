@@ -1,0 +1,578 @@
+{
+ "unit": 81,
+ "title": "Раздел 81",
+ "pdfPages": [
+  173,
+  174
+ ],
+ "exercises": [
+  {
+   "id": "81.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте every + слова из рамки:",
+   "wordBank": [
+    "day",
+    "room",
+    "student",
+    "time",
+    "word"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " in the class passed the exam."
+     ],
+     "answers": [
+      [
+       "Every student"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "My job is very boring. ",
+      " is the same."
+     ],
+     "answers": [
+      [
+       "Every day"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Kate is a very good tennis player. When we play, she wins ",
+      "."
+     ],
+     "answers": [
+      [
+       "every time"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " in the hotel has free wi-fi and a minibar."
+     ],
+     "answers": [
+      [
+       "Every room"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Did you understand what she said?’ ‘Most of it, but not ",
+      ".’"
+     ],
+     "answers": [
+      [
+       "every word"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "81.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте every day или all day.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Yesterday it rained ",
+      "."
+     ],
+     "answers": [
+      [
+       "all day"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I buy a newspaper ",
+      ", but sometimes I don’t read it."
+     ],
+     "answers": [
+      [
+       "every day"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I’m not going out tomorrow. I’ll be at home ",
+      "."
+     ],
+     "answers": [
+      [
+       "all day"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I usually drink about four cups of coffee ",
+      "."
+     ],
+     "answers": [
+      [
+       "every day"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Paula was ill yesterday, so she stayed in bed ",
+      "."
+     ],
+     "answers": [
+      [
+       "all day"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I’m tired now because I’ve been working hard ",
+      "."
+     ],
+     "answers": [
+      [
+       "all day"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Last year we went to the seaside for a week, and it rained ",
+      "."
+     ],
+     "answers": [
+      [
+       "every day"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "81.3",
+   "type": "fill-in",
+   "instruction": "Вставьте every или all.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Bill watches TV for about two hours ",
+      " evening."
+     ],
+     "answers": [
+      [
+       "every"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Julia gets up at 6.30 ",
+      " morning."
+     ],
+     "answers": [
+      [
+       "every"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The weather was nice yesterday, so we sat outside ",
+      " afternoon."
+     ],
+     "answers": [
+      [
+       "all"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I’m going away on Monday. I’ll be away ",
+      " week."
+     ],
+     "answers": [
+      [
+       "all"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘How often do you go skiing?’ ‘",
+      " year. Usually in March.’"
+     ],
+     "answers": [
+      [
+       "Every"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "A: Were you at home at 10 o’clock yesterday? B: Yes, I was at home ",
+      " morning. I went out after lunch."
+     ],
+     "answers": [
+      [
+       "all"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "My sister loves new cars. She buys one ",
+      " year."
+     ],
+     "answers": [
+      [
+       "every"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I saw Sam at the party, but he didn’t speak to me ",
+      " evening."
+     ],
+     "answers": [
+      [
+       "all"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "We go away on holiday for two or three weeks ",
+      " summer."
+     ],
+     "answers": [
+      [
+       "every"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "81.4",
+   "type": "fill-in",
+   "instruction": "Вставьте everybody/everything/everywhere.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " needs friends."
+     ],
+     "answers": [
+      [
+       "Everybody"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Chris knows ",
+      " about computers."
+     ],
+     "answers": [
+      [
+       "everything"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I like the people here. ",
+      " is very friendly."
+     ],
+     "answers": [
+      [
+       "Everybody",
+       "Everyone"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "This is a nice hotel. It’s comfortable and ",
+      " is very clean."
+     ],
+     "answers": [
+      [
+       "everything"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Kevin never uses his car. He goes ",
+      " by motorcycle."
+     ],
+     "answers": [
+      [
+       "everywhere"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Let’s get something to eat. ",
+      " is hungry."
+     ],
+     "answers": [
+      [
+       "Everybody",
+       "Everyone"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Sue’s house is full of books. There are books ",
+      "."
+     ],
+     "answers": [
+      [
+       "everywhere"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "You are right. ",
+      " you say is true."
+     ],
+     "answers": [
+      [
+       "Everything"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "81.5",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, вставив только по одному слову.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Everybody ",
+      " problems."
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Are you ready yet? Everybody ",
+      " waiting for you."
+     ],
+     "answers": [
+      [
+       "is"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The house is empty. Everyone ",
+      " gone out."
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Gary is very popular. Everybody ",
+      " him."
+     ],
+     "answers": [
+      [
+       "likes"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "This town is completely different now. Everything ",
+      " changed."
+     ],
+     "answers": [
+      [
+       "has"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I got home very late last night. I came in quietly because everyone ",
+      " asleep."
+     ],
+     "answers": [
+      [
+       "was"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Everybody ",
+      " mistakes!"
+     ],
+     "answers": [
+      [
+       "makes"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "A: ",
+      " everything clear? ",
+      " everybody know what to do? B: Yes, we all understand."
+     ],
+     "answers": [
+      [
+       "Is"
+      ],
+      [
+       "Does"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "81.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (деревня = village)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Роберт и Полли ездят в Португалию каждое лето.",
+     "answers": [
+      "Robert and Polly go to Portugal every summer."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "В моём офисе мне все нравятся.",
+     "answers": [
+      "I like everyone in my office.",
+      "I like everybody in my office."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Было солнечно все выходные.",
+     "answers": [
+      "It was sunny all weekend."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я везде искал свой паспорт.",
+     "answers": [
+      "I looked for my passport everywhere.",
+      "I’ve looked for my passport everywhere.",
+      "I looked everywhere for my passport.",
+      "I’ve looked everywhere for my passport.",
+      "I looked everywhere.",
+      "I’ve looked everywhere."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Алан всегда всё знает.",
+     "answers": [
+      "Alan always knows everything."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Каждое утро я пью чашку кофе.",
+     "answers": [
+      "I have a cup of coffee every morning.",
+      "Every morning I have a cup of coffee."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Шёл дождь, поэтому мы были дома весь день.",
+     "answers": [
+      "It was raining, so we were at home all day.",
+      "It was raining, so we stayed at home all day."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Все магазины в деревне были закрыты.",
+     "answers": [
+      "All the shops in the village were closed."
+     ]
+    }
+   ]
+  }
+ ]
+}

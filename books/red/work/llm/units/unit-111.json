@@ -1,0 +1,494 @@
+{
+ "unit": 111,
+ "title": "on · at · by · with · about",
+ "pdfPages": [
+  233,
+  234
+ ],
+ "exercises": [
+  {
+   "id": "111.1",
+   "type": "fill-in",
+   "instruction": "Закончите предложения, используя on + слова из рамки:",
+   "wordBank": [
+    "holiday",
+    "the",
+    "phone",
+    "the radio",
+    "TV",
+    "time"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "We heard the news ",
+      "."
+     ],
+     "answers": [
+      [
+       "on the radio"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Please don’t be late. Try to be here ",
+      "."
+     ],
+     "answers": [
+      [
+       "on time"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I won’t be here next week. I’m going ",
+      "."
+     ],
+     "answers": [
+      [
+       "on holiday"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "'Did you see Linda?' 'No, but I talked to her ",
+      ".'"
+     ],
+     "answers": [
+      [
+       "on the phone"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "'What’s ",
+      " ",
+      " this evening?' 'Nothing that I want to watch.'"
+     ],
+     "answers": [
+      [
+       "on"
+      ],
+      [
+       "TV"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111.2",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки. Заполните пропуски, используя at/by/with и т. д.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I cut the paper ",
+      " a pair of scissors."
+     ],
+     "answers": [
+      [
+       "with"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She usually goes to work ",
+      " car."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Who is the woman ",
+      " short hair?"
+     ],
+     "answers": [
+      [
+       "with"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "They are talking ",
+      " the weather."
+     ],
+     "answers": [
+      [
+       "about"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "The car is ",
+      " fire."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "She’s listening to some music ",
+      " Mozart."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "The plane is flying ",
+      " 600 miles an hour."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "They’re ",
+      " holiday."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Do you know the man ",
+      " sunglasses?"
+     ],
+     "answers": [
+      [
+       "with"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "He’s reading a book ",
+      " grammar ",
+      " Vera P. Bull."
+     ],
+     "answers": [
+      [
+       "about"
+      ],
+      [
+       "by"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя at/by/with и т. д.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "In tennis, you hit the ball ",
+      " a racket."
+     ],
+     "answers": [
+      [
+       "with"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It’s cold today. Don’t go out ",
+      " a coat."
+     ],
+     "answers": [
+      [
+       "without"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Hamlet, Othello and Macbeth are plays ",
+      " William Shakespeare."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Do you know anything ",
+      " computers?"
+     ],
+     "answers": [
+      [
+       "about"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "My grandmother died ",
+      " the age of 98."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "How long does it take from New York to Los Angeles ",
+      " plane?"
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I didn’t go to the football match, but I watched it ",
+      " TV."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "My house is the one ",
+      " the red door on the right."
+     ],
+     "answers": [
+      [
+       "with"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "These trains are very fast. They can travel ",
+      " very high speeds."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I don’t use my car very often. I prefer to go ",
+      " bike."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Can you give me some information ",
+      " hotels in this town?"
+     ],
+     "answers": [
+      [
+       "about"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "I was arrested ",
+      " two policemen and taken to the police station."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "The buses here are very good. They’re nearly always ",
+      " time."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "What would you like to drink ",
+      " your meal?"
+     ],
+     "answers": [
+      [
+       "with"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "We travelled from Paris to Moscow ",
+      " train."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "The museum has some paintings ",
+      " Rembrandt."
+     ],
+     "answers": [
+      [
+       "by"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "111.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (НОВОСТИ = the news)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Я никогда не смотрю новости по телевизору.",
+     "answers": [
+      "I never watch the news on TV.",
+      "I never watch the news on television."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Это важная встреча. Мне нужно там быть вовремя.",
+     "answers": [
+      "It’s an important meeting. I need to be there on time.",
+      "It’s an important meeting. I have to be there on time.",
+      "It is an important meeting. I need to be there on time.",
+      "It is an important meeting. I have to be there on time."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "“Как ты сюда добиралась?” – “Пешком”.",
+     "answers": [
+      "'How did you get here?' 'On foot.'",
+      "'How did you come here?' 'On foot.'"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Вы слышали о Бене и Эмме? Они собираются пожениться.",
+     "answers": [
+      "Have you heard about Ben and Emma? They are going to get married."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Кто эта женщина с длинными волосами и в очках?",
+     "answers": [
+      "Who is this woman with long hair and glasses?",
+      "Who is that woman with long hair and glasses?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Ты можешь водить машину в возрасте 18 лет.",
+     "answers": [
+      "You can drive a car at the age of 18.",
+      "You can drive a car at 18."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Мне не нравятся книги этого писателя.",
+     "answers": [
+      "I don’t like books by this writer.",
+      "I don’t like books by that writer.",
+      "I do not like books by this writer.",
+      "I do not like books by that writer."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Я болею, поэтому Борис идёт на вечеринку без меня.",
+     "answers": [
+      "I’m ill, so Boris is going to the party without me."
+     ]
+    }
+   ]
+  }
+ ]
+}

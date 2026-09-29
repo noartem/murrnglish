@@ -1,0 +1,430 @@
+{
+  "unit": 86,
+  "title": "old/nice/interesting и т. д. (прилагательные)",
+  "pdfPages": [
+    183,
+    184
+  ],
+  "exercises": [
+    {
+      "id": "86.1",
+      "type": "write",
+      "instruction": "Составьте предложения, соблюдая правильный порядок слов.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(new / live in / house / they / a)",
+          "answers": [
+            "They live in a new house."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "(like / jacket / I / that / green)",
+          "answers": [
+            "I like that green jacket."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(music / like / do / classical / you?)",
+          "answers": [
+            "Do you like classical music?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(had / wonderful / a / I / holiday)",
+          "answers": [
+            "I had a wonderful holiday."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(went to / restaurant / a / Japanese / we)",
+          "answers": [
+            "We went to a Japanese restaurant."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "86.2",
+      "type": "fill-in",
+      "instruction": "Слова в рамке – прилагательные (black/foreign и т. д.) и существительные (air/job и т. д.). Заполните пропуски в предложениях, используя в каждом из них одно прилагательное и одно существительное.",
+      "wordBank": [
+        "air",
+        "clouds",
+        "foreign",
+        "holiday",
+        "job",
+        "languages",
+        "sharp",
+        "black",
+        "dangerous",
+        "fresh",
+        "hot",
+        "knife",
+        "long",
+        "water"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Do you speak any ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "foreign languages"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Look at those ",
+            " ",
+            " . It’s going to rain."
+          ],
+          "answers": [
+            [
+              "black"
+            ],
+            [
+              "clouds"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Sue works very hard, and she’s very tired. She needs a ",
+            " ",
+            " ."
+          ],
+          "answers": [
+            [
+              "long"
+            ],
+            [
+              "holiday"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "I would like to have a shower, but there’s no ",
+            " ",
+            " ."
+          ],
+          "answers": [
+            [
+              "hot"
+            ],
+            [
+              "water"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Can you open the window? We need some ",
+            " ",
+            " ."
+          ],
+          "answers": [
+            [
+              "fresh"
+            ],
+            [
+              "air"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I need a ",
+            " ",
+            " to cut these onions."
+          ],
+          "answers": [
+            [
+              "sharp"
+            ],
+            [
+              "knife"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Fire-fighting is a ",
+            " ",
+            " ."
+          ],
+          "answers": [
+            [
+              "dangerous"
+            ],
+            [
+              "job"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "86.3",
+      "type": "fill-in",
+      "instruction": "Что говорят эти люди? Используйте слова из обеих рамок.",
+      "wordBank": [
+        "feel(s)",
+        "look(s)",
+        "sound(s)",
+        "look(s)",
+        "smell(s)",
+        "taste(s)",
+        "happy",
+        "ill",
+        "nice",
+        "horrible",
+        "new",
+        "surprised"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "You ",
+            "."
+          ],
+          "answers": [
+            [
+              "sound happy"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "It ",
+            "."
+          ],
+          "answers": [
+            [
+              "looks new"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I ",
+            "."
+          ],
+          "answers": [
+            [
+              "feel ill"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "You ",
+            "."
+          ],
+          "answers": [
+            [
+              "look surprised"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "They ",
+            "."
+          ],
+          "answers": [
+            [
+              "smell nice"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "It ",
+            "."
+          ],
+          "answers": [
+            [
+              "tastes horrible"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "86.4",
+      "type": "fill-in",
+      "instruction": "У Анны и Бена разные мнения. Закончите реплики Бена. Используйте feel/look и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Do I? I ",
+            ". (feel)"
+          ],
+          "answers": [
+            [
+              "don’t feel tired"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Is it? It doesn’t ",
+            ". (look)"
+          ],
+          "answers": [
+            [
+              "look new"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Are you? You ",
+            ". (sound)"
+          ],
+          "answers": [
+            [
+              "don’t sound American"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Do I? I ",
+            ". (feel)"
+          ],
+          "answers": [
+            [
+              "don’t feel cold"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Are they? They ",
+            ". (look)"
+          ],
+          "answers": [
+            [
+              "don’t look heavy"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Maybe, but it ",
+            ". (taste)"
+          ],
+          "answers": [
+            [
+              "doesn’t taste good"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "86.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Вчера я смотрела очень интересный фильм.",
+          "answers": [
+            "I watched a very interesting film yesterday.",
+            "Yesterday I watched a very interesting film."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Пожалуйста, тихо. Том спит.",
+          "answers": [
+            "Please be quiet. Tom is asleep.",
+            "Please be quiet. Tom is sleeping."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "В вашем саду много красивых цветов!",
+          "answers": [
+            "There are a lot of beautiful flowers in your garden!",
+            "There are many beautiful flowers in your garden!"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Тебе нравится индийская пища?",
+          "answers": [
+            "Do you like Indian food?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Ужин пахнет замечательно!",
+          "answers": [
+            "Dinner smells great!",
+            "Dinner smells wonderful!",
+            "Dinner smells delicious!"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Не ходи туда. Это опасно.",
+          "answers": [
+            "Don’t go there. It’s dangerous."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Моя работа не очень трудная.",
+          "answers": [
+            "My job isn’t very difficult.",
+            "My job is not very difficult."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я рада, что Салли и Том счастливы вместе.",
+          "answers": [
+            "I’m glad that Sally and Tom are happy together.",
+            "I’m glad Sally and Tom are happy together.",
+            "I’m glad (that) Sally and Tom are happy together."
+          ]
+        }
+      ]
+    }
+  ]
+}

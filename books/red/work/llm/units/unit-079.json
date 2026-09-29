@@ -1,0 +1,643 @@
+{
+ "unit": 79,
+ "title": "not + anybody/anyone/anything · nobody/no-one/nothing",
+ "pdfPages": [
+  169,
+  170
+ ],
+ "exercises": [
+  {
+   "id": "79.1",
+   "type": "fill-in",
+   "instruction": "Перепишите эти предложения, используя nobody/no-one или nothing.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "There’s nothing in the bag."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "There’s ",
+      ""
+     ],
+     "answers": [
+      [
+       "nobody in the office."
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I ",
+      ""
+     ],
+     "answers": [
+      [
+       "have nothing to do.",
+       "’ve got nothing to do."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "There’s nothing on TV."
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "There was no-one at home."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "We found nothing."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "79.2",
+   "type": "fill-in",
+   "instruction": "Перепишите эти предложения, используя anybody/anyone или anything.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "There isn’t anything in the bag."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "There wasn’t ",
+      ""
+     ],
+     "answers": [
+      [
+       "anybody on the bus."
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "I don’t have anything to read.",
+       "I haven’t got anything to read."
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "I don’t have anyone to help me.",
+       "I haven’t got anyone to help me."
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "She didn’t hear anything."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "We don’t have anything for dinner.",
+       "We haven’t got anything for dinner."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "79.3",
+   "type": "fill-in",
+   "instruction": "Ответьте на вопросы, используя только nobody/no-one или nothing. Теперь ответьте на те же вопросы полными предложениями. Используйте nobody/no-one/nothing или anybody/anyone/anything:",
+   "items": [
+    {
+     "num": "1a",
+     "parts": [
+      "What did you say? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nothing."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": "2a",
+     "parts": [
+      "Who saw you? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nobody."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": "3a",
+     "parts": [
+      "What do you want? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nothing."
+      ]
+     ]
+    },
+    {
+     "num": "4a",
+     "parts": [
+      "Who did you meet? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nobody.",
+       "No-one."
+      ]
+     ]
+    },
+    {
+     "num": "5a",
+     "parts": [
+      "Who knows the answer? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nobody.",
+       "No-one."
+      ]
+     ]
+    },
+    {
+     "num": "6a",
+     "parts": [
+      "What did you buy? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nothing."
+      ]
+     ]
+    },
+    {
+     "num": "7a",
+     "parts": [
+      "What happened? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nothing."
+      ]
+     ]
+    },
+    {
+     "num": "8a",
+     "parts": [
+      "Who was late? ",
+      ""
+     ],
+     "answers": [
+      [
+       "Nobody.",
+       "No-one."
+      ]
+     ]
+    },
+    {
+     "num": "1b",
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "I didn’t say anything."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": "2b",
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Nobody saw me."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": "3b",
+     "parts": [
+      "I don’t ",
+      ""
+     ],
+     "answers": [
+      [
+       "want anything."
+      ]
+     ]
+    },
+    {
+     "num": "4b",
+     "parts": [
+      "I ",
+      ""
+     ],
+     "answers": [
+      [
+       "didn’t meet anybody.",
+       "didn’t meet anyone."
+      ]
+     ]
+    },
+    {
+     "num": "5b",
+     "parts": [
+      "",
+      " the answer."
+     ],
+     "answers": [
+      [
+       "Nobody knows",
+       "No-one knows"
+      ]
+     ]
+    },
+    {
+     "num": "6b",
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "I didn’t buy anything."
+      ]
+     ]
+    },
+    {
+     "num": "7b",
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Nothing happened."
+      ]
+     ]
+    },
+    {
+     "num": "8b",
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "Nobody was late.",
+       "No-one was late."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "79.4",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте nobody/no-one/nothing или anybody/anyone/anything:",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "That house is empty. ",
+      " lives there."
+     ],
+     "answers": [
+      [
+       "Nobody"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Jack has a bad memory. He can’t remember ",
+      "."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Be quiet! Don’t say ",
+      "."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I didn’t know about the meeting. ",
+      " told me."
+     ],
+     "answers": [
+      [
+       "Nobody",
+       "No-one"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "'What did you have to eat?' '",
+      ". I wasn’t hungry.'"
+     ],
+     "answers": [
+      [
+       "Nothing"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I didn’t eat ",
+      ". I wasn’t hungry."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Helen was sitting alone. She wasn’t with ",
+      "."
+     ],
+     "answers": [
+      [
+       "anybody",
+       "anyone"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I’m afraid I can’t help you. There’s ",
+      " I can do."
+     ],
+     "answers": [
+      [
+       "nothing"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I don’t know ",
+      " about car engines."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "The museum is free. It doesn’t cost ",
+      " to go in."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I heard a knock on the door, but when I opened it, there was ",
+      " there."
+     ],
+     "answers": [
+      [
+       "nobody",
+       "no-one"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "The hotel receptionist spoke very fast. I didn’t understand ",
+      "."
+     ],
+     "answers": [
+      [
+       "anything"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "'What are you doing tonight?' '",
+      ". Why?'"
+     ],
+     "answers": [
+      [
+       "Nothing"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "Sophie has gone away. ",
+      " knows where she is. She didn’t tell ",
+      " where she was going."
+     ],
+     "answers": [
+      [
+       "Nobody",
+       "No-one"
+      ],
+      [
+       "anybody",
+       "anyone"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "79.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (рассказать = say)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Дома никого нет.",
+     "answers": [
+      "There’s nobody at home.",
+      "There’s no-one at home.",
+      "There isn’t anybody at home.",
+      "There isn’t anyone at home."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Сейчас мы ничего не можем сделать.",
+     "answers": [
+      "We can’t do anything now."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Я ничего не рассказала о Гари.",
+     "answers": [
+      "I said nothing about Gary.",
+      "I didn’t say anything about Gary."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Никто не знает, кто живёт в том доме.",
+     "answers": [
+      "Nobody knows who lives in that house.",
+      "No-one knows who lives in that house."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "В холодильнике ничего нет.",
+     "answers": [
+      "There’s nothing in the fridge.",
+      "There isn’t anything in the fridge."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я ничего не знаю о компьютерах.",
+     "answers": [
+      "I know nothing about computers.",
+      "I don’t know anything about computers."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "“Ты видела кого-нибудь в парке?” – “Нет, никого”.",
+     "answers": [
+      "‘Did you see anybody in the park?’ ‘No, nobody.’",
+      "‘Did you see anybody in the park?’ ‘No, no-one.’",
+      "‘Did you see anyone in the park?’ ‘No, nobody.’",
+      "‘Did you see anyone in the park?’ ‘No, no-one.’"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Никто не сказал мне о вечеринке.",
+     "answers": [
+      "Nobody told me about the party.",
+      "No-one told me about the party."
+     ]
+    }
+   ]
+  }
+ ]
+}

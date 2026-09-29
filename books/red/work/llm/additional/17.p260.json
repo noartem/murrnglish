@@ -1,0 +1,117 @@
+{
+ "id": 17,
+ "topic": "present perfect",
+ "refs": "Разделы 16–20",
+ "pdfPages": [
+  260
+ ],
+ "exercise": {
+  "id": "17",
+  "type": "fill-in",
+  "instruction": "Заполните пропуски, используя одно, два или три слова.",
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "Mark and Sarah are married. They ",
+     " married for five years."
+    ],
+    "answers": [
+     [
+      "have been"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "David has been watching TV ",
+     " 5 o’clock."
+    ],
+    "answers": [
+     [
+      "since"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 3,
+    "parts": [
+     "Joe is at work. He ",
+     " at work since 8.30."
+    ],
+    "answers": [
+     [
+      "’s been",
+      "has been"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "‘Have you just arrived in London?’ ‘No, I’ve been here ",
+     " five days.’"
+    ],
+    "answers": [
+     [
+      "for"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "I’ve known Helen ",
+     " we were at school together."
+    ],
+    "answers": [
+     [
+      "since"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "‘My brother lives in Los Angeles.’ ‘Really? How long ",
+     " there?’"
+    ],
+    "answers": [
+     [
+      "has he lived",
+      "has he been",
+      "has he been living"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "George has had the same job ",
+     " 20 years."
+    ],
+    "answers": [
+     [
+      "for"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "Some friends of ours are staying with us at the moment. They ",
+     " here since Monday."
+    ],
+    "answers": [
+     [
+      "’ve been",
+      "have been"
+     ]
+    ]
+   }
+  ]
+ }
+}

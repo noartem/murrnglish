@@ -1,0 +1,322 @@
+{
+ "unit": 23,
+ "title": "is being done · has been done (пассивные конструкции 2)",
+ "pdfPages": [
+  57,
+  58
+ ],
+ "exercises": [
+  {
+   "id": "23.1",
+   "type": "write",
+   "instruction": "Посмотрите на картинки и напишите, что сейчас происходит.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "The car",
+     "answers": [
+      "The car is being repaired."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "A bridge",
+     "answers": [
+      "A bridge is being built."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "The windows",
+     "answers": [
+      "The windows are being cleaned."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "The grass",
+     "answers": [
+      "The grass is being cut."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "23.2",
+   "type": "write",
+   "instruction": "Посмотрите на картинки. Что сейчас происходит или что уже произошло? Используйте present continuous (is/are being …) или present perfect (has/have been …).",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(the office / clean)",
+     "answers": [
+      "The office is being cleaned."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(the shirts / iron)",
+     "answers": [
+      "The shirts have been ironed."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(the window / break) The window",
+     "answers": [
+      "The window has been broken."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(the roof / repair) The roof",
+     "answers": [
+      "The roof is being repaired."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(the car / damage)",
+     "answers": [
+      "The car has been damaged."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(the houses / knock / down)",
+     "answers": [
+      "The houses are being knocked down."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(the trees / cut / down)",
+     "answers": [
+      "The trees have been cut down."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(they / invite / to a party)",
+     "answers": [
+      "They have been invited to a party."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "23.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски в предложениях. (Перед тем как выполнить упражнение, изучите Раздел 22.)",
+   "items": [
+    {
+     "num": 1,
+     "example": true,
+     "parts": [
+      "I can’t use my office at the moment. It",
+      " (paint)."
+     ],
+     "answers": [
+      [
+       "is being painted"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "example": true,
+     "parts": [
+      "We didn’t go to the party. We",
+      " (not/invite)."
+     ],
+     "answers": [
+      [
+       "weren’t invited"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The washing machine was broken, but it’s OK now. It",
+      " (repair)."
+     ],
+     "answers": [
+      [
+       "has been repaired"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "The washing machine",
+      " (repair) yesterday afternoon."
+     ],
+     "answers": [
+      [
+       "was repaired"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "A factory is a place where things",
+      " (make)."
+     ],
+     "answers": [
+      [
+       "are made"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "How old are these houses? When",
+      " (they/build)?"
+     ],
+     "answers": [
+      [
+       "were they built"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "A:",
+      " (the photocopier / use) at the moment?\nB: No, you can go ahead and use it."
+     ],
+     "answers": [
+      [
+       "Is the photocopier being used",
+       "Is anybody using the photocopier"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I’ve never seen these flowers before. What",
+      " (they/call)?"
+     ],
+     "answers": [
+      [
+       "are they called"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "My sunglasses",
+      " (steal) at the beach yesterday."
+     ],
+     "answers": [
+      [
+       "were stolen"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "The bridge is closed at the moment. It",
+      " (damage) last week and it",
+      " (not/repair) yet."
+     ],
+     "answers": [
+      [
+       "was damaged"
+      ],
+      [
+       "hasn’t been repaired"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "23.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя пассивные конструкции. [бассейн = swimming pool\nгладить = iron\nвелосипед = bike\nптица = bird]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Этот бассейн часто используется нашими студентами.",
+     "answers": [
+      "This swimming pool is often used by our students.",
+      "This swimming pool is used a lot by our students."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Мой дом только что покрасили.",
+     "answers": [
+      "My house has just been painted."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "“Где ваш телевизор?” – “Его ремонтируют”.",
+     "answers": [
+      "‘Where’s your TV?’ ‘It’s being repaired.’",
+      "‘Where’s your TV?’ ‘It is being repaired.’",
+      "‘Where is your TV?’ ‘It’s being repaired.’",
+      "‘Where is your TV?’ ‘It is being repaired.’"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Эти туфли очень грязные. Когда их чистили?",
+     "answers": [
+      "These shoes are very dirty. When were they cleaned?",
+      "These shoes are very dirty. When were they last cleaned?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Саша, моё платье поглажено?",
+     "answers": [
+      "Sasha, has my dress been ironed?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "В моём городе строится новый кинотеатр.",
+     "answers": [
+      "A new cinema is being built in my town.",
+      "In my town a new cinema is being built."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "A: Где твой новый велосипед?\nB: Его украли.",
+     "answers": [
+      "A: Where is your new bike?\nB: It’s been stolen.",
+      "A: Where is your new bike?\nB: It has been stolen."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Посмотрите на эту птицу!\nКак она называется?",
+     "answers": [
+      "Look at this bird! What’s it called?",
+      "Look at this bird! What is it called?",
+      "Look at that bird! What’s it called?",
+      "Look at that bird! What is it called?"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,240 @@
+{
+ "unit": 25,
+ "exercises": [
+  {
+   "id": "25.2",
+   "type": "fill-in",
+   "instruction": "Напишите формы past simple / past participle этих глаголов.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "break ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "broke"
+      ],
+      [
+       "broken"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "begin ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "began"
+      ],
+      [
+       "begun"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "eat ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "ate"
+      ],
+      [
+       "eaten"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "drink ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "drank"
+      ],
+      [
+       "drunk"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "drive ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "drove"
+      ],
+      [
+       "driven"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "speak ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "spoke"
+      ],
+      [
+       "spoken"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "write ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "wrote"
+      ],
+      [
+       "written"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "come ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "came"
+      ],
+      [
+       "come"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "know ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "knew"
+      ],
+      [
+       "known"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "take ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "took"
+      ],
+      [
+       "taken"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "go ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "went"
+      ],
+      [
+       "one"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "give ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "gave"
+      ],
+      [
+       "given"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "throw ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "threw"
+      ],
+      [
+       "thrown"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "forget ",
+      " ",
+      ""
+     ],
+     "answers": [
+      [
+       "forgot"
+      ],
+      [
+       "forgotten"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

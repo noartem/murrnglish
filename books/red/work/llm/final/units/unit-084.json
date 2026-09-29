@@ -1,0 +1,519 @@
+{
+ "unit": 84,
+ "title": "a lot · much · many",
+ "pdfPages": [
+  179,
+  180
+ ],
+ "exercises": [
+  {
+   "id": "84.1",
+   "type": "fill-in",
+   "instruction": "Вставьте much или many. Вставьте How much или How many.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Did you buy ",
+      " food?"
+     ],
+     "answers": [
+      [
+       "much"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "There aren’t ",
+      " hotels in this town."
+     ],
+     "answers": [
+      [
+       "many"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "We don’t have ",
+      " petrol. We need to stop and get some."
+     ],
+     "answers": [
+      [
+       "much"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Were there ",
+      " people on the train?"
+     ],
+     "answers": [
+      [
+       "many"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Did ",
+      " students fail the exam?"
+     ],
+     "answers": [
+      [
+       "many"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Paula doesn’t have ",
+      " money."
+     ],
+     "answers": [
+      [
+       "much"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I wasn’t hungry, so I didn’t eat ",
+      "."
+     ],
+     "answers": [
+      [
+       "much"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I don’t know where Gary lives these days. I haven’t seen him for ",
+      " years."
+     ],
+     "answers": [
+      [
+       "many"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "",
+      " people are coming to the party?"
+     ],
+     "answers": [
+      [
+       "How many"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "",
+      " milk do you want in your coffee?"
+     ],
+     "answers": [
+      [
+       "How much"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "",
+      " bread did you buy?"
+     ],
+     "answers": [
+      [
+       "How much"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "",
+      " players are there in a football team?"
+     ],
+     "answers": [
+      [
+       "How many"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "84.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте much или many + слова из рамки:",
+   "wordBank": [
+    "books",
+    "countries",
+    "luggage",
+    "people",
+    "time",
+    "times"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I don’t read very much. I don’t have ",
+      "."
+     ],
+     "answers": [
+      [
+       "many books"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Hurry up! We don’t have ",
+      "."
+     ],
+     "answers": [
+      [
+       "much time"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Do you travel a lot? Have you been to ",
+      "?"
+     ],
+     "answers": [
+      [
+       "many countries"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Tina hasn’t lived here very long, so she doesn’t know ",
+      "."
+     ],
+     "answers": [
+      [
+       "many people"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "’Do you have ",
+      "?’ ’No, only this bag.’"
+     ],
+     "answers": [
+      [
+       "much luggage"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I know Tokyo well. I’ve been there ",
+      "."
+     ],
+     "answers": [
+      [
+       "many times"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "84.3",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте a lot of + слова из рамки:",
+   "wordBank": [
+    "accidents",
+    "books",
+    "fun",
+    "interesting things",
+    "traffic"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I like reading. I have ",
+      "."
+     ],
+     "answers": [
+      [
+       "a lot of books"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "We enjoyed our visit to the museum. We saw ",
+      "."
+     ],
+     "answers": [
+      [
+       "a lot of interesting things"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "This road is very dangerous. There are ",
+      "."
+     ],
+     "answers": [
+      [
+       "a lot of accidents"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "We enjoyed our holiday. We had ",
+      "."
+     ],
+     "answers": [
+      [
+       "a lot of fun"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It took me a long time to drive here. There was ",
+      "."
+     ],
+     "answers": [
+      [
+       "a lot of traffic"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "84.4",
+   "type": "write",
+   "instruction": "В некоторых из этих предложений much использовано не совсем верно. Измените предложения или напишите OK.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Do you drink much coffee?",
+     "answers": [
+      "OK"
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "I drink much tea.",
+     "answers": [
+      "a lot of tea"
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "prompt": "It was a cold winter. We had much snow.",
+     "answers": [
+      "a lot of snow"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "There wasn’t much snow last winter.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "It costs much money to travel around the world.",
+     "answers": [
+      "a lot of money"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "We had a cheap holiday. It didn’t cost much.",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Do you know much about computers?",
+     "answers": [
+      "OK"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "’Do you have any luggage?’ ’Yes, much.’",
+     "answers": [
+      "a lot"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "84.5",
+   "type": "write",
+   "instruction": "Напишите предложения об этих людях. Используйте much и a lot.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "James loves films. (go to the cinema)",
+     "answers": [
+      "He goes to the cinema a lot."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "Nicola thinks TV is boring. (watch TV)",
+     "answers": [
+      "She doesn’t watch TV much."
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "prompt": "Tina is a good tennis player. (play tennis)",
+     "answers": [
+      "She plays tennis a lot."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Mark doesn’t like driving. (use his car)",
+     "answers": [
+      "He doesn’t use his car much.",
+      "He doesn’t use his car a lot."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Paul spends most of the time at home. (go out)",
+     "answers": [
+      "He doesn’t go out much.",
+      "He doesn’t go out a lot."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Sue has been all over the world. (travel)",
+     "answers": [
+      "She travels a lot."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "84.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (DVD-диски = DVDs, на конференции = at the conference)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "У нас есть много DVD-дисков.",
+     "answers": [
+      "We have a lot of DVDs.",
+      "We have many DVDs.",
+      "We’ve got a lot of DVDs.",
+      "We’ve got many DVDs."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "На конференции было много человек?",
+     "answers": [
+      "Were there a lot of people at the conference?",
+      "Were there many people at the conference?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Ирина много читает. У неё есть много книг.",
+     "answers": [
+      "Irina reads a lot. She has a lot of books.",
+      "Irina reads a lot. She has many books.",
+      "Irina reads a lot. She’s got a lot of books.",
+      "Irina reads a lot. She’s got many books."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Сколько еды нам нужно для вечеринки?",
+     "answers": [
+      "How much food do we need for the party?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Сколько студентов в вашем классе?",
+     "answers": [
+      "How many students are there in your class?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "A: Ты ешь много шоколада? В: Нет, немного.",
+     "answers": [
+      "A: Do you eat a lot of chocolate? B: No, not a lot.",
+      "A: Do you eat a lot of chocolate? B: No, not much.",
+      "A: Do you eat much chocolate? B: No, not a lot.",
+      "A: Do you eat much chocolate? B: No, not much."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Сандра любит Испанию. Она много туда ездит.",
+     "answers": [
+      "Sandra loves Spain. She goes there a lot."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Извините, сегодня у меня мало времени.",
+     "answers": [
+      "Sorry, I don’t have much time today.",
+      "Sorry, I don’t have a lot of time today.",
+      "Sorry, I haven’t got much time today.",
+      "Sorry, I haven’t got a lot of time today."
+     ]
+    }
+   ]
+  }
+ ]
+}

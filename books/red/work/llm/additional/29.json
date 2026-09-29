@@ -1,0 +1,158 @@
+{
+ "id": 29,
+ "topic": "прошедшее, настоящее и будущее время",
+ "refs": "Разделы 4–21, 26–29",
+ "pdfPages": [
+  265
+ ],
+ "exercise": {
+  "id": "29",
+  "type": "fill-in",
+  "instruction": "Допишите предложения.",
+  "items": [
+   {
+    "num": 1,
+    "example": true,
+    "parts": [
+     "A: ",
+     " (you/go) out last night? B: No, ",
+     " (I/stay) at home. A: What ",
+     " (you/do)? B: ",
+     " (I/watch) TV. A: ",
+     " (you/go) out tomorrow night? B: Yes, ",
+     " (I/go) to the cinema. A: Which film ",
+     " (you/see)? B: ",
+     " (I/not/know). ",
+     " (I/not/decide) yet."
+    ],
+    "answers": [
+     [
+      "Did you go"
+     ],
+     [
+      "I stayed"
+     ],
+     [
+      "did you do"
+     ],
+     [
+      "I watched"
+     ],
+     [
+      "Are you going"
+     ],
+     [
+      "I’m going"
+     ],
+     [
+      "are you going to see"
+     ],
+     [
+      "I don’t know"
+     ],
+     [
+      "I haven’t decided"
+     ]
+    ]
+   },
+   {
+    "num": 2,
+    "parts": [
+     "A: Are you on holiday here? B: Yes, we are. A: How long ",
+     " (you/be) here? B: ",
+     " (we/arrive) yesterday. A: And how long ",
+     " (you/stay)? B: Until the end of next week. A: And ",
+     " (you/like) it here? B: Yes, ",
+     " (we/have) a wonderful time."
+    ],
+    "answers": [
+     [
+      "have you been"
+     ],
+     [
+      "We arrived"
+     ],
+     [
+      "are you staying",
+      "are you going to stay"
+     ],
+     [
+      "do you like"
+     ],
+     [
+      "we’re having"
+     ]
+    ]
+   },
+   {
+    "num": 3,
+    "parts": [
+     "A: ",
+     " (I/go) out with Chris and Steve this evening. ",
+     " (you/want) to come with us? B: Yes, where ",
+     " (you/go)? A: To the Italian restaurant in North Street. ",
+     " (you/ever/eat) there? B: Yes, ",
+     " (I/be) there two or three times. In fact I ",
+     " (go) there last night, but I’d love to go again!"
+    ],
+    "answers": [
+     [
+      "I’m going"
+     ],
+     [
+      "Do you want"
+     ],
+     [
+      "are you going"
+     ],
+     [
+      "Have you ever eaten"
+     ],
+     [
+      "I’ve been"
+     ],
+     [
+      "I went"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "A: ",
+     " (I/lose) my glasses again. ",
+     " (you/see) them? B: ",
+     " (you/wear) them when ",
+     " (I/come) in. A: Well, ",
+     " (I/not/wear) them now, so where are they? B: ",
+     " (you/look) in the kitchen? A: No, ",
+     " (I/go) and look now."
+    ],
+    "answers": [
+     [
+      "I’ve lost"
+     ],
+     [
+      "Have you seen"
+     ],
+     [
+      "You were wearing"
+     ],
+     [
+      "I came"
+     ],
+     [
+      "I’m not wearing"
+     ],
+     [
+      "Have you looked",
+      "Did you look"
+     ],
+     [
+      "I’ll go"
+     ]
+    ]
+   }
+  ]
+ }
+}

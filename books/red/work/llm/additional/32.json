@@ -1,0 +1,180 @@
+{
+ "id": 32,
+ "topic": "-ing и to …",
+ "refs": "Разделы 52–56, 105, 112",
+ "pdfPages": [
+  268
+ ],
+ "exercise": {
+  "id": "32",
+  "type": "choice",
+  "instruction": "Выберите правильный вариант.",
+  "example": [
+   1
+  ],
+  "items": [
+   {
+    "num": 1,
+    "options": [
+     "Don’t forget switch off the light before you go out.",
+     "Don’t forget to switch off the light before you go out.",
+     "Don’t forget switching off the light before you go out."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 2,
+    "options": [
+     "It’s late. I must go now.",
+     "It’s late. I must to go now.",
+     "It’s late. I must going now."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 3,
+    "options": [
+     "I’m sorry, but I don’t have time for talking to you now.",
+     "I’m sorry, but I don’t have time to talk to you now.",
+     "I’m sorry, but I don’t have time talking to you now."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 4,
+    "options": [
+     "Gary is always in the kitchen. He enjoys cook.",
+     "Gary is always in the kitchen. He enjoys to cook.",
+     "Gary is always in the kitchen. He enjoys cooking."
+    ],
+    "answer": 2
+   },
+   {
+    "num": 5,
+    "options": [
+     "We’ve decided go away for a few days.",
+     "We’ve decided to go away for a few days.",
+     "We’ve decided going away for a few days."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 6,
+    "options": [
+     "You’re making too much noise. Can you please stop shout?",
+     "You’re making too much noise. Can you please stop to shout?",
+     "You’re making too much noise. Can you please stop shouting?"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 7,
+    "options": [
+     "Would you like come and eat with us on Sunday?",
+     "Would you like to come and eat with us on Sunday?",
+     "Would you like coming and eat with us on Sunday?"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 8,
+    "options": [
+     "That bag is too heavy for you. Let me help you.",
+     "That bag is too heavy for you. Let me to help you.",
+     "That bag is too heavy for you. Let me helping you."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 9,
+    "options": [
+     "There’s a swimming pool near my house. I go to swim every day.",
+     "There’s a swimming pool near my house. I go to swimming every day.",
+     "There’s a swimming pool near my house. I go swimming every day."
+    ],
+    "answer": 2
+   },
+   {
+    "num": 10,
+    "options": [
+     "I need to go shopping to buy some food.",
+     "I need to go shopping for buy some food.",
+     "I need to go shopping for buying some food."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 11,
+    "options": [
+     "I’d love have a car like yours.",
+     "I’d love to have a car like yours.",
+     "I’d love having a car like yours."
+    ],
+    "answer": 1
+   },
+   {
+    "num": 12,
+    "options": [
+     "Could you help me with this bag, please?",
+     "Could you to help me with this bag, please?",
+     "Could you helping me with this bag, please?"
+    ],
+    "answer": 0
+   },
+   {
+    "num": 13,
+    "options": [
+     "I don’t mind sit here, but I’d prefer to sit by the window.",
+     "I don’t mind to sit here, but I’d prefer to sit by the window.",
+     "I don’t mind sitting here, but I’d prefer to sit by the window."
+    ],
+    "answer": 2
+   },
+   {
+    "num": 14,
+    "options": [
+     "Do you want that I help you?",
+     "Do you want me to help you?",
+     "Do you want me helping you?"
+    ],
+    "answer": 1
+   },
+   {
+    "num": 15,
+    "options": [
+     "You should think carefully before make an important decision.",
+     "You should think carefully before to make an important decision.",
+     "You should think carefully before making an important decision."
+    ],
+    "answer": 2
+   },
+   {
+    "num": 16,
+    "options": [
+     "I wasn’t feeling very well, but the medicine made me feel better.",
+     "I wasn’t feeling very well, but the medicine made me to feel better.",
+     "I wasn’t feeling very well, but the medicine made me feeling better."
+    ],
+    "answer": 0
+   },
+   {
+    "num": 17,
+    "options": [
+     "Shall I phone the restaurant for reserve a table?",
+     "Shall I phone the restaurant for reserving a table?",
+     "Shall I phone the restaurant to reserve a table?"
+    ],
+    "answer": 2
+   },
+   {
+    "num": 18,
+    "options": [
+     "Tom looked at me without say anything.",
+     "Tom looked at me without saying anything.",
+     "Tom looked at me without to say anything."
+    ],
+    "answer": 1
+   }
+  ]
+ }
+}

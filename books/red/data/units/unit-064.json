@@ -1,0 +1,422 @@
+{
+  "unit": 64,
+  "title": "myself/yourself/themselves и т. д.",
+  "pdfPages": [
+    139,
+    140
+  ],
+  "exercises": [
+    {
+      "id": "64.1",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски, используя myself/yourself и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "He looked at ",
+            " in the mirror."
+          ],
+          "answers": [
+            [
+              "himself"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’m not angry with you. I’m angry with ",
+            "."
+          ],
+          "answers": [
+            [
+              "myself"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Karen had a good time in Australia. She enjoyed ",
+            "."
+          ],
+          "answers": [
+            [
+              "herself"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "My friends had a good time in Australia. They enjoyed ",
+            "."
+          ],
+          "answers": [
+            [
+              "themselves"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I picked up a very hot plate and burnt ",
+            "."
+          ],
+          "answers": [
+            [
+              "myself"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "He never thinks about other people. He only thinks about ",
+            "."
+          ],
+          "answers": [
+            [
+              "himself"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I want to know more about you. Tell me about ",
+            ". (одному человеку)"
+          ],
+          "answers": [
+            [
+              "yourself"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Goodbye! Have a good trip and take care of ",
+            "! (двум людям)"
+          ],
+          "answers": [
+            [
+              "yourselves"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "64.2",
+      "type": "write",
+      "instruction": "Напишите предложения, используя by myself / by yourself и т. д.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "I went on holiday alone.",
+          "answers": [
+            "I went on holiday by myself."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "When I saw him, he was alone.",
+          "answers": [
+            "When I saw him, he was by himself."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Don’t go out alone.",
+          "answers": [
+            "Don’t go out by yourself."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I went to the cinema alone.",
+          "answers": [
+            "I went to the cinema by myself."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "My sister lives alone.",
+          "answers": [
+            "My sister lives by herself."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Many people live alone.",
+          "answers": [
+            "Many people live by themselves."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "64.3",
+      "type": "write",
+      "instruction": "Напишите предложения, используя each other.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "I like her. / I like him.",
+          "answers": [
+            "They like each other."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "I can’t see her. / I can’t see him.",
+          "answers": [
+            "They can’t see each other."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "I call her a lot. / I call him a lot.",
+          "answers": [
+            "They call each other a lot."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I don’t know him. / I don’t know him.",
+          "answers": [
+            "They don’t know each other."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I’m sitting next to him. / I’m sitting next to her.",
+          "answers": [
+            "They’re sitting next to each other.",
+            "They are sitting next to each other."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I gave her a present. / I gave her a present.",
+          "answers": [
+            "They gave each other presents.",
+            "They gave each other a present."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "64.4",
+      "type": "fill-in",
+      "instruction": "Заполните пропуски. Используйте: each other или ourselves/yourselves/themselves или us/you/them.",
+      "wordBank": [
+        "each other",
+        "ourselves/yourselves/themselves",
+        "us/you/them"
+      ],
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Paul and I live near ",
+            "."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Who are those people? Do you know ",
+            "?"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "You can help Tom, and Tom can help you. So you and Tom can help ",
+            "."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "There’s food in the kitchen. If you and Chris are hungry, you can help ",
+            "."
+          ],
+          "answers": [
+            [
+              "yourselves"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We didn’t go to Emily’s party. She didn’t invite ",
+            "."
+          ],
+          "answers": [
+            [
+              "us"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "When we go on holiday, we always enjoy ",
+            "."
+          ],
+          "answers": [
+            [
+              "ourselves"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Helen and Jane were at school together, but they never see ",
+            " now."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "Karen and I are very good friends. We’ve known ",
+            " for a long time."
+          ],
+          "answers": [
+            [
+              "each other"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "‘Did you see Sam and Laura at the party?’ ‘Yes, but I didn’t speak to ",
+            ".’"
+          ],
+          "answers": [
+            [
+              "them"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Many people talk to ",
+            " when they’re alone."
+          ],
+          "answers": [
+            [
+              "themselves"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "64.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (эгоистичен = selfish, упасть = fall down)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "“Можно взять яблоко?” – “Угощайся”.",
+          "answers": [
+            "‘Can I have an apple?’ ‘Help yourself.’",
+            "‘Can I take an apple?’ ‘Help yourself.’"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Эмма посмотрела на себя в зеркало.",
+          "answers": [
+            "Emma looked at herself in the mirror."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Моя бабушка живёт одна.",
+          "answers": [
+            "My grandmother lives by herself."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Ты очень эгоистична. Ты думаешь только о себе!",
+          "answers": [
+            "You are very selfish. You only think about yourself!"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Вы знаете друг друга?",
+          "answers": [
+            "Do you know each other?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Олег упал и ударился.",
+          "answers": [
+            "Oleg fell down and hurt himself."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вечеринка была классная. Мы хорошо провели время.",
+          "answers": [
+            "The party was great. We enjoyed ourselves."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Как ты себя чувствуешь сегодня?",
+          "answers": [
+            "How do you feel today?"
+          ]
+        }
+      ]
+    }
+  ]
+}

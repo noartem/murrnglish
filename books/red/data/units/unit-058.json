@@ -1,0 +1,484 @@
+{
+  "unit": 58,
+  "title": "do и make",
+  "pdfPages": [
+    127,
+    128
+  ],
+  "exercises": [
+    {
+      "id": "58.1",
+      "type": "fill-in",
+      "instruction": "Вставьте make/making/made или do/doing/did/done.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "1 ‘Shall I open the window?’ ‘No, it’s OK. I’ll ",
+            " it.’"
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "2 What did you ",
+            " at the weekend? Did you go away?"
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "3 Do you know how to ",
+            " bread?"
+          ],
+          "answers": [
+            [
+              "make"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "4 Paper is ",
+            " from wood."
+          ],
+          "answers": [
+            [
+              "made"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "5 Richard didn’t help me. He sat in an armchair and ",
+            " nothing."
+          ],
+          "answers": [
+            [
+              "did"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "6 ‘What do you ",
+            " ?’ ‘I’m a doctor.’"
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "7 I asked you to clean the bathroom. Have you ",
+            " it?"
+          ],
+          "answers": [
+            [
+              "done"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "8 ‘What do they ",
+            " in that factory?’ ‘Shoes.’"
+          ],
+          "answers": [
+            [
+              "make"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "9 I’m ",
+            " some coffee. Would you like some?"
+          ],
+          "answers": [
+            [
+              "making"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "10 Why are you angry with me? I didn’t ",
+            " anything wrong."
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "11 ‘What are you ",
+            " tomorrow afternoon?’ ‘I’m working.’"
+          ],
+          "answers": [
+            [
+              "doing"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "58.2",
+      "type": "write",
+      "instruction": "Посмотрите на картинки. Что делают эти люди?",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "He’s making a cake."
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "They",
+          "answers": [
+            "They’re doing their homework.",
+            "They’re doing homework.",
+            "They are doing their homework.",
+            "They are doing homework."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "He",
+          "answers": [
+            "He’s doing the shopping.",
+            "He is doing the shopping.",
+            "He is shopping."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "She’s making a jacket.",
+            "She is making a jacket."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "They’re doing an exam.",
+            "They are doing an exam.",
+            "They’re taking an exam.",
+            "They are taking an exam."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "He’s making the bed.",
+            "He’s making his bed.",
+            "He is making the bed.",
+            "He is making his bed."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "",
+          "answers": [
+            "She’s doing the washing-up.",
+            "She is doing the washing-up.",
+            "She’s washing up.",
+            "She is washing up.",
+            "She’s doing the dishes.",
+            "She is doing the dishes.",
+            "She’s washing the dishes.",
+            "She is washing the dishes."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "",
+          "answers": [
+            "He’s making a shopping list.",
+            "He’s making a list.",
+            "He is making a shopping list.",
+            "He is making a list."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "",
+          "answers": [
+            "They’re making a film.",
+            "They are making a film."
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "",
+          "answers": [
+            "He’s taking a picture.",
+            "He’s taking a photo.",
+            "He’s taking a photograph.",
+            "He is taking a picture.",
+            "He is taking a photo.",
+            "He is taking a photograph."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "58.3",
+      "type": "fill-in",
+      "instruction": "Вставьте make или do в правильной форме.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "1 I hate ",
+            " housework, especially cleaning."
+          ],
+          "answers": [
+            [
+              "doing"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "2 Why do you always ",
+            " the same mistake?"
+          ],
+          "answers": [
+            [
+              "make"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "3 ‘Can you ",
+            " me a favour?’ ‘It depends what it is.’"
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "4 ‘Have you ",
+            " your homework?’ ‘Not yet.’"
+          ],
+          "answers": [
+            [
+              "done"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "5 I need to see the dentist, but I haven’t ",
+            " an appointment."
+          ],
+          "answers": [
+            [
+              "made"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "6 I’m ",
+            " a course in photography at the moment. It’s very good."
+          ],
+          "answers": [
+            [
+              "doing"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "7 The last time I ",
+            " an exam was ten years ago."
+          ],
+          "answers": [
+            [
+              "did"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "8 How many phone calls did you ",
+            " yesterday?"
+          ],
+          "answers": [
+            [
+              "make"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "9 When you’ve finished Exercise 1, you can ",
+            " Exercise 2."
+          ],
+          "answers": [
+            [
+              "do"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "10 There’s something wrong with the car. The engine is ",
+            " a strange noise."
+          ],
+          "answers": [
+            [
+              "making"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "11 It was a bad mistake. It was the worst mistake I’ve ever ",
+            "."
+          ],
+          "answers": [
+            [
+              "made"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "12 Let’s ",
+            " a list of all the things we have to ",
+            " today."
+          ],
+          "answers": [
+            [
+              "make"
+            ],
+            [
+              "do"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "58.4",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык, используя do или make. (в выходные = at weekends)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Моя мама печёт очень вкусные торты.",
+          "answers": [
+            "My mother makes very nice cakes.",
+            "My mother makes very tasty cakes.",
+            "My mum makes very nice cakes.",
+            "My mum makes very tasty cakes."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Сколько экзаменов Анна сдавала в прошлом году?",
+          "answers": [
+            "How many exams did Anna do last year?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Что ты делаешь в субботу?",
+          "answers": [
+            "What are you doing on Saturday?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Дети спят. Не шуми!",
+          "answers": [
+            "The children are asleep. Don’t make a noise!",
+            "The children are sleeping. Don’t make a noise!"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Наша машина была произведена во Франции.",
+          "answers": [
+            "Our car was made in France."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Я делаю работу по дому в выходные.",
+          "answers": [
+            "I do housework at weekends.",
+            "I do the housework at weekends."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Когда я говорю по-английски, я делаю много ошибок.",
+          "answers": [
+            "When I speak English, I make many mistakes.",
+            "When I speak English, I make a lot of mistakes."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Я могу записаться на приём к стоматологу?",
+          "answers": [
+            "Can I make an appointment to see the dentist?"
+          ]
+        }
+      ]
+    }
+  ]
+}

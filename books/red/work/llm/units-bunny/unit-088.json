@@ -1,0 +1,464 @@
+{
+ "unit": 88,
+ "title": "old/older · expensive / more expensive",
+ "pdfPages": [
+  187,
+  188
+ ],
+ "exercises": [
+  {
+   "id": "88.1",
+   "type": "self-check",
+   "instruction": "Посмотрите на картинки и напишите форму сравнительной степени (older / more interesting и т. д.).",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "heavy",
+     "modelAnswers": [
+      "heavier"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "big",
+     "modelAnswers": [
+      "bigger"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "slow",
+     "modelAnswers": [
+      "slower"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "expensive",
+     "modelAnswers": [
+      "more expensive"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "high",
+     "modelAnswers": [
+      "higher"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "dangerous",
+     "modelAnswers": [
+      "more dangerous"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "88.2",
+   "type": "self-check",
+   "instruction": "Напишите форму сравнительной степени.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "old",
+     "modelAnswers": [
+      "older"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "strong",
+     "modelAnswers": [
+      "stronger"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "happy",
+     "modelAnswers": [
+      "happier"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "modern",
+     "modelAnswers": [
+      "more modern"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "important",
+     "modelAnswers": [
+      "more important"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "good",
+     "modelAnswers": [
+      "better"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "large",
+     "modelAnswers": [
+      "larger"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "serious",
+     "modelAnswers": [
+      "more serious"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "pretty",
+     "modelAnswers": [
+      "prettier"
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "crowded",
+     "modelAnswers": [
+      "more crowded"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "88.3",
+   "type": "self-check",
+   "instruction": "Напишите противоположное по значению слово.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "younger",
+     "modelAnswers": [
+      "older"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "colder",
+     "modelAnswers": [
+      "hotter",
+      "warmer"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "cheaper",
+     "modelAnswers": [
+      "more expensive"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "better",
+     "modelAnswers": [
+      "worse"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "nearer",
+     "modelAnswers": [
+      "further"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "easier",
+     "modelAnswers": [
+      "more difficult",
+      "harder"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "88.4",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте прилагательное в сравнительной степени.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Helen’s car isn’t very big. She wants a ",
+      " one."
+     ],
+     "answers": [
+      [
+       "bigger"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "My job isn’t very interesting. I want to do something ",
+      "."
+     ],
+     "answers": [
+      [
+       "more interesting"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "You’re not very tall. Your brother is ",
+      "."
+     ],
+     "answers": [
+      [
+       "taller"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "David doesn’t work very hard. I work ",
+      "."
+     ],
+     "answers": [
+      [
+       "harder"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "My chair isn’t very comfortable. Yours is ",
+      "."
+     ],
+     "answers": [
+      [
+       "more comfortable"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Your idea isn’t very good. My idea is ",
+      "."
+     ],
+     "answers": [
+      [
+       "better"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "These flowers aren’t very nice. The blue ones are ",
+      "."
+     ],
+     "answers": [
+      [
+       "nicer"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "My bag isn’t very heavy. Your bag is ",
+      "."
+     ],
+     "answers": [
+      [
+       "heavier"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "I’m not very interested in art. I’m ",
+      " in history."
+     ],
+     "answers": [
+      [
+       "more interested"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "It isn’t very warm today. It was ",
+      " yesterday."
+     ],
+     "answers": [
+      [
+       "warmer"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "These tomatoes don’t taste very good. The other ones tasted ",
+      "."
+     ],
+     "answers": [
+      [
+       "better"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "Britain isn’t very big. France is ",
+      "."
+     ],
+     "answers": [
+      [
+       "bigger"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "London isn’t very beautiful. Paris is ",
+      "."
+     ],
+     "answers": [
+      [
+       "more beautiful"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "This knife isn’t very sharp. Do you have a ",
+      " one?"
+     ],
+     "answers": [
+      [
+       "sharper"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "People today aren’t very polite. In the past they were ",
+      "."
+     ],
+     "answers": [
+      [
+       "more polite"
+      ]
+     ]
+    },
+    {
+     "num": 16,
+     "parts": [
+      "The weather isn’t too bad today. Often it is much ",
+      "."
+     ],
+     "answers": [
+      [
+       "worse"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "88.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [ещё = even\nЧто (здесь) = Which\nполезный = healthy]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Я не люблю футбол. Баскетбол интереснее.",
+     "answers": [
+      "I don’t like football. Basketball is more interesting."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Кто старше — ты или твой брат?",
+     "answers": [
+      "Who is older – you or your brother?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Книга плохая, но фильм ещё хуже.",
+     "answers": [
+      "The book is bad, but the film is even worse."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Наша квартира маленькая. Нам нужна квартира побольше.",
+     "answers": [
+      "Our flat is small. We need a bigger one.",
+      "Our flat is small. We need a bigger flat.",
+      "Our apartment is small. We need a bigger one.",
+      "Our apartment is small. We need a bigger apartment."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Мой отец высокий, но я выше.",
+     "answers": [
+      "My father is tall, but I’m taller."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Москва не очень красивая. Петербург красивее.",
+     "answers": [
+      "Moscow isn’t very beautiful. Petersburg is more beautiful.",
+      "Moscow is not very beautiful. Petersburg is more beautiful."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Что дешевле — мясо или рыба?",
+     "answers": [
+      "Which is cheaper – meat or fish?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Пицца не очень полезна. Салат полезнее.",
+     "answers": [
+      "Pizza isn’t very healthy. Salad is healthier."
+     ]
+    }
+   ]
+  }
+ ]
+}

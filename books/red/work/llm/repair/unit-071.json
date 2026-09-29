@@ -1,0 +1,202 @@
+{
+ "unit": 71,
+ "exercises": [
+  {
+   "id": "71.1",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте the. Напротив правильных предложений напишите OK.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "What is ",
+      "name of this street?"
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "What’s on TV tonight? ",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Our apartment is on ",
+      "second floor."
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Would you like to go to ",
+      "moon?"
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Which is ",
+      "best hotel in this town?"
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "What time is lunch? ",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "How far is it to ",
+      "city centre?"
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "We’re going away at ",
+      "end of May."
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "What are you doing next weekend? ",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I didn’t like her ",
+      "first time I met her."
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I’m going out after dinner. ",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "It’s easy to get information from ",
+      "internet."
+     ],
+     "answers": [
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "My sister got married last month. ",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "My dictionary is on ",
+      "top shelf on ",
+      "right."
+     ],
+     "answers": [
+      [
+       "the"
+      ],
+      [
+       "the"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "We live in ",
+      "country about ten miles from ",
+      "town."
+     ],
+     "answers": [
+      [
+       "the"
+      ],
+      [
+       "the"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

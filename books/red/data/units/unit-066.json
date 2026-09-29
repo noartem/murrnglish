@@ -1,0 +1,493 @@
+{
+  "unit": 66,
+  "title": "a/an …",
+  "pdfPages": [
+    143,
+    144
+  ],
+  "exercises": [
+    {
+      "id": "66.1",
+      "type": "fill-in",
+      "instruction": "Вставьте a или an.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " old book"
+          ],
+          "answers": [
+            [
+              "an"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " window"
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " horse"
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " airport"
+          ],
+          "answers": [
+            [
+              "an"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " new airport"
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " organisation"
+          ],
+          "answers": [
+            [
+              "an"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "",
+            " university"
+          ],
+          "answers": [
+            [
+              "a"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            " hour"
+          ],
+          "answers": [
+            [
+              "an"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "",
+            " economic problem"
+          ],
+          "answers": [
+            [
+              "an"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66.2",
+      "type": "fill-in",
+      "instruction": "Чем являются эти предметы? Используйте слова из рамки.",
+      "wordBank": [
+        "bird",
+        "fruit",
+        "mountain",
+        "river",
+        "musical instrument",
+        "flower",
+        "game",
+        "planet",
+        "tool",
+        "vegetable"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "A duck is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a bird"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "A carrot is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a vegetable"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Tennis is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a game"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "A hammer is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a tool"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Everest is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a mountain"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Saturn is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a planet"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "A banana is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a fruit"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "The Amazon is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a river"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "A rose is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a flower"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "A trumpet is ",
+            "."
+          ],
+          "answers": [
+            [
+              "a musical instrument"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66.3",
+      "type": "write",
+      "instruction": "Кто они по профессии? Закончите предложения, используя слова из рамки.",
+      "wordBank": [
+        "architect",
+        "dentist",
+        "shop assistant",
+        "photographer",
+        "electrician",
+        "nurse",
+        "taxi driver"
+      ],
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "She’s a dentist."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "He’s",
+          "answers": [
+            "He’s a shop assistant."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "She",
+          "answers": [
+            "She’s an architect."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "He’s a taxi driver."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "He’s an electrician."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "She’s a photographer."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "",
+          "answers": [
+            "She’s a nurse."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "And you? I’m",
+          "answers": [
+            "I’m a/an ..."
+          ],
+          "selfCheck": true
+        }
+      ]
+    },
+    {
+      "id": "66.4",
+      "type": "write",
+      "instruction": "Напишите предложения, используя слова и фразы из обеих рамок. Где необходимо, также используйте a/an.",
+      "wordBank": [
+        "I want to ask you",
+        "Rebecca works in",
+        "Tom never wears",
+        "Jane wants to learn",
+        "I can’t ride",
+        "Mike lives in",
+        "My brother is",
+        "This evening I’m going to",
+        "old house",
+        "artist",
+        "party",
+        "question",
+        "bookshop",
+        "foreign language",
+        "hat",
+        "bike"
+      ],
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "",
+          "answers": [
+            "I want to ask you a question."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "",
+          "answers": [
+            "Tom never wears a hat."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "",
+          "answers": [
+            "I can’t ride a bike."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "",
+          "answers": [
+            "My brother is an artist."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "",
+          "answers": [
+            "Rebecca works in a bookshop."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "",
+          "answers": [
+            "Jane wants to learn a foreign language."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "",
+          "answers": [
+            "Mike lives in an old house."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "",
+          "answers": [
+            "This evening I’m going to a party."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (приветливый = friendly)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Хелен работает в магазине.",
+          "answers": [
+            "Helen works in a shop."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "У Антона нет машины.",
+          "answers": [
+            "Anton doesn’t have a car.",
+            "Anton hasn’t got a car."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Наташа – очень приветливый человек.",
+          "answers": [
+            "Natasha is a very friendly person."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Моя сестра хочет быть врачом.",
+          "answers": [
+            "My sister wants to be a doctor."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Хотите ещё одну чашку чая?",
+          "answers": [
+            "Would you like another cup of tea?",
+            "Do you want another cup of tea?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Новгород – это город в России.",
+          "answers": [
+            "Novgorod is a town in Russia.",
+            "Novgorod is a city in Russia."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Мне нужно купить пальто.",
+          "answers": [
+            "I need to buy a coat.",
+            "I have to buy a coat."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Булгаков был знаменитым русским писателем.",
+          "answers": [
+            "Bulgakov was a famous Russian writer."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+ "unit": 71,
+ "title": "the …",
+ "pdfPages": [
+  153,
+  154
+ ],
+ "exercises": [
+  {
+   "id": "71.1",
+   "type": "fill-in",
+   "instruction": "Где необходимо, вставьте the. Напротив правильных предложений напишите OK.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "What is ",
+      " of this street?"
+     ],
+     "answers": [
+      [
+       "the name"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "What’s on TV tonight?",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Our apartment is on ",
+      "."
+     ],
+     "answers": [
+      [
+       "the second floor"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Would you like to go to ",
+      "?"
+     ],
+     "answers": [
+      [
+       "the moon"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Which is ",
+      " in this town?"
+     ],
+     "answers": [
+      [
+       "the best hotel"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "What time is lunch?",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "How far is it to ",
+      "?"
+     ],
+     "answers": [
+      [
+       "the city centre"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "We’re going away at ",
+      "."
+     ],
+     "answers": [
+      [
+       "the end of May"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "What are you doing next weekend?",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I didn’t like her ",
+      "."
+     ],
+     "answers": [
+      [
+       "the first time I met her"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "I’m going out after dinner.",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "It’s easy to get information from ",
+      "."
+     ],
+     "answers": [
+      [
+       "the internet"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "My sister got married last month.",
+      ""
+     ],
+     "answers": [
+      [
+       "OK"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "My dictionary is ",
+      "."
+     ],
+     "answers": [
+      [
+       "on the top shelf on the right"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "We live ",
+      "."
+     ],
+     "answers": [
+      [
+       "in the country about ten miles from the nearest town exact sentence."
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "We live ",
+      "."
+     ],
+     "answers": [
+      [
+       "in the country about ten miles from the nearest town."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "71.2",
+   "type": "fill-in",
+   "instruction": "Закончите предложения. Используйте the same + слова из рамки:",
+   "wordBank": [
+    "age",
+    "colour",
+    "problem",
+    "time"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I live in North Street and you live in North Street. We live in ",
+      "."
+     ],
+     "answers": [
+      [
+       "the same street"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I arrived at 8.30 and you arrived at 8.30. We arrived at ",
+      "."
+     ],
+     "answers": [
+      [
+       "the same time"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "James is 25 and Sue is 25. James and Sue are ",
+      "."
+     ],
+     "answers": [
+      [
+       "the same age"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "My shirt is dark blue and so is my jacket. My shirt and jacket are ",
+      "."
+     ],
+     "answers": [
+      [
+       "the same colour"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I have no money and you have no money. We have ",
+      "."
+     ],
+     "answers": [
+      [
+       "the same problem exact sentence."
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I have no money and you have no money. We have ",
+      "."
+     ],
+     "answers": [
+      [
+       "the same problem."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "71.3",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки и закончите предложения. Где необходимо, вставьте the.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "",
+      " is shining."
+     ],
+     "answers": [
+      [
+       "The sun"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She’s playing ",
+      "."
+     ],
+     "answers": [
+      [
+       "the guitar"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "They’re having ",
+      "."
+     ],
+     "answers": [
+      [
+       "breakfast"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "He’s watching ",
+      "."
+     ],
+     "answers": [
+      [
+       "television",
+       "TV"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "They’re swimming in ",
+      "."
+     ],
+     "answers": [
+      [
+       "the sea"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Tom’s name is at ",
+      " of the list."
+     ],
+     "answers": [
+      [
+       "the bottom exact sentence."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Tom’s name is at ",
+      " of the list."
+     ],
+     "answers": [
+      [
+       "the bottom."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "71.4",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя слова из рамки. Где необходимо, также вставьте the.",
+   "wordBank": [
+    "capital",
+    "police",
+    "lunch",
+    "middle",
+    "name",
+    "sky",
+    "TV"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "We had ",
+      " at a restaurant last night."
+     ],
+     "answers": [
+      [
+       "dinner"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "We stayed at a very nice hotel, but I don’t remember ",
+      "."
+     ],
+     "answers": [
+      [
+       "the name"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " is very clear tonight. You can see all the stars."
+     ],
+     "answers": [
+      [
+       "The sky"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Sometimes there are some good films on ",
+      " late at night."
+     ],
+     "answers": [
+      [
+       "TV"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Somebody was trying to break into the shop, so I called ",
+      "."
+     ],
+     "answers": [
+      [
+       "the police"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Tokyo is ",
+      " of Japan."
+     ],
+     "answers": [
+      [
+       "the capital"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘What did you have for ",
+      "?’ ‘A salad.’"
+     ],
+     "answers": [
+      [
+       "lunch"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I woke up in ",
+      " of the night."
+     ],
+     "answers": [
+      [
+       "the middle exact sentence."
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I woke up in ",
+      " of the night."
+     ],
+     "answers": [
+      [
+       "the middle."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "71.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [звони в = call; проводить время = spend time]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Кто самый старый в вашей семье?",
+     "answers": [
+      "Who is the oldest in your family?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Тим и Фиона живут в центре Лондона.",
+     "answers": [
+      "Tim and Fiona live in the centre of London."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Анна, звони в полицию!",
+     "answers": [
+      "Anna, call the police!",
+      "Anna, phone the police!"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Моя дочь проводит слишком много времени в интернете.",
+     "answers": [
+      "My daughter spends too much time on the internet."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Мы с Салли ходили в одну и ту же школу.",
+     "answers": [
+      "Sally and I went to the same school."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Я хотела бы жить за городом.",
+     "answers": [
+      "I’d like to live in the country."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Что ты делаешь на следующей неделе?",
+     "answers": [
+      "What are you doing next week?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Мы ели яйца на завтрак.",
+     "answers": [
+      "We had eggs for breakfast.",
+      "We had some eggs for breakfast.",
+      "We ate eggs for breakfast.",
+      "We ate some eggs for breakfast."
+     ]
+    }
+   ]
+  }
+ ]
+}

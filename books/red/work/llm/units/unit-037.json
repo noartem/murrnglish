@@ -1,0 +1,350 @@
+{
+ "unit": 37,
+ "title": "I used to …",
+ "pdfPages": [
+  85,
+  86
+ ],
+ "exercises": [
+  {
+   "id": "37.1",
+   "type": "fill-in",
+   "instruction": "Посмотри на картинки. Заполните пропуски, используя used to … .",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "She ",
+      " long hair."
+     ],
+     "answers": [
+      [
+       "used to have"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "He ",
+      " football."
+     ],
+     "answers": [
+      [
+       "used to play"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " a taxi driver."
+     ],
+     "answers": [
+      [
+       "She used to be"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " in the country."
+     ],
+     "answers": [
+      [
+       "They used to live"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "He used to wear glasses."
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "This building ",
+      ""
+     ],
+     "answers": [
+      [
+       "used to be a hotel."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "37.2",
+   "type": "write",
+   "instruction": "Сейчас Карен много работает, и у неё почти нет свободного времени. Несколько лет назад всё было по-другому. Напишите предложения о Карен, используя used to … .",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "1 She used to swim every day.",
+     "answers": [
+      "She used to swim every day."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "She",
+     "answers": [
+      "She used to play volleyball."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "She used to go out most evenings.",
+      "She used to go out a lot."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "She used to play the guitar."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "She used to read a lot.",
+      "She used to like reading."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "She used to go away two or three times a year.",
+      "She used to travel a lot."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "37.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски. Используйте used to или present simple (I play / he lives и т. д.).",
+   "example": [
+    1,
+    2
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I ",
+      " tennis. I stopped playing a few years ago."
+     ],
+     "answers": [
+      [
+       "used to play"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Do you do any sport?’ ‘Yes, I ",
+      " basketball.’"
+     ],
+     "answers": [
+      [
+       "play"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "‘Do you have a car?’ ‘No, I ",
+      " one, but I sold it.’"
+     ],
+     "answers": [
+      [
+       "used to have"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "George ",
+      " a waiter. Now he’s the manager of a hotel."
+     ],
+     "answers": [
+      [
+       "used to be"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "‘Do you go to work by car?’ ‘Sometimes, but most days I ",
+      " ",
+      " by train.’"
+     ],
+     "answers": [
+      [
+       "go"
+      ],
+      [
+       "travel"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "When I was a child, I never ",
+      " meat, but I eat it now."
+     ],
+     "answers": [
+      [
+       "used to eat"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Mary loves watching TV. She ",
+      " TV every evening."
+     ],
+     "answers": [
+      [
+       "watches"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "We ",
+      " near the airport, but we moved to the city centre a few years ago."
+     ],
+     "answers": [
+      [
+       "used to live"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Normally I start work at 7 o’clock, so I ",
+      " up very early."
+     ],
+     "answers": [
+      [
+       "get"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "What games ",
+      " you ",
+      " when you were a child?"
+     ],
+     "answers": [
+      [
+       "did"
+      ],
+      [
+       "use to play"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "37.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя used to. (стеснительный = shy; играть на гитаре = play the guitar)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Анна раньше была очень стеснительной.",
+     "answers": [
+      "Anna used to be very shy."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Вы раньше работали в Туле?",
+     "answers": [
+      "Did you use to work in Tula?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Моя бабушка любила этот фильм.",
+     "answers": [
+      "My grandmother used to love this film.",
+      "My grandma used to love this film."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Раньше у меня была собака. Теперь у меня кошка.",
+     "answers": [
+      "I used to have a dog. Now I have a cat."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Моя дочь раньше играла на гитаре.",
+     "answers": [
+      "My daughter used to play the guitar."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Раньше Борис не ел рыбу. Теперь он её любит.",
+     "answers": [
+      "Boris didn’t use to eat fish. He loves it now."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Где вы работали до того, как стали учителем?",
+     "answers": [
+      "Where did you use to work before you became a teacher?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "У нас не было большого дома, когда мы жили в Лондоне.",
+     "answers": [
+      "We didn’t use to have a big house when we lived in London."
+     ]
+    }
+   ]
+  }
+ ]
+}

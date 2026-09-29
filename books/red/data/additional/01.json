@@ -1,0 +1,93 @@
+{
+  "id": 1,
+  "topic": "am/is/are",
+  "refs": "Разделы 1–3",
+  "pdfPages": [
+    252
+  ],
+  "exercise": {
+    "id": "1",
+    "type": "write",
+    "instruction": "Напишите предложения по картинкам. Используйте слова из обеих рамок + is/isn’t/are/aren’t.",
+    "wordBank": [
+      "The windows",
+      "Lisa",
+      "Kate",
+      "The children",
+      "Gary",
+      "The books",
+      "The hotel",
+      "The bus",
+      "on the table",
+      "hungry",
+      "asleep",
+      "open",
+      "full",
+      "near the station",
+      "a doctor",
+      "happy"
+    ],
+    "example": [
+      1,
+      2
+    ],
+    "items": [
+      {
+        "num": 1,
+        "prompt": "The windows / open",
+        "answers": [
+          "The windows are open."
+        ]
+      },
+      {
+        "num": 2,
+        "prompt": "Lisa / happy",
+        "answers": [
+          "Lisa isn’t happy."
+        ]
+      },
+      {
+        "num": 3,
+        "prompt": "Kate / a doctor",
+        "answers": [
+          "Kate is a doctor."
+        ]
+      },
+      {
+        "num": 4,
+        "prompt": "The children / asleep",
+        "answers": [
+          "The children are asleep."
+        ]
+      },
+      {
+        "num": 5,
+        "prompt": "Gary / hungry",
+        "answers": [
+          "Gary isn’t hungry."
+        ]
+      },
+      {
+        "num": 6,
+        "prompt": "The books / on the table",
+        "answers": [
+          "The books aren’t on the table."
+        ]
+      },
+      {
+        "num": 7,
+        "prompt": "The hotel / near the station",
+        "answers": [
+          "The hotel is near the station."
+        ]
+      },
+      {
+        "num": 8,
+        "prompt": "The bus / full",
+        "answers": [
+          "The bus isn’t full."
+        ]
+      }
+    ]
+  }
+}

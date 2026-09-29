@@ -1,0 +1,375 @@
+{
+  "unit": 102,
+  "title": "the people we met · the hotel you stayed at (относительные придаточные предложения 2)",
+  "pdfPages": [
+    215,
+    216
+  ],
+  "exercises": [
+    {
+      "id": "102.1",
+      "type": "fill-in",
+      "instruction": "Составьте одно предложение из двух.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "Have you seen the pictures Helen took?"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I’ve lost the ",
+            ""
+          ],
+          "answers": [
+            [
+              "pen you gave me."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "I like the ",
+            ""
+          ],
+          "answers": [
+            [
+              "jacket Sue is wearing."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Where are the ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "flowers I gave you"
+            ]
+          ],
+          "answersNote": ""
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I ",
+            ""
+          ],
+          "answers": [
+            [
+              "didn’t believe the story he told us."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "How ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "much were the oranges you bought"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "102.2",
+      "type": "fill-in",
+      "instruction": "Составьте одно предложение из двух.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            ""
+          ],
+          "answers": [
+            [
+              "The bag I was carrying was very heavy."
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The ",
+            ""
+          ],
+          "answers": [
+            [
+              "meal you cooked was excellent."
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The shoes ",
+            ""
+          ],
+          "answers": [
+            [
+              "I’m wearing aren’t very comfortable."
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "The ",
+            ""
+          ],
+          "answers": [
+            [
+              "people we invited to dinner didn’t come."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "102.3",
+      "type": "fill-in",
+      "instruction": "Вы задаёте другу вопросы. Закончите предложения.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "What’s the name of ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "the hotel you stayed at"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "Who are the people ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "you were talking to"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Did you find the ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "keys you were looking for"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Where is the ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "party you’re going to"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "What’s the name of ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "the film you were talking about"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "What’s that ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "music you’re listening to"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Did you get ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "the job you applied for"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "102.4",
+      "type": "fill-in",
+      "instruction": "Закончите вопросы, используя where.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "Did you like ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "the hotel where you stayed"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "What’s the name of the restaurant ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "where you had dinner"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "How big is the ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "village where you live"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Where exactly is ",
+            " ?"
+          ],
+          "answers": [
+            [
+              "the factory where you work"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "102.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (сдавать = do, шоу = show)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Мне понравилось платье, которое ты вчера надевала.",
+          "answers": [
+            "I liked the dress (that) you were wearing yesterday.",
+            "I liked the dress you were wearing yesterday.",
+            "I liked the dress (that) you wore yesterday.",
+            "I liked the dress you wore yesterday."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Ты посмотрел фильм, который я тебе дал?",
+          "answers": [
+            "Have you watched the film (that) I gave you?",
+            "Have you watched the film I gave you?",
+            "Did you watch the film (that) I gave you?",
+            "Did you watch the film I gave you?"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Тест, который Бен вчера сдавал, был несложным.",
+          "answers": [
+            "The test (that) Ben did yesterday wasn’t difficult.",
+            "The test Ben did yesterday wasn’t difficult.",
+            "The test (that) Ben did yesterday wasn’t hard.",
+            "The test Ben did yesterday wasn’t hard."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Марина купила туфли, которые она хотела?",
+          "answers": [
+            "Did Marina buy the shoes (that) she wanted?",
+            "Did Marina buy the shoes she wanted?"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Как была вечеринка, на которую ты ходил в субботу?",
+          "answers": [
+            "How was the party (that) you went to on Saturday?",
+            "How was the party you went to on Saturday?",
+            "What was the party (that) you went to on Saturday like?",
+            "What was the party you went to on Saturday like?"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "У меня есть друг, который умеет говорить на четырёх языках.",
+          "answers": [
+            "I have a friend who can speak four languages.",
+            "I have a friend that can speak four languages.",
+            "I’ve got a friend who can speak four languages.",
+            "I’ve got a friend that can speak four languages."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Моим родителям не понравилось шоу, которое они смотрели в Лондоне.",
+          "answers": [
+            "My parents didn’t like the show (that) they saw in London.",
+            "My parents didn’t like the show they saw in London."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Это те люди, о которых я тебе говорил.",
+          "answers": [
+            "These are the people I told you about."
+          ]
+        }
+      ]
+    }
+  ]
+}

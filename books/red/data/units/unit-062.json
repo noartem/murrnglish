@@ -1,0 +1,460 @@
+{
+  "unit": 62,
+  "title": "Whose is this? · It’s mine/yours/hers и т. д.",
+  "pdfPages": [
+    135,
+    136
+  ],
+  "exercises": [
+    {
+      "id": "62.1",
+      "type": "fill-in",
+      "instruction": "Закончите предложения, вставив mine/yours и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "It’s your money. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "yours"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "It’s my bag. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "mine"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "It’s our car. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "ours"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "They’re her shoes. They’re ",
+            "."
+          ],
+          "answers": [
+            [
+              "hers"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "It’s their house. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "theirs"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "They’re your books. They’re ",
+            "."
+          ],
+          "answers": [
+            [
+              "yours"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "They’re my glasses. They’re ",
+            "."
+          ],
+          "answers": [
+            [
+              "mine"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "It’s his coat. It’s ",
+            "."
+          ],
+          "answers": [
+            [
+              "his"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62.2",
+      "type": "choice",
+      "instruction": "Выберите правильный вариант.",
+      "example": [
+        1
+      ],
+      "items": [
+        {
+          "num": 1,
+          "options": [
+            "It’s their problem, not our.",
+            "It’s their problem, not ours.",
+            "It’s theirs problem, not our.",
+            "It’s theirs problem, not ours."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 2,
+          "options": [
+            "This is a nice camera. Is it your?",
+            "This is a nice camera. Is it yours?"
+          ],
+          "answer": 1
+        },
+        {
+          "num": 3,
+          "options": [
+            "That’s not my umbrella. My is black.",
+            "That’s not my umbrella. Mine is black.",
+            "That’s not mine umbrella. My is black.",
+            "That’s not mine umbrella. Mine is black."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 4,
+          "options": [
+            "Whose books are these? Your or my?",
+            "Whose books are these? Your or mine?",
+            "Whose books are these? Yours or my?",
+            "Whose books are these? Yours or mine?"
+          ],
+          "answer": 3
+        },
+        {
+          "num": 5,
+          "options": [
+            "Catherine is going out with her friends this evening.",
+            "Catherine is going out with hers friends this evening."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 6,
+          "options": [
+            "My room is bigger than her.",
+            "My room is bigger than hers.",
+            "Mine room is bigger than her.",
+            "Mine room is bigger than hers."
+          ],
+          "answer": 1
+        },
+        {
+          "num": 7,
+          "options": [
+            "They have two children, but I don’t know their names.",
+            "They have two children, but I don’t know theirs names."
+          ],
+          "answer": 0
+        },
+        {
+          "num": 8,
+          "options": [
+            "Can we use your washing machine? Our isn’t working.",
+            "Can we use your washing machine? Ours isn’t working."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "62.3",
+      "type": "fill-in",
+      "instruction": "Закончите предложения. Вставьте friend(s) of mine/yours и т. д.",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "I went to the cinema with a ",
+            ""
+          ],
+          "answers": [
+            [
+              "friend of mine"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "They went on holiday with some ",
+            ""
+          ],
+          "answers": [
+            [
+              "friends of theirs"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "She’s going out with a friend ",
+            ""
+          ],
+          "answers": [
+            [
+              "of hers"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "We had dinner with some ",
+            ""
+          ],
+          "answers": [
+            [
+              "friends of ours"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I played tennis with a ",
+            ""
+          ],
+          "answers": [
+            [
+              "friend of mine"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Tom is going to meet a ",
+            ""
+          ],
+          "answers": [
+            [
+              "friend of his"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Do you know those people? Are they ",
+            "?"
+          ],
+          "answers": [
+            [
+              "friends of yours"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62.4",
+      "type": "fill-in",
+      "instruction": "Посмотрите на картинки. Что говорят эти люди?",
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " is this? It’s ",
+            ""
+          ],
+          "answers": [
+            [
+              "Whose car"
+            ],
+            [
+              "theirs"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " is this? It’s ",
+            ""
+          ],
+          "answers": [
+            [
+              "Whose camera"
+            ],
+            [
+              "hers"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " these? They",
+            ""
+          ],
+          "answers": [
+            [
+              "Whose gloves"
+            ],
+            [
+              "’re mine"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            "? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Whose hat is this"
+            ],
+            [
+              "It’s his."
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " money ",
+            "? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Whose"
+            ],
+            [
+              "is this"
+            ],
+            [
+              "It’s yours."
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            "? ",
+            ""
+          ],
+          "answers": [
+            [
+              "Whose books are these"
+            ],
+            [
+              "They’re ours."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62.5",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (решение = decision)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Их машина чёрная. Наша красная.",
+          "answers": [
+            "Their car is black. Ours is red."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "“Чья это сумка?” — “Она моя”.",
+          "answers": [
+            "‘Whose bag is this?’ ‘It’s mine.’"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Наташа — твоя подруга?",
+          "answers": [
+            "Is Natasha a friend of yours?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "“Это собака Линды?” — “Да, я думаю, что её”.",
+          "answers": [
+            "‘Is this Linda’s dog?’ ‘Yes, I think it’s hers.’"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Её дом больше, чем его.",
+          "answers": [
+            "Her house is bigger than his."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Пожалуйста, дайте мне эту книгу. Она моя.",
+          "answers": [
+            "Please give me that book. It’s mine."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Это её решение, а не наше.",
+          "answers": [
+            "It’s her decision, not ours."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Чьи это очки?",
+          "answers": [
+            "Whose glasses are these?"
+          ]
+        }
+      ]
+    }
+  ]
+}

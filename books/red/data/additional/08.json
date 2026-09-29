@@ -1,0 +1,125 @@
+{
+  "id": 8,
+  "topic": "present continuous и present simple",
+  "refs": "Разделы 4–9",
+  "pdfPages": [
+    255
+  ],
+  "exercise": {
+    "id": "8",
+    "type": "fill-in",
+    "instruction": "Допишите предложения.",
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "Please be quiet. ",
+          " (I/work)."
+        ],
+        "answers": [
+          [
+            "I’m working"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 2,
+        "parts": [
+          "",
+          " (you/often/go) to the cinema?"
+        ],
+        "answers": [
+          [
+            "Do you often go"
+          ]
+        ],
+        "example": true
+      },
+      {
+        "num": 3,
+        "parts": [
+          "What ",
+          " (you/cook)?"
+        ],
+        "answers": [
+          [
+            "are you cooking"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "Jack ",
+          " (play) the piano very well."
+        ],
+        "answers": [
+          [
+            "plays"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "",
+          " (I/go) now. Goodbye!"
+        ],
+        "answers": [
+          [
+            "I’m going"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "",
+          " (it/rain). Can I take this umbrella?"
+        ],
+        "answers": [
+          [
+            "It’s raining"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "",
+          " (I/not/watch) TV very much."
+        ],
+        "answers": [
+          [
+            "I don’t watch"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "Excuse me, ",
+          " (we/look) for the museum."
+        ],
+        "answers": [
+          [
+            "we’re looking"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "What’s this word? How ",
+          " (you/pronounce) it?"
+        ],
+        "answers": [
+          [
+            "do you pronounce"
+          ]
+        ]
+      }
+    ]
+  }
+}

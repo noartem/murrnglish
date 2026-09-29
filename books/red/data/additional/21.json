@@ -1,0 +1,89 @@
+{
+  "id": 21,
+  "topic": "present perfect и past simple",
+  "refs": "Разделы 19–21",
+  "pdfPages": [
+    261
+  ],
+  "exercise": {
+    "id": "21",
+    "type": "fill-in",
+    "instruction": "Present perfect или past simple? Допишите предложения.",
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "A: Have you been to France? B: Yes, many times. A: When ",
+          " the last time? B: Two years ago."
+        ],
+        "answers": [
+          [
+            "was",
+            "did you go"
+          ]
+        ]
+      },
+      {
+        "num": 2,
+        "parts": [
+          "A: How long ",
+          " it? B: It’s new. I ",
+          " it yesterday."
+        ],
+        "answers": [
+          [
+            "have you had"
+          ],
+          [
+            "bought",
+            "got"
+          ]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "A: How long ",
+          " there? B: Five years. Before that ",
+          " in Mill Road. A: How long ",
+          " in Mill Road? B: About three years."
+        ],
+        "answers": [
+          [
+            "have you lived",
+            "have you been",
+            "have you been living"
+          ],
+          [
+            "we lived"
+          ],
+          [
+            "did you live"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "A: How long ",
+          " there? B: Nearly two years. A: What ",
+          " before that? B: I ",
+          " a taxi driver."
+        ],
+        "answers": [
+          [
+            "have you worked",
+            "have you been working"
+          ],
+          [
+            "did you do"
+          ],
+          [
+            "was",
+            "worked as"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,444 @@
+{
+ "unit": 9,
+ "title": "I am doing (present continuous) и I do (present simple)",
+ "pdfPages": [
+  29,
+  30
+ ],
+ "exercises": [
+  {
+   "id": "9.1",
+   "type": "write",
+   "instruction": "Посмотрите на картинки и ответьте на вопросы.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "I’m a photographer.\nDoes he take photographs?\nIs he taking a photograph?\nWhat is he doing?",
+     "answers": [
+      "Yes, he does.",
+      "No, he isn’t.",
+      "He’s having a bath."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "I’m a bus driver.\nIs she driving a bus?\nDoes she drive a bus?\nWhat is she doing?",
+     "answers": [
+      "No, she isn’t.",
+      "Yes, she does.",
+      "She’s playing the piano."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "I’m a window cleaner.\nDoes he clean windows?\nIs he cleaning a window?\nWhat is he doing?",
+     "answers": [
+      "Yes, he does.",
+      "Yes, he is.",
+      "He’s cleaning a window."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "We are teachers.\nAre they teaching?\nDo they teach?\nWhat do they do?",
+     "answers": [
+      "No, they aren’t.",
+      "Yes, they do.",
+      "They teach."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя am/is/are или do/don’t/does/doesn’t.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Excuse me, ",
+      " you speak English?"
+     ],
+     "answers": [
+      [
+       "do"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Where’s Kate?’ ‘I ",
+      " know.’"
+     ],
+     "answers": [
+      [
+       "don’t"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "What’s funny? Why ",
+      " you laughing?"
+     ],
+     "answers": [
+      [
+       "are"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘What ",
+      " your sister do?’ ‘She’s a dentist.’"
+     ],
+     "answers": [
+      [
+       "does"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "It ",
+      " raining. I ",
+      " want to go out in the rain."
+     ],
+     "answers": [
+      [
+       "’s",
+       "is"
+      ],
+      [
+       "don’t"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Where ",
+      " you come from?’ ‘Canada.’"
+     ],
+     "answers": [
+      [
+       "do"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "How much ",
+      " it cost to stay at this hotel? Is it expensive?"
+     ],
+     "answers": [
+      [
+       "does"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Steve is a good tennis player, but he ",
+      " play very often."
+     ],
+     "answers": [
+      [
+       "doesn’t"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "fill-in",
+   "instruction": "Поставьте глагол в форму present continuous (I am doing) или present simple (I do).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Excuse me, ",
+      " (you/speak) English?"
+     ],
+     "answers": [
+      [
+       "do you speak"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Where’s Tom?’ ‘",
+      " (he/have) a shower.’"
+     ],
+     "answers": [
+      [
+       "He’s having"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " (I/not/watch) TV very often."
+     ],
+     "answers": [
+      [
+       "I don’t watch"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 4,
+     "parts": [
+      "Listen! Somebody ",
+      " (sing)."
+     ],
+     "answers": [
+      [
+       "is singing"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Sarah is tired. ",
+      " (she/want) to go home now."
+     ],
+     "answers": [
+      [
+       "She wants"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "How often ",
+      " (you/use) your car? Every day?"
+     ],
+     "answers": [
+      [
+       "do you use"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘Excuse me, but ",
+      " (you/sit) in my seat.’ ‘Oh, I’m sorry.’"
+     ],
+     "answers": [
+      [
+       "you’re sitting"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I’m sorry, ",
+      " (I/not/understand). Can you speak more slowly?"
+     ],
+     "answers": [
+      [
+       "I don’t understand"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "It’s late. ",
+      " (I/go) home now. ",
+      " (you/come) with me?"
+     ],
+     "answers": [
+      [
+       "I’m going"
+      ],
+      [
+       "Are you coming"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "What time ",
+      " (your father / finish) work every day?"
+     ],
+     "answers": [
+      [
+       "does your father finish"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "You can turn off the radio. ",
+      " (I/not/listen) to it."
+     ],
+     "answers": [
+      [
+       "I’m not listening"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "‘Where’s Paul?’ ‘In the kitchen. ",
+      " (he/cook) something.’"
+     ],
+     "answers": [
+      [
+       "He’s cooking",
+       "He is cooking"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "Mark ",
+      " (not/usually/drive) to work.\nHe ",
+      " (usually/walk)."
+     ],
+     "answers": [
+      [
+       "doesn’t usually drive"
+      ],
+      [
+       "usually walks"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "Sue ",
+      " (not/like) coffee. ",
+      " (she/prefer) tea."
+     ],
+     "answers": [
+      [
+       "doesn’t like"
+      ],
+      [
+       "She prefersockerę?"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. [звонить = ring\nвоскресенье = Sunday\nоткуда = where … from\nв = to]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Антон! Твой телефон звонит.",
+     "answers": [
+      "Anton! Your phone is ringing."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Каждое воскресенье я играю в футбол.",
+     "answers": [
+      "I play football every Sunday.",
+      "Every Sunday …"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "A: Что делает Нина?\nB: Она готовит ужин.",
+     "answers": [
+      "A: What is Nina doing?\nB: She’s cooking dinner.",
+      "A: What is Nina doing?\nB: She’s preparing dinner.",
+      "A: What is Nina doing?\nB: She is cooking dinner.",
+      "A: What is Nina doing?\nB: She is preparing dinner."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "A: Привет. Куда ты идёшь?\nB: Я иду домой.",
+     "answers": [
+      "A: Hello. Where are you going?\nB: I’m going home.",
+      "A: Hello. Where are you going?\nB: I am going home.",
+      "A: Hi. Where are you going?\nB: I’m going home.",
+      "A: Hi. Where are you going?\nB: I am going home."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Откуда Саша?",
+     "answers": [
+      "Where does Sasha come from?",
+      "Where is Sasha from?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Сегодня я не работаю.",
+     "answers": [
+      "I’m not working today.",
+      "I am not working today."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Почему ты плачешь?",
+     "answers": [
+      "Why are you crying?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Вы знаете эту женщину?",
+     "answers": [
+      "Do you know this woman?",
+      "Do you know that woman?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Я пью кофе каждое утро.",
+     "answers": [
+      "I drink coffee every morning.",
+      "I have coffee every morning."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Как часто ты ездишь в Лондон?",
+     "answers": [
+      "How often do you go to London?"
+     ]
+    }
+   ]
+  }
+ ]
+}

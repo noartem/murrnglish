@@ -1,0 +1,171 @@
+{
+ "id": 19,
+ "topic": "present perfect и past simple",
+ "refs": "Разделы 19–21",
+ "pdfPages": [
+  260
+ ],
+ "exercise": {
+  "id": "19",
+  "type": "fill-in",
+  "instruction": "Present perfect или past simple? Допишите предложения (утвердительные или отрицательные).",
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "A: Do you like London? B: I don’t know. I ",
+     " there."
+    ],
+    "answers": [
+     [
+      "haven’t been"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "A: Have you seen Kate? B: Yes, I ",
+     " her five minutes ago."
+    ],
+    "answers": [
+     [
+      "saw"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 3,
+    "parts": [
+     "A: That’s a nice sweater. Is it new? B: Yes, I ",
+     " it last week."
+    ],
+    "answers": [
+     [
+      "bought",
+      "got"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "A: Are you tired this morning? B: Yes, I ",
+     " to bed late last night."
+    ],
+    "answers": [
+     [
+      "went"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "A: Do you want this newspaper, or can I have it? B: You can have it. I ",
+     " it."
+    ],
+    "answers": [
+     [
+      "’ve read",
+      "have read",
+      "read",
+      "’ve finished with",
+      "have finished with"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "A: Are you enjoying your new job? B: I ",
+     " yet. My first day is next Monday."
+    ],
+    "answers": [
+     [
+      "haven’t started",
+      "haven’t started it",
+      "haven’t begun",
+      "haven’t begun it"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "A: The weather isn’t very nice today, is it? B: No, but it ",
+     " nice yesterday."
+    ],
+    "answers": [
+     [
+      "was"
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "A: Was Helen at the party on Saturday? B: I don’t think so. I ",
+     " her there."
+    ],
+    "answers": [
+     [
+      "didn’t see"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "A: Is your son still at school? B: No, he ",
+     " school two years ago."
+    ],
+    "answers": [
+     [
+      "left"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "A: Is Silvia married? B: Yes, she ",
+     " married for five years."
+    ],
+    "answers": [
+     [
+      "’s been",
+      "has been"
+     ]
+    ]
+   },
+   {
+    "num": 11,
+    "parts": [
+     "A: Have you heard of George Washington? B: Of course. He ",
+     " the first President of the United States."
+    ],
+    "answers": [
+     [
+      "was"
+     ]
+    ]
+   },
+   {
+    "num": 12,
+    "parts": [
+     "A: How long does it take to make a pizza? B: I don’t know. I ",
+     " a pizza."
+    ],
+    "answers": [
+     [
+      "’ve never made",
+      "have never made"
+     ]
+    ]
+   }
+  ]
+ }
+}

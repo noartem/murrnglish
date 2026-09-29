@@ -1,0 +1,370 @@
+{
+ "unit": 106,
+ "title": "in · at · on (предлоги места 1)",
+ "pdfPages": [
+  223,
+  224
+ ],
+ "exercises": [
+  {
+   "id": "106.1",
+   "type": "write",
+   "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте in/at/on.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Where is he? (the kitchen)",
+     "answers": [
+      "In the kitchen."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Where are the shoes? (the box)",
+     "answers": [
+      "In the box."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Where is the pen? (the box)",
+     "answers": [
+      "On the box."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Where is the clock? (the wall)",
+     "answers": [
+      "On the wall."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Where is the bus? (the bus stop)",
+     "answers": [
+      "At the bus stop."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Where are the horses? (the field)",
+     "answers": [
+      "In the field."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Where are they standing? (the balcony)",
+     "answers": [
+      "On the balcony."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Where is she swimming? (the pool)",
+     "answers": [
+      "In the pool."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Where is he standing? (the window)",
+     "answers": [
+      "At the window."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Where is the spider? (the ceiling)",
+     "answers": [
+      "On the ceiling."
+     ]
+    },
+    {
+     "num": 11,
+     "prompt": "Where is he sitting? (the table)",
+     "answers": [
+      "On the table."
+     ]
+    },
+    {
+     "num": 12,
+     "prompt": "Where is she sitting? (the table)",
+     "answers": [
+      "At the table."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "106.2",
+   "type": "fill-in",
+   "instruction": "Вставьте in/at/on.",
+   "example": [
+    1
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Don’t sit ",
+      " the grass. It’s wet."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 2,
+     "parts": [
+      "What do you have ",
+      " your bag?"
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Look! There’s a man ",
+      " the roof. What’s he doing?"
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "There are a lot of fish ",
+      " this river."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Our house is number 45 – the number is ",
+      " the door."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "‘Is the hospital near here?’ ‘Yes, turn left ",
+      " the traffic lights.’"
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "It’s difficult to park ",
+      " the centre of town. It’s better to take the bus."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "My sister lives ",
+      " Brussels."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "There’s a small park ",
+      " the top of the hill."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "I think I heard the doorbell. There’s somebody ",
+      " the door."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "Munich is a large city ",
+      " the south of Germany."
+     ],
+     "answers": [
+      [
+       "in"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "There are a few shops ",
+      " the end of the street."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "It’s difficult to carry a lot of things ",
+      " a bike."
+     ],
+     "answers": [
+      [
+       "on"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "I looked at the list of names. My name was ",
+      " the bottom."
+     ],
+     "answers": [
+      [
+       "at"
+      ]
+     ]
+    },
+    {
+     "num": 15,
+     "parts": [
+      "There is a mirror ",
+      " the wall ",
+      " the living room."
+     ],
+     "answers": [
+      [
+       "on"
+      ],
+      [
+       "in"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "106.3",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (холм = hill, курорт = resort)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "На верху холма находится старый дом.",
+     "answers": [
+      "There’s an old house at the top of the hill.",
+      "There is an old house at the top of the hill.",
+      "At the top of the hill, there’s an old house.",
+      "At the top of the hill, there is an old house."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "“Где дети?” – “В гостиной”.",
+     "answers": [
+      "‘Where are the children?’ ‘In the living room.’"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Не ходите по траве.",
+     "answers": [
+      "Don’t walk on the grass.",
+      "Do not walk on the grass."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я вижу большого паука на стене.",
+     "answers": [
+      "I can see a big spider on the wall.",
+      "I see a big spider on the wall."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Вы живёте в городе или в деревне?",
+     "answers": [
+      "Do you live in a city or a village?",
+      "Do you live in a city or in a village?",
+      "Do you live in a town or a village?",
+      "Do you live in a town or in a village?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "У светофора поверните направо.",
+     "answers": [
+      "Turn right at the traffic lights.",
+      "At the traffic lights, turn right."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Давай пообедаем на балконе.",
+     "answers": [
+      "Let’s have lunch on the balcony."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Сочи – популярный курорт на юге России.",
+     "answers": [
+      "Sochi is a popular resort in the south of Russia."
+     ]
+    }
+   ]
+  }
+ ]
+}

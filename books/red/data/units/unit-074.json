@@ -1,0 +1,433 @@
+{
+  "unit": 74,
+  "title": "the … (с географическими названиями)",
+  "pdfPages": [
+    159,
+    160
+  ],
+  "exercises": [
+    {
+      "id": "74.1",
+      "type": "fill-in",
+      "instruction": "Посмотрите на карту и допишите предложения. Используйте информацию из рамки. Где необходимо, вставьте The.",
+      "wordBank": [
+        "Alps",
+        "Amazon",
+        "Andes",
+        "Asia",
+        "Atlantic",
+        "Bahamas",
+        "Bangkok",
+        "Cairo",
+        "Jamaica",
+        "Kenya",
+        "Pacific",
+        "Red Sea",
+        "Rhine",
+        "Sweden",
+        "United States"
+      ],
+      "items": [
+        {
+          "num": 1,
+          "parts": [
+            "",
+            " is the capital of Egypt."
+          ],
+          "answers": [
+            [
+              "Cairo"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "",
+            " is between Africa and America."
+          ],
+          "answers": [
+            [
+              "The Atlantic"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 3,
+          "parts": [
+            "",
+            " is a country in northern Europe."
+          ],
+          "answers": [
+            [
+              "Sweden"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "",
+            " is a river in South America."
+          ],
+          "answers": [
+            [
+              "The Amazon"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "",
+            " is the largest continent in the world."
+          ],
+          "answers": [
+            [
+              "Asia"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "",
+            " is the largest ocean."
+          ],
+          "answers": [
+            [
+              "The Pacific"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "",
+            " is a river in Europe."
+          ],
+          "answers": [
+            [
+              "The Rhine"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "",
+            " is a country in East Africa."
+          ],
+          "answers": [
+            [
+              "Kenya"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "",
+            " is between Canada and Mexico."
+          ],
+          "answers": [
+            [
+              "The United States"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "",
+            " are mountains in South America."
+          ],
+          "answers": [
+            [
+              "The Andes"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "",
+            " is the capital of Thailand."
+          ],
+          "answers": [
+            [
+              "Bangkok"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "",
+            " are mountains in central Europe."
+          ],
+          "answers": [
+            [
+              "The Alps"
+            ]
+          ]
+        },
+        {
+          "num": 13,
+          "parts": [
+            "",
+            " is between Saudi Arabia and Africa."
+          ],
+          "answers": [
+            [
+              "The Red Sea"
+            ]
+          ]
+        },
+        {
+          "num": 14,
+          "parts": [
+            "",
+            " is an island in the Caribbean."
+          ],
+          "answers": [
+            [
+              "Jamaica"
+            ]
+          ]
+        },
+        {
+          "num": 15,
+          "parts": [
+            "",
+            " are a group of islands near Florida."
+          ],
+          "answers": [
+            [
+              "The Bahamas"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "74.2",
+      "type": "write",
+      "instruction": "Где необходимо, вставьте the. Напротив правильных предложений напишите OK.",
+      "example": [
+        1,
+        2
+      ],
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Kevin lives in Newton Street.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "We went to see an opera at Bolshoi Theatre.",
+          "answers": [
+            "at the Bolshoi Theatre"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Have you ever been to China?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Have you ever been to Philippines?",
+          "answers": [
+            "the Philippines"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Have you ever been to south of France?",
+          "answers": [
+            "the south of France"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Can you tell me where Regal Cinema is?",
+          "answers": [
+            "the Regal Cinema"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Can you tell me where Bond Street is?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Can you tell me where Museum of Art is?",
+          "answers": [
+            "the Museum of Art"
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "Europe is bigger than Australia.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 10,
+          "prompt": "Belgium is smaller than Netherlands.",
+          "answers": [
+            "Belgium is smaller than the Netherlands."
+          ]
+        },
+        {
+          "num": 11,
+          "prompt": "Which river is longer – Mississippi or Nile?",
+          "answers": [
+            "Which river is longer – the Mississippi or the Nile?"
+          ]
+        },
+        {
+          "num": 12,
+          "prompt": "Did you go to Tretyakov Gallery when you were in Moscow?",
+          "answers": [
+            "the National Gallery"
+          ]
+        },
+        {
+          "num": 13,
+          "prompt": "We stayed at Park Hotel in Hudson Road.",
+          "answers": [
+            "the Park Hotel in Hudson Road"
+          ]
+        },
+        {
+          "num": 14,
+          "prompt": "How far is it from Trafalgar Square to Waterloo Station?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 15,
+          "prompt": "Rocky Mountains are in North America.",
+          "answers": [
+            "The Rocky Mountains are in North America."
+          ]
+        },
+        {
+          "num": 16,
+          "prompt": "Texas is famous for oil and cowboys.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 17,
+          "prompt": "I hope to go to United States next year.",
+          "answers": [
+            "the United States"
+          ]
+        },
+        {
+          "num": 18,
+          "prompt": "Mary comes from west of Ireland.",
+          "answers": [
+            "the west of Ireland"
+          ]
+        },
+        {
+          "num": 19,
+          "prompt": "Alan is a student at Manchester University.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 20,
+          "prompt": "Panama Canal joins Atlantic Ocean and Pacific Ocean.",
+          "answers": [
+            "The Panama Canal joins the Atlantic Ocean and the Pacific Ocean."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "74.3",
+      "type": "write",
+      "instruction": "Переведите предложения на английский язык. (порт = port, курорт = resort)",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Роттердам – это большой порт в Нидерландах.",
+          "answers": [
+            "Rotterdam is a big port in the Netherlands."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "Я хочу сходить в Большой Театр.",
+          "answers": [
+            "I’d like to go to the Bolshoi Theatre.",
+            "I want to go to the Bolshoi Theatre."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Волга – самая длинная река в России?",
+          "answers": [
+            "Is the Volga the longest river in Russia?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "Сочи – это популярный курорт на Чёрном море.",
+          "answers": [
+            "Sochi is a popular resort on the Black Sea."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "Марк из Ричмонда. Это город на севере Англии.",
+          "answers": [
+            "Mark is from Richmond. It’s a town in the north of England."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "Гордон работает в гостинице Гранд в Лондоне.",
+          "answers": [
+            "Gordon works in the Grand Hotel in London.",
+            "Gordon works at the Grand Hotel in London."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "Вы хотите увидеть Лондонский Тауэр?",
+          "answers": [
+            "Would you like to see the Tower of London?",
+            "Do you want to see the Tower of London?"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "Нина хочет жить в Соединённых Штатах и учиться в Гарварде.",
+          "answers": [
+            "Nina wants to live in the United States and study at Harvard."
+          ]
+        }
+      ]
+    }
+  ]
+}

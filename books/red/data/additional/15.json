@@ -1,0 +1,178 @@
+{
+  "id": 15,
+  "topic": "настоящее и прошедшее время",
+  "refs": "Разделы 4–15",
+  "pdfPages": [
+    258
+  ],
+  "exercise": {
+    "id": "15",
+    "type": "fill-in",
+    "instruction": "Заполните пропуски, используя одну из этих форм:",
+    "wordBank": [
+      "present simple (I work/drive и т. д.)",
+      "present continuous (I am working/driving и т. д.)",
+      "past simple (I worked/drove и т. д.)",
+      "past continuous (I was working/driving и т. д.)"
+    ],
+    "example": [
+      1,
+      2
+    ],
+    "items": [
+      {
+        "num": 1,
+        "parts": [
+          "You can turn off the television. I ",
+          " (not/watch) it."
+        ],
+        "answers": [
+          [
+            "’m not watching"
+          ]
+        ]
+      },
+      {
+        "num": 2,
+        "parts": [
+          "Last night Jenny ",
+          " (fall) asleep while she ",
+          " (read)."
+        ],
+        "answers": [
+          [
+            "fell"
+          ],
+          [
+            "was reading"
+          ]
+        ]
+      },
+      {
+        "num": 3,
+        "parts": [
+          "Listen! Somebody ",
+          " (play) the piano."
+        ],
+        "answers": [
+          [
+            "is playing"
+          ]
+        ]
+      },
+      {
+        "num": 4,
+        "parts": [
+          "‘Have you got my key?’ ‘No, I ",
+          " (give) it back to you.’"
+        ],
+        "answers": [
+          [
+            "gave"
+          ]
+        ]
+      },
+      {
+        "num": 5,
+        "parts": [
+          "David is very lazy. He ",
+          " (not/like) hard work."
+        ],
+        "answers": [
+          [
+            "doesn’t like"
+          ]
+        ]
+      },
+      {
+        "num": 6,
+        "parts": [
+          "Where ",
+          " (your parents / go) for their holidays last year?"
+        ],
+        "answers": [
+          [
+            "did your parents go"
+          ]
+        ]
+      },
+      {
+        "num": 7,
+        "parts": [
+          "I ",
+          " (see) Laura yesterday. She ",
+          " (drive) her new car."
+        ],
+        "answers": [
+          [
+            "saw"
+          ],
+          [
+            "was driving"
+          ]
+        ]
+      },
+      {
+        "num": 8,
+        "parts": [
+          "A: ",
+          " (you/watch) TV much? B: No, I haven’t got a TV."
+        ],
+        "answers": [
+          [
+            "Do you watch"
+          ]
+        ]
+      },
+      {
+        "num": 9,
+        "parts": [
+          "A: What ",
+          " (you/do) at 6 o’clock last Sunday morning? B: I was in bed asleep."
+        ],
+        "answers": [
+          [
+            "were you doing"
+          ]
+        ]
+      },
+      {
+        "num": 10,
+        "parts": [
+          "Andy isn’t at home very much. He ",
+          " (go) away a lot."
+        ],
+        "answers": [
+          [
+            "goes"
+          ]
+        ]
+      },
+      {
+        "num": 11,
+        "parts": [
+          "I ",
+          " (try) to find a job at the moment. It’s not easy."
+        ],
+        "answers": [
+          [
+            "’m trying",
+            "am trying"
+          ]
+        ]
+      },
+      {
+        "num": 12,
+        "parts": [
+          "I’m tired this morning. I ",
+          " (not/sleep) very well last night."
+        ],
+        "answers": [
+          [
+            "didn’t sleep"
+          ]
+        ]
+      }
+    ]
+  }
+}

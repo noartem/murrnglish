@@ -1,0 +1,154 @@
+{
+ "id": 2,
+ "topic": "am/is/are",
+ "refs": "Разделы 1–3",
+ "pdfPages": [
+  253
+ ],
+ "exercise": {
+  "id": "2",
+  "type": "fill-in",
+  "instruction": "Заполните пропуски.",
+  "items": [
+   {
+    "num": 1,
+    "parts": [
+     "‘Are you hungry?’ ‘No, ",
+     " thirsty.’"
+    ],
+    "answers": [
+     [
+      "I’m"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 2,
+    "parts": [
+     "‘",
+     " your parents?’ ‘They’re fine.’"
+    ],
+    "answers": [
+     [
+      "How are"
+     ]
+    ],
+    "example": true
+   },
+   {
+    "num": 3,
+    "parts": [
+     "‘Is Anna at home?’ ‘No, ",
+     " at work.’"
+    ],
+    "answers": [
+     [
+      "she’s",
+      "she is"
+     ]
+    ]
+   },
+   {
+    "num": 4,
+    "parts": [
+     "",
+     " my keys? ‘On your desk.’"
+    ],
+    "answers": [
+     [
+      "Where are"
+     ]
+    ]
+   },
+   {
+    "num": 5,
+    "parts": [
+     "Where is Paul from? ",
+     " American or British?"
+    ],
+    "answers": [
+     [
+      "Is he"
+     ]
+    ]
+   },
+   {
+    "num": 6,
+    "parts": [
+     "",
+     " very hot today. The temperature is 38 degrees."
+    ],
+    "answers": [
+     [
+      "It’s",
+      "It is"
+     ]
+    ]
+   },
+   {
+    "num": 7,
+    "parts": [
+     "‘Are you a teacher?’ ‘No, ",
+     " a student.’"
+    ],
+    "answers": [
+     [
+      "I’m",
+      "I am",
+      "No, I’m not. I’m a student."
+     ]
+    ]
+   },
+   {
+    "num": 8,
+    "parts": [
+     "",
+     " your umbrella? ‘Green.’"
+    ],
+    "answers": [
+     [
+      "What colour is"
+     ]
+    ]
+   },
+   {
+    "num": 9,
+    "parts": [
+     "Where’s your car? ",
+     " in the car park?"
+    ],
+    "answers": [
+     [
+      "Is it"
+     ]
+    ]
+   },
+   {
+    "num": 10,
+    "parts": [
+     "",
+     " tired? ‘No, I’m fine.’"
+    ],
+    "answers": [
+     [
+      "Are you"
+     ]
+    ]
+   },
+   {
+    "num": 11,
+    "parts": [
+     "‘These shoes are nice. How ",
+     "?’ ‘Sixty pounds.’"
+    ],
+    "answers": [
+     [
+      "much are they?",
+      "How much are they?"
+     ]
+    ]
+   }
+  ]
+ }
+}

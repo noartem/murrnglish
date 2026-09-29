@@ -1,0 +1,400 @@
+{
+ "unit": 18,
+ "title": "Have you ever … ? (present perfect 3)",
+ "pdfPages": [
+  47,
+  48
+ ],
+ "exercises": [
+  {
+   "id": "18.1",
+   "type": "write",
+   "instruction": "Задайте Хелен вопросы, начиная с Have you ever … ?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(be / London?)",
+     "answers": [
+      "Have you ever been to London?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(play / golf?)",
+     "answers": [
+      "Have you ever played golf?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(be / Australia?)",
+     "answers": [
+      "Have you ever been to Australia?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(lose / your passport?)",
+     "answers": [
+      "Have you ever lost your passport?"
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(fly / in a helicopter?)",
+     "answers": [
+      "Have you ever flown in a helicopter?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(win / a race?)",
+     "answers": [
+      "Have you ever won a race?"
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(be / New York?)",
+     "answers": [
+      "Have you ever been to New York?"
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(drive / a bus?)",
+     "answers": [
+      "Have you ever driven a bus?"
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(break / your leg?)",
+     "answers": [
+      "Have you ever broken your leg?"
+     ]
+    }
+   ],
+   "example": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "18.2",
+   "type": "write",
+   "instruction": "Напишите предложения о Хелен. Используйте информацию из упражнения 18.1. Теперь напишите о себе. Сколько раз в своей жизни вы это делали?",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(be / New York)",
+     "answers": [
+      "She’s been to New York twice."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(be / Australia)",
+     "answers": [
+      "She’s been to Australia once.",
+      "She has been to Australia once."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(win / a race)",
+     "answers": [
+      "She’s never won a race.",
+      "She has never won a race."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(fly / in a helicopter)",
+     "answers": [
+      "She’s flown in a helicopter a few times.",
+      "She has flown in a helicopter a few times."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(be / New York)",
+     "modelAnswers": [
+      "I’ve never been to New York.",
+      "I have never been to New York."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(play / tennis)",
+     "modelAnswers": [
+      "I’ve played tennis many times.",
+      "I have played tennis many times."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(drive / a lorry)",
+     "modelAnswers": [
+      "I’ve never driven a lorry.",
+      "I have never driven a lorry."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(be / late for work or school)",
+     "modelAnswers": [
+      "I’ve been late for work a few times.",
+      "I have been late for work a few times."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "18.3",
+   "type": "write",
+   "instruction": "Мэри 65 лет. Она прожила интересную жизнь. Напишите, что она сделала.",
+   "wordBank": [
+    "have",
+    "be",
+    "do",
+    "write",
+    "travel",
+    "meet",
+    "all over the world",
+    "a lot of interesting things",
+    "many different jobs",
+    "a lot of interesting people",
+    "ten books",
+    "married three times"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "She has had many different jobs."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "She",
+     "answers": [
+      "She’s done a lot of interesting things.",
+      "She has done a lot of interesting things."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "She’s travelled all over the world.",
+      "She has travelled all over the world.",
+      "She’s been all over the world.",
+      "She has been all over the world."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "She’s been married three times.",
+      "She has been married three times."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "She’s written ten books.",
+      "She has written ten books."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "She’s met a lot of interesting people.",
+      "She has met a lot of interesting people."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "18.4",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя gone или been.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Ben is on holiday at the moment. He’s ",
+      " to Spain."
+     ],
+     "answers": [
+      [
+       "gone"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "‘Have you ever ",
+      " to Mexico?’ ‘No, never.’"
+     ],
+     "answers": [
+      [
+       "been"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "My parents aren’t at home at the moment. They’ve ",
+      " out."
+     ],
+     "answers": [
+      [
+       "gone"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "There’s a new restaurant in town. Have you ",
+      " to it?"
+     ],
+     "answers": [
+      [
+       "been"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Rebecca loves Paris. She’s ",
+      " there many times."
+     ],
+     "answers": [
+      [
+       "been"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Helen was here earlier, but I think she’s ",
+      " now."
+     ],
+     "answers": [
+      [
+       "gone"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "‘Where’s Jessica?’ ‘She’s not in the office. I think she’s ",
+      " home.’"
+     ],
+     "answers": [
+      [
+       "gone"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Hello, Sue. I was looking for you. Where have you ",
+      " ?"
+     ],
+     "answers": [
+      [
+       "been"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "18.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя has/haven’t и т. д. [слон = elephant; женат = married; пища = food]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Вы когда-нибудь были в Бразилии?",
+     "answers": [
+      "Have you ever been to Brazil?"
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я никогда не видела слона.",
+     "answers": [
+      "I’ve never seen an elephant.",
+      "I have never seen an elephant."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Марк никогда не был женат.",
+     "answers": [
+      "Mark has never been married."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Мои родители были в Италии четыре раза.",
+     "answers": [
+      "My parents have been to Italy four times."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Ты когда-нибудь ела индийскую пищу?",
+     "answers": [
+      "Have you ever eaten Indian food?"
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Виктор написал шесть книг.",
+     "answers": [
+      "Victor has written six books."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Куда ушла Салли? Я не могу её найти.",
+     "answers": [
+      "Where has Sally gone? I can’t find her.",
+      "Where has Sally gone? I cannot find her."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Сколько раз ты смотрел этот фильм?",
+     "answers": [
+      "How many times have you seen this film?",
+      "How many times have you watched this film?"
+     ]
+    }
+   ]
+  }
+ ]
+}

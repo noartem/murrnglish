@@ -1,0 +1,693 @@
+{
+ "unit": 12,
+ "title": "worked/got/went и т. д. (past simple)",
+ "pdfPages": [
+  35,
+  36
+ ],
+ "exercises": [
+  {
+   "id": "12.1",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя глаголы из рамки.",
+   "wordBank": [
+    "clean",
+    "die",
+    "enjoy",
+    "finish",
+    "happen",
+    "open",
+    "rain",
+    "start",
+    "stay",
+    "want"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I ",
+      " my teeth three times yesterday."
+     ],
+     "answers": [
+      [
+       "cleaned"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "It was hot in the room, so I ",
+      " the window."
+     ],
+     "answers": [
+      [
+       "opened"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "The film was very long. It ",
+      " at 7.15 and ",
+      " at 10 o’clock."
+     ],
+     "answers": [
+      [
+       "started"
+      ],
+      [
+       "finished"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "When I was a child, I ",
+      " to be a doctor."
+     ],
+     "answers": [
+      [
+       "wanted"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "The accident ",
+      " last Sunday afternoon."
+     ],
+     "answers": [
+      [
+       "happened"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "The weather is nice today, but yesterday it ",
+      " all day."
+     ],
+     "answers": [
+      [
+       "rained"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "We ",
+      " our holiday last year. We ",
+      " at a very nice place."
+     ],
+     "answers": [
+      [
+       "enjoyed"
+      ],
+      [
+       "stayed"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Anna’s grandfather ",
+      " when he was 90 years old."
+     ],
+     "answers": [
+      [
+       "died"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12.2",
+   "type": "fill-in",
+   "instruction": "Напишите форму past simple этих глаголов.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "get ",
+      ""
+     ],
+     "answers": [
+      [
+       "got"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "see ",
+      ""
+     ],
+     "answers": [
+      [
+       "saw"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "play ",
+      ""
+     ],
+     "answers": [
+      [
+       "played"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "pay ",
+      ""
+     ],
+     "answers": [
+      [
+       "paid"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "visit ",
+      ""
+     ],
+     "answers": [
+      [
+       "visited"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "buy ",
+      ""
+     ],
+     "answers": [
+      [
+       "bought"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "go ",
+      ""
+     ],
+     "answers": [
+      [
+       "went"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "think ",
+      ""
+     ],
+     "answers": [
+      [
+       "thought"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "copy ",
+      ""
+     ],
+     "answers": [
+      [
+       "copied"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "know ",
+      ""
+     ],
+     "answers": [
+      [
+       "knew"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "put ",
+      ""
+     ],
+     "answers": [
+      [
+       "put"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "speak ",
+      ""
+     ],
+     "answers": [
+      [
+       "spoke"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12.3",
+   "type": "fill-in",
+   "instruction": "Прочитайте о поездке Лизы в Мадрид. Поставьте глаголы в правильную форму.",
+   "wordBank": [
+    "fly, get",
+    "have",
+    "leave, drive",
+    "get, park, walk",
+    "check, have",
+    "wait, depart",
+    "arrive, take"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Last Tuesday Lisa ",
+      " from London to Madrid. She "
+     ],
+     "answers": [
+      [
+       "flew"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "",
+      " up at 6 o’clock in the morning and "
+     ],
+     "answers": [
+      [
+       "got"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "",
+      " a cup of coffee. At 6.30 she "
+     ],
+     "answers": [
+      [
+       "had"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "",
+      " home and "
+     ],
+     "answers": [
+      [
+       "left"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "",
+      " to the airport. When she "
+     ],
+     "answers": [
+      [
+       "drove"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " there, she "
+     ],
+     "answers": [
+      [
+       "got"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "",
+      " the car, "
+     ],
+     "answers": [
+      [
+       "parked"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "",
+      " to the airport building, and "
+     ],
+     "answers": [
+      [
+       "walked"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "",
+      " in. Then she "
+     ],
+     "answers": [
+      [
+       "checked"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "",
+      " breakfast at a cafe and "
+     ],
+     "answers": [
+      [
+       "had"
+      ]
+     ]
+    },
+    {
+     "num": 11,
+     "parts": [
+      "",
+      " for her flight. The plane "
+     ],
+     "answers": [
+      [
+       "waited"
+      ]
+     ]
+    },
+    {
+     "num": 12,
+     "parts": [
+      "",
+      " on time and "
+     ],
+     "answers": [
+      [
+       "departed"
+      ]
+     ]
+    },
+    {
+     "num": 13,
+     "parts": [
+      "",
+      " in Madrid two hours later. Finally she "
+     ],
+     "answers": [
+      [
+       "arrived"
+      ]
+     ]
+    },
+    {
+     "num": 14,
+     "parts": [
+      "",
+      " a taxi from the airport to her hotel in the centre of Madrid."
+     ],
+     "answers": [
+      [
+       "took"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12.4",
+   "type": "fill-in",
+   "instruction": "Напишите предложения о действиях в прошлом (yesterday / last week и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "James always goes to work by car. Yesterday ",
+      ""
+     ],
+     "answers": [
+      [
+       "he went to work by car."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "Rachel often loses her keys. She ",
+      " last week."
+     ],
+     "answers": [
+      [
+       "lost her keys"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Kate meets her friends every evening. She ",
+      " yesterday evening."
+     ],
+     "answers": [
+      [
+       "met her friends"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I buy a newspaper every day. Yesterday I ",
+      ""
+     ],
+     "answers": [
+      [
+       "bought a newspaper"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "We often go to the cinema at weekends. Last Sunday we ",
+      ""
+     ],
+     "answers": [
+      [
+       "went to the cinema"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I eat an orange every day. Yesterday I ",
+      ""
+     ],
+     "answers": [
+      [
+       "ate an orange"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Tom always has a shower in the morning. This morning he ",
+      ""
+     ],
+     "answers": [
+      [
+       "had a shower"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "Our friends often come to see us. They ",
+      " last Friday."
+     ],
+     "answers": [
+      [
+       "came to see us",
+       "came"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12.5",
+   "type": "self-check",
+   "instruction": "Напишите предложения о том, что вы делали вчера.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "modelAnswers": [
+      "I went to the theatre."
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "modelAnswers": [
+      "I got up late yesterday."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "modelAnswers": [
+      "I met some friends at lunchtime."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "modelAnswers": [
+      "I went to the supermarket."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "modelAnswers": [
+      "I phoned a lot of people."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "modelAnswers": [
+      "I lost my keys."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "12.6",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык. (весь день = all day; навестить = visit; на выходных = at the weekend; мотоцикл = motorbike)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Вчера я работал весь день.",
+     "answers": [
+      "I worked all day yesterday.",
+      "Yesterday I worked all day."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я начал работать в 9:00, а закончил в 7:00.",
+     "answers": [
+      "I started to work at 9 o’clock and finished at 7 o’clock.",
+      "I started work at 9 o’clock and finished at 7 o’clock.",
+      "I started to work at 9 and finished at 7.",
+      "I started work at 9 and finished at 7.",
+      "I started to work at 9 o’clock and I finished at 7 o’clock.",
+      "I started work at 9 o’clock and I finished at 7 o’clock."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "В прошлом году Саша ездила в Париж.",
+     "answers": [
+      "Sasha went to Paris last year.",
+      "Last year Sasha went to Paris."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Вчера вечером мы играли в теннис.",
+     "answers": [
+      "We played tennis yesterday evening.",
+      "Yesterday evening we played tennis."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "На прошлой неделе меня навестили мои друзья.",
+     "answers": [
+      "My friends visited me last week.",
+      "Last week my friends visited me."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "На выходных я прочитала очень интересную книгу.",
+     "answers": [
+      "I read a very interesting book at the weekend.",
+      "At the weekend I read a very interesting book."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Борис купил мотоцикл, когда ему было 17 лет.",
+     "answers": [
+      "Boris bought a motorbike when he was 17 years old.",
+      "Boris bought a motorbike when he was 17."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,596 @@
+{
+ "unit": 1,
+ "title": "am/is/are",
+ "pdfPages": [
+  13,
+  14
+ ],
+ "exercises": [
+  {
+   "id": "1.1",
+   "type": "fill-in",
+   "instruction": "Напишите краткую форму (she’s / we aren’t и т. д.).",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "she is ",
+      ""
+     ],
+     "answers": [
+      [
+       "she’s"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "they are ",
+      ""
+     ],
+     "answers": [
+      [
+       "they’re"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "it is not ",
+      ""
+     ],
+     "answers": [
+      [
+       "it isn’t",
+       "it’s not"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "that is ",
+      ""
+     ],
+     "answers": [
+      [
+       "that’s"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I am not ",
+      ""
+     ],
+     "answers": [
+      [
+       "I’m not"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "you are not ",
+      ""
+     ],
+     "answers": [
+      [
+       "you aren’t",
+       "you’re not"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "fill-in",
+   "instruction": "Вставьте am, is или are.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "The weather ",
+      " nice today."
+     ],
+     "answers": [
+      [
+       "is"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I ",
+      " not rich."
+     ],
+     "answers": [
+      [
+       "’m",
+       "am"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "This bag ",
+      " heavy."
+     ],
+     "answers": [
+      [
+       "is"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "These bags ",
+      " heavy."
+     ],
+     "answers": [
+      [
+       "are"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Look! There ",
+      " Helen."
+     ],
+     "answers": [
+      [
+       "’s",
+       "is"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "My brother and I ",
+      " good tennis players."
+     ],
+     "answers": [
+      [
+       "are"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "Emily ",
+      " at home. Her children ",
+      " at school."
+     ],
+     "answers": [
+      [
+       "is"
+      ],
+      [
+       "are"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "I ",
+      " a taxi driver. My sister ",
+      " a nurse."
+     ],
+     "answers": [
+      [
+       "’m",
+       "am"
+      ],
+      [
+       "is"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "Steve is ill. ",
+      " in bed."
+     ],
+     "answers": [
+      [
+       "He’s"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "I’m not hungry, but ",
+      " thirsty."
+     ],
+     "answers": [
+      [
+       "I’m",
+       "I am"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "Mr Thomas is a very old man. ",
+      " 98."
+     ],
+     "answers": [
+      [
+       "He’s",
+       "He is"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "These chairs aren’t beautiful, but ",
+      " comfortable."
+     ],
+     "answers": [
+      [
+       "they’re",
+       "they are"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Elena is Russian. ",
+      " from Moscow."
+     ],
+     "answers": [
+      [
+       "She’s",
+       "She is"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "Catherine isn’t at home. ",
+      " at work."
+     ],
+     "answers": [
+      [
+       "She’s",
+       "She is"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "A: ",
+      " your coat.\nB: Oh, thank you very much."
+     ],
+     "answers": [
+      [
+       "Here’s",
+       "Here is"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "self-check",
+   "instruction": "Прочитайте информацию о Лизе в разделе 1A. Теперь напишите о себе.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(name?) My",
+     "modelAnswers": [
+      "My name is Robert."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(age?) I",
+     "modelAnswers": [
+      "I’m 25."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(from?) I",
+     "modelAnswers": [
+      "I’m from Australia."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(job?) I",
+     "modelAnswers": [
+      "I’m a gardener."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(favourite colour?)\nMy",
+     "modelAnswers": [
+      "My favourite colours are black and white."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(favourite sports?)\nMy",
+     "modelAnswers": [
+      "My favourite sport is tennis."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "write",
+   "instruction": "Посмотрите на картинки. Напишите об этих людях, используя слова из рамки:",
+   "wordBank": [
+    "angry",
+    "happy",
+    "hungry",
+    "sad",
+    "strong",
+    "-thirsty"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "prompt": "",
+     "answers": [
+      "She’s thirsty."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "",
+     "answers": [
+      "They’re hungry.",
+      "They are hungry."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "",
+     "answers": [
+      "He’s strong.",
+      "He is strong."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "",
+     "answers": [
+      "She’s happy.",
+      "She is happy."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "",
+     "answers": [
+      "He’s sad.",
+      "He is sad."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "",
+     "answers": [
+      "She’s angry.",
+      "She is angry."
+     ]
+    }
+   ],
+   "example": [
+    1
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "write",
+   "instruction": "Напишите правдивые предложения (утвердительные или отрицательные). Используйте is/isn’t или are/aren’t.\nНапишите правдивые предложения о себе. Используйте I’m / I’m not.",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "(it / early)",
+     "answers": [
+      "It isn’t early.",
+      "It’s early."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "(my hands / cold)",
+     "answers": [
+      "My hands are cold.",
+      "My hands aren’t cold.",
+      "My hands are not cold."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "(Brazil / a very big country)",
+     "answers": [
+      "Brazil is a very big country."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "(diamonds / cheap)",
+     "answers": [
+      "Diamonds aren’t cheap.",
+      "Diamonds are not cheap."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "(Minsk / in Russia)",
+     "answers": [
+      "Minsk isn’t in Russia.",
+      "Minsk is not in Russia."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "(tall)",
+     "answers": [
+      "I’m tall.",
+      "I’m not tall."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "(hungry)",
+     "answers": [
+      "I’m hungry.",
+      "I am hungry.",
+      "I’m not hungry.",
+      "I am not hungry."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "(a good swimmer)",
+     "answers": [
+      "I’m a good swimmer.",
+      "I am a good swimmer.",
+      "I’m not a good swimmer.",
+      "I am not a good swimmer."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "(a good dancer)",
+     "answers": [
+      "I’m a good dancer.",
+      "I am a good dancer.",
+      "I’m not a good dancer.",
+      "I am not a good dancer."
+     ]
+    }
+   ],
+   "example": [
+    1,
+    6
+   ]
+  },
+  {
+   "id": "1.7",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык.\n[канадец = Canadian\nпаспорт = passport\nСмотри! = Look!\nочки = glasses]",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Анна – студентка.",
+     "answers": [
+      "Anna is a student."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Том и Ирина – учителя.",
+     "answers": [
+      "Tom and Irina are teachers."
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Линде 18 лет.",
+     "answers": [
+      "Linda is 18.",
+      "Linda is 18 years old."
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Бен не американец. Он канадец.",
+     "answers": [
+      "Ben isn’t American. He’s Canadian.",
+      "Ben isn’t American. He is Canadian.",
+      "Ben is not American. He’s Canadian.",
+      "Ben is not American. He is Canadian."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Вот Ваш паспорт.",
+     "answers": [
+      "Here’s your passport.",
+      "Here is your passport."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Мой любимый цвет – зелёный.",
+     "answers": [
+      "My favourite colour is green."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Смотри! Вот Бен.",
+     "answers": [
+      "Look! Here’s Ben.",
+      "Look! Here is Ben.",
+      "There’s Ben.",
+      "There is Ben."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Сейчас не поздно.",
+     "answers": [
+      "It’s not late.",
+      "it isn’t late.",
+      "It is not late."
+     ]
+    },
+    {
+     "num": 9,
+     "prompt": "Мои очки на столе.",
+     "answers": [
+      "My glasses are on the table."
+     ]
+    },
+    {
+     "num": 10,
+     "prompt": "Я из Москвы.",
+     "answers": [
+      "I’m from Moscow.",
+      "I am from Moscow."
+     ]
+    }
+   ]
+  }
+ ]
+}

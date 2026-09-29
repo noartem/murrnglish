@@ -1,0 +1,510 @@
+{
+ "unit": 115,
+ "title": "put on your shoes · put your shoes on (phrasal verbs 2)",
+ "pdfPages": [
+  241,
+  242
+ ],
+ "exercises": [
+  {
+   "id": "115.1",
+   "type": "fill-in",
+   "instruction": "Посмотрите на картинки. Что сделали эти люди?",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "He ",
+      "."
+     ],
+     "answers": [
+      [
+       "turned on the light"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "She ",
+      "."
+     ],
+     "answers": [
+      [
+       "took off her hat",
+       "took her hat off"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "He ",
+      "."
+     ],
+     "answers": [
+      [
+       "put down his bag",
+       "put his bag down"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "She ",
+      "."
+     ],
+     "answers": [
+      [
+       "picked up the magazine",
+       "picked the magazine up"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "He ",
+      "."
+     ],
+     "answers": [
+      [
+       "put on his sunglasses",
+       "put his sunglasses on"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "She ",
+      "."
+     ],
+     "answers": [
+      [
+       "turned off the tap",
+       "turned the tap off"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115.2",
+   "type": "fill-in",
+   "instruction": "Эти предложения можно составить тремя различными способами. Заполните таблицу.",
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I turned on the radio. ",
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "I turned the radio on."
+      ],
+      [
+       "I turned it on."
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "He put on his jacket. He ",
+      " He ",
+      ""
+     ],
+     "answers": [
+      [
+       "put his jacket on.",
+       "put his jacket on"
+      ],
+      [
+       "put it on.",
+       "put it on"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "She ",
+      " She took her glasses off. ",
+      ""
+     ],
+     "answers": [
+      [
+       "took off her glasses.",
+       "took off her glasses"
+      ],
+      [
+       "She took them off.",
+       "She took them off"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "I picked up the phone. ",
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "I picked the phone up.",
+       "I picked the phone up"
+      ],
+      [
+       "I picked it up.",
+       "I picked it up"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "They gave back the key. ",
+      "",
+      ""
+     ],
+     "answers": [
+      [
+       "They gave the key back.",
+       "They gave the key back"
+      ],
+      [
+       "They gave it back.",
+       "They gave it back"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "",
+      " We turned the lights off. ",
+      ""
+     ],
+     "answers": [
+      [
+       "We turned off the lights.",
+       "We turned off the lights"
+      ],
+      [
+       "We turned them off.",
+       "We turned them off"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115.3",
+   "type": "fill-in",
+   "instruction": "Заполните пропуски, используя глаголы из рамки + it / them.",
+   "wordBank": [
+    "bring back",
+    "pick up",
+    "switch off",
+    "take back",
+    "turn on"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "I wanted to watch something on TV, so I ",
+      "."
+     ],
+     "answers": [
+      [
+       "turned it on"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "My new lamp doesn’t work. I’m going to ",
+      " to the shop."
+     ],
+     "answers": [
+      [
+       "take it back"
+      ]
+     ]
+    },
+    {
+     "num": 3,
+     "parts": [
+      "There were some gloves on the floor, so I ",
+      " and put them on the table."
+     ],
+     "answers": [
+      [
+       "picked them up"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "The heating was on but it was too warm, so I ",
+      "."
+     ],
+     "answers": [
+      [
+       "switched it off"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "Thank you for lending me these books. I won’t forget to ",
+      "."
+     ],
+     "answers": [
+      [
+       "bring them back"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115.4",
+   "type": "fill-in",
+   "instruction": "Перед тем как выполнить упражнение, изучите глаголы в Приложении 7 (страница 251). Заполните пропуски, используя глаголы из рамки. Где необходимо, также используйте it/them/me.",
+   "wordBank": [
+    "fill in",
+    "knock down",
+    "look up",
+    "show round",
+    "turn down",
+    "give up",
+    "knock over",
+    "put out",
+    "throw away",
+    "try on"
+   ],
+   "items": [
+    {
+     "num": 1,
+     "parts": [
+      "They ",
+      " a lot of houses ",
+      " when they built the new road."
+     ],
+     "answers": [
+      [
+       "knocked"
+      ],
+      [
+       "down"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 2,
+     "parts": [
+      "That music is very loud. Can you ",
+      "?"
+     ],
+     "answers": [
+      [
+       "turn it down"
+      ]
+     ],
+     "example": true
+    },
+    {
+     "num": 3,
+     "parts": [
+      "I ",
+      " a glass and broke it."
+     ],
+     "answers": [
+      [
+       "knocked over"
+      ]
+     ]
+    },
+    {
+     "num": 4,
+     "parts": [
+      "‘What does this word mean?’ ‘Why don’t you ",
+      " ?’"
+     ],
+     "answers": [
+      [
+       "look it up"
+      ]
+     ]
+    },
+    {
+     "num": 5,
+     "parts": [
+      "I want to keep these magazines. Please don’t ",
+      "."
+     ],
+     "answers": [
+      [
+       "throw them away"
+      ]
+     ]
+    },
+    {
+     "num": 6,
+     "parts": [
+      "I ",
+      " a pair of shoes in the shop, but I didn’t buy them."
+     ],
+     "answers": [
+      [
+       "tried on"
+      ]
+     ]
+    },
+    {
+     "num": 7,
+     "parts": [
+      "I visited a school last week. One of the teachers ",
+      "."
+     ],
+     "answers": [
+      [
+       "showed me round"
+      ]
+     ]
+    },
+    {
+     "num": 8,
+     "parts": [
+      "‘Do you play the piano?’ ‘No, I started to learn, but I ",
+      " after a month.’"
+     ],
+     "answers": [
+      [
+       "gave it up",
+       "gave up"
+      ]
+     ]
+    },
+    {
+     "num": 9,
+     "parts": [
+      "Somebody gave me a form and told me to ",
+      "."
+     ],
+     "answers": [
+      [
+       "fill it in"
+      ]
+     ]
+    },
+    {
+     "num": 10,
+     "parts": [
+      "Smoking isn’t allowed here. Please ",
+      " your cigarette ",
+      "."
+     ],
+     "answers": [
+      [
+       "put"
+      ],
+      [
+       "out"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "115.5",
+   "type": "write",
+   "instruction": "Переведите предложения на английский язык, используя выражения на странице слева. (обувь = shoes, уронить = drop, фотоаппарат = camera)",
+   "items": [
+    {
+     "num": 1,
+     "prompt": "Снимайте обувь и заходите.",
+     "answers": [
+      "Take your shoes off and come in.",
+      "Take off your shoes and come in."
+     ]
+    },
+    {
+     "num": 2,
+     "prompt": "Я уронил свою ручку. Ты можешь её поднять?",
+     "answers": [
+      "I dropped my pen. Can you pick it up?",
+      "I dropped my pen. Can you pick it up for me?",
+      "I have dropped my pen. Can you pick it up?",
+      "I have dropped my pen. Can you pick it up for me?"
+     ]
+    },
+    {
+     "num": 3,
+     "prompt": "Извините. Где я могу примерить это платье?",
+     "answers": [
+      "Excuse me. Where can I try on this dress?",
+      "Excuse me. Where can I try this dress on?"
+     ]
+    },
+    {
+     "num": 4,
+     "prompt": "Я могу дать тебе свой фотоаппарат, но, пожалуйста, отдай его мне обратно завтра.",
+     "answers": [
+      "I can give you my camera, but please give it back to me tomorrow.",
+      "I can give you my camera, but please bring it back to me tomorrow."
+     ]
+    },
+    {
+     "num": 5,
+     "prompt": "Мне нужно отнести эти книги обратно в библиотеку.",
+     "answers": [
+      "I need to take these books back to the library.",
+      "I have to take these books back to the library."
+     ]
+    },
+    {
+     "num": 6,
+     "prompt": "Было тёмно, когда я пришёл домой, поэтому я включил свет.",
+     "answers": [
+      "It was dark when I came home, so I turned the light on.",
+      "It was dark when I came home, so I switched the light on.",
+      "It was dark when I came home, so I turned on the light.",
+      "It was dark when I came home, so I switched on the light."
+     ]
+    },
+    {
+     "num": 7,
+     "prompt": "Ваша сумка тяжёлая? Вы можете поставить её сюда.",
+     "answers": [
+      "Is your bag heavy? You can put it down here."
+     ]
+    },
+    {
+     "num": 8,
+     "prompt": "Ты можешь выкинуть этот зонт. Он сломан.",
+     "answers": [
+      "You can throw away this umbrella. It’s broken.",
+      "You can throw away this umbrella. It is broken.",
+      "You can throw this umbrella away. It’s broken.",
+      "You can throw this umbrella away. It is broken."
+     ]
+    }
+   ]
+  }
+ ]
+}

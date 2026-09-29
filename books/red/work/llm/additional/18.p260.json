@@ -1,0 +1,75 @@
+{
+ "id": 18,
+ "topic": "present perfect",
+ "refs": "Разделы 16–20",
+ "pdfPages": [
+  260
+ ],
+ "exercise": {
+  "id": "18",
+  "type": "self-check",
+  "instruction": "Закончите предложения. Напишите о себе.",
+  "example": [
+   1,
+   2
+  ],
+  "items": [
+   {
+    "num": 1,
+    "prompt": "I’ve never …",
+    "modelAnswers": [
+     "ridden a horse."
+    ]
+   },
+   {
+    "num": 2,
+    "prompt": "I’ve … many times.",
+    "modelAnswers": [
+     "been to London"
+    ]
+   },
+   {
+    "num": 3,
+    "prompt": "I’ve just …",
+    "modelAnswers": [
+     "I’ve just started this exercise."
+    ]
+   },
+   {
+    "num": 4,
+    "prompt": "I’ve … (once / twice / a few times / many times)",
+    "modelAnswers": [
+     "I’ve met Sarah a few times."
+    ]
+   },
+   {
+    "num": 5,
+    "prompt": "I haven’t … yet.",
+    "modelAnswers": [
+     "I haven’t had lunch yet."
+    ]
+   },
+   {
+    "num": 6,
+    "prompt": "I’ve never …",
+    "modelAnswers": [
+     "I’ve never been to Australia."
+    ]
+   },
+   {
+    "num": 7,
+    "prompt": "I’ve … since …",
+    "modelAnswers": [
+     "I’ve lived here since I was born."
+    ]
+   },
+   {
+    "num": 8,
+    "prompt": "I’ve … for …",
+    "modelAnswers": [
+     "I’ve lived here for three years."
+    ]
+   }
+  ]
+ }
+}
