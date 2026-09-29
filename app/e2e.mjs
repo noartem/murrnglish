@@ -197,9 +197,19 @@ ok("F8 backdrop closes drawer", (await mp.locator(".sidebar.mobile-open").count(
 await mp.locator(".sidebartoggle").click();
 await mp.locator('.sidebar .unitlink:has-text("2")').first().click();
 await sleep(600);
+
 ok("F8 drawer closes on nav", (await mp.locator(".sidebar.mobile-open").count()) === 0);
 await mp.waitForSelector(".rightpane .exercise textarea", { timeout: 30000 });
 ok("F8 navigated to unit 2", /#u2/.test(mp.url()));
+
+// drawer: the topbar title also closes the drawer (goes home from there)
+await mp.locator(".sidebartoggle").click();
+await sleep(300);
+ok("F8 drawer reopens", (await mp.locator(".sidebar.mobile-open").count()) === 1);
+await mp.locator(".topbar-home").click();
+await sleep(300);
+ok("F8 topbar title closes drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
+ok("F8 topbar title goes home", /#home/.test(mp.url()));
 
 // pinch zoom: synthetic two-finger gesture changes the zoom label
 const z00 = await mp.locator(".zoomlabel").textContent();
