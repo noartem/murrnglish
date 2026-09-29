@@ -115,6 +115,14 @@ open book by itself unless that book was removed by hand.
 
 ## Deploy
 
-Pushes to `main` validate, test, build and — once the `DEPLOY_SSH_KEY`
-secret exists — publish `dist/` with `scripts/deploy.sh` (host, user, path
-and URL at the top of the script, overridable through `DEPLOY_*` env).
+`murrnglish.noartem.ru`, the same scheme as the old book sites: Cloudflare in
+front, Caddy on the VPS serving `/srv/murrnglish/http`, owned by the
+`mg-deploy` user that CI logs in as.
+
+Pushes to `main` validate, test and build; once the `DEPLOY_SSH_KEY` secret
+exists they also publish `dist/` with `scripts/deploy.sh` (target at the top,
+overridable through `DEPLOY_*` env).
+
+One-time server setup (deploy user, site root, Caddy block) is
+`scripts/setup-vps.sh`, run with an admin account — see its header for the
+command and the secret.
