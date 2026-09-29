@@ -23,10 +23,20 @@ export function ShortcutsHelpButton({ onOpen }: { onOpen: () => void }) {
 
 export function ShortcutsModal({ onClose }: { onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
+  // Focus the scroll container, not the close button: the browser's default
+  // action for arrows/PgUp/PgDn/Home/End then scrolls it (same model as the
+  // focused .pageviewer pane), and the central dispatcher deliberately
+  // doesn't preventDefault those keys while the help is open.
   useEffect(() => {
-    closeRef.current?.focus();
+    const vp = document.querySelector<HTMLElement>(
+      ".helpcard [data-overlayscrollbars-viewport]",
+    );
+    if (vp) {
+      vp.focus({ preventScroll: true });
+    } else {
+      closeRef.current?.focus();
+    }
   }, []);
-  // divider fade: shows once the body has scrolled away from the top
   const [scrolled, setScrolled] = useState(false);
   return (
     <div className="helpoverlay" onClick={onClose}>
