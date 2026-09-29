@@ -1,29 +1,32 @@
-# CI/CD: data validation, unit tests, build, then publish app/dist to the VPS.
+# CI/CD: every book's data validation, unit tests, build, then publish
+# app/dist to the VPS.
 #
-# Requires repo secret DEPLOY_SSH_KEY — the private ed25519 deploy key whose
-# public part is installed for bm-deploy on the VPS (84.54.30.169).
-#
-# Note: GitHub Pages deploy was replaced by the VPS (blue-murphy.noartem.ru,
-# Caddy). Settings -> Pages can be switched back to "Disabled" at any time.
+# Publishing needs repo secret DEPLOY_SSH_KEY — the private ed25519 deploy key
+# whose public part is installed for the deploy user on the VPS (see
+# scripts/deploy.sh for host, user and path). Without the secret the workflow
+# still validates, tests and builds, and skips the publish step.
 
 name: CI & VPS deploy
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: deploy-vps
+  group: ${{ github.event_name == 'push' && 'deploy-vps' || github.ref }}
   cancel-in-progress: true
 
 jobs:
   deploy:
     name: Validate, test, build, publish
     runs-on: ubuntu-latest
+    env:
+      HAS_DEPLOY_KEY: ${{ secrets.DEPLOY_SSH_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -41,8 +44,13 @@ jobs:
         run: npm ci
         working-directory: app
 
-      - name: Validate parsed data
-        run: python scripts/validate.py
+      - name: Validate parsed data (every book)
+        run: |
+          for v in books/*/scripts/validate.py; do
+            echo "::group::$v"
+            python "$v"
+            echo "::endgroup::"
+          done
 
       - name: Unit tests
         run: npm test
@@ -53,11 +61,13 @@ jobs:
         working-directory: app
 
       - name: Write deploy key
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && env.HAS_DEPLOY_KEY == 'true'
         run: |
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > "$RUNNER_TEMP/deploy_key"
           chmod 600 "$RUNNER_TEMP/deploy_key"
 
       - name: Publish to VPS
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && env.HAS_DEPLOY_KEY == 'true'
         run: bash scripts/deploy.sh
         env:
           DEPLOY_KEY: ${{ runner.temp }}/deploy_key
