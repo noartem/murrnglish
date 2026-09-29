@@ -25,7 +25,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from make_totals import graded_count  # noqa: E402
 
 DATA = ROOT / "data"
-# key exercises whose printed page is absent from original/book.pdf: the scan
+# key exercises whose printed page is absent from book.pdf: the scan
 # carries the English-edition exercise pages for these units, which lack the
 # Russian edition's translation exercise
 NOT_IN_SCAN = {"51.4": "unit 51 exercise page is from the English edition",

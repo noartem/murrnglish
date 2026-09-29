@@ -1,7 +1,7 @@
 """Shared helpers for the LLM extraction pipeline (Red Murphy / Essential
 Grammar in Use, Russian edition).
 
-Book layout (original/book.pdf, 1-based PDF page numbers):
+Book layout (book.pdf, 1-based PDF page numbers):
   unit N theory page     = 2N + 11
   unit N exercise page   = 2N + 12        (units 1..115 -> pages 13..242)
   additional exercises   = 253..270
@@ -22,7 +22,7 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-PDF = ROOT / "original" / "book.pdf"
+PDF = ROOT / "book.pdf"
 EPUB_HTML = ROOT / "original" / "EPUB" / "OEBPS" / "html"
 IMG = ROOT / "work" / "img"
 LLM = ROOT / "work" / "llm"

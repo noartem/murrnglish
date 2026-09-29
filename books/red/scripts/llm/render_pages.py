@@ -1,4 +1,4 @@
-"""Render original/book.pdf pages to work/img/pNNN.jpg for the vision models.
+"""Render book.pdf pages to work/img/pNNN.jpg for the vision models.
 
 Usage:  python scripts/llm/render_pages.py [first last]   (default: all pages)
 """

@@ -1,0 +1,10 @@
+{
+  "order": 1,
+  "title": "Essential Grammar in Use",
+  "edition": "Russian edition",
+  "level": "Elementary",
+  "authors": "Raymond Murphy with Olga Sands",
+  "publisher": "Cambridge University Press",
+  "color": "#dc2626",
+  "cover": { "file": "cover.jpg", "width": 1112, "height": 1653 }
+}

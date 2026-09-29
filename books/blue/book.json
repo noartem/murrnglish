@@ -1,0 +1,10 @@
+{
+  "order": 2,
+  "title": "English Grammar in Use",
+  "edition": "Fifth edition",
+  "level": "Intermediate",
+  "authors": "Raymond Murphy",
+  "publisher": "Cambridge University Press",
+  "color": "#1d4ed8",
+  "cover": { "file": "cover.png", "width": 1112, "height": 1497 }
+}

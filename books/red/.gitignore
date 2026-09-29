@@ -1,0 +1,18 @@
+# LLM pipeline: rendered pages, logs and caches stay local; keys, model
+# outputs and manual fixes are tracked (merge/finalize rerun without API calls)
+work/img/
+work/llm/logs/
+work/llm/models.json
+work/llm/**/*.raw.txt
+work/llm/**/*.done
+
+# Source book: the EPUB's exercise HTML (parser hints) is tracked; EPUB media
+# is not. The PDF itself is books/red/book.pdf.
+original/EPUB/OEBPS/audio/
+original/EPUB/OEBPS/images/
+original/EPUB/OEBPS/fonts/
+original/EPUB/OEBPS/js/
+original/EPUB/OEBPS/styles/
+
+# Local copy of the Blue Murphy data replaced by finalize.py
+work/blue-data-backup/
