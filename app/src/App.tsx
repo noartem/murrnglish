@@ -104,6 +104,8 @@ export default function App() {
   const [paneFocusTick, setPaneFocusTick] = useState(0);
   const preHelpFocus = useRef<HTMLElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
+  // Shift+I open: the modal underlines each control's trigger letter
+  const [modalHints, setModalHints] = useState(false);
   const [notice, setNotice] = useState("");
   // transient topbar notice, auto-clears
   useEffect(() => {
@@ -453,6 +455,12 @@ export default function App() {
     helpOpen,
     openHelp,
     closeHelp,
+    progressOpen: modalOpen || preview !== null,
+    progressHints: modalOpen && modalHints,
+    hintProgress: () => {
+      setModalHints(true);
+      setModalOpen(true);
+    },
     goNextUnit: () => goTarget(pager?.next ?? null),
     goPrevUnit: () => goTarget(pager?.prev ?? null),
     focusPagePane: () => setPaneFocusTick((t) => t + 1),
@@ -529,8 +537,12 @@ export default function App() {
           <ShortcutsHelpButton onOpen={openHelp} />
           <button
             className="themebtn"
-            onClick={() => setModalOpen(true)}
-            title="Progress: import, export, share"
+            onClick={() => {
+              // pointer open: no underlined letters, just the plain window
+              setModalHints(false);
+              setModalOpen(true);
+            }}
+            title={"Progress: import, export, share — " + SC.progress}
             aria-label="Progress: import, export, share"
           >
             <Share2 size={15} aria-hidden />
@@ -798,6 +810,7 @@ export default function App() {
         onImport={handleImportFile}
         onExport={handleExport}
         onShare={handleShare}
+        hintKeys={modalHints}
       />
       {helpOpen && <ShortcutsModal onClose={closeHelp} />}
     </div>

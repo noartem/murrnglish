@@ -1597,6 +1597,16 @@ textarea.winline {
   margin-top: 12px;
 }
 
+/* Shift+I hint mode: the trigger letter of each control is underlined and
+   tinted, and is the same character the key press matches. Only the tint
+   changes when hints toggle, so the label never shifts. */
+.hintkey {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 /* the preview's apply button is the modal's one strong action */
 .modal-actions .primary {
   background: var(--accent);
@@ -1610,6 +1620,47 @@ textarea.winline {
   font-size: 13px;
   margin-top: 10px;
   min-height: 18px;
+}
+
+/* displayed as an inline-block so the shake transform has a box to move */
+.msgtext {
+  display: inline-block;
+}
+
+/* "Link copied to clipboard": a quick wiggle that reads as confirmation.
+   Re-keyed per message, so pressing Share again replays it. */
+.msgtext.shake {
+  color: var(--ok);
+  font-weight: 700;
+  animation: msg-shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes msg-shake {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  12% {
+    transform: translateX(-5px) rotate(-1.2deg);
+  }
+  28% {
+    transform: translateX(4px) rotate(1deg);
+  }
+  44% {
+    transform: translateX(-3px) rotate(-0.6deg);
+  }
+  62% {
+    transform: translateX(2px) rotate(0.4deg);
+  }
+  80% {
+    transform: translateX(-1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .msgtext.shake {
+    animation: none;
+  }
 }
 
 /* keyboard shortcuts help modal */

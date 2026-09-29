@@ -144,10 +144,97 @@ await page.locator('.modal button[aria-label="Close"]').click();
 await sleep(300);
 ok("F6 modal closes", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
 
+// ---------- Flow 9: Shift+I opens the progress window with hint keys ----------
+// The window opened this way underlines the trigger letter of each control
+// (I / E / S, and the "a" of "answer") and a plain letter clicks that control.
+await page.keyboard.press("Shift+KeyI");
+await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 10000 });
+const hintLetters = await page.locator(".modal .hintkey").allTextContents();
+ok("F9 Shift+I opens with hint letters", hintLetters.join("") === "aIES", hintLetters.join(""));
+ok(
+  "F9 hint letters sit on their controls",
+  (await page.locator(".modal [data-modal-key]").evaluateAll((els) =>
+    els.map((e) => e.getAttribute("data-modal-key")),
+  )).join("") === "AIES",
+);
+// the "a" belongs to "answer", and no flex gap splits the label around it
+const hintGap = await page.locator('[data-modal-key="I"] .hintkey').evaluate((el) => {
+  const self = el.getBoundingClientRect();
+  const r = document.createRange();
+  r.setStart(el.nextSibling, 0);
+  r.setEnd(el.nextSibling, 1);
+  return r.getBoundingClientRect().left - self.right;
+});
+ok("F9 no gap inside the hinted label", hintGap < 2, `${hintGap}px`);
+
+const answersBox = page.locator('.modal input[type="checkbox"]');
+const wasChecked = await answersBox.isChecked();
+await page.keyboard.press("KeyA");
+await sleep(150);
+ok("F9 A toggles Include answer texts", (await answersBox.isChecked()) !== wasChecked);
+await page.keyboard.press("KeyA");
+await sleep(150);
+ok("F9 A toggles it back", (await answersBox.isChecked()) === wasChecked);
+ok("F9 the window stays open", (await page.locator('.modal[aria-label="Progress"]').count()) === 1);
+
+// E exports: the download is the observable effect
+const [file] = await Promise.all([
+  page.waitForEvent("download", { timeout: 8000 }),
+  page.keyboard.press("KeyE"),
+]);
+ok("F9 E downloads the progress file", /egu-course-progress-.*\.json$/.test(file.suggestedFilename()), file.suggestedFilename());
+
+// S copies the share link and the confirmation wiggles
+await ctx.grantPermissions(["clipboard-read", "clipboard-write"], { origin: BASE });
+const shakeFrames = page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const seen = new Set();
+      const t0 = performance.now();
+      const tick = () => {
+        const el = document.querySelector(".modal-msg .msgtext");
+        if (el) seen.add(getComputedStyle(el).transform);
+        if (performance.now() - t0 > 900) resolve([...seen]);
+        else requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }),
+);
+await page.keyboard.press("KeyS");
+const frames = await shakeFrames;
+ok(
+  "F9 S copies the share link",
+  (await page.evaluate(() => navigator.clipboard.readText())).includes("#p="),
+);
+ok("F9 the copied notice shakes", frames.length > 2, `${frames.length} distinct frames`);
+
+// Shift+I again must not double-fire Import: modifiers are not hint keys
+await page.keyboard.press("Shift+KeyI");
+await sleep(300);
+ok("F9 Shift+I does not act as the Import hint", (await page.locator('.modal[aria-label="Progress"]').count()) === 1);
+
+// reopening from the topbar button drops the hints
+await page.keyboard.press("Escape");
+await sleep(350);
+await page.locator('button[aria-label^="Progress"]').click();
+await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 10000 });
+ok("F9 button open has no hints", (await page.locator(".modal .hintkey").count()) === 0);
+const plainBefore = await answersBox.isChecked();
+await page.keyboard.press("KeyA");
+await sleep(200);
+ok("F9 plain letters are inert without hints", (await answersBox.isChecked()) === plainBefore);
+await page.keyboard.press("Escape");
+await sleep(350);
+ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
+
 // ---------- Flow 7: keyboard shortcuts modal ----------
 await page.locator('button[aria-label="Keyboard shortcuts"]').click();
 await page.waitForSelector(".helpcard", { timeout: 30000 });
 ok("F7 shortcuts modal opens", await page.locator(".helpcard h3").isVisible());
+ok(
+  "F7 help documents Shift+I and its hint letters",
+  /Progress window/.test(await page.locator(".helpcard").innerText()),
+);
 await page.keyboard.press("Escape");
 await sleep(300);
 ok("F7 shortcuts modal closes", (await page.locator(".helpcard").count()) === 0);
