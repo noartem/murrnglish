@@ -39,15 +39,19 @@ export function ProgressModal({
 }): JSX.Element | null {
   const [withAnswers, setWithAnswers] = useState(true);
   const [busy, setBusy] = useState(false);
-  // status line: seq re-keys the node so the copy-shake replays even when the
-  // same text is set twice in a row
+  // status line: seq re-keys the node so the entry animation (fade, plus the
+  // copy-shake) replays even when the same text is set twice in a row.
+  // `leaving` holds the node mounted through the fade-out.
   const [msg, setMsgState] = useState<{ text: string; shake: boolean; seq: number }>({
     text: "",
     shake: false,
     seq: 0,
   });
-  const setMsg = (text: string, shake = false) =>
+  const [msgLeaving, setMsgLeaving] = useState(false);
+  const setMsg = (text: string, shake = false) => {
+    setMsgLeaving(false);
     setMsgState((m) => ({ text, shake, seq: m.seq + 1 }));
+  };
   // exit: the card stays mounted under .closing while modal-out plays, then
   // drops from the DOM. closing is derived from open (not set in an effect),
   // so the class lands in the same commit as open=false — unmounting first
@@ -70,11 +74,19 @@ export function ProgressModal({
     closeRef.current?.focus();
   }, [open]);
 
-  // result message auto-clears
+  // result message auto-clears: fade out, then drop the text once the
+  // 0.18s leave animation has played (so the line doesn't blink away)
   useEffect(() => {
     if (!msg.text) return;
-    const t = setTimeout(() => setMsg(""), 6000);
-    return () => clearTimeout(t);
+    const hide = setTimeout(() => setMsgLeaving(true), 6000);
+    const drop = setTimeout(() => {
+      setMsgState((m) => ({ ...m, text: "" }));
+      setMsgLeaving(false);
+    }, 6180);
+    return () => {
+      clearTimeout(hide);
+      clearTimeout(drop);
+    };
   }, [msg]);
   // enter: modal-in runs on mount; exit: hold the card 150ms (> 0.14s
   // modal-out) so the animation finishes before unmount
@@ -236,7 +248,11 @@ export function ProgressModal({
               {msg.text && (
                 <span
                   key={msg.seq}
-                  className={"msgtext" + (msg.shake ? " shake" : "")}
+                  className={
+                    "msgtext" +
+                    (msg.shake ? " shake" : "") +
+                    (msgLeaving ? " leaving" : "")
+                  }
                 >
                   {msg.text}
                 </span>

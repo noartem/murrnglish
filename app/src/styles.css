@@ -1622,17 +1622,44 @@ textarea.winline {
   min-height: 18px;
 }
 
-/* displayed as an inline-block so the shake transform has a box to move */
+/* status line entry: fades up in. Re-keyed per message, so it replays. */
 .msgtext {
   display: inline-block;
+  animation: msg-in 0.18s ease-out;
 }
 
-/* "Link copied to clipboard": a quick wiggle that reads as confirmation.
-   Re-keyed per message, so pressing Share again replays it. */
+/* "Link copied to clipboard": a quick wiggle that reads as confirmation,
+   on top of the ordinary fade-in. Two animations so they don't fight —
+   msg-in carries the opacity, msg-shake the transform (later in the list
+   wins where they overlap). */
 .msgtext.shake {
   color: var(--ok);
   font-weight: 700;
-  animation: msg-shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation:
+    msg-in 0.18s ease-out,
+    msg-shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* auto-clear: fade out while the node is held mounted, then it is dropped.
+   Declared after .shake — same specificity, so this must come last to win
+   and end the wiggle with the fade. */
+.msgtext.leaving,
+.msgtext.shake.leaving {
+  animation: msg-out 0.18s ease-in forwards;
+}
+
+@keyframes msg-in {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+}
+
+@keyframes msg-out {
+  to {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
 }
 
 @keyframes msg-shake {
@@ -1658,7 +1685,10 @@ textarea.winline {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .msgtext.shake {
+  .msgtext,
+  .msgtext.shake,
+  .msgtext.leaving,
+  .msgtext.shake.leaving {
     animation: none;
   }
 }

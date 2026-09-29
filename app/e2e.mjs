@@ -190,11 +190,18 @@ const shakeFrames = page.evaluate(
   () =>
     new Promise((resolve) => {
       const seen = new Set();
+      const opacity = new Set();
+      const names = new Set();
       const t0 = performance.now();
       const tick = () => {
         const el = document.querySelector(".modal-msg .msgtext");
-        if (el) seen.add(getComputedStyle(el).transform);
-        if (performance.now() - t0 > 900) resolve([...seen]);
+        if (el) {
+          const cs = getComputedStyle(el);
+          seen.add(cs.transform);
+          opacity.add(cs.opacity);
+          names.add(cs.animationName);
+        }
+        if (performance.now() - t0 > 900) resolve({ seen: [...seen], opacity: [...opacity], names: [...names] });
         else requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
@@ -206,7 +213,47 @@ ok(
   "F9 S copies the share link",
   (await page.evaluate(() => navigator.clipboard.readText())).includes("#p="),
 );
-ok("F9 the copied notice shakes", frames.length > 2, `${frames.length} distinct frames`);
+ok("F9 the copied notice shakes", frames.seen.length > 2, `${frames.seen.length} distinct frames`);
+ok("F9 the copied notice fades in", frames.opacity.length > 2 && frames.opacity.includes("0"),
+  `${frames.opacity.length} opacity steps`);
+ok("F9 the notice runs both animations",
+  frames.names.join(",").includes("msg-in") && frames.names.join(",").includes("msg-shake"),
+  frames.names.join(","));
+
+// the notice fades back out on its own and is then dropped from the DOM.
+// Watch the node's own state from before the press: the .leaving window is
+// only ~0.18s, too short to race with a polling selector.
+const clearWatch = page.evaluate(
+  () =>
+    new Promise((resolve) => {
+      const seen = [];
+      const t0 = performance.now();
+      const tick = () => {
+        const el = document.querySelector(".modal-msg .msgtext");
+        const state = el
+          ? { cls: el.className, anim: getComputedStyle(el).animationName, opacity: getComputedStyle(el).opacity }
+          : null;
+        const last = seen[seen.length - 1];
+        const changed = JSON.stringify(state) !== JSON.stringify(last);
+        if (changed) seen.push(state);
+        if (!el && seen.length) resolve(seen);
+        else if (performance.now() - t0 > 10000) resolve(seen);
+        else requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }),
+);
+await page.keyboard.press("KeyS");
+const cycle = await clearWatch;
+const leavingFrames = cycle.filter((s) => s && /leaving/.test(s.cls));
+ok("F9 the notice fades out when it clears", leavingFrames.every((s) => s.anim === "msg-out"),
+  JSON.stringify(leavingFrames.map((s) => s.anim)));
+const opacities = leavingFrames.map((s) => Number(s.opacity));
+ok("F9 the fade ends faded out",
+  opacities.length > 1 && Math.min(...opacities) < 0.2 && opacities[0] > Math.min(...opacities),
+  `opacity ${opacities[0]} -> ${Math.min(...opacities)} over ${opacities.length} frames`);
+ok("F9 the notice is dropped after the fade", cycle[cycle.length - 1] === null,
+  `${cycle.length} states, last=${JSON.stringify(cycle[cycle.length - 1])}`);
 
 // Shift+I again must not double-fire Import: modifiers are not hint keys
 await page.keyboard.press("Shift+KeyI");
