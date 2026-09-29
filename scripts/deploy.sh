@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Publish app/dist to red-murphy.noartem.ru (VPS, Caddy static root).
 #
-# Env: DEPLOY_KEY — path to the bm-deploy ed25519 private key.
-# bm-deploy owns /srv/red-murphy, so no sudo is needed: the swap is two
+# Env: DEPLOY_KEY — path to the rm-deploy ed25519 private key.
+# rm-deploy owns /srv/red-murphy, so no sudo is needed: the swap is two
 # renames on one filesystem (http -> .old, .staging -> http).
 #
 # No `systemctl reload caddy` here, deliberately. The Caddyfile points
@@ -19,9 +19,9 @@
 # site was serving.
 set -euo pipefail
 
-: "${DEPLOY_KEY:?set DEPLOY_KEY to the path of the bm-deploy private key}"
+: "${DEPLOY_KEY:?set DEPLOY_KEY to the path of the rm-deploy private key}"
 
-HOST="bm-deploy@84.54.30.169"
+HOST="rm-deploy@84.54.30.169"
 ROOT="/srv/red-murphy"
 URL="https://red-murphy.noartem.ru/"
 SSH_OPTS=(-i "$DEPLOY_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new)

@@ -1,7 +1,7 @@
 # CI/CD: data validation, unit tests, build, then publish app/dist to the VPS.
 #
 # Requires repo secret DEPLOY_SSH_KEY — the private ed25519 deploy key whose
-# public part is installed for bm-deploy on the VPS (84.54.30.169).
+# public part is installed for rm-deploy on the VPS (84.54.30.169).
 #
 # Note: GitHub Pages deploy was replaced by the VPS (red-murphy.noartem.ru,
 # Caddy). Settings -> Pages can be switched back to "Disabled" at any time.
