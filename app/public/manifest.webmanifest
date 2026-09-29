@@ -1,0 +1,13 @@
+{
+  "name": "Essential Grammar in Use — Web Course",
+  "short_name": "Essential Grammar",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fcf7ec",
+  "theme_color": "#2f6fed",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/cover.jpg", "sizes": "1112x1653", "type": "image/jpeg", "purpose": "any" }
+  ]
+}
