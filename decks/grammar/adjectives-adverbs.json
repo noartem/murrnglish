@@ -1,0 +1,27 @@
+{
+  "title": "Adjectives and adverbs",
+  "about": "bored or boring, quick or quickly, so and such, too and enough, still, yet, already",
+  "level": "B1",
+  "entries": [
+    {"id": "bored-boring", "en": "The lecture was so [boring|bore] that half the audience fell asleep.", "ru": "Лекция была такой скучной, что половина зала уснула.", "note": "-ing — какой предмет (скучный); -ed — что чувствует человек (скучающий)."},
+    {"id": "im-bored", "en": "I’m [bored|bore]. Let’s go out.", "ru": "Мне скучно. Пойдём куда-нибудь.", "note": "О своих чувствах → -ed: I’m bored, interested, tired."},
+    {"id": "interested", "choice": ["Are you interested in politics?", "Are you interesting in politics?"], "ru": "Ты интересуешься политикой?", "note": "interested — заинтересованный; interesting — интересный."},
+    {"id": "drives-carefully", "en": "My dad drives very [carefully|careful / carefully].", "ru": "Мой папа водит очень осторожно.", "note": "Как делает? → наречие (-ly)."},
+    {"id": "careful-driver", "en": "He’s a very [careful|careful / carefully] driver.", "ru": "Он очень осторожный водитель.", "note": "Какой? → прилагательное."},
+    {"id": "works-hard", "choice": ["She works hard.", "She works hardly."], "ru": "Она много работает.", "note": "hard — и прилагательное, и наречие. hardly = почти не."},
+    {"id": "good-well", "en": "You speak English very [well|good / well].", "ru": "Ты очень хорошо говоришь по-английски.", "note": "good — прилагательное; наречие — well."},
+    {"id": "looks-good", "choice": ["That dress looks great on you.", "That dress looks greatly on you."], "ru": "Это платье тебе очень идёт.", "note": "После look, seem, feel, sound, taste, smell — прилагательное."},
+    {"id": "so-tired", "en": "I was [so|so / such] tired that I went to bed at eight.", "ru": "Я так устал, что лёг спать в восемь.", "note": "so + прилагательное."},
+    {"id": "such-a-nice", "en": "They’re [such|so / such] nice people.", "ru": "Они такие милые люди.", "note": "such + (прилагательное) + существительное."},
+    {"id": "too-hot", "en": "The tea is [too hot|hot / too] to drink.", "ru": "Чай слишком горячий, чтобы его пить.", "note": "too + прилагательное = слишком."},
+    {"id": "old-enough", "en": "You aren’t [old enough|old / enough] to drive.", "ru": "Ты ещё недостаточно взрослый, чтобы водить.", "note": "enough — после прилагательного: old enough."},
+    {"id": "still-yet", "en": "Is it [still|still / yet] raining?", "ru": "Дождь всё ещё идёт?", "note": "still — всё ещё (продолжается)."},
+    {"id": "not-yet", "en": "Has the post arrived [yet|still / yet]?", "ru": "Почта уже пришла?", "note": "yet — в вопросах и отрицаниях, в конце предложения."},
+    {"id": "already", "en": "I’ve [already|yet / already] paid.", "ru": "Я уже заплатил.", "note": "already — уже (раньше, чем ожидалось), перед смысловым глаголом."},
+    {"id": "always-position", "choice": ["I always have breakfast at home.", "I have always breakfast at home."], "ru": "Я всегда завтракаю дома.", "note": "always, often, never — перед основным глаголом, но после be: She is always late."},
+    {"id": "adjective-order", "choice": ["She bought a lovely old wooden table.", "She bought a wooden old lovely table."], "ru": "Она купила прелестный старинный деревянный стол.", "note": "Порядок: мнение → размер → возраст → цвет → материал."},
+    {"id": "friendly-adverb", "choice": ["She smiled at me in a friendly way.", "She smiled at me friendly."], "ru": "Она дружелюбно мне улыбнулась.", "note": "friendly, lovely, silly — прилагательные на -ly, наречия от них нет: in a friendly way."},
+    {"id": "late-lately", "en": "Have you seen any good films [lately|late / lately]?", "ru": "Ты видел в последнее время хорошие фильмы?", "note": "late — поздно; lately — в последнее время."},
+    {"id": "no-longer", "en": "She [no longer|no longer / not longer] works here.", "ru": "Она здесь больше не работает.", "note": "no longer / not any longer — больше не."}
+  ]
+}

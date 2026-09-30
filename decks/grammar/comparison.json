@@ -1,0 +1,26 @@
+{
+  "title": "Comparatives and superlatives",
+  "about": "bigger, more expensive, the best; as … as; the more …, the better",
+  "level": "A2",
+  "entries": [
+    {"id": "bigger", "en": "Moscow is [bigger|big] than St Petersburg.", "ru": "Москва больше Санкт-Петербурга.", "note": "Короткие прилагательные: -er; конечная согласная удваивается: big → bigger."},
+    {"id": "more-expensive", "en": "This phone is [more expensive|expensive] than mine.", "ru": "Этот телефон дороже моего.", "note": "Длинные прилагательные: more + прилагательное."},
+    {"id": "better", "en": "Your English is much [better|good] than mine.", "ru": "Твой английский гораздо лучше моего.", "note": "good → better → the best."},
+    {"id": "worse", "en": "The traffic is [worse|bad] than yesterday.", "ru": "Пробки хуже, чем вчера.", "note": "bad → worse → the worst."},
+    {"id": "further", "en": "The station is [further/farther|far] than I thought.", "ru": "Вокзал дальше, чем я думал.", "note": "far → further / farther."},
+    {"id": "happier", "en": "She seems [happier|happy] since she changed jobs.", "ru": "С тех пор как она сменила работу, она кажется счастливее.", "note": "-y → -ier: happy → happier."},
+    {"id": "the-highest", "en": "Elbrus is [the highest|high] mountain in Europe.", "ru": "Эльбрус — самая высокая гора в Европе.", "note": "Превосходная степень: the + -est."},
+    {"id": "most-interesting", "en": "It’s [the most interesting|interesting] book I’ve ever read.", "ru": "Это самая интересная книга, которую я когда-либо читал.", "note": "the most + длинное прилагательное; часто с Present perfect: I’ve ever…"},
+    {"id": "in-not-of", "choice": ["It’s the tallest building in the world.", "It’s the tallest building of the world."], "ru": "Это самое высокое здание в мире.", "note": "После превосходной степени о месте → in."},
+    {"id": "as-as", "en": "I’m not [as tall as|tall] my brother.", "ru": "Я не такой высокий, как мой брат.", "note": "not as … as — не такой …, как."},
+    {"id": "the-same-as", "choice": ["Your bag is the same as mine.", "Your bag is the same like mine."], "ru": "Твоя сумка такая же, как моя.", "note": "the same as."},
+    {"id": "than-me", "choice": ["She’s older than me.", "She’s older that me."], "ru": "Она старше меня.", "note": "Сравнение → than."},
+    {"id": "much-older", "en": "He’s [much|very / much] older than his wife.", "ru": "Он намного старше своей жены.", "note": "Усиление сравнительной степени: much / far / a lot + -er (не very)."},
+    {"id": "a-bit", "en": "Could you speak [a bit more slowly|a bit / slowly]?", "ru": "Не могли бы вы говорить чуть помедленнее?", "note": "a bit / slightly + сравнительная степень."},
+    {"id": "the-more-the", "en": "The more you practise, [the better|good] you get.", "ru": "Чем больше практикуешься, тем лучше получается.", "note": "The + сравнительная …, the + сравнительная."},
+    {"id": "getting-colder", "en": "It’s getting [colder and colder|cold].", "ru": "Становится всё холоднее и холоднее.", "note": "Нарастание: -er and -er / more and more."},
+    {"id": "twice-as", "en": "The new flat is [twice as big as|twice / big] the old one.", "ru": "Новая квартира в два раза больше старой.", "note": "twice / three times as … as."},
+    {"id": "least", "en": "It’s the [least|little] expensive hotel in town.", "ru": "Это самая дешёвая гостиница в городе.", "note": "the least — наименее."},
+    {"id": "elder-older", "choice": ["My sister is two years older than me.", "My sister is two years elder than me."], "ru": "Моя сестра на два года старше меня.", "note": "elder — только перед существительным (my elder sister); с than — older."}
+  ]
+}

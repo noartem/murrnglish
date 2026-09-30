@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "id": "grammar",
+      "title": "Grammar",
+      "about": "Short sentences with the verb form, the article or the word order to supply — each with a Russian translation and a note on why.",
+      "groups": [
+        { "title": "Present and past", "decks": ["present-simple-continuous", "past-simple-continuous", "present-perfect-past", "perfect-continuous", "past-perfect", "used-to"] },
+        { "title": "The future", "decks": ["future-forms", "future-continuous-perfect"] },
+        { "title": "Modal verbs", "decks": ["ability-permission", "obligation-advice", "deduction", "modals-past"] },
+        { "title": "Conditionals and wishes", "decks": ["conditionals-real", "conditionals-unreal", "wishes"] },
+        { "title": "Passive and reporting", "decks": ["passive", "reported-speech"] },
+        { "title": "Questions and verb patterns", "decks": ["questions", "ing-or-infinitive", "make-let-want"] },
+        { "title": "Nouns, articles and pronouns", "decks": ["articles", "quantity", "pronouns-determiners"] },
+        { "title": "Adjectives and adverbs", "decks": ["comparison", "adjectives-adverbs"] },
+        { "title": "Sentences and linking", "decks": ["relative-clauses", "linking-clauses", "prepositions-time-place", "inversion-emphasis"] }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "title": "Vocabulary",
+      "about": "Word lists to learn by heart: verb forms, phrasal verbs, words that go together and words that trip Russian speakers up.",
+      "groups": [
+        { "title": "Verbs", "decks": ["irregular-verbs", "irregular-verbs-advanced", "phrasal-verbs", "phrasal-verbs-advanced"] },
+        { "title": "Words that go together", "decks": ["word-prepositions", "collocations", "linking-words"] },
+        { "title": "Meaning", "decks": ["false-friends", "confusables", "idioms"] }
+      ]
+    }
+  ]
+}

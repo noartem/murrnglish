@@ -1,0 +1,27 @@
+{
+  "title": "although, despite, so that, while",
+  "about": "contrast, purpose, reason and time: joining ideas in one sentence",
+  "level": "B2",
+  "entries": [
+    {"id": "although-rain", "en": "[Although|Although / Despite] it was raining, we went for a walk.", "ru": "Хотя шёл дождь, мы пошли гулять.", "note": "although + подлежащее + глагол."},
+    {"id": "despite-rain", "en": "[Despite|Although / Despite] the rain, we went for a walk.", "ru": "Несмотря на дождь, мы пошли гулять.", "note": "despite / in spite of + существительное или -ing."},
+    {"id": "despite-of", "choice": ["In spite of feeling ill, she went to work.", "Despite of feeling ill, she went to work."], "ru": "Несмотря на плохое самочувствие, она пошла на работу.", "note": "despite без of; in spite of — с of."},
+    {"id": "despite-the-fact", "en": "Despite [the fact that|the fact / that] he’s rich, he lives very modestly.", "ru": "Несмотря на то что он богат, он живёт очень скромно.", "note": "despite the fact that + предложение."},
+    {"id": "so-that", "en": "Speak louder [so that|so that / in order] everyone can hear you.", "ru": "Говори громче, чтобы все тебя слышали.", "note": "so that + подлежащее + can/will — чтобы."},
+    {"id": "in-order-to", "en": "She moved to London [in order to|in order / so that] study music.", "ru": "Она переехала в Лондон, чтобы учиться музыке.", "note": "in order to / to + глагол — цель."},
+    {"id": "so-as-not-to", "en": "I left early [so as not to|so as / not] miss the train.", "ru": "Я вышел пораньше, чтобы не опоздать на поезд.", "note": "Отрицательная цель: so as not to / in order not to."},
+    {"id": "because-of", "en": "The flight was delayed [because of|because / because of] fog.", "ru": "Рейс задержали из-за тумана.", "note": "because of + существительное; because + предложение."},
+    {"id": "while-whereas", "en": "I love the sea, [whereas|whereas / despite] my husband prefers the mountains.", "ru": "Я люблю море, а мой муж предпочитает горы.", "note": "whereas / while — противопоставление."},
+    {"id": "during-while", "en": "I fell asleep [during|during / while] the film.", "ru": "Я уснул во время фильма.", "note": "during + существительное; while + предложение (while I was watching)."},
+    {"id": "while-watching", "en": "I fell asleep [while|during / while] I was watching the film.", "ru": "Я уснул, пока смотрел фильм.", "note": "while + подлежащее + глагол."},
+    {"id": "by-until", "en": "Please send me the report [by|by / until] Friday.", "ru": "Пришлите, пожалуйста, отчёт до пятницы.", "note": "by — не позже чем (к сроку)."},
+    {"id": "until-friday", "en": "I’ll be away [until|by / until] Friday.", "ru": "Меня не будет до пятницы.", "note": "until — вплоть до (действие продолжается)."},
+    {"id": "however", "en": "The hotel was expensive. [However|However / Although], the service was excellent.", "ru": "Отель был дорогим. Однако обслуживание было превосходным.", "note": "however — однако; начинает новое предложение, после него запятая."},
+    {"id": "as-reason", "en": "[As|As / Like] it was late, we took a taxi.", "ru": "Поскольку было поздно, мы взяли такси.", "note": "as / since = because (в начале предложения)."},
+    {"id": "like-as", "choice": ["She works as a translator.", "She works like a translator."], "ru": "Она работает переводчиком.", "note": "as — в качестве (так и есть); like — как, похоже на."},
+    {"id": "as-if", "en": "He talks [as if|as if / like if] he knew everything.", "ru": "Он говорит так, будто всё знает.", "note": "as if / as though — как будто."},
+    {"id": "even-though", "en": "[Even though|Even / Even though] I was exhausted, I couldn’t sleep.", "ru": "Хотя я был без сил, я не мог уснуть.", "note": "even though — сильнее, чем although."},
+    {"id": "whatever", "en": "[Whatever|Whatever / However] you decide, I’ll support you.", "ru": "Что бы ты ни решил, я тебя поддержу.", "note": "whatever — что бы ни; wherever — где бы ни; whoever — кто бы ни."},
+    {"id": "no-matter", "en": "No matter [how hard|how / hard] I try, I can’t remember his name.", "ru": "Как бы я ни старался, не могу вспомнить его имя.", "note": "no matter how / what / where — как бы / что бы / где бы ни."}
+  ]
+}

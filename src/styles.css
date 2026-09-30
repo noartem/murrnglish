@@ -3583,29 +3583,6 @@ details[open] > summary .chev {
   color: var(--accent);
 }
 
-.deckunits {
-  list-style: none;
-  margin: 0 0 10px;
-  padding: 0 0 0 26px;
-}
-
-.deckunit {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 0;
-}
-
-.deckunit .rulenum {
-  min-width: 24px;
-}
-
-.deckunit .deckname {
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--soft);
-}
-
 .iconlink {
   display: flex;
   padding: 3px;
@@ -3615,12 +3592,6 @@ details[open] > summary .chev {
 
 .iconlink:hover {
   color: var(--accent);
-}
-
-.nocards {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--muted);
 }
 
 .settingsheet summary {
@@ -3660,7 +3631,7 @@ details[open] > summary .chev {
   margin-top: 14px;
 }
 
-/* daily study: a tick per deck, a switch per book */
+/* daily study: a tick per deck */
 .pickbox {
   flex-shrink: 0;
   width: 18px;
@@ -3670,80 +3641,92 @@ details[open] > summary .chev {
   cursor: pointer;
 }
 
-.pickspace {
-  flex-shrink: 0;
-  width: 18px;
-}
-
-.bookswitch {
-  flex-shrink: 0;
-  position: relative;
-  width: 40px;
-  height: 24px;
-  padding: 0;
-  border: 2px solid var(--input-border);
-  border-radius: 999px;
-  background: var(--bg);
-  cursor: pointer;
-  transition: background 0.15s, border-color 0.15s;
-}
-
-.bookswitch .knob {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--muted);
-  transition: transform 0.15s ease, background 0.15s;
-}
-
-.bookswitch.on {
-  border-color: var(--accent);
-  background: var(--accent);
-}
-
-.bookswitch.on .knob {
-  transform: translateX(16px);
-  background: var(--accent-contrast);
-}
-
-.bookswitch:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
 /* a deck left out of daily study: faded, still reachable */
 .deckoff .deckicon,
 .deckoff .deckinfo,
-.deckoff > .deckrow > .counts {
+.deckoff > .deckrow > .counts,
+.deckline.deckoff > .counts {
   opacity: 0.55;
 }
 
-.decksummary {
-  font-size: 12.5px;
-  font-weight: 700;
-  color: var(--muted);
-}
-
-.decksub {
+/* a section of decks: grammar, vocabulary */
+.decksectionhead {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 12px;
-  margin: 18px 0 0;
-  padding-bottom: 6px;
-  border-bottom: 2px solid var(--border);
 }
 
-.decksub h4 {
-  margin: 0;
-  font-size: 12px;
+.decksection > .ruleprose {
+  margin: 4px 0 0;
+}
+
+.deckrows {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0 0 0 26px;
+}
+
+.deckline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.deckline + .deckline {
+  border-top: 2px dashed var(--border);
+}
+
+.deckline .deckname {
+  flex: none;
+  font-size: 14.5px;
+}
+
+/* phone: a deck's numbers and Study go under its name */
+@media (max-width: 560px) {
+  .deckrows {
+    padding-left: 0;
+  }
+
+  .deckline {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+
+  .deckline > .deckinfo {
+    flex: 1 1 calc(100% - 28px);
+  }
+
+  .deckline > .iconlink {
+    margin-left: auto;
+  }
+
+  .deckline > .iconlink + .counts,
+  .deckline > .pickbox + .deckinfo + .counts {
+    margin-left: auto;
+  }
+}
+
+/* CEFR level of a deck */
+.levelchip {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 6px;
+  border: 2px solid var(--border);
+  border-radius: 7px;
+  font-family: var(--font-ui);
+  font-size: 11px;
   font-weight: 900;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   color: var(--muted);
+  vertical-align: 2px;
+}
+
+.cardsource .levelchip {
+  margin-left: 2px;
+  vertical-align: 0;
 }
 
 .decksubacts {
@@ -3753,32 +3736,6 @@ details[open] > summary .chev {
 
 .decksubacts .linkbtn {
   font-size: 13px;
-}
-
-.decksub + .deckgroups {
-  margin-top: 0;
-  border-top: none;
-}
-
-.packrows {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.packrow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 2px;
-}
-
-.packrow + .packrow {
-  border-top: 2px dashed var(--border);
-}
-
-.packrow .deckname {
-  flex: none;
 }
 
 .packabout {
@@ -3851,14 +3808,55 @@ details[open] > summary .chev {
   overflow-wrap: anywhere;
 }
 
-/* pack cards */
+/* deck cards */
 .cardfront .packru {
   margin: 6px 0 0;
   font-size: 17px;
 }
 
-.packgap {
-  font-size: 22px;
+.cardback > .packru {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+/* the hint by a gap: the verb to put in the right form */
+.gaphint {
+  font-size: 0.85em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* the sentence with its gaps filled, under a typed card */
+.filledline {
+  margin: 0 0 6px;
+  font-family: var(--font-book);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.gapfill.missed,
+.wordbigtext.missed {
+  color: var(--bad-text);
+  background: var(--bad-bg);
+}
+
+.wordbigtext.missed {
+  padding: 0 4px;
+  border-radius: 6px;
+}
+
+.choiceopts.inline {
+  margin-top: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.choiceopts.inline .choiceopt {
+  width: auto;
+}
+
+.cardnote {
+  font-size: 15px;
 }
 
 .formsrow {
@@ -3891,6 +3889,99 @@ details[open] > summary .chev {
   font-size: 14px;
   font-weight: 700;
   color: var(--muted);
+}
+
+/* ---------- cards: a deck's cards to look through ---------- */
+.decklink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.decklink:hover {
+  color: var(--accent);
+}
+
+/* two icons by a deck (its cards, its word list): side by side on phones too */
+.deckline > .iconlink + .iconlink {
+  margin-left: 0;
+}
+
+.browsetools {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.browsetools > .ruleprose {
+  margin: 0;
+}
+
+.browsefilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.browsefilters .pillbtn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.browselist .wordopen {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  text-decoration: none;
+}
+
+.browselist .wordopen:hover .packen {
+  color: var(--accent);
+}
+
+.studytitle .levelchip {
+  vertical-align: 2px;
+}
+
+.browsenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: -6px 2px -4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cardinfo .sheethead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardstats {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 6px 18px;
+  margin: 12px 0 0;
+  font-size: 14.5px;
+}
+
+.cardstats dt {
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.cardstats dd {
+  margin: 0;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.cardinfo .ruleprose {
+  margin: 10px 0 0;
+}
+
+.linkbtn.warn,
+.linkbtn.warn:hover:not(:disabled) {
+  color: var(--bad-text);
 }
 
 /* ---------- cards: a study session ---------- */
@@ -4065,10 +4156,6 @@ details[open] > summary .chev {
 
 .cardback .variants {
   font-size: 16px;
-}
-
-.keyline {
-  display: block;
 }
 
 .studyactions {
@@ -4796,4 +4883,13 @@ a.themebtn.labelled {
   .wordline {
     flex-wrap: wrap;
   }
+}
+
+/* the daily-load presets, under their label */
+.presetrow {
+  margin-top: 8px;
+}
+
+.settingsheet .lookupstatus {
+  margin: 10px 0 0;
 }

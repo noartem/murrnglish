@@ -1,0 +1,26 @@
+{
+  "title": "Past simple and past continuous",
+  "about": "what happened, and what was in progress when it happened",
+  "level": "A2",
+  "entries": [
+    {"id": "moved-2015", "en": "We [moved|move] to Kazan in 2015.", "ru": "Мы переехали в Казань в 2015 году.", "note": "Законченное действие в прошлом, есть время → Past simple."},
+    {"id": "cooking-phone", "en": "I [was cooking|cook] dinner when the phone [rang|ring].", "ru": "Я готовил ужин, когда зазвонил телефон.", "note": "Длительное действие (was cooking) прерывается коротким (rang)."},
+    {"id": "didnt-sleep", "en": "I [didn't sleep|not / sleep] well last night.", "ru": "Я плохо спал этой ночью.", "note": "Отрицание в Past simple: didn’t + глагол без -ed."},
+    {"id": "where-go", "en": "Where [did you go|you / go] on holiday?", "ru": "Куда ты ездил в отпуск?", "note": "Вопрос: did + подлежащее + основная форма."},
+    {"id": "at-nine", "en": "At nine o’clock yesterday I [was sitting|sit] in a traffic jam.", "ru": "Вчера в девять я стоял в пробке.", "note": "Действие в процессе в определённый момент прошлого → Past continuous."},
+    {"id": "while-driving", "en": "While she [was driving|drive] home, it started to snow.", "ru": "Пока она ехала домой, пошёл снег.", "note": "while + длительное действие → Past continuous."},
+    {"id": "when-arrived", "en": "When I arrived, they [were having|have] lunch, so I joined them.", "ru": "Когда я пришёл, они обедали, и я присоединился.", "note": "Они уже обедали к моменту моего прихода."},
+    {"id": "when-arrived-started", "en": "When I arrived, they [started|start] lunch.", "ru": "Когда я пришёл, они начали обедать.", "note": "Сначала я пришёл, потом они начали — два действия подряд → оба в Past simple."},
+    {"id": "saw-film", "en": "I [saw|see] a great film on Saturday.", "ru": "В субботу я посмотрел отличный фильм.", "note": "see — неправильный глагол: see — saw — seen."},
+    {"id": "werent-listening", "en": "Sorry, what did you say? I [wasn't listening|not / listen].", "ru": "Прости, что ты сказал? Я не слушал.", "note": "Процесс в момент, о котором речь → Past continuous."},
+    {"id": "fell-asleep", "choice": ["I fell asleep while I was watching the news.", "I was falling asleep while I watched the news."], "ru": "Я уснул, пока смотрел новости.", "note": "Короткое действие (fell asleep) на фоне длительного (was watching)."},
+    {"id": "sun-shining", "en": "It was a lovely morning. The sun [was shining|shine] and birds [were singing|sing].", "ru": "Было чудесное утро. Светило солнце, пели птицы.", "note": "Past continuous описывает фон, обстановку рассказа."},
+    {"id": "how-break-arm", "en": "How [did you break|you / break] your arm?", "ru": "Как ты сломал руку?", "note": "break — broke — broken."},
+    {"id": "knew-answer", "choice": ["I knew the answer, but I was too shy to say it.", "I was knowing the answer, but I was too shy to say it."], "ru": "Я знал ответ, но стеснялся сказать.", "note": "know — глагол состояния, в Continuous не используется."},
+    {"id": "what-doing-when", "en": "What [were you doing|you / do] when the lights went out?", "ru": "Что ты делал, когда погас свет?", "note": "Вопрос о процессе в момент события."},
+    {"id": "paid-left", "en": "She [paid|pay] the bill, [put|put] on her coat and left.", "ru": "Она оплатила счёт, надела пальто и ушла.", "note": "Цепочка действий одно за другим → Past simple."},
+    {"id": "was-were", "en": "The shops [were|be] closed, so we [went|go] home.", "ru": "Магазины были закрыты, так что мы пошли домой.", "note": "be в прошлом: was / were."},
+    {"id": "thought-about", "en": "I [was thinking|think] about you just a minute ago!", "ru": "Я как раз о тебе думал минуту назад!", "note": "think about = обдумывать — процесс."},
+    {"id": "didnt-hear", "en": "Sorry I [didn't answer|not / answer] — I [was having|have] a shower.", "ru": "Прости, что не ответил — я был в душе.", "note": "have a shower — действие, поэтому Continuous возможен."}
+  ]
+}

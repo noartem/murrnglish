@@ -71,12 +71,10 @@ import {
   DICTIONARY_HASH,
   LIBRARY_HASH,
   bookHash,
-  deckHash,
   pageKey,
   replaceHash,
   rulesHash,
 } from "./routes";
-import { unitCards } from "./cards";
 import { PickWord } from "./components/PickWord";
 import { SIDEBAR_COLLAPSED_KEY } from "./keys";
 
@@ -1039,20 +1037,13 @@ export default function CourseApp({
   );
 }
 
-// Under the unit heading: the unit's rule in the compendium, and its flash
-// cards (made from these exercises, cards.ts) — hidden when the unit has none.
+// Under the unit heading: the unit's rule in the compendium.
 function UnitStudyLinks({ book, unit }: { book: Book; unit: UnitData }) {
-  const cards = useMemo(() => unitCards(book.id, unit).length, [book, unit]);
   return (
     <div className="rulelinks unitstudy">
       <a className="pillbtn" href={rulesHash(book, unit.unit)}>
         <BookOpenText size={15} aria-hidden /> Rule
       </a>
-      {cards > 0 && (
-        <a className="pillbtn" href={deckHash({ kind: "unit", book, unit: unit.unit })}>
-          <Layers size={15} aria-hidden /> Cards · {cards}
-        </a>
-      )}
       <span className="pickhint">Select a word to add it to your dictionary</span>
     </div>
   );

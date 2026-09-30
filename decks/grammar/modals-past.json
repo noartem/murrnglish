@@ -1,0 +1,19 @@
+{
+  "title": "should have, could have, needn’t have",
+  "about": "regrets, criticism and missed chances in the past",
+  "level": "B2",
+  "entries": [
+    {"id": "should-have-listened", "en": "I [should have listened|listen] to you. You were right.", "ru": "Надо было тебя послушать. Ты был прав.", "note": "should have done — надо было (а я не сделал)."},
+    {"id": "shouldnt-have-eaten", "en": "I feel sick. I [shouldn't have eaten|not / eat] so much.", "ru": "Мне плохо. Не стоило столько есть.", "note": "shouldn’t have done — не стоило (а я сделал)."},
+    {"id": "could-have-told", "en": "Why didn’t you ask me? I [could have helped|help] you.", "ru": "Почему ты не попросил? Я мог бы тебе помочь.", "note": "could have done — была возможность, но ею не воспользовались."},
+    {"id": "neednt-have-cooked", "en": "You [needn't have cooked|not need / cook] — we’ve already eaten. But thanks!", "ru": "Не нужно было готовить — мы уже поели. Но спасибо!", "note": "needn’t have done — сделал, но это было не нужно."},
+    {"id": "didnt-need-to", "choice": ["I didn’t need to take a taxi — Masha gave me a lift.", "I needn’t have taken a taxi — Masha gave me a lift."], "ru": "Мне не пришлось брать такси — Маша меня подвезла.", "note": "didn’t need to — не было нужно, и я не делал. needn’t have — сделал зря."},
+    {"id": "would-have-come", "en": "If you’d told me earlier, I [would have come|come].", "ru": "Если бы ты сказал раньше, я бы пришёл.", "note": "would have done — нереальное прошлое."},
+    {"id": "might-have-warned", "en": "You [might have warned|warn] me the road was closed!", "ru": "Мог бы и предупредить, что дорога закрыта!", "note": "might / could have done — упрёк: ты мог бы (и должен был)."},
+    {"id": "should-have-booked", "choice": ["The concert was sold out. We should have booked earlier.", "The concert was sold out. We must have booked earlier."], "ru": "Все билеты были проданы. Надо было бронировать раньше.", "note": "Сожаление → should have; must have — это вывод."},
+    {"id": "ought-to-have", "en": "He ought [to have apologised|apologise] to her.", "ru": "Ему следовало перед ней извиниться.", "note": "ought to have done = should have done."},
+    {"id": "was-supposed-to", "en": "The package was supposed [to arrive|arrive] yesterday, but it didn’t.", "ru": "Посылка должна была прийти вчера, но не пришла.", "note": "was supposed to — так планировалось, но не случилось."},
+    {"id": "couldnt-have-done", "en": "Thank you so much. I [couldn't have done|not / do] it without you.", "ru": "Огромное спасибо. Без тебя я бы не справился.", "note": "couldn’t have done — было бы невозможно."},
+    {"id": "shouldnt-have-said", "choice": ["Sorry, I shouldn’t have said that.", "Sorry, I mustn’t have said that."], "ru": "Прости, не стоило мне этого говорить.", "note": "Сожаление о сказанном → shouldn’t have."}
+  ]
+}

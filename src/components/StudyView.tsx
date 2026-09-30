@@ -5,34 +5,30 @@
 // an undo or the clock passing a learning card's due time are all picked up;
 // the card on screen stays put until it is answered.
 //
-// Unit cards come from the book's exercises: gap sentences (typed and checked
-// like an exercise, or turned over), "which is right" options, sentences to
-// write, matching pairs. Word cards show a saved word and its translation, or
-// the translation and the word. Pack cards (packs.ts) ask for a verb's forms,
-// the English of a Russian phrase, or the word missing from a phrase.
-// Everything the session needs is in the offline copy (course.json,
-// packs.json) or the store, so it works offline.
+// Deck cards (deckdata.ts) ask for a verb's forms, the gaps of a sentence,
+// the right one of a few options, the English of a Russian phrase, or what an
+// English phrase means; typed answers are checked like an exercise. Word
+// cards show a saved word and its translation, or the translation and the
+// word. Everything the session needs is in the app's own chunks or the
+// store, so it works offline.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { ArrowLeft, BookOpenText, Check, PauseCircle, PencilLine, Plus, Undo2, Volume2, X } from "lucide-react";
-import type { Book } from "../books";
-import { bookById } from "../books";
-import type { UnitCard } from "../cards";
-import { checkChoice, checkFill, normalize } from "../checker";
+import { ArrowLeft, Check, Info, List, PauseCircle, PencilLine, Plus, Rows3, Undo2, Volume2, X } from "lucide-react";
+import { checkFill, normalize } from "../checker";
+import type { Deck, DeckEntry, EntryKind } from "../deckdata";
+import { checkTyped, choiceOrder, entryKind, entryText, formVariants, gapsOf, parseCardId, phraseAnswers, useDecks } from "../deckdata";
 import type { ResolvedCard } from "../decks";
-import { deckBooks, deckIds, deckTitle, useBookCards, useCardLookup } from "../decks";
+import { deckIds, deckTitle, useCardLookup } from "../decks";
 import { speak } from "../lookup";
-import type { Pack, PackEntry } from "../packs";
-import { checkPackAnswer, entryText, gapParts } from "../packs";
 import type { DeckRef } from "../routes";
-import { CARDS_HASH, bookHash, rulesHash } from "../routes";
+import { CARDS_HASH, browseHash, dictionaryDeckHash } from "../routes";
 import type { Rating } from "../srs";
 import { RATINGS, RATING_LABEL, buildQueue, intervalLabel, nextCard, preview, todayDaily } from "../srs";
 import { STUDY_HELP } from "../shortcuts";
 import { answerCard, setSuspended, srsConfig, undoAnswer, useStudy } from "../study";
 import type { Word } from "../words";
-import { CountsLine } from "./CardsView";
+import { CountsLine, LevelChip } from "./CardsView";
 import { SectionBar } from "./SectionBar";
 import { ShortcutsHelpButton, ShortcutsModal } from "./ShortcutsHelp";
 import { openWordEditor } from "./WordEditor";
@@ -44,8 +40,10 @@ const OS_OPTIONS = {
 
 /** What the learner did on the question side, for checking and the suggested rating. */
 interface Attempt {
+  /** the forms, or the gaps of a sentence */
   gaps: string[];
   text: string;
+  /** the option picked, as its index in the entry (the right one is 0) */
   choice: number | null;
 }
 const EMPTY: Attempt = { gaps: [], text: "", choice: null };
@@ -53,8 +51,8 @@ const EMPTY: Attempt = { gaps: [], text: "", choice: null };
 export function StudyView({ deck }: { deck: DeckRef }) {
   const study = useStudy();
   const { words, srs, settings } = study;
-  const books = useBookCards(useMemo(() => deckBooks(deck), [deck]));
-  const lookup = useCardLookup(books.books, words);
+  const decks = useDecks();
+  const lookup = useCardLookup(decks.lib, words);
   const cfg = useMemo(() => srsConfig(settings), [settings]);
 
   // the clock the queue is built at: moved on by every answer, and every
@@ -66,8 +64,8 @@ export function StudyView({ deck }: { deck: DeckRef }) {
   }, []);
 
   const ids = useMemo(
-    () => deckIds(deck, books.books, words, srs.states, settings.include),
-    [deck, books.books, words, srs.states, settings.include],
+    () => deckIds(deck, decks.lib, words, srs.states, settings.include),
+    [deck, decks.lib, words, srs.states, settings.include],
   );
   const queue = useMemo(() => {
     if (!ids) return null;
@@ -95,8 +93,8 @@ export function StudyView({ deck }: { deck: DeckRef }) {
   // a card that disappeared (its word deleted, suspended elsewhere) is dropped
   const resolved = shownId ? lookup(shownId) : null;
   useEffect(() => {
-    if (shownId && !books.loading && !resolved) setCurrentId(null);
-  }, [shownId, resolved, books.loading]);
+    if (shownId && decks.lib && !resolved) setCurrentId(null);
+  }, [shownId, resolved, decks.lib]);
 
   // turned over: the answer field lets go of the focus, so 1–4 and Space rate
   const turn = useCallback(() => setRevealed(true), []);
@@ -105,6 +103,15 @@ export function StudyView({ deck }: { deck: DeckRef }) {
     const el = document.activeElement;
     if (el instanceof HTMLElement && el.closest(".studycard input, .studycard textarea")) el.blur();
   }, [revealed]);
+  // a choice card's options: shuffled anew at each review (by its review
+  // count when it comes up), steady while it is on screen
+  const options = resolved?.type === "deck" ? resolved.entry.choice : undefined;
+  const reps = shownId ? (srs.states[shownId]?.reps ?? 0) : 0;
+  // (the review count is read when the card comes up: answering moves on)
+  const shownOrder = useMemo(
+    () => (shownId && options ? choiceOrder(shownId, options.length, reps) : []),
+    [shownId, options], // eslint-disable-line react-hooks/exhaustive-deps
+  );
   const verdict = resolved && revealed ? grade(resolved, attempt, settings.typeAnswers) : null;
   const suggested: Rating = verdict === false ? 1 : 3;
 
@@ -139,8 +146,8 @@ export function StudyView({ deck }: { deck: DeckRef }) {
   );
 
   // keys: see STUDY_HELP
-  const keyState = useRef({ revealed, rate, turn, undo, suggested, pickChoice, resolved, helpOpen });
-  keyState.current = { revealed, rate, turn, undo, suggested, pickChoice, resolved, helpOpen };
+  const keyState = useRef({ revealed, rate, turn, undo, suggested, pickChoice, shownOrder, helpOpen });
+  keyState.current = { revealed, rate, turn, undo, suggested, pickChoice, shownOrder, helpOpen };
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const k = keyState.current;
@@ -177,12 +184,9 @@ export function StudyView({ deck }: { deck: DeckRef }) {
           if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return;
           e.preventDefault();
           k.turn();
-        } else if (digit && k.resolved?.type === "unit" && k.resolved.card.kind === "choice") {
-          const i = Number(digit) - 1;
-          if (i < k.resolved.card.options.length) {
-            e.preventDefault();
-            k.pickChoice(i);
-          }
+        } else if (digit && Number(digit) <= k.shownOrder.length) {
+          e.preventDefault();
+          k.pickChoice(k.shownOrder[Number(digit) - 1]);
         }
         return;
       }
@@ -209,17 +213,17 @@ export function StudyView({ deck }: { deck: DeckRef }) {
   const previews = shownId && revealed ? preview(state, t, cfg, shownId) : null;
 
   let body;
-  if (!ids || (books.loading && !resolved)) {
-    body = books.failed.length ? (
+  if (!ids) {
+    body = decks.failed ? (
       <Notice>
-        {books.failed.map((b) => b.title).join(", ")} could not be loaded. Are you offline? Download the book to
-        study its cards offline.
+        The decks could not be loaded. Are you offline? Open the cards online once and they stay available
+        offline.
       </Notice>
     ) : (
       <Notice>Loading the cards…</Notice>
     );
   } else if (!shownId || !resolved) {
-    body = <Finished deck={deck} total={ids.length} later={queue?.later.length ?? 0} failed={books.failed.map((b) => b.title)} />;
+    body = <Finished deck={deck} total={ids.length} later={queue?.later.length ?? 0} />;
   } else {
     body = (
       <>
@@ -230,6 +234,7 @@ export function StudyView({ deck }: { deck: DeckRef }) {
             attempt={attempt}
             setAttempt={setAttempt}
             typeAnswers={settings.typeAnswers}
+            order={shownOrder}
             onSubmit={turn}
             onPick={pickChoice}
           />
@@ -274,6 +279,15 @@ export function StudyView({ deck }: { deck: DeckRef }) {
             <PauseCircle size={15} aria-hidden /> Suspend
           </button>
           <CardLinks r={resolved} />
+          {resolved.type === "deck" && (
+            <a
+              className="linkbtn"
+              href={browseHash(resolved.deck.id, parseCardId(shownId)?.entry)}
+              title="The card among its deck's cards, with its review history"
+            >
+              <Info size={15} aria-hidden /> Card info
+            </a>
+          )}
         </div>
       </>
     );
@@ -292,7 +306,7 @@ export function StudyView({ deck }: { deck: DeckRef }) {
               <a className="ruleback" href={CARDS_HASH}>
                 <ArrowLeft size={16} aria-hidden /> Decks
               </a>
-              <h2 className="studytitle">{deckTitle(deck, books.books)}</h2>
+              <h2 className="studytitle">{deckTitle(deck, decks.lib)}</h2>
               {counts && <CountsLine c={counts} at={resolved ? at : undefined} />}
             </div>
             {body}
@@ -308,19 +322,15 @@ function Notice({ children }: { children: React.ReactNode }) {
   return <p className="rulesnote">{children}</p>;
 }
 
-function Finished({ deck, total, later, failed }: { deck: DeckRef; total: number; later: number; failed: string[] }) {
+function Finished({ deck, total, later }: { deck: DeckRef; total: number; later: number }) {
   let text: string;
   if (!total)
     text =
       deck.kind === "words"
         ? "No words yet. Add some in the dictionary — or select a word in an exercise."
-        : deck.kind === "unit"
-          ? "This unit has no cards: its exercises need the pictures or situations of the printed page."
-          : deck.kind === "all"
-            ? "Nothing here yet. Finish a unit in a book, add words to your dictionary or tick a word pack in the deck list, and their cards will appear."
-            : deck.kind === "book"
-              ? "Nothing of this book is ticked for daily study yet. Tick units or word packs in the deck list, or study a group."
-              : "No cards here.";
+        : deck.kind === "all"
+          ? "Nothing here yet. Tick a deck in the deck list — or just study one — and add words to your dictionary: their cards will appear here."
+          : "There is no such deck. It may have been renamed — pick it from the deck list.";
   else if (later)
     text = `${later} card${later === 1 ? "" : "s"} you are learning come${later === 1 ? "s" : ""} back later today — this page brings ${later === 1 ? "it" : "them"} up when due.`;
   else text = "Nothing more is due in this deck today. Come back tomorrow.";
@@ -328,16 +338,13 @@ function Finished({ deck, total, later, failed }: { deck: DeckRef; total: number
     <section className="sheet finished">
       <h2 className="unitheading">{total ? "Done for now" : "No cards"}</h2>
       <p className="ruleprose">{text}</p>
-      {failed.length > 0 && (
-        <p className="lookupstatus warn">Cards of {failed.join(", ")} are not available offline.</p>
-      )}
       <div className="modal-actions">
         <a className="themebtn labelled" href={CARDS_HASH}>
           <ArrowLeft size={15} aria-hidden /> All decks
         </a>
-        {deck.kind === "unit" && (
-          <a className="themebtn labelled" href={bookHash(deck.book, { kind: "unit", n: deck.unit })}>
-            <PencilLine size={15} aria-hidden /> The unit’s exercises
+        {deck.kind === "deck" && total > 0 && (
+          <a className="themebtn labelled" href={browseHash(deck.id)}>
+            <Rows3 size={15} aria-hidden /> Browse the cards
           </a>
         )}
       </div>
@@ -353,24 +360,11 @@ function grade(r: ResolvedCard, a: Attempt, typing: boolean): boolean | null {
     if (r.dir !== "r" || !typing || !a.text.trim()) return null;
     return normalize(a.text) === normalize(r.word.word);
   }
-  if (r.type === "pack") {
-    const typed = r.pack.ask === "forms" ? a.gaps.some((g) => g?.trim()) : !!a.text.trim();
-    if (!typing || !typed) return null;
-    return checkPackAnswer(r.pack.ask, r.entry, { forms: a.gaps, text: a.text });
-  }
-  const c = r.card;
-  switch (c.kind) {
-    case "cloze":
-      if (!typing || a.gaps.every((g) => !g?.trim())) return null;
-      return c.answers.every((vs, i) => checkFill(a.gaps[i] ?? "", vs));
-    case "write":
-      if (!typing || !a.text.trim()) return null;
-      return checkFill(a.text, c.answers);
-    case "choice":
-      return a.choice === null ? null : checkChoice(a.choice, c.answer);
-    case "match":
-      return null;
-  }
+  const kind = entryKind(r.deck, r.entry);
+  if (kind === "choice") return a.choice === null ? null : a.choice === 0;
+  if (kind === "meaning" || !typing) return null;
+  const typed = kind === "translate" ? !!a.text.trim() : a.gaps.some((g) => g?.trim());
+  return typed ? checkTyped(kind, r.entry, a) : null;
 }
 
 // ---- faces --------------------------------------------------------------------------
@@ -381,183 +375,23 @@ interface FaceProps {
   attempt: Attempt;
   setAttempt: (f: (a: Attempt) => Attempt) => void;
   typeAnswers: boolean;
+  /** a choice card's options in the order shown */
+  order: number[];
   onSubmit: () => void;
   onPick: (i: number) => void;
 }
 
-function CardFace(p: FaceProps) {
-  if (p.r.type === "word") return <WordFace {...p} word={p.r.word} dir={p.r.dir} />;
-  if (p.r.type === "pack") return <PackFace {...p} book={p.r.book} pack={p.r.pack} entry={p.r.entry} />;
-  return <UnitFace {...p} card={p.r.card} />;
-}
-
-function UnitFace({ card, revealed, attempt, setAttempt, typeAnswers, onSubmit, onPick }: FaceProps & { card: UnitCard }) {
-  const book = bookById(card.book);
-  const firstInput = useRef<HTMLInputElement | HTMLTextAreaElement | null>(null);
-  useEffect(() => {
-    firstInput.current?.focus({ preventScroll: true });
-  }, []);
-  const enter = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && !revealed) {
-      e.preventDefault();
-      onSubmit();
-    }
-  };
+/** A card as the deck browser shows it: turned over, nothing typed. */
+export function CardPreview({ r, order }: { r: ResolvedCard; order: number[] }) {
+  const none = () => {};
   return (
-    <>
-      <p className="cardsource">
-        {book && <span className="libdot" style={{ background: book.color }} aria-hidden />}
-        {book?.level} · Unit {card.unit} · <span className="exid small">{card.exercise}</span>
-      </p>
-      <p className="instruction">{card.instruction}</p>
-      {card.wordBank && (
-        <div className="wordbank">
-          {card.wordBank.map((w) => (
-            <span key={w} className="chip">
-              {w}
-            </span>
-          ))}
-        </div>
-      )}
-      <div className="cardfront">
-        {card.kind === "cloze" && (
-          <p className="clozeline">
-            {card.parts.map((part, i) => (
-              <span key={i}>
-                {part}
-                {i < card.answers.length &&
-                  (typeAnswers ? (
-                    <input
-                      ref={i === 0 ? (el) => void (firstInput.current = el) : undefined}
-                      className={
-                        "gap" +
-                        (revealed && (attempt.gaps[i] ?? "").trim()
-                          ? checkFill(attempt.gaps[i] ?? "", card.answers[i])
-                            ? " ok"
-                            : " bad"
-                          : "")
-                      }
-                      size={Math.max(6, card.answers[i][0].length + 3)}
-                      value={attempt.gaps[i] ?? ""}
-                      readOnly={revealed}
-                      onChange={(e) => {
-                        const v = e.target.value;
-                        setAttempt((a) => {
-                          const gaps = [...a.gaps];
-                          gaps[i] = v;
-                          return { ...a, gaps };
-                        });
-                      }}
-                      onKeyDown={enter}
-                      aria-label={`Gap ${i + 1}`}
-                      autoCapitalize="off"
-                      autoComplete="off"
-                      spellCheck={false}
-                    />
-                  ) : revealed ? (
-                    <mark className="gapfill">{card.answers[i][0]}</mark>
-                  ) : (
-                    <span className="gapblank" aria-label="gap" />
-                  ))}
-              </span>
-            ))}
-          </p>
-        )}
-        {card.kind === "choice" && (
-          <ol className="choiceopts">
-            {card.options.map((o, i) => {
-              const right = checkChoice(i, card.answer);
-              const cls =
-                "choiceopt" +
-                (revealed && right ? " ok" : "") +
-                (revealed && attempt.choice === i && !right ? " bad" : "");
-              return (
-                <li key={i}>
-                  <button type="button" className={cls} onClick={() => onPick(i)} disabled={revealed}>
-                    <span className="optkey">{i + 1}</span>
-                    <span className="opttext">{o}</span>
-                    {revealed && right && <Check size={16} aria-hidden />}
-                    {revealed && attempt.choice === i && !right && <X size={16} aria-hidden />}
-                  </button>
-                </li>
-              );
-            })}
-          </ol>
-        )}
-        {card.kind === "write" && (
-          <>
-            <p className="prompt">{card.prompt}</p>
-            {typeAnswers && (
-              <textarea
-                ref={(el) => void (firstInput.current = el)}
-                className={
-                  "wfull" + (revealed && attempt.text.trim() ? (checkFill(attempt.text, card.answers) ? " ok" : " bad") : "")
-                }
-                rows={2}
-                value={attempt.text}
-                readOnly={revealed}
-                onChange={(e) => {
-                  const v = e.target.value;
-                  setAttempt((a) => ({ ...a, text: v }));
-                }}
-                onKeyDown={enter}
-                aria-label="Your answer"
-                autoCapitalize="off"
-                spellCheck={false}
-              />
-            )}
-          </>
-        )}
-        {card.kind === "match" && <p className="prompt">{card.left}</p>}
-      </div>
-      {revealed && <UnitBack card={card} attempt={attempt} typeAnswers={typeAnswers} />}
-    </>
+    <CardFace r={r} revealed attempt={EMPTY} setAttempt={none} typeAnswers={false} order={order} onSubmit={none} onPick={none} />
   );
 }
 
-function UnitBack({ card, attempt, typeAnswers }: { card: UnitCard; attempt: Attempt; typeAnswers: boolean }) {
-  switch (card.kind) {
-    case "cloze":
-      if (!typeAnswers) return null; // the answers are filled into the sentence
-      return (
-        <div className="cardback">
-          <span className="variants">
-            {card.answers.map((vs, i) => (
-              <span key={i} className="keyline">
-                {card.answers.length > 1 && <span className="gapno">{i + 1}</span>}
-                {vs.map((v, j) => (
-                  <span key={j} className={checkFill(attempt.gaps[i] ?? "", [v]) ? "ok" : undefined}>
-                    {j > 0 && " / "}
-                    {v}
-                  </span>
-                ))}
-              </span>
-            ))}
-          </span>
-        </div>
-      );
-    case "write":
-      return (
-        <div className="cardback">
-          <span className="variants">
-            {card.answers.map((v, j) => (
-              <span key={j} className={typeAnswers && checkFill(attempt.text, [v]) ? "ok" : undefined}>
-                {j > 0 && <br />}
-                {v}
-              </span>
-            ))}
-          </span>
-        </div>
-      );
-    case "match":
-      return (
-        <div className="cardback">
-          <span className="variants">{card.right}</span>
-        </div>
-      );
-    case "choice":
-      return null; // marked on the options
-  }
+function CardFace(p: FaceProps) {
+  if (p.r.type === "word") return <WordFace {...p} word={p.r.word} dir={p.r.dir} />;
+  return <DeckFace {...p} deck={p.r.deck} entry={p.r.entry} />;
 }
 
 function WordFace({ word, dir, revealed, attempt, setAttempt, typeAnswers, onSubmit }: FaceProps & { word: Word; dir: "f" | "r" }) {
@@ -570,14 +404,7 @@ function WordFace({ word, dir, revealed, attempt, setAttempt, typeAnswers, onSub
     <div className="wordbig">
       <span className="wordbigtext">{word.word}</span>
       {word.ipa && <span className="ipa">{word.ipa}</span>}
-      <button
-        type="button"
-        className="wordspeak"
-        onClick={() => void speak(word.word, word.audio)}
-        aria-label={`Listen: ${word.word}`}
-      >
-        <Volume2 size={16} aria-hidden />
-      </button>
+      <Speak text={word.word} audio={word.audio} />
     </div>
   );
   const translation = (
@@ -636,233 +463,296 @@ function WordFace({ word, dir, revealed, attempt, setAttempt, typeAnswers, onSub
   );
 }
 
-const PACK_ASKS: Record<Pack["ask"], string> = {
-  forms: "Past simple · past participle",
-  translate: "Translation → English",
-  gap: "The missing word",
-};
+function Speak({ text, audio }: { text: string; audio?: string }) {
+  return (
+    <button type="button" className="wordspeak" onClick={() => void speak(text, audio)} aria-label={`Listen: ${text}`}>
+      <Volume2 size={16} aria-hidden />
+    </button>
+  );
+}
 
-function PackFace({
-  book,
-  pack,
+/** The line over a card: what to do with it. */
+function instruction(deck: Deck, kind: EntryKind, e: DeckEntry): string {
+  if (deck.prompt && kind !== "forms") return deck.prompt;
+  switch (kind) {
+    case "forms":
+      return "Past simple · past participle";
+    case "gap":
+      return gapsOf(e.en ?? "").gaps.length > 1 ? "Fill the gaps" : "Fill the gap";
+    case "choice":
+      return e.en ? "Choose what fits" : "Which is right?";
+    case "translate":
+      return "In English";
+    case "meaning":
+      return "What does it mean?";
+  }
+}
+
+function DeckFace({
+  deck,
   entry,
   revealed,
   attempt,
   setAttempt,
   typeAnswers,
+  order,
   onSubmit,
-}: FaceProps & { book: Book; pack: Pack; entry: PackEntry }) {
-  const first = useRef<HTMLInputElement>(null);
-  const second = useRef<HTMLInputElement>(null);
+  onPick,
+}: FaceProps & { deck: Deck; entry: DeckEntry }) {
+  const kind = entryKind(deck, entry);
+  const inputs = useRef<(HTMLInputElement | null)[]>([]);
   useEffect(() => {
-    if (typeAnswers) first.current?.focus({ preventScroll: true });
+    if (typeAnswers) inputs.current[0]?.focus({ preventScroll: true });
   }, [typeAnswers]);
+
   const setGap = (i: number, v: string) =>
     setAttempt((a) => {
       const gaps = [...a.gaps];
       gaps[i] = v;
       return { ...a, gaps };
     });
-  // the two forms: Enter in the first moves on, in the second turns the card
-  const enter = (next?: React.RefObject<HTMLInputElement>) => (e: React.KeyboardEvent) => {
+  // Enter moves to the next field; in the last one it turns the card
+  const enter = (i: number) => (e: React.KeyboardEvent) => {
     if (e.key !== "Enter" || revealed) return;
     e.preventDefault();
-    if (next?.current) next.current.focus();
+    const next = inputs.current[i + 1];
+    if (next) next.focus();
     else onSubmit();
   };
-  const mark = (ok: boolean, typed: string) => (revealed && typed.trim() ? (ok ? " ok" : " bad") : "");
-  const input = (props: {
-    i?: number;
-    value: string;
-    variants: string[];
-    label: string;
-    size?: number;
-    ref?: React.RefObject<HTMLInputElement>;
-    next?: React.RefObject<HTMLInputElement>;
-    cls: string;
-  }) => (
+  const mark = (typed: string, variants: string[]) =>
+    revealed && typed.trim() ? (checkFill(typed, variants) ? " ok" : " bad") : "";
+  /** a typed field: a gap in a sentence (cls "gap") or a line of its own */
+  const field = (i: number, value: string, variants: string[], label: string, cls: "gap" | "wfull") => (
     <input
-      ref={props.ref}
-      className={props.cls + mark(checkFill(props.value, props.variants), props.value)}
-      size={props.size}
-      value={props.value}
+      key={i}
+      ref={(el) => void (inputs.current[i] = el)}
+      className={cls + mark(value, variants)}
+      size={cls === "gap" ? Math.max(5, Math.max(...variants.map((v) => v.length)) + 2) : undefined}
+      value={value}
       readOnly={revealed}
       onChange={(e) => {
         const v = e.target.value;
-        if (props.i === undefined) setAttempt((a) => ({ ...a, text: v }));
-        else setGap(props.i, v);
+        if (kind === "translate") setAttempt((a) => ({ ...a, text: v }));
+        else setGap(i, v);
       }}
-      onKeyDown={enter(props.next)}
-      placeholder={props.cls === "gap" ? undefined : props.label}
-      aria-label={props.label}
+      onKeyDown={enter(i)}
+      placeholder={cls === "gap" ? undefined : label}
+      aria-label={label}
       autoCapitalize="off"
       autoComplete="off"
       spellCheck={false}
     />
   );
-  const say = (
-    <button
-      type="button"
-      className="wordspeak"
-      onClick={() => void speak(entryText(entry))}
-      aria-label={`Listen: ${entryText(entry)}`}
-    >
-      <Volume2 size={16} aria-hidden />
-    </button>
+  const ru = entry.ru && (
+    <p className="packru" lang="ru">
+      {entry.ru}
+    </p>
   );
-  const extra = revealed && (entry.ex || entry.note) && (
+  const extra = (entry.ex || entry.note) && (
     <>
-      {entry.ex && <p className="wordcontext">{entry.ex}</p>}
-      {entry.note && <p className="wordnotes">{entry.note}</p>}
+      {entry.ex && kind !== "meaning" && <p className="wordcontext">{entry.ex}</p>}
+      {entry.note && <p className="wordnotes cardnote">{entry.note}</p>}
     </>
   );
 
   let front: React.ReactNode;
   let back: React.ReactNode = null;
-  if (pack.ask === "forms") {
-    const forms = entry.forms ?? [];
-    const variants = (f: string) => [f, ...f.split("/")];
-    front = (
-      <>
-        <div className="wordbig">
-          <span className="wordbigtext">{entry.en}</span>
-          {say}
-        </div>
-        <p className="packru" lang="ru">
-          {entry.ru}
-        </p>
-        {typeAnswers ? (
-          <div className="formsrow">
-            {input({ i: 0, value: attempt.gaps[0] ?? "", variants: variants(forms[0] ?? ""), label: "past simple", ref: first, next: second, cls: "wfull" })}
-            {input({ i: 1, value: attempt.gaps[1] ?? "", variants: variants(forms[1] ?? ""), label: "past participle", ref: second, cls: "wfull" })}
+  switch (kind) {
+    case "forms": {
+      const forms = entry.forms ?? [];
+      front = (
+        <>
+          <div className="wordbig">
+            <span className="wordbigtext">{entry.en}</span>
+            <Speak text={entry.en ?? ""} />
           </div>
-        ) : null}
-      </>
-    );
-    if (revealed)
+          {ru}
+          {typeAnswers && (
+            <div className="formsrow">
+              {forms.map((f, i) =>
+                field(i, attempt.gaps[i] ?? "", formVariants(f), i ? "past participle" : "past simple", "wfull"),
+              )}
+            </div>
+          )}
+        </>
+      );
       back = (
-        <div className="cardback">
+        <>
           <p className="formsline">
             <span>{entry.en}</span>
             {forms.map((f, i) => (
-              <span key={i} className={typeAnswers && checkFill(attempt.gaps[i] ?? "", variants(f)) ? "ok" : undefined}>
+              <span key={i} className={typeAnswers && checkFill(attempt.gaps[i] ?? "", formVariants(f)) ? "ok" : undefined}>
                 {f}
               </span>
             ))}
           </p>
           {extra}
-        </div>
+        </>
       );
-  } else if (pack.ask === "translate") {
-    front = (
-      <>
-        <p className="wordbigtrans" lang="ru">
-          {entry.ru}
-        </p>
-        {typeAnswers && input({ value: attempt.text, variants: [entry.en, ...(entry.alt ?? [])], label: "the English", ref: first, cls: "wfull" })}
-      </>
-    );
-    if (revealed)
+      break;
+    }
+    case "gap": {
+      const { parts, gaps } = gapsOf(entry.en ?? "");
+      front = (
+        <>
+          <p className="clozeline">
+            {parts.map((part, i) => (
+              <span key={i}>
+                {part}
+                {i < gaps.length && (
+                  <>
+                    {typeAnswers ? (
+                      field(i, attempt.gaps[i] ?? "", gaps[i].answers, `Gap ${i + 1}`, "gap")
+                    ) : revealed ? (
+                      <mark className="gapfill">{gaps[i].answers[0]}</mark>
+                    ) : (
+                      <span className="gapblank" aria-label="gap" />
+                    )}
+                    {gaps[i].hint && <span className="gaphint"> ({gaps[i].hint})</span>}
+                  </>
+                )}
+              </span>
+            ))}
+          </p>
+          {ru}
+        </>
+      );
       back = (
-        <div className="cardback">
+        <>
+          {typeAnswers && (
+            <p className="filledline">
+              {parts.map((part, i) => (
+                <span key={i}>
+                  {part}
+                  {i < gaps.length && (
+                    <mark className={"gapfill" + (checkFill(attempt.gaps[i] ?? "", gaps[i].answers) ? "" : " missed")}>
+                      {gaps[i].answers.join(" / ")}
+                    </mark>
+                  )}
+                </span>
+              ))}
+            </p>
+          )}
+          {extra}
+        </>
+      );
+      break;
+    }
+    case "choice": {
+      const opts = entry.choice ?? [];
+      const [before, after] = entry.en ? entry.en.split("___") : ["", ""];
+      front = (
+        <>
+          {entry.en && (
+            <p className="clozeline">
+              {before}
+              {revealed ? <mark className="gapfill">{opts[0]}</mark> : <span className="gapblank" aria-label="gap" />}
+              {after}
+            </p>
+          )}
+          <ol className={"choiceopts" + (entry.en ? " inline" : "")}>
+            {order.map((i, k) => {
+              const right = i === 0;
+              const cls =
+                "choiceopt" + (revealed && right ? " ok" : "") + (revealed && attempt.choice === i && !right ? " bad" : "");
+              return (
+                <li key={i}>
+                  <button type="button" className={cls} onClick={() => onPick(i)} disabled={revealed}>
+                    <span className="optkey">{k + 1}</span>
+                    <span className="opttext">{opts[i]}</span>
+                    {revealed && right && <Check size={16} aria-hidden />}
+                    {revealed && attempt.choice === i && !right && <X size={16} aria-hidden />}
+                  </button>
+                </li>
+              );
+            })}
+          </ol>
+        </>
+      );
+      back = (
+        <>
+          {ru}
+          {extra}
+        </>
+      );
+      break;
+    }
+    case "translate":
+      front = (
+        <>
+          <p className="wordbigtrans" lang="ru">
+            {entry.ru}
+          </p>
+          {typeAnswers && field(0, attempt.text, phraseAnswers(entry), "the English", "wfull")}
+        </>
+      );
+      back = (
+        <>
           <div className="wordbig">
-            <span className="wordbigtext">{entry.en}</span>
-            {say}
+            <span className={"wordbigtext" + (typeAnswers && attempt.text.trim() && !checkFill(attempt.text, phraseAnswers(entry)) ? " missed" : "")}>
+              {entry.en}
+            </span>
+            <Speak text={entry.en ?? ""} />
           </div>
           {entry.alt && entry.alt.length > 0 && <p className="packalt">also {entry.alt.join(", ")}</p>}
           {extra}
-        </div>
+        </>
       );
-  } else {
-    const g = gapParts(entry.en);
-    front = (
-      <>
-        <p className="clozeline packgap">
-          {g.before}
-          {typeAnswers ? (
-            input({ value: attempt.text, variants: g.answers, label: "the missing word", size: Math.max(5, g.answers[0].length + 3), ref: first, cls: "gap" })
-          ) : revealed ? (
-            <mark className="gapfill">{g.answers.join(" / ")}</mark>
-          ) : (
-            <span className="gapblank" aria-label="gap" />
-          )}
-          {g.after}
-        </p>
-        <p className="packru" lang="ru">
-          {entry.ru}
-        </p>
-      </>
-    );
-    if (revealed)
+      break;
+    case "meaning":
+      front = (
+        <>
+          <div className="wordbig">
+            <span className="wordbigtext">{entry.en}</span>
+            <Speak text={entry.en ?? ""} />
+          </div>
+          {entry.ex && <p className="wordcontext">{entry.ex}</p>}
+        </>
+      );
       back = (
-        <div className="cardback">
-          {typeAnswers && (
-            <span className="variants">
-              {g.answers.map((v, j) => (
-                <span key={j} className={checkFill(attempt.text, [v]) ? "ok" : undefined}>
-                  {j > 0 && " / "}
-                  {v}
-                </span>
-              ))}
-            </span>
-          )}
+        <>
+          <p className="wordbigtrans" lang="ru">
+            {entry.ru}
+          </p>
           {extra}
-        </div>
+        </>
       );
+      break;
   }
 
   return (
     <>
       <p className="cardsource">
-        <span className="libdot" style={{ background: book.color }} aria-hidden />
-        {book.level} · {pack.title}
-        {entry.unit ? ` · Unit ${entry.unit}` : ""}
+        {deck.title}
+        <LevelChip level={deck.level} />
       </p>
-      <p className="instruction">{PACK_ASKS[pack.ask]}</p>
+      <p className="instruction">{instruction(deck, kind, entry)}</p>
       <div className="cardfront">{front}</div>
-      {back}
+      {revealed && back && <div className="cardback">{back}</div>}
     </>
   );
 }
 
-function CardLinks({ r }: { r: ResolvedCard }) {
+export function CardLinks({ r }: { r: ResolvedCard }) {
   if (r.type === "word")
     return (
       <button type="button" className="linkbtn" onClick={() => openWordEditor({ id: r.word.id })}>
         <PencilLine size={15} aria-hidden /> Edit word
       </button>
     );
-  if (r.type === "pack") {
-    const unit = r.entry.unit ?? r.pack.units?.[0];
-    return (
-      <>
-        {unit && (
-          <a className="linkbtn" href={rulesHash(r.book, unit)}>
-            <BookOpenText size={15} aria-hidden /> Rule
-          </a>
-        )}
-        <button
-          type="button"
-          className="linkbtn"
-          onClick={() =>
-            openWordEditor({ word: entryText(r.entry), context: r.entry.ex, source: { book: r.book.id, unit } })
-          }
-        >
-          <Plus size={15} aria-hidden /> Add to my words
-        </button>
-      </>
-    );
-  }
-  const book = bookById(r.card.book);
-  if (!book) return null;
+  // a phrase to keep: vocabulary, not a grammar sentence
+  if (r.section !== "vocabulary") return null;
+  const phrase = r.entry.choice ? null : entryText(r.entry);
   return (
     <>
-      <a className="linkbtn" href={rulesHash(book, r.card.unit)}>
-        <BookOpenText size={15} aria-hidden /> Rule
+      <a className="linkbtn" href={dictionaryDeckHash(r.deck.id)}>
+        <List size={15} aria-hidden /> Word list
       </a>
-      <a className="linkbtn" href={bookHash(book, { kind: "unit", n: r.card.unit })}>
-        <PencilLine size={15} aria-hidden /> Exercise {r.card.exercise}
-      </a>
+      {phrase && (
+        <button type="button" className="linkbtn" onClick={() => openWordEditor({ word: phrase, context: r.entry.ex })}>
+          <Plus size={15} aria-hidden /> Add to my words
+        </button>
+      )}
     </>
   );
 }

@@ -1,0 +1,23 @@
+{
+  "title": "must, have to, should, don’t have to",
+  "about": "obligation, necessity, prohibition and advice",
+  "level": "B1",
+  "entries": [
+    {"id": "must-see", "en": "You [must|must / have to] see this film — it’s brilliant!", "ru": "Ты обязательно должен посмотреть этот фильм — он потрясающий!", "note": "must — личное мнение говорящего, настойчивый совет."},
+    {"id": "have-to-uniform", "en": "In my job I [have to|must / have to] wear a uniform. Those are the rules.", "ru": "На работе я должен носить форму. Таковы правила.", "note": "have to — обязанность из-за внешних обстоятельств, правил."},
+    {"id": "mustnt-touch", "en": "You [mustn't|mustn’t / don’t have to] touch that wire — it’s dangerous.", "ru": "Этот провод трогать нельзя — опасно.", "note": "mustn’t — нельзя, запрет."},
+    {"id": "dont-have-to", "en": "Tomorrow’s Sunday, so I [don't have to|mustn’t / don’t have to] get up early.", "ru": "Завтра воскресенье, так что мне не нужно рано вставать.", "note": "don’t have to — не обязательно, нет необходимости."},
+    {"id": "had-to-past", "en": "The last bus had gone, so we [had to|have to] walk home.", "ru": "Последний автобус ушёл, и нам пришлось идти пешком.", "note": "У must нет прошедшего времени → had to."},
+    {"id": "will-have-to", "en": "If the lift doesn’t work, we [will have to|have to] take the stairs.", "ru": "Если лифт не работает, придётся идти по лестнице.", "note": "Будущее → will have to."},
+    {"id": "should-see-doctor", "choice": ["You look terrible. You should see a doctor.", "You look terrible. You should to see a doctor."], "ru": "Выглядишь ужасно. Тебе стоит сходить к врачу.", "note": "should — совет. После модальных глаголов to не нужен."},
+    {"id": "shouldnt-eat", "en": "You [shouldn't eat|not / eat] so much sugar.", "ru": "Тебе не стоит есть столько сахара.", "note": "shouldn’t — не стоит."},
+    {"id": "do-i-have-to", "en": "[Do I have to|I / have to] book in advance?", "ru": "Нужно бронировать заранее?", "note": "Вопрос с have to — через do / does."},
+    {"id": "had-better", "en": "It’s getting late. We’d better [go|go], or we’ll miss the last train.", "ru": "Уже поздно. Лучше пойдём, а то опоздаем на последний поезд.", "note": "had better + глагол без to — лучше сделать, иначе будет плохо."},
+    {"id": "had-better-not", "en": "You’d better [not be|not / be] late again.", "ru": "Лучше тебе больше не опаздывать.", "note": "Отрицание: had better not do."},
+    {"id": "neednt-worry", "en": "You [needn't|need] worry — everything is under control.", "ru": "Можешь не волноваться — всё под контролем.", "note": "needn’t = don’t need to = не нужно."},
+    {"id": "mustnt-dont-have", "choice": ["You don’t have to pay — it’s free.", "You mustn’t pay — it’s free."], "ru": "Платить не нужно — это бесплатно.", "note": "Бесплатно = не обязательно платить → don’t have to. mustn’t означало бы «запрещено»."},
+    {"id": "ought-to", "en": "We ought [to call|call] Grandma — it’s her birthday.", "ru": "Нам следует позвонить бабушке — у неё день рождения.", "note": "ought to = should."},
+    {"id": "supposed-to", "en": "You’re supposed [to take|take] your shoes off in this temple.", "ru": "В этом храме положено снимать обувь.", "note": "be supposed to — так положено, так ожидается."},
+    {"id": "didnt-have-to-wait", "choice": ["The doctor saw me at once, so I didn’t have to wait.", "The doctor saw me at once, so I mustn’t wait."], "ru": "Врач сразу меня принял, так что ждать не пришлось.", "note": "В прошлом: didn’t have to — не пришлось."}
+  ]
+}

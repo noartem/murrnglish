@@ -1,0 +1,22 @@
+{
+  "title": "If, unless, in case: real conditions",
+  "about": "zero and first conditional; when, unless, as long as, in case",
+  "level": "B1",
+  "entries": [
+    {"id": "if-heat-ice", "en": "If you [heat|heat] ice, it melts.", "ru": "Если нагреть лёд, он тает.", "note": "Всегда верно → Present simple в обеих частях (нулевое условное)."},
+    {"id": "if-rains-stay", "en": "If it [rains|rain] tomorrow, we [will stay|stay] at home.", "ru": "Если завтра будет дождь, мы останемся дома.", "note": "После if о будущем — Present simple, в главной части — will."},
+    {"id": "if-will-wrong", "choice": ["If I see her, I’ll tell her.", "If I will see her, I’ll tell her."], "ru": "Если увижу её, скажу.", "note": "В придаточном с if будущее выражается Present simple."},
+    {"id": "unless-hurry", "en": "We’ll miss the train [unless|if / unless] we hurry.", "ru": "Мы опоздаем на поезд, если не поторопимся.", "note": "unless = if not."},
+    {"id": "unless-meaning", "en": "I’ll be there at eight [unless|if / unless] the traffic is terrible.", "ru": "Я буду в восемь, если только не будет жутких пробок.", "note": "unless = если не, если только не."},
+    {"id": "as-long-as", "en": "You can borrow my bike [as long as|as long as / in case] you bring it back by six.", "ru": "Можешь взять мой велосипед, при условии что вернёшь его к шести.", "note": "as long as / provided that — при условии, что."},
+    {"id": "in-case-rain", "en": "Take an umbrella [in case|if / in case] it rains.", "ru": "Возьми зонт на случай дождя.", "note": "in case — на всякий случай (зонт берём сейчас, в любом случае)."},
+    {"id": "if-vs-in-case", "choice": ["I’ll write down the address in case I forget it.", "I’ll write down the address if I forget it."], "ru": "Запишу адрес на случай, если забуду.", "note": "Записываю сейчас, заранее → in case."},
+    {"id": "when-vs-if", "choice": ["I’ll call you when I get to the airport.", "I’ll call you if I get to the airport."], "ru": "Позвоню, когда доберусь до аэропорта.", "note": "Точно случится → when; может и не случиться → if."},
+    {"id": "if-you-see", "en": "If you [see|see] Tanya, [tell|tell] her I said hello.", "ru": "Если увидишь Таню, передай ей привет.", "note": "If + Present simple, повелительное наклонение."},
+    {"id": "what-if", "en": "What [will you do|you / do] if you don’t get the job?", "ru": "Что будешь делать, если не получишь эту работу?", "note": "Вопрос о реальном будущем → will."},
+    {"id": "if-can", "en": "If you [can't come|not / can / come], let me know.", "ru": "Если не сможешь прийти, дай знать.", "note": "В придаточном можно can."},
+    {"id": "should-you-need", "en": "[Should you need|you / need] any help, just call.", "ru": "Если вам понадобится помощь, просто позвоните.", "note": "Формально: Should you… = If you should… (инверсия вместо if)."},
+    {"id": "otherwise", "en": "Wear a helmet. [Otherwise|Otherwise / Unless], you could get hurt.", "ru": "Надень шлем. Иначе можешь пострадать.", "note": "otherwise — иначе, в противном случае."},
+    {"id": "unless-wrong", "choice": ["I won’t go unless you come with me.", "I won’t go unless you don’t come with me."], "ru": "Не пойду, если ты не пойдёшь со мной.", "note": "unless уже содержит отрицание."}
+  ]
+}

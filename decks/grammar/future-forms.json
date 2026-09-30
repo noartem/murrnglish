@@ -1,0 +1,24 @@
+{
+  "title": "will, going to, present continuous",
+  "about": "decisions, plans, arrangements, predictions",
+  "level": "B1",
+  "entries": [
+    {"id": "ill-get-it", "en": "“The phone’s ringing.” — “OK, I [will get/'ll get|get] it.”", "ru": "«Телефон звонит». — «Сейчас возьму».", "note": "Решение в момент речи → will."},
+    {"id": "going-to-paint", "en": "We’ve bought the paint — we [are going to paint|paint] the bedroom this weekend.", "ru": "Мы купили краску — на выходных будем красить спальню.", "note": "Решение принято заранее → be going to."},
+    {"id": "meeting-dentist", "en": "I can’t come on Thursday. I [am seeing|see] the dentist at four.", "ru": "В четверг не могу: в четыре я иду к стоматологу.", "note": "Договорённость на определённое время → Present continuous."},
+    {"id": "look-clouds", "en": "Look at those clouds. It [is going to rain|rain].", "ru": "Посмотри на эти тучи. Сейчас пойдёт дождь.", "note": "Предсказание по тому, что видим сейчас → going to."},
+    {"id": "think-will-win", "en": "I think Spain [will win|win] the match.", "ru": "Думаю, Испания выиграет матч.", "note": "Мнение о будущем (I think, probably, I’m sure) → will."},
+    {"id": "offer-carry", "en": "That bag looks heavy. [I'll carry/I will carry|I / carry] it for you.", "ru": "Сумка выглядит тяжёлой. Давай я понесу.", "note": "Предложение помощи → will."},
+    {"id": "shall-i", "en": "It’s cold in here. [Shall I close|I / close] the window?", "ru": "Здесь холодно. Закрыть окно?", "note": "Shall I…? — предложение что-то сделать."},
+    {"id": "promise-wont", "en": "I promise I [won't tell|not / tell] anyone.", "ru": "Обещаю, никому не скажу.", "note": "Обещание → will / won’t."},
+    {"id": "when-arrive", "en": "I’ll call you when I [get|get] home.", "ru": "Я позвоню, когда доберусь домой.", "note": "После when, as soon as, before, after, until о будущем — Present simple, не will."},
+    {"id": "as-soon-as", "en": "As soon as the rain [stops|stop], we’ll go out.", "ru": "Как только кончится дождь, мы выйдем.", "note": "as soon as + Present simple."},
+    {"id": "film-starts", "en": "Hurry up — the film [starts|start] in ten minutes.", "ru": "Быстрее — фильм начинается через десять минут.", "note": "Расписание → Present simple."},
+    {"id": "what-doing-tonight", "en": "What [are you doing|you / do] tonight? Want to come over?", "ru": "Что делаешь вечером? Хочешь зайти?", "note": "Вопрос о планах → Present continuous."},
+    {"id": "going-to-fall", "choice": ["Watch out! You’re going to fall!", "Watch out! You’ll fall!"], "ru": "Осторожно! Ты сейчас упадёшь!", "note": "Видим, что вот-вот произойдёт → going to."},
+    {"id": "refuse-wont", "en": "I’ve asked him three times, but he [won't help|not / help] me.", "ru": "Я просил его трижды, но он никак не хочет помогать.", "note": "won’t — отказ, нежелание."},
+    {"id": "decided-already", "choice": ["“Why are you buying flour?” — “I’m going to bake a cake.”", "“Why are you buying flour?” — “I’ll bake a cake.”"], "ru": "«Зачем ты покупаешь муку?» — «Хочу испечь торт».", "note": "Решение уже есть, поэтому покупаю → going to."},
+    {"id": "probably-wont", "en": "It’s late. I [probably won't go|probably / not / go] to the party.", "ru": "Уже поздно. Я, наверное, не пойду на вечеринку.", "note": "probably ставится перед won’t, но после will: I’ll probably go."},
+    {"id": "about-to", "en": "Don’t go — the concert is [about to start|about / start].", "ru": "Не уходи — концерт вот-вот начнётся.", "note": "be about to + глагол — вот-вот, сейчас."}
+  ]
+}

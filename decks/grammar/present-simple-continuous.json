@@ -1,0 +1,29 @@
+{
+  "title": "Present simple or continuous",
+  "about": "habits and facts, or what is happening now; verbs that are not used in -ing",
+  "level": "A2",
+  "entries": [
+    {"id": "water-boils", "en": "Water [boils|boil] at 100 degrees Celsius.", "ru": "Вода кипит при 100 градусах.", "note": "Общеизвестный факт → Present simple."},
+    {"id": "listen-piano", "en": "Listen! Somebody [is playing|play] the piano next door.", "ru": "Послушай! За стеной кто-то играет на пианино.", "note": "Происходит прямо сейчас (Listen!, Look!) → Present continuous."},
+    {"id": "bike-bus", "en": "I usually [cycle|cycle] to work, but this week I [am taking|take] the bus.", "ru": "Обычно я езжу на работу на велосипеде, но на этой неделе езжу на автобусе.", "note": "Привычка (usually) → Present simple; временно (this week) → Present continuous."},
+    {"id": "understand-mean", "en": "[Do you understand|you / understand] what I mean?", "ru": "Ты понимаешь, что я имею в виду?", "note": "understand — глагол состояния: в Continuous обычно не бывает."},
+    {"id": "soup-tastes", "en": "This soup [tastes|taste] amazing. What’s in it?", "ru": "У этого супа потрясающий вкус. Что в нём?", "note": "taste = иметь вкус — это состояние → Present simple."},
+    {"id": "tasting-soup", "en": "Why [are you tasting|you / taste] the soup? Is it too salty?", "ru": "Зачем ты пробуешь суп? Пересолен?", "note": "taste = пробовать — действие, поэтому Continuous возможен."},
+    {"id": "always-losing", "en": "My brother [is always losing|always / lose] his keys. It drives me mad!", "ru": "Мой брат вечно теряет ключи. Меня это бесит!", "note": "always + Continuous — привычка, которая раздражает."},
+    {"id": "prices-rising", "en": "Rents [are rising|rise] fast in this city.", "ru": "Аренда в этом городе быстро растёт.", "note": "Меняющаяся, развивающаяся ситуация → Present continuous."},
+    {"id": "museum-mondays", "en": "The museum [doesn't open|not / open] on Mondays.", "ru": "По понедельникам музей не работает.", "note": "Регулярное, по расписанию → Present simple."},
+    {"id": "what-do-you-do", "en": "“What [do you do|you / do]?” — “I’m a nurse.”", "ru": "«Кем вы работаете?» — «Я медсестра».", "note": "What do you do? — вопрос о профессии."},
+    {"id": "what-are-you-doing", "en": "“What [are you doing|you / do]?” — “I’m looking for my glasses.”", "ru": "«Что ты делаешь?» — «Ищу очки».", "note": "Что происходит сейчас → Present continuous."},
+    {"id": "think-right", "en": "I [think|think] you’re right, but give me a minute — I [am thinking|think] about it.", "ru": "Думаю, ты прав, но дай мне минуту — я обдумываю это.", "note": "think = считать (мнение) — Simple; think about = обдумывать (процесс) — Continuous."},
+    {"id": "has-brothers", "choice": ["She has two older brothers.", "She is having two older brothers."], "ru": "У неё два старших брата.", "note": "have = иметь — состояние, Continuous невозможен."},
+    {"id": "having-dinner", "choice": ["We’re having dinner right now — can I call you back?", "We have dinner right now — can I call you back?"], "ru": "Мы как раз ужинаем — можно я перезвоню?", "note": "have dinner — действие, а не обладание, поэтому Continuous возможен."},
+    {"id": "how-often-gym", "en": "How often [do you go|you / go] to the gym?", "ru": "Как часто ты ходишь в спортзал?", "note": "How often…? — вопрос о привычке → Present simple."},
+    {"id": "staying-friends", "en": "I [am staying|stay] with friends until I find a flat.", "ru": "Пока не найду квартиру, живу у друзей.", "note": "Временная ситуация → Present continuous."},
+    {"id": "train-leaves", "en": "Hurry up! The train [leaves|leave] at 6.40.", "ru": "Поторопись! Поезд отправляется в 6:40.", "note": "Расписание (транспорт, сеансы) → Present simple, даже о будущем."},
+    {"id": "belongs-to", "choice": ["This coat belongs to Anna.", "This coat is belonging to Anna."], "ru": "Это пальто Анны.", "note": "belong — глагол состояния."},
+    {"id": "dont-believe", "en": "I [don't believe|not / believe] a word he says.", "ru": "Я не верю ни единому его слову.", "note": "believe — глагол состояния."},
+    {"id": "getting-dark", "en": "Look, it [is getting|get] dark. Let’s head home.", "ru": "Смотри, темнеет. Пойдём домой.", "note": "get + прилагательное о происходящем сейчас → Continuous."},
+    {"id": "smell-coffee", "choice": ["I can smell coffee. Is someone making breakfast?", "I am smelling coffee. Is someone making breakfast?"], "ru": "Пахнет кофе. Кто-то готовит завтрак?", "note": "С глаголами восприятия (see, hear, smell) обычно используют can."},
+    {"id": "seems-tired", "en": "You [seem|seem] tired. Did you sleep badly?", "ru": "Ты кажешься уставшим. Плохо спал?", "note": "seem — глагол состояния."}
+  ]
+}

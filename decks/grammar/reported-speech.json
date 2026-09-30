@@ -1,0 +1,26 @@
+{
+  "title": "Reported speech",
+  "about": "she said that…, he asked if…, they told me to…",
+  "level": "B1",
+  "entries": [
+    {"id": "said-was-tired", "en": "“I’m tired.” → She said she [was|be] tired.", "ru": "Она сказала, что устала.", "note": "После said настоящее время обычно сдвигается в прошлое: am → was."},
+    {"id": "said-had-lost", "en": "“I’ve lost my wallet.” → He said he [had lost|lose] his wallet.", "ru": "Он сказал, что потерял кошелёк.", "note": "Present perfect → Past perfect."},
+    {"id": "said-would-call", "en": "“I’ll call you.” → She promised she [would call|call] me.", "ru": "Она пообещала, что позвонит мне.", "note": "will → would."},
+    {"id": "said-could", "en": "“I can help.” → He said he [could|can] help.", "ru": "Он сказал, что может помочь.", "note": "can → could."},
+    {"id": "say-tell", "choice": ["She told me she was leaving.", "She said me she was leaving."], "ru": "Она сказала мне, что уезжает.", "note": "tell somebody, но say (to somebody). said me — ошибка."},
+    {"id": "said-that", "choice": ["He said that he was busy.", "He told that he was busy."], "ru": "Он сказал, что занят.", "note": "Без адресата — say; tell требует, кому сказали: He told me…"},
+    {"id": "asked-if", "en": "“Are you hungry?” → She asked me [if I was/whether I was|if / I / be] hungry.", "ru": "Она спросила, голоден ли я.", "note": "Вопрос да/нет → if / whether + прямой порядок слов."},
+    {"id": "asked-where", "en": "“Where do you live?” → He asked me where I [lived|live].", "ru": "Он спросил, где я живу.", "note": "В косвенном вопросе нет do/does и прямой порядок: where I lived."},
+    {"id": "asked-where-wrong", "choice": ["She asked me what time it was.", "She asked me what time was it."], "ru": "Она спросила, который час.", "note": "Косвенный вопрос — порядок слов как в утверждении."},
+    {"id": "told-to", "en": "“Close the door, please.” → She asked me [to close|close] the door.", "ru": "Она попросила меня закрыть дверь.", "note": "Просьба / приказ → ask / tell somebody to do."},
+    {"id": "told-not-to", "en": "“Don’t be late.” → He told us [not to be|not / be] late.", "ru": "Он велел нам не опаздывать.", "note": "Отрицательная команда → tell somebody not to do."},
+    {"id": "still-true", "en": "“I live in Omsk.” → She told me she [lives/lived|live] in Omsk.", "ru": "Она сказала мне, что живёт в Омске.", "note": "Если это всё ещё правда, время можно не сдвигать."},
+    {"id": "yesterday-before", "en": "“I saw him yesterday.” → She said she had seen him [the day before/the previous day|yesterday].", "ru": "Она сказала, что видела его накануне.", "note": "yesterday → the day before / the previous day; tomorrow → the next day."},
+    {"id": "suggested", "choice": ["He suggested going to the cinema.", "He suggested to go to the cinema."], "ru": "Он предложил сходить в кино.", "note": "suggest + -ing или suggest that…; suggest to do — ошибка."},
+    {"id": "offered-to", "en": "“I’ll drive you to the station.” → He offered [to drive|drive] me to the station.", "ru": "Он предложил подвезти меня до вокзала.", "note": "offer to do — предложить сделать самому."},
+    {"id": "denied", "en": "“I didn’t take the money!” → She denied [taking|take] the money.", "ru": "Она отрицала, что взяла деньги.", "note": "deny + -ing."},
+    {"id": "warned", "en": "“Don’t touch the dog.” → He warned me [not to touch|not / touch] the dog.", "ru": "Он предупредил меня, чтобы я не трогал собаку.", "note": "warn somebody (not) to do."},
+    {"id": "apologised", "en": "“Sorry I’m late.” → She apologised [for being|for / be] late.", "ru": "Она извинилась за опоздание.", "note": "apologise for doing."},
+    {"id": "wanted-to-know", "en": "“Have you finished?” → The teacher wanted to know [whether we had finished/if we had finished|whether / we / finish].", "ru": "Учитель хотел знать, закончили ли мы.", "note": "whether = if в косвенном вопросе."}
+  ]
+}

@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { BOOKS, bookById } from "./books";
 import CourseApp from "./CourseApp";
 import { CardsView } from "./components/CardsView";
+import { DeckBrowser } from "./components/DeckBrowser";
 import { DictionaryView } from "./components/DictionaryView";
 import { Library } from "./components/Library";
 import { RulesView } from "./components/RulesView";
@@ -78,7 +79,10 @@ function View({ route }: { route: AppRoute }) {
     case "cards":
       // a new deck is a new session
       return route.deck ? <StudyView key={deckKey(route.deck)} deck={route.deck} /> : <CardsView />;
+    case "browse":
+      // one deck's list and its cards share the search and the filter
+      return <DeckBrowser key={route.deck} deck={route.deck} entry={route.entry} />;
     case "dictionary":
-      return <DictionaryView pack={route.pack} />;
+      return <DictionaryView deck={route.deck} />;
   }
 }

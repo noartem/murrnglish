@@ -1,28 +1,23 @@
 // The deck list (#/cards): what is due today, and every deck the learner can
-// study — everything at once, their own words, each book, its groups, units
-// and word packs — with Anki's three numbers (new, learning, due) and a way
-// into each. It is also where daily study is chosen (selection.ts): a switch
-// takes a whole book in or out, a tick takes in a unit, a group or a pack.
-// Units and packs nobody ticked are in once started, so the ticks show that
-// too. The study settings and the backup live here as well.
-//
-// The unit decks are generated from each book's course (decks.ts), so the
-// list waits for the books; a book that cannot load (offline, not downloaded)
-// is named and left out.
+// study — everything at once, their own words, and the app's decks by
+// section (grammar, vocabulary) and group — with Anki's three numbers (new,
+// learning, due) and a way into each. It is also where daily study is chosen
+// (selection.ts): a tick takes a deck in or out, a group's tick all of its
+// decks. Decks nobody ticked are in once started, so the ticks show that too.
+// Every deck opens into its cards as well (DeckBrowser.tsx).
+// The study settings and the backup live here as well.
 
-import { useEffect, useMemo, useRef } from "react";
+import type { RefObject } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { BookOpenText, ChevronRight, List, NotebookPen, Package } from "lucide-react";
-import type { Book } from "../books";
-import { BOOKS } from "../books";
-import type { BookCards } from "../decks";
-import { deckIds, startedPacks, startedUnits, useBookCards } from "../decks";
-import type { Pack } from "../packs";
-import { packUnitsLabel } from "../packs";
+import { ChevronRight, List, NotebookPen, Rows3 } from "lucide-react";
+import type { Deck, DeckGroup, DeckLibrary, DeckSection } from "../deckdata";
+import { LEVEL_NAMES, useDecks } from "../deckdata";
+import { deckIds, startedDecks } from "../decks";
+import { LIMIT_PRESETS, presetOf, reviewsTooFew } from "../limits";
 import type { DeckRef } from "../routes";
-import { DICTIONARY_HASH, deckHash, dictionaryPackHash, rulesHash } from "../routes";
-import type { Include } from "../selection";
-import { WORDS_PICK, bookOn, packPick, picked, unitPick } from "../selection";
+import { DICTIONARY_HASH, browseHash, deckHash, dictionaryDeckHash } from "../routes";
+import { WORDS_PICK, picked } from "../selection";
 import type { DeckCounts as Counts } from "../srs";
 import { deckCounts, todayDaily } from "../srs";
 import type { StudySnapshot } from "../study";
@@ -39,12 +34,12 @@ const OS_OPTIONS = {
 type Count = (d: DeckRef) => Counts | null;
 
 /** Counts of any deck, from the store — memoized by the caller. */
-function counter(study: StudySnapshot, books: Record<string, BookCards>, now: number): Count {
+function counter(study: StudySnapshot, lib: DeckLibrary | null, now: number): Count {
   const cfg = srsConfig(study.settings);
   const suspended = new Set(study.srs.suspended);
   const daily = todayDaily(study.srs.daily, now, cfg);
   return (deck: DeckRef): Counts | null => {
-    const ids = deckIds(deck, books, study.words, study.srs.states, study.settings.include);
+    const ids = deckIds(deck, lib, study.words, study.srs.states, study.settings.include);
     if (!ids) return null;
     return deckCounts({ ids, states: study.srs.states, suspended, daily, now, cfg });
   };
@@ -53,12 +48,16 @@ function counter(study: StudySnapshot, books: Record<string, BookCards>, now: nu
 export function CardsView() {
   const study = useStudy();
   const now = useMinuteClock();
-  const { books, failed, loading } = useBookCards(BOOKS);
-  const count = useMemo(() => counter(study, books, now), [study, books, now]);
+  const { lib, failed } = useDecks();
+  const count = useMemo(() => counter(study, lib, now), [study, lib, now]);
   const include = study.settings.include;
-  const all = count({ kind: "all" })!;
+  const started = useMemo(() => startedDecks(study.srs.states), [study.srs.states]);
+  const deckOn = (d: Deck) => picked(include, d.id, started.has(d.id));
+  // faded: taken out by hand, not merely not started yet
+  const deckOff = (d: Deck) => include[d.id] === false;
+  const all = count({ kind: "all" });
   const words = count({ kind: "words" })!;
-  const allDue = all.fresh + all.learn + all.review;
+  const allDue = all ? all.fresh + all.learn + all.review : 0;
   const wordsOn = include[WORDS_PICK] !== false;
 
   return (
@@ -71,25 +70,25 @@ export function CardsView() {
               <div className="todayrow">
                 <div>
                   <h2 className="unitheading">Today</h2>
-                  <CountsLine c={all} big />
+                  <CountsLine c={all ?? words} big />
                 </div>
                 {allDue > 0 ? (
                   <a className="homecta todaycta" href={deckHash({ kind: "all" })}>
                     Study now
                   </a>
                 ) : (
-                  <span className="donetag">{loading ? "Loading…" : "All done for today"}</span>
+                  <span className="donetag">{!lib && !failed ? "Loading…" : "All done for today"}</span>
                 )}
               </div>
               <p className="ruleprose muted">
-                Daily study takes what is ticked below: your words, and in each book the units and word packs you
-                tick. A unit you have started — finished in the course or studied here — is ticked for you until
-                you untick it. Switch a book off to leave all of it out.
+                Daily study takes what is ticked below: your words and the decks you tick. A deck you have
+                studied is ticked for you until you untick it — so opening a deck and pressing Study is all it
+                takes to start.
               </p>
-              {failed.length > 0 && (
+              {failed && (
                 <p className="lookupstatus warn">
-                  Not available offline: {failed.map((b) => b.title).join(", ")}. Open the book online or download
-                  it to study its cards.
+                  The decks could not be loaded. Are you offline? Open this page online once and they stay
+                  available offline.
                 </p>
               )}
             </section>
@@ -115,17 +114,11 @@ export function CardsView() {
               </div>
             </section>
 
-            {BOOKS.map((b) => (
-              <BookSheet
-                key={b.id}
-                book={b}
-                bc={books[b.id]}
-                failed={failed.includes(b)}
-                count={count}
-                include={include}
-                states={study.srs.states}
-              />
-            ))}
+            {lib ? (
+              lib.sections.map((s) => <SectionSheet key={s.id} section={s} count={count} deckOn={deckOn} deckOff={deckOff} />)
+            ) : (
+              !failed && <p className="rulesnote">Loading the decks…</p>
+            )}
 
             <Settings />
 
@@ -144,211 +137,173 @@ export function CardsView() {
   );
 }
 
-function BookSheet({
-  book,
-  bc,
-  failed,
+function SectionSheet({
+  section,
   count,
-  include,
-  states,
+  deckOn,
+  deckOff,
 }: {
-  book: Book;
-  bc?: BookCards;
-  failed: boolean;
+  section: DeckSection;
   count: Count;
-  include: Include;
-  states: Readonly<Record<string, unknown>>;
+  deckOn: (d: Deck) => boolean;
+  deckOff: (d: Deck) => boolean;
 }) {
-  const on = bookOn(include, book.id);
-  const c = count({ kind: "book", book });
-  const started = useMemo(() => (bc ? startedUnits(bc, states) : new Set<number>()), [bc, states]);
-  const packsStarted = useMemo(() => (bc ? startedPacks(bc, states) : new Set<string>()), [bc, states]);
-  const unitOn = (u: number) => picked(include, unitPick(book.id, u), started.has(u));
-  const packOn = (p: Pack) => picked(include, packPick(book.id, p.id), packsStarted.has(p.id));
-
-  let summary = "";
-  if (!on) summary = "Switched off: none of its cards are in daily study.";
-  else if (bc) {
-    const u = bc.order.filter(unitOn).length;
-    const p = bc.packs.filter(packOn).length;
-    summary = `In daily study: ${u} of ${bc.order.length} units` + (bc.packs.length ? `, ${p} of ${bc.packs.length} packs` : "");
-  }
-
-  // every unit of the book ticked / back to the started ones / none
-  const setUnits = (v: boolean | null) =>
-    bc && setIncluded(Object.fromEntries(bc.order.map((u) => [unitPick(book.id, u), v])));
+  const decks = section.groups.flatMap((g) => g.decks);
+  const cards = decks.reduce((n, d) => n + d.entries.length, 0);
+  const on = decks.filter(deckOn).length;
+  const vocabulary = section.id === "vocabulary";
+  // every deck ticked / back to the started ones / none
+  const setAll = (v: boolean | null) => setIncluded(Object.fromEntries(decks.map((d) => [d.id, v])));
 
   return (
-    <section className={"sheet booksheet" + (on ? "" : " deckoff")}>
-      <div className="deckrow">
-        <Switch
-          on={on}
-          label={`${book.title} in daily study`}
-          onChange={(v) => setIncluded({ [book.id]: v ? null : false })}
-        />
-        <span className="deckicon">
-          <span className="libdot" style={{ background: book.color }} aria-hidden />
+    <section className="sheet decksection">
+      <p className="libkicker">
+        {decks.length} decks · {cards} cards · {on ? `${on} in daily study` : "none in daily study yet"}
+      </p>
+      <div className="decksectionhead">
+        <h3 className="sheethead">{section.title}</h3>
+        <span className="decksubacts" role="group" aria-label={`Tick decks of ${section.title}`}>
+          <button type="button" className="linkbtn" onClick={() => setAll(true)}>
+            All
+          </button>
+          <button type="button" className="linkbtn" onClick={() => setAll(null)} title="Only the decks you have started">
+            Started
+          </button>
+          <button type="button" className="linkbtn" onClick={() => setAll(false)}>
+            None
+          </button>
         </span>
-        <div className="deckinfo">
-          <span className="libkicker">
-            {book.level} · {book.edition}
-          </span>
-          <span className="decktitle">{book.title}</span>
-          {summary && <span className="decksummary">{summary}</span>}
-        </div>
-        {c && <CountsLine c={c} />}
-        <StudyLink c={c} href={deckHash({ kind: "book", book })} />
       </div>
-      {!bc && <p className="rulesnote">{failed ? "Not available offline." : "Loading…"}</p>}
-      {bc && on && (
-        <>
-          {bc.packs.length > 0 && (
-            <>
-              <div className="decksub">
-                <h4>Word packs</h4>
-              </div>
-              <ul className="packrows">
-                {bc.packs.map((p) => {
-                  const pc = count({ kind: "pack", book, pack: p.id });
-                  const ticked = packOn(p);
-                  return (
-                    <li key={p.id} className="packrow">
-                      <PickBox
-                        checked={ticked}
-                        label={`${p.title} in daily study`}
-                        onChange={(v) => setIncluded({ [packPick(book.id, p.id)]: v })}
-                      />
-                      <span className="deckicon">
-                        <Package size={17} aria-hidden />
-                      </span>
-                      <div className="deckinfo">
-                        <span className="deckname">{p.title}</span>
-                        <span className="packabout">
-                          {p.entries.length} words
-                          {packUnitsLabel(p) && ` · ${packUnitsLabel(p)}`} · {p.about}
-                        </span>
-                      </div>
-                      <a
-                        className="iconlink"
-                        href={dictionaryPackHash(book, p.id)}
-                        title="The words"
-                        aria-label={`${p.title}: the words`}
-                      >
-                        <List size={16} aria-hidden />
-                      </a>
-                      {pc && <CountsLine c={pc} />}
-                      <a className="pillbtn small" href={deckHash({ kind: "pack", book, pack: p.id })}>
-                        Study
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </>
-          )}
-          <div className="decksub">
-            <h4>Units</h4>
-            <span className="decksubacts" role="group" aria-label={`Tick units of ${book.title}`}>
-              <button type="button" className="linkbtn" onClick={() => setUnits(true)}>
-                All
-              </button>
-              <button type="button" className="linkbtn" onClick={() => setUnits(null)} title="Only the units you have started">
-                Started
-              </button>
-              <button type="button" className="linkbtn" onClick={() => setUnits(false)}>
-                None
-              </button>
-            </span>
-          </div>
-          <Groups bc={bc} count={count} unitOn={unitOn} />
-        </>
-      )}
+      <p className="ruleprose muted">{section.about}</p>
+      <div className="deckgroups">
+        {section.groups.map((g) => (
+          <GroupFold key={g.title} group={g} count={count} deckOn={deckOn} deckOff={deckOff} vocabulary={vocabulary} />
+        ))}
+      </div>
     </section>
   );
 }
 
-function Groups({ bc, count, unitOn }: { bc: BookCards; count: Count; unitOn: (u: number) => boolean }) {
-  const book = bc.book;
+/** A group of decks, open at first when any of them is in daily study. */
+function GroupFold({
+  group,
+  count,
+  deckOn,
+  deckOff,
+  vocabulary,
+}: {
+  group: DeckGroup;
+  count: Count;
+  deckOn: (d: Deck) => boolean;
+  deckOff: (d: Deck) => boolean;
+  vocabulary: boolean;
+}) {
+  const n = group.decks.filter(deckOn).length;
+  // only the first render decides: ticking must not fold what the learner opened
+  const [open] = useState(n > 0);
   return (
-    <div className="deckgroups">
-      {bc.index.groups.map((g, gi) => {
-        const c = count({ kind: "group", book, group: gi + 1 });
-        if (!c?.total) return null;
-        const withCards = g.units.filter((u) => bc.byUnit.get(u)?.length);
-        const n = withCards.filter(unitOn).length;
-        return (
-          <details key={g.name} className="deckgroup">
-            <summary>
-              <PickBox
-                checked={n > 0 && n === withCards.length}
-                mixed={n > 0 && n < withCards.length}
-                label={`${g.name} in daily study`}
-                onChange={(v) => setIncluded(Object.fromEntries(withCards.map((u) => [unitPick(book.id, u), v])))}
-              />
-              <ChevronRight size={16} className="chev" aria-hidden />
-              <span className="deckname">{g.name}</span>
-              {c && <CountsLine c={c} />}
-              <a
-                className="pillbtn small"
-                href={deckHash({ kind: "group", book, group: gi + 1 })}
-                onClick={(e) => e.stopPropagation()}
-              >
-                Study
-              </a>
-            </summary>
-            <ul className="deckunits">
-              {g.units.map((u) => {
-                const cards = bc.byUnit.get(u)?.length ?? 0;
-                const uc = count({ kind: "unit", book, unit: u });
-                const title = bc.index.exercises[`u${u}`]?.title;
-                return (
-                  <li key={u} className="deckunit">
-                    {cards ? (
-                      <PickBox
-                        checked={unitOn(u)}
-                        label={`Unit ${u} in daily study`}
-                        onChange={(v) => setIncluded({ [unitPick(book.id, u)]: v })}
-                      />
-                    ) : (
-                      <span className="pickspace" aria-hidden />
-                    )}
-                    <span className="rulenum">{u}</span>
-                    <span className="deckname">{title}</span>
-                    <a className="iconlink" href={rulesHash(book, u)} title="The rule" aria-label={`Unit ${u}: the rule`}>
-                      <BookOpenText size={15} aria-hidden />
-                    </a>
-                    {cards ? (
-                      <>
-                        {uc && <CountsLine c={uc} />}
-                        <a className="pillbtn small" href={deckHash({ kind: "unit", book, unit: u })}>
-                          Study
-                        </a>
-                      </>
-                    ) : (
-                      <span className="nocards" title="Its exercises need the pictures of the printed page">
-                        no cards
-                      </span>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </details>
-        );
-      })}
-    </div>
+    <details className="deckgroup" open={open}>
+      <summary>
+        <PickBox
+          checked={n === group.decks.length}
+          mixed={n > 0 && n < group.decks.length}
+          label={`${group.title} in daily study`}
+          onChange={(v) => setIncluded(Object.fromEntries(group.decks.map((d) => [d.id, v])))}
+        />
+        <ChevronRight size={16} className="chev" aria-hidden />
+        <span className="deckname">{group.title}</span>
+        <GroupCounts decks={group.decks} count={count} />
+      </summary>
+      <ul className="deckrows">
+        {group.decks.map((d) => (
+          <DeckRow key={d.id} deck={d} on={deckOn(d)} off={deckOff(d)} count={count} vocabulary={vocabulary} />
+        ))}
+      </ul>
+    </details>
   );
 }
 
-function StudyLink({ c, href }: { c: Counts | null; href: string }) {
+/** A group's numbers: its decks' added up. */
+function GroupCounts({ decks, count }: { decks: Deck[]; count: Count }) {
+  const c = { fresh: 0, learn: 0, review: 0, total: 0 };
+  for (const d of decks) {
+    const x = count({ kind: "deck", id: d.id });
+    if (!x) continue;
+    c.fresh += x.fresh;
+    c.learn += x.learn;
+    c.review += x.review;
+    c.total += x.total;
+  }
+  return <CountsLine c={c} />;
+}
+
+function DeckRow({
+  deck,
+  on,
+  off,
+  count,
+  vocabulary,
+}: {
+  deck: Deck;
+  on: boolean;
+  off: boolean;
+  count: Count;
+  vocabulary: boolean;
+}) {
+  const c = count({ kind: "deck", id: deck.id });
   return (
-    <a className={"pillbtn" + (c && c.fresh + c.learn + c.review ? " primary" : "")} href={href}>
+    <li className={"deckline" + (off ? " deckoff" : "")}>
+      <PickBox checked={on} label={`${deck.title} in daily study`} onChange={(v) => setIncluded({ [deck.id]: v })} />
+      <div className="deckinfo">
+        <a className="deckname decklink" href={browseHash(deck.id)}>
+          {deck.title}
+          <LevelChip level={deck.level} />
+        </a>
+        <span className="packabout">
+          {deck.entries.length} {vocabulary ? "words" : "cards"} · {deck.about}
+        </span>
+      </div>
+      <a
+        className="iconlink"
+        href={browseHash(deck.id)}
+        title="Browse the cards"
+        aria-label={`${deck.title}: browse the cards`}
+      >
+        <Rows3 size={16} aria-hidden />
+      </a>
+      {vocabulary && (
+        <a
+          className="iconlink"
+          href={dictionaryDeckHash(deck.id)}
+          title="The word list"
+          aria-label={`${deck.title}: the word list`}
+        >
+          <List size={16} aria-hidden />
+        </a>
+      )}
+      {c && <CountsLine c={c} />}
+      <StudyLink c={on ? c : null} href={deckHash({ kind: "deck", id: deck.id })} small />
+    </li>
+  );
+}
+
+export function LevelChip({ level }: { level: Deck["level"] }) {
+  return (
+    <span className="levelchip" title={LEVEL_NAMES[level]}>
+      {level}
+    </span>
+  );
+}
+
+function StudyLink({ c, href, small = false }: { c: Counts | null; href: string; small?: boolean }) {
+  return (
+    <a className={"pillbtn" + (small ? " small" : "") + (c && c.fresh + c.learn + c.review ? " primary" : "")} href={href}>
       Study
     </a>
   );
 }
 
-/** A tick for daily study; `mixed` shows a group with only some units ticked. */
+/** A tick for daily study; `mixed` shows a group with only some decks ticked. */
 function PickBox({
   checked,
   mixed = false,
@@ -372,26 +327,10 @@ function PickBox({
       checked={checked}
       aria-label={label}
       title={checked ? "In daily study — untick to leave it out" : "Not in daily study — tick to add it"}
-      // a mixed group becomes all ticked
+      // a mixed group becomes all ticked; a tick in a summary must not fold it
+      onClick={(e) => e.stopPropagation()}
       onChange={() => onChange(mixed ? true : !checked)}
     />
-  );
-}
-
-/** The switch that takes a whole book in or out of daily study. */
-function Switch({ on, label, onChange }: { on: boolean; label: string; onChange: (v: boolean) => void }) {
-  return (
-    <button
-      type="button"
-      role="switch"
-      aria-checked={on}
-      aria-label={label}
-      title={on ? "Switch the book off: none of its cards in daily study" : "Switch the book on"}
-      className={"bookswitch" + (on ? " on" : "")}
-      onClick={() => onChange(!on)}
-    >
-      <span className="knob" aria-hidden />
-    </button>
   );
 }
 
@@ -415,13 +354,21 @@ export function CountsLine({ c, big = false, at }: { c: Counts; big?: boolean; a
 function Settings() {
   const { settings, srs } = useStudy();
   const suspended = srs.suspended.length;
-  const num = (k: "newPerDay" | "reviewsPerDay", label: string, hint: string) => (
+  const preset = presetOf(settings);
+  const newInput = useRef<HTMLInputElement>(null);
+  const num = (
+    k: "newPerDay" | "reviewsPerDay",
+    label: string,
+    hint: string,
+    ref?: RefObject<HTMLInputElement>,
+  ) => (
     <label className="setting">
       <span>
         {label}
         <small>{hint}</small>
       </span>
       <input
+        ref={ref}
         type="number"
         min={0}
         max={9999}
@@ -436,15 +383,48 @@ function Settings() {
       <summary className="sheethead">
         <ChevronRight size={16} className="chev" aria-hidden /> Settings
       </summary>
-      {num("newPerDay", "New cards a day", "cards seen for the first time, across all decks")}
+      <div className="setting">
+        <span>
+          Daily load
+          <small>{preset ? preset.hint : "your own limits, set below"}</small>
+        </span>
+      </div>
+      <div className="browsefilters presetrow" role="group" aria-label="Daily load">
+        {LIMIT_PRESETS.map((p) => (
+          <button
+            key={p.id}
+            type="button"
+            className="pillbtn small"
+            aria-pressed={preset === p}
+            onClick={() => saveSettings({ ...settings, newPerDay: p.newPerDay, reviewsPerDay: p.reviewsPerDay })}
+          >
+            {p.name}
+          </button>
+        ))}
+        <button
+          type="button"
+          className="pillbtn small"
+          aria-pressed={!preset}
+          onClick={() => newInput.current?.focus()}
+        >
+          Custom
+        </button>
+      </div>
+      {num("newPerDay", "New cards a day", "cards seen for the first time, across all decks", newInput)}
       {num("reviewsPerDay", "Reviews a day", "the most review cards shown in one day")}
+      {reviewsTooFew(settings) && (
+        <p className="lookupstatus warn">
+          Reviews will pile up: each new card a day brings about ten reviews a day later on. Keep the review limit
+          at least ten times the new one ({10 * settings.newPerDay}).
+        </p>
+      )}
       <label className="modal-opt">
         <input
           type="checkbox"
           checked={settings.typeAnswers}
           onChange={(e) => saveSettings({ ...settings, typeAnswers: e.target.checked })}
         />
-        Type the answer on gap, sentence and pack cards (the card is checked like an exercise)
+        Type the answers: gaps, verb forms and translations are checked like an exercise
       </label>
       {suspended > 0 && (
         <p className="setting">
@@ -459,7 +439,8 @@ function Settings() {
       )}
       <p className="ruleprose muted">
         Scheduling follows Anki’s SM-2: new cards step through 1 and 10 minutes, then come back after a day and
-        at growing intervals; a day starts at 4 a.m.
+        at growing intervals; a day starts at 4 a.m. Learning cards have no limit of their own: they are the new
+        cards of today and the ones you forgot, and they must come back on time.
       </p>
     </details>
   );

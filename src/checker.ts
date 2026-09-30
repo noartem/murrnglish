@@ -30,8 +30,8 @@ const NO_WORD = new Set(["-", "–", "—"]);
 export function checkFill(value: string, variants: string[]): boolean {
   if (!variants.length) return false;
   const v = normalize(value);
-  if (!v) {
-    // book prints "–" for items where no word is necessary
+  if (!v || NO_WORD.has(v)) {
+    // "–" is printed for items where no word is necessary; typed, it is no word too
     return variants.some((a) => NO_WORD.has(normalize(a)));
   }
   return variants.some((a) => normalize(a) === v);

@@ -1,0 +1,22 @@
+{
+  "title": "make, let, want somebody to…",
+  "about": "verb + person + infinitive, with to or without",
+  "level": "A2",
+  "entries": [
+    {"id": "want-you-to", "en": "I want [you to meet|you / meet] my parents.", "ru": "Я хочу, чтобы ты познакомился с моими родителями.", "note": "want somebody to do. Не «want that you…»."},
+    {"id": "want-that-wrong", "choice": ["She wants me to help her.", "She wants that I help her."], "ru": "Она хочет, чтобы я ей помог.", "note": "want + объект + to do."},
+    {"id": "made-me-laugh", "en": "That film really made me [laugh|laugh].", "ru": "Этот фильм меня здорово рассмешил.", "note": "make somebody do — без to."},
+    {"id": "made-to-wrong", "choice": ["My parents made me practise the piano every day.", "My parents made me to practise the piano every day."], "ru": "Родители заставляли меня каждый день заниматься на пианино.", "note": "make + объект + глагол без to."},
+    {"id": "let-me-pay", "en": "Please, let me [pay|pay] for dinner.", "ru": "Пожалуйста, позволь мне заплатить за ужин.", "note": "let somebody do — без to."},
+    {"id": "allowed-to", "en": "My parents didn’t allow me [to go|go] to the party.", "ru": "Родители не разрешили мне пойти на вечеринку.", "note": "allow somebody to do — с to (в отличие от let)."},
+    {"id": "was-made-to", "en": "I was made [to wait|wait] for two hours.", "ru": "Меня заставили ждать два часа.", "note": "В пассиве make требует to: be made to do."},
+    {"id": "help-me-carry", "en": "Can you help me [carry/to carry|carry] these boxes?", "ru": "Поможешь мне донести эти коробки?", "note": "help somebody (to) do — оба варианта правильны."},
+    {"id": "asked-her-to", "en": "I asked her [to wait|wait] outside.", "ru": "Я попросил её подождать на улице.", "note": "ask / tell / advise / invite somebody to do."},
+    {"id": "would-like-you-to", "en": "I’d like [you to be|you / be] honest with me.", "ru": "Я бы хотел, чтобы ты был со мной честен.", "note": "would like somebody to do."},
+    {"id": "expected-to", "en": "Nobody expected him [to win|win].", "ru": "Никто не ожидал, что он победит.", "note": "expect somebody to do."},
+    {"id": "saw-him-leave", "en": "I saw him [leave|leave] the building at six.", "ru": "Я видел, как он вышел из здания в шесть.", "note": "see / hear / watch somebody do — всё действие целиком, без to."},
+    {"id": "heard-them-arguing", "choice": ["I heard the neighbours arguing when I passed their door.", "I heard the neighbours to argue when I passed their door."], "ru": "Проходя мимо двери, я слышал, как соседи ругаются.", "note": "see / hear somebody doing — часть действия, в процессе."},
+    {"id": "let-us-know", "en": "[Let us know|let / us / know] when you arrive.", "ru": "Сообщи нам, когда приедешь.", "note": "let somebody know — сообщить."},
+    {"id": "persuaded-to", "en": "She persuaded me [to join|join] the gym.", "ru": "Она уговорила меня записаться в спортзал.", "note": "persuade somebody to do."}
+  ]
+}

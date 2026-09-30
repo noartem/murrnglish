@@ -1,0 +1,27 @@
+{
+  "title": "Present perfect or past simple",
+  "about": "have done or did: news and experience, or a finished time",
+  "level": "B1",
+  "entries": [
+    {"id": "lost-keys", "en": "I [have lost|lose] my keys. Can you help me look for them?", "ru": "Я потерял ключи. Поможешь поискать?", "note": "Результат важен сейчас (ключей нет) → Present perfect."},
+    {"id": "lost-keys-yesterday", "en": "I [lost|lose] my keys yesterday, but luckily someone found them.", "ru": "Я вчера потерял ключи, но, к счастью, их нашли.", "note": "yesterday — законченное время → Past simple."},
+    {"id": "ever-been", "en": "[Have you ever been|you / ever / be] to Japan?", "ru": "Ты когда-нибудь был в Японии?", "note": "Опыт за всю жизнь (ever) → Present perfect."},
+    {"id": "went-last-year", "en": "Yes, I [went|go] there last year.", "ru": "Да, я ездил туда в прошлом году.", "note": "Как только время названо (last year) → Past simple."},
+    {"id": "just-finished", "en": "Don’t take my plate — I [haven't finished|not / finish] yet.", "ru": "Не убирай мою тарелку — я ещё не доел.", "note": "yet в отрицании → Present perfect."},
+    {"id": "already-seen", "en": "Let’s watch something else. I [have already seen|already / see] this film.", "ru": "Давай посмотрим что-нибудь другое. Я уже видел этот фильм.", "note": "already стоит между have и причастием."},
+    {"id": "when-start", "en": "When [did you start|you / start] learning English?", "ru": "Когда ты начал учить английский?", "note": "Вопрос When…? всегда о конкретном времени → Past simple."},
+    {"id": "yesterday-wrong", "choice": ["I saw Tom yesterday.", "I have seen Tom yesterday."], "ru": "Я видел Тома вчера.", "note": "Present perfect не сочетается со словами законченного времени: yesterday, ago, last week, in 2019."},
+    {"id": "ago-wrong", "choice": ["They got married three years ago.", "They have got married three years ago."], "ru": "Они поженились три года назад.", "note": "ago → Past simple."},
+    {"id": "this-week", "en": "I [have drunk|drink] four coffees this morning, and it’s only eleven.", "ru": "Я выпил четыре кофе за это утро, а ещё только одиннадцать.", "note": "Период ещё не закончился (this morning, а сейчас утро) → Present perfect."},
+    {"id": "this-morning-over", "en": "I [drank|drink] too much coffee this morning, so now I can’t sleep.", "ru": "Утром я выпил слишком много кофе, и теперь не могу уснуть.", "note": "Если утро уже прошло (сейчас ночь) → Past simple."},
+    {"id": "news-crashed", "en": "Have you heard? The company [has closed|close] its office in Minsk.", "ru": "Слышал? Компания закрыла офис в Минске.", "note": "Свежая новость → Present perfect."},
+    {"id": "news-details", "en": "The company has closed its office in Minsk. It [happened|happen] last Friday.", "ru": "Компания закрыла офис в Минске. Это случилось в прошлую пятницу.", "note": "Сначала новость (Present perfect), затем подробности (Past simple)."},
+    {"id": "gone-been", "choice": ["Anna has gone to the shop. She’ll be back in ten minutes.", "Anna has been to the shop. She’ll be back in ten minutes."], "ru": "Анна ушла в магазин. Вернётся через десять минут.", "note": "has gone — ушёл и ещё там; has been — был и уже вернулся."},
+    {"id": "never-met", "en": "I [have never met|never / meet] anyone so rude.", "ru": "Я никогда не встречал настолько грубого человека.", "note": "never + Present perfect — опыт за всю жизнь."},
+    {"id": "shakespeare", "en": "Shakespeare [wrote|write] about forty plays.", "ru": "Шекспир написал около сорока пьес.", "note": "Человек умер, период закрыт → Past simple."},
+    {"id": "first-time", "en": "This is the first time I [have tried|try] sushi.", "ru": "Я впервые пробую суши.", "note": "It’s the first time… → Present perfect."},
+    {"id": "just-left", "en": "You’ve missed her — she [has just left|just / leave].", "ru": "Ты с ней разминулся — она только что ушла.", "note": "just = только что, ставится после have."},
+    {"id": "how-long-know", "choice": ["How long have you known each other?", "How long do you know each other?"], "ru": "Сколько вы знакомы?", "note": "Длится с прошлого до сейчас → Present perfect (не Present simple, как в русском)."},
+    {"id": "lived-there", "en": "My grandparents [lived|live] in Tula for twenty years, and then moved to Moscow.", "ru": "Бабушка с дедушкой двадцать лет жили в Туле, а потом переехали в Москву.", "note": "Период в прошлом закончился → Past simple, даже с for."}
+  ]
+}

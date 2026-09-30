@@ -1,0 +1,21 @@
+{
+  "title": "Future continuous and future perfect",
+  "about": "will be doing and will have done",
+  "level": "B2",
+  "entries": [
+    {"id": "this-time-tomorrow", "en": "This time tomorrow I [will be lying|lie] on a beach.", "ru": "Завтра в это время я буду лежать на пляже.", "note": "Процесс в определённый момент будущего → Future continuous."},
+    {"id": "dont-call-at-8", "en": "Don’t call me at eight — we [will be having|have] dinner.", "ru": "Не звони в восемь — мы будем ужинать.", "note": "Будем в процессе → will be doing."},
+    {"id": "finished-by", "en": "By the end of the year, I [will have saved|save] enough for a new laptop.", "ru": "К концу года я накоплю на новый ноутбук.", "note": "by + момент в будущем: к тому времени уже будет сделано → Future perfect."},
+    {"id": "by-time-arrive", "en": "By the time you arrive, the meeting [will have started|start].", "ru": "К твоему приходу собрание уже начнётся.", "note": "by the time + Present simple, в главной части — will have done."},
+    {"id": "married-ten-years", "en": "Next month my parents [will have been|be] married for thirty years.", "ru": "В следующем месяце мои родители будут женаты тридцать лет.", "note": "Сколько продлится к моменту в будущем."},
+    {"id": "will-you-be-using", "en": "[Will you be using|you / use] the car tomorrow? If not, can I borrow it?", "ru": "Ты будешь завтра пользоваться машиной? Если нет, можно я возьму?", "note": "Вежливый вопрос о чужих планах → will you be doing?"},
+    {"id": "passing-shop", "en": "I [will be passing|pass] the chemist’s anyway, so I can get your medicine.", "ru": "Я всё равно буду проходить мимо аптеки, так что куплю тебе лекарство.", "note": "Будет происходить само собой, по ходу обычных дел."},
+    {"id": "wont-have-finished", "en": "Call me at six? No — I [won't have finished|not / finish] by then.", "ru": "Позвонить в шесть? Нет — я к тому времени ещё не закончу.", "note": "Отрицание: won’t have + третья форма."},
+    {"id": "working-thirty-years", "en": "When he retires, he [will have been working|work] here for forty years.", "ru": "Когда он выйдет на пенсию, он проработает здесь сорок лет.", "note": "Длительность к моменту в будущем → Future perfect continuous."},
+    {"id": "until-back", "en": "Wait here until I [come|come] back.", "ru": "Подожди здесь, пока я не вернусь.", "note": "until + Present simple о будущем."},
+    {"id": "once-finished", "en": "Once you [have read|read] the contract, sign it at the bottom.", "ru": "Когда прочитаешь договор, подпиши его внизу.", "note": "После once/when/after о будущем можно Present perfect — подчёркивает завершённость."},
+    {"id": "will-have-forgotten", "choice": ["Don’t worry, by next week everyone will have forgotten about it.", "Don’t worry, by next week everyone will forget about it."], "ru": "Не переживай, к следующей неделе все об этом забудут.", "note": "by next week → Future perfect."},
+    {"id": "be-thinking-of-you", "en": "Good luck on your exam! I [will be thinking|think] of you.", "ru": "Удачи на экзамене! Я буду думать о тебе.", "note": "Будет происходить всё время экзамена → Future continuous."},
+    {"id": "in-five-years", "en": "In five years’ time, robots [will be doing|do] most of this work.", "ru": "Через пять лет большую часть этой работы будут выполнять роботы.", "note": "Ситуация в процессе в будущем."}
+  ]
+}

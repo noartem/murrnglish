@@ -1,0 +1,22 @@
+{
+  "title": "used to, would, be used to",
+  "about": "past habits, and being or getting used to something",
+  "level": "B1",
+  "entries": [
+    {"id": "used-to-smoke", "en": "My dad [used to smoke|smoke], but he gave up years ago.", "ru": "Отец раньше курил, но бросил много лет назад.", "note": "used to + глагол — привычка или состояние в прошлом, которых больше нет."},
+    {"id": "didnt-use-to", "en": "I [didn't use to like|not / like] olives, but now I love them.", "ru": "Раньше я не любил оливки, а теперь обожаю.", "note": "Отрицание: didn’t use to (без d)."},
+    {"id": "did-you-use-to", "en": "[Did you use to|you / use to] play any sport at school?", "ru": "Ты занимался каким-нибудь спортом в школе?", "note": "Вопрос: Did you use to…? (без d)."},
+    {"id": "used-to-early", "en": "I’ve worked nights for years, so I’m used to [sleeping|sleep] during the day.", "ru": "Я годами работаю по ночам, так что привык спать днём.", "note": "be used to + -ing = привыкнуть к чему-то. to здесь предлог."},
+    {"id": "getting-used", "en": "Driving on the left was strange at first, but I’m [getting|get] used to it.", "ru": "Сначала ездить по левой стороне было странно, но я привыкаю.", "note": "get used to — процесс привыкания."},
+    {"id": "cant-get-used", "en": "I can’t get used to [waking|wake] up so early.", "ru": "Никак не привыкну вставать так рано.", "note": "get used to + -ing."},
+    {"id": "would-grandma", "en": "Every summer my grandma [would|will] take us to the lake.", "ru": "Каждое лето бабушка возила нас на озеро.", "note": "would — повторяющееся действие в прошлом (в рассказах, воспоминаниях)."},
+    {"id": "would-state", "choice": ["We used to have a dog called Bim.", "We would have a dog called Bim."], "ru": "У нас раньше была собака по кличке Бим.", "note": "Для состояний (have, live, be, like) would не используется — только used to."},
+    {"id": "used-to-live", "choice": ["I used to live in Samara.", "I would live in Samara."], "ru": "Раньше я жил в Самаре.", "note": "live — состояние → used to."},
+    {"id": "used-vs-usually", "choice": ["I usually get up at seven.", "I use to get up at seven."], "ru": "Обычно я встаю в семь.", "note": "Для настоящих привычек used to нет — используем usually + Present simple."},
+    {"id": "is-used-to-cold", "en": "She grew up in Yakutsk, so she [is used to|be used to] the cold.", "ru": "Она выросла в Якутске, так что привычна к холоду.", "note": "be used to + существительное."},
+    {"id": "there-used-to-be", "en": "There [used to be|be] a cinema here. Now it’s a supermarket.", "ru": "Раньше здесь был кинотеатр. Теперь это супермаркет.", "note": "there used to be — было когда-то."},
+    {"id": "never-used-to", "en": "He [never used to|never / use to] cook, but now he makes dinner every night.", "ru": "Раньше он никогда не готовил, а теперь готовит ужин каждый вечер.", "note": "never used to — ещё один способ отрицания."},
+    {"id": "not-used-to-noise", "en": "I don’t think I’ll ever [get used to|get] the noise of this city.", "ru": "Не думаю, что когда-нибудь привыкну к шуму этого города.", "note": "get used to + существительное."},
+    {"id": "used-to-meaning", "choice": ["I’m used to working late. = It isn’t strange for me.", "I’m used to working late. = I did it in the past, but not now."], "note": "be used to doing — привычно, нормально; used to do — было раньше."}
+  ]
+}

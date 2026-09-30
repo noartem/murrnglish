@@ -1,0 +1,21 @@
+{
+  "title": "can, could, be able to, may",
+  "about": "ability, permission and requests",
+  "level": "A2",
+  "entries": [
+    {"id": "can-swim", "en": "[Can you swim|you / swim]?", "ru": "Ты умеешь плавать?", "note": "can — умение, возможность в настоящем."},
+    {"id": "could-read-four", "en": "She [could read|read] when she was four.", "ru": "Она умела читать в четыре года.", "note": "could — общее умение в прошлом."},
+    {"id": "managed-to", "choice": ["The fire spread fast, but everyone was able to get out.", "The fire spread fast, but everyone could get out."], "ru": "Огонь быстро распространился, но все смогли выбраться.", "note": "Об одном конкретном успехе в прошлом — was able to / managed to, а не could."},
+    {"id": "couldnt-sleep", "choice": ["It was so hot that I couldn’t sleep.", "It was so hot that I wasn’t able sleep."], "ru": "Было так жарко, что я не мог уснуть.", "note": "В отрицании couldn’t подходит и для конкретного случая."},
+    {"id": "will-be-able", "en": "When you finish this course, you [will be able to|be able to] talk about your job in English.", "ru": "Окончив этот курс, ты сможешь говорить о своей работе по-английски.", "note": "У can нет будущего времени → will be able to."},
+    {"id": "havent-been-able", "en": "I [haven't been able to|not / be able to] reach him all week.", "ru": "Я всю неделю не могу до него дозвониться.", "note": "У can нет перфекта → have been able to."},
+    {"id": "could-you-pass", "en": "[Could you|you] pass the salt, please?", "ru": "Передайте, пожалуйста, соль.", "note": "Could you…? — вежливая просьба (вежливее, чем Can you…?)."},
+    {"id": "may-i", "en": "[May I|I] use your phone?", "ru": "Можно воспользоваться вашим телефоном?", "note": "May I…? — формальная просьба о разрешении."},
+    {"id": "can-park", "en": "You [can't park|not / park] here — it’s a bus lane.", "ru": "Здесь нельзя парковаться — это полоса для автобусов.", "note": "can’t — запрет."},
+    {"id": "love-to-be-able", "en": "I’d love [to be able to|be able to] play the guitar.", "ru": "Я бы очень хотел уметь играть на гитаре.", "note": "После другого глагола (would like, hope, want) — to be able to."},
+    {"id": "could-come-tomorrow", "en": "I’m free tomorrow, so I [could|can] help you move, if you like.", "ru": "Завтра я свободен, так что мог бы помочь тебе с переездом.", "note": "could — возможный вариант, предложение."},
+    {"id": "can-hear", "en": "Speak up — I [can't hear|not / hear] you.", "ru": "Говори громче — я тебя не слышу.", "note": "С глаголами восприятия обычно can: I can’t hear, I can see."},
+    {"id": "were-allowed", "choice": ["When I was a child, I wasn’t allowed to stay up late.", "When I was a child, I couldn’t to stay up late."], "ru": "В детстве мне не разрешали поздно ложиться.", "note": "После модальных глаголов to не ставится: couldn’t stay. was allowed to — было разрешено."},
+    {"id": "managed-to-find", "en": "It took hours, but in the end we [managed to find|manage / find] the hotel.", "ru": "Это заняло несколько часов, но в итоге мы нашли гостиницу.", "note": "manage to do — суметь (с трудом)."}
+  ]
+}

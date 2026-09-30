@@ -1,0 +1,27 @@
+{
+  "title": "The passive, have something done",
+  "about": "is done, was done, has been done, is being done; get it fixed",
+  "level": "B1",
+  "entries": [
+    {"id": "made-in", "en": "These phones [are made|make] in Vietnam.", "ru": "Эти телефоны производят во Вьетнаме.", "note": "Present simple passive: am/is/are + третья форма."},
+    {"id": "was-built", "en": "The bridge [was built|build] in 1936.", "ru": "Мост построили в 1936 году.", "note": "Past simple passive: was/were + третья форма."},
+    {"id": "has-been-stolen", "en": "Help! My bike [has been stolen|steal]!", "ru": "Помогите! У меня украли велосипед!", "note": "Present perfect passive: has/have been + третья форма."},
+    {"id": "is-being-repaired", "en": "You can’t use the lift — it [is being repaired|repair].", "ru": "Лифтом пользоваться нельзя — его ремонтируют.", "note": "Present continuous passive: is being done."},
+    {"id": "will-be-told", "en": "You [will be told|tell] the results next week.", "ru": "Результаты вам сообщат на следующей неделе.", "note": "Future passive: will be + третья форма."},
+    {"id": "must-be-signed", "en": "This form must [be signed|sign] by both parents.", "ru": "Эту форму должны подписать оба родителя.", "note": "После модального глагола: must/can/should be + третья форма."},
+    {"id": "was-born", "en": "Where [were you born|you / be born]?", "ru": "Где ты родился?", "note": "be born — всегда в пассиве: I was born."},
+    {"id": "by-whom", "en": "“Guernica” was painted [by|by / with] Picasso.", "ru": "«Гернику» написал Пикассо.", "note": "Кто выполнил действие → by."},
+    {"id": "with-key", "en": "The door was opened [with|by / with] a key.", "ru": "Дверь открыли ключом.", "note": "Инструмент → with."},
+    {"id": "had-hair-cut", "en": "I [had my hair cut|have / my hair / cut] yesterday. Do you like it?", "ru": "Я вчера подстригся. Нравится?", "note": "have something done — сделать что-то чужими руками (в парикмахерской)."},
+    {"id": "getting-car-fixed", "en": "We’re [getting the car fixed|get / the car / fix] next week.", "ru": "На следующей неделе нам починят машину.", "note": "get something done — то же, что have, но разговорнее."},
+    {"id": "had-phone-stolen", "choice": ["She had her phone stolen on the metro.", "She had stolen her phone on the metro."], "ru": "У неё украли телефон в метро.", "note": "have something done — также о неприятностях, которые с тобой случились."},
+    {"id": "being-followed", "choice": ["I felt I was being followed.", "I felt I was following."], "ru": "Мне казалось, что за мной следят.", "note": "Past continuous passive: was being done."},
+    {"id": "is-said-to", "en": "The castle [is said|say] to be haunted.", "ru": "Говорят, в замке водятся привидения.", "note": "is said / believed / thought to be — «говорят, считается»."},
+    {"id": "it-is-believed", "en": "It [is believed|believe] that the painting is a fake.", "ru": "Считается, что картина — подделка.", "note": "It is believed / said / reported that…"},
+    {"id": "hate-being-told", "en": "I hate [being told|tell] what to do.", "ru": "Ненавижу, когда мне указывают, что делать.", "note": "Пассив с -ing: being done."},
+    {"id": "wants-to-be", "en": "Everyone wants [to be loved|love].", "ru": "Каждый хочет, чтобы его любили.", "note": "Пассивный инфинитив: to be done."},
+    {"id": "has-been-cancelled", "choice": ["The meeting has been cancelled.", "The meeting has cancelled."], "ru": "Собрание отменили.", "note": "Собрание не отменяет само себя → пассив."},
+    {"id": "happen-not-passive", "choice": ["The accident happened at night.", "The accident was happened at night."], "ru": "Авария произошла ночью.", "note": "happen, arrive, die, seem — непереходные глаголы, пассива у них нет."},
+    {"id": "were-given", "en": "All the guests [were given|give] a small gift.", "ru": "Всем гостям подарили небольшой подарок.", "note": "Подлежащим в пассиве может стать человек: They gave the guests… → The guests were given…"}
+  ]
+}

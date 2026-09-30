@@ -1,0 +1,25 @@
+{
+  "title": "Present perfect continuous, for and since",
+  "about": "have been doing; how long, for or since",
+  "level": "B1",
+  "entries": [
+    {"id": "waiting-hour", "en": "I [have been waiting|wait] for you for an hour!", "ru": "Я жду тебя уже час!", "note": "Действие началось в прошлом и продолжается сейчас → Present perfect continuous (в русском — настоящее время)."},
+    {"id": "since-2019", "en": "She has worked here [since|for / since] 2019.", "ru": "Она работает здесь с 2019 года.", "note": "since + точка отсчёта (2019, Monday, 5 o’clock)."},
+    {"id": "for-years", "en": "We’ve lived in this flat [for|for / since] six years.", "ru": "Мы живём в этой квартире шесть лет.", "note": "for + отрезок времени (six years, a week, ages)."},
+    {"id": "out-of-breath", "en": "Why are you out of breath? [Have you been running|you / run]?", "ru": "Почему ты запыхался? Бегал?", "note": "Видим следствие недавнего длительного действия → Present perfect continuous."},
+    {"id": "painting-room", "en": "My hands are covered in paint — I [have been painting|paint] the kitchen.", "ru": "У меня руки в краске — я красил кухню.", "note": "Важен процесс и его следы, а не результат."},
+    {"id": "painted-room", "en": "I [have painted|paint] the kitchen. Come and see!", "ru": "Я покрасил кухню. Иди посмотри!", "note": "Работа закончена, важен результат → Present perfect simple."},
+    {"id": "how-many-emails", "en": "I [have written|write] thirty emails today.", "ru": "Сегодня я написал тридцать писем.", "note": "Сколько сделано (how many / how much) → Present perfect simple."},
+    {"id": "how-long-learning", "en": "How long [have you been learning|you / learn] English?", "ru": "Как давно ты учишь английский?", "note": "How long…? о действии, которое ещё идёт."},
+    {"id": "known-since-school", "choice": ["I’ve known Masha since we were at school.", "I’ve been knowing Masha since we were at school."], "ru": "Я знаю Машу со школы.", "note": "know — глагол состояния: только Present perfect simple."},
+    {"id": "had-car", "choice": ["How long have you had this car?", "How long are you having this car?"], "ru": "Сколько у тебя эта машина?", "note": "have (иметь) + how long → Present perfect simple."},
+    {"id": "raining-all-day", "en": "It [has been raining|rain] all day. I’m sick of it.", "ru": "Весь день идёт дождь. Надоело.", "note": "all day / all morning с процессом → Continuous."},
+    {"id": "havent-seen-ages", "en": "I [haven't seen|not / see] Oleg for ages.", "ru": "Я сто лет не видел Олега.", "note": "Отрицание + for → Present perfect simple."},
+    {"id": "since-left", "en": "A lot has changed since you [left|leave].", "ru": "Многое изменилось с тех пор, как ты уехал.", "note": "После since в придаточном — Past simple."},
+    {"id": "been-ages-since", "en": "It’s been two years since I last [saw|see] her.", "ru": "Прошло два года с тех пор, как я видел её в последний раз.", "note": "It’s (been) + период + since + Past simple."},
+    {"id": "for-since-monday", "choice": ["She’s been ill since Monday.", "She’s been ill for Monday."], "ru": "Она болеет с понедельника.", "note": "Monday — точка отсчёта → since."},
+    {"id": "ago-for", "choice": ["I started this job two months ago.", "I started this job for two months."], "ru": "Я начал работать здесь два месяца назад.", "note": "ago — назад (Past simple); for — в течение (Present perfect: I’ve had this job for two months)."},
+    {"id": "been-thinking", "en": "I [have been thinking|think] about what you said, and you’re right.", "ru": "Я всё думал о том, что ты сказал, и ты прав.", "note": "Размышление в течение какого-то времени до сейчас."},
+    {"id": "read-book", "en": "I [have been reading|read] this book for weeks and I’m only on page 50.", "ru": "Я читаю эту книгу уже несколько недель и дошёл только до 50-й страницы.", "note": "Действие не закончено → Continuous."}
+  ]
+}

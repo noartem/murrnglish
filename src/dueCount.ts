@@ -1,11 +1,14 @@
 // The "cards due" number the library and the section tabs show: the cards
 // met before that are due now — learning and review, the red and green
-// numbers of the deck list. Computed from the study store alone, so no book
-// has to load for it. New cards are left out: how many a deck offers depends
-// on the units started (decks.ts), and knowing that needs the books. Cards the
-// learner took out of daily study (selection.ts) are left out too.
+// numbers of the deck list. Computed from the study store alone, so the decks
+// need not load for it. New cards are left out: how many there are depends on
+// the decks (decks.ts). Cards the learner took out of daily study
+// (selection.ts) are left out too, and — once the decks are in — cards whose
+// entry is gone from its deck.
 
 import { useEffect, useMemo, useState } from "react";
+import { loadedDecks } from "./deckdata";
+import { cardExists } from "./decks";
 import { cardExcluded } from "./selection";
 import { deckCounts, todayDaily } from "./srs";
 import { srsConfig, useStudy } from "./study";
@@ -25,8 +28,9 @@ export function useDueCount(): number {
   const now = useMinuteClock();
   return useMemo(() => {
     const cfg = srsConfig(settings);
+    const lib = loadedDecks();
     const c = deckCounts({
-      ids: Object.keys(srs.states).filter((id) => !cardExcluded(id, settings.include)),
+      ids: Object.keys(srs.states).filter((id) => !cardExcluded(id, settings.include) && (!lib || cardExists(id, lib))),
       states: srs.states,
       suspended: new Set(srs.suspended),
       daily: todayDaily(srs.daily, now, cfg),

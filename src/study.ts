@@ -14,7 +14,10 @@ import { useSyncExternalStore } from "react";
 import type { SrsData, StudySettings } from "./backup";
 import { DEFAULT_SETTINGS, cleanSettings, cleanSrs, mergeBackup, validWord } from "./backup";
 import type { StudyBackup } from "./backup";
+import type { DeckLibrary } from "./deckdata";
+import { loadedDecks, whenDecksLoad } from "./deckdata";
 import { SRS_KEY, SRS_SETTINGS_KEY, WORDS_KEY } from "./keys";
+import { migrateLegacy } from "./legacy";
 import type { CardState, Rating, SrsConfig } from "./srs";
 import { DEFAULT_CONFIG, answer, countAnswer, todayDaily } from "./srs";
 import type { Word } from "./words";
@@ -83,7 +86,14 @@ function set(patch: Partial<Omit<StudySnapshot, "saveError" | "canUndo">>, canUn
   emit();
 }
 
+/** Move the review history of the cards the books used to make (legacy.ts). */
+function migrate(lib: DeckLibrary): void {
+  const r = migrateLegacy(snap.srs, snap.settings.include, lib);
+  if (r) set({ srs: r.srs, settings: { ...snap.settings, include: r.include } }, false);
+}
+
 if (typeof window !== "undefined") {
+  whenDecksLoad(migrate);
   window.addEventListener("storage", (e) => {
     if (e.key === WORDS_KEY || e.key === SRS_KEY || e.key === SRS_SETTINGS_KEY || e.key === null) {
       snap = { ...load(), saveError: snap.saveError, canUndo: false };
@@ -199,5 +209,8 @@ export function importBackup(b: StudyBackup): { added: number; updated: number; 
   const r = mergeBackup(snap.words, snap.srs, b);
   undo = null;
   set({ words: r.words, srs: r.srs }, false);
+  // an old backup brings the old card ids back
+  const lib = loadedDecks();
+  if (lib) migrate(lib);
   return { added: r.added, updated: r.updated, cards: r.cards };
 }

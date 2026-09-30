@@ -4,19 +4,18 @@
 // cards stand; a row opens the editor. Words are also added straight from the
 // exercises and the rules by selecting them (PickWord).
 //
-// Below them, the word packs of every book (packs.ts): each one opens into its
-// list, and the search looks through them too — a pack entry found there can
-// be added to the learner's own words. #/dictionary/<book>/pack-<id> opens
-// with that pack unfolded.
+// Below them, the vocabulary decks (deckdata.ts): each one opens into its
+// list, and the search looks through them too — an entry found there can be
+// added to the learner's own words. #/dictionary/<deck> opens with that deck
+// unfolded.
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { ChevronRight, Layers, Package, Plus, Search, Volume2 } from "lucide-react";
-import type { Book } from "../books";
+import { ChevronRight, Layers, Plus, Search, Volume2 } from "lucide-react";
 import { BOOKS } from "../books";
+import type { Deck, DeckEntry, DeckSection } from "../deckdata";
+import { entryText, gapsOf, useDecks } from "../deckdata";
 import { speak } from "../lookup";
-import type { Pack, PackEntry } from "../packs";
-import { entryText, gapParts, loadPacks, packUnitsLabel } from "../packs";
 import { deckHash } from "../routes";
 import type { CardState } from "../srs";
 import { dayNumber, formatDays } from "../srs";
@@ -25,6 +24,7 @@ import { useMinuteClock } from "../dueCount";
 import type { Word } from "../words";
 import { headwordKey, wordCardIds } from "../words";
 import { BackupControls } from "./BackupControls";
+import { LevelChip } from "./CardsView";
 import { SectionBar } from "./SectionBar";
 import { openWordEditor } from "./WordEditor";
 
@@ -53,9 +53,10 @@ function wordStatus(
   return { text: `in ${formatDays(next - today)}`, tone: "later" };
 }
 
-export function DictionaryView({ pack: openPack }: { pack?: { book: Book; pack: string } }) {
+export function DictionaryView({ deck: openDeck }: { deck?: string }) {
   const { words, srs } = useStudy();
-  const packs = useAllPacks();
+  const { lib } = useDecks();
+  const vocabulary = lib?.sections.find((s) => s.id === "vocabulary");
   const [q, setQ] = useState("");
   const now = useMinuteClock();
   const suspended = useMemo(() => new Set(srs.suspended), [srs.suspended]);
@@ -173,9 +174,9 @@ export function DictionaryView({ pack: openPack }: { pack?: { book: Book; pack: 
               </ul>
             )}
 
-            {key && <PackHits packs={packs} q={key} />}
+            {key && vocabulary && <DeckHits section={vocabulary} q={key} />}
 
-            <PackShelf packs={packs} open={openPack} />
+            {vocabulary && <DeckShelf section={vocabulary} open={openDeck} />}
 
             <section className="sheet backupsheet">
               <h3 className="sheethead">Backup</h3>
@@ -192,37 +193,25 @@ export function DictionaryView({ pack: openPack }: { pack?: { book: Book; pack: 
   );
 }
 
-type BookPacks = { book: Book; packs: Pack[] }[];
-
-function useAllPacks(): BookPacks {
-  const [all, setAll] = useState<BookPacks>([]);
-  useEffect(() => {
-    let alive = true;
-    void Promise.all(BOOKS.map((b) => loadPacks(b).then((packs) => ({ book: b, packs })))).then(
-      (r) => alive && setAll(r.filter((x) => x.packs.length)),
-    );
-    return () => {
-      alive = false;
-    };
-  }, []);
-  return all;
-}
-
-/** The English of an entry as a list shows it: the forms, or the gap word in bold. */
-function EntryEn({ e, ask }: { e: PackEntry; ask: Pack["ask"] }) {
-  if (ask === "forms")
+/** The English of an entry as a list shows it: the forms, or the words of the gaps in bold. */
+export function EntryEn({ e }: { e: DeckEntry }) {
+  if (e.forms)
     return (
       <>
-        <strong>{e.en}</strong> · {(e.forms ?? []).join(" · ")}
+        <strong>{e.en}</strong> · {e.forms.join(" · ")}
       </>
     );
-  if (ask === "gap") {
-    const g = gapParts(e.en);
+  if (e.choice) return <strong>{entryText(e)}</strong>;
+  if (e.en?.includes("[")) {
+    const { parts, gaps } = gapsOf(e.en);
     return (
       <>
-        {g.before}
-        <strong>{g.answers.join("/")}</strong>
-        {g.after}
+        {parts.map((p, i) => (
+          <span key={i}>
+            {p}
+            {i < gaps.length && <strong>{gaps[i].answers.join("/")}</strong>}
+          </span>
+        ))}
       </>
     );
   }
@@ -234,44 +223,39 @@ function EntryEn({ e, ask }: { e: PackEntry; ask: Pack["ask"] }) {
   );
 }
 
-/** Pack entries matching the search; a row adds the entry to the learner's words. */
-function PackHits({ packs, q }: { packs: BookPacks; q: string }) {
+/** Deck entries matching the search; a row adds the entry to the learner's words. */
+function DeckHits({ section, q }: { section: DeckSection; q: string }) {
   const hits = useMemo(() => {
-    const out: { book: Book; pack: Pack; e: PackEntry }[] = [];
-    for (const { book, packs: ps } of packs)
-      for (const pack of ps)
-        for (const e of pack.entries) {
+    const out: { deck: Deck; e: DeckEntry }[] = [];
+    for (const g of section.groups)
+      for (const deck of g.decks)
+        for (const e of deck.entries) {
           const en = headwordKey(entryText(e));
-          if (en.includes(q) || e.ru.toLowerCase().includes(q) || e.alt?.some((a) => headwordKey(a).includes(q)))
-            out.push({ book, pack, e });
+          const ru = (e.ru ?? "").toLowerCase();
+          if (en.includes(q) || ru.includes(q) || e.alt?.some((a) => headwordKey(a).includes(q))) out.push({ deck, e });
         }
     return out;
-  }, [packs, q]);
+  }, [section, q]);
   if (!hits.length) return null;
   return (
     <section className="sheet packhits">
-      <h3 className="sheethead">In the word packs</h3>
+      <h3 className="sheethead">In the vocabulary decks</h3>
       <ul className="packentries">
-        {hits.slice(0, 40).map(({ book, pack, e }) => (
-          <li key={`${book.id}:${pack.id}:${e.id}`}>
+        {hits.slice(0, 40).map(({ deck, e }) => (
+          <li key={`${deck.id}:${e.id}`}>
             <span className="packen">
-              <EntryEn e={e} ask={pack.ask} />
+              <EntryEn e={e} />
             </span>
             <span className="packru" lang="ru">
               {e.ru}
             </span>
-            <span className="wordfrom">
-              <span className="libdot" style={{ background: book.color }} aria-hidden />
-              {pack.title}
-            </span>
+            <span className="wordfrom">{deck.title}</span>
             <button
               type="button"
               className="iconlink"
               title="Add to my words"
               aria-label={`Add ${entryText(e)} to my words`}
-              onClick={() =>
-                openWordEditor({ word: entryText(e), context: e.ex, source: { book: book.id, unit: e.unit ?? pack.units?.[0] } })
-              }
+              onClick={() => openWordEditor({ word: entryText(e), context: e.ex })}
             >
               <Plus size={16} aria-hidden />
             </button>
@@ -283,49 +267,47 @@ function PackHits({ packs, q }: { packs: BookPacks; q: string }) {
   );
 }
 
-/** Every book's packs, each unfolding into its list. */
-function PackShelf({ packs, open }: { packs: BookPacks; open?: { book: Book; pack: string } }) {
+/** The vocabulary decks by group, each unfolding into its list. */
+function DeckShelf({ section, open }: { section: DeckSection; open?: string }) {
   const openRef = useRef<HTMLDetailsElement>(null);
-  // arriving from the deck list: the pack in view
+  // arriving from the deck list or a card: the deck in view
   useEffect(() => {
     openRef.current?.scrollIntoView({ block: "start" });
-  }, [packs.length, open?.book, open?.pack]);
-  if (!packs.length) return null;
+  }, [open]);
   return (
     <>
-      {packs.map(({ book, packs: ps }) => (
-        <section key={book.id} className="sheet packshelf">
-          <p className="libkicker">
-            <span className="libdot" style={{ background: book.color }} aria-hidden />
-            {book.level} · word packs
-          </p>
-          <h3 className="sheethead">{book.title}</h3>
-          {ps.map((p) => {
-            const isOpen = open?.book === book && open.pack === p.id;
+      {section.groups.map((g) => (
+        <section key={g.title} className="sheet packshelf">
+          <p className="libkicker">{section.title}</p>
+          <h3 className="sheethead">{g.title}</h3>
+          {g.decks.map((d) => {
+            const isOpen = open === d.id;
             return (
-              <details key={p.id} className="deckgroup packfold" open={isOpen} ref={isOpen ? openRef : undefined}>
+              <details key={d.id} className="deckgroup packfold" open={isOpen} ref={isOpen ? openRef : undefined}>
                 <summary>
                   <ChevronRight size={16} className="chev" aria-hidden />
-                  <Package size={16} className="packicon" aria-hidden />
                   <span className="deckinfo">
-                    <span className="deckname">{p.title}</span>
+                    <span className="deckname">
+                      {d.title}
+                      <LevelChip level={d.level} />
+                    </span>
                     <span className="packabout">
-                      {p.entries.length} words{packUnitsLabel(p) && ` · ${packUnitsLabel(p)}`} · {p.about}
+                      {d.entries.length} words · {d.about}
                     </span>
                   </span>
                   <a
                     className="pillbtn small"
-                    href={deckHash({ kind: "pack", book, pack: p.id })}
+                    href={deckHash({ kind: "deck", id: d.id })}
                     onClick={(e) => e.stopPropagation()}
                   >
                     Study
                   </a>
                 </summary>
                 <ul className="packentries">
-                  {p.entries.map((e) => (
+                  {d.entries.map((e) => (
                     <li key={e.id}>
                       <span className="packen">
-                        <EntryEn e={e} ask={p.ask} />
+                        <EntryEn e={e} />
                       </span>
                       <span className="packru" lang="ru">
                         {e.ru}

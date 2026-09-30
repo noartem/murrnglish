@@ -1,0 +1,30 @@
+{
+  "title": "-ing or to…",
+  "about": "enjoy doing, decide to do; remember, stop, try; after prepositions",
+  "level": "B1",
+  "entries": [
+    {"id": "enjoy-cooking", "en": "I really enjoy [cooking|cook] for friends.", "ru": "Я очень люблю готовить для друзей.", "note": "enjoy, finish, mind, avoid, suggest, keep + -ing."},
+    {"id": "decided-to-leave", "en": "We decided [to leave|leave] early to avoid the traffic.", "ru": "Мы решили выехать пораньше, чтобы не попасть в пробки.", "note": "decide, hope, plan, promise, refuse, manage + to do."},
+    {"id": "avoid-driving", "en": "Try to avoid [driving|drive] in the rush hour.", "ru": "Постарайся не ездить в час пик.", "note": "avoid + -ing."},
+    {"id": "would-you-mind", "en": "Would you mind [opening|open] the window?", "ru": "Вы не против открыть окно?", "note": "mind + -ing."},
+    {"id": "refused-to-pay", "en": "He refused [to pay|pay] for the broken glass.", "ru": "Он отказался платить за разбитый стакан.", "note": "refuse + to do."},
+    {"id": "remember-to-lock", "en": "Remember [to lock|lock] the door when you leave.", "ru": "Не забудь запереть дверь, когда будешь уходить.", "note": "remember to do — не забыть сделать (сначала вспоминаешь, потом делаешь)."},
+    {"id": "remember-meeting", "en": "I remember [meeting|meet] her at a party years ago.", "ru": "Я помню, как познакомился с ней на вечеринке много лет назад.", "note": "remember doing — помнить то, что уже было."},
+    {"id": "stopped-to-buy", "en": "On the way home I stopped [to buy|buy] some bread.", "ru": "По дороге домой я остановился, чтобы купить хлеба.", "note": "stop to do — остановиться, чтобы что-то сделать."},
+    {"id": "stopped-smoking", "en": "He stopped [smoking|smoke] ten years ago.", "ru": "Он бросил курить десять лет назад.", "note": "stop doing — перестать делать."},
+    {"id": "try-restarting", "en": "The laptop’s frozen. Try [restarting|restart] it.", "ru": "Ноутбук завис. Попробуй его перезагрузить.", "note": "try doing — попробовать как способ (вдруг поможет)."},
+    {"id": "tried-to-open", "en": "I tried [to open|open] the jar, but the lid was stuck.", "ru": "Я пытался открыть банку, но крышку заело.", "note": "try to do — стараться, прилагать усилия."},
+    {"id": "interested-in-learning", "en": "Are you interested in [learning|learn] Spanish?", "ru": "Тебе интересно выучить испанский?", "note": "После предлога — всегда -ing."},
+    {"id": "look-forward", "en": "I’m looking forward to [seeing|see] you.", "ru": "С нетерпением жду встречи с тобой.", "note": "look forward to + -ing: to здесь предлог."},
+    {"id": "instead-of", "en": "Why don’t you walk instead of [taking|take] a taxi?", "ru": "Почему бы тебе не пройтись пешком вместо того, чтобы брать такси?", "note": "instead of, before, after, without + -ing."},
+    {"id": "without-saying", "en": "She left without [saying|say] goodbye.", "ru": "Она ушла, не попрощавшись.", "note": "without + -ing."},
+    {"id": "want-to", "choice": ["I want to learn to drive.", "I want learning to drive."], "ru": "Я хочу научиться водить.", "note": "want, would like + to do."},
+    {"id": "like-doing", "choice": ["I like swimming in the sea.", "I like swim in the sea."], "ru": "Я люблю плавать в море.", "note": "like, love, hate + -ing (или to do), но не голая форма."},
+    {"id": "would-like-to", "choice": ["I’d like to book a table for two.", "I’d like booking a table for two."], "ru": "Я бы хотел забронировать столик на двоих.", "note": "would like / would love + to do."},
+    {"id": "its-worth", "en": "The museum is worth [visiting|visit].", "ru": "Этот музей стоит посетить.", "note": "be worth + -ing."},
+    {"id": "no-point", "en": "There’s no point [arguing|argue] with him.", "ru": "Нет смысла с ним спорить.", "note": "There’s no point (in) + -ing."},
+    {"id": "cant-help", "en": "I couldn’t help [laughing|laugh] when he fell in the pool.", "ru": "Я не мог удержаться от смеха, когда он упал в бассейн.", "note": "can’t help doing — не могу не…"},
+    {"id": "regret-to-tell", "en": "I regret [telling|tell] him my secret. Now everyone knows.", "ru": "Жалею, что рассказал ему свой секрет. Теперь все знают.", "note": "regret doing — жалеть о сделанном; regret to tell you — с сожалением сообщаю."},
+    {"id": "need-cleaning", "en": "This carpet needs [cleaning|clean].", "ru": "Этот ковёр нужно почистить.", "note": "need + -ing = need to be done."}
+  ]
+}

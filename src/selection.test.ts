@@ -1,110 +1,80 @@
-// Daily study: which cards "Everything due" and a book's deck take once the
-// learner ticks or unticks units, packs, their words or a whole book.
+// Daily study: which cards "Everything due" and a deck's session take once
+// the learner ticks or unticks decks or their words.
 
 import { describe, expect, it } from "vitest";
-import { BOOKS } from "./books";
-import type { UnitCard } from "./cards";
-import type { BookCards } from "./decks";
-import { deckIds } from "./decks";
-import type { IndexData } from "./data";
-import type { Pack } from "./packs";
+import type { Deck, DeckLibrary } from "./deckdata";
+import { makeLibrary } from "./deckdata";
+import { deckIds, pickedDecks, startedDecks } from "./decks";
 import { cardExcluded, interleave } from "./selection";
 import type { Word } from "./words";
 
-const [RED, BLUE] = BOOKS;
-
-const card = (book: string, unit: number, n: number): UnitCard => ({
-  id: `${book}:${unit}.1:${n}`,
-  book,
-  unit,
-  exercise: `${unit}.1`,
-  instruction: "",
-  kind: "match",
-  left: "a",
-  right: "b",
-});
-
-const pack = (id: string, n: number): Pack => ({
+const deck = (id: string, n: number): Deck => ({
   id,
   title: id,
   about: "",
-  ask: "translate",
+  level: "B1",
   entries: Array.from({ length: n }, (_, i) => ({ id: `e${i}`, en: `e${i}`, ru: `р${i}` })),
 });
 
-// two units of two cards each and one pack, per book
-function bookCards(book: typeof RED): BookCards {
-  const byUnit = new Map([
-    [1, [card(book.id, 1, 1), card(book.id, 1, 2)]],
-    [2, [card(book.id, 2, 1), card(book.id, 2, 2)]],
-  ]);
-  const index = { groups: [{ name: "g", units: [1, 2] }], exercises: {}, additional: { exercises: [] } } as unknown as IndexData;
-  return { book, index, byUnit, order: [1, 2], packs: [pack("verbs", 2)] };
-}
-const books = { red: bookCards(RED), blue: bookCards(BLUE) };
+const lib: DeckLibrary = makeLibrary({
+  sections: [
+    { id: "grammar", title: "Grammar", about: "", groups: [{ title: "g", decks: [deck("tenses", 2), deck("modals", 2)] }] },
+    { id: "vocabulary", title: "Vocabulary", about: "", groups: [{ title: "v", decks: [deck("verbs", 3)] }] },
+  ],
+});
 
 const word: Word = { id: "w1", word: "cat", translation: "кот", notes: "", reverse: false, added: 1, updated: 1 };
-// red unit 2 started: one of its cards was studied
-const states = { "red:2.1:1": {} };
+// the tenses deck is started: one of its cards was studied
+const states = { "d:tenses:e1": {} };
 
 describe("daily study", () => {
-  it("takes the words and the started units by default, by turns", () => {
-    expect(deckIds({ kind: "all" }, books, [word], states, {})).toEqual(["w:w1:f", "red:2.1:1", "red:2.1:2"]);
+  it("takes the learner's words and the decks started, by turns", () => {
+    expect(startedDecks(states)).toEqual(new Set(["tenses"]));
+    expect(deckIds({ kind: "all" }, lib, [word], states)).toEqual(["w:w1:f", "d:tenses:e0", "d:tenses:e1"]);
   });
 
-  it("adds ticked units and packs, and drops unticked ones", () => {
-    const ids = deckIds({ kind: "all" }, books, [word], states, {
-      "red/u2": false,
-      "blue/u1": true,
-      "blue/pack-verbs": true,
-      words: false,
-    });
-    // blue's unit cards and its pack come in turn about
-    expect(ids).toEqual(["blue:1.1:1", "v:blue:verbs:e0", "blue:1.1:2", "v:blue:verbs:e1"]);
-  });
-
-  it("leaves a switched-off book out whatever is ticked in it", () => {
-    const ids = deckIds({ kind: "all" }, books, [], states, { red: false, "red/u1": true });
-    expect(ids).toEqual([]);
-  });
-
-  it("gives a book's deck its share, and its pack deck all of the pack", () => {
-    expect(deckIds({ kind: "book", book: RED }, books, [], states, { "red/pack-verbs": true })).toEqual([
-      "red:2.1:1",
-      "v:red:verbs:e0",
-      "red:2.1:2",
-      "v:red:verbs:e1",
-    ]);
-    // switched off, the book's own deck still opens
-    expect(deckIds({ kind: "book", book: RED }, books, [], states, { red: false })).toEqual(["red:2.1:1", "red:2.1:2"]);
-    expect(deckIds({ kind: "pack", book: BLUE, pack: "verbs" }, books, [], {}, {})).toEqual([
-      "v:blue:verbs:e0",
-      "v:blue:verbs:e1",
+  it("takes a ticked deck, leaves out an unticked one", () => {
+    const include = { verbs: true, tenses: false };
+    expect(pickedDecks(lib, include, states).map((d) => d.id)).toEqual(["verbs"]);
+    expect(deckIds({ kind: "all" }, lib, [word], states, include)).toEqual([
+      "w:w1:f",
+      "d:verbs:e0",
+      "d:verbs:e1",
+      "d:verbs:e2",
     ]);
   });
 
-  it("treats a pack with a card studied as started", () => {
-    const ids = deckIds({ kind: "all" }, books, [], { "v:blue:verbs:e1": {} }, {});
-    expect(ids).toEqual(["v:blue:verbs:e0", "v:blue:verbs:e1"]);
+  it("leaves the words out when they are turned off", () => {
+    expect(deckIds({ kind: "all" }, lib, [word], states, { words: false })).toEqual(["d:tenses:e0", "d:tenses:e1"]);
+  });
+
+  it("waits for the decks, except for the words", () => {
+    expect(deckIds({ kind: "all" }, null, [word], states)).toBeNull();
+    expect(deckIds({ kind: "deck", id: "verbs" }, null, [word], states)).toBeNull();
+    expect(deckIds({ kind: "words" }, null, [word], states)).toEqual(["w:w1:f"]);
+  });
+
+  it("opens any deck on its own, ticked or not", () => {
+    expect(deckIds({ kind: "deck", id: "modals" }, lib, [], states, { modals: false })).toEqual(["d:modals:e0", "d:modals:e1"]);
+    expect(deckIds({ kind: "deck", id: "gone" }, lib, [], states)).toEqual([]);
   });
 });
 
 describe("cardExcluded", () => {
-  it("tells from the id alone whether a met card was taken out", () => {
-    const include = { red: false, "blue/u12": false, "blue/pack-verbs": false, words: false };
-    expect(cardExcluded("red:3.1:1", include)).toBe(true);
-    expect(cardExcluded("blue:12.2:4", include)).toBe(true);
-    expect(cardExcluded("blue:13.2:4", include)).toBe(false);
-    expect(cardExcluded("v:blue:verbs:go", include)).toBe(true);
-    expect(cardExcluded("v:blue:other:go", include)).toBe(false);
-    expect(cardExcluded("v:red:other:go", include)).toBe(true);
-    expect(cardExcluded("w:abc:f", include)).toBe(true);
-    expect(cardExcluded("w:abc:f", {})).toBe(false);
+  it("follows the ticks, and drops what is no card any more", () => {
+    expect(cardExcluded("d:tenses:e0", {})).toBe(false);
+    expect(cardExcluded("d:tenses:e0", { tenses: false })).toBe(true);
+    expect(cardExcluded("w:w1:f", {})).toBe(false);
+    expect(cardExcluded("w:w1:f", { words: false })).toBe(true);
+    // the book-made cards of before
+    expect(cardExcluded("blue:12.1:3", {})).toBe(true);
+    expect(cardExcluded("v:blue:irregular-verbs:go", {})).toBe(true);
   });
 });
 
 describe("interleave", () => {
-  it("takes one from each list in turn", () => {
+  it("takes one from each list by turns", () => {
     expect(interleave([[1, 2, 3], [], [10, 20]])).toEqual([1, 10, 2, 20, 3]);
+    expect(interleave([])).toEqual([]);
   });
 });

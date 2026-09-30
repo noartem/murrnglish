@@ -148,7 +148,7 @@ function StudyTiles() {
           {due > 0 && <span className="duebadge">{due}</span>}
         </span>
         <span className="tiletext">
-          {due > 0 ? `${due} due today. ` : ""}Spaced repetition of the units you learn and of your words.
+          {due > 0 ? `${due} due today. ` : ""}Grammar, verb forms, phrasal verbs and your own words, with spaced repetition.
         </span>
       </a>
       <a className="studytile" href={DICTIONARY_HASH}>

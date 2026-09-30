@@ -1,0 +1,30 @@
+{
+  "title": "a, an, the or no article",
+  "about": "first mention and known things, general ideas, places and names; – means no article",
+  "level": "B1",
+  "prompt": "a, an, the — or – for no article",
+  "entries": [
+    {"id": "a-cat-the-cat", "en": "We’ve got [a] cat and a dog. [The] cat is black.", "ru": "У нас есть кошка и собака. Кошка чёрная.", "note": "Упоминаем впервые → a; уже знаем, о какой речь → the."},
+    {"id": "an-hour", "en": "I’ll be back in [an] hour.", "ru": "Я вернусь через час.", "note": "an перед гласным звуком: an hour (h не читается), но a university (звук [ju])."},
+    {"id": "a-university", "en": "She works at [a] university in Tomsk.", "ru": "Она работает в университете в Томске.", "note": "university начинается со звука [ju] → a."},
+    {"id": "sun", "en": "Don’t look directly at [the] sun.", "ru": "Не смотри прямо на солнце.", "note": "Единственное в своём роде → the: the sun, the moon, the sky."},
+    {"id": "dogs-general", "en": "I’m afraid of [–] dogs.", "ru": "Я боюсь собак.", "note": "Общее понятие во множественном числе → без артикля."},
+    {"id": "the-dogs-specific", "en": "[The] dogs next door bark all night.", "ru": "Соседские собаки лают всю ночь.", "note": "Конкретные собаки → the."},
+    {"id": "life", "en": "[–] Life is too short to waste on bad books.", "ru": "Жизнь слишком коротка, чтобы тратить её на плохие книги.", "note": "Абстрактное понятие в целом → без артикля."},
+    {"id": "is-a-doctor", "en": "My mum is [a] doctor.", "ru": "Моя мама — врач.", "note": "Профессия → a / an."},
+    {"id": "go-to-bed", "en": "It’s late — I’m going to [–] bed.", "ru": "Уже поздно — я иду спать.", "note": "go to bed / to work / to school / home — без артикля."},
+    {"id": "in-hospital", "en": "Her grandfather is in [–] hospital, but he’s getting better.", "ru": "Её дедушка в больнице, но ему лучше.", "note": "in hospital (как пациент) — без артикля в британском английском."},
+    {"id": "play-guitar", "en": "Can you play [the] guitar?", "ru": "Ты умеешь играть на гитаре?", "note": "Музыкальные инструменты → the."},
+    {"id": "play-football", "en": "We play [–] football on Saturdays.", "ru": "По субботам мы играем в футбол.", "note": "Спорт и игры → без артикля."},
+    {"id": "the-best", "en": "It was [the] best day of my life.", "ru": "Это был лучший день в моей жизни.", "note": "Превосходная степень → the."},
+    {"id": "rivers-countries", "choice": ["The Volga flows into the Caspian Sea.", "Volga flows into Caspian Sea."], "ru": "Волга впадает в Каспийское море.", "note": "Реки, моря, океаны → the."},
+    {"id": "countries", "choice": ["She’s from Canada, but she lives in the USA.", "She’s from the Canada, but she lives in USA."], "ru": "Она из Канады, но живёт в США.", "note": "Большинство стран без артикля, но the USA, the UK, the Netherlands."},
+    {"id": "breakfast", "en": "What did you have for [–] breakfast?", "ru": "Что ты ел на завтрак?", "note": "Приёмы пищи → без артикля."},
+    {"id": "the-rich", "en": "Should [the] rich pay more tax?", "ru": "Должны ли богатые платить больше налогов?", "note": "the + прилагательное = группа людей: the rich, the young, the unemployed."},
+    {"id": "twice-a-week", "en": "I go swimming twice [a] week.", "ru": "Я плаваю два раза в неделю.", "note": "Частота: twice a week, 50 km an hour."},
+    {"id": "such-a", "en": "It was such [a] beautiful day.", "ru": "Был такой прекрасный день.", "note": "such a + прилагательное + существительное в ед. числе."},
+    {"id": "what-a", "choice": ["What a lovely surprise!", "What lovely surprise!"], "ru": "Какой приятный сюрприз!", "note": "What a…! с исчисляемым в ед. числе."},
+    {"id": "advice-no-a", "choice": ["Can I give you some advice?", "Can I give you an advice?"], "ru": "Можно дать тебе совет?", "note": "advice — неисчисляемое: some advice, a piece of advice."},
+    {"id": "the-same", "en": "We were born on [the] same day.", "ru": "Мы родились в один и тот же день.", "note": "the same — всегда с the."}
+  ]
+}

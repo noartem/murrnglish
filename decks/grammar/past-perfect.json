@@ -1,0 +1,23 @@
+{
+  "title": "Past perfect",
+  "about": "had done and had been doing: what happened before a moment in the past",
+  "level": "B1",
+  "entries": [
+    {"id": "train-left", "en": "When we got to the station, the train [had already left|already / leave].", "ru": "Когда мы добрались до вокзала, поезд уже ушёл.", "note": "Одно прошлое действие раньше другого → Past perfect."},
+    {"id": "train-left-simple", "en": "When we got to the station, the train [left|leave] a minute later.", "ru": "Когда мы добрались до вокзала, поезд отправился через минуту.", "note": "Здесь события идут по порядку → Past simple."},
+    {"id": "never-flown", "en": "I was nervous on the plane because I [had never flown|never / fly] before.", "ru": "В самолёте я нервничал: я никогда раньше не летал.", "note": "Опыт до момента в прошлом → Past perfect."},
+    {"id": "forgotten-wallet", "en": "At the till I realised I [had forgotten|forget] my wallet.", "ru": "У кассы я понял, что забыл кошелёк.", "note": "Забыл раньше, чем понял."},
+    {"id": "been-crying", "en": "Her eyes were red. She [had been crying|cry].", "ru": "У неё были красные глаза. Она плакала.", "note": "Длительное действие до момента в прошлом, видны следы → Past perfect continuous."},
+    {"id": "waiting-hours", "en": "By the time the doctor saw me, I [had been waiting|wait] for three hours.", "ru": "К тому времени, как врач меня принял, я прождал три часа.", "note": "Как долго длилось до момента в прошлом → Past perfect continuous."},
+    {"id": "didnt-recognise", "en": "I didn’t recognise him at first. He [had grown|grow] a beard.", "ru": "Я не сразу его узнал: он отрастил бороду.", "note": "Изменение произошло до встречи."},
+    {"id": "house-empty", "choice": ["The house was empty. Everyone had gone to bed.", "The house was empty. Everyone went to bed."], "ru": "В доме было пусто. Все уже легли спать.", "note": "Уже легли к тому моменту → had gone."},
+    {"id": "after-finished", "en": "After she [had finished|finish] her report, she went for a walk.", "ru": "Закончив отчёт, она пошла прогуляться.", "note": "После after Past perfect подчёркивает, что одно завершилось раньше другого (Past simple тоже возможен)."},
+    {"id": "had-met-before", "en": "“Did you know Pavel?” — “Yes, we [had met|meet] a few times before the wedding.”", "ru": "«Ты знал Павла?» — «Да, мы встречались несколько раз до свадьбы».", "note": "До события в прошлом (the wedding)."},
+    {"id": "shop-closed", "en": "I went to buy bread, but the bakery [had closed|close].", "ru": "Я пошёл за хлебом, но булочная уже закрылась.", "note": "Закрылась раньше, чем я пришёл."},
+    {"id": "hadnt-eaten", "en": "I was starving because I [hadn't eaten|not / eat] all day.", "ru": "Я умирал от голода — весь день ничего не ел.", "note": "Отрицание: hadn’t + третья форма."},
+    {"id": "first-time-past", "en": "It was the first time I [had seen|see] snow.", "ru": "Я впервые видел снег.", "note": "It was the first time… → Past perfect (It’s the first time… → Present perfect)."},
+    {"id": "worked-there", "en": "He knew the city well because he [had worked|work] there as a taxi driver.", "ru": "Он хорошо знал город: раньше работал там таксистом.", "note": "Причина в более раннем прошлом."},
+    {"id": "had-had", "en": "I felt awful — I [had had|have] too much coffee.", "ru": "Мне было плохо — я выпил слишком много кофе.", "note": "had had — Past perfect от have: это нормально."},
+    {"id": "playing-hours", "en": "The kids were exhausted. They [had been playing|play] football all afternoon.", "ru": "Дети были без сил: они весь день играли в футбол.", "note": "Длительный процесс до момента в прошлом."}
+  ]
+}

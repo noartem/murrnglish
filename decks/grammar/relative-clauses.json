@@ -1,0 +1,22 @@
+{
+  "title": "who, which, that, whose, where",
+  "about": "relative clauses, with and without commas",
+  "level": "B1",
+  "entries": [
+    {"id": "woman-who", "en": "The woman [who/that|who / which] lives next door is a pilot.", "ru": "Женщина, которая живёт по соседству, — пилот.", "note": "О людях → who (или that)."},
+    {"id": "book-which", "en": "The book [which/that|who / which] you lent me was great.", "ru": "Книга, которую ты мне одолжил, была отличной.", "note": "О предметах → which (или that)."},
+    {"id": "whose-car", "en": "That’s the man [whose|who / whose] car was stolen.", "ru": "Это тот человек, у которого угнали машину.", "note": "whose — чей, у которого."},
+    {"id": "where-born", "en": "This is the house [where|which / where] I was born.", "ru": "Это дом, в котором я родился.", "note": "Место → where (= in which)."},
+    {"id": "what-need", "en": "[What|What / That] I need is a long holiday.", "ru": "Что мне нужно, так это долгий отпуск.", "note": "what = the thing that."},
+    {"id": "that-what", "choice": ["Everything that she said was true.", "Everything what she said was true."], "ru": "Всё, что она сказала, было правдой.", "note": "После everything, something, nothing, all → that, не what."},
+    {"id": "omit-pronoun", "choice": ["The film we saw last night was awful.", "The film we saw it last night was awful."], "ru": "Фильм, который мы смотрели вчера, был ужасным.", "note": "Если who/which/that — дополнение, его можно опустить, но нельзя повторять it."},
+    {"id": "cant-omit", "choice": ["The man who called you left a message.", "The man called you left a message."], "ru": "Мужчина, который тебе звонил, оставил сообщение.", "note": "Если who — подлежащее придаточного, опускать нельзя."},
+    {"id": "commas-which", "en": "My brother, [who|who / that] lives in Berlin, is visiting next week.", "ru": "Мой брат, который живёт в Берлине, приезжает на следующей неделе.", "note": "С запятыми (дополнительная информация) that не используется."},
+    {"id": "which-whole", "en": "He didn’t call, [which|what / which] really annoyed me.", "ru": "Он не позвонил, и это меня страшно разозлило.", "note": ", which — относится ко всей предыдущей части."},
+    {"id": "preposition-end", "en": "Is this the key [you were looking for|you / look for]?", "ru": "Это тот ключ, который ты искал?", "note": "Предлог часто уходит в конец: the key (that) you were looking for."},
+    {"id": "whom-formal", "en": "The person to [whom|who / whom] I spoke was very polite.", "ru": "Человек, с которым я разговаривал, был очень вежлив.", "note": "После предлога в формальной речи — whom."},
+    {"id": "the-reason-why", "en": "That’s the reason [why|why / what] I left.", "ru": "Вот почему я ушёл.", "note": "the reason why / the day when."},
+    {"id": "most-of-whom", "en": "She has three sons, all of [whom|who / whom] are doctors.", "ru": "У неё три сына, и все они врачи.", "note": "all / most / some of whom (о людях), of which (о предметах)."},
+    {"id": "participle-clause", "choice": ["Who is the girl talking to your brother?", "Who is the girl is talking to your brother?"], "ru": "Кто эта девушка, которая разговаривает с твоим братом?", "note": "Сокращённое придаточное: the girl (who is) talking…"}
+  ]
+}

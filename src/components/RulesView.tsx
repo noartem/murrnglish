@@ -20,15 +20,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { ArrowLeft, ChevronLeft, ChevronRight, Layers, PencilLine, Search, X } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, PencilLine, Search, X } from "lucide-react";
 import type { Book } from "../books";
 import { BOOKS, bookUrl } from "../books";
 import type { PageAspects } from "../data";
 import { fetchPageAspects } from "../data";
-import { loadBookCards } from "../decks";
 import type { BookRules, ParsedRule, RuleHit, RuleLine } from "../rules";
 import { highlight, loadBookRules, queryTerms, searchRules, theoryPages } from "../rules";
-import { bookHash, deckHash, rulesHash } from "../routes";
+import { bookHash, rulesHash } from "../routes";
 import { useIsMobile } from "../useIsMobile";
 import { PageViewer } from "./PageViewer";
 import { PickWord } from "./PickWord";
@@ -327,21 +326,6 @@ function useAspects(book: Book): PageAspects | null {
   return a;
 }
 
-function useUnitCardCount(book: Book, unit: number): number | null {
-  const [n, setN] = useState<number | null>(null);
-  useEffect(() => {
-    let alive = true;
-    loadBookCards(book).then(
-      (bc) => alive && setN(bc.byUnit.get(unit)?.length ?? 0),
-      () => {},
-    );
-    return () => {
-      alive = false;
-    };
-  }, [book, unit]);
-  return n;
-}
-
 /** The book page at 100%: the whole page in view, like the course's page pane,
     but never so small the print cannot be read, nor wider than a printed page
     on a big screen. A phone's pane is narrower than min: it fits the width. */
@@ -354,7 +338,6 @@ function RulePane({ br, unit, terms }: { br: BookRules; unit: number; terms: str
   const group = index.groups.find((g) => g.units.includes(unit));
   const [asPage, setAsPage] = useState(!rule);
   const aspects = useAspects(book);
-  const cards = useUnitCardCount(book, unit);
   const isMobile = useIsMobile();
   const bodyRef = useRef<HTMLDivElement>(null);
 
@@ -427,11 +410,6 @@ function RulePane({ br, unit, terms }: { br: BookRules; unit: number; terms: str
         <a className="pillbtn" href={bookHash(book, { kind: "unit", n: unit })}>
           <PencilLine size={15} aria-hidden /> Exercises
         </a>
-        {cards !== 0 && (
-          <a className="pillbtn" href={deckHash({ kind: "unit", book, unit })}>
-            <Layers size={15} aria-hidden /> Cards{cards ? ` · ${cards}` : ""}
-          </a>
-        )}
       </div>
     </header>
   );

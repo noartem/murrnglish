@@ -1,0 +1,25 @@
+{
+  "title": "all, each, both, either; myself, each other",
+  "about": "determiners of groups and pairs, reflexive and reciprocal pronouns",
+  "level": "B1",
+  "entries": [
+    {"id": "both-of-them", "en": "I’ve got two brothers. [Both|Both / All] of them live abroad.", "ru": "У меня два брата. Оба живут за границей.", "note": "Про двоих → both; про троих и больше → all."},
+    {"id": "all-students", "en": "[All|All / Both] the students passed the exam.", "ru": "Все студенты сдали экзамен.", "note": "all — про всю группу (больше двух)."},
+    {"id": "either-day", "en": "“Tuesday or Wednesday?” — “[Either|Either / Neither] day is fine.”", "ru": "«Вторник или среда?» — «Подходит любой день».", "note": "either — любой из двух."},
+    {"id": "neither-of", "en": "[Neither|Either / Neither] of my parents speaks English.", "ru": "Никто из моих родителей не говорит по-английски.", "note": "neither — ни один из двух."},
+    {"id": "each-every", "choice": ["Every student in the school has a laptop.", "Each students in the school has a laptop."], "ru": "У каждого ученика в школе есть ноутбук.", "note": "each / every + существительное в ед. числе."},
+    {"id": "each-side", "en": "There were trees on [each|each / every] side of the road.", "ru": "По обеим сторонам дороги росли деревья.", "note": "У дороги две стороны → each (every — про большую группу)."},
+    {"id": "every-day", "en": "I check my email [every|every / each] morning.", "ru": "Я проверяю почту каждое утро.", "note": "every — о регулярности."},
+    {"id": "enjoy-yourselves", "en": "Enjoy [yourselves|yourself / yourselves], kids!", "ru": "Повеселитесь, ребята!", "note": "Обращение к нескольким → yourselves."},
+    {"id": "cut-myself", "en": "I cut [myself|me / myself] while I was cooking.", "ru": "Я порезался, пока готовил.", "note": "Действие направлено на себя → myself."},
+    {"id": "feel-relax", "choice": ["I feel much better after a swim.", "I feel myself much better after a swim."], "ru": "После плавания я чувствую себя гораздо лучше.", "note": "feel, relax, wash, dress, meet обычно без -self (в отличие от русского -ся)."},
+    {"id": "each-other", "en": "Anna and Tom love [each other|themselves / each other].", "ru": "Анна и Том любят друг друга.", "note": "each other — друг друга; themselves — сами себя."},
+    {"id": "by-myself", "en": "I live [by myself|by / myself].", "ru": "Я живу один.", "note": "by myself = alone, один."},
+    {"id": "did-it-myself", "en": "Nobody helped me — I painted the room [myself|me / myself].", "ru": "Мне никто не помогал — я сам покрасил комнату.", "note": "myself = сам, без чужой помощи."},
+    {"id": "a-friend-of-mine", "choice": ["She’s a friend of mine.", "She’s a friend of me."], "ru": "Она моя подруга (одна из подруг).", "note": "a friend of mine / yours / his."},
+    {"id": "its-its", "en": "The company has changed [its|its / it’s] name.", "ru": "Компания сменила название.", "note": "its — его/её (принадлежность); it’s = it is / it has."},
+    {"id": "whole", "en": "I spent the [whole|all / whole] day in bed.", "ru": "Я провёл весь день в постели.", "note": "the whole day = all day."},
+    {"id": "one-ones", "en": "“Which shoes do you want?” — “The black [ones|one / ones].”", "ru": "«Какие туфли ты хочешь?» — «Чёрные».", "note": "one / ones заменяют существительное, чтобы не повторять его."},
+    {"id": "other-another", "en": "This cup is dirty. Can I have [another|other / another] one?", "ru": "Эта чашка грязная. Можно другую?", "note": "another = ещё один / другой (одна штука)."}
+  ]
+}

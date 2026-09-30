@@ -1,0 +1,25 @@
+{
+  "title": "Inversion and emphasis",
+  "about": "Never have I…, Not only…, Hardly had…; It was … that, What I need is…",
+  "level": "C1",
+  "entries": [
+    {"id": "never-have-i", "en": "Never [have I seen|I / see] such a beautiful sunset.", "ru": "Никогда я не видел такого красивого заката.", "note": "Отрицательное наречие в начале → обратный порядок, как в вопросе."},
+    {"id": "not-only", "en": "Not only [did she win|she / win] the race, but she also broke the record.", "ru": "Она не только выиграла забег, но и побила рекорд.", "note": "Not only + вспомогательный глагол + подлежащее."},
+    {"id": "hardly-had", "en": "Hardly [had we sat|we / sit] down when the fire alarm went off.", "ru": "Едва мы сели, как сработала пожарная сигнализация.", "note": "Hardly / Scarcely had … when — едва …, как."},
+    {"id": "no-sooner", "en": "No sooner had I got home [than|when / than] it started to pour.", "ru": "Не успел я прийти домой, как полил дождь.", "note": "No sooner … than (а не when)."},
+    {"id": "rarely-do", "en": "Rarely [do we get|we / get] such good weather in October.", "ru": "Редко у нас бывает такая хорошая погода в октябре.", "note": "Rarely / Seldom + инверсия."},
+    {"id": "under-no-circumstances", "en": "Under no circumstances [should you open|you / should / open] this door.", "ru": "Ни при каких обстоятельствах не открывайте эту дверь.", "note": "Under no circumstances / On no account + инверсия."},
+    {"id": "only-then", "en": "Only later [did I realise/did I realize|I / realise] what had happened.", "ru": "Лишь позже я понял, что произошло.", "note": "Only later / Only then / Only when… + инверсия."},
+    {"id": "little-did", "en": "Little [did he know|he / know] that his life was about to change.", "ru": "Он и не подозревал, что его жизнь вот-вот изменится.", "note": "Little did I know… — я и не подозревал."},
+    {"id": "not-until", "en": "Not until I got home [did I notice|I / notice] the scratch.", "ru": "Только дома я заметил царапину.", "note": "Инверсия во второй части: Not until … did I…"},
+    {"id": "so-tired-that", "en": "So tired [was she|she / be] that she fell asleep at the table.", "ru": "Она так устала, что уснула прямо за столом.", "note": "So + прилагательное + be + подлежащее."},
+    {"id": "inversion-wrong", "choice": ["Never before had the city seen such crowds.", "Never before the city had seen such crowds."], "ru": "Никогда прежде город не видел таких толп.", "note": "После Never before — инверсия: had the city seen."},
+    {"id": "it-was-that", "en": "It was Igor [who/that|who / what] broke the vase, not me.", "ru": "Это Игорь разбил вазу, а не я.", "note": "Выделение: It was X who/that… — именно X."},
+    {"id": "it-was-in", "en": "It was in Paris [that|that / where] they first met.", "ru": "Именно в Париже они впервые встретились.", "note": "It was + обстоятельство + that."},
+    {"id": "what-i-need", "en": "[What|What / That] I need right now is a cup of tea.", "ru": "Что мне сейчас нужно, так это чашка чая.", "note": "What I need is… — выделение."},
+    {"id": "all-i-want", "en": "All I want [is|is / are] a quiet evening.", "ru": "Всё, чего я хочу, — это спокойный вечер.", "note": "All I want is… = the only thing I want."},
+    {"id": "do-emphasis", "en": "I [do like|like] your haircut — it really suits you.", "ru": "Мне правда нравится твоя стрижка — она тебе очень идёт.", "note": "Усилительное do / does / did + глагол."},
+    {"id": "did-tell", "choice": ["I did tell you — you just weren’t listening!", "I did told you — you just weren’t listening!"], "ru": "Я же тебе говорил — ты просто не слушал!", "note": "После усилительного did — основная форма глагола."},
+    {"id": "the-reason-is", "en": "The reason I called [is that|is that / is because of] I need your advice.", "ru": "Я звоню потому, что мне нужен твой совет.", "note": "The reason … is that…"}
+  ]
+}

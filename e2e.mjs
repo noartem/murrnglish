@@ -915,11 +915,12 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
 {
   const sp = await wctx.newPage();
   sp.on("pageerror", (e) => results.push(["FAIL", "F16 pageerror", String(e).slice(0, 140)]));
-  await sp.goto(BASE + "/#/cards/blue/u12", { waitUntil: "load" });
+  await sp.goto(BASE + "/#/cards/present-perfect-past", { waitUntil: "load" });
   await sp.waitForSelector(".studycard .gap", { timeout: 30000 });
   const fresh0 = Number(await sp.locator(".studyhead .count.fresh").textContent());
-  ok("F16 a unit deck opens on its first card", /Paul has lived in Brazil/.test(await sp.locator(".studycard").innerText()));
-  await sp.keyboard.type("for");
+  const first = await sp.locator(".studycard").innerText();
+  ok("F16 a deck opens on its first card, hint and translation", /my keys/.test(first) && /\(lose\)/.test(first) && /потерял/.test(first));
+  await sp.keyboard.type("have lost");
   await sp.keyboard.press("Enter");
   await sp.waitForSelector(".ratebtns", { timeout: 5000 });
   ok(
@@ -927,14 +928,15 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
     (await sp.locator(".studycard .gap.ok").count()) === 1 &&
       /Good/.test((await sp.locator(".ratebtn.suggest").textContent()) ?? ""),
   );
+  ok("F16 the answer side explains why", /Present perfect/.test(await sp.locator(".studycard .cardback").innerText()));
   ok(
     "F16 the buttons show their intervals",
-    (await sp.locator(".ratebtn .rateivl").allTextContents()).join(" ") === "1m 6m 10m 4d",
+    /^1m 6m 10m [45]d$/.test((await sp.locator(".ratebtn .rateivl").allTextContents()).join(" ")),
     (await sp.locator(".ratebtn .rateivl").allTextContents()).join(" "),
   );
   await sp.keyboard.press("Space");
   await sp.waitForFunction(() => !document.querySelector(".ratebtns"), null, { timeout: 5000 });
-  const st = await sp.evaluate(() => JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states["blue:12.1:2"]);
+  const st = await sp.evaluate(() => JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states["d:present-perfect-past:lost-keys"]);
   ok(
     "F16 Space answers Good: the card is learning, due in 10 minutes",
     st?.kind === "learning" && Math.abs(st.due - st.last - 600000) < 1000,
@@ -946,8 +948,10 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
   await sp.keyboard.press("Enter");
   await sp.waitForSelector(".ratebtns", { timeout: 5000 });
   ok(
-    "F16 a wrong answer is marked and Again is suggested",
-    (await sp.locator(".studycard .gap.bad").count()) >= 1 && /Again/.test((await sp.locator(".ratebtn.suggest").textContent()) ?? ""),
+    "F16 a wrong answer is marked, the right one shown, Again suggested",
+    (await sp.locator(".studycard .gap.bad").count()) >= 1 &&
+      (await sp.locator(".studycard .gapfill.missed").count()) >= 1 &&
+      /Again/.test((await sp.locator(".ratebtn.suggest").textContent()) ?? ""),
   );
   await sp.keyboard.press("Digit1");
   await sp.waitForFunction(() => !document.querySelector(".ratebtns"), null, { timeout: 5000 });
@@ -961,23 +965,33 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
   ok("F16 Shift+? shows the review keys", /Again, Hard, Good, Easy/.test(await sp.locator(".helpcard").innerText()));
   await sp.keyboard.press("Escape");
 
-  // a choice card: a number key picks the option
-  await sp.goto(BASE + "/#/cards/blue/u11", { waitUntil: "load" });
+  // a choice card: a number key picks the option shown under it
+  await sp.goto(BASE + "/#/cards/confusables", { waitUntil: "load" });
   await sp.waitForSelector(".choiceopt", { timeout: 30000 });
+  const firstOpt = (await sp.locator(".choiceopt .opttext").first().textContent()) ?? "";
   await sp.keyboard.press("Digit1");
   await sp.waitForSelector(".choiceopt.ok", { timeout: 5000 });
   ok("F16 a number picks an option and turns the card", (await sp.locator(".ratebtns").count()) === 1);
+  ok(
+    "F16 the pick is marked right or wrong",
+    firstOpt === "lend" ? (await sp.locator(".choiceopt.bad").count()) === 0 : (await sp.locator(".choiceopt.bad").count()) === 1,
+    firstOpt,
+  );
 
-  // the deck list: the started unit is in "everything", with its counts
+  // the deck list: the started decks are in "everything", with their counts
   await sp.goto(BASE + "/#/cards", { waitUntil: "load" });
-  await sp.waitForSelector(".deckgroup", { timeout: 30000 });
+  await sp.waitForSelector(".decksection", { timeout: 30000 });
   const today = await sp.locator(".todaysheet .counts").innerText();
   ok(
-    "F16 everything due counts the started units and the words",
+    "F16 everything due counts the started decks and the words",
     Number((today.match(/\d+/) ?? ["0"])[0]) > 0,
     today.replace(/\s+/g, " "),
   );
-  ok("F16 each book lists its groups", (await sp.locator(".booksheet").count()) === 2);
+  ok("F16 the decks come in two sections", (await sp.locator(".decksection").count()) === 2);
+  ok(
+    "F16 a started deck is ticked and its group open",
+    await sp.locator(".deckgroup[open] .deckline", { hasText: "Present perfect or past simple" }).locator(".pickbox").isChecked(),
+  );
   await sp.locator(".todaycta").click();
   await sp.waitForURL(/#\/cards\/all$/, { timeout: 5000 });
   await sp.waitForSelector(".studycard", { timeout: 30000 });
@@ -994,7 +1008,7 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
   await sp.evaluate(() => {
     const s = JSON.parse(localStorage.getItem("murrnglish.srs-v1"));
     const day = 864e5;
-    s.states["blue:12.1:3"] = { kind: "review", due: Date.now() - day, ivl: 3, ease: 2.5, step: 0, reps: 3, lapses: 0, last: Date.now() - 4 * day };
+    s.states["d:present-perfect-past:ever-been"] = { kind: "review", due: Date.now() - day, ivl: 3, ease: 2.5, step: 0, reps: 3, lapses: 0, last: Date.now() - 4 * day };
     localStorage.setItem("murrnglish.srs-v1", JSON.stringify(s));
   });
   await sp.goto(BASE + "/#/", { waitUntil: "load" });
@@ -1026,7 +1040,7 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
   // phone: the review screen fits
   const sm = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   const smp = await sm.newPage();
-  await smp.goto(BASE + "/#/cards/blue/u12", { waitUntil: "load" });
+  await smp.goto(BASE + "/#/cards/present-perfect-past", { waitUntil: "load" });
   await smp.waitForSelector(".showbtn", { timeout: 30000 });
   await smp.locator(".showbtn").tap();
   await smp.waitForSelector(".ratebtns", { timeout: 5000 });
@@ -1034,6 +1048,13 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
     "F16 phone: four answer buttons in one row, no sideways scroll",
     (await smp.evaluate(() => new Set([...document.querySelectorAll(".ratebtn")].map((b) => Math.round(b.getBoundingClientRect().top))).size)) === 1 &&
       (await smp.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)),
+  );
+  await smp.goto(BASE + "/#/cards", { waitUntil: "load" });
+  await smp.waitForSelector(".decksection", { timeout: 30000 });
+  await smp.locator(".deckgroup summary").first().tap();
+  ok(
+    "F16 phone: the deck list has no sideways scroll",
+    await smp.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
   );
   await sm.close();
 }
@@ -1044,7 +1065,7 @@ if (BASE.includes("4173")) {
   const octx2 = await browser.newContext({ viewport: { width: 1400, height: 900 } });
   const op = await octx2.newPage();
   op.on("pageerror", (e) => results.push(["FAIL", "F17 pageerror", String(e).slice(0, 140)]));
-  await op.goto(BASE + "/#/cards/blue/u12", { waitUntil: "load" });
+  await op.goto(BASE + "/#/cards/present-perfect-past", { waitUntil: "load" });
   await op.evaluate(async () => {
     await navigator.serviceWorker.ready;
     if (navigator.serviceWorker.controller) return;
@@ -1057,14 +1078,14 @@ if (BASE.includes("4173")) {
   await octx2.setOffline(true);
   await op.reload({ waitUntil: "load" });
   await op.waitForSelector(".studycard .gap", { timeout: 30000 });
-  await op.keyboard.type("for");
+  await op.keyboard.type("have lost");
   await op.keyboard.press("Enter");
   await op.waitForSelector(".ratebtns", { timeout: 5000 });
   await op.keyboard.press("Digit3");
   await op.waitForFunction(() => !document.querySelector(".ratebtns"), null, { timeout: 5000 });
   ok(
-    "F17 offline: a unit deck is reviewed",
-    await op.evaluate(() => !!JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states["blue:12.1:2"]),
+    "F17 offline: a deck is reviewed",
+    await op.evaluate(() => !!JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states["d:present-perfect-past:lost-keys"]),
   );
   await op.goto(BASE + "/#/dictionary", { waitUntil: "load" });
   await op.waitForSelector(".addbar input", { timeout: 30000 });
@@ -1080,31 +1101,51 @@ if (BASE.includes("4173")) {
   await octx2.close();
 }
 
-// ---------- Flow 18: word packs and choosing what to study ----------
+// ---------- Flow 18: vocabulary decks and choosing what to study ----------
 {
   const vctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
   const vp = await vctx.newPage();
   vp.on("pageerror", (e) => results.push(["FAIL", "F18 pageerror", String(e).slice(0, 140)]));
+  // a learner of the book-made cards: their pack history moves, the rest goes
+  await vp.goto(BASE + "/#/", { waitUntil: "load" });
+  await vp.evaluate(() => {
+    const st = { kind: "review", due: Date.now() + 864e5, ivl: 3, ease: 2.5, step: 0, reps: 3, lapses: 0, last: Date.now() - 864e5 };
+    localStorage.setItem("murrnglish.srs-v1", JSON.stringify({ states: { "v:blue:irregular-verbs:go": st, "blue:12.1:2": st }, suspended: [] }));
+    localStorage.setItem("murrnglish.srs-settings-v1", JSON.stringify({ newPerDay: 500, reviewsPerDay: 200, typeAnswers: true, include: { red: false, "blue/u12": true } }));
+  });
   await vp.goto(BASE + "/#/cards", { waitUntil: "load" });
-  await vp.waitForSelector(".packrow", { timeout: 30000 });
+  await vp.reload({ waitUntil: "load" }); // the store is read at load
+  await vp.waitForSelector(".decksection", { timeout: 30000 });
+  await sleep(300);
+  const moved = await vp.evaluate(() => ({
+    states: Object.keys(JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states),
+    include: JSON.parse(localStorage.getItem("murrnglish.srs-settings-v1")).include,
+  }));
+  ok(
+    "F18 the old pack history moves to its deck, the rest is dropped",
+    moved.states.join() === "d:irregular-verbs:go" && Object.keys(moved.include).length === 0,
+    JSON.stringify(moved),
+  );
   const todayNew = async () => Number(((await vp.locator(".todaysheet .count.fresh").innerText()).match(/\d+/) ?? ["0"])[0]);
-  ok("F18 a fresh learner has nothing due", (await todayNew()) === 0);
-  const blue = vp.locator(".booksheet", { hasText: "English Grammar in Use" });
-  await blue.locator(".packrow", { hasText: "Irregular verbs" }).locator(".pickbox").check();
-  ok("F18 ticking a pack puts it in daily study", (await todayNew()) > 0);
-  // a group's tick takes its units without opening the group
-  const red = vp.locator(".booksheet", { hasText: "Essential Grammar in Use" });
-  const group = red.locator(".deckgroup").first();
+  const verbsNew = await todayNew();
+  ok("F18 the moved deck is in daily study", verbsNew > 0);
+  const vocab = vp.locator(".decksection", { hasText: "Vocabulary" });
+  await vocab.locator(".deckgroup summary", { hasText: "Meaning" }).click();
+  await vocab.locator(".deckline", { hasText: "Everyday idioms" }).locator(".pickbox").check();
+  ok("F18 ticking a deck puts it in daily study", (await todayNew()) > verbsNew);
+  // a group's tick takes its decks without opening the group
+  const grammar = vp.locator(".decksection", { hasText: "Grammar" });
+  const group = grammar.locator(".deckgroup", { hasText: "Modal verbs" });
   await group.locator("summary .pickbox").check();
   ok("F18 a group's tick leaves the group folded", !(await group.evaluate((d) => d.open)));
-  ok("F18 the book says how much of it is in", /10 of 115 units/.test(await red.locator(".decksummary").innerText()));
-  await red.locator(".bookswitch").click();
-  ok("F18 a book switched off hides its decks", (await red.locator(".deckgroup").count()) === 0);
+  ok("F18 the section says how much of it is in", /4 in daily study/i.test(await grammar.locator(".libkicker").innerText()));
+  await grammar.locator(".decksubacts button", { hasText: "None" }).click();
+  ok("F18 None takes the section out", /none in daily study/i.test(await grammar.locator(".libkicker").innerText()));
   const include = await vp.evaluate(() => JSON.parse(localStorage.getItem("murrnglish.srs-settings-v1")).include);
-  ok("F18 the choice is saved", include.red === false && include["blue/pack-irregular-verbs"] === true && include["red/u1"] === true);
+  ok("F18 the choice is saved", include.idioms === true && include.deduction === false && include["present-perfect-past"] === false);
 
   // a forms card: both forms typed, checked
-  await vp.goto(BASE + "/#/cards/blue/pack-irregular-verbs", { waitUntil: "load" });
+  await vp.goto(BASE + "/#/cards/irregular-verbs", { waitUntil: "load" });
   await vp.waitForSelector(".formsrow input", { timeout: 30000 });
   await vp.keyboard.type("was");
   await vp.keyboard.press("Enter");
@@ -1115,19 +1156,81 @@ if (BASE.includes("4173")) {
   await vp.keyboard.press("Digit3");
   await vp.waitForFunction(() => !document.querySelector(".ratebtns"), null, { timeout: 5000 });
   ok(
-    "F18 the pack card is scheduled",
-    await vp.evaluate(() => !!JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states["v:blue:irregular-verbs:be"]),
+    "F18 the verb card is scheduled",
+    await vp.evaluate(() => !!JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states["d:irregular-verbs:be"]),
   );
 
-  // the dictionary: a pack opens from its link, and the search reads the packs
-  await vp.goto(BASE + "/#/dictionary/blue/pack-phrasal-verbs", { waitUntil: "load" });
+  // a meaning card: the idiom, then what it means
+  await vp.goto(BASE + "/#/cards/idioms", { waitUntil: "load" });
+  await vp.waitForSelector(".studycard .wordbig", { timeout: 30000 });
+  await vp.keyboard.press("Space");
+  await vp.waitForSelector(".ratebtns", { timeout: 5000 });
+  ok("F18 an idiom turns to its meaning", /проще простого/.test(await vp.locator(".studycard .cardback").innerText()));
+
+  // the dictionary: a deck opens from its link, and the search reads the decks
+  await vp.goto(BASE + "/#/dictionary/phrasal-verbs", { waitUntil: "load" });
   await vp.waitForSelector(".packfold[open] .packentries li", { timeout: 30000 });
-  ok("F18 the pack's words open in the dictionary", /Phrasal verbs/.test(await vp.locator(".packfold[open]").innerText()));
+  ok("F18 the deck's words open in the dictionary", /Phrasal verbs/.test(await vp.locator(".packfold[open]").innerText()));
   await vp.fill(".addbar input", "look after");
   await vp.waitForSelector(".packhits li", { timeout: 5000 });
-  ok("F18 the search finds pack entries", /присматривать/.test(await vp.locator(".packhits").innerText()));
+  ok("F18 the search finds deck entries", /присматривать/.test(await vp.locator(".packhits").innerText()));
   ok("F18 no page errors", !results.some((r) => r[1] === "F18 pageerror"));
   await vctx.close();
+}
+
+// ---------- Flow 19: looking through a deck's cards ----------
+{
+  const bctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
+  const bp = await bctx.newPage();
+  bp.on("pageerror", (e) => results.push(["FAIL", "F19 pageerror", String(e).slice(0, 140)]));
+  await bp.goto(BASE + "/#/cards", { waitUntil: "load" });
+  await bp.waitForSelector(".decksection", { timeout: 30000 });
+  await bp.locator(".deckgroup summary .deckname", { hasText: "Present and past" }).click();
+  await bp.locator('.iconlink[aria-label^="Present perfect or past simple"]').click();
+  await bp.waitForURL(/#\/cards\/present-perfect-past\/browse$/, { timeout: 5000 });
+  await bp.waitForSelector(".browselist .wordrow", { timeout: 30000 });
+  const all = await bp.locator(".browselist .wordrow").count();
+  ok("F19 a deck opens into its cards, all new", all > 5 && (await bp.locator(".browselist .statepill.new").count()) === all, String(all));
+  await bp.fill(".browsetools input", "keys");
+  await bp.waitForFunction((n) => document.querySelectorAll(".browselist .wordrow").length < n, all, { timeout: 5000 });
+  ok("F19 the search narrows the list", /потерял/.test(await bp.locator(".browselist").innerText()));
+  await bp.locator('.browselist [data-entry="lost-keys"]').click();
+  await bp.waitForURL(/\/browse\/lost-keys$/, { timeout: 5000 });
+  await bp.waitForSelector(".cardinfo", { timeout: 5000 });
+  ok("F19 a card opens turned over", /have lost/.test(await bp.locator(".studycard").innerText()));
+  ok("F19 a new card says it is not studied yet", /Not studied yet/.test(await bp.locator(".cardinfo").innerText()));
+  await bp.locator(".studytools button", { hasText: "Suspend" }).click();
+  await bp.waitForSelector(".cardinfo .statepill.off", { timeout: 5000 });
+  const susp = await bp.evaluate(() => JSON.parse(localStorage.getItem("murrnglish.srs-v1")).suspended);
+  ok("F19 Suspend suspends the card", susp.includes("d:present-perfect-past:lost-keys"), JSON.stringify(susp));
+  await bp.locator(".studytools button", { hasText: "Resume" }).click();
+  await bp.waitForSelector(".cardinfo .statepill.new", { timeout: 5000 });
+  await bp.keyboard.press("Escape");
+  await bp.waitForURL(/\/browse$/, { timeout: 5000 });
+  await bp.waitForSelector(".browselist", { timeout: 5000 });
+  ok("F19 Esc goes back to the list, the search kept", (await bp.locator(".browsetools input").inputValue()) === "keys");
+
+  // a card studied: its history, reached from the session
+  await bp.goto(BASE + "/#/cards/present-perfect-past", { waitUntil: "load" });
+  await bp.waitForSelector(".studycard .gap", { timeout: 30000 });
+  await bp.keyboard.type("have lost");
+  await bp.keyboard.press("Enter");
+  await bp.waitForSelector(".ratebtns", { timeout: 5000 });
+  await bp.keyboard.press("Space");
+  await bp.waitForFunction(() => !document.querySelector(".ratebtns"), null, { timeout: 5000 });
+  await bp.goto(BASE + "/#/cards/present-perfect-past/browse/lost-keys", { waitUntil: "load" });
+  await bp.waitForSelector(".cardstats", { timeout: 30000 });
+  const stats = await bp.locator(".cardstats").innerText();
+  ok("F19 a studied card shows its stage and reviews", /Learning/.test(stats) && /Reviews\s+1/.test(stats), stats.replace(/\s+/g, " "));
+  await bp.keyboard.press("ArrowRight");
+  await bp.waitForFunction(() => !location.hash.endsWith("/lost-keys"), null, { timeout: 5000 });
+  ok("F19 → opens the next card", /\/browse\/[a-z0-9-]+$/.test(bp.url()), bp.url());
+  await bp.goto(BASE + "/#/cards/present-perfect-past/browse", { waitUntil: "load" });
+  await bp.waitForSelector(".browselist", { timeout: 30000 });
+  await bp.locator(".browsefilters button", { hasText: "Learning" }).click();
+  ok("F19 the Learning filter shows the card studied", (await bp.locator(".browselist .wordrow").count()) === 1);
+  ok("F19 no page errors", !results.some((r) => r[1] === "F19 pageerror"));
+  await bctx.close();
 }
 
 await mctx.close();

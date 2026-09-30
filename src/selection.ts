@@ -1,50 +1,37 @@
 // What "Everything due" takes: the learner ticks what they want to study
-// every day on the deck list. The choices are kept as the deck keys of
-// routes.ts mapped to on/off, in the study settings (backup.ts):
+// every day on the deck list. The choices are kept as deck keys mapped to
+// on/off, in the study settings (backup.ts):
 //
-//   "words"             the learner's own words           (default on)
-//   "<book>"            the book as a whole: off leaves out all of it,
-//                       whatever its units say             (default on)
-//   "<book>/u12"        a unit                             (default: started)
-//   "<book>/pack-<id>"  a word pack                        (default: started)
+//   "words"     the learner's own words       (default on)
+//   "<deck>"    a deck (deckdata.ts)          (default: started)
 //
-// A unit or pack nobody ticked is in once it is started — a unit finished in
-// the course, or anything of it studied in a deck — so the daily allowance
-// of new cards goes to what is being learned without any ticking at all,
-// and a tick either way overrides that. Pure functions; decks.ts applies
-// them to the loaded books, dueCount.ts to the review state alone.
+// A deck nobody ticked is in once it is started — any of its cards studied —
+// so opening a deck and studying it is all it takes, and a tick either way
+// overrides that. Pure functions; decks.ts applies them to the loaded decks,
+// dueCount.ts to the review state alone.
 
-import { parsePackCardId } from "./packs";
+import { parseCardId } from "./deckdata";
 import { parseWordCardId } from "./words";
 
 export type Include = Readonly<Record<string, boolean>>;
 
 export const WORDS_PICK = "words";
-export const unitPick = (book: string, unit: number) => `${book}/u${unit}`;
-export const packPick = (book: string, pack: string) => `${book}/pack-${pack}`;
 
-/** The book is switched on (the default). */
-export function bookOn(include: Include, book: string): boolean {
-  return include[book] !== false;
-}
-
-/** A unit or pack: its tick, else whether it has been started. */
-export function picked(include: Include, key: string, started: boolean): boolean {
-  return include[key] ?? started;
+/** A deck: its tick, else whether it has been started. */
+export function picked(include: Include, deck: string, started: boolean): boolean {
+  return include[deck] ?? started;
 }
 
 /**
- * A card the learner has taken out by hand: its book switched off, or its
- * unit or pack unticked, or their words turned off. Cards met before are
- * started by definition, so this alone decides whether a met card counts.
+ * A card the learner has taken out by hand — its deck unticked, or their
+ * words turned off — or one that is no card of this app any more (the
+ * earlier book-made cards, migrated or dropped by study.ts). Cards met before
+ * are started by definition, so this alone decides whether a met card counts.
  */
 export function cardExcluded(id: string, include: Include): boolean {
   if (parseWordCardId(id)) return include[WORDS_PICK] === false;
-  const p = parsePackCardId(id);
-  if (p) return !bookOn(include, p.book) || include[packPick(p.book, p.pack)] === false;
-  const m = id.match(/^([^:]+):(\d+)\./); // "<book>:12.3:4"
-  if (!m) return false;
-  return !bookOn(include, m[1]) || include[unitPick(m[1], Number(m[2]))] === false;
+  const d = parseCardId(id);
+  return !d || include[d.deck] === false;
 }
 
 /**

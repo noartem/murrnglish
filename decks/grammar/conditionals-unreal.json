@@ -1,0 +1,22 @@
+{
+  "title": "If I were, if I had known: unreal conditions",
+  "about": "second, third and mixed conditionals",
+  "level": "B1",
+  "entries": [
+    {"id": "if-had-money", "en": "If I [had|have] more money, I [would travel|travel] around the world.", "ru": "Если бы у меня было больше денег, я бы путешествовал по миру.", "note": "Нереальное настоящее: if + Past simple, would + глагол."},
+    {"id": "if-i-were-you", "en": "If I [were/was|be] you, I’d take the job.", "ru": "На твоём месте я бы согласился на эту работу.", "note": "If I were you — совет. were для всех лиц (was разговорно)."},
+    {"id": "would-in-if", "choice": ["If I knew her number, I’d call her.", "If I would know her number, I’d call her."], "ru": "Если бы я знал её номер, я бы позвонил.", "note": "would не ставится в часть с if."},
+    {"id": "if-had-known", "en": "If I [had known|know] about the party, I [would have come|come].", "ru": "Если бы я знал о вечеринке, я бы пришёл.", "note": "Нереальное прошлое: if + Past perfect, would have + третья форма."},
+    {"id": "wouldnt-have-missed", "en": "We [wouldn't have missed|not / miss] the flight if we had left earlier.", "ru": "Мы бы не опоздали на рейс, если бы выехали раньше.", "note": "Третий тип: would have done."},
+    {"id": "could-speak", "en": "If I [could|can] speak Chinese, I’d apply for that job in Shanghai.", "ru": "Если бы я умел говорить по-китайски, я бы подался на ту работу в Шанхае.", "note": "could = was able to в нереальном условии."},
+    {"id": "mixed-now", "en": "If I had taken that job, I [would be|be] rich now.", "ru": "Если бы я тогда согласился на ту работу, сейчас был бы богат.", "note": "Смешанный тип: прошлое условие → результат сейчас."},
+    {"id": "mixed-past", "en": "If she [weren't|not / be] so shy, she would have spoken to him at the party.", "ru": "Не будь она такой застенчивой, она бы заговорила с ним на вечеринке.", "note": "Смешанный тип: постоянное свойство → результат в прошлом."},
+    {"id": "second-or-first", "choice": ["If I won the lottery, I’d buy a house by the sea.", "If I win the lottery, I’d buy a house by the sea."], "ru": "Если бы я выиграл в лотерею, купил бы дом у моря.", "note": "Маловероятно → Past simple + would. Не смешивать с первым типом."},
+    {"id": "what-would-you-do", "en": "What [would you do|you / do] if you found a wallet in the street?", "ru": "Что бы ты сделал, если бы нашёл кошелёк на улице?", "note": "Воображаемая ситуация → would."},
+    {"id": "had-i-known", "en": "[Had I known|I / know] you were ill, I would have visited you.", "ru": "Знай я, что ты болеешь, я бы навестил тебя.", "note": "Had I known = If I had known (формальная инверсия)."},
+    {"id": "without-help", "en": "[If it hadn't been|it / not / be] for your help, I would have failed.", "ru": "Если бы не твоя помощь, я бы провалился.", "note": "If it hadn’t been for… = Without…"},
+    {"id": "were-to", "en": "If you [were to|be to] lose your passport, what would you do?", "ru": "Если бы ты вдруг потерял паспорт, что бы ты делал?", "note": "were to — подчёркивает, что это лишь предположение."},
+    {"id": "might-have-got", "en": "If you had asked nicely, he [might have said|say] yes.", "ru": "Если бы ты вежливо попросил, он, возможно, согласился бы.", "note": "Вместо would можно might / could: might have done."},
+    {"id": "would-have-called", "choice": ["I would have called you if I had had my phone.", "I would call you if I had had my phone."], "ru": "Я бы позвонил тебе, если бы у меня был с собой телефон.", "note": "Всё в прошлом → would have done."}
+  ]
+}

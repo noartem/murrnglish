@@ -1,0 +1,27 @@
+{
+  "title": "Questions and question tags",
+  "about": "word order, subject questions, indirect questions, isn’t it? and do you?",
+  "level": "A2",
+  "entries": [
+    {"id": "where-does-work", "en": "Where [does your sister work|your sister / work]?", "ru": "Где работает твоя сестра?", "note": "Вопрос в Present simple: does + подлежащее + глагол без -s."},
+    {"id": "who-called", "en": "Who [called|call] you last night?", "ru": "Кто тебе звонил вчера вечером?", "note": "Вопрос к подлежащему (Who…?) — без did: Who called?"},
+    {"id": "who-did-call", "en": "Who [did you call|you / call] last night?", "ru": "Кому ты звонил вчера вечером?", "note": "Вопрос к дополнению — с did: Who did you call?"},
+    {"id": "what-happened", "choice": ["What happened at the meeting?", "What did happen at the meeting?"], "ru": "Что произошло на собрании?", "note": "What — подлежащее, поэтому did не нужен."},
+    {"id": "who-to", "en": "Who [are you talking|you / talk] to?", "ru": "С кем ты разговариваешь?", "note": "Предлог обычно в конце вопроса: Who… to? What… about?"},
+    {"id": "what-about", "en": "What is the book [about|about / of]?", "ru": "О чём эта книга?", "note": "What… about? — о чём?"},
+    {"id": "how-long-take", "en": "How long [does it take|it / take] to get to the airport?", "ru": "Сколько ехать до аэропорта?", "note": "How long does it take…? — сколько времени занимает…"},
+    {"id": "what-like", "en": "“What [is your new boss like|your new boss / be like]?” — “Strict, but fair.”", "ru": "«Какой у тебя новый начальник?» — «Строгий, но справедливый».", "note": "What is X like? — какой он (по характеру, в целом)?"},
+    {"id": "do-you-know-where", "en": "Do you know where [the station is|the station / be]?", "ru": "Вы не знаете, где вокзал?", "note": "Косвенный вопрос: прямой порядок слов — where the station is."},
+    {"id": "can-you-tell", "choice": ["Can you tell me what time the bank opens?", "Can you tell me what time does the bank open?"], "ru": "Не подскажете, во сколько открывается банк?", "note": "Внутри вежливого вопроса — порядок как в утверждении, без does."},
+    {"id": "wonder-if", "en": "I wonder [if she has/whether she has|if / she / have] a boyfriend.", "ru": "Интересно, есть ли у неё парень.", "note": "Вопрос да/нет внутри предложения → if / whether."},
+    {"id": "tag-isnt-it", "en": "It’s cold today, [isn't it]?", "ru": "Сегодня холодно, правда?", "note": "Утверждение + отрицательный хвостик: It is…, isn’t it?"},
+    {"id": "tag-didnt-you", "en": "You saw the match, [didn't you]?", "ru": "Ты же смотрел матч?", "note": "Past simple → хвостик с did."},
+    {"id": "tag-have-you", "en": "You haven’t seen my glasses, [have you]?", "ru": "Ты не видел мои очки?", "note": "Отрицание + положительный хвостик."},
+    {"id": "tag-arent-i", "en": "I’m right, [aren't I]?", "ru": "Я ведь прав?", "note": "I am → aren’t I? (не amn’t I)."},
+    {"id": "tag-lets", "en": "Let’s go for a walk, [shall we]?", "ru": "Давай прогуляемся?", "note": "Let’s… → shall we?"},
+    {"id": "tag-will-you", "en": "Open the window, [will you]?", "ru": "Открой окно, пожалуйста.", "note": "После повелительного — will you? / would you?"},
+    {"id": "negative-question", "en": "[Don't you like|you / not / like] it? I thought you loved pizza!", "ru": "Тебе не нравится? Я думал, ты обожаешь пиццу!", "note": "Отрицательный вопрос — удивление."},
+    {"id": "so-do-i", "en": "“I love this song.” — “So [do|do / am] I!”", "ru": "«Обожаю эту песню». — «Я тоже!»", "note": "So do I / Neither do I — повторяем вспомогательный глагол."},
+    {"id": "neither-can-i", "en": "“I can’t swim.” — “[Neither can I|neither / I].”", "ru": "«Я не умею плавать». — «Я тоже».", "note": "Согласие с отрицанием → Neither / Nor + вспомогательный + подлежащее."}
+  ]
+}

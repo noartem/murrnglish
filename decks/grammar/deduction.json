@@ -1,0 +1,21 @@
+{
+  "title": "must, might, can’t: how sure you are",
+  "about": "must be, might be, can’t be — and must have been, might have done",
+  "level": "B2",
+  "entries": [
+    {"id": "must-be-tired", "en": "You’ve been driving all day. You [must be|be] exhausted.", "ru": "Ты весь день за рулём. Ты, должно быть, вымотан.", "note": "must be — почти уверен, что это так."},
+    {"id": "cant-be-serious", "en": "Two hundred euros for a T-shirt? You [can't be|not / be] serious!", "ru": "Двести евро за футболку? Ты не можешь говорить это всерьёз!", "note": "can’t be — уверен, что это не так. Не mustn’t!"},
+    {"id": "might-be-in-kitchen", "en": "I’m not sure where Liza is. She [might be|be] in the garden.", "ru": "Не знаю, где Лиза. Может, в саду.", "note": "might / may / could — возможно."},
+    {"id": "must-have-left", "en": "The lights are off. They [must have gone|go] out.", "ru": "Свет выключен. Они, должно быть, ушли.", "note": "О прошлом: must have + третья форма."},
+    {"id": "cant-have-seen", "en": "You [can't have seen|not / see] Igor yesterday — he was in Paris.", "ru": "Ты не мог видеть Игоря вчера — он был в Париже.", "note": "can’t / couldn’t have done — невозможно в прошлом."},
+    {"id": "might-have-forgotten", "en": "She hasn’t replied. She [might have forgotten|forget].", "ru": "Она не ответила. Может быть, забыла.", "note": "might have done — возможно, в прошлом."},
+    {"id": "mustnt-vs-cant", "choice": ["That can’t be Dima — he’s much taller.", "That mustn’t be Dima — he’s much taller."], "ru": "Это не может быть Дима — он гораздо выше.", "note": "Отрицательный вывод — can’t, а не mustn’t (mustn’t = нельзя)."},
+    {"id": "must-be-joking", "en": "He [must be|be] joking. Nobody would pay that much.", "ru": "Он наверняка шутит. Никто бы столько не заплатил.", "note": "must be + -ing: он, должно быть, шутит (сейчас)."},
+    {"id": "may-not-be", "en": "The shop [may not be|not / be] open on a holiday. Let’s check first.", "ru": "Магазин может не работать в праздник. Давай сначала проверим.", "note": "may not / might not — возможно, нет."},
+    {"id": "could-have-been-worse", "en": "Nobody was hurt. It [could have been|be] much worse.", "ru": "Никто не пострадал. Всё могло быть гораздо хуже.", "note": "could have done — было возможно, но не случилось."},
+    {"id": "must-have-been-expensive", "en": "Your ring is beautiful! It [must have cost|cost] a fortune.", "ru": "Кольцо прекрасное! Оно, наверное, стоило целое состояние.", "note": "Вывод о прошлом."},
+    {"id": "cant-be-hungry", "en": "You [can't be|not / be] hungry — you’ve just had lunch!", "ru": "Не может быть, что ты голоден — ты только что пообедал!", "note": "Уверенность в невозможности → can’t."},
+    {"id": "should-be-there", "en": "He left an hour ago, so he [should be|be] there by now.", "ru": "Он выехал час назад, так что уже должен быть на месте.", "note": "should be — так должно быть, если всё идёт нормально."},
+    {"id": "might-have-been-stuck", "choice": ["He’s late. He might have got stuck in traffic.", "He’s late. He might got stuck in traffic."], "ru": "Он опаздывает. Возможно, застрял в пробке.", "note": "might have + третья форма (got)."}
+  ]
+}

@@ -117,12 +117,6 @@ export interface CourseBundle {
 // filled since — the offline download stores this file)
 const bundles = new Map<string, Promise<CourseBundle>>();
 
-/** The whole course of a book in one request: the unit card decks and the
-    rules search read every unit at once. */
-export function fetchCourse(book: Book): Promise<CourseBundle> {
-  return loadBundle(book);
-}
-
 // the index is small and asked for by every section that lists units; one
 // request per book per session (a failure is dropped so the next asker retries)
 const indexes = new Map<string, Promise<IndexData>>();

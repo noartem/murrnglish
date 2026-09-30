@@ -1,0 +1,27 @@
+{
+  "title": "Countable and uncountable; some, any, much, many",
+  "about": "a few or a little, much or many, some or any, no and none",
+  "level": "A2",
+  "entries": [
+    {"id": "how-much-money", "en": "How [much|much / many] money do you need?", "ru": "Сколько денег тебе нужно?", "note": "money — неисчисляемое → much."},
+    {"id": "how-many-people", "en": "How [many|much / many] people came to the party?", "ru": "Сколько людей пришло на вечеринку?", "note": "people — исчисляемое, мн. число → many."},
+    {"id": "a-few-friends", "en": "I’ve got [a few|a few / a little] friends in Kazan.", "ru": "У меня есть несколько друзей в Казани.", "note": "a few + исчисляемое (friends); a little + неисчисляемое."},
+    {"id": "a-little-time", "en": "Hurry up, we’ve only got [a little|a few / a little] time.", "ru": "Поторопись, у нас совсем немного времени.", "note": "time (время) — неисчисляемое → a little."},
+    {"id": "few-vs-a-few", "choice": ["The film was so boring that few people stayed to the end.", "The film was so boring that a few people stayed to the end."], "ru": "Фильм был таким скучным, что мало кто досидел до конца.", "note": "few — мало (почти никто, негативно); a few — несколько (достаточно)."},
+    {"id": "little-hope", "en": "There’s [little|little / a little] hope of finding them now.", "ru": "Теперь почти нет надежды их найти.", "note": "little — мало, почти нет."},
+    {"id": "any-milk", "en": "Is there [any|some / any] milk in the fridge?", "ru": "В холодильнике есть молоко?", "note": "Обычный вопрос → any."},
+    {"id": "some-offer", "en": "Would you like [some|some / any] tea?", "ru": "Хочешь чаю?", "note": "Предложение, просьба → some, даже в вопросе."},
+    {"id": "not-any", "en": "I didn’t buy [any|some / any] bread.", "ru": "Я не купил хлеба.", "note": "Отрицание → any."},
+    {"id": "no-vs-any", "choice": ["There’s no sugar left.", "There isn’t no sugar left."], "ru": "Сахара не осталось.", "note": "В английском одно отрицание: no = not any."},
+    {"id": "none-of", "en": "[None|No / None] of my friends can come.", "ru": "Никто из моих друзей не может прийти.", "note": "none of + the/my/these…; no + существительное."},
+    {"id": "a-lot-of", "choice": ["We’ve got a lot of time.", "We’ve got much time."], "ru": "У нас много времени.", "note": "В утверждениях обычно a lot of / lots of; much и many — в вопросах и отрицаниях."},
+    {"id": "information", "choice": ["Thanks for the information.", "Thanks for the informations."], "ru": "Спасибо за информацию.", "note": "information, advice, news, furniture, luggage — неисчисляемые, без -s."},
+    {"id": "news-is", "en": "The news [is|is / are] good.", "ru": "Новости хорошие.", "note": "news — неисчисляемое, глагол в ед. числе."},
+    {"id": "a-piece-of", "en": "Let me give you [a piece of|a / a piece of] advice.", "ru": "Позволь дать тебе совет.", "note": "Считаем неисчисляемое: a piece of advice, a piece of furniture."},
+    {"id": "hair", "choice": ["She has long dark hair.", "She has long dark hairs."], "ru": "У неё длинные тёмные волосы.", "note": "hair (волосы на голове) — неисчисляемое."},
+    {"id": "a-coffee", "en": "Two coffees and [a|a / some] tea, please.", "ru": "Два кофе и один чай, пожалуйста.", "note": "В кафе напитки считают: a coffee = чашка кофе."},
+    {"id": "enough-chairs", "en": "We haven’t got [enough chairs|chairs / enough] for everyone.", "ru": "Нам не хватит стульев на всех.", "note": "enough перед существительным: enough chairs."},
+    {"id": "somebody-anybody", "en": "Is there [anybody|somebody / anybody] here who speaks Italian?", "ru": "Здесь кто-нибудь говорит по-итальянски?", "note": "В вопросе — anybody / anyone."},
+    {"id": "any-means-whatever", "en": "Take [any|some / any] seat you like.", "ru": "Садитесь на любое место.", "note": "any в утверждении = любой."}
+  ]
+}

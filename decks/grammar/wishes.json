@@ -1,0 +1,22 @@
+{
+  "title": "wish, if only, would rather, it’s time",
+  "about": "regrets and wishes about now, the past and other people",
+  "level": "B2",
+  "entries": [
+    {"id": "wish-knew", "en": "I wish I [knew|know] the answer.", "ru": "Жаль, что я не знаю ответа.", "note": "Сожаление о настоящем: wish + Past simple."},
+    {"id": "wish-were-taller", "en": "I wish I [were/was|be] taller.", "ru": "Хотел бы я быть выше.", "note": "wish I were (was — разговорный вариант)."},
+    {"id": "wish-had-studied", "en": "I wish I [had studied|study] harder at school.", "ru": "Жаль, что я плохо учился в школе.", "note": "Сожаление о прошлом: wish + Past perfect."},
+    {"id": "wish-hadnt-said", "en": "I wish I [hadn't said|not / say] that to her.", "ru": "Жаль, что я ей это сказал.", "note": "Сожаление о сделанном → wish + hadn’t done."},
+    {"id": "wish-would-stop", "en": "I wish the neighbours [would stop|stop] making so much noise.", "ru": "Хоть бы соседи перестали так шуметь.", "note": "wish + would — раздражение, желание, чтобы кто-то изменил поведение."},
+    {"id": "wish-could-come", "en": "I wish I [could come|can / come] to your wedding, but I’ll be abroad.", "ru": "Жаль, что я не смогу прийти на твою свадьбу — я буду за границей.", "note": "wish + could — сожаление о невозможности."},
+    {"id": "if-only", "en": "If only I [had|have] more free time!", "ru": "Если бы только у меня было больше свободного времени!", "note": "If only — более эмоциональное wish."},
+    {"id": "wish-i-would", "choice": ["I wish I had a car.", "I wish I would have a car."], "ru": "Жаль, что у меня нет машины.", "note": "wish I would — не используется о себе; о состоянии — Past simple."},
+    {"id": "would-rather-stay", "en": "I’d rather [stay|stay] in tonight, if you don’t mind.", "ru": "Я бы предпочёл сегодня остаться дома, если ты не против.", "note": "would rather + глагол без to."},
+    {"id": "would-rather-you", "en": "I’d rather you [didn't smoke|not / smoke] in the car.", "ru": "Я бы предпочёл, чтобы ты не курил в машине.", "note": "would rather + другой человек + Past simple."},
+    {"id": "its-time-went", "en": "It’s late. It’s time we [went|go] home.", "ru": "Уже поздно. Пора нам идти домой.", "note": "It’s (high) time + подлежащее + Past simple."},
+    {"id": "its-time-to", "en": "It’s time [to go|go] — the taxi’s here.", "ru": "Пора ехать — такси приехало.", "note": "It’s time to do — без подлежащего."},
+    {"id": "rather-than", "en": "I’d rather walk [than take|take] the bus.", "ru": "Лучше я пройдусь, чем поеду на автобусе.", "note": "would rather do than do."},
+    {"id": "wish-had-been-there", "choice": ["I wish you had been there — it was amazing.", "I wish you were there — it was amazing."], "ru": "Жаль, что тебя там не было — это было потрясающе.", "note": "Всё уже прошло → wish + Past perfect."},
+    {"id": "suppose", "en": "Suppose you [lost|lose] your job — what would you do?", "ru": "Представь, что ты потерял работу, — что бы ты делал?", "note": "Suppose / Imagine + Past simple — воображаемая ситуация."}
+  ]
+}

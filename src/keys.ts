@@ -13,8 +13,8 @@ export const SIDEBAR_COLLAPSED_KEY = `${NS}.sidebar-collapsed`;
 export const LAST_BOOK_KEY = `${NS}.last-book`;
 
 // Study data spans the books, so it is shared (study.ts): the learner's own
-// words, the review state of every card (unit cards are keyed
-// "<book>:<exercise>:<item>", word cards "w:<word id>:f|r") and the daily
+// words, the review state of every card (deck cards are keyed
+// "d:<deck>:<entry>", word cards "w:<word id>:f|r") and the daily
 // limits. Backed up together through the study backup file, not the per-book
 // progress export.
 /** { words: Word[] } — the dictionary */
