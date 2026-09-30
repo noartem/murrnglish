@@ -180,7 +180,17 @@ export function saveSettings(s: StudySettings): void {
 }
 
 export function resetSettings(): void {
-  set({ settings: { ...DEFAULT_SETTINGS } });
+  set({ settings: { ...DEFAULT_SETTINGS, include: {} } });
+}
+
+/** Tick or untick decks for daily study (selection.ts); null goes back to the default. */
+export function setIncluded(patch: Readonly<Record<string, boolean | null>>): void {
+  const include = { ...snap.settings.include };
+  for (const [k, v] of Object.entries(patch)) {
+    if (v === null) delete include[k];
+    else include[k] = v;
+  }
+  set({ settings: { ...snap.settings, include } });
 }
 
 // ---- backup ---------------------------------------------------------------------

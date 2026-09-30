@@ -23,6 +23,10 @@
 // scripts/rules_text.mjs): { units: { "<n>": { s: sections, r: refs } } }.
 // Units whose page text does not carry their own header are left out.
 //
+// books/<id>/data/packs.json (optional) is the book's word packs, hand-made
+// (src/packs.ts): copied with data/ like the rest, and checked here so a
+// broken list fails the build instead of a review session.
+//
 // Book ids share the first hash segment with the app's own sections
 // (#/rules, #/cards, #/dictionary) and the second of #/cards/ with the deck
 // names (all, words) — src/routes.ts RESERVED_IDS — so those names are
@@ -76,6 +80,32 @@ function pick(dir, re) {
     if (m) out[String(Number(m[1]))] = readJson(join(dir, f));
   }
   return out;
+}
+
+// the word packs' shape (src/packs.ts): ids unique and URL-safe (they are in
+// card ids and #/cards/<book>/pack-<id>), every entry answerable
+function checkPacks(book, file, units) {
+  const where = `books/${book}/data/packs.json`;
+  need(Array.isArray(file.packs), `${where}: no "packs" list`);
+  const packIds = new Set();
+  for (const p of file.packs) {
+    need(/^[a-z0-9-]+$/.test(p.id ?? "") && !packIds.has(p.id), `${where}: pack id "${p.id}" missing, repeated or not [a-z0-9-]`);
+    packIds.add(p.id);
+    need(p.title && p.about && ["forms", "translate", "gap"].includes(p.ask), `${where}: pack ${p.id} needs title, about and ask`);
+    need(Array.isArray(p.entries) && p.entries.length, `${where}: pack ${p.id} has no entries`);
+    for (const u of p.units ?? []) need(u >= 1 && u <= units, `${where}: pack ${p.id}: no unit ${u}`);
+    const seen = new Set();
+    for (const e of p.entries) {
+      const at = `${where}: ${p.id}/${e.id}`;
+      need(/^[a-z0-9-]+$/.test(e.id ?? "") && !seen.has(e.id), `${at}: id missing, repeated or not [a-z0-9-]`);
+      seen.add(e.id);
+      need(typeof e.en === "string" && e.en.trim() && typeof e.ru === "string" && e.ru.trim(), `${at}: needs en and ru`);
+      if (p.ask === "forms") need(Array.isArray(e.forms) && e.forms.length === 2 && e.forms.every(Boolean), `${at}: needs two forms`);
+      if (p.ask === "gap") need(/^[^[]*\[[^\]]+\][^[]*$/.test(e.en), `${at}: needs one [gap]`);
+      if (e.unit !== undefined) need(e.unit >= 1 && e.unit <= units, `${at}: no unit ${e.unit}`);
+    }
+  }
+  return file.packs;
 }
 
 const ids = readdirSync(booksDir).filter((id) => existsSync(join(booksDir, id, "book.json")));
@@ -137,15 +167,18 @@ for (const id of ids) {
   writeFileSync(join(dataDest, "rules.json"), JSON.stringify({ units: rules }));
   const ruleCount = Object.keys(rules).length;
 
+  const packsFile = join(src, "data", "packs.json");
+  const packs = existsSync(packsFile) ? checkPacks(id, readJson(packsFile), units) : [];
+
   // what the offline download stores (src/offline.ts bookUrls)
   const size = (f) => statSync(join(dest, f)).size;
-  const downloadBytes = ["book.pdf", meta.cover.file, "data/index.json", "data/totals.json", "data/pages.json", "data/course.json", "data/rules.json"]
+  const downloadBytes = ["book.pdf", meta.cover.file, "data/index.json", "data/totals.json", "data/pages.json", "data/course.json", "data/rules.json", ...(packs.length ? ["data/packs.json"] : [])]
     .map(size)
     .reduce((a, b) => a + b, 0);
 
-  registry.push({ id, ...meta, units, additional, downloadBytes });
+  registry.push({ id, ...meta, units, additional, downloadBytes, packs: packs.length });
   console.log(
-    `synced books/${id} -> public/books/${id} (${units} units, ${additional} additional, rule text for ${ruleCount})`,
+    `synced books/${id} -> public/books/${id} (${units} units, ${additional} additional, rule text for ${ruleCount}, ${packs.length} word packs)`,
   );
 }
 

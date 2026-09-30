@@ -14,8 +14,10 @@
 //   #/rules/<book>/u<N>      the rule of unit N
 //   #/cards                  the card decks and their due counts
 //   #/cards/<deck>           a study session: all, words, <book>,
-//                            <book>/g<N> (the book's N-th group), <book>/u<N>
-//   #/dictionary             the learner's words
+//                            <book>/g<N> (the book's N-th group), <book>/u<N>,
+//                            <book>/pack-<id> (a word pack, packs.ts)
+//   #/dictionary             the learner's words and the books' word packs
+//   #/dictionary/<book>/pack-<id>   the same, with that pack open
 //
 // A bare "/" (no hash at all) resumes the last page a learner worked on — see
 // entryHash in App.tsx. Anything unknown lands in the library.
@@ -38,7 +40,8 @@ export type DeckRef =
   | { kind: "book"; book: Book }
   /** group: 1-based position in the book's index groups */
   | { kind: "group"; book: Book; group: number }
-  | { kind: "unit"; book: Book; unit: number };
+  | { kind: "unit"; book: Book; unit: number }
+  | { kind: "pack"; book: Book; pack: string };
 
 export type AppRoute =
   | { view: "library" }
@@ -47,7 +50,8 @@ export type AppRoute =
   | { view: "rules"; book?: Book; unit?: number }
   /** no deck: the deck list */
   | { view: "cards"; deck?: DeckRef }
-  | { view: "dictionary" };
+  /** pack: the word pack to open */
+  | { view: "dictionary"; pack?: { book: Book; pack: string } };
 
 /** First hash segments that are app sections, never book ids. The deck names
     "all" and "words" share the second segment of #/cards/ with book ids, so a
@@ -83,7 +87,7 @@ export function parseRoute(hash: string, books: readonly Book[]): AppRoute {
   const m = hash.match(/^#\/([a-z][a-z0-9-]*)(?:\/(.*))?$/);
   if (m && m[1] === "rules") return parseRules(m[2] ?? "", books);
   if (m && m[1] === "cards") return { view: "cards", deck: parseDeck(m[2] ?? "", books) };
-  if (m && m[1] === "dictionary") return { view: "dictionary" };
+  if (m && m[1] === "dictionary") return parseDictionary(m[2] ?? "", books);
   const book = m ? books.find((b) => b.id === m[1]) : undefined;
   if (!m || !book) return { view: "library" };
   const rest = m[2] ?? "";
@@ -100,7 +104,15 @@ function parseRules(rest: string, books: readonly Book[]): AppRoute {
   return u?.kind === "unit" ? { view: "rules", book, unit: u.n } : { view: "rules", book };
 }
 
-/** "all" / "words" / "blue" / "blue/g3" / "blue/u12"; undefined = the deck list. */
+/** "blue/pack-x" -> the dictionary with that pack open; anything else, the dictionary. */
+function parseDictionary(rest: string, books: readonly Book[]): AppRoute {
+  const [id, sub] = rest.split("/");
+  const book = books.find((b) => b.id === id);
+  const p = sub?.match(/^pack-([a-z0-9-]+)$/);
+  return book && p ? { view: "dictionary", pack: { book, pack: p[1] } } : { view: "dictionary" };
+}
+
+/** "all" / "words" / "blue" / "blue/g3" / "blue/u12" / "blue/pack-x"; undefined = the deck list. */
 export function parseDeck(rest: string, books: readonly Book[]): DeckRef | undefined {
   if (rest === "all") return { kind: "all" };
   if (rest === "words") return { kind: "words" };
@@ -109,6 +121,8 @@ export function parseDeck(rest: string, books: readonly Book[]): DeckRef | undef
   if (!book) return undefined;
   const g = sub?.match(/^g(\d+)$/);
   if (g && Number(g[1]) >= 1) return { kind: "group", book, group: Number(g[1]) };
+  const p = sub?.match(/^pack-([a-z0-9-]+)$/);
+  if (p) return { kind: "pack", book, pack: p[1] };
   const u = parsePage(book, sub ?? "");
   if (u?.kind === "unit") return { kind: "unit", book, unit: u.n };
   return { kind: "book", book };
@@ -125,12 +139,15 @@ export function deckKey(d: DeckRef): string {
       return `${d.book.id}/g${d.group}`;
     case "unit":
       return `${d.book.id}/u${d.unit}`;
+    case "pack":
+      return `${d.book.id}/pack-${d.pack}`;
   }
 }
 
 export const CARDS_HASH = "#/cards";
 export const DICTIONARY_HASH = "#/dictionary";
 export const deckHash = (d: DeckRef) => `${CARDS_HASH}/${deckKey(d)}`;
+export const dictionaryPackHash = (book: Book, pack: string) => `${DICTIONARY_HASH}/${book.id}/pack-${pack}`;
 export function rulesHash(book?: Book, unit?: number): string {
   if (!book) return "#/rules";
   return unit ? `#/rules/${book.id}/u${unit}` : `#/rules/${book.id}`;

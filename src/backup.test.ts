@@ -54,6 +54,12 @@ describe("backup file", () => {
       newPerDay: 0,
       reviewsPerDay: 9999,
       typeAnswers: true,
+      include: {},
+    });
+    // the daily-study ticks keep booleans only
+    expect(cleanSettings({ include: { blue: false, "blue/u3": true, junk: "x" } }).include).toEqual({
+      blue: false,
+      "blue/u3": true,
     });
     expect(cleanSrs("junk")).toEqual({ states: {}, suspended: [] });
   });

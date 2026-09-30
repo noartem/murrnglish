@@ -7,7 +7,7 @@
 //   words     by id; the entry edited last wins
 //   states    by card id; the card answered last wins
 //   suspended union (a card suspended on either side stays suspended)
-//   settings  this browser's are kept
+//   settings  this browser's are kept (the limits and what is ticked for daily study)
 //
 // Pure functions: study.ts applies the result.
 
@@ -25,9 +25,11 @@ export interface StudySettings {
   reviewsPerDay: number;
   /** cloze and write cards ask for the answer to be typed */
   typeAnswers: boolean;
+  /** what "Everything due" takes, by deck key (selection.ts) */
+  include: Record<string, boolean>;
 }
 
-export const DEFAULT_SETTINGS: StudySettings = { newPerDay: 20, reviewsPerDay: 200, typeAnswers: true };
+export const DEFAULT_SETTINGS: StudySettings = { newPerDay: 20, reviewsPerDay: 200, typeAnswers: true, include: {} };
 
 export const BACKUP_FORMAT = "murrnglish-study";
 
@@ -88,13 +90,16 @@ export function cleanSrs(x: unknown): SrsData {
 }
 
 export function cleanSettings(x: unknown): StudySettings {
-  if (!isObj(x)) return { ...DEFAULT_SETTINGS };
+  if (!isObj(x)) return { ...DEFAULT_SETTINGS, include: {} };
   const int = (v: unknown, d: number, max: number) =>
     isNum(v) ? Math.min(max, Math.max(0, Math.round(v))) : d;
   return {
     newPerDay: int(x.newPerDay, DEFAULT_SETTINGS.newPerDay, 9999),
     reviewsPerDay: int(x.reviewsPerDay, DEFAULT_SETTINGS.reviewsPerDay, 9999),
     typeAnswers: typeof x.typeAnswers === "boolean" ? x.typeAnswers : DEFAULT_SETTINGS.typeAnswers,
+    include: isObj(x.include)
+      ? Object.fromEntries(Object.entries(x.include).filter((e): e is [string, boolean] => typeof e[1] === "boolean"))
+      : {},
   };
 }
 

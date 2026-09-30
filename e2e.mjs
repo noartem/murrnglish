@@ -744,7 +744,7 @@ ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()
   await rp.waitForSelector(".rulesheet .rulesection", { timeout: 30000 });
   ok(
     "F14 a unit's rule opens as text",
-    /Unit 12/.test((await rp.locator(".rulehead .unitheading").textContent()) ?? "") &&
+    /Unit 12/.test((await rp.locator(".ruletoolbar .ruleheading").textContent()) ?? "") &&
       /We use for and since/.test(await rp.locator(".rulesheet").innerText()),
   );
   ok("F14 the unit list marks the open unit", /for and since/.test((await rp.locator(".rulerow.active").textContent()) ?? ""));
@@ -760,7 +760,7 @@ ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()
   await rp.waitForURL(/#\/rules\/blue\/u18$/, { timeout: 10000 });
   await rp.waitForSelector(".rulesheet .hlmark", { timeout: 10000 });
   ok("F14 a search hit opens its rule with the words marked", true);
-  await rp.locator(".rulelinks a", { hasText: "Exercises" }).click();
+  await rp.locator(".ruletools a", { hasText: "Exercises" }).click();
   await rp.waitForURL(/#\/blue\/u18$/, { timeout: 10000 });
   ok("F14 the rule links to its exercises", true);
   await rp.waitForSelector(".unitstudy", { timeout: 30000 });
@@ -1078,6 +1078,56 @@ if (BASE.includes("4173")) {
   ok("F17 offline: the word is saved anyway", /вне сети/.test(await op.locator(".wordrow").innerText()));
   ok("F17 no page errors", !results.some((r) => r[1] === "F17 pageerror"));
   await octx2.close();
+}
+
+// ---------- Flow 18: word packs and choosing what to study ----------
+{
+  const vctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
+  const vp = await vctx.newPage();
+  vp.on("pageerror", (e) => results.push(["FAIL", "F18 pageerror", String(e).slice(0, 140)]));
+  await vp.goto(BASE + "/#/cards", { waitUntil: "load" });
+  await vp.waitForSelector(".packrow", { timeout: 30000 });
+  const todayNew = async () => Number(((await vp.locator(".todaysheet .count.fresh").innerText()).match(/\d+/) ?? ["0"])[0]);
+  ok("F18 a fresh learner has nothing due", (await todayNew()) === 0);
+  const blue = vp.locator(".booksheet", { hasText: "English Grammar in Use" });
+  await blue.locator(".packrow", { hasText: "Irregular verbs" }).locator(".pickbox").check();
+  ok("F18 ticking a pack puts it in daily study", (await todayNew()) > 0);
+  // a group's tick takes its units without opening the group
+  const red = vp.locator(".booksheet", { hasText: "Essential Grammar in Use" });
+  const group = red.locator(".deckgroup").first();
+  await group.locator("summary .pickbox").check();
+  ok("F18 a group's tick leaves the group folded", !(await group.evaluate((d) => d.open)));
+  ok("F18 the book says how much of it is in", /10 of 115 units/.test(await red.locator(".decksummary").innerText()));
+  await red.locator(".bookswitch").click();
+  ok("F18 a book switched off hides its decks", (await red.locator(".deckgroup").count()) === 0);
+  const include = await vp.evaluate(() => JSON.parse(localStorage.getItem("murrnglish.srs-settings-v1")).include);
+  ok("F18 the choice is saved", include.red === false && include["blue/pack-irregular-verbs"] === true && include["red/u1"] === true);
+
+  // a forms card: both forms typed, checked
+  await vp.goto(BASE + "/#/cards/blue/pack-irregular-verbs", { waitUntil: "load" });
+  await vp.waitForSelector(".formsrow input", { timeout: 30000 });
+  await vp.keyboard.type("was");
+  await vp.keyboard.press("Enter");
+  await vp.keyboard.type("been");
+  await vp.keyboard.press("Enter");
+  await vp.waitForSelector(".ratebtns", { timeout: 5000 });
+  ok("F18 right forms suggest Good", /Good/.test(await vp.locator(".ratebtn.suggest").innerText()));
+  await vp.keyboard.press("Digit3");
+  await vp.waitForFunction(() => !document.querySelector(".ratebtns"), null, { timeout: 5000 });
+  ok(
+    "F18 the pack card is scheduled",
+    await vp.evaluate(() => !!JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states["v:blue:irregular-verbs:be"]),
+  );
+
+  // the dictionary: a pack opens from its link, and the search reads the packs
+  await vp.goto(BASE + "/#/dictionary/blue/pack-phrasal-verbs", { waitUntil: "load" });
+  await vp.waitForSelector(".packfold[open] .packentries li", { timeout: 30000 });
+  ok("F18 the pack's words open in the dictionary", /Phrasal verbs/.test(await vp.locator(".packfold[open]").innerText()));
+  await vp.fill(".addbar input", "look after");
+  await vp.waitForSelector(".packhits li", { timeout: 5000 });
+  ok("F18 the search finds pack entries", /присматривать/.test(await vp.locator(".packhits").innerText()));
+  ok("F18 no page errors", !results.some((r) => r[1] === "F18 pageerror"));
+  await vctx.close();
 }
 
 await mctx.close();

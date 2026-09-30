@@ -8,18 +8,23 @@
 // Unit cards come from the book's exercises: gap sentences (typed and checked
 // like an exercise, or turned over), "which is right" options, sentences to
 // write, matching pairs. Word cards show a saved word and its translation, or
-// the translation and the word. Everything the session needs is in the
-// offline copy (course.json) or the store, so it works offline.
+// the translation and the word. Pack cards (packs.ts) ask for a verb's forms,
+// the English of a Russian phrase, or the word missing from a phrase.
+// Everything the session needs is in the offline copy (course.json,
+// packs.json) or the store, so it works offline.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { ArrowLeft, BookOpenText, Check, PauseCircle, PencilLine, Undo2, Volume2, X } from "lucide-react";
+import { ArrowLeft, BookOpenText, Check, PauseCircle, PencilLine, Plus, Undo2, Volume2, X } from "lucide-react";
+import type { Book } from "../books";
 import { bookById } from "../books";
 import type { UnitCard } from "../cards";
 import { checkChoice, checkFill, normalize } from "../checker";
 import type { ResolvedCard } from "../decks";
 import { deckBooks, deckIds, deckTitle, useBookCards, useCardLookup } from "../decks";
 import { speak } from "../lookup";
+import type { Pack, PackEntry } from "../packs";
+import { checkPackAnswer, entryText, gapParts } from "../packs";
 import type { DeckRef } from "../routes";
 import { CARDS_HASH, bookHash, rulesHash } from "../routes";
 import type { Rating } from "../srs";
@@ -60,7 +65,10 @@ export function StudyView({ deck }: { deck: DeckRef }) {
     return () => window.clearInterval(t);
   }, []);
 
-  const ids = useMemo(() => deckIds(deck, books.books, words, srs.states), [deck, books.books, words, srs.states]);
+  const ids = useMemo(
+    () => deckIds(deck, books.books, words, srs.states, settings.include),
+    [deck, books.books, words, srs.states, settings.include],
+  );
   const queue = useMemo(() => {
     if (!ids) return null;
     return buildQueue({
@@ -309,8 +317,10 @@ function Finished({ deck, total, later, failed }: { deck: DeckRef; total: number
         : deck.kind === "unit"
           ? "This unit has no cards: its exercises need the pictures or situations of the printed page."
           : deck.kind === "all"
-            ? "Nothing here yet. Finish a unit in a book, or add words to your dictionary, and their cards will appear."
-            : "No cards here.";
+            ? "Nothing here yet. Finish a unit in a book, add words to your dictionary or tick a word pack in the deck list, and their cards will appear."
+            : deck.kind === "book"
+              ? "Nothing of this book is ticked for daily study yet. Tick units or word packs in the deck list, or study a group."
+              : "No cards here.";
   else if (later)
     text = `${later} card${later === 1 ? "" : "s"} you are learning come${later === 1 ? "s" : ""} back later today — this page brings ${later === 1 ? "it" : "them"} up when due.`;
   else text = "Nothing more is due in this deck today. Come back tomorrow.";
@@ -343,6 +353,11 @@ function grade(r: ResolvedCard, a: Attempt, typing: boolean): boolean | null {
     if (r.dir !== "r" || !typing || !a.text.trim()) return null;
     return normalize(a.text) === normalize(r.word.word);
   }
+  if (r.type === "pack") {
+    const typed = r.pack.ask === "forms" ? a.gaps.some((g) => g?.trim()) : !!a.text.trim();
+    if (!typing || !typed) return null;
+    return checkPackAnswer(r.pack.ask, r.entry, { forms: a.gaps, text: a.text });
+  }
   const c = r.card;
   switch (c.kind) {
     case "cloze":
@@ -371,7 +386,9 @@ interface FaceProps {
 }
 
 function CardFace(p: FaceProps) {
-  return p.r.type === "word" ? <WordFace {...p} word={p.r.word} dir={p.r.dir} /> : <UnitFace {...p} card={p.r.card} />;
+  if (p.r.type === "word") return <WordFace {...p} word={p.r.word} dir={p.r.dir} />;
+  if (p.r.type === "pack") return <PackFace {...p} book={p.r.book} pack={p.r.pack} entry={p.r.entry} />;
+  return <UnitFace {...p} card={p.r.card} />;
 }
 
 function UnitFace({ card, revealed, attempt, setAttempt, typeAnswers, onSubmit, onPick }: FaceProps & { card: UnitCard }) {
@@ -619,6 +636,195 @@ function WordFace({ word, dir, revealed, attempt, setAttempt, typeAnswers, onSub
   );
 }
 
+const PACK_ASKS: Record<Pack["ask"], string> = {
+  forms: "Past simple · past participle",
+  translate: "Translation → English",
+  gap: "The missing word",
+};
+
+function PackFace({
+  book,
+  pack,
+  entry,
+  revealed,
+  attempt,
+  setAttempt,
+  typeAnswers,
+  onSubmit,
+}: FaceProps & { book: Book; pack: Pack; entry: PackEntry }) {
+  const first = useRef<HTMLInputElement>(null);
+  const second = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (typeAnswers) first.current?.focus({ preventScroll: true });
+  }, [typeAnswers]);
+  const setGap = (i: number, v: string) =>
+    setAttempt((a) => {
+      const gaps = [...a.gaps];
+      gaps[i] = v;
+      return { ...a, gaps };
+    });
+  // the two forms: Enter in the first moves on, in the second turns the card
+  const enter = (next?: React.RefObject<HTMLInputElement>) => (e: React.KeyboardEvent) => {
+    if (e.key !== "Enter" || revealed) return;
+    e.preventDefault();
+    if (next?.current) next.current.focus();
+    else onSubmit();
+  };
+  const mark = (ok: boolean, typed: string) => (revealed && typed.trim() ? (ok ? " ok" : " bad") : "");
+  const input = (props: {
+    i?: number;
+    value: string;
+    variants: string[];
+    label: string;
+    size?: number;
+    ref?: React.RefObject<HTMLInputElement>;
+    next?: React.RefObject<HTMLInputElement>;
+    cls: string;
+  }) => (
+    <input
+      ref={props.ref}
+      className={props.cls + mark(checkFill(props.value, props.variants), props.value)}
+      size={props.size}
+      value={props.value}
+      readOnly={revealed}
+      onChange={(e) => {
+        const v = e.target.value;
+        if (props.i === undefined) setAttempt((a) => ({ ...a, text: v }));
+        else setGap(props.i, v);
+      }}
+      onKeyDown={enter(props.next)}
+      placeholder={props.cls === "gap" ? undefined : props.label}
+      aria-label={props.label}
+      autoCapitalize="off"
+      autoComplete="off"
+      spellCheck={false}
+    />
+  );
+  const say = (
+    <button
+      type="button"
+      className="wordspeak"
+      onClick={() => void speak(entryText(entry))}
+      aria-label={`Listen: ${entryText(entry)}`}
+    >
+      <Volume2 size={16} aria-hidden />
+    </button>
+  );
+  const extra = revealed && (entry.ex || entry.note) && (
+    <>
+      {entry.ex && <p className="wordcontext">{entry.ex}</p>}
+      {entry.note && <p className="wordnotes">{entry.note}</p>}
+    </>
+  );
+
+  let front: React.ReactNode;
+  let back: React.ReactNode = null;
+  if (pack.ask === "forms") {
+    const forms = entry.forms ?? [];
+    const variants = (f: string) => [f, ...f.split("/")];
+    front = (
+      <>
+        <div className="wordbig">
+          <span className="wordbigtext">{entry.en}</span>
+          {say}
+        </div>
+        <p className="packru" lang="ru">
+          {entry.ru}
+        </p>
+        {typeAnswers ? (
+          <div className="formsrow">
+            {input({ i: 0, value: attempt.gaps[0] ?? "", variants: variants(forms[0] ?? ""), label: "past simple", ref: first, next: second, cls: "wfull" })}
+            {input({ i: 1, value: attempt.gaps[1] ?? "", variants: variants(forms[1] ?? ""), label: "past participle", ref: second, cls: "wfull" })}
+          </div>
+        ) : null}
+      </>
+    );
+    if (revealed)
+      back = (
+        <div className="cardback">
+          <p className="formsline">
+            <span>{entry.en}</span>
+            {forms.map((f, i) => (
+              <span key={i} className={typeAnswers && checkFill(attempt.gaps[i] ?? "", variants(f)) ? "ok" : undefined}>
+                {f}
+              </span>
+            ))}
+          </p>
+          {extra}
+        </div>
+      );
+  } else if (pack.ask === "translate") {
+    front = (
+      <>
+        <p className="wordbigtrans" lang="ru">
+          {entry.ru}
+        </p>
+        {typeAnswers && input({ value: attempt.text, variants: [entry.en, ...(entry.alt ?? [])], label: "the English", ref: first, cls: "wfull" })}
+      </>
+    );
+    if (revealed)
+      back = (
+        <div className="cardback">
+          <div className="wordbig">
+            <span className="wordbigtext">{entry.en}</span>
+            {say}
+          </div>
+          {entry.alt && entry.alt.length > 0 && <p className="packalt">also {entry.alt.join(", ")}</p>}
+          {extra}
+        </div>
+      );
+  } else {
+    const g = gapParts(entry.en);
+    front = (
+      <>
+        <p className="clozeline packgap">
+          {g.before}
+          {typeAnswers ? (
+            input({ value: attempt.text, variants: g.answers, label: "the missing word", size: Math.max(5, g.answers[0].length + 3), ref: first, cls: "gap" })
+          ) : revealed ? (
+            <mark className="gapfill">{g.answers.join(" / ")}</mark>
+          ) : (
+            <span className="gapblank" aria-label="gap" />
+          )}
+          {g.after}
+        </p>
+        <p className="packru" lang="ru">
+          {entry.ru}
+        </p>
+      </>
+    );
+    if (revealed)
+      back = (
+        <div className="cardback">
+          {typeAnswers && (
+            <span className="variants">
+              {g.answers.map((v, j) => (
+                <span key={j} className={checkFill(attempt.text, [v]) ? "ok" : undefined}>
+                  {j > 0 && " / "}
+                  {v}
+                </span>
+              ))}
+            </span>
+          )}
+          {extra}
+        </div>
+      );
+  }
+
+  return (
+    <>
+      <p className="cardsource">
+        <span className="libdot" style={{ background: book.color }} aria-hidden />
+        {book.level} · {pack.title}
+        {entry.unit ? ` · Unit ${entry.unit}` : ""}
+      </p>
+      <p className="instruction">{PACK_ASKS[pack.ask]}</p>
+      <div className="cardfront">{front}</div>
+      {back}
+    </>
+  );
+}
+
 function CardLinks({ r }: { r: ResolvedCard }) {
   if (r.type === "word")
     return (
@@ -626,6 +832,27 @@ function CardLinks({ r }: { r: ResolvedCard }) {
         <PencilLine size={15} aria-hidden /> Edit word
       </button>
     );
+  if (r.type === "pack") {
+    const unit = r.entry.unit ?? r.pack.units?.[0];
+    return (
+      <>
+        {unit && (
+          <a className="linkbtn" href={rulesHash(r.book, unit)}>
+            <BookOpenText size={15} aria-hidden /> Rule
+          </a>
+        )}
+        <button
+          type="button"
+          className="linkbtn"
+          onClick={() =>
+            openWordEditor({ word: entryText(r.entry), context: r.entry.ex, source: { book: r.book.id, unit } })
+          }
+        >
+          <Plus size={15} aria-hidden /> Add to my words
+        </button>
+      </>
+    );
+  }
   const book = bookById(r.card.book);
   if (!book) return null;
   return (

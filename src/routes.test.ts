@@ -4,7 +4,7 @@
 import { describe, expect, it } from "vitest";
 import type { Book } from "./books";
 import type { DeckRef } from "./routes";
-import { RESERVED_IDS, bookHash, deckHash, parseDeck, parsePage, parseRoute, rulesHash } from "./routes";
+import { RESERVED_IDS, bookHash, deckHash, dictionaryPackHash, parseDeck, parsePage, parseRoute, rulesHash } from "./routes";
 import syncScript from "../scripts/sync_books.mjs?raw";
 
 const book = (id: string, units: number, additional: number): Book => ({
@@ -20,6 +20,7 @@ const book = (id: string, units: number, additional: number): Book => ({
   units,
   additional,
   downloadBytes: 0,
+  packs: 0,
 });
 const RED = book("red", 115, 35);
 const BLUE = book("blue", 145, 41);
@@ -104,6 +105,7 @@ describe("sections", () => {
       { kind: "book", book: RED },
       { kind: "group", book: BLUE, group: 3 },
       { kind: "unit", book: BLUE, unit: 12 },
+      { kind: "pack", book: RED, pack: "phrasal-verbs" },
     ];
     for (const deck of decks) expect(parseRoute(deckHash(deck), BOOKS)).toEqual({ view: "cards", deck });
     expect(parseDeck("blue/g0", BOOKS)).toEqual({ kind: "book", book: BLUE });
@@ -111,6 +113,12 @@ describe("sections", () => {
 
   it("opens the dictionary", () => {
     expect(parseRoute("#/dictionary", BOOKS)).toEqual({ view: "dictionary" });
+    expect(parseRoute("#/dictionary/blue/pack-irregular-verbs", BOOKS)).toEqual({
+      view: "dictionary",
+      pack: { book: BLUE, pack: "irregular-verbs" },
+    });
+    expect(parseRoute(dictionaryPackHash(RED, "x"), BOOKS)).toEqual({ view: "dictionary", pack: { book: RED, pack: "x" } });
+    expect(parseRoute("#/dictionary/green/pack-x", BOOKS)).toEqual({ view: "dictionary" });
   });
 
   it("reserves the section and deck names in the book sync as well", () => {

@@ -3,12 +3,20 @@
 // with it looked up). Each row shows the word, its translation and where its
 // cards stand; a row opens the editor. Words are also added straight from the
 // exercises and the rules by selecting them (PickWord).
+//
+// Below them, the word packs of every book (packs.ts): each one opens into its
+// list, and the search looks through them too — a pack entry found there can
+// be added to the learner's own words. #/dictionary/<book>/pack-<id> opens
+// with that pack unfolded.
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { Layers, Plus, Search, Volume2 } from "lucide-react";
+import { ChevronRight, Layers, Package, Plus, Search, Volume2 } from "lucide-react";
+import type { Book } from "../books";
 import { BOOKS } from "../books";
 import { speak } from "../lookup";
+import type { Pack, PackEntry } from "../packs";
+import { entryText, gapParts, loadPacks, packUnitsLabel } from "../packs";
 import { deckHash } from "../routes";
 import type { CardState } from "../srs";
 import { dayNumber, formatDays } from "../srs";
@@ -45,8 +53,9 @@ function wordStatus(
   return { text: `in ${formatDays(next - today)}`, tone: "later" };
 }
 
-export function DictionaryView() {
+export function DictionaryView({ pack: openPack }: { pack?: { book: Book; pack: string } }) {
   const { words, srs } = useStudy();
+  const packs = useAllPacks();
   const [q, setQ] = useState("");
   const now = useMinuteClock();
   const suspended = useMemo(() => new Set(srs.suspended), [srs.suspended]);
@@ -164,6 +173,10 @@ export function DictionaryView() {
               </ul>
             )}
 
+            {key && <PackHits packs={packs} q={key} />}
+
+            <PackShelf packs={packs} open={openPack} />
+
             <section className="sheet backupsheet">
               <h3 className="sheethead">Backup</h3>
               <p className="ruleprose muted">
@@ -176,5 +189,155 @@ export function DictionaryView() {
         </OverlayScrollbarsComponent>
       </div>
     </div>
+  );
+}
+
+type BookPacks = { book: Book; packs: Pack[] }[];
+
+function useAllPacks(): BookPacks {
+  const [all, setAll] = useState<BookPacks>([]);
+  useEffect(() => {
+    let alive = true;
+    void Promise.all(BOOKS.map((b) => loadPacks(b).then((packs) => ({ book: b, packs })))).then(
+      (r) => alive && setAll(r.filter((x) => x.packs.length)),
+    );
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return all;
+}
+
+/** The English of an entry as a list shows it: the forms, or the gap word in bold. */
+function EntryEn({ e, ask }: { e: PackEntry; ask: Pack["ask"] }) {
+  if (ask === "forms")
+    return (
+      <>
+        <strong>{e.en}</strong> · {(e.forms ?? []).join(" · ")}
+      </>
+    );
+  if (ask === "gap") {
+    const g = gapParts(e.en);
+    return (
+      <>
+        {g.before}
+        <strong>{g.answers.join("/")}</strong>
+        {g.after}
+      </>
+    );
+  }
+  return (
+    <>
+      <strong>{e.en}</strong>
+      {e.alt?.length ? <span className="muted"> · {e.alt.join(", ")}</span> : null}
+    </>
+  );
+}
+
+/** Pack entries matching the search; a row adds the entry to the learner's words. */
+function PackHits({ packs, q }: { packs: BookPacks; q: string }) {
+  const hits = useMemo(() => {
+    const out: { book: Book; pack: Pack; e: PackEntry }[] = [];
+    for (const { book, packs: ps } of packs)
+      for (const pack of ps)
+        for (const e of pack.entries) {
+          const en = headwordKey(entryText(e));
+          if (en.includes(q) || e.ru.toLowerCase().includes(q) || e.alt?.some((a) => headwordKey(a).includes(q)))
+            out.push({ book, pack, e });
+        }
+    return out;
+  }, [packs, q]);
+  if (!hits.length) return null;
+  return (
+    <section className="sheet packhits">
+      <h3 className="sheethead">In the word packs</h3>
+      <ul className="packentries">
+        {hits.slice(0, 40).map(({ book, pack, e }) => (
+          <li key={`${book.id}:${pack.id}:${e.id}`}>
+            <span className="packen">
+              <EntryEn e={e} ask={pack.ask} />
+            </span>
+            <span className="packru" lang="ru">
+              {e.ru}
+            </span>
+            <span className="wordfrom">
+              <span className="libdot" style={{ background: book.color }} aria-hidden />
+              {pack.title}
+            </span>
+            <button
+              type="button"
+              className="iconlink"
+              title="Add to my words"
+              aria-label={`Add ${entryText(e)} to my words`}
+              onClick={() =>
+                openWordEditor({ word: entryText(e), context: e.ex, source: { book: book.id, unit: e.unit ?? pack.units?.[0] } })
+              }
+            >
+              <Plus size={16} aria-hidden />
+            </button>
+          </li>
+        ))}
+      </ul>
+      {hits.length > 40 && <p className="rulesnote">{hits.length - 40} more — type a few more letters.</p>}
+    </section>
+  );
+}
+
+/** Every book's packs, each unfolding into its list. */
+function PackShelf({ packs, open }: { packs: BookPacks; open?: { book: Book; pack: string } }) {
+  const openRef = useRef<HTMLDetailsElement>(null);
+  // arriving from the deck list: the pack in view
+  useEffect(() => {
+    openRef.current?.scrollIntoView({ block: "start" });
+  }, [packs.length, open?.book, open?.pack]);
+  if (!packs.length) return null;
+  return (
+    <>
+      {packs.map(({ book, packs: ps }) => (
+        <section key={book.id} className="sheet packshelf">
+          <p className="libkicker">
+            <span className="libdot" style={{ background: book.color }} aria-hidden />
+            {book.level} · word packs
+          </p>
+          <h3 className="sheethead">{book.title}</h3>
+          {ps.map((p) => {
+            const isOpen = open?.book === book && open.pack === p.id;
+            return (
+              <details key={p.id} className="deckgroup packfold" open={isOpen} ref={isOpen ? openRef : undefined}>
+                <summary>
+                  <ChevronRight size={16} className="chev" aria-hidden />
+                  <Package size={16} className="packicon" aria-hidden />
+                  <span className="deckinfo">
+                    <span className="deckname">{p.title}</span>
+                    <span className="packabout">
+                      {p.entries.length} words{packUnitsLabel(p) && ` · ${packUnitsLabel(p)}`} · {p.about}
+                    </span>
+                  </span>
+                  <a
+                    className="pillbtn small"
+                    href={deckHash({ kind: "pack", book, pack: p.id })}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Study
+                  </a>
+                </summary>
+                <ul className="packentries">
+                  {p.entries.map((e) => (
+                    <li key={e.id}>
+                      <span className="packen">
+                        <EntryEn e={e} ask={p.ask} />
+                      </span>
+                      <span className="packru" lang="ru">
+                        {e.ru}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            );
+          })}
+        </section>
+      ))}
+    </>
   );
 }

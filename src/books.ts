@@ -22,6 +22,8 @@ export interface Book {
   additional: number;
   /** bytes the offline download stores (book, cover, data) */
   downloadBytes: number;
+  /** word packs in data/packs.json (0: no such file) */
+  packs: number;
 }
 
 export const BOOKS: readonly Book[] = registry as Book[];

@@ -43,6 +43,10 @@ interface Props {
   pdfPages: number[];
   focusTick: number; // each increment focuses the pane (Shift+S)
   onPaneEscape: () => void; // Esc in the pane: App restores the previous focus
+  /** the page width at 100%: the whole page fitting the pane height, kept
+      within [min, max] (the rules compendium: a page in view, not a poster
+      across a wide pane); unset = the pane width */
+  pageWidth?: { min: number; max: number };
 }
 
 const MAX_ZOOM = 2; // page at double the pane width
@@ -129,7 +133,7 @@ function getDoc(url: string): Promise<PDFDocumentProxy> {
   return docPromise;
 }
 
-export function PageViewer({ pdfUrl, aspects, pdfPages, focusTick, onPaneEscape }: Props) {
+export function PageViewer({ pdfUrl, aspects, pdfPages, focusTick, onPaneEscape, pageWidth }: Props) {
   const [zoom, setZoom] = useState(1);
   const [docReady, setDocReady] = useState(false);
   // inverted page colors: one shared pref (data-page-invert on <html>),
@@ -184,7 +188,8 @@ export function PageViewer({ pdfUrl, aspects, pdfPages, focusTick, onPaneEscape 
   };
 
   // recompute --pw (page width at zoom 1 = pane width minus the side margins,
-  // so at 100% the page plus its --pad margins fill the pane width exactly)
+  // so at 100% the page plus its --pad margins fill the pane width exactly —
+  // or the pageWidth fit, the stack then centered)
   // and the zoom bounds for the current pdfPages: min = the tallest page
   // with its top/bottom margins fills the pane height, max = 2x pane width
   // (never below min). --pad is read from CSS (it differs on phones).
@@ -196,11 +201,12 @@ export function PageViewer({ pdfUrl, aspects, pdfPages, focusTick, onPaneEscape 
     const vh = pane.clientHeight;
     if (!vw || !vh) return;
     const pad = parseFloat(getComputedStyle(flow).getPropertyValue("--pad")) || 0;
-    const pw = Math.max(1, vw - 2 * pad);
-    flow.style.setProperty("--pw", `${pw}px`);
     const maxA = pdfPages.length
       ? Math.max(...pdfPages.map((p) => pageAspect(aspects, p)))
       : 297 / 210;
+    const fit = pageWidth ? Math.min(pageWidth.max, Math.max(pageWidth.min, (vh - 2 * pad) / maxA)) : Infinity;
+    const pw = Math.max(1, Math.min(vw - 2 * pad, fit));
+    flow.style.setProperty("--pw", `${pw}px`);
     // capped at 1: on a tall narrow pane (phone) fitting the height would
     // need a page wider than the pane, pushing the default above 100%
     const min = Math.min(1, Math.max(0.05, vh / (pw * maxA + 2 * pad)));

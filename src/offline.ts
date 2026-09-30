@@ -2,6 +2,7 @@ import { useSyncExternalStore } from "react";
 import type { Book } from "./books";
 import { BOOKS, bookUrl } from "./books";
 import { COURSE_BUNDLE, RULES_FILE } from "./data";
+import { PACKS_FILE } from "./packs";
 import { offlineKey, offlineRemovedKey } from "./keys";
 
 // Offline downloads: the page-side engine behind the "Download" buttons. They
@@ -111,8 +112,8 @@ export function useDownloads(): Readonly<Record<string, DownloadState>> {
  * Everything a book needs beyond the shell, in download order. index.json,
  * pages.json and totals.json are what the app asks for when the book opens,
  * course.json is the whole course in one file (see the header) — the unit
- * card decks are made from it too — and rules.json is the text of the rules
- * compendium. book.pdf is listed last but downloaded by run() itself,
+ * card decks are made from it too — rules.json is the text of the rules
+ * compendium and packs.json the word packs, where the book has any. book.pdf is listed last but downloaded by run() itself,
  * streamed, so its megabytes come with progress. scripts/sync_books.mjs sums
  * the same files for the size the panel shows.
  */
@@ -123,6 +124,7 @@ export function bookUrls(book: Book): string[] {
     bookUrl(book, "data/pages.json"),
     bookUrl(book, COURSE_BUNDLE),
     bookUrl(book, RULES_FILE),
+    ...(book.packs ? [bookUrl(book, PACKS_FILE)] : []),
     bookUrl(book, book.cover.file),
     bookUrl(book, "book.pdf"),
   ];

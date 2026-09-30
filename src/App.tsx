@@ -79,6 +79,6 @@ function View({ route }: { route: AppRoute }) {
       // a new deck is a new session
       return route.deck ? <StudyView key={deckKey(route.deck)} deck={route.deck} /> : <CardsView />;
     case "dictionary":
-      return <DictionaryView />;
+      return <DictionaryView pack={route.pack} />;
   }
 }

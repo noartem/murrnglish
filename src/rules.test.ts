@@ -20,6 +20,7 @@ const book = (id: string, order: number): Book => ({
   units: 3,
   additional: 0,
   downloadBytes: 0,
+  packs: 0,
 });
 
 const RED = book("red", 1);

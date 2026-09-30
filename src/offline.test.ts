@@ -15,6 +15,7 @@ describe("bookUrls", () => {
       "/books/blue/data/pages.json",
       "/books/blue/data/course.json",
       "/books/blue/data/rules.json",
+      "/books/blue/data/packs.json",
       "/books/blue/cover.png",
       "/books/blue/book.pdf",
     ]);
