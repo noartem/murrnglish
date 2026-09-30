@@ -37,6 +37,7 @@ src/                    the web app (Vite + React + TypeScript), one for every b
   legacy.ts             moving the review history of the old book-made cards
   selection.ts          what daily study takes: the ticks and switches of the deck list
   srs.ts                the scheduler (Anki's SM-2) and the daily queue
+  limits.ts             the daily-limit presets (Light, Standard, Intensive, Catch up)
   study.ts              the study store (words, review state, settings)
   backup.ts             the study backup file and its merge
   lookup.ts, words.ts   dictionary lookups and word entries
@@ -214,7 +215,8 @@ session links each deck card to this page (Card info).
 
 **Scheduling** is Anki's SM-2 with its default steps (1 and 10 minutes, then
 1 day; Easy 4 days; ease 250%, fuzz, the day starting at 4 a.m.), daily new
-and review limits, and sibling burying for a word's two cards. SM-2 rather
+and review limits (set by hand or from a preset; learning cards, as in Anki,
+have no limit), and sibling burying for a word's two cards. SM-2 rather
 than FSRS: its behaviour is what Anki's buttons promise, it needs no fitted
 parameters, and every rule can be checked by hand (`src/srs.test.ts`). Keys:
 Space shows the answer and then gives the suggested rating, 1–4 rate, 1–n
