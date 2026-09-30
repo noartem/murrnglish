@@ -626,15 +626,18 @@ function PdfPage({ pdfUrl, pageNum, aspect, zoom, docReady }: {
     canvas.style.height = "auto";
   }, []);
 
-  // render on mount / doc-ready / navigation; units have only a few pages,
-  // so eager rendering is cheap and side-steps visibility races entirely
+  // render on mount / doc-ready; units have only a few pages, so eager
+  // rendering is cheap and side-steps visibility races entirely. Navigation
+  // remounts the pages (keyed by page number). Never on every render: the
+  // parent re-renders on each keystroke in an exercise, and render() resets
+  // canvas.width, which blanks the page until pdf.js repaints it.
   useEffect(() => {
     schedule();
     return () => {
       if (timerRef.current !== null) window.clearTimeout(timerRef.current);
       if (taskRef.current) taskRef.current.cancel();
     };
-  });
+  }, [docReady]);
 
   // re-render the backing store when the zoom settles (skip tiny drift)
   useEffect(() => {
