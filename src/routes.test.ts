@@ -3,7 +3,9 @@
 
 import { describe, expect, it } from "vitest";
 import type { Book } from "./books";
-import { bookHash, parsePage, parseRoute } from "./routes";
+import type { DeckRef } from "./routes";
+import { RESERVED_IDS, bookHash, deckHash, parseDeck, parsePage, parseRoute, rulesHash } from "./routes";
+import syncScript from "../scripts/sync_books.mjs?raw";
 
 const book = (id: string, units: number, additional: number): Book => ({
   id,
@@ -81,5 +83,38 @@ describe("bookHash", () => {
     ]) {
       expect(parseRoute(bookHash(BLUE, page), BOOKS)).toEqual({ view: "book", book: BLUE, page });
     }
+  });
+});
+
+describe("sections", () => {
+  it("opens the rules compendium, a book's rules and a unit's rule", () => {
+    expect(parseRoute("#/rules", BOOKS)).toEqual({ view: "rules" });
+    expect(parseRoute("#/rules/green", BOOKS)).toEqual({ view: "rules" });
+    expect(parseRoute("#/rules/blue", BOOKS)).toEqual({ view: "rules", book: BLUE });
+    expect(parseRoute("#/rules/red/u200", BOOKS)).toEqual({ view: "rules", book: RED, unit: 115 });
+    expect(parseRoute(rulesHash(BLUE, 12), BOOKS)).toEqual({ view: "rules", book: BLUE, unit: 12 });
+  });
+
+  it("opens the deck list and every kind of deck", () => {
+    expect(parseRoute("#/cards", BOOKS)).toEqual({ view: "cards", deck: undefined });
+    expect(parseRoute("#/cards/nope", BOOKS)).toEqual({ view: "cards", deck: undefined });
+    const decks: DeckRef[] = [
+      { kind: "all" },
+      { kind: "words" },
+      { kind: "book", book: RED },
+      { kind: "group", book: BLUE, group: 3 },
+      { kind: "unit", book: BLUE, unit: 12 },
+    ];
+    for (const deck of decks) expect(parseRoute(deckHash(deck), BOOKS)).toEqual({ view: "cards", deck });
+    expect(parseDeck("blue/g0", BOOKS)).toEqual({ kind: "book", book: BLUE });
+  });
+
+  it("opens the dictionary", () => {
+    expect(parseRoute("#/dictionary", BOOKS)).toEqual({ view: "dictionary" });
+  });
+
+  it("reserves the section and deck names in the book sync as well", () => {
+    const m = syncScript.match(/const RESERVED = (\[[^\]]*\])/);
+    expect(m && JSON.parse(m[1])).toEqual([...RESERVED_IDS]);
   });
 });

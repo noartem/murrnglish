@@ -24,8 +24,9 @@
 // Units whose page text does not carry their own header are left out.
 //
 // Book ids share the first hash segment with the app's own sections
-// (#/rules, #/cards, #/dictionary — src/routes.ts SECTIONS), so those names
-// are refused as book folders.
+// (#/rules, #/cards, #/dictionary) and the second of #/cards/ with the deck
+// names (all, words) — src/routes.ts RESERVED_IDS — so those names are
+// refused as book folders.
 
 import {
   copyFileSync,
@@ -42,8 +43,8 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseRulePage, theoryPages } from "./rules_text.mjs";
 
-// first hash segments that are app sections, not books — keep equal to
-// SECTIONS in src/routes.ts (routes.test.ts checks the registry against it)
+// hash segments that are app sections or deck names, not books — keep equal
+// to RESERVED_IDS in src/routes.ts (routes.test.ts compares the two)
 const RESERVED = ["rules", "cards", "dictionary", "all", "words"];
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
