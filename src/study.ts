@@ -161,6 +161,14 @@ export function setSuspended(id: string, on: boolean): void {
   set({ srs: { ...snap.srs, suspended } }, false);
 }
 
+/** Bring suspended cards back (all of them, or those `which` picks). */
+export function resumeSuspended(which: (id: string) => boolean = () => true): void {
+  const suspended = snap.srs.suspended.filter((id) => !which(id));
+  if (suspended.length === snap.srs.suspended.length) return;
+  undo = null;
+  set({ srs: { ...snap.srs, suspended } }, false);
+}
+
 /** Forget a card's history: it becomes new again. */
 export function resetCard(id: string): void {
   undo = null;

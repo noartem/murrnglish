@@ -6,6 +6,7 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Keyboard, X } from "lucide-react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
+import type { HelpEntry } from "../shortcuts";
 import { SC, SHORTCUT_HELP } from "../shortcuts";
 
 export function ShortcutsHelpButton({ onOpen }: { onOpen: () => void }) {
@@ -21,7 +22,14 @@ export function ShortcutsHelpButton({ onOpen }: { onOpen: () => void }) {
   );
 }
 
-export function ShortcutsModal({ onClose }: { onClose: () => void }) {
+export function ShortcutsModal({
+  onClose,
+  entries = SHORTCUT_HELP,
+}: {
+  onClose: () => void;
+  /** the course's keys by default; the study screen passes its own */
+  entries?: HelpEntry[];
+}) {
   const closeRef = useRef<HTMLButtonElement>(null);
   // Focus the scroll container, not the close button: the browser's default
   // action for arrows/PgUp/PgDn/Home/End then scrolls it (same model as the
@@ -75,7 +83,7 @@ export function ShortcutsModal({ onClose }: { onClose: () => void }) {
             },
           }}
       >
-      {SHORTCUT_HELP.map((entry) => (
+      {entries.map((entry) => (
         <section className="helpentry" key={entry.title}>
           <div className="helpentryhead">
             <span className="keychips">

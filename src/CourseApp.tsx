@@ -26,10 +26,13 @@ import { SC, useCourseShortcuts } from "./shortcuts";
 import {
   ArrowLeft,
   ArrowRight,
+  BookOpenText,
   Check,
   Download,
+  Layers,
   LibraryBig,
   Menu,
+  NotebookPen,
   Share2,
 } from "lucide-react";
 import {
@@ -63,7 +66,18 @@ import { Home } from "./components/Home";
 import { Battery } from "./components/Battery";
 import { decodeShare, encodeShare } from "./share";
 import type { BookPage, ContentPage } from "./routes";
-import { LIBRARY_HASH, bookHash, pageKey, replaceHash } from "./routes";
+import {
+  CARDS_HASH,
+  DICTIONARY_HASH,
+  LIBRARY_HASH,
+  bookHash,
+  deckHash,
+  pageKey,
+  replaceHash,
+  rulesHash,
+} from "./routes";
+import { unitCards } from "./cards";
+import { PickWord } from "./components/PickWord";
 import { SIDEBAR_COLLAPSED_KEY } from "./keys";
 
 // How long an installed app waits before it starts filling the offline cache
@@ -737,6 +751,20 @@ export default function CourseApp({
                         <LibraryBig size={16} aria-hidden />
                         <span>All books</span>
                       </a>
+                      <div className="drawersections">
+                        <a className="draweraction" href={rulesHash(book, route.kind === "unit" ? route.n : undefined)}>
+                          <BookOpenText size={16} aria-hidden />
+                          <span>Rules</span>
+                        </a>
+                        <a className="draweraction" href={CARDS_HASH}>
+                          <Layers size={16} aria-hidden />
+                          <span>Cards</span>
+                        </a>
+                        <a className="draweraction" href={DICTIONARY_HASH}>
+                          <NotebookPen size={16} aria-hidden />
+                          <span>Words</span>
+                        </a>
+                      </div>
                       <button
                         type="button"
                         className="draweraction"
@@ -947,6 +975,7 @@ export default function CourseApp({
                       </span>
                     )}
                   </h2>
+                  <UnitStudyLinks book={book} unit={unit} />
                   {unit.exercises.map((ex) => (
                     <ExerciseCard
                       key={ex.id}
@@ -975,6 +1004,10 @@ export default function CourseApp({
               {pager && (pager.prev || pager.next) && (
                 <UnitNav prev={pager.prev} next={pager.next} onGo={goTarget} />
               )}
+              <PickWord
+                scope=".rightpane"
+                source={{ book: book.id, ...(route.kind === "unit" ? { unit: route.n } : {}) }}
+              />
             </OverlayScrollbarsComponent>
           </div>
         )}
@@ -1003,6 +1036,25 @@ export default function CourseApp({
       {helpOpen && <ShortcutsModal onClose={closeHelp} />}
     </div>
     </BookContext.Provider>
+  );
+}
+
+// Under the unit heading: the unit's rule in the compendium, and its flash
+// cards (made from these exercises, cards.ts) — hidden when the unit has none.
+function UnitStudyLinks({ book, unit }: { book: Book; unit: UnitData }) {
+  const cards = useMemo(() => unitCards(book.id, unit).length, [book, unit]);
+  return (
+    <div className="rulelinks unitstudy">
+      <a className="pillbtn" href={rulesHash(book, unit.unit)}>
+        <BookOpenText size={15} aria-hidden /> Rule
+      </a>
+      {cards > 0 && (
+        <a className="pillbtn" href={deckHash({ kind: "unit", book, unit: unit.unit })}>
+          <Layers size={15} aria-hidden /> Cards · {cards}
+        </a>
+      )}
+      <span className="pickhint">Select a word to add it to your dictionary</span>
+    </div>
   );
 }
 

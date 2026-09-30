@@ -1,15 +1,18 @@
 // Library: the landing of the whole app (#/). One card per book — cover,
 // level, size, how far the learner got — with the same resume-or-start call
 // to action each book's own landing has. Books come from the registry
-// (books.ts), in learning order.
+// (books.ts), in learning order. Under the books, the sections that span
+// them: the rules, the cards (with what is due today) and the dictionary.
 
 import { useEffect, useMemo, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { LibraryBig } from "lucide-react";
+import { BookOpenText, Layers, LibraryBig, NotebookPen } from "lucide-react";
 import type { Book } from "../books";
 import { BOOKS, bookUrl } from "../books";
 import { completedUnitIds, continueTarget, loadProgress } from "../progress";
-import { bookHash } from "../routes";
+import { CARDS_HASH, DICTIONARY_HASH, bookHash, rulesHash } from "../routes";
+import { useDueCount } from "../dueCount";
+import { useStudy } from "../study";
 import { isStandalone } from "../offline";
 import { Battery } from "./Battery";
 import { OfflineButton, OfflineChip } from "./OfflineButton";
@@ -68,6 +71,7 @@ export function Library() {
                 <BookCard key={b.id} book={b} />
               ))}
             </div>
+            <StudyTiles />
             <footer className="homecredit">
               Web edition by{" "}
               <a href="https://noartem.ru" rel="me noopener" target="_blank">
@@ -124,5 +128,37 @@ function BookCard({ book }: { book: Book }) {
         </button>
       </div>
     </article>
+  );
+}
+
+function StudyTiles() {
+  const due = useDueCount();
+  const { words } = useStudy();
+  return (
+    <nav className="studygrid" aria-label="Study">
+      <a className="studytile" href={rulesHash()}>
+        <BookOpenText size={22} aria-hidden />
+        <span className="tiletitle">Rules</span>
+        <span className="tiletext">Every rule of the books, searchable, next to its exercises.</span>
+      </a>
+      <a className="studytile" href={CARDS_HASH}>
+        <Layers size={22} aria-hidden />
+        <span className="tiletitle">
+          Cards
+          {due > 0 && <span className="duebadge">{due}</span>}
+        </span>
+        <span className="tiletext">
+          {due > 0 ? `${due} due today. ` : ""}Spaced repetition of the units you learn and of your words.
+        </span>
+      </a>
+      <a className="studytile" href={DICTIONARY_HASH}>
+        <NotebookPen size={22} aria-hidden />
+        <span className="tiletitle">Dictionary</span>
+        <span className="tiletext">
+          {words.length ? `${words.length} word${words.length === 1 ? "" : "s"}. ` : ""}Your own words, with
+          translations and pronunciation.
+        </span>
+      </a>
+    </nav>
   );
 }

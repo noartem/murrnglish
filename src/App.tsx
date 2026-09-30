@@ -1,11 +1,19 @@
-// App: the router. The hash picks the library (#/) or one book's course
-// (#/<book>/...), see routes.ts. A book's course is keyed by the book, so
-// opening another book remounts it with that book's data and progress.
+// App: the router. The hash picks the library (#/), one book's course
+// (#/<book>/...) or one of the sections next to the books — the rules
+// compendium, the card decks, the dictionary (routes.ts). A book's course is
+// keyed by the book, so opening another book remounts it with that book's
+// data and progress. The word editor is mounted once here, above every view:
+// the dictionary, the exercises and the rules all open it.
 
 import { useEffect, useState } from "react";
 import { BOOKS, bookById } from "./books";
 import CourseApp from "./CourseApp";
+import { CardsView } from "./components/CardsView";
+import { DictionaryView } from "./components/DictionaryView";
 import { Library } from "./components/Library";
+import { RulesView } from "./components/RulesView";
+import { StudyView } from "./components/StudyView";
+import { WordEditorHost } from "./components/WordEditor";
 import {
   hasProgress,
   lastUnitFromProgress,
@@ -14,7 +22,7 @@ import {
   loadProgress,
 } from "./progress";
 import type { AppRoute } from "./routes";
-import { LIBRARY_HASH, bookHash, parsePage, parseRoute } from "./routes";
+import { LIBRARY_HASH, bookHash, deckKey, parsePage, parseRoute } from "./routes";
 
 // bare "/": learners with saved progress go straight back to the page they
 // last worked on — in the book last opened if it has progress, else in the
@@ -51,8 +59,26 @@ export default function App() {
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
-  if (route.view === "library") return <Library />;
   return (
-    <CourseApp key={route.book.id} book={route.book} page={route.page} share={route.share} />
+    <>
+      <View route={route} />
+      <WordEditorHost />
+    </>
   );
+}
+
+function View({ route }: { route: AppRoute }) {
+  switch (route.view) {
+    case "library":
+      return <Library />;
+    case "book":
+      return <CourseApp key={route.book.id} book={route.book} page={route.page} share={route.share} />;
+    case "rules":
+      return <RulesView book={route.book} unit={route.unit} />;
+    case "cards":
+      // a new deck is a new session
+      return route.deck ? <StudyView key={deckKey(route.deck)} deck={route.deck} /> : <CardsView />;
+    case "dictionary":
+      return <DictionaryView />;
+  }
 }

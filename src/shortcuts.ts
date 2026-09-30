@@ -115,6 +115,43 @@ export const SHORTCUT_HELP: HelpEntry[] = [
 ];
 
 
+/** The review screen's keys (StudyView handles them itself). */
+export const STUDY_HELP: HelpEntry[] = [
+  {
+    keys: ["Space"],
+    title: "Show the answer",
+    desc: "Turns the card over. When the card asks you to type, Enter in the field checks what you typed and turns the card over.",
+  },
+  {
+    keys: ["1"],
+    title: "Before the answer: pick an option",
+    desc: "On a card with options, 1, 2, 3 … pick the first, second, third option and turn the card over.",
+  },
+  {
+    keys: ["1 / 2 / 3 / 4"],
+    title: "After the answer: Again, Hard, Good, Easy",
+    desc: "How well you knew it decides when the card comes back; the time is printed on each button.",
+    sub: [
+      { keys: ["Space"], alt: ["Enter"], desc: "the suggested answer: Good, or Again when what you typed was wrong" },
+    ],
+  },
+  {
+    keys: ["Ctrl", "Z"],
+    title: "Undo",
+    desc: "Takes the last answer back and shows that card again.",
+  },
+  {
+    keys: ["Shift", "?"],
+    title: "This help",
+    desc: "Press Esc to close it.",
+  },
+  {
+    keys: ["Shift", "T"],
+    title: "Switch theme",
+    desc: "Cycle the color theme: system, light, dark.",
+  },
+];
+
 // "Shift+?" arrives as e.key === "?" with shiftKey set on every layout.
 // Letter shortcuts (S/E/N/P/A/I) always check e.code, so they work on any
 // keyboard layout. Handler order (critical):

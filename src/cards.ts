@@ -45,6 +45,9 @@ export type UnitCard =
   | (CardBase & { kind: "write"; prompt: string; answers: string[] })
   | (CardBase & { kind: "match"; left: string; right: string });
 
+/** A card's own fields, per kind (Omit alone would merge the union). */
+type CardBody = UnitCard extends infer C ? (C extends CardBase ? Omit<C, keyof CardBase> : never) : never;
+
 const OWN = /own ideas|your own|about (yourself|you)\b|true for you|о себе|своими|свои (ответы|предложения|идеи)|о вас\b|о своей|о своём/i;
 const PICTURE = /pictur|photo|\bmaps?\b|drawing|картин|рисун|фото|\bкарт[аеуы]\b/i;
 const SITUATION = /situation|ситуаци/i;
@@ -125,7 +128,7 @@ export function unitCards(bookId: string, unit: UnitData): UnitCard[] {
       instruction: ex.instruction,
       ...(ex.wordBank?.length ? { wordBank: ex.wordBank } : {}),
     });
-    const push = (key: string | number, body: Omit<UnitCard, keyof CardBase> | null, front: string) => {
+    const push = (key: string | number, body: CardBody | null, front: string) => {
       if (!body) return;
       // a front seen before in this unit would be the same card twice
       const dedupe = `${ex.instruction}\u0000${front}`;
