@@ -23,7 +23,7 @@
 # site was serving.
 set -euo pipefail
 
-: "${DEPLOY_KEY:?set DEPLOY_KEY to the path of the deploy user's private key}"
+: "${DEPLOY_KEY:?set DEPLOY_KEY to the path of the deploy private key}"
 
 HOST="${DEPLOY_HOST:-mg-deploy@84.54.30.169}"
 ROOT="${DEPLOY_ROOT:-/srv/murrnglish}"
