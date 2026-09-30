@@ -12,6 +12,18 @@ export const SIDEBAR_COLLAPSED_KEY = `${NS}.sidebar-collapsed`;
 /** id of the book last worked in: where a bare "/" resumes */
 export const LAST_BOOK_KEY = `${NS}.last-book`;
 
+// Study data spans the books, so it is shared (study.ts): the learner's own
+// words, the review state of every card (unit cards are keyed
+// "<book>:<exercise>:<item>", word cards "w:<word id>:f|r") and the daily
+// limits. Backed up together through the study backup file, not the per-book
+// progress export.
+/** { words: Word[] } — the dictionary */
+export const WORDS_KEY = `${NS}.words-v1`;
+/** { states, suspended, daily } — spaced-repetition state of every card seen */
+export const SRS_KEY = `${NS}.srs-v1`;
+/** { newPerDay, reviewsPerDay, typeAnswers } */
+export const SRS_SETTINGS_KEY = `${NS}.srs-settings-v1`;
+
 export const progressKey = (book: string) => `${NS}.${book}.progress-v1`;
 /** last opened page of the book ("u13"/"a41") */
 export const lastRouteKey = (book: string) => `${NS}.${book}.last-route-v1`;
