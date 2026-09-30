@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from "react";
 import type { Book } from "./books";
 import { BOOKS, bookUrl } from "./books";
-import { COURSE_BUNDLE } from "./data";
+import { COURSE_BUNDLE, RULES_FILE } from "./data";
 import { offlineKey, offlineRemovedKey } from "./keys";
 
 // Offline downloads: the page-side engine behind the "Download" buttons. They
@@ -110,10 +110,11 @@ export function useDownloads(): Readonly<Record<string, DownloadState>> {
 /**
  * Everything a book needs beyond the shell, in download order. index.json,
  * pages.json and totals.json are what the app asks for when the book opens,
- * course.json is the whole course in one file (see the header). book.pdf is
- * listed last but downloaded by run() itself, streamed, so its megabytes come
- * with progress. scripts/sync_books.mjs sums the same files for the size the
- * panel shows.
+ * course.json is the whole course in one file (see the header) — the unit
+ * card decks are made from it too — and rules.json is the text of the rules
+ * compendium. book.pdf is listed last but downloaded by run() itself,
+ * streamed, so its megabytes come with progress. scripts/sync_books.mjs sums
+ * the same files for the size the panel shows.
  */
 export function bookUrls(book: Book): string[] {
   return [
@@ -121,6 +122,7 @@ export function bookUrls(book: Book): string[] {
     bookUrl(book, "data/totals.json"),
     bookUrl(book, "data/pages.json"),
     bookUrl(book, COURSE_BUNDLE),
+    bookUrl(book, RULES_FILE),
     bookUrl(book, book.cover.file),
     bookUrl(book, "book.pdf"),
   ];
@@ -442,6 +444,18 @@ async function runDownload(book: Book): Promise<void> {
   // asks for when the book opens (offline it boots on index.json) and the
   // packed course.
   await storeMissing(cache, bookUrls(book).filter((u) => u !== pdfUrl), true, count);
+
+  // A book already in the cache (a finished earlier download, or the copy the
+  // service worker kept while the book was read online) is not fetched again:
+  // when a release adds a small file to bookUrls, an installed app tops its
+  // copy up with that file instead of pulling tens of megabytes once more.
+  const cachedPdf = await cache.match(pdfUrl, MATCH);
+  if (cachedPdf) {
+    bookBytes = size(cachedPdf) || bookTotalBytes;
+    if (!bookTotalBytes) bookTotalBytes = bookBytes;
+    report();
+    return;
+  }
 
   // book.pdf last, streamed so the panel can show megabytes: assembling the
   // whole reader into one Uint8Array first (as an arrayBuffer() would) is a

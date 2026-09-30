@@ -7,6 +7,8 @@ import { bookUrl } from "./books";
 
 /** book-relative path of every exercise in one file (scripts/sync_books.mjs) */
 export const COURSE_BUNDLE = "data/course.json";
+/** book-relative path of the rule-page text (scripts/sync_books.mjs, rules_text.mjs) */
+export const RULES_FILE = "data/rules.json";
 
 export type ExerciseType = "fill-in" | "choice" | "matching" | "write" | "self-check";
 
@@ -105,7 +107,7 @@ export function fetchPageAspects(book: Book): Promise<PageAspects> {
 }
 
 /** The packed course: every exercise file keyed as the app asks for it. */
-interface CourseBundle {
+export interface CourseBundle {
   units: Record<string, UnitData>;
   additional: Record<string, AdditionalData>;
 }
@@ -114,6 +116,27 @@ interface CourseBundle {
 // not kept, so the next exercise opened retries (the cache may have been
 // filled since — the offline download stores this file)
 const bundles = new Map<string, Promise<CourseBundle>>();
+
+/** The whole course of a book in one request: the unit card decks and the
+    rules search read every unit at once. */
+export function fetchCourse(book: Book): Promise<CourseBundle> {
+  return loadBundle(book);
+}
+
+// the index is small and asked for by every section that lists units; one
+// request per book per session (a failure is dropped so the next asker retries)
+const indexes = new Map<string, Promise<IndexData>>();
+export function fetchIndexOnce(book: Book): Promise<IndexData> {
+  let p = indexes.get(book.id);
+  if (!p) {
+    p = fetchIndex(book).catch((e: unknown) => {
+      indexes.delete(book.id);
+      throw e;
+    });
+    indexes.set(book.id, p);
+  }
+  return p;
+}
 
 function loadBundle(book: Book): Promise<CourseBundle> {
   let b = bundles.get(book.id);

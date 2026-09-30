@@ -17,6 +17,15 @@
 // from when a per-unit fetch fails offline (src/data.ts loadBundle).
 // Generated here rather than committed, so it cannot drift from data/ — the
 // per-file JSON stays the source of truth.
+//
+// public/books/<id>/data/rules.json is the text of each unit's rule page for
+// the rules compendium, read from books/<id>/work/pages/plain (see
+// scripts/rules_text.mjs): { units: { "<n>": { s: sections, r: refs } } }.
+// Units whose page text does not carry their own header are left out.
+//
+// Book ids share the first hash segment with the app's own sections
+// (#/rules, #/cards, #/dictionary — src/routes.ts SECTIONS), so those names
+// are refused as book folders.
 
 import {
   copyFileSync,
@@ -31,6 +40,11 @@ import {
 } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseRulePage, theoryPages } from "./rules_text.mjs";
+
+// first hash segments that are app sections, not books — keep equal to
+// SECTIONS in src/routes.ts (routes.test.ts checks the registry against it)
+const RESERVED = ["rules", "cards", "dictionary", "all", "words"];
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const booksDir = join(root, "books");
@@ -69,6 +83,7 @@ need(ids.length > 0, "no books/<id>/book.json found");
 const registry = [];
 for (const id of ids) {
   need(/^[a-z][a-z0-9-]*$/.test(id), `book id "${id}": lowercase letters, digits and dashes only`);
+  need(!RESERVED.includes(id), `book id "${id}" is the name of an app section (${RESERVED.join(", ")})`);
   const src = join(booksDir, id);
   const meta = readJson(join(src, "book.json"));
   for (const k of ["order", "title", "edition", "level", "authors", "publisher", "color", "cover"]) {
@@ -106,14 +121,31 @@ for (const id of ids) {
     `books/${id}: index.json lists ${index.additional.exercises.length} additional, data/additional has ${additional}`,
   );
 
+  // the rules compendium's text: each unit's rule page, when the page text
+  // is this book's own (its header names the unit)
+  const rules = {};
+  const plainDir = join(src, "work", "pages", "plain");
+  for (const [key, info] of Object.entries(index.exercises)) {
+    const m = key.match(/^u(\d+)$/);
+    if (!m) continue;
+    const file = join(plainDir, `p${String(theoryPages(info.pages)[0]).padStart(3, "0")}.txt`);
+    if (!existsSync(file)) continue;
+    const rule = parseRulePage(readFileSync(file, "utf8"), Number(m[1]), info.title);
+    if (rule) rules[m[1]] = rule;
+  }
+  writeFileSync(join(dataDest, "rules.json"), JSON.stringify({ units: rules }));
+  const ruleCount = Object.keys(rules).length;
+
   // what the offline download stores (src/offline.ts bookUrls)
   const size = (f) => statSync(join(dest, f)).size;
-  const downloadBytes = ["book.pdf", meta.cover.file, "data/index.json", "data/totals.json", "data/pages.json", "data/course.json"]
+  const downloadBytes = ["book.pdf", meta.cover.file, "data/index.json", "data/totals.json", "data/pages.json", "data/course.json", "data/rules.json"]
     .map(size)
     .reduce((a, b) => a + b, 0);
 
   registry.push({ id, ...meta, units, additional, downloadBytes });
-  console.log(`synced books/${id} -> public/books/${id} (${units} units, ${additional} additional)`);
+  console.log(
+    `synced books/${id} -> public/books/${id} (${units} units, ${additional} additional, rule text for ${ruleCount})`,
+  );
 }
 
 // books removed from books/ disappear from public/ as well
