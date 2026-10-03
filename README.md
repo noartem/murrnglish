@@ -1,11 +1,14 @@
 # Murrnglish
 
-Raymond Murphy's grammar books as interactive web courses: the book's pages
-with the exercises beside them, answers checked as you go, progress saved in
-the browser. One installable PWA that works offline, one book per folder.
-Next to the books: a searchable compendium of their rules, flash cards with
-Anki's spaced repetition, and a dictionary of the learner's own words. The
-cards are the app's own material, written for it and tied to no book:
+Raymond Murphy's grammar books as interactive web courses: every unit opens
+with a lesson written for the app, then its exercises, answers checked as
+you go, progress saved in the browser. One installable PWA that works
+offline, one book per folder. The app shows no page of the books: the
+lessons are its own (in Russian for the red book, in English for the blue
+one), and the exercises carry as text whatever the printed page gave them —
+a picture, a table, a map. Next to the books: flash cards with Anki's spaced
+repetition, and a dictionary of the learner's own words. The cards are the
+app's own material too, written for it and tied to no book:
 grammar decks by topic and vocabulary decks (irregular verbs, advanced
 irregular verbs, phrasal verbs, words + prepositions, collocations, linking
 words, false friends, easily confused words, idioms).
@@ -25,13 +28,16 @@ reaches back into red-murphy).
 src/                    the web app (Vite + React + TypeScript), one for every book
   App.tsx               router: library, a book's course, or a section
   CourseApp.tsx         one book's course UI (landing, units, additional exercises)
+  components/Lesson.tsx    a unit's lesson: its header, sections and blocks
+  components/ExerciseCard.tsx  one exercise, with the scene and cues that
+                        stand for the book's pictures
   components/Library.tsx   the library landing
-  components/RulesView.tsx, CardsView.tsx, StudyView.tsx, DictionaryView.tsx
-                        the sections: rules, deck list, review session, dictionary
+  components/CardsView.tsx, StudyView.tsx, DictionaryView.tsx
+                        the sections: deck list, review session, dictionary
   components/DeckBrowser.tsx  a deck's cards, and one card with its history
   components/WordEditor.tsx, PickWord.tsx
                         adding/editing a word; "add" on a selected word
-  rules.ts              rule text per book + the search across books
+  lesson.ts             a lesson's types, as scripts/lessons.mjs compiles them
   deckdata.ts           the card decks: loading, entry kinds, gaps, answer checks
   decks.ts              which cards a session holds (a deck, the words, everything)
   legacy.ts             moving the review history of the old book-made cards
@@ -47,9 +53,11 @@ src/                    the web app (Vite + React + TypeScript), one for every b
   offline.ts            offline downloads, one per book
 public/                 static files; sw.js = shell cache + one cache per book
 books/<id>/             everything of one book
-  book.json             title, edition, level, authors, cover color and size
-  book.pdf, cover.*     served as /books/<id>/...
-  data/                 units/, additional/, index.json, totals.json, pages.json
+  book.json             title, edition, level, lessons' language, authors, cover
+  cover.*               served as /books/<id>/...
+  lessons/              the app's own lessons, u<NNN>.md, one per unit
+  data/                 units/, additional/, index.json, totals.json
+  book.pdf              the extraction pipelines' source; never served
   scripts/              that book's extraction pipeline and validate.py
   work/                 extraction work files (page text, layout, parsing spec)
   original/             red only: the EPUB the LLM pipeline reads hints from
@@ -57,9 +65,9 @@ decks/                  the card decks: index.json (sections, groups, order) and
                         grammar/<id>.json, vocabulary/<id>.json, one per deck
 scripts/
   sync_books.mjs        books/* -> public/books/* + src/generated/books.json
+  lessons.mjs           lessons/*.md -> each unit's "lesson", linted (run by the sync)
+  audit_exercises.mjs   exercises that may still lean on the book page
   sync_decks.mjs        decks/ -> src/generated/decks.json, checked (--format: house style)
-  rules_text.mjs        a unit's rule page text -> data/rules.json (run by the sync)
-  make_page_meta.mjs    book.pdf -> data/pages.json (page aspect ratios)
   deploy.sh             publish dist/ to the VPS
 e2e.mjs                 end-to-end flows (Playwright)
 ```
@@ -105,8 +113,7 @@ The red book's LLM pipeline reads its API keys from `books/red/.env` (ignored).
 | `#/<book>/u12` | unit 12 |
 | `#/<book>/a3` | additional exercise 3 |
 | `#/<book>/p=<code>` | shared progress for that book (preview, then apply) |
-| `#/rules` | the rules compendium (search across every book) |
-| `#/rules/<book>`, `#/rules/<book>/u12` | a book's rules; the rule of unit 12 |
+| `#/rules/<book>/u12` | the old rules compendium: now unit 12 itself (`#/rules/<book>` the book, `#/rules` the library) |
 | `#/cards` | the card decks with today's counts, settings, backup |
 | `#/cards/<deck>` | a review session: `all`, `words`, or a deck id (`phrasal-verbs`) |
 | `#/cards/<deck>/browse` | a deck's cards, with a search and where each one stands |
@@ -115,14 +122,15 @@ The red book's LLM pipeline reads its API keys from `books/red/.env` (ignored).
 | `#/dictionary/<deck>` | the same, with that deck's list open |
 
 Sections take their own first segment next to the book ids, so
-`sync_books.mjs` refuses a book folder named after one (`RESERVED_IDS` in
-`src/routes.ts`); `sync_decks.mjs` refuses a deck named `all` or `words`.
+`sync_books.mjs` refuses a book folder named after one — or `rules`, which
+old links still use (`RESERVED_IDS` in `src/routes.ts`); `sync_decks.mjs`
+refuses a deck named `all` or `words`.
 
 ## Storage
 
 Progress, the last page and the offline flags are per book
-(`murrnglish.<book>.progress-v1`, ...); theme, page inversion and the sidebar
-state are shared (`murrnglish.theme`, ...). See `src/keys.ts`.
+(`murrnglish.<book>.progress-v1`, ...); the theme and the sidebar state are
+shared (`murrnglish.theme`, ...). See `src/keys.ts`.
 
 Study data spans the books and is shared too: `murrnglish.words-v1` (the
 dictionary, with everything a lookup found), `murrnglish.srs-v1` (the review
@@ -146,34 +154,92 @@ localStorage is out of reach) moves over by hand: *Progress → Export* there,
 
 The service worker caches at runtime (stale-while-revalidate). In the
 installed app a Download panel lists every book; each one downloads into its
-own cache (`murrnglish-book-<id>-v1`) and can be removed on its own, while
-the app itself lives in `murrnglish-shell-v1`. An installed app downloads the
+own cache (`murrnglish-book-<id>-v2`) and can be removed on its own, while
+the app itself lives in `murrnglish-shell-v2`. An installed app downloads the
 open book by itself unless that book was removed by hand.
 
-A book's download includes `data/rules.json` (the compendium's text), so the
-rules work offline for a downloaded book — or for any book whose course was
-opened online, since the worker keeps what it serves. The decks are one lazy
-chunk of the app (`assets/decks-<hash>.js`, ~70 KB gzipped): the worker keeps
-it once the cards or the dictionary have been opened, and a book download
-stores it with the shell, so reviews work offline. A download
-whose PDF is already cached only tops up the missing small files. Dictionary
+A book is four files: `index.json`, `totals.json`, `course.json` (every unit
+with its lesson, and every additional exercise) and the cover — a few
+hundred kilobytes. The `-v1` caches held the books' PDFs; the worker deletes
+them when it activates. The decks are one lazy chunk of the app
+(`assets/decks-<hash>.js`, ~70 KB gzipped): the worker keeps it once the
+cards or the dictionary have been opened, and a book download stores it
+with the shell, so reviews work offline. Dictionary
 lookups need the network; offline the word is saved with what the learner
 types, and a saved word's recording is kept in `murrnglish-audio-v1`.
 
-## Rules, cards and the dictionary
+## Lessons
 
-**Rules.** The list on the left, the rule on the right under a toolbar with
-the previous and next unit, *Text | Page*, and the links to the exercises
-and cards; with no unit open, the book's groups as a map of its rules. The
-book page is sized so the whole page is in view (640–900 px wide).
-`scripts/rules_text.mjs` reads each unit's rule page from the
-book's `pdftotext -layout` text (`work/pages/plain`): lettered sections,
-indented examples, side-by-side columns and the footer's cross references. A
-page is used only when its header names the unit, so text that is not the
-book's own is left out — the red book's plain text is a copy of the blue
-one, and its PDF text layer is OCR noise, so the red rules are shown as the
-book page. Search reads unit and group titles in every book plus the rule
-text where there is one.
+A unit is one column: a bar of jumps at the top (the lesson, then one chip
+per exercise, the part in view lit up; Shift+S goes from the lesson down to
+the first exercise and back), the lesson, a "Practice" divider, the
+exercises. A unit whose lesson is not written yet says so and shows its
+exercises.
+
+A lesson is `books/<id>/lessons/u<NNN>.md`, written for the app: its own
+situations, names and examples, covering the grammar the unit's exercises
+practise. `scripts/lessons.mjs` compiles it into the unit's JSON (the
+`lesson` field of `data/units/unit-NNN.json` and of `course.json`), so it
+arrives with the exercises and works offline. The source is Markdown with
+blocks:
+
+```md
+---
+hook: 🎬 What's going on right now?
+goals: say what is in progress · talk about changes
+---
+::: scene 📞 Saturday morning        <- kind, icon, title
+Leo calls his sister Nina.           <- narration
+> Nina: I'm ==painting== the kitchen! <- a speech bubble
+:::
+
+## At this very moment               <- a section, lettered A, B, C…
+A paragraph.
+
+:::: row                             <- the blocks inside, side by side
+::: rule
+…
+:::
+::: timeline
+span now-16 now+12 | Nina is painting
+point now | Leo calls
+:::
+::::
+```
+
+| Block | What it is | Body |
+| --- | --- | --- |
+| `scene` | a little story: an icon, narration, speech bubbles | lines; `> Who: text` is a bubble |
+| `rule` | the section's idea on an index card | paragraphs |
+| `note` | a sticky note under tape | paragraphs |
+| `form` | tables of forms, side by side | `# caption`, then `cell \| cell` rows |
+| `examples` | ruled notebook lines | `- sentence` or `- sentence // gloss` |
+| `compare` | columns; a `✓` / `✗` heading colours one | `# heading`, then its lines |
+| `timeline` | past · now · future | `point / span / repeat / arrow <from> [<to>] \| label`; positions `past`, `now`, `future` or 0–100, `now-10` |
+| `trap` | a typical mistake | `✗ wrong`, `✓ right`, then paragraphs |
+| `words` | a cloud of chips | `a · b · c` |
+| `cards` | small cards in a row | `# 🍳 title`, then its text |
+| `quiz` | check yourself, the answer on a tap | `? question`, `= answer` |
+| `summary` | the lesson as a checklist | `- line` |
+| `seealso` | chips to other units | `u12` or `u12 text` |
+
+Inline: `==highlight==`, `**bold**`, `_italic_`, `~~wrong~~`, `[[u12]]` /
+`[[u12|text]]`. A straight apostrophe between letters becomes ’.
+
+The sync fails on a lesson that breaks the rhythm rules — every section
+carries something besides paragraphs, at most three paragraphs in a row,
+none over 70 words, at least four kinds of block, a summary — or that shares
+a run of eight words with the book's page text (`work/pages/plain`).
+
+**The exercises without the page.** Where the printed book set an exercise on
+a picture, a map or a table, the exercise carries it as text: `scene` (lines;
+`a | b | c` lines make a table) above the items, `cue` (an emoji and a line)
+above an item, and the instruction says to read them. An example the page
+used to show solved is filled in from its answer. `node
+scripts/audit_exercises.mjs [book]` lists what may still lean on the page;
+`src/exercises.test.ts` holds every unit that has its lesson to none.
+
+## Cards and the dictionary
 
 **Cards.** The decks in `decks/` are written for the app — no sentence,
 example or list comes from the books. `decks/index.json` orders them into
@@ -223,7 +289,7 @@ Space shows the answer and then gives the suggested rating, 1–4 rate, 1–n
 pick an option, Ctrl+Z undoes, Shift+? lists them.
 
 **Dictionary.** Words are added in the dictionary, from a vocabulary card, or by
-selecting a word in an exercise or a rule (the sentence and the unit come
+selecting a word in an exercise or a lesson (the sentence and the unit come
 along). The dictionary also lists every vocabulary deck, and its search
 reads them. The lookup asks
 three keyless, CORS-enabled sources at once: dictionaryapi.dev (definitions,
@@ -234,12 +300,14 @@ them may fail; the entry can always be typed by hand and saved.
 
 ## Adding a book
 
-1. Create `books/<id>/` with `book.pdf`, a cover image and `book.json`
-   (copy one from another book; `order` places it on the learning path).
+1. Create `books/<id>/` with a cover image and `book.json` (copy one from
+   another book; `order` places it on the learning path, `lang` is the
+   language of its lessons, `en` or `ru`).
 2. Produce `data/` in the shared format (`work/PARSING-SPEC.md` of either
    book describes it) with its own pipeline under `books/<id>/scripts/`,
    including a `validate.py` — CI runs `books/*/scripts/validate.py`.
-3. `node scripts/make_page_meta.mjs <id>` for `data/pages.json`.
+3. Go through the exercises (`scripts/audit_exercises.mjs <id>`) and write
+   the lessons in `books/<id>/lessons/`.
 4. `npm run dev` — `sync_books.mjs` registers it; the library, routes,
    progress and offline download pick it up with no app change.
 

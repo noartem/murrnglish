@@ -32,8 +32,8 @@ export function ShortcutsModal({
 }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   // Focus the scroll container, not the close button: the browser's default
-  // action for arrows/PgUp/PgDn/Home/End then scrolls it (same model as the
-  // focused .pageviewer pane), and the central dispatcher deliberately
+  // action for arrows/PgUp/PgDn/Home/End then scrolls it, and the central
+  // dispatcher deliberately
   // doesn't preventDefault those keys while the help is open.
   useEffect(() => {
     const vp = document.querySelector<HTMLElement>(

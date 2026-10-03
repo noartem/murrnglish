@@ -9,6 +9,8 @@
       "instruction": "What are these things? Choose from the box and write a sentence.",
       "wordBank": ["bird(s)", "flower(s)", "game(s)", "insect(s)", "language(s)", "planet(s)", "river(s)", "tool(s)", "vegetable(s)"],
       "items": [
+        {"num": 1, "parts": ["An eagle is ", "."], "answers": [["a bird"]], "example": true},
+        {"num": 2, "parts": ["A pigeon, a duck and a penguin are ", "."], "answers": [["birds"]], "example": true},
         {
           "num": 3,
           "parts": ["", " carrots and onions"],
@@ -57,6 +59,7 @@
       "instruction": "Read about what these people do. What are their jobs? Choose from:",
       "wordBank": ["chef", "interpreter", "journalist", "nurse", "plumber", "surgeon", "tour guide", "waiter"],
       "items": [
+        {"num": 1, "parts": ["Sarah looks after patients in hospital. She’s ", "."], "answers": [["a nurse"]], "example": true},
         {
           "num": 2,
           "parts": ["Gary works in a restaurant. He brings the food to the tables. He\u2019s ", "."],
@@ -97,50 +100,60 @@
     {
       "id": "71.3",
       "type": "choice",
-      "instruction": "Which is right?",
+      "instruction": "Read the descriptions and choose the right one.",
       "items": [
+        {"num": 1, "options": ["Most of my friends are students", "Most of my friends are some students"], "answer": 0, "example": true},
         {
           "num": 2,
+          "cue": "🚗 Are you … driver?",
           "options": ["careful driver", "a careful driver"],
           "answer": 1
         },
         {
           "num": 3,
+          "cue": "📚 I went to the library and borrowed … .",
           "options": ["books", "some books"],
           "answer": 1
         },
         {
           "num": 4,
+          "cue": "🏪 Mark works in a bookshop. He sells … .",
           "options": ["books", "some books"],
           "answer": 0
         },
         {
           "num": 5,
+          "cue": "🥾 I’ve been walking for hours. I’ve got … .",
           "options": ["sore feet", "some sore feet"],
           "answer": 0
         },
         {
           "num": 6,
+          "cue": "🤒 I don’t feel very well. I’ve got … .",
           "options": ["sore throat", "a sore throat"],
           "answer": 1
         },
         {
           "num": 7,
+          "cue": "🎁 What … ! Thank you very much.",
           "options": ["lovely present", "a lovely present"],
           "answer": 1
         },
         {
           "num": 8,
+          "cue": "☕ I met … in a cafe yesterday. They were from China.",
           "options": ["students", "some students"],
           "answer": 1
         },
         {
           "num": 9,
+          "cue": "☔ It might rain. Don’t go out without … .",
           "options": ["without umbrella", "without an umbrella"],
           "answer": 1
         },
         {
           "num": 10,
+          "cue": "🗣️ … learn languages more easily than others.",
           "options": ["People", "Some people"],
           "answer": 1
         }
@@ -151,6 +164,9 @@
       "type": "fill-in",
       "instruction": "Put in a/an or some where necessary. If no word is necessary, leave the space empty.",
       "items": [
+        {"num": 1, "parts": ["I’ve seen ", " good movies recently."], "answers": [["some"]], "example": true},
+        {"num": 2, "parts": ["Are you feeling all right? Do you have ", "?"], "answers": [["a headache"]], "example": true},
+        {"num": 3, "parts": ["I know lots of people. Most of them are ", " students."], "answers": [["–"]], "example": true},
         {
           "num": 4,
           "parts": ["When I was ", " child, I used to be very shy."],

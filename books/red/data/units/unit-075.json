@@ -97,7 +97,7 @@
     {
       "id": "75.2",
       "type": "write",
-      "instruction": "Напишите疑问... Напишите вопросительные предложения: Is this/that your ... ? или Are these/those your ... ?",
+      "instruction": "Прочитайте описания и напишите вопросительные предложения: Is this/that your ... ? или Are these/those your ... ?",
       "example": [
         1
       ],
@@ -105,6 +105,7 @@
         {
           "num": 1,
           "prompt": "",
+          "cue": "🎒 Сумка стоит рядом с вами, на полу.",
           "answers": [
             "Is this your bag?"
           ],
@@ -113,6 +114,7 @@
         {
           "num": 2,
           "prompt": "",
+          "cue": "☂️ Зонт стоит далеко, у вешалки в конце коридора.",
           "answers": [
             "Is that your umbrella?"
           ]
@@ -120,6 +122,7 @@
         {
           "num": 3,
           "prompt": "",
+          "cue": "📗 Книга лежит рядом с вами, на столе.",
           "answers": [
             "Is this your book?"
           ]
@@ -127,6 +130,7 @@
         {
           "num": 4,
           "prompt": "",
+          "cue": "📚 На дальней полке лежит стопка книг.",
           "answers": [
             "Are those your books?"
           ]
@@ -134,6 +138,7 @@
         {
           "num": 5,
           "prompt": "",
+          "cue": "🚲 Велосипед стоит далеко, у забора.",
           "answers": [
             "Is that your bicycle?",
             "Is that your bike?"
@@ -142,6 +147,7 @@
         {
           "num": 6,
           "prompt": "",
+          "cue": "🔑 Несколько ключей лежат рядом с вами, на столе.",
           "answers": [
             "Are these your keys?"
           ]
@@ -149,6 +155,7 @@
         {
           "num": 7,
           "prompt": "",
+          "cue": "🔑 Ключи висят далеко, на стене у двери.",
           "answers": [
             "Are those your keys?"
           ]
@@ -156,6 +163,7 @@
         {
           "num": 8,
           "prompt": "",
+          "cue": "⌚ Часы лежат рядом, перед вами на столе.",
           "answers": [
             "Is this your watch?"
           ]
@@ -163,6 +171,7 @@
         {
           "num": 9,
           "prompt": "",
+          "cue": "👓 Очки лежат далеко, на полке за столом.",
           "answers": [
             "Are those your glasses?"
           ]
@@ -170,6 +179,7 @@
         {
           "num": 10,
           "prompt": "",
+          "cue": "🧤 Пара перчаток лежит рядом с вами, на краю стола.",
           "answers": [
             "Are these your gloves?"
           ]

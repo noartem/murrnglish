@@ -9,10 +9,11 @@
     {
       "id": "25.1",
       "type": "choice",
-      "instruction": "Which is correct?",
+      "instruction": "Read the sentences in the descriptions. Which is correct in the gap?",
       "items": [
         {
           "num": 1,
+          "cue": "🔒 Don’t forget to lock the door when ___.",
           "options": [
             "you go out",
             "you’ll go out"
@@ -21,6 +22,7 @@
         },
         {
           "num": 2,
+          "cue": "📩 As soon as we get any more information, ___ you know.",
           "options": [
             "we let",
             "we’ll let"
@@ -29,6 +31,7 @@
         },
         {
           "num": 3,
+          "cue": "🎬 I want to get to the cinema before ___.",
           "options": [
             "the film starts",
             "will start"
@@ -37,6 +40,7 @@
         },
         {
           "num": 4,
+          "cue": "🚦 Don’t drive through a red light. Wait until ___ to green.",
           "options": [
             "it changes",
             "it will change"
@@ -45,6 +49,7 @@
         },
         {
           "num": 5,
+          "cue": "☕ Sarah will be here soon. ___ some coffee when she comes.",
           "options": [
             "I make",
             "I’ll make"
@@ -53,6 +58,7 @@
         },
         {
           "num": 6,
+          "cue": "🎂 I’m 20 now. I wonder where I’ll be when ___.",
           "options": [
             "I’m 40",
             "I’ll be 40"
@@ -61,6 +67,7 @@
         },
         {
           "num": 7,
+          "cue": "⏳ ___ for you until you’re ready, but don’t be long.",
           "options": [
             "I wait",
             "I’ll wait"
@@ -69,6 +76,7 @@
         },
         {
           "num": 8,
+          "cue": "📺 Oliver is five years old. He wants to be a TV presenter when ___.",
           "options": [
             "he grows up",
             "he’ll grow up"
@@ -77,6 +85,7 @@
         },
         {
           "num": 9,
+          "cue": "☕ We could meet for coffee tomorrow morning if ___ free.",
           "options": [
             "you’re",
             "you will be"
@@ -85,6 +94,7 @@
         },
         {
           "num": 10,
+          "cue": "🏖️ If ___ nice tomorrow, we’re going to the beach.",
           "options": [
             "the weather is",
             "will be"
@@ -93,6 +103,7 @@
         },
         {
           "num": 11,
+          "cue": "🎓 ___ very disappointed if she doesn’t get a place at university.",
           "options": [
             "Vicky is",
             "will be"
@@ -101,6 +112,7 @@
         },
         {
           "num": 12,
+          "cue": "🍽️ You’ll feel better after ___ something to eat.",
           "options": [
             "you’ve had",
             "you’ll have"
@@ -235,10 +247,11 @@
     {
       "id": "25.3",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences.",
+      "instruction": "Read the descriptions and complete the sentences.",
       "items": [
         {
           "num": 1,
+          "cue": "🌧️ You and a friend want to go out, but it’s raining hard. You don’t want to get wet. You say:",
           "parts": [
             "Let’s wait until ",
             "."
@@ -252,6 +265,7 @@
         },
         {
           "num": 2,
+          "cue": "🌆 You’re visiting a friend. It will be dark soon, and you want to leave before that. You say:",
           "parts": [
             "I’d better go now before ",
             "."
@@ -264,6 +278,7 @@
         },
         {
           "num": 3,
+          "cue": "🚗 You want to sell your car. Mark is interested in buying it, but he hasn’t decided yet. You say:",
           "parts": [
             "Let me know as soon as ",
             "."
@@ -278,6 +293,7 @@
         },
         {
           "num": 4,
+          "cue": "🇭🇰 Your friends are going to Hong Kong soon. You want to know where they’ll stay. You ask:",
           "parts": [
             "Where are you going to stay when ",
             "?"
@@ -291,6 +307,7 @@
         },
         {
           "num": 5,
+          "cue": "🚧 The traffic in your town is bad, but they are going to build a new road. You say:",
           "parts": [
             "I think things will be better when they ",
             "."
@@ -305,6 +322,7 @@
         },
         {
           "num": 6,
+          "cue": "😤 Someone you know has been very rude to you. You want her to say sorry. You say to someone else:",
           "parts": [
             "I won’t speak to her until ",
             "."

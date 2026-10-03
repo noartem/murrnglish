@@ -1,6 +1,9 @@
 // ExerciseCard: one exercise = instruction, word bank, items, Check / Show answers.
+// Where the printed book set the exercise on a picture, a map or a table, the
+// exercise carries it as text: `scene` above the items, `cue` above an item.
 
 import { useEffect, useState } from "react";
+import type { ReactNode } from "react";
 import { Eye, EyeOff, SquareCheckBig } from "lucide-react";
 import { SC } from "../shortcuts";
 import type { ChoiceItem, Exercise, FillInItem, SelfCheckItem, WriteItem } from "../data";
@@ -9,6 +12,7 @@ import {
   checkFill,
   checkMatching,
   checkWrite,
+  exampleText,
 } from "../checker";
 import {
   ChoiceItemView,
@@ -76,16 +80,13 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
     answerCount = states.length;
     return (
       <section className="exercise" id={`ex-${exercise.id}`}>
-        <header>
-          <span className="exid">{exercise.id}</span>
-          <p className="instruction">{exercise.instruction}</p>
-        </header>
+        <ExHeader exercise={exercise} />
         {exercise.wordBank && <WordBank words={exercise.wordBank} />}
         {items.map((it) =>
-          it.example || it.answers.length === 0 ? (
+          withCue(it, it.example || it.answers.length === 0 ? (
             <div key={it.num} className="item exampleitem">
               <span className="itemnum">{it.num}</span>
-              <span className="itembody">{it.parts.join("")}</span>
+              <span className="itembody">{exampleText(it)}</span>
             </div>
           ) : (
             <FillInItemView
@@ -102,7 +103,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
               states={perItem[gradedIdx.get(it.num) ?? -1] ?? []}
               revealed={revealed}
             />
-          ),
+          )),
         )}
         <CardActions
           onCheck={() => {
@@ -144,12 +145,9 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
     );
     return (
       <section className="exercise" id={`ex-${exercise.id}`}>
-        <header>
-          <span className="exid">{exercise.id}</span>
-          <p className="instruction">{exercise.instruction}</p>
-        </header>
+        <ExHeader exercise={exercise} />
         {items.map((it) =>
-          exNums.has(it.num) || it.example ? (
+          withCue(it, exNums.has(it.num) || it.example ? (
             <div key={it.num} className="item exampleitem">
               <span className="itemnum">{it.num}</span>
               <span className="itembody">
@@ -162,12 +160,13 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
               item={it}
               selected={values[it.num] ?? null}
               onSelect={(i) => {
-                updateAnswer({ items: { ...values, [it.num]: i } });
+                const { [it.num]: _, ...rest } = values;
+                updateAnswer({ items: i === null ? rest : { ...values, [it.num]: i } });
               }}
               state={states[gradedIdx.get(it.num) ?? -1]}
               revealed={revealed}
             />
-          ),
+          )),
         )}
         <CardActions
           onCheck={() => {
@@ -201,10 +200,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
     const st = checked ? checkMatching(sel, pairs) : left.map(() => null);
     return (
       <section className="exercise" id={`ex-${exercise.id}`}>
-        <header>
-          <span className="exid">{exercise.id}</span>
-          <p className="instruction">{exercise.instruction}</p>
-        </header>
+        <ExHeader exercise={exercise} />
         <div className="matching">
           <div className="matchcol">
             {left.map((l, i) => {
@@ -287,12 +283,9 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
     );
     return (
       <section className="exercise" id={`ex-${exercise.id}`}>
-        <header>
-          <span className="exid">{exercise.id}</span>
-          <p className="instruction">{exercise.instruction}</p>
-        </header>
+        <ExHeader exercise={exercise} />
         {items.map((it) =>
-          examples.has(it.num) || it.example || it.answers.length === 0 ? (
+          withCue(it, examples.has(it.num) || it.example || it.answers.length === 0 ? (
             <div key={it.num} className="item exampleitem">
               <span className="itemnum">{it.num}</span>
               <span className="itembody">
@@ -309,7 +302,7 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
               state={states[graded.indexOf(it)]}
               revealed={revealed}
             />
-          ),
+          )),
         )}
         <CardActions
           onCheck={() => {
@@ -341,11 +334,8 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
   const marks = (progress.selfMarks[exercise.id] ?? {}) as Record<string, boolean>;
   return (
     <section className="exercise" id={`ex-${exercise.id}`}>
-      <header>
-        <span className="exid">{exercise.id}</span>
-        <p className="instruction">{exercise.instruction}</p>
-      </header>
-      {items.map((it) => (
+      <ExHeader exercise={exercise} />
+      {items.map((it) => withCue(it, (
         <SelfCheckItemView
           key={it.num}
           item={it}
@@ -354,20 +344,79 @@ export function ExerciseCard({ exercise, progress, setProgress }: Props) {
           mark={marks[it.num] ?? null}
           onMark={(ok) => {
             setProgress((p) => {
+              // the same mark clicked again takes it back
+              const { [it.num]: was, ...rest } = p.selfMarks[exercise.id] ?? {};
+              const exMarks = was === ok ? rest : { ...rest, [it.num]: ok };
+              const { [exercise.id]: _, ...others } = p.selfMarks;
               const next = {
                 ...p,
-                selfMarks: {
-                  ...p.selfMarks,
-                  [exercise.id]: { ...(p.selfMarks[exercise.id] ?? {}), [it.num]: ok },
-                },
+                // an exercise with no marks left is untouched again
+                selfMarks: Object.keys(exMarks).length ? { ...others, [exercise.id]: exMarks } : others,
               };
               saveProgress(book.id, next);
               return next;
             });
           }}
         />
-      ))}
+      )))}
     </section>
+  );
+}
+
+function ExHeader({ exercise }: { exercise: Exercise }) {
+  return (
+    <>
+      <header>
+        <span className="exid">{exercise.id}</span>
+        <p className="instruction">{exercise.instruction}</p>
+      </header>
+      {exercise.scene && <ExScene text={exercise.scene} />}
+    </>
+  );
+}
+
+/** The scene: its lines, and "a | b | c" lines as a table. */
+function ExScene({ text }: { text: string }) {
+  const parts: ({ table: string[][] } | { line: string })[] = [];
+  for (const l of text.split("\n")) {
+    if (/\s\|\s/.test(l)) {
+      const cells = l.split(/\s+\|\s+/).map((c) => c.trim());
+      const last = parts[parts.length - 1];
+      if (last && "table" in last) last.table.push(cells);
+      else parts.push({ table: [cells] });
+    } else if (l.trim()) parts.push({ line: l.trim() });
+  }
+  return (
+    <div className="exscene">
+      {parts.map((p, i) =>
+        "line" in p ? (
+          <p key={i}>{p.line}</p>
+        ) : (
+          <div key={i} className="exscenetable">
+            <table>
+              <tbody>
+                {p.table.map((r, j) => (
+                  <tr key={j}>
+                    {r.map((c, k) => (j === 0 ? <th key={k}>{c}</th> : <td key={k}>{c}</td>))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ),
+      )}
+    </div>
+  );
+}
+
+/** An item with its cue, where it has one, on a line above it. */
+function withCue(it: { num: number | string; cue?: string }, node: ReactNode): ReactNode {
+  if (!it.cue) return node;
+  return (
+    <div key={it.num} className="cueditem">
+      <p className="itemcue">{it.cue}</p>
+      {node}
+    </div>
   );
 }
 

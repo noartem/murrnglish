@@ -9,7 +9,7 @@
     {
       "id": "23.1",
       "type": "fill-in",
-      "instruction": "Посмотрите на картинки и напишите, что сейчас происходит.",
+      "instruction": "Прочитайте описания и напишите, что сейчас происходит.",
       "items": [
         {
           "num": 1,
@@ -22,7 +22,8 @@
               "is being repaired"
             ]
           ],
-          "example": true
+          "example": true,
+          "cue": "🔧 В гараже стоит машина на домкрате, механик возится под ней с инструментом."
         },
         {
           "num": 2,
@@ -34,7 +35,8 @@
             [
               "is being built"
             ]
-          ]
+          ],
+          "cue": "🏗️ На реке работает кран, и бетонные блоки укладывают в опоры."
         },
         {
           "num": 3,
@@ -46,7 +48,8 @@
             [
               "are being cleaned"
             ]
-          ]
+          ],
+          "cue": "🧹 Двое рабочих протирают стёкла снаружи лестницей; внизу стоит ведро."
         },
         {
           "num": 4,
@@ -58,14 +61,15 @@
             [
               "is being cut"
             ]
-          ]
+          ],
+          "cue": "🌿 Газонокосилка работает, трава ложится ровными полосами."
         }
       ]
     },
     {
       "id": "23.2",
       "type": "write",
-      "instruction": "Посмотрите на картинки. Что сейчас происходит или что уже произошло? Используйте present continuous (is/are being …) или present perfect (has/have been …).",
+      "instruction": "Прочитайте описания. Что сейчас происходит или что уже произошло? Используйте present continuous (is/are being …) или present perfect (has/have been …).",
       "items": [
         {
           "num": 1,
@@ -73,7 +77,8 @@
           "answers": [
             "The office is being cleaned."
           ],
-          "example": true
+          "example": true,
+          "cue": "🧹 В офисе работает уборщик, на полу разлита вода."
         },
         {
           "num": 2,
@@ -81,56 +86,63 @@
           "answers": [
             "The shirts have been ironed."
           ],
-          "example": true
+          "example": true,
+          "cue": "👔 Рубашки висят на вешалке, они гладкие и ещё тёплые."
         },
         {
           "num": 3,
           "prompt": "(the window / break)",
           "answers": [
             "The window has been broken."
-          ]
+          ],
+          "cue": "🪟 В стекле трещина, на подоконнике осколки."
         },
         {
           "num": 4,
           "prompt": "(the roof / repair)",
           "answers": [
             "The roof is being repaired."
-          ]
+          ],
+          "cue": "🏚️ На крыше леса и рабочие — ремонт идёт полным ходом."
         },
         {
           "num": 5,
           "prompt": "(the car / damage)",
           "answers": [
             "The car has been damaged."
-          ]
+          ],
+          "cue": "🚗 У машины помята дверца и свежая царапина."
         },
         {
           "num": 6,
           "prompt": "(the houses / knock / down)",
           "answers": [
             "The houses are being knocked down."
-          ]
+          ],
+          "cue": "🧱 От старых домов остались одни стены, вокруг бульдозер."
         },
         {
           "num": 7,
           "prompt": "(the trees / cut / down)",
           "answers": [
             "The trees have been cut down."
-          ]
+          ],
+          "cue": "🌳 На месте деревьев — одни пни, рядом лежат спиленные стволы."
         },
         {
           "num": 8,
           "prompt": "(they / invite / to a party)",
           "answers": [
             "They have been invited to a party."
-          ]
+          ],
+          "cue": "💌 В почтовом ящике лежит приглашение на вечеринку."
         }
       ]
     },
     {
       "id": "23.3",
       "type": "fill-in",
-      "instruction": "Заполните пропуски в предложениях. (Перед тем как выполнить упражнение, изучите Раздел 22.)",
+      "instruction": "Заполните пропуски в предложениях.",
       "items": [
         {
           "num": 1,

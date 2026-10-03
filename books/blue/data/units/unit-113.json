@@ -9,7 +9,17 @@
     {
       "id": "113.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use although + a sentence from the box.",
+      "instruction": "Complete the sentences. Use although + one of the sentences from the box.",
+      "wordBank": [
+        "she has a very important job",
+        "I had never seen her before",
+        "it was quite cold",
+        "we don’t like them very much",
+        "I didn’t speak the language well",
+        "the heating was on",
+        "I’d met her twice before",
+        "we’ve known each other a long time"
+      ],
       "items": [
         {
           "num": 1,
@@ -113,7 +123,7 @@
     {
       "id": "113.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences with although / in spite of / because / because of. Use your own ideas to complete the following sentences.",
+      "instruction": "Complete the sentences with although / in spite of / because / because of. Where the sentence is not complete, use your own words.",
       "items": [
         {
           "num": 1,
@@ -237,14 +247,14 @@
       "items": [
         {
           "num": 1,
-          "prompt": "(despite)",
+          "prompt": "I couldn’t sleep. I was very tired. (despite)",
           "answers": [
             "I couldn't sleep despite being very tired."
           ]
         },
         {
           "num": 2,
-          "prompt": "(in spite of)",
+          "prompt": "We played quite well. We lost the game. (in spite of)",
           "answers": [
             "In spite of playing quite well, we lost the game.",
             "In spite of the fact (that) we played quite well, we lost the game."
@@ -252,7 +262,7 @@
         },
         {
           "num": 3,
-          "prompt": "(although)",
+          "prompt": "I’d hurt my foot. I managed to walk home. (although)",
           "answers": [
             "Although I'd hurt my foot, I managed to walk home.",
             "I managed to walk home although I'd hurt my foot."
@@ -260,7 +270,7 @@
         },
         {
           "num": 4,
-          "prompt": "(in spite of)",
+          "prompt": "I enjoyed the film. The story was silly. (in spite of)",
           "answers": [
             "I enjoyed the film in spite of the silly story.",
             "I enjoyed the film in spite of the story being silly.",
@@ -270,7 +280,7 @@
         },
         {
           "num": 5,
-          "prompt": "(despite)",
+          "prompt": "We live in the same building. We hardly ever see each other. (despite)",
           "answers": [
             "Despite living in the same building, we hardly ever see each other.",
             "Despite the fact (that) we live in the same building, we hardly ever see each other.",
@@ -279,7 +289,7 @@
         },
         {
           "num": 6,
-          "prompt": "(even though)",
+          "prompt": "They came to the party. They hadn’t been invited. (even though)",
           "answers": [
             "They came to the party even though they hadn't been invited.",
             "Even though they hadn't been invited, they came to the party."
@@ -294,28 +304,28 @@
       "items": [
         {
           "num": 1,
-          "prompt": "(like / garden)",
+          "prompt": "The house isn’t very nice. (like / garden)",
           "answers": [
             "The house isn't very nice. I like the garden though."
           ]
         },
         {
           "num": 2,
-          "prompt": "(very long)",
+          "prompt": "I enjoyed reading the book. (very long)",
           "answers": [
             "It's very long though."
           ]
         },
         {
           "num": 3,
-          "prompt": "(ate)",
+          "prompt": "We didn’t like the food. (ate)",
           "answers": [
             "We ate it though."
           ]
         },
         {
           "num": 4,
-          "prompt": "(don't like / husband)",
+          "prompt": "Laura is very nice. (don’t like / husband)",
           "answers": [
             "I don't like her husband though."
           ]

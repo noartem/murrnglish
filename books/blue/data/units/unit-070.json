@@ -9,10 +9,11 @@
     {
       "id": "70.1",
       "type": "choice",
-      "instruction": "Which is correct?",
+      "instruction": "Read the descriptions and choose the correct form.",
       "items": [
         {
           "num": "1a",
+          "cue": "🔧 The engine is making … What is it?",
           "options": [
             "strange noise",
             "a strange noise"
@@ -21,6 +22,7 @@
         },
         {
           "num": "1b",
+          "cue": "🛣️ We live near a busy road, so there’s … of noise.",
           "options": [
             "there's a lot of noise",
             "there are a lot of noises"
@@ -29,6 +31,7 @@
         },
         {
           "num": "2a",
+          "cue": "☀️ … comes from the sun.",
           "options": [
             "Light",
             "A light"
@@ -37,6 +40,7 @@
         },
         {
           "num": "2b",
+          "cue": "🏠 I thought there was somebody in the house, because there was … on inside.",
           "options": [
             "light",
             "a light"
@@ -45,6 +49,7 @@
         },
         {
           "num": "3a",
+          "cue": "⏰ I was in a hurry this morning. I didn’t have … for breakfast.",
           "options": [
             "time",
             "a time"
@@ -53,6 +58,7 @@
         },
         {
           "num": "3b",
+          "cue": "🏖️ We really enjoyed our holiday. We had … .",
           "options": [
             "great time",
             "a great time"
@@ -61,6 +67,7 @@
         },
         {
           "num": "4a",
+          "cue": "🥤 Can I have … of water, please?",
           "options": [
             "glass of water",
             "a glass of water"
@@ -69,6 +76,7 @@
         },
         {
           "num": "4b",
+          "cue": "⚠️ Be careful. The window has been broken and there’s … on the floor.",
           "options": [
             "broken glass",
             "a broken glass"
@@ -77,6 +85,7 @@
         },
         {
           "num": "5a",
+          "cue": "🏨 We stayed at a hotel. We had … .",
           "options": [
             "very nice room",
             "a very nice room"
@@ -85,6 +94,7 @@
         },
         {
           "num": "5b",
+          "cue": "🚗 We have a big garage. There’s … for two cars.",
           "options": [
             "room",
             "a room"
@@ -96,10 +106,11 @@
     {
       "id": "70.2",
       "type": "choice",
-      "instruction": "Which is correct?",
+      "instruction": "Read the descriptions and choose the correct form.",
       "items": [
         {
           "num": 1,
+          "cue": "🏖️ Did you have … when you were away?",
           "options": [
             "nice weather",
             "a nice weather"
@@ -108,6 +119,7 @@
         },
         {
           "num": 2,
+          "cue": "🎲 We were very unfortunate. We had … .",
           "options": [
             "bad luck",
             "a bad luck"
@@ -116,6 +128,7 @@
         },
         {
           "num": 3,
+          "cue": "🚆 Our … from Paris to Moscow by train was very tiring.",
           "options": [
             "travel",
             "journey"
@@ -124,6 +137,7 @@
         },
         {
           "num": 4,
+          "cue": "🚨 When the fire alarm rang, there was … .",
           "options": [
             "complete chaos",
             "a complete chaos"
@@ -132,6 +146,7 @@
         },
         {
           "num": 5,
+          "cue": "📰 Bad news … make people happy.",
           "options": [
             "don't",
             "doesn't"
@@ -140,6 +155,7 @@
         },
         {
           "num": 6,
+          "cue": "🏞️ There’s … in this part of the country.",
           "options": [
             "some lovely scenery",
             "a lovely scenery"
@@ -148,6 +164,7 @@
         },
         {
           "num": 7,
+          "cue": "💼 I like my job, but it’s … .",
           "options": [
             "very hard work",
             "a very hard work"
@@ -156,6 +173,7 @@
         },
         {
           "num": 8,
+          "cue": "🖨️ I want to print some documents, but the printer is out of … .",
           "options": [
             "paper",
             "papers"
@@ -164,6 +182,7 @@
         },
         {
           "num": 9,
+          "cue": "🚕 The trip took a long time. There was … .",
           "options": [
             "heavy traffic",
             "a heavy traffic"
@@ -172,6 +191,7 @@
         },
         {
           "num": "10a",
+          "cue": "💇 Your hair … too long.",
           "options": [
             "Your hair is",
             "Your hairs are"
@@ -180,6 +200,7 @@
         },
         {
           "num": "10b",
+          "cue": "💈 You should have … cut.",
           "options": [
             "it",
             "them"
@@ -331,10 +352,11 @@
     {
       "id": "70.4",
       "type": "write",
-      "instruction": "What do you say in these situations? Use the word in brackets in your sentence.",
+      "instruction": "What do you say in each situation? Read the descriptions and use the word in brackets in your sentence.",
       "items": [
         {
           "num": 1,
+          "cue": "🚉 Your friends have just arrived at the station. You can’t see any cases or bags. You ask:",
           "prompt": "(luggage)",
           "answers": [
             "Do you have any luggage?"
@@ -342,6 +364,7 @@
         },
         {
           "num": 2,
+          "cue": "🗺️ You are at a tourist office. You want to know about places to visit in the town. You say:",
           "prompt": "(information) I'd like",
           "answers": [
             "I'd like some information about places to visit.",
@@ -350,6 +373,7 @@
         },
         {
           "num": 3,
+          "cue": "🎓 You are a student. You want your teacher to advise you about which courses to do. You ask:",
           "prompt": "(advice) Can you give",
           "answers": [
             "Can you give me some advice about which courses to do?",
@@ -358,6 +382,7 @@
         },
         {
           "num": 4,
+          "cue": "📞 You applied for a job and have just heard that you were successful. You ring Tom and say:",
           "prompt": "(good news) Hi, Tom. I",
           "answers": [
             "I've just got some good news.",
@@ -370,6 +395,7 @@
         },
         {
           "num": 5,
+          "cue": "⛰️ You are at the top of a mountain. You can see a very long way. It is beautiful. You say:",
           "prompt": "(view) It",
           "answers": [
             "It's a beautiful view, isn't it?",
@@ -378,6 +404,7 @@
         },
         {
           "num": 6,
+          "cue": "🌧️ You look out of the window: cold, wet and windy. You say:",
           "prompt": "(weather) What",
           "answers": [
             "What horrible weather!",

@@ -1,5 +1,5 @@
 // "Add to dictionary" for a word selected in the text: select a word (or a
-// short phrase) in an exercise or a rule and a small button appears under
+// short phrase) in an exercise or a lesson and a small button appears under
 // it; the button opens the word editor with the word, the sentence it came
 // from and where it was found. Selections inside the answer fields are the
 // learner's own typing and are left alone, as is anything that is not one to
@@ -12,7 +12,7 @@ import { pickableWord } from "../words";
 import { openWordEditor } from "./WordEditor";
 
 // the smallest block that reads as the word's sentence
-const CONTEXT = ".item, .instruction, .ruleprose, .ruleexample, .rulecols > span, .rulesubhead, .matchrow, .option, p, li";
+const CONTEXT = ".item, .instruction, .itemcue, .lbubble, .matchrow, .option, td, p, li";
 
 interface Pick {
   word: string;

@@ -213,7 +213,8 @@
     {
       "id": "8.3",
       "type": "self-check",
-      "instruction": "Write four sentences about yourself. Use I haven’t and choose from the boxes.",
+      "instruction": "Write four sentences about yourself with I haven’t. Take something from the first column of the table and a time from the second.",
+      "scene": "Things you may not have done | When\nused a computer | today\ntravelled by bus | this week\neaten any fruit | recently\nbeen to the cinema | for ages\nread a book | since …\nlost anything | this year",
       "items": [
         {
           "num": 1,
@@ -255,10 +256,11 @@
     {
       "id": "8.4",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences.",
+      "instruction": "Read the descriptions of the situations and complete the sentences.",
       "items": [
         {
           "num": 1,
+          "cue": "🚗 Jack is behind the wheel for the very first time. He’s nervous and unsure what to do.",
           "parts": [
             "It’s the first time ",
             " a car."
@@ -272,6 +274,7 @@
         },
         {
           "num": 2,
+          "cue": "🦒 At the zoo some children stare at a giraffe. They’ve never seen one before.",
           "parts": [
             "It’s the first time ",
             " a giraffe."
@@ -285,6 +288,7 @@
         },
         {
           "num": 3,
+          "cue": "🐴 Sue is on a horse. She looks stiff and uncomfortable: it’s all new to her.",
           "parts": [
             "She ",
             " before."
@@ -298,6 +302,7 @@
         },
         {
           "num": 4,
+          "cue": "🗾 Joe and Lisa are on holiday in Japan. They went there once before.",
           "parts": [
             "This is the second time ",
             "."
@@ -311,6 +316,7 @@
         },
         {
           "num": 5,
+          "cue": "🏨 Emily is staying at the Prince Hotel. She stayed there a few years ago too.",
           "parts": [
             "It’s not the first ",
             " this hotel."
@@ -325,6 +331,7 @@
         },
         {
           "num": 6,
+          "cue": "🎾 Ben is playing tennis for the first time. He’s a total beginner.",
           "parts": [
             "",
             " before."

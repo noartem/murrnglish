@@ -9,13 +9,14 @@
     {
       "id": "9.1",
       "type": "write",
-      "instruction": "Посмотрите на картинки и ответьте на вопросы.",
+      "instruction": "Прочитайте описания и ответьте на вопросы.",
       "example": [
         1
       ],
       "items": [
         {
           "num": 1,
+          "cue": "📷🛁 Он фотограф. Но сейчас он лежит в ванне.",
           "prompt": "Does he take photographs?\nIs he taking a photograph?\nWhat is he doing?",
           "answers": [
             "Yes, he does.",
@@ -25,6 +26,7 @@
         },
         {
           "num": 2,
+          "cue": "🚌🎹 Она водитель автобуса. Сейчас она сидит за пианино и играет.",
           "prompt": "Is she driving a bus?\nDoes she drive a bus?\nWhat is she doing?",
           "answers": [
             "No, she isn’t.",
@@ -34,6 +36,7 @@
         },
         {
           "num": 3,
+          "cue": "🪟 Он мойщик окон. Прямо сейчас он моет окно.",
           "prompt": "Does he clean windows?\nIs he cleaning a window?\nWhat is he doing?",
           "answers": [
             "Yes, he does.",
@@ -43,6 +46,7 @@
         },
         {
           "num": 4,
+          "cue": "👩‍🏫☕ Они учителя. Сегодня выходной, и они пьют кофе в кафе.",
           "prompt": "Are they teaching?\nDo they teach?\nWhat do they do?",
           "answers": [
             "No, they aren’t.",

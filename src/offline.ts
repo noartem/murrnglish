@@ -1,27 +1,30 @@
 import { useSyncExternalStore } from "react";
 import type { Book } from "./books";
 import { BOOKS, bookUrl } from "./books";
-import { COURSE_BUNDLE, RULES_FILE } from "./data";
+import { COURSE_BUNDLE } from "./data";
 import { loadDecks } from "./deckdata";
 import { offlineKey, offlineRemovedKey } from "./keys";
 
 // Offline downloads: the page-side engine behind the "Download" buttons. They
 // fill the same Cache Storage buckets the service worker (public/sw.js)
 // serves from, so one download makes a WHOLE book work without network — the
-// document, the bundles, the book PDF and its data.
+// document, the bundles, the book's lessons and exercises.
 //
 // Two kinds of bucket, so a book can be removed without touching the others:
 //   SHELL_CACHE        the app itself: document, /assets/, fonts, icons
 //   bookCache(id)      everything under /books/<id>/
 // The service worker picks the bucket by the same rule (cacheFor in sw.js).
 //
-// A book's data is four small files, not ~190: data/course.json carries every
-// unit and additional exercise (packed by scripts/sync_books.mjs) and the
-// fetchers in data.ts read it when a per-exercise request fails offline.
+// A book's data is three small files and its cover, not ~190: data/course.json
+// carries every unit (with its lesson) and additional exercise, packed by
+// scripts/sync_books.mjs, and the fetchers in data.ts read it when a
+// per-exercise request fails offline.
 //
 // Cache names must equal the ones in public/sw.js — change both together.
-export const SHELL_CACHE = "murrnglish-shell-v1";
-export const bookCache = (bookId: string) => `murrnglish-book-${bookId}-v1`;
+// -v2: the books no longer carry their PDF; the worker deletes every -v1
+// cache (and the tens of megabytes of PDF in them) when it activates.
+export const SHELL_CACHE = "murrnglish-shell-v2";
+export const bookCache = (bookId: string) => `murrnglish-book-${bookId}-v2`;
 
 const BASE = import.meta.env.BASE_URL;
 // Lookups and stores ignore Vary: these caches are keyed by URL alone. A Vary
@@ -42,12 +45,12 @@ const SHELL_FILES = [
 ].map((f) => `${BASE}${f}`);
 
 export interface DownloadProgress {
-  /** bytes stored so far, book.pdf's stream included */
+  /** bytes stored so far */
   bytes: number;
   /**
-   * Bytes this run expects: book.pdf's size plus every byte stored outside it.
-   * 0 while book.pdf's size is unknown, which means there is no fraction to
-   * draw yet (see downloadFraction).
+   * Bytes this run expects: what has been stored plus what the book still
+   * has to bring. 0 means there is no fraction to draw yet (see
+   * downloadFraction).
    */
   totalBytes: number;
 }
@@ -109,22 +112,17 @@ export function useDownloads(): Readonly<Record<string, DownloadState>> {
 }
 
 /**
- * Everything a book needs beyond the shell, in download order. index.json,
- * pages.json and totals.json are what the app asks for when the book opens,
- * course.json is the whole course in one file (see the header) and
- * rules.json the text of the rules compendium. book.pdf is listed last but downloaded by run() itself,
- * streamed, so its megabytes come with progress. scripts/sync_books.mjs sums
- * the same files for the size the panel shows.
+ * Everything a book needs beyond the shell, in download order. index.json
+ * and totals.json are what the app asks for when the book opens, course.json
+ * is the whole course with its lessons in one file (see the header).
+ * scripts/sync_books.mjs sums the same files for the size the panel shows.
  */
 export function bookUrls(book: Book): string[] {
   return [
     bookUrl(book, "data/index.json"),
     bookUrl(book, "data/totals.json"),
-    bookUrl(book, "data/pages.json"),
     bookUrl(book, COURSE_BUNDLE),
-    bookUrl(book, RULES_FILE),
     bookUrl(book, book.cover.file),
-    bookUrl(book, "book.pdf"),
   ];
 }
 
@@ -171,9 +169,9 @@ export function downloadBook(book: Book): Promise<void> {
 
 /**
  * True when every file of the book is in its cache — checked against Cache
- * Storage, not the flag. Every file, not book.pdf alone: reading a unit online
- * caches the PDF by itself (the worker stores what it serves), and a book
- * missing course.json still fails offline on the next unit.
+ * Storage, not the flag: reading a unit online caches some of the files by
+ * itself (the worker stores what it serves), and a book missing course.json
+ * still fails offline on the next unit.
  */
 export async function isDownloaded(book: Book): Promise<boolean> {
   if (!(await caches.has(bookCache(book.id)))) return false;
@@ -243,20 +241,10 @@ function size(r: Response): number {
   return Number(r.headers.get("content-length")) || 0;
 }
 
-/** Content-length of `url` from a HEAD — no body, 0 if the server refuses. */
-async function headSize(url: string): Promise<number> {
-  try {
-    const r = await fetch(url, { method: "HEAD" });
-    return r.ok ? size(r) : 0;
-  } catch {
-    return 0;
-  }
-}
-
 /**
  * Same-origin URLs this page has already pulled in — the performance log
- * records the document's bundles, the lazy pdf.js chunks and every fetch the
- * app made (index.json, the unit JSON, book.pdf).
+ * records the document's bundles, the lazy chunks and every fetch the app
+ * made (index.json, the unit JSON).
  */
 function usedUrls(): string[] {
   const urls = new Set<string>();
@@ -322,8 +310,6 @@ async function cacheShell(
  * Cache what this visit already used. A service worker starts intercepting only
  * once it has activated, so the document and the bundles of the very first load
  * never reached it — without this pass, install → open → go offline shows a
- * blank page. Book PDFs are deliberately left out: tens of MB must not be
- * pulled in silently — the "Download" buttons own that, with their progress UI.
  *
  * Returns true when the shell cache was empty and this pass warmed it; the
  * caller uses that to schedule one follow-up pass for the data the app fetches
@@ -334,7 +320,7 @@ export async function warmCache(): Promise<boolean> {
   try {
     const shell = await caches.open(SHELL_CACHE);
     const first = !(await shell.match(BASE, MATCH));
-    const used = usedUrls().filter((u) => !u.endsWith("/book.pdf"));
+    const used = usedUrls();
     const byBook = new Map<string, string[]>();
     const forShell: string[] = [];
     for (const u of used) {
@@ -362,54 +348,38 @@ async function runDownload(book: Book): Promise<void> {
     /* no persist() here: nothing to ask */
   }
 
-  const pdfUrl = bookUrl(book, "book.pdf");
-  // How big the download will be, before it starts. book.pdf is ~90% of the
-  // payload and is stored last, so without this the bar would fill with the
-  // small files and then drop back when the book began. A server that refuses
-  // HEAD leaves this 0, and the book's own response headers supply it a moment
-  // before the book's bytes start moving.
-  let bookTotalBytes = await headSize(pdfUrl);
-
-  // Warm the lazy chunks. pdf.js and its worker are separate /assets/ files a
-  // library visit never loads, and so are the card decks; without this the
-  // download's shell scan would miss them and the book would not render (nor
-  // the cards open) offline.
-  const [{ default: workerUrl }] = await Promise.all([
-    import("pdfjs-dist/build/pdf.worker.min.mjs?url"),
-    import("pdfjs-dist"),
-    loadDecks().catch(() => undefined),
-  ]);
+  // Warm the lazy chunks: the card decks are a separate /assets/ file a
+  // library visit never loads, and the download's shell scan would miss them
+  // (the cards would not open offline).
+  await loadDecks().catch(() => undefined);
 
   const shell = await caches.open(SHELL_CACHE);
   const cache = await caches.open(bookCache(book.id));
 
-  // Byte bookkeeping. `stored` counts everything outside book.pdf as it lands;
-  // the total adds that to the book's size, so the bar climbs to the book's
-  // share of the payload and then rides the book's stream to 100%.
+  // Byte bookkeeping. The book's own files are known in advance (the sync
+  // sums them into downloadBytes); the shell's are counted as they land. The
+  // total is what has landed plus what the book still has to bring, so the
+  // bar never runs backwards.
   let stored = 0;
-  let bookBytes = 0;
+  let bookStored = 0;
   const report = () =>
     setState(book.id, {
       progress: {
-        bytes: stored + bookBytes,
-        totalBytes: bookTotalBytes ? bookTotalBytes + stored : 0,
+        bytes: stored,
+        totalBytes: stored + Math.max(0, book.downloadBytes - bookStored),
       },
     });
   const count = (n: number) => {
     stored += n;
     report();
   };
+  report();
 
   // The shell: the document and every same-origin /assets/ file this page has
-  // already pulled in, plus the worker (fetched later, only by the book) and
-  // the icons.
+  // already pulled in, plus the icons.
   await cacheShell(
     shell,
-    [
-      ...usedUrls().filter((u) => new URL(u).pathname.startsWith(`${BASE}assets/`)),
-      new URL(workerUrl, location.href).href,
-      ...SHELL_FILES,
-    ],
+    [...usedUrls().filter((u) => new URL(u).pathname.startsWith(`${BASE}assets/`)), ...SHELL_FILES],
     true,
     count,
   );
@@ -442,52 +412,11 @@ async function runDownload(book: Book): Promise<void> {
     /* no font list: offline uses the fallback faces */
   }
 
-  // The data — a handful of files, whatever the book's size: the ones the app
-  // asks for when the book opens (offline it boots on index.json) and the
-  // packed course.
-  await storeMissing(cache, bookUrls(book).filter((u) => u !== pdfUrl), true, count);
-
-  // A book already in the cache (a finished earlier download, or the copy the
-  // service worker kept while the book was read online) is not fetched again:
-  // when a release adds a small file to bookUrls, an installed app tops its
-  // copy up with that file instead of pulling tens of megabytes once more.
-  const cachedPdf = await cache.match(pdfUrl, MATCH);
-  if (cachedPdf) {
-    bookBytes = size(cachedPdf) || bookTotalBytes;
-    if (!bookTotalBytes) bookTotalBytes = bookBytes;
-    report();
-    return;
-  }
-
-  // book.pdf last, streamed so the panel can show megabytes: assembling the
-  // whole reader into one Uint8Array first (as an arrayBuffer() would) is a
-  // second copy of the book with no progress in between.
-  const pdf = await fetch(pdfUrl);
-  if (!pdf.ok) throw new Error(pdfUrl);
-  if (!bookTotalBytes) bookTotalBytes = size(pdf);
-  let bytes: Uint8Array;
-  if (pdf.body) {
-    const reader = pdf.body.getReader();
-    const chunks: Uint8Array[] = [];
-    let got = 0;
-    for (;;) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      if (!value) continue;
-      chunks.push(value);
-      got += value.length;
-      bookBytes = got;
-      report();
-    }
-    bytes = new Uint8Array(got);
-    let off = 0;
-    for (const c of chunks) {
-      bytes.set(c, off);
-      off += c.length;
-    }
-  } else {
-    bytes = new Uint8Array(await pdf.arrayBuffer());
-    bookBytes = bytes.length;
-  }
-  await cache.put(pdfUrl, new Response(bytes));
+  // The book — a handful of files, whatever its size: the ones the app asks
+  // for when the book opens (offline it boots on index.json), the packed
+  // course with its lessons, and the cover.
+  await storeMissing(cache, bookUrls(book), true, (n) => {
+    bookStored += n;
+    count(n);
+  });
 }

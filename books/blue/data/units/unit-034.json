@@ -83,17 +83,55 @@
     },
     {
       "id": "34.2",
-      "type": "choice",
-      "instruction": "Two of these sentences are not correct. Change the two that are not correct.",
-      "options": [
-        "Tom suggested that I look for another job.",
-        "I called Tina and suggested that we meet for coffee.",
-        "What do you suggest me to do?",
-        "What sort of car do you suggest I should buy?",
-        "I suggest you to read this book.",
-        "I suggested that Anna learn to drive."
-      ],
-      "answer": 2
+      "type": "write",
+      "instruction": "Two of the sentences are not correct. Correct those two, and write ‘OK’ for the others.",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "Tom suggested that I look for another job.",
+          "answers": [
+            "OK"
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "I called Tina and suggested that we meet for coffee.",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "What do you suggest me to do?",
+          "answers": [
+            "What do you suggest I do?",
+            "What do you suggest I should do?"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "What sort of car do you suggest I should buy?",
+          "answers": [
+            "OK"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I suggest you to read this book.",
+          "answers": [
+            "I suggest you read this book.",
+            "I suggest you should read this book."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I suggested that Anna learn to drive.",
+          "answers": [
+            "OK"
+          ]
+        }
+      ]
     },
     {
       "id": "34.3",

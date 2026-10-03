@@ -143,7 +143,7 @@
   {
    "id": "116.3",
    "type": "matching",
-   "instruction": "What does as mean in these sentences?",
+   "instruction": "What does as mean in each sentence?",
    "leftOptions": [
     "1 As they lived near us, we used to see them quite often.",
     "2 Kate slipped as she was getting off the bus.",
@@ -191,7 +191,7 @@
   {
    "id": "116.4",
    "type": "write",
-   "instruction": "In some of these sentences, as is not correct. Correct the sentences where necessary.",
+   "instruction": "In some of the sentences, as is not correct. Correct them where necessary.",
    "items": [
     {
      "num": 1,
@@ -254,7 +254,7 @@
   {
    "id": "116.5",
    "type": "self-check",
-   "instruction": "Use your own ideas to complete these sentences.",
+   "instruction": "Use your own ideas to complete the sentences.",
    "items": [
     {
      "num": 1,

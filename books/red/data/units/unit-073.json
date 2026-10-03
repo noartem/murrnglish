@@ -9,7 +9,7 @@
     {
       "id": "73.1",
       "type": "self-check",
-      "instruction": "Как вы к этому относитесь? Выберите семь слов из рамки и напишите предложения с: I like … I don’t like … I love … или I hate …",
+      "instruction": "Как вы к этому относитесь? Напишите о себе по одному предложению на каждое слово в скобках: I like … / I don’t like … / I love … / I hate … .",
       "wordBank": [
         "big cities",
         "computer games",
@@ -28,7 +28,7 @@
       "items": [
         {
           "num": 1,
-          "prompt": "",
+          "prompt": "(экзамены / exams)",
           "modelAnswers": [
             "I hate exams.",
             "I like exams."
@@ -36,56 +36,56 @@
         },
         {
           "num": 2,
-          "prompt": "",
+          "prompt": "(собаки / dogs)",
           "modelAnswers": [
             "I don’t like dogs."
           ]
         },
         {
           "num": 3,
-          "prompt": "",
+          "prompt": "(музеи / museums)",
           "modelAnswers": [
             "I hate museums."
           ]
         },
         {
           "num": 4,
-          "prompt": "",
+          "prompt": "(большие города / big cities)",
           "modelAnswers": [
             "I love big cities."
           ]
         },
         {
           "num": 5,
-          "prompt": "",
+          "prompt": "(теннис / tennis)",
           "modelAnswers": [
             "I don’t like tennis."
           ]
         },
         {
           "num": 6,
-          "prompt": "",
+          "prompt": "(шоколад / chocolate)",
           "modelAnswers": [
             "I love chocolate."
           ]
         },
         {
           "num": 7,
-          "prompt": "",
+          "prompt": "(компьютерные игры / computer games)",
           "modelAnswers": [
             "I don’t like computer games."
           ]
         },
         {
           "num": 8,
-          "prompt": "",
+          "prompt": "(вечеринки / parties)",
           "modelAnswers": [
             "I hate parties."
           ]
         },
         {
           "num": 9,
-          "prompt": "",
+          "prompt": "(джаз / jazz)",
           "modelAnswers": []
         }
       ]
@@ -108,49 +108,49 @@
       "items": [
         {
           "num": 1,
-          "prompt": "(history)",
+          "prompt": "(история / history)",
           "modelAnswers": [
             "I’m very interested in history."
           ]
         },
         {
           "num": 2,
-          "prompt": "(politics)",
+          "prompt": "(политика / politics)",
           "modelAnswers": [
             "I’m not interested in politics."
           ]
         },
         {
           "num": 3,
-          "prompt": "(sport)",
+          "prompt": "(спорт / sport)",
           "modelAnswers": [
             "I’m interested in sport."
           ]
         },
         {
           "num": 4,
-          "prompt": "(art)",
+          "prompt": "(искусство / art)",
           "modelAnswers": [
             "I don’t know much about art."
           ]
         },
         {
           "num": 5,
-          "prompt": "(astronomy)",
+          "prompt": "(астрономия / astronomy)",
           "modelAnswers": [
             "I don’t know anything about astronomy."
           ]
         },
         {
           "num": 6,
-          "prompt": "(economics)",
+          "prompt": "(экономика / economics)",
           "modelAnswers": [
             "I know a little about economics."
           ]
         },
         {
           "num": 7,
-          "prompt": "",
+          "prompt": "(любая тема по выбору / a subject of your own — например, music)",
           "modelAnswers": []
         }
       ]

@@ -14,7 +14,7 @@ import {
   parseDeck,
   parsePage,
   parseRoute,
-  rulesHash,
+  legacyHash,
 } from "./routes";
 import syncScript from "../scripts/sync_books.mjs?raw";
 import deckSync from "../scripts/sync_decks.mjs?raw";
@@ -25,6 +25,7 @@ const book = (id: string, units: number, additional: number): Book => ({
   title: id,
   edition: "",
   level: "",
+  lang: "en",
   authors: "",
   publisher: "",
   color: "#000",
@@ -99,12 +100,14 @@ describe("bookHash", () => {
 });
 
 describe("sections", () => {
-  it("opens the rules compendium, a book's rules and a unit's rule", () => {
-    expect(parseRoute("#/rules", BOOKS)).toEqual({ view: "rules" });
-    expect(parseRoute("#/rules/green", BOOKS)).toEqual({ view: "rules" });
-    expect(parseRoute("#/rules/blue", BOOKS)).toEqual({ view: "rules", book: BLUE });
-    expect(parseRoute("#/rules/red/u200", BOOKS)).toEqual({ view: "rules", book: RED, unit: 115 });
-    expect(parseRoute(rulesHash(BLUE, 12), BOOKS)).toEqual({ view: "rules", book: BLUE, unit: 12 });
+  it("sends the old rules compendium's links to the units", () => {
+    expect(legacyHash("#/rules", BOOKS)).toBe("#/");
+    expect(legacyHash("#/rules/green", BOOKS)).toBe("#/");
+    expect(legacyHash("#/rules/blue", BOOKS)).toBe("#/blue");
+    expect(legacyHash("#/rules/red/u200", BOOKS)).toBe("#/red/u115");
+    expect(legacyHash("#/blue/u12", BOOKS)).toBeNull();
+    expect(parseRoute("#/rules/blue/u12", BOOKS)).toEqual({ view: "book", book: BLUE, page: { kind: "unit", n: 12 } });
+    expect(parseRoute("#/rules", BOOKS)).toEqual({ view: "library" });
   });
 
   it("opens the deck list and every kind of deck", () => {

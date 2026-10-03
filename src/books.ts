@@ -13,6 +13,8 @@ export interface Book {
   title: string;
   edition: string;
   level: string;
+  /** the language of the book's lessons and instructions */
+  lang: "en" | "ru";
   authors: string;
   publisher: string;
   /** the printed cover's color: library card accents, never UI state */
@@ -20,7 +22,7 @@ export interface Book {
   cover: { file: string; width: number; height: number };
   units: number;
   additional: number;
-  /** bytes the offline download stores (book, cover, data) */
+  /** bytes the offline download stores (cover and data) */
   downloadBytes: number;
 }
 
@@ -30,7 +32,7 @@ export function bookById(id: string): Book | undefined {
   return BOOKS.find((b) => b.id === id);
 }
 
-/** URL of a file served for this book: bookUrl(b, "book.pdf") -> "/books/blue/book.pdf" */
+/** URL of a file served for this book: bookUrl(b, "cover.png") -> "/books/blue/cover.png" */
 export function bookUrl(book: Book, file: string): string {
   return `${import.meta.env.BASE_URL}books/${book.id}/${file}`;
 }

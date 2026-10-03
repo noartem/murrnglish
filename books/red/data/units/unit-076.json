@@ -9,7 +9,7 @@
     {
       "id": "76.1",
       "type": "fill-in",
-      "instruction": "A asks B some questions. Use the information in the box to write B’s answers. Use one (not a/an …) in the answers.",
+      "instruction": "A задаёт B вопросы. Напишите ответы B по предложениям из списка. В ответах замените существительное на one (а не a/an …).",
       "wordBank": [
         "B doesn’t need a car",
         "B has just had a cup of coffee",
@@ -188,7 +188,7 @@
     {
       "id": "76.3",
       "type": "fill-in",
-      "instruction": "A is talking to B. Use the information to complete the conversations. Use one/ones.",
+      "instruction": "A разговаривает с B. Допишите разговоры. Используйте one/ones.",
       "items": [
         {
           "num": 1,

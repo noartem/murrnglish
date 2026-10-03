@@ -8,6 +8,7 @@
       "type": "fill-in",
       "instruction": "Complete the sentences with school or the school.",
       "items": [
+        {"num": 1, "parts": ["Why aren’t your children at ", " today? Are they ill?"], "answers": [["school"]], "example": true},
         {
           "num": 2,
           "parts": ["When he was younger, Ben hated ", ", but he enjoys it now."],
@@ -78,6 +79,7 @@
       "instruction": "Complete the sentences. Choose from the box.",
       "wordBank": ["bed", "the bed", "in bed", "home", "at home", "like home", "work", "to work", "after work"],
       "items": [
+        {"num": 1, "parts": ["How did you get ", " after the party?"], "answers": [["home"]], "example": true},
         {
           "num": 2,
           "parts": ["How do you usually go ", " in the morning? By bus?"],
@@ -131,6 +133,7 @@
       "instruction": "Complete the sentences. Choose at/in/to + hospital, school etc.",
       "wordBank": ["bed", "home", "hospital", "prison", "school", "university", "work"],
       "items": [
+        {"num": 1, "parts": ["Kate’s mother has to have an operation. She’ll be ", " for a few days."], "answers": [["in hospital"]], "example": true},
         {
           "num": 2,
           "parts": ["In your country, from what age do children have to go ", "?"],

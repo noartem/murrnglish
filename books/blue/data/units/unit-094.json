@@ -9,7 +9,9 @@
     {
       "id": "94.1",
       "type": "fill-in",
-      "instruction": "You met these people at a party. The next day you tell a friend about these people. Complete the sentences using who or whose.",
+      "instruction": "You met the six people described in the scene. The next day you tell a friend about them. Complete the sentences using who or whose.",
+      "scene": "The six people you met at the party (read the descriptions):\n1. My mother writes detective stories.\n2. My wife is an English teacher.\n3. I own a restaurant.\n4. My ambition is to climb Mount Everest.\n5. We have just got married.\n6. My parents used to work in a circus.",
+      "scene": "The six people you met at the party (read the descriptions):\n1. My mother writes detective stories.\n2. My wife is an English teacher.\n3. I own a restaurant.\n4. My ambition is to climb Mount Everest.\n5. We have just got married.\n6. My parents used to work in a circus.",
       "items": [
         {
           "num": 1,
@@ -265,7 +267,7 @@
     {
       "id": "94.4",
       "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences.",
+      "instruction": "Use your own ideas to complete the sentences.",
       "items": [
         {
           "num": 1,

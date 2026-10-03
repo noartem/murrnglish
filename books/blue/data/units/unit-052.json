@@ -9,7 +9,7 @@
     {
       "id": "52.1",
       "type": "fill-in",
-      "instruction": "Complete these sentences with a question tag.",
+      "instruction": "Complete each sentence with a question tag.",
       "items": [
         {
           "num": 1,
@@ -234,7 +234,8 @@
     {
       "id": "52.2",
       "type": "write",
-      "instruction": "In these situations you expect your friend to agree with you. Use a question tag in your sentences.",
+      "instruction": "You expect your friend to agree with you. Read each description and say it with a question tag.",
+      "scene": "💬 The situations (read the descriptions):\n1. You look out of the window. The sky is blue and the sun is shining.\n2. You are outside a restaurant with a friend, looking at the prices. They are very high.\n3. You and a colleague have just finished a training course. You both really enjoyed it.\n4. Your friend's hair is much shorter than when you last met her.\n5. You are listening to a woman singing. You like her voice very much.\n6. You are trying on a jacket in a shop and looking in the mirror. You don't like what you see.\n7. You and a friend are crossing an old wooden bridge. Some of the planks are broken.",
       "items": [
         {
           "num": 1,
@@ -295,7 +296,7 @@
     {
       "id": "52.3",
       "type": "write",
-      "instruction": "In these situations you are asking for information, asking people to do things etc.",
+      "instruction": "In each situation you want to know something, or you want somebody to do something for you. Say what you would ask.",
       "items": [
         {
           "num": 1,

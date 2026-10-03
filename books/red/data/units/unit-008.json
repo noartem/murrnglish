@@ -198,7 +198,7 @@
     {
       "id": "8.3",
       "type": "fill-in",
-      "instruction": "Допишите вопросы, используя глаголы из рамки:",
+      "instruction": "Вы расспрашиваете Аню о её работе. Над каждым вопросом — её ответ. Допишите вопросы, используя глаголы из рамки:",
       "wordBank": [
         "do",
         "enjoy",
@@ -214,6 +214,7 @@
       "items": [
         {
           "num": 1,
+          "cue": "Аня: “I work in a bookshop.”",
           "parts": [
             "What ",
             "?"
@@ -227,6 +228,7 @@
         },
         {
           "num": 2,
+          "cue": "Аня: “Yes, very much.”",
           "parts": [
             "",
             " it?"
@@ -240,6 +242,7 @@
         },
         {
           "num": 3,
+          "cue": "Аня: “At nine o’clock.”",
           "parts": [
             "What time ",
             " in the morning?"
@@ -252,6 +255,7 @@
         },
         {
           "num": 4,
+          "cue": "Аня: “Yes, sometimes.”",
           "parts": [
             "",
             " on Saturdays?"
@@ -264,6 +268,7 @@
         },
         {
           "num": 5,
+          "cue": "Аня: “Usually on foot.”",
           "parts": [
             "How ",
             " to work?"
@@ -276,6 +281,7 @@
         },
         {
           "num": 6,
+          "cue": "Аня: “He’s a teacher.”",
           "parts": [
             "And your husband. What ",
             "?"
@@ -288,6 +294,7 @@
         },
         {
           "num": 7,
+          "cue": "Аня: “Science.”",
           "parts": [
             "What ",
             "?"
@@ -300,6 +307,7 @@
         },
         {
           "num": 8,
+          "cue": "Аня: “Yes, he loves it.”",
           "parts": [
             "",
             " his job?"

@@ -9,7 +9,7 @@
     {
       "id": "7.1",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences using the present perfect. Choose from these verbs:",
+      "instruction": "Read the descriptions and complete the sentences using the present perfect. Choose from these verbs:",
       "wordBank": [
         "break",
         "disappear",
@@ -23,6 +23,7 @@
       "items": [
         {
           "num": 1,
+          "cue": "🔑 Tom has searched every pocket and every drawer. His key is nowhere.",
           "parts": [
             "Tom ",
             " his key."
@@ -36,6 +37,7 @@
         },
         {
           "num": 2,
+          "cue": "📈 Maria’s English used to be weak. These days it’s much better.",
           "parts": [
             "Her English ",
             "."
@@ -48,6 +50,7 @@
         },
         {
           "num": 3,
+          "cue": "👜 My bag was on this chair a minute ago. Now the chair is empty.",
           "parts": [
             "My bag ",
             "."
@@ -60,6 +63,7 @@
         },
         {
           "num": 4,
+          "cue": "🦽 Lisa’s leg is in plaster and she can’t walk.",
           "parts": [
             "Lisa ",
             "."
@@ -72,6 +76,7 @@
         },
         {
           "num": 5,
+          "cue": "🚌 A bus ticket cost £1.80 last week. Today it costs £2.",
           "parts": [
             "The bus fare ",
             "."
@@ -84,6 +89,7 @@
         },
         {
           "num": 6,
+          "cue": "🧔 Dan’s chin was always smooth. Now there’s a beard on it.",
           "parts": [
             "Dan ",
             "."
@@ -96,8 +102,9 @@
         },
         {
           "num": 7,
+          "cue": "🌦️ Ten minutes ago it was pouring. Now the rain is over.",
           "parts": [
-            "It ",
+            "",
             "."
           ],
           "answers": [
@@ -109,8 +116,9 @@
         },
         {
           "num": 8,
+          "cue": "👕 I washed my sweater, and now it’s too small for me.",
           "parts": [
-            "My sweater ",
+            "",
             "."
           ],
           "answers": [
@@ -347,10 +355,11 @@
     {
       "id": "7.4",
       "type": "write",
-      "instruction": "Read the situations and write sentences with just, already or yet.",
+      "instruction": "Read the descriptions of the situations and write sentences with just, already or yet.",
       "items": [
         {
           "num": 1,
+          "cue": "🍽️ You’ve had lunch and then visit a friend. She offers you something to eat. You say “No thank you” and then…",
           "prompt": "(have lunch)",
           "answers": [
             "I’ve just had lunch."
@@ -358,6 +367,7 @@
         },
         {
           "num": 2,
+          "cue": "📞 Joe left the house five minutes ago. Now the phone rings: “Can I speak to Joe?” Begin with “I’m afraid…”",
           "prompt": "(go out)",
           "answers": [
             "I’m afraid he’s just gone out. / I’m afraid he has just gone out. / I’m afraid he just went out."
@@ -365,6 +375,7 @@
         },
         {
           "num": 3,
+          "cue": "🍝 You’re still eating, but the waiter starts to take your plate. Begin with “Wait a minute!”",
           "prompt": "(not / finish)",
           "answers": [
             "Wait a minute! I haven’t finished yet. / I didn’t finish yet."
@@ -372,6 +383,7 @@
         },
         {
           "num": 4,
+          "cue": "📅 You phoned the restaurant and booked a table earlier. Your friend asks: “Shall I phone and book a table?” Begin with “No,”",
           "prompt": "(do it)",
           "answers": [
             "No, I’ve already done it. / I have already done it. / I already did it. / I did it already."
@@ -379,6 +391,7 @@
         },
         {
           "num": 5,
+          "cue": "🏠 Lisa has been looking for a flat. Maybe she has one now. You ask her…",
           "prompt": "(find)",
           "answers": [
             "Have you found a place to live yet? / Did you find a place to live yet?"
@@ -386,6 +399,7 @@
         },
         {
           "num": 6,
+          "cue": "🧳 You still don’t know where to go on holiday. A friend asks: “Where are you going?”",
           "prompt": "(not / decide)",
           "answers": [
             "I haven’t decided yet. / I didn’t decide yet."
@@ -393,6 +407,7 @@
         },
         {
           "num": 7,
+          "cue": "🚪 Laura went out, but she came home a few minutes ago. Someone asks: “Is Laura still out?” Begin with “No,”",
           "prompt": "(come back)",
           "answers": [
             "No, she’s just come back. / She has just come back. / She just came back."

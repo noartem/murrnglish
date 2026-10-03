@@ -38,14 +38,14 @@
     {
       "id": "140.3",
       "type": "fill-in",
-      "instruction": "Look at the pictures and complete the sentences.",
+      "instruction": "Read each description and complete the sentence.",
       "items": [
         {"num": 1, "parts": ["Her hands were cold, so she put her gloves on."], "answers": [], "example": true},
-        {"num": 2, "parts": ["The plane ", " at 10.55."], "answers": [["took off"]]},
-        {"num": 3, "parts": ["Maria ", ", but it was too big for her."], "answers": [["tried on a hat", "tried on the hat", "tried a hat on", "tried the hat on"]]},
-        {"num": 4, "parts": ["The match ", " because of the weather."], "answers": [["was called off"]]},
-        {"num": 5, "parts": ["Mark's parents went to the airport to ", "."], "answers": [["see him off"]]},
-        {"num": 6, "parts": ["He took his sunglasses out of his pocket and ", "."], "answers": [["put them on"]]}
+        {"num": 2, "cue": "✈️ The plane left the runway at 10.55.", "parts": ["The plane ", " at 10.55."], "answers": [["took off"]]},
+        {"num": 3, "cue": "👒 Maria is trying a hat on in a shop.", "parts": ["Maria ", ", but it was too big for her."], "answers": [["tried on a hat", "tried on the hat", "tried a hat on", "tried the hat on"]]},
+        {"num": 4, "cue": "⚽ The match was called off because of the weather.", "parts": ["The match ", " because of the weather."], "answers": [["was called off"]]},
+        {"num": 5, "cue": "🛫 Mark’s parents are at the airport to say goodbye to him.", "parts": ["Mark's parents went to the airport to ", "."], "answers": [["see him off"]]},
+        {"num": 6, "cue": "🕶️ He took his sunglasses out of his pocket.", "parts": ["He took his sunglasses out of his pocket and ", "."], "answers": [["put them on"]]}
       ]
     }
   ]

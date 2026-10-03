@@ -11,6 +11,7 @@
       "type": "fill-in",
       "instruction": "Put in the or a where necessary. If no word is necessary, leave the space empty.",
       "items": [
+        {"num": 1, "parts": ["Our apartment is on ", " floor."], "answers": [["the tenth"]], "example": true},
         {
           "num": 2,
           "parts": [
@@ -196,10 +197,12 @@
     {
       "id": "73.2",
       "type": "choice",
-      "instruction": "Which is right? (For the, see also Unit 72.)",
+      "instruction": "Read the descriptions and choose the right one. (For the, see also Unit 72.)",
       "items": [
+        {"num": 1, "options": ["I haven’t been to the cinema for ages.", "I haven’t been to cinema for ages."], "answer": 0, "example": true},
         {
           "num": 2,
+          "cue": "📺 Sarah spends most of her free time watching … .",
           "options": [
             "TV",
             "the TV"
@@ -208,6 +211,7 @@
         },
         {
           "num": 3,
+          "cue": "🎧 Do you ever listen to … ?",
           "options": [
             "radio",
             "the radio"
@@ -216,6 +220,7 @@
         },
         {
           "num": 4,
+          "cue": "📺 … was on, but nobody was watching it.",
           "options": [
             "Television",
             "The television"
@@ -224,6 +229,7 @@
         },
         {
           "num": 5,
+          "cue": "🍽️ Have you had … yet?",
           "options": [
             "dinner",
             "the dinner"
@@ -232,6 +238,7 @@
         },
         {
           "num": 6,
+          "cue": "😵 It’s confusing when two people have … .",
           "options": [
             "same name",
             "the same name"
@@ -240,6 +247,7 @@
         },
         {
           "num": 7,
+          "cue": "🍊 What do you want for … ?",
           "options": [
             "for breakfast",
             "for the breakfast"
@@ -248,6 +256,7 @@
         },
         {
           "num": 8,
+          "cue": "🍊 Fruit is an important source of … .",
           "options": [
             "vitamin C",
             "the vitamin C"
@@ -256,6 +265,7 @@
         },
         {
           "num": 9,
+          "cue": "💻 This computer is not connected to … .",
           "options": [
             "internet",
             "the internet"
@@ -264,6 +274,7 @@
         },
         {
           "num": 10,
+          "cue": "🛋️ I lay down on … and looked up at … .",
           "options": [
             "ground",
             "the ground",
@@ -274,6 +285,7 @@
         },
         {
           "num": 11,
+          "cue": "🚆 … to London leaves from platform 3.",
           "options": [
             "Next train",
             "The next train",
@@ -423,6 +435,7 @@
         "sea"
       ],
       "items": [
+        {"num": 1, "parts": ["I’m hungry. It’s time for ", "."], "answers": [["lunch"]], "example": true},
         {
           "num": 2,
           "parts": [

@@ -137,7 +137,8 @@
     {
       "id": "103.2",
       "type": "fill-in",
-      "instruction": "Complete the answers to the questions. Use too or enough + the word(s) in brackets.",
+      "instruction": "Answer the questions in the scene with too or enough + the word in brackets.",
+      "scene": "Each question, with the word you need in brackets (read the descriptions):\nDoes Sophie have a driving licence? (old)\nI need to talk to you about something. (busy)\nLet’s go to the cinema. (late)\nWhy don’t we sit outside? (warm)\nWould you like to be a politician? (shy)\nWould you like to be a teacher? (patience)\nDid you hear what he was saying? (far away)\nCan he read a newspaper in English? (English)",
       "items": [
         {
           "num": 2,

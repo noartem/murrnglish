@@ -26,7 +26,7 @@
       "items": [
         {
           "num": 1,
-          "prompt": "",
+          "prompt": "Нужно купить билет на поезд.",
           "answers": [
             "I went to the station to get a train ticket."
           ]
@@ -40,14 +40,14 @@
         },
         {
           "num": 3,
-          "prompt": "",
+          "prompt": "Нужно купить лекарство.",
           "answers": [
             "I went to the chemist to get some medicine."
           ]
         },
         {
           "num": 4,
-          "prompt": "",
+          "prompt": "Нужно купить овощи.",
           "answers": [
             "I went to the market to buy some vegetables."
           ]

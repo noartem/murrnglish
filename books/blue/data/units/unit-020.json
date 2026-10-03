@@ -9,10 +9,11 @@
     {
       "id": "20.1",
       "type": "write",
-      "instruction": "Write questions with going to.",
+      "instruction": "Read the descriptions and write questions with going to.",
       "items": [
         {
           "num": 1,
+          "cue": "💰 Your friend has won some money. You ask:",
           "prompt": "(what / do?)",
           "answers": [
             "What are you going to do with it?"
@@ -20,6 +21,7 @@
         },
         {
           "num": 2,
+          "cue": "💒 Your friend is going to a wedding next week. You ask:",
           "prompt": "(what / wear?)",
           "answers": [
             "What are you going to wear?"
@@ -27,6 +29,7 @@
         },
         {
           "num": 3,
+          "cue": "🪑 Your friend has just bought a new table. You ask:",
           "prompt": "(where / put?)",
           "answers": [
             "Where are you going to put it?"
@@ -34,6 +37,7 @@
         },
         {
           "num": 4,
+          "cue": "🎉 Your friend has decided to have a party. You ask:",
           "prompt": "(who / invite?)",
           "answers": [
             "Who are you going to invite?"
@@ -41,6 +45,7 @@
         },
         {
           "num": 5,
+          "cue": "🐟 Your friend has bought some fish for dinner. You ask:",
           "prompt": "(how / cook?)",
           "answers": [
             "How are you going to cook it?"
@@ -178,10 +183,11 @@
     {
       "id": "20.3",
       "type": "fill-in",
-      "instruction": "What is going to happen in these situations? Use the words in brackets.",
+      "instruction": "Read the descriptions. What is going to happen? Use the words in brackets.",
       "items": [
         {
           "num": 1,
+          "cue": "🌩️ The sky is full of black clouds.",
           "parts": [
             "There are a lot of black clouds in the sky. ",
             ". (rain)"
@@ -194,6 +200,7 @@
         },
         {
           "num": 2,
+          "cue": "⏰ It’s 8.30 and Tom is just leaving home. He has to be at work at 8.45, but the journey takes 30 minutes.",
           "parts": [
             "He ",
             ". (late)"
@@ -206,6 +213,7 @@
         },
         {
           "num": 3,
+          "cue": "🚤 There’s a hole in the bottom of the boat, and water is pouring in.",
           "parts": [
             "The boat ",
             ". (sink)"
@@ -218,6 +226,7 @@
         },
         {
           "num": 4,
+          "cue": "⛽ Amy and Ben are driving. The tank is nearly empty, and the nearest petrol station is a long way off.",
           "parts": [
             "(run out) They ",
             "."
@@ -230,6 +239,7 @@
         },
         {
           "num": 5,
+          "cue": "🚗 Sarah’s car was badly damaged in an accident. Now it has to be repaired.",
           "parts": [
             "(cost a lot) It ",
             " to repair the car."

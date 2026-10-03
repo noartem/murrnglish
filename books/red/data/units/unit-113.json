@@ -9,7 +9,7 @@
     {
       "id": "113.1",
       "type": "fill-in",
-      "instruction": "Посмотрите на картинки и заполните пропуски. Используйте to/for/at и т. д.",
+      "instruction": "Прочитайте описания и заполните пропуски. Используйте to / for / at и т. д.",
       "items": [
         {
           "num": 1,
@@ -34,7 +34,8 @@
             [
               "to"
             ]
-          ]
+          ],
+          "cue": "🎙️ Мужчина слушает радио."
         },
         {
           "num": 3,
@@ -46,7 +47,8 @@
             [
               "for"
             ]
-          ]
+          ],
+          "cue": "🚕 Они стоят и ждут машину."
         },
         {
           "num": 4,
@@ -58,7 +60,8 @@
             [
               "to"
             ]
-          ]
+          ],
+          "cue": "💬 Пол говорит с Джейн."
         },
         {
           "num": 5,
@@ -70,7 +73,8 @@
             [
               "at"
             ]
-          ]
+          ],
+          "cue": "🖼️ Они разглядывают картину на стене."
         },
         {
           "num": 6,
@@ -82,7 +86,8 @@
             [
               "for"
             ]
-          ]
+          ],
+          "cue": "🔍 Сью ищет Тома глазами по всему залу."
         }
       ]
     },
@@ -358,7 +363,7 @@
     {
       "id": "113.4",
       "type": "write",
-      "instruction": "Ответьте на вопросы. Начните предложения с It depends ....",
+      "instruction": "Прочитайте вопросы и ответьте на них, начиная с It depends … .",
       "example": [
         1,
         2
@@ -369,21 +374,24 @@
           "prompt": "Do you want to go out with us?",
           "answers": [
             "It depends where you’re going."
-          ]
+          ],
+          "cue": "❓ Куда именно вы идёте?"
         },
         {
           "num": 2,
           "prompt": "Do you like eating in restaurants?",
           "answers": [
             "It depends on the restaurant."
-          ]
+          ],
+          "cue": "❓ В какой именно ресторан?"
         },
         {
           "num": 3,
           "prompt": "Do you enjoy watching TV?",
           "answers": [
             "It depends on the programme."
-          ]
+          ],
+          "cue": "❓ Какая именно передача?"
         },
         {
           "num": 4,
@@ -391,14 +399,16 @@
           "answers": [
             "It depends (on) what it is.",
             "It depends what it is."
-          ]
+          ],
+          "cue": "❓ Что именно вам нужно от меня?"
         },
         {
           "num": 5,
           "prompt": "Are you going away this weekend?",
           "answers": [
             "It depends on the weather."
-          ]
+          ],
+          "cue": "❓ Какая погода будет?"
         },
         {
           "num": 6,
@@ -406,14 +416,15 @@
           "answers": [
             "It depends (on) how much you want.",
             "It depends how much you want."
-          ]
+          ],
+          "cue": "❓ Сколько именно денег нужно?"
         }
       ]
     },
     {
       "id": "113.5",
       "type": "write",
-      "instruction": "Переведите предложения на английский язык, используя выражения на странице слева. (замечательный = lovely; парень = boyfriend; выход = exit)",
+      "instruction": "Переведите предложения на английский язык. (замечательный = lovely; парень = boyfriend; выход = exit)",
       "items": [
         {
           "num": 1,

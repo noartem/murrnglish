@@ -9,10 +9,13 @@
     {
       "id": "91.1",
       "type": "fill-in",
-      "instruction": "Look at the pictures and complete the sentences with each or every.",
+      "instruction": "Read the descriptions and complete the sentences with each or every.",
       "items": [
+      {"num": 1, "parts": ["", " player has three cards."], "answers": [["Each"]], "example": true},
+      {"num": 2, "parts": ["Kate has read ", " book in the library."], "answers": [["every"]], "example": true},
         {
           "num": 3,
+          "cue": "🟦 A square, drawn with all four sides the same length.",
           "parts": [
             "",
             " side of a square is the same length."
@@ -25,6 +28,7 @@
         },
         {
           "num": 4,
+          "cue": "🎭 A theatre with an audience in it.",
           "parts": [
             "",
             " seat in the theatre was taken."
@@ -37,6 +41,7 @@
         },
         {
           "num": 5,
+          "cue": "🏢 A block of six flats. One of them has a balcony.",
           "parts": [
             "There are six apartments in the building. ",
             " one has a balcony."
@@ -49,6 +54,7 @@
         },
         {
           "num": 6,
+          "cue": "🕐 A station clock. A train leaves for London on the hour.",
           "parts": [
             "There’s a train to London ",
             " hour."
@@ -61,6 +67,7 @@
         },
         {
           "num": 7,
+          "cue": "💍 A hand wearing four rings.",
           "parts": [
             "She was wearing four rings – one on ",
             " finger."
@@ -73,6 +80,7 @@
         },
         {
           "num": 8,
+          "cue": "🏆 A football team’s trophy shelf with a trophy for each match won.",
           "parts": [
             "Our football team is playing well. We’ve won ",
             " game this season."

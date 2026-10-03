@@ -1,5 +1,5 @@
-// Home: a book's landing (#/<book>). The hero is the actual book cover (page 1 of the
-// same PDF the viewer renders) with a one-paragraph description and a single
+// Home: a book's landing (#/<book>). The hero is the book cover with a
+// one-paragraph description and a single
 // call to action beside it on desktop (stacked and centered on phones). The
 // cover is a real button mirroring the CTA — same action, mouse or keyboard.
 // Learners with saved progress get the CTA corrected to "Continue with …"
@@ -53,8 +53,9 @@ export function Home({
           </p>
           <p className="homedesc">
             <em>{book.title}</em> by {book.authors} as an interactive web
-            course: the book’s pages with exercises beside them, answers checked
-            as you go, progress saved in this browser. {book.units} units and{" "}
+            course: every unit opens with a short lesson and goes on to its
+            exercises, answers checked as you go, progress saved in this
+            browser. {book.units} units and{" "}
             {book.additional} additional exercises.
           </p>
           <button type="button" className="homecta" onClick={onStart}>

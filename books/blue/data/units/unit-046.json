@@ -9,10 +9,11 @@
     {
       "id": "46.1",
       "type": "choice",
-      "instruction": "Tick (✓) the correct sentence, (a) or (b), for each picture.",
+      "instruction": "Read the descriptions. Choose the correct sentence, (a) or (b), for each one.",
       "items": [
         {
           "num": 1,
+          "cue": "💇 Sarah is sitting in a hairdresser’s chair. A hairdresser is cutting her hair.",
           "options": [
             "Sarah is cutting her hair.",
             "Sarah is having her hair cut."
@@ -21,6 +22,7 @@
         },
         {
           "num": 2,
+          "cue": "✂️ Dan is standing in front of a mirror with a pair of scissors, cutting his own hair.",
           "options": [
             "Dan is cutting his hair.",
             "Dan is having his hair cut."
@@ -29,6 +31,7 @@
         },
         {
           "num": 3,
+          "cue": "🖌️ Kate is holding a brush. She is painting the gate herself.",
           "options": [
             "Kate is painting the gate.",
             "Kate is having the gate painted."
@@ -37,6 +40,7 @@
         },
         {
           "num": 4,
+          "cue": "📸 Sue is standing in front of a photographer, who is taking her photo.",
           "options": [
             "Sue is taking a picture.",
             "Sue is having her picture taken."
@@ -48,10 +52,11 @@
     {
       "id": "46.2",
       "type": "fill-in",
-      "instruction": "Put the words in the correct order.",
+      "instruction": "Put the words in the description in the correct order. The sentence is started for you: write the missing part.",
       "items": [
         {
           "num": 1,
+          "cue": "🧩 (painted / had / a few weeks ago / the house)",
           "parts": [
             "We had ",
             " the house painted a few weeks ago."
@@ -65,6 +70,7 @@
         },
         {
           "num": 2,
+          "cue": "🧩 (serviced / car / once a year / her / has)",
           "parts": [
             "Sarah has her car ",
             " once a year."
@@ -77,6 +83,7 @@
         },
         {
           "num": 3,
+          "cue": "🧩 (had / your / recently / tested / eyes / you?)",
           "parts": [
             "Have you had your eyes ",
             " recently?"
@@ -89,6 +96,7 @@
         },
         {
           "num": 4,
+          "cue": "🧩 (like / cut / my / having / don’t / hair)",
           "parts": [
             "I don't like ",
             " my hair cut."
@@ -101,6 +109,7 @@
         },
         {
           "num": 5,
+          "cue": "🧩 (fifteen pounds / have / cleaned / my suit / cost / to)",
           "parts": [
             "It cost fifteen pounds to have my suit ",
             "."
@@ -113,6 +122,7 @@
         },
         {
           "num": 6,
+          "cue": "🧩 (as soon as possible / need / translated / to get / this document)",
           "parts": [
             "You need to get this document ",
             " as soon as possible."
@@ -255,10 +265,11 @@
     {
       "id": "46.5",
       "type": "fill-in",
-      "instruction": "Use the words in brackets to complete the sentences.",
+      "instruction": "Use the words in brackets in the descriptions to complete the sentences.",
       "items": [
         {
           "num": 1,
+          "cue": "🧳 (They / their bags / steal)",
           "parts": [
             "Did I tell you about Paul and Karen? They had their bags ",
             "."
@@ -271,6 +282,7 @@
         },
         {
           "num": 2,
+          "cue": "🛂 (We / our bags / search)",
           "parts": [
             "Security at the airport was strict. We had our bags ",
             "."
@@ -283,6 +295,7 @@
         },
         {
           "num": 3,
+          "cue": "💷 (I / my salary / increase)",
           "parts": [
             "I've had some good news! I've had my salary ",
             "."
@@ -295,6 +308,7 @@
         },
         {
           "num": 4,
+          "cue": "📄 (He / his application / refuse)",
           "parts": [
             "Joe can't get a visa. He's had his application ",
             "."

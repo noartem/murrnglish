@@ -9,7 +9,7 @@
     {
       "id": "93.1",
       "type": "write",
-      "instruction": "In some of these sentences you need who or that. Correct the sentences where necessary.",
+      "instruction": "In some of the sentences you need who or that. Correct the sentences where necessary.",
       "items": [
         {
           "num": 1,
@@ -83,7 +83,9 @@
     {
       "id": "93.2",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Complete each sentence with a relative clause.",
+      "instruction": "Read the situations in the scene and say what you would say. Complete each sentence with a relative clause.",
+      "scene": "The situations (read the descriptions):\n1. Your friend lost some keys and you want to know whether he found them.\n2. A friend is wearing a dress you like, and you tell her so.\n3. A friend is going to the cinema and you want to know the name of the film.\n4. You wanted to visit a museum, but it was shut.\n5. You invited people to your party and some of them could not come.\n6. Your friend had to do some work and you want to know whether she has finished.\n7. You rented a car and it broke down after a few miles.",
+      "scene": "The situations (read the descriptions):\n1. Your friend lost some keys and you want to know whether he found them.\n2. A friend is wearing a dress you like, and you tell her so.\n3. A friend is going to the cinema and you want to know the name of the film.\n4. You wanted to visit a museum, but it was shut.\n5. You invited people to your party and some of them could not come.\n6. Your friend had to do some work and you want to know whether she has finished.\n7. You rented a car and it broke down after a few miles.",
       "items": [
         {
           "num": 1,
@@ -181,7 +183,7 @@
     {
       "id": "93.3",
       "type": "fill-in",
-      "instruction": "These sentences all have a relative clause with a preposition. Put the words in the correct order.",
+      "instruction": "Put the words in the correct order. Each sentence has a relative clause with a preposition.",
       "items": [
         {
           "num": 1,

@@ -9,7 +9,7 @@
     {
       "id": "31.1",
       "type": "write",
-      "instruction": "Посмотрите на картинки и спросите Стива, умеет ли он это делать: Что из этого вы умеете делать? Напишите предложения о себе, используя I can или I can’t.",
+      "instruction": "Прочитайте описания и спросите Стива, умеет ли он это делать: что из этого вы умеете делать? Напишите предложения о себе, используя I can или I can’t.",
       "items": [
         {
           "num": 1,
@@ -17,42 +17,48 @@
           "answers": [
             "Can you swim?"
           ],
-          "example": true
+          "example": true,
+          "cue": "🏊 В описании: Стива стоит у края бассейна в купальнике."
         },
         {
           "num": 2,
           "prompt": "",
           "answers": [
             "Can you ski?"
-          ]
+          ],
+          "cue": "⛷️ Стива на горном склоне с лыжами."
         },
         {
           "num": 3,
           "prompt": "chess",
           "answers": [
             "Can you play chess?"
-          ]
+          ],
+          "cue": "♟️ На столе стоит шахматная доска с расставленными фигурами."
         },
         {
           "num": 4,
           "prompt": "10 kilometres",
           "answers": [
             "Can you run ten kilometres?"
-          ]
+          ],
+          "cue": "🏃 На дорожке отмечена дистанция в десять километров."
         },
         {
           "num": 5,
           "prompt": "",
           "answers": [
             "Can you drive (a car)?"
-          ]
+          ],
+          "cue": "🚗 Стива за рулём машины и едет по шоссе."
         },
         {
           "num": 6,
           "prompt": "",
           "answers": [
             "Can you ride (a horse)?"
-          ]
+          ],
+          "cue": "🐎 Стива сидит в седле и едет по лесной тропе."
         },
         {
           "num": 7,
@@ -60,7 +66,8 @@
           "answers": [
             "I can swim.",
             "I can’t swim."
-          ]
+          ],
+          "cue": "🏊 Теперь ваша очередь: умеете плавать?"
         },
         {
           "num": 8,
@@ -68,7 +75,8 @@
           "answers": [
             "I can ski.",
             "I can’t ski."
-          ]
+          ],
+          "cue": "⛷️ А вы катаетесь на лыжах?"
         },
         {
           "num": 9,
@@ -76,7 +84,8 @@
           "answers": [
             "I can play chess.",
             "I can’t play chess."
-          ]
+          ],
+          "cue": "♟️ А шахматы?"
         },
         {
           "num": 10,
@@ -84,7 +93,8 @@
           "answers": [
             "I can run ten kilometres.",
             "I can’t run ten kilometres."
-          ]
+          ],
+          "cue": "🏃 А десять километров пробежать?"
         },
         {
           "num": 11,
@@ -92,7 +102,8 @@
           "answers": [
             "I can drive (a car).",
             "I can’t drive (a car)."
-          ]
+          ],
+          "cue": "🚗 А за рулём — умеете?"
         },
         {
           "num": 12,
@@ -100,7 +111,8 @@
           "answers": [
             "I can ride (a horse).",
             "I can’t ride (a horse)."
-          ]
+          ],
+          "cue": "🐎 А на лошади?"
         }
       ],
       "example": [
@@ -273,7 +285,7 @@
     {
       "id": "31.4",
       "type": "write",
-      "instruction": "Что можно сказать в этих ситуациях? Используйте can или could.",
+      "instruction": "Что можно сказать в этих ситуациях? Прочитайте описания и используйте can или could.",
       "items": [
         {
           "num": 1,
@@ -291,7 +303,8 @@
             "Can you pass the salt, please?",
             "Could you pass the salt?",
             "Could you pass the salt, please?"
-          ]
+          ],
+          "cue": "🧂 Вы сидите за столом, а солонка стоит перед соседом, который не смотрит."
         },
         {
           "num": 3,
@@ -301,7 +314,8 @@
             "Can I have these postcards, please?",
             "Could I have these postcards?",
             "Could I have these postcards, please?"
-          ]
+          ],
+          "cue": "🛍️ Вы стоите у прилавка с открытками и показываете их продавцу."
         },
         {
           "num": 4,
@@ -311,7 +325,8 @@
             "Can you turn off the radio, please?",
             "Could you turn off the radio?",
             "Could you turn off the radio, please?"
-          ]
+          ],
+          "cue": "📻 Музыка слишком громкая, а радио стоит на другой полке в другой комнате."
         },
         {
           "num": 5,
@@ -321,7 +336,8 @@
             "Can I borrow your newspaper, please?",
             "Could I borrow your newspaper?",
             "Could I borrow your newspaper, please?"
-          ]
+          ],
+          "cue": "📰 Коллега развернул газету и читает её, а вам надо идти на работу."
         },
         {
           "num": 6,
@@ -331,7 +347,8 @@
             "Can I use your pen, please?",
             "Could I use your pen?",
             "Could I use your pen, please?"
-          ]
+          ],
+          "cue": "🖊️ Ручка лежит у человека на столе, а вам нужно подписать документ."
         }
       ],
       "example": [

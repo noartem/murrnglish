@@ -96,7 +96,7 @@
     {
       "id": "77.2",
       "type": "write",
-      "instruction": "Some of these sentences are OK, but some need the (sometimes more than once). Correct the sentences where necessary.",
+      "instruction": "Some of the sentences are OK, but some need the (sometimes more than once). Correct them where necessary.",
       "items": [
         {
           "num": 1,
@@ -187,7 +187,8 @@
     {
       "id": "77.3",
       "type": "fill-in",
-      "instruction": "Here are some geography questions. Choose the right answer from one of the boxes and use the if necessary. You do not need all the names in the boxes.",
+      "instruction": "Read the lists and answer the geography questions. Choose a name from the right list and use the if necessary. You do not need all the names.",
+            "scene": "continents | Africa · Asia · Australia · Europe · North America · South America\ncountries | Canada · Denmark · Indonesia · Sweden · Thailand · United States\noceans and seas | Atlantic · Indian Ocean · Pacific · Black Sea · Mediterranean · Red Sea\nmountains | Alps · Andes · Himalayas · Rockies · Urals\nrivers and canals | Amazon · Rhine · Danube · Thames · Nile · Volga · Suez Canal · Panama Canal",
       "items": [
         {
           "num": 1,

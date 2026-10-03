@@ -9,10 +9,11 @@
     {
       "id": "10.1",
       "type": "fill-in",
-      "instruction": "Read the situation and complete the sentences. Use the verbs in brackets.",
+      "instruction": "Read the descriptions of the situations and complete the sentences. Use the verbs in brackets.",
       "items": [
         {
           "num": 1,
+          "cue": "📖 Tom opened a book two hours ago. He’s still reading it and he’s on page 53 now.",
           "parts": [
             "He ",
             " for two hours. (read)\nHe ",
@@ -30,6 +31,7 @@
         },
         {
           "num": 2,
+          "cue": "🎒 Rachel, from Australia, set off round Europe three months ago. She’s still travelling and has seen six countries so far.",
           "parts": [
             "She ",
             " for three months. (travel)\n",
@@ -48,6 +50,7 @@
         },
         {
           "num": 3,
+          "cue": "🏆 Patrick took up tennis at the age of ten. This year he won the national championship, for the fourth time.",
           "parts": [
             "",
             " the national championship four times. (win)\n",
@@ -66,6 +69,7 @@
         },
         {
           "num": 4,
+          "cue": "🎬 Lisa and Sue began making films together when they left college. They still do, and they have five films now.",
           "parts": [
             "They ",
             " films since they left college. (make)\n",
@@ -87,10 +91,11 @@
     {
       "id": "10.2",
       "type": "write",
-      "instruction": "Ask questions using the words in brackets. Use the present perfect simple (have/has done) or continuous (have/has been doing).",
+      "instruction": "Read the descriptions and ask questions using the words in brackets. Use the present perfect simple (have/has done) or continuous (have/has been doing).",
       "items": [
         {
           "num": 1,
+          "cue": "📚 A friend of yours is learning Arabic. You ask:",
           "prompt": "(how long / learn / Arabic?)",
           "answers": [
             "How long have you been learning Arabic?"
@@ -98,6 +103,7 @@
         },
         {
           "num": 2,
+          "cue": "⏳ You’ve just arrived to meet a friend. She’s already there, waiting for you. You ask:",
           "prompt": "(wait / long?)",
           "answers": [
             "Have you been waiting long?"
@@ -105,6 +111,7 @@
         },
         {
           "num": 3,
+          "cue": "🎣 You see somebody fishing by the river. You ask:",
           "prompt": "(catch / any fish?)",
           "answers": [
             "Have you caught any fish?"
@@ -112,6 +119,7 @@
         },
         {
           "num": 4,
+          "cue": "🎉 Some friends of yours are having a party next week. You ask:",
           "prompt": "(how many people / invite?)",
           "answers": [
             "How many people have you invited?"
@@ -119,6 +127,7 @@
         },
         {
           "num": 5,
+          "cue": "👩‍🏫 A friend of yours is a teacher. You ask:",
           "prompt": "(how long / teach?)",
           "answers": [
             "How long have you been teaching?"
@@ -126,6 +135,7 @@
         },
         {
           "num": 6,
+          "cue": "✍️ You meet somebody who writes books. You ask about the number of books:",
           "prompt": "(how many books / write?)",
           "answers": [
             "How many books have you written?"
@@ -133,6 +143,7 @@
         },
         {
           "num": 7,
+          "cue": "✍️ The same writer. You ask about the time:",
           "prompt": "(how long / write / books?)",
           "answers": [
             "How long have you been writing books?"
@@ -140,6 +151,7 @@
         },
         {
           "num": 8,
+          "cue": "🌍 A friend is saving money for a trip round the world. You ask about the time:",
           "prompt": "(how long / save?)",
           "answers": [
             "How long have you been saving (money)?"
@@ -147,6 +159,7 @@
         },
         {
           "num": 9,
+          "cue": "🌍 The same friend. You ask about the amount:",
           "prompt": "(how much money / save?)",
           "answers": [
             "How much money have you saved?"

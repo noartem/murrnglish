@@ -2,15 +2,15 @@
 // level, size, how far the learner got — with the same resume-or-start call
 // to action each book's own landing has. Books come from the registry
 // (books.ts), in learning order. Under the books, the sections that span
-// them: the rules, the cards (with what is due today) and the dictionary.
+// them: the cards (with what is due today) and the dictionary.
 
 import { useEffect, useMemo, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { BookOpenText, Layers, LibraryBig, NotebookPen } from "lucide-react";
+import { Layers, LibraryBig, NotebookPen } from "lucide-react";
 import type { Book } from "../books";
 import { BOOKS, bookUrl } from "../books";
 import { completedUnitIds, continueTarget, loadProgress } from "../progress";
-import { CARDS_HASH, DICTIONARY_HASH, bookHash, rulesHash } from "../routes";
+import { CARDS_HASH, DICTIONARY_HASH, bookHash } from "../routes";
 import { useDueCount } from "../dueCount";
 import { useStudy } from "../study";
 import { isStandalone } from "../offline";
@@ -62,9 +62,9 @@ export function Library() {
         >
           <div className="libcol">
             <p className="homedesc libintro">
-              Raymond Murphy’s grammar books as interactive web courses: the
-              book’s pages with exercises beside them, answers checked as you
-              go, progress saved in this browser.
+              Raymond Murphy’s grammar books as interactive web courses: a
+              short lesson at the top of every unit, then its exercises,
+              answers checked as you go, progress saved in this browser.
             </p>
             <div className="libgrid">
               {BOOKS.map((b) => (
@@ -136,11 +136,6 @@ function StudyTiles() {
   const { words } = useStudy();
   return (
     <nav className="studygrid" aria-label="Study">
-      <a className="studytile" href={rulesHash()}>
-        <BookOpenText size={22} aria-hidden />
-        <span className="tiletitle">Rules</span>
-        <span className="tiletext">Every rule of the books, searchable, next to its exercises.</span>
-      </a>
       <a className="studytile" href={CARDS_HASH}>
         <Layers size={22} aria-hidden />
         <span className="tiletitle">

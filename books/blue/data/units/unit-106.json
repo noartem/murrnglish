@@ -160,7 +160,7 @@
     {
       "id": "106.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using … and … (see Section C).",
+      "instruction": "Complete the sentences with the comparative twice, joined by and — for example smaller and smaller.",
       "items": [
         {
           "num": 2,
@@ -312,7 +312,7 @@
     {
       "id": "106.5",
       "type": "fill-in",
-      "instruction": "Use the words on the right to complete the sentences.",
+      "instruction": "Use a word from the box to complete each sentence.",
       "wordBank": [
         "any",
         "better",

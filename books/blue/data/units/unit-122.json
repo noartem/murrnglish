@@ -125,7 +125,7 @@
     {
       "id": "122.2",
       "type": "write",
-      "instruction": "Read the situations and make sentences using just in time.",
+      "instruction": "Read each description and make a sentence using just in time.",
       "items": [
         {
           "num": 1,
@@ -136,6 +136,7 @@
         },
         {
           "num": 2,
+          "cue": "🌧️ You were walking home. Just after you got home, it started to rain very heavily.",
           "prompt": "(get / home)",
           "answers": [
             "I got home just in time."
@@ -143,6 +144,7 @@
         },
         {
           "num": 3,
+          "cue": "🪑 Your friend was going to sit on the chair you had just painted. You said: Don’t sit on that chair!",
           "prompt": "(stop / him)",
           "answers": [
             "I stopped him just in time."
@@ -150,6 +152,7 @@
         },
         {
           "num": 4,
+          "cue": "🎬 You and a friend went to the cinema. You arrived late and thought you would miss the beginning of the film — but it began just as you sat down.",
           "prompt": "(get / cinema / beginning / film)",
           "answers": [
             "We got to the cinema just in time for the beginning of the film.",
@@ -236,7 +239,7 @@
     {
       "id": "122.4",
       "type": "write",
-      "instruction": "Write sentences with in the end. Use the verb in brackets.",
+      "instruction": "Read each description and write a sentence with in the end, using the verb in brackets.",
       "items": [
         {
           "num": 1,
@@ -247,6 +250,7 @@
         },
         {
           "num": 2,
+          "cue": "😤 Anna got more and more fed up with her job. (resign)",
           "prompt": "(resign)",
           "answers": [
             "In the end she resigned (from her job).",
@@ -255,6 +259,7 @@
         },
         {
           "num": 3,
+          "cue": "📖 You tried to learn Japanese, but you found it too difficult. (give up)",
           "prompt": "(give up)",
           "answers": [
             "In the end I gave up (trying to learn Japanese / learning Japanese).",
@@ -263,6 +268,7 @@
         },
         {
           "num": 4,
+          "cue": "🤔 You couldn’t decide whether to go to the party or not. (not / go)",
           "prompt": "(not / go)",
           "answers": [
             "In the end we decided not to go (to the party).",

@@ -6,7 +6,7 @@
     {
       "id": "145.1",
       "type": "fill-in",
-      "instruction": "Look at the pictures and complete the sentences.",
+      "instruction": "Complete each sentence with away or back.",
       "items": [
         {
           "num": 1,
@@ -25,6 +25,7 @@
         },
         {
           "num": 4,
+          "cue": "🚶‍♀️ He tried to talk to her, but she turned and walked off without a word.",
           "parts": ["He tried to talk to her, but she just ", "."],
           "answers": [["walked away"]]
         },

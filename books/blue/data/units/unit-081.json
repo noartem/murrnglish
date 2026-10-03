@@ -9,7 +9,7 @@
     {
       "id": "81.1",
       "type": "write",
-      "instruction": "In some of these sentences, it is more natural to use -’s or -’. Change the underlined parts where necessary.",
+      "instruction": "In some sentences it is more natural to use -’s or -’. Change the underlined parts where necessary.",
       "items": [
         {
           "num": 1,
@@ -20,14 +20,14 @@
         },
         {
           "num": 2,
-          "prompt": "How old are the children of Chris?",
+          "prompt": "How old are the [children of Chris]?",
           "answers": [
             "Chris’s children"
           ]
         },
         {
           "num": 3,
-          "prompt": "Is this the umbrella of your friend?",
+          "prompt": "Is this the [umbrella of your friend]?",
           "answers": [
             "your friend’s umbrella"
           ]
@@ -41,14 +41,14 @@
         },
         {
           "num": 5,
-          "prompt": "I’ve never met the daughter of James.",
+          "prompt": "I’ve never met the [daughter of James].",
           "answers": [
             "James’s daughter"
           ]
         },
         {
           "num": 6,
-          "prompt": "How old is the son of Helen and Andy?",
+          "prompt": "How old is the [son of Helen and Andy]?",
           "answers": [
             "Helen and Andy’s son"
           ]
@@ -69,7 +69,7 @@
         },
         {
           "num": 9,
-          "prompt": "The friends of your children are here.",
+          "prompt": "The [friends of your children] are here.",
           "answers": [
             "Your children’s friends"
           ]
@@ -83,14 +83,14 @@
         },
         {
           "num": 11,
-          "prompt": "The garden of our neighbours is very small.",
+          "prompt": "The [garden of our neighbours] is very small.",
           "answers": [
             "Our neighbours’ garden"
           ]
         },
         {
           "num": 12,
-          "prompt": "The hair of David is very long.",
+          "prompt": "The [hair of David] is very long.",
           "answers": [
             "David’s hair"
           ]
@@ -104,7 +104,7 @@
         },
         {
           "num": 14,
-          "prompt": "I couldn’t go to the party of my best friend.",
+          "prompt": "I couldn’t go to the [party of my best friend].",
           "answers": [
             "my best friend’s party"
           ]
@@ -118,7 +118,7 @@
         },
         {
           "num": 16,
-          "prompt": "Have you seen the car of the parents of Ben?",
+          "prompt": "Have you seen the [car of the parents of Ben]?",
           "answers": [
             "Ben’s parents’ car"
           ]
@@ -142,10 +142,11 @@
     {
       "id": "81.2",
       "type": "choice",
-      "instruction": "Which is right?",
+      "instruction": "Read the sentences and choose the right form.",
       "items": [
         {
           "num": 1,
+          "cue": "🐈 Don’t step on the … tail.",
           "options": [
             "cat",
             "cat’s",
@@ -155,6 +156,7 @@
         },
         {
           "num": 2,
+          "cue": "🎂 It’s my … birthday tomorrow.",
           "options": [
             "father",
             "father’s",
@@ -164,6 +166,7 @@
         },
         {
           "num": 3,
+          "cue": "🍎 Those … look nice. Shall we buy some?",
           "options": [
             "apples",
             "apple’s",
@@ -173,6 +176,7 @@
         },
         {
           "num": 4,
+          "cue": "🧥 … clothes are expensive.",
           "options": [
             "Children",
             "Children’s",
@@ -182,6 +186,7 @@
         },
         {
           "num": 5,
+          "cue": "🏔️ Zurich is … largest city.",
           "options": [
             "Switzerland",
             "Switzerland’s",
@@ -191,6 +196,7 @@
         },
         {
           "num": 6,
+          "cue": "👴 Your … are your grandparents.",
           "options": [
             "parents",
             "parent’s",
@@ -200,6 +206,7 @@
         },
         {
           "num": 7,
+          "cue": "📷 I took a lot of … when I was on holiday.",
           "options": [
             "photos",
             "photo’s",
@@ -209,6 +216,7 @@
         },
         {
           "num": 8,
+          "cue": "🧣 This isn’t my coat. It’s … .",
           "options": [
             "someone else",
             "someone else’s",
@@ -218,6 +226,7 @@
         },
         {
           "num": 9,
+          "cue": "📖 Have you read any of … poems?",
           "options": [
             "Shakespeare",
             "Shakespeare’s",
@@ -234,35 +243,35 @@
       "items": [
         {
           "num": 1,
-          "prompt": "The meeting tomorrow has been cancelled.",
+          "prompt": "The [meeting tomorrow] has been cancelled.",
           "answers": [
             "Tomorrow’s meeting has been cancelled."
           ]
         },
         {
           "num": 2,
-          "prompt": "The storm last week caused a lot of damage.",
+          "prompt": "The [storm last week] caused a lot of damage.",
           "answers": [
             "Last week’s storm caused a lot of damage."
           ]
         },
         {
           "num": 3,
-          "prompt": "The only cinema in the town has closed down.",
+          "prompt": "The [only cinema in the town] has closed down.",
           "answers": [
             "The town’s only cinema has closed down."
           ]
         },
         {
           "num": 4,
-          "prompt": "The weather in Britain is very changeable.",
+          "prompt": "The [weather in Britain] is very changeable.",
           "answers": [
             "Britain’s weather is very changeable."
           ]
         },
         {
           "num": 5,
-          "prompt": "Tourism is the main industry in the region.",
+          "prompt": "[Tourism] is the [main industry in the region].",
           "answers": [
             "The region’s main industry is tourism."
           ]
@@ -272,7 +281,7 @@
     {
       "id": "81.4",
       "type": "fill-in",
-      "instruction": "Use the information given to complete the sentences.",
+      "instruction": "Read the first sentence of each item and complete the second one.",
       "items": [
         {
           "num": 1,

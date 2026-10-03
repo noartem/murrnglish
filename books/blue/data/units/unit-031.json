@@ -194,7 +194,7 @@
           "num": 3,
           "parts": [
             "Excuse me a moment – I ",
-            ". I won't be long."
+            " a phone call. I won’t be long."
           ],
           "answers": [
             [
@@ -291,7 +291,7 @@
     {
       "id": "31.3",
       "type": "write",
-      "instruction": "In some of these sentences, must is wrong or unnatural. Correct the sentences where necessary.",
+      "instruction": "In some sentences in this exercise, must is wrong or unnatural. Correct them where necessary. If a sentence is correct, write ‘OK’.",
       "items": [
         {
           "num": 1,

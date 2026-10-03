@@ -9,10 +9,11 @@
     {
       "id": "9.1",
       "type": "self-check",
-      "instruction": "What have these people been doing or what has been happening?",
+      "instruction": "What have these people been doing or what has been happening? Read the descriptions: what was going on earlier, and what you see now.",
       "items": [
         {
           "num": 1,
+          "cue": "🌧️ Earlier: rain was pouring down. Now: the sun is out, but the street is full of puddles.",
           "prompt": "It’s been raining.",
           "modelAnswers": [
             "It’s been raining."
@@ -20,6 +21,7 @@
         },
         {
           "num": 2,
+          "cue": "📺 Earlier: she sat on the sofa in front of the TV. Now: she’s switching it off and rubbing her eyes.",
           "prompt": "",
           "modelAnswers": [
             "She’s been watching TV / She has been watching TV"
@@ -27,6 +29,7 @@
         },
         {
           "num": 3,
+          "cue": "🎾 Earlier: two friends were hitting a ball over a net. Now: they’re leaving the court with their rackets, hot and sweaty.",
           "prompt": "",
           "modelAnswers": [
             "They’ve been playing tennis / They have been playing tennis"
@@ -34,6 +37,7 @@
         },
         {
           "num": 4,
+          "cue": "🏃 Earlier: he was jogging round the park. Now: he’s out of breath and red in the face.",
           "prompt": "",
           "modelAnswers": [
             "He’s been running / He has been running"
@@ -44,10 +48,11 @@
     {
       "id": "9.2",
       "type": "write",
-      "instruction": "Write a question for each situation.",
+      "instruction": "Read the descriptions of the situations and write a question for each.",
       "items": [
         {
           "num": 1,
+          "cue": "🏊 You meet Kate as she comes out of the swimming pool, her hair still wet. “Hi, Kate. …”",
           "prompt": "(you / swim?)",
           "answers": [
             "Have you been swimming?"
@@ -55,6 +60,7 @@
         },
         {
           "num": 2,
+          "cue": "⏰ You arrive a bit late. Ben is already there, waiting for you. “I’m sorry I’m late, Ben. …”",
           "prompt": "(you / wait / long?)",
           "answers": [
             "Have you been waiting long?"
@@ -62,6 +68,7 @@
         },
         {
           "num": 3,
+          "cue": "🧒 Jane’s little boy comes in with a filthy face and hands. His mum asks: “Why are you so dirty? …”",
           "prompt": "(what / you / do?)",
           "answers": [
             "What have you been doing?"
@@ -69,6 +76,7 @@
         },
         {
           "num": 4,
+          "cue": "🛍️ In a shop you see Anna serving customers. You didn’t know she worked there. “Hi, Anna. …”",
           "prompt": "(how long / you / work / here?)",
           "answers": [
             "How long have you been working here?"
@@ -76,6 +84,7 @@
         },
         {
           "num": 5,
+          "cue": "📱 A friend tells you about his job: he sells phones. “You sell phones? …”",
           "prompt": "(how long / you / do / that?)",
           "answers": [
             "How long have you been doing that?"
@@ -86,10 +95,11 @@
     {
       "id": "9.3",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences.",
+      "instruction": "Read the descriptions of the situations and complete the sentences.",
       "items": [
         {
           "num": 1,
+          "cue": "🌧️ It’s raining. It began two hours ago.",
           "parts": [
             "It ",
             " for two hours."
@@ -104,6 +114,7 @@
         },
         {
           "num": 2,
+          "cue": "🚏 We’re at the bus stop. We got here 20 minutes ago.",
           "parts": [
             "We ",
             " for 20 minutes."
@@ -117,6 +128,7 @@
         },
         {
           "num": 3,
+          "cue": "🇯🇵 I’m learning Japanese. My classes began in December.",
           "parts": [
             "I ",
             " since December."
@@ -130,6 +142,7 @@
         },
         {
           "num": 4,
+          "cue": "🏨 Jessica works in a hotel. Her first day there was 18 January.",
           "parts": [
             "",
             " since 18 January."
@@ -143,6 +156,7 @@
         },
         {
           "num": 5,
+          "cue": "🇮🇹 Our friends spend every holiday in Italy. Their first trip there was years ago.",
           "parts": [
             "",
             " for years."

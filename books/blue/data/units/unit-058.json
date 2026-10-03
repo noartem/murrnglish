@@ -24,6 +24,7 @@
       "items": [
         {
           "num": 1,
+          "cue": "✈️ flying in a plane",
           "prompt": "(flying)",
           "modelAnswers": [
             "I don’t like flying.",
@@ -54,6 +55,7 @@
         },
         {
           "num": 5,
+          "cue": "🍳 cooking your own meals",
           "prompt": "(cooking)",
           "modelAnswers": [
             "I love cooking.",

@@ -1,353 +1,353 @@
 {
- "unit": 36,
- "title": "would",
- "pdfPages": [
-  84,
-  85
- ],
- "exercises": [
-  {
-   "id": "36.1",
-   "type": "self-check",
-   "instruction": "Write sentences about yourself. Imagine things you would like or wouldn't like.",
-   "items": [
+  "unit": 36,
+  "title": "would",
+  "pdfPages": [
+    84,
+    85
+  ],
+  "exercises": [
     {
-     "num": 2,
-     "prompt": "(a job you wouldn't like to do)",
-     "modelAnswers": [
-      "I wouldn't like to be a teacher."
-     ]
-    },
-    {
-     "num": 3,
-     "prompt": "(something you would love to do)",
-     "modelAnswers": [
-      "I'd love to learn to fly a plane."
-     ]
-    },
-    {
-     "num": 4,
-     "prompt": "(something that would be nice to have)",
-     "modelAnswers": [
-      "It would be nice to have a big garden."
-     ]
-    },
-    {
-     "num": 5,
-     "prompt": "(a place you'd like to go to)",
-     "modelAnswers": [
-      "I'd like to go to Mexico."
-     ]
-    }
-   ]
-  },
-  {
-   "id": "36.2",
-   "type": "fill-in",
-   "instruction": "Complete the sentences using would + the following verbs (in the correct form):",
-   "wordBank": [
-    "be",
-    "be",
-    "do",
-    "do",
-    "enjoy",
-    "enjoy",
-    "have",
-    "stop"
-   ],
-   "items": [
-    {
-     "num": 2,
-     "parts": [
-      "You should go and see the film. I think you ",
-      " it."
-     ],
-     "answers": [
-      [
-       "'d enjoy",
-       "would enjoy"
+      "id": "36.1",
+      "type": "self-check",
+      "instruction": "Write sentences about yourself. Imagine things you would like or wouldn't like.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "(a job you wouldn't like to do)",
+          "modelAnswers": [
+            "I wouldn't like to be a teacher."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(something you would love to do)",
+          "modelAnswers": [
+            "I'd love to learn to fly a plane."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(something that would be nice to have)",
+          "modelAnswers": [
+            "It would be nice to have a big garden."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "(a place you'd like to go to)",
+          "modelAnswers": [
+            "I'd like to go to Mexico."
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 3,
-     "parts": [
-      "It's a pity you couldn't come to the party last night. You ",
-      " it."
-     ],
-     "answers": [
-      [
-       "'d have enjoyed",
-       "would have enjoyed"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "Shall I apply for the job or not? What ",
-      " you ",
-      " in my position?"
-     ],
-     "answers": [
-      [
-       "would"
+      "id": "36.2",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using would + the following verbs (in the correct form):",
+      "wordBank": [
+        "be",
+        "be",
+        "do",
+        "do",
+        "enjoy",
+        "enjoy",
+        "have",
+        "stop"
       ],
-      [
-       "do"
+      "items": [
+        {
+          "num": 2,
+          "parts": [
+            "You should go and see the film. I think you ",
+            " it."
+          ],
+          "answers": [
+            [
+              "'d enjoy",
+              "would enjoy"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "It's a pity you couldn't come to the party last night. You ",
+            " it."
+          ],
+          "answers": [
+            [
+              "'d have enjoyed",
+              "would have enjoyed"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Shall I apply for the job or not? What ",
+            " you ",
+            " in my position?"
+          ],
+          "answers": [
+            [
+              "would"
+            ],
+            [
+              "do"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "I was in a hurry when I saw you. Otherwise I ",
+            " to talk."
+          ],
+          "answers": [
+            [
+              "'d have stopped",
+              "would have stopped"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We took a taxi home last night, but got stuck in the traffic. It ",
+            " quicker to walk."
+          ],
+          "answers": [
+            [
+              "would have been"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "Why don't you go and see Clare? She ",
+            " very pleased to see you."
+          ],
+          "answers": [
+            [
+              "'d be",
+              "would be"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "In an ideal world, everybody ",
+            " enough to eat."
+          ],
+          "answers": [
+            [
+              "would have"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 5,
-     "parts": [
-      "I was in a hurry when I saw you. Otherwise I ",
-      " to talk."
-     ],
-     "answers": [
-      [
-       "'d have stopped",
-       "would have stopped"
+      "id": "36.3",
+      "type": "matching",
+      "instruction": "Each sentence on the right follows a sentence on the left. Which follows which?",
+      "leftOptions": [
+        "I'd like to go to Australia one day.",
+        "I wouldn't like to live on a busy road.",
+        "I'm sorry your trip was cancelled.",
+        "I'm looking forward to going out tonight.",
+        "I'm glad we didn't go out in the rain.",
+        "I'm not looking forward to the trip."
+      ],
+      "rightOptions": [
+        "It wouldn't have been very nice.",
+        "It would have been fun.",
+        "It would be nice.",
+        "It won't be much fun.",
+        "It wouldn't be very nice.",
+        "It will be fun."
+      ],
+      "pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          3
+        ]
       ]
-     ]
     },
     {
-     "num": 6,
-     "parts": [
-      "We took a taxi home last night, but got stuck in the traffic. It ",
-      " quicker to walk."
-     ],
-     "answers": [
-      [
-       "would have been"
+      "id": "36.4",
+      "type": "write",
+      "instruction": "Write sentences using promised + would/wouldn't.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I wonder why Steve hasn't called me. He promised",
+          "answers": [
+            "He promised he'd call.",
+            "He promised he would call."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Why did you tell Amy what I said? You promised",
+          "answers": [
+            "You promised you wouldn't tell her.",
+            "You promised you wouldn't tell anyone.",
+            "You promised you wouldn't tell anybody."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "I'm surprised they didn't wait for us. They promised",
+          "answers": [
+            "They promised they'd wait.",
+            "They promised they'd wait for us.",
+            "They promised they would wait.",
+            "They promised they would wait for us."
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 7,
-     "parts": [
-      "Why don't you go and see Clare? She ",
-      " very pleased to see you."
-     ],
-     "answers": [
-      [
-       "'d be",
-       "would be"
+      "id": "36.5",
+      "type": "fill-in",
+      "instruction": "Complete the sentences. Use wouldn't + a suitable verb.",
+      "items": [
+        {
+          "num": 2,
+          "parts": [
+            "I asked Amanda what had happened, but she ",
+            " me."
+          ],
+          "answers": [
+            [
+              "wouldn't tell"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Paul was angry about what I'd said and he ",
+            " to me for two weeks."
+          ],
+          "answers": [
+            [
+              "wouldn't speak"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Martina insisted on carrying all her luggage. She ",
+            " me help her."
+          ],
+          "answers": [
+            [
+              "wouldn't let"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 8,
-     "parts": [
-      "In an ideal world, everybody ",
-      " enough to eat."
-     ],
-     "answers": [
-      [
-       "would have"
+      "id": "36.6",
+      "type": "fill-in",
+      "instruction": "Complete the sentences using would for things that happened again and again in the past. Choose from these verbs:",
+      "wordBank": [
+        "forget",
+        "shake",
+        "share",
+        "smile",
+        "stay",
+        "walk"
+      ],
+      "items": [
+        {
+          "num": 2,
+          "parts": [
+            "We used to live next to a railway line. Every time a train went past, the house ",
+            "."
+          ],
+          "answers": [
+            [
+              "would shake"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "Katherine was always very generous. She didn't have much, but she ",
+            " what she had with everyone else."
+          ],
+          "answers": [
+            [
+              "would share"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "You could never rely on Joe. It didn't matter how many times you reminded him to do something, he ",
+            "."
+          ],
+          "answers": [
+            [
+              "would always forget"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "When we were children, we used to go to the beach a lot. We ",
+            " there all day playing in the sand and swimming in the sea."
+          ],
+          "answers": [
+            [
+              "would stay"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "Lucy was always friendly. Whenever I saw her, she ",
+            " and say hello."
+          ],
+          "answers": [
+            [
+              "would always smile"
+            ]
+          ]
+        }
       ]
-     ]
     }
-   ]
-  },
-  {
-   "id": "36.3",
-   "type": "matching",
-   "instruction": "Each sentence on the right follows a sentence on the left. Which follows which?",
-   "leftOptions": [
-    "I'd like to go to Australia one day.",
-    "I wouldn't like to live on a busy road.",
-    "I'm sorry your trip was cancelled.",
-    "I'm looking forward to going out tonight.",
-    "I'm glad we didn't go out in the rain.",
-    "I'm not looking forward to the trip."
-   ],
-   "rightOptions": [
-    "It wouldn't have been very nice.",
-    "It would have been fun.",
-    "It would be nice.",
-    "It won't be much fun.",
-    "It wouldn't be very nice.",
-    "It will be fun."
-   ],
-   "pairs": [
-    [
-     0,
-     2
-    ],
-    [
-     1,
-     4
-    ],
-    [
-     2,
-     1
-    ],
-    [
-     3,
-     5
-    ],
-    [
-     4,
-     0
-    ],
-    [
-     5,
-     3
-    ]
-   ]
-  },
-  {
-   "id": "36.4",
-   "type": "write",
-   "instruction": "Write sentences using promised + would/wouldn't.",
-   "items": [
-    {
-     "num": 2,
-     "prompt": "I wonder why Steve hasn't called me. He promised",
-     "answers": [
-      "He promised he'd call.",
-      "He promised he would call."
-     ]
-    },
-    {
-     "num": 3,
-     "prompt": "Why did you tell Amy what I said? You promised",
-     "answers": [
-      "You promised you wouldn't tell her.",
-      "You promised you wouldn't tell anyone.",
-      "You promised you wouldn't tell anybody."
-     ]
-    },
-    {
-     "num": 4,
-     "prompt": "I'm surprised they didn't wait for us. They promised",
-     "answers": [
-      "They promised they'd wait.",
-      "They promised they'd wait for us.",
-      "They promised they would wait.",
-      "They promised they would wait for us."
-     ]
-    }
-   ]
-  },
-  {
-   "id": "36.5",
-   "type": "fill-in",
-   "instruction": "Complete the sentences. Use wouldn't + a suitable verb.",
-   "items": [
-    {
-     "num": 2,
-     "parts": [
-      "I asked Amanda what had happened, but she ",
-      " me."
-     ],
-     "answers": [
-      [
-       "wouldn't tell"
-      ]
-     ]
-    },
-    {
-     "num": 3,
-     "parts": [
-      "Paul was angry about what I'd said and he ",
-      " to me for two weeks."
-     ],
-     "answers": [
-      [
-       "wouldn't speak"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "Martina insisted on carrying all her luggage. She ",
-      " me help her."
-     ],
-     "answers": [
-      [
-       "wouldn't let"
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "36.6",
-   "type": "fill-in",
-   "instruction": "Complete the sentences using would (section C). Choose from these verbs:",
-   "wordBank": [
-    "forget",
-    "shake",
-    "share",
-    "smile",
-    "stay",
-    "walk"
-   ],
-   "items": [
-    {
-     "num": 2,
-     "parts": [
-      "We used to live next to a railway line. Every time a train went past, the house ",
-      "."
-     ],
-     "answers": [
-      [
-       "would shake"
-      ]
-     ]
-    },
-    {
-     "num": 3,
-     "parts": [
-      "Katherine was always very generous. She didn't have much, but she ",
-      " what she had with everyone else."
-     ],
-     "answers": [
-      [
-       "would share"
-      ]
-     ]
-    },
-    {
-     "num": 4,
-     "parts": [
-      "You could never rely on Joe. It didn't matter how many times you reminded him to do something, he always ",
-      "."
-     ],
-     "answers": [
-      [
-       "would always forget"
-      ]
-     ]
-    },
-    {
-     "num": 5,
-     "parts": [
-      "When we were children, we used to go to the beach a lot. We ",
-      " there all day playing in the sand and swimming in the sea."
-     ],
-     "answers": [
-      [
-       "would stay"
-      ]
-     ]
-    },
-    {
-     "num": 6,
-     "parts": [
-      "Lucy was always friendly. Whenever I saw her, she always ",
-      " and say hello."
-     ],
-     "answers": [
-      [
-       "would always smile"
-      ]
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }

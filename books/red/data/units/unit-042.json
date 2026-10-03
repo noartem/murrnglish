@@ -267,7 +267,7 @@
     {
       "id": "42.3",
       "type": "fill-in",
-      "instruction": "Закончите разделительные вопросы, добавив isn’t it? / haven’t you? и т. д.",
+      "instruction": "Закончите вопросы для подтверждения: добавьте isn’t it? / haven’t you? и т. д.",
       "example": [
         1
       ],
@@ -362,7 +362,7 @@
     {
       "id": "42.4",
       "type": "fill-in",
-      "instruction": "Закончите разделительные вопросы, добавив is it? / do you? и т. д. или isn’t it? / don’t you? и т. д.",
+      "instruction": "Закончите вопросы: добавьте is it? / do you? и т. д. или isn’t it? / don’t you? и т. д.",
       "example": [
         1
       ],

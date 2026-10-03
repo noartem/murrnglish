@@ -1,7 +1,10 @@
 {
   "unit": 12,
   "title": "for and since when … ? and how long … ?",
-  "pdfPages": [36, 37],
+  "pdfPages": [
+    36,
+    37
+  ],
   "exercises": [
     {
       "id": "12.1",
@@ -9,108 +12,269 @@
       "instruction": "Write for or since.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "It’s been raining ",
+            " lunchtime."
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Paul has lived in Brazil ", " ten years."],
-          "answers": [["for"]]
+          "parts": [
+            "Paul has lived in Brazil ",
+            " ten years."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["We've been sitting here ", " an hour."],
-          "answers": [["for"]]
+          "parts": [
+            "We've been sitting here ",
+            " an hour."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Kevin has been looking for a job ", " he left school."],
-          "answers": [["since"]]
+          "parts": [
+            "Kevin has been looking for a job ",
+            " he left school."
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I haven't been to a party ", " ages."],
-          "answers": [["for"]]
+          "parts": [
+            "I haven't been to a party ",
+            " ages."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I haven't seen him ", " last week."],
-          "answers": [["since"]]
+          "parts": [
+            "I haven't seen him ",
+            " last week."
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["She's been away ", " Friday."],
-          "answers": [["since"]]
+          "parts": [
+            "She's been away ",
+            " Friday."
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["It hasn't rained ", " a few weeks."],
-          "answers": [["for"]]
+          "parts": [
+            "It hasn't rained ",
+            " a few weeks."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "12.2",
       "type": "choice",
-      "instruction": "Look at each answer and choose the right question.",
+      "instruction": "Read each answer and choose the right question.",
       "items": [
         {
+          "num": 1,
+          "cue": "💬 The answer: “Ten years ago.”",
+          "options": [
+            "How long have they been married?",
+            "When did they get married?"
+          ],
+          "answer": 1
+        },
+        {
           "num": 2,
-          "options": ["How long have you had this car?", "When did you buy this car?"],
+          "cue": "💬 The answer: “About five years.”",
+          "options": [
+            "How long have you had this car?",
+            "When did you buy this car?"
+          ],
           "answer": 0
         },
         {
           "num": 3,
-          "options": ["How long have you been waiting?", "When did you get here?"],
+          "cue": "💬 The answer: “Only a few minutes.”",
+          "options": [
+            "How long have you been waiting?",
+            "When did you get here?"
+          ],
           "answer": 0
         },
         {
           "num": 4,
-          "options": ["How long have you been doing your course?", "When did your course start?"],
+          "cue": "💬 The answer: “September.”",
+          "options": [
+            "How long have you been doing your course?",
+            "When did your course start?"
+          ],
           "answer": 1
         },
         {
           "num": 5,
-          "options": ["How long has Anna been in London?", "When did Anna arrive in London?"],
+          "cue": "💬 The answer: “Last week.”",
+          "options": [
+            "How long has Anna been in London?",
+            "When did Anna arrive in London?"
+          ],
           "answer": 1
         },
         {
           "num": 6,
-          "options": ["How long have you known each other?", "When did you first meet each other?"],
+          "cue": "💬 The answer: “A long time.”",
+          "options": [
+            "How long have you known each other?",
+            "When did you first meet each other?"
+          ],
           "answer": 0
         }
+      ],
+      "example": [
+        1
       ]
     },
     {
       "id": "12.3",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences.",
+      "instruction": "Read the descriptions of the situations and complete the sentences.",
       "items": [
         {
+          "num": 1,
+          "cue": "🌧️ It’s raining. It’s been raining since lunchtime.",
+          "parts": [
+            "It started raining at lunchtime."
+          ],
+          "answers": [],
+          "example": true
+        },
+        {
+          "num": 2,
+          "cue": "👭 Ann and Jess are friends. They first met years ago.",
+          "parts": [
+            "They’ve known each other for years."
+          ],
+          "answers": [],
+          "example": true
+        },
+        {
           "num": 3,
-          "parts": ["He has been ill/unwell ", " Sunday."],
-          "answers": [["since"]]
+          "cue": "🤒 Mark is unwell. He fell ill on Sunday.",
+          "parts": [
+            "He has been ill/unwell ",
+            " Sunday."
+          ],
+          "answers": [
+            [
+              "since"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["She got ", "."],
-          "answers": [["married a year ago"]]
+          "cue": "💍 Sarah is married. She’s been married for a year.",
+          "parts": [
+            "She got ",
+            "."
+          ],
+          "answers": [
+            [
+              "married a year ago"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I've ", " since I woke up."],
-          "answers": [["had a headache"]]
+          "cue": "🤕 You have a headache. It began when you woke up.",
+          "parts": [
+            "I've ",
+            " since I woke up."
+          ],
+          "answers": [
+            [
+              "had a headache"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["The meeting ", " at 9 o'clock."],
-          "answers": [["started", "began"]]
+          "cue": "🗓️ Sue is in a meeting at work. It’s been going on since 9 o’clock.",
+          "parts": [
+            "The meeting ",
+            " at 9 o'clock."
+          ],
+          "answers": [
+            [
+              "started",
+              "began"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I've been working in a hotel ", "."],
-          "answers": [["for six months"]]
+          "cue": "🏨 You work in a hotel. You started there six months ago.",
+          "parts": [
+            "I've been working in a hotel ",
+            "."
+          ],
+          "answers": [
+            [
+              "for six months"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Kate started learning Japanese ", "."],
-          "answers": [["a long time ago"]]
+          "cue": "🇯🇵 Kate is learning Japanese. She’s been doing it for a long time.",
+          "parts": [
+            "Kate started learning Japanese ",
+            "."
+          ],
+          "answers": [
+            [
+              "a long time ago"
+            ]
+          ]
         }
       ]
     },
@@ -120,34 +284,108 @@
       "instruction": "Complete B's sentences. Then write B's answers again using It's … since … .",
       "items": [
         {
+          "num": 1,
+          "cue": "💬 A: Do you often go on holiday?",
+          "parts": [
+            "No, I haven’t had a holiday ",
+            " five years."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["No, I haven't seen Lisa/her ", " about a month."],
-          "answers": [["for"]]
+          "cue": "💬 A: Have you seen Lisa recently?",
+          "parts": [
+            "No, I haven't seen Lisa/her ",
+            " about a month."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["No, I haven't been swimming ", " a long time."],
-          "answers": [["for"]]
+          "cue": "💬 A: Do you still go swimming regularly?",
+          "parts": [
+            "No, I haven't been swimming ",
+            " a long time."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["No, I haven't ridden a bike ", " ages."],
-          "answers": [["for"]]
+          "cue": "💬 A: Do you still ride a bike these days?",
+          "parts": [
+            "No, I haven't ridden a bike ",
+            " ages."
+          ],
+          "answers": [
+            [
+              "for"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "cue": "↩️ B’s answer 1 again: No, I haven’t had a holiday for five years.",
+          "parts": [
+            "No, it’s five years since I last had a holiday."
+          ],
+          "answers": [],
+          "example": true
         },
         {
           "num": 6,
-          "parts": ["No, it\u2019s ", " since I (last) saw Lisa/her."],
-          "answers": [["about a month", "been about a month"]]
+          "cue": "↩️ B’s answer 2 again: No, I haven’t seen Lisa for about a month.",
+          "parts": [
+            "No, it’s ",
+            " since I (last) saw Lisa/her."
+          ],
+          "answers": [
+            [
+              "about a month",
+              "been about a month"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["No, it\u2019s ", " since I (last) went swimming."],
-          "answers": [["a long time", "been a long time"]]
+          "cue": "↩️ B’s answer 3 again: No, I haven’t been swimming for a long time.",
+          "parts": [
+            "No, it’s ",
+            " since I (last) went swimming."
+          ],
+          "answers": [
+            [
+              "a long time",
+              "been a long time"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["No, ", " since I (last) rode a bike."],
-          "answers": [["it\u2019s ages", "it\u2019s been ages"]]
+          "cue": "↩️ B’s answer 4 again: No, I haven’t ridden a bike for ages.",
+          "parts": [
+            "No, ",
+            " since I (last) rode a bike."
+          ],
+          "answers": [
+            [
+              "it’s ages",
+              "it’s been ages"
+            ]
+          ]
         }
       ]
     }

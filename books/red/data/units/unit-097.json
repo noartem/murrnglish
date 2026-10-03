@@ -62,7 +62,7 @@
     {
       "id": "97.2",
       "type": "write",
-      "instruction": "Вы подарили друзьям подарки. Это предметы, изображённые на картинках. Напишите по одному предложению о каждой картинке.",
+      "instruction": "Прочитайте описания подарков и напишите по одному предложению о каждом.",
       "example": [
         1
       ],
@@ -80,14 +80,16 @@
           "prompt": "JOANNA",
           "answers": [
             "I gave Joanna a plant."
-          ]
+          ],
+          "cue": "🌿 В подарок Жоанне — комнатное растение в горшке."
         },
         {
           "num": 3,
           "prompt": "RICHARD",
           "answers": [
             "I gave Richard a tie."
-          ]
+          ],
+          "cue": "👔 В подарок Ричарду — галстук."
         },
         {
           "num": 4,
@@ -95,7 +97,8 @@
           "answers": [
             "I gave Emma some chocolates.",
             "I gave Emma a box of chocolates."
-          ]
+          ],
+          "cue": "🍫 В подарок Эмме — коробка шоколадных конфет."
         },
         {
           "num": 5,
@@ -103,14 +106,16 @@
           "answers": [
             "I gave Rachel some flowers.",
             "I gave Rachel a bunch of flowers."
-          ]
+          ],
+          "cue": "💐 В подарок Рэйчел — букет цветов."
         },
         {
           "num": 6,
           "prompt": "KEVIN",
           "answers": [
             "I gave Kevin a wallet."
-          ]
+          ],
+          "cue": "👛 В подарок Кевину — кожаный бумажник."
         }
       ]
     },

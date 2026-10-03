@@ -62,7 +62,8 @@
     {
       "id": "7.2",
       "type": "write",
-      "instruction": "Прочитайте информацию и напишите предложения с глаголом like.",
+      "instruction": "Прочитайте таблицу и напишите предложения с глаголом like.",
+      "scene": " | Бен и Софи | Кейт\nclassical music | ✓ | ✗\nboxing | ✗ | ✓\nhorror movies | ✓ | ✗",
       "example": [
         1
       ],

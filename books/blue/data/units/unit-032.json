@@ -62,10 +62,11 @@
     {
       "id": "32.2",
       "type": "fill-in",
-      "instruction": "Which is correct?",
+      "instruction": "Which is correct? Write the right option from the description in the gap.",
       "items": [
         {
           "num": 1,
+          "cue": "⚖️ mustn’t hurry · needn’t hurry",
           "parts": [
             "We have plenty of time. We ",
             "."
@@ -78,6 +79,7 @@
         },
         {
           "num": 2,
+          "cue": "⚖️ must remember · mustn’t remember",
           "parts": [
             "I have to talk to Gary. I ",
             " to call him."
@@ -90,6 +92,7 @@
         },
         {
           "num": 3,
+          "cue": "⚖️ mustn’t forget · needn’t forget",
           "parts": [
             "I have to talk to Gary. I ",
             " to call him."
@@ -102,6 +105,7 @@
         },
         {
           "num": 4,
+          "cue": "⚖️ mustn’t decide · don’t need to decide",
           "parts": [
             "There's plenty of time for you to decide. You ",
             " now."
@@ -114,6 +118,7 @@
         },
         {
           "num": 5,
+          "cue": "⚖️ mustn’t lose them · needn’t lose them",
           "parts": [
             "These are important documents. We ",
             "."
@@ -126,6 +131,7 @@
         },
         {
           "num": 6,
+          "cue": "⚖️ mustn’t wait for me · needn’t wait for me",
           "parts": [
             "You ",
             ". You go on and I'll join you later."
@@ -138,6 +144,7 @@
         },
         {
           "num": 7,
+          "cue": "⚖️ mustn’t do anything stupid · needn’t do anything stupid",
           "parts": [
             "This is a dangerous situation and we need to be careful. We ",
             "."
@@ -150,6 +157,7 @@
         },
         {
           "num": 8,
+          "cue": "⚖️ mustn’t explain further · don’t need to explain further",
           "parts": [
             "I understand the situation perfectly. You ",
             "."
@@ -162,6 +170,7 @@
         },
         {
           "num": 9,
+          "cue": "⚖️ first gap: mustn’t be big · needn’t be big — second gap: must · mustn’t",
           "parts": [
             "a: What sort of house do you want to buy? Something big?\nb: It ",
             " – that's not so important. But it ",
@@ -298,7 +307,7 @@
     {
       "id": "32.5",
       "type": "write",
-      "instruction": "Are these sentences OK? Change them where necessary.",
+      "instruction": "Are the sentences OK? Change them where necessary. If a sentence is correct, write ‘OK’.",
       "items": [
         {
           "num": 1,

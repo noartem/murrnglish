@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { checkChoice, checkFill, checkMatching, checkWrite, normalize } from "./checker";
+import { checkChoice, checkFill, checkMatching, checkWrite, exampleText, normalize } from "./checker";
 
 describe("normalize", () => {
   it("lowercases and trims", () => {
@@ -108,5 +108,20 @@ describe("checkMatching", () => {
 
   it("unanswered slots are false", () => {
     expect(checkMatching([null, 3, 0], pairs)).toEqual([false, true, true]);
+  });
+});
+
+describe("exampleText", () => {
+  it("keeps an example whose parts hold the answer", () => {
+    expect(exampleText({ num: 1, parts: ["She’s taking ", " a picture."], answers: [["taking"]], example: true })).toBe(
+      "She’s taking a picture.",
+    );
+  });
+
+  it("fills in an answer the parts leave out", () => {
+    expect(exampleText({ num: 1, parts: ["He’s", ""], answers: [["hot."]], example: true })).toBe("He’s hot.");
+    expect(exampleText({ num: 1, parts: ["", " an apple."], answers: [["She’s eating"]], example: true })).toBe(
+      "She’s eating an apple.",
+    );
   });
 });

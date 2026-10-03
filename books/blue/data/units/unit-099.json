@@ -348,10 +348,11 @@
     {
       "id": "99.3",
       "type": "choice",
-      "instruction": "Put in the correct word.",
+      "instruction": "Read the descriptions and put in the correct word.",
       "items": [
         {
           "num": 2,
+          "cue": "☀️ I usually feel ________ when the sun is shining.",
           "options": [
             "happy",
             "happily"
@@ -360,6 +361,7 @@
         },
         {
           "num": 3,
+          "cue": "🧒 The children were playing ________ in the garden.",
           "options": [
             "happy",
             "happily"
@@ -368,6 +370,7 @@
         },
         {
           "num": 4,
+          "cue": "😨 You look ________! Are you all right?",
           "options": [
             "terrible",
             "terribly"
@@ -376,6 +379,7 @@
         },
         {
           "num": 5,
+          "cue": "📋 There’s no point in doing a job if you don’t do it ________.",
           "options": [
             "proper",
             "properly"
@@ -384,6 +388,7 @@
         },
         {
           "num": 6,
+          "cue": "🍲 The soup tastes ________. Can you give me the recipe?",
           "options": [
             "good",
             "well"
@@ -392,6 +397,7 @@
         },
         {
           "num": 7,
+          "cue": "⏰ Please hurry up! You’re always so ________.",
           "options": [
             "slow",
             "slowly"
@@ -400,6 +406,7 @@
         },
         {
           "num": 8,
+          "cue": "🍽️ A customer in the restaurant was behaving ________.",
           "options": [
             "bad",
             "badly"
@@ -408,6 +415,7 @@
         },
         {
           "num": 9,
+          "cue": "😠 The customer became ________ when the manager asked him to leave.",
           "options": [
             "violent",
             "violently"
@@ -419,7 +427,7 @@
     {
       "id": "99.4",
       "type": "write",
-      "instruction": "Write the following in another way using the first … / the next … / the last … .",
+      "instruction": "Write each expression in another way using the first … / the next … / the last … .",
       "items": [
         {
           "num": 3,

@@ -9,7 +9,7 @@
     {
       "id": "87.1",
       "type": "fill-in",
-      "instruction": "In some of these sentences much is incorrect or unnatural. Change much to many or a lot (of) where necessary. Write ‘OK’ if the sentence is correct.",
+      "instruction": "In some sentences much is incorrect or unnatural. Change much to many or a lot (of) where necessary. Write ‘OK’ if the sentence is correct.",
       "items": [
         {
           "num": 1,
@@ -342,10 +342,11 @@
     {
       "id": "87.4",
       "type": "choice",
-      "instruction": "Which is right?",
+      "instruction": "Read the descriptions and choose the right one.",
       "items": [
         {
           "num": 1,
+          "cue": "🍀 She’s lucky. She has … .",
           "options": [
             "few problems",
             "a few problems"
@@ -354,6 +355,7 @@
         },
         {
           "num": 2,
+          "cue": "💵 Can you lend me … ?",
           "options": [
             "few dollars",
             "a few dollars"
@@ -362,6 +364,7 @@
         },
         {
           "num": 3,
+          "cue": "🌙 It was the middle of the night, so there was … .",
           "options": [
             "little traffic",
             "a little traffic"
@@ -370,6 +373,7 @@
         },
         {
           "num": 4,
+          "cue": "💍 They got married … .",
           "options": [
             "few years ago",
             "a few years ago"
@@ -378,6 +382,7 @@
         },
         {
           "num": 5,
+          "cue": "🤔 I can’t give you a decision yet. I need … to think.",
           "options": [
             "little time",
             "a little time"
@@ -386,6 +391,7 @@
         },
         {
           "num": 6,
+          "cue": "🇷🇺 I don’t know much Russian – only … .",
           "options": [
             "only few words",
             "only a few words"
@@ -394,6 +400,7 @@
         },
         {
           "num": 7,
+          "cue": "🏆 It was a surprise that he won the game. … expected him to win.",
           "options": [
             "Few people",
             "A few people"

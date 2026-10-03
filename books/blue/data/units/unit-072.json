@@ -313,6 +313,7 @@
       "type": "fill-in",
       "instruction": "Put in a/an or the where necessary.",
       "items": [
+        {"num": 1, "parts": ["Would you like ", "?"], "answers": [["an apple"]], "example": true},
         {
           "num": 2,
           "parts": [
@@ -487,8 +488,9 @@
     {
       "id": "72.4",
       "type": "self-check",
-      "instruction": "Answer these questions. Where possible, use once a week / three times a day etc.",
+      "instruction": "Answer each question about your own habits. Where possible, use once a week / three times a day etc.",
       "items": [
+        {"num": 1, "prompt": "How often do you go to the cinema?", "modelAnswers": ["Three or four times a year."]},
         {
           "num": 2,
           "prompt": "How often do you go to the dentist?",

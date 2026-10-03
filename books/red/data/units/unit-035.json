@@ -9,7 +9,7 @@
     {
       "id": "35.1",
       "type": "write",
-      "instruction": "Посмотрите на картинки. Напишите, что говорят эти люди. Используйте Would you like ... ?",
+      "instruction": "Прочитайте описания. Напишите, что говорят эти люди. Используйте Would you like ... ?",
       "example": [
         1
       ],
@@ -20,14 +20,16 @@
           "answers": [
             "Would you like a chocolat ?"
           ],
-          "example": true
+          "example": true,
+          "cue": "🍫 Перед вами плитка шоколада на блюдце, а рядом стоит чашка чая."
         },
         {
           "num": 2,
           "prompt": "",
           "answers": [
             "Would you like an apple?"
-          ]
+          ],
+          "cue": "🍏 На столе лежат яблоки — одно уже надрезано."
         },
         {
           "num": 3,
@@ -35,7 +37,8 @@
           "answers": [
             "Would you like some coffee?",
             "Would you like a cup of coffee?"
-          ]
+          ],
+          "cue": "☕ Поднос с чашкой кофе стоит перед гостем."
         },
         {
           "num": 4,
@@ -43,14 +46,16 @@
           "answers": [
             "Would you like some cheese?",
             "Would you like a piece of cheese?"
-          ]
+          ],
+          "cue": "🧀 На доске лежит кусок сыра и нож."
         },
         {
           "num": 5,
           "prompt": "",
           "answers": [
             "Would you like a sandwich?"
-          ]
+          ],
+          "cue": "🥪 На тарелке бутерброд с ветчиной и огурцом."
         },
         {
           "num": 6,
@@ -58,7 +63,8 @@
           "answers": [
             "Would you like some cake?",
             "Would you like a piece of cake?"
-          ]
+          ],
+          "cue": "🍰 Кусок торта уже отложен на отдельной тарелке."
         }
       ]
     },
@@ -210,7 +216,7 @@
     {
       "id": "35.4",
       "type": "write",
-      "instruction": "Переведите предложения на английский язык, используя I’d like, would you like, do you like и т. д. (рассказать историю = tell a story; фото с отпуска = holiday photos; на завтрак = for breakfast)",
+      "instruction": "Переведите предложения на английский язык, используя I’d like, would you like, do you like и т. д. (рассказать историю = tell a story; снимки с отпуска = snaps from the holiday; на завтрак = for breakfast). Обратите внимание на ситуацию: в кафе и в гостях нужно would you like, а про вкусы — do you like.",
       "items": [
         {
           "num": 1,

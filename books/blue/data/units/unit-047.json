@@ -1,22 +1,135 @@
 {
   "unit": 47,
   "title": "Reported speech 1 (he said that …)",
-  "pdfPages": [106, 107],
+  "pdfPages": [
+    106,
+    107
+  ],
   "exercises": [
     {
       "id": "47.1",
       "type": "fill-in",
-      "instruction": "You talked to some friends of yours (Paul, Tom, Anna etc.). Read what they said on the left (direct speech). Later (the same day) you tell another friend what they said (reported speech). Complete the sentences.",
+      "instruction": "You talked to some friends of yours. The descriptions show what they said (direct speech). Later the same day you tell another friend what they said (reported speech). Complete the sentences.",
       "items": [
-        { "num": 2, "parts": ["I wanted to walk to the station, but Tom said ", " far."], "answers": [["(that) it was too far"]] },
-        { "num": 3, "parts": ["Anna has been invited to the party but she told me ", " to go."], "answers": [["(that) she didn't want"]] },
-        { "num": 4, "parts": ["I asked Dan about his travel plans. He said ", " next week."], "answers": [["(that) he would let me know"]] },
-        { "num": 5, "parts": ["I asked Ben about Rachel, but he told me ", " for a while."], "answers": [["(that) he hadn't seen her"]] },
-        { "num": 6, "parts": ["I needed to borrow a guitar and Kate said ", "."], "answers": [["(that) I could borrow hers"]] },
-        { "num": 7, "parts": ["I asked Sue about her job. She said ", " very much."], "answers": [["(that) she wasn't enjoying it"]] },
-        { "num": 8, "parts": ["I asked James about his car. He told me ", " a few months ago."], "answers": [["(that) he sold it", "(that) he'd sold it", "(that) he had sold it"]] },
-        { "num": 9, "parts": ["I asked Sarah the name of the cafe we went to but she said ", "."], "answers": [["(that) she didn't know"]] },
-        { "num": 10, "parts": ["I asked Amy about her school and she told me ", " class."], "answers": [["(that) there were twenty students in her"]] }
+        {
+          "num": 2,
+          "cue": "🚉 You: Shall we walk to the station? — Tom: No, it’s too far. Let’s get a taxi.",
+          "parts": [
+            "I wanted to walk to the station, but Tom said ",
+            " far."
+          ],
+          "answers": [
+            [
+              "(that) it was too far"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "cue": "🎉 You: Have you been invited to the party? — Anna: Yes, but I don’t want to go.",
+          "parts": [
+            "Anna has been invited to the party but she told me ",
+            " to go."
+          ],
+          "answers": [
+            [
+              "(that) she didn't want"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "cue": "🧳 You: When are you going away, Dan? — Dan: I’ll let you know next week.",
+          "parts": [
+            "I asked Dan about his travel plans. He said ",
+            " next week."
+          ],
+          "answers": [
+            [
+              "(that) he would let me know"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "cue": "👩 You: Do you ever see Rachel these days? — Ben: I haven’t seen her for a while.",
+          "parts": [
+            "I asked Ben about Rachel, but he told me ",
+            " for a while."
+          ],
+          "answers": [
+            [
+              "(that) he hadn't seen her"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "cue": "🎸 You: Where can I borrow a guitar? — Kate: You can borrow mine.",
+          "parts": [
+            "I needed to borrow a guitar and Kate said ",
+            "."
+          ],
+          "answers": [
+            [
+              "(that) I could borrow hers"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "cue": "💼 You: How’s your job, Sue? — Sue: I’m not enjoying it very much.",
+          "parts": [
+            "I asked Sue about her job. She said ",
+            " very much."
+          ],
+          "answers": [
+            [
+              "(that) she wasn't enjoying it"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "cue": "🚗 You: Do you still have your car? — James: No, I sold it a few months ago.",
+          "parts": [
+            "I asked James about his car. He told me ",
+            " a few months ago."
+          ],
+          "answers": [
+            [
+              "(that) he sold it",
+              "(that) he'd sold it",
+              "(that) he had sold it"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "cue": "☕ You: What’s the name of the café we went to? — Sarah: I don’t know.",
+          "parts": [
+            "I asked Sarah the name of the cafe we went to but she said ",
+            "."
+          ],
+          "answers": [
+            [
+              "(that) she didn't know"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "cue": "🏫 You: How many students are there in your class, Amy? — Amy: Twenty.",
+          "parts": [
+            "I asked Amy about her school and she told me ",
+            " class."
+          ],
+          "answers": [
+            [
+              "(that) there were twenty students in her"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -24,14 +137,62 @@
       "type": "self-check",
       "instruction": "Somebody says something to you which is not what you expected. Use your own ideas to complete your answers.",
       "items": [
-        { "num": 1, "prompt": "a: It's quite a long way from the hotel to the city centre.\nb: Is it? The man on the reception desk said it was only five minutes' walk.", "modelAnswers": [""] },
-        { "num": 2, "prompt": "a: Sue is coming to the party tonight.\nb: Is she? I saw her a few days ago and she said she …", "modelAnswers": ["wasn't coming / was going somewhere else / couldn't come"] },
-        { "num": 3, "prompt": "a: Sarah gets on fine with Paul.\nb: Does she? Last week you said … each other.", "modelAnswers": ["they didn't like each other / they didn't get on with each other / they couldn't stand each other"] },
-        { "num": 4, "prompt": "a: Joe knows lots of people.\nb: That's not what he told me. He said … anyone.", "modelAnswers": ["he didn't know"] },
-        { "num": 5, "prompt": "a: Jane will be here next week.\nb: Oh, really? When I spoke to her, she said … away.", "modelAnswers": ["she would be away / she was going away"] },
-        { "num": 6, "prompt": "a: I'm going out tonight.\nb: Are you? I thought you said … at home.", "modelAnswers": ["you were staying"] },
-        { "num": 7, "prompt": "a: I speak French quite well.\nb: Do you? But earlier you said … any other languages.", "modelAnswers": ["you couldn't speak / you didn't speak"] },
-        { "num": 8, "prompt": "a: I haven't seen Ben recently.\nb: That's strange. He told me … last weekend.", "modelAnswers": ["he'd seen you / he saw you"] }
+        {
+          "num": 1,
+          "prompt": "a: It's quite a long way from the hotel to the city centre.\nb: Is it? The man on the reception desk said it was only five minutes' walk.",
+          "modelAnswers": [
+            ""
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "a: Sue is coming to the party tonight.\nb: Is she? I saw her a few days ago and she said she …",
+          "modelAnswers": [
+            "wasn't coming / was going somewhere else / couldn't come"
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "a: Sarah gets on fine with Paul.\nb: Does she? Last week you said … each other.",
+          "modelAnswers": [
+            "they didn't like each other / they didn't get on with each other / they couldn't stand each other"
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "a: Joe knows lots of people.\nb: That's not what he told me. He said … anyone.",
+          "modelAnswers": [
+            "he didn't know"
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "a: Jane will be here next week.\nb: Oh, really? When I spoke to her, she said … away.",
+          "modelAnswers": [
+            "she would be away / she was going away"
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "a: I'm going out tonight.\nb: Are you? I thought you said … at home.",
+          "modelAnswers": [
+            "you were staying"
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "a: I speak French quite well.\nb: Do you? But earlier you said … any other languages.",
+          "modelAnswers": [
+            "you couldn't speak / you didn't speak"
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "a: I haven't seen Ben recently.\nb: That's strange. He told me … last weekend.",
+          "modelAnswers": [
+            "he'd seen you / he saw you"
+          ]
+        }
       ]
     }
   ]

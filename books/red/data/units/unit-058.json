@@ -149,13 +149,14 @@
     {
       "id": "58.2",
       "type": "write",
-      "instruction": "Посмотрите на картинки. Что делают эти люди?",
+      "instruction": "Прочитайте описания ситуаций и напишите предложения о том, что делают эти люди.",
       "example": [
         1
       ],
       "items": [
         {
           "num": 1,
+          "cue": "👨‍🍳 Он выкладывает торт на блюдо.",
           "prompt": "",
           "answers": [
             "He’s making a cake."
@@ -164,6 +165,7 @@
         },
         {
           "num": 2,
+          "cue": "📚 Двое сидят за столом и пишут в тетрадях.",
           "prompt": "They",
           "answers": [
             "They’re doing their homework.",
@@ -174,6 +176,7 @@
         },
         {
           "num": 3,
+          "cue": "🛒 Он идёт из магазина с двумя сумками.",
           "prompt": "He",
           "answers": [
             "He’s doing the shopping.",
@@ -183,6 +186,7 @@
         },
         {
           "num": 4,
+          "cue": "🧵 Она шьёт куртку на машинке.",
           "prompt": "",
           "answers": [
             "She’s making a jacket.",
@@ -191,6 +195,7 @@
         },
         {
           "num": 5,
+          "cue": "✍️ Они сидят в аудитории и пишут ответы.",
           "prompt": "",
           "answers": [
             "They’re doing an exam.",
@@ -201,6 +206,7 @@
         },
         {
           "num": 6,
+          "cue": "🛏️ Он заправляет кровать.",
           "prompt": "",
           "answers": [
             "He’s making the bed.",
@@ -211,6 +217,7 @@
         },
         {
           "num": 7,
+          "cue": "🍽️ Она моет тарелки и чашки.",
           "prompt": "",
           "answers": [
             "She’s doing the washing-up.",
@@ -225,6 +232,7 @@
         },
         {
           "num": 8,
+          "cue": "📝 Он пишет список покупок.",
           "prompt": "",
           "answers": [
             "He’s making a shopping list.",
@@ -235,6 +243,7 @@
         },
         {
           "num": 9,
+          "cue": "🎬 Они стоят у камеры на улице.",
           "prompt": "",
           "answers": [
             "They’re making a film.",
@@ -243,6 +252,7 @@
         },
         {
           "num": 10,
+          "cue": "📷 Он фотографирует друга.",
           "prompt": "",
           "answers": [
             "He’s taking a picture.",

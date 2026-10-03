@@ -243,14 +243,15 @@
     {
       "id": "18.3",
       "type": "write",
-      "instruction": "Compare what Karen said ten years ago and what she says today. Write about how Karen has changed. Use used to / didn’t use to / never used to in the first part of your sentence.",
+      "instruction": "Each line gives what Karen said ten years ago, then (after the slash) what she says today. Write about how Karen has changed. Use used to / didn’t use to / never used to in the first part of your sentence.",
       "items": [
         {
           "num": 1,
-          "prompt": "She used to travel a lot, but she doesn’t go away much these days.",
+          "prompt": "I travel a lot. / I don’t go away much these days.",
           "answers": [
             "She used to travel a lot, but she doesn’t go away much these days."
-          ]
+          ],
+          "example": true
         },
         {
           "num": 2,
@@ -295,24 +296,28 @@
     {
       "id": "18.4",
       "type": "self-check",
-      "instruction": "Write sentences about yourself. Begin I used to … (I used to be/work/like/play etc.) Then begin with I didn’t use to …",
+      "instruction": "Write about how you have changed. In 1–5 begin with I used to …, in 6–8 with I didn’t use to …, and finish with but … and how things are now. Read the descriptions for ideas.",
+      "scene": "For example:\nI used to live in a small village, but now I live in a city.\nI didn’t use to read a lot, but I do now.",
       "items": [
         {
           "num": 1,
-          "prompt": "I used to live in a small village, but now I live in a city.",
+          "cue": "🏠 where you lived or went to school",
+          "prompt": "I used to …, but …",
           "modelAnswers": [
             "I used to live in a small village, but now I live in a city."
           ]
         },
         {
           "num": 2,
-          "prompt": "I used to play tennis a lot, but I don’t play any more.",
+          "cue": "⚽ a sport, game or hobby you’ve given up",
+          "prompt": "I used to …, but …",
           "modelAnswers": [
             "I used to play tennis a lot, but I don’t play any more."
           ]
         },
         {
           "num": 3,
+          "cue": "🍽️ food: something you ate, or never ate",
           "prompt": "I used to …, but …",
           "modelAnswers": [
             "I used to be a vegetarian, but now I eat meat sometimes."
@@ -320,6 +325,7 @@
         },
         {
           "num": 4,
+          "cue": "📺 how you spent your evenings",
           "prompt": "I used to …, but …",
           "modelAnswers": [
             "I used to watch TV a lot, but I don’t watch it much now."
@@ -327,6 +333,7 @@
         },
         {
           "num": 5,
+          "cue": "😴 something you hated or found hard",
           "prompt": "I used to …, but …",
           "modelAnswers": [
             "I used to hate getting up early, but now it’s no problem."
@@ -334,13 +341,15 @@
         },
         {
           "num": 6,
-          "prompt": "I didn’t use to read a lot, but I do now.",
+          "cue": "📚 a habit you have now",
+          "prompt": "I didn’t use to …, but …",
           "modelAnswers": [
             "I didn’t use to read a lot, but I do now."
           ]
         },
         {
           "num": 7,
+          "cue": "☕ something you eat or drink every day now",
           "prompt": "I didn’t use to …, but …",
           "modelAnswers": [
             "I didn’t use to drink coffee, but I drink it every day now."
@@ -348,6 +357,7 @@
         },
         {
           "num": 8,
+          "cue": "☀️ something you enjoy now: weather, music, places",
           "prompt": "I didn’t use to …, but …",
           "modelAnswers": [
             "I didn’t use to like hot weather, but now I love it."

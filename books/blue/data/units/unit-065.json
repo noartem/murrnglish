@@ -6,7 +6,7 @@
     {
       "id": "65.1",
       "type": "write",
-      "instruction": "Write these sentences in another way, beginning as shown.",
+      "instruction": "Read each pair of sentences and write the second one again, beginning as shown.",
       "items": [
         {
           "num": 2,

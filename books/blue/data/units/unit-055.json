@@ -19,7 +19,8 @@
     {
       "id": "55.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences for these situations.",
+      "instruction": "Read the situations and complete the sentences.",
+      "scene": "💬 What was said, and how it was answered (read the descriptions):\n2. Why don't you come and stay with us? — That would be nice.\n3. Don't forget to call Joe. — No, I won't forget.\n4. Be careful on the stairs. — Don't worry. I will.\n5. Can you give me a hand with this? — Sure.",
       "items": [
         {"num": 2, "parts": ["They invited him ", "."], "answers": [["to stay with them"]]},
         {"num": 3, "parts": ["He reminded her ", "."], "answers": [["to call Joe"]]},
@@ -30,16 +31,16 @@
     {
       "id": "55.3",
       "type": "fill-in",
-      "instruction": "Complete the second sentence so that the meaning is similar to the first sentence.",
+      "instruction": "Read the first sentence of each pair, then complete the second one so that it means the same.",
       "items": [
-        {"num": 2, "parts": ["I didn\u2019t expect ", "."], "answers": [["it to rain"]]},
-        {"num": 3, "parts": ["Let ", "."], "answers": [["him do what he wants"]]},
-        {"num": 4, "parts": ["Tom\u2019s glasses make ", "."], "answers": [["him look older"]]},
-        {"num": 5, "parts": ["I want ", "."], "answers": [["you to know the truth"]]},
-        {"num": 6, "parts": ["Sarah persuaded ", "."], "answers": [["me to apply for the job"]]},
-        {"num": 7, "parts": ["My lawyer advised ", "."], "answers": [["me not to say anything to the police"]]},
-        {"num": 8, "parts": ["I was warned ", "."], "answers": [["not to believe everything he says"]]},
-        {"num": 9, "parts": ["Having a car enables ", "."], "answers": [["you to get around more easily"]]}
+        {"num": 2, "cue": "1st: I was surprised that it rained.", "parts": ["I didn\u2019t expect ", "."], "answers": [["it to rain"]]},
+        {"num": 3, "cue": "1st: Don\u2019t stop him doing what he wants.", "parts": ["Let ", "."], "answers": [["him do what he wants"]]},
+        {"num": 4, "cue": "1st: Tom looks older when he wears glasses.", "parts": ["Tom\u2019s glasses make ", "."], "answers": [["him look older"]]},
+        {"num": 5, "cue": "1st: I think you should know the truth.", "parts": ["I want ", "."], "answers": [["you to know the truth"]]},
+        {"num": 6, "cue": "1st: At first I didn\u2019t want to apply for the job, but Sarah persuaded me.", "parts": ["Sarah persuaded ", "."], "answers": [["me to apply for the job"]]},
+        {"num": 7, "cue": "1st: My lawyer said I shouldn\u2019t say anything to the police.", "parts": ["My lawyer advised ", "."], "answers": [["me not to say anything to the police"]]},
+        {"num": 8, "cue": "1st: I was told that I shouldn\u2019t believe everything he says.", "parts": ["I was warned ", "."], "answers": [["not to believe everything he says"]]},
+        {"num": 9, "cue": "1st: If you\u2019ve got a car, you are able to get around more easily.", "parts": ["Having a car enables ", "."], "answers": [["you to get around more easily"]]}
       ]
     },
     {

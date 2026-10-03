@@ -9,7 +9,15 @@
     {
       "id": "33.1",
       "type": "write",
-      "instruction": "For each situation, write a sentence with should or shouldn't + one of the following:\ngo away for a few days · stay up so late · look for another job · put some pictures on the walls · take a picture · worry so much",
+      "instruction": "For each situation, write a sentence with should or shouldn’t + one of these phrases:",
+      "wordBank": [
+        "go away for a few days",
+        "stay up so late",
+        "look for another job",
+        "put some pictures on the walls",
+        "take a picture",
+        "worry so much"
+      ],
       "items": [
         {
           "num": 1,

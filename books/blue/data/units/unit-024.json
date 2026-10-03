@@ -9,10 +9,12 @@
     {
       "id": "24.1",
       "type": "fill-in",
-      "instruction": "Read about Andy. Then tick (✓) the sentences which are true. In each group of sentences at least one is true.",
+      "instruction": "Read about Andy in the scene. For each time, complete the sentence with a true option from the description (a–d). In each group at least one option is true.",
+      "scene": "🧑‍💼 Andy’s day — the same every day, and tomorrow too:\n8.00 | leaves home\n8.45 | arrives at work and starts at once\n12.30–1.00 | lunch (about half an hour)\n1.15 | starts work again\n4.30 exactly | goes home",
       "items": [
         {
           "num": 1,
+          "cue": "🕖 a he’ll be leaving the house · b he’ll have left the house · c he’ll be at home · d he’ll be having breakfast",
           "parts": [
             "At 7.45 ",
             ""
@@ -26,6 +28,7 @@
         },
         {
           "num": 2,
+          "cue": "🕗 a he’ll be leaving the house · b he’ll have left the house · c he’ll have arrived at work · d he’ll be arriving at work",
           "parts": [
             "At 8.15 ",
             ""
@@ -38,6 +41,7 @@
         },
         {
           "num": 3,
+          "cue": "🕘 a he’ll be working · b he’ll start work · c he’ll have started work · d he’ll be arriving at work",
           "parts": [
             "At 9.15 ",
             ""
@@ -51,6 +55,7 @@
         },
         {
           "num": 4,
+          "cue": "🕧 a he’ll have lunch · b he’ll be having lunch · c he’ll have finished his lunch · d he’ll have started his lunch",
           "parts": [
             "At 12.45 ",
             ""
@@ -64,6 +69,7 @@
         },
         {
           "num": 5,
+          "cue": "🕓 a he’ll have finished work · b he’ll finish work · c he’ll be working · d he won’t have finished work",
           "parts": [
             "At 4 o’clock ",
             ""
@@ -77,6 +83,7 @@
         },
         {
           "num": 6,
+          "cue": "🕟 a he’ll leave work · b he’ll be leaving work · c he’ll have left work · d he’ll have arrived home",
           "parts": [
             "At 4.45 ",
             ""

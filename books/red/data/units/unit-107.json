@@ -9,7 +9,7 @@
     {
       "id": "107.1",
       "type": "write",
-      "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте in/at/on.",
+      "instruction": "Прочитайте описания и ответьте на вопросы. Используйте in/at/on.",
       "items": [
         {
           "num": 1,
@@ -24,77 +24,88 @@
           "prompt": "Where are they?",
           "answers": [
             "At the airport."
-          ]
+          ],
+          "cue": "✈️ Они стоят в здании аэропорта и ждут рейс."
         },
         {
           "num": 3,
           "prompt": "Where is he?",
           "answers": [
             "In bed."
-          ]
+          ],
+          "cue": "🤒 Он лежит в больнице уже вторую неделю."
         },
         {
           "num": 4,
           "prompt": "Where are they?",
           "answers": [
             "On a ship."
-          ]
+          ],
+          "cue": "🚢 Они плывут на большом корабле."
         },
         {
           "num": 5,
           "prompt": "Where are the stars?",
           "answers": [
             "In the sky."
-          ]
+          ],
+          "cue": "✨ Ночью над головой видны звёзды."
         },
         {
           "num": 6,
           "prompt": "Where are they?",
           "answers": [
             "At a party."
-          ]
+          ],
+          "cue": "🥂 В зале много гостей, играет музыка."
         },
         {
           "num": 7,
           "prompt": "Where is Steve?",
           "answers": [
             "At the doctor’s."
-          ]
+          ],
+          "cue": "👨‍⚕️ Он у врача на приёме."
         },
         {
           "num": 8,
           "prompt": "Where is the restaurant?",
           "answers": [
             "On the second floor."
-          ]
+          ],
+          "cue": "🏢 Ресторан находится на втором этаже здания."
         },
         {
           "num": 9,
           "prompt": "Where is she?",
           "answers": [
             "At work."
-          ]
+          ],
+          "cue": "💼 Она на рабочем месте."
         },
         {
           "num": 10,
           "prompt": "Where are they?",
           "answers": [
             "On a plane."
-          ]
+          ],
+          "cue": "✈️ Они в самолёте над Атлантикой."
         },
         {
           "num": 11,
           "prompt": "Where are they?",
           "answers": [
             "In a taxi."
-          ]
+          ],
+          "cue": "🚕 Они едут в машине с водителем."
         },
         {
           "num": 12,
           "prompt": "Where are they?",
           "answers": [
             "At a wedding."
-          ]
+          ],
+          "cue": "💍 Зал украшен цветами, идут тосты."
         }
       ]
     },

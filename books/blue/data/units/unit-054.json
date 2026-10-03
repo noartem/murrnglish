@@ -6,7 +6,8 @@
     {
       "id": "54.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences for these situations.",
+      "instruction": "Read the dialogues in the scene and complete each sentence for the situation it describes.",
+      "scene": "💬 What was said, and how it was answered (read the descriptions):\n1. Shall we get married one day? — Yes, let's.\n2. Please help me with the suitcases. — All right, go ahead.\n3. Can I carry your bag for you? — No, thanks. I can manage.\n4. Shall we meet outside the station at eight? — OK, fine.\n5. Tell me your name, please. — I'm not going to tell you.\n6. Please don't tell anybody. — I won't. I promise.",
       "items": [
         {"num": 1, "parts": ["They decided ", "."], "answers": [["to get married"]]},
         {"num": 2, "parts": ["She agreed ", "."], "answers": [["to help him"]]},
@@ -49,15 +50,15 @@
     {
       "id": "54.4",
       "type": "write",
-      "instruction": "Make a new sentence using the verb in brackets.",
+      "instruction": "Read each sentence and make a new one with the verb in brackets.",
       "items": [
-        {"num": 1, "prompt": "(seem)", "answers": ["I seem to have lost my keys."]},
-        {"num": 2, "prompt": "(appear)", "answers": ["Tom appears to be worried about something."]},
-        {"num": 3, "prompt": "(seem)", "answers": ["You seem to know a lot of people."]},
-        {"num": 4, "prompt": "(seem)", "answers": ["My English seems to be getting better."]},
-        {"num": 5, "prompt": "(appear)", "answers": ["That car appears to have broken down."]},
-        {"num": 6, "prompt": "(seem)", "answers": ["Rachel seems to be enjoying her job."]},
-        {"num": 7, "prompt": "(claim)", "answers": ["They claim to have solved the problem."]}
+        {"num": 1, "prompt": "I've lost my keys. (seem)", "answers": ["I seem to have lost my keys."]},
+        {"num": 2, "prompt": "Tom is worried about something. (appear)", "answers": ["Tom appears to be worried about something."]},
+        {"num": 3, "prompt": "You know a lot of people. (seem)", "answers": ["You seem to know a lot of people."]},
+        {"num": 4, "prompt": "My English is getting better. (seem)", "answers": ["My English seems to be getting better."]},
+        {"num": 5, "prompt": "That car has broken down. (appear)", "answers": ["That car appears to have broken down."]},
+        {"num": 6, "prompt": "Rachel is enjoying her job. (seem)", "answers": ["Rachel seems to be enjoying her job."]},
+        {"num": 7, "prompt": "They have solved the problem. (claim)", "answers": ["They claim to have solved the problem."]}
       ]
     },
     {

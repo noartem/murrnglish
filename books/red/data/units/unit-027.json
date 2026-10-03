@@ -9,35 +9,39 @@
     {
       "id": "27.1",
       "type": "write",
-      "instruction": "Что говорят эти люди?",
+      "instruction": "Прочитайте описания и напишите, что говорят эти люди.",
       "items": [
         {
           "num": 1,
           "prompt": "I’m going to watch TV.",
           "answers": [
             "I’m going to watch TV."
-          ]
+          ],
+          "cue": "📺 Человек взял пульт от телевизора и садится на диван."
         },
         {
           "num": 2,
           "prompt": "I",
           "answers": [
             "I’m going to have a bath."
-          ]
+          ],
+          "cue": "🛁 Человек стоит перед ванной с полотенцем через руку."
         },
         {
           "num": 3,
           "prompt": "I",
           "answers": [
             "I’m going to buy a car."
-          ]
+          ],
+          "cue": "🚗 У человека в руках ключи и папка с логотипом автосалона."
         },
         {
           "num": 4,
           "prompt": "We",
           "answers": [
             "We’re going to play football."
-          ]
+          ],
+          "cue": "🥾 На поле стоят мяч и две пары спортивной обуви."
         }
       ],
       "example": [
@@ -188,14 +192,15 @@
     {
       "id": "27.3",
       "type": "write",
-      "instruction": "Посмотрите на картинки. Что сейчас произойдёт?",
+      "instruction": "Прочитайте описания и напишите, что сейчас произойдёт.",
       "items": [
         {
           "num": 1,
           "prompt": "",
           "answers": [
             "It’s going to rain."
-          ]
+          ],
+          "cue": "☁️ На улице потемнело, тучи закрыли всё небо, первые капли уже падают."
         },
         {
           "num": 2,
@@ -203,7 +208,8 @@
           "answers": [
             "The shelf is going to fall (down).",
             "The shelf is going to fall down."
-          ]
+          ],
+          "cue": "🪵 Полка в шкафу накренилась и трещит; с верхней полки падает посуда."
         },
         {
           "num": 3,
@@ -211,7 +217,8 @@
           "answers": [
             "The car is going to turn (right).",
             "The car is going to turn right."
-          ]
+          ],
+          "cue": "🚗 Машина выезжает с боковой дороги на главную и поворачивает направо."
         },
         {
           "num": 4,
@@ -219,7 +226,8 @@
           "answers": [
             "He’s going to kick the ball.",
             "He is going to kick the ball."
-          ]
+          ],
+          "cue": "⚽ Футболист разбежался и замахнулся ногой по мячу."
         }
       ],
       "example": [
@@ -229,28 +237,31 @@
     {
       "id": "27.4",
       "type": "self-check",
-      "instruction": "Что вы собираетесь делать сегодня или завтра? Напишите три предложения.",
+      "instruction": "Что вы собираетесь делать сегодня или завтра? Напишите три предложения с going to.",
       "items": [
         {
           "num": 1,
           "prompt": "I’m",
           "modelAnswers": [
             "I’m going to phone Maria this evening."
-          ]
+          ],
+          "cue": "📞 Про звонок или встречу с человеком, которого давно не видели."
         },
         {
           "num": 2,
           "prompt": "",
           "modelAnswers": [
             "I’m going to get up early tomorrow."
-          ]
+          ],
+          "cue": "🌅 Про раннее утро: работа, учёба, поездка — что-то, что начинается рано."
         },
         {
           "num": 3,
           "prompt": "",
           "modelAnswers": [
             "I’m going to buy some shoes tomorrow."
-          ]
+          ],
+          "cue": "🛍️ Про покупку: одежда, продукты, книга, подарок."
         }
       ]
     },

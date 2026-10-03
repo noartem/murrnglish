@@ -9,7 +9,7 @@
     {
       "id": "101.1",
       "type": "write",
-      "instruction": "Используя слова и фразы из обеих рамок, напишите предложения по образцу: A … is a person who …. Если необходимо, воспользуйтесь словарём.",
+      "instruction": "Прочитайте описания и напишите предложения по образцу: A … is a person who …. Слова из обеих рамок можно использовать как угодно.",
       "wordBank": [
         "a thief",
         "a butcher",
@@ -42,49 +42,56 @@
           "prompt": "A butcher is a person",
           "answers": [
             "A butcher is a person who sells meat."
-          ]
+          ],
+          "cue": "🥩 Тот, кто торгует мясом."
         },
         {
           "num": 3,
           "prompt": "A musician",
           "answers": [
             "A musician is a person who plays a musical instrument."
-          ]
+          ],
+          "cue": "🎵 Тот, кто играет на музыкальном инструменте."
         },
         {
           "num": 4,
           "prompt": "",
           "answers": [
             "A patient is a person who is ill in hospital."
-          ]
+          ],
+          "cue": "🛏️ Тот, кто лежит в больнице."
         },
         {
           "num": 5,
           "prompt": "",
           "answers": [
             "A dentist is a person who takes care of your teeth."
-          ]
+          ],
+          "cue": "🦷 Тот, кто следит за зубами."
         },
         {
           "num": 6,
           "prompt": "",
           "answers": [
             "A fool is a person who does stupid things."
-          ]
+          ],
+          "cue": "🤪 Тот, кто делает глупости."
         },
         {
           "num": 7,
           "prompt": "",
           "answers": [
             "A genius is a person who is very intelligent."
-          ]
+          ],
+          "cue": "🧠 Тот, кто очень умён."
         },
         {
           "num": 8,
           "prompt": "",
           "answers": [
             "A liar is a person who doesn’t tell the truth."
-          ]
+          ],
+          "cue": "🤥 Тот, кто не говорит правды."
         }
       ]
     },

@@ -9,9 +9,6 @@
 // Sections that are not books take their own first segment next to the book
 // ids (SECTIONS; scripts/sync_books.mjs refuses a book folder by those names):
 //
-//   #/rules                  the rules compendium: search across every book
-//   #/rules/<book>           one book's rules, by its groups
-//   #/rules/<book>/u<N>      the rule of unit N
 //   #/cards                  the card decks and their due counts
 //   #/cards/<deck>           a study session: all, words, or a deck
 //                            (deckdata.ts; no deck is named all or words)
@@ -22,6 +19,11 @@
 //
 // A bare "/" (no hash at all) resumes the last page a learner worked on — see
 // entryHash in App.tsx. Anything unknown lands in the library.
+//
+// #/rules/... was the rules compendium. A unit's rule is now the lesson at the
+// top of the unit itself, so old links move there (legacyHash): #/rules/<book>/u<N>
+// -> #/<book>/u<N>, #/rules/<book> -> #/<book>, #/rules -> the library. "rules"
+// stays reserved so such a link can never name a book.
 
 import type { Book } from "./books";
 import { SHARE_CODE } from "./share";
@@ -41,7 +43,6 @@ export type AppRoute =
   | { view: "library" }
   /** share: the code of a #/<book>/p= link, to preview and apply */
   | { view: "book"; book: Book; page: BookPage; share?: string }
-  | { view: "rules"; book?: Book; unit?: number }
   /** no deck: the deck list */
   | { view: "cards"; deck?: DeckRef }
   /** entry: the card to show; none, the deck's list */
@@ -49,10 +50,11 @@ export type AppRoute =
   /** deck: the vocabulary deck to open */
   | { view: "dictionary"; deck?: string };
 
-/** First hash segments that are app sections, never book ids. Keep equal to
-    RESERVED in sync_books.mjs. */
-export const SECTIONS = ["rules", "cards", "dictionary"] as const;
-export const RESERVED_IDS: readonly string[] = SECTIONS;
+/** First hash segments that are app sections. */
+export const SECTIONS = ["cards", "dictionary"] as const;
+/** First hash segments that are never book ids: the sections and the old
+    rules compendium's (legacyHash). Keep equal to RESERVED in sync_books.mjs. */
+export const RESERVED_IDS: readonly string[] = ["rules", ...SECTIONS];
 /** The session names that share #/cards/ with the deck ids. Keep equal to
     RESERVED in sync_decks.mjs. */
 export const DECK_RESERVED: readonly string[] = ["all", "words"];
@@ -82,8 +84,9 @@ export const LIBRARY_HASH = "#/";
 
 /** Parse a location hash ("#/blue/u5"). A bare "" is the caller's to resolve. */
 export function parseRoute(hash: string, books: readonly Book[]): AppRoute {
+  const legacy = legacyHash(hash, books);
+  if (legacy !== null) return parseRoute(legacy, books);
   const m = hash.match(/^#\/([a-z][a-z0-9-]*)(?:\/(.*))?$/);
-  if (m && m[1] === "rules") return parseRules(m[2] ?? "", books);
   if (m && m[1] === "cards") return parseCards(m[2] ?? "");
   if (m && m[1] === "dictionary") return parseDictionary(m[2] ?? "");
   const book = m ? books.find((b) => b.id === m[1]) : undefined;
@@ -94,12 +97,15 @@ export function parseRoute(hash: string, books: readonly Book[]): AppRoute {
   return { view: "book", book, page: parsePage(book, rest) ?? { kind: "home" } };
 }
 
-function parseRules(rest: string, books: readonly Book[]): AppRoute {
-  const [id, page] = rest.split("/");
+/** Where an old #/rules/... link goes now; null for any other hash. */
+export function legacyHash(hash: string, books: readonly Book[]): string | null {
+  const m = hash.match(/^#\/rules(?:\/(.*))?$/);
+  if (!m) return null;
+  const [id, page] = (m[1] ?? "").split("/");
   const book = books.find((b) => b.id === id);
-  if (!book) return { view: "rules" };
+  if (!book) return LIBRARY_HASH;
   const u = parsePage(book, page ?? "");
-  return u?.kind === "unit" ? { view: "rules", book, unit: u.n } : { view: "rules", book };
+  return bookHash(book, u?.kind === "unit" ? u : { kind: "home" });
 }
 
 const DECK_ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -135,10 +141,6 @@ export const deckHash = (d: DeckRef) => `${CARDS_HASH}/${deckKey(d)}`;
 export const browseHash = (deck: string, entry?: string) =>
   `${CARDS_HASH}/${deck}/browse` + (entry ? `/${entry}` : "");
 export const dictionaryDeckHash = (deck: string) => `${DICTIONARY_HASH}/${deck}`;
-export function rulesHash(book?: Book, unit?: number): string {
-  if (!book) return "#/rules";
-  return unit ? `#/rules/${book.id}/u${unit}` : `#/rules/${book.id}`;
-}
 
 /**
  * Swap the current hash without a history entry. replaceState fires no

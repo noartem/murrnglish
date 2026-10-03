@@ -9,10 +9,11 @@
     {
       "id": "125.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences about the pictures. Use in, at or on with the words below the pictures.",
+      "instruction": "Read each description and complete the sentence with in, at or on.",
       "items": [
         {
           "num": 1,
+          "cue": "🚗 There is a car hire desk in the arrivals hall of an airport.",
           "parts": [
             "You can hire a car ",
             "."
@@ -26,6 +27,7 @@
         },
         {
           "num": 2,
+          "cue": "🚆 Dave is sitting in a train seat with a suitcase beside him.",
           "parts": [
             "Dave is ",
             "."
@@ -38,6 +40,7 @@
         },
         {
           "num": 3,
+          "cue": "🎤 Karen is speaking at a conference, with a name badge on her coat.",
           "parts": [
             "Karen is ",
             "."
@@ -50,6 +53,7 @@
         },
         {
           "num": 4,
+          "cue": "🏥 Martin is a patient in a hospital bed.",
           "parts": [
             "Martin ",
             "."
@@ -63,6 +67,7 @@
         },
         {
           "num": 5,
+          "cue": "💇 Judy is sitting in a hairdresser’s chair.",
           "parts": [
             "Judy is ",
             ". (the hairdresser’s)"
@@ -75,6 +80,7 @@
         },
         {
           "num": 6,
+          "cue": "🚴 Gary is riding his bike along the road.",
           "parts": [
             "I saw Gary ",
             ". (his bike)"
@@ -87,6 +93,7 @@
         },
         {
           "num": 7,
+          "cue": "🗽 We stayed in New York for a few days.",
           "parts": [
             "We spent a few days ",
             ". (New York)"
@@ -99,6 +106,7 @@
         },
         {
           "num": 8,
+          "cue": "🎭 We went to see a show at the Savoy Theatre.",
           "parts": [
             "We went to a show ",
             ". (the Savoy Theatre)"
@@ -228,7 +236,7 @@
     {
       "id": "125.3",
       "type": "fill-in",
-      "instruction": "Complete these sentences with in, at or on.",
+      "instruction": "Complete each sentence with in, at or on.",
       "items": [
         {
           "num": 1,

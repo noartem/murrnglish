@@ -9,10 +9,11 @@
     {
       "id": "123.1",
       "type": "write",
-      "instruction": "Answer the questions about the pictures. Use in, at or on with the words below the pictures.",
+      "instruction": "Read each description and answer the question with in, at or on + the word in brackets.",
       "items": [
         {
           "num": 1,
+          "cue": "🏷️ A label is stuck on the side of a bottle.",
           "prompt": "(bottle) Where’s the label?",
           "answers": [
             "On the bottle."
@@ -20,6 +21,7 @@
         },
         {
           "num": 2,
+          "cue": "🪰 A fly is sitting on the arm of a man.",
           "prompt": "(arm) Where’s the fly?",
           "answers": [
             "On his arm.",
@@ -28,6 +30,7 @@
         },
         {
           "num": 3,
+          "cue": "🚗 A car is stopped at a set of traffic lights.",
           "prompt": "(traffic lights) Where’s the car waiting?",
           "answers": [
             "At the traffic lights."
@@ -35,6 +38,7 @@
         },
         {
           "num": 4,
+          "cue": "📄 A notice is pinned to a door.",
           "prompt": "(door) Where’s the notice?",
           "answers": [
             "On the door."
@@ -42,6 +46,7 @@
         },
         {
           "num": 5,
+          "cue": "🔑 A key has been pushed into a door.",
           "prompt": "(door) Where’s the key?",
           "answers": [
             "In the door."
@@ -49,6 +54,7 @@
         },
         {
           "num": 6,
+          "cue": "🪵 Two shelves are fixed to a wall.",
           "prompt": "(wall) Where are the shelves?",
           "answers": [
             "On the wall."
@@ -56,6 +62,7 @@
         },
         {
           "num": 7,
+          "cue": "🗼 The Eiffel Tower stands in Paris.",
           "prompt": "(Paris) Where’s the Eiffel Tower?",
           "answers": [
             "In Paris."
@@ -63,6 +70,7 @@
         },
         {
           "num": 8,
+          "cue": "🚪 A man is standing at a gate.",
           "prompt": "(gate) Where’s the man standing?",
           "answers": [
             "At the gate."
@@ -70,6 +78,7 @@
         },
         {
           "num": 9,
+          "cue": "🐦 A bird is perched on top of a gate.",
           "prompt": "(gate) Where’s the bird?",
           "answers": [
             "On the gate."
@@ -77,6 +86,7 @@
         },
         {
           "num": 10,
+          "cue": "🏖️ Children are playing on a beach.",
           "prompt": "(beach) Where are the children playing?",
           "answers": [
             "On the beach."

@@ -9,12 +9,13 @@
     {
       "id": "30.1",
       "type": "fill-in",
-      "instruction": "Which alternative makes sense?",
+      "instruction": "Read the descriptions. Which alternative makes sense? Write it in the gap.",
       "items": [
         {
           "num": 2,
+          "cue": "🚗 ‘Have you decided what sort of car you want to buy?’ — I might get / I’m going to get",
           "parts": [
-            "Yes, I ",
+            "Yes, ",
             " a sports car."
           ],
           "answers": [
@@ -25,6 +26,7 @@
         },
         {
           "num": 3,
+          "cue": "📅 ‘When is Tom coming to see us?’ — might come / ’s coming",
           "parts": [
             "He hasn't said yet. He ",
             " on Sunday."
@@ -37,6 +39,7 @@
         },
         {
           "num": 4,
+          "cue": "🖼️ ‘Where are you going to put that picture?’ — might hang / ’m going to hang",
           "parts": [
             "I don't know yet. I ",
             " it in the bedroom."
@@ -49,8 +52,9 @@
         },
         {
           "num": 5,
+          "cue": "🎓 ‘What’s Tanya going to do when she leaves school? Does she know yet?’ — She might go / She’s going",
           "parts": [
-            "Yes, she's decided. She ",
+            "Yes, she’s decided. ",
             " to university."
           ],
           "answers": [
@@ -61,6 +65,7 @@
         },
         {
           "num": 6,
+          "cue": "🏕️ ‘Do you have plans for the weekend?’ — might go away / ’m going away",
           "parts": [
             "Nothing fixed. I ",
             "."

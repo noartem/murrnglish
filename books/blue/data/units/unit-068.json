@@ -9,7 +9,15 @@
     {
       "id": "68.1",
       "type": "fill-in",
-      "instruction": "Choose from Box A and Box B to make sentences. Use -ing.",
+      "instruction": "Complete each sentence with one of the -ing phrases from the box.",
+      "wordBank": [
+        "making coffee",
+        "reading a book",
+        "trying not to make a noise",
+        "saying she would be back in an hour",
+        "teaching English",
+        "looking at the sights and taking pictures"
+      ],
       "items": [
         {
           "num": 1,

@@ -9,6 +9,7 @@
       "instruction": "Complete the sentences. Choose from the box.",
       "wordBank": ["a", "are", "them", "doesn't", "pair", "it", "glasses", "some", "don't"],
       "items": [
+        {"num": 1, "parts": ["My eyesight is getting worse. I need ", "."], "answers": [["glasses"]], "example": true},
         {
           "num": 2,
           "parts": ["The trousers you bought for me ", " fit me."],
@@ -54,9 +55,10 @@
     {
       "id": "79.2",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use a word from section B (news, series etc.).",
+      "instruction": "Complete the sentences using these words: news, series, species, means.",
       "wordBank": ["means", "series", "species", "news", "means", "series", "species"],
       "items": [
+        {"num": 1, "parts": ["‘Have you heard the news?’ ‘No. What’s happened?’"], "answers": [], "example": true},
         {
           "num": 2,
           "parts": ["The bicycle is a ", " of transport."],
@@ -97,55 +99,65 @@
     {
       "id": "79.3",
       "type": "choice",
-      "instruction": "Choose the correct form of the verb, singular or plural. In three sentences either the singular or plural verb is possible.",
+      "instruction": "Read the sentences and choose the correct form of the verb, singular or plural. In three sentences either the singular or the plural is possible.",
       "items": [
         {
           "num": 1,
+          "cue": "🤸 Gymnastics … my favourite sport.",
           "options": ["is", "are"],
           "answer": 0
         },
         {
           "num": 2,
+          "cue": "👓 My new glasses … fit very well.",
           "options": ["doesn't", "don't"],
           "answer": 1
         },
         {
           "num": 3,
+          "cue": "👮 The police … to interview two men about the robbery.",
           "options": ["want", "wants"],
           "answer": 0
         },
         {
           "num": 4,
+          "cue": "📐 Physics … my favourite subject at school.",
           "options": ["was", "were"],
           "answer": 0
         },
         {
           "num": 5,
+          "cue": "☕ It’s a nice place to visit. The people … very friendly.",
           "options": ["is", "are"],
           "answer": 1
         },
         {
           "num": 6,
+          "cue": "⚽ Germany … playing Spain tomorrow night. Are you going to watch it?",
           "options": ["is", "are"],
           "answer": 1
         },
         {
           "num": 7,
+          "cue": "👮 … the police know how the accident happened?",
           "options": ["Does", "Do"],
           "answer": 1
         },
         {
           "num": 8,
+          "cue": "🏠 Where … your family live?",
           "options": ["do", "does"],
           "answer": 1
         },
         {
           "num": 9,
+          "cue": "🎵 Most people … music.",
           "options": ["enjoy", "enjoys"],
           "answer": 0
         },
         {
           "num": 10,
+          "cue": "☕ I like this cafe. The staff here … really friendly and efficient.",
           "options": ["is", "are"],
           "answer": 1
         }
@@ -157,6 +169,7 @@
       "instruction": "Complete the sentences. Use is or isn't, and choose from the box.",
       "wordBank": ["a lot to carry", "enough money", "too hot", "long enough", "a long time"],
       "items": [
+        {"num": 1, "parts": ["Three years ", " a long time to be without a job."], "answers": [["is"]], "example": true},
         {
           "num": 2,
           "parts": ["Thirty degrees ", " for Tom. He doesn't like hot weather."],
@@ -182,8 +195,9 @@
     {
       "id": "79.5",
       "type": "write",
-      "instruction": "Are these sentences OK? Correct them where necessary.",
+      "instruction": "Are the sentences OK? Correct them where necessary.",
       "items": [
+        {"num": 1, "prompt": "Three years are a long time to be without a job.", "answers": ["Three years is a long time to be without a job."], "example": true},
         {
           "num": 2,
           "prompt": "The committee want to change the rules of the club.",

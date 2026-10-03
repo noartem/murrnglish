@@ -9,7 +9,7 @@
     {
       "id": "82.1",
       "type": "fill-in",
-      "instruction": "Допишите предложения. Используйте слова из скобок (some/most и т. д.). Где необходимо, также вставьте of (some of / most of и т. д.).",
+      "instruction": "Допишите предложения. В скобках дано нужное слово — употребляйте его. Там, где необходимо, добавьте of (some of / most of и т. д.).",
       "items": [
         {
           "num": 1,
@@ -200,7 +200,7 @@
     {
       "id": "82.2",
       "type": "write",
-      "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте: all/most/some/none + of them / of it",
+      "instruction": "Прочитайте описания и ответьте на вопросы. Используйте all/most/some/none + of them / of it.",
       "example": [
         1
       ],
@@ -210,42 +210,48 @@
           "prompt": "How many of the people are women?",
           "answers": [
             "Most of them."
-          ]
+          ],
+          "cue": "👥 В комнате шесть женщин и четверо мужчин."
         },
         {
           "num": 2,
           "prompt": "How many of the boxes are on the table?",
           "answers": [
             "All of them."
-          ]
+          ],
+          "cue": "📦 На полу стоят четыре коробки — и все четыре стоят именно на столе."
         },
         {
           "num": 3,
           "prompt": "How many of the men are wearing hats?",
           "answers": [
             "Some of them."
-          ]
+          ],
+          "cue": "🎩 В комнате четверо мужчин, двое из них в шляпах."
         },
         {
           "num": 4,
           "prompt": "How many of the windows are open?",
           "answers": [
             "None of them."
-          ]
+          ],
+          "cue": "🪟 В комнате три окна, и все три плотно закрыты."
         },
         {
           "num": 5,
           "prompt": "How many of the people are standing?",
           "answers": [
             "Most of them."
-          ]
+          ],
+          "cue": "🧍 В комнате десять человек: девять стоят и разговаривают, один сидит в кресле."
         },
         {
           "num": 6,
           "prompt": "How much of the money is Ben’s?",
           "answers": [
             "None of it."
-          ]
+          ],
+          "cue": "💵 На столе лежат чужие деньги — Бен не вложил в эту кучу ни одной купюры."
         }
       ]
     },

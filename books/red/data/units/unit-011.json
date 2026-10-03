@@ -9,7 +9,7 @@
     {
       "id": "11.1",
       "type": "write",
-      "instruction": "Посмотрите на картинки. Напишите, где эти люди были вчера в 3 часа дня.",
+      "instruction": "Прочитайте описания и напишите, где эти люди были вчера в 3 часа дня.",
       "example": [
         1
       ],
@@ -19,7 +19,8 @@
           "prompt": "Joe",
           "answers": [
             "Joe was in bed."
-          ]
+          ],
+          "cue": "🤒 Джо лежит в кровати с температурой — весь день не вставал."
         },
         {
           "num": 2,
@@ -27,14 +28,16 @@
           "answers": [
             "Jack and Kate were at the cinema.",
             "Jack and Kate were in the cinema."
-          ]
+          ],
+          "cue": "🎬 Джек и Кейт сидят в зале кинотеатра, на экране идёт фильм."
         },
         {
           "num": 3,
           "prompt": "Sue",
           "answers": [
             "Sue was at the station."
-          ]
+          ],
+          "cue": "🚉 Сью стоит на платформе и смотрит на расписание поездов."
         },
         {
           "num": 4,
@@ -42,7 +45,8 @@
           "answers": [
             "Mr and Mrs Hall were at a restaurant.",
             "Mr and Mrs Hall were in a restaurant."
-          ]
+          ],
+          "cue": "🍽️ Мистер и миссис Холл сидят за столиком в ресторане, перед ними тарелки и бокалы."
         },
         {
           "num": 5,
@@ -52,7 +56,8 @@
             "Ben was on a beach.",
             "Ben was at the beach.",
             "Ben was at the seaside."
-          ]
+          ],
+          "cue": "🏖️ Бен лежит на песчаном пляже и загорает."
         },
         {
           "num": 6,
@@ -60,7 +65,8 @@
           "answers": [
             "I was at work."
           ],
-          "selfCheck": true
+          "selfCheck": true,
+          "cue": "☕ А вы — напишите, где были вы вчера в 3 часа дня."
         }
       ]
     },

@@ -147,6 +147,7 @@
         },
         {
           "num": 3,
+          "cue": "➗ Talking about numbers and sums.",
           "prompt": "(maths)",
           "modelAnswers": [
             "I'm not very good at maths."

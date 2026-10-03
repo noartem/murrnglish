@@ -3,10 +3,13 @@
 // predev/prebuild hooks).
 //
 // For every books/<id>/ with a book.json:
-//   public/books/<id>/data/        copy of books/<id>/data/, plus
+//   public/books/<id>/data/        copy of books/<id>/data/, each unit with
+//                                  its lesson (books/<id>/lessons/u<NNN>.md,
+//                                  compiled by scripts/lessons.mjs), plus
 //   public/books/<id>/data/course.json   every exercise file in one pack
-//   public/books/<id>/book.pdf     the book
 //   public/books/<id>/<cover>      the cover art
+// The book's PDF is not served: the app has its own lessons, and book.pdf
+// stays in books/<id>/ for the extraction pipelines alone.
 // and src/generated/books.json — the registry the app imports: book.json
 // plus what is counted here (units, additional exercises, download size), so
 // nothing the app shows can drift from the files.
@@ -18,14 +21,13 @@
 // Generated here rather than committed, so it cannot drift from data/ — the
 // per-file JSON stays the source of truth.
 //
-// public/books/<id>/data/rules.json is the text of each unit's rule page for
-// the rules compendium, read from books/<id>/work/pages/plain (see
-// scripts/rules_text.mjs): { units: { "<n>": { s: sections, r: refs } } }.
-// Units whose page text does not carry their own header are left out.
+// A lesson that fails to compile, breaks the rhythm rules or shares a run of
+// words with the book's page text (books/<id>/work/pages/plain) fails the
+// sync, and with it dev, build and test.
 //
 // Book ids share the first hash segment with the app's own sections
-// (#/rules, #/cards, #/dictionary) — src/routes.ts RESERVED_IDS — so those
-// names are refused as book folders. The card decks are not the books': they
+// (#/cards, #/dictionary, and #/rules, which old links still use) —
+// src/routes.ts RESERVED_IDS — so those names are refused as book folders. The card decks are not the books': they
 // live in decks/ and scripts/sync_decks.mjs builds them.
 
 import {
@@ -41,7 +43,7 @@ import {
 } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseRulePage, theoryPages } from "./rules_text.mjs";
+import { compileLesson, lintLesson, originality, shingles } from "./lessons.mjs";
 
 // hash segments that are app sections, not books — keep equal to
 // RESERVED_IDS in src/routes.ts (routes.test.ts compares the two)
@@ -57,8 +59,7 @@ const need = (cond, msg) => {
   if (!cond) throw new Error(msg);
 };
 
-// copy only when the size or mtime differs: the book PDFs are 14–75 MB and
-// this runs before every dev start
+// copy only when the size or mtime differs: this runs before every dev start
 function copyIfChanged(src, dest) {
   const s = statSync(src);
   if (existsSync(dest)) {
@@ -78,6 +79,45 @@ function pick(dir, re) {
   return out;
 }
 
+/**
+ * The book's lessons, unit number -> lesson; throws with every problem of
+ * every lesson at once, so one run shows all there is to fix.
+ */
+function buildLessons(id, src, index) {
+  const out = new Map();
+  const dir = join(src, "lessons");
+  if (!existsSync(dir)) return out;
+  const titles = new Map();
+  for (const [key, info] of Object.entries(index.exercises)) {
+    const m = key.match(/^u(\d+)$/);
+    if (m) titles.set(Number(m[1]), info.title);
+  }
+  // the book's own words, page by page (a line break is no break in a sentence)
+  const plainDir = join(src, "work", "pages", "plain");
+  const book = new Set();
+  if (existsSync(plainDir))
+    for (const f of readdirSync(plainDir))
+      for (const sh of shingles(readFileSync(join(plainDir, f), "utf8").replace(/-\n(?=\p{Ll})/gu, "").replace(/\s+/g, " ")))
+        book.add(sh);
+  const problems = [];
+  for (const f of readdirSync(dir).sort()) {
+    const m = f.match(/^u(\d{3})\.md$/);
+    if (!m) {
+      if (f.endsWith(".md")) problems.push(`${f}: name it u<NNN>.md (u007.md)`);
+      continue;
+    }
+    const n = Number(m[1]);
+    const { lesson, errors } = compileLesson(readFileSync(join(dir, f), "utf8"), titles);
+    if (!titles.has(n)) errors.push(`the book has no unit ${n}`);
+    errors.push(...lintLesson(lesson));
+    for (const hit of originality(lesson, book)) errors.push(`the book's own words: "${hit}"`);
+    for (const e of errors) problems.push(`${f}: ${e}`);
+    out.set(n, lesson);
+  }
+  need(!problems.length, `books/${id}/lessons:\n  ${problems.join("\n  ")}`);
+  return out;
+}
+
 const ids = readdirSync(booksDir).filter((id) => existsSync(join(booksDir, id, "book.json")));
 need(ids.length > 0, "no books/<id>/book.json found");
 
@@ -87,10 +127,11 @@ for (const id of ids) {
   need(!RESERVED.includes(id), `book id "${id}" is the name of an app section (${RESERVED.join(", ")})`);
   const src = join(booksDir, id);
   const meta = readJson(join(src, "book.json"));
-  for (const k of ["order", "title", "edition", "level", "authors", "publisher", "color", "cover"]) {
+  for (const k of ["order", "title", "edition", "level", "lang", "authors", "publisher", "color", "cover"]) {
     need(meta[k] !== undefined, `books/${id}/book.json: missing "${k}"`);
   }
-  for (const f of ["book.pdf", meta.cover.file, "data/index.json", "data/totals.json", "data/pages.json"]) {
+  need(["en", "ru"].includes(meta.lang), `books/${id}/book.json: "lang" is "en" or "ru" (the language of its lessons)`);
+  for (const f of [meta.cover.file, "data/index.json", "data/totals.json"]) {
     need(existsSync(join(src, f)), `books/${id}/${f} is missing`);
   }
 
@@ -100,13 +141,21 @@ for (const id of ids) {
   rmSync(dataDest, { recursive: true, force: true });
   mkdirSync(dataDest, { recursive: true });
   cpSync(join(src, "data"), dataDest, { recursive: true });
-  copyIfChanged(join(src, "book.pdf"), join(dest, "book.pdf"));
+  rmSync(join(dest, "book.pdf"), { force: true }); // served before the lessons
   copyIfChanged(join(src, meta.cover.file), join(dest, meta.cover.file));
 
+  const index = readJson(join(src, "data", "index.json"));
+  const lessons = buildLessons(id, src, index);
   const bundle = {
     units: pick(join(src, "data", "units"), /^unit-(\d+)\.json$/),
     additional: pick(join(src, "data", "additional"), /^(\d+)\.json$/),
   };
+  for (const [n, lesson] of lessons) {
+    const unit = bundle.units[String(n)];
+    need(unit, `books/${id}/lessons: a lesson for unit ${n}, which the book does not have`);
+    unit.lesson = lesson;
+    writeFileSync(join(dataDest, "units", `unit-${String(n).padStart(3, "0")}.json`), JSON.stringify(unit));
+  }
   const units = Object.keys(bundle.units).length;
   const additional = Object.keys(bundle.additional).length;
   need(units && additional, `books/${id}: empty course (${units} units, ${additional} additional)`);
@@ -114,7 +163,6 @@ for (const id of ids) {
 
   // the index must list exactly the files present, or the app would offer
   // units it cannot open
-  const index = readJson(join(src, "data", "index.json"));
   const listed = index.groups.flatMap((g) => g.units).length;
   need(listed === units, `books/${id}: index.json lists ${listed} units, data/units has ${units}`);
   need(
@@ -122,30 +170,15 @@ for (const id of ids) {
     `books/${id}: index.json lists ${index.additional.exercises.length} additional, data/additional has ${additional}`,
   );
 
-  // the rules compendium's text: each unit's rule page, when the page text
-  // is this book's own (its header names the unit)
-  const rules = {};
-  const plainDir = join(src, "work", "pages", "plain");
-  for (const [key, info] of Object.entries(index.exercises)) {
-    const m = key.match(/^u(\d+)$/);
-    if (!m) continue;
-    const file = join(plainDir, `p${String(theoryPages(info.pages)[0]).padStart(3, "0")}.txt`);
-    if (!existsSync(file)) continue;
-    const rule = parseRulePage(readFileSync(file, "utf8"), Number(m[1]), info.title);
-    if (rule) rules[m[1]] = rule;
-  }
-  writeFileSync(join(dataDest, "rules.json"), JSON.stringify({ units: rules }));
-  const ruleCount = Object.keys(rules).length;
-
   // what the offline download stores (src/offline.ts bookUrls)
   const size = (f) => statSync(join(dest, f)).size;
-  const downloadBytes = ["book.pdf", meta.cover.file, "data/index.json", "data/totals.json", "data/pages.json", "data/course.json", "data/rules.json"]
+  const downloadBytes = [meta.cover.file, "data/index.json", "data/totals.json", "data/course.json"]
     .map(size)
     .reduce((a, b) => a + b, 0);
 
   registry.push({ id, ...meta, units, additional, downloadBytes });
   console.log(
-    `synced books/${id} -> public/books/${id} (${units} units, ${additional} additional, rule text for ${ruleCount})`,
+    `synced books/${id} -> public/books/${id} (${units} units, ${additional} additional, ${lessons.size} lessons)`,
   );
 }
 

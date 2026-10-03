@@ -118,7 +118,7 @@
     {
       "id": "59.2",
       "type": "write",
-      "instruction": "Что делают эти люди? Напишите предложения, используя слова из рамки:",
+      "instruction": "Прочитайте описания ситуаций и напишите предложения, используя have.",
       "wordBank": [
         "a bath",
         "breakfast",
@@ -130,6 +130,7 @@
       "items": [
         {
           "num": 1,
+          "cue": "🍳 Они сидят за столом с яичницей и тостами.",
           "prompt": "",
           "answers": [
             "They’re having breakfast."
@@ -138,6 +139,7 @@
         },
         {
           "num": 2,
+          "cue": "☕ Она держит в руках чашку чая.",
           "prompt": "She",
           "answers": [
             "She’s having a cup of tea.",
@@ -146,6 +148,7 @@
         },
         {
           "num": 3,
+          "cue": "🛋️ Он лежит на диване с закрытыми глазами.",
           "prompt": "He",
           "answers": [
             "He’s having a rest.",
@@ -154,6 +157,7 @@
         },
         {
           "num": 4,
+          "cue": "🎉 Они смеются и танцуют на кухне.",
           "prompt": "They",
           "answers": [
             "They’re having a good time.",
@@ -162,6 +166,7 @@
         },
         {
           "num": 5,
+          "cue": "🍽️ Они ужинают за столом.",
           "prompt": "",
           "answers": [
             "They’re having dinner.",
@@ -170,6 +175,7 @@
         },
         {
           "num": 6,
+          "cue": "🛁 Он в ванной за занавеской.",
           "prompt": "",
           "answers": [
             "He’s having a bath.",

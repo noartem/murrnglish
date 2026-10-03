@@ -9,10 +9,12 @@
   {
    "id": "75.1",
    "type": "self-check",
-   "instruction": "Choose four of these things and write what you think about them: bananas, boxing, cats, crowds, fast food, horror movies, hot weather, maths, opera, snow, supermarkets, zoos. Use: I like … / I don’t like … / I think ... is/are … / I don’t mind … / I love … / I hate … / I’m (not) interested in …",
+   "instruction": "Choose four topics and write what you think about each one. Use the patterns below.",
+   "scene": "Topics: bananas · boxing · cats · crowds · fast food · horror movies · hot weather · maths · opera · snow · supermarkets · zoos\nPatterns: I like … / I don’t like … · I think … is/are … · I don’t mind … / I love … / I hate … / I’m (not) interested in …",
    "items": [
     {
      "num": 2,
+     "cue": "🐱 cats",
      "prompt": "",
      "modelAnswers": [
       "I like cats."
@@ -20,6 +22,7 @@
     },
     {
      "num": 3,
+     "cue": "🦓 zoos",
      "prompt": "",
      "modelAnswers": [
       "I don’t like zoos."
@@ -27,6 +30,7 @@
     },
     {
      "num": 4,
+     "cue": "🌨️ snow",
      "prompt": "",
      "modelAnswers": [
       "I don’t mind snow."
@@ -34,6 +38,7 @@
     },
     {
      "num": 5,
+     "cue": "🥊 boxing",
      "prompt": "",
      "modelAnswers": [
       "I’m not interested in boxing."
@@ -107,6 +112,8 @@
     "(the) lies"
    ],
    "items": [
+    {"num": 1, "parts": ["My favourite sport is ", "."], "answers": [["basketball"]], "example": true},
+    {"num": 2, "parts": ["", " we were given wasn’t correct."], "answers": [["The information"]], "example": true},
     {
      "num": 3,
      "parts": [
@@ -232,10 +239,11 @@
   {
    "id": "75.4",
    "type": "choice",
-   "instruction": "Which is right?",
+   "instruction": "Read the descriptions and choose the right one.",
    "items": [
     {
      "num": 1,
+     "cue": "📖 Steve is very good at telling … .",
      "options": [
       "stories",
       "the stories"
@@ -244,6 +252,7 @@
     },
     {
      "num": 2,
+     "cue": "🎵 I can’t sing this song. I don’t know the … .",
      "options": [
       "words",
       "the words"
@@ -252,6 +261,7 @@
     },
     {
      "num": 3,
+     "cue": "🏨 Don’t stay in that hotel. It’s noisy and the … are very small.",
      "options": [
       "rooms",
       "the rooms"
@@ -260,6 +270,7 @@
     },
     {
      "num": 4,
+     "cue": "🚌 I don’t have a car, so I use … most of the time.",
      "options": [
       "public transport",
       "the public transport"
@@ -268,6 +279,7 @@
     },
     {
      "num": 5,
+     "cue": "📚 … on the top shelf belong to me.",
      "options": [
       "All books",
       "All the books"
@@ -276,6 +288,7 @@
     },
     {
      "num": 6,
+     "cue": "🌍 … is strange sometimes. Some very strange things happen.",
      "options": [
       "Life",
       "The life"
@@ -284,6 +297,7 @@
     },
     {
      "num": 7,
+     "cue": "🏖️ We enjoyed our holiday. … was good.",
      "options": [
       "Weather",
       "The weather"
@@ -292,6 +306,7 @@
     },
     {
      "num": 8,
+     "cue": "💧 Everybody needs … to live.",
      "options": [
       "water",
       "the water"
@@ -300,6 +315,7 @@
     },
     {
      "num": 9,
+     "cue": "🎬 I don’t like … with unhappy endings.",
      "options": [
       "films",
       "the films"

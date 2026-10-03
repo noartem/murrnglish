@@ -81,7 +81,7 @@
     {
       "id": "104.3",
       "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences. Use rather + adjective.",
+      "instruction": "Use your own ideas to complete the sentences. Use rather + adjective.",
       "modelAnswers": ["rather long", "rather strange", "rather impatient", "rather expensive"],
       "items": [
         {
@@ -109,36 +109,42 @@
     {
       "id": "104.4",
       "type": "choice",
-      "instruction": "What does quite mean in these sentences? Tick (\u2713) the right meaning.",
+      "instruction": "Read each description and tick (\u2713) what quite means in it.",
       "items": [
         {
           "num": 2,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "cue": "\ud83d\udcac \u2018Are you sure?\u2019 \u2018Yes, ________ sure.\u2019",
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019", "\u2018completely\u2019"],
           "answer": 1
         },
         {
           "num": 3,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "cue": "\ud83d\udc69 Anna\u2019s English is ________ good.",
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019", "\u2018completely\u2019"],
           "answer": 0
         },
         {
           "num": 4,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "cue": "\ud83d\ude32 I couldn\u2019t believe it. It was ________ incredible.",
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019", "\u2018completely\u2019"],
           "answer": 0
         },
         {
           "num": 5,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "cue": "\ud83d\udecf\ufe0f My bedroom is ________ big.",
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019", "\u2018completely\u2019"],
           "answer": 0
         },
         {
           "num": 6,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "cue": "\ud83e\udd71 I\u2019m ________ tired. I think I\u2019ll go to bed.",
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019", "\u2018completely\u2019"],
           "answer": 0
         },
         {
           "num": 7,
-          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019 (Section A)", "\u2018completely\u2019 (Section D)"],
+          "cue": "\ud83e\udd1d I ________ agree with you.",
+          "options": ["more than \u2018a little\u2019, less than \u2018very\u2019", "\u2018completely\u2019"],
           "answer": 1
         }
       ]

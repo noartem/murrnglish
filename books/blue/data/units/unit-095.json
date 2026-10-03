@@ -6,7 +6,7 @@
     {
       "id": "95.1",
       "type": "write",
-      "instruction": "Make one sentence from two. Use the information in brackets to make a relative clause (Type 2). You will need to use who/whom/whose/which/where.",
+      "instruction": "Make one sentence from two. Use the words in brackets to make a relative clause (Type 2). You will need to use who/whom/whose/which/where.",
       "items": [
         {"num": 1, "prompt": "Catherine is very friendly. (She lives next door to us.)", "answers": ["Catherine, who lives next door to us, is very friendly."]},
         {"num": 2, "prompt": "We stayed at the Park Hotel. (A friend of ours recommended this hotel.)", "answers": ["We stayed at the Park Hotel, which a friend of ours recommended."]},
@@ -23,7 +23,7 @@
     {
       "id": "95.2",
       "type": "write",
-      "instruction": "Read the information and complete the sentences. Use a relative clause of Type 1 or Type 2. Use commas where necessary.",
+      "instruction": "Each item gives a sentence and a fact in brackets. Write the whole sentence again with a relative clause of Type 1 or Type 2. Use commas where necessary.",
       "items": [
         {"num": 1, "prompt": "My brother is an architect. (He lives in Hong Kong.)", "answers": ["My brother, who lives in Hong Kong, is an architect."]},
         {"num": 2, "prompt": "The strike at the factory has now ended. (The strike began ten days ago.)", "answers": ["The strike at the factory, which began ten days ago, has now ended."]},
@@ -36,7 +36,7 @@
     {
       "id": "95.3",
       "type": "write",
-      "instruction": "Are these sentences OK? Correct them (and put in commas) where necessary. If the sentence is correct, write \u2018OK\u2019.",
+      "instruction": "Are the sentences OK? Correct them (and put in commas) where necessary. If the sentence is correct, write \u2018OK\u2019.",
       "items": [
         {"num": 1, "prompt": "Anna told me about her new job that she\u2019s enjoying very much.", "answers": ["Anna told me about her new job, which she\u2019s enjoying very much."]},
         {"num": 2, "prompt": "My office that is on the second floor is very small.", "answers": ["My office, which is on the second floor, is very small."]},

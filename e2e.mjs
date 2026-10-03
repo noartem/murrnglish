@@ -57,13 +57,18 @@ await page.locator(".libtitle a", { hasText: "English Grammar in Use" }).click()
 await page.waitForSelector(".homecover", { timeout: 30000 });
 ok("F1 landing cover", await page.locator(".homecover").isVisible());
 ok("F1 landing url is #/blue", /#\/blue$/.test(page.url()), page.url());
+const pdfRequests = [];
+page.on("request", (r) => /\.pdf$/.test(new URL(r.url()).pathname) && pdfRequests.push(r.url()));
 await page.locator(".homecta").click();
-await page.waitForSelector(".pagecanvas", { timeout: 30000 });
-await sleep(1500);
+await page.waitForSelector(".lesson .lsection", { timeout: 30000 });
+await sleep(800);
 ok("F1 url is #/blue/u1", /#\/blue\/u1$/.test(page.url()));
-ok("F1 pdf pages rendered", (await page.locator(".pagecanvas").count()) >= 1);
+ok("F1 the unit opens on its lesson", await page.locator(".lessonhead .lessonsticker").isVisible());
+ok("F1 the lesson has its lettered sections", (await page.locator(".lsection .lletter").count()) >= 2);
+ok("F1 no book page anywhere", (await page.locator(".pageviewer, .pagecanvas").count()) === 0 && pdfRequests.length === 0,
+  pdfRequests.join(" "));
 ok("F1 sidebar collapsed card", (await page.locator(".sidebar.collapsed").count()) === 1);
-ok("F1 right pane exercises", await page.locator(".rightpane .exercise").first().isVisible());
+ok("F1 exercises under the lesson", (await page.locator(".coursepane .practicediv ~ .exercise").count()) > 0);
 ok(
   "F1 no page errors",
   !results.some((r) => r[1] === "F1 pageerror"),
@@ -120,30 +125,56 @@ await page.locator(".unitnavbtn.prev").click();
 await page.waitForURL(/#\/blue\/u2/, { timeout: 30000 });
 ok("F4 pager prev back to unit 2", /#\/blue\/u2$/.test(page.url()));
 
-// ---------- Flow 5: zoom buttons zoom in and back out ----------
-// baseline = settled label before touching the buttons
-const zoomText = () => page.locator(".zoomlabel").textContent();
-await page.waitForFunction(() => {
-  const c = document.querySelector(".pagecanvas");
-  return c && c.width > 10;
-}, { timeout: 30000 });
-const z0 = (await zoomText()).trim();
-await page.locator('button[aria-label="Zoom in"]').click();
+// ---------- Flow 5: the jump bar and Shift+S between lesson and exercises ----------
+await page.waitForSelector(".unitjumps .jumpchip", { timeout: 30000 });
+const paneTop = () =>
+  page.evaluate(() => document.querySelector(".coursepane [data-overlayscrollbars-viewport]").scrollTop);
+ok("F5 the jump bar starts on the lesson", (await page.locator(".jumpchip.on").textContent()).trim() === "Lesson");
+await page.locator(".jumpchip", { hasText: /^2\.3$/ }).click();
+await page.waitForFunction(() => document.querySelector(".jumpchip.on")?.textContent?.trim() === "2.3", null, {
+  timeout: 5000,
+});
+ok("F5 a chip scrolls to its exercise and lights up", true);
+ok(
+  "F5 the bar stays at the top of the pane",
+  await page.evaluate(() => {
+    const bar = document.querySelector(".unitjumps").getBoundingClientRect();
+    const vp = document.querySelector(".coursepane [data-overlayscrollbars-viewport]").getBoundingClientRect();
+    return Math.abs(bar.top - vp.top) < 2;
+  }),
+);
+await page.locator(".jumpchip", { hasText: "Lesson" }).click();
 await page.waitForFunction(
-  (prev) => document.querySelector(".zoomlabel")?.textContent?.trim() !== prev,
-  z0,
+  () => document.querySelector(".coursepane [data-overlayscrollbars-viewport]").scrollTop < 2,
+  null,
   { timeout: 5000 },
 );
-await sleep(400); // let the eased zoom animation settle before the next step
-const z1 = (await zoomText()).trim();
-ok("F5 zoom in changes label", true, `${z0} -> ${z1}`);
-await page.locator('button[aria-label="Zoom out"]').click();
+ok("F5 the lesson chip goes back to the top", true);
+await page.keyboard.press("Shift+KeyS");
+await page
+  .waitForFunction(
+    () =>
+      document.activeElement?.closest(".exercise") !== null &&
+      // the smooth scroll has landed: the divider sits under the jump bar
+      document.getElementById("practice").getBoundingClientRect().top -
+        document.querySelector(".coursepane [data-overlayscrollbars-viewport]").getBoundingClientRect().top <
+        80,
+    null,
+    { timeout: 5000 },
+  )
+  .catch(() => {});
+ok(
+  "F5 Shift+S goes down to the first exercise",
+  (await paneTop()) > 300 && (await page.evaluate(() => document.activeElement?.closest(".exercise") !== null)),
+  `scrollTop ${await paneTop()}`,
+);
+await page.keyboard.press("Shift+KeyS");
 await page.waitForFunction(
-  (prev) => document.querySelector(".zoomlabel")?.textContent?.trim() === prev,
-  z0,
+  () => document.querySelector(".coursepane [data-overlayscrollbars-viewport]").scrollTop < 2,
+  null,
   { timeout: 5000 },
 );
-ok("F5 zoom out returns", true, `${z1} -> ${(await zoomText()).trim()}`);
+ok("F5 Shift+S again goes back up to the lesson", await page.evaluate(() => document.activeElement?.id === "lesson"));
 
 // ---------- Flow 6: progress modal ----------
 await page.locator('button[aria-label^="Progress"]').click();
@@ -287,15 +318,13 @@ await page.keyboard.press("Escape");
 await sleep(350);
 ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
 
-// ---------- Flow 10: unit loading placeholder + parallel page start ----------
-// With the unit JSON held, the exercises pane shows the placeholder and the
-// book pages are already mounted from index.json — that is the whole point of
-// the change: the 14 MB PDF load no longer waits for the unit JSON.
+// ---------- Flow 10: unit loading placeholder ----------
+// With the unit JSON held, the pane shows the placeholder under the unit's
+// real heading (index.json knows the title), and the heading does not change
+// when the unit lands.
 const UNIT13_TITLE =
   "Unit 13 — " + (await (await fetch(BASE + "/books/blue/data/index.json")).json()).exercises.u13.title;
 {
-  // fresh context: an empty HTTP cache, so book.pdf is a real network load
-  // and the resource timings below describe a first visit
   const octx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
   const slow = await octx.newPage();
   await slow.route("**/data/units/unit-013.json", async (route) => {
@@ -308,36 +337,17 @@ const UNIT13_TITLE =
     skelCards: document.querySelectorAll(".unitloading .skel-card").length,
     skelRows: document.querySelectorAll(".unitloading .skel-item").length,
     label: document.querySelector(".unitloading")?.getAttribute("aria-label"),
-    liveCards: document.querySelectorAll(".rightpane .exercise:not(.skel-card)").length,
-    pageboxes: document.querySelectorAll(".leftpane .pagebox").length,
-    heading: document.querySelector(".unitloading .skel-heading")?.textContent ?? "",
+    liveCards: document.querySelectorAll(".coursepane .exercise:not(.skel-card)").length,
+    heading: document.querySelector(".unitloading .unitheading")?.textContent ?? "",
   }));
   ok("F10 placeholder while unit JSON is in flight", held.skelCards === 2 && held.liveCards === 0);
   ok("F10 placeholder mirrors the card shape", held.skelRows === 8, JSON.stringify(held));
-  ok("F10 placeholder is announced as loading", held.label === "Loading exercises", held.label ?? "none");
+  ok("F10 placeholder is announced as loading", held.label === "Loading", held.label ?? "none");
   ok("F10 placeholder shows the real title, not a bar", held.heading === UNIT13_TITLE, held.heading);
-  ok("F10 book pages mount before the unit JSON", held.pageboxes === 2, `${held.pageboxes} pages`);
-  await slow.waitForSelector(".rightpane .exercise:not(.skel-card)", { timeout: 30000 });
-  // The claim is that the PDF no longer waits for the unit JSON. Before the
-  // change the stack mounted on the unit object, so book.pdf could not start
-  // until that JSON resolved; now it starts alongside. Resource timing is the
-  // observable: pdf.start < json.end holds only in the parallel case.
-  const timings = await slow.evaluate(() => {
-    const entries = performance.getEntriesByType("resource");
-    const pick = (re) => {
-      const e = entries.find((x) => re.test(x.name));
-      return e ? { start: Math.round(e.startTime), end: Math.round(e.startTime + e.duration) } : null;
-    };
-    return { pdf: pick(/book\.pdf/), json: pick(/unit-013\.json/) };
-  });
-  ok(
-    "F10 book.pdf starts before the unit JSON resolves",
-    !!timings.pdf && !!timings.json && timings.pdf.start < timings.json.end,
-    JSON.stringify(timings),
-  );
+  await slow.waitForSelector(".coursepane .exercise:not(.skel-card)", { timeout: 30000 });
   const landed = await slow.evaluate(() => ({
     skel: document.querySelectorAll(".unitloading").length,
-    liveCards: document.querySelectorAll(".rightpane .exercise").length,
+    liveCards: document.querySelectorAll(".coursepane .exercise").length,
     heading: document.querySelector(".unitheading")?.textContent?.trim() ?? "",
   }));
   ok("F10 placeholder clears when the unit arrives", landed.skel === 0 && landed.liveCards > 0);
@@ -372,19 +382,14 @@ await mp.goto(BASE + "/#/blue/u1", { waitUntil: "load" });
 await mp.waitForSelector(".exercise textarea", { timeout: 30000, state: "attached" });
 await sleep(1500);
 
-// default tab = book: left pane visible, right pane hidden
-ok("F8 book tab default", await mp.locator(".leftpane .pagebox").first().isVisible());
+// one column: the lesson first, the exercises under it, no tabs
+ok("F8 lesson first", await mp.locator(".lesson .lsection").first().isVisible());
+ok("F8 no Book | Exercises tabs", (await mp.locator(".tabswitch").count()) === 0);
 ok(
-  "F8 exercises hidden on book tab",
-  await mp.locator(".rightpane .exercise").first().evaluate((el) => el.offsetParent === null),
-);
-
-// switch to exercises
-await mp.locator('.tabswitch button:has-text("Exercises")').click();
-ok("F8 exercises tab shows rightpane", await mp.locator(".rightpane .exercise").first().isVisible());
-ok(
-  "F8 book hidden on exercises tab",
-  await mp.locator(".leftpane .pagebox").first().evaluate((el) => el.offsetParent === null),
+  "F8 lesson tables fit the screen",
+  await mp.evaluate(() =>
+    [...document.querySelectorAll(".lsection")].every((el) => el.getBoundingClientRect().right <= window.innerWidth + 1),
+  ),
 );
 
 // counters hidden, no horizontal overflow
@@ -416,7 +421,7 @@ await mp.locator('.sidebar .unitlink:has-text("2")').first().click();
 await sleep(600);
 
 ok("F8 drawer closes on nav", (await mp.locator(".sidebar.mobile-open").count()) === 0);
-await mp.waitForSelector(".rightpane .exercise textarea", { timeout: 30000 });
+await mp.waitForSelector(".coursepane .exercise textarea", { timeout: 30000 });
 ok("F8 navigated to unit 2", /#\/blue\/u2/.test(mp.url()));
 
 // drawer: the topbar title also closes the drawer (goes home from there)
@@ -427,28 +432,8 @@ await mp.locator(".topbar-home").click();
 await sleep(300);
 ok("F8 topbar title closes drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
 ok("F8 topbar title goes home", /#\/blue$/.test(mp.url()));
-// back on a unit for the pinch-zoom test (the topbar title left us at home
-// on the Exercises tab; the hash change doesn't reload, so re-pick Book)
 await mp.goto(BASE + "/#/blue/u2", { waitUntil: "load" });
-await mp.locator('.tabswitch button:has-text("Book")').click();
-await mp.waitForSelector(".zoomlabel", { timeout: 30000 });
-
-// pinch zoom: synthetic two-finger gesture changes the zoom label
-const z00 = await mp.locator(".zoomlabel").textContent();
-await mp.locator('.tabswitch button:has-text("Book")').click();
-await mp.evaluate(() => {
-  const el = document.querySelector(".pageviewer");
-  const mk = (id, x, y) =>
-    new Touch({ identifier: id, target: el, clientX: x, clientY: y, radiusX: 2, radiusY: 2, rotationAngle: 0, force: 1 });
-  const fire = (type, touches) =>
-    el.dispatchEvent(new TouchEvent(type, { touches, cancelable: true, bubbles: true }));
-  fire("touchstart", [mk(1, 150, 300), mk(2, 250, 300)]);
-  fire("touchmove", [mk(1, 120, 300), mk(2, 280, 300)]);
-  fire("touchend", [mk(1, 120, 300)]);
-});
-await sleep(200);
-const zr = await mp.locator(".zoomlabel").textContent();
-ok("F8 pinch zoom changes zoom", z00 !== zr, `${z00} -> ${zr}`);
+await mp.waitForSelector(".lesson .lsection", { timeout: 30000 });
 
 // phone chrome: the topbar keeps the title alone — progress, download and
 // theme are labelled rows at the top of the drawer, ruled off above the
@@ -472,8 +457,8 @@ ok(
 );
 
 // drawer gestures: a leftward swipe over the drawer pushes it back, a
-// rightward one pulls it in — but a drag that starts on the book pages
-// belongs to the reader and never summons the drawer
+// rightward one pulls it in — but a drag that starts on a lesson table (it
+// scrolls sideways) never summons the drawer
 const swipe = (sel, dx) =>
   mp.evaluate(
     ([sel, dx]) => {
@@ -491,14 +476,12 @@ const swipe = (sel, dx) =>
 await swipe(".sidebar-inner", -90);
 await sleep(400);
 ok("F8 swipe left closes the drawer", (await mp.locator(".sidebar.mobile-open").count()) === 0);
-await swipe(".pagecanvas", 90);
+await swipe(".lformtables", 90);
 await sleep(400);
 ok(
-  "F8 swipe on the book pages leaves the drawer shut",
+  "F8 swipe on a lesson table leaves the drawer shut",
   (await mp.locator(".sidebar.mobile-open").count()) === 0,
 );
-await mp.locator('.tabswitch button:has-text("Exercises")').click();
-await mp.waitForSelector(".rightpane .unitheading", { timeout: 30000 });
 await swipe(".unitheading", 90);
 await sleep(400);
 ok("F8 swipe right opens the drawer", (await mp.locator(".sidebar.mobile-open").count()) === 1);
@@ -591,21 +574,21 @@ if (BASE.includes("4173")) {
   ok("F12 the download starts by itself and finishes green", true);
 
   const cached = await p2.evaluate(async () => {
-    const c = await caches.open("murrnglish-book-blue-v1");
+    const c = await caches.open("murrnglish-book-blue-v2");
     const has = async (u) => (await c.match(u, { ignoreVary: true })) !== undefined;
-    const shell = await caches.open("murrnglish-shell-v1");
+    const shell = await caches.open("murrnglish-shell-v2");
     return {
       index: await has("/books/blue/data/index.json"),
       bundle: await has("/books/blue/data/course.json"),
       perUnit: await has("/books/blue/data/units/unit-005.json"),
-      book: await has("/books/blue/book.pdf"),
+      pdf: (await c.keys()).some((r) => r.url.endsWith(".pdf")),
       shell: (await shell.match("/", { ignoreVary: true })) !== undefined,
-      otherBook: await caches.has("murrnglish-book-red-v1"),
+      otherBook: await caches.has("murrnglish-book-red-v2"),
     };
   });
   ok(
-    "F12 the course arrives as one packed file, not per unit",
-    cached.index && cached.bundle && cached.book && cached.shell && !cached.perUnit,
+    "F12 the course arrives as one packed file, not per unit, and no PDF",
+    cached.index && cached.bundle && cached.shell && !cached.perUnit && !cached.pdf,
     JSON.stringify(cached),
   );
 
@@ -622,16 +605,16 @@ if (BASE.includes("4173")) {
 
   // offline now. The hash step is same-document, so the only request left is
   // the reload — a real navigation the service worker has to answer from the
-  // cache, followed by the unit JSON, the book and the pdf.js chunks.
+  // cache, followed by the unit JSON (out of the packed course).
   await ctx2.setOffline(true);
   await p2.evaluate(() => {
     location.hash = "#/blue/u5";
   });
   await p2.reload({ waitUntil: "load" });
-  await p2.waitForSelector(".pagecanvas", { timeout: 60000 });
-  ok("F12 offline unit renders the book", (await p2.locator(".pagecanvas").count()) >= 1);
-  await p2.waitForSelector(".rightpane .exercise", { timeout: 60000 });
-  ok("F12 offline exercises render", await p2.locator(".rightpane .exercise").first().isVisible());
+  await p2.waitForSelector(".lesson .lsection", { timeout: 60000 });
+  ok("F12 offline unit renders its lesson", (await p2.locator(".lesson .lsection").count()) >= 2);
+  await p2.waitForSelector(".coursepane .exercise", { timeout: 60000 });
+  ok("F12 offline exercises render", await p2.locator(".coursepane .exercise").first().isVisible());
   ok("F12 no errors while offline", !results.some((r) => r[1] === "F12 pageerror"));
 
   // the way back out: removing drops the cache and the flag, and the panel
@@ -641,8 +624,8 @@ if (BASE.includes("4173")) {
   await blueRow.getByRole("button", { name: "Download", exact: true }).waitFor({ timeout: 30000 });
   const removed = await p2.evaluate(async () => {
     return {
-      book: (await caches.match("/books/blue/book.pdf", { ignoreVary: true })) !== undefined,
-      flag: localStorage.getItem("murrnglish.blue.offline-v1"),
+      book: (await caches.match("/books/blue/data/course.json", { ignoreVary: true })) !== undefined,
+      flag: localStorage.getItem("murrnglish.blue.offline-v2"),
       shell: (await caches.match("/", { ignoreVary: true })) !== undefined,
     };
   });
@@ -657,7 +640,7 @@ if (BASE.includes("4173")) {
   await ctx2.setOffline(false);
   await sleep(7000);
   const back = await p2.evaluate(async () => {
-    return (await caches.match("/books/blue/book.pdf", { ignoreVary: true })) !== undefined;
+    return (await caches.match("/books/blue/data/course.json", { ignoreVary: true })) !== undefined;
   });
   ok("F12 a removed download is not fetched again on its own", !back);
 
@@ -710,9 +693,9 @@ ok(
 );
 await page.locator(".libcard", { hasText: "Essential Grammar in Use" }).locator(".libcta").click();
 await page.waitForURL(/#\/red\/u1$/, { timeout: 30000 });
-await page.waitForSelector(".pagecanvas", { timeout: 60000 });
-await page.waitForSelector(".rightpane .exercise", { timeout: 30000 });
-ok("F13 red unit 1 renders", /Unit 1/.test((await page.locator(".unitheading").first().textContent()) ?? ""));
+await page.waitForSelector(".coursepane .exercise", { timeout: 30000 });
+ok("F13 red unit 1 renders", /Урок 1 —/.test((await page.locator(".unitheading").first().textContent()) ?? ""));
+ok("F13 red's lesson is in Russian", /В этом уроке/.test((await page.locator(".lessongoals").textContent()) ?? ""));
 ok("F13 the topbar names the red book", (await page.locator(".topbar h1").textContent()) === "Essential Grammar in Use");
 ok(
   "F13 red starts with no progress of its own",
@@ -735,61 +718,41 @@ await page.goto(BASE + "/", { waitUntil: "load" });
 await page.waitForURL(/#\/blue\/u\d+$/, { timeout: 30000 });
 ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()), page.url());
 
-// ---------- Flow 14: the rules compendium ----------
+// ---------- Flow 14: the rules are the lessons now ----------
 {
   const rctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
   const rp = await rctx.newPage();
   rp.on("pageerror", (e) => results.push(["FAIL", "F14 pageerror", String(e).slice(0, 140)]));
-  await rp.goto(BASE + "/#/rules/blue/u12", { waitUntil: "load" });
-  await rp.waitForSelector(".rulesheet .rulesection", { timeout: 30000 });
+  // an old link to the rules compendium opens the unit, with its address
+  await rp.goto(BASE + "/#/rules/blue/u3", { waitUntil: "load" });
+  await rp.waitForSelector(".lesson .lsection", { timeout: 30000 });
+  ok("F14 an old rules link opens the unit's lesson", /#\/blue\/u3$/.test(rp.url()), rp.url());
+  await rp.goto(BASE + "/#/rules", { waitUntil: "load" });
+  await rp.waitForSelector(".libcard", { timeout: 30000 });
+  ok("F14 the old rules page is the library", /#\/$/.test(rp.url()), rp.url());
+  ok("F14 no Rules tile in the library", (await rp.locator(".studytile", { hasText: "Rules" }).count()) === 0);
+  // a quiz answer shows on a tap, a unit link goes to that unit
+  await rp.goto(BASE + "/#/blue/u1", { waitUntil: "load" });
+  await rp.waitForSelector(".lquiz .lshow", { timeout: 30000 });
+  await rp.locator(".lquiz .lshow").first().click();
+  ok("F14 a quiz answer shows on a tap", /knocking/.test((await rp.locator(".lquiz .la").first().textContent()) ?? ""));
+  await rp.locator(".lseechip", { hasText: "Present simple" }).first().click();
+  await rp.waitForURL(/#\/blue\/u2$/, { timeout: 10000 });
+  ok("F14 see-also chips open their unit", true);
+  // a unit without its lesson yet says so and goes straight to the exercises
+  await rp.goto(BASE + "/#/blue/u140", { waitUntil: "load" });
+  await rp.waitForSelector(".coursepane .exercise", { timeout: 30000 });
+  ok("F14 a unit without a lesson says it is coming", await rp.locator(".lessonsoon").isVisible());
+  // exercises that had a picture carry it as text
+  await rp.goto(BASE + "/#/red/u3", { waitUntil: "load" });
+  await rp.waitForSelector("#ex-3\\.1 .itemcue", { timeout: 30000 });
+  ok("F14 a picture exercise shows its cues", (await rp.locator("#ex-3\\.1 .itemcue").count()) === 8);
   ok(
-    "F14 a unit's rule opens as text",
-    /Unit 12/.test((await rp.locator(".ruletoolbar .ruleheading").textContent()) ?? "") &&
-      /We use for and since/.test(await rp.locator(".rulesheet").innerText()),
+    "F14 its example shows the answer the page used to",
+    /He’s hot\./.test((await rp.locator("#ex-3\\.1 .exampleitem").textContent()) ?? ""),
   );
-  ok("F14 the unit list marks the open unit", /for and since/.test((await rp.locator(".rulerow.active").textContent()) ?? ""));
-  await rp.fill(".searchbox input", "used to");
-  await rp.waitForSelector(".rulerow.hit", { timeout: 5000 });
-  const hits = await rp.locator(".rulerow.hit .ruletitle").allTextContents();
-  ok(
-    "F14 search finds the rule in both books",
-    hits.some((h) => /^I used to/.test(h)) && hits.some((h) => /^used to \(do\)/.test(h)),
-    hits.slice(0, 4).join(" | "),
-  );
-  await rp.locator(".rulerow.hit", { hasText: "used to (do)" }).click();
-  await rp.waitForURL(/#\/rules\/blue\/u18$/, { timeout: 10000 });
-  await rp.waitForSelector(".rulesheet .hlmark", { timeout: 10000 });
-  ok("F14 a search hit opens its rule with the words marked", true);
-  await rp.locator(".ruletools a", { hasText: "Exercises" }).click();
-  await rp.waitForURL(/#\/blue\/u18$/, { timeout: 10000 });
-  ok("F14 the rule links to its exercises", true);
-  await rp.waitForSelector(".unitstudy", { timeout: 30000 });
-  await rp.locator(".unitstudy a", { hasText: "Rule" }).click();
-  await rp.waitForURL(/#\/rules\/blue\/u18$/, { timeout: 10000 });
-  ok("F14 the unit links back to its rule", true);
-  // a book without rule text shows the rule page itself
-  await rp.goto(BASE + "/#/rules/red/u5", { waitUntil: "load" });
-  await rp.waitForSelector(".rulepages .pagecanvas", { timeout: 60000 });
-  ok("F14 red's rule opens as the book page", (await rp.locator(".rulesheet").count()) === 0);
   ok("F14 no page errors", !results.some((r) => r[1] === "F14 pageerror"));
   await rctx.close();
-
-  // phone: the list, then the rule with a way back
-  const rm = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
-  const rmp = await rm.newPage();
-  await rmp.goto(BASE + "/#/rules/blue", { waitUntil: "load" });
-  await rmp.waitForSelector(".rulerow", { timeout: 30000 });
-  await rmp.locator(".rulerow", { hasText: "Present perfect 1" }).click();
-  await rmp.waitForSelector(".rulesheet", { timeout: 30000 });
-  ok(
-    "F14 phone: the rule replaces the list, no sideways scroll",
-    (await rmp.locator(".rulesnav").count()) === 0 &&
-      (await rmp.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)),
-  );
-  await rmp.locator(".ruleback").click();
-  await rmp.waitForSelector(".rulesnav .rulerow", { timeout: 10000 });
-  ok("F14 phone: back to the list", /#\/rules\/blue$/.test(rmp.url()));
-  await rm.close();
 }
 
 // ---------- Flow 15: adding words to the dictionary ----------
@@ -886,9 +849,9 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
 
   // picked from an exercise: the sentence and the unit come along
   await wp.goto(BASE + "/#/blue/u12", { waitUntil: "load" });
-  await wp.waitForSelector(".rightpane .exercise .item", { timeout: 30000 });
+  await wp.waitForSelector(".coursepane .exercise .item", { timeout: 30000 });
   await wp.evaluate(() => {
-    const w = document.createTreeWalker(document.querySelector(".rightpane .exercise"), NodeFilter.SHOW_TEXT);
+    const w = document.createTreeWalker(document.querySelector(".coursepane .exercise"), NodeFilter.SHOW_TEXT);
     let t;
     while ((t = w.nextNode())) if (/Brazil/.test(t.textContent)) break;
     const i = t.textContent.indexOf("Brazil");

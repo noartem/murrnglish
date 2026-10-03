@@ -81,45 +81,53 @@
     {
       "id": "101.3",
       "type": "choice",
-      "instruction": "Which is right?",
+      "instruction": "Read the descriptions and choose the right form.",
       "items": [
         {
           "num": 2,
+          "cue": "\ud83d\udeb6 I wasn\u2019t in a hurry, so I was walking ________.",
           "options": ["slow", "slowly"],
           "answer": 1
         },
         {
           "num": 3,
+          "cue": "\ud83c\udfac I haven\u2019t been to the cinema ________.",
           "options": ["late", "lately"],
           "answer": 1
         },
         {
           "num": 4,
+          "cue": "\ud83d\udc22 Slow down! You\u2019re walking too ________ for me.",
           "options": ["fast", "quick"],
           "answer": 0
         },
         {
           "num": 5,
+          "cue": "\ud83e\udd14 I tried ________ to remember her name, but I couldn\u2019t.",
           "options": ["hard", "hardly"],
           "answer": 0
         },
         {
           "num": 6,
+          "cue": "\ud83e\udde5 This coat is practically unused. I\u2019ve ________ worn it.",
           "options": ["hard", "hardly"],
           "answer": 1
         },
         {
           "num": 7,
+          "cue": "\ud83c\udfbe Laura is a good tennis player. She hits the ball very ________.",
           "options": ["hard", "hardly"],
           "answer": 0
         },
         {
           "num": 8,
+          "cue": "\ud83d\udd26 It\u2019s really dark in here. I ________ see.",
           "options": ["hardly see", "see hardly"],
           "answer": 0
         },
         {
           "num": 9,
+          "cue": "\ud83c\udfc3 Ben is going to run a marathon. He\u2019s been training ________.",
           "options": ["hard", "hardly"],
           "answer": 0
         }
@@ -166,7 +174,7 @@
     {
       "id": "101.5",
       "type": "fill-in",
-      "instruction": "Complete these sentences with hardly + any/anybody/anything/anywhere/ever.",
+      "instruction": "Complete the sentences with hardly + any/anybody/anything/anywhere/ever.",
       "items": [
         {
           "num": 2,

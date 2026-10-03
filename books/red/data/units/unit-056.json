@@ -190,10 +190,11 @@
     {
       "id": "56.2",
       "type": "fill-in",
-      "instruction": "Посмотрите на картинки и допишите предложения. Используйте go/goes/going/went + -ing.",
+      "instruction": "Прочитайте описания и допишите предложения. Используйте go / goes / going / went + -ing.",
       "items": [
         {
           "num": 1,
+          "cue": "⛵ Ричард выходит в море на своей лодке.",
           "parts": [
             "Richard has a boat. He often ",
             "."
@@ -207,6 +208,7 @@
         },
         {
           "num": 2,
+          "cue": "🎣 В субботу Эми была на реке с удочкой.",
           "parts": [
             "Last Saturday Emily went ",
             "."
@@ -220,6 +222,7 @@
         },
         {
           "num": 3,
+          "cue": "🏊 Дэн каждое утро в бассейне.",
           "parts": [
             "Dan ",
             " every day."
@@ -232,6 +235,7 @@
         },
         {
           "num": 4,
+          "cue": "⛷️ В следующем месяце Джессика едет в горы.",
           "parts": [
             "Jessica is going on holiday next month. She is ",
             "."
@@ -244,6 +248,7 @@
         },
         {
           "num": 5,
+          "cue": "🛍️ Петру вечером надо купить продукты.",
           "parts": [
             "Peter is going out later. He has to ",
             "."
@@ -256,6 +261,7 @@
         },
         {
           "num": 6,
+          "cue": "🏃 После работы Сара отправилась на пробежку.",
           "parts": [
             "Sarah ",
             " after work yesterday."

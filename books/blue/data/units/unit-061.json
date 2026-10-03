@@ -50,7 +50,7 @@
     {
       "id": "61.3",
       "type": "write",
-      "instruction": "What do you say in these situations? Use I\u2019m (not) used to \u2026 .",
+      "instruction": "What do you say in each situation? Use I\u2019m (not) used to \u2026 .",
       "items": [
         {
           "num": 2,

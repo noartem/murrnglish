@@ -175,10 +175,11 @@
     {
       "id": "42.2",
       "type": "write",
-      "instruction": "Write questions using the passive. Some are present and some are past.",
+      "instruction": "Read the descriptions and write questions using the passive. Some are present and some are past.",
       "items": [
         {
           "num": 1,
+          "cue": "🪟 Ask about glass.",
           "prompt": "(how / make?)",
           "answers": [
             "How is glass made?"
@@ -186,6 +187,7 @@
         },
         {
           "num": 2,
+          "cue": "📺 Ask about television.",
           "prompt": "(when / invent?)",
           "answers": [
             "When was television invented?"
@@ -193,6 +195,7 @@
         },
         {
           "num": 3,
+          "cue": "🏔️ Ask about mountains.",
           "prompt": "(how / form?)",
           "answers": [
             "How are mountains formed?"
@@ -200,6 +203,7 @@
         },
         {
           "num": 4,
+          "cue": "🧬 Ask about DNA.",
           "prompt": "(when / discover?)",
           "answers": [
             "When was DNA discovered?"
@@ -207,6 +211,7 @@
         },
         {
           "num": 5,
+          "cue": "🥈 Ask about silver.",
           "prompt": "(what / use for?)",
           "answers": [
             "What is silver used for?"
@@ -216,80 +221,154 @@
     },
     {
       "id": "42.3",
-      "type": "choice",
-      "instruction": "Put the verb into the correct form, present or past, active or passive.",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form, present or past, active or passive. Each item has two sentences, (a) and (b).",
       "items": [
         {
           "num": 1,
-          "options": [
-            "a Two hundred people are employed by the company.",
-            "b The company employs 200 people."
+          "parts": [
+            "(a) Two hundred people ",
+            " (employ) by the company.  (b) The company ",
+            " (employ) 200 people."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "are employed"
+            ],
+            [
+              "employs"
+            ]
+          ],
+          "example": true
         },
         {
           "num": 2,
-          "options": [
-            "a covers",
-            "b is covered"
+          "parts": [
+            "(a) Water ",
+            " (cover) most of the earth’s surface.  (b) How much of the earth’s surface ",
+            " (cover) by water?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "covers"
+            ],
+            [
+              "is covered"
+            ]
+          ]
         },
         {
           "num": 3,
-          "options": [
-            "a was stolen",
-            "b disappeared"
+          "parts": [
+            "(a) While I was on holiday, my camera ",
+            " (steal) from my hotel room.  (b) While I was on holiday, my camera ",
+            " (disappear) from my hotel room."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "was stolen"
+            ],
+            [
+              "disappeared"
+            ]
+          ]
         },
         {
           "num": 4,
-          "options": [
-            "a died",
-            "b were brought up"
+          "parts": [
+            "(a) Robert’s parents ",
+            " (die) when he was very young.  (b) Robert and his sister ",
+            " (bring up) by their grandparents."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "died"
+            ],
+            [
+              "were brought up"
+            ]
+          ]
         },
         {
           "num": 5,
-          "options": [
-            "a sank",
-            "b was rescued"
+          "parts": [
+            "(a) The boat hit a rock and ",
+            " (sink) quickly.  (b) Fortunately everybody ",
+            " (rescue)."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "sank"
+            ],
+            [
+              "was rescued"
+            ]
+          ]
         },
         {
           "num": 6,
-          "options": [
-            "a was fired",
-            "b resigned"
+          "parts": [
+            "(a) Bill ",
+            " (fire) from his job. He wasn’t very good at it.  (b) Sue ",
+            " (resign) from her job because she didn’t enjoy it any more."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "was fired"
+            ],
+            [
+              "resigned"
+            ]
+          ]
         },
         {
           "num": 7,
-          "options": [
-            "a doesn't bother",
-            "b 'm/am not bothered"
+          "parts": [
+            "(a) It can be noisy living here, but it ",
+            " (not / bother) me.  (b) It can be noisy living here, but I ",
+            " (not / bother) by it."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "doesn’t bother"
+            ],
+            [
+              "’m not bothered",
+              "am not bothered"
+            ]
+          ]
         },
         {
           "num": 8,
-          "options": [
-            "a was knocked",
-            "b fell"
+          "parts": [
+            "(a) Maria had an accident. She ",
+            " (knock) off her bike.  (b) Maria had an accident. She ",
+            " (fall) off her bike."
           ],
-          "answer": 0
+          "answers": [
+            [
+              "was knocked"
+            ],
+            [
+              "fell"
+            ]
+          ]
         },
         {
           "num": 9,
-          "options": [
-            "a are they called",
-            "b do you call"
+          "parts": [
+            "(a) I haven’t seen these flowers before. What ",
+            " (they / call)?  (b) I haven’t seen these flowers before. What ",
+            " (you / call) them?"
           ],
-          "answer": 0
+          "answers": [
+            [
+              "are they called"
+            ],
+            [
+              "do you call"
+            ]
+          ]
         }
       ]
     },

@@ -9,7 +9,7 @@
     {
       "id": "43.1",
       "type": "fill-in",
-      "instruction": "Complete these sentences. Use the following verbs in the passive:",
+      "instruction": "Complete the sentences. Use the following verbs in the passive. Sometimes you need have (might have, would have etc.).",
       "wordBank": [
         "arrest",
         "carry",
@@ -176,10 +176,11 @@
     {
       "id": "43.2",
       "type": "write",
-      "instruction": "Make sentences from the words in brackets. Sometimes the verb is active, sometimes passive.",
+      "instruction": "Read the descriptions. Make sentences from the words in brackets. Sometimes the verb is active, sometimes passive.",
       "items": [
         {
           "num": 1,
+          "cue": "👣 There’s somebody behind us.",
           "prompt": "(We / follow)",
           "answers": [
             "We're being followed."
@@ -187,6 +188,7 @@
         },
         {
           "num": 2,
+          "cue": "🚪 This door is a different colour, isn’t it?",
           "prompt": "(you / paint?)",
           "answers": [
             "Have you painted it?"
@@ -194,6 +196,7 @@
         },
         {
           "num": 3,
+          "cue": "🚲 My bike has disappeared.",
           "prompt": "(It / steal!)",
           "answers": [
             "It's been stolen!",
@@ -202,6 +205,7 @@
         },
         {
           "num": 4,
+          "cue": "☂️ My umbrella has disappeared.",
           "prompt": "(Somebody / take)",
           "answers": [
             "Somebody has taken it.",
@@ -210,6 +214,7 @@
         },
         {
           "num": 5,
+          "cue": "🏚️ A neighbour of mine disappeared six months ago.",
           "prompt": "(He / not / see / since then)",
           "answers": [
             "He hasn't been seen since then."
@@ -217,6 +222,7 @@
         },
         {
           "num": 6,
+          "cue": "👩 I wonder how Jessica is these days.",
           "prompt": "(I / not / see / for ages)",
           "answers": [
             "I haven't seen her for ages."
@@ -224,6 +230,7 @@
         },
         {
           "num": 7,
+          "cue": "🐝 A friend of mine was stung by a bee recently. You ask me:",
           "prompt": "(you / ever / sting / bee?)",
           "answers": [
             "Have you ever been stung by a bee?"
@@ -231,6 +238,7 @@
         },
         {
           "num": 8,
+          "cue": "🌉 The bridge was damaged recently.",
           "prompt": "(It / repair / at the moment)",
           "answers": [
             "It's being repaired at the moment.",
@@ -239,6 +247,7 @@
         },
         {
           "num": 9,
+          "cue": "🚗 Tom’s car was stolen recently.",
           "prompt": "(It / not / find / yet)",
           "answers": [
             "It hasn't been found yet.",
@@ -247,6 +256,7 @@
         },
         {
           "num": 10,
+          "cue": "🪑 I went into the room and saw that the table and chairs were not in the same place.",
           "prompt": "(The furniture / move)",
           "answers": [
             "The furniture had been moved."

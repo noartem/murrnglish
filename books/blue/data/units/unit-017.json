@@ -223,21 +223,21 @@
       "items": [
         {
           "num": 1,
-          "prompt": "I’m not free tomorrow morning. I’ve got a driving lesson.",
+          "prompt": "I’m not free tomorrow morning. [I’ve got] a driving lesson.",
           "answers": [
             "OK"
           ]
         },
         {
           "num": 2,
-          "prompt": "Lisa had got long hair when she was a child.",
+          "prompt": "Lisa [had got] long hair when she was a child.",
           "answers": [
             "Lisa had long hair when she was a child."
           ]
         },
         {
           "num": 3,
-          "prompt": "I couldn’t contact you because I hadn’t my phone.",
+          "prompt": "I couldn’t contact you because [I hadn’t] my phone.",
           "answers": [
             "I didn’t have my phone.",
             "I hadn’t got my phone."
@@ -245,7 +245,7 @@
         },
         {
           "num": 4,
-          "prompt": "‘Are you feeling OK?’ ‘No, I’m having a cold.’",
+          "prompt": "‘Are you feeling OK?’ ‘No, [I’m having] a cold.’",
           "answers": [
             "I have a cold.",
             "I’ve got a cold."
@@ -253,21 +253,21 @@
         },
         {
           "num": 5,
-          "prompt": "I’m not working right now. I’m having a break.",
+          "prompt": "I’m not working right now. [I’m having] a break.",
           "answers": [
             "OK"
           ]
         },
         {
           "num": 6,
-          "prompt": "I felt really tired. I hadn’t any energy.",
+          "prompt": "I felt really tired. [I hadn’t] any energy.",
           "answers": [
             "I didn’t have any energy."
           ]
         },
         {
           "num": 7,
-          "prompt": "It’s a small town. It doesn’t have many shops.",
+          "prompt": "It’s a small town. [It doesn’t have] many shops.",
           "answers": [
             "OK",
             "It hasn’t got many shops."
@@ -275,28 +275,28 @@
         },
         {
           "num": 8,
-          "prompt": "Was your trip OK? Had you any problems?",
+          "prompt": "Was your trip OK? [Had you] any problems?",
           "answers": [
             "Did you have any problems?"
           ]
         },
         {
           "num": 9,
-          "prompt": "My friend called me when I was having breakfast.",
+          "prompt": "My friend called me when [I was having] breakfast.",
           "answers": [
             "OK"
           ]
         },
         {
           "num": 10,
-          "prompt": "The last time I saw Steve, he was having a beard.",
+          "prompt": "The last time I saw Steve, [he was having] a beard.",
           "answers": [
             "He had a beard."
           ]
         },
         {
           "num": 11,
-          "prompt": "We don’t need to hurry. We have plenty of time.",
+          "prompt": "We don’t need to hurry. [We have] plenty of time.",
           "answers": [
             "OK",
             "We’ve got plenty of time."
@@ -304,7 +304,7 @@
         },
         {
           "num": 12,
-          "prompt": "How often have you a shower?",
+          "prompt": "[How often have you] a shower?",
           "answers": [
             "How often do you have a shower?"
           ]

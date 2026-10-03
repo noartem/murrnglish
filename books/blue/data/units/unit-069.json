@@ -9,7 +9,7 @@
     {
       "id": "69.1",
       "type": "write",
-      "instruction": "Some of these sentences need a/an. Correct the sentences where necessary.",
+      "instruction": "Correct the sentences where necessary. Some of them need a or an.",
       "items": [
         {
           "num": 1,

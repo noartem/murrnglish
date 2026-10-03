@@ -9,7 +9,7 @@
     {
       "id": "51.1",
       "type": "write",
-      "instruction": "Read what these people say and write sentences with He/She/They said (that) … .",
+      "instruction": "Read what each person says and write a sentence with He / She / They said (that) … .",
       "example": [
         1
       ],
@@ -104,10 +104,11 @@
     {
       "id": "51.2",
       "type": "fill-in",
-      "instruction": "Use the pictures to complete the sentences.",
+      "instruction": "Read what each person says and complete the sentences.",
       "items": [
         {
           "num": 1,
+          "cue": "🗣 Clare: “I’m enjoying my new job.”",
           "parts": [
             "I met Clare last week. She said ",
             "."
@@ -121,6 +122,7 @@
         },
         {
           "num": 2,
+          "cue": "🍎 Emma: “I’m not hungry.”",
           "parts": [
             "Emma didn’t want anything to eat. She said ",
             "."
@@ -136,6 +138,7 @@
         },
         {
           "num": 3,
+          "cue": "🪜 Mike: “I need it.”",
           "parts": [
             "I wanted to borrow Mike’s ladder, but he said ",
             "."
@@ -149,6 +152,7 @@
         },
         {
           "num": 4,
+          "cue": "🎂 Hannah: “I don’t want to go.”",
           "parts": [
             "Hannah was invited to the party, but she said ",
             "."
@@ -164,6 +168,7 @@
         },
         {
           "num": 5,
+          "cue": "🖼️ Susan: “You can have it.”",
           "parts": [
             "Susan told me she didn’t want the picture. She said ",
             "."
@@ -177,6 +182,7 @@
         },
         {
           "num": 6,
+          "cue": "🏝️ Martin: “I’ll send you a postcard.”",
           "parts": [
             "Martin has just gone away on holiday. He said ",
             "."
@@ -192,6 +198,7 @@
         },
         {
           "num": 7,
+          "cue": "🚪 Nicola: “He’s already gone home.”",
           "parts": [
             "I was looking for Robert. Nicola said ",
             "."
@@ -207,6 +214,7 @@
         },
         {
           "num": 8,
+          "cue": "📺 David: “I want to watch TV.”",
           "parts": [
             "'Why did David stay at home?' 'He said ",
             ".'"
@@ -220,6 +228,7 @@
         },
         {
           "num": 9,
+          "cue": "🎬 Mary: “I’m going to the cinema.”",
           "parts": [
             "'Has Mary gone out?' 'I think so. She said ",
             ".'"

@@ -409,14 +409,16 @@
           "prompt": "(yesterday)",
           "modelAnswers": [
             "I had to go to the dentist yesterday."
-          ]
+          ],
+          "cue": "Про вчерашний день: что вам пришлось сделать вчера, чего не хотелось."
         },
         {
           "num": 4,
           "prompt": "(tomorrow)",
           "modelAnswers": [
             "I have to go shopping tomorrow."
-          ]
+          ],
+          "cue": "Про завтрашний день: что вам придётся сделать завтра."
         }
       ]
     },

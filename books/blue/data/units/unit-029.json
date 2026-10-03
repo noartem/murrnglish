@@ -23,6 +23,7 @@
       "items": [
         {
           "num": 2,
+          "cue": "📚 ‘Is there a bookshop near here?’",
           "parts": [
             "I'm not sure, but ask Anna. She ",
             "."
@@ -35,6 +36,7 @@
         },
         {
           "num": 3,
+          "cue": "🌍 ‘Where are those people from?’",
           "parts": [
             "I don’t know. They ",
             "."
@@ -48,6 +50,7 @@
         },
         {
           "num": 4,
+          "cue": "🙏 ‘I hope you can help me.’",
           "parts": [
             "I’ll try, but it ",
             "."
@@ -60,6 +63,7 @@
         },
         {
           "num": 5,
+          "cue": "📱 ‘Whose phone is this?’",
           "parts": [
             "It’s not mine. It ",
             "."
@@ -72,6 +76,7 @@
         },
         {
           "num": 6,
+          "cue": "📵 ‘Why doesn’t George answer his phone?’",
           "parts": [
             "He ",
             "."
@@ -84,6 +89,7 @@
         },
         {
           "num": 7,
+          "cue": "🔑 ‘Do you know anyone who has a key to this cupboard?’",
           "parts": [
             "Rachel ",
             ", but I’m not sure."
@@ -96,6 +102,7 @@
         },
         {
           "num": 8,
+          "cue": "😶 ‘Gary is in a strange mood today.’",
           "parts": [
             "Yes, he is. He ",
             "."
@@ -115,6 +122,7 @@
       "items": [
         {
           "num": 2,
+          "cue": "👫 ‘Who was the guy we saw with Anna yesterday?’ ‘I’m not sure.’",
           "parts": [
             "It may ",
             " her brother. (be)"
@@ -127,6 +135,7 @@
         },
         {
           "num": 3,
+          "cue": "🚪 ‘Is Ellie here?’",
           "parts": [
             "I can’t see her. She may not ",
             " yet. (arrive)"
@@ -139,6 +148,7 @@
         },
         {
           "num": 4,
+          "cue": "☕ ‘Gary said he would meet us in the café, but he isn’t here.’",
           "parts": [
             "He might ",
             " outside. I’ll go and look. (wait)"
@@ -151,6 +161,7 @@
         },
         {
           "num": 5,
+          "cue": "🤫 ‘How did John know that I’d lost my job?’",
           "parts": [
             "I don’t know. I suppose Sam may ",
             " him. (tell)"
@@ -163,6 +174,7 @@
         },
         {
           "num": 6,
+          "cue": "🏢 ‘Do you know where Jeff is? Is he still in the office?’",
           "parts": [
             "He was here earlier, but he might ",
             " home. (go)"
@@ -175,6 +187,7 @@
         },
         {
           "num": 7,
+          "cue": "📺 ‘Where’s Emma? What’s she doing?’",
           "parts": [
             "I’m not sure. She might ",
             " TV. (watch)"
@@ -187,6 +200,7 @@
         },
         {
           "num": 8,
+          "cue": "👧 ‘Does Max have any brothers or sisters?’",
           "parts": [
             "I’m not sure. I think he may ",
             " a younger sister. (have)"
@@ -199,6 +213,7 @@
         },
         {
           "num": 9,
+          "cue": "☂️ ‘I can’t find my umbrella. Have you seen it?’",
           "parts": [
             "You may ",
             " it in the restaurant last night. (leave)"
@@ -211,6 +226,7 @@
         },
         {
           "num": 10,
+          "cue": "🔔 ‘I rang Dan’s doorbell, but he didn’t answer. I’m sure he was there.’",
           "parts": [
             "He might not ",
             " the doorbell. (hear)"
@@ -223,6 +239,7 @@
         },
         {
           "num": 11,
+          "cue": "⏰ ‘Hannah is supposed to meet us here, and she’s already 20 minutes late.’",
           "parts": [
             "She may ",
             ". She’s always forgetting things. (forget)"
@@ -242,6 +259,7 @@
       "items": [
         {
           "num": 2,
+          "cue": "🎉 ‘I wonder why Tom didn’t come to the party. Perhaps he didn’t want to come.’",
           "parts": [
             "It’s possible. He ",
             " to come."
@@ -254,6 +272,7 @@
         },
         {
           "num": 3,
+          "cue": "🔥 ‘I wonder how the fire started. Was it an accident?’",
           "parts": [
             "No, the police say it ",
             " an accident. It was deliberate."
@@ -266,6 +285,7 @@
         },
         {
           "num": 4,
+          "cue": "🔍 ‘Mike says he needs to see you. He tried to find you yesterday.’",
           "parts": [
             "Well, he ",
             " very hard. I was in my office all day."
@@ -278,6 +298,7 @@
         },
         {
           "num": 5,
+          "cue": "🇺🇸 ‘The man you spoke to – are you sure he was American?’",
           "parts": [
             "No, I’m not sure. He ",
             "."

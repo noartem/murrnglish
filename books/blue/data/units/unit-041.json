@@ -1,7 +1,10 @@
 {
   "unit": 41,
   "title": "wish",
-  "pdfPages": [94, 95],
+  "pdfPages": [
+    94,
+    95
+  ],
   "exercises": [
     {
       "id": "41.1",
@@ -10,39 +13,83 @@
       "items": [
         {
           "num": 1,
-          "parts": ["I wish you a pleasant stay at this hotel."],
+          "parts": [
+            "I wish you a pleasant stay at this hotel."
+          ],
           "answers": [],
           "example": true
         },
         {
           "num": 2,
-          "parts": ["Enjoy your holiday. I ", " you have a great time."],
-          "answers": [["hope"]]
+          "parts": [
+            "Enjoy your holiday. I ",
+            " you have a great time."
+          ],
+          "answers": [
+            [
+              "hope"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Goodbye. I ", " you all the best for the future."],
-          "answers": [["wish"]]
+          "parts": [
+            "Goodbye. I ",
+            " you all the best for the future."
+          ],
+          "answers": [
+            [
+              "wish"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["We said goodbye to each other and ", " each other luck."],
-          "answers": [["wished"]]
+          "parts": [
+            "We said goodbye to each other and ",
+            " each other luck."
+          ],
+          "answers": [
+            [
+              "wished"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["We're going to have a picnic tomorrow, so I ", " the weather is nice."],
-          "answers": [["hope"]]
+          "parts": [
+            "We're going to have a picnic tomorrow, so I ",
+            " the weather is nice."
+          ],
+          "answers": [
+            [
+              "hope"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Congratulations on your new job. I ", " you every success."],
-          "answers": [["wish"]]
+          "parts": [
+            "Congratulations on your new job. I ",
+            " you every success."
+          ],
+          "answers": [
+            [
+              "wish"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Good luck in your new job. I ", " it works out well for you."],
-          "answers": [["hope"]]
+          "parts": [
+            "Good luck in your new job. I ",
+            " it works out well for you."
+          ],
+          "answers": [
+            [
+              "hope"
+            ]
+          ]
         }
       ]
     },
@@ -53,86 +100,162 @@
       "items": [
         {
           "num": 1,
-          "parts": ["Jack is going on a trip to Mexico soon. I wish I was going too."],
+          "parts": [
+            "Jack is going on a trip to Mexico soon. I wish I was going too."
+          ],
           "answers": [],
           "example": true
         },
         {
           "num": 2,
-          "parts": ["I'm very tired and I have so much to do. I wish I ", " so tired."],
-          "answers": [["wasn't", "weren't"]]
+          "parts": [
+            "I'm very tired and I have so much to do. I wish I ",
+            " so tired."
+          ],
+          "answers": [
+            [
+              "wasn't",
+              "weren't"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["You didn't tell me you were ill. Why not? I wish you ", " me."],
-          "answers": [["'d told", "had told"]]
+          "parts": [
+            "You didn't tell me you were ill. Why not? I wish you ",
+            " me."
+          ],
+          "answers": [
+            [
+              "'d told",
+              "had told"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don't have enough free time. I wish I ", " more free time."],
-          "answers": [["had", "could have"]]
+          "parts": [
+            "I don't have enough free time. I wish I ",
+            " more free time."
+          ],
+          "answers": [
+            [
+              "had",
+              "could have"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I can't make up my mind what to do. I wish I ", " decide."],
-          "answers": [["could"]]
+          "parts": [
+            "I can't make up my mind what to do. I wish I ",
+            " decide."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I bought these shoes, but now I don't like them. I wish I ", " them."],
-          "answers": [["hadn't bought"]]
+          "parts": [
+            "I bought these shoes, but now I don't like them. I wish I ",
+            " them."
+          ],
+          "answers": [
+            [
+              "hadn't bought"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["We have to go out now and I don't want to go. I wish we ", " to go out now."],
-          "answers": [["didn't have"]]
+          "parts": [
+            "We have to go out now and I don't want to go. I wish we ",
+            " to go out now."
+          ],
+          "answers": [
+            [
+              "didn't have"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Unfortunately I couldn't go to the wedding last month. I wish I could ", "."],
-          "answers": [["have gone"]]
+          "parts": [
+            "Unfortunately I couldn't go to the wedding last month. I wish I could ",
+            "."
+          ],
+          "answers": [
+            [
+              "have gone"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "41.3",
       "type": "write",
-      "instruction": "What do you say in these situations? Write sentences with I wish … would … .",
+      "instruction": "Read the descriptions. What do you say? Write sentences with I wish … would … (in 5–7: I wish … wouldn’t …).",
       "items": [
         {
           "num": 1,
+          "cue": "🌧️ It’s raining. You want to go out, but not in the rain. You say:",
           "prompt": "",
-          "answers": ["I wish it would stop raining."]
+          "answers": [
+            "I wish it would stop raining."
+          ]
         },
         {
           "num": 2,
+          "cue": "⌚ You’re waiting for Jane. She’s late and you’re getting impatient.",
           "prompt": "You say to yourself: I wish she",
-          "answers": ["I wish she would come.", "I wish she would hurry up."]
+          "answers": [
+            "I wish she would come.",
+            "I wish she would hurry up."
+          ]
         },
         {
           "num": 3,
+          "cue": "💼 You’re looking for a job – so far without success. Nobody will give you a job.",
           "prompt": "You say: I wish somebody",
-          "answers": ["I wish somebody would give me a job."]
+          "answers": [
+            "I wish somebody would give me a job."
+          ]
         },
         {
           "num": 4,
+          "cue": "🐕 A dog has been barking for a long time, and you’re trying to study.",
           "prompt": "You say:",
-          "answers": ["I wish the/that dog would stop barking."]
+          "answers": [
+            "I wish the/that dog would stop barking."
+          ]
         },
         {
           "num": 5,
+          "cue": "🏎️ Your friend is driving very fast. She always drives fast and you don’t like it.",
           "prompt": "You say to her: I wish you",
-          "answers": ["I wish you wouldn't drive so fast."]
+          "answers": [
+            "I wish you wouldn't drive so fast."
+          ]
         },
         {
           "num": 6,
+          "cue": "🚪 Joe leaves the door open all the time. This annoys you.",
           "prompt": "You say to Joe:",
-          "answers": ["I wish you wouldn't leave the door open (all the time)."]
+          "answers": [
+            "I wish you wouldn't leave the door open (all the time)."
+          ]
         },
         {
           "num": 7,
+          "cue": "🗑️ A lot of people drop litter in the street. You don’t like this.",
           "prompt": "You say: I wish people",
-          "answers": ["I wish people wouldn't drop litter in the street."]
+          "answers": [
+            "I wish people wouldn't drop litter in the street."
+          ]
         }
       ]
     },
@@ -143,75 +266,167 @@
       "items": [
         {
           "num": 1,
-          "parts": ["It was a stupid thing to say. I wish I hadn't said it. (I / not / say)"],
+          "parts": [
+            "It was a stupid thing to say. I wish I hadn't said it. (I / not / say)"
+          ],
           "answers": [],
           "example": true
         },
         {
           "num": 2,
-          "parts": ["I'm fed up with this rain. I wish it would stop . (it / stop)"],
+          "parts": [
+            "I'm fed up with this rain. I wish it would stop . (it / stop)"
+          ],
           "answers": [],
           "example": true
         },
         {
           "num": 3,
-          "parts": ["It's a difficult question. I wish ", " the answer. (I / know)"],
-          "answers": [["I knew"]]
+          "parts": [
+            "It's a difficult question. I wish ",
+            " the answer. (I / know)"
+          ],
+          "answers": [
+            [
+              "I knew"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I really didn't enjoy the party. I wish ", ". (we / not / go)"],
-          "answers": [["we hadn't gone"]]
+          "parts": [
+            "I really didn't enjoy the party. I wish ",
+            ". (we / not / go)"
+          ],
+          "answers": [
+            [
+              "we hadn't gone"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I wish ", ". We've been waiting for 20 minutes. (the bus / come)"],
-          "answers": [["the bus would come"]]
+          "parts": [
+            "I wish ",
+            ". We've been waiting for 20 minutes. (the bus / come)"
+          ],
+          "answers": [
+            [
+              "the bus would come"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["You're lucky to be going away. I wish ", " with you. (I / can / come)"],
-          "answers": [["I could come"]]
+          "parts": [
+            "You're lucky to be going away. I wish ",
+            " with you. (I / can / come)"
+          ],
+          "answers": [
+            [
+              "I could come"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Our flat is rather small. I wish ", " a bit bigger. (it / be)"],
-          "answers": [["it was/were"]]
+          "parts": [
+            "Our flat is rather small. I wish ",
+            " a bit bigger. (it / be)"
+          ],
+          "answers": [
+            [
+              "it was/were"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["I should have listened to you. I wish ", " your advice. (I / take)"],
-          "answers": [["I'd taken", "I had taken"]]
+          "parts": [
+            "I should have listened to you. I wish ",
+            " your advice. (I / take)"
+          ],
+          "answers": [
+            [
+              "I'd taken",
+              "I had taken"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["You keep interrupting me! I wish ", ". (you / listen)"],
-          "answers": [["you'd listen", "you would listen"]]
+          "parts": [
+            "You keep interrupting me! I wish ",
+            ". (you / listen)"
+          ],
+          "answers": [
+            [
+              "you'd listen",
+              "you would listen"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["You're always complaining. I wish ", " all the time. (you / not / complain)"],
-          "answers": [["you wouldn't complain", "you didn't complain"]]
+          "parts": [
+            "You're always complaining. I wish ",
+            " all the time. (you / not / complain)"
+          ],
+          "answers": [
+            [
+              "you wouldn't complain",
+              "you didn't complain"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["It's freezing today. I wish ", " so cold. I hate cold weather. (it / not / be)"],
-          "answers": [["it wasn't/weren't"]]
+          "parts": [
+            "It's freezing today. I wish ",
+            " so cold. I hate cold weather. (it / not / be)"
+          ],
+          "answers": [
+            [
+              "it wasn't/weren't"
+            ]
+          ]
         },
         {
           "num": 12,
-          "parts": ["I wish ", ". It's horrible! (the weather / change)"],
-          "answers": [["the weather would change"]]
+          "parts": [
+            "I wish ",
+            ". It's horrible! (the weather / change)"
+          ],
+          "answers": [
+            [
+              "the weather would change"
+            ]
+          ]
         },
         {
           "num": 13,
-          "parts": ["I wish ", " a piano. I'd love to have one. (I / have)"],
-          "answers": [["I had", "I could have"]]
+          "parts": [
+            "I wish ",
+            " a piano. I'd love to have one. (I / have)"
+          ],
+          "answers": [
+            [
+              "I had",
+              "I could have"
+            ]
+          ]
         },
         {
           "num": 14,
-          "parts": ["When we were in London last year, we didn't have time to see all the things we wanted to see. I wish ", " there longer. (we / can / stay)"],
-          "answers": [["we could have stayed"]]
+          "parts": [
+            "When we were in London last year, we didn't have time to see all the things we wanted to see. I wish ",
+            " there longer. (we / can / stay)"
+          ],
+          "answers": [
+            [
+              "we could have stayed"
+            ]
+          ]
         }
       ]
     }

@@ -154,13 +154,14 @@
     {
       "id": "23.2",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences using will (’ll) or (be) going to.",
+      "instruction": "Read the descriptions and complete the sentences using will (’ll) or (be) going to.",
       "items": [
         {
           "num": 1,
+          "cue": "☕ You want some coffee, so you go to the kitchen to make some. You say to your friend:",
           "parts": [
-            "",
-            "."
+            "You say: ",
+            ""
           ],
           "answers": [
             [
@@ -171,6 +172,7 @@
         },
         {
           "num": 2,
+          "cue": "🏨 You’re arranging to meet a friend. You suggest a time and a place.",
           "parts": [
             "You say: ",
             " you at 10.30 in the hotel lobby, OK? (I/see)"
@@ -183,6 +185,7 @@
         },
         {
           "num": 3,
+          "cue": "🚗 You’ve decided to sell your car. You tell a friend.",
           "parts": [
             "You say: I don’t need my car any more. ",
             " it. (I/sell)"
@@ -195,6 +198,7 @@
         },
         {
           "num": 4,
+          "cue": "🪪 Your friend is worried because she has lost her driving licence.",
           "parts": [
             "You say: Don’t worry. I’m sure ",
             " it. (you/find)"
@@ -208,9 +212,10 @@
         },
         {
           "num": 5,
+          "cue": "📷 (a) Your old camera is broken and you’ve decided to throw it away. You tell your friend. (b) Your friend loves old cameras and collects them. He doesn’t want you to throw it away.",
           "parts": [
-            "You say: This camera is broken. ",
-            " it away. (I/throw)",
+            "(a) You say: This camera is broken. ",
+            " it away. (I/throw)  (b) Your friend says: Don’t throw it away! ",
             " it. (I/have)"
           ],
           "answers": [
@@ -224,9 +229,10 @@
         },
         {
           "num": 6,
+          "cue": "✈️ (a) Joe has to get to the airport tomorrow and doesn’t know how. Amy offers to take him. (b) Later Paul offers to take Joe too. Joe tells him it isn’t necessary.",
           "parts": [
-            "Amy says: Don’t worry about getting to the airport, Joe. ",
-            " you. (I/take)",
+            "(a) Amy says: Don’t worry about getting to the airport, Joe. ",
+            " you. (I/take)  (b) Joe says: Thanks, Paul, but ",
             " me. (Amy/take)"
           ],
           "answers": [

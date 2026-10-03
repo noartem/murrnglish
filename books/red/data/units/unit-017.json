@@ -9,7 +9,7 @@
     {
       "id": "17.1",
       "type": "fill-in",
-      "instruction": "Для каждой картинки напишите предложение с just.",
+      "instruction": "Прочитайте описания. Для каждого напишите предложение с just.",
       "items": [
         {
           "num": 1,
@@ -22,7 +22,8 @@
               "They’ve just arrived."
             ]
           ],
-          "example": true
+          "example": true,
+          "cue": "🚌 Двери автобуса только что открылись — пассажиры выходят на остановку."
         },
         {
           "num": 2,
@@ -35,7 +36,8 @@
               "’s just got up.",
               "has just got up."
             ]
-          ]
+          ],
+          "cue": "🪥 У человека щётка во рту и глаза ещё сонные — он только что встал."
         },
         {
           "num": 3,
@@ -50,7 +52,8 @@
               "’ve just bought a car",
               "have just bought a car"
             ]
-          ]
+          ],
+          "cue": "🚗 Мужчина держит ключи от новой машины, довольный, только что купил её."
         },
         {
           "num": 4,
@@ -62,14 +65,15 @@
             [
               "has just started."
             ]
-          ]
+          ],
+          "cue": "🏁 Бегуны стартовали секунду назад."
         }
       ]
     },
     {
       "id": "17.2",
       "type": "fill-in",
-      "instruction": "Закончите предложения. Используйте already + present perfect.",
+      "instruction": "Прочитайте описания. Закончите предложения. Используйте already + present perfect.",
       "items": [
         {
           "num": 1,
@@ -95,7 +99,8 @@
               "’ve already seen",
               "have already seen"
             ]
-          ]
+          ],
+          "cue": "🎬 Вы идёте в кино с друзьями, и кто-то спрашивает: «Мы уже смотрели этот фильм?»"
         },
         {
           "num": 3,
@@ -108,7 +113,8 @@
               "’ve already phoned him.",
               "have already phoned him."
             ]
-          ]
+          ],
+          "cue": "📞 Весь вечер вы пытаетесь дозвониться до друга, который не берёт трубку."
         },
         {
           "num": 4,
@@ -123,7 +129,8 @@
               "’s already gone away.",
               "has already gone away."
             ]
-          ]
+          ],
+          "cue": "🔑 Вы пришли к другу, а его уже нет дома."
         },
         {
           "num": 5,
@@ -136,7 +143,8 @@
               "’ve already read it.",
               "have already read it."
             ]
-          ]
+          ],
+          "cue": "📚 Вы взяли книгу у сестры и обнаружили, что она уже вся в ваших руках."
         },
         {
           "num": 6,
@@ -151,14 +159,15 @@
               "’s already started it.",
               "has already started it."
             ]
-          ]
+          ],
+          "cue": "🍰 Вы пришли на день рождения, а именинница уже всех угостила."
         }
       ]
     },
     {
       "id": "17.3",
       "type": "fill-in",
-      "instruction": "Напишите утвердительное предложение с just (They’ve just … / She’s just … и т. д.) или отрицательное предложение с yet (They haven’t … yet / She hasn’t … yet и т. д.).",
+      "instruction": "Прочитайте описания. Напишите утвердительное предложение с just (They’ve just … / She’s just … и т. д.) или отрицательное предложение с yet (They haven’t … yet / She hasn’t … yet и т. д.).",
       "items": [
         {
           "num": 1,
@@ -172,7 +181,8 @@
               "She hasn’t gone out yet."
             ]
           ],
-          "example": true
+          "example": true,
+          "cue": "🚶‍♀️ Дверь на щеколде, а в прихожей пусто."
         },
         {
           "num": 2,
@@ -185,7 +195,8 @@
             [
               "has just gone."
             ]
-          ]
+          ],
+          "cue": "🚌 Автобус отъехал от остановки минуту назад."
         },
         {
           "num": 3,
@@ -198,7 +209,8 @@
             [
               "The train hasn’t left yet."
             ]
-          ]
+          ],
+          "cue": "🚉 Поезд ещё стоит на перроне, двери открыты."
         },
         {
           "num": 4,
@@ -211,7 +223,8 @@
             [
               "He hasn’t opened it yet."
             ]
-          ]
+          ],
+          "cue": "📦 Посылка стоит у двери — её никто не забрал."
         },
         {
           "num": 5,
@@ -225,7 +238,8 @@
               "They’ve just finished their dinner.",
               "They have just finished their dinner."
             ]
-          ]
+          ],
+          "cue": "🍽️ На столе пустые тарелки, все сыты."
         },
         {
           "num": 6,
@@ -241,7 +255,8 @@
               "It’s just stopped raining",
               "It has just stopped raining"
             ]
-          ]
+          ],
+          "cue": "☁️ Облака разошлись, капли перестали падать."
         }
       ]
     },

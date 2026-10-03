@@ -9,7 +9,7 @@
     {
       "id": "117.1",
       "type": "write",
-      "instruction": "In some of these sentences, you need like (not as). Correct the sentences where necessary. Write 'OK' if the sentence is correct.",
+      "instruction": "In some of the sentences, you need like (not as). Correct them where necessary. Write ‘OK’ if the sentence is correct.",
       "items": [
         {
           "num": 1,

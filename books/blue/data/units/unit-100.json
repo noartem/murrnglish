@@ -18,19 +18,19 @@
     {
       "id": "100.2",
       "type": "choice",
-      "instruction": "Put in the correct word.",
+      "instruction": "Read the descriptions and put in the correct word.",
       "items": [
-        {"num": 2, "options": ["selfish", "selfishly"], "answer": 1},
-        {"num": 3, "options": ["sudden", "suddenly"], "answer": 1},
-        {"num": 4, "options": ["sudden", "suddenly"], "answer": 0},
-        {"num": 5, "options": ["bad", "badly"], "answer": 1},
-        {"num": 6, "options": ["awful", "awfully"], "answer": 0},
-        {"num": 7, "options": ["terrible", "terribly"], "answer": 1},
-        {"num": 8, "options": ["comfortable", "comfortably"], "answer": 0},
-        {"num": 9, "options": ["clear", "clearly"], "answer": 1},
-        {"num": 10, "options": ["safe", "safely"], "answer": 0},
-        {"num": 11, "options": ["safe", "safely"], "answer": 0},
-        {"num": 12, "options": ["safe", "safely"], "answer": 1}
+        {"num": 2, "cue": "🚗 I think you behaved very ________.", "options": ["selfish", "selfishly"], "answer": 1},
+        {"num": 3, "cue": "⛈️ The weather changed ________.", "options": ["sudden", "suddenly"], "answer": 1},
+        {"num": 4, "cue": "🌡️ There was a ________ change in the weather.", "options": ["sudden", "suddenly"], "answer": 0},
+        {"num": 5, "cue": "🚶 Liz fell and hurt herself really ________.", "options": ["bad", "badly"], "answer": 1},
+        {"num": 6, "cue": "🤒 I think I have flu. I feel ________.", "options": ["awful", "awfully"], "answer": 0},
+        {"num": 7, "cue": "😔 Tanya is ________ upset about losing her job.", "options": ["terrible", "terribly"], "answer": 1},
+        {"num": 8, "cue": "🪑 I could sit in this chair all day. It’s very ________.", "options": ["comfortable", "comfortably"], "answer": 0},
+        {"num": 9, "cue": "🗣️ I explained everything as ________ as I could.", "options": ["clear", "clearly"], "answer": 1},
+        {"num": 10, "cue": "🪜 Be careful on that ladder. It doesn’t look very ________.", "options": ["safe", "safely"], "answer": 0},
+        {"num": 11, "cue": "✈️ Have a good trip and I hope you have a ________ journey.", "options": ["safe", "safely"], "answer": 0},
+        {"num": 12, "cue": "🏡 I’m glad you had a good trip and got home ________.", "options": ["safe", "safely"], "answer": 1}
       ]
     },
     {
@@ -53,7 +53,11 @@
     {
       "id": "100.4",
       "type": "fill-in",
-      "instruction": "Choose two words (one from each box) to complete each sentence.",
+      "instruction": "Choose two words, one adverb and one adjective, to complete each sentence.",
+      "wordBank": [
+        "adverbs — absolutely, badly, completely, reasonably, seriously, slightly, unusually, unnecessarily",
+        "adjectives — changed, cheap, damaged, enormous, ill, long, married, planned, quiet"
+      ],
       "items": [
         {"num": 2, "parts": ["Will's mother is ", " in hospital."], "answers": [["seriously", "ill"]]},
         {"num": 3, "parts": ["This house is so big! It's ", "."], "answers": [["absolutely", "enormous"]]},

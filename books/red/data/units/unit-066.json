@@ -265,7 +265,7 @@
     {
       "id": "66.3",
       "type": "write",
-      "instruction": "Кто они по профессии? Закончите предложения, используя слова из рамки.",
+      "instruction": "Прочитайте описания и закончите предложения, используя слова из рамки.",
       "wordBank": [
         "architect",
         "dentist",
@@ -281,6 +281,7 @@
       "items": [
         {
           "num": 1,
+          "cue": "👩 В белом халате, с маленьким зеркальцем в руках.",
           "prompt": "",
           "answers": [
             "She’s a dentist."
@@ -288,6 +289,7 @@
         },
         {
           "num": 2,
+          "cue": "👨 Стоит за прилавком с книгами.",
           "prompt": "He’s",
           "answers": [
             "He’s a shop assistant."
@@ -295,6 +297,7 @@
         },
         {
           "num": 3,
+          "cue": "👩 С чертежом и линейкой в руках.",
           "prompt": "She",
           "answers": [
             "She’s an architect."
@@ -302,6 +305,7 @@
         },
         {
           "num": 4,
+          "cue": "👨 За рулём жёлтого такси.",
           "prompt": "",
           "answers": [
             "He’s a taxi driver."
@@ -309,6 +313,7 @@
         },
         {
           "num": 5,
+          "cue": "👨 В рабочих перчатках чинит розетку.",
           "prompt": "",
           "answers": [
             "He’s an electrician."
@@ -316,6 +321,7 @@
         },
         {
           "num": 6,
+          "cue": "👩 С камерой на шее снимает портрет.",
           "prompt": "",
           "answers": [
             "She’s a photographer."
@@ -323,6 +329,7 @@
         },
         {
           "num": 7,
+          "cue": "👩 В палате помогает пациенту.",
           "prompt": "",
           "answers": [
             "She’s a nurse."
@@ -330,6 +337,7 @@
         },
         {
           "num": 8,
+          "cue": "🙋 А вы? Напишите о своей профессии — из рамки или любую другую.",
           "prompt": "And you? I’m",
           "answers": [
             "I’m a/an ..."
@@ -341,7 +349,7 @@
     {
       "id": "66.4",
       "type": "write",
-      "instruction": "Напишите предложения, используя слова и фразы из обеих рамок. Где необходимо, также используйте a/an.",
+      "instruction": "Прочитайте описания ситуаций и напишите предложения, используя слова и фразы из обеих рамок. Где необходимо, также используйте a/an.",
       "wordBank": [
         "I want to ask you",
         "Rebecca works in",
@@ -366,6 +374,7 @@
       "items": [
         {
           "num": 1,
+          "cue": "🙋 Вы хотите задать вопрос собеседнику.",
           "prompt": "",
           "answers": [
             "I want to ask you a question."
@@ -373,6 +382,7 @@
         },
         {
           "num": 2,
+          "cue": "👒 У Тома в шкафу одни шляпы.",
           "prompt": "",
           "answers": [
             "Tom never wears a hat."
@@ -380,6 +390,7 @@
         },
         {
           "num": 3,
+          "cue": "🚲 Олег никак не научился ездить на велосипеде.",
           "prompt": "",
           "answers": [
             "I can’t ride a bike."
@@ -387,6 +398,7 @@
         },
         {
           "num": 4,
+          "cue": "🎨 Брат Риты рисует картины и лепит фигурки из глины.",
           "prompt": "",
           "answers": [
             "My brother is an artist."
@@ -394,6 +406,7 @@
         },
         {
           "num": 5,
+          "cue": "📚 Рита стоит за прилавком книжного магазина.",
           "prompt": "",
           "answers": [
             "Rebecca works in a bookshop."
@@ -401,6 +414,7 @@
         },
         {
           "num": 6,
+          "cue": "🗣️ Джейн записывается на курс польского языка.",
           "prompt": "",
           "answers": [
             "Jane wants to learn a foreign language."
@@ -408,6 +422,7 @@
         },
         {
           "num": 7,
+          "cue": "🏚️ Майк живёт в доме, которому сто лет.",
           "prompt": "",
           "answers": [
             "Mike lives in an old house."
@@ -415,6 +430,7 @@
         },
         {
           "num": 8,
+          "cue": "🎉 Вечером вы идёте в гости к друзьям.",
           "prompt": "",
           "answers": [
             "This evening I’m going to a party."

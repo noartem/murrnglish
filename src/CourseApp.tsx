@@ -1,28 +1,29 @@
-// CourseApp: one book's split-pane course UI — its landing, units and
-// additional exercises (routes.ts: #/<book>, #/<book>/u<N>, #/<book>/a<N>).
+// CourseApp: one book's course UI — its landing, units and additional
+// exercises (routes.ts: #/<book>, #/<book>/u<N>, #/<book>/a<N>). A unit is one
+// column: its lesson (the app's own, components/Lesson.tsx), then its
+// exercises, with a bar of jumps between them that stays at the top.
 // App mounts it keyed by the book, so switching books starts from a clean
 // slate; within a book the page arrives as a prop from the hash.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { RefObject } from "react";
 import type { Book } from "./books";
-import { bookUrl } from "./books";
-import { BookContext } from "./bookContext";
-import type { AdditionalData, IndexData, PageAspects, TotalsMap, UnitData } from "./data";
+import { BookContext, useBook } from "./bookContext";
+import type { AdditionalData, IndexData, TotalsMap, UnitData } from "./data";
 import {
   fetchAdditional,
   fetchIndex,
-  fetchPageAspects,
   fetchTotals,
   fetchUnit,
 } from "./data";
-import { PageViewer } from "./components/PageViewer";
+import { LessonBody, LessonSoon, PracticeDivider, UnitHead, labelsFor } from "./components/Lesson";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
 import {
   ShortcutsHelpButton,
   ShortcutsModal,
 } from "./components/ShortcutsHelp";
-import { SC, useCourseShortcuts } from "./shortcuts";
+import { SC, focusFirstExercise, useCourseShortcuts } from "./shortcuts";
 import {
   ArrowLeft,
   ArrowRight,
@@ -72,8 +73,8 @@ import {
   LIBRARY_HASH,
   bookHash,
   pageKey,
+  parsePage,
   replaceHash,
-  rulesHash,
 } from "./routes";
 import { PickWord } from "./components/PickWord";
 import { SIDEBAR_COLLAPSED_KEY } from "./keys";
@@ -109,12 +110,8 @@ export default function CourseApp({
     src: "file" | "link";
   } | null>(null);
   const [progress, setProgressState] = useState<Progress>(() => loadProgress(book.id));
-  // page heights, fetched with the index: the page stack waits for them so
-  // its placeholders take their real size from the first frame
-  const [aspects, setAspects] = useState<PageAspects | null>(null);
-  // keyboard-shortcuts help modal + pane focus pump (Shift+S)
+  // keyboard-shortcuts help modal
   const [helpOpen, setHelpOpen] = useState(false);
-  const [paneFocusTick, setPaneFocusTick] = useState(0);
   const preHelpFocus = useRef<HTMLElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   // the offline download window: its button exists only in the installed app
@@ -158,12 +155,10 @@ export default function CourseApp({
       window.removeEventListener("online", attempt);
     };
   }, [standalone, book]);
-  // phone layout (<=768px): the split becomes Book | Exercises tabs and the
-  // sidebar becomes a drawer; desktop layout is pixel-identical
+  // phone layout (<=768px): the sidebar becomes a drawer
   const [isMobile, setIsMobile] = useState(
     () => window.matchMedia("(max-width: 768px)").matches,
   );
-  const [mobileTab, setMobileTab] = useState<"book" | "exercises">("book");
   const [drawerOpen, setDrawerOpen] = useState(false);
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 768px)");
@@ -175,14 +170,14 @@ export default function CourseApp({
   // rightward one pulls it in over either pane. No drawer state is read — a
   // drag only ever sets the panel to where it already is — so the listeners
   // survive every open/close. Passive listeners plus the vertical slop leave
-  // page scrolling alone. Places that own their touches are left out: the
-  // book pages (dragging there must never summon the drawer), form controls
-  // (caret placement, text selection) and open dialogs (the drawer would
-  // otherwise slide in behind the modal, which already covers the screen).
+  // page scrolling alone. Places that own their touches are left out: form
+  // controls (caret placement, text selection), the lesson's wide tables
+  // (they scroll sideways) and open dialogs (the drawer would otherwise slide
+  // in behind the modal, which already covers the screen).
   useEffect(() => {
     if (!isMobile) return;
     const SWIPE_OWNED =
-      "input, textarea, select, .pageviewer, .modal-overlay, .helpoverlay";
+      "input, textarea, select, .lformtables, .modal-overlay, .helpoverlay";
     const COMMIT = 60; // horizontal travel that commits the gesture (px)
     const SLOP = 12; // vertical travel that hands the drag back to scrolling
     let x0 = 0;
@@ -230,7 +225,7 @@ export default function CourseApp({
       window.removeEventListener("touchcancel", onEnd);
     };
   }, [isMobile]);
-  const rightpaneRef = useRef<OverlayScrollbarsComponentRef>(null);
+  const paneRef = useRef<OverlayScrollbarsComponentRef>(null);
   // sidebar collapse representation: in-flow while animating, fixed hover
   // card once fully collapsed (settled); toggling runs the width animation
   const [cardPhase, setCardPhase] = useState(
@@ -277,9 +272,6 @@ export default function CourseApp({
     fetchTotals(book)
       .then(setTotals)
       .catch(() => setTotals(null));
-    fetchPageAspects(book)
-      .then(setAspects)
-      .catch(() => setAspects({})); // no heights: the pages fall back to A4
   }, [book]);
   // remember the last content page for the "/" entry redirect
   useEffect(() => {
@@ -314,19 +306,10 @@ export default function CourseApp({
   // route numbers go into the placeholder heading, which must read exactly
   // like the loaded heading
   const routeN = routeKey ? Number(routeKey.slice(1)) : 0;
-  // Everything index.json already knows about the route, available as soon as
-  // the index lands: the heading text and the book pages. That is what lets a
-  // route paint its real title and start the PDF alongside the exercise JSON.
+  // What index.json already knows about the route, available as soon as the
+  // index lands: the heading text, so a route paints its real title before
+  // the exercise JSON arrives.
   const routeInfo = routeKey ? index?.exercises?.[routeKey] : undefined;
-  // The page stack mounts on index pages for the whole visit, never on the
-  // loaded unit object: the PDF fetch (14–75 MB, the slowest thing the app
-  // does) then runs alongside the exercise JSON. Index pages are a stable
-  // reference, so the unit arriving does not re-identify the array and
-  // PageViewer keeps its zoom/scroll state. validate.py fails the build if
-  // this copy drifts from the per-file pdfPages, which the fallback below
-  // covers for a stale browser cache.
-  const mountPages =
-    routeInfo?.pages ?? unit?.pdfPages ?? additional?.pdfPages;
 
   useEffect(() => {
     setUnit(null);
@@ -344,26 +327,23 @@ export default function CourseApp({
   }, [book, route]);
   // a new page always starts read from the top (pager and sidebar alike)
   useEffect(() => {
-    const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
+    const vp = paneRef.current?.osInstance()?.elements().viewport;
     if (vp) vp.scrollTop = 0;
   }, [route]);
-  // the pane focus pump is per-page: clear it on navigation so a stale tick
-  // can never steal focus from the exercise when PageViewer remounts
-  useEffect(() => {
-    setPaneFocusTick(0);
-  }, [route]);
-
-  // a fresh page puts the caret into the first exercise input so keyboard
-  // work starts immediately; fires when the data lands, which covers every
-  // way of opening a page (hash, sidebar link, bottom pager buttons)
+  // a fresh page with nothing to read first puts the caret into the first
+  // exercise input so keyboard work starts immediately; fires when the data
+  // lands, which covers every way of opening a page (hash, sidebar link,
+  // bottom pager buttons). A unit with a lesson opens on the lesson instead:
+  // Shift+S (or the jump bar) goes down to the exercises.
   useEffect(() => {
     if (!unit && !additional) return;
+    if (unit?.lesson) return;
     // the pane instance/inputs may not exist yet on the very first load —
     // retry across a few frames so focus always lands on the exercise
     let raf = 0;
     let tries = 0;
     const focusFirst = () => {
-      const vp = rightpaneRef.current?.osInstance()?.elements().viewport;
+      const vp = paneRef.current?.osInstance()?.elements().viewport;
       const first = vp?.querySelector<HTMLElement>(
         ".exercise textarea, .exercise input, .exercise select, .exercise button",
       );
@@ -578,7 +558,7 @@ export default function CourseApp({
     if (t.kind === "unit") navUnit(t.n);
     else navAdditional(t.n);
   };
-  const sc = useCourseShortcuts({
+  useCourseShortcuts({
     helpOpen,
     openHelp,
     closeHelp,
@@ -590,7 +570,21 @@ export default function CourseApp({
     },
     goNextUnit: () => goTarget(pager?.next ?? null),
     goPrevUnit: () => goTarget(pager?.prev ?? null),
-    focusPagePane: () => setPaneFocusTick((t) => t + 1),
+    jumpLesson: () => {
+      const vp = paneRef.current?.osInstance()?.elements().viewport;
+      const practice = document.getElementById(PRACTICE_ID);
+      if (!vp || !practice) return focusFirstExercise();
+      // still reading the lesson while the divider is in the lower half
+      const above =
+        practice.getBoundingClientRect().top - vp.getBoundingClientRect().top;
+      if (above > vp.clientHeight / 2) {
+        scrollPane(vp, practice);
+        focusFirstExercise();
+      } else {
+        vp.scrollTo({ top: 0, behavior: scrollBehavior() });
+        document.getElementById(LESSON_ID)?.focus({ preventScroll: true });
+      }
+    },
     focusUnitPanel: () => {
       const el = unitPanelTarget();
       if (!el) return;
@@ -708,7 +702,6 @@ export default function CourseApp({
         {!sidebarOpen && !isMobile && (
           <div className="sidebar-edge" aria-hidden />
         )}
-        {!isHome && <MobileTabSwitch tab={mobileTab} onTab={setMobileTab} />}
         {isMobile && (
           <div
             className={`sidebar-backdrop ${drawerOpen && 'enabled'}`}
@@ -750,10 +743,6 @@ export default function CourseApp({
                         <span>All books</span>
                       </a>
                       <div className="drawersections">
-                        <a className="draweraction" href={rulesHash(book, route.kind === "unit" ? route.n : undefined)}>
-                          <BookOpenText size={16} aria-hidden />
-                          <span>Rules</span>
-                        </a>
                         <a className="draweraction" href={CARDS_HASH}>
                           <Layers size={16} aria-hidden />
                           <span>Cards</span>
@@ -931,30 +920,19 @@ export default function CourseApp({
         {isHome ? (
           <Home book={book} onStart={startCourse} continueTo={homeContinue} />
         ) : (
-          <div className="split" data-tab={mobileTab}>
-            <div className="leftpane">
-              {mountPages && aspects && (
-                <PageViewer
-                  pdfUrl={bookUrl(book, "book.pdf")}
-                  aspects={aspects}
-                  pdfPages={mountPages}
-                  focusTick={paneFocusTick}
-                  onPaneEscape={sc.restoreFocus}
-                />
-              )}
-            </div>
-            <OverlayScrollbarsComponent
-              ref={rightpaneRef}
-              className="rightpane"
-              options={{
-                overflow: { x: "hidden" as const },
-                scrollbars: {
-                  theme: "os-theme-dark",
-                  autoHide: "leave" as const,
-                  autoHideDelay: 500,
-                },
-              }}
-            >
+          <OverlayScrollbarsComponent
+            ref={paneRef}
+            className="coursepane"
+            options={{
+              overflow: { x: "hidden" as const },
+              scrollbars: {
+                theme: "os-theme-dark",
+                autoHide: "leave" as const,
+                autoHideDelay: 500,
+              },
+            }}
+          >
+            <div className="coursecol">
               {error && <div className="loaderror">{error}</div>}
               {pending && (
                 <UnitLoading
@@ -965,15 +943,28 @@ export default function CourseApp({
               )}
               {unit && (
                 <>
-                  <h2 className="unitheading">
-                    Unit {unit.unit} — {unit.title}
-                    {isUnitDone && (
-                      <span className="donetag">
-                        <Check size={13} aria-hidden /> done
-                      </span>
-                    )}
-                  </h2>
-                  <UnitStudyLinks book={book} unit={unit} />
+                  <UnitJumps
+                    lesson={!!unit.lesson}
+                    exercises={exerciseIds}
+                    paneRef={paneRef}
+                  />
+                  <div id={LESSON_ID} tabIndex={-1} className="lessonanchor">
+                    <UnitHead
+                      n={unit.unit}
+                      title={unit.title}
+                      lesson={unit.lesson}
+                      done={
+                        isUnitDone && (
+                          <span className="donetag">
+                            <Check size={13} aria-hidden /> done
+                          </span>
+                        )
+                      }
+                    />
+                  </div>
+                  {unit.lesson ? <LessonBody lesson={unit.lesson} /> : <LessonSoon />}
+                  <PracticeDivider id={PRACTICE_ID} />
+                  <p className="pickhint">Select a word to add it to your dictionary</p>
                   {unit.exercises.map((ex) => (
                     <ExerciseCard
                       key={ex.id}
@@ -988,10 +979,8 @@ export default function CourseApp({
                 <>
                   <h2 className="unitheading">
                     Additional exercise {additional.id} — {additional.topic}
-                    {additional.refs && (
-                      <span className="refs"> ({additional.refs})</span>
-                    )}
                   </h2>
+                  {additional.refs && <AdditionalRefs book={book} refs={additional.refs} />}
                   <ExerciseCard
                     exercise={additional.exercise}
                     progress={progress}
@@ -1002,12 +991,12 @@ export default function CourseApp({
               {pager && (pager.prev || pager.next) && (
                 <UnitNav prev={pager.prev} next={pager.next} onGo={goTarget} />
               )}
-              <PickWord
-                scope=".rightpane"
-                source={{ book: book.id, ...(route.kind === "unit" ? { unit: route.n } : {}) }}
-              />
-            </OverlayScrollbarsComponent>
-          </div>
+            </div>
+            <PickWord
+              scope=".coursepane"
+              source={{ book: book.id, ...(route.kind === "unit" ? { unit: route.n } : {}) }}
+            />
+          </OverlayScrollbarsComponent>
         )}
       </div>
       <ProgressModal
@@ -1037,15 +1026,109 @@ export default function CourseApp({
   );
 }
 
-// Under the unit heading: the unit's rule in the compendium.
-function UnitStudyLinks({ book, unit }: { book: Book; unit: UnitData }) {
+const LESSON_ID = "lesson";
+const PRACTICE_ID = "practice";
+/** the id ExerciseCard gives an exercise's card */
+const exAnchor = (id: string) => `ex-${id}`;
+/** room left above a jump target: the jump bar that stays at the top */
+const JUMP_OFFSET = 56;
+
+const scrollBehavior = (): ScrollBehavior =>
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+
+/** Scroll the pane so `el` sits just under the jump bar. */
+function scrollPane(vp: HTMLElement, el: HTMLElement) {
+  const top = el.getBoundingClientRect().top - vp.getBoundingClientRect().top + vp.scrollTop - JUMP_OFFSET;
+  vp.scrollTo({ top: Math.max(0, top), behavior: scrollBehavior() });
+}
+
+/**
+ * The bar at the top of a unit: the lesson, then one chip per exercise. The
+ * part in view is marked as the pane scrolls, so the bar is a map of the
+ * page and the way back up to the lesson from anywhere in the exercises.
+ */
+function UnitJumps({
+  lesson,
+  exercises,
+  paneRef,
+}: {
+  lesson: boolean;
+  exercises: string[];
+  paneRef: RefObject<OverlayScrollbarsComponentRef>;
+}) {
+  const pane = useCallback(() => paneRef.current?.osInstance()?.elements().viewport, [paneRef]);
+  const L = labelsFor(useBook());
+  const [at, setAt] = useState<string>(LESSON_ID);
+  const targets = useMemo(() => [LESSON_ID, ...exercises.map(exAnchor)], [exercises]);
+  useEffect(() => {
+    // any scroll in the page: the pane's viewport is created after this mounts
+    const onScroll = () => {
+      const vp = pane();
+      if (!vp) return;
+      const line = vp.getBoundingClientRect().top + JUMP_OFFSET + 40;
+      let cur = LESSON_ID;
+      for (const id of targets) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= line) cur = id;
+      }
+      // the lesson is over once the practice divider is up
+      const practice = document.getElementById(PRACTICE_ID);
+      if (cur === LESSON_ID && practice && practice.getBoundingClientRect().top <= line)
+        cur = targets[1] ?? LESSON_ID;
+      setAt(cur);
+    };
+    document.addEventListener("scroll", onScroll, true);
+    onScroll();
+    return () => document.removeEventListener("scroll", onScroll, true);
+  }, [targets, pane]);
+  const go = (id: string) => {
+    const vp = pane();
+    const el = document.getElementById(id);
+    if (!vp || !el) return;
+    if (id === LESSON_ID) vp.scrollTo({ top: 0, behavior: scrollBehavior() });
+    else scrollPane(vp, el);
+  };
   return (
-    <div className="rulelinks unitstudy">
-      <a className="pillbtn" href={rulesHash(book, unit.unit)}>
-        <BookOpenText size={15} aria-hidden /> Rule
-      </a>
-      <span className="pickhint">Select a word to add it to your dictionary</span>
-    </div>
+    <nav className="unitjumps" aria-label="In this unit">
+      <button
+        type="button"
+        className={"jumpchip lessonchip" + (at === LESSON_ID ? " on" : "")}
+        onClick={() => go(LESSON_ID)}
+      >
+        <BookOpenText size={14} aria-hidden /> {lesson ? L.lesson : L.unit}
+      </button>
+      <span className="jumpsep" aria-hidden />
+      {exercises.map((id) => (
+        <button
+          key={id}
+          type="button"
+          className={"jumpchip" + (at === exAnchor(id) ? " on" : "")}
+          onClick={() => go(exAnchor(id))}
+        >
+          {id}
+        </button>
+      ))}
+    </nav>
+  );
+}
+
+/** "Units 1–5, 12" under an additional exercise: links to those units. */
+function AdditionalRefs({ book, refs }: { book: Book; refs: string }) {
+  // the refs are free text; every number in them that is a unit becomes a link
+  const parts = refs.split(/(\d+)/);
+  return (
+    <p className="refs addrefs">
+      {parts.map((part, i) => {
+        const page = /^\d+$/.test(part) ? parsePage(book, `u${part}`) : null;
+        return page && page.kind === "unit" && page.n === Number(part) ? (
+          <a key={i} href={bookHash(book, page)}>
+            {part}
+          </a>
+        ) : (
+          part
+        );
+      })}
+    </p>
   );
 }
 
@@ -1056,14 +1139,12 @@ interface NavTarget {
   desc: string;
 }
 
-// Exercises-pane placeholder shown from navigation until the exercise JSON
-// lands. The heading is REAL from the first frame — index.json carries every
-// title, so there is no reason to skeleton that text. Only the card shape is
-// guessed: instruction and numbered rows at the sizes the loaded card renders
-// at, so the swap does not jump. Deliberately static (no shimmer): the shape
-// already says "loading", and motion here would compete with the page stack
-// filling in beside it. Row counts are illustrative — the real ones are not
-// known until the JSON is parsed.
+// Placeholder shown from navigation until the unit JSON lands. The heading is
+// REAL from the first frame — index.json carries every title, so there is no
+// reason to skeleton that text. Only the card shape is guessed: instruction
+// and numbered rows at the sizes the loaded card renders at. Deliberately
+// static (no shimmer): the shape already says "loading". Row counts are
+// illustrative — the real ones are not known until the JSON is parsed.
 function UnitLoading({
   kind,
   n,
@@ -1075,13 +1156,15 @@ function UnitLoading({
 }) {
   // must match the loaded headings exactly, or the title visibly rewrites
   // itself the moment the JSON lands
-  const label =
-    kind === "unit" ? `Unit ${n}` : `Additional exercise ${n}`;
   return (
-    <div className="unitloading" role="status" aria-label="Loading exercises">
-      <h2 className="unitheading skel-heading">
-        {title ? `${label} — ${title}` : label}
-      </h2>
+    <div className="unitloading" role="status" aria-label="Loading">
+      {kind === "unit" ? (
+        <UnitHead n={n} title={title} />
+      ) : (
+        <h2 className="unitheading skel-heading">
+          {title ? `Additional exercise ${n} — ${title}` : `Additional exercise ${n}`}
+        </h2>
+      )}
       {[0, 1].map((card) => (
         <div className="exercise skel-card" key={card}>
           <p className="instruction skel-instruction">
@@ -1141,36 +1224,5 @@ function UnitNav({
       {cell(prev, "prev")}
       {cell(next, "next")}
     </nav>
-  );
-}
-
-// Phone-only segmented control picking which pane owns the screen. Rendered
-// on desktop too (CSS hides it at >=769px), so no mount flash on resize.
-function MobileTabSwitch({
-  tab,
-  onTab,
-}: {
-  tab: "book" | "exercises";
-  onTab: (t: "book" | "exercises") => void;
-}) {
-  return (
-    <div className="tabswitch" aria-label="Book or exercises view">
-      <button
-        type="button"
-        className={tab === "book" ? "on" : ""}
-        aria-pressed={tab === "book"}
-        onClick={() => onTab("book")}
-      >
-        Book
-      </button>
-      <button
-        type="button"
-        className={tab === "exercises" ? "on" : ""}
-        aria-pressed={tab === "exercises"}
-        onClick={() => onTab("exercises")}
-      >
-        Exercises
-      </button>
-    </div>
   );
 }

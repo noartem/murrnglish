@@ -58,7 +58,7 @@
     {
       "id": "102.2",
       "type": "fill-in",
-      "instruction": "Make one sentence from two. Choose from the box, and then complete the sentences using so or such.",
+      "instruction": "Make one sentence from two. Complete the sentences with the missing part, using so or such.",
       "items": [
         {
           "num": 2,
@@ -147,7 +147,7 @@
     {
       "id": "102.4",
       "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences.",
+      "instruction": "Use your own ideas to complete the sentences.",
       "modelAnswers": ["She\u2019s so friendly.", "She\u2019s such a nice person.", "I haven\u2019t seen you for so long.", "I didn\u2019t realise it was such a long way.", "There were so many people."],
       "items": [
         {

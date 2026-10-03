@@ -391,7 +391,8 @@
     {
       "id": "108.4",
       "type": "write",
-      "instruction": "What do you say in these situations? Use a superlative + ever.",
+      "instruction": "Say what you would say in the situations in the scene, using the words in brackets and a superlative + ever.",
+      "scene": "The situations (read the descriptions):\n1. You’ve just been to the cinema and the film was extremely boring.\n2. Someone has told you a joke which you think is very funny.\n3. You’re drinking coffee with a friend and it is really good coffee.\n4. You have just run ten kilometres and you have never run further than this.\n5. You gave up your job and now think this was a very bad mistake.\n6. A friend of yours meets a lot of people, some of them famous, and you want the most famous one.",
       "items": [
         {
           "num": 1,

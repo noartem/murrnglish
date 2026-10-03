@@ -366,7 +366,7 @@
     {
       "id": "84.4",
       "type": "write",
-      "instruction": "Are these sentences OK? Change it to there where necessary.",
+      "instruction": "Are the sentences OK? Change it to there where necessary.",
       "items": [
         {
           "num": 1,

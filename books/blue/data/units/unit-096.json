@@ -123,7 +123,9 @@
     {
       "id": "96.2",
       "type": "fill-in",
-      "instruction": "Use the information in the first sentence to complete the second one. Use all of / most of etc.",
+      "instruction": "The facts in the scene say what to write after the comma. Complete the sentences with all of / most of etc.; from item 9 on, use the … of which … .",
+      "scene": "Each fact says what to write after the comma in the sentence under it:\nAll of Helen’s brothers are married.\nMost of the information we were given was useless.\nNone of the ten people who applied for the job was suitable.\nMy neighbours have two cars. They never use one of them.\nJames won a lot of money. He gave half of it to his parents.\nBoth of Julia’s sisters are lawyers.\nJane replied to neither of the emails I sent her.\nI went to a party and knew only a few of the people there.\nYou stayed in a hotel on holiday but you do not remember its name.\nYou drove along a road. Both sides of it were lined with trees.\nThe aim of the company’s new business plan is to save money.",
+      "scene": "Each fact says what to write after the comma in the sentence under it:\nAll of Helen’s brothers are married.\nMost of the information we were given was useless.\nNone of the ten people who applied for the job was suitable.\nMy neighbours have two cars. They never use one of them.\nJames won a lot of money. He gave half of it to his parents.\nBoth of Julia’s sisters are lawyers.\nJane replied to neither of the emails I sent her.\nI went to a party and knew only a few of the people there.\nYou stayed in a hotel on holiday but you do not remember its name.\nYou drove along a road. Both sides of it were lined with trees.\nThe aim of the company’s new business plan is to save money.",
       "items": [
         {
           "num": 1,

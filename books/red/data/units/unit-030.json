@@ -230,21 +230,24 @@
           "prompt": "",
           "modelAnswers": [
             "I might buy some new clothes."
-          ]
+          ],
+          "cue": "👕 Про покупки: одежда, обувь, что-то для дома."
         },
         {
           "num": 2,
           "prompt": "",
           "modelAnswers": [
             "I might go out with some friends."
-          ]
+          ],
+          "cue": "👥 Про встречу: с кем пойдёте и куда."
         },
         {
           "num": 3,
           "prompt": "",
           "modelAnswers": [
             "I might have an egg for breakfast."
-          ]
+          ],
+          "cue": "🍳 Про завтрак или ужин: что закажете или приготовите."
         }
       ]
     },

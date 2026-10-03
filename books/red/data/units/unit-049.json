@@ -9,7 +9,7 @@
     {
       "id": "49.1",
       "type": "write",
-      "instruction": "Посмотрите на картинки и напишите вопросы с How long … ?",
+      "instruction": "Прочитайте описания и напишите вопросы с How long … ?",
       "example": [
         1
       ],
@@ -19,28 +19,32 @@
           "prompt": "",
           "answers": [
             "How long does it take by plane from London to Amsterdam?"
-          ]
+          ],
+          "cue": "✈️ На стене висит карта Европы; на ней нарисованы два аэропорта и подпись «Лондон — Амстердам»."
         },
         {
           "num": 2,
           "prompt": "",
           "answers": [
             "How long does it take by car from Milan to Rome?"
-          ]
+          ],
+          "cue": "🚗 Два человека в машине; на карте нарисована дорога вдоль побережья, подпись «Милан — Рим»."
         },
         {
           "num": 3,
           "prompt": "",
           "answers": [
             "How long does it take by train from Paris to Geneva?"
-          ]
+          ],
+          "cue": "🚆 На вокзале висит расписание поездов; в нём есть строка «Париж — Женева»."
         },
         {
           "num": 4,
           "prompt": "",
           "answers": [
             "How long does it take by bus from the city centre to the airport?"
-          ]
+          ],
+          "cue": "🚍 Остановка в центре города, на табличке нарисован самолёт."
         }
       ]
     },

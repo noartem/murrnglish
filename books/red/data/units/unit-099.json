@@ -9,7 +9,7 @@
     {
       "id": "99.1",
       "type": "write",
-      "instruction": "Напишите предложения, начинающиеся с when. Используйте информацию из обеих рамок.",
+      "instruction": "Прочитайте предложения в рамках и напишите шесть предложений, начинающихся с when.",
       "wordBank": [
         "I went out",
         "I’m tired",
@@ -41,35 +41,40 @@
           "prompt": "",
           "answers": [
             "When I’m tired, I like to watch TV."
-          ]
+          ],
+          "cue": "😴 Вы устали — и тогда вы любите смотреть телевизор."
         },
         {
           "num": 3,
           "prompt": "",
           "answers": [
             "When I knocked on the door, there was no answer."
-          ]
+          ],
+          "cue": "🚪 Вы постучали в дверь, и никто не ответил."
         },
         {
           "num": 4,
           "prompt": "",
           "answers": [
             "When I go on holiday, I always go to the same place."
-          ]
+          ],
+          "cue": "🏖️ Вы каждый год едете на каникулы в одно и то же место."
         },
         {
           "num": 5,
           "prompt": "",
           "answers": [
             "When the programme ended, I turned off the TV."
-          ]
+          ],
+          "cue": "📺 Передача закончилась, и вы выключили телевизор."
         },
         {
           "num": 6,
           "prompt": "",
           "answers": [
             "When I got to the hotel, there were no rooms."
-          ]
+          ],
+          "cue": "🏨 Вы приехали в гостиницу, а свободных номеров не было."
         }
       ]
     },
@@ -174,7 +179,7 @@
     {
       "id": "99.3",
       "type": "write",
-      "instruction": "Напишите предложения, начинающиеся с if. Используйте информацию из обеих рамок.",
+      "instruction": "Прочитайте предложения в рамках и напишите шесть предложений, начинающихся с if.",
       "wordBank": [
         "you don’t hurry",
         "you pass the exam",
@@ -206,35 +211,40 @@
           "prompt": "If you pass",
           "answers": [
             "If you pass the exam, you’ll get a certificate."
-          ]
+          ],
+          "cue": "🎓 Если вы сдадите экзамен, получите свидетельство."
         },
         {
           "num": 3,
           "prompt": "If",
           "answers": [
             "If you fail the exam, you can do it again."
-          ]
+          ],
+          "cue": "Если вы не сдадите экзамен, его можно пересдать."
         },
         {
           "num": 4,
           "prompt": "",
           "answers": [
             "If you don’t want this magazine, I’ll throw it away."
-          ]
+          ],
+          "cue": "Если этот журнал вам не нужен, я его выброшу."
         },
         {
           "num": 5,
           "prompt": "",
           "answers": [
             "If you want those pictures, you can have them."
-          ]
+          ],
+          "cue": "Если вы хотите эти фотографии, заберите их."
         },
         {
           "num": 6,
           "prompt": "",
           "answers": [
             "If you’re busy now, we can talk later."
-          ]
+          ],
+          "cue": "Если вы сейчас заняты, поговорим позже."
         }
       ]
     },

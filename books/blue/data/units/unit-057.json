@@ -22,7 +22,7 @@
     {
       "id": "57.2",
       "type": "write",
-      "instruction": "For each picture, write a sentence with need(s) + one of the following verbs: clean, cut, empty, paint, tighten",
+      "instruction": "For each description, write a sentence with need(s) + one of the following verbs: clean, cut, empty, paint, tighten",
       "items": [
         {"num": 1, "prompt": "This room isn\u2019t very nice. It needs painting.", "answers": ["This room isn\u2019t very nice. It needs painting."]},
         {"num": 2, "prompt": "The grass is very long.", "answers": ["It needs cutting."]},

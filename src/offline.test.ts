@@ -12,11 +12,8 @@ describe("bookUrls", () => {
     expect(bookUrls(bookById("blue")!)).toEqual([
       "/books/blue/data/index.json",
       "/books/blue/data/totals.json",
-      "/books/blue/data/pages.json",
       "/books/blue/data/course.json",
-      "/books/blue/data/rules.json",
       "/books/blue/cover.png",
-      "/books/blue/book.pdf",
     ]);
   });
 
@@ -46,8 +43,7 @@ describe("downloadFraction", () => {
   });
 
   it("never exceeds 1 on a total the run outgrew", () => {
-    // the book's own content-length arriving late can only raise the total,
-    // but a shell file without one can leave bytes past it
+    // a shell file without a content-length can leave bytes past the total
     expect(downloadFraction({ bytes: 1200, totalBytes: 1000 })).toBe(1);
   });
 });

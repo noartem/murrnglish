@@ -92,7 +92,8 @@
     {
       "id": "114.2",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Use in case.",
+      "instruction": "Read the situations in the scene and say what you would say. Use in case.",
+      "scene": "The situations (read the descriptions):\n1. Jane may need to contact you, so you give her your phone number.\n2. A friend of yours is going away for a long time. Maybe you won’t see her again before she goes, so you say goodbye now.\n3. You are buying food in a supermarket with a friend. You think you have everything you need, but maybe you’ve forgotten something. Your friend has the list.\n4. You are shopping with a friend. She has just bought some jeans but didn’t try them on. Maybe they won’t fit her.",
       "items": [
         {
           "num": 1,
@@ -149,7 +150,8 @@
     {
       "id": "114.3",
       "type": "fill-in",
-      "instruction": "Complete the sentences using in case.",
+      "instruction": "Complete the sentences using in case. The scene says what each person thought before acting.",
+      "scene": "What each person thought before acting (read the descriptions):\n1. It was possible that it would rain, so you took an umbrella.\n2. You thought you might forget the name of the book, so you wrote it down.\n3. You thought your parents might be worried about you, so you phoned them.\n4. Lisa did not reply to your email, so you sent another one because maybe she did not get the first.\n5. You met some people on holiday in France. They said they might come to London one day, so you gave them your phone number.",
       "items": [
         {
           "num": 1,
@@ -219,10 +221,11 @@
     {
       "id": "114.4",
       "type": "choice",
-      "instruction": "Put in in case or if.",
+      "instruction": "Read the descriptions and put in in case or if.",
       "items": [
         {
           "num": 1,
+          "cue": "🗺️ I’ll draw a map for you ________ you have a problem finding our house.",
           "options": [
             "if",
             "in case"
@@ -231,6 +234,7 @@
         },
         {
           "num": 2,
+          "cue": "🚓 You should tell the police ________ you have any information about the crime.",
           "options": [
             "if",
             "in case"
@@ -239,6 +243,7 @@
         },
         {
           "num": 3,
+          "cue": "🇦🇺 I hope you’ll come to Australia sometime. ________ you come, you must visit us.",
           "options": [
             "if",
             "in case"
@@ -247,6 +252,7 @@
         },
         {
           "num": 4,
+          "cue": "📄 I made a copy of the document ________ something happens to the original.",
           "options": [
             "if",
             "in case"
@@ -255,6 +261,7 @@
         },
         {
           "num": 5,
+          "cue": "📕 This book belongs to Kate. Can you give it to her ________ you see her?",
           "options": [
             "if",
             "in case"
@@ -263,6 +270,7 @@
         },
         {
           "num": 6,
+          "cue": "🎒 Write your name and phone number on your bag ________ you lose it.",
           "options": [
             "if",
             "in case"
@@ -271,6 +279,7 @@
         },
         {
           "num": 7,
+          "cue": "🧳 Go to the lost property office ________ you lose your bag.",
           "options": [
             "if",
             "in case"
@@ -279,6 +288,7 @@
         },
         {
           "num": 8,
+          "cue": "🚨 The burglar alarm will ring ________ somebody tries to break into the house.",
           "options": [
             "if",
             "in case"
@@ -287,6 +297,7 @@
         },
         {
           "num": 9,
+          "cue": "🔒 You should lock your bike to something ________ somebody tries to steal it.",
           "options": [
             "if",
             "in case"
@@ -295,6 +306,7 @@
         },
         {
           "num": 10,
+          "cue": "🏥 I was advised to get insurance ________ I needed medical treatment while I was abroad.",
           "options": [
             "if",
             "in case"

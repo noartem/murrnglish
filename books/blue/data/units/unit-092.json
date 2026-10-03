@@ -279,7 +279,7 @@
     {
       "id": "92.4",
       "type": "write",
-      "instruction": "Are these sentences right or wrong? Correct them where necessary.",
+      "instruction": "Are the sentences right or wrong? Correct them where necessary.",
       "items": [
         {
           "num": 1,

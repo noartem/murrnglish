@@ -6,36 +6,42 @@
     {
       "id": "141.1",
       "type": "choice",
-      "instruction": "What do these sentences mean?",
+      "instruction": "What does each sentence mean? Read the sentence above each set of options and choose the right meaning.",
       "example": [1],
       "items": [
         {
           "num": 1,
+          "cue": "1. I carried on studying.",
           "options": ["I started studying.", "I continued studying.", "I put off studying."],
           "answer": 1
         },
         {
           "num": 2,
+          "cue": "2. I nodded off.",
           "options": ["I agreed.", "I felt sick.", "I fell asleep."],
           "answer": 2
         },
         {
           "num": 3,
+          "cue": "3. We were ripped off.",
           "options": ["We were attacked.", "We paid too much.", "Our clothes were torn."],
           "answer": 1
         },
         {
           "num": 4,
+          "cue": "4. I told them off.",
           "options": ["I criticised them.", "I was satisfied with them.", "I told them to go away."],
           "answer": 0
         },
         {
           "num": 5,
+          "cue": "5. They don’t get on.",
           "options": ["They don't like each other much.", "They are lazy.", "They don't know each other."],
           "answer": 0
         },
         {
           "num": 6,
+          "cue": "6. He was showing off.",
           "options": ["He was joking.", "He was trying to impress us.", "He wasn't telling the truth."],
           "answer": 1
         }

@@ -6,8 +6,10 @@
     {
       "id": "78.1",
       "type": "fill-in",
-      "instruction": "Use the map to answer the questions. Write the name of the place and the street it is in. Use the if necessary. (Remember that on maps we do not normally use the.)",
+      "instruction": "Read the map and answer the questions. Write the name of the place and the street it is in. Use the if necessary. (On maps we do not normally use the.)",
+            "scene": "A small town. Here are its streets and what stands on them:\nPark Road | the Crown Hotel\nCarter Road | Turner’s (supermarket)\nMarket Street | St Peter’s church · the Odeon (cinema) · Victoria Park (at the end of the street)\nGeorge Street | the City Museum · Mario’s (restaurant)\nForest Avenue | Blackstone’s (bookshop)",
       "items": [
+        {"num": 1, "parts": ["Is there a cinema near here? Yes, ", " in Market Street."], "answers": [["the Odeon"]], "example": true},
         {
           "num": 2,
           "parts": ["Turner's in ", ""],
@@ -48,7 +50,7 @@
     {
       "id": "78.2",
       "type": "matching",
-      "instruction": "Where are the following? Use the where necessary.",
+      "instruction": "Match each place with the city or country where it is. Use the where necessary.",
       "leftOptions": ["1 Times Square", "2 The Eiffel Tower", "3 Buckingham Palace", "4 The White House", "5 The Kremlin", "6 Broadway", "7 The Acropolis", "8 Gatwick Airport"],
       "rightOptions": ["a New York", "b Paris", "c London", "d Washington", "e Moscow", "f Athens", "g near London"],
       "pairs": [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 0], [6, 5], [7, 6]]

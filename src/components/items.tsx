@@ -121,7 +121,8 @@ export function FillInItemView({ item, values, onChange, states, revealed }: Gap
 interface ChoiceProps {
   item: ChoiceItem;
   selected: number | null;
-  onSelect: (idx: number) => void;
+  /** null: the picked option was clicked again and the pick is cleared */
+  onSelect: (idx: number | null) => void;
   state: boolean | null;
   revealed?: boolean;
 }
@@ -145,6 +146,8 @@ export function ChoiceItemView({ item, selected, onSelect, state, revealed }: Ch
                 name={`opt-${item.num}`}
                 checked={selected === i}
                 onChange={() => onSelect(i)}
+                // a checked radio fires no change when clicked again
+                onClick={() => selected === i && onSelect(null)}
               />
               <span>{opt}</span>
             </label>

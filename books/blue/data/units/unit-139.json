@@ -6,7 +6,7 @@
     {
       "id": "139.1",
       "type": "matching",
-      "instruction": "Which words can go together? Choose from the list.",
+      "instruction": "Which verb goes with which word? Match each verb with what it goes with.",
       "leftOptions": ["turn out", "blow out", "carry out", "put out", "try out", "sort out"],
       "rightOptions": ["a candle", "a fire", "a light", "a new product", "an order", "a problem"],
       "pairs": [[0, 2], [1, 0], [2, 4], [3, 1], [4, 3], [5, 5]]
@@ -36,14 +36,14 @@
     {
       "id": "139.3",
       "type": "fill-in",
-      "instruction": "For each picture, complete the sentence using a verb + out.",
+      "instruction": "Read each description and complete the sentence using a verb + out.",
       "items": [
         {"num": 1, "parts": ["They've run out of petrol."], "answers": [], "example": true},
-        {"num": 2, "parts": ["The man with the beard is ", " leaflets."], "answers": [["giving out", "handing out"]]},
-        {"num": 3, "parts": ["The weather has ", "."], "answers": [["turned out nice", "turned out fine", "turned out sunny"]]},
-        {"num": 4, "parts": ["Sally and Kim are ", " at the gym."], "answers": [["working out"]]},
-        {"num": 5, "parts": ["Joe has ", " water."], "answers": [["run out of"]]},
-        {"num": 6, "parts": ["Lisa is trying to ", " how ", "."], "answers": [["work out", "figure out"], ["to use the camera"]]}
+        {"num": 2, "cue": "📣 A man with a beard is standing on a street corner, handing leaflets to passers-by.", "parts": ["The man with the beard is ", " leaflets."], "answers": [["giving out", "handing out"]]},
+        {"num": 3, "cue": "🌦️ The weather earlier: rain and grey clouds. The weather now: bright sunshine.", "parts": ["The weather has ", "."], "answers": [["turned out nice", "turned out fine", "turned out sunny"]]},
+        {"num": 4, "cue": "🏋️ Sally and Kim are lifting weights at the gym.", "parts": ["Sally and Kim are ", " at the gym."], "answers": [["working out"]]},
+        {"num": 5, "cue": "🚰 Joe is at the supermarket holding an empty bottle.", "parts": ["Joe has ", " water."], "answers": [["run out of"]]},
+        {"num": 6, "cue": "📷 Lisa is holding a new camera and reading the instructions that came with it.", "parts": ["Lisa is trying to ", " how ", "."], "answers": [["work out", "figure out"], ["to use the camera"]]}
       ]
     },
     {

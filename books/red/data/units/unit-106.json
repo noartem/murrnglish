@@ -9,7 +9,7 @@
     {
       "id": "106.1",
       "type": "write",
-      "instruction": "Посмотрите на картинки и ответьте на вопросы. Используйте in/at/on.",
+      "instruction": "Прочитайте описания и ответьте на вопросы. Используйте in/at/on.",
       "example": [
         1
       ],
@@ -19,84 +19,96 @@
           "prompt": "Where is he? (the kitchen)",
           "answers": [
             "In the kitchen."
-          ]
+          ],
+          "cue": "🍳 Он на кухне: готовит обед."
         },
         {
           "num": 2,
           "prompt": "Where are the shoes? (the box)",
           "answers": [
             "In the box."
-          ]
+          ],
+          "cue": "👟 Обувь сложены внутрь коробки."
         },
         {
           "num": 3,
           "prompt": "Where is the pen? (the box)",
           "answers": [
             "On the box."
-          ]
+          ],
+          "cue": "🖊️ Ручка лежит на верхней стороне коробки."
         },
         {
           "num": 4,
           "prompt": "Where is the clock? (the wall)",
           "answers": [
             "On the wall."
-          ]
+          ],
+          "cue": "🕐 Часы висят на стене."
         },
         {
           "num": 5,
           "prompt": "Where is the bus? (the bus stop)",
           "answers": [
             "At the bus stop."
-          ]
+          ],
+          "cue": "🚌 Автобус стоит у остановки."
         },
         {
           "num": 6,
           "prompt": "Where are the horses? (the field)",
           "answers": [
             "In the field."
-          ]
+          ],
+          "cue": "🐴 Лошади пасутся в поле."
         },
         {
           "num": 7,
           "prompt": "Where are they standing? (the balcony)",
           "answers": [
             "On the balcony."
-          ]
+          ],
+          "cue": "🛋️ Они стоят на балконе."
         },
         {
           "num": 8,
           "prompt": "Where is she swimming? (the pool)",
           "answers": [
             "In the pool."
-          ]
+          ],
+          "cue": "🏊 Она плавает внутри бассейна."
         },
         {
           "num": 9,
           "prompt": "Where is he standing? (the window)",
           "answers": [
             "At the window."
-          ]
+          ],
+          "cue": "🪟 Он стоит у окна."
         },
         {
           "num": 10,
           "prompt": "Where is the spider? (the ceiling)",
           "answers": [
             "On the ceiling."
-          ]
+          ],
+          "cue": "🕷️ Паук ползёт по потолку."
         },
         {
           "num": 11,
           "prompt": "Where is he sitting? (the table)",
           "answers": [
             "On the table."
-          ]
+          ],
+          "cue": "🍽️ Он сидит за столом, на его поверхности."
         },
         {
           "num": 12,
           "prompt": "Where is she sitting? (the table)",
           "answers": [
             "At the table."
-          ]
+          ],
+          "cue": "🍽️ Она сидит за столом, напротив него."
         }
       ]
     },

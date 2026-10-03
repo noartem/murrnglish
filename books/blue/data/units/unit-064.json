@@ -6,7 +6,8 @@
     {
       "id": "64.1",
       "type": "write",
-      "instruction": "Choose from Box A and Box B to make sentences with to \u2026 .",
+      "instruction": "Join one line from each list in the scene to make a sentence with to … .",
+      "scene": "🔧 The two lists — make one sentence from each pair:\nList A · sentence openings | List B · the purpose\nI shouted | I wanted to be nearer my friends\nI opened the box | I wanted to warn people of the danger\nI moved to a new apartment | I wanted to see what was in it\nI couldn’t find a knife | I wanted to report the accident\nI called the police | I wanted to find out if they had any rooms free\nI called the hotel | I wanted someone to help me with my work\nI employed an assistant | I wanted to chop the onions",
       "items": [
         {
           "num": 2,
@@ -15,26 +16,31 @@
         },
         {
           "num": 3,
+          "cue": "Use the list A line: I moved to a new apartment",
           "prompt": "I",
           "answers": ["I moved to a new apartment to be nearer my friends."]
         },
         {
           "num": 4,
+          "cue": "Use the list A line: I couldn’t find a knife",
           "prompt": "",
-          "answers": ["I couldn\u2019t find a knife to chop the onions.", "I couldn\u2019t find a knife to chop the onions with."]
+          "answers": ["I couldn’t find a knife to chop the onions.", "I couldn’t find a knife to chop the onions with."]
         },
         {
           "num": 5,
+          "cue": "Use the list A line: I called the police",
           "prompt": "",
           "answers": ["I called the police to report the accident."]
         },
         {
           "num": 6,
+          "cue": "Use the list A line: I called the hotel",
           "prompt": "",
           "answers": ["I called the hotel to find out if they had any rooms free."]
         },
         {
           "num": 7,
+          "cue": "Use the list A line: I employed an assistant",
           "prompt": "",
           "answers": ["I employed an assistant to help me with my work."]
         }
@@ -43,7 +49,7 @@
     {
       "id": "64.2",
       "type": "fill-in",
-      "instruction": "Complete these sentences using to + a suitable verb.",
+      "instruction": "Complete each sentence using to + a suitable verb.",
       "items": [
         {
           "num": 2,

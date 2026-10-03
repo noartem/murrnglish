@@ -9,7 +9,8 @@
     {
       "id": "112.1",
       "type": "fill-in",
-      "instruction": "Amy, Kate and Lisa are three friends who went on holiday together. Use the information given about them to complete the sentences using even or not even.",
+      "instruction": "Amy, Kate and Lisa went on holiday together. The scene says what each of them is like. Complete the sentences using even or not even.",
+      "scene": "Amy | Kate | Lisa\nis usually happy | isn’t very keen on art | is almost always late\nis usually on time | is usually miserable | is a keen photographer\nlikes to get up early | usually hates hotels | loves staying in hotels\nis very interested in art | doesn’t use her camera much | isn’t very good at getting up",
       "items": [
         {
           "num": 1,
@@ -289,10 +290,11 @@
     {
       "id": "112.4",
       "type": "choice",
-      "instruction": "Complete the sentences. Choose from: if, even, even if, even though.",
+      "instruction": "Read the descriptions and choose if, even, even if or even though.",
       "items": [
         {
           "num": 1,
+          "cue": "🚗 She can’t drive, ________ she has a car.",
           "options": [
             "even though",
             "if"
@@ -301,6 +303,7 @@
         },
         {
           "num": 2,
+          "cue": "🚌 The bus leaves in five minutes, but we can still catch it ________ we run.",
           "options": [
             "if",
             "even if",
@@ -310,6 +313,7 @@
         },
         {
           "num": 3,
+          "cue": "🏃 The bus leaves in two minutes. We won’t catch it now ________ we run.",
           "options": [
             "if",
             "even if",
@@ -319,6 +323,7 @@
         },
         {
           "num": 4,
+          "cue": "🇪🇸 Mark’s Spanish isn’t very good, ________ after three years in Spain.",
           "options": [
             "if",
             "even",
@@ -329,6 +334,7 @@
         },
         {
           "num": 5,
+          "cue": "🇪🇸 Mark’s Spanish isn’t very good, ________ he lived in Spain for three years.",
           "options": [
             "if",
             "even",
@@ -339,6 +345,7 @@
         },
         {
           "num": 6,
+          "cue": "🥶 ________ with the heating on, it was cold in the house.",
           "options": [
             "even",
             "even if",
@@ -348,6 +355,7 @@
         },
         {
           "num": 7,
+          "cue": "😴 I couldn’t sleep ________ I was very tired.",
           "options": [
             "if",
             "even",
@@ -358,6 +366,7 @@
         },
         {
           "num": 8,
+          "cue": "😠 I won’t forgive them for what they did, ________ they apologise.",
           "options": [
             "if",
             "even",
@@ -368,6 +377,7 @@
         },
         {
           "num": 9,
+          "cue": "🍽️ ________ I hadn’t eaten anything for 24 hours, I wasn’t hungry.",
           "options": [
             "even",
             "even if",

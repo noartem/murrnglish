@@ -9,10 +9,11 @@
     {
       "id": "124.1",
       "type": "write",
-      "instruction": "Answer the questions about the pictures. Use in, at or on with the words below the pictures.",
+      "instruction": "Read each description and answer the question with in, at or on.",
       "items": [
         {
           "num": 1,
+          "cue": "🏢 Amy works in one department of a big company: the sales department.",
           "prompt": "Where does Amy work?",
           "answers": [
             "In the sales department."
@@ -20,6 +21,7 @@
         },
         {
           "num": 2,
+          "cue": "🏬 Amy lives in this block of flats, and her flat is one floor above the ground floor.",
           "prompt": "Amy lives in this building. Where’s her flat exactly?",
           "answers": [
             "On the second floor."
@@ -27,6 +29,7 @@
         },
         {
           "num": 3,
+          "cue": "👩 A woman is standing where two streets meet.",
           "prompt": "Where is the woman standing?",
           "answers": [
             "On the corner.",
@@ -35,6 +38,7 @@
         },
         {
           "num": 4,
+          "cue": "🧍 A man is standing in the inside corner of a room.",
           "prompt": "Where is the man standing?",
           "answers": [
             "In the corner."
@@ -42,6 +46,7 @@
         },
         {
           "num": 5,
+          "cue": "🐈 The cat is sitting on the highest step of a staircase.",
           "prompt": "Where’s the cat?",
           "answers": [
             "At the top of the stairs."
@@ -49,6 +54,7 @@
         },
         {
           "num": 6,
+          "cue": "🚗 The dog is sitting behind the front seats of a car.",
           "prompt": "Where’s the dog?",
           "answers": [
             "In the back of the car."
@@ -56,6 +62,7 @@
         },
         {
           "num": 7,
+          "cue": "👥 Lisa is standing at the head of a line of people.",
           "prompt": "Lisa is in this group of people. Where is she?",
           "answers": [
             "At the front."
@@ -63,6 +70,7 @@
         },
         {
           "num": 8,
+          "cue": "🏤 In a street plan, the post office is marked on the left-hand side.",
           "prompt": "Where’s the post office?",
           "answers": [
             "On the left."
@@ -70,6 +78,7 @@
         },
         {
           "num": 9,
+          "cue": "🎬 Gary is watching a film from the last row of seats.",
           "prompt": "Gary is at the cinema. Where is he sitting?",
           "answers": [
             "In the back row."
@@ -77,6 +86,7 @@
         },
         {
           "num": 10,
+          "cue": "🏦 The bank stands at the far end of the street.",
           "prompt": "Where is the bank?",
           "answers": [
             "At the end of the street."

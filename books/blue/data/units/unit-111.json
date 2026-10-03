@@ -9,7 +9,8 @@
     {
       "id": "111.1",
       "type": "fill-in",
-      "instruction": "Compare what Paul said a few years ago with what he says now. Some things are the same as before and some things have changed. Write sentences with still and any more.",
+      "instruction": "Compare Paul a few years ago with Paul now, using the two columns in the scene. Some things are the same as before and some have changed. Write sentences with still and any more; from item 9 on, write them with no longer.",
+      "scene": "Paul a few years ago | Paul now\nI travel a lot. | I travel a lot.\nI work in a shop. | I work in a hospital.\nI write poems. | I gave up writing poems.\nI want to be a teacher. | I want to be a teacher.\nI’m interested in politics. | I’m not interested in politics.\nI’m single. | I’m single.\nI go fishing a lot. | I haven’t been fishing for years.\nI had a beard. | I haven’t got a beard.",
       "items": [
         {
           "num": 1,
@@ -128,6 +129,7 @@
         },
         {
           "num": 10,
+          "cue": "✍️ About the poems.",
           "parts": [
             "",
             ""
@@ -140,6 +142,7 @@
         },
         {
           "num": 11,
+          "cue": "✍️ About politics.",
           "parts": [
             "",
             ""
@@ -152,6 +155,7 @@
         },
         {
           "num": 12,
+          "cue": "✍️ About fishing.",
           "parts": [
             "",
             ""

@@ -9,10 +9,11 @@
     {
       "id": "118.1",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Use the words in brackets to make your sentence.",
+      "instruction": "Read the descriptions and use the words in brackets to make your sentence.",
       "items": [
         {
           "num": 1,
+          "cue": "🩸 You meet Bill. He has a black eye and blood on his face.",
           "parts": [
             "(look / like / be / a fight) You say to him: You look ",
             " you've been in a fight."
@@ -26,6 +27,7 @@
         },
         {
           "num": 2,
+          "cue": "😨 Claire comes into the room. She looks absolutely terrified.",
           "parts": [
             "You say to her: What's the matter? You ",
             " you've seen a ghost. (look / as if / see / a ghost)"
@@ -39,6 +41,7 @@
         },
         {
           "num": 3,
+          "cue": "🏃 You have just run one kilometre, but you are completely exhausted.",
           "parts": [
             "You say: I ",
             " I've (just) run a marathon."
@@ -52,6 +55,7 @@
         },
         {
           "num": 4,
+          "cue": "📞 Joe is on holiday. He is talking to you on the phone and he sounds happy.",
           "parts": [
             "You say to him: You ",
             " you're having a good time. (sound / as if / have / a good time)"
@@ -270,7 +274,7 @@
     {
       "id": "118.4",
       "type": "fill-in",
-      "instruction": "These sentences are like the ones in Section D. Complete each sentence using as if.",
+      "instruction": "Complete each sentence using as if. After as if we use the past, even when we mean the present.",
       "items": [
         {
           "num": 1,

@@ -112,10 +112,11 @@
     {
       "id": "98.2",
       "type": "choice",
-      "instruction": "Choose the correct word.",
+      "instruction": "Read the descriptions and choose the correct word.",
       "items": [
         {
           "num": 1,
+          "cue": "🎬 I was disappointing / disappointed with the movie. I had expected it to be better.",
           "options": [
             "disappointing",
             "disappointed"
@@ -124,6 +125,7 @@
         },
         {
           "num": 2,
+          "cue": "⚽ I’m not particularly interesting / interested in football.",
           "options": [
             "interesting",
             "interested"
@@ -132,6 +134,7 @@
         },
         {
           "num": 3,
+          "cue": "📋 The new project sounds exciting / excited. I’m looking forward to working on it.",
           "options": [
             "exciting",
             "excited"
@@ -140,6 +143,7 @@
         },
         {
           "num": 4,
+          "cue": "🙏 It can be embarrassing / embarrassed when you have to ask people for money.",
           "options": [
             "embarrassing",
             "embarrassed"
@@ -148,6 +152,7 @@
         },
         {
           "num": 5,
+          "cue": "😳 Do you easily get embarrassing / embarrassed?",
           "options": [
             "embarrassing",
             "embarrassed"
@@ -156,6 +161,7 @@
         },
         {
           "num": 6,
+          "cue": "😲 I’d never expected to get the job. I was amazing / amazed when I was offered it.",
           "options": [
             "amazing",
             "amazed"
@@ -164,6 +170,7 @@
         },
         {
           "num": 7,
+          "cue": "📈 She’s learnt very fast. She’s made amazing / amazed progress.",
           "options": [
             "amazing",
             "amazed"
@@ -172,6 +179,7 @@
         },
         {
           "num": 8,
+          "cue": "😐 I didn’t find the situation funny. I was not amusing / amused.",
           "options": [
             "amusing",
             "amused"
@@ -180,6 +188,7 @@
         },
         {
           "num": 9,
+          "cue": "🎪 I’m interesting / interested in joining the club. How much does it cost?",
           "options": [
             "interesting",
             "interested"
@@ -188,6 +197,7 @@
         },
         {
           "num": "10a",
+          "cue": "🎢 It was a really terrifying / terrified experience. Everybody was very shocking / shocked.",
           "options": [
             "terrifying",
             "terrified"
@@ -196,6 +206,7 @@
         },
         {
           "num": "10b",
+          "cue": "😴 Why do you always look so boring / bored? Is your life really so boring / bored?",
           "options": [
             "shocking",
             "shocked"
@@ -204,6 +215,7 @@
         },
         {
           "num": "11a",
+          "cue": "🗣️ He’s one of the most boring / bored people I’ve ever met. He never stops talking…",
           "options": [
             "boring",
             "bored"
@@ -212,6 +224,7 @@
         },
         {
           "num": "11b",
+          "cue": "🗣️ He never says anything interesting / interested.",
           "options": [
             "boring",
             "bored"
@@ -220,6 +233,7 @@
         },
         {
           "num": "12a",
+          "cue": "🎩 He’s one of the most boring / bored people I’ve ever met.",
           "options": [
             "boring",
             "bored"
@@ -228,6 +242,7 @@
         },
         {
           "num": "12b",
+          "cue": "🎩 He never stops talking and he never says anything interesting / interested.",
           "options": [
             "interesting",
             "interested"

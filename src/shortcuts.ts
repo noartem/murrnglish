@@ -1,7 +1,6 @@
 // Central keyboard shortcuts: one window keydown dispatcher + the shared
-// labels/help data used by tooltips and the help modal. Pane-scoped keys
-// (arrows / zoom / R / Esc) are NOT here — they live on the focused
-// .pageviewer container itself (PageViewer onKeyDown); this dispatcher
+// labels/help data used by tooltips and the help modal. A control that owns
+// a key itself (GapInput's Enter) calls preventDefault, and this dispatcher
 // steps out of the way via the defaultPrevented guard.
 //
 // Exercise-scope actions resolve through the DOM to the exercise's own
@@ -17,10 +16,9 @@ export const SC = {
   nextUnit: "Shift+N",
   prevUnit: "Shift+P",
   unitPanel: "Shift+E",
-  pagePane: "Shift+S",
+  lessonJump: "Shift+S",
   sidebarToggle: "Alt+Shift+E",
   cycleTheme: "Shift+T",
-  invertPage: "T",
   progress: "Shift+I",
   help: "Shift+?",
 } as const;
@@ -79,16 +77,8 @@ export const SHORTCUT_HELP: HelpEntry[] = [
   },
   {
     keys: ["Shift", "S"],
-    title: "Book page",
-    desc: "Moves the focus to the book page on the left.",
-    sub: [
-      { keys: ["\u2191 / \u2193", "\u2190 / \u2192"], desc: "scroll the page" },
-      { keys: ["PgUp"], alt: ["PgDn"], desc: "scroll one screen up / down" },
-      { keys: ["Home"], alt: ["End"], desc: "jump to the top / bottom" },
-      { keys: ["Ctrl", "="], alt: ["Ctrl", "\u2212"], desc: "zoom in / zoom out" },
-      { keys: ["T"], desc: "invert the page colors (dark theme only)" },
-      { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },
-    ],
+    title: "Lesson or exercises",
+    desc: "In a unit, jumps from the lesson down to the first exercise (the cursor lands in it), and from the exercises back up to the lesson.",
   },
   {
     keys: ["Shift", "I"],
@@ -168,30 +158,28 @@ export interface ShortcutDeps {
   hintProgress(): void; // Shift+I: open with the keys hinted
   goNextUnit(): void; // App computes prev/next from its pager memo
   goPrevUnit(): void;
-  focusPagePane(): void; // App bumps the pane focus tick
+  jumpLesson(): void; // App: lesson -> first exercise, exercises -> lesson
   focusUnitPanel(): void; // App focuses the route's unit (first one on the landing)
   toggleSidebar(): void; // App: burger toggle (no focus move)
   cycleTheme(): void; // App cycles system/light/dark
 }
 
-export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): void } {
+export function useCourseShortcuts(hookDeps: ShortcutDeps): void {
   // latest deps without re-subscribing the window listener
   const depsRef = useRef(hookDeps);
   depsRef.current = hookDeps;
 
-  // where "Esc = go back" returns to (unit panel / book pane chains)
+  // where "Esc = go back" returns to from the unit panel
   const lastFocus = useRef<HTMLElement | null>(null);
 
-  // never anchor on the two panes that have their own scoped keys, so
-  // chaining Shift+S then Shift+E still returns to the exercise side; the
-  // body is not a focus location (focus() on it is a no-op), so leaving it
-  // out lets restoreFocus fall back instead of stranding the focus
+  // never anchor on the unit panel itself, which has its own scoped keys;
+  // the body is not a focus location (focus() on it is a no-op), so leaving
+  // it out lets restoreFocus fall back instead of stranding the focus
   const rememberFocus = () => {
     const el = document.activeElement;
     if (
       el instanceof HTMLElement &&
       el !== document.body &&
-      !el.closest(".pageviewer") &&
       !el.closest("nav.sidebar")
     ) {
       lastFocus.current = el;
@@ -276,7 +264,7 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
         }
       }
 
-      // 4. the pane container's own onKeyDown wins for arrows/Esc/zoom/R
+      // 4. a control that handled the key itself wins
       if (e.defaultPrevented) return;
 
       // 5. Shift+? opens help (e.key === "?" already implies Shift)
@@ -318,8 +306,7 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
         switch (e.code) {
           case "KeyS":
             e.preventDefault();
-            rememberFocus();
-            depsRef.current.focusPagePane();
+            depsRef.current.jumpLesson();
             return;
           case "KeyE":
             e.preventDefault();
@@ -348,8 +335,6 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, []);
-
-  return { restoreFocus };
 }
 
 /**
@@ -360,7 +345,7 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): { restoreFocus(): vo
 export function focusFirstExercise(): void {
   const target =
     document
-      .querySelector(".rightpane")
+      .querySelector(".coursepane")
       ?.querySelector<HTMLElement>(
         ".exercise textarea, .exercise input, .exercise select, .exercise button",
       ) ?? document.querySelector<HTMLElement>(".home .homecta");

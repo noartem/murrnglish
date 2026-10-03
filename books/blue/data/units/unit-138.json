@@ -63,7 +63,7 @@
     {
       "id": "138.5",
       "type": "fill-in",
-      "instruction": "Complete the second sentence so that it means the same as the first. Use a verb from Sections B or C.",
+      "instruction": "Complete the second sentence so that it means the same as the first, using a phrasal verb.",
       "items": [
         {"num": 1, "parts": ["Let's go to a restaurant tonight. Let's eat out tonight."], "answers": [], "example": true},
         {"num": 2, "parts": ["Why didn't you finish college? Why did you ", "?"], "answers": [["drop out of college"]]},

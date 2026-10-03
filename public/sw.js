@@ -6,7 +6,8 @@
 // so removing a book's offline copy is deleting one cache. The names must
 // equal SHELL_CACHE / bookCache() in src/offline.ts — change both together.
 const PREFIX = "murrnglish-";
-const VERSION = "-v1";
+// -v2: the books lost their PDF; activate deletes the -v1 caches that held it
+const VERSION = "-v2";
 const SHELL = `${PREFIX}shell${VERSION}`;
 const FONT_HOSTS = new Set(["fonts.googleapis.com", "fonts.gstatic.com"]);
 // these caches are keyed by URL alone: see the note on swr() below
@@ -68,7 +69,7 @@ async function navigate(req, u) {
   }
 }
 
-// same-origin assets/data/book PDFs: serve cached, refresh the cache in background.
+// same-origin assets and book data: serve cached, refresh the cache in background.
 //
 // These caches are keyed by URL alone: lookups ignore Vary (see MATCH) and
 // every store uses a headerless `new Request(url)` key, so a re-store replaces

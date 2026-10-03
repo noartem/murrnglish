@@ -6,8 +6,10 @@
     {
       "id": "80.1",
       "type": "fill-in",
-      "instruction": "What do we call these things and people?",
+      "instruction": "What do we call each of the things and people?",
       "items": [
+        {"num": 1, "parts": ["Someone who drives a bus is a ", "."], "answers": [["bus driver"]], "example": true},
+        {"num": 2, "parts": ["Problems concerning ", " are health problems."], "answers": [["health"]], "example": true},
         {
           "num": 3,
           "parts": ["A ticket to travel by train is a ", "."],
@@ -86,6 +88,7 @@
       "instruction": "Answer the questions using two of the following words each time:",
       "wordBank": ["accident", "belt", "birthday", "card", "credit", "driver", "forecast", "machine", "number", "party", "ring", "road", "room", "seat", "truck", "washing", "weather", "wedding"],
       "items": [
+        {"num": 1, "parts": ["This could be caused by bad driving. ", ""], "answers": [["a road accident"]], "example": true},
         {
           "num": 2,
           "parts": ["You should wear this when you're driving. ", ""],
@@ -133,23 +136,28 @@
       "type": "fill-in",
       "instruction": "Put the words in the right order.",
       "items": [
+        {"num": 1, "parts": ["I spilt coffee on the ", " carpet."], "answers": [["living room"]], "example": true},
         {
           "num": 2,
+          "cue": "⚽ Jack likes sport. He plays for his … . (team / school / football)",
           "parts": ["Jack likes sport. He plays for his ", ". (team / school / football)"],
           "answers": [["school football team"]]
         },
         {
           "num": 3,
+          "cue": "🎬 Anna works for a … . (company / production / film)",
           "parts": ["Anna works for a ", ". (company / production / film)"],
           "answers": [["film production company"]]
         },
         {
           "num": 4,
+          "cue": "📄 Many people invest in a … . (life / policy / insurance)",
           "parts": ["Many people invest in a ", ". (life / policy / insurance)"],
           "answers": [["life insurance policy"]]
         },
         {
           "num": 5,
+          "cue": "🗺️ You can get a map at the … . (information / office / tourist)",
           "parts": ["You can get a map at the ", ". (information / office / tourist)"],
           "answers": [["tourist information office"]]
         }
@@ -158,60 +166,72 @@
     {
       "id": "80.4",
       "type": "choice",
-      "instruction": "Which is correct?",
+      "instruction": "Read the descriptions and choose the correct form.",
       "items": [
+        {"num": 1, "options": ["more than 500 page", "more than 500 pages"], "answer": 1, "example": true},
         {
           "num": 2,
+          "cue": "✈️ It’s only a … flight from London to Madrid.",
           "options": ["two-hour", "two hours"],
           "answer": 0
         },
         {
           "num": 3,
+          "cue": "✈️ It took only … to fly to Madrid.",
           "options": ["two hour", "two hours"],
           "answer": 1
         },
         {
           "num": 4,
+          "cue": "💶 I don’t have any change. I only have a … note.",
           "options": ["twenty-pound", "twenty pounds"],
           "answer": 0
         },
         {
           "num": 5,
+          "cue": "👀 I looked down and there were two … notes on the ground.",
           "options": ["ten-pound", "ten pounds"],
           "answer": 0
         },
         {
           "num": 6,
+          "cue": "☕ At work in the morning we usually have a … break for coffee.",
           "options": ["15-minute", "15 minutes"],
           "answer": 0
         },
         {
           "num": 7,
+          "cue": "⏱️ There are … in an hour.",
           "options": ["60-minute", "60 minutes"],
           "answer": 1
         },
         {
           "num": 8,
+          "cue": "🏢 My office is on the tenth floor of a … building.",
           "options": ["twelve-storey", "twelve storeys"],
           "answer": 0
         },
         {
           "num": 9,
+          "cue": "💼 I work … a week. Saturday and Sunday are free.",
           "options": ["five-day", "five days"],
           "answer": 1
         },
         {
           "num": 10,
+          "cue": "🏨 … hotels are the most expensive.",
           "options": ["Five-star", "Five stars"],
           "answer": 0
         },
         {
           "num": 11,
+          "cue": "👧 Sam’s daughter is … .",
           "options": ["six-year-old", "six years old"],
           "answer": 1
         },
         {
           "num": 12,
+          "cue": "👧 Sam has a … daughter.",
           "options": ["six-year-old", "six-years-old"],
           "answer": 0
         }

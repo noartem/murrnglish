@@ -1,34 +1,186 @@
 {
   "unit": 15,
   "title": "Past perfect (I had done)",
-  "pdfPages": [42, 43],
+  "pdfPages": [
+    42,
+    43
+  ],
   "exercises": [
     {
       "id": "15.1",
       "type": "write",
-      "instruction": "Read the situations and write sentences using the words in brackets.",
+      "instruction": "Read the descriptions of the situations and write sentences using the words in brackets.",
       "items": [
-        {"num": 1, "prompt": "(It / fall / off the wall)", "answers": ["It had fallen off the wall."]},
-        {"num": 2, "prompt": "(They / not / fly / before)", "answers": ["They hadn't flown before."]},
-        {"num": 3, "prompt": "(It / change / a lot)", "answers": ["It had changed a lot."]},
-        {"num": 4, "prompt": "(I / not / hear / it / before)", "answers": ["I hadn't heard it before."]},
-        {"num": 5, "prompt": "(She / arrange / to do something else)", "answers": ["She'd arranged to do something else.", "She had arranged to do something else."]},
-        {"num": 6, "prompt": "(The film / already / start)", "answers": ["The film had already started."]},
-        {"num": 7, "prompt": "(We / not / be / there / before)", "answers": ["We hadn't been there before."]},
-        {"num": 8, "prompt": "(I / not / see / him / for five years)", "answers": ["I hadn't seen him for five years."]},
-        {"num": 9, "prompt": "(They / just / have / lunch)", "answers": ["They'd just had lunch.", "They had just had lunch."]},
-        {"num": 10, "prompt": "(He / never / play / before)", "answers": ["He'd never played before.", "He had never played before."]}
+        {
+          "num": 1,
+          "cue": "🖼️ A picture was lying on the floor.",
+          "prompt": "(It / fall / off the wall)",
+          "answers": [
+            "It had fallen off the wall."
+          ]
+        },
+        {
+          "num": 2,
+          "cue": "✈️ The couple next to you on the plane were nervous: it was their first flight.",
+          "prompt": "(They / not / fly / before)",
+          "answers": [
+            "They hadn't flown before."
+          ]
+        },
+        {
+          "num": 3,
+          "cue": "🏘️ You went back to your home town after many years. It wasn’t the same as before.",
+          "prompt": "(It / change / a lot)",
+          "answers": [
+            "It had changed a lot."
+          ]
+        },
+        {
+          "num": 4,
+          "cue": "🎤 Somebody sang a song. You didn’t know it.",
+          "prompt": "(I / not / hear / it / before)",
+          "answers": [
+            "I hadn't heard it before."
+          ]
+        },
+        {
+          "num": 5,
+          "cue": "🎉 I invited Rachel to the party, but she couldn’t come.",
+          "prompt": "(She / arrange / to do something else)",
+          "answers": [
+            "She'd arranged to do something else.",
+            "She had arranged to do something else."
+          ]
+        },
+        {
+          "num": 6,
+          "cue": "🎬 You went to the cinema last night, but you got there late.",
+          "prompt": "(The film / already / start)",
+          "answers": [
+            "The film had already started."
+          ]
+        },
+        {
+          "num": 7,
+          "cue": "🌮 Last year we went to Mexico. It was our first visit.",
+          "prompt": "(We / not / be / there / before)",
+          "answers": [
+            "We hadn't been there before."
+          ]
+        },
+        {
+          "num": 8,
+          "cue": "🤗 I met Daniel last week. It was great to see him again after such a long time.",
+          "prompt": "(I / not / see / him / for five years)",
+          "answers": [
+            "I hadn't seen him for five years."
+          ]
+        },
+        {
+          "num": 9,
+          "cue": "🥪 I offered my friends something to eat, but they weren’t hungry.",
+          "prompt": "(They / just / have / lunch)",
+          "answers": [
+            "They'd just had lunch.",
+            "They had just had lunch."
+          ]
+        },
+        {
+          "num": 10,
+          "cue": "🎾 Sam played tennis yesterday and wasn’t very good: it was his first game ever.",
+          "prompt": "(He / never / play / before)",
+          "answers": [
+            "He'd never played before.",
+            "He had never played before."
+          ]
+        }
       ]
     },
     {
       "id": "15.2",
       "type": "fill-in",
-      "instruction": "Use the sentences on the left to complete the paragraphs on the right. These sentences are in the order in which they happened \u2013 so (a) happened before (b), (b) before (c) etc. But your paragraph begins with the underlined sentence, so sometimes you need the past perfect.",
+      "instruction": "Each description lists events in the order they happened: (a) before (b), (b) before (c), and so on. Use them to complete the paragraph. The paragraph starts with a later event, so sometimes you need the past perfect.",
       "items": [
-        {"num": 1, "parts": ["We arrived at work in the morning and found that somebody ", " into the office during the night. So ", " the police."], "answers": [["had broken"], ["we called"]]},
-        {"num": 2, "parts": ["I went to Laura's house this morning and rang her doorbell, but ", " no answer. She ", " out."], "answers": [["there was"], ["'d gone", "had gone"]]},
-        {"num": 3, "parts": ["I met Joe a few days ago. He ", " holiday. He ", " very well."], "answers": [["'d just come back from", "had just come back from"], ["looked"]]},
-        {"num": 4, "parts": ["Yesterday James ", " from Amy. ", " surprised. He ", " lots of emails, but ", "."], "answers": [["got a phone call"], ["He was"], ["'d sent her", "had sent her"], ["she'd never replied (to them)", "she had never replied (to them)"]]}
+        {
+          "num": 1,
+          "cue": "📋 (a) Somebody broke into the office during the night. (b) We arrived at work in the morning. (c) We called the police. ▶ The paragraph starts with (b).",
+          "parts": [
+            "We arrived at work in the morning and found that somebody ",
+            " into the office during the night. So ",
+            " the police."
+          ],
+          "answers": [
+            [
+              "had broken"
+            ],
+            [
+              "we called"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "cue": "📋 (a) Laura went out this morning. (b) I rang her doorbell. (c) There was no answer. ▶ The paragraph starts with (b).",
+          "parts": [
+            "I went to Laura's house this morning and rang her doorbell, but ",
+            " no answer. She ",
+            " out."
+          ],
+          "answers": [
+            [
+              "there was"
+            ],
+            [
+              "'d gone",
+              "had gone"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "cue": "📋 (a) Joe came back from holiday a few days ago. (b) I met him the same day. (c) He looked very well. ▶ The paragraph starts with (b).",
+          "parts": [
+            "I met Joe a few days ago. He ",
+            " holiday. He ",
+            " very well."
+          ],
+          "answers": [
+            [
+              "'d just come back from",
+              "had just come back from"
+            ],
+            [
+              "looked"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "cue": "📋 (a) James sent Amy lots of emails. (b) She never replied to them. (c) Yesterday he got a phone call from her. (d) He was surprised. ▶ The paragraph starts with (c).",
+          "parts": [
+            "Yesterday James ",
+            " from Amy. ",
+            " surprised. He ",
+            " lots of emails, but ",
+            "."
+          ],
+          "answers": [
+            [
+              "got a phone call"
+            ],
+            [
+              "He was"
+            ],
+            [
+              "'d sent her",
+              "had sent her"
+            ],
+            [
+              "she'd never replied (to them)",
+              "she had never replied (to them)"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -36,12 +188,88 @@
       "type": "fill-in",
       "instruction": "Put the verb into the correct form, past perfect (I had done) or past simple (I did).",
       "items": [
-        {"num": 1, "parts": ["Paul wasn't at the party when I arrived. ", " (He / go) home."], "answers": [["He'd gone", "He had gone"]]},
-        {"num": 2, "parts": ["I felt very tired when I got home, so ", " (I / go) straight to bed."], "answers": [["I went"]]},
-        {"num": 3, "parts": ["The house was very quiet when I got home. Everybody ", " (go) to bed."], "answers": [["had gone"]]},
-        {"num": 4, "parts": ["Mark travels a lot. When I first met him, ", " (he / already / travel) round the world."], "answers": [["he'd already travelled", "he had already travelled"]]},
-        {"num": 5, "parts": ["Sorry I'm late. The car ", " (break) down on my way here."], "answers": [["broke"]]},
-        {"num": 6, "parts": ["We were driving along the road when ", " (we / see) a car which ", " (break) down, so ", " (we / stop) to help."], "answers": [["we saw"], ["had broken"], ["we stopped"]]}
+        {
+          "num": 1,
+          "parts": [
+            "Paul wasn't at the party when I arrived. ",
+            " (He / go) home."
+          ],
+          "answers": [
+            [
+              "He'd gone",
+              "He had gone"
+            ]
+          ]
+        },
+        {
+          "num": 2,
+          "parts": [
+            "I felt very tired when I got home, so ",
+            " (I / go) straight to bed."
+          ],
+          "answers": [
+            [
+              "I went"
+            ]
+          ]
+        },
+        {
+          "num": 3,
+          "parts": [
+            "The house was very quiet when I got home. Everybody ",
+            " (go) to bed."
+          ],
+          "answers": [
+            [
+              "had gone"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "Mark travels a lot. When I first met him, ",
+            " (he / already / travel) round the world."
+          ],
+          "answers": [
+            [
+              "he'd already travelled",
+              "he had already travelled"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Sorry I'm late. The car ",
+            " (break) down on my way here."
+          ],
+          "answers": [
+            [
+              "broke"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "We were driving along the road when ",
+            " (we / see) a car which ",
+            " (break) down, so ",
+            " (we / stop) to help."
+          ],
+          "answers": [
+            [
+              "we saw"
+            ],
+            [
+              "had broken"
+            ],
+            [
+              "we stopped"
+            ]
+          ]
+        }
       ]
     }
   ]

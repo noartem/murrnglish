@@ -1,42 +1,63 @@
 {
   "unit": 19,
   "title": "Present tenses (I am doing / I do) for the future",
-  "pdfPages": [50, 51],
+  "pdfPages": [
+    50,
+    51
+  ],
   "exercises": [
     {
       "id": "19.1",
       "type": "write",
-      "instruction": "Ask Anna about her holiday plans.",
+      "instruction": "Ask Anna about her holiday plans. Read the descriptions: they give Anna’s answers.",
       "items": [
         {
           "num": 1,
+          "cue": "🏔️ Anna: “Scotland.”",
           "prompt": "(where / go?)",
-          "answers": ["Where are you going?"]
+          "answers": [
+            "Where are you going?"
+          ]
         },
         {
           "num": 2,
+          "cue": "🗓️ Anna: “Ten days.”",
           "prompt": "(how long / go for?)",
-          "answers": ["How long are you going for?"]
+          "answers": [
+            "How long are you going for?"
+          ]
         },
         {
           "num": 3,
+          "cue": "🛫 Anna: “Next Friday.”",
           "prompt": "(when / leave?)",
-          "answers": ["When are you leaving?"]
+          "answers": [
+            "When are you leaving?"
+          ]
         },
         {
           "num": 4,
+          "cue": "👭 Anna: “No, with a friend.”",
           "prompt": "(go / alone?)",
-          "answers": ["Are you going alone?"]
+          "answers": [
+            "Are you going alone?"
+          ]
         },
         {
           "num": 5,
+          "cue": "🚆 Anna: “No, by train.”",
           "prompt": "(travel / by car?)",
-          "answers": ["Are you travelling by car?"]
+          "answers": [
+            "Are you travelling by car?"
+          ]
         },
         {
           "num": 6,
+          "cue": "🏨 Anna: “In a hotel.”",
           "prompt": "(where / stay?)",
-          "answers": ["Where are you staying?"]
+          "answers": [
+            "Where are you staying?"
+          ]
         }
       ]
     },
@@ -47,75 +68,143 @@
       "items": [
         {
           "num": 1,
-          "parts": ["Steve ", " (not / play) football on Saturday. He\u2019s hurt his leg."],
-          "answers": [["isn\u2019t playing"]]
+          "parts": [
+            "Steve ",
+            " (not / play) football on Saturday. He’s hurt his leg."
+          ],
+          "answers": [
+            [
+              "isn’t playing"
+            ]
+          ]
         },
         {
           "num": 2,
-          "parts": ["(We / have) ", " a party next week. We\u2019ve invited all our friends."],
-          "answers": [["We\u2019re having"]]
+          "parts": [
+            "(We / have) ",
+            " a party next week. We’ve invited all our friends."
+          ],
+          "answers": [
+            [
+              "We’re having"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["(I / not / work) ", " tomorrow. It\u2019s a public holiday."],
-          "answers": [["I\u2019m not working"]]
+          "parts": [
+            "(I / not / work) ",
+            " tomorrow. It’s a public holiday."
+          ],
+          "answers": [
+            [
+              "I’m not working"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["(I / leave) ", " now. I\u2019ve come to say goodbye."],
-          "answers": [["I\u2019m leaving"]]
+          "parts": [
+            "(I / leave) ",
+            " now. I’ve come to say goodbye."
+          ],
+          "answers": [
+            [
+              "I’m leaving"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["\u2018What time ", " (you / go) out this evening?\u2019 \u2018Seven o\u2019clock.\u2019"],
-          "answers": [["are you going"]]
+          "parts": [
+            "‘What time ",
+            " (you / go) out this evening?’ ‘Seven o’clock.’"
+          ],
+          "answers": [
+            [
+              "are you going"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["(Laura / not / come) ", " to the party tomorrow. She isn\u2019t well."],
-          "answers": [["Laura isn\u2019t coming", "Laura\u2019s not coming"]]
+          "parts": [
+            "(Laura / not / come) ",
+            " to the party tomorrow. She isn’t well."
+          ],
+          "answers": [
+            [
+              "Laura isn’t coming",
+              "Laura’s not coming"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I love New York. ", " (I / go) there soon."],
-          "answers": [["I\u2019m going"]]
+          "parts": [
+            "I love New York. ",
+            " (I / go) there soon."
+          ],
+          "answers": [
+            [
+              "I’m going"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Ben can\u2019t meet us on Monday. ", " (He / work) late."],
-          "answers": [["He\u2019s working", "He is working"]]
+          "parts": [
+            "Ben can’t meet us on Monday. ",
+            " (He / work) late."
+          ],
+          "answers": [
+            [
+              "He’s working",
+              "He is working"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "19.3",
       "type": "self-check",
-      "instruction": "Have you arranged to do anything at these times? Write sentences about yourself.",
+      "instruction": "Have you arranged to do anything at the times in brackets? Write sentences about yourself.",
       "items": [
         {
           "num": 1,
-          "prompt": "(this evening) I\u2019m not doing anything this evening.",
-          "modelAnswers": ["I\u2019m not doing anything this evening."]
+          "prompt": "(this evening) I’m not doing anything this evening.",
+          "modelAnswers": [
+            "I’m not doing anything this evening."
+          ]
         },
         {
           "num": 2,
           "prompt": "(tomorrow morning)",
-          "modelAnswers": ["I\u2019m working tomorrow morning."]
+          "modelAnswers": [
+            "I’m working tomorrow morning."
+          ]
         },
         {
           "num": 3,
           "prompt": "(tomorrow evening)",
-          "modelAnswers": ["I\u2019m not doing anything tomorrow evening."]
+          "modelAnswers": [
+            "I’m not doing anything tomorrow evening."
+          ]
         },
         {
           "num": 4,
           "prompt": "(next Sunday)",
-          "modelAnswers": ["I\u2019m going swimming next Sunday."]
+          "modelAnswers": [
+            "I’m going swimming next Sunday."
+          ]
         },
         {
           "num": 5,
           "prompt": "(another day or time)",
-          "modelAnswers": ["I\u2019m going to a party this evening."]
+          "modelAnswers": [
+            "I’m going to a party this evening."
+          ]
         }
       ]
     },
@@ -126,63 +215,174 @@
       "items": [
         {
           "num": 1,
-          "parts": ["\u2018Tina, are you ready yet?\u2019 \u2018Yes, ", ".\u2019 (I / come)"],
-          "answers": [["I\u2019m coming"]]
+          "parts": [
+            "‘Tina, are you ready yet?’ ‘Yes, ",
+            ".’ (I / come)"
+          ],
+          "answers": [
+            [
+              "I’m coming"
+            ]
+          ]
         },
         {
           "num": 2,
-          "parts": ["\u2018", " to Sam\u2019s party on Saturday?\u2019 \u2018No, I haven\u2019t been invited.\u2019 (you / go)"],
-          "answers": [["Are you going"]]
+          "parts": [
+            "‘",
+            " to Sam’s party on Saturday?’ ‘No, I haven’t been invited.’ (you / go)"
+          ],
+          "answers": [
+            [
+              "Are you going"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["\u2018Not yet, but ", " soon \u2013 probably at the end of the month.\u2019 (he / move)"],
-          "answers": [["he\u2019s moving", "he is moving"]]
+          "cue": "🏠 ‘Has Jack moved into his new apartment yet?’",
+          "parts": [
+            "‘Not yet, but ",
+            " soon – probably at the end of the month.’ (he / move)"
+          ],
+          "answers": [
+            [
+              "he’s moving",
+              "he is moving"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["\u2018", " (I / go) to a concert tonight.\u2019 \u2018That\u2019s nice. What time ", "?\u2019 (it / start)"],
-          "answers": [["I\u2019m going", "I am going"], ["does it start"]]
+          "parts": [
+            "‘",
+            " (I / go) to a concert tonight.’ ‘That’s nice. What time ",
+            "?’ (it / start)"
+          ],
+          "answers": [
+            [
+              "I’m going",
+              "I am going"
+            ],
+            [
+              "does it start"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["\u2018No, but ", " for lunch next week.\u2019 (we / meet)"],
-          "answers": [["we\u2019re meeting", "we are meeting"]]
+          "cue": "🍽️ ‘Have you seen Chris recently?’",
+          "parts": [
+            "‘No, but ",
+            " for lunch next week.’ (we / meet)"
+          ],
+          "answers": [
+            [
+              "we’re meeting",
+              "we are meeting"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["\u2018", " anything tomorrow morning?\u2019 \u2018No, I\u2019m free. Why?\u2019 (you / do)"],
-          "answers": [["Are you doing"]]
+          "parts": [
+            "‘",
+            " anything tomorrow morning?’ ‘No, I’m free. Why?’ (you / do)"
+          ],
+          "answers": [
+            [
+              "Are you doing"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["\u2018When ", "(this term / end)?\u2019 \u2018Next Friday. And next term ", " four weeks after that.\u2019 (start)"],
-          "answers": [["does this term end"], ["starts"]]
+          "parts": [
+            "‘When ",
+            "(this term / end)?’ ‘Next Friday. And next term ",
+            " four weeks after that.’ (start)"
+          ],
+          "answers": [
+            [
+              "does this term end"
+            ],
+            [
+              "starts"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["\u2018", " (We / go) to a wedding at the weekend.\u2019 \u2018Really? ", " married?\u2019 (Who / get)"],
-          "answers": [["We\u2019re going", "We are going"], ["Who\u2019s getting", "Who is getting"]]
+          "parts": [
+            "‘",
+            " (We / go) to a wedding at the weekend.’ ‘Really? ",
+            " married?’ (Who / get)"
+          ],
+          "answers": [
+            [
+              "We’re going",
+              "We are going"
+            ],
+            [
+              "Who’s getting",
+              "Who is getting"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["\u2018There\u2019s football on TV later tonight. ", " it?\u2019 \u2018No, I\u2019m not interested.\u2019 (you / watch)"],
-          "answers": [["Are you watching"]]
+          "parts": [
+            "‘There’s football on TV later tonight. ",
+            " it?’ ‘No, I’m not interested.’ (you / watch)"
+          ],
+          "answers": [
+            [
+              "Are you watching"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["\u2018It ", " (leave) at 9.35 and ", " at 12.47.\u2019 (arrive)"],
-          "answers": [["leaves"], ["arrives"]]
+          "cue": "🚆 ‘What time is your train tomorrow?’",
+          "parts": [
+            "‘It ",
+            " (leave) at 9.35 and ",
+            " at 12.47.’ (arrive)"
+          ],
+          "answers": [
+            [
+              "leaves"
+            ],
+            [
+              "arrives"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["\u2018", " next week.\u2019 (It / finish)"],
-          "answers": [["It finishes"]]
+          "cue": "🖼️ ‘I’d like to see the exhibition at the museum. How long is it on for?’",
+          "parts": [
+            "‘",
+            " next week.’ (It / finish)"
+          ],
+          "answers": [
+            [
+              "It finishes"
+            ]
+          ]
         },
         {
           "num": 12,
-          "parts": ["\u2018No, you can have it. ", " it.\u2019 (I / not / use)"],
-          "answers": [["I\u2019m not using", "I am not using"]]
+          "cue": "🚗 ‘Do you need the car this evening?’",
+          "parts": [
+            "‘No, you can have it. ",
+            " it.’ (I / not / use)"
+          ],
+          "answers": [
+            [
+              "I’m not using",
+              "I am not using"
+            ]
+          ]
         }
       ]
     }

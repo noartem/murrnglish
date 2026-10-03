@@ -9,10 +9,11 @@
     {
       "id": "69.1",
       "type": "write",
-      "instruction": "Что изображено на этих картинках? Используйте a или some.",
+      "instruction": "Прочитайте описания покупок и скажите, что вы купили, используя a или some.",
       "items": [
         {
           "num": 1,
+          "cue": "🛍️ В сумке: флакон духов, шляпа и туфли.",
           "prompt": "",
           "answers": [
             "some perfume, a hat and some shoes"
@@ -21,6 +22,7 @@
         },
         {
           "num": 2,
+          "cue": "📰 В руках: газета, букет цветов и ручка.",
           "prompt": "",
           "answers": [
             "I bought a newspaper, some flowers and a pen.",
@@ -31,6 +33,7 @@
         },
         {
           "num": 3,
+          "cue": "🛒 На столе: бананы, яйца и хлеб.",
           "prompt": "",
           "answers": [
             "I bought some bananas, some eggs and some bread.",
@@ -39,6 +42,7 @@
         },
         {
           "num": 4,
+          "cue": "🚿 В ванной: тюбик пасты, кусок мыла и расчёска.",
           "prompt": "",
           "answers": [
             "I bought some toothpaste, some soap and a comb.",
@@ -80,6 +84,7 @@
         },
         {
           "num": 3,
+          "cue": "🍪 На тарелке печенье.",
           "parts": [
             "Would ",
             " ?"
@@ -92,6 +97,7 @@
         },
         {
           "num": 4,
+          "cue": "🍞 На столе буханка хлеба.",
           "parts": [
             "",
             " ?"
@@ -106,6 +112,7 @@
         },
         {
           "num": 5,
+          "cue": "🍫 На блюде одна шоколадка.",
           "parts": [
             "",
             " ?"
@@ -118,6 +125,7 @@
         },
         {
           "num": 6,
+          "cue": "🍰 На тарелке кусок торта.",
           "parts": [
             "",
             " ?"

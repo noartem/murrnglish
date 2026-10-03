@@ -1,7 +1,10 @@
 {
   "unit": 26,
   "title": "can, could and (be) able to",
-  "pdfPages": [64, 65],
+  "pdfPages": [
+    64,
+    65
+  ],
   "exercises": [
     {
       "id": "26.1",
@@ -10,38 +13,88 @@
       "items": [
         {
           "num": 3,
-          "parts": ["Nicole ", " drive, but she doesn't have a car."],
-          "answers": [["can"]]
+          "parts": [
+            "Nicole ",
+            " drive, but she doesn't have a car."
+          ],
+          "answers": [
+            [
+              "can"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I used to ", " stand on my head, but I can't do it any more."],
-          "answers": [["be able to"]]
+          "parts": [
+            "I used to ",
+            " stand on my head, but I can't do it any more."
+          ],
+          "answers": [
+            [
+              "be able to"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I can't understand Mark. I've never ", " understand him."],
-          "answers": [["been able to"]]
+          "parts": [
+            "I can't understand Mark. I've never ",
+            " understand him."
+          ],
+          "answers": [
+            [
+              "been able to"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I can't see you on Friday, but I ", " meet you on Saturday morning."],
-          "answers": [["can", "will be able to"]]
+          "parts": [
+            "I can't see you on Friday, but I ",
+            " meet you on Saturday morning."
+          ],
+          "answers": [
+            [
+              "can",
+              "will be able to"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Ask Katherine about your problem. She might ", " help you."],
-          "answers": [["be able to"]]
+          "parts": [
+            "Ask Katherine about your problem. She might ",
+            " help you."
+          ],
+          "answers": [
+            [
+              "be able to"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["You have to be careful in this part of the city. It ", " be dangerous."],
-          "answers": [["can"]]
+          "parts": [
+            "You have to be careful in this part of the city. It ",
+            " be dangerous."
+          ],
+          "answers": [
+            [
+              "can"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["Michael has lived in Italy a long time, so he should ", " speak Italian."],
-          "answers": [["be able to"]]
+          "parts": [
+            "Michael has lived in Italy a long time, so he should ",
+            " speak Italian."
+          ],
+          "answers": [
+            [
+              "be able to"
+            ]
+          ]
         }
       ]
     },
@@ -53,17 +106,23 @@
         {
           "num": 2,
           "prompt": "(something you used to be able to do)",
-          "modelAnswers": ["I used to be able to run fast."]
+          "modelAnswers": [
+            "I used to be able to run fast."
+          ]
         },
         {
           "num": 3,
           "prompt": "(something you would like to be able to do)",
-          "modelAnswers": ["I'd like to be able to play the piano."]
+          "modelAnswers": [
+            "I'd like to be able to play the piano."
+          ]
         },
         {
           "num": 4,
           "prompt": "(something you have never been able to do)",
-          "modelAnswers": ["I've never been able to get up early."]
+          "modelAnswers": [
+            "I've never been able to get up early."
+          ]
         }
       ]
     },
@@ -71,32 +130,74 @@
       "id": "26.3",
       "type": "fill-in",
       "instruction": "Complete the sentences with can/can't/could/couldn't + the following:",
-      "wordBank": ["believe", "come", "hear", "run", "sleep", "wait"],
+      "wordBank": [
+        "believe",
+        "come",
+        "hear",
+        "run",
+        "sleep",
+        "wait"
+      ],
       "items": [
         {
           "num": 2,
-          "parts": ["When Dan was 16, he ", " 100 metres in 11 seconds."],
-          "answers": [["could run"]]
+          "parts": [
+            "When Dan was 16, he ",
+            " 100 metres in 11 seconds."
+          ],
+          "answers": [
+            [
+              "could run"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["'Are you in a hurry?' 'No, I've got plenty of time. I ", ".'"],
-          "answers": [["can wait"]]
+          "parts": [
+            "'Are you in a hurry?' 'No, I've got plenty of time. I ",
+            ".'"
+          ],
+          "answers": [
+            [
+              "can wait"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["I don't feel good this morning. I ", " last night."],
-          "answers": [["couldn't sleep"]]
+          "parts": [
+            "I don't feel good this morning. I ",
+            " last night."
+          ],
+          "answers": [
+            [
+              "couldn't sleep"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Can you speak a little louder? I ", " you very well."],
-          "answers": [["can't hear"]]
+          "parts": [
+            "Can you speak a little louder? I ",
+            " you very well."
+          ],
+          "answers": [
+            [
+              "can't hear"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["I was amazed when I heard the news. I ", " it."],
-          "answers": [["couldn't believe"]]
+          "parts": [
+            "I was amazed when I heard the news. I ",
+            " it."
+          ],
+          "answers": [
+            [
+              "couldn't believe"
+            ]
+          ]
         }
       ]
     },
@@ -107,18 +208,42 @@
       "items": [
         {
           "num": 2,
-          "parts": ["Yes, there was nobody to disturb me, so I ", "."],
-          "answers": [["was able to finish it"]]
+          "cue": "❓ ‘Did you finish your work this afternoon?’",
+          "parts": [
+            "Yes, there was nobody to disturb me, so I ",
+            "."
+          ],
+          "answers": [
+            [
+              "was able to finish it"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Yes, we did. It wasn't easy, but we ", "."],
-          "answers": [["were able to solve it"]]
+          "cue": "❓ ‘Did you solve the problem?’",
+          "parts": [
+            "Yes, we did. It wasn't easy, but we ",
+            "."
+          ],
+          "answers": [
+            [
+              "were able to solve it"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Yes. No-one realised what was happening and the thief ", "."],
-          "answers": [["was able to get away"]]
+          "cue": "❓ ‘Did the thief get away?’",
+          "parts": [
+            "Yes. No-one realised what was happening and the thief ",
+            "."
+          ],
+          "answers": [
+            [
+              "was able to get away"
+            ]
+          ]
         }
       ]
     },
@@ -129,38 +254,87 @@
       "items": [
         {
           "num": 4,
-          "parts": ["Jessica had hurt her foot and ", " walk very well."],
-          "answers": [["couldn't"]]
+          "parts": [
+            "Jessica had hurt her foot and ",
+            " walk very well."
+          ],
+          "answers": [
+            [
+              "couldn't"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["There was a small fire in the kitchen, but fortunately I ", " put it out."],
-          "answers": [["managed to"]]
+          "parts": [
+            "There was a small fire in the kitchen, but fortunately I ",
+            " put it out."
+          ],
+          "answers": [
+            [
+              "managed to"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["The walls were thin and I ", " hear people talking in the next room."],
-          "answers": [["could"]]
+          "parts": [
+            "The walls were thin and I ",
+            " hear people talking in the next room."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I ran my first marathon recently. It was very hard, but I ", " finish."],
-          "answers": [["managed to"]]
+          "parts": [
+            "I ran my first marathon recently. It was very hard, but I ",
+            " finish."
+          ],
+          "answers": [
+            [
+              "managed to"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["My grandmother loved music. She ", " play the piano very well."],
-          "answers": [["could"]]
+          "parts": [
+            "My grandmother loved music. She ",
+            " play the piano very well."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["We wanted to go to the concert, but we ", " get tickets."],
-          "answers": [["couldn't"]]
+          "parts": [
+            "We wanted to go to the concert, but we ",
+            " get tickets."
+          ],
+          "answers": [
+            [
+              "couldn't"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["A girl fell into the river, but some people ", " pull her out. She's all right now."],
-          "answers": [["managed to"]]
+          "parts": [
+            "A girl fell into the river, but some people ",
+            " pull her out. She's all right now."
+          ],
+          "answers": [
+            [
+              "managed to"
+            ]
+          ]
         }
       ]
     }

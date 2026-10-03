@@ -6,7 +6,8 @@
     {
       "id": "76.1",
       "type": "write",
-      "instruction": "Answer the questions. Choose the right answer from the box. Don't forget the.",
+      "instruction": "Answer the questions. Choose the right answer from the words below. Don't forget the.",
+      "scene": "animals | tiger · elephant · rabbit · cheetah · giraffe · kangaroo\nbirds | eagle · penguin · swan · owl · parrot · pigeon\ninventions | telephone · wheel · telescope · laser · helicopter · typewriter\ncurrencies | dollar · peso · euro · rupee · rouble · yen",
       "items": [
         {"num": "1a", "prompt": "Which of the animals is the tallest?", "answers": []},
         {"num": "1b", "prompt": "Which animal can run the fastest?", "answers": ["the cheetah"]},
@@ -27,6 +28,7 @@
       "type": "fill-in",
       "instruction": "Put in the or a.",
       "items": [
+        {"num": 1, "parts": ["When was ", " invented?"], "answers": [["the telephone"]], "example": true},
         {
           "num": 2,
           "parts": ["Can you play ", " musical instrument?"],
@@ -80,6 +82,7 @@
       "instruction": "Complete these sentences. Use the + adjective. Choose from:",
       "wordBank": ["elderly", "injured", "rich", "sick", "unemployed", "young"],
       "items": [
+        {"num": 1, "parts": ["", " have the future in their hands."], "answers": [["The young"]], "example": true},
         {
           "num": 2,
           "parts": ["Helen is a nurse. She's spent her life caring for ", "."],
@@ -110,35 +113,42 @@
     {
       "id": "76.4",
       "type": "write",
-      "instruction": "What do you call the people of these countries?",
+      "instruction": "What do you call the people of each country? Write one person (a/an …) or the people in general.",
       "items": [
+        {"num": 1, "prompt": "Canada", "answers": ["a Canadian", "Canadians"], "example": true},
         {
           "num": 2,
+          "cue": "🇩🇪 Germany",
           "prompt": "Germany",
           "answers": ["a German", "Germans", "German people"]
         },
         {
           "num": 3,
+          "cue": "🇫🇷 France",
           "prompt": "France",
           "answers": ["a Frenchman", "a Frenchwoman", "the French", "French people"]
         },
         {
           "num": 4,
+          "cue": "🇷🇺 Russia",
           "prompt": "Russia",
           "answers": ["a Russian", "Russians", "Russian people"]
         },
         {
           "num": 5,
+          "cue": "🇯🇵 Japan",
           "prompt": "Japan",
           "answers": ["a Japanese", "the Japanese", "Japanese people"]
         },
         {
           "num": 6,
+          "cue": "🇧🇷 Brazil",
           "prompt": "Brazil",
           "answers": ["a Brazilian", "Brazilians", "Brazilian people"]
         },
         {
           "num": 7,
+          "cue": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 England",
           "prompt": "England",
           "answers": ["an Englishman", "an Englishwoman", "the English", "English people"]
         }

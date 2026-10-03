@@ -9,7 +9,8 @@
     {
       "id": "48.1",
       "type": "fill-in",
-      "instruction": "Here are some things that Sarah said to you earlier. But later Sarah says something different to you. What do you say?",
+      "instruction": "Read what Sarah said to you earlier (in the scene). Later Sarah says something different. What do you say?",
+      "scene": "🗨️ What Sarah said to you earlier:\n“I’ve never been to the United States.”\n“I don’t have any brothers or sisters.”\n“I can’t drive.”\n“I don’t like fish.”\n“Jane has a very well-paid job.”\n“I’m working tomorrow evening.”\n“Jane is a friend of mine.”\n“Dave is lazy.”",
       "items": [
         {
           "num": 1,
@@ -250,7 +251,8 @@
     {
       "id": "48.3",
       "type": "fill-in",
-      "instruction": "The following sentences are direct speech. Now choose one of these to complete each of the sentences below. Use reported speech.",
+      "instruction": "The sentences in the scene are direct speech. Choose one of them to complete each sentence. Use reported speech.",
+      "scene": "💬 What people said (direct speech):\n“Don’t wait for me if I’m late.”\n“Mind your own business.”\n“Please slow down!”\n“Can you open your bag, please?”\n“Don’t worry, Sue.”\n“Hurry up!”\n“Will you marry me?”\n“Do you think you could give me a hand, Tom?”",
       "items": [
         {
           "num": 1,

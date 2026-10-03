@@ -13,8 +13,8 @@
         {"num": 3, "prompt": "(going to the cinema / watching movies at home)", "answers": ["I prefer going to the cinema to watching movies at home."]},
         {"num": 4, "prompt": "(being very busy / having nothing to do)", "answers": ["I prefer being very busy to having nothing to do."]},
         {"num": 5, "prompt": "(1)", "answers": ["I prefer to drive rather than travel by train.", "I prefer driving rather than travelling by train."], "example": true},
-        {"num": 6, "prompt": "(3)", "answers": ["I prefer to go to the cinema rather than watch movies at home.", "I prefer going to the cinema rather than watching movies at home."]},
-        {"num": 7, "prompt": "(4)", "answers": ["I prefer to be very busy rather than have nothing to do.", "I prefer being very busy to having nothing to do."]}
+        {"num": 6, "cue": "Now say sentence 3 again with rather than: the cinema, or films at home.", "prompt": "(3)", "answers": ["I prefer to go to the cinema rather than watch movies at home.", "I prefer going to the cinema rather than watching movies at home."]},
+        {"num": 7, "cue": "Now say sentence 4 again with rather than: being busy, or having nothing to do.", "prompt": "(4)", "answers": ["I prefer to be very busy rather than have nothing to do.", "I prefer being very busy to having nothing to do."]}
       ]
     },
     {
@@ -52,7 +52,7 @@
     {
       "id": "59.4",
       "type": "fill-in",
-      "instruction": "Use your own ideas (one or two words) to complete these sentences.",
+      "instruction": "Use your own ideas (one or two words) to complete each sentence.",
       "items": [
         {"num": 1, "parts": ["\u2018Shall I tell Anna what happened?\u2019 \u2018No, I\u2019d rather she didn\u2019t know.\u2019"], "answers": [], "example": true},
         {"num": 2, "parts": ["You can stay here if you want to, but I\u2019d rather you ", " with us."], "answers": [["came"]]},

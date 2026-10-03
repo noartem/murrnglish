@@ -1,7 +1,10 @@
 {
   "unit": 27,
   "title": "could (do) and could have (done)",
-  "pdfPages": [66, 67],
+  "pdfPages": [
+    66,
+    67
+  ],
   "exercises": [
     {
       "id": "27.1",
@@ -23,7 +26,32 @@
         "You could do it now.",
         "We could hang it in the kitchen."
       ],
-      "pairs": [[0, 2], [1, 4], [2, 1], [3, 5], [4, 0], [5, 3]]
+      "pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          3
+        ]
+      ]
     },
     {
       "id": "27.2",
@@ -32,48 +60,111 @@
       "items": [
         {
           "num": 2,
-          "parts": ["I'm so angry with him. I ", " kill him!"],
-          "answers": [["could"]]
+          "parts": [
+            "I'm so angry with him. I ",
+            " kill him!"
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I ", " hear a strange noise. What is it?"],
-          "answers": [["can"]]
+          "parts": [
+            "I ",
+            " hear a strange noise. What is it?"
+          ],
+          "answers": [
+            [
+              "can"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["It's so nice here. I ", " sit here all day but unfortunately I have to go."],
-          "answers": [["could"]]
+          "parts": [
+            "It's so nice here. I ",
+            " sit here all day but unfortunately I have to go."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I ", " understand your point of view, but I don't agree with you."],
-          "answers": [["can"]]
+          "parts": [
+            "I ",
+            " understand your point of view, but I don't agree with you."
+          ],
+          "answers": [
+            [
+              "can"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Peter is a keen musician. He plays the flute and he ", " also play the piano."],
-          "answers": [["can"]]
+          "parts": [
+            "Peter is a keen musician. He plays the flute and he ",
+            " also play the piano."
+          ],
+          "answers": [
+            [
+              "can"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["The company Amy works for isn't doing well. She ", " lose her job."],
-          "answers": [["could"]]
+          "parts": [
+            "The company Amy works for isn't doing well. She ",
+            " lose her job."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["Some people are unlucky. Life ", " be very unfair."],
-          "answers": [["can"]]
+          "parts": [
+            "Some people are unlucky. Life ",
+            " be very unfair."
+          ],
+          "answers": [
+            [
+              "can"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["I've been really stupid. I ", " kick myself."],
-          "answers": [["could"]]
+          "parts": [
+            "I've been really stupid. I ",
+            " kick myself."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["Be careful climbing that tree. You ", " fall."],
-          "answers": [["could"]]
+          "parts": [
+            "Be careful climbing that tree. You ",
+            " fall."
+          ],
+          "answers": [
+            [
+              "could"
+            ]
+          ]
         }
       ]
     },
@@ -81,42 +172,107 @@
       "id": "27.3",
       "type": "fill-in",
       "instruction": "Complete the sentences. Choose from:",
-      "wordBank": ["gone", "could be", "could come", "could sleep", "have moved", "could have", "could have come", "could have been"],
+      "wordBank": [
+        "gone",
+        "could be",
+        "could come",
+        "could sleep",
+        "have moved",
+        "could have",
+        "could have come",
+        "could have been"
+      ],
       "items": [
         {
           "num": 2,
-          "parts": ["Why did you stay at home? You ", " out with us."],
-          "answers": [["could have come"]]
+          "cue": "🛋️ ‘I spent a very boring evening at home yesterday.’",
+          "parts": [
+            "Why did you stay at home? You ",
+            " out with us."
+          ],
+          "answers": [
+            [
+              "could have come"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["Yes. It ", " important."],
-          "answers": [["could be"]]
+          "cue": "✉️ ‘Shall I open this letter?’",
+          "parts": [
+            "Yes. It ",
+            " important."
+          ],
+          "answers": [
+            [
+              "could be"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["It ", " worse."],
-          "answers": [["could have been"]]
+          "cue": "📝 ‘How was your exam? Was it difficult?’",
+          "parts": [
+            "It ",
+            " worse."
+          ],
+          "answers": [
+            [
+              "could have been"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Why did you walk? You ", " taken a taxi."],
-          "answers": [["could have"]]
+          "cue": "🌧️ ‘I got very wet walking home in the rain.’",
+          "parts": [
+            "Why did you walk? You ",
+            " taken a taxi."
+          ],
+          "answers": [
+            [
+              "could have"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Well, I ", " to your office if you like."],
-          "answers": [["could come"]]
+          "cue": "📍 ‘Where shall we meet tomorrow?’",
+          "parts": [
+            "Well, I ",
+            " to your office if you like."
+          ],
+          "answers": [
+            [
+              "could come"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["I'm not sure. He could ", "."],
-          "answers": [["have moved"]]
+          "cue": "🏠 ‘Does Tom still live in the same place?’",
+          "parts": [
+            "I'm not sure. He could ",
+            "."
+          ],
+          "answers": [
+            [
+              "have moved"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["No. I could have ", ", but I didn't want to."],
-          "answers": [["gone"]]
+          "cue": "🎓 ‘Did you go to university?’",
+          "parts": [
+            "No. I could have ",
+            ", but I didn't want to."
+          ],
+          "answers": [
+            [
+              "gone"
+            ]
+          ]
         }
       ]
     },
@@ -124,37 +280,88 @@
       "id": "27.4",
       "type": "fill-in",
       "instruction": "Complete the sentences. Use couldn't or couldn't have + these verbs (in the correct form):",
-      "wordBank": ["afford", "be", "live", "manage", "stand", "study", "wear"],
+      "wordBank": [
+        "afford",
+        "be",
+        "live",
+        "manage",
+        "stand",
+        "study",
+        "wear"
+      ],
       "items": [
         {
           "num": 3,
-          "parts": ["I ", " that hat. People would laugh at me."],
-          "answers": [["couldn't wear"]]
+          "parts": [
+            "I ",
+            " that hat. People would laugh at me."
+          ],
+          "answers": [
+            [
+              "couldn't wear"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["You helped me a lot. I ", " without you."],
-          "answers": [["couldn't have managed"]]
+          "parts": [
+            "You helped me a lot. I ",
+            " without you."
+          ],
+          "answers": [
+            [
+              "couldn't have managed"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["The staff at the hotel were really good. They ", " more helpful."],
-          "answers": [["couldn't have been"]]
+          "parts": [
+            "The staff at the hotel were really good. They ",
+            " more helpful."
+          ],
+          "answers": [
+            [
+              "couldn't have been"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["There's no way we could buy a car now. We ", " it."],
-          "answers": [["couldn't afford", "couldn't manage"]]
+          "parts": [
+            "There's no way we could buy a car now. We ",
+            " it."
+          ],
+          "answers": [
+            [
+              "couldn't afford",
+              "couldn't manage"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["Jack prepared for the exam as well as he could. He ", " harder."],
-          "answers": [["couldn't have studied"]]
+          "parts": [
+            "Jack prepared for the exam as well as he could. He ",
+            " harder."
+          ],
+          "answers": [
+            [
+              "couldn't have studied"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["I wouldn't like to live near the motorway. I ", " the noise of the traffic."],
-          "answers": [["couldn't stand"]]
+          "parts": [
+            "I wouldn't like to live near the motorway. I ",
+            " the noise of the traffic."
+          ],
+          "answers": [
+            [
+              "couldn't stand"
+            ]
+          ]
         }
       ]
     }

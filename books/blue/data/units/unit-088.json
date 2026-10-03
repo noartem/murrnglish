@@ -11,6 +11,7 @@
       "type": "fill-in",
       "instruction": "Put in of where necessary. Leave the space empty if the sentence is already complete.",
       "items": [
+        {"num": 1, "parts": ["All ", " cars have wheels."], "answers": [["–"]], "example": true},
         {
           "num": 2,
           "parts": [
@@ -24,6 +25,7 @@
           ],
           "example": true
         },
+        {"num": 3, "parts": ["There were problems at the airport and ", " flights were cancelled."], "answers": [["some"]], "example": true},
         {
           "num": 4,
           "parts": [
@@ -33,6 +35,30 @@
           "answers": [
             [
               "of"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "Joe never goes to museums. He says that all ",
+            " museums are boring."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "I think some ",
+            " people watch too much TV."
+          ],
+          "answers": [
+            [
+              "–"
             ]
           ]
         },
@@ -57,6 +83,42 @@
           "answers": [
             [
               "of"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "Joe has lived in Chicago all ",
+            " his life."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "Most ",
+            " days I get up before 7 o’clock."
+          ],
+          "answers": [
+            [
+              "–"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I usually have a little ",
+            " sugar in my coffee."
+          ],
+          "answers": [
+            [
+              "–"
             ]
           ]
         },
@@ -244,7 +306,7 @@
     {
       "id": "88.3",
       "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences.",
+      "instruction": "Use your own ideas to complete the sentences.",
       "items": [
         {
           "num": 2,

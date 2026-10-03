@@ -4,36 +4,42 @@
 
 import type { Book } from "./books";
 import { bookUrl } from "./books";
+import type { Lesson } from "./lesson";
 
 /** book-relative path of every exercise in one file (scripts/sync_books.mjs) */
 export const COURSE_BUNDLE = "data/course.json";
-/** book-relative path of the rule-page text (scripts/sync_books.mjs, rules_text.mjs) */
-export const RULES_FILE = "data/rules.json";
 
 export type ExerciseType = "fill-in" | "choice" | "matching" | "write" | "self-check";
 
-export interface FillInItem {
+/** What every item may carry besides its own fields. */
+interface ItemBase {
+  /** what the item is about, where the printed book had a picture: an emoji
+      and a line of text ("💪 He lifts the heavy box with one hand.") */
+  cue?: string;
+}
+
+export interface FillInItem extends ItemBase {
   num: number;
   parts: string[];
   answers: string[][];
   /** pre-solved in the printed book; rendered as plain text, excluded from grading */
   example?: boolean;
 }
-export interface ChoiceItem {
+export interface ChoiceItem extends ItemBase {
   num: number | string;
   options: string[];
   answer: number | number[];
   /** pre-solved in the printed book; rendered as static text, excluded from grading */
   example?: boolean;
 }
-export interface WriteItem {
+export interface WriteItem extends ItemBase {
   num: number | string;
   prompt: string;
   answers: string[];
   /** pre-solved in the printed book or key-less; rendered as static text, excluded from grading */
   example?: boolean;
 }
-export interface SelfCheckItem {
+export interface SelfCheckItem extends ItemBase {
   num: number;
   prompt: string;
   modelAnswers: string[];
@@ -45,6 +51,9 @@ export interface Exercise {
   id: string;
   type: ExerciseType;
   instruction: string;
+  /** what the whole exercise is about, where the printed book had a picture,
+      a map or a table: lines of text, "a | b | c" lines make a table */
+  scene?: string;
   wordBank?: string[];
   items?: Item[];
   leftOptions?: string[];
@@ -57,10 +66,11 @@ export interface Exercise {
 export interface UnitData {
   unit: number;
   title: string;
-  /** book pages of the unit — mirrored in index.json `pages` (what the app
-      mounts the page stack on); kept here for the per-file pipeline scripts */
+  /** book pages of the unit — for the pipeline scripts, the app shows none */
   pdfPages: number[];
   exercises: Exercise[];
+  /** the app's own lesson for the unit (scripts/lessons.mjs), when written */
+  lesson?: Lesson;
 }
 
 export interface AdditionalData {
@@ -80,10 +90,10 @@ export interface IndexData {
   groups: Group[];
   additional: { title: string; exercises: number[] };
   /** per-exercise info the app needs before that exercise's own JSON lands,
-      keyed "uN"/"aN" (books/<id>/scripts/make_index.py): the heading text and the book
-      pages to mount. index.json is fetched at startup, so opening a route can
-      label the page and start the book PDF (14–75 MB) without waiting for the
-      unit file — see CourseApp.tsx `routeInfo` */
+      keyed "uN"/"aN" (books/<id>/scripts/make_index.py): the heading text
+      (and the book pages, which the pipelines check and the app ignores).
+      index.json is fetched at startup, so opening a route can label the page
+      without waiting for the unit file — see CourseApp.tsx `routeInfo` */
   exercises: Record<string, { title: string; pages: number[] }>;
 }
 
@@ -95,15 +105,6 @@ async function fetchJson<T>(book: Book, file: string): Promise<T> {
 
 export function fetchIndex(book: Book): Promise<IndexData> {
   return fetchJson(book, "data/index.json");
-}
-
-/** height/width of every book page, keyed by page number (as a string) */
-export type PageAspects = Record<string, number>;
-
-/** baked from the PDF by scripts/make_page_meta.mjs: lets pages still
-    loading take their real height */
-export function fetchPageAspects(book: Book): Promise<PageAspects> {
-  return fetchJson(book, "data/pages.json");
 }
 
 /** The packed course: every exercise file keyed as the app asks for it. */

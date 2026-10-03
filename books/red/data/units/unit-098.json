@@ -9,7 +9,7 @@
     {
       "id": "98.1",
       "type": "write",
-      "instruction": "Напишите предложения. Используйте информацию из рамок + and/but/or.",
+      "instruction": "Прочитайте предложения в рамке и составьте из них семь предложений, соединяя пары через and, but или or.",
       "wordBank": [
         "I stayed at home.",
         "I bought a sandwich.",
@@ -36,14 +36,16 @@
           "prompt": "",
           "answers": [
             "I stayed at home and watched TV."
-          ]
+          ],
+          "cue": "🏠 Вечером вы никуда не пошли и смотрели телевизор — соедините через and."
         },
         {
           "num": 2,
           "prompt": "",
           "answers": [
             "I bought a sandwich, but I didn’t eat it."
-          ]
+          ],
+          "cue": "🥪 Вы купили бутерброд, но съели его не сразу — соедините через but."
         },
         {
           "num": 3,
@@ -51,14 +53,16 @@
           "answers": [
             "I went to the window and looked out.",
             "I went to the window and I looked out."
-          ]
+          ],
+          "cue": "🪟 Вы подошли к окну и выглянули наружу — соедините через and."
         },
         {
           "num": 4,
           "prompt": "",
           "answers": [
             "I wanted to phone you, but I didn’t have your number."
-          ]
+          ],
+          "cue": "📞 Вы хотели позвонить, но номера у вас не было — соедините через but."
         },
         {
           "num": 5,
@@ -66,28 +70,31 @@
           "answers": [
             "I jumped into the river and swam to the other side.",
             "I jumped into the river and I swam to the other side."
-          ]
+          ],
+          "cue": "🏊 Вы прыгнули в реку и доплыли до другого берега — соедините через and."
         },
         {
           "num": 6,
           "prompt": "",
           "answers": [
             "I usually drive to work, but I went by bus this morning."
-          ]
+          ],
+          "cue": "🚌 Обычно вы едете на машине, но в это утро поехали на автобусе — соедините через but."
         },
         {
           "num": 7,
           "prompt": "",
           "answers": [
             "Do you want me to come with you, or shall I wait here?"
-          ]
+          ],
+          "cue": "🚏 Предложите выбор: поехать вместе или подождать на месте — соедините через or."
         }
       ]
     },
     {
       "id": "98.2",
       "type": "fill-in",
-      "instruction": "Посмотрите на картинки и закончьте предложения. Используйте and/but/so/because.",
+      "instruction": "Прочитайте описания и закончите предложения. Используйте and/but/so/because.",
       "items": [
         {
           "num": 1,
@@ -113,7 +120,8 @@
               "because it was raining.",
               "because the weather was bad."
             ]
-          ]
+          ],
+          "cue": "🌧️ На улице дождь, и ребята стоят с ракетками у корта."
         },
         {
           "num": 3,
@@ -125,7 +133,8 @@
             [
               "but it was closed."
             ]
-          ]
+          ],
+          "cue": "🏛️ Они пришли к музею, а двери закрыты."
         },
         {
           "num": 4,
@@ -138,7 +147,8 @@
               "so he didn’t eat anything.",
               "so he didn’t want anything to eat."
             ]
-          ]
+          ],
+          "cue": "🍽️ Он только что посмотрел на буфет и прошёл мимо."
         },
         {
           "num": 5,
@@ -151,7 +161,8 @@
               "because there was a lot of traffic.",
               "because the traffic was bad."
             ]
-          ]
+          ],
+          "cue": "🚗 Утром на дороге была пробка, и она опоздала."
         },
         {
           "num": 6,
@@ -164,7 +175,8 @@
               "goodbye, got into her car and drove off.",
               "goodbye, got into her car and drove away."
             ]
-          ]
+          ],
+          "cue": "👋 Она попрощалась, села в машину и уехала."
         }
       ]
     },
@@ -178,42 +190,48 @@
           "prompt": "(and)",
           "modelAnswers": [
             "In the evening I stayed at home and studied."
-          ]
+          ],
+          "cue": "🌆 Про вечер: что вы делали дома и почему."
         },
         {
           "num": 2,
           "prompt": "(because)",
           "modelAnswers": [
             "I went to bed very early because I was tired."
-          ]
+          ],
+          "cue": "🌃 Про то, почему вы легли спать рано."
         },
         {
           "num": 3,
           "prompt": "(but)",
           "modelAnswers": [
             "I went to the cinema, but the film wasn’t very good."
-          ]
+          ],
+          "cue": "🎬 Про кино: куда вы ходили и как вам фильм."
         },
         {
           "num": 4,
           "prompt": "(and)",
           "modelAnswers": [
             "I went to a café and met some friends of mine."
-          ]
+          ],
+          "cue": "☕ Про встречу с друзьями в кафе: что вы там делали вместе."
         },
         {
           "num": 5,
           "prompt": "(so)",
           "modelAnswers": [
             "There was a film on television, so I watched it."
-          ]
+          ],
+          "cue": "📺 Про телевизор: что шло и что вы делали."
         },
         {
           "num": 6,
           "prompt": "(because)",
           "modelAnswers": [
             "I got up in the middle of the night because I couldn’t sleep."
-          ]
+          ],
+          "cue": "🌑 Про бессонную ночь: почему вы не спали."
         }
       ]
     },

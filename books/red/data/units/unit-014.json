@@ -9,7 +9,7 @@
     {
       "id": "14.1",
       "type": "fill-in",
-      "instruction": "Посмотрите на картинки. Где были эти люди вчера в 3 часа дня? Что они делали? Напишите по два предложения к каждой картинке.",
+      "instruction": "Прочитайте описания. Где были эти люди вчера в 3 часа дня? Что они делали? Напишите по два предложения к каждому описанию.",
       "items": [
         {
           "num": 1,
@@ -22,7 +22,8 @@
               "Rachel was at home. She was watching TV."
             ]
           ],
-          "example": true
+          "example": true,
+          "cue": "📺 Рэйчел дома: она сидит перед телевизором, программа идёт."
         },
         {
           "num": 2,
@@ -38,7 +39,8 @@
             [
               "were watching a film"
             ]
-          ]
+          ],
+          "cue": "🎬 Джек и Кейт в зале кинотеатра, на большом экране идёт фильм."
         },
         {
           "num": 3,
@@ -50,7 +52,8 @@
             [
               "was in his car. He was driving."
             ]
-          ]
+          ],
+          "cue": "🚗 Том в своей машине и сам за рулём — он едет по дороге."
         },
         {
           "num": 4,
@@ -62,7 +65,8 @@
             [
               "Tracey was at the station. She was waiting for a train."
             ]
-          ]
+          ],
+          "cue": "🚉 Трейси на вокзале, у платформы, с чемоданом."
         },
         {
           "num": 5,
@@ -74,7 +78,8 @@
             [
               "Mr and Mrs Hall were in the park. They were walking."
             ]
-          ]
+          ],
+          "cue": "🌳 Мистер и миссис Холл в парке, идут по аллее."
         },
         {
           "num": 6,
@@ -87,14 +92,15 @@
               "was in a cafe. I was having a drink with some friends."
             ]
           ],
-          "selfCheck": true
+          "selfCheck": true,
+          "cue": "☕ А вы — напишите, где были вы и что делали вчера в 3 часа дня."
         }
       ]
     },
     {
       "id": "14.2",
       "type": "fill-in",
-      "instruction": "Вчера утром Сара была очень занята. Посмотрите на картинки и закончите предложения.",
+      "instruction": "Вчера утром Сара была очень занята. Прочитайте описания и закончите предложения.",
       "items": [
         {
           "num": 1,
@@ -107,7 +113,8 @@
               "was washing her car."
             ]
           ],
-          "example": true
+          "example": true,
+          "cue": "🚿 На ней резиновые перчатки, на земле ведро и тряпка."
         },
         {
           "num": 2,
@@ -119,7 +126,8 @@
             [
               "was playing tennis"
             ]
-          ]
+          ],
+          "cue": "🎾 Рядом лежит ракетка, на площадке мяч."
         },
         {
           "num": 3,
@@ -134,7 +142,8 @@
               "she was reading a newspaper",
               "she was reading the newspaper"
             ]
-          ]
+          ],
+          "cue": "📰 Она сидит в кресле с газетой в руках."
         },
         {
           "num": 4,
@@ -147,7 +156,8 @@
               "she was cooking",
               "she was cooking lunch"
             ]
-          ]
+          ],
+          "cue": "🍳 На плите кастрюля, рядом разделочная доска с овощами."
         },
         {
           "num": 5,
@@ -159,7 +169,8 @@
             [
               "she was having breakfast"
             ]
-          ]
+          ],
+          "cue": "🍞 На столе стоят тост, джем и чашка чая."
         },
         {
           "num": 6,
@@ -171,7 +182,8 @@
             [
               "she was cleaning the kitchen"
             ]
-          ]
+          ],
+          "cue": "🧹 Она протирает пол тряпкой, на столе посуда."
         }
       ]
     },
@@ -246,7 +258,7 @@
     {
       "id": "14.4",
       "type": "write",
-      "instruction": "Посмотрите на картинку. Вчера днём вы встретили Джо. Что он делал? Напишите утвердительные или отрицательные предложения.",
+      "instruction": "Прочитайте о встрече с Джо. Вчера днём вы встретили его. Что он делал? Напишите утвердительные или отрицательные предложения.",
       "example": [
         1
       ],
@@ -256,56 +268,64 @@
           "prompt": "(wear / a jacket)",
           "answers": [
             "He wasn’t wearing a jacket."
-          ]
+          ],
+          "cue": "🧥 На Джо только футболка и джинсы — куртки нет."
         },
         {
           "num": 2,
           "prompt": "(carry / a bag)",
           "answers": [
             "He was carrying a bag."
-          ]
+          ],
+          "cue": "👜 В одной руке у него тяжёлая сумка из магазина."
         },
         {
           "num": 3,
           "prompt": "(go / to the dentist)",
           "answers": [
             "He wasn’t going to the dentist."
-          ]
+          ],
+          "cue": "🏥 Он шёл в сторону магазина, а не к стоматологу."
         },
         {
           "num": 4,
           "prompt": "(eat / an ice cream)",
           "answers": [
             "He was eating an ice cream."
-          ]
+          ],
+          "cue": "🍦 В руке у него мороженое, он его ест."
         },
         {
           "num": 5,
           "prompt": "(carry / an umbrella)",
           "answers": [
             "He wasn’t carrying an umbrella."
-          ]
+          ],
+          "cue": "☂️ Зонта у него нет, небо ясное."
         },
         {
           "num": 6,
           "prompt": "(go / home)",
           "answers": [
             "He wasn’t going home."
-          ]
+          ],
+          "cue": "🏠 Он шёл от дома к офису, а не домой."
         },
         {
           "num": 7,
           "prompt": "(wear / a hat)",
           "answers": [
             "He was wearing a hat."
-          ]
+          ],
+          "cue": "🧢 На голове у него кепка."
         },
         {
           "num": 8,
           "prompt": "(ride / a bike)",
           "answers": [
             "He wasn’t riding a bicycle."
-          ]
+          ],
+          "cue": "🚲 Он ехал на велосипеде, а не шёл пешком."
         }
       ]
     },

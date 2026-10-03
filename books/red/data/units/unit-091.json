@@ -254,28 +254,32 @@
           "prompt": "Sydney",
           "answers": [
             "Sydney is the largest city in Australia."
-          ]
+          ],
+          "cue": "🏙️ Сидней — самый большой город Австралии."
         },
         {
           "num": 2,
           "prompt": "Everest",
           "answers": [
             "Everest is the highest mountain in the world."
-          ]
+          ],
+          "cue": "🏔️ Эверест — самая высокая гора в мире."
         },
         {
           "num": 3,
           "prompt": "",
           "answers": [
             "Brazil is the largest country in South America."
-          ]
+          ],
+          "cue": "🌎 Бразилия — самая большая страна Южной Америки."
         },
         {
           "num": 4,
           "prompt": "",
           "answers": [
             "Alaska is the largest state in the USA."
-          ]
+          ],
+          "cue": "🦬 Аляска — самый большой штат США."
         },
         {
           "num": 5,
@@ -283,14 +287,16 @@
           "answers": [
             "The Nile is the longest river in Africa.",
             "The Nile is the longest river in the world."
-          ]
+          ],
+          "cue": "🌊 Нил — самая длинная река Африки."
         },
         {
           "num": 6,
           "prompt": "",
           "answers": [
             "Jupiter is the largest planet in the solar system."
-          ]
+          ],
+          "cue": "🪐 Юпитер — самая большая планета Солнечной системы."
         }
       ]
     },

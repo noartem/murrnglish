@@ -61,7 +61,7 @@
     {
       "id": "35.2",
       "type": "write",
-      "instruction": "Is had better OK in these sentences? Change to should where necessary.",
+      "instruction": "Is had better OK in each sentence? Change to should where necessary. If it is correct, write ‘OK’.",
       "items": [
         {
           "num": 1,

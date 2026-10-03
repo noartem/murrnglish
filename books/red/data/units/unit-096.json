@@ -34,7 +34,8 @@
             [
               "still live in Clare Street?"
             ]
-          ]
+          ],
+          "cue": "🏠 Тина живёт на Клер-стрит уже семь лет — не переехала."
         },
         {
           "num": 3,
@@ -46,7 +47,8 @@
             [
               "you still a student?"
             ]
-          ]
+          ],
+          "cue": "🎓 Она по-прежнему учится в университете."
         },
         {
           "num": 4,
@@ -59,7 +61,8 @@
               "Have you still got a motorbike?",
               "Do you still have a motorbike?"
             ]
-          ]
+          ],
+          "cue": "🏍️ Мотоцикл у неё всё тот же, что был пять лет назад."
         },
         {
           "num": 5,
@@ -71,7 +74,8 @@
             [
               "Do you still go to the cinema a lot?"
             ]
-          ]
+          ],
+          "cue": "🎬 Она по-прежнему часто ходит в кино."
         },
         {
           "num": 6,
@@ -83,7 +87,8 @@
             [
               "Do you still want to be a teacher?"
             ]
-          ]
+          ],
+          "cue": "👩‍🏫 Она до сих пор мечтает стать учительницей."
         }
       ]
     },

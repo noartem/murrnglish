@@ -9,8 +9,10 @@
     {
       "id": "90.1",
       "type": "fill-in",
-      "instruction": "Complete these sentences with all, everything or everybody/everyone.",
+      "instruction": "Complete the sentences with all, everything or everybody / everyone.",
       "items": [
+      {"num": 1, "parts": ["It was a good party. ", " had a great time."], "answers": [["Everybody", "Everyone"]], "example": true},
+      {"num": 2, "parts": ["", " I’ve eaten today is a banana."], "answers": [["All"]], "example": true},
         {
           "num": 3,
           "parts": [
@@ -164,8 +166,10 @@
     {
       "id": "90.2",
       "type": "fill-in",
-      "instruction": "Write sentences with whole.",
+      "instruction": "Complete the sentences with whole. Then write items 8 and 9 again with all instead of whole.",
+            "scene": "Items 8 and 9: write the sentence from item 6, and the sentence from item 7, again — this time with all instead of whole.",
       "items": [
+      {"num": 1, "parts": ["I read the book from beginning to end. I read ", " book."], "answers": [["the whole"]], "example": true},
         {
           "num": 2,
           "parts": [
@@ -343,10 +347,11 @@
     {
       "id": "90.4",
       "type": "choice",
-      "instruction": "Which is right?",
+      "instruction": "Read the descriptions and choose the right one.",
       "items": [
         {
           "num": 1,
+          "cue": "💸 Did you spend … I gave you?",
           "options": [
             "the whole money",
             "all the money"
@@ -355,6 +360,7 @@
         },
         {
           "num": 2,
+          "cue": "📅 Eve works … except Sunday.",
           "options": [
             "every day",
             "all days"
@@ -363,6 +369,7 @@
         },
         {
           "num": 3,
+          "cue": "😓 I’m tired. I’ve been working hard … .",
           "options": [
             "all the day",
             "all day"
@@ -371,6 +378,7 @@
         },
         {
           "num": 4,
+          "cue": "🔥 It was a terrible fire. … was destroyed.",
           "options": [
             "Whole building",
             "The whole building"
@@ -379,6 +387,7 @@
         },
         {
           "num": 5,
+          "cue": "🎵 It’s a very sad song. … I hear it, it makes me cry.",
           "options": [
             "Every time",
             "All the time"
@@ -387,6 +396,7 @@
         },
         {
           "num": 6,
+          "cue": "🌧️ I don’t like the weather here. It rains … .",
           "options": [
             "every time",
             "all the time"
@@ -395,6 +405,7 @@
         },
         {
           "num": 7,
+          "cue": "🧳 When I was on holiday, … was stolen.",
           "options": [
             "all my luggage",
             "my whole luggage"

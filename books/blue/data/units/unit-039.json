@@ -1,306 +1,306 @@
 {
- "unit": 39,
- "title": "if I knew … I wish I knew …",
- "pdfPages": [
-  90,
-  91
- ],
- "exercises": [
-  {
-   "id": "39.1",
-   "type": "fill-in",
-   "instruction": "Put the verb into the correct form.",
-   "items": [
+  "unit": 39,
+  "title": "if I knew … I wish I knew …",
+  "pdfPages": [
+    90,
+    91
+  ],
+  "exercises": [
     {
-     "num": 3,
-     "parts": [
-      "(I / help) ",
-      " you if I could, but I'm afraid I can't."
-     ],
-     "answers": [
-      [
-       "I'd help",
-       "I would help"
+      "id": "39.1",
+      "type": "fill-in",
+      "instruction": "Put the verb into the correct form.",
+      "items": [
+        {
+          "num": 3,
+          "parts": [
+            "(I / help) ",
+            " you if I could, but I'm afraid I can't."
+          ],
+          "answers": [
+            [
+              "I'd help",
+              "I would help"
+            ]
+          ]
+        },
+        {
+          "num": 4,
+          "parts": [
+            "This soup isn't very nice. ",
+            " (it / taste) better if it wasn't so salty."
+          ],
+          "answers": [
+            [
+              "It would taste"
+            ]
+          ]
+        },
+        {
+          "num": 5,
+          "parts": [
+            "We live in a city and don't need a car, but we would need one if ",
+            " (we / live) in the country."
+          ],
+          "answers": [
+            [
+              "we lived"
+            ]
+          ]
+        },
+        {
+          "num": 6,
+          "parts": [
+            "If we had the choice, ",
+            " (we / live) in the country."
+          ],
+          "answers": [
+            [
+              "we'd live",
+              "we would live"
+            ]
+          ]
+        },
+        {
+          "num": 7,
+          "parts": [
+            "I'd make a lot of changes if ",
+            " (I / be) the manager of the company."
+          ],
+          "answers": [
+            [
+              "I was",
+              "I were"
+            ]
+          ]
+        },
+        {
+          "num": 8,
+          "parts": [
+            "I wouldn't call someone in the middle of the night if ",
+            " (it / not / be) important."
+          ],
+          "answers": [
+            [
+              "it wasn't",
+              "it weren't"
+            ]
+          ]
+        },
+        {
+          "num": 9,
+          "parts": [
+            "If I were you, ",
+            "(I / not / wait). ",
+            "(I / go) now."
+          ],
+          "answers": [
+            [
+              "I wouldn't wait"
+            ],
+            [
+              "I'd go",
+              "I would go"
+            ]
+          ]
+        },
+        {
+          "num": 10,
+          "parts": [
+            "You're always tired because you go to bed so late. If ",
+            " (you / not / go) to bed so late every night, ",
+            " (you / not / be) tired all the time."
+          ],
+          "answers": [
+            [
+              "you didn't go"
+            ],
+            [
+              "you wouldn't be"
+            ]
+          ]
+        },
+        {
+          "num": 11,
+          "parts": [
+            "I think there are too many cars. If ",
+            " (there / not / be) so many cars, ",
+            " (there / not / be) so much pollution."
+          ],
+          "answers": [
+            [
+              "there weren't"
+            ],
+            [
+              "there wouldn't be"
+            ]
+          ]
+        },
+        {
+          "num": 12,
+          "parts": [
+            "We all need jobs and money, but what ",
+            " (you / do) you ",
+            " if ",
+            " (you / not / have) to work?"
+          ],
+          "answers": [
+            [
+              "would"
+            ],
+            [
+              "do"
+            ],
+            [
+              "you didn't have"
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 4,
-     "parts": [
-      "This soup isn't very nice. ",
-      " (it / taste) better if it wasn't so salty."
-     ],
-     "answers": [
-      [
-       "It would taste"
+      "id": "39.2",
+      "type": "write",
+      "instruction": "Write a sentence with if … for each situation.",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I like these shoes but they're too expensive, so I'm not going to buy them.",
+          "answers": [
+            "I'd buy them if they weren't so expensive.",
+            "I would buy them if they weren't so expensive."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "We'd like to go on holiday, but we can't afford it.",
+          "answers": [
+            "We'd go on holiday if we could afford it.",
+            "We would go on holiday if we could afford it."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "It would be nice to have lunch outside but it's raining, so we can't.",
+          "answers": [
+            "We could have lunch outside if it weren't raining.",
+            "We could have lunch outside if it wasn't raining."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I don't want his advice, and that's why I'm not going to ask for it.",
+          "answers": [
+            "If I wanted his advice, I'd ask for it.",
+            "If I wanted his advice, I would ask for it."
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 5,
-     "parts": [
-      "We live in a city and don't need a car, but we would need one if ",
-      " (we / live) in the country."
-     ],
-     "answers": [
-      [
-       "we lived"
+      "id": "39.3",
+      "type": "write",
+      "instruction": "Write sentences beginning I wish … .",
+      "items": [
+        {
+          "num": 2,
+          "prompt": "I don't have much free time (and I need more).",
+          "answers": [
+            "I wish I had more free time."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "Helen isn't here (and I need to see her).",
+          "answers": [
+            "I wish Helen were here.",
+            "I wish Helen was here."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "It's cold (and I hate cold weather).",
+          "answers": [
+            "I wish it weren't cold.",
+            "I wish it wasn't cold.",
+            "I wish it weren't so cold.",
+            "I wish it wasn't so cold."
+          ]
+        },
+        {
+          "num": 5,
+          "prompt": "I live in a big city (and I don't like it).",
+          "answers": [
+            "I wish I didn't live in a big city."
+          ]
+        },
+        {
+          "num": 6,
+          "prompt": "I can't find my phone (which is a problem).",
+          "answers": [
+            "I wish I could find my phone."
+          ]
+        },
+        {
+          "num": 7,
+          "prompt": "I'm not feeling well (which isn't good).",
+          "answers": [
+            "I wish I was feeling well.",
+            "I wish I were feeling well.",
+            "I wish I was feeling better.",
+            "I wish I were feeling better."
+          ]
+        },
+        {
+          "num": 8,
+          "prompt": "I have to get up early tomorrow (but I'd prefer to sleep late).",
+          "answers": [
+            "I wish I didn't have to get up early tomorrow."
+          ]
+        },
+        {
+          "num": 9,
+          "prompt": "I don't know much about science (and I should know more).",
+          "answers": [
+            "I wish I knew more about science."
+          ]
+        }
       ]
-     ]
     },
     {
-     "num": 6,
-     "parts": [
-      "If we had the choice, ",
-      " (we / live) in the country."
-     ],
-     "answers": [
-      [
-       "we'd live",
-       "we would live"
+      "id": "39.4",
+      "type": "self-check",
+      "instruction": "Write your own sentences beginning I wish … .",
+      "items": [
+        {
+          "num": 1,
+          "prompt": "(somewhere you'd like to be now – on the beach, in New York, in bed etc.)",
+          "modelAnswers": [
+            "I wish I was at home."
+          ]
+        },
+        {
+          "num": 2,
+          "prompt": "(something you'd like to have – a motorbike, more friends, lots of money etc.)",
+          "modelAnswers": [
+            "I wish I had a big garden."
+          ]
+        },
+        {
+          "num": 3,
+          "prompt": "(something you'd like to be able to do – sing, travel more, cook etc.)",
+          "modelAnswers": [
+            "I wish I could tell jokes."
+          ]
+        },
+        {
+          "num": 4,
+          "prompt": "(something you'd like to be – famous, more intelligent, good at sport etc.)",
+          "modelAnswers": [
+            "I wish I was taller."
+          ]
+        }
       ]
-     ]
-    },
-    {
-     "num": 7,
-     "parts": [
-      "I'd make a lot of changes if ",
-      " (I / be) the manager of the company."
-     ],
-     "answers": [
-      [
-       "I was",
-       "I were"
-      ]
-     ]
-    },
-    {
-     "num": 8,
-     "parts": [
-      "I wouldn't call someone in the middle of the night if ",
-      " (it / not / be) important."
-     ],
-     "answers": [
-      [
-       "it wasn't",
-       "it weren't"
-      ]
-     ]
-    },
-    {
-     "num": 9,
-     "parts": [
-      "If I were you, ",
-      "(I / not / wait). ",
-      "(I / go) now."
-     ],
-     "answers": [
-      [
-       "I wouldn't wait"
-      ],
-      [
-       "I'd go",
-       "I would go"
-      ]
-     ]
-    },
-    {
-     "num": 10,
-     "parts": [
-      "You're always tired because you go to bed so late. If ",
-      " (you / not / go) to bed so late every night, ",
-      " (you / not / be) tired all the time."
-     ],
-     "answers": [
-      [
-       "you didn't go"
-      ],
-      [
-       "you wouldn't be"
-      ]
-     ]
-    },
-    {
-     "num": 11,
-     "parts": [
-      "I think there are too many cars. If ",
-      " (there / not / be) so many cars, ",
-      " (there / not / be) so much pollution."
-     ],
-     "answers": [
-      [
-       "there weren't"
-      ],
-      [
-       "there wouldn't be"
-      ]
-     ]
-    },
-    {
-     "num": 12,
-     "parts": [
-      "We all need jobs and money, but what ",
-      " (you / do) you ",
-      " if ",
-      " (you / not / have) to work?"
-     ],
-     "answers": [
-      [
-       "would"
-      ],
-      [
-       "do"
-      ],
-      [
-       "you didn't have"
-      ]
-     ]
     }
-   ]
-  },
-  {
-   "id": "39.2",
-   "type": "write",
-   "instruction": "Write a sentence with if … for each situation.",
-   "items": [
-    {
-     "num": 2,
-     "prompt": "I like these shoes but they're too expensive, so I'm not going to buy them.",
-     "answers": [
-      "I'd buy them if they weren't so expensive.",
-      "I would buy them if they weren't so expensive."
-     ]
-    },
-    {
-     "num": 3,
-     "prompt": "We'd like to go on holiday, but we can't afford it.",
-     "answers": [
-      "We'd go on holiday if we could afford it.",
-      "We would go on holiday if we could afford it."
-     ]
-    },
-    {
-     "num": 4,
-     "prompt": "It would be nice to have lunch outside but it's raining, so we can't.",
-     "answers": [
-      "We could have lunch outside if it weren't raining.",
-      "We could have lunch outside if it wasn't raining."
-     ]
-    },
-    {
-     "num": 5,
-     "prompt": "I don't want his advice, and that's why I'm not going to ask for it.",
-     "answers": [
-      "If I wanted his advice, I'd ask for it.",
-      "If I wanted his advice, I would ask for it."
-     ]
-    }
-   ]
-  },
-  {
-   "id": "39.3",
-   "type": "write",
-   "instruction": "Write sentences beginning I wish … .",
-   "items": [
-    {
-     "num": 2,
-     "prompt": "I don't have much free time (and I need more).",
-     "answers": [
-      "I wish I had more free time."
-     ]
-    },
-    {
-     "num": 3,
-     "prompt": "Helen isn't here (and I need to see her).",
-     "answers": [
-      "I wish Helen were here.",
-      "I wish Helen was here."
-     ]
-    },
-    {
-     "num": 4,
-     "prompt": "It's cold (and I hate cold weather).",
-     "answers": [
-      "I wish it weren't cold.",
-      "I wish it wasn't cold.",
-      "I wish it weren't so cold.",
-      "I wish it wasn't so cold."
-     ]
-    },
-    {
-     "num": 5,
-     "prompt": "I live in a big city (and I don't like it).",
-     "answers": [
-      "I wish I didn't live in a big city."
-     ]
-    },
-    {
-     "num": 6,
-     "prompt": "I can't find my phone (which is a problem).",
-     "answers": [
-      "I wish I could find my phone."
-     ]
-    },
-    {
-     "num": 7,
-     "prompt": "I'm not feeling well (which isn't good).",
-     "answers": [
-      "I wish I was feeling well.",
-      "I wish I were feeling well.",
-      "I wish I was feeling better.",
-      "I wish I were feeling better."
-     ]
-    },
-    {
-     "num": 8,
-     "prompt": "I have to get up early tomorrow (but I'd prefer to sleep late).",
-     "answers": [
-      "I wish I didn't have to get up early tomorrow."
-     ]
-    },
-    {
-     "num": 9,
-     "prompt": "I don't know much about science (and I should know more).",
-     "answers": [
-      "I wish I knew more about science."
-     ]
-    }
-   ]
-  },
-  {
-   "id": "39.4",
-   "type": "self-check",
-   "instruction": "Write your own sentences beginning I wish … .",
-   "items": [
-    {
-     "num": 1,
-     "prompt": "(somewhere you'd like to be now – on the beach, in New York, in bed etc.)",
-     "modelAnswers": [
-      "I wish I was at home."
-     ]
-    },
-    {
-     "num": 2,
-     "prompt": "(something you'd like to have – a motorbike, more friends, lots of money etc.)",
-     "modelAnswers": [
-      "I wish I had a big garden."
-     ]
-    },
-    {
-     "num": 3,
-     "prompt": "(something you'd like to be able to do – sing, travel more, cook etc.)",
-     "modelAnswers": [
-      "I wish I could tell jokes."
-     ]
-    },
-    {
-     "num": 4,
-     "prompt": "(something you'd like to be – famous, more intelligent, good at sport etc.)",
-     "modelAnswers": [
-      "I wish I was taller."
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }

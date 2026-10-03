@@ -9,10 +9,11 @@
     {
       "id": "45.1",
       "type": "write",
-      "instruction": "Write these sentences in another way, beginning as shown. Use the underlined word each time.",
+      "instruction": "Write each sentence in another way. Begin with the words in the description.",
       "items": [
         {
           "num": 1,
+          "cue": "➡️ Begin: The strike … (expected)",
           "prompt": "It is expected that the strike will end soon.",
           "answers": [
             "The strike is expected to end soon."
@@ -20,6 +21,7 @@
         },
         {
           "num": 2,
+          "cue": "➡️ Begin: Many people … (reported)",
           "prompt": "It is reported that many people are homeless after the floods.",
           "answers": [
             "Many people are reported to be homeless after the floods."
@@ -27,6 +29,7 @@
         },
         {
           "num": 3,
+          "cue": "➡️ Begin: The thieves … (thought)",
           "prompt": "It is thought that the thieves got in through a window in the roof.",
           "answers": [
             "The thieves are thought to have got in through a window in the roof."
@@ -34,6 +37,7 @@
         },
         {
           "num": 4,
+          "cue": "➡️ Begin: The driver … (alleged)",
           "prompt": "It is alleged that the driver of the car was driving at 110 miles an hour.",
           "answers": [
             "The driver (of the car) is alleged to have been driving at 110 miles an hour.",
@@ -42,6 +46,7 @@
         },
         {
           "num": 5,
+          "cue": "➡️ Begin: The building … (reported)",
           "prompt": "It is reported that the building has been badly damaged by the fire.",
           "answers": [
             "The building is reported to have been badly damaged by the fire."
@@ -49,6 +54,7 @@
         },
         {
           "num": 6,
+          "cue": "➡️ Begin: The company … (said)",
           "prompt": "It is said that the company is losing a lot of money.",
           "answers": [
             "The company is said to be losing a lot of money."
@@ -56,6 +62,7 @@
         },
         {
           "num": 7,
+          "cue": "➡️ Begin: The company … (believed)",
           "prompt": "It is believed that the company lost a lot of money last year.",
           "answers": [
             "The company is believed to have lost a lot of money last year."
@@ -63,6 +70,7 @@
         },
         {
           "num": 8,
+          "cue": "➡️ Begin: The company … (expected)",
           "prompt": "It is expected that the company will make a loss this year.",
           "answers": [
             "The company is expected to make a loss this year."
@@ -157,7 +165,16 @@
     {
       "id": "45.3",
       "type": "write",
-      "instruction": "Write sentences using supposed to be + the following:",
+      "instruction": "Write sentences using supposed to be + one of these:",
+      "wordBank": [
+        "on a diet",
+        "a flower",
+        "my friend",
+        "a joke",
+        "open every day",
+        "a secret",
+        "working"
+      ],
       "items": [
         {
           "num": 1,
@@ -217,10 +234,19 @@
     {
       "id": "45.4",
       "type": "write",
-      "instruction": "Write sentences with supposed to … or not supposed to … . Choose from the following verbs:",
+      "instruction": "Read the descriptions and write sentences with supposed to … or not supposed to … . Choose from:",
+      "wordBank": [
+        "depart",
+        "lift",
+        "park",
+        "phone",
+        "put",
+        "start"
+      ],
       "items": [
         {
           "num": 1,
+          "cue": "🅿️ You … your car here. It’s private parking only.",
           "prompt": "(park)",
           "answers": [
             "You're not supposed to park your car here.",
@@ -229,6 +255,7 @@
         },
         {
           "num": 2,
+          "cue": "⏰ We … work at 8.15, but we rarely do anything before 8.30.",
           "prompt": "(start)",
           "answers": [
             "We're supposed to start work at 8.15, but we rarely do anything before 8.30.",
@@ -237,6 +264,7 @@
         },
         {
           "num": 3,
+          "cue": "📞 I … Helen last night, but I completely forgot.",
           "prompt": "(phone)",
           "answers": [
             "I was supposed to phone Helen last night, but I completely forgot."
@@ -244,6 +272,7 @@
         },
         {
           "num": 4,
+          "cue": "🚪 This door is a fire exit. We … anything in front of it.",
           "prompt": "(put)",
           "answers": [
             "This door is a fire exit. We aren't supposed to put anything in front of it.",
@@ -253,6 +282,7 @@
         },
         {
           "num": 5,
+          "cue": "✈️ My flight … at 10.15, but it didn’t leave until 11.30.",
           "prompt": "(depart)",
           "answers": [
             "My flight was supposed to depart at 10.15, but it didn't leave until 11.30."
@@ -260,6 +290,7 @@
         },
         {
           "num": 6,
+          "cue": "🏋️ Jonathan has a problem with his back. He … anything heavy.",
           "prompt": "(lift)",
           "answers": [
             "Jonathan has a problem with his back. He isn't supposed to lift anything heavy.",

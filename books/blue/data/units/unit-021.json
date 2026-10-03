@@ -116,10 +116,11 @@
     {
       "id": "21.2",
       "type": "fill-in",
-      "instruction": "Read the situations and write sentences with I think I’ll … or I don’t think I’ll … .",
+      "instruction": "Read the descriptions and write sentences with I think I’ll … or I don’t think I’ll … .",
       "items": [
         {
           "num": 1,
+          "cue": "🪟 It’s a bit cold and the window is open. You decide to close it. You say:",
           "parts": [
             "It’s cold with the window open. ",
             "."
@@ -133,6 +134,7 @@
         },
         {
           "num": 2,
+          "cue": "🥱 You’re tired and it’s getting late. You decide to go to bed. You say:",
           "parts": [
             "I’m tired, so ",
             ". Goodnight!"
@@ -145,6 +147,7 @@
         },
         {
           "num": 3,
+          "cue": "☀️ The weather is nice and you need some exercise. You decide to go for a walk. You say:",
           "parts": [
             "It’s a lovely morning. ",
             ". Do you want to come too?"
@@ -157,6 +160,7 @@
         },
         {
           "num": 4,
+          "cue": "🍽️ You were going to have lunch, but now you decide not to eat anything. You say:",
           "parts": [
             "I don’t feel hungry any more. ",
             " lunch."
@@ -169,6 +173,7 @@
         },
         {
           "num": 5,
+          "cue": "🏊 You planned to go swimming today. Now you decide not to go. You say:",
           "parts": [
             "I’ve got a lot to do, so ",
             " today."
@@ -184,10 +189,11 @@
     {
       "id": "21.3",
       "type": "choice",
-      "instruction": "Which is correct?",
+      "instruction": "Read the sentences in the descriptions. Which is correct in the gap?",
       "items": [
         {
           "num": 1,
+          "cue": "📞 ‘Did you call Max?’ ‘Oh no, I forgot. ___ him now.’",
           "options": [
             "I call",
             "I’ll call"
@@ -196,6 +202,7 @@
         },
         {
           "num": 2,
+          "cue": "🎾 I can’t meet you tomorrow morning. ___ tennis.",
           "options": [
             "I’m playing",
             "I’ll play"
@@ -204,6 +211,7 @@
         },
         {
           "num": 3,
+          "cue": "🏨 ‘___ you outside the hotel at 10.30, OK?’ ‘Yes, that’s fine.’",
           "options": [
             "I meet",
             "I’ll meet"
@@ -212,6 +220,7 @@
         },
         {
           "num": 4,
+          "cue": "🚪 ‘Please don’t go yet.’ ‘OK, ___ a little longer, but I have to go soon.’",
           "options": [
             "I’m staying",
             "I’ll stay"
@@ -220,6 +229,7 @@
         },
         {
           "num": 5,
+          "cue": "🎉 ___ a party next Saturday. I hope you can come.",
           "options": [
             "I’m having",
             "I’ll have"
@@ -228,6 +238,7 @@
         },
         {
           "num": 6,
+          "cue": "🔒 ‘Remember to lock the door when you go out.’ ‘OK. ___.’",
           "options": [
             "I don’t forget",
             "I won’t forget"
@@ -236,6 +247,7 @@
         },
         {
           "num": 7,
+          "cue": "💒 ‘Do you have any plans for the weekend?’ ‘Yes, ___ to a wedding.’",
           "options": [
             "we’re going",
             "we’ll go"
@@ -244,6 +256,7 @@
         },
         {
           "num": 8,
+          "cue": "🌙 ‘___ anything tomorrow evening?’ ‘No, I’m free. Why?’",
           "options": [
             "Are you doing",
             "Will you do"
@@ -252,6 +265,7 @@
         },
         {
           "num": 9,
+          "cue": "🙏 ‘___ something for me?’ ‘It depends. What do you want me to do?’",
           "options": [
             "Do you do",
             "Will you do"
@@ -260,6 +274,7 @@
         },
         {
           "num": 10,
+          "cue": "🚗 ‘___ to work by car?’ ‘Not usually. I prefer to walk.’",
           "options": [
             "Do you go",
             "Will you go"
@@ -268,6 +283,7 @@
         },
         {
           "num": 11,
+          "cue": "🤐 I asked Sue what happened, but she ___ me.",
           "options": [
             "doesn’t tell",
             "won’t tell"
@@ -276,6 +292,7 @@
         },
         {
           "num": 12,
+          "cue": "🏃 I don’t know if I can win the race tomorrow, but ___ my best.",
           "options": [
             "I’m doing",
             "I’ll do"
@@ -287,10 +304,11 @@
     {
       "id": "21.4",
       "type": "fill-in",
-      "instruction": "What do you say in these situations? Write sentences with shall I … ? or shall we … ?",
+      "instruction": "Read the descriptions. What do you say? Write sentences with shall I … ? or shall we … ?",
       "items": [
         {
           "num": 1,
+          "cue": "🌆 You and a friend want to do something this evening, but you don’t know what. You say:",
           "parts": [
             "",
             ""
@@ -304,6 +322,7 @@
         },
         {
           "num": 2,
+          "cue": "🏖️ You and a friend are going on holiday together, but you have to decide where.",
           "parts": [
             "You ask your friend: ",
             "?"
@@ -316,6 +335,7 @@
         },
         {
           "num": 3,
+          "cue": "🧥 You try on a jacket in a shop. You’re not sure whether to buy it.",
           "parts": [
             "You ask a friend for advice: ",
             "? What do you think?"
@@ -328,6 +348,7 @@
         },
         {
           "num": 4,
+          "cue": "🚕 You and a friend are going out. You have to decide: get a taxi, or walk?",
           "parts": [
             "You ask your friend: ",
             " or ",
@@ -344,6 +365,7 @@
         },
         {
           "num": 5,
+          "cue": "🎁 It’s Helen’s birthday soon. You want to give her a present, but what?",
           "parts": [
             "You ask a friend: What ",
             " Helen (for her birthday)?"
@@ -356,6 +378,7 @@
         },
         {
           "num": 6,
+          "cue": "🕥 You’re meeting a friend tomorrow, but you have to decide what time.",
           "parts": [
             "You say: ",
             "? Is 10.30 OK for you?"

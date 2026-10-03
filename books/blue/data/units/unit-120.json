@@ -9,7 +9,7 @@
   {
    "id": "120.1",
    "type": "fill-in",
-   "instruction": "Complete the sentences with by.",
+   "instruction": "Complete each sentence with by. Not later than = by.",
    "items": [
     {
      "num": 2,
@@ -227,7 +227,7 @@
   {
    "id": "120.3",
    "type": "self-check",
-   "instruction": "Use your own ideas to complete these sentences. Use by or until.",
+   "instruction": "Use your own ideas to complete each sentence. Use by or until.",
    "items": [
     {
      "num": 1,
@@ -283,10 +283,11 @@
   {
    "id": "120.4",
    "type": "fill-in",
-   "instruction": "Read the situations and complete the sentences using By the time … .",
+   "instruction": "Read each description and complete the sentence using By the time … .",
    "items": [
     {
      "num": 2,
+     "cue": "🚆 You meant to catch an early train, but it took you much longer than expected to reach the station.",
      "parts": [
       "",
       ", my train had already left."
@@ -299,6 +300,7 @@
     },
     {
      "num": 3,
+     "cue": "🕐 You finished work much later than you had planned.",
      "parts": [
       "",
       ", it was too late to go shopping."
@@ -311,6 +313,7 @@
     },
     {
      "num": 4,
+     "cue": "🚗 You saw two men behaving suspiciously and called the police, but they took a while to arrive.",
      "parts": [
       "",
       ", the two men had disappeared."
@@ -323,6 +326,7 @@
     },
     {
      "num": 5,
+     "cue": "⛰️ You climbed a mountain, and the climb took much longer than you hoped.",
      "parts": [
       "",
       ", we had to come down again."

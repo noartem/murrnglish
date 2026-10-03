@@ -9,7 +9,8 @@
     {
       "id": "49.1",
       "type": "write",
-      "instruction": "Ask Joe questions.",
+      "instruction": "You are getting to know Joe. Ask him the questions in brackets. Read his answers in the scene first.",
+      "scene": "🗣️ Joe, a neighbour you have just met. Here is what he tells you:\nWhere do you live? — In Manchester.\nWere you born there? — No, I was born in London.\nAre you married? — Yes.\nHow long have you been married? — Seventeen years.\nWhat do you do? — I'm a journalist.\nWhat does your wife do? — She's a doctor.\nDo you have any children? — Yes, two boys.\nHow old are they? — Twelve and fifteen.",
       "items": [
         {
           "num": 2,

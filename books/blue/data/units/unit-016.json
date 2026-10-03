@@ -1,74 +1,168 @@
 {
   "unit": 16,
   "title": "Past perfect continuous (I had been doing)",
-  "pdfPages": [44, 45],
+  "pdfPages": [
+    44,
+    45
+  ],
   "exercises": [
     {
       "id": "16.1",
       "type": "write",
-      "instruction": "Read the situations and make sentences using the words in brackets.",
+      "instruction": "Read the descriptions of the situations and make sentences using the words in brackets.",
       "items": [
         {
           "num": 1,
+          "cue": "😩 Tom was exhausted when he got home.",
           "prompt": "(He / work / hard all day)",
-          "answers": ["He\u2019d been working hard all day.", "He had been working hard all day."]
+          "answers": [
+            "He’d been working hard all day.",
+            "He had been working hard all day."
+          ]
         },
         {
           "num": 2,
+          "cue": "⚽ The children came into the house with a ball. They were both worn out.",
           "prompt": "(They / play / football)",
-          "answers": ["They\u2019d been playing football.", "They had been playing football."]
+          "answers": [
+            "They’d been playing football.",
+            "They had been playing football."
+          ]
         },
         {
           "num": 3,
+          "cue": "🧳 I was disappointed when I had to cancel my holiday.",
           "prompt": "(I / look / forward to it)",
-          "answers": ["I\u2019d been looking forward to it.", "I had been looking forward to it."]
+          "answers": [
+            "I’d been looking forward to it.",
+            "I had been looking forward to it."
+          ]
         },
         {
           "num": 4,
+          "cue": "🌙 Anna woke up in the middle of the night, frightened and confused.",
           "prompt": "(She / have / a bad dream)",
-          "answers": ["She\u2019d been having a bad dream.", "She had been having a bad dream."]
+          "answers": [
+            "She’d been having a bad dream.",
+            "She had been having a bad dream."
+          ]
         },
         {
           "num": 5,
+          "cue": "📺 When I got home, Mark was sitting in front of the TV. He had just turned it off.",
           "prompt": "(He / watch / a film)",
-          "answers": ["He\u2019d been watching a film.", "He had been watching a film."]
+          "answers": [
+            "He’d been watching a film.",
+            "He had been watching a film."
+          ]
         },
         {
           "num": 6,
+          "cue": "🚏 The people at the bus stop were getting impatient. The bus was very late.",
           "prompt": "(They / wait / a long time)",
-          "answers": ["They\u2019d been waiting a long time.", "They had been waiting a long time."]
+          "answers": [
+            "They’d been waiting a long time.",
+            "They had been waiting a long time."
+          ]
         }
       ]
     },
     {
       "id": "16.2",
       "type": "fill-in",
-      "instruction": "Read the situations and complete the sentences.",
+      "instruction": "Read the descriptions of the situations and complete the sentences.",
       "items": [
         {
           "num": 1,
-          "parts": ["(We / play) ", " for half an hour when ", " (it / start) to rain."],
-          "answers": [["We\u2019d been playing", "We had been playing"], ["it started"]]
+          "cue": "🎾 We played tennis yesterday, but we didn’t finish the game.",
+          "parts": [
+            "(We / play) ",
+            " for half an hour when ",
+            " (it / start) to rain."
+          ],
+          "answers": [
+            [
+              "We’d been playing",
+              "We had been playing"
+            ],
+            [
+              "it started"
+            ]
+          ]
         },
         {
           "num": 2,
-          "parts": ["(I / wait) ", " for 20 minutes when ", " (I / realise) that ", " (I / be) in the wrong restaurant."],
-          "answers": [["I\u2019d been waiting", "I had been waiting"], ["I realised"], ["I was"]]
+          "cue": "🍽️ I’d arranged to meet Tom in a restaurant. I got there and waited for him.",
+          "parts": [
+            "(I / wait) ",
+            " for 20 minutes when ",
+            " (I / realise) that ",
+            " (I / be) in the wrong restaurant."
+          ],
+          "answers": [
+            [
+              "I’d been waiting",
+              "I had been waiting"
+            ],
+            [
+              "I realised"
+            ],
+            [
+              "I was"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["At the time the company ", " (go) out of business, Sarah ", " (work) there for twelve years."],
-          "answers": [["went"], ["had been working", "had worked"]]
+          "cue": "🏢 Sarah worked for a company for a long time. The company doesn’t exist any more.",
+          "parts": [
+            "At the time the company ",
+            " (go) out of business, Sarah ",
+            " (work) there for twelve years."
+          ],
+          "answers": [
+            [
+              "went"
+            ],
+            [
+              "had been working",
+              "had worked"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["The orchestra ", " (play) for about ten minutes when a man in the audience suddenly ", " (start) shouting."],
-          "answers": [["had been playing"], ["started"]]
+          "cue": "🎻 I went to a concert. Soon after the orchestra began playing, something strange happened.",
+          "parts": [
+            "The orchestra ",
+            " (play) for about ten minutes when a man in the audience suddenly ",
+            " (start) shouting."
+          ],
+          "answers": [
+            [
+              "had been playing"
+            ],
+            [
+              "started"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["I began walking along the road. I ", " when ", "."],
-          "answers": [["I\u2019d been walking for about ten minutes"], ["a car suddenly stopped just behind me"]]
+          "cue": "✍️ Your own sentence. The key has one version: you’d walked for about ten minutes, and then a car suddenly stopped just behind you.",
+          "parts": [
+            "I began walking along the road. I ",
+            " when ",
+            "."
+          ],
+          "answers": [
+            [
+              "I’d been walking for about ten minutes"
+            ],
+            [
+              "a car suddenly stopped just behind me"
+            ]
+          ]
         }
       ]
     },
@@ -79,67 +173,112 @@
       "items": [
         {
           "num": 1,
-          "options": ["Our neighbours were having a party.", "Our neighbours had been having a party."],
+          "cue": "🎉 It was noisy next door last night.",
+          "options": [
+            "Our neighbours were having a party.",
+            "Our neighbours had been having a party."
+          ],
           "answer": 0
         },
         {
           "num": 2,
-          "options": ["We were travelling for more than 24 hours.", "We\u2019d been travelling for more than 24 hours."],
+          "cue": "😴 At the end of our journey we were extremely tired.",
+          "options": [
+            "We were travelling for more than 24 hours.",
+            "We’d been travelling for more than 24 hours."
+          ],
           "answer": 1
         },
         {
           "num": 3,
-          "options": ["He was looking for his contact lens.", "He\u2019d been looking for his contact lens."],
+          "cue": "🔍 James was on his hands and knees on the floor.",
+          "options": [
+            "He was looking for his contact lens.",
+            "He’d been looking for his contact lens."
+          ],
           "answer": 0
         },
         {
           "num": 4,
-          "options": ["She was running.", "She\u2019d been running."],
+          "cue": "😮‍💨 Sue was sitting on the ground, out of breath.",
+          "options": [
+            "She was running.",
+            "She’d been running."
+          ],
           "answer": 1
         },
         {
           "num": 5,
-          "options": ["He was walking very fast and I had difficulty keeping up with him.", "He\u2019d been walking very fast and I had difficulty keeping up with him."],
+          "cue": "🚶 John and I went for a walk.",
+          "options": [
+            "He was walking very fast and I had difficulty keeping up with him.",
+            "He’d been walking very fast and I had difficulty keeping up with him."
+          ],
           "answer": 0
         },
         {
           "num": 6,
-          "options": ["I\u2019ve had it for a very long time.", "I\u2019d had it for a very long time."],
+          "cue": "🚗 I was sad when I sold my car.",
+          "options": [
+            "I’ve had it for a very long time.",
+            "I’d had it for a very long time."
+          ],
           "answer": 1
         },
         {
           "num": 7,
-          "options": ["I was going there for many years.", "I\u2019d been going there for many years."],
+          "cue": "☕ I was sad when my local café closed.",
+          "options": [
+            "I was going there for many years.",
+            "I’d been going there for many years."
+          ],
           "answer": 1
         },
         {
           "num": 8,
-          "options": ["I\u2019ve been training for it every day.", "I\u2019d been training for it every day."],
+          "cue": "🏃 I’m running a marathon next month.",
+          "options": [
+            "I’ve been training for it every day.",
+            "I’d been training for it every day."
+          ],
           "answer": 0
         },
         {
           "num": 9,
+          "cue": "⏰ I’d arranged to meet Kate, but I was late. When I finally arrived, …",
           "options": [
             "she was waiting for me. She was annoyed because she was waiting such a long time",
-            "she was waiting for me. She was annoyed because she\u2019d been waiting such a long time",
-            "she\u2019d been waiting for me. She was annoyed because she was waiting such a long time",
-            "she\u2019d been waiting for me. She was annoyed because she\u2019d been waiting such a long time"
+            "she was waiting for me. She was annoyed because she’d been waiting such a long time",
+            "she’d been waiting for me. She was annoyed because she was waiting such a long time",
+            "she’d been waiting for me. She was annoyed because she’d been waiting such a long time"
           ],
           "answer": 1
         },
         {
           "num": "10a",
-          "options": ["he was already working there.", "he\u2019d already been working there."],
+          "cue": "🏢 Joe and I work for the same company, and he joined it before me. When I started a few years ago, …",
+          "options": [
+            "he was already working there.",
+            "he’d already been working there."
+          ],
           "answer": 0
         },
         {
           "num": "10b",
-          "options": ["Joe was already working there for two years.", "Joe had already been working there for two years."],
+          "cue": "🏢 I started at the company a few years ago. At the time I started, …",
+          "options": [
+            "Joe was already working there for two years.",
+            "Joe had already been working there for two years."
+          ],
           "answer": 1
         },
         {
           "num": "10c",
-          "options": ["He\u2019s been working there a long time now.", "He\u2019d been working there a long time now."],
+          "cue": "🏢 Joe still works for the company.",
+          "options": [
+            "He’s been working there a long time now.",
+            "He’d been working there a long time now."
+          ],
           "answer": 0
         }
       ]

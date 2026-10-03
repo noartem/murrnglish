@@ -236,7 +236,16 @@
     {
       "id": "22.3",
       "type": "fill-in",
-      "instruction": "Write questions using do you think … will … ? + the following:",
+      "instruction": "Write questions using do you think … will … ? Choose from:",
+      "wordBank": [
+        "be back",
+        "cost",
+        "end",
+        "get married",
+        "happen",
+        "like",
+        "rain"
+      ],
       "items": [
         {
           "num": 1,
@@ -372,10 +381,11 @@
     {
       "id": "22.5",
       "type": "choice",
-      "instruction": "Which is better in these sentences?",
+      "instruction": "Read the sentences in the descriptions. Which is better in the gap?",
       "items": [
         {
           "num": 1,
+          "cue": "📅 Lisa isn’t free on Saturday. ___.",
           "options": [
             "She’ll work",
             "She’s working"
@@ -384,6 +394,7 @@
         },
         {
           "num": 2,
+          "cue": "🌌 It was an amazing experience. ___.",
           "options": [
             "I never forget it",
             "I’ll never forget it"
@@ -392,6 +403,7 @@
         },
         {
           "num": 3,
+          "cue": "😂 Something very funny happened. ___ when I tell you about it.",
           "options": [
             "You’re laughing",
             "You’ll laugh"
@@ -400,6 +412,7 @@
         },
         {
           "num": 4,
+          "cue": "🎉 ___ to a party tomorrow night. Would you like to come too?",
           "options": [
             "I’ll go",
             "I’m going"
@@ -408,6 +421,7 @@
         },
         {
           "num": 5,
+          "cue": "🏆 Who do you think ___ the game tomorrow?",
           "options": [
             "will win",
             "is winning"
@@ -416,6 +430,7 @@
         },
         {
           "num": 6,
+          "cue": "🚪 I can’t meet you this evening. A friend of mine ___ to see me.",
           "options": [
             "will come",
             "is coming"
@@ -424,6 +439,7 @@
         },
         {
           "num": 7,
+          "cue": "🐕 Don’t be afraid of the dog. It ___ you.",
           "options": [
             "won’t hurt",
             "isn’t hurting"
@@ -432,6 +448,7 @@
         },
         {
           "num": 8,
+          "cue": "🔘 ___ if I press this button?",
           "options": [
             "What’s happening",
             "What will happen"
@@ -440,6 +457,7 @@
         },
         {
           "num": 9,
+          "cue": "🇮🇹 ‘Have you decided where to go for your holidays?’ ‘Yes, ___ to Italy.’",
           "options": [
             "we’ll go",
             "we’re going"

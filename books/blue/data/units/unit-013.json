@@ -1,84 +1,173 @@
 {
   "unit": 13,
   "title": "Present perfect and past 1 (I have done and I did)",
-  "pdfPages": [38, 39],
+  "pdfPages": [
+    38,
+    39
+  ],
   "exercises": [
     {
       "id": "13.1",
       "type": "fill-in",
-      "instruction": "Complete the sentences. Use the present perfect where possible. Otherwise use the past simple.",
+      "instruction": "Read the descriptions and complete the sentences. Use the present perfect where possible. Otherwise use the past simple.",
       "items": [
         {
+          "num": 1,
+          "cue": "🚪 Someone stands at their front door, searching every pocket: “I can’t get in.”",
+          "parts": [
+            "I ",
+            " (lose) my key."
+          ],
+          "answers": [
+            [
+              "’ve lost"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 2,
-          "parts": ["Everybody ", " (go) home."],
-          "answers": [["has gone"]]
+          "cue": "🏢 It’s evening. The lights are off and the office is empty now.",
+          "parts": [
+            "Everybody ",
+            " (go) home."
+          ],
+          "answers": [
+            [
+              "has gone"
+            ]
+          ]
         },
         {
           "num": 3,
-          "parts": ["I ", " (forget)."],
-          "answers": [["forgot"]]
+          "cue": "📵 “I meant to call you last night, but…”",
+          "parts": [
+            "I ",
+            " (forget)."
+          ],
+          "answers": [
+            [
+              "forgot"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["Helen ", " (go) to New York for a holiday, but she's back home in London now."],
-          "answers": [["went"]]
+          "cue": "🧳 Helen is unpacking her suitcase at home in London after a trip.",
+          "parts": [
+            "Helen ",
+            " (go) to New York for a holiday, but she's back home in London now."
+          ],
+          "answers": [
+            [
+              "went"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Yes, I ", " (have) a headache, but it's OK now."],
-          "answers": [["had"]]
+          "cue": "💬 A friend asks: “Are you OK?” You felt bad earlier, but you’re fine now.",
+          "parts": [
+            "Yes, I ",
+            " (have) a headache, but it's OK now."
+          ],
+          "answers": [
+            [
+              "had"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["Our car ", " (break) down."],
-          "answers": [["has broken"]]
+          "cue": "🚗 Two people stand next to a car with its bonnet open: “Can you help us?”",
+          "parts": [
+            "Our car ",
+            " (break) down."
+          ],
+          "answers": [
+            [
+              "has broken"
+            ]
+          ]
         }
       ]
     },
     {
       "id": "13.2",
       "type": "write",
-      "instruction": "Are the underlined parts of these sentences OK? Correct them where necessary.",
+      "instruction": "Are the underlined parts of the sentences OK? Correct them where necessary.",
       "items": [
         {
+          "num": 1,
+          "prompt": "Did you hear about Sophie? [She’s given up] her job.",
+          "answers": [
+            "OK"
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "prompt": "[My mother has grown up] in Italy.",
+          "answers": [
+            "My mother grew up"
+          ],
+          "example": true
+        },
+        {
           "num": 3,
-          "prompt": "How many plays has William Shakespeare written?",
-          "answers": ["did William Shakespeare write"]
+          "prompt": "How many plays [has William Shakespeare written]?",
+          "answers": [
+            "did William Shakespeare write"
+          ]
         },
         {
           "num": 4,
-          "prompt": "I've forgotten his name. Is it Joe or Jack?",
-          "answers": ["OK"]
+          "prompt": "[I've forgotten] his name. Is it Joe or Jack?",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 5,
-          "prompt": "Who has invented paper?",
-          "answers": ["Who invented"]
+          "prompt": "[Who has invented] paper?",
+          "answers": [
+            "Who invented"
+          ]
         },
         {
           "num": 6,
-          "prompt": "Drugs have become a big problem everywhere.",
-          "answers": ["OK"]
+          "prompt": "Drugs [have become] a big problem everywhere.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 7,
-          "prompt": "We've washed the car, but now it's dirty again.",
-          "answers": ["We washed"]
+          "prompt": "[We've washed] the car, but now it's dirty again.",
+          "answers": [
+            "We washed"
+          ]
         },
         {
           "num": 8,
-          "prompt": "Where have you been born?",
-          "answers": ["Where were you born?"]
+          "prompt": "[Where have you been born?]",
+          "answers": [
+            "Where were you born?"
+          ]
         },
         {
           "num": 9,
-          "prompt": "Ellie has gone shopping. She'll be back in about an hour.",
-          "answers": ["OK"]
+          "prompt": "Ellie [has gone] shopping. She'll be back in about an hour.",
+          "answers": [
+            "OK"
+          ]
         },
         {
           "num": 10,
-          "prompt": "Albert Einstein has been the scientist who has developed the theory of relativity.",
-          "answers": ["Albert Einstein was the scientist who developed"]
+          "prompt": "Albert Einstein [has been the scientist who has developed] the theory of relativity.",
+          "answers": [
+            "Albert Einstein was the scientist who developed"
+          ]
         }
       ]
     },
@@ -88,49 +177,156 @@
       "instruction": "Put the verb into the correct form, present perfect or past simple.",
       "items": [
         {
+          "num": 1,
+          "parts": [
+            "",
+            " for a while, but now it’s raining again. (it / stop)"
+          ],
+          "answers": [
+            [
+              "It stopped"
+            ]
+          ],
+          "example": true
+        },
+        {
+          "num": 2,
+          "parts": [
+            "The town where I live is very different now. ",
+            " a lot. (it / change)"
+          ],
+          "answers": [
+            [
+              "It has changed",
+              "It’s changed"
+            ]
+          ],
+          "example": true
+        },
+        {
           "num": 3,
-          "parts": ["I studied German at school, but ", " most of it now. (I / forget)"],
-          "answers": [["I've forgotten", "I have forgotten"]]
+          "parts": [
+            "I studied German at school, but ",
+            " most of it now. (I / forget)"
+          ],
+          "answers": [
+            [
+              "I've forgotten",
+              "I have forgotten"
+            ]
+          ]
         },
         {
           "num": 4,
-          "parts": ["The police ", " three people, but later they let them go. (arrest)"],
-          "answers": [["arrested"]]
+          "parts": [
+            "The police ",
+            " three people, but later they let them go. (arrest)"
+          ],
+          "answers": [
+            [
+              "arrested"
+            ]
+          ]
         },
         {
           "num": 5,
-          "parts": ["Do you think ", "? (it / improve)"],
-          "answers": [["it's improved", "it has improved"]]
+          "parts": [
+            "What do you think of my English? Do you think ",
+            "? (it / improve)"
+          ],
+          "answers": [
+            [
+              "it's improved",
+              "it has improved"
+            ]
+          ]
         },
         {
           "num": 6,
-          "parts": ["", " your coffee? (you / finish)"],
-          "answers": [["Have you finished"]]
+          "parts": [
+            "Are you ready to go? ",
+            " your coffee? (you / finish)"
+          ],
+          "answers": [
+            [
+              "Have you finished"
+            ]
+          ]
         },
         {
           "num": 7,
-          "parts": ["", " for a job as a tour guide, but I wasn't successful. (I / apply)"],
-          "answers": [["I applied"]]
+          "parts": [
+            "",
+            " for a job as a tour guide, but I wasn't successful. (I / apply)"
+          ],
+          "answers": [
+            [
+              "I applied"
+            ]
+          ]
         },
         {
           "num": 8,
-          "parts": ["", " outside the house, but it's not there now. (it / be)"],
-          "answers": [["It was"]]
+          "parts": [
+            "Where’s my bike? ",
+            " outside the house, but it's not there now. (it / be)"
+          ],
+          "answers": [
+            [
+              "It was"
+            ]
+          ]
         },
         {
           "num": 9,
-          "parts": ["", " an accident. (there / be)"],
-          "answers": [["There's been", "There has been"]]
+          "parts": [
+            "Quick! We need to call an ambulance. ",
+            " an accident. (there / be)"
+          ],
+          "answers": [
+            [
+              "There's been",
+              "There has been"
+            ]
+          ]
         },
         {
           "num": 10,
-          "parts": ["a: I've found my phone. b: Oh, good. Where ", " (you / find) it? a: ", " at the bottom of my bag. (It / be)"],
-          "answers": [["did you find"], ["It was"]]
+          "parts": [
+            "a: I've found my phone. b: Oh, good. Where ",
+            " (you / find) it? a: ",
+            " at the bottom of my bag. (It / be)"
+          ],
+          "answers": [
+            [
+              "did you find"
+            ],
+            [
+              "It was"
+            ]
+          ]
         },
         {
           "num": 11,
-          "parts": ["a: Ben won't be able to play tennis for a while. ", " (He / break) his arm. b: Oh. How ", "(that / happen)? a: ", " off a ladder. (He / fall)"],
-          "answers": [["He's broken", "He has broken", "He broke"], ["did that happen"], ["He fell"]]
+          "parts": [
+            "a: Ben won't be able to play tennis for a while. ",
+            " (He / break) his arm. b: Oh. How ",
+            "(that / happen)? a: ",
+            " off a ladder. (He / fall)"
+          ],
+          "answers": [
+            [
+              "He's broken",
+              "He has broken",
+              "He broke"
+            ],
+            [
+              "did that happen"
+            ],
+            [
+              "He fell"
+            ]
+          ]
         }
       ]
     }

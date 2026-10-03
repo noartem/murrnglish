@@ -9,7 +9,8 @@
     {
       "id": "115.1",
       "type": "fill-in",
-      "instruction": "Write a new sentence with the same meaning. Use unless in your sentence.",
+      "instruction": "Read the situations in the scene and write a new sentence with the same meaning, using unless.",
+      "scene": "The situations (read the descriptions):\n1. You must try a bit harder, or you won’t pass the exam.\n2. Listen carefully, or you won’t know what to do.\n3. She must apologise to you, or you’ll never speak to her again.\n4. You have to speak very slowly, or he won’t understand you.\n5. Business must improve soon, or the company will have to close.\n6. You need to do something soon, or the problem will get worse.",
       "items": [
         {
           "num": 1,
@@ -93,7 +94,8 @@
     {
       "id": "115.2",
       "type": "fill-in",
-      "instruction": "Write sentences with unless.",
+      "instruction": "Read the situations in the scene and write sentences with unless.",
+      "scene": "The situations (read the descriptions):\n1. The club isn’t open to everyone. You are allowed in only if you are a member.\n2. You don’t want to go to the party alone. You are going only if your friend goes too.\n3. You are not worried about the dog. It will chase you only if you move suddenly.\n4. Ben isn’t very talkative. He will speak to you only if you ask him something.\n5. Today is a public holiday. The doctor will see you only if it is an emergency.",
       "items": [
         {
           "num": 1,
@@ -163,11 +165,12 @@
     {
       "id": "115.3",
       "type": "choice",
-      "instruction": "Which is correct?",
+      "instruction": "Read the descriptions and choose unless, as long as or provided.",
       "example": [1],
       "items": [
         {
           "num": 1,
+          "cue": "🚗 You can borrow my car ________ you promise not to drive too fast.",
           "options": [
             "unless",
             "as long as"
@@ -176,6 +179,7 @@
         },
         {
           "num": 2,
+          "cue": "🏖️ We’re going to the beach tomorrow ________ the weather is bad.",
           "options": [
             "unless",
             "providing"
@@ -184,6 +188,7 @@
         },
         {
           "num": 3,
+          "cue": "🏖️ We’re going to the beach tomorrow ________ the weather is good.",
           "options": [
             "unless",
             "providing"
@@ -192,6 +197,7 @@
         },
         {
           "num": 4,
+          "cue": "🌙 I don’t mind if you come home late ________ you come in quietly.",
           "options": [
             "unless",
             "as long as"
@@ -200,6 +206,7 @@
         },
         {
           "num": 5,
+          "cue": "🚪 I’m going now ________ you want me to stay.",
           "options": [
             "unless",
             "provided"
@@ -208,6 +215,7 @@
         },
         {
           "num": 6,
+          "cue": "📺 I don’t watch TV ________ I have nothing else to do.",
           "options": [
             "unless",
             "as long as"
@@ -216,6 +224,7 @@
         },
         {
           "num": 7,
+          "cue": "🏊 Children are allowed to use the swimming pool ________ they are with an adult.",
           "options": [
             "unless",
             "provided"
@@ -224,6 +233,7 @@
         },
         {
           "num": 8,
+          "cue": "🏊 ________ they are with an adult, children are not allowed to use the swimming pool.",
           "options": [
             "Unless",
             "Provided"
@@ -232,6 +242,7 @@
         },
         {
           "num": 9,
+          "cue": "🪟 We can sit here in the corner ________ you’d rather sit by the window.",
           "options": [
             "unless",
             "as long as"
@@ -240,6 +251,7 @@
         },
         {
           "num": 10,
+          "cue": "💰 A: Our holiday cost a lot of money. B: Did it? Well, that doesn’t matter ________ you enjoyed yourselves.",
           "options": [
             "unless",
             "as long as"
@@ -251,7 +263,7 @@
     {
       "id": "115.4",
       "type": "self-check",
-      "instruction": "Use your own ideas to complete these sentences.",
+      "instruction": "Use your own ideas to complete the sentences.",
       "items": [
         {
           "num": 1,
