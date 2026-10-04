@@ -23,7 +23,6 @@ import { deckCounts, todayDaily } from "../srs";
 import type { StudySnapshot } from "../study";
 import { resumeSuspended, saveSettings, setIncluded, srsConfig, useStudy } from "../study";
 import { useMinuteClock } from "../dueCount";
-import { BackupControls } from "./BackupControls";
 import { SectionBar } from "./SectionBar";
 
 const OS_OPTIONS = {
@@ -122,14 +121,6 @@ export function CardsView() {
 
             <Settings />
 
-            <section className="sheet backupsheet">
-              <h3 className="sheethead">Backup</h3>
-              <p className="ruleprose muted">
-                Reviews and words are kept in this browser only. Export a backup now and then; importing merges it
-                with what is here.
-              </p>
-              <BackupControls />
-            </section>
           </div>
         </OverlayScrollbarsComponent>
       </div>

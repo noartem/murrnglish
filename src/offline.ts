@@ -15,7 +15,7 @@ import { offlineKey, offlineRemovedKey } from "./keys";
 //   bookCache(id)      everything under /books/<id>/
 // The service worker picks the bucket by the same rule (cacheFor in sw.js).
 //
-// A book's data is three small files and its cover, not ~190: data/course.json
+// A book's data is three small files, not ~190: data/course.json
 // carries every unit (with its lesson) and additional exercise, packed by
 // scripts/sync_books.mjs, and the fetchers in data.ts read it when a
 // per-exercise request fails offline.
@@ -122,7 +122,6 @@ export function bookUrls(book: Book): string[] {
     bookUrl(book, "data/index.json"),
     bookUrl(book, "data/totals.json"),
     bookUrl(book, COURSE_BUNDLE),
-    bookUrl(book, book.cover.file),
   ];
 }
 
@@ -412,9 +411,8 @@ async function runDownload(book: Book): Promise<void> {
     /* no font list: offline uses the fallback faces */
   }
 
-  // The book — a handful of files, whatever its size: the ones the app asks
-  // for when the book opens (offline it boots on index.json), the packed
-  // course with its lessons, and the cover.
+  // The book — the handful of files the app asks for when it opens (offline
+  // it boots on index.json) and the packed course with its lessons.
   await storeMissing(cache, bookUrls(book), true, (n) => {
     bookStored += n;
     count(n);

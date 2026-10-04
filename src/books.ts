@@ -17,12 +17,12 @@ export interface Book {
   lang: "en" | "ru";
   authors: string;
   publisher: string;
-  /** the printed cover's color: library card accents, never UI state */
+  /** the book's own accent color: library card accents, never UI state */
   color: string;
-  cover: { file: string; width: number; height: number };
+  description: string;
   units: number;
   additional: number;
-  /** bytes the offline download stores (cover and data) */
+  /** bytes the offline download stores */
   downloadBytes: number;
 }
 
@@ -32,7 +32,8 @@ export function bookById(id: string): Book | undefined {
   return BOOKS.find((b) => b.id === id);
 }
 
-/** URL of a file served for this book: bookUrl(b, "cover.png") -> "/books/blue/cover.png" */
+/** URL of a file served for this book:
+ *  bookUrl(b, "data/index.json") -> "/books/blue/data/index.json" */
 export function bookUrl(book: Book, file: string): string {
   return `${import.meta.env.BASE_URL}books/${book.id}/${file}`;
 }

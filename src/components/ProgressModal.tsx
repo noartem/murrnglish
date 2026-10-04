@@ -1,15 +1,14 @@
-// Progress modal: unit-square overview + the import / export / share actions.
-// Pure UI — actions arrive through onImport/onExport/onShare. With `preview`
-// set (an incoming share-link payload) it shows THAT progress instead of the
-// live one plus an apply button; closing discards the preview.
+// Progress modal: this book's unit-square overview, plus the preview of an
+// incoming share link (#/<book>/p=…) with an apply button. Pure UI. The
+// import / export / share actions live in the data window now (DataModal),
+// so this one is only ever opened for the overview.
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { ChangeEvent } from "react";
+import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
+import { Check, X } from "lucide-react";
+import { useBook } from "../bookContext";
 import type { IndexData, TotalsMap } from "../data";
 import { completedUnitIds, countCorrect, pct, scopeStats } from "../progress";
 import type { Progress } from "../progress";
-import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { Check, Download, Share2, Upload, X } from "lucide-react";
-import { useBook } from "../bookContext";
 
 export function ProgressModal({
   open,
@@ -19,10 +18,6 @@ export function ProgressModal({
   index,
   totals,
   onApplyPreview,
-  onImport,
-  onExport,
-  onShare,
-  hintKeys,
 }: {
   open: boolean;
   onClose: () => void;
@@ -32,35 +27,16 @@ export function ProgressModal({
   index: IndexData | null;
   totals: TotalsMap | null;
   onApplyPreview?: () => void;
-  onImport: (file: File) => Promise<string>;
-  onExport: (includeAnswers: boolean) => string;
-  onShare: (includeAnswers: boolean) => Promise<string>;
-  /** opened via Shift+I: underline each control's trigger letter */
-  hintKeys: boolean;
 }): JSX.Element | null {
   const book = useBook();
-  const [withAnswers, setWithAnswers] = useState(true);
-  const [busy, setBusy] = useState(false);
-  // status line: seq re-keys the node so the entry animation (fade, plus the
-  // copy-shake) replays even when the same text is set twice in a row.
-  // `leaving` holds the node mounted through the fade-out.
-  const [msg, setMsgState] = useState<{ text: string; shake: boolean; seq: number }>({
-    text: "",
-    shake: false,
-    seq: 0,
-  });
-  const [msgLeaving, setMsgLeaving] = useState(false);
-  const setMsg = (text: string, shake = false) => {
-    setMsgLeaving(false);
-    setMsgState((m) => ({ text, shake, seq: m.seq + 1 }));
-  };
+  // status line: seq re-keys the node so the entry animation replays even when
+  // the same text is set twice in a row.
   // exit: the card stays mounted under .closing while modal-out plays, then
   // drops from the DOM. closing is derived from open (not set in an effect),
   // so the class lands in the same commit as open=false — unmounting first
   // would flash the backdrop away and back.
   const [shown, setShown] = useState(open);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const fileRef = useRef<HTMLInputElement>(null);
 
   // Esc closes while open; the close button takes focus for keyboard users.
   useEffect(() => {
@@ -75,21 +51,6 @@ export function ProgressModal({
     if (!open) return;
     closeRef.current?.focus();
   }, [open]);
-
-  // result message auto-clears: fade out, then drop the text once the
-  // 0.18s leave animation has played (so the line doesn't blink away)
-  useEffect(() => {
-    if (!msg.text) return;
-    const hide = setTimeout(() => setMsgLeaving(true), 6000);
-    const drop = setTimeout(() => {
-      setMsgState((m) => ({ ...m, text: "" }));
-      setMsgLeaving(false);
-    }, 6180);
-    return () => {
-      clearTimeout(hide);
-      clearTimeout(drop);
-    };
-  }, [msg]);
   // enter: modal-in runs on mount; exit: hold the card 150ms (> 0.14s
   // modal-out) so the animation finishes before unmount
   useEffect(() => {
@@ -110,26 +71,6 @@ export function ProgressModal({
 
   if (!shown) return null;
   const closing = !open;
-
-  async function run(fn: () => Promise<string>) {
-    if (busy) return;
-    setBusy(true);
-    try {
-      const text = await fn();
-      // "copied" is the one result that confirms a clipboard side effect the
-      // window can't otherwise show — it gets the shake
-      setMsg(text, /copied/i.test(text));
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  async function pickFile(e: ChangeEvent<HTMLInputElement>) {
-    const f = e.target.files?.[0];
-    e.target.value = ""; // same file can be picked again
-    if (!f) return;
-    await run(() => onImport(f));
-  }
 
   return (
     <div className={"modal-overlay" + (closing ? " closing" : "")} onClick={onClose}>
@@ -201,93 +142,15 @@ export function ProgressModal({
             </div>
           </OverlayScrollbarsComponent>
         )}
-        {preview ? (
+        {preview && (
           <div className="modal-actions">
             <button className="themebtn primary" onClick={onApplyPreview}>
               <Check size={14} aria-hidden /> Apply and erase current progress
             </button>
           </div>
-        ) : (
-          <>
-            <label className="modal-opt" data-modal-key="A">
-              <input
-                type="checkbox"
-                checked={withAnswers}
-                onChange={(e) => setWithAnswers(e.target.checked)}
-              />
-              <HintText text="Include answer texts" letter={hintKeys ? "A" : null} />
-            </label>
-            <div className="modal-actions">
-              <button
-                className="themebtn"
-                data-modal-key="I"
-                disabled={busy}
-                onClick={() => fileRef.current?.click()}
-              >
-                <Upload size={14} aria-hidden />{" "}
-                <HintText text="Import" letter={hintKeys ? "I" : null} />
-              </button>
-              <button
-                className="themebtn"
-                data-modal-key="E"
-                disabled={busy}
-                onClick={() => setMsg(onExport(withAnswers))}
-              >
-                <Download size={14} aria-hidden />{" "}
-                <HintText text="Export" letter={hintKeys ? "E" : null} />
-              </button>
-              <button
-                className="themebtn"
-                data-modal-key="S"
-                disabled={busy}
-                onClick={() => void run(() => onShare(withAnswers))}
-              >
-                <Share2 size={14} aria-hidden />{" "}
-                <HintText text="Share" letter={hintKeys ? "S" : null} />
-              </button>
-            </div>
-            <div className="modal-msg" role="status">
-              {msg.text && (
-                <span
-                  key={msg.seq}
-                  className={
-                    "msgtext" +
-                    (msg.shake ? " shake" : "") +
-                    (msgLeaving ? " leaving" : "")
-                  }
-                >
-                  {msg.text}
-                </span>
-              )}
-            </div>
-          </>
         )}
-        <input ref={fileRef} type="file" accept=".json,application/json" hidden onChange={pickFile} />
       </div>
     </div>
-  );
-}
-
-// Shift+I opens the window in "hint mode": one letter of each control is
-// underlined and pressing that letter does the same as clicking the control.
-// The letter is the control's access key (I, E, S, and the A of "Answer").
-// Everything stays inside ONE inline span: the buttons are flex rows with a
-// 6px gap, so bare text next to the highlighted letter would become its own
-// flex item and push a gap in the middle of the word.
-function HintText({ text, letter }: { text: string; letter: string | null }): JSX.Element {
-  const at = letter === null ? -1 : text.toLowerCase().indexOf(letter.toLowerCase());
-  return (
-    <span>
-      {at === -1 ? (
-        text
-      ) : (
-        <>
-          {text.slice(0, at)}
-          <span className="hintkey">{text[at]}</span>
-          {text.slice(at + 1)}
-        </>
-      )}
-    </span>
   );
 }
 

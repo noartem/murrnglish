@@ -7,7 +7,6 @@
 //                                  its lesson (books/<id>/lessons/u<NNN>.md,
 //                                  compiled by scripts/lessons.mjs), plus
 //   public/books/<id>/data/course.json   every exercise file in one pack
-//   public/books/<id>/<cover>      the cover art
 // The book's PDF is not served: the app has its own lessons, and book.pdf
 // stays in books/<id>/ for the extraction pipelines alone.
 // and src/generated/books.json — the registry the app imports: book.json
@@ -31,7 +30,6 @@
 // live in decks/ and scripts/sync_decks.mjs builds them.
 
 import {
-  copyFileSync,
   cpSync,
   existsSync,
   mkdirSync,
@@ -58,16 +56,6 @@ const readJson = (file) => JSON.parse(readFileSync(file, "utf8"));
 const need = (cond, msg) => {
   if (!cond) throw new Error(msg);
 };
-
-// copy only when the size or mtime differs: this runs before every dev start
-function copyIfChanged(src, dest) {
-  const s = statSync(src);
-  if (existsSync(dest)) {
-    const d = statSync(dest);
-    if (d.size === s.size && d.mtimeMs >= s.mtimeMs) return;
-  }
-  copyFileSync(src, dest);
-}
 
 // unit-001.json -> "1", 07.json -> "7" (the keys the fetchers ask for)
 function pick(dir, re) {
@@ -127,11 +115,11 @@ for (const id of ids) {
   need(!RESERVED.includes(id), `book id "${id}" is the name of an app section (${RESERVED.join(", ")})`);
   const src = join(booksDir, id);
   const meta = readJson(join(src, "book.json"));
-  for (const k of ["order", "title", "edition", "level", "lang", "authors", "publisher", "color", "cover"]) {
+  for (const k of ["order", "title", "edition", "level", "lang", "authors", "publisher", "color", "description"]) {
     need(meta[k] !== undefined, `books/${id}/book.json: missing "${k}"`);
   }
   need(["en", "ru"].includes(meta.lang), `books/${id}/book.json: "lang" is "en" or "ru" (the language of its lessons)`);
-  for (const f of [meta.cover.file, "data/index.json", "data/totals.json"]) {
+  for (const f of ["data/index.json", "data/totals.json"]) {
     need(existsSync(join(src, f)), `books/${id}/${f} is missing`);
   }
 
@@ -142,7 +130,9 @@ for (const id of ids) {
   mkdirSync(dataDest, { recursive: true });
   cpSync(join(src, "data"), dataDest, { recursive: true });
   rmSync(join(dest, "book.pdf"), { force: true }); // served before the lessons
-  copyIfChanged(join(src, meta.cover.file), join(dest, meta.cover.file));
+  // covers are drawn in the app now (src/components/Cover.tsx): sweep any
+  // copy an older run left behind, so a stale cover cannot survive locally
+  for (const f of readdirSync(dest)) if (/^cover\./.test(f)) rmSync(join(dest, f), { force: true });
 
   const index = readJson(join(src, "data", "index.json"));
   const lessons = buildLessons(id, src, index);
@@ -172,7 +162,7 @@ for (const id of ids) {
 
   // what the offline download stores (src/offline.ts bookUrls)
   const size = (f) => statSync(join(dest, f)).size;
-  const downloadBytes = [meta.cover.file, "data/index.json", "data/totals.json", "data/course.json"]
+  const downloadBytes = ["data/index.json", "data/totals.json", "data/course.json"]
     .map(size)
     .reduce((a, b) => a + b, 0);
 

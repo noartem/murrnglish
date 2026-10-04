@@ -15,6 +15,7 @@ import { ArrowLeft, ChevronLeft, ChevronRight, PauseCircle, PlayCircle, RotateCc
 import type { Deck, DeckEntry } from "../deckdata";
 import { cardId, choiceOrder, deckCardIds, entryText, gapsOf, useDecks } from "../deckdata";
 import type { ResolvedCard } from "../decks";
+import { useKeyScope } from "../keyScopes";
 import { CARDS_HASH, browseHash, deckHash, replaceHash } from "../routes";
 import type { CardState, SrsConfig } from "../srs";
 import { dayNumber, deckCounts, formatDays, formatMinutes, todayDaily } from "../srs";
@@ -329,27 +330,27 @@ function CardDetail({
   const gaps = e.en?.includes("[") ? gapsOf(e.en).gaps : [];
   const moreAnswers = gaps.some((g) => g.answers.length > 1);
 
-  // ← → the cards around it, Esc back to the list
+  // ← → the cards around it, Esc back to the list. The browse rows are
+  // links, not fields, so no typing guard is needed here; the dispatcher
+  // already steps aside while a window is open.
   const keys = useRef({ prev, next, deck: deck.id });
   keys.current = { prev, next, deck: deck.id };
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.ctrlKey || ev.metaKey || ev.altKey || ev.shiftKey || ev.repeat) return;
-      if (document.querySelector(".modal-overlay")) return; // the word editor is open
-      if (ev.target instanceof HTMLElement && ev.target.closest("input, textarea, select")) return;
-      const k = keys.current;
-      const go = ev.key === "ArrowLeft" ? k.prev : ev.key === "ArrowRight" ? k.next : undefined;
-      if (go) {
-        ev.preventDefault();
-        replaceHash(browseHash(k.deck, go));
-      } else if (ev.key === "Escape") {
-        ev.preventDefault();
-        window.location.hash = browseHash(k.deck);
-      }
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  useKeyScope("browse", (e) => {
+    if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey || e.repeat) return false;
+    const k = keys.current;
+    const go = e.key === "ArrowLeft" ? k.prev : e.key === "ArrowRight" ? k.next : undefined;
+    if (go) {
+      e.preventDefault();
+      replaceHash(browseHash(k.deck, go));
+      return true;
+    }
+    if (e.key === "Escape") {
+      e.preventDefault();
+      window.location.hash = browseHash(k.deck);
+      return true;
+    }
+    return false;
+  });
 
   return (
     <>

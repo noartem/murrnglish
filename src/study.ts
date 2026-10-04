@@ -12,8 +12,7 @@
 
 import { useSyncExternalStore } from "react";
 import type { SrsData, StudySettings } from "./backup";
-import { DEFAULT_SETTINGS, cleanSettings, cleanSrs, mergeBackup, validWord } from "./backup";
-import type { StudyBackup } from "./backup";
+import { DEFAULT_SETTINGS, cleanSettings, cleanSrs, mergeSrs, mergeWordList, validWord } from "./backup";
 import type { DeckLibrary } from "./deckdata";
 import { loadedDecks, whenDecksLoad } from "./deckdata";
 import { SRS_KEY, SRS_SETTINGS_KEY, WORDS_KEY } from "./keys";
@@ -203,14 +202,26 @@ export function setIncluded(patch: Readonly<Record<string, boolean | null>>): vo
   set({ settings: { ...snap.settings, include } });
 }
 
-// ---- backup ---------------------------------------------------------------------
+// ---- import -------------------------------------------------------------------
+// Words and review state are imported apart: the data window applies the two
+// halves of a file on its own (a progress-only file touches neither), so the
+// merge is split with the same shape the data file carries.
 
-export function importBackup(b: StudyBackup): { added: number; updated: number; cards: number } {
-  const r = mergeBackup(snap.words, snap.srs, b);
+/** Merge a word list in (the entry edited last wins) and apply it. */
+export function importWords(words: Word[]): { added: number; updated: number } {
+  const r = mergeWordList(snap.words, words);
   undo = null;
-  set({ words: r.words, srs: r.srs }, false);
-  // an old backup brings the old card ids back
+  set({ words: r.words }, false);
+  return { added: r.added, updated: r.updated };
+}
+
+/** Merge review states in (the card answered last wins) and apply them. */
+export function importSrs(incoming: SrsData): { cards: number } {
+  const r = mergeSrs(snap.srs, incoming);
+  undo = null;
+  set({ srs: r.srs }, false);
+  // an imported file brings card ids an older app wrote back
   const lib = loadedDecks();
   if (lib) migrate(lib);
-  return { added: r.added, updated: r.updated, cards: r.cards };
+  return { cards: r.cards };
 }

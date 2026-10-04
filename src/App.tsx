@@ -2,18 +2,25 @@
 // (#/<book>/...) or one of the sections next to the books — the card decks
 // and the dictionary (routes.ts). A book's course is
 // keyed by the book, so opening another book remounts it with that book's
-// data and progress. The word editor is mounted once here, above every view:
-// the dictionary, the lessons and the exercises all open it.
+// data and progress. App also owns what no single view can: the one
+// keyboard dispatcher and the three app-wide windows (help, data, book
+// picker), so every key and every window works in every view. The word
+// editor is mounted once here too — the dictionary, the lessons and the
+// exercises all open it.
 
 import { useEffect, useState } from "react";
 import { BOOKS, bookById } from "./books";
 import CourseApp from "./CourseApp";
+import { BookPicker } from "./components/BookPicker";
 import { CardsView } from "./components/CardsView";
+import { DataModal } from "./components/DataModal";
 import { DeckBrowser } from "./components/DeckBrowser";
 import { DictionaryView } from "./components/DictionaryView";
 import { Library } from "./components/Library";
+import { ShortcutsModal } from "./components/ShortcutsHelp";
 import { StudyView } from "./components/StudyView";
 import { WordEditorHost } from "./components/WordEditor";
+import { closeGlobal, useGlobalModal } from "./globalUi";
 import {
   hasProgress,
   lastUnitFromProgress,
@@ -23,6 +30,19 @@ import {
 } from "./progress";
 import type { AppRoute } from "./routes";
 import { LIBRARY_HASH, bookHash, deckKey, legacyHash, parsePage, parseRoute } from "./routes";
+import { useAppShortcuts } from "./shortcuts";
+
+/** The windows App owns. Only one is up at a time (globalUi.ts). */
+function GlobalWindows() {
+  const modal = useGlobalModal();
+  return (
+    <>
+      {modal === "help" && <ShortcutsModal onClose={closeGlobal} />}
+      <DataModal />
+      {modal === "books" && <BookPicker />}
+    </>
+  );
+}
 
 // bare "/": learners with saved progress go straight back to the page they
 // last worked on — in the book last opened if it has progress, else in the
@@ -50,6 +70,7 @@ function currentRoute(): AppRoute {
 
 export default function App() {
   const [route, setRoute] = useState<AppRoute>(currentRoute);
+  useAppShortcuts();
 
   useEffect(() => {
     // bare "/" resolved by entryHash(): write the hash back (replaceState —
@@ -66,6 +87,7 @@ export default function App() {
     <>
       <View route={route} />
       <WordEditorHost />
+      <GlobalWindows />
     </>
   );
 }

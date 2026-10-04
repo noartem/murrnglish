@@ -131,31 +131,49 @@ export interface MergeResult {
   cards: number;
 }
 
-export function mergeBackup(words: Word[], srs: SrsData, incoming: StudyBackup): MergeResult {
-  const byId = new Map(words.map((w) => [w.id, w]));
+/**
+ * Words of `incoming` merged into `mine`: by id, the entry edited last
+ * wins, and the result keeps the order the words were added in.
+ */
+export function mergeWordList(
+  mine: Word[],
+  incoming: Word[],
+): { words: Word[]; added: number; updated: number } {
+  const byId = new Map(mine.map((w) => [w.id, w]));
   let added = 0;
   let updated = 0;
-  for (const w of incoming.words) {
-    const mine = byId.get(w.id);
-    if (!mine) {
+  for (const w of incoming) {
+    const own = byId.get(w.id);
+    if (!own) {
       byId.set(w.id, w);
       added++;
-    } else if (w.updated > mine.updated) {
+    } else if (w.updated > own.updated) {
       byId.set(w.id, w);
       updated++;
     }
   }
-  const states = { ...srs.states };
+  const words = [...byId.values()].sort((a, b) => a.added - b.added);
+  return { words, added, updated };
+}
+
+/** Review states of `incoming` merged into `mine`: by card id, the card
+ *  answered last wins; suspended is the union of both sides. */
+export function mergeSrs(mine: SrsData, incoming: SrsData): { srs: SrsData; cards: number } {
+  const states = { ...mine.states };
   let cards = 0;
-  for (const [id, s] of Object.entries(incoming.srs.states)) {
-    const mine = states[id];
-    if (!mine || s.last > mine.last) {
+  for (const [id, s] of Object.entries(incoming.states)) {
+    const own = states[id];
+    if (!own || s.last > own.last) {
       states[id] = s;
       cards++;
     }
   }
-  const suspended = [...new Set([...srs.suspended, ...incoming.srs.suspended])];
-  // keep the words in the order they were added
-  const merged = [...byId.values()].sort((a, b) => a.added - b.added);
-  return { words: merged, srs: { ...srs, states, suspended }, added, updated, cards };
+  const suspended = [...new Set([...mine.suspended, ...incoming.suspended])];
+  return { srs: { ...mine, states, suspended }, cards };
+}
+
+export function mergeBackup(words: Word[], srs: SrsData, incoming: StudyBackup): MergeResult {
+  const w = mergeWordList(words, incoming.words);
+  const s = mergeSrs(srs, incoming.srs);
+  return { words: w.words, srs: s.srs, added: w.added, updated: w.updated, cards: s.cards };
 }

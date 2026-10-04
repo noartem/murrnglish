@@ -23,7 +23,6 @@ import { srsConfig, useStudy } from "../study";
 import { useMinuteClock } from "../dueCount";
 import type { Word } from "../words";
 import { headwordKey, wordCardIds } from "../words";
-import { BackupControls } from "./BackupControls";
 import { LevelChip } from "./CardsView";
 import { SectionBar } from "./SectionBar";
 import { openWordEditor } from "./WordEditor";
@@ -178,14 +177,6 @@ export function DictionaryView({ deck: openDeck }: { deck?: string }) {
 
             {vocabulary && <DeckShelf section={vocabulary} open={openDeck} />}
 
-            <section className="sheet backupsheet">
-              <h3 className="sheethead">Backup</h3>
-              <p className="ruleprose muted">
-                Your words and your card reviews are kept in this browser only. Export a backup now and then, and
-                import it on another device — importing merges, nothing is overwritten.
-              </p>
-              <BackupControls />
-            </section>
           </div>
         </OverlayScrollbarsComponent>
       </div>

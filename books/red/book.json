@@ -1,11 +1,11 @@
 {
   "order": 1,
-  "title": "Essential Grammar in Use",
+  "title": "English Grammar: Foundations",
   "edition": "Russian edition",
   "lang": "ru",
   "level": "Elementary",
   "authors": "Raymond Murphy with Olga Sands",
   "publisher": "Cambridge University Press",
   "color": "#dc2626",
-  "cover": { "file": "cover.jpg", "width": 1112, "height": 1653 }
+  "description": "The elementary course: 115 units and 35 extra exercise sets. Every unit opens with a short lesson and goes on to its exercises, answers checked as you go. The lessons are written in Russian, so the grammar comes first in a language you already read."
 }

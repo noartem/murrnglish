@@ -3,12 +3,17 @@
 // sections — in the topbar on desktop, as a row of tabs under it on phones
 // (the phone topbar keeps the title alone, like a book's). The cards tab
 // carries the number of cards due, so it is visible from every section.
+// Every section that renders this bar gets the app-wide help and data
+// buttons, so neither view has to add them itself.
 
 import type { ReactNode } from "react";
-import { Layers, LibraryBig, NotebookPen } from "lucide-react";
-import { useIsMobile } from "../useIsMobile";
-import { CARDS_HASH, DICTIONARY_HASH } from "../routes";
+import { Download, Layers, LibraryBig, NotebookPen } from "lucide-react";
 import { useDueCount } from "../dueCount";
+import { openGlobal } from "../globalUi";
+import { CARDS_HASH, DICTIONARY_HASH } from "../routes";
+import { SC } from "../shortcuts";
+import { useIsMobile } from "../useIsMobile";
+import { ShortcutsHelpButton } from "./ShortcutsHelp";
 import { ThemeToggle } from "./ThemeToggle";
 
 export type Section = "cards" | "dictionary";
@@ -40,7 +45,21 @@ export function SectionBar({
         </div>
         {!isMobile && <SectionTabs section={section} />}
         <div className="topbar-actions">
-          {!isMobile && actions}
+          {!isMobile && (
+            <>
+              {actions}
+              <ShortcutsHelpButton onOpen={() => openGlobal("help")} />
+              <button
+                className="themebtn"
+                data-global-btn="data"
+                onClick={() => openGlobal("data")}
+                title={"Data — export, import, share — " + SC.data}
+                aria-label="Data: export, import, share"
+              >
+                <Download size={15} aria-hidden />
+              </button>
+            </>
+          )}
           <ThemeToggle />
         </div>
       </header>

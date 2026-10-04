@@ -1,15 +1,29 @@
-// Central keyboard shortcuts: one window keydown dispatcher + the shared
-// labels/help data used by tooltips and the help modal. A control that owns
-// a key itself (GapInput's Enter) calls preventDefault, and this dispatcher
-// steps out of the way via the defaultPrevented guard.
+// The keyboard layer: ONE window keydown dispatcher for the whole app, the
+// shared labels the help and the tooltips render, and the app-wide shortcuts
+// that work in every view (help, data window, book picker, section jumps).
+// Per-view keys live in the views themselves and register through keyScopes.
 //
 // Exercise-scope actions resolve through the DOM to the exercise's own
 // buttons (data-shortcut attributes render in ExerciseCard's CardActions),
 // so there is no ref plumbing and every exercise type gets the shortcuts.
+//
+// "Shift+?" arrives as e.key === "?" with shiftKey set on every layout.
+// Letter shortcuts always check e.code, so they work on any keyboard layout.
+// Handler order (critical):
+//   1. the help window owns every key  2. the data window's hint letters
+//   3. any other .modal-overlay owns its own Esc — nothing global fires
+//   4. exercise scope (before the defaultPrevented guard: GapInput calls
+//      preventDefault on plain Enter)
+//   5. defaultPrevented guard  6. app-wide letters and Alt+digit
+//   7. the view's own scope
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import { BOOKS } from "./books";
+import { closeGlobal, currentGlobal, globalHints, openGlobal } from "./globalUi";
+import { scopeHandler } from "./keyScopes";
+import { CARDS_HASH, DICTIONARY_HASH, LIBRARY_HASH, bookHash } from "./routes";
 
-/** Shortcut labels shared by tooltips and the help modal. */
+/** Shortcut labels shared by tooltips, the topbar and the help window. */
 export const SC = {
   check: "Ctrl+Enter",
   reveal: "Shift+A",
@@ -19,12 +33,18 @@ export const SC = {
   lessonJump: "Shift+S",
   sidebarToggle: "Alt+Shift+E",
   cycleTheme: "Shift+T",
-  progress: "Shift+I",
+  cards: "Shift+C",
+  dictionary: "Shift+D",
+  library: "Shift+L",
+  bookPicker: "Shift+B",
+  bookJump: "Alt+1…9",
+  data: "Alt+D",
+  progressWindow: "Shift+I",
   help: "Shift+?",
 } as const;
 
-/** First letter -> control of the progress modal, for its Shift+I hint mode. */
-export const PROGRESS_HINTS: Record<string, string> = {
+/** First letter -> control of the data window, for its Shift+I hint mode. */
+export const DATA_HINTS: Record<string, string> = {
   KeyA: "A", // Include answer texts
   KeyI: "I", // Import
   KeyE: "E", // Export
@@ -35,198 +55,198 @@ export interface HelpEntry {
   keys: string[]; // one combo, rendered as separate key chips
   title: string;
   desc: string;
+  /** an alternative combo for the same action */
+  alt?: string[];
   sub?: { keys: string[]; alt?: string[]; desc: string }[];
 }
 
-export const SHORTCUT_HELP: HelpEntry[] = [
-  {
-    keys: ["Ctrl", "Enter"],
-    title: "Check the exercise",
-    desc: "Works while you are inside one exercise (the cursor is in one of its inputs, or one of its buttons is focused). Checks your answers.",
-  },
-  {
-    keys: ["Shift", "A"],
-    title: "Show or hide answers",
-    desc: "Also works inside one exercise. The correct answers appear under the items, and answers that match your text are green. Your own text does not change. Press it again to hide the answers.",
-  },
-  {
-    keys: ["Shift", "N"],
-    title: "Next unit",
-    desc: "Go to the next unit of the course.",
-  },
-  {
-    keys: ["Shift", "P"],
-    title: "Previous unit",
-    desc: "Go to the previous unit of the course.",
-  },
-  {
-    keys: ["Shift", "E"],
-    title: "Unit list",
-    desc: "Shows the unit list and focuses the current unit. On the landing, where no unit is open, it focuses Unit 1. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
-    sub: [
-      { keys: ["\u2190"], alt: ["\u2192"], desc: "move to the next or previous unit; at the end of a group you jump to the next group" },
-      { keys: ["\u2191"], alt: ["\u2193"], desc: "move to the next or previous group (first unit)" },
-      { keys: ["Enter"], desc: "open the focused unit" },
-      { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },
-    ],
-  },
-  {
-    keys: ["Alt", "Shift", "E"],
-    title: "Show or hide unit list",
-    desc: "Toggles the unit list exactly like the burger button at the top. The focus stays where it is.",
-  },
-  {
-    keys: ["Shift", "S"],
-    title: "Lesson or exercises",
-    desc: "In a unit, jumps from the lesson down to the first exercise (the cursor lands in it), and from the exercises back up to the lesson.",
-  },
-  {
-    keys: ["Shift", "I"],
-    title: "Progress window",
-    desc: "Shows the progress overview and its import / export / share actions. Opened this way, the window marks a key letter of each control — I, E, S, and the a of \u201canswer\u201d — and pressing that letter does the same as clicking the control.",
-    sub: [
-      { keys: ["A"], desc: "include or leave out the answer texts" },
-      { keys: ["I"], desc: "import progress from a file" },
-      { keys: ["E"], desc: "export progress to a file" },
-      { keys: ["S"], desc: "copy the share link" },
-      { keys: ["Esc"], desc: "close the window" },
-    ],
-  },
-  {
-    keys: ["Shift", "?"],
-    title: "This help",
-    desc: "Open this window from any place. Press Esc to close it.",
-  },
-  {
-    keys: ["Shift", "T"],
-    title: "Switch theme",
-    desc: "Cycle the color theme: system, light, dark.",
-  },
-];
-
-
-/** The review screen's keys (StudyView handles them itself). */
-export const STUDY_HELP: HelpEntry[] = [
-  {
-    keys: ["Space"],
-    title: "Show the answer",
-    desc: "Turns the card over. When the card asks you to type, Enter in the field checks what you typed and turns the card over.",
-  },
-  {
-    keys: ["1"],
-    title: "Before the answer: pick an option",
-    desc: "On a card with options, 1, 2, 3 … pick the first, second, third option and turn the card over.",
-  },
-  {
-    keys: ["1 / 2 / 3 / 4"],
-    title: "After the answer: Again, Hard, Good, Easy",
-    desc: "How well you knew it decides when the card comes back; the time is printed on each button.",
-    sub: [
-      { keys: ["Space"], alt: ["Enter"], desc: "the suggested answer: Good, or Again when what you typed was wrong" },
-    ],
-  },
-  {
-    keys: ["Ctrl", "Z"],
-    title: "Undo",
-    desc: "Takes the last answer back and shows that card again.",
-  },
-  {
-    keys: ["Shift", "?"],
-    title: "This help",
-    desc: "Press Esc to close it.",
-  },
-  {
-    keys: ["Shift", "T"],
-    title: "Switch theme",
-    desc: "Cycle the color theme: system, light, dark.",
-  },
-];
-
-// "Shift+?" arrives as e.key === "?" with shiftKey set on every layout.
-// Letter shortcuts (S/E/N/P/A/I) always check e.code, so they work on any
-// keyboard layout. Handler order (critical):
-//   1. help modal open  2. progress window  3. exercise scope
-//   4. defaultPrevented guard  5. help toggle  6. sidebar scope
-//   7. global letters
-export interface ShortcutDeps {
-  helpOpen: boolean;
-  openHelp(): void;
-  closeHelp(): void;
-  /** progress window: any open state, plus the Shift+I hint mode */
-  progressOpen: boolean;
-  progressHints: boolean; // armed only for the Shift+I open
-  hintProgress(): void; // Shift+I: open with the keys hinted
-  goNextUnit(): void; // App computes prev/next from its pager memo
-  goPrevUnit(): void;
-  jumpLesson(): void; // App: lesson -> first exercise, exercises -> lesson
-  focusUnitPanel(): void; // App focuses the route's unit (first one on the landing)
-  toggleSidebar(): void; // App: burger toggle (no focus move)
-  cycleTheme(): void; // App cycles system/light/dark
+/** One group of the help window: a heading and the keys under it. */
+export interface HelpSection {
+  title: string;
+  entries: HelpEntry[];
 }
 
-export function useCourseShortcuts(hookDeps: ShortcutDeps): void {
-  // latest deps without re-subscribing the window listener
-  const depsRef = useRef(hookDeps);
-  depsRef.current = hookDeps;
+export const HELP_SECTIONS: HelpSection[] = [
+  {
+    title: "Anywhere",
+    entries: [
+      {
+        keys: ["Shift", "?"],
+        title: "This help",
+        desc: "Open this window from any place — a book, the library, the cards, the dictionary. Press Esc to close it.",
+      },
+      {
+        keys: ["Shift", "T"],
+        title: "Switch theme",
+        desc: "Cycle the color theme: system, light, dark. Works in every view.",
+      },
+      {
+        keys: ["Shift", "C"],
+        title: "Cards",
+        desc: "Go to the card decks from anywhere in the app.",
+      },
+      {
+        keys: ["Shift", "D"],
+        title: "Dictionary",
+        desc: "Go to your words from anywhere in the app.",
+      },
+      {
+        keys: ["Shift", "L"],
+        title: "Library",
+        desc: "Go to the library — the list of books — from anywhere in the app.",
+      },
+      {
+        keys: ["Shift", "B"],
+        title: "Go to a book",
+        desc: "Pick one of the books by name: a number picks it outright, the arrows move between the rows, Enter opens, Esc closes without going anywhere.",
+      },
+      {
+        keys: ["Alt", "1 … 9"],
+        title: "Go to a book by number",
+        desc: "Open the first book with Alt+1, the second with Alt+2 and so on, from anywhere in the app.",
+      },
+      {
+        keys: ["Alt", "D"],
+        alt: ["Shift", "I"],
+        title: "Data window",
+        desc: "Export, import or share your progress, cards and words. Opened this way, the window marks a key letter of each control — A, I, E, S — and pressing that letter does the same as clicking the control. Esc closes it.",
+        sub: [
+          { keys: ["A"], desc: "include or leave out the answer texts" },
+          { keys: ["I"], desc: "import a file" },
+          { keys: ["E"], desc: "export a file" },
+          { keys: ["S"], desc: "copy the share link" },
+          { keys: ["Esc"], desc: "close the window" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "In a book",
+    entries: [
+      {
+        keys: ["Ctrl", "Enter"],
+        title: "Check the exercise",
+        desc: "Works while you are inside one exercise (the cursor is in one of its inputs, or one of its buttons is focused). Checks your answers.",
+      },
+      {
+        keys: ["Shift", "A"],
+        title: "Show or hide answers",
+        desc: "Also works inside one exercise. The correct answers appear under the items, and answers that match your text are green. Your own text does not change. Press it again to hide the answers.",
+      },
+      {
+        keys: ["Shift", "N"],
+        title: "Next unit",
+        desc: "Go to the next unit of the course.",
+      },
+      {
+        keys: ["Shift", "P"],
+        title: "Previous unit",
+        desc: "Go to the previous unit of the course.",
+      },
+      {
+        keys: ["Shift", "E"],
+        title: "Unit list",
+        desc: "Shows the unit list and focuses the current unit. On the landing, where no unit is open, it focuses Unit 1. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
+        sub: [
+          { keys: ["\u2190"], alt: ["\u2192"], desc: "move to the next or previous unit; at the end of a group you jump to the next group" },
+          { keys: ["\u2191"], alt: ["\u2193"], desc: "move to the next or previous group (first unit)" },
+          { keys: ["Enter"], desc: "open the focused unit" },
+          { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },
+        ],
+      },
+      {
+        keys: ["Alt", "Shift", "E"],
+        title: "Show or hide unit list",
+        desc: "Toggles the unit list exactly like the burger button at the top. The focus stays where it is.",
+      },
+      {
+        keys: ["Shift", "S"],
+        title: "Lesson or exercises",
+        desc: "In a unit, jumps from the lesson down to the first exercise (the cursor lands in it), and from the exercises back up to the lesson.",
+      },
+      {
+        keys: ["Alt", "D"],
+        title: "Data window",
+        desc: "The same window as anywhere else in the app: export, import or share progress, cards and words.",
+      },
+    ],
+  },
+  {
+    title: "In a review session",
+    entries: [
+      {
+        keys: ["Space"],
+        title: "Show the answer",
+        desc: "Turns the card over. When the card asks you to type, Enter in the field checks what you typed and turns the card over.",
+      },
+      {
+        keys: ["1"],
+        title: "Before the answer: pick an option",
+        desc: "On a card with options, 1, 2, 3 … pick the first, second, third option and turn the card over.",
+      },
+      {
+        keys: ["1 / 2 / 3 / 4"],
+        title: "After the answer: Again, Hard, Good, Easy",
+        desc: "How well you knew it decides when the card comes back; the time is printed on each button.",
+        sub: [
+          { keys: ["Space"], alt: ["Enter"], desc: "the suggested answer: Good, or Again when what you typed was wrong" },
+        ],
+      },
+      {
+        keys: ["Ctrl", "Z"],
+        title: "Undo",
+        desc: "Takes the last answer back and shows that card again.",
+      },
+    ],
+  },
+  {
+    title: "Browsing a deck's cards",
+    entries: [
+      {
+        keys: ["\u2190"],
+        alt: ["\u2192"],
+        title: "Step through the cards",
+        desc: "The previous or the next card of the deck, while you are looking through it.",
+      },
+      {
+        keys: ["Esc"],
+        title: "Back to the deck's list",
+        desc: "Leave one card, or the whole browser, for the deck's list of cards.",
+      },
+    ],
+  },
+];
 
-  // where "Esc = go back" returns to from the unit panel
-  const lastFocus = useRef<HTMLElement | null>(null);
-
-  // never anchor on the unit panel itself, which has its own scoped keys;
-  // the body is not a focus location (focus() on it is a no-op), so leaving
-  // it out lets restoreFocus fall back instead of stranding the focus
-  const rememberFocus = () => {
-    const el = document.activeElement;
-    if (
-      el instanceof HTMLElement &&
-      el !== document.body &&
-      !el.closest("nav.sidebar")
-    ) {
-      lastFocus.current = el;
-    }
-  };
-
-  const restoreFocus = () => {
-    const el = lastFocus.current;
-    lastFocus.current = null;
-    if (el && el.isConnected) {
-      el.focus();
-    } else {
-      focusFirstExercise();
-    }
-  };
-
+/**
+ * The app's single keydown listener, mounted once by App. Handler order is
+ * load-bearing: the windows and the exercise scope come before the
+ * defaultPrevented guard and the app-wide keys, and the per-view scope runs
+ * last (shortcuts.ts header).
+ */
+export function useAppShortcuts(): void {
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      // 1. help modal open: only Esc does anything
-      if (depsRef.current.helpOpen) {
+      // 1. the help window owns every key: only Esc does anything
+      if (currentGlobal() === "help") {
         if (e.key === "Escape") {
           e.preventDefault();
-          depsRef.current.closeHelp();
+          closeGlobal();
         }
         return;
       }
 
-      // 2. progress window that Shift+I opened: a plain letter clicks the
-      // control carrying it (A / I / E / S). Only in hint mode — the window
-      // opened from the topbar button leaves plain letters alone.
-      // Esc is the modal's own window listener — not repeated here, so one
-      // key press can never run the close path twice.
-      if (depsRef.current.progressOpen && depsRef.current.progressHints) {
+      // 2. the data window that Alt+D or Shift+I opened: a plain letter
+      // clicks the control carrying it (A / I / E / S). Only in hint mode —
+      // opened from the topbar button it leaves plain letters alone. Esc is
+      // the window's own listener, not repeated here, so one key press can
+      // never run the close path twice.
+      if (currentGlobal() === "data" && globalHints()) {
         // plain letters only: no modifiers, no auto-repeat. Shift+I while
-        // the window is open falls through to the global Shift+I branch
-        // instead of clicking Import a second time.
-        if (
-          !e.shiftKey &&
-          !e.ctrlKey &&
-          !e.metaKey &&
-          !e.altKey &&
-          !e.repeat
-        ) {
-          const hint = PROGRESS_HINTS[e.code];
-          const target =
-            hint &&
-            document.querySelector<HTMLElement>(`[data-modal-key="${hint}"]`);
+        // the window is open falls through to the global branch instead of
+        // clicking Import a second time.
+        if (!e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey && !e.repeat) {
+          const hint = DATA_HINTS[e.code];
+          const target = hint && document.querySelector<HTMLElement>(`[data-modal-key="${hint}"]`);
           if (target) {
             e.preventDefault();
             // a click lands the same way as the pointer: buttons fire
@@ -237,99 +257,88 @@ export function useCourseShortcuts(hookDeps: ShortcutDeps): void {
         }
       }
 
-      // 3. exercise scope — BEFORE the defaultPrevented guard, because
+      // 3. another window is up (the word editor, the data window, the book
+      // picker, the progress window, the offline panel): each owns an Esc
+      // listener of its own, so no global key fires behind it
+      if (document.querySelector(".modal-overlay")) return;
+
+      // 4. exercise scope — BEFORE the defaultPrevented guard, because
       // GapInput calls preventDefault on every plain Enter
       const ex = document.activeElement?.closest(".exercise");
       if (ex) {
-        if (
-          (e.ctrlKey || e.metaKey) &&
-          !e.shiftKey &&
-          !e.altKey &&
-          e.key === "Enter"
-        ) {
+        if ((e.ctrlKey || e.metaKey) && !e.shiftKey && !e.altKey && e.key === "Enter") {
           e.preventDefault();
           ex.querySelector<HTMLButtonElement>('[data-shortcut="check"]')?.click();
           return;
         }
-        if (
-          e.shiftKey &&
-          !e.ctrlKey &&
-          !e.metaKey &&
-          !e.altKey &&
-          e.code === "KeyA"
-        ) {
+        if (e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey && e.code === "KeyA") {
           e.preventDefault();
           ex.querySelector<HTMLButtonElement>('[data-shortcut="reveal"]')?.click();
           return;
         }
       }
 
-      // 4. a control that handled the key itself wins
+      // 5. a control that handled the key itself wins
       if (e.defaultPrevented) return;
 
-      // 5. Shift+? opens help (e.key === "?" already implies Shift)
+      // 6. the app-wide keys, in every view
       if (e.key === "?" && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
-        depsRef.current.openHelp();
+        openGlobal("help");
         return;
       }
-
-      // 6. sidebar scope: arrows move focus among the unit buttons
-      if (document.activeElement?.closest(".sidebar")) {
-        if (e.key === "Escape") {
+      if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+        if (e.altKey && e.code === "KeyD") {
           e.preventDefault();
-          restoreFocus();
+          openGlobal("data", true);
           return;
         }
-        if (
-          e.key === "ArrowLeft" ||
-          e.key === "ArrowRight" ||
-          e.key === "ArrowUp" ||
-          e.key === "ArrowDown"
-        ) {
-          e.preventDefault();
-          moveSidebarFocus(e.key);
+        // Alt+1..9: the books in library order. Some browsers and window
+        // managers claim Alt+digit for tab switching; the Shift+B picker is
+        // the fallback path to the same books.
+        if (e.altKey && /^Digit[1-9]$/.test(e.code)) {
+          const book = BOOKS[Number(e.code.slice(5)) - 1];
+          if (book) {
+            e.preventDefault();
+            window.location.hash = bookHash(book);
+          }
           return;
         }
       }
-      // Alt+Shift+E toggles the sidebar like the burger button, without
-      // moving focus into it (before the plain Shift+E branch)
-      if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && e.code === "KeyE") {
-        e.preventDefault();
-        depsRef.current.toggleSidebar();
-        return;
-      }
-
-      // 7. global letter shortcuts (after sidebar scope so they still work
-      // while focus sits in the unit panel)
       if (e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey) {
         switch (e.code) {
-          case "KeyS":
+          case "KeyI":
             e.preventDefault();
-            depsRef.current.jumpLesson();
+            openGlobal("data", true);
             return;
-          case "KeyE":
+          case "KeyB":
             e.preventDefault();
-            rememberFocus();
-            depsRef.current.focusUnitPanel();
+            openGlobal("books", true);
             return;
-          case "KeyN":
+          case "KeyC":
             e.preventDefault();
-            depsRef.current.goNextUnit();
+            window.location.hash = CARDS_HASH;
             return;
-          case "KeyP":
+          case "KeyD":
             e.preventDefault();
-            depsRef.current.goPrevUnit();
+            window.location.hash = DICTIONARY_HASH;
+            return;
+          case "KeyL":
+            e.preventDefault();
+            window.location.hash = LIBRARY_HASH;
             return;
           case "KeyT":
             e.preventDefault();
-            depsRef.current.cycleTheme();
-            return;
-          case "KeyI":
-            e.preventDefault();
-            depsRef.current.hintProgress();
+            // the theme button every view's topbar renders
+            document.querySelector<HTMLButtonElement>('.topbar-actions .themebtn[aria-label^="Theme"]')?.click();
             return;
         }
+      }
+
+      // 7. the view's own keys
+      for (const scope of ["course", "study", "browse"] as const) {
+        const fn = scopeHandler(scope);
+        if (fn && fn(e)) return;
       }
     };
     window.addEventListener("keydown", handler);
@@ -352,9 +361,12 @@ export function focusFirstExercise(): void {
   target?.focus({ preventScroll: true });
 }
 
-// sidebar arrow navigation: from nav.sidebar, groups of .unitlink buttons;
-// plain focus() so the sidebar scroller brings the button into view
-function moveSidebarFocus(key: string): void {
+/**
+ * Sidebar arrow navigation: from nav.sidebar, groups of .unitlink buttons;
+ * plain focus() so the sidebar scroller brings the button into view. The
+ * course scope calls it; it lives here with the rest of the key layer.
+ */
+export function moveSidebarFocus(key: string): void {
   const nav = document.querySelector("nav.sidebar");
   if (!nav) return;
   const groups = [...nav.querySelectorAll(".group")].map((g) =>

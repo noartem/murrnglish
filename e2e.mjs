@@ -48,10 +48,10 @@ ok("F0 bare / lands in the library", /#\/$/.test(page.url()), page.url());
 const libTitles = await page.locator(".libtitle").allTextContents();
 ok(
   "F0 library lists the books in learning order",
-  libTitles.join("|") === "Essential Grammar in Use|English Grammar in Use",
+  libTitles.join("|") === "English Grammar: Foundations|English Grammar: Progress",
   libTitles.join("|"),
 );
-await page.locator(".libtitle a", { hasText: "English Grammar in Use" }).click();
+await page.locator(".libtitle a", { hasText: "English Grammar: Progress" }).click();
 
 // ---------- Flow 1: book landing + first open defaults ----------
 await page.waitForSelector(".homecover", { timeout: 30000 });
@@ -176,25 +176,29 @@ await page.waitForFunction(
 );
 ok("F5 Shift+S again goes back up to the lesson", await page.evaluate(() => document.activeElement?.id === "lesson"));
 
-// ---------- Flow 6: progress modal ----------
+// ---------- Flow 6: the progress window ----------
 await page.locator('button[aria-label^="Progress"]').click();
 await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 30000 });
-ok("F6 progress modal opens", await page.locator('.modal h2:text("Progress")').isVisible());
-ok(
-  "F6 modal has export/share actions",
-  (await page.locator(".modal-actions button").count()) >= 2,
-);
+ok("F6 progress window opens", await page.locator('.modal h2:text("Progress")').isVisible());
+// the data actions moved to the data window; the overview keeps the grid
+ok("F6 the overview keeps the unit grid", (await page.locator(".modal .unitsq").count()) > 0);
 await page.locator('.modal button[aria-label="Close"]').click();
 await sleep(300);
-ok("F6 modal closes", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
+ok("F6 the window closes", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
 
-// ---------- Flow 9: Shift+I opens the progress window with hint keys ----------
+// ---------- Flow 9: Shift+I opens the data window with hint keys ----------
 // The window opened this way underlines the trigger letter of each control
 // (I / E / S, and the "a" of "answer") and a plain letter clicks that control.
 await page.keyboard.press("Shift+KeyI");
-await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 10000 });
+await page.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
 const hintLetters = await page.locator(".modal .hintkey").allTextContents();
-ok("F9 Shift+I opens with hint letters", hintLetters.join("") === "aIES", hintLetters.join(""));
+// one hint letter per hinted control: the A of "answer" and the I / E / S of
+// the three buttons (in "Copy share link" the marked S is the one in "share")
+ok(
+  "F9 Shift+I opens with one hint letter per control",
+  hintLetters.length === 4 && hintLetters.join("").toLowerCase() === "aies",
+  hintLetters.join(""),
+);
 ok(
   "F9 hint letters sit on their controls",
   (await page.locator(".modal [data-modal-key]").evaluateAll((els) =>
@@ -211,7 +215,16 @@ const hintGap = await page.locator('[data-modal-key="I"] .hintkey').evaluate((el
 });
 ok("F9 no gap inside the hinted label", hintGap < 2, `${hintGap}px`);
 
-const answersBox = page.locator('.modal input[type="checkbox"]');
+// one book ticked: the share link carries one book's progress, so the
+// Share button is enabled and E has something to write
+ok(
+  "F9 share is disabled until exactly one book is ticked",
+  await page.locator('[data-modal-key="S"]').isDisabled(),
+);
+await page.locator('.modal-opt', { hasText: "English Grammar: Progress" }).locator("input").check();
+ok("F9 share is enabled with one book ticked", !(await page.locator('[data-modal-key="S"]').isDisabled()));
+
+const answersBox = page.locator('[data-modal-key="A"] input[type="checkbox"]');
 const wasChecked = await answersBox.isChecked();
 await page.keyboard.press("KeyA");
 await sleep(150);
@@ -219,16 +232,23 @@ ok("F9 A toggles Include answer texts", (await answersBox.isChecked()) !== wasCh
 await page.keyboard.press("KeyA");
 await sleep(150);
 ok("F9 A toggles it back", (await answersBox.isChecked()) === wasChecked);
-ok("F9 the window stays open", (await page.locator('.modal[aria-label="Progress"]').count()) === 1);
+ok("F9 the window stays open", (await page.locator('.modal[aria-label="Data"]').count()) === 1);
 
 // E exports: the download is the observable effect
 const [file] = await Promise.all([
   page.waitForEvent("download", { timeout: 8000 }),
   page.keyboard.press("KeyE"),
 ]);
-ok("F9 E downloads the progress file", /murrnglish-blue-progress-.*\.json$/.test(file.suggestedFilename()), file.suggestedFilename());
-
-// S copies the share link and the confirmation wiggles
+ok("F9 E downloads the data file", /^murrnglish-data-.*\.json$/.test(file.suggestedFilename()), file.suggestedFilename());
+const exported = JSON.parse(await (await import("node:fs/promises")).readFile(await file.path(), "utf8"));
+ok(
+  "F9 the file names its format, version and the ticked book",
+  exported.format === "murrnglish-data" &&
+    exported.version === 2 &&
+    Object.keys(exported.books).join("") === "blue" &&
+    exported.cards === null,
+  JSON.stringify({ format: exported.format, version: exported.version, books: Object.keys(exported.books) }),
+);
 await ctx.grantPermissions(["clipboard-read", "clipboard-write"], { origin: BASE });
 const shakeFrames = page.evaluate(
   () =>
@@ -302,13 +322,13 @@ ok("F9 the notice is dropped after the fade", cycle[cycle.length - 1] === null,
 // Shift+I again must not double-fire Import: modifiers are not hint keys
 await page.keyboard.press("Shift+KeyI");
 await sleep(300);
-ok("F9 Shift+I does not act as the Import hint", (await page.locator('.modal[aria-label="Progress"]').count()) === 1);
+ok("F9 Shift+I does not act as the Import hint", (await page.locator('.modal[aria-label="Data"]').count()) === 1);
 
 // reopening from the topbar button drops the hints
 await page.keyboard.press("Escape");
 await sleep(350);
-await page.locator('button[aria-label^="Progress"]').click();
-await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 10000 });
+await page.locator('button[aria-label="Data: export, import, share"]').click();
+await page.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
 ok("F9 button open has no hints", (await page.locator(".modal .hintkey").count()) === 0);
 const plainBefore = await answersBox.isChecked();
 await page.keyboard.press("KeyA");
@@ -316,7 +336,7 @@ await sleep(200);
 ok("F9 plain letters are inert without hints", (await answersBox.isChecked()) === plainBefore);
 await page.keyboard.press("Escape");
 await sleep(350);
-ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
+ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Data"]').count()) === 0);
 
 // ---------- Flow 10: unit loading placeholder ----------
 // With the unit JSON held, the pane shows the placeholder under the unit's
@@ -358,17 +378,23 @@ const UNIT13_TITLE =
   await octx.close();
 }
 
-// ---------- Flow 7: keyboard shortcuts modal ----------
+// ---------- Flow 7: the shortcuts window ----------
+// Opened from every view, and it now documents the whole app: the keys that
+// work anywhere, the ones a book owns, and the two session-specific groups.
 await page.locator('button[aria-label="Keyboard shortcuts"]').click();
 await page.waitForSelector(".helpcard", { timeout: 30000 });
-ok("F7 shortcuts modal opens", await page.locator(".helpcard h3").isVisible());
+ok("F7 the help window opens", await page.locator(".helpcard h3").isVisible());
+const helpText = await page.locator(".helpcard").innerText();
 ok(
-  "F7 help documents Shift+I and its hint letters",
-  /Progress window/.test(await page.locator(".helpcard").innerText()),
+  "F7 help groups the keys by where they work",
+  /Anywhere/.test(helpText) && /In a book/.test(helpText),
+  helpText.slice(0, 120),
 );
+ok("F7 help names the data window and its hint letters", /Data window/.test(helpText));
+ok("F7 help lists every group", (await page.locator(".helpcard .helpsection").count()) === 4);
 await page.keyboard.press("Escape");
 await sleep(300);
-ok("F7 shortcuts modal closes", (await page.locator(".helpcard").count()) === 0);
+ok("F7 the help window closes", (await page.locator(".helpcard").count()) === 0);
 
 // ---------- Flow 8: phone layout (390x844) ----------
 const mctx = await browser.newContext({
@@ -443,7 +469,8 @@ await mp.locator(".sidebartoggle").click();
 await sleep(350);
 ok(
   "F8 drawer leads with the labelled controls",
-  (await mp.locator('.draweractions .draweraction:has-text("Progress & share")').count()) === 1 &&
+  (await mp.locator('.draweractions .draweraction:has-text("Progress")').count()) === 1 &&
+    (await mp.locator('.draweractions .draweraction:has-text("Data")').count()) === 1 &&
     (await mp.locator('.draweractions .themebtn:has-text("Theme:")').count()) === 1,
 );
 ok(
@@ -593,9 +620,9 @@ if (BASE.includes("4173")) {
   );
 
   await p2.locator('[aria-label="Offline: download books"]').click();
-  const blueRow = p2.locator(".dlrow", { hasText: "English Grammar in Use" });
-  const redRow = p2.locator(".dlrow", { hasText: "Essential Grammar in Use" });
-  await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar in Use" }).waitFor({ timeout: 30000 });
+  const blueRow = p2.locator(".dlrow", { hasText: "English Grammar: Progress" });
+  const redRow = p2.locator(".dlrow", { hasText: "English Grammar: Foundations" });
+  await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar: Progress" }).waitFor({ timeout: 30000 });
   ok("F12 download finishes and offers a remove action", true);
   ok(
     "F12 only the open book was downloaded",
@@ -620,7 +647,7 @@ if (BASE.includes("4173")) {
   // the way back out: removing drops the cache and the flag, and the panel
   // offers the download again
   await p2.locator('[aria-label="Offline: download books"]').click();
-  await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar in Use" }).click();
+  await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar: Progress" }).click();
   await blueRow.getByRole("button", { name: "Download", exact: true }).waitFor({ timeout: 30000 });
   const removed = await p2.evaluate(async () => {
     return {
@@ -685,18 +712,18 @@ if (BASE.includes("4173")) {
 // ---------- Flow 13: the red book, its own progress, the library crumb ----------
 await page.goto(BASE + "/#/", { waitUntil: "load" });
 await page.waitForSelector(".libcard", { timeout: 30000 });
-const blueCard = page.locator(".libcard", { hasText: "English Grammar in Use" });
+const blueCard = page.locator(".libcard", { hasText: "English Grammar: Progress" });
 ok(
   "F13 the blue card resumes after the checked unit",
   /Continue with Unit 2/.test((await blueCard.locator(".libcta").textContent()) ?? ""),
   (await blueCard.locator(".libcta").textContent()) ?? "",
 );
-await page.locator(".libcard", { hasText: "Essential Grammar in Use" }).locator(".libcta").click();
+await page.locator(".libcard", { hasText: "English Grammar: Foundations" }).locator(".libcta").click();
 await page.waitForURL(/#\/red\/u1$/, { timeout: 30000 });
 await page.waitForSelector(".coursepane .exercise", { timeout: 30000 });
 ok("F13 red unit 1 renders", /Урок 1 —/.test((await page.locator(".unitheading").first().textContent()) ?? ""));
 ok("F13 red's lesson is in Russian", /В этом уроке/.test((await page.locator(".lessongoals").textContent()) ?? ""));
-ok("F13 the topbar names the red book", (await page.locator(".topbar h1").textContent()) === "Essential Grammar in Use");
+ok("F13 the topbar names the red book", (await page.locator(".topbar h1").textContent()) === "English Grammar: Foundations");
 ok(
   "F13 red starts with no progress of its own",
   await page.evaluate(() => {
@@ -717,6 +744,68 @@ ok("F13 the crumb returns to the library", /#\/$/.test(page.url()));
 await page.goto(BASE + "/", { waitUntil: "load" });
 await page.waitForURL(/#\/blue\/u\d+$/, { timeout: 30000 });
 ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()), page.url());
+
+// ---------- Flow 13b: one key system for the whole app ----------
+// The jumps work from every view, not only from inside a book: the sections
+// from the library, the books from the dictionary.
+{
+  const nctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
+  const np = await nctx.newPage();
+  np.on("pageerror", (e) => results.push(["FAIL", "F13b pageerror", String(e).slice(0, 140)]));
+
+  await np.goto(BASE + "/#/dictionary", { waitUntil: "load" });
+  await np.waitForSelector(".addbar input", { timeout: 30000 });
+
+  // Shift+B: the picker, with one row per book
+  await np.keyboard.press("Shift+KeyB");
+  await np.waitForSelector('.modal[aria-label="Go to"]', { timeout: 10000 });
+  ok("F13b the picker lists both books", (await np.locator(".pickerrow").count()) === 2);
+  const rows = await np.locator(".pickerrow").allInnerTexts();
+  ok(
+    "F13b the rows carry the books in library order",
+    rows.map((t) => t.split("\n")[1]).join("|") ===
+      "English Grammar: Foundations|English Grammar: Progress",
+    rows.join(" / "),
+  );
+  ok("F13b a row says how far the learner got", /units done/.test(rows[0]), rows[0]);
+  // a number picks that book outright
+  await np.keyboard.press("Digit2");
+  await np.waitForURL(/#\/blue$/, { timeout: 10000 });
+  ok("F13b a digit opens that book", /#\/blue$/.test(np.url()), np.url());
+
+  // Esc closes it without going anywhere
+  await np.goto(BASE + "/#/cards", { waitUntil: "load" });
+  await np.waitForSelector(".decksection", { timeout: 30000 });
+  await np.keyboard.press("Shift+KeyB");
+  await np.waitForSelector('.modal[aria-label="Go to"]', { timeout: 10000 });
+  await np.keyboard.press("Escape");
+  await sleep(300);
+  ok("F13b Escape closes the picker without navigating", /#\/cards$/.test(np.url()), np.url());
+
+  // Alt+1 opens the first book from the deck list
+  await np.keyboard.press("Alt+Digit1");
+  await np.waitForURL(/#\/red$/, { timeout: 10000 });
+  ok("F13b Alt+1 opens the first book", /#\/red$/.test(np.url()), np.url());
+
+  // the section jumps, from inside a book
+  await np.keyboard.press("Shift+KeyD");
+  await np.waitForURL(/#\/dictionary$/, { timeout: 10000 });
+  ok("F13b Shift+D goes to the dictionary", /#\/dictionary$/.test(np.url()), np.url());
+  await np.keyboard.press("Shift+KeyC");
+  await np.waitForURL(/#\/cards$/, { timeout: 10000 });
+  ok("F13b Shift+C goes to the cards", /#\/cards$/.test(np.url()), np.url());
+  await np.keyboard.press("Shift+KeyL");
+  await np.waitForURL(/#\/$/, { timeout: 10000 });
+  ok("F13b Shift+L goes to the library", /#\/$/.test(np.url()), np.url());
+
+  // Alt+D opens the data window from the library
+  await np.keyboard.press("Alt+KeyD");
+  await np.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
+  ok("F13b Alt+D opens the data window everywhere",
+    (await np.locator('.modal-opt input[type="checkbox"]').count()) === 5);
+  ok("F13b no page errors", !results.some((r) => r[1] === "F13b pageerror"));
+  await nctx.close();
+}
 
 // ---------- Flow 14: the rules are the lessons now ----------
 {
@@ -739,10 +828,13 @@ ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()
   await rp.locator(".lseechip", { hasText: "Present simple" }).first().click();
   await rp.waitForURL(/#\/blue\/u2$/, { timeout: 10000 });
   ok("F14 see-also chips open their unit", true);
-  // a unit without its lesson yet says so and goes straight to the exercises
+  // every unit of both books carries a lesson now, so a late one opens on it
   await rp.goto(BASE + "/#/blue/u140", { waitUntil: "load" });
-  await rp.waitForSelector(".coursepane .exercise", { timeout: 30000 });
-  ok("F14 a unit without a lesson says it is coming", await rp.locator(".lessonsoon").isVisible());
+  await rp.waitForSelector(".lesson .lsection", { timeout: 30000 });
+  ok(
+    "F14 a late unit opens on its lesson",
+    (await rp.locator(".lessonsoon").count()) === 0 && (await rp.locator(".lesson").count()) === 1,
+  );
   // exercises that had a picture carry it as text
   await rp.goto(BASE + "/#/red/u3", { waitUntil: "load" });
   await rp.waitForSelector("#ex-3\\.1 .itemcue", { timeout: 30000 });
@@ -977,25 +1069,44 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
   await sp.goto(BASE + "/#/", { waitUntil: "load" });
   await sp.reload({ waitUntil: "load" });
   await sp.waitForSelector(".studygrid", { timeout: 30000 });
-  ok("F16 the library shows the due count", Number(await sp.locator(".studytile .duebadge").textContent()) >= 1);
-
-  // backup: export here, import into a browser that has nothing
+  // data window: export the words and the reviews here, import them into a
+  // browser that has nothing
   await sp.goto(BASE + "/#/dictionary", { waitUntil: "load" });
-  await sp.waitForSelector(".backup", { timeout: 30000 });
-  const [dl] = await Promise.all([sp.waitForEvent("download"), sp.locator(".backup button", { hasText: "Export" }).click()]);
-  ok("F16 the backup downloads", /^murrnglish-study-.*\.json$/.test(dl.suggestedFilename()), dl.suggestedFilename());
+  await sp.waitForSelector(".addbar input", { timeout: 30000 });
+  await sp.locator('button[aria-label="Data: export, import, share"]').click();
+  await sp.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
+  await sp.locator(".modal-opt", { hasText: "Cards — reviews" }).locator("input").check();
+  await sp.locator(".modal-opt", { hasText: "Dictionary — your words" }).locator("input").check();
+  const [dl] = await Promise.all([
+    sp.waitForEvent("download"),
+    sp.locator('[data-modal-key="E"]').click(),
+  ]);
+  ok("F16 the data file downloads", /^murrnglish-data-.*\.json$/.test(dl.suggestedFilename()), dl.suggestedFilename());
   const file = await dl.path();
   const ictx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
   const ip = await ictx.newPage();
   await ip.goto(BASE + "/#/dictionary", { waitUntil: "load" });
-  await ip.waitForSelector(".backup", { timeout: 30000 });
-  await ip.locator('.backup input[type="file"]').setInputFiles(file);
+  await ip.waitForSelector(".addbar input", { timeout: 30000 });
+  await ip.locator('button[aria-label="Data: export, import, share"]').click();
+  await ip.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
+  await ip.locator('.modal input[type="file"]').setInputFiles(file);
+  // the file is only summarised until Apply: nothing is written yet
+  await ip.waitForSelector('.modal button:text("Apply")', { timeout: 10000 });
+  ok("F16 the incoming file is summarised, not applied",
+    /Dictionary: 2 words/.test(await ip.locator(".modal-summary").last().innerText()),
+    (await ip.locator(".modal-summary").last().innerText()).trim(),
+  );
+  ok("F16 nothing is written before Apply",
+    (await ip.locator(".wordrow").count()) === 0);
+  await ip.locator('.modal button:text("Apply")').click();
+  await ip.keyboard.press("Escape");
+  await sleep(350);
   await ip.waitForSelector(".wordrow", { timeout: 5000 });
   ok(
-    "F16 importing the backup brings the words and reviews",
+    "F16 applying the data file brings the words and reviews",
     (await ip.locator(".wordrow").count()) === 2 &&
       (await ip.evaluate(() => Object.keys(JSON.parse(localStorage.getItem("murrnglish.srs-v1")).states).length)) >= 2,
-    (await ip.locator(".backup .modal-msg").innerText()).trim(),
+    (await ip.locator(".modal-msg").count()) ? (await ip.locator(".modal-msg").innerText()).trim() : "",
   );
   await ictx.close();
   ok("F16 no page errors", !results.some((r) => r[1] === "F16 pageerror"));

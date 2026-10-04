@@ -13,7 +13,6 @@ describe("bookUrls", () => {
       "/books/blue/data/index.json",
       "/books/blue/data/totals.json",
       "/books/blue/data/course.json",
-      "/books/blue/cover.png",
     ]);
   });
 

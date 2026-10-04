@@ -1,13 +1,13 @@
 // Keyboard-shortcuts help: the topbar button (native title tooltip, like
-// ThemeToggle) and the help modal. Esc/backdrop close is handled centrally
-// in useCourseShortcuts (helpOpen state lives in App); the backdrop click
-// is the only local handler here.
+// ThemeToggle) and the help window. Esc and the backdrop close it — Esc in
+// the central dispatcher, the backdrop click here. The window itself is
+// mounted by App off globalUi.ts, so it opens from every view.
 
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Keyboard, X } from "lucide-react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import type { HelpEntry } from "../shortcuts";
-import { SC, SHORTCUT_HELP } from "../shortcuts";
+import type { HelpSection } from "../shortcuts";
+import { HELP_SECTIONS, SC } from "../shortcuts";
 
 export function ShortcutsHelpButton({ onOpen }: { onOpen: () => void }) {
   return (
@@ -24,11 +24,11 @@ export function ShortcutsHelpButton({ onOpen }: { onOpen: () => void }) {
 
 export function ShortcutsModal({
   onClose,
-  entries = SHORTCUT_HELP,
+  entries = HELP_SECTIONS,
 }: {
   onClose: () => void;
-  /** the course's keys by default; the study screen passes its own */
-  entries?: HelpEntry[];
+  /** the whole app's keys by default */
+  entries?: HelpSection[];
 }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   // Focus the scroll container, not the close button: the browser's default
@@ -83,33 +83,44 @@ export function ShortcutsModal({
             },
           }}
       >
-      {entries.map((entry) => (
-        <section className="helpentry" key={entry.title}>
-          <div className="helpentryhead">
-            <span className="keychips">
-              <KeyChips combo={entry.keys} />
-            </span>{" "}
-            <strong>{entry.title}</strong>
-          </div>
-          <p>{entry.desc}</p>
-          {entry.sub && (
-            <ul>
-              {entry.sub.map((s) => (
-                <li key={s.desc}>
-                  <span className="keychips">
-                    <KeyChips combo={s.keys} />
-                    {s.alt && (
-                      <>
-                        <span className="keysep">/</span>
-                        <KeyChips combo={s.alt} />
-                      </>
-                    )}
-                  </span>{" "}
-                  {"\u2014"} {s.desc}
-                </li>
-              ))}
-            </ul>
-          )}
+      {entries.map((section) => (
+        <section key={section.title}>
+          <h4 className="helpsection">{section.title}</h4>
+          {section.entries.map((entry) => (
+            <section className="helpentry" key={entry.title}>
+              <div className="helpentryhead">
+                <span className="keychips">
+                  <KeyChips combo={entry.keys} />
+                </span>{" "}
+                {entry.alt && (
+                  <>
+                    <span className="keysep">/</span>
+                    <KeyChips combo={entry.alt} />
+                  </>
+                )}
+                <strong>{entry.title}</strong>
+              </div>
+              <p>{entry.desc}</p>
+              {entry.sub && (
+                <ul>
+                  {entry.sub.map((s) => (
+                    <li key={s.desc}>
+                      <span className="keychips">
+                        <KeyChips combo={s.keys} />
+                        {s.alt && (
+                          <>
+                            <span className="keysep">/</span>
+                            <KeyChips combo={s.alt} />
+                          </>
+                        )}
+                      </span>{" "}
+                      {"\u2014"} {s.desc}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          ))}
         </section>
       ))}
       </OverlayScrollbarsComponent>

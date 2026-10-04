@@ -20,17 +20,16 @@ import type { Deck, DeckEntry, EntryKind } from "../deckdata";
 import { checkTyped, choiceOrder, entryKind, entryText, formVariants, gapsOf, parseCardId, phraseAnswers, useDecks } from "../deckdata";
 import type { ResolvedCard } from "../decks";
 import { deckIds, deckTitle, useCardLookup } from "../decks";
+import { useKeyScope } from "../keyScopes";
 import { speak } from "../lookup";
 import type { DeckRef } from "../routes";
 import { CARDS_HASH, browseHash, dictionaryDeckHash } from "../routes";
 import type { Rating } from "../srs";
 import { RATINGS, RATING_LABEL, buildQueue, intervalLabel, nextCard, preview, todayDaily } from "../srs";
-import { STUDY_HELP } from "../shortcuts";
 import { answerCard, setSuspended, srsConfig, undoAnswer, useStudy } from "../study";
 import type { Word } from "../words";
 import { CountsLine, LevelChip } from "./CardsView";
 import { SectionBar } from "./SectionBar";
-import { ShortcutsHelpButton, ShortcutsModal } from "./ShortcutsHelp";
 import { openWordEditor } from "./WordEditor";
 
 const OS_OPTIONS = {
@@ -82,7 +81,6 @@ export function StudyView({ deck }: { deck: DeckRef }) {
   const [currentId, setCurrentId] = useState<string | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [attempt, setAttempt] = useState<Attempt>(EMPTY);
-  const [helpOpen, setHelpOpen] = useState(false);
 
   // the card on screen stays until answered; when there is none, take the next
   const next = queue ? nextCard(queue, srs.states, now, cfg) : null;
@@ -145,63 +143,49 @@ export function StudyView({ deck }: { deck: DeckRef }) {
     [revealed],
   );
 
-  // keys: see STUDY_HELP
-  const keyState = useRef({ revealed, rate, turn, undo, suggested, pickChoice, shownOrder, helpOpen });
-  keyState.current = { revealed, rate, turn, undo, suggested, pickChoice, shownOrder, helpOpen };
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      const k = keyState.current;
-      if (k.helpOpen) {
-        if (e.key === "Escape") setHelpOpen(false);
-        return;
-      }
-      if (document.querySelector(".modal-overlay")) return; // the word editor is open
-      const typing = e.target instanceof HTMLElement && e.target.closest("input, textarea, select");
-      // Ctrl+Z in a field with text is the field's own undo; an empty answer
-      // field (the next card's, which takes the focus) has nothing to undo
-      const fieldText = typing && "value" in typing ? String(typing.value) : "";
-      if ((e.ctrlKey || e.metaKey) && !e.shiftKey && !e.altKey && e.code === "KeyZ" && !fieldText) {
-        e.preventDefault();
-        k.undo();
-        return;
-      }
-      if (e.ctrlKey || e.metaKey || e.altKey) return;
-      if (e.key === "?") {
-        e.preventDefault();
-        setHelpOpen(true);
-        return;
-      }
-      if (e.shiftKey && e.code === "KeyT" && !typing) {
-        e.preventDefault();
-        document.querySelector<HTMLButtonElement>('.topbar-actions .themebtn[aria-label^="Theme"]')?.click();
-        return;
-      }
-      if (typing || e.shiftKey || e.repeat) return;
-      const digit = /^Digit([1-9])$/.exec(e.code)?.[1];
-      if (!k.revealed) {
-        if (e.key === " " || e.key === "Enter") {
-          // a focused button (Undo, Suspend…) keeps its own Space/Enter
-          if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return;
-          e.preventDefault();
-          k.turn();
-        } else if (digit && Number(digit) <= k.shownOrder.length) {
-          e.preventDefault();
-          k.pickChoice(k.shownOrder[Number(digit) - 1]);
-        }
-        return;
-      }
+  // keys: see HELP_SECTIONS, "In a review session". The app-wide keys and
+  // the open-window guard belong to the dispatcher, so this handler only
+  // deals with the review loop's own keys.
+  useKeyScope("study", (e) => {
+    const typing = e.target instanceof HTMLElement && e.target.closest("input, textarea, select");
+    // Ctrl+Z in a field with text is the field's own undo; an empty answer
+    // field (the next card's, which takes the focus) has nothing to undo
+    const fieldText = typing && "value" in typing ? String(typing.value) : "";
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && !e.altKey && e.code === "KeyZ" && !fieldText) {
+      e.preventDefault();
+      undo();
+      return true;
+    }
+    if (e.ctrlKey || e.metaKey || e.altKey || typing || e.shiftKey || e.repeat) return false;
+    const digit = /^Digit([1-9])$/.exec(e.code)?.[1];
+    if (!revealed) {
       if (e.key === " " || e.key === "Enter") {
-        if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return;
+        // a focused button (Undo, Suspend…) keeps its own Space/Enter
+        if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return false;
         e.preventDefault();
-        k.rate(k.suggested);
-      } else if (digit && Number(digit) <= 4) {
-        e.preventDefault();
-        k.rate(Number(digit) as Rating);
+        turn();
+        return true;
       }
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
+      if (digit && Number(digit) <= shownOrder.length) {
+        e.preventDefault();
+        pickChoice(shownOrder[Number(digit) - 1]);
+        return true;
+      }
+      return false;
+    }
+    if (e.key === " " || e.key === "Enter") {
+      if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return false;
+      e.preventDefault();
+      rate(suggested);
+      return true;
+    }
+    if (digit && Number(digit) <= 4) {
+      e.preventDefault();
+      rate(Number(digit) as Rating);
+      return true;
+    }
+    return false;
+  });
 
   const state = shownId ? srs.states[shownId] : undefined;
   const at = !shownId || !state ? "fresh" : state.kind === "review" ? "review" : "learn";
@@ -295,10 +279,7 @@ export function StudyView({ deck }: { deck: DeckRef }) {
 
   return (
     <div className="app">
-      <SectionBar
-        section="cards"
-        actions={<ShortcutsHelpButton onOpen={() => setHelpOpen(true)} />}
-      />
+      <SectionBar section="cards" />
       <div className="main">
         <OverlayScrollbarsComponent element="main" className="home deskpane" options={OS_OPTIONS}>
           <div className="deskcol studycol">
@@ -313,7 +294,6 @@ export function StudyView({ deck }: { deck: DeckRef }) {
           </div>
         </OverlayScrollbarsComponent>
       </div>
-      {helpOpen && <ShortcutsModal entries={STUDY_HELP} onClose={() => setHelpOpen(false)} />}
     </div>
   );
 }

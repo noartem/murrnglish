@@ -1,12 +1,12 @@
 # Murrnglish
 
-Raymond Murphy's grammar books as interactive web courses: every unit opens
-with a lesson written for the app, then its exercises, answers checked as
-you go, progress saved in the browser. One installable PWA that works
-offline, one book per folder. The app shows no page of the books: the
-lessons are its own (in Russian for the red book, in English for the blue
-one), and the exercises carry as text whatever the printed page gave them —
-a picture, a table, a map. Next to the books: flash cards with Anki's spaced
+Two grammar courses as interactive web apps: every unit opens with a lesson
+written for the app, then its exercises, answers checked as you go, progress
+saved in the browser. One installable PWA that works offline, one book per
+folder. The app shows no page of the books: the lessons are its own (in
+Russian for the red course, in English for the blue one), and the exercises
+carry as text whatever the printed page gave them — a picture, a table, a
+map. Next to the books: flash cards with Anki's spaced
 repetition, and a dictionary of the learner's own words. The cards are the
 app's own material too, written for it and tied to no book:
 grammar decks by topic and vocabulary decks (irregular verbs, advanced
@@ -15,8 +15,8 @@ words, false friends, easily confused words, idioms).
 
 | Book | Folder | Units | Additional |
 | --- | --- | --- | --- |
-| Essential Grammar in Use (Russian edition) — "red" | `books/red` | 115 | 35 |
-| English Grammar in Use (Fifth edition) — "blue" | `books/blue` | 145 | 41 |
+| English Grammar: Foundations (Russian edition) — "red" | `books/red` | 115 | 35 |
+| English Grammar: Progress (English edition) — "blue" | `books/blue` | 145 | 41 |
 
 The repository merges the former `blue-murphy` and `red-murphy` projects with
 both histories kept (`git log --follow books/red/data/units/unit-001.json`
@@ -35,6 +35,9 @@ src/                    the web app (Vite + React + TypeScript), one for every b
   components/CardsView.tsx, StudyView.tsx, DictionaryView.tsx
                         the sections: deck list, review session, dictionary
   components/DeckBrowser.tsx  a deck's cards, and one card with its history
+  components/Cover.tsx     a book's cover, drawn in the app
+  components/DataModal.tsx, BookPicker.tsx, ShortcutsHelp.tsx
+                        the app-wide windows: data, go-to, shortcuts
   components/WordEditor.tsx, PickWord.tsx
                         adding/editing a word; "add" on a selected word
   lesson.ts             a lesson's types, as scripts/lessons.mjs compiles them
@@ -49,12 +52,15 @@ src/                    the web app (Vite + React + TypeScript), one for every b
   lookup.ts, words.ts   dictionary lookups and word entries
   books.ts              book registry (generated from books/*/book.json)
   routes.ts             hash routes
+  shortcuts.ts           the one keydown dispatcher and the help data
+  keyScopes.ts           the per-view key handlers it runs
+  globalUi.ts            which app-wide window is open
+  datatransfer.ts        the data file: what it carries and what it reads
   keys.ts               every localStorage key
   offline.ts            offline downloads, one per book
 public/                 static files; sw.js = shell cache + one cache per book
 books/<id>/             everything of one book
-  book.json             title, edition, level, lessons' language, authors, cover
-  cover.*               served as /books/<id>/...
+  book.json             title, edition, level, description, lessons' language
   lessons/              the app's own lessons, u<NNN>.md, one per unit
   data/                 units/, additional/, index.json, totals.json
   book.pdf              the extraction pipelines' source; never served
@@ -114,7 +120,7 @@ The red book's LLM pipeline reads its API keys from `books/red/.env` (ignored).
 | `#/<book>/a3` | additional exercise 3 |
 | `#/<book>/p=<code>` | shared progress for that book (preview, then apply) |
 | `#/rules/<book>/u12` | the old rules compendium: now unit 12 itself (`#/rules/<book>` the book, `#/rules` the library) |
-| `#/cards` | the card decks with today's counts, settings, backup |
+| `#/cards` | the card decks with today's counts and settings |
 | `#/cards/<deck>` | a review session: `all`, `words`, or a deck id (`phrasal-verbs`) |
 | `#/cards/<deck>/browse` | a deck's cards, with a search and where each one stands |
 | `#/cards/<deck>/browse/<entry>` | one card: turned over, its review history, Suspend / Forget |
@@ -125,6 +131,17 @@ Sections take their own first segment next to the book ids, so
 `sync_books.mjs` refuses a book folder named after one — or `rules`, which
 old links still use (`RESERVED_IDS` in `src/routes.ts`); `sync_decks.mjs`
 refuses a deck named `all` or `words`.
+
+## Keyboard
+
+One window keydown listener for the whole app (`src/shortcuts.ts`), so every
+key works in every view. App-wide: `Shift+?` the help, `Shift+T` the theme,
+`Shift+C` / `Shift+D` / `Shift+L` the cards, the dictionary and the library,
+`Shift+B` the book picker and `Alt+1…9` a book by number, `Alt+D` or `Shift+I`
+the data window. A book adds `Ctrl+Enter`, `Shift+A`, `Shift+N`, `Shift+P`,
+`Shift+E`, `Alt+Shift+E` and `Shift+S`; a review session and a deck browser
+register their own through `src/keyScopes.ts`. `Shift+?` lists all of it,
+grouped by where each key works.
 
 ## Storage
 
@@ -141,14 +158,16 @@ review history survives corrections to the material; word cards are
 `<book>:<exercise>:<item>` and `v:<book>:<pack>:<entry>`) are migrated once
 the decks load (`src/legacy.ts`): a word-pack card's history moves to the
 deck entry of the same id, the rest is dropped — also when an old backup is
-imported. It is backed up on its own: *Export backup* in the
-dictionary or the deck list writes one JSON file, and *Import backup* merges
-it (the newer entry and the later review win, suspensions add up) — nothing
-is overwritten, so a phone's backup can be brought to a laptop and back.
+imported.
 
-Progress from the old single-book sites (other origins, so their
-localStorage is out of reach) moves over by hand: *Progress → Export* there,
-*Progress → Import* in the same book here — the file format is unchanged.
+Everything this browser holds moves through one window — *Data* in every
+topbar, or `Alt+D` / `Shift+I` anywhere. The targets are ticked (each book,
+the cards, the words) and one `murrnglish-data-<date>.json` carries the ticked
+ones; importing merges (the newer word and the later review win, suspensions
+add up) and nothing is written until you press *Apply*. A single ticked book
+can be shared as a `#/<book>/p=` link instead. The window also still reads an
+older `murrnglish-study` backup and a bare per-book progress file, so a file
+written by an earlier version imports unchanged.
 
 ## Offline
 
@@ -158,9 +177,10 @@ own cache (`murrnglish-book-<id>-v2`) and can be removed on its own, while
 the app itself lives in `murrnglish-shell-v2`. An installed app downloads the
 open book by itself unless that book was removed by hand.
 
-A book is four files: `index.json`, `totals.json`, `course.json` (every unit
-with its lesson, and every additional exercise) and the cover — a few
-hundred kilobytes. The `-v1` caches held the books' PDFs; the worker deletes
+A book is three files: `index.json`, `totals.json` and `course.json` (every
+unit with its lesson, and every additional exercise) — a few hundred
+kilobytes.
+The `-v1` caches held the books' PDFs; the worker deletes
 them when it activates. The decks are one lazy chunk of the app
 (`assets/decks-<hash>.js`, ~70 KB gzipped): the worker keeps it once the
 cards or the dictionary have been opened, and a book download stores it
@@ -173,8 +193,8 @@ types, and a saved word's recording is kept in `murrnglish-audio-v1`.
 A unit is one column: a bar of jumps at the top (the lesson, then one chip
 per exercise, the part in view lit up; Shift+S goes from the lesson down to
 the first exercise and back), the lesson, a "Practice" divider, the
-exercises. A unit whose lesson is not written yet says so and shows its
-exercises.
+exercises. Every unit of both courses has its lesson; a new book without one
+says so and shows its exercises.
 
 A lesson is `books/<id>/lessons/u<NNN>.md`, written for the app: its own
 situations, names and examples, covering the grammar the unit's exercises
@@ -300,9 +320,11 @@ them may fail; the entry can always be typed by hand and saved.
 
 ## Adding a book
 
-1. Create `books/<id>/` with a cover image and `book.json` (copy one from
-   another book; `order` places it on the learning path, `lang` is the
-   language of its lessons, `en` or `ru`).
+1. Create `books/<id>/` with a `book.json` (copy one from another book;
+   `order` places it on the learning path, `lang` is the language of its
+   lessons, `en` or `ru`, and `description` is the paragraph the library and
+   the landing show). The cover is drawn by the app from the title and the
+   color, so there is nothing to add.
 2. Produce `data/` in the shared format (`work/PARSING-SPEC.md` of either
    book describes it) with its own pipeline under `books/<id>/scripts/`,
    including a `validate.py` — CI runs `books/*/scripts/validate.py`.

@@ -1,11 +1,11 @@
 {
   "order": 2,
-  "title": "English Grammar in Use",
-  "edition": "Fifth edition",
+  "title": "English Grammar: Progress",
+  "edition": "English edition",
   "lang": "en",
   "level": "Intermediate",
   "authors": "Raymond Murphy",
   "publisher": "Cambridge University Press",
   "color": "#1d4ed8",
-  "cover": { "file": "cover.png", "width": 1112, "height": 1497 }
+  "description": "The intermediate course: 145 units and 41 extra exercise sets. Every unit opens with a short lesson and goes on to its exercises, answers checked as you go. The lessons are written in English, so you can check yourself against them."
 }

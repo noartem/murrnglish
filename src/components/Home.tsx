@@ -1,5 +1,5 @@
-// Home: a book's landing (#/<book>). The hero is the book cover with a
-// one-paragraph description and a single
+// Home: a book's landing (#/<book>). The hero is the book cover — drawn in
+// the app (Cover.tsx) — with a one-paragraph description and a single
 // call to action beside it on desktop (stacked and centered on phones). The
 // cover is a real button mirroring the CTA — same action, mouse or keyboard.
 // Learners with saved progress get the CTA corrected to "Continue with …"
@@ -9,8 +9,8 @@
 
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import type { Book } from "../books";
-import { bookUrl } from "../books";
 import type { ContinueTarget } from "../progress";
+import { Cover } from "./Cover";
 
 export function Home({
   book,
@@ -36,28 +36,13 @@ export function Home({
     >
       <div className="homecol">
         <button type="button" className="homecoverbtn" onClick={onStart}>
-          <img
-            className="homecover"
-            src={bookUrl(book, book.cover.file)}
-            alt={`Cover of ${book.title}, ${book.edition}, by ${book.authors}`}
-            width={book.cover.width}
-            height={book.cover.height}
-            style={{ aspectRatio: `${book.cover.width} / ${book.cover.height}` }}
-            decoding="async"
-            draggable={false}
-          />
+          <Cover book={book} className="homecover" />
         </button>
         <div className="hometext">
           <p className="homekicker">
             {book.level} · {book.edition}
           </p>
-          <p className="homedesc">
-            <em>{book.title}</em> by {book.authors} as an interactive web
-            course: every unit opens with a short lesson and goes on to its
-            exercises, answers checked as you go, progress saved in this
-            browser. {book.units} units and{" "}
-            {book.additional} additional exercises.
-          </p>
+          <p className="homedesc">{book.description}</p>
           <button type="button" className="homecta" onClick={onStart}>
             {continueTo ? (
               <>
@@ -73,7 +58,8 @@ export function Home({
               Artem Noskov
             </a>
             <br />
-            From the book by {book.authors} ({book.publisher})
+            Exercises based on the material of Raymond Murphy (Cambridge
+            University Press)
           </footer>
         </div>
       </div>

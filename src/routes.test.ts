@@ -29,7 +29,7 @@ const book = (id: string, units: number, additional: number): Book => ({
   authors: "",
   publisher: "",
   color: "#000",
-  cover: { file: "cover.png", width: 1, height: 1 },
+  description: "",
   units,
   additional,
   downloadBytes: 0,

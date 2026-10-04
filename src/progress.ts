@@ -32,6 +32,17 @@ export interface ProgressCounts {
 // book's save cancel the previous book's last write
 const saveTimers = new Map<string, number>();
 
+// A book's progress is written from two places: the course itself (debounced
+// after an answer) and the data window's import, which must reach a book that
+// is open in another part of the app without a reload.
+const progressListeners = new Set<(bookId: string) => void>();
+
+/** Called with the book id after every successful write. */
+export function subscribeProgress(l: (bookId: string) => void): () => void {
+  progressListeners.add(l);
+  return () => progressListeners.delete(l);
+}
+
 export function emptyProgress(): Progress {
   return { answers: {}, results: {}, selfMarks: {} };
 }
@@ -59,6 +70,7 @@ export function saveProgress(bookId: string, p: Progress, debounceMs = 300): voi
       saveTimers.delete(bookId);
       try {
         localStorage.setItem(progressKey(bookId), JSON.stringify(p));
+        for (const l of progressListeners) l(bookId);
       } catch {
         // storage full/unavailable: progress silently not persisted
       }

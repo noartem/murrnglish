@@ -19,11 +19,10 @@ import {
 import { LessonBody, LessonSoon, PracticeDivider, UnitHead, labelsFor } from "./components/Lesson";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
-import {
-  ShortcutsHelpButton,
-  ShortcutsModal,
-} from "./components/ShortcutsHelp";
-import { SC, focusFirstExercise, useCourseShortcuts } from "./shortcuts";
+import { ShortcutsHelpButton } from "./components/ShortcutsHelp";
+import { openGlobal } from "./globalUi";
+import { useKeyScope } from "./keyScopes";
+import { SC, focusFirstExercise, moveSidebarFocus } from "./shortcuts";
 import {
   ArrowLeft,
   ArrowRight,
@@ -44,12 +43,11 @@ import {
   completedUnitIds,
   continueTarget,
   loadProgress,
-  parseProgressText,
   pct,
-  progressPayload,
   saveLastRoute,
   saveProgress,
   scopeStats,
+  subscribeProgress,
   unitCompleted,
 } from "./progress";
 import type { Progress } from "./progress";
@@ -65,7 +63,7 @@ import {
 } from "./offline";
 import { Home } from "./components/Home";
 import { Battery } from "./components/Battery";
-import { decodeShare, encodeShare } from "./share";
+import { decodeShare } from "./share";
 import type { BookPage, ContentPage } from "./routes";
 import {
   CARDS_HASH,
@@ -104,25 +102,18 @@ export default function CourseApp({
   );
   const [totals, setTotals] = useState<TotalsMap | null>(null);
   // incoming progress held for the preview modal; applied only on confirm.
-  // ONE mechanism for both the #p= link open and the JSON file import.
-  const [preview, setPreview] = useState<{
-    p: Progress;
-    src: "file" | "link";
-  } | null>(null);
+  // The one producer is a #p= share link — the data window owns file imports.
+  const [preview, setPreview] = useState<Progress | null>(null);
   const [progress, setProgressState] = useState<Progress>(() => loadProgress(book.id));
-  // keyboard-shortcuts help modal
-  const [helpOpen, setHelpOpen] = useState(false);
-  const preHelpFocus = useRef<HTMLElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   // the offline download window: its button exists only in the installed app
   const [offlineOpen, setOfflineOpen] = useState(false);
   // computed once — an install relaunches the app in standalone, so this
   // cannot change under a live session
   const [standalone] = useState(isStandalone);
-  // Shift+I open: the modal underlines each control's trigger letter
-  const [modalHints, setModalHints] = useState(false);
-  const [notice, setNotice] = useState("");
   // transient topbar notice, auto-clears
+  const [notice, setNotice] = useState("");
+
   useEffect(() => {
     if (!notice) return;
     const t = setTimeout(() => setNotice(""), 6000);
@@ -287,7 +278,7 @@ export default function CourseApp({
     let alive = true;
     void decodeShare(share).then((p) => {
       if (!alive) return;
-      if (p) setPreview({ p, src: "link" });
+      if (p) setPreview(p);
       else setNotice("Share link is invalid or corrupted");
       replaceHash(bookHash(book));
     });
@@ -416,69 +407,32 @@ export default function CourseApp({
     setProgressState((p) => fn(p));
   }, []);
 
+  // a write from the data window's import lands in this book's key too:
+  // re-read it so the open course shows the applied progress
+  useEffect(
+    () =>
+      subscribeProgress((bookId) => {
+        if (bookId === book.id) setProgressState(loadProgress(book.id));
+      }),
+    [book.id],
+  );
+
   const doneUnits = useMemo(() => completedUnitIds(progress), [progress]);
 
   // the landing CTA: resume after the last unit worked on (progress.ts)
   const homeContinue = useMemo(() => continueTarget(progress, book), [progress, book]);
 
-  // ---- progress import / export / share -------------------------------------
+  // ---- share links ------------------------------------------------------------
 
-  // file import goes through the same preview-confirm modal as share links:
-  // parse, hold, show — nothing is applied until the user confirms
-  async function handleImportFile(file: File): Promise<string> {
-    let text: string;
-    try {
-      text = await file.text();
-    } catch {
-      return "Could not read the file";
-    }
-    const p = parseProgressText(text);
-    if (!p) return "Invalid progress file";
-    setPreview({ p, src: "file" });
-    return ""; // the preview modal takes over
-  }
-
-  function handleExport(includeAnswers: boolean): string {
-    const blob = new Blob(
-      [JSON.stringify(progressPayload(progress, includeAnswers))],
-      {
-        type: "application/json",
-      },
-    );
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `murrnglish-${book.id}-progress-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-    return includeAnswers
-      ? "File downloaded (answers included)"
-      : "File downloaded (answers excluded)";
-  }
-
-  async function handleShare(includeAnswers: boolean): Promise<string> {
-    const code = await encodeShare(progressPayload(progress, includeAnswers));
-    const url = `${location.origin}${location.pathname}#/${book.id}/p=${code}`;
-    try {
-      await navigator.clipboard.writeText(url);
-      return "Link copied to clipboard";
-    } catch {
-      window.prompt("Copy this link:", url);
-      return "Copy the link from the prompt";
-    }
-  }
-
+  // a #/<book>/p= link carries one book's progress: previewed here like an
+  // import, applied only on confirm
   function handleApplyPreview(): void {
     if (!preview) return;
-    setProgressState(preview.p);
-    saveProgress(book.id, preview.p, 0);
+    setProgressState(preview);
+    saveProgress(book.id, preview, 0);
     setPreview(null);
     setModalOpen(false); // close entirely: the notice must be visible
-    setNotice(
-      preview.src === "link"
-        ? "Progress loaded from link"
-        : "Progress imported",
-    );
+    setNotice("Progress loaded from link");
   }
 
   function navUnit(n: number) {
@@ -541,16 +495,6 @@ export default function CourseApp({
       : bookHash(book, { kind: "unit", n: 1 });
   }
 
-  // focus restoration around the help modal: the element active when help
-  // opened gets focus back when it closes (Esc, backdrop, close button)
-  const openHelp = () => {
-    preHelpFocus.current = document.activeElement as HTMLElement | null;
-    setHelpOpen(true);
-  };
-  const closeHelp = () => {
-    setHelpOpen(false);
-    preHelpFocus.current?.focus();
-  };
   // one resolver for every "go to course position" path (bottom pager
   // buttons + Shift+N / Shift+P shortcuts)
   const goTarget = (t: NavTarget | null) => {
@@ -558,48 +502,107 @@ export default function CourseApp({
     if (t.kind === "unit") navUnit(t.n);
     else navAdditional(t.n);
   };
-  useCourseShortcuts({
-    helpOpen,
-    openHelp,
-    closeHelp,
-    progressOpen: modalOpen || preview !== null,
-    progressHints: modalOpen && modalHints,
-    hintProgress: () => {
-      setModalHints(true);
-      setModalOpen(true);
-    },
-    goNextUnit: () => goTarget(pager?.next ?? null),
-    goPrevUnit: () => goTarget(pager?.prev ?? null),
-    jumpLesson: () => {
-      const vp = paneRef.current?.osInstance()?.elements().viewport;
-      const practice = document.getElementById(PRACTICE_ID);
-      if (!vp || !practice) return focusFirstExercise();
-      // still reading the lesson while the divider is in the lower half
-      const above =
-        practice.getBoundingClientRect().top - vp.getBoundingClientRect().top;
-      if (above > vp.clientHeight / 2) {
-        scrollPane(vp, practice);
-        focusFirstExercise();
-      } else {
-        vp.scrollTo({ top: 0, behavior: scrollBehavior() });
-        document.getElementById(LESSON_ID)?.focus({ preventScroll: true });
+
+  // where "Esc = go back" from the unit panel returns to
+  const lastFocus = useRef<HTMLElement | null>(null);
+
+  // never anchor on the unit panel itself, which has its own scoped keys;
+  // the body is not a focus location (focus() on it is a no-op), so leaving
+  // it out lets restoreFocus fall back instead of stranding the focus
+  const rememberFocus = () => {
+    const el = document.activeElement;
+    if (
+      el instanceof HTMLElement &&
+      el !== document.body &&
+      !el.closest("nav.sidebar")
+    ) {
+      lastFocus.current = el;
+    }
+  };
+
+  const restoreFocus = () => {
+    const el = lastFocus.current;
+    lastFocus.current = null;
+    if (el && el.isConnected) {
+      el.focus();
+    } else {
+      focusFirstExercise();
+    }
+  };
+
+  // this book's own keys. The app-wide ones (help, the data window, the
+  // section jumps) and the exercise scope are the dispatcher's, above this.
+  useKeyScope("course", (e) => {
+    // sidebar scope: arrows move focus among the unit buttons
+    if (document.activeElement?.closest(".sidebar")) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        restoreFocus();
+        return true;
       }
-    },
-    focusUnitPanel: () => {
-      const el = unitPanelTarget();
-      if (!el) return;
-      // reveal first — focus() alone would scroll the unit to the bottom edge;
-      // preventScroll then keeps it where the reveal put it
-      if (revealUnit(el)) el.focus({ preventScroll: true });
-      else el.focus();
-    },
-    toggleSidebar,
-    cycleTheme: () =>
-      document
-        .querySelector<HTMLButtonElement>(
-          '.topbar-actions .themebtn[aria-label^="Theme"]',
-        )
-        ?.click(),
+      if (
+        e.key === "ArrowLeft" ||
+        e.key === "ArrowRight" ||
+        e.key === "ArrowUp" ||
+        e.key === "ArrowDown"
+      ) {
+        e.preventDefault();
+        moveSidebarFocus(e.key);
+        return true;
+      }
+    }
+    // Alt+Shift+E toggles the sidebar like the burger button, without
+    // moving focus into it (before the plain Shift+E branch)
+    if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && e.code === "KeyE") {
+      e.preventDefault();
+      toggleSidebar();
+      return true;
+    }
+    if (e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      switch (e.code) {
+        case "KeyS": {
+          e.preventDefault();
+          const vp = paneRef.current?.osInstance()?.elements().viewport;
+          const practice = document.getElementById(PRACTICE_ID);
+          if (!vp || !practice) {
+            focusFirstExercise();
+            return true;
+          }
+          // still reading the lesson while the divider is in the lower half
+          const above =
+            practice.getBoundingClientRect().top - vp.getBoundingClientRect().top;
+          if (above > vp.clientHeight / 2) {
+            scrollPane(vp, practice);
+            focusFirstExercise();
+          } else {
+            vp.scrollTo({ top: 0, behavior: scrollBehavior() });
+            document.getElementById(LESSON_ID)?.focus({ preventScroll: true });
+          }
+          return true;
+        }
+        case "KeyE": {
+          e.preventDefault();
+          rememberFocus();
+          const el = unitPanelTarget();
+          if (el) {
+            // reveal first — focus() alone would scroll the unit to the
+            // bottom edge; preventScroll then keeps it where reveal put it
+            if (revealUnit(el)) el.focus({ preventScroll: true });
+            else el.focus();
+          }
+          return true;
+        }
+        case "KeyN":
+          e.preventDefault();
+          goTarget(pager?.next ?? null);
+          return true;
+        case "KeyP":
+          e.preventDefault();
+          goTarget(pager?.prev ?? null);
+          return true;
+      }
+    }
+    return false;
   });
   const isHome = route.kind === "home";
   // progress batteries: in the topbar on desktop, atop the unit drawer on
@@ -678,18 +681,23 @@ export default function CourseApp({
             shortcuts help is dropped — its key hints are inert on touch */}
         {!isMobile && (
           <div className="topbar-actions">
-            <ShortcutsHelpButton onOpen={openHelp} />
+            <ShortcutsHelpButton onOpen={() => openGlobal("help")} />
             <button
               className="themebtn"
-              onClick={() => {
-                // pointer open: no underlined letters, just the plain window
-                setModalHints(false);
-                setModalOpen(true);
-              }}
-              title={"Progress: import, export, share — " + SC.progress}
-              aria-label="Progress: import, export, share"
+              onClick={() => setModalOpen(true)}
+              title={"Progress — " + SC.progressWindow}
+              aria-label="Progress: this book's overview"
             >
               <Share2 size={15} aria-hidden />
+            </button>
+            <button
+              className="themebtn"
+              data-global-btn="data"
+              onClick={() => openGlobal("data")}
+              title={"Data — export, import, share — " + SC.data}
+              aria-label="Data: export, import, share"
+            >
+              <Download size={15} aria-hidden />
             </button>
             {standalone && (
               <OfflineButton bookId={book.id} onOpen={() => setOfflineOpen(true)} />
@@ -757,14 +765,24 @@ export default function CourseApp({
                         className="draweraction"
                         onClick={() => {
                           setDrawerOpen(false);
-                          // pointer open: no underlined letters, plain window
-                          setModalHints(false);
                           setModalOpen(true);
                         }}
-                        title={"Progress: import, export, share — " + SC.progress}
+                        title={"Progress — " + SC.progressWindow}
                       >
                         <Share2 size={16} aria-hidden />
-                        <span>Progress &amp; share</span>
+                        <span>Progress</span>
+                      </button>
+                      <button
+                        type="button"
+                        className="draweraction"
+                        onClick={() => {
+                          setDrawerOpen(false);
+                          openGlobal("data");
+                        }}
+                        title={"Data — " + SC.data}
+                      >
+                        <Download size={16} aria-hidden />
+                        <span>Data</span>
                       </button>
                       {standalone && (
                         <button
@@ -1006,21 +1024,16 @@ export default function CourseApp({
           setPreview(null);
         }}
         progress={progress}
-        preview={preview ? preview.p : null}
+        preview={preview}
         index={index}
         totals={totals}
         onApplyPreview={handleApplyPreview}
-        onImport={handleImportFile}
-        onExport={handleExport}
-        onShare={handleShare}
-        hintKeys={modalHints}
       />
       <OfflinePanel
         open={offlineOpen}
         onClose={() => setOfflineOpen(false)}
         currentBookId={book.id}
       />
-      {helpOpen && <ShortcutsModal onClose={closeHelp} />}
     </div>
     </BookContext.Provider>
   );

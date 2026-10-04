@@ -8,7 +8,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Download, Trash2, X } from "lucide-react";
 import type { Book } from "../books";
-import { BOOKS, bookUrl } from "../books";
+import { BOOKS } from "../books";
 import {
   downloadBook,
   downloadFraction,
@@ -17,6 +17,7 @@ import {
   removeDownloaded,
   useDownloads,
 } from "../offline";
+import { Cover } from "./Cover";
 
 type Phase = "checking" | "idle" | "downloading" | "done" | "error";
 
@@ -156,14 +157,7 @@ function BookRow({ book, open }: { book: Book; open: boolean }) {
 
   return (
     <div className="dlrow">
-      <img
-        className="dlcover"
-        src={bookUrl(book, book.cover.file)}
-        alt=""
-        width={book.cover.width}
-        height={book.cover.height}
-        decoding="async"
-      />
+      <Cover book={book} className="dlcover" />
       <div className="dlinfo">
         <div className="dltitle">{book.title}</div>
         <div className="dlstatus">{status}</div>
