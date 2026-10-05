@@ -4,64 +4,35 @@
 // (books.ts), in learning order. Under the books, the sections that span
 // them: the cards (with what is due today) and the dictionary.
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import { Download, Layers, LibraryBig, NotebookPen } from "lucide-react";
+import { Layers, NotebookPen } from "lucide-react";
 import type { Book } from "../books";
 import { BOOKS } from "../books";
 import { useDueCount } from "../dueCount";
-import { openGlobal } from "../globalUi";
 import { completedUnitIds, continueTarget, loadProgress } from "../progress";
 import { CARDS_HASH, DICTIONARY_HASH, bookHash } from "../routes";
-import { SC } from "../shortcuts";
 import { isStandalone } from "../offline";
 import { useStudy } from "../study";
+import { AppShell } from "./AppShell";
 import { Battery } from "./Battery";
 import { Cover } from "./Cover";
-import { OfflineButton, OfflineChip } from "./OfflineButton";
+import { OfflineButton } from "./OfflineButton";
 import { OfflinePanel } from "./OfflinePanel";
-import { ShortcutsHelpButton } from "./ShortcutsHelp";
-import { ThemeToggle } from "./ThemeToggle";
 
 export function Library() {
   const [offlineOpen, setOfflineOpen] = useState(false);
   const [standalone] = useState(isStandalone);
-  const [isMobile, setIsMobile] = useState(
-    () => window.matchMedia("(max-width: 768px)").matches,
-  );
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    const on = () => setIsMobile(mq.matches);
-    mq.addEventListener("change", on);
-    return () => mq.removeEventListener("change", on);
-  }, []);
 
   return (
-    <div className="app">
-      <header className="topbar">
-        <div className="topbar-mid">
-          <span className="topbar-brand">
-            <LibraryBig size={20} aria-hidden />
-            <h1>Murrnglish</h1>
-          </span>
-        </div>
-        {isMobile && standalone && <OfflineChip onOpen={() => setOfflineOpen(true)} />}
-        <div className="topbar-actions">
-          {standalone && <OfflineButton onOpen={() => setOfflineOpen(true)} />}
-          <ShortcutsHelpButton onOpen={() => openGlobal("help")} />
-          <button
-            className="themebtn"
-            data-global-btn="data"
-            onClick={() => openGlobal("data")}
-            title={"Data — export, import, share — " + SC.data}
-            aria-label="Data: export, import, share"
-          >
-            <Download size={15} aria-hidden />
-          </button>
-          <ThemeToggle />
-        </div>
-      </header>
-      <div className="main">
+    <AppShell
+      head={
+        <span className="topbar-brand">
+          <h1>Murrnglish</h1>
+        </span>
+      }
+      navActions={standalone ? <OfflineButton onOpen={() => setOfflineOpen(true)} /> : undefined}
+    >
         <OverlayScrollbarsComponent
           element="main"
           className="home library"
@@ -75,11 +46,6 @@ export function Library() {
           }}
         >
           <div className="libcol">
-            <p className="homedesc libintro">
-              Two grammar courses as interactive web apps: a short lesson at the
-              top of every unit, then its exercises, answers checked as you go,
-              progress saved in this browser.
-            </p>
             <div className="libgrid">
               {BOOKS.map((b) => (
                 <BookCard key={b.id} book={b} />
@@ -97,9 +63,8 @@ export function Library() {
             </footer>
           </div>
         </OverlayScrollbarsComponent>
-      </div>
       <OfflinePanel open={offlineOpen} onClose={() => setOfflineOpen(false)} />
-    </div>
+    </AppShell>
   );
 }
 

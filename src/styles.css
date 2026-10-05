@@ -166,7 +166,7 @@ body {
 .themebtn,
 .helpbtn,
 .helpclose,
-.draweraction,
+.navtile,
 .cardactions button,
 .mark,
 .unitlink,
@@ -184,7 +184,7 @@ body {
 .themebtn:active,
 .helpbtn:active,
 .helpclose:active,
-.draweraction:active,
+.navtile:active,
 .cardactions button:active,
 .mark:active,
 .unitlink:active {
@@ -383,17 +383,20 @@ body {
   color: inherit;
 }
 
-/* topbar crumbs: "Murrnglish / <book title>" — the first goes to the
-   library, the title to the book's landing. Phones drop the first crumb (the
-   drawer has an "All books" row instead). */
+/* topbar crumbs: "Murrnglish / <the page's own title>" — the first goes to
+   the library, the title to the page's landing. Phones drop the first crumb
+   (the hamburger opens the panel, which is where the way back now lives).
+   The wordmark keeps the landing's own type on every page — it is the way
+   back, not the title, so it sits in grey under the title that is. */
 .topbar-lib {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
   color: var(--muted);
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
   text-decoration: none;
 }
 
@@ -464,7 +467,6 @@ body {
   margin: 0;
   font-weight: 900;
   letter-spacing: -0.01em;
-  padding: 0 3px;
   background: linear-gradient(transparent 62%, var(--hl-soft) 62% 92%, transparent 92%);
 }
 
@@ -477,16 +479,6 @@ body {
 .progressline strong {
   color: var(--accent);
   font-weight: 900;
-}
-
-/* topbar progress batteries: label, then a short rounded cell;
-   the fill is a translucent marker band so the count printed on top reads
-   the same over filled and empty parts */
-.topstats {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
 }
 
 .battery {
@@ -674,6 +666,164 @@ body {
   opacity: 1;
   pointer-events: auto;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.28);
+}
+
+/* ---------- the navigation panel: rows of tiles, nothing ruled between them - */
+.navblock + .navblock {
+  margin-top: 16px;
+}
+
+/* A row of tiles splits by how many it holds: two abreast, so Cards and
+   Dictionary share a line and neither leaves an empty cell beside it. What
+   the row carries besides tiles — the open book's own progress and units —
+   spans the whole row. */
+.navgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.navgrid > :not(.navtile) {
+  grid-column: 1 / -1;
+}
+
+/* the books are the exception: their names are whole phrases, so each takes
+   a line of its own rather than a column two words wide */
+.navbooks {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.navtools {
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+/* the tile: an icon over a short name, the same square whatever it does */
+.navtile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  column-gap: 8px;
+  min-width: 0;
+  padding: 7px 6px 6px;
+  border-radius: 12px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  color: var(--soft);
+  cursor: pointer;
+  transition:
+    transform 0.07s ease,
+    box-shadow 0.07s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.navtile:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* where you are: the tile filled in — a book with its own cover colour, its
+   pressed edge the same colour a shade down rather than the app's accent */
+.navtile.active {
+  --tile-fill: var(--tile, var(--accent));
+  --press-edge: color-mix(in srgb, var(--tile-fill) 72%, #000);
+  background: var(--tile-fill);
+  border-color: var(--tile-fill);
+  color: var(--tile-ink, var(--accent-contrast));
+}
+
+.navtile.active:hover {
+  border-color: var(--tile-fill);
+  color: var(--tile-ink, var(--accent-contrast));
+}
+
+.navtoollabel {
+  max-width: 100%;
+  min-width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* a book's name is a sentence, not a word: it wraps instead of cutting off */
+.navtoollabel.wrap {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* a count that belongs to the name — the cards due — rides on its line */
+.navtoollabel.counted {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+/* the number under a name — cards due, how far a book has come */
+.navmeta {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.navtile.active .navmeta {
+  color: inherit;
+  opacity: 0.85;
+}
+
+.navdot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  border: 2px solid var(--color);
+  flex-shrink: 0;
+  background: var(--color);
+}
+
+.navtile.active .navdot {
+  border-color: #fff;
+}
+
+/* On a phone the drawer is the full width of the screen, so a row of tools
+   splits by its own count: three abreast, four in pairs, and two one to a
+   line so neither leaves an empty tile beside it. :has() counts the tiles —
+   the panel adds the download only in the installed app. */
+@media (max-width: 768px) {
+  .navtools {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .navtools:has(> :nth-child(3)):not(:has(> :nth-child(4))) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .navtools:has(> :nth-child(4)) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* the open book's own progress, above its units in the map */
+.bookstats {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  padding-top: 12px;
+  border-top: 2px dashed var(--border);
+}
+
+.bookstats .battery {
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.bookstats .battery-cell {
+  min-width: 70px;
 }
 
 .group {
@@ -1402,7 +1552,7 @@ textarea.winline {
   color: var(--ok-text);
 }
 
-/* progress modal: import / export / share over a unit-square overview */
+/* the app-wide window: a book's progress over the data that moves it */
 .topbar-actions {
   margin-left: auto;
   display: flex;
@@ -1552,6 +1702,7 @@ textarea.winline {
 .dlinfo {
   flex: 1;
   min-width: 0;
+  text-wrap: pretty;
 }
 
 .dltitle {
@@ -1638,9 +1789,13 @@ textarea.winline {
   color: var(--bad-text);
 }
 
+/* one row of the data window: the checkbox, its label and the numbers behind
+   it. Wraps on a narrow screen so a long detail drops to its own line rather
+   than pushing the label out of the card. */
 .modal-opt {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
@@ -1654,13 +1809,40 @@ textarea.winline {
   font-weight: 600;
 }
 
+/* one book in the data window: the row that ticks it, then its mosaic */
+.databook {
+  margin-top: 16px;
+}
+
+/* the window's two halves: how far each book has come, then what to move */
+.modal-subhead {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 14px;
+}
+
+.modal-subhead:first-child {
+  margin-top: 2px;
+}
+
+.databook .modal-opt {
+  margin-top: 0;
+}
+
+.databook .unitgrid {
+  margin-top: 8px;
+}
+
 .modal-actions {
   display: flex;
   gap: 10px;
   margin-top: 12px;
 }
 
-/* the data window's hint mode (Alt+D / Shift+I): the trigger letter of each
+/* the data window's hint mode (Alt+D / Shift+I): the access letter of each
    control is underlined and tinted, and is the same character the key press
    matches. Only the tint changes when hints toggle, so the label never
    shifts. */
@@ -1775,7 +1957,7 @@ textarea.winline {
   border: 2px solid var(--border);
   border-bottom-width: 6px;
   border-radius: 22px;
-  width: min(92vw, 680px);
+  width: min(94vw, 880px);
   max-height: 82vh;
   display: flex;
   flex-direction: column;
@@ -1783,7 +1965,228 @@ textarea.winline {
 
 .helpscroll {
   min-height: 0;
-  padding: 0 22px 18px;
+  padding: 0px 22px 64px;
+}
+
+/* the rail and the list side by side: the rail is the window's outline, so a
+   group is one hop away instead of a scroll through everything above it */
+.helpbody {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  min-height: 0;
+  flex: 1;
+}
+
+.helprail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px 10px 18px 16px;
+  border-right: 2px solid var(--border);
+  overflow-y: auto;
+}
+
+.helplink {
+  border: none;
+  background: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  text-align: left;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.helplink:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.helplink.on {
+  color: var(--accent);
+  background: var(--bg);
+  font-weight: 900;
+}
+
+/* one entry per row, ruled off from the one above: the list reads as a table
+   of keys rather than a column of paragraphs */
+.helpentries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.helpentries .helpentry {
+  margin-top: 0;
+  padding-top: 10px;
+  border-top: 2px dashed var(--border);
+}
+
+.helpentries .helpentry:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* a scrolled-to heading must not hide under the header's hairline */
+.helpsection {
+  scroll-margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  /* on a phone the rail becomes a row of chips above the list */
+  .helpbody {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+  .helprail {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 0;
+    border-bottom: 2px solid var(--border);
+    padding: 4px 14px 12px;
+  }
+}
+
+/* the global search: a field and its results, hanging from the top like a
+   command bar — it answers a question, so it does not need to be centred */
+.searchoverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10vh 16px 16px;
+  animation: overlay-in 0.18s ease-out;
+}
+
+.searchoverlay.closing {
+  animation: overlay-out 0.14s ease-in forwards;
+}
+
+.searchcard {
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-bottom-width: 6px;
+  border-radius: 22px;
+  width: min(92vw, 720px);
+  max-height: 74vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modal-in 0.18s ease-out;
+}
+
+.searchcard.closing {
+  animation: modal-out 0.14s ease-in forwards;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--border);
+}
+
+.searchbar input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  padding: 2px 0;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchresults {
+  min-height: 0;
+  padding: 6px 0 10px;
+}
+
+.searchhint {
+  margin: 14px 18px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.searchgroup {
+  margin-top: 8px;
+}
+
+.searchgroupname {
+  padding: 6px 18px 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.searchrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: none;
+  background: none;
+  border-radius: 12px;
+  padding: 8px 18px;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.searchrow:hover {
+  background: var(--bg);
+}
+
+.searchrowicon {
+  color: var(--accent);
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.searchrowtext {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.searchrowlabel {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.searchrowdetail {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* the row the arrows are on: the same fill a selected tab uses */
+.searchrow.on {
+  background: var(--active-bg);
+  color: var(--active-fg);
+}
+
+.searchrow.on .searchrowdetail,
+.searchrow.on .searchrowicon {
+  color: var(--active-fg);
+  opacity: 0.85;
 }
 
 .helpcardhead {
@@ -1800,7 +2203,8 @@ textarea.winline {
   font-weight: 900;
 }
 
-/* hairline under the header, fades in once the body is scrolled */
+/* hairline under the header, from the first frame: the list starts right
+   below it, so the rule belongs to the window, not to its scroll state */
 .helpcardhead::after {
   content: "";
   position: absolute;
@@ -1809,13 +2213,7 @@ textarea.winline {
   bottom: 0;
   height: 2px;
   background: var(--border);
-  opacity: 0;
-  transition: opacity 0.2s ease;
   pointer-events: none;
-}
-
-.helpcard.scrolled .helpcardhead::after {
-  opacity: 1;
 }
 
 .helpentry {
@@ -1839,7 +2237,9 @@ textarea.winline {
   color: var(--accent);
 }
 
-.helpsection:first-child {
+/* only the FIRST group's heading loses its top margin: every heading is the
+   first child of its own section, so :first-child would flatten them all */
+.helpcard section:first-of-type .helpsection {
   margin-top: 0;
 }
 
@@ -1980,11 +2380,6 @@ kbd {
   padding: 36px 24px 56px;
 }
 
-.libintro {
-  margin: 0 0 28px;
-  max-width: 40rem;
-}
-
 .libgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
@@ -1996,6 +2391,7 @@ kbd {
   display: flex;
   gap: 22px;
   padding: 20px;
+  min-height: 330px;
   border: 2px solid var(--border);
   border-bottom-width: 6px;
   border-radius: 22px;
@@ -2106,24 +2502,12 @@ kbd {
   text-align: center;
 }
 
-a.draweraction {
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 /* ---------- sections next to the books: rules, cards, dictionary ----------
    Same materials as the course: sheets with a thick bottom edge on the
    dotted desk mat, tactile pills whose raised edge is a box-shadow, the
    highlighter for what the eye should find first. */
 
-/* section switch: tactile pills in the topbar (a tab row under it on phones) */
-.sectiontabs {
-  display: flex;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.sectiontab,
+/* tactile pills — the section switch is a row of the navigation panel now */
 .pillbtn,
 .choiceopt,
 .ratebtn,
@@ -2135,37 +2519,11 @@ a.draweraction {
   transition: transform 0.07s ease, box-shadow 0.07s ease, border-color 0.12s;
 }
 
-.sectiontab:active,
 .pillbtn:active,
 .choiceopt:active:not(:disabled),
 .ratebtn:active {
   transform: translateY(2px);
   box-shadow: 0 1px 0 var(--press-edge);
-}
-
-.sectiontab {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--soft);
-  text-decoration: none;
-}
-
-.sectiontab:hover {
-  border-color: var(--accent);
-  --press-edge: var(--accent-deep);
-  color: var(--accent);
-}
-
-.sectiontab.on {
-  background: var(--accent);
-  border-color: var(--accent);
-  --press-edge: var(--accent-deep);
-  color: var(--accent-contrast);
 }
 
 /* a count on a tab or tile: a highlighter sticker */
@@ -3493,17 +3851,18 @@ details[open] > summary .chev {
   justify-content: center;
 }
 
+/* the answer key lives in the tooltip, not on the face of the button */
 .homecta.showbtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
   margin: 0;
 }
 
-.showbtn kbd {
+.linkbtn .hintkey {
+  text-underline-offset: 2px;
+}
+
+.themebtn.labelled kbd {
   font-size: 11px;
-  color: var(--text);
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .ratebtns {
@@ -3621,8 +3980,8 @@ a.themebtn.labelled {
 /* ---------- library: the sections under the books ---------- */
 .studygrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
+  gap: 22px;
   margin-top: 26px;
 }
 
@@ -3665,11 +4024,6 @@ a.themebtn.labelled {
   color: var(--soft);
 }
 
-/* the drawer's rows for the sections, three abreast */
-.drawersections {
-  display: none;
-}
-
 /* ---------- phone layout: one pane at a time behind a tab switch ----------
    Desktop rules above are untouched; everything mobile lives in this block. */
 @media (max-width: 768px) {
@@ -3685,21 +4039,20 @@ a.themebtn.labelled {
     min-width: 0;
     overflow: hidden;
   }
-  /* the library crumb: the drawer's "All books" row stands in for it */
+  /* the phone topbar carries the page's title and the hamburger alone: no
+     wordmark, no blue mark — the burger opens the panel, which has them all */
   .topbar-lib,
-  .topbar-crumbsep {
+  .topbar-crumbsep,
+  .topbar-brand svg {
     display: none;
   }
   .libcol {
     padding: 22px 14px 40px;
   }
-  .libintro {
-    font-size: 15px;
-    margin-bottom: 18px;
-  }
   .libcard {
     gap: 16px;
     padding: 16px;
+    min-height: 250px;
   }
   .libcover {
     width: 96px;
@@ -3716,11 +4069,6 @@ a.themebtn.labelled {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  /* the progress batteries don't fit here; they move to the top of the
-     unit drawer (.drawerstats) */
-  .topstats {
-    display: none;
   }
 
   .main {
@@ -3745,53 +4093,6 @@ a.themebtn.labelled {
   }
   .sidebar-inner {
     width: auto;
-  }
-  /* topbar controls that don't fit a phone topbar — progress, the offline
-     download (installed app only) and the theme cycle — as labelled rows at
-     the top of the drawer, ruled off from the progress bars below */
-  .draweractions {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0 2px 14px;
-    margin-bottom: 14px;
-    border-bottom: 2px solid var(--border);
-  }
-  .draweraction,
-  .draweractions .themebtn {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 9px 12px;
-    border-radius: 14px;
-    font: inherit;
-    font-size: 15px;
-    font-weight: 800;
-    color: var(--text);
-    cursor: pointer;
-  }
-  .draweraction:hover {
-    color: var(--accent);
-  }
-  /* the topbar batteries, moved to the top of the drawer: one per row,
-     label left and cell right, ruled off from the unit list */
-  .drawerstats {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0 2px 14px;
-    margin-bottom: 14px;
-    border-bottom: 2px solid var(--border);
-  }
-  .drawerstats .battery {
-    justify-content: space-between;
-    font-size: 13px;
-  }
-  .drawerstats .battery-cell {
-    min-width: 96px;
   }
   /* hover-reveal edge is a desktop affordance */
   .sidebar-edge {
@@ -3962,33 +4263,44 @@ a.themebtn.labelled {
   }
   .helpcard {
     box-sizing: border-box;
-    width: min(680px, calc(100vw - 32px));
+    width: min(880px, calc(100vw - 32px));
     max-height: 82dvh;
+  }
+  /* offline panel mobile: cover stays left, info above actions */
+  .dlrow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 14px;
+  }
+  .dlcover {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+  .dlinfo {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+  }
+  .dlrow .dlaction {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
   }
 }
 
 /* ---------- phone layout of the sections ---------- */
 @media (max-width: 768px) {
-  /* no drawer here: the library crumb stays, as its icon */
-  .topbar-lib.keep {
-    display: inline-flex;
-    color: var(--accent);
-  }
-  .topbar-lib.keep span {
-    display: none;
-  }
+  /* the phone topbar keeps the page's title alone: the burger opens the
+     panel, which is where the way back to the library now lives */
   .sectiontitle {
     min-width: 0;
   }
-  .sectiontabs {
-    padding: 8px 12px 11px;
-    border-bottom: 2px solid var(--border);
-    background: var(--panel);
-  }
-  .sectiontab {
-    flex: 1;
-    justify-content: center;
-    padding: 6px 4px;
+  /* a deck's name is a phrase: beside the counts it was squeezed into a
+     column two words wide, so it takes a line of its own and the numbers
+     and the Study button share the next one */
+  .studytitle {
+    flex: 1 1 100%;
   }
   .deskcol {
     padding: 14px 12px 32px;
@@ -4073,22 +4385,9 @@ a.themebtn.labelled {
   .ratelabel {
     font-size: 15px;
   }
-  .showbtn kbd {
-    display: none;
-  }
   .pickhint {
-    flex-basis: 100%;
-  }
-  .drawersections {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8px;
-  }
-  .drawersections .draweraction {
-    justify-content: center;
-    gap: 6px;
-    padding: 9px 4px;
     font-size: 14px;
+    flex-basis: 100%;
   }
   .wordline {
     flex-wrap: wrap;

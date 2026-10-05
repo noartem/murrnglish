@@ -44,10 +44,10 @@ function useFill(bookId?: string): {
 }
 
 /**
- * Desktop topbar: the way into the offline panel, and the download's status —
- * green fills the icon square from the bottom up while the book streams in,
- * and stays full for a download of this session. A book cached on an earlier
- * launch leaves the button neutral.
+ * The navigation panel's download control: the way into the offline panel,
+ * and the download's status — green fills the button from the bottom up while
+ * the book streams in, and stays full for a download of this session. A book
+ * cached on an earlier launch leaves the button neutral.
  */
 export function OfflineButton({ bookId, onOpen }: { bookId?: string; onOpen: () => void }) {
   const { pct, active, fresh, stored } = useFill(bookId);
@@ -60,13 +60,14 @@ export function OfflineButton({ bookId, onOpen }: { bookId?: string; onOpen: () 
         : "Offline — download the book";
   return (
     <button
-      className={"themebtn dlbtn" + (active ? " running" : fresh ? " done" : "")}
+      className={"navtile dlbtn" + (active ? " running" : fresh ? " done" : "")}
       style={{ "--p": `${pct}%` } as CSSProperties}
       onClick={onOpen}
       title={title}
-      aria-label="Offline: download books"
+      aria-label={title}
     >
       <Download size={15} aria-hidden />
+      <span className="navtoollabel">Download</span>
     </button>
   );
 }

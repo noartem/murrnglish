@@ -12,16 +12,19 @@
 
 import type { SrsData, StudyBackup, StudySettings } from "./backup";
 import { BACKUP_FORMAT, cleanSettings, cleanSrs, parseBackup, validWord } from "./backup";
+import { loadedDecks } from "./deckdata";
+import { buildLearningReport, parseLearningReport } from "./learning";
+import type { LearningReport } from "./learning";
 import type { Progress } from "./progress";
 import { loadProgress, parseProgressText, progressPayload, validateProgress } from "./progress";
-import { studySnapshot } from "./study";
+import { srsConfig, studySnapshot } from "./study";
 import type { Word } from "./words";
 
 export const DATA_FORMAT = "murrnglish-data";
 
 export interface DataFile {
   format: typeof DATA_FORMAT;
-  version: 2;
+  version: 3;
   exported: number;
   /** book id -> that book's progress */
   books: Record<string, Progress>;
@@ -29,6 +32,8 @@ export interface DataFile {
   cards: { srs: SrsData; settings: StudySettings } | null;
   /** null = the words were not chosen for this file */
   dictionary: { words: Word[] } | null;
+  /** null = the learning report was not chosen for this file */
+  learning: LearningReport | null;
 }
 
 /** What a learner ticked in the data window. */
@@ -37,13 +42,19 @@ export interface Targets {
   includeAnswers: boolean;
   cards: boolean;
   dictionary: boolean;
+  /** carry the learning report — what is learned and what comes back when */
+  learning: boolean;
 }
 
-/** A file read in the data window, before anything is written. */
+/** What the data window holds before anything is written: a file the learner
+ *  picked, or the progress an incoming `#/<book>/p=` share link carries. Both
+ *  are summarised first and land only on Apply. */
 export type Incoming =
   | { kind: "data"; file: DataFile }
   | { kind: "study"; backup: StudyBackup }
-  | { kind: "progress"; progress: Progress };
+  /** `book` names the book a share link belongs to; a bare progress FILE
+   *  names none, and goes into the course you are in */
+  | { kind: "progress"; progress: Progress; book?: string };
 
 /**
  * Build the file for the chosen targets. The study store is read once, so a
@@ -54,14 +65,21 @@ export function makeDataFile(t: Targets, now: number): DataFile {
   const books: Record<string, Progress> = {};
   for (const id of t.books) books[id] = progressPayload(loadProgress(id), t.includeAnswers);
   // nothing to read unless a target asks for it
-  const snap = t.cards || t.dictionary ? studySnapshot() : null;
+  const snap = t.cards || t.dictionary || t.learning ? studySnapshot() : null;
+  // the report reads off that same snapshot, so a file is one moment in time;
+  // it is a report and never applied — the schedule itself moves under cards
+  const learning =
+    snap && t.learning
+      ? buildLearningReport(snap.srs, loadedDecks(), snap.words, now, srsConfig(snap.settings))
+      : null;
   return {
     format: DATA_FORMAT,
-    version: 2,
+    version: 3,
     exported: now,
     books,
-    cards: t.cards ? { srs: snap!.srs, settings: snap!.settings } : null,
-    dictionary: t.dictionary ? { words: snap!.words } : null,
+    cards: snap && t.cards ? { srs: snap.srs, settings: snap.settings } : null,
+    dictionary: snap && t.dictionary ? { words: snap.words } : null,
+    learning,
   };
 }
 
@@ -84,7 +102,8 @@ export function parseIncoming(text: string): Incoming | null {
   if (!isObj(parsed)) return null;
 
   if (parsed.format === DATA_FORMAT) {
-    if (parsed.version !== 2) return null;
+    // version 3 added the learning report; a 2 file simply has none
+    if (parsed.version !== 2 && parsed.version !== 3) return null;
     const books: Record<string, Progress> = {};
     if (isObj(parsed.books)) {
       for (const [id, p] of Object.entries(parsed.books)) {
@@ -101,11 +120,12 @@ export function parseIncoming(text: string): Incoming | null {
       kind: "data",
       file: {
         format: DATA_FORMAT,
-        version: 2,
+        version: 3,
         exported: isNum(parsed.exported) ? parsed.exported : 0,
         books,
         cards,
         dictionary,
+        learning: parseLearningReport(parsed.learning),
       },
     };
   }

@@ -1,5 +1,5 @@
 // Offline panel: the download window of the installed app, one row per book —
-// each downloads and is removed on its own. Structure copies ProgressModal
+// each downloads and is removed on its own. Structure copies the data window
 // (overlay + card + exit animation); the downloads themselves live in
 // ../offline, so closing the panel never interrupts one that is in flight.
 // The numbers come from that module's store, not from a per-panel
@@ -35,7 +35,7 @@ export function OfflinePanel({
 }): JSX.Element | null {
   const closeRef = useRef<HTMLButtonElement>(null);
   // exit: the card stays mounted under .closing while modal-out plays, then
-  // drops from the DOM (same 150ms hunt as ProgressModal)
+  // drops from the DOM (same 150ms hunt as the data window)
   const [shown, setShown] = useState(open);
 
   useEffect(() => {

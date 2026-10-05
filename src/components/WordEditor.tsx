@@ -47,7 +47,7 @@ export function WordEditorHost() {
       listener = null;
     };
   }, []);
-  // exit: hold the card while modal-out plays (as ProgressModal does)
+  // exit: hold the card while modal-out plays (as the data window does)
   const [shown, setShown] = useState(false);
   useEffect(() => {
     if (open) {

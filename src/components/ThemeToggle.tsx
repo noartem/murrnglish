@@ -1,10 +1,11 @@
-// Control cycling the theme: system → light → dark → system. An icon square
-// in the desktop topbar; `labelled` renders the drawer row used on phones,
-// where the icon gains the current theme's name.
+// Control cycling the theme: system → light → dark → system. It is one of
+// the app's controls in the navigation panel, so it renders as a tool — the
+// icon of the current theme over its name, with the key in the tooltip.
 
 import { useEffect, useState } from "react";
 import type { ReactElement } from "react";
 import { Monitor, Moon, Sun } from "lucide-react";
+import { SC } from "../shortcuts";
 import { applyTheme, loadTheme, saveTheme, watchSystemTheme } from "../theme";
 import type { Theme } from "../theme";
 
@@ -16,13 +17,19 @@ const LABEL: Record<Theme, string> = {
   dark: "Theme: dark",
 };
 
+const SHORT: Record<Theme, string> = {
+  system: "Auto",
+  light: "Light",
+  dark: "Dark",
+};
+
 const ICON: Record<Theme, ReactElement> = {
   system: <Monitor size={15} strokeWidth={1.6} aria-hidden />,
   light: <Sun size={15} strokeWidth={1.6} aria-hidden />,
   dark: <Moon size={15} aria-hidden />,
 };
 
-export function ThemeToggle({ labelled = false }: { labelled?: boolean }) {
+export function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>(loadTheme);
 
   useEffect(() => {
@@ -35,15 +42,11 @@ export function ThemeToggle({ labelled = false }: { labelled?: boolean }) {
     setTheme(ORDER[(ORDER.indexOf(theme) + 1) % ORDER.length]);
   }
 
+  const title = `${LABEL[theme]} — ${SC.cycleTheme}`;
   return (
-    <button
-      className={labelled ? "themebtn labelled" : "themebtn"}
-      onClick={cycle}
-      title={LABEL[theme]}
-      aria-label={LABEL[theme]}
-    >
+    <button className="navtile" onClick={cycle} title={title} aria-label={title}>
       {ICON[theme]}
-      {labelled && <span>{LABEL[theme]}</span>}
+      <span className="navtoollabel">{SHORT[theme]}</span>
     </button>
   );
 }

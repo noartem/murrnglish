@@ -12,29 +12,17 @@ import { BookContext, useBook } from "./bookContext";
 import type { AdditionalData, IndexData, TotalsMap, UnitData } from "./data";
 import {
   fetchAdditional,
-  fetchIndex,
-  fetchTotals,
+  fetchIndexOnce,
+  fetchTotalsOnce,
   fetchUnit,
 } from "./data";
 import { LessonBody, LessonSoon, PracticeDivider, UnitHead, labelsFor } from "./components/Lesson";
-import { ThemeToggle } from "./components/ThemeToggle";
 import { ExerciseCard } from "./components/ExerciseCard";
-import { ShortcutsHelpButton } from "./components/ShortcutsHelp";
-import { openGlobal } from "./globalUi";
+import { openIncoming } from "./globalUi";
+import { AppShell, toggleMenu } from "./components/AppShell";
 import { useKeyScope } from "./keyScopes";
 import { SC, focusFirstExercise, moveSidebarFocus } from "./shortcuts";
-import {
-  ArrowLeft,
-  ArrowRight,
-  BookOpenText,
-  Check,
-  Download,
-  Layers,
-  LibraryBig,
-  Menu,
-  NotebookPen,
-  Share2,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpenText, Check } from "lucide-react";
 import {
   OverlayScrollbarsComponent,
   type OverlayScrollbarsComponentRef,
@@ -45,15 +33,13 @@ import {
   loadProgress,
   pct,
   saveLastRoute,
-  saveProgress,
   scopeStats,
   subscribeProgress,
   unitCompleted,
 } from "./progress";
 import type { Progress } from "./progress";
-import { ProgressModal } from "./components/ProgressModal";
 import { OfflinePanel } from "./components/OfflinePanel";
-import { OfflineButton, OfflineChip } from "./components/OfflineButton";
+import { OfflineButton } from "./components/OfflineButton";
 import {
   autoDownloadAllowed,
   downloadBook,
@@ -66,8 +52,6 @@ import { Battery } from "./components/Battery";
 import { decodeShare } from "./share";
 import type { BookPage, ContentPage } from "./routes";
 import {
-  CARDS_HASH,
-  DICTIONARY_HASH,
   LIBRARY_HASH,
   bookHash,
   pageKey,
@@ -75,7 +59,6 @@ import {
   replaceHash,
 } from "./routes";
 import { PickWord } from "./components/PickWord";
-import { SIDEBAR_COLLAPSED_KEY } from "./keys";
 
 // How long an installed app waits before it starts filling the offline cache
 // by itself: past the first paint and the page's own requests.
@@ -95,17 +78,8 @@ export default function CourseApp({
   const [unit, setUnit] = useState<UnitData | null>(null);
   const [additional, setAdditional] = useState<AdditionalData | null>(null);
   const [error, setError] = useState<string>("");
-  // first open: collapsed (hover card); a user's explicit choice persists —
-  // "0" = left expanded, "1" = collapsed, absent = first-open default (collapsed)
-  const [sidebarOpen, setSidebarOpen] = useState(
-    () => localStorage.getItem(SIDEBAR_COLLAPSED_KEY) === "0",
-  );
   const [totals, setTotals] = useState<TotalsMap | null>(null);
-  // incoming progress held for the preview modal; applied only on confirm.
-  // The one producer is a #p= share link — the data window owns file imports.
-  const [preview, setPreview] = useState<Progress | null>(null);
   const [progress, setProgressState] = useState<Progress>(() => loadProgress(book.id));
-  const [modalOpen, setModalOpen] = useState(false);
   // the offline download window: its button exists only in the installed app
   const [offlineOpen, setOfflineOpen] = useState(false);
   // computed once — an install relaunches the app in standalone, so this
@@ -146,121 +120,13 @@ export default function CourseApp({
       window.removeEventListener("online", attempt);
     };
   }, [standalone, book]);
-  // phone layout (<=768px): the sidebar becomes a drawer
-  const [isMobile, setIsMobile] = useState(
-    () => window.matchMedia("(max-width: 768px)").matches,
-  );
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    const on = () => setIsMobile(mq.matches);
-    mq.addEventListener("change", on);
-    return () => mq.removeEventListener("change", on);
-  }, []);
-  // Phone drawer gestures: a leftward swipe pushes the open drawer back, a
-  // rightward one pulls it in over either pane. No drawer state is read — a
-  // drag only ever sets the panel to where it already is — so the listeners
-  // survive every open/close. Passive listeners plus the vertical slop leave
-  // page scrolling alone. Places that own their touches are left out: form
-  // controls (caret placement, text selection), the lesson's wide tables
-  // (they scroll sideways) and open dialogs (the drawer would otherwise slide
-  // in behind the modal, which already covers the screen).
-  useEffect(() => {
-    if (!isMobile) return;
-    const SWIPE_OWNED =
-      "input, textarea, select, .lformtables, .modal-overlay, .helpoverlay";
-    const COMMIT = 60; // horizontal travel that commits the gesture (px)
-    const SLOP = 12; // vertical travel that hands the drag back to scrolling
-    let x0 = 0;
-    let y0 = 0;
-    let tracking = false;
-    const onStart = (e: TouchEvent) => {
-      tracking = false;
-      if (e.touches.length !== 1) return;
-      const t = e.touches[0];
-      if (t.target instanceof Element && t.target.closest(SWIPE_OWNED)) return;
-      x0 = t.clientX;
-      y0 = t.clientY;
-      tracking = true;
-    };
-    const onMove = (e: TouchEvent) => {
-      if (!tracking) return;
-      if (e.touches.length !== 1) {
-        // a second finger means a pinch, not a swipe
-        tracking = false;
-        return;
-      }
-      const t = e.touches[0];
-      const dx = t.clientX - x0;
-      const dy = t.clientY - y0;
-      if (Math.abs(dy) > SLOP && Math.abs(dy) > Math.abs(dx)) {
-        tracking = false;
-        return;
-      }
-      if (Math.abs(dx) < COMMIT || Math.abs(dx) <= Math.abs(dy)) return;
-      tracking = false;
-      setDrawerOpen(dx > 0);
-    };
-    const onEnd = () => {
-      tracking = false;
-    };
-    const opts = { passive: true } as const;
-    window.addEventListener("touchstart", onStart, opts);
-    window.addEventListener("touchmove", onMove, opts);
-    window.addEventListener("touchend", onEnd, opts);
-    window.addEventListener("touchcancel", onEnd, opts);
-    return () => {
-      window.removeEventListener("touchstart", onStart);
-      window.removeEventListener("touchmove", onMove);
-      window.removeEventListener("touchend", onEnd);
-      window.removeEventListener("touchcancel", onEnd);
-    };
-  }, [isMobile]);
   const paneRef = useRef<OverlayScrollbarsComponentRef>(null);
-  // sidebar collapse representation: in-flow while animating, fixed hover
-  // card once fully collapsed (settled); toggling runs the width animation
-  const [cardPhase, setCardPhase] = useState(
-    () => localStorage.getItem(SIDEBAR_COLLAPSED_KEY) !== "0",
-  );
-  const [transient, setTransient] = useState(false);
-  const animTimers = useRef<number[]>([]);
-  const clearAnimTimers = () => {
-    for (const t of animTimers.current) window.clearTimeout(t);
-    animTimers.current = [];
-  };
-  const toggleSidebar = () => {
-    // mobile: the hamburger opens a drawer instead of the desktop collapse
-    // machinery; no localStorage write, no transient/card phases
-    if (isMobile) {
-      setDrawerOpen((v) => !v);
-      return;
-    }
-    clearAnimTimers();
-    const next = !sidebarOpen;
-    setSidebarOpen(next);
-    try {
-      localStorage.setItem(SIDEBAR_COLLAPSED_KEY, next ? "0" : "1");
-    } catch {
-      // storage unavailable: choice silently not persisted
-    }
-    if (next) {
-      // collapsed card -> brief in-flow zero-width frame -> animate open
-      setCardPhase(false);
-      setTransient(true);
-      animTimers.current.push(window.setTimeout(() => setTransient(false), 30));
-    } else {
-      // open -> animate width to zero -> then become the hover card
-      setTransient(true);
-      animTimers.current.push(window.setTimeout(() => setCardPhase(true), 270));
-    }
-  };
-  useEffect(() => clearAnimTimers, []);
 
   useEffect(() => {
-    fetchIndex(book)
+    fetchIndexOnce(book)
       .then(setIndex)
       .catch((e) => setError(String(e)));
-    fetchTotals(book)
+    fetchTotalsOnce(book)
       .then(setTotals)
       .catch(() => setTotals(null));
   }, [book]);
@@ -269,16 +135,16 @@ export default function CourseApp({
     if (route.kind !== "home") saveLastRoute(book.id, pageKey(route));
   }, [book, route]);
 
-  // "#/<book>/p=..." share links: decode and hold the INCOMING progress for a
-  // preview modal — nothing is applied until the user confirms; the hash is
-  // rewritten to the book's landing (no history entry, so Back never replays
-  // the link)
+  // "#/<book>/p=..." share links: decode and hand the INCOMING progress to
+  // the data window, which previews it for this book and applies it only on
+  // confirm; the hash is rewritten to the book's landing (no history entry,
+  // so Back never replays the link)
   useEffect(() => {
     if (!share) return;
     let alive = true;
     void decodeShare(share).then((p) => {
       if (!alive) return;
-      if (p) setPreview(p);
+      if (p) openIncoming({ kind: "progress", progress: p, book: book.id });
       else setNotice("Share link is invalid or corrupted");
       replaceHash(bookHash(book));
     });
@@ -401,7 +267,7 @@ export default function CourseApp({
   // `initialized` event, its instance only appears a frame after the list
   useEffect(() => {
     revealActiveUnit();
-  }, [revealActiveUnit, route, sidebarOpen, index]);
+  }, [revealActiveUnit, route, index]);
 
   const setProgress = useCallback((fn: (p: Progress) => Progress) => {
     setProgressState((p) => fn(p));
@@ -422,27 +288,13 @@ export default function CourseApp({
   // the landing CTA: resume after the last unit worked on (progress.ts)
   const homeContinue = useMemo(() => continueTarget(progress, book), [progress, book]);
 
-  // ---- share links ------------------------------------------------------------
-
-  // a #/<book>/p= link carries one book's progress: previewed here like an
-  // import, applied only on confirm
-  function handleApplyPreview(): void {
-    if (!preview) return;
-    setProgressState(preview);
-    saveProgress(book.id, preview, 0);
-    setPreview(null);
-    setModalOpen(false); // close entirely: the notice must be visible
-    setNotice("Progress loaded from link");
-  }
-
+  // ---- navigation -------------------------------------------------------------
   function navUnit(n: number) {
     window.location.hash = bookHash(book, { kind: "unit", n });
-    setDrawerOpen(false);
   }
 
   function navAdditional(n: number) {
     window.location.hash = bookHash(book, { kind: "additional", n });
-    setDrawerOpen(false);
   }
 
   // pager: null on home/unknown routes, else prev/next course positions.
@@ -555,7 +407,7 @@ export default function CourseApp({
     // moving focus into it (before the plain Shift+E branch)
     if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && e.code === "KeyE") {
       e.preventDefault();
-      toggleSidebar();
+      toggleMenu();
       return true;
     }
     if (e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey) {
@@ -605,10 +457,10 @@ export default function CourseApp({
     return false;
   });
   const isHome = route.kind === "home";
-  // progress batteries: in the topbar on desktop, atop the unit drawer on
-  // phones (the phone topbar has no room for them)
+  // the open book's own progress, in the navigation panel under the books:
+  // the topbar holds the title alone
   const stats = (
-    <>
+    <div className="bookstats">
       <Battery
         label="Units completed"
         done={doneUnits.size}
@@ -625,45 +477,103 @@ export default function CourseApp({
         tone="ok"
         pending={!totals}
       />
-    </>
+    </div>
   );
+
+  // the book's own units, handed to the shell's sidebar under the book in
+  // the map: this is the only view with any
+  const bookUnits = index ? (
+    <>
+      {index.groups.map((g) => {
+        const gpct = pct(scopeStats(totals, g.units.map((u) => `u${u}`), progress));
+        return (
+          <div key={g.name} className="group">
+            <div className="groupname">
+              <span>{g.name}</span>
+              {totals && gpct > 0 && (
+                <span className={"grouppct" + (gpct === 100 ? " full" : "")}>{gpct}%</span>
+              )}
+            </div>
+            <div className="unitlinks">
+              {g.units.map((u) => {
+                const upct = pct(scopeStats(totals, [`u${u}`], progress));
+                return (
+                  <button
+                    key={u}
+                    ref={route.kind === "unit" && route.n === u ? activeRef : undefined}
+                    className={
+                      "unitlink" +
+                      (route.kind === "unit" && route.n === u ? " active" : "") +
+                      (doneUnits.has(u) ? " done" : "")
+                    }
+                    onClick={() => navUnit(u)}
+                  >
+                    {u}
+                    {doneUnits.has(u) && (
+                      <span className="donemark">
+                        <Check size={11} strokeWidth={3} aria-hidden />
+                      </span>
+                    )}
+                    {totals && upct > 0 && (
+                      <span className={"unitpct" + (upct === 100 ? " full" : "")}>{upct}%</span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+      <div className="group">
+        <div className="groupname">
+          <span>{index.additional.title}</span>
+          {totals &&
+            (() => {
+              const apct = pct(
+                scopeStats(totals, index.additional.exercises.map((n) => `a${n}`), progress),
+              );
+              return apct > 0 ? (
+                <span className={"grouppct" + (apct === 100 ? " full" : "")}>{apct}%</span>
+              ) : null;
+            })()}
+        </div>
+        <div className="unitlinks">
+          {index.additional.exercises.map((n) => {
+            const apct = pct(scopeStats(totals, [`a${n}`], progress));
+            return (
+              <button
+                key={n}
+                ref={route.kind === "additional" && route.n === n ? activeRef : undefined}
+                className={
+                  "unitlink" + (route.kind === "additional" && route.n === n ? " active" : "")
+                }
+                onClick={() => navAdditional(n)}
+              >
+                {n}
+                {totals && apct > 0 && (
+                  <span className={"unitpct" + (apct === 100 ? " full" : "")}>{apct}%</span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  ) : null;
 
   return (
     <BookContext.Provider value={book}>
-    <div className="app">
-      <header className="topbar">
-        <button
-          className="sidebartoggle"
-          onClick={toggleSidebar}
-          title={"Unit list \u2014 " + SC.sidebarToggle}
-          aria-label="Toggle unit list"
-        >
-          <Menu size={16} aria-hidden />
-        </button>
-        <div className="topbar-mid">
+    <AppShell
+      head={
+        <>
           {/* the way back to every book; phones reach it from the drawer */}
           <a className="topbar-lib" href={LIBRARY_HASH} title="All books">
-            <LibraryBig size={17} aria-hidden />
             <span>Murrnglish</span>
           </a>
           <span className="topbar-crumbsep" aria-hidden>
             /
           </span>
-          <button
-            type="button"
-            className="topbar-home"
-            onClick={
-              isHome
-                ? undefined
-                : // mobile: the unit drawer might be open behind the topbar;
-                  // going home also closes it so the tab bar is visible again
-                  () => {
-                    if (isMobile) setDrawerOpen(false);
-                    goHome();
-                  }
-            }
-            disabled={isHome}
-          >
+          <button type="button" className="topbar-home" onClick={isHome ? undefined : goHome} disabled={isHome}>
             <h1>{book.title}</h1>
           </button>
           {notice && (
@@ -671,270 +581,14 @@ export default function CourseApp({
               {notice}
             </span>
           )}
-        </div>
-        <div className="topstats">{stats}</div>
-        {isMobile && standalone && (
-          <OfflineChip bookId={book.id} onOpen={() => setOfflineOpen(true)} />
-        )}
-        {/* phones keep the topbar to the title alone: progress, download and
-            theme move into the unit drawer (see .draweractions), and the
-            shortcuts help is dropped — its key hints are inert on touch */}
-        {!isMobile && (
-          <div className="topbar-actions">
-            <ShortcutsHelpButton onOpen={() => openGlobal("help")} />
-            <button
-              className="themebtn"
-              onClick={() => setModalOpen(true)}
-              title={"Progress — " + SC.progressWindow}
-              aria-label="Progress: this book's overview"
-            >
-              <Share2 size={15} aria-hidden />
-            </button>
-            <button
-              className="themebtn"
-              data-global-btn="data"
-              onClick={() => openGlobal("data")}
-              title={"Data — export, import, share — " + SC.data}
-              aria-label="Data: export, import, share"
-            >
-              <Download size={15} aria-hidden />
-            </button>
-            {standalone && (
-              <OfflineButton bookId={book.id} onOpen={() => setOfflineOpen(true)} />
-            )}
-            <ThemeToggle />
-          </div>
-        )}
-      </header>
-      <div className="main">
-        {!sidebarOpen && !isMobile && (
-          <div className="sidebar-edge" aria-hidden />
-        )}
-        {isMobile && (
-          <div
-            className={`sidebar-backdrop ${drawerOpen && 'enabled'}`}
-            onClick={() => setDrawerOpen(false)}
-          />
-        )}
-        {index &&
-          (() => {
-            const sideCls = isMobile
-              ? "sidebar" + (drawerOpen ? " mobile-open" : "")
-              : sidebarOpen
-                ? transient
-                  ? "sidebar opening"
-                  : "sidebar"
-                : cardPhase
-                  ? "sidebar collapsed"
-                  : "sidebar closing";
-            const osOptions = {
-              overflow: { x: "hidden" as const },
-              scrollbars: {
-                theme: "os-theme-dark",
-                autoHide: "leave" as const,
-                autoHideDelay: 500,
-              },
-            };
-            return (
-              <OverlayScrollbarsComponent
-                ref={sidebarRef}
-                element="nav"
-                className={sideCls}
-                options={osOptions}
-                events={sidebarEvents}
-              >
-                <div className="sidebar-inner">
-                  {isMobile && (
-                    <div className="draweractions">
-                      <a className="draweraction" href={LIBRARY_HASH}>
-                        <LibraryBig size={16} aria-hidden />
-                        <span>All books</span>
-                      </a>
-                      <div className="drawersections">
-                        <a className="draweraction" href={CARDS_HASH}>
-                          <Layers size={16} aria-hidden />
-                          <span>Cards</span>
-                        </a>
-                        <a className="draweraction" href={DICTIONARY_HASH}>
-                          <NotebookPen size={16} aria-hidden />
-                          <span>Words</span>
-                        </a>
-                      </div>
-                      <button
-                        type="button"
-                        className="draweraction"
-                        onClick={() => {
-                          setDrawerOpen(false);
-                          setModalOpen(true);
-                        }}
-                        title={"Progress — " + SC.progressWindow}
-                      >
-                        <Share2 size={16} aria-hidden />
-                        <span>Progress</span>
-                      </button>
-                      <button
-                        type="button"
-                        className="draweraction"
-                        onClick={() => {
-                          setDrawerOpen(false);
-                          openGlobal("data");
-                        }}
-                        title={"Data — " + SC.data}
-                      >
-                        <Download size={16} aria-hidden />
-                        <span>Data</span>
-                      </button>
-                      {standalone && (
-                        <button
-                          type="button"
-                          className="draweraction"
-                          onClick={() => {
-                            setDrawerOpen(false);
-                            setOfflineOpen(true);
-                          }}
-                          title="Offline — download books"
-                        >
-                          <Download size={16} aria-hidden />
-                          <span>Download books</span>
-                        </button>
-                      )}
-                      <ThemeToggle labelled />
-                    </div>
-                  )}
-                  {isMobile && <div className="drawerstats">{stats}</div>}
-                  {index.groups.map((g) => {
-                    const gpct = pct(
-                      scopeStats(
-                        totals,
-                        g.units.map((u) => `u${u}`),
-                        progress,
-                      ),
-                    );
-                    return (
-                      <div key={g.name} className="group">
-                        <div className="groupname">
-                          <span>{g.name}</span>
-                          {totals && gpct > 0 && (
-                            <span
-                              className={
-                                "grouppct" + (gpct === 100 ? " full" : "")
-                              }
-                            >
-                              {gpct}%
-                            </span>
-                          )}
-                        </div>
-                        <div className="unitlinks">
-                          {g.units.map((u) => {
-                            const upct = pct(
-                              scopeStats(totals, [`u${u}`], progress),
-                            );
-                            return (
-                              <button
-                                key={u}
-                                ref={
-                                  route.kind === "unit" && route.n === u
-                                    ? activeRef
-                                    : undefined
-                                }
-                                className={
-                                  "unitlink" +
-                                  (route.kind === "unit" && route.n === u
-                                    ? " active"
-                                    : "") +
-                                  (doneUnits.has(u) ? " done" : "")
-                                }
-                                onClick={() => navUnit(u)}
-                              >
-                                {u}
-                                {doneUnits.has(u) && (
-                                  <span className="donemark">
-                                    <Check
-                                      size={11}
-                                      strokeWidth={3}
-                                      aria-hidden
-                                    />
-                                  </span>
-                                )}
-                                {totals && upct > 0 && (
-                                  <span
-                                    className={
-                                      "unitpct" + (upct === 100 ? " full" : "")
-                                    }
-                                  >
-                                    {upct}%
-                                  </span>
-                                )}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    );
-                  })}
-                  <div className="group">
-                    <div className="groupname">
-                      <span>{index.additional.title}</span>
-                      {totals &&
-                        (() => {
-                          const apct = pct(
-                            scopeStats(
-                              totals,
-                              index.additional.exercises.map((n) => `a${n}`),
-                              progress,
-                            ),
-                          );
-                          return apct > 0 ? (
-                            <span
-                              className={
-                                "grouppct" + (apct === 100 ? " full" : "")
-                              }
-                            >
-                              {apct}%
-                            </span>
-                          ) : null;
-                        })()}
-                    </div>
-                    <div className="unitlinks">
-                      {index.additional.exercises.map((n) => {
-                        const apct = pct(
-                          scopeStats(totals, [`a${n}`], progress),
-                        );
-                        return (
-                          <button
-                            key={n}
-                            ref={
-                              route.kind === "additional" && route.n === n
-                                ? activeRef
-                                : undefined
-                            }
-                            className={
-                              "unitlink" +
-                              (route.kind === "additional" && route.n === n
-                                ? " active"
-                                : "")
-                            }
-                            onClick={() => navAdditional(n)}
-                          >
-                            {n}
-                            {totals && apct > 0 && (
-                              <span
-                                className={
-                                  "unitpct" + (apct === 100 ? " full" : "")
-                                }
-                              >
-                                {apct}%
-                              </span>
-                            )}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </div>
-              </OverlayScrollbarsComponent>
-            );
-          })()}
+        </>
+      }
+      navActions={standalone ? <OfflineButton bookId={book.id} onOpen={() => setOfflineOpen(true)} /> : undefined}
+      bookStats={stats}
+      bookUnits={bookUnits}
+      sidebarRef={sidebarRef}
+      sidebarEvents={sidebarEvents}
+    >
         {isHome ? (
           <Home book={book} onStart={startCourse} continueTo={homeContinue} />
         ) : (
@@ -1016,25 +670,12 @@ export default function CourseApp({
             />
           </OverlayScrollbarsComponent>
         )}
-      </div>
-      <ProgressModal
-        open={modalOpen || preview !== null}
-        onClose={() => {
-          setModalOpen(false);
-          setPreview(null);
-        }}
-        progress={progress}
-        preview={preview}
-        index={index}
-        totals={totals}
-        onApplyPreview={handleApplyPreview}
-      />
       <OfflinePanel
         open={offlineOpen}
         onClose={() => setOfflineOpen(false)}
         currentBookId={book.id}
       />
-    </div>
+    </AppShell>
     </BookContext.Provider>
   );
 }

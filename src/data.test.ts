@@ -53,7 +53,7 @@ globalThis.localStorage = {
 describe("the data file", () => {
   it("round-trips every target it carries", () => {
     const file = makeDataFile(
-      { books: ["red", "blue"], includeAnswers: true, cards: true, dictionary: true },
+      { books: ["red", "blue"], includeAnswers: true, cards: true, dictionary: true, learning: true },
       9,
     );
     expect(parseIncoming(JSON.stringify(file))).toEqual({ kind: "data", file });
@@ -61,10 +61,11 @@ describe("the data file", () => {
 
   it("leaves an unticked target out entirely, not empty", () => {
     const file = makeDataFile(
-      { books: [], includeAnswers: false, cards: false, dictionary: false },
+      { books: [], includeAnswers: false, cards: false, dictionary: false, learning: false },
       9,
     );
     expect(file.cards).toBeNull();
+    expect(file.learning).toBeNull();
     expect(file.dictionary).toBeNull();
     expect(file.books).toEqual({});
   });
@@ -72,7 +73,7 @@ describe("the data file", () => {
   it("leaves out the answer texts when they are not ticked", () => {
     store.set("murrnglish.red.progress-v1", JSON.stringify(progress(1)));
     const file = makeDataFile(
-      { books: ["red"], includeAnswers: false, cards: false, dictionary: false },
+      { books: ["red"], includeAnswers: false, cards: false, dictionary: false, learning: false },
       9,
     );
     expect(file.books.red.answers).toEqual({});

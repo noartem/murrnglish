@@ -24,7 +24,7 @@ import { useMinuteClock } from "../dueCount";
 import type { Word } from "../words";
 import { headwordKey, wordCardIds } from "../words";
 import { LevelChip } from "./CardsView";
-import { SectionBar } from "./SectionBar";
+import { SectionShell } from "./SectionBar";
 import { openWordEditor } from "./WordEditor";
 
 const OS_OPTIONS = {
@@ -75,9 +75,7 @@ export function DictionaryView({ deck: openDeck }: { deck?: string }) {
   }
 
   return (
-    <div className="app">
-      <SectionBar section="dictionary" />
-      <div className="main">
+    <SectionShell section="dictionary">
         <OverlayScrollbarsComponent element="main" className="home deskpane" options={OS_OPTIONS}>
           <div className="deskcol">
             <form
@@ -176,11 +174,9 @@ export function DictionaryView({ deck: openDeck }: { deck?: string }) {
             {key && vocabulary && <DeckHits section={vocabulary} q={key} />}
 
             {vocabulary && <DeckShelf section={vocabulary} open={openDeck} />}
-
           </div>
-        </OverlayScrollbarsComponent>
-      </div>
-    </div>
+      </OverlayScrollbarsComponent>
+    </SectionShell>
   );
 }
 

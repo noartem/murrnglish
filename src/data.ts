@@ -189,3 +189,19 @@ export type TotalsMap = Record<string, UnitTotals>;
 export function fetchTotals(book: Book): Promise<TotalsMap> {
   return fetchJson(book, "data/totals.json");
 }
+
+// the totals are asked for by anything that draws a progress mosaic (the
+// data window, one per book); one request per book per session, like the
+// index, and a failure is dropped so the next asker retries
+const totalsCache = new Map<string, Promise<TotalsMap>>();
+export function fetchTotalsOnce(book: Book): Promise<TotalsMap> {
+  let p = totalsCache.get(book.id);
+  if (!p) {
+    p = fetchTotals(book).catch((e: unknown) => {
+      totalsCache.delete(book.id);
+      throw e;
+    });
+    totalsCache.set(book.id, p);
+  }
+  return p;
+}

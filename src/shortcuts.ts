@@ -10,7 +10,7 @@
 // "Shift+?" arrives as e.key === "?" with shiftKey set on every layout.
 // Letter shortcuts always check e.code, so they work on any keyboard layout.
 // Handler order (critical):
-//   1. the help window owns every key  2. the data window's hint letters
+//   1. the help window owns every key  2. the data window's access letters
 //   3. any other .modal-overlay owns its own Esc — nothing global fires
 //   4. exercise scope (before the defaultPrevented guard: GapInput calls
 //      preventDefault on plain Enter)
@@ -39,17 +39,10 @@ export const SC = {
   bookPicker: "Shift+B",
   bookJump: "Alt+1…9",
   data: "Alt+D",
-  progressWindow: "Shift+I",
+  dataAlt: "Shift+I",
+  search: "Ctrl+K",
   help: "Shift+?",
 } as const;
-
-/** First letter -> control of the data window, for its Shift+I hint mode. */
-export const DATA_HINTS: Record<string, string> = {
-  KeyA: "A", // Include answer texts
-  KeyI: "I", // Import
-  KeyE: "E", // Export
-  KeyS: "S", // Share
-};
 
 export interface HelpEntry {
   keys: string[]; // one combo, rendered as separate key chips
@@ -71,14 +64,14 @@ export const HELP_SECTIONS: HelpSection[] = [
     title: "Anywhere",
     entries: [
       {
+        keys: ["Ctrl", "K"],
+        title: "Search",
+        desc: "One field over everything: the books and their units, the cards and their entries, your own words, the shortcuts, and the places themselves. Type to narrow, then click a result or press Enter to go there.",
+      },
+      {
         keys: ["Shift", "?"],
         title: "This help",
         desc: "Open this window from any place — a book, the library, the cards, the dictionary. Press Esc to close it.",
-      },
-      {
-        keys: ["Shift", "T"],
-        title: "Switch theme",
-        desc: "Cycle the color theme: system, light, dark. Works in every view.",
       },
       {
         keys: ["Shift", "C"],
@@ -108,13 +101,17 @@ export const HELP_SECTIONS: HelpSection[] = [
       {
         keys: ["Alt", "D"],
         alt: ["Shift", "I"],
-        title: "Data window",
-        desc: "Export, import or share your progress, cards and words. Opened this way, the window marks a key letter of each control — A, I, E, S — and pressing that letter does the same as clicking the control. Esc closes it.",
+        title: "Progress and data window",
+        desc: "How far each book has come, the file or link that moves it — export, import or share your progress, cards and words — and a report of what you have learned. Opened this way, the window marks the key of every control — F, P, C, D, A, I, E, S, L — and pressing that key does the same as clicking the control. Esc closes it.",
         sub: [
-          { keys: ["A"], desc: "include or leave out the answer texts" },
+          { keys: ["F"], alt: ["P"], desc: "tick or untick a book; the letter is in its title" },
+          { keys: ["C"], desc: "tick or untick the cards: their learning state and daily limits" },
+          { keys: ["D"], desc: "tick or untick the dictionary" },
+          { keys: ["A"], desc: "include or leave out the answer texts in the books" },
           { keys: ["I"], desc: "import a file" },
           { keys: ["E"], desc: "export a file" },
-          { keys: ["S"], desc: "copy the share link" },
+          { keys: ["S"], desc: "copy the share link — the book you are in, else the first ticked" },
+          { keys: ["L"], desc: "tick or untick the learning report: which cards are learned and when they come back" },
           { keys: ["Esc"], desc: "close the window" },
         ],
       },
@@ -166,8 +163,8 @@ export const HELP_SECTIONS: HelpSection[] = [
       },
       {
         keys: ["Alt", "D"],
-        title: "Data window",
-        desc: "The same window as anywhere else in the app: export, import or share progress, cards and words.",
+        title: "Progress and data window",
+        desc: "The same window as anywhere else in the app: this book's progress beside the other book's, and export, import or share for progress, cards and words.",
       },
     ],
   },
@@ -175,7 +172,8 @@ export const HELP_SECTIONS: HelpSection[] = [
     title: "In a review session",
     entries: [
       {
-        keys: ["Space"],
+        keys: ["Ctrl", "Enter"],
+        alt: ["Space"],
         title: "Show the answer",
         desc: "Turns the card over. When the card asks you to type, Enter in the field checks what you typed and turns the card over.",
       },
@@ -193,9 +191,34 @@ export const HELP_SECTIONS: HelpSection[] = [
         ],
       },
       {
+        keys: ["S"],
+        title: "Suspend",
+        desc: "Stops showing this card. The cards → Settings brings suspended cards back.",
+      },
+      {
+        keys: ["I"],
+        title: "Card info",
+        desc: "Opens the card among its deck's cards, with its review history.",
+      },
+      {
+        keys: ["W"],
+        title: "Word list",
+        desc: "The vocabulary deck's entries as a list.",
+      },
+      {
+        keys: ["A"],
+        title: "Add to my words",
+        desc: "Keeps the phrase on the card in your own dictionary.",
+      },
+      {
         keys: ["Ctrl", "Z"],
         title: "Undo",
         desc: "Takes the last answer back and shows that card again.",
+      },
+      {
+        keys: ["Ctrl", "Enter"],
+        title: "Done for now: back to the decks",
+        desc: "On the finished page, where there is no card left, this goes to All decks.",
       },
     ],
   },
@@ -234,19 +257,19 @@ export function useAppShortcuts(): void {
         }
         return;
       }
-
-      // 2. the data window that Alt+D or Shift+I opened: a plain letter
-      // clicks the control carrying it (A / I / E / S). Only in hint mode —
-      // opened from the topbar button it leaves plain letters alone. Esc is
-      // the window's own listener, not repeated here, so one key press can
-      // never run the close path twice.
+      // 2. the window Alt+D or Shift+I opened: a plain letter clicks the
+      // control that carries it. Every control of the data window names its
+      // own access key in `data-modal-key` (DataModal), so there is no table
+      // here to fall out of step with the markup. Only in hint mode — opened
+      // from a topbar button it leaves plain letters alone. Esc is the
+      // window's own listener, not repeated here, so one key press can never
+      // run the close path twice.
       if (currentGlobal() === "data" && globalHints()) {
         // plain letters only: no modifiers, no auto-repeat. Shift+I while
         // the window is open falls through to the global branch instead of
         // clicking Import a second time.
-        if (!e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey && !e.repeat) {
-          const hint = DATA_HINTS[e.code];
-          const target = hint && document.querySelector<HTMLElement>(`[data-modal-key="${hint}"]`);
+        if (!e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey && !e.repeat && /^Key[A-Z]$/.test(e.code)) {
+          const target = document.querySelector<HTMLElement>(`[data-modal-key="${e.code}"]`);
           if (target) {
             e.preventDefault();
             // a click lands the same way as the pointer: buttons fire
@@ -258,8 +281,8 @@ export function useAppShortcuts(): void {
       }
 
       // 3. another window is up (the word editor, the data window, the book
-      // picker, the progress window, the offline panel): each owns an Esc
-      // listener of its own, so no global key fires behind it
+      // picker, the offline panel): each owns an Esc listener of its own, so
+      // no global key fires behind it
       if (document.querySelector(".modal-overlay")) return;
 
       // 4. exercise scope — BEFORE the defaultPrevented guard, because
@@ -285,6 +308,16 @@ export function useAppShortcuts(): void {
       if (e.key === "?" && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
         openGlobal("help");
+        return;
+      }
+      // Ctrl+K: the global search, everywhere. A field with text keeps
+      // Ctrl+K for itself (browsers bind it to the address bar anyway).
+      if ((e.ctrlKey || e.metaKey) && !e.shiftKey && !e.altKey && e.code === "KeyK") {
+        const el = document.activeElement;
+        const typing = el instanceof HTMLElement && el.closest("input, textarea, select");
+        if (typing && "value" in typing && String(typing.value)) return;
+        e.preventDefault();
+        openGlobal("search");
         return;
       }
       if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {

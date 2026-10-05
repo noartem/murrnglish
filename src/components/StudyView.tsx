@@ -22,6 +22,7 @@ import type { ResolvedCard } from "../decks";
 import { deckIds, deckTitle, useCardLookup } from "../decks";
 import { useKeyScope } from "../keyScopes";
 import { speak } from "../lookup";
+import { SC } from "../shortcuts";
 import type { DeckRef } from "../routes";
 import { CARDS_HASH, browseHash, dictionaryDeckHash } from "../routes";
 import type { Rating } from "../srs";
@@ -29,13 +30,23 @@ import { RATINGS, RATING_LABEL, buildQueue, intervalLabel, nextCard, preview, to
 import { answerCard, setSuspended, srsConfig, undoAnswer, useStudy } from "../study";
 import type { Word } from "../words";
 import { CountsLine, LevelChip } from "./CardsView";
-import { SectionBar } from "./SectionBar";
+import { SectionShell } from "./SectionBar";
 import { openWordEditor } from "./WordEditor";
+import { HintText } from "./DataModal";
 
 const OS_OPTIONS = {
   overflow: { x: "hidden" as const },
   scrollbars: { theme: "os-theme-dark", autoHide: "leave" as const, autoHideDelay: 500 },
 };
+
+/**
+ * The tools' own letters, in the order their buttons sit under the card:
+ * Suspend, Card info, Word list, Add to my words. Each button carries its
+ * letter in `data-study-key` and marks it in its label (HintText), so a plain
+ * letter press clicks exactly the control the letter points at. Ctrl+Enter is
+ * the answer key and the way off a finished page, so it gets no letter.
+ */
+export const TOOL_KEYS = ["S", "I", "W", "A"] as const;
 
 /** What the learner did on the question side, for checking and the suggested rating. */
 interface Attempt {
@@ -156,7 +167,26 @@ export function StudyView({ deck }: { deck: DeckRef }) {
       undo();
       return true;
     }
+    // Ctrl+Enter: show the answer, and on a page with no card left leave the
+    // session for the deck list. Enter alone stays the field's own.
+    if ((e.ctrlKey || e.metaKey) && !e.shiftKey && !e.altKey && e.code === "Enter") {
+      e.preventDefault();
+      if (!resolved) window.location.hash = CARDS_HASH;
+      else turn();
+      return true;
+    }
     if (e.ctrlKey || e.metaKey || e.altKey || typing || e.shiftKey || e.repeat) return false;
+    // a plain letter clicks the tool that carries it
+    const tool = TOOL_KEYS.find((k) => e.code === `Key${k}`);
+    if (tool) {
+      const target = document.querySelector<HTMLElement>(`[data-study-key="Key${tool}"]`);
+      if (target) {
+        e.preventDefault();
+        target.click();
+        return true;
+      }
+      return false;
+    }
     const digit = /^Digit([1-9])$/.exec(e.code)?.[1];
     if (!revealed) {
       if (e.key === " " || e.key === "Enter") {
@@ -225,8 +255,13 @@ export function StudyView({ deck }: { deck: DeckRef }) {
         </article>
         <div className="studyactions">
           {!revealed ? (
-            <button type="button" className="homecta showbtn" onClick={turn}>
-              Show answer <kbd>Space</kbd>
+            <button
+              type="button"
+              className="homecta showbtn"
+              onClick={turn}
+              title={"Show answer — " + SC.check}
+            >
+              Show answer
             </button>
           ) : (
             <div className="ratebtns" role="group" aria-label="How well did you know it?">
@@ -252,24 +287,26 @@ export function StudyView({ deck }: { deck: DeckRef }) {
           <button
             type="button"
             className="linkbtn"
+            data-study-key="KeyS"
             onClick={() => {
               setSuspended(shownId, true);
               setCurrentId(null);
               setRevealed(false);
               setAttempt(EMPTY);
             }}
-            title="Stop showing this card (Cards → Settings brings suspended cards back)"
+            title="Stop showing this card — S (Cards → Settings brings suspended cards back)"
           >
-            <PauseCircle size={15} aria-hidden /> Suspend
+            <PauseCircle size={15} aria-hidden /> <HintText text="Suspend" letter="S" />
           </button>
-          <CardLinks r={resolved} />
+          <CardLinks r={resolved} hints />
           {resolved.type === "deck" && (
             <a
               className="linkbtn"
+              data-study-key="KeyI"
               href={browseHash(resolved.deck.id, parseCardId(shownId)?.entry)}
-              title="The card among its deck's cards, with its review history"
+              title="The card among its deck's cards, with its review history — I"
             >
-              <Info size={15} aria-hidden /> Card info
+              <Info size={15} aria-hidden /> Card <HintText text="i" letter="i" />
             </a>
           )}
         </div>
@@ -278,9 +315,7 @@ export function StudyView({ deck }: { deck: DeckRef }) {
   }
 
   return (
-    <div className="app">
-      <SectionBar section="cards" />
-      <div className="main">
+    <SectionShell section="cards">
         <OverlayScrollbarsComponent element="main" className="home deskpane" options={OS_OPTIONS}>
           <div className="deskcol studycol">
             <div className="studyhead">
@@ -293,8 +328,7 @@ export function StudyView({ deck }: { deck: DeckRef }) {
             {body}
           </div>
         </OverlayScrollbarsComponent>
-      </div>
-    </div>
+    </SectionShell>
   );
 }
 
@@ -319,8 +353,9 @@ function Finished({ deck, total, later }: { deck: DeckRef; total: number; later:
       <h2 className="unitheading">{total ? "Done for now" : "No cards"}</h2>
       <p className="ruleprose">{text}</p>
       <div className="modal-actions">
-        <a className="themebtn labelled" href={CARDS_HASH}>
-          <ArrowLeft size={15} aria-hidden /> All decks
+        <a className="themebtn labelled" href={CARDS_HASH} data-study-key="KeyEnter">
+          <ArrowLeft size={15} aria-hidden /> All decks <kbd>Ctrl</kbd>
+          <kbd>Enter</kbd>
         </a>
         {deck.kind === "deck" && total > 0 && (
           <a className="themebtn labelled" href={browseHash(deck.id)}>
@@ -713,7 +748,13 @@ function DeckFace({
   );
 }
 
-export function CardLinks({ r }: { r: ResolvedCard }) {
+/**
+ * The card's own tools: the word behind a word card, or — for a vocabulary
+ * phrase — the list it came from and a way to keep it. `hints` marks the
+ * letters the session's plain-letter keys press (S / I / W / A); the deck
+ * browser passes none, because those keys only work in a session.
+ */
+export function CardLinks({ r, hints }: { r: ResolvedCard; hints?: boolean }) {
   if (r.type === "word")
     return (
       <button type="button" className="linkbtn" onClick={() => openWordEditor({ id: r.word.id })}>
@@ -725,12 +766,25 @@ export function CardLinks({ r }: { r: ResolvedCard }) {
   const phrase = r.entry.choice ? null : entryText(r.entry);
   return (
     <>
-      <a className="linkbtn" href={dictionaryDeckHash(r.deck.id)}>
-        <List size={15} aria-hidden /> Word list
+      <a
+        className="linkbtn"
+        data-study-key={hints ? "KeyW" : undefined}
+        href={dictionaryDeckHash(r.deck.id)}
+        title={hints ? "The deck's words as a list — W" : undefined}
+      >
+        <List size={15} aria-hidden />{" "}
+        <HintText text="Word list" letter={hints ? "W" : null} />
       </a>
       {phrase && (
-        <button type="button" className="linkbtn" onClick={() => openWordEditor({ word: phrase, context: r.entry.ex })}>
-          <Plus size={15} aria-hidden /> Add to my words
+        <button
+          type="button"
+          className="linkbtn"
+          data-study-key={hints ? "KeyA" : undefined}
+          onClick={() => openWordEditor({ word: phrase, context: r.entry.ex })}
+          title={hints ? "Keep this phrase in your dictionary — A" : undefined}
+        >
+          <Plus size={15} aria-hidden />{" "}
+          <HintText text="Add to my words" letter={hints ? "A" : null} />
         </button>
       )}
     </>

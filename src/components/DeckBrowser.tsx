@@ -24,7 +24,7 @@ import { useMinuteClock } from "../dueCount";
 import { headwordKey } from "../words";
 import { CountsLine, LevelChip } from "./CardsView";
 import { EntryEn } from "./DictionaryView";
-import { SectionBar } from "./SectionBar";
+import { SectionShell } from "./SectionBar";
 import { CardLinks, CardPreview } from "./StudyView";
 
 const OS_OPTIONS = {
@@ -244,9 +244,7 @@ export function DeckBrowser({ deck: deckId, entry: entryId }: { deck: string; en
   }
 
   return (
-    <div className="app">
-      <SectionBar section="cards" />
-      <div className="main">
+    <SectionShell section="cards">
         <OverlayScrollbarsComponent ref={osRef} element="main" className="home deskpane" options={OS_OPTIONS}>
           <div className="deskcol studycol">
             <div className="studyhead">
@@ -272,9 +270,8 @@ export function DeckBrowser({ deck: deckId, entry: entryId }: { deck: string; en
             </div>
             {body}
           </div>
-        </OverlayScrollbarsComponent>
-      </div>
-    </div>
+      </OverlayScrollbarsComponent>
+    </SectionShell>
   );
 }
 

@@ -23,7 +23,7 @@ import { deckCounts, todayDaily } from "../srs";
 import type { StudySnapshot } from "../study";
 import { resumeSuspended, saveSettings, setIncluded, srsConfig, useStudy } from "../study";
 import { useMinuteClock } from "../dueCount";
-import { SectionBar } from "./SectionBar";
+import { SectionShell } from "./SectionBar";
 
 const OS_OPTIONS = {
   overflow: { x: "hidden" as const },
@@ -60,9 +60,7 @@ export function CardsView() {
   const wordsOn = include[WORDS_PICK] !== false;
 
   return (
-    <div className="app">
-      <SectionBar section="cards" />
-      <div className="main">
+    <SectionShell section="cards">
         <OverlayScrollbarsComponent element="main" className="home deskpane" options={OS_OPTIONS}>
           <div className="deskcol">
             <section className="sheet todaysheet">
@@ -122,9 +120,8 @@ export function CardsView() {
             <Settings />
 
           </div>
-        </OverlayScrollbarsComponent>
-      </div>
-    </div>
+      </OverlayScrollbarsComponent>
+    </SectionShell>
   );
 }
 

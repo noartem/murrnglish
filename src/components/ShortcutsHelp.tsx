@@ -8,6 +8,7 @@ import { Keyboard, X } from "lucide-react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import type { HelpSection } from "../shortcuts";
 import { HELP_SECTIONS, SC } from "../shortcuts";
+import { takeHelpJump } from "./SearchModal";
 
 export function ShortcutsHelpButton({ onOpen }: { onOpen: () => void }) {
   return (
@@ -45,88 +46,130 @@ export function ShortcutsModal({
       closeRef.current?.focus();
     }
   }, []);
-  const [scrolled, setScrolled] = useState(false);
+  const [at, setAt] = useState(entries[0]?.title ?? "");
+  // the section in view drives the rail, and the rail drives the scroll: a
+  // click jumps, a scroll marks. Both land on the same state, so they cannot
+  // disagree.
+  const jumpTo = (title: string) => {
+    setAt(title);
+    document.getElementById(sectionId(title))?.scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+  // the search opens this window on one of its groups. The window does not
+  // exist when the search sends the request, so the target waits in a slot
+  // that this mount reads once.
+  useEffect(() => {
+    const title = takeHelpJump();
+    if (title) jumpTo(title);
+  }, []);
   return (
     <div className="helpoverlay" onClick={onClose}>
       <div
-        className={"helpcard" + (scrolled ? " scrolled" : "")}
+        className="helpcard"
         role="dialog"
         aria-modal="true"
         aria-label="Keyboard shortcuts"
         onClick={(e) => e.stopPropagation()}
       >
-      <div className="helpcardhead">
-        <h3>Keyboard shortcuts</h3>
-        <button
-          className="helpclose"
-          ref={closeRef}
-          onClick={onClose}
-          aria-label="Close"
-        >
-          <X size={15} aria-hidden />
-        </button>
-      </div>
-      <OverlayScrollbarsComponent
-        className="helpscroll"
-        options={{
-          overflow: { x: "hidden" as const },
-          scrollbars: {
-            theme: "os-theme-dark",
-            autoHide: "leave" as const,
-            autoHideDelay: 500,
-          },
-        }}
-          events={{
-            scroll: (_instance, event) => {
-              const target = event.target as HTMLElement;
-              setScrolled(target.scrollTop > 0);
-            },
-          }}
-      >
-      {entries.map((section) => (
-        <section key={section.title}>
-          <h4 className="helpsection">{section.title}</h4>
-          {section.entries.map((entry) => (
-            <section className="helpentry" key={entry.title}>
-              <div className="helpentryhead">
-                <span className="keychips">
-                  <KeyChips combo={entry.keys} />
-                </span>{" "}
-                {entry.alt && (
-                  <>
-                    <span className="keysep">/</span>
-                    <KeyChips combo={entry.alt} />
-                  </>
-                )}
-                <strong>{entry.title}</strong>
-              </div>
-              <p>{entry.desc}</p>
-              {entry.sub && (
-                <ul>
-                  {entry.sub.map((s) => (
-                    <li key={s.desc}>
-                      <span className="keychips">
-                        <KeyChips combo={s.keys} />
-                        {s.alt && (
+        <div className="helpcardhead">
+          <h3>Keyboard shortcuts</h3>
+          <button className="helpclose" ref={closeRef} onClick={onClose} aria-label="Close">
+            <X size={15} aria-hidden />
+          </button>
+        </div>
+        <div className="helpbody">
+          {/* the rail: one row per group, the current one marked. On a phone
+              it becomes a row of tabs above the list. */}
+          <nav className="helprail" aria-label="Shortcut groups">
+            {entries.map((s) => (
+              <button
+                key={s.title}
+                className={"helplink" + (s.title === at ? " on" : "")}
+                onClick={() => jumpTo(s.title)}
+                aria-current={s.title === at ? "true" : undefined}
+              >
+                {s.title}
+              </button>
+            ))}
+          </nav>
+          <OverlayScrollbarsComponent
+            className="helpscroll"
+            options={{
+              overflow: { x: "hidden" as const },
+              scrollbars: {
+                theme: "os-theme-dark",
+                autoHide: "leave" as const,
+                autoHideDelay: 500,
+              },
+            }}
+            events={{
+              scroll: (_instance, event) => {
+                setAt(nearestSection(event.target as HTMLElement, entries));
+              },
+            }}
+          >
+            {entries.map((section) => (
+              <section key={section.title} id={sectionId(section.title)}>
+                <h4 className="helpsection">{section.title}</h4>
+                <div className="helpentries">
+                  {section.entries.map((entry) => (
+                    <div className="helpentry" key={entry.title}>
+                      <div className="helpentryhead">
+                        <span className="keychips">
+                          <KeyChips combo={entry.keys} />
+                        </span>{" "}
+                        {entry.alt && (
                           <>
                             <span className="keysep">/</span>
-                            <KeyChips combo={s.alt} />
+                            <KeyChips combo={entry.alt} />
                           </>
                         )}
-                      </span>{" "}
-                      {"\u2014"} {s.desc}
-                    </li>
+                        <strong>{entry.title}</strong>
+                      </div>
+                      <p>{entry.desc}</p>
+                      {entry.sub && (
+                        <ul>
+                          {entry.sub.map((s) => (
+                            <li key={s.desc}>
+                              <span className="keychips">
+                                <KeyChips combo={s.keys} />
+                                {s.alt && (
+                                  <>
+                                    <span className="keysep">/</span>
+                                    <KeyChips combo={s.alt} />
+                                  </>
+                                )}
+                              </span>{" "}
+                              {"\u2014"} {s.desc}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   ))}
-                </ul>
-              )}
-            </section>
-          ))}
-        </section>
-      ))}
-      </OverlayScrollbarsComponent>
+                </div>
+              </section>
+            ))}
+          </OverlayScrollbarsComponent>
+        </div>
       </div>
     </div>
   );
+}
+
+/** The DOM id a group scrolls to. Titles are unique in HELP_SECTIONS. */
+function sectionId(title: string): string {
+  return "help-" + title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+}
+
+/** The group whose heading is last above the top of the scrolled list. */
+function nearestSection(vp: HTMLElement, sections: HelpSection[]): string {
+  const top = vp.getBoundingClientRect().top + 24;
+  let found = sections[0]?.title ?? "";
+  for (const s of sections) {
+    const el = document.getElementById(sectionId(s.title));
+    if (el && el.getBoundingClientRect().top <= top) found = s.title;
+  }
+  return found;
 }
 
 // one combo = separate key chips joined by "+"; a token may hold "/"

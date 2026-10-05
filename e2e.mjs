@@ -4,6 +4,7 @@
 // Run: node e2e.mjs
 import { createRequire } from "node:module";
 import path from "node:path";
+import { readFile } from "node:fs/promises";
 import os from "node:os";
 
 // import playwright from the npx cache: same package `npx playwright` uses
@@ -35,6 +36,17 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const results = [];
 const ok = (name, cond, extra = "") => results.push([cond ? "PASS" : "FAIL", name, extra]);
+
+// The data window opens from the navigation panel, which a fresh browser
+// leaves collapsed: slide it out first, then press its own button.
+async function openData(p) {
+  if (await p.locator("nav.sidebar.collapsed").count()) {
+    await p.locator(".sidebartoggle").click();
+    await sleep(500);
+  }
+  await p.locator('button[aria-label^="Progress and data"]').click();
+  await p.waitForSelector('.modal[aria-label="Progress and data"]', { timeout: 10000 });
+}
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
@@ -98,11 +110,14 @@ await page.waitForFunction(
 ok("F3 sidebar expanded", true);
 ok("F3 active unit highlighted", await page.locator(".unitlink.active").first().isVisible());
 await page.locator(".sidebartoggle").click();
+// once opened, the sidebar settles in .closing (width 0) — the collapsed
+// hover card is the first-open state only, so that is the class to wait for
 await page.waitForFunction(
-  () => !!document.querySelector(".sidebar.collapsed"),
+  () => !!document.querySelector(".sidebar.closing"),
+  undefined,
   { timeout: 5000 },
 );
-ok("F3 sidebar collapsed card", true);
+ok("F3 sidebar collapses again", true);
 
 // ---------- Flow 4: navigation via sidebar link + bottom pager ----------
 await page.locator(".sidebartoggle").click();
@@ -129,7 +144,14 @@ ok("F4 pager prev back to unit 2", /#\/blue\/u2$/.test(page.url()));
 await page.waitForSelector(".unitjumps .jumpchip", { timeout: 30000 });
 const paneTop = () =>
   page.evaluate(() => document.querySelector(".coursepane [data-overlayscrollbars-viewport]").scrollTop);
-ok("F5 the jump bar starts on the lesson", (await page.locator(".jumpchip.on").textContent()).trim() === "Lesson");
+// the chip is marked by the pane's scroll listener, so it settles a frame
+// after the page paints — wait for it rather than racing it
+await page.waitForFunction(
+  () => document.querySelector(".jumpchip.on")?.textContent?.trim() === "Lesson",
+  null,
+  { timeout: 5000 },
+);
+ok("F5 the jump bar starts on the lesson", true);
 await page.locator(".jumpchip", { hasText: /^2\.3$/ }).click();
 await page.waitForFunction(() => document.querySelector(".jumpchip.on")?.textContent?.trim() === "2.3", null, {
   timeout: 5000,
@@ -176,37 +198,45 @@ await page.waitForFunction(
 );
 ok("F5 Shift+S again goes back up to the lesson", await page.evaluate(() => document.activeElement?.id === "lesson"));
 
-// ---------- Flow 6: the progress window ----------
-await page.locator('button[aria-label^="Progress"]').click();
-await page.waitForSelector('.modal[aria-label="Progress"]', { timeout: 30000 });
-ok("F6 progress window opens", await page.locator('.modal h2:text("Progress")').isVisible());
-// the data actions moved to the data window; the overview keeps the grid
-ok("F6 the overview keeps the unit grid", (await page.locator(".modal .unitsq").count()) > 0);
+// ---------- Flow 6: the progress and data window ----------
+// One window for both: it leads with every book's progress, then the data
+// that moves it. The panel's own button and Alt+D / Shift+I open the same
+// thing.
+await openData(page);
+ok("F6 the window opens", await page.locator('.modal h2:text("Progress and data")').isVisible());
+await page.waitForSelector(".modal .unitsq", { timeout: 30000 });
+// a mosaic per book, both books' units in all
+ok("F6 both books carry a unit mosaic",
+  (await page.locator(".modal .unitgrid").count()) === 2 &&
+    (await page.locator(".modal .unitsq").count()) === 115 + 35 + 145 + 41,
+  `${await page.locator(".modal .unitgrid").count()} grids, ${await page.locator(".modal .unitsq").count()} squares`);
 await page.locator('.modal button[aria-label="Close"]').click();
 await sleep(300);
-ok("F6 the window closes", (await page.locator('.modal[aria-label="Progress"]').count()) === 0);
+ok("F6 the window closes", (await page.locator('.modal[aria-label="Progress and data"]').count()) === 0);
 
 // ---------- Flow 9: Shift+I opens the data window with hint keys ----------
-// The window opened this way underlines the trigger letter of each control
-// (I / E / S, and the "a" of "answer") and a plain letter clicks that control.
+// The window opened this way underlines the access letter of each control
+// (F / P / C / D / A, and the I / E / S / L of the four buttons) and a plain
+// letter clicks that control.
 await page.keyboard.press("Shift+KeyI");
-await page.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
+await page.waitForSelector('.modal[aria-label="Progress and data"]', { timeout: 10000 });
 const hintLetters = await page.locator(".modal .hintkey").allTextContents();
-// one hint letter per hinted control: the A of "answer" and the I / E / S of
-// the three buttons (in "Copy share link" the marked S is the one in "share")
+// one letter per control, in the order they render: the F of "Foundations",
+// the P of "Progress", C, D, the "a" of "answer", L, then I / E / S (in
+// "Copy share link" the marked S is the one in "share")
 ok(
   "F9 Shift+I opens with one hint letter per control",
-  hintLetters.length === 4 && hintLetters.join("").toLowerCase() === "aies",
+  hintLetters.length === 9 && hintLetters.join("") === "FPCDaLIEs",
   hintLetters.join(""),
 );
 ok(
   "F9 hint letters sit on their controls",
   (await page.locator(".modal [data-modal-key]").evaluateAll((els) =>
     els.map((e) => e.getAttribute("data-modal-key")),
-  )).join("") === "AIES",
+  )).join("") === "KeyFKeyPKeyCKeyDKeyAKeyLKeyIKeyEKeyS",
 );
 // the "a" belongs to "answer", and no flex gap splits the label around it
-const hintGap = await page.locator('[data-modal-key="I"] .hintkey').evaluate((el) => {
+const hintGap = await page.locator('[data-modal-key="KeyI"] .hintkey').evaluate((el) => {
   const self = el.getBoundingClientRect();
   const r = document.createRange();
   r.setStart(el.nextSibling, 0);
@@ -215,16 +245,44 @@ const hintGap = await page.locator('[data-modal-key="I"] .hintkey').evaluate((el
 });
 ok("F9 no gap inside the hinted label", hintGap < 2, `${hintGap}px`);
 
-// one book ticked: the share link carries one book's progress, so the
-// Share button is enabled and E has something to write
-ok(
-  "F9 share is disabled until exactly one book is ticked",
-  await page.locator('[data-modal-key="S"]').isDisabled(),
-);
-await page.locator('.modal-opt', { hasText: "English Grammar: Progress" }).locator("input").check();
-ok("F9 share is enabled with one book ticked", !(await page.locator('[data-modal-key="S"]').isDisabled()));
+// a book ticks from its own letter, the cards and the dictionary from theirs
+const redBox = page.locator('[data-modal-key="KeyF"] input[type="checkbox"]');
+const cardsBox = page.locator('[data-modal-key="KeyC"] input[type="checkbox"]');
+await page.keyboard.press("KeyF");
+await page.keyboard.press("KeyC");
+await sleep(150);
+ok("F9 F and C tick the red book and the cards", await redBox.isChecked() && await cardsBox.isChecked());
+await page.keyboard.press("KeyF");
+await page.keyboard.press("KeyC");
+await sleep(150);
+ok("F9 and untick them again", !(await redBox.isChecked()) && !(await cardsBox.isChecked()));
 
-const answersBox = page.locator('[data-modal-key="A"] input[type="checkbox"]');
+// the books with progress start ticked, so the window has something to write
+// from the first frame; with nothing ticked there is no progress to share
+const blueBox = page.locator('.modal-opt', { hasText: "English Grammar: Progress" }).locator("input");
+const redRow = page.locator('.modal-opt', { hasText: "English Grammar: Foundations" });
+ok(
+  "F9 the book with progress starts ticked, the untouched one does not",
+  (await blueBox.isChecked()) && !(await redRow.locator("input").isChecked()),
+);
+await blueBox.uncheck();
+await sleep(150);
+ok(
+  "F9 share is disabled with no book ticked",
+  await page.locator('[data-modal-key="KeyS"]').isDisabled(),
+);
+await blueBox.check();
+ok("F9 share is enabled with one book ticked", !(await page.locator('[data-modal-key="KeyS"]').isDisabled()));
+// a link carries one book: with both ticked it carries the one in view
+await redRow.locator("input").check();
+ok(
+  "F9 share stays enabled with both books ticked",
+  !(await page.locator('[data-modal-key="KeyS"]').isDisabled()) &&
+    /Progress/.test(await page.locator('[data-modal-key="KeyS"]').getAttribute("title")),
+);
+await redRow.locator("input").uncheck();
+
+const answersBox = page.locator('[data-modal-key="KeyA"] input[type="checkbox"]');
 const wasChecked = await answersBox.isChecked();
 await page.keyboard.press("KeyA");
 await sleep(150);
@@ -232,7 +290,7 @@ ok("F9 A toggles Include answer texts", (await answersBox.isChecked()) !== wasCh
 await page.keyboard.press("KeyA");
 await sleep(150);
 ok("F9 A toggles it back", (await answersBox.isChecked()) === wasChecked);
-ok("F9 the window stays open", (await page.locator('.modal[aria-label="Data"]').count()) === 1);
+ok("F9 the window stays open", (await page.locator('.modal[aria-label="Progress and data"]').count()) === 1);
 
 // E exports: the download is the observable effect
 const [file] = await Promise.all([
@@ -244,7 +302,7 @@ const exported = JSON.parse(await (await import("node:fs/promises")).readFile(aw
 ok(
   "F9 the file names its format, version and the ticked book",
   exported.format === "murrnglish-data" &&
-    exported.version === 2 &&
+    exported.version === 3 &&
     Object.keys(exported.books).join("") === "blue" &&
     exported.cards === null,
   JSON.stringify({ format: exported.format, version: exported.version, books: Object.keys(exported.books) }),
@@ -322,13 +380,12 @@ ok("F9 the notice is dropped after the fade", cycle[cycle.length - 1] === null,
 // Shift+I again must not double-fire Import: modifiers are not hint keys
 await page.keyboard.press("Shift+KeyI");
 await sleep(300);
-ok("F9 Shift+I does not act as the Import hint", (await page.locator('.modal[aria-label="Data"]').count()) === 1);
+ok("F9 Shift+I does not act as the Import hint", (await page.locator('.modal[aria-label="Progress and data"]').count()) === 1);
 
-// reopening from the topbar button drops the hints
+// reopening from the panel's button drops the hints
 await page.keyboard.press("Escape");
 await sleep(350);
-await page.locator('button[aria-label="Data: export, import, share"]').click();
-await page.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
+await openData(page);
 ok("F9 button open has no hints", (await page.locator(".modal .hintkey").count()) === 0);
 const plainBefore = await answersBox.isChecked();
 await page.keyboard.press("KeyA");
@@ -336,7 +393,40 @@ await sleep(200);
 ok("F9 plain letters are inert without hints", (await answersBox.isChecked()) === plainBefore);
 await page.keyboard.press("Escape");
 await sleep(350);
-ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Data"]').count()) === 0);
+ok("F9 Esc closes the window", (await page.locator('.modal[aria-label="Progress and data"]').count()) === 0);
+
+// ---------- Flow 9b: an incoming share link previews in the same window ----------
+// The link copied above carries one book's progress. Opened where that
+// progress is gone, the window previews it — the summary and that book's
+// mosaic — and writes nothing until Apply.
+{
+  const code = /#\/blue\/p=(.+)$/.exec(await page.evaluate(() => navigator.clipboard.readText()))?.[1];
+  ok("F9b the clipboard holds a share link", Boolean(code), String(code));
+  await page.evaluate(() => localStorage.removeItem("murrnglish.blue.progress-v1"));
+  await page.goto(`${BASE}/#/blue/p=${code}`, { waitUntil: "load" });
+  await page.waitForSelector('.modal[aria-label="Progress and data"]', { timeout: 30000 });
+  await page.waitForSelector(".modal .unitsq", { timeout: 30000 });
+  const incoming = (await page.locator(".modal-summary").last().innerText()).trim();
+  ok("F9b the link opens the window with its progress previewed",
+    /Incoming from a link: English Grammar: Progress/.test(incoming), incoming);
+  ok("F9b the preview reaches that book's mosaic",
+    (await page.locator(".modal .databook").nth(1).locator(".unitsq.done").count()) > 0);
+  ok("F9b nothing is written before Apply",
+    (await page.evaluate(() => localStorage.getItem("murrnglish.blue.progress-v1"))) === null);
+  await page.locator('.modal button:text("Apply")').click();
+  await sleep(300);
+  const applied = (await page.locator(".modal-msg").innerText()).trim();
+  const restored = await page.evaluate(
+    () => Object.keys(JSON.parse(localStorage.getItem("murrnglish.blue.progress-v1") ?? "{}").results ?? {}),
+  );
+  ok("F9b Apply writes the link's progress into that book",
+    applied === "Applied to English Grammar: Progress" && restored.length > 0,
+    `${applied} / ${restored.length} results`);
+  await page.keyboard.press("Escape");
+  await sleep(350);
+  ok("F9b Esc leaves the course with nothing pending",
+    (await page.locator(".modal-overlay").count()) === 0);
+}
 
 // ---------- Flow 10: unit loading placeholder ----------
 // With the unit JSON held, the pane shows the placeholder under the unit's
@@ -390,11 +480,14 @@ ok(
   /Anywhere/.test(helpText) && /In a book/.test(helpText),
   helpText.slice(0, 120),
 );
-ok("F7 help names the data window and its hint letters", /Data window/.test(helpText));
+ok(
+  "F7 help names the merged window and every hint letter",
+  /Progress and data window/.test(helpText) && /F, P, C, D, A, I, E, S/.test(helpText),
+  helpText.slice(0, 160),
+);
 ok("F7 help lists every group", (await page.locator(".helpcard .helpsection").count()) === 4);
 await page.keyboard.press("Escape");
 await sleep(300);
-ok("F7 the help window closes", (await page.locator(".helpcard").count()) === 0);
 
 // ---------- Flow 8: phone layout (390x844) ----------
 const mctx = await browser.newContext({
@@ -418,8 +511,8 @@ ok(
   ),
 );
 
-// counters hidden, no horizontal overflow
-ok("F8 topstats hidden", await mp.locator(".topstats").evaluate((el) => el.offsetParent === null));
+// counters live in the panel now, no horizontal overflow
+ok("F8 no topstats in the topbar", (await mp.locator(".topbar .topstats").count()) === 0);
 ok(
   "F8 no horizontal overflow",
   await mp.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
@@ -461,26 +554,45 @@ ok("F8 topbar title goes home", /#\/blue$/.test(mp.url()));
 await mp.goto(BASE + "/#/blue/u2", { waitUntil: "load" });
 await mp.waitForSelector(".lesson .lsection", { timeout: 30000 });
 
-// phone chrome: the topbar keeps the title alone — progress, download and
-// theme are labelled rows at the top of the drawer, ruled off above the
-// progress bars and the unit list
-ok("F8 phone topbar has no action buttons", (await mp.locator(".topbar-actions").count()) === 0);
-await mp.locator(".sidebartoggle").click();
-await sleep(350);
+// phone chrome: the topbar keeps the page's title and the hamburger alone —
+// every app-wide control is a row of the drawer, which is the same panel the
+// desktop column shows
 ok(
-  "F8 drawer leads with the labelled controls",
-  (await mp.locator('.draweractions .draweraction:has-text("Progress")').count()) === 1 &&
-    (await mp.locator('.draweractions .draweraction:has-text("Data")').count()) === 1 &&
-    (await mp.locator('.draweractions .themebtn:has-text("Theme:")').count()) === 1,
+  "F8 phone topbar carries the title and the burger only",
+  (await mp.locator(".topbar-actions button").count()) === 0 &&
+    (await mp.locator('.topbar-lib:visible').count()) === 0 &&
+    (await mp.locator(".topbar-brand svg:visible").count()) === 0 &&
+    (await mp.locator(".topbar-home h1, .topbar h1").first().isVisible()),
 );
 ok(
-  "F8 controls sit above the progress bars and the unit list",
-  (await mp.evaluate(() => document.querySelector(".draweractions + .drawerstats") !== null)) &&
-    (await mp.evaluate(
-      () =>
-        document.querySelector(".draweractions").getBoundingClientRect().bottom <=
-        document.querySelector(".sidebar .unitlink").getBoundingClientRect().top,
-    )),
+  "F8 the drawer leads with the app's controls",
+  (await mp.locator('.navtools .navtile[aria-label^="Progress and data"]').count()) === 1 &&
+    (await mp.locator('.navtools .navtile[aria-label^="Search"]').count()) === 1 &&
+    (await mp.locator('.navtools .navtile[aria-label^="Theme:"]').count()) === 1,
+);
+ok(
+  "F8 the panel runs tools, sections, then books with the book's own progress",
+  await mp.evaluate(() => {
+    const blocks = [...document.querySelectorAll(".sidebar-inner > .navblock")];
+    const at = (sel) => blocks.findIndex((b) => b.querySelector(sel));
+    return (
+      blocks.length === 3 &&
+      at(".navtile") === 0 &&
+      at('a.navtile[href^="#/cards"]') === 1 &&
+      at('a.navtile[href="#/red"]') === 2 &&
+      blocks[2].querySelector(".bookstats") !== null
+    );
+  }),
+);
+ok(
+  "F8 the books block carries the progress above the unit list",
+  await mp.evaluate(() => {
+    const stats = document.querySelector(".sidebar .bookstats");
+    const unit = document.querySelector(".sidebar .unitlink");
+    return (
+      stats !== null && unit !== null && stats.getBoundingClientRect().bottom <= unit.getBoundingClientRect().top
+    );
+  }),
 );
 
 // drawer gestures: a leftward swipe over the drawer pushes it back, a
@@ -671,11 +783,11 @@ if (BASE.includes("4173")) {
   });
   ok("F12 a removed download is not fetched again on its own", !back);
 
-  // phone: the topbar has no download button at all (it is a drawer row), so a
-  // run in flight shows up as a chip beside the title. Throttled, or the whole
-  // course would land before the chip could be seen; the service worker is
-  // blocked because CDP throttling applies to the page target alone, and the
-  // download is page-side either way.
+  // phone: the topbar carries no controls at all — the download is one of the
+  // panel's tools, and it fills while the book streams in. Throttled, or the
+  // whole course would land before the fill could be seen; the service worker
+  // is blocked because CDP throttling applies to the page target alone, and
+  // the download is page-side either way.
   const ctx3 = await browser.newContext({
     viewport: { width: 390, height: 844 },
     serviceWorkers: "block",
@@ -695,18 +807,21 @@ if (BASE.includes("4173")) {
     uploadThroughput: 200 * 1024,
   });
   await p3.goto(BASE + "/#/blue", { waitUntil: "load" });
-  await p3.locator(".dlchip").waitFor({ timeout: 60000 });
+  await p3.locator(".dlbtn.running").waitFor({ timeout: 60000 });
   ok(
-    "F12 phone shows the running download as a chip, not a topbar button",
-    (await p3.locator(".dlbtn").count()) === 0,
+    "F12 the phone download is a panel tool, never a topbar button",
+    (await p3.locator(".topbar .dlbtn").count()) === 0 &&
+      (await p3.locator(".sidebar .dlbtn").count()) === 1,
   );
   const chip = await p3.evaluate(() => {
-    const c = document.querySelector(".dlchip");
-    return { text: c.textContent.trim(), p: getComputedStyle(c).getPropertyValue("--p").trim() };
+    const c = document.querySelector(".dlbtn.running");
+    return { title: c.title, p: getComputedStyle(c).getPropertyValue("--p").trim() };
   });
-  ok("F12 the chip carries the percentage", /^\d+%$/.test(chip.text), JSON.stringify(chip));
-  await ctx3.close();
-  await ctx2.close();
+  ok(
+    "F12 the control carries the percentage",
+    /downloading \d+%/.test(chip.title) && /^\d+%$/.test(chip.p),
+    JSON.stringify(chip),
+  );
 }
 
 // ---------- Flow 13: the red book, its own progress, the library crumb ----------
@@ -798,11 +913,15 @@ ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()
   await np.waitForURL(/#\/$/, { timeout: 10000 });
   ok("F13b Shift+L goes to the library", /#\/$/.test(np.url()), np.url());
 
-  // Alt+D opens the data window from the library
+  // Alt+D opens the window from the library: every book's progress and every
+  // target, none of it scoped to the view it was opened from
   await np.keyboard.press("Alt+KeyD");
-  await np.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
+  await np.waitForSelector('.modal[aria-label="Progress and data"]', { timeout: 10000 });
   ok("F13b Alt+D opens the data window everywhere",
-    (await np.locator('.modal-opt input[type="checkbox"]').count()) === 5);
+    (await np.locator('.modal-opt input[type="checkbox"]').count()) === 6);
+  await np.waitForSelector(".modal .unitsq", { timeout: 30000 });
+  ok("F13b it shows both books' progress from the library",
+    (await np.locator(".modal .unitgrid").count()) === 2);
   ok("F13b no page errors", !results.some((r) => r[1] === "F13b pageerror"));
   await nctx.close();
 }
@@ -1073,29 +1192,38 @@ const wctx = await browser.newContext({ viewport: { width: 1400, height: 900 }, 
   // browser that has nothing
   await sp.goto(BASE + "/#/dictionary", { waitUntil: "load" });
   await sp.waitForSelector(".addbar input", { timeout: 30000 });
-  await sp.locator('button[aria-label="Data: export, import, share"]').click();
-  await sp.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
-  await sp.locator(".modal-opt", { hasText: "Cards — reviews" }).locator("input").check();
+  await openData(sp);
+  await sp.locator(".modal-opt", { hasText: "Cards — which cards are learned" }).locator("input").check();
   await sp.locator(".modal-opt", { hasText: "Dictionary — your words" }).locator("input").check();
+  await sp.locator(".modal-opt", { hasText: "Learning state —" }).locator("input").check();
   const [dl] = await Promise.all([
     sp.waitForEvent("download"),
-    sp.locator('[data-modal-key="E"]').click(),
+    sp.locator('[data-modal-key="KeyE"]').click(),
   ]);
   ok("F16 the data file downloads", /^murrnglish-data-.*\.json$/.test(dl.suggestedFilename()), dl.suggestedFilename());
   const file = await dl.path();
+  const exported = JSON.parse(await readFile(file, "utf8"));
+  ok(
+    "F16 the ticked learning report rides in the data file",
+    exported.learning?.format === "murrnglish-learning" && typeof exported.learning.totals.cards === "number",
+    JSON.stringify(exported.learning?.totals ?? null),
+  );
+  ok(
+    "F16 the learning report is the only thing ticked that carries nothing else",
+    exported.cards !== null && exported.dictionary !== null && exported.version === 3,
+    `version=${exported.version}`,
+  );
   const ictx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
   const ip = await ictx.newPage();
   await ip.goto(BASE + "/#/dictionary", { waitUntil: "load" });
   await ip.waitForSelector(".addbar input", { timeout: 30000 });
-  await ip.locator('button[aria-label="Data: export, import, share"]').click();
-  await ip.waitForSelector('.modal[aria-label="Data"]', { timeout: 10000 });
+  await openData(ip);
   await ip.locator('.modal input[type="file"]').setInputFiles(file);
   // the file is only summarised until Apply: nothing is written yet
   await ip.waitForSelector('.modal button:text("Apply")', { timeout: 10000 });
-  ok("F16 the incoming file is summarised, not applied",
-    /Dictionary: 2 words/.test(await ip.locator(".modal-summary").last().innerText()),
-    (await ip.locator(".modal-summary").last().innerText()).trim(),
-  );
+  const incoming = (await ip.locator(".modal-summary").last().innerText()).trim();
+  ok("F16 the incoming file is summarised, not applied", /Dictionary: 2 words/.test(incoming), incoming);
+  ok("F16 the summary names the learning report it carries", /Learning report: \d+ cards/.test(incoming), incoming);
   ok("F16 nothing is written before Apply",
     (await ip.locator(".wordrow").count()) === 0);
   await ip.locator('.modal button:text("Apply")').click();

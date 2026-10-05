@@ -18,6 +18,7 @@ import { DeckBrowser } from "./components/DeckBrowser";
 import { DictionaryView } from "./components/DictionaryView";
 import { Library } from "./components/Library";
 import { ShortcutsModal } from "./components/ShortcutsHelp";
+import { SearchModal } from "./components/SearchModal";
 import { StudyView } from "./components/StudyView";
 import { WordEditorHost } from "./components/WordEditor";
 import { closeGlobal, useGlobalModal } from "./globalUi";
@@ -37,6 +38,7 @@ function GlobalWindows() {
   const modal = useGlobalModal();
   return (
     <>
+      <SearchModal onClose={closeGlobal} />
       {modal === "help" && <ShortcutsModal onClose={closeGlobal} />}
       <DataModal />
       {modal === "books" && <BookPicker />}
