@@ -349,13 +349,18 @@ deploy key). Pull requests stop after the build.
 The custom domain travels with the build: `public/CNAME` is copied into
 `dist/`, so every deployment re-asserts it and a stale Pages setting cannot
 silently take the site down to a `*.github.io` URL. Settings > Pages holds the
-same CNAME and `https_enforced`.
+same CNAME.
 
 The repository is public (Pages on the Free plan needs it), so nothing
 copyrighted may be committed: `books/*/book.pdf` is in `.gitignore` for that
 reason and never reaches `dist/`. Keep it out of new commits — the extraction
 pipelines read it locally, nothing in the build does.
 
-DNS is one CNAME, `murrnglish -> noartem.github.io`, proxied **off** (grey
-cloud). Cloudflare's proxy answers for the domain before GitHub can issue the
-certificate, and Pages then stays on plain HTTP.
+DNS is one record, `murrnglish -> noartem.github.io`, and it may stay proxied
+through Cloudflare as it was for the VPS: Cloudflare terminates TLS and
+forwards to Pages, which answers with its `x-github-request-id`. The one
+setting that cannot be flipped while the proxy is on is Pages'
+`https_enforced` (GitHub issues the certificate for the domain itself, and
+the proxied DNS never points at GitHub) — HTTPS is already on at Cloudflare,
+so `PUT /pages` answering `The certificate does not exist yet` is expected,
+not a fault. Turn the proxy off if you want Pages to own the certificate.
