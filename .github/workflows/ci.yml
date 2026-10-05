@@ -1,12 +1,11 @@
 # CI/CD: every book's data validation, unit tests, build, then publish dist/
-# to the VPS.
+# to GitHub Pages.
 #
-# Publishing needs repo secret DEPLOY_SSH_KEY — the private ed25519 deploy key
-# whose public part is installed for the deploy user on the VPS (see
-# scripts/deploy.sh for host, user and path). Without the secret the workflow
-# still validates, tests and builds, and skips the publish step.
+# Pages is fed by the artifact of the build job (actions/upload-pages-artifact),
+# never by a committed branch, so the custom domain in public/CNAME travels with
+# the build and no gh-pages branch can drift out of sync with it.
 
-name: CI & VPS deploy
+name: CI & Pages deploy
 
 on:
   push:
@@ -18,15 +17,13 @@ permissions:
   contents: read
 
 concurrency:
-  group: ${{ github.event_name == 'push' && 'deploy-vps' || github.ref }}
+  group: ${{ github.event_name == 'push' && 'pages' || github.ref }}
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    name: Validate, test, build, publish
+  build:
+    name: Validate, test, build
     runs-on: ubuntu-latest
-    env:
-      HAS_DEPLOY_KEY: ${{ secrets.DEPLOY_SSH_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -56,14 +53,24 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Write deploy key
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && env.HAS_DEPLOY_KEY == 'true'
-        run: |
-          echo "${{ secrets.DEPLOY_SSH_KEY }}" > "$RUNNER_TEMP/deploy_key"
-          chmod 600 "$RUNNER_TEMP/deploy_key"
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
-      - name: Publish to VPS
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && env.HAS_DEPLOY_KEY == 'true'
-        run: bash scripts/deploy.sh
-        env:
-          DEPLOY_KEY: ${{ runner.temp }}/deploy_key
+  deploy:
+    name: Publish to Pages
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

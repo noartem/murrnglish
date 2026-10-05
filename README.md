@@ -63,7 +63,8 @@ books/<id>/             everything of one book
   book.json             title, edition, level, description, lessons' language
   lessons/              the app's own lessons, u<NNN>.md, one per unit
   data/                 units/, additional/, index.json, totals.json
-  book.pdf              the extraction pipelines' source; never served
+  book.pdf              the extraction pipelines' source; never served, never
+                        committed (see .gitignore)
   scripts/              that book's extraction pipeline and validate.py
   work/                 extraction work files (page text, layout, parsing spec)
   original/             red only: the EPUB the LLM pipeline reads hints from
@@ -74,7 +75,6 @@ scripts/
   lessons.mjs           lessons/*.md -> each unit's "lesson", linted (run by the sync)
   audit_exercises.mjs   exercises that may still lean on the book page
   sync_decks.mjs        decks/ -> src/generated/decks.json, checked (--format: house style)
-  deploy.sh             publish dist/ to the VPS
 e2e.mjs                 end-to-end flows (Playwright)
 ```
 
@@ -138,7 +138,10 @@ One window keydown listener for the whole app (`src/shortcuts.ts`), so every
 key works in every view. App-wide: `Shift+?` the help, `Shift+T` the theme,
 `Shift+C` / `Shift+D` / `Shift+L` the cards, the dictionary and the library,
 `Shift+B` the book picker and `Alt+1…9` a book by number, `Alt+D` or `Shift+I`
-the data window. A book adds `Ctrl+Enter`, `Shift+A`, `Shift+N`, `Shift+P`,
+the progress and data window. Opened by a key, that window marks the access
+letter of every control — `F`, `P` (the books, one letter from each title),
+`C`, `D`, `A`, `I`, `E`, `S` — and pressing the letter does what clicking the
+control does. A book adds `Ctrl+Enter`, `Shift+A`, `Shift+N`, `Shift+P`,
 `Shift+E`, `Alt+Shift+E` and `Shift+S`; a review session and a deck browser
 register their own through `src/keyScopes.ts`. `Shift+?` lists all of it,
 grouped by where each key works.
@@ -160,14 +163,16 @@ the decks load (`src/legacy.ts`): a word-pack card's history moves to the
 deck entry of the same id, the rest is dropped — also when an old backup is
 imported.
 
-Everything this browser holds moves through one window — *Data* in every
-topbar, or `Alt+D` / `Shift+I` anywhere. The targets are ticked (each book,
-the cards, the words) and one `murrnglish-data-<date>.json` carries the ticked
-ones; importing merges (the newer word and the later review win, suspensions
-add up) and nothing is written until you press *Apply*. A single ticked book
-can be shared as a `#/<book>/p=` link instead. The window also still reads an
-older `murrnglish-study` backup and a bare per-book progress file, so a file
-written by an earlier version imports unchanged.
+Everything this browser holds lives in one window — *Progress and data*, in
+every topbar, or `Alt+D` / `Shift+I` anywhere. It leads with both books: how far
+each has come, as a mosaic of units. Below that the targets are ticked (each
+book, the cards, the words) and one `murrnglish-data-<date>.json` carries the
+ticked ones; importing merges (the newer word and the later review win,
+suspensions add up) and nothing is written until you press *Apply*. A single
+ticked book can be shared as a `#/<book>/p=` link instead, which opens the same
+window with the incoming progress previewed in that book's place. The window
+also still reads an older `murrnglish-study` backup and a bare per-book
+progress file, so a file written by an earlier version imports unchanged.
 
 ## Offline
 
@@ -335,14 +340,22 @@ them may fail; the entry can always be typed by hand and saved.
 
 ## Deploy
 
-`murrnglish.noartem.ru`, the same scheme as the old book sites: Cloudflare in
-front, Caddy on the VPS serving `/srv/murrnglish/http`, owned by the
-`mg-deploy` user that CI logs in as.
+`murrnglish.noartem.ru`, served by GitHub Pages from the repository root.
+Pushes to `main` validate every book's data, run the unit tests and build;
+the build's `dist/` becomes the Pages artifact (`actions/upload-pages-artifact`)
+and a second job publishes it (`actions/deploy-pages`, OIDC — no PAT and no
+deploy key). Pull requests stop after the build.
 
-Pushes to `main` validate, test and build; once the `DEPLOY_SSH_KEY` secret
-exists they also publish `dist/` with `scripts/deploy.sh` (target at the top,
-overridable through `DEPLOY_*` env).
+The custom domain travels with the build: `public/CNAME` is copied into
+`dist/`, so every deployment re-asserts it and a stale Pages setting cannot
+silently take the site down to a `*.github.io` URL. Settings > Pages holds the
+same CNAME and `https_enforced`.
 
-One-time server setup (deploy user, site root, Caddy block) is
-`scripts/setup-vps.sh`, run with an admin account — see its header for the
-command and the secret.
+The repository is public (Pages on the Free plan needs it), so nothing
+copyrighted may be committed: `books/*/book.pdf` is in `.gitignore` for that
+reason and never reaches `dist/`. Keep it out of new commits — the extraction
+pipelines read it locally, nothing in the build does.
+
+DNS is one CNAME, `murrnglish -> noartem.github.io`, proxied **off** (grey
+cloud). Cloudflare's proxy answers for the domain before GitHub can issue the
+certificate, and Pages then stays on plain HTTP.

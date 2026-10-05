@@ -17,6 +17,11 @@ __pycache__/
 # API keys (the red book's LLM pipeline reads books/red/.env)
 .env
 
+# The books' own PDFs (the extraction pipelines' source): copyrighted
+# material, never served, and the app carries its own lessons. Kept out of
+# the repository so a public mirror cannot hand them out.
+books/*/book.pdf
+
 # Per-book session artifacts (screenshots, logs, reports, one-off scripts)
 books/*/work/*.png
 books/*/work/*.log
