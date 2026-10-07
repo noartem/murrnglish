@@ -17,7 +17,7 @@
 // the panel's own keys: Alt+Shift+E and Shift+E, the arrows and Esc, are the
 // shell's, and work the same on every page.
 
-import type { CSSProperties, ReactNode } from "react";
+import type { CSSProperties, MouseEvent as ReactMouseEvent, ReactNode } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Keyboard, Layers, Menu, NotebookPen, Search, Share2 } from "lucide-react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
@@ -200,6 +200,12 @@ export function AppShell({
     for (const t of animTimers.current) window.clearTimeout(t);
     animTimers.current = [];
   };
+  // Shift+E pulls a collapsed panel back in as a card around the tile it
+  // focuses. Picking that tile — Enter, or a click — is the end of that
+  // trip, so the panel returns to the edge it came from: the focus leaves
+  // it and the card slides away. Set only by Shift+E, so a pick in a panel
+  // that was already showing leaves it as it was.
+  const summoned = useRef(false);
   const toggleSidebar = () => {
     // mobile: the hamburger opens a drawer instead of the desktop collapse
     // machinery; no localStorage write, no transient/card phases
@@ -226,6 +232,8 @@ export function AppShell({
       // state a first visit opens in, whichever way the panel got closed
       animTimers.current.push(window.setTimeout(() => setCardPhase(true), 300));
     }
+    // a panel brought back by hand is not one Shift+E pulled out of the edge
+    summoned.current = false;
   };
 
   // where Esc from the panel returns to: never the panel itself, which owns
@@ -241,6 +249,7 @@ export function AppShell({
   const restoreFocus = () => {
     const el = lastFocus.current;
     lastFocus.current = null;
+    summoned.current = false;
     if (el && el.isConnected) {
       el.focus();
       return;
@@ -272,6 +281,10 @@ export function AppShell({
     if (isMobile) setDrawerOpen(true);
     revealPanelEl(target);
     target.focus({ preventScroll: true });
+    // a phone's drawer closes on the pick itself; a collapsed desktop card is
+    // held out only by the focus Shift+E gave this tile, so it is the pick
+    // that takes it back (see onPanelPick)
+    summoned.current = !isMobile && !sidebarOpen;
   };
 
   // The panel's own keys, in every view: it is the app's map, so every one of
@@ -313,6 +326,16 @@ export function AppShell({
     }
     return false;
   });
+  // A pick in the panel: the phone drawer closes on any navigation, and a
+  // card Shift+E pulled out of the edge goes back to it. Only a control
+  // counts as a pick — clicking the panel's own padding or its scrollbar
+  // is not asking for anything.
+  const onPanelPick = (e: ReactMouseEvent<HTMLElement>) => {
+    setDrawerOpen(false);
+    if (!summoned.current) return;
+    if (!(e.target instanceof Element) || !e.target.closest(PANEL_CONTROLS)) return;
+    restoreFocus();
+  };
   useEffect(() => clearAnimTimers, []);
   // Phone drawer gestures: a leftward swipe pushes the open drawer back, a
   // rightward one pulls it in over either pane. No drawer state is read — a
@@ -447,6 +470,7 @@ export function AppShell({
           className={sideCls}
           options={OS_OPTIONS}
           events={sidebarEvents}
+          onClick={onPanelPick}
         >
           <div className="sidebar-inner">
             {/* the app-wide controls live in the header on a desktop, so the

@@ -687,6 +687,65 @@ ok(
   ),
 );
 
+// Choosing a tile out of the card Shift+E pulled out of the edge ends that
+// trip: the panel goes back where it was, on Enter as on a click
+await page.keyboard.press("Shift+KeyE");
+await sleep(400);
+await page.keyboard.press("Enter");
+await page.waitForURL(/#\/blue\/u1/, { timeout: 30000 });
+await sleep(500);
+ok(
+  "F11 Enter on the focused tile opens the unit",
+  /#\/blue\/u1$/.test(page.url()),
+  page.url(),
+);
+ok(
+  "F11 the card goes back to the edge after the pick",
+  await page.evaluate(
+    () => getComputedStyle(document.querySelector("nav.sidebar")).opacity === "0",
+  ),
+);
+ok(
+  "F11 the pick hands the focus to the page it opened",
+  await page.evaluate(() => document.activeElement?.closest("nav.sidebar") === null),
+);
+await page.keyboard.press("Shift+KeyE");
+await sleep(400);
+ok(
+  "F11 Shift+E brings the card back on the unit page",
+  await page.evaluate(
+    () => getComputedStyle(document.querySelector("nav.sidebar")).opacity === "1",
+  ),
+);
+await page.locator('nav.sidebar .navtile[href="#/cards"]').click();
+await page.waitForURL(/#\/cards/, { timeout: 30000 });
+await sleep(500);
+ok(
+  "F11 a click on a tile opens it too",
+  /#\/cards$/.test(page.url()),
+  page.url(),
+);
+ok(
+  "F11 the card goes back to the edge after a click",
+  await page.evaluate(
+    () => getComputedStyle(document.querySelector("nav.sidebar")).opacity === "0",
+  ),
+);
+// a panel the learner brought out by hand stays out: Alt+Shift+E shows it,
+// and a pick inside it must not slide it back
+await page.keyboard.press("Alt+Shift+KeyE");
+await sleep(500);
+await page.locator('nav.sidebar .navtile[href="#/dictionary"]').click();
+await page.waitForURL(/#\/dictionary/, { timeout: 30000 });
+await sleep(400);
+ok(
+  "F11 a pick leaves an expanded panel alone",
+  (await page.locator(".sidebar:not(.collapsed)").count()) === 1,
+);
+// back to the edge, the state the flow after this one starts from
+await page.keyboard.press("Alt+Shift+KeyE");
+await sleep(500);
+
 // ---------- Flow 11b: the panel's own keys, on every page ----------
 // The panel is the app's map, so Alt+Shift+E and Shift+E belong to the shell
 // and mean the same thing everywhere: the first hides the panel, the second
