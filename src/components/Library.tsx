@@ -32,6 +32,9 @@ export function Library() {
         </span>
       }
       navActions={standalone ? <OfflineButton onOpen={() => setOfflineOpen(true)} /> : undefined}
+      topbarActions={
+        standalone ? <OfflineButton onOpen={() => setOfflineOpen(true)} variant="bar" /> : undefined
+      }
     >
         <OverlayScrollbarsComponent
           element="main"

@@ -1,11 +1,12 @@
-// Per-view key handlers. A view that owns keys (the course, a review
-// session, a deck browser) registers one here instead of adding a window
-// listener: the dispatcher in shortcuts.ts runs them in a fixed order after
-// the app-wide keys, and the first handler that consumes the key stops it.
+// Per-view key handlers. A view that owns keys (the shell's panel, the course,
+// a review session, a deck browser) registers one here instead of adding a
+// window listener: the dispatcher in shortcuts.ts runs them in a fixed order
+// after the app-wide keys, and the first handler that consumes the key stops
+// it.
 
 import { useEffect, useRef } from "react";
 
-export type KeyScope = "course" | "study" | "browse";
+export type KeyScope = "shell" | "course" | "study" | "browse";
 
 /** True when the handler dealt with the key (and called preventDefault). */
 export type ScopeHandler = (e: KeyboardEvent) => boolean;

@@ -7,24 +7,29 @@
 // `bookStats` and `bookUnits`; it is the only view with any).
 //
 // Desktop: the panel is a real column that collapses to a card the left edge
-// slides back in, remembered in localStorage as it was. Mobile: the same
-// content as a drawer behind the hamburger, which is why the phone topbar
-// carries nothing but the page's title and the hamburger — every control it
-// would hold is a row of the drawer. The state lives here so it survives
-// navigating between views — one panel, not one per view.
+// slides back in, remembered in localStorage as it was — whichever way it was
+// closed, and on any page.
+//
+// Mobile: the same content as a drawer behind the hamburger, which is why the
+// phone topbar carries nothing but the page's title and the hamburger — every
+// control it would hold is a row of the drawer. The state lives here so it
+// survives navigating between views — one panel, not one per view — and so do
+// the panel's own keys: Alt+Shift+E and Shift+E, the arrows and Esc, are the
+// shell's, and work the same on every page.
 
-import type { CSSProperties, ReactNode, RefObject } from "react";
-import { useEffect, useRef, useState } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Keyboard, Layers, Menu, NotebookPen, Search, Share2 } from "lucide-react";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import type { OverlayScrollbarsComponentRef } from "overlayscrollbars-react";
-import { Layers, Menu, NotebookPen, Search, Share2 } from "lucide-react";
 import { BOOKS } from "../books";
 import { useDueCount } from "../dueCount";
 import { openGlobal } from "../globalUi";
 import { SIDEBAR_COLLAPSED_KEY } from "../keys";
 import { completedUnitIds, loadProgress, subscribeProgress } from "../progress";
 import { CARDS_HASH, DICTIONARY_HASH, LIBRARY_HASH, bookHash } from "../routes";
-import { SC } from "../shortcuts";
+import { useKeyScope } from "../keyScopes";
+import { SC, focusFirstExercise } from "../shortcuts";
 import { useIsMobile } from "../useIsMobile";
 import { ShortcutsHelpButton } from "./ShortcutsHelp";
 import { ThemeToggle } from "./ThemeToggle";
@@ -38,38 +43,136 @@ const OS_OPTIONS = {
   },
 };
 
-// The hamburger's own click, for keys that toggle the menu from anywhere: the
-// course scope's Alt+Shift+E and Esc. The shell that is mounted registers its
-// handler here, so a key does not need the state or a prop drill to reach it.
-let menuToggle: (() => void) | null = null;
+// The mounted shell's panel: its scroll viewport, for the keys that must
+// bring a tile into view before it takes the focus. The shell registers it
+// here so a view (the course, which reveals the open unit) can scroll the
+// panel without holding its own ref.
+let panelReveal: ((el: HTMLElement | null) => boolean) | null = null;
 
-/** Toggle the app's sidebar, as the hamburger does. */
-export function toggleMenu(): void {
-  menuToggle?.();
+/** Scroll the panel so `el` sits inside its viewport; false without a panel. */
+export function revealInPanel(el: HTMLElement | null): boolean {
+  return panelReveal ? panelReveal(el) : false;
 }
 
+/** The mounted panel, on whichever view is on screen. */
+function panelNav(): HTMLElement | null {
+  return document.querySelector<HTMLElement>("nav.sidebar");
+}
+
+// Everything the arrows move between: not only the unit buttons of a book but
+// every link, button and control the panel carries, in the order they are read.
+const PANEL_CONTROLS =
+  "a[href], button, input, select, textarea, [tabindex]:not([tabindex='-1'])";
+
+function panelControls(nav: HTMLElement): HTMLElement[] {
+  return [...nav.querySelectorAll<HTMLElement>(PANEL_CONTROLS)].filter(
+    (el) => !el.hasAttribute("disabled") && el.tabIndex !== -1 && el.getClientRects().length > 0,
+  );
+}
+
+/**
+ * Panel arrow navigation: sideways steps through the controls in reading
+ * order, up and down through their rows. A row is found by position rather
+ * than counted, so the two-column tiles, the full-width book rows and a
+ * group's unit buttons all take the arrows the way they look.
+ */
+function movePanelFocus(key: string): void {
+  const nav = panelNav();
+  const cur = document.activeElement;
+  if (!nav || !(cur instanceof HTMLElement) || !cur.closest("nav.sidebar")) return;
+  const all = panelControls(nav);
+  const at = all.indexOf(cur);
+  if (at === -1) {
+    all[0]?.focus();
+    return;
+  }
+  const top = cur.getBoundingClientRect().top;
+  const next = {
+    ArrowRight: all[at + 1],
+    ArrowLeft: all[at - 1],
+    ArrowDown: all.find((el) => el.getBoundingClientRect().top > top + 1),
+    ArrowUp: all
+      .slice(0, at)
+      .reverse()
+      .find((el) => el.getBoundingClientRect().top < top - 1),
+  }[key];
+  next?.focus();
+}
+
+// A field the learner types words into — a checkbox or a button takes no text,
+// so Shift+E still belongs to the panel there. An exercise's own answer input
+// is out too: Shift+E has always been the way from there to the unit list.
+const TEXT_FIELD =
+  "input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]), textarea, [contenteditable]";
+
+function isTypingField(el: Element | null): boolean {
+  return (
+    el instanceof HTMLElement && !!el.closest(TEXT_FIELD) && !el.closest(".exercise")
+  );
+}
+
+/**
+ * The page's own first control, outside the panel — where Esc from the panel
+ * lands on a page that had no focus of its own to return to. The page's
+ * column only: the panel is its sibling, and the header is outside both.
+ */
+function focusPage(): void {
+  const main = document.querySelector<HTMLElement>(".main");
+  const page = main
+    ? [...main.querySelectorAll<HTMLElement>(PANEL_CONTROLS)].find(
+        (el) => !el.closest("nav.sidebar") && el.getClientRects().length > 0,
+      )
+    : undefined;
+  if (page) page.focus();
+  else (document.activeElement as HTMLElement | null)?.blur();
+}
 export function AppShell({
   head,
   navActions,
+  topbarActions,
   bookStats,
   bookUnits,
-  sidebarRef,
   sidebarEvents,
   children,
 }: {
   /** the topbar's middle: the view's own crumb and title */
   head: ReactNode;
-  /** the panel's download button, in the installed app */
+  /** the panel's download button, in the installed app (a phone's copy) */
   navActions?: ReactNode;
+  /** the same control as a header button, where a desktop keeps it */
+  topbarActions?: ReactNode;
   /** the open book's progress, under the books in the map */
   bookStats?: ReactNode;
   /** the open book's units, under its progress */
   bookUnits?: ReactNode;
-  /** the course scrolls its panel and scrolls the active unit into view */
-  sidebarRef?: RefObject<OverlayScrollbarsComponentRef<"nav">>;
   sidebarEvents?: Record<string, () => void>;
   children: ReactNode;
 }) {
+  // the panel's own scroll viewport: Shift+E brings its tile into view
+  // before it takes the focus, and the course reveals the open unit in it
+  const panelRef = useRef<OverlayScrollbarsComponentRef<"nav"> | null>(null);
+  const setPanelRef = useCallback((inst: OverlayScrollbarsComponentRef<"nav"> | null) => {
+    panelRef.current = inst;
+  }, []);
+  const revealPanelEl = useCallback((el: HTMLElement | null): boolean => {
+    const vp = panelRef.current?.osInstance()?.elements().viewport;
+    if (!el || !vp) return false;
+    const vpRect = vp.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    // fully visible already: leave the scroll alone, so focusing a tile that
+    // is on screen never jumps the panel
+    if (elRect.top >= vpRect.top && elRect.bottom <= vpRect.bottom) return true;
+    const slack = Math.max(0, vpRect.height - elRect.height);
+    vp.scrollTop += elRect.top - vpRect.top - slack / 3;
+    return true;
+  }, []);
+  useEffect(() => {
+    panelReveal = revealPanelEl;
+    return () => {
+      if (panelReveal === revealPanelEl) panelReveal = null;
+    };
+  });
+
   const isMobile = useIsMobile();
   // any navigation closes the phone drawer: the page behind it has moved, so
   // leaving it open would cover the page the learner just asked for. The map
@@ -117,13 +220,98 @@ export function AppShell({
       setCardPhase(false);
       setTransient(true);
       animTimers.current.push(window.setTimeout(() => setTransient(false), 30));
+    } else {
+      // collapsing: the panel squeezes to nothing in flow, then settles as the
+      // fixed hover card, so the left-edge zone brings it back — the same
+      // state a first visit opens in, whichever way the panel got closed
+      animTimers.current.push(window.setTimeout(() => setCardPhase(true), 300));
     }
   };
-  useEffect(() => {
-    menuToggle = toggleSidebar;
-    return () => {
-      if (menuToggle === toggleSidebar) menuToggle = null;
+
+  // where Esc from the panel returns to: never the panel itself, which owns
+  // its own arrows, and never the body — focus() on it is a no-op, so
+  // leaving it out lets restore fall back instead of stranding the focus
+  const lastFocus = useRef<HTMLElement | null>(null);
+  const rememberFocus = () => {
+    const el = document.activeElement;
+    if (el instanceof HTMLElement && el !== document.body && !el.closest("nav.sidebar")) {
+      lastFocus.current = el;
     }
+  };
+  const restoreFocus = () => {
+    const el = lastFocus.current;
+    lastFocus.current = null;
+    if (el && el.isConnected) {
+      el.focus();
+      return;
+    }
+    // nothing was focused before the panel took it: a book's page lands on
+    // its first exercise, every other page on its own first control — the
+    // dictionary's field, the library's search. Without this the focus would
+    // stay in the panel and Esc would look like it did nothing.
+    focusFirstExercise();
+    if (document.activeElement?.closest("nav.sidebar")) focusPage();
+  };
+
+  // Shift+E: the tile that stands for the page you are on — the open unit in
+  // a book, else the page's own tile (Cards, Dictionary, a book), else the
+  // first control of the panel. A tile's focus is what slides the collapsed
+  // hover card back in; on a phone it also pulls the drawer out, or the tile
+  // it focuses would stay off the screen.
+  const focusPanelTarget = () => {
+    const nav = panelNav();
+    if (!nav) return;
+    const target =
+      nav.querySelector<HTMLElement>(".unitlink.active") ??
+      // a book's landing has units but none open: Unit 1 is the way in
+      nav.querySelector<HTMLElement>(".unitlink") ??
+      nav.querySelector<HTMLElement>('[aria-current="page"]') ??
+      panelControls(nav)[0];
+    if (!target) return;
+    rememberFocus();
+    if (isMobile) setDrawerOpen(true);
+    revealPanelEl(target);
+    target.focus({ preventScroll: true });
+  };
+
+  // The panel's own keys, in every view: it is the app's map, so every one of
+  // them belongs to the shell rather than to whichever view is on screen.
+  useKeyScope("shell", (e) => {
+    if (document.activeElement?.closest("nav.sidebar")) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        restoreFocus();
+        return true;
+      }
+      if (e.key.startsWith("Arrow")) {
+        e.preventDefault();
+        movePanelFocus(e.key);
+        return true;
+      }
+    }
+    // Alt+Shift+E toggles the panel like the burger button, without moving
+    // focus into it (before the plain Shift+E branch)
+    if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && e.code === "KeyE") {
+      e.preventDefault();
+      toggleSidebar();
+      return true;
+    }
+    // Shift+E opens the panel on the page you are on. A field the learner is
+    // typing in keeps the key — the answer inputs of a book's exercises are
+    // the exception, where the key has always been the way to the unit list.
+    if (
+      e.shiftKey &&
+      !e.ctrlKey &&
+      !e.metaKey &&
+      !e.altKey &&
+      e.code === "KeyE" &&
+      !isTypingField(document.activeElement)
+    ) {
+      e.preventDefault();
+      focusPanelTarget();
+      return true;
+    }
+    return false;
   });
   useEffect(() => clearAnimTimers, []);
   // Phone drawer gestures: a leftward swipe pushes the open drawer back, a
@@ -223,9 +411,26 @@ export function AppShell({
         </button>
         <div className="topbar-mid">{head}</div>
         <div className="topbar-actions">
-          {/* everything else the app-wide controls need lives in the panel,
-              which a phone reaches through the hamburger */}
-          {!isMobile && <ShortcutsHelpButton onOpen={() => openGlobal("help")} />}
+          {/* the app-wide controls: the header's own row on a desktop, the
+              first block of the drawer on a phone — the same controls, in
+              the one place each layout has room for them */}
+          {!isMobile && (
+            <>
+              <TopTool name="search" title={"Search — " + SC.search} onClick={() => openGlobal("search")}>
+                <Search size={15} aria-hidden />
+              </TopTool>
+              <ShortcutsHelpButton onOpen={() => openGlobal("help")} />
+              {topbarActions}
+              <TopTool
+                name="data"
+                title={"Progress and data — " + SC.data + " / " + SC.dataAlt}
+                onClick={() => openGlobal("data")}
+              >
+                <Share2 size={15} aria-hidden />
+              </TopTool>
+              <ThemeToggle variant="bar" />
+            </>
+          )}
         </div>
       </header>
       <div className="main">
@@ -237,15 +442,18 @@ export function AppShell({
           />
         )}
         <OverlayScrollbarsComponent
-          ref={sidebarRef}
+          ref={setPanelRef}
           element="nav"
           className={sideCls}
           options={OS_OPTIONS}
           events={sidebarEvents}
         >
           <div className="sidebar-inner">
+            {/* the app-wide controls live in the header on a desktop, so the
+                panel there is the map alone; a phone keeps them as the
+                drawer's first row */}
+            {isMobile && <NavTools navActions={navActions} onNavigate={() => setDrawerOpen(false)} />}
             <NavPanel
-              navActions={navActions}
               bookStats={bookStats}
               bookUnits={bookUnits}
               onNavigate={() => setDrawerOpen(false)}
@@ -255,6 +463,35 @@ export function AppShell({
         {children}
       </div>
     </div>
+  );
+}
+
+/**
+ * One control of the header: an icon button with the key in its tooltip,
+ * the same chrome as the burger and the help button beside it.
+ */
+function TopTool({
+  name,
+  title,
+  onClick,
+  children,
+}: {
+  /** the hook the keyboard layer presses it by, e.g. "search" */
+  name: string;
+  title: string;
+  onClick: () => void;
+  children: ReactNode;
+}) {
+  return (
+    <button
+      className="themebtn"
+      onClick={onClick}
+      title={title}
+      aria-label={title}
+      data-global-btn={name}
+    >
+      {children}
+    </button>
   );
 }
 
@@ -336,22 +573,58 @@ function NavTile({
 
 
 /**
- * The app's map: the app-wide controls, then the sections that span the
- * books, then the books themselves. Every row is the same kind of tile — the
- * one you are in is filled in, a book with the colour it is printed in —
- * so where you are is read off the panel at a glance. Inside a book its own
- * progress and units follow the books — `bookStats` and `bookUnits` are the
- * course's batteries and unit tiles, the only view with any.
- * Progress is read from localStorage, so a write (an import, a finished
- * unit) re-reads it rather than leaving the map stale.
+ * The app-wide controls as the drawer carries them, a phone's only home for
+ * them: search, the shortcuts, the download in the installed app, the
+ * progress window and the theme, in the app's own order. A desktop renders
+ * the same controls in the header instead, so this row is not in its panel
+ * at all (AppShell).
+ */
+function NavTools({ navActions, onNavigate }: { navActions?: ReactNode; onNavigate: () => void }) {
+  // a control that opens a window must not leave the phone drawer open behind
+  // it: `onNavigate` is the drawer's own close
+  const open = (which: "data" | "search" | "help") => () => {
+    onNavigate();
+    openGlobal(which);
+  };
+  return (
+    <div className="navblock navgrid navtools">
+      <NavTile title={"Search — " + SC.search} onClick={open("search")}>
+        <Search size={15} aria-hidden />
+        <NavLabel>Search</NavLabel>
+      </NavTile>
+      <NavTile title={"Keyboard shortcuts — " + SC.help} onClick={open("help")}>
+        <Keyboard size={15} aria-hidden />
+        <NavLabel>Shortcuts</NavLabel>
+      </NavTile>
+      {navActions}
+      <NavTile
+        title={"Progress and data — " + SC.data + " / " + SC.dataAlt}
+        dataAttr="data"
+        onClick={open("data")}
+      >
+        <Share2 size={15} aria-hidden />
+        <NavLabel>Progress</NavLabel>
+      </NavTile>
+      <ThemeToggle />
+    </div>
+  );
+}
+
+/**
+ * The app's map: the sections that span the books, then the books
+ * themselves. Every row is the same kind of tile — the one you are in is
+ * filled in, a book with the colour it is printed in — so where you are is
+ * read off the panel at a glance. Inside a book its own progress and units
+ * follow the books — `bookStats` and `bookUnits` are the course's batteries
+ * and unit tiles, the only view with any. Progress is read from
+ * localStorage, so a write (an import, a finished unit) re-reads it rather
+ * than leaving the map stale.
  */
 function NavPanel({
-  navActions,
   bookStats,
   bookUnits,
   onNavigate,
 }: {
-  navActions?: ReactNode;
   bookStats?: ReactNode;
   bookUnits?: ReactNode;
   onNavigate: () => void;
@@ -360,31 +633,8 @@ function NavPanel({
   const [, bump] = useState(0);
   useEffect(() => subscribeProgress(() => bump((n) => n + 1)), []);
   const here = window.location.hash;
-  // a control that opens a window must not leave the phone drawer open
-  // behind it: `onNavigate` is the drawer's own close, and a no-op on desktop
-  const open = (which: "data" | "search") => () => {
-    onNavigate();
-    openGlobal(which);
-  };
-
   return (
     <>
-      <div className="navblock navgrid navtools">
-        <NavTile
-          title={"Progress and data — " + SC.data + " / " + SC.dataAlt}
-          dataAttr="data"
-          onClick={open("data")}
-        >
-          <Share2 size={15} aria-hidden />
-          <NavLabel>Progress</NavLabel>
-        </NavTile>
-        <NavTile title={"Search — " + SC.search} onClick={open("search")}>
-          <Search size={15} aria-hidden />
-          <NavLabel>Search</NavLabel>
-        </NavTile>
-        {navActions}
-        <ThemeToggle />
-      </div>
       <div className="navblock navgrid">
         <NavTile
           href={CARDS_HASH}

@@ -693,9 +693,6 @@ body {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.navtools {
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-}
 
 /* the tile: an icon over a short name, the same square whatever it does */
 .navtile {
@@ -791,9 +788,12 @@ body {
 }
 
 /* On a phone the drawer is the full width of the screen, so a row of tools
-   splits by its own count: three abreast, four in pairs, and two one to a
-   line so neither leaves an empty tile beside it. :has() counts the tiles —
-   the panel adds the download only in the installed app. */
+   splits by its own count: four in pairs, three across, and two one to a line
+   so neither leaves an empty tile beside it. Five — the installed app's row —
+   is three above and two below, and the last pair takes half the row each
+   instead of a third, so the row ends flush instead of leaving a gap. The
+   grid counts six columns under that rule and every tile spans two of them.
+   :has() counts the tiles: the panel adds the download only when installed. */
 @media (max-width: 768px) {
   .navtools {
     grid-template-columns: minmax(0, 1fr);
@@ -803,6 +803,16 @@ body {
   }
   .navtools:has(> :nth-child(4)) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .navtools:has(> :nth-child(5)) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .navtools:has(> :nth-child(5)) > * {
+    grid-column: span 2;
+  }
+  .navtools:has(> :nth-child(5)) > :nth-child(4),
+  .navtools:has(> :nth-child(5)) > :nth-child(5) {
+    grid-column: span 3;
   }
 }
 
@@ -1965,7 +1975,7 @@ textarea.winline {
 
 .helpscroll {
   min-height: 0;
-  padding: 0px 22px 64px;
+  padding: 22px 22px 44px;
 }
 
 /* the rail and the list side by side: the rail is the window's outline, so a
@@ -2241,64 +2251,6 @@ textarea.winline {
    first child of its own section, so :first-child would flatten them all */
 .helpcard section:first-of-type .helpsection {
   margin-top: 0;
-}
-
-/* the book picker: one row per book, its number in a keycap */
-.pickerrows {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-.pickerrow {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  background: var(--bg);
-  color: var(--text);
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.pickerrow:hover,
-.pickerrow:focus-visible {
-  border-color: var(--accent);
-  outline: none;
-}
-
-.pickerrow kbd {
-  flex-shrink: 0;
-  min-width: 26px;
-  padding: 2px 6px;
-  border: 2px solid var(--border);
-  border-radius: 6px;
-  background: var(--panel);
-  font-family: var(--font-ui);
-  font-size: 13px;
-  font-weight: 800;
-  text-align: center;
-}
-
-.pickerrowtext {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-
-.pickertitle {
-  font-weight: 800;
-}
-
-.pickermeta {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 600;
 }
 
 .helpentryhead {

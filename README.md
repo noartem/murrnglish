@@ -37,8 +37,8 @@ src/                    the web app (Vite + React + TypeScript), one for every b
   components/DeckBrowser.tsx  a deck's cards, and one card with its history
   components/Cover.tsx     a book's cover, drawn in the app in its colour
   components/AppShell.tsx the shell every view renders in: topbar, sidebar, main
-  components/DataModal.tsx, SearchModal.tsx, BookPicker.tsx, ShortcutsHelp.tsx
-                        the app-wide windows: data, search, go-to, shortcuts
+  components/DataModal.tsx, SearchModal.tsx, ShortcutsHelp.tsx
+                        the app-wide windows: data, search, shortcuts
   components/WordEditor.tsx, PickWord.tsx
                         adding/editing a word; "add" on a selected word
   lesson.ts             a lesson's types, as scripts/lessons.mjs compiles them
@@ -138,10 +138,13 @@ refuses a deck named `all` or `words`.
 One window keydown listener for the whole app (`src/shortcuts.ts`), so every
 key works in every view. App-wide: `Shift+?` the help, `Ctrl+K` the search,
 `Shift+T` the theme, `Shift+C` / `Shift+D` / `Shift+L` the cards, the
-dictionary and the library, `Shift+B` the book picker and `Alt+1…9` a book by
-number, `Alt+D` or `Shift+I` the progress and data window. A book adds
-`Ctrl+Enter`, `Shift+A`, `Shift+N`, `Shift+P`, `Shift+E`, `Alt+Shift+E` and
-`Shift+S`; a review session adds `Ctrl+Enter`, `1`–`4`, `S` / `I` / `W` / `A`
+dictionary and the library, `Alt+1…9` a book by number, `Alt+D` or `Shift+I`
+the progress and data window, `Shift+Z` back — or the landing when the page was
+opened straight. The navigation panel holds every book as well: it adds
+`Shift+E` (focus the tile of the page you are on) and `Alt+Shift+E`
+(show or hide it), with the arrows and `Esc` moving about inside it. A book
+adds `Ctrl+Enter`, `Shift+A`, `Shift+N`, `Shift+P` and `Shift+S`; a review
+session adds `Ctrl+Enter`, `1`–`4`, `S` / `I` / `W` / `A`
 for its tools, and a deck browser registers its own through `src/keyScopes.ts`.
 `Shift+?` lists all of it, grouped by where each key works, with a rail to
 jump between the groups.
@@ -149,6 +152,15 @@ jump between the groups.
 The sidebar is on every page (`components/AppShell.tsx`): the books with how
 far each has come, the cards, the dictionary, and — inside a book — its units
 under the book. On a phone it is the drawer behind the hamburger.
+Closed, it floats back in when the pointer reaches the left edge — on every
+page, and whichever way it was closed.
+
+The app-wide controls go in one order everywhere — search, shortcuts, the
+download, progress and data, the theme. A desktop keeps them in the header's
+right side and leaves the panel with the places only; a phone keeps them as
+the drawer's first row, its topbar carrying the title and the hamburger
+alone. In the installed app the download is on every page, the sections
+included.
 
 `Ctrl+K` searches everything at once: the books and their units, the cards and
 their entries, your own words, the shortcuts and the places themselves. The

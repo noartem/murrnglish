@@ -9,9 +9,8 @@
 // exercises all open it.
 
 import { useEffect, useState } from "react";
-import { BOOKS, bookById } from "./books";
+import { BOOKS } from "./books";
 import CourseApp from "./CourseApp";
-import { BookPicker } from "./components/BookPicker";
 import { CardsView } from "./components/CardsView";
 import { DataModal } from "./components/DataModal";
 import { DeckBrowser } from "./components/DeckBrowser";
@@ -22,15 +21,8 @@ import { SearchModal } from "./components/SearchModal";
 import { StudyView } from "./components/StudyView";
 import { WordEditorHost } from "./components/WordEditor";
 import { closeGlobal, useGlobalModal } from "./globalUi";
-import {
-  hasProgress,
-  lastUnitFromProgress,
-  loadLastBook,
-  loadLastRoute,
-  loadProgress,
-} from "./progress";
 import type { AppRoute } from "./routes";
-import { LIBRARY_HASH, bookHash, deckKey, legacyHash, parsePage, parseRoute } from "./routes";
+import { deckKey, entryHash, legacyHash, parseRoute } from "./routes";
 import { useAppShortcuts } from "./shortcuts";
 
 /** The windows App owns. Only one is up at a time (globalUi.ts). */
@@ -41,25 +33,8 @@ function GlobalWindows() {
       <SearchModal onClose={closeGlobal} />
       {modal === "help" && <ShortcutsModal onClose={closeGlobal} />}
       <DataModal />
-      {modal === "books" && <BookPicker />}
     </>
   );
-}
-
-// bare "/": learners with saved progress go straight back to the page they
-// last worked on — in the book last opened if it has progress, else in the
-// first book that does (a glance into another book must not strand them in
-// the library); everyone else starts in the library
-function entryHash(): string {
-  const last = bookById(loadLastBook() ?? "");
-  const order = last ? [last, ...BOOKS.filter((b) => b !== last)] : BOOKS;
-  for (const book of order) {
-    const p = loadProgress(book.id);
-    if (!hasProgress(p)) continue;
-    const page = parsePage(book, loadLastRoute(book.id) ?? lastUnitFromProgress(p) ?? "");
-    return bookHash(book, page ?? { kind: "home" });
-  }
-  return LIBRARY_HASH;
 }
 
 function currentRoute(): AppRoute {

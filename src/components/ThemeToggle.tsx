@@ -1,6 +1,7 @@
 // Control cycling the theme: system → light → dark → system. It is one of
-// the app's controls in the navigation panel, so it renders as a tool — the
-// icon of the current theme over its name, with the key in the tooltip.
+// the app's controls, so it has two faces: a tile in the navigation panel
+// (the icon of the current theme over its name) and a plain header button
+// on a desktop, where the header carries the app-wide controls.
 
 import { useEffect, useState } from "react";
 import type { ReactElement } from "react";
@@ -29,7 +30,7 @@ const ICON: Record<Theme, ReactElement> = {
   dark: <Moon size={15} aria-hidden />,
 };
 
-export function ThemeToggle() {
+export function ThemeToggle({ variant = "tile" }: { variant?: "tile" | "bar" }) {
   const [theme, setTheme] = useState<Theme>(loadTheme);
 
   useEffect(() => {
@@ -43,7 +44,17 @@ export function ThemeToggle() {
   }
 
   const title = `${LABEL[theme]} — ${SC.cycleTheme}`;
-  return (
+  return variant === "bar" ? (
+    <button
+      className="themebtn"
+      onClick={cycle}
+      title={title}
+      aria-label={title}
+      data-global-btn="theme"
+    >
+      {ICON[theme]}
+    </button>
+  ) : (
     <button className="navtile" onClick={cycle} title={title} aria-label={title}>
       {ICON[theme]}
       <span className="navtoollabel">{SHORT[theme]}</span>

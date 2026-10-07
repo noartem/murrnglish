@@ -1,6 +1,6 @@
 // Which app-wide window is open, what it is holding, and whether a key opened
 // it. The keyboard dispatcher (shortcuts.ts) reads this module instead of
-// taking props, so the help, the data window and the book picker work in every
+// taking props, so the help, the search and the data window work in every
 // view and no view has to register its own window listener for them. App
 // mounts the three windows off useGlobalModal().
 //
@@ -11,8 +11,8 @@
 import { useSyncExternalStore } from "react";
 import type { Incoming } from "./datatransfer";
 
-/** The windows the whole app owns: help, search, data (progress + export/import/share), book picker. */
-export type GlobalModal = "help" | "search" | "data" | "books" | null;
+/** The windows the whole app owns: help, search, data (progress + export/import/share). */
+export type GlobalModal = "help" | "search" | "data" | null;
 
 let modal: GlobalModal = null;
 // "opened by a key" arms the window's letter shortcuts — the hint mode the

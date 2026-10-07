@@ -44,12 +44,21 @@ function useFill(bookId?: string): {
 }
 
 /**
- * The navigation panel's download control: the way into the offline panel,
- * and the download's status — green fills the button from the bottom up while
- * the book streams in, and stays full for a download of this session. A book
- * cached on an earlier launch leaves the button neutral.
+ * The download control: the way into the offline panel, and the download's
+ * status — green fills the button from the bottom up while the book streams
+ * in, and stays full for a download of this session. A book cached on an
+ * earlier launch leaves the button neutral. It is a tile in the panel and a
+ * plain button in the header, which is where a desktop keeps it.
  */
-export function OfflineButton({ bookId, onOpen }: { bookId?: string; onOpen: () => void }) {
+export function OfflineButton({
+  bookId,
+  onOpen,
+  variant = "tile",
+}: {
+  bookId?: string;
+  onOpen: () => void;
+  variant?: "tile" | "bar";
+}) {
   const { pct, active, fresh, stored } = useFill(bookId);
   const title = active
     ? `Offline — downloading ${pct}%`
@@ -60,14 +69,17 @@ export function OfflineButton({ bookId, onOpen }: { bookId?: string; onOpen: () 
         : "Offline — download the book";
   return (
     <button
-      className={"navtile dlbtn" + (active ? " running" : fresh ? " done" : "")}
+      className={
+        (variant === "bar" ? "themebtn dlbtn" : "navtile dlbtn") +
+        (active ? " running" : fresh ? " done" : "")
+      }
       style={{ "--p": `${pct}%` } as CSSProperties}
       onClick={onOpen}
       title={title}
       aria-label={title}
     >
       <Download size={15} aria-hidden />
-      <span className="navtoollabel">Download</span>
+      {variant === "bar" ? null : <span className="navtoollabel">Download</span>}
     </button>
   );
 }

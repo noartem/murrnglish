@@ -37,14 +37,10 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const results = [];
 const ok = (name, cond, extra = "") => results.push([cond ? "PASS" : "FAIL", name, extra]);
 
-// The data window opens from the navigation panel, which a fresh browser
-// leaves collapsed: slide it out first, then press its own button.
+// The data window opens from the header on a desktop (on a phone, from the
+// drawer), and nowhere else.
 async function openData(p) {
-  if (await p.locator("nav.sidebar.collapsed").count()) {
-    await p.locator(".sidebartoggle").click();
-    await sleep(500);
-  }
-  await p.locator('button[aria-label^="Progress and data"]').click();
+  await p.locator('.topbar button[aria-label^="Progress and data"]').click();
   await p.waitForSelector('.modal[aria-label="Progress and data"]', { timeout: 10000 });
 }
 
@@ -110,14 +106,29 @@ await page.waitForFunction(
 ok("F3 sidebar expanded", true);
 ok("F3 active unit highlighted", await page.locator(".unitlink.active").first().isVisible());
 await page.locator(".sidebartoggle").click();
-// once opened, the sidebar settles in .closing (width 0) — the collapsed
-// hover card is the first-open state only, so that is the class to wait for
+// the panel settles as the fixed hover card, whichever way it was closed
 await page.waitForFunction(
-  () => !!document.querySelector(".sidebar.closing"),
+  () => !!document.querySelector(".sidebar.collapsed"),
   undefined,
   { timeout: 5000 },
 );
 ok("F3 sidebar collapses again", true);
+// and the left-edge zone brings it back over the page
+await page.mouse.move(4, 400);
+await page.waitForFunction(
+  () => getComputedStyle(document.querySelector("nav.sidebar")).opacity === "1",
+  undefined,
+  { timeout: 5000 },
+);
+ok("F3 collapsed card comes back on the left edge", true);
+await page.mouse.move(900, 700);
+await sleep(400);
+ok(
+  "F3 it hides again when the pointer leaves",
+  await page.evaluate(
+    () => getComputedStyle(document.querySelector("nav.sidebar")).opacity === "0",
+  ),
+);
 
 // ---------- Flow 4: navigation via sidebar link + bottom pager ----------
 await page.locator(".sidebartoggle").click();
@@ -565,10 +576,18 @@ ok(
     (await mp.locator(".topbar-home h1, .topbar h1").first().isVisible()),
 );
 ok(
-  "F8 the drawer leads with the app's controls",
-  (await mp.locator('.navtools .navtile[aria-label^="Progress and data"]').count()) === 1 &&
-    (await mp.locator('.navtools .navtile[aria-label^="Search"]').count()) === 1 &&
-    (await mp.locator('.navtools .navtile[aria-label^="Theme:"]').count()) === 1,
+  "F8 the drawer leads with the app's controls, in order",
+  await mp.evaluate(
+    () =>
+      [...document.querySelectorAll(".navtools > *")]
+        .map((el) => (el.getAttribute("aria-label") ?? "").split(" ")[0])
+        .join("|") === "Search|Keyboard|Progress|Theme:",
+  ),
+  await mp.evaluate(() =>
+    [...document.querySelectorAll(".navtools > *")]
+      .map((el) => (el.getAttribute("aria-label") ?? "").split(" ")[0])
+      .join("|"),
+  ),
 );
 ok(
   "F8 the panel runs tools, sections, then books with the book's own progress",
@@ -668,6 +687,136 @@ ok(
   ),
 );
 
+// ---------- Flow 11b: the panel's own keys, on every page ----------
+// The panel is the app's map, so Alt+Shift+E and Shift+E belong to the shell
+// and mean the same thing everywhere: the first hides the panel, the second
+// focuses the tile that stands for the page you are on, and the arrows walk
+// the panel's controls — not only a book's units.
+await page.keyboard.press("Alt+Shift+KeyE");
+await page.waitForFunction(
+  () => !!document.querySelector(".sidebar:not(.collapsed)"),
+  undefined,
+  { timeout: 5000 },
+);
+ok("F11b Alt+Shift+E shows the panel on a book landing", true);
+await page.keyboard.press("Alt+Shift+KeyE");
+await page.waitForFunction(
+  () => !!document.querySelector(".sidebar.collapsed"),
+  undefined,
+  { timeout: 5000 },
+);
+ok("F11b Alt+Shift+E hides it again", true);
+
+// the header carries the app-wide controls on a desktop, in the app's own
+// order, and the panel below them is left with the places only
+ok(
+  "F11b the header holds the controls, in order",
+  await page.evaluate(
+    () =>
+      [...document.querySelectorAll(".topbar-actions button")]
+        .map((b) => (b.getAttribute("aria-label") ?? "").split(" ")[0])
+        .join("|") === "Search|Keyboard|Progress|Theme:",
+  ),
+  await page.evaluate(() =>
+    [...document.querySelectorAll(".topbar-actions button")]
+      .map((b) => (b.getAttribute("aria-label") ?? "").split(" ")[0])
+      .join("|"),
+  ),
+);
+ok(
+  "F11b the panel keeps only the places on a desktop",
+  await page.evaluate(
+    () =>
+      // gone from the page, not merely hidden
+      document.querySelector(".navtools") === null &&
+      document.querySelectorAll('.sidebar .navtile[aria-label^="Search"]').length === 0 &&
+      document.querySelectorAll('a.navtile[href^="#/cards"]').length === 1,
+  ),
+);
+
+// Esc from the panel gives the page its focus back — on a page that had none
+// of its own (the dictionary focuses its search field), not only in a book
+await page.goto(BASE + "/#/dictionary", { waitUntil: "load" });
+await page.waitForSelector("nav.sidebar", { timeout: 30000 });
+await sleep(400);
+await page.keyboard.press("Shift+KeyE");
+await sleep(300);
+await page.keyboard.press("Escape");
+await sleep(300);
+ok(
+  "F11b Esc leaves the panel for the page",
+  await page.evaluate(() => {
+    const a = document.activeElement;
+    return a.closest("nav.sidebar") === null && a.tagName === "INPUT";
+  }),
+);
+
+const panelKeys = async (hash, label) => {
+  await page.goto(BASE + "/" + hash, { waitUntil: "load" });
+  await page.waitForSelector("nav.sidebar", { timeout: 30000 });
+  await sleep(400);
+  await page.keyboard.press("Shift+KeyE");
+  await sleep(400);
+  return page.evaluate((l) => {
+    const el = document.activeElement;
+    const card = document.querySelector("nav.sidebar.collapsed");
+    return {
+      label: l,
+      inPanel: el?.closest("nav.sidebar") !== null,
+      text: (el?.getAttribute("aria-label") ?? el?.textContent ?? "").trim(),
+      revealed: card ? getComputedStyle(card).opacity === "1" : null,
+    };
+  }, label);
+};
+ok(
+  "F11b Shift+E on the cards focuses the Cards tile",
+  await panelKeys("#/cards", "Cards").then((r) => r.inPanel && r.text.startsWith("Cards") && r.revealed),
+);
+ok(
+  "F11b Shift+E on the dictionary focuses the Dictionary tile",
+  await panelKeys("#/dictionary", "Dictionary").then(
+    (r) => r.inPanel && r.text.startsWith("Dictionary") && r.revealed,
+  ),
+);
+ok(
+  "F11b Shift+E on the library focuses the panel's first tile",
+  await panelKeys("#/", "Library").then((r) => r.inPanel && r.text.startsWith("Cards")),
+);
+
+// the arrows walk every control of the panel, in reading order: from the
+// Cards tile sideways onto the Dictionary tile and down onto the books
+await page.goto(BASE + "/#/cards", { waitUntil: "load" });
+await page.waitForSelector("nav.sidebar", { timeout: 30000 });
+await sleep(400);
+await page.keyboard.press("Shift+KeyE");
+await sleep(300);
+const arrowWalk = [];
+for (const key of ["ArrowRight", "ArrowDown"]) {
+  await page.keyboard.press(key);
+  await sleep(200);
+  arrowWalk.push(
+    await page.evaluate(
+      () => (document.activeElement?.getAttribute("aria-label") ?? document.activeElement?.textContent ?? "").trim(),
+    ),
+  );
+}
+ok(
+  "F11b the arrows walk the panel's own controls",
+  arrowWalk[0].startsWith("Dictionary") && arrowWalk[1].startsWith("English Grammar"),
+  JSON.stringify(arrowWalk),
+);
+// a field the learner types into keeps the key
+await page.goto(BASE + "/#/dictionary", { waitUntil: "load" });
+await page.waitForSelector('input[type="search"]', { timeout: 30000 });
+await sleep(400);
+await page.locator('input[type="search"]').focus();
+await page.keyboard.press("Shift+KeyE");
+await sleep(200);
+ok(
+  "F11b Shift+E leaves a text field to the learner",
+  await page.evaluate(() => document.activeElement?.type === "search"),
+);
+
 // ---------- Flow 12: download the course, go offline, keep learning ----------
 // The service worker registers in a real build only (import.meta.env.PROD), so
 // this flow runs against `vite preview` and is skipped on the dev server.
@@ -703,13 +852,12 @@ if (BASE.includes("4173")) {
   });
   ok(
     "F12 installed app shows the offline button",
-    await p2.locator('[aria-label="Offline: download books"]').isVisible(),
+    await p2.locator(".topbar .dlbtn").first().isVisible(),
   );
 
-  // Installed, the app pulls the open book into the cache by itself — nothing is
-  // pressed here. On desktop the button is that run's status: green fills it
-  // from the top down and stays full when the course is cached.
-  await p2.locator(".dlbtn.done").waitFor({ timeout: 180000 });
+  // pressed here. On desktop the header button is that run's status: green
+  // fills it from the top down and stays full when the course is cached.
+  await p2.locator(".topbar .dlbtn.done").waitFor({ timeout: 180000 });
   ok("F12 the download starts by itself and finishes green", true);
 
   const cached = await p2.evaluate(async () => {
@@ -731,7 +879,7 @@ if (BASE.includes("4173")) {
     JSON.stringify(cached),
   );
 
-  await p2.locator('[aria-label="Offline: download books"]').click();
+  await p2.locator(".topbar .dlbtn").first().click();
   const blueRow = p2.locator(".dlrow", { hasText: "English Grammar: Progress" });
   const redRow = p2.locator(".dlrow", { hasText: "English Grammar: Foundations" });
   await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar: Progress" }).waitFor({ timeout: 30000 });
@@ -758,7 +906,7 @@ if (BASE.includes("4173")) {
 
   // the way back out: removing drops the cache and the flag, and the panel
   // offers the download again
-  await p2.locator('[aria-label="Offline: download books"]').click();
+  await p2.locator(".topbar .dlbtn").first().click();
   await blueRow.getByRole("button", { name: "Remove the downloaded English Grammar: Progress" }).click();
   await blueRow.getByRole("button", { name: "Download", exact: true }).waitFor({ timeout: 30000 });
   const removed = await p2.evaluate(async () => {
@@ -813,6 +961,7 @@ if (BASE.includes("4173")) {
     (await p3.locator(".topbar .dlbtn").count()) === 0 &&
       (await p3.locator(".sidebar .dlbtn").count()) === 1,
   );
+
   const chip = await p3.evaluate(() => {
     const c = document.querySelector(".dlbtn.running");
     return { title: c.title, p: getComputedStyle(c).getPropertyValue("--p").trim() };
@@ -821,6 +970,50 @@ if (BASE.includes("4173")) {
     "F12 the control carries the percentage",
     /downloading \d+%/.test(chip.title) && /^\d+%$/.test(chip.p),
     JSON.stringify(chip),
+  );
+
+  // every page of the installed app carries the download, the sections
+  // included — the cards and the dictionary open the same panel as the library
+  await p3.goto(BASE + "/#/dictionary", { waitUntil: "load" });
+  await p3.waitForSelector(".addbar input", { timeout: 30000 });
+  ok(
+    "F12 a section page carries the download too",
+    (await p3.locator(".sidebar .dlbtn").count()) === 1,
+  );
+  // five tools: three abreast above, the last pair half the row each. The row
+  // counts six tracks under a 6px gap, so a tile is its tracks plus the gaps
+  // between them — the widths are read off that, not off a plain third/half.
+  const tools = await p3.evaluate(() => {
+    const row = document.querySelector(".navtools");
+    const cs = getComputedStyle(row);
+    const gap = parseFloat(cs.columnGap) || 0;
+    const track = (row.getBoundingClientRect().width - gap * 5) / 6;
+    const w = (el) => el.getBoundingClientRect().width;
+    return {
+      count: row.children.length,
+      third: 2 * track + gap,
+      half: 3 * track + 2 * gap,
+      tiles: [...row.children].map(w),
+    };
+  });
+  const near = (a, b) => Math.abs(a - b) <= Math.max(1, b * 0.01);
+  ok(
+    "F12 five tool tiles: three above, the last two half the row each",
+    tools.count === 5 &&
+      near(tools.tiles[0], tools.third) &&
+      near(tools.tiles[1], tools.third) &&
+      near(tools.tiles[2], tools.third) &&
+      near(tools.tiles[3], tools.half) &&
+      near(tools.tiles[4], tools.half),
+    JSON.stringify(tools),
+  );
+  await p3.locator(".sidebartoggle").click();
+  await sleep(600);
+  await p3.locator(".sidebar .dlbtn").click();
+  await p3.waitForSelector(".dlrow", { timeout: 10000 });
+  ok(
+    "F12 the drawer's download opens the panel from a section",
+    (await p3.locator(".dlrow").count()) >= 2,
   );
 }
 
@@ -862,7 +1055,7 @@ ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()
 
 // ---------- Flow 13b: one key system for the whole app ----------
 // The jumps work from every view, not only from inside a book: the sections
-// from the library, the books from the dictionary.
+// from the library, the books from the deck list.
 {
   const nctx = await browser.newContext({ viewport: { width: 1400, height: 900 } });
   const np = await nctx.newPage();
@@ -871,36 +1064,11 @@ ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()
   await np.goto(BASE + "/#/dictionary", { waitUntil: "load" });
   await np.waitForSelector(".addbar input", { timeout: 30000 });
 
-  // Shift+B: the picker, with one row per book
-  await np.keyboard.press("Shift+KeyB");
-  await np.waitForSelector('.modal[aria-label="Go to"]', { timeout: 10000 });
-  ok("F13b the picker lists both books", (await np.locator(".pickerrow").count()) === 2);
-  const rows = await np.locator(".pickerrow").allInnerTexts();
-  ok(
-    "F13b the rows carry the books in library order",
-    rows.map((t) => t.split("\n")[1]).join("|") ===
-      "English Grammar: Foundations|English Grammar: Progress",
-    rows.join(" / "),
-  );
-  ok("F13b a row says how far the learner got", /units done/.test(rows[0]), rows[0]);
-  // a number picks that book outright
-  await np.keyboard.press("Digit2");
-  await np.waitForURL(/#\/blue$/, { timeout: 10000 });
-  ok("F13b a digit opens that book", /#\/blue$/.test(np.url()), np.url());
-
-  // Esc closes it without going anywhere
-  await np.goto(BASE + "/#/cards", { waitUntil: "load" });
-  await np.waitForSelector(".decksection", { timeout: 30000 });
-  await np.keyboard.press("Shift+KeyB");
-  await np.waitForSelector('.modal[aria-label="Go to"]', { timeout: 10000 });
-  await np.keyboard.press("Escape");
-  await sleep(300);
-  ok("F13b Escape closes the picker without navigating", /#\/cards$/.test(np.url()), np.url());
-
-  // Alt+1 opens the first book from the deck list
+  // Alt+1 opens the first book from the dictionary
   await np.keyboard.press("Alt+Digit1");
   await np.waitForURL(/#\/red$/, { timeout: 10000 });
   ok("F13b Alt+1 opens the first book", /#\/red$/.test(np.url()), np.url());
+
 
   // the section jumps, from inside a book
   await np.keyboard.press("Shift+KeyD");
@@ -912,6 +1080,24 @@ ok("F13 bare / resumes the book with progress", /#\/blue\/u\d+$/.test(page.url()
   await np.keyboard.press("Shift+KeyL");
   await np.waitForURL(/#\/$/, { timeout: 10000 });
   ok("F13b Shift+L goes to the library", /#\/$/.test(np.url()), np.url());
+
+  // Shift+Z walks the app's own history back, and lands on the app's opening
+  // page rather than leaving it when there is nothing of the app behind
+  await np.keyboard.press("Shift+KeyZ");
+  await np.waitForURL(/#\/cards$/, { timeout: 10000 });
+  ok("F13b Shift+Z steps back through the app", /#\/cards$/.test(np.url()), np.url());
+  await np.keyboard.press("Shift+KeyZ");
+  await np.waitForURL(/#\/dictionary$/, { timeout: 10000 });
+  ok("F13b Shift+Z again goes on back", /#\/dictionary$/.test(np.url()), np.url());
+  for (let i = 0; i < 6; i++) {
+    await np.keyboard.press("Shift+KeyZ");
+    await sleep(400);
+    // still inside the app, on its own opening page
+    if (!/^http:\/\/127\.0\.0\.1:\d+\/#/.test(np.url())) break;
+  }
+  ok("F13b Shift+Z stops at the app's opening page", /#\//.test(np.url()), np.url());
+  await np.keyboard.press("Shift+L");
+  await np.waitForURL(/#\/$/, { timeout: 10000 });
 
   // Alt+D opens the window from the library: every book's progress and every
   // target, none of it scoped to the view it was opened from

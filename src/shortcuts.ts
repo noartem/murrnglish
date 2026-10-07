@@ -15,13 +15,13 @@
 //   4. exercise scope (before the defaultPrevented guard: GapInput calls
 //      preventDefault on plain Enter)
 //   5. defaultPrevented guard  6. app-wide letters and Alt+digit
-//   7. the view's own scope
+//   7. the view's own keys (the shell's panel first, then the view's)
 
 import { useEffect } from "react";
 import { BOOKS } from "./books";
 import { closeGlobal, currentGlobal, globalHints, openGlobal } from "./globalUi";
 import { scopeHandler } from "./keyScopes";
-import { CARDS_HASH, DICTIONARY_HASH, LIBRARY_HASH, bookHash } from "./routes";
+import { CARDS_HASH, DICTIONARY_HASH, LIBRARY_HASH, bookHash, entryHash } from "./routes";
 
 /** Shortcut labels shared by tooltips, the topbar and the help window. */
 export const SC = {
@@ -29,17 +29,16 @@ export const SC = {
   reveal: "Shift+A",
   nextUnit: "Shift+N",
   prevUnit: "Shift+P",
-  unitPanel: "Shift+E",
   lessonJump: "Shift+S",
   sidebarToggle: "Alt+Shift+E",
   cycleTheme: "Shift+T",
   cards: "Shift+C",
   dictionary: "Shift+D",
   library: "Shift+L",
-  bookPicker: "Shift+B",
   bookJump: "Alt+1…9",
-  data: "Alt+D",
+  backHome: "Shift+Z",
   dataAlt: "Shift+I",
+  data: "Alt+D",
   search: "Ctrl+K",
   help: "Shift+?",
 } as const;
@@ -89,14 +88,9 @@ export const HELP_SECTIONS: HelpSection[] = [
         desc: "Go to the library — the list of books — from anywhere in the app.",
       },
       {
-        keys: ["Shift", "B"],
-        title: "Go to a book",
-        desc: "Pick one of the books by name: a number picks it outright, the arrows move between the rows, Enter opens, Esc closes without going anywhere.",
-      },
-      {
         keys: ["Alt", "1 … 9"],
-        title: "Go to a book by number",
-        desc: "Open the first book with Alt+1, the second with Alt+2 and so on, from anywhere in the app.",
+        title: "Go to a book",
+        desc: "Open the first book with Alt+1, the second with Alt+2 and so on, from anywhere in the app. The navigation panel holds every book too — Shift+E focuses the one you are reading.",
       },
       {
         keys: ["Alt", "D"],
@@ -114,6 +108,27 @@ export const HELP_SECTIONS: HelpSection[] = [
           { keys: ["L"], desc: "tick or untick the learning report: which cards are learned and when they come back" },
           { keys: ["Esc"], desc: "close the window" },
         ],
+      },
+      {
+        keys: ["Shift", "E"],
+        title: "The navigation panel",
+        desc: "Brings the panel up and focuses the tile that stands for the page you are on: the open unit in a book, Unit 1 on a book's landing, Cards, the Dictionary, or the panel's first control anywhere else. If the panel is hidden it slides in from the left edge, exactly as it does when the pointer goes there.",
+        sub: [
+          { keys: ["\u2190"], alt: ["\u2192"], desc: "move to the next or previous control of the panel — a tile, a book, a unit" },
+          { keys: ["\u2191"], alt: ["\u2193"], desc: "move to the row above or below" },
+          { keys: ["Enter"], desc: "open the focused control" },
+          { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },
+        ],
+      },
+      {
+        keys: ["Alt", "Shift", "E"],
+        title: "Show or hide the panel",
+        desc: "Toggles the navigation panel exactly like the burger button at the top, on any page. The focus stays where it is.",
+      },
+      {
+        keys: ["Shift", "Z"],
+        title: "Back, or the landing",
+        desc: "Goes back where the browser came from — another page of the app, or the site you arrived from. Opened straight onto this page, with no history behind it, it takes you where the app opens: the page you last worked on, else the library.",
       },
     ],
   },
@@ -139,22 +154,6 @@ export const HELP_SECTIONS: HelpSection[] = [
         keys: ["Shift", "P"],
         title: "Previous unit",
         desc: "Go to the previous unit of the course.",
-      },
-      {
-        keys: ["Shift", "E"],
-        title: "Unit list",
-        desc: "Shows the unit list and focuses the current unit. On the landing, where no unit is open, it focuses Unit 1. If the list was hidden, it appears over the page, like when you move the mouse to the left edge.",
-        sub: [
-          { keys: ["\u2190"], alt: ["\u2192"], desc: "move to the next or previous unit; at the end of a group you jump to the next group" },
-          { keys: ["\u2191"], alt: ["\u2193"], desc: "move to the next or previous group (first unit)" },
-          { keys: ["Enter"], desc: "open the focused unit" },
-          { keys: ["Esc"], desc: "go back to where you were (or to the first exercise)" },
-        ],
-      },
-      {
-        keys: ["Alt", "Shift", "E"],
-        title: "Show or hide unit list",
-        desc: "Toggles the unit list exactly like the burger button at the top. The focus stays where it is.",
       },
       {
         keys: ["Shift", "S"],
@@ -241,13 +240,39 @@ export const HELP_SECTIONS: HelpSection[] = [
 ];
 
 /**
- * The app's single keydown listener, mounted once by App. Handler order is
- * load-bearing: the windows and the exercise scope come before the
- * defaultPrevented guard and the app-wide keys, and the per-view scope runs
- * last (shortcuts.ts header).
+ * Where the browser keeps its own session history, if it says: the Navigation
+ * API's current index. It is found by its shape — the DOM lib this project
+ * compiles against types `window.navigation` as the old timing object, and
+ * only the Navigation API carries a `currentEntry`.
  */
+function sessionIndex(): number | null {
+  const nav: unknown = Reflect.get(window, "navigation");
+  if (typeof nav !== "object" || nav === null || !("currentEntry" in nav)) return null;
+  const entry: unknown = nav.currentEntry;
+  if (typeof entry !== "object" || entry === null || !("index" in entry)) return null;
+  return typeof entry.index === "number" ? entry.index : null;
+}
+
 export function useAppShortcuts(): void {
   useEffect(() => {
+    // How far back the app can go without leaving it. The browser's session
+    // history also holds whatever opened this tab — about:blank, or the site
+    // the learner arrived from — and stepping into that is leaving, not going
+    // back, so the count starts at the page the tab opened on. Chromium
+    // reports the session history's own index (a step between hashes shows up
+    // there, though it fires no popstate); elsewhere the app counts the pages
+    // it has moved through since it opened.
+    const openedAt = sessionIndex() ?? 0;
+    let moved = 0;
+    const onHash = () => {
+      moved += 1;
+    };
+    window.addEventListener("hashchange", onHash);
+    const behind = () => {
+      const now = sessionIndex();
+      return now === null ? moved : Math.max(0, now - openedAt);
+    };
+
     const handler = (e: KeyboardEvent) => {
       // 1. the help window owns every key: only Esc does anything
       if (currentGlobal() === "help") {
@@ -327,8 +352,8 @@ export function useAppShortcuts(): void {
           return;
         }
         // Alt+1..9: the books in library order. Some browsers and window
-        // managers claim Alt+digit for tab switching; the Shift+B picker is
-        // the fallback path to the same books.
+        // managers claim Alt+digit for tab switching; the navigation panel,
+        // which holds every book, is the fallback path to the same place.
         if (e.altKey && /^Digit[1-9]$/.test(e.code)) {
           const book = BOOKS[Number(e.code.slice(5)) - 1];
           if (book) {
@@ -344,10 +369,6 @@ export function useAppShortcuts(): void {
             e.preventDefault();
             openGlobal("data", true);
             return;
-          case "KeyB":
-            e.preventDefault();
-            openGlobal("books", true);
-            return;
           case "KeyC":
             e.preventDefault();
             window.location.hash = CARDS_HASH;
@@ -362,20 +383,30 @@ export function useAppShortcuts(): void {
             return;
           case "KeyT":
             e.preventDefault();
-            // the theme button every view's topbar renders
-            document.querySelector<HTMLButtonElement>('.topbar-actions .themebtn[aria-label^="Theme"]')?.click();
+            // the theme button the header renders, on every view
+            document.querySelector<HTMLButtonElement>('[data-global-btn="theme"]')?.click();
+            return;
+          case "KeyZ":
+            e.preventDefault();
+            // back to the page behind this one; with nothing of the app
+            // behind it — opened straight onto this page — the landing
+            if (behind() > 0) window.history.back();
+            else window.location.hash = entryHash();
             return;
         }
       }
 
       // 7. the view's own keys
-      for (const scope of ["course", "study", "browse"] as const) {
+      for (const scope of ["shell", "course", "study", "browse"] as const) {
         const fn = scopeHandler(scope);
         if (fn && fn(e)) return;
       }
     };
     window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
+    return () => {
+      window.removeEventListener("keydown", handler);
+      window.removeEventListener("hashchange", onHash);
+    };
   }, []);
 }
 
@@ -392,48 +423,4 @@ export function focusFirstExercise(): void {
         ".exercise textarea, .exercise input, .exercise select, .exercise button",
       ) ?? document.querySelector<HTMLElement>(".home .homecta");
   target?.focus({ preventScroll: true });
-}
-
-/**
- * Sidebar arrow navigation: from nav.sidebar, groups of .unitlink buttons;
- * plain focus() so the sidebar scroller brings the button into view. The
- * course scope calls it; it lives here with the rest of the key layer.
- */
-export function moveSidebarFocus(key: string): void {
-  const nav = document.querySelector("nav.sidebar");
-  if (!nav) return;
-  const groups = [...nav.querySelectorAll(".group")].map((g) =>
-    [...g.querySelectorAll<HTMLElement>("button.unitlink")],
-  );
-  const active = document.activeElement;
-  if (!active || !(active instanceof HTMLElement)) return;
-  const btn = active.closest("button.unitlink") as HTMLButtonElement | null;
-  let gi = -1;
-  let ui = -1;
-  for (let i = 0; i < groups.length; i++) {
-    const idx = groups[i].indexOf(btn as HTMLButtonElement);
-    if (idx !== -1) {
-      gi = i;
-      ui = idx;
-      break;
-    }
-  }
-  if (gi === -1) return;
-  const btns = groups[gi];
-  let target: HTMLElement | undefined;
-  switch (key) {
-    case "ArrowRight":
-      target = btns[ui + 1] ?? groups[gi + 1]?.[0];
-      break;
-    case "ArrowLeft":
-      target = btns[ui - 1] ?? groups[gi - 1]?.[groups[gi - 1].length - 1];
-      break;
-    case "ArrowDown":
-      target = groups[gi + 1]?.[0];
-      break;
-    case "ArrowUp":
-      target = groups[gi - 1]?.[0];
-      break;
-  }
-  target?.focus();
 }

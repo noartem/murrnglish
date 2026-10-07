@@ -18,14 +18,22 @@
 //   #/dictionary/<deck>      the same, with that deck's list open
 //
 // A bare "/" (no hash at all) resumes the last page a learner worked on — see
-// entryHash in App.tsx. Anything unknown lands in the library.
+// entryHash below. Anything unknown lands in the library.
 //
 // #/rules/... was the rules compendium. A unit's rule is now the lesson at the
 // top of the unit itself, so old links move there (legacyHash): #/rules/<book>/u<N>
 // -> #/<book>/u<N>, #/rules/<book> -> #/<book>, #/rules -> the library. "rules"
 // stays reserved so such a link can never name a book.
 
+import { BOOKS, bookById } from "./books";
 import type { Book } from "./books";
+import {
+  hasProgress,
+  lastUnitFromProgress,
+  loadLastBook,
+  loadLastRoute,
+  loadProgress,
+} from "./progress";
 import { SHARE_CODE } from "./share";
 
 /** A page inside one book. */
@@ -81,6 +89,25 @@ export function bookHash(book: Book, page: BookPage = { kind: "home" }): string 
 }
 
 export const LIBRARY_HASH = "#/";
+
+/**
+ * Where a bare "/" lands: the page the learner last worked on — in the book
+ * last opened if it has progress, else in the first book that does (a glance
+ * into another book must not strand them in the library); everyone else
+ * starts in the library. Shift+Z falls back here when there is no history to
+ * go back to (shortcuts.ts).
+ */
+export function entryHash(): string {
+  const last = bookById(loadLastBook() ?? "");
+  const order = last ? [last, ...BOOKS.filter((b) => b !== last)] : BOOKS;
+  for (const book of order) {
+    const p = loadProgress(book.id);
+    if (!hasProgress(p)) continue;
+    const page = parsePage(book, loadLastRoute(book.id) ?? lastUnitFromProgress(p) ?? "");
+    return bookHash(book, page ?? { kind: "home" });
+  }
+  return LIBRARY_HASH;
+}
 
 /** Parse a location hash ("#/blue/u5"). A bare "" is the caller's to resolve. */
 export function parseRoute(hash: string, books: readonly Book[]): AppRoute {

@@ -19,9 +19,9 @@ import {
 import { LessonBody, LessonSoon, PracticeDivider, UnitHead, labelsFor } from "./components/Lesson";
 import { ExerciseCard } from "./components/ExerciseCard";
 import { openIncoming } from "./globalUi";
-import { AppShell, toggleMenu } from "./components/AppShell";
+import { AppShell, revealInPanel } from "./components/AppShell";
 import { useKeyScope } from "./keyScopes";
-import { SC, focusFirstExercise, moveSidebarFocus } from "./shortcuts";
+import { SC, focusFirstExercise } from "./shortcuts";
 import { ArrowLeft, ArrowRight, BookOpenText, Check } from "lucide-react";
 import {
   OverlayScrollbarsComponent,
@@ -221,38 +221,10 @@ export default function CourseApp({
   // scrollIntoView("nearest") pinned it to the very bottom edge, and the
   // panel's scrollbars instance re-initializes on mount (twice under
   // StrictMode) right after the list renders, zeroing the scroll again — so
-  // it is re-asserted on every (re)initialization too
+  // it is re-asserted on every (re)initialization too. The panel itself
+  // belongs to the shell; it is only asked to scroll.
   const activeRef = useRef<HTMLButtonElement>(null);
-  const sidebarRef = useRef<OverlayScrollbarsComponentRef<"nav">>(null);
-  // false while the panel's overlay-scrollbars viewport is not up yet
-  const revealUnit = useCallback((el: HTMLButtonElement | null): boolean => {
-    const vp = sidebarRef.current?.osInstance()?.elements().viewport;
-    if (!el || !vp) return false;
-    const vpRect = vp.getBoundingClientRect();
-    const elRect = el.getBoundingClientRect();
-    // fully visible already: leave the scroll alone, so clicking a unit that
-    // is on screen never jumps the list
-    if (elRect.top >= vpRect.top && elRect.bottom <= vpRect.bottom) return true;
-    const slack = Math.max(0, vpRect.height - elRect.height);
-    vp.scrollTop += elRect.top - vpRect.top - slack / 3;
-    return true;
-  }, []);
-  const revealActiveUnit = useCallback(
-    (): boolean => revealUnit(activeRef.current),
-    [revealUnit],
-  );
-  // the route's own unit button; the landing has no active unit, so Shift+E
-  // falls back to the first entry of the list there
-  const unitPanelTarget = useCallback((): HTMLButtonElement | null => {
-    return (
-      activeRef.current ??
-      sidebarRef.current
-        ?.osInstance()
-        ?.elements()
-        .viewport?.querySelector<HTMLButtonElement>(".unitlink") ??
-      null
-    );
-  }, []);
+  const revealActiveUnit = useCallback((): boolean => revealInPanel(activeRef.current), []);
   const sidebarEvents = useMemo(
     () => ({
       initialized: () => {
@@ -355,61 +327,10 @@ export default function CourseApp({
     else navAdditional(t.n);
   };
 
-  // where "Esc = go back" from the unit panel returns to
-  const lastFocus = useRef<HTMLElement | null>(null);
-
-  // never anchor on the unit panel itself, which has its own scoped keys;
-  // the body is not a focus location (focus() on it is a no-op), so leaving
-  // it out lets restoreFocus fall back instead of stranding the focus
-  const rememberFocus = () => {
-    const el = document.activeElement;
-    if (
-      el instanceof HTMLElement &&
-      el !== document.body &&
-      !el.closest("nav.sidebar")
-    ) {
-      lastFocus.current = el;
-    }
-  };
-
-  const restoreFocus = () => {
-    const el = lastFocus.current;
-    lastFocus.current = null;
-    if (el && el.isConnected) {
-      el.focus();
-    } else {
-      focusFirstExercise();
-    }
-  };
-
-  // this book's own keys. The app-wide ones (help, the data window, the
-  // section jumps) and the exercise scope are the dispatcher's, above this.
+  // this book's own keys. The panel's own (Alt+Shift+E, Shift+E, its arrows,
+  // Esc) belong to the shell, the app-wide ones (help, the data window, the
+  // section jumps) and the exercise scope to the dispatcher, above this.
   useKeyScope("course", (e) => {
-    // sidebar scope: arrows move focus among the unit buttons
-    if (document.activeElement?.closest(".sidebar")) {
-      if (e.key === "Escape") {
-        e.preventDefault();
-        restoreFocus();
-        return true;
-      }
-      if (
-        e.key === "ArrowLeft" ||
-        e.key === "ArrowRight" ||
-        e.key === "ArrowUp" ||
-        e.key === "ArrowDown"
-      ) {
-        e.preventDefault();
-        moveSidebarFocus(e.key);
-        return true;
-      }
-    }
-    // Alt+Shift+E toggles the sidebar like the burger button, without
-    // moving focus into it (before the plain Shift+E branch)
-    if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && e.code === "KeyE") {
-      e.preventDefault();
-      toggleMenu();
-      return true;
-    }
     if (e.shiftKey && !e.ctrlKey && !e.metaKey && !e.altKey) {
       switch (e.code) {
         case "KeyS": {
@@ -429,18 +350,6 @@ export default function CourseApp({
           } else {
             vp.scrollTo({ top: 0, behavior: scrollBehavior() });
             document.getElementById(LESSON_ID)?.focus({ preventScroll: true });
-          }
-          return true;
-        }
-        case "KeyE": {
-          e.preventDefault();
-          rememberFocus();
-          const el = unitPanelTarget();
-          if (el) {
-            // reveal first — focus() alone would scroll the unit to the
-            // bottom edge; preventScroll then keeps it where reveal put it
-            if (revealUnit(el)) el.focus({ preventScroll: true });
-            else el.focus();
           }
           return true;
         }
@@ -584,9 +493,13 @@ export default function CourseApp({
         </>
       }
       navActions={standalone ? <OfflineButton bookId={book.id} onOpen={() => setOfflineOpen(true)} /> : undefined}
+      topbarActions={
+        standalone ? (
+          <OfflineButton bookId={book.id} onOpen={() => setOfflineOpen(true)} variant="bar" />
+        ) : undefined
+      }
       bookStats={stats}
       bookUnits={bookUnits}
-      sidebarRef={sidebarRef}
       sidebarEvents={sidebarEvents}
     >
         {isHome ? (
