@@ -291,15 +291,15 @@ function NavTile({
 }) {
   const cls = "navtile" + (active ? " active" : "");
  
-  const style = {} as CSSProperties
+  const style = {} as CSSProperties & Record<string, string>;
   if (color) {
     style["--tile"] = color;
     style["--tile-ink"] = "#fff";
   }
-  style["flexDirection"] = childrenRow ? "row" : "column"
+  style["flexDirection"] = childrenRow ? "row" : "column";
   if (childrenRow) {
-      style["justifyContent"] = "start"
-      style["padding-inline"] = "12px"
+    style["justifyContent"] = "start";
+    style["paddingInline"] = "12px";
   }
  
   const body = (
@@ -434,7 +434,7 @@ function NavPanel({
 
 /** A book's mark: its cover colour as a small square, its own on every tile. */
 function BookMark({ color }: { color: string }) {
-  return <span className="navdot" style={{ '--color': color }} aria-hidden />;
+  return <span className="navdot" style={{ "--color": color } as CSSProperties} aria-hidden />;
 }
 
 /** The short name a tile carries under its icon; the long one is the tooltip.
